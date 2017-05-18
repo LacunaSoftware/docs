@@ -5,4 +5,5 @@ Rest PKI is a cloud service that allows you to easily add PKI features such docu
 In this section:
 
 * [Get Started with Rest PKI](get-started.md)
+* [Advanced topics](advanced.md)
 * [See Also](see-also.md)
