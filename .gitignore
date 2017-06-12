@@ -1,0 +1,8 @@
+.vs/
+api/
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site
