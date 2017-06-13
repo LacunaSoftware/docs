@@ -11,10 +11,10 @@
 						"**/bin/**",
 						"**/obj/**"
 					],
-					"cwd": "../.."
+					"cwd": "../../.."
 				}
 			],
-			"dest": "api",
+			"dest": "../api",
 			"properties": {
 				"TargetFramework": "net45"
 			}
@@ -23,6 +23,7 @@
 	"build": {
 		"content": [
 			{
+				"cwd": "..",
 				"files": [
 					"api/**.yml",
 					"api/index.md"
@@ -43,6 +44,7 @@
 		],
 		"resource": [
 			{
+				"cwd": "..",
 				"files": [ "images/**" ],
 				"exclude": [
 					"obj/**",
@@ -59,12 +61,12 @@
 				]
 			}
 		],
-		"dest": "_site",
+		"dest": "../_site/pt-br",
 		"globalMetadataFiles": [],
 		"fileMetadataFiles": [],
 		"template": [ "default" ],
 		"postProcessors": [],
 		"noLangKeyword": false,
-		"xref": [ "_zip/msdn.4.5.2.zip" ]
+		"xref": [ "../_zip/msdn.4.5.2.zip" ]
 	}
 }
