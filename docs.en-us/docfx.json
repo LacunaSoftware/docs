@@ -1,4 +1,4 @@
-{
+﻿{
 	"metadata": [
 		{
 			"src": [
@@ -51,7 +51,8 @@
 				],
 				"exclude": [
 					"obj/**",
-					"_site/**"
+					"_site/**",
+					"**.pdn"
 				]
 			}
 		],
@@ -65,7 +66,13 @@
 			}
 		],
 		"dest": "../_site/en-us",
-		"globalMetadataFiles": [],
+		"globalMetadata": {
+			"_appTitle": "Lacuna Docs",
+			"_appFooter": "Copyright © 2014-2017 Lacuna Software",
+			"_appLogoPath": "images/logo.png",
+			"_appFaviconPath": "images/favicon.png",
+			"_disableAffix": true
+		},
 		"fileMetadataFiles": [],
 		"template": [ "default" ],
 		"postProcessors": [],
