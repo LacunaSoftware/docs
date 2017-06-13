@@ -45,7 +45,10 @@
 		"resource": [
 			{
 				"cwd": "..",
-				"files": [ "images/**" ],
+				"files": [
+					"images/**",
+					"content/**"
+				],
 				"exclude": [
 					"obj/**",
 					"_site/**"
