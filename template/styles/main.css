@@ -1,0 +1,85 @@
+@font-face {
+	font-family: "FontAwesome";
+	src: url("../fonts/fontawesome-icons.woff") format('woff');
+}
+
+body {
+	/* inspired by docs.microsoft.com */
+	font-family: Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+h1 {
+	/* inspired by docs.microsoft.com */
+	font-family: Segoe UI Light,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 2.5em;
+}
+
+blockquote {
+	/* inspired by docs.microsoft.com */
+	font-size: inherit;
+}
+
+.navbar-inverse {
+	/* set color of navbar to Azul BG */
+	background-color: #0F1829;
+}
+
+.centered {
+	text-align: center;
+}
+
+/* intro on root */
+.intro {
+	/* inspired by docs.microsoft.com */
+	color: #6e6e6e;
+	line-height: 1.375;
+	margin: 24px auto 36px;
+	max-width: 562px;
+	padding: 0 16px;
+}
+
+/* main link on root */
+.main-feature {
+	font-size: 3em;
+}
+
+/* minor links on root */
+.sub-features {
+	margin-top: 36px;
+}
+
+/* angle down on expanded toc items (inspired by docs.microsoft.com) */
+.toc .nav > li.active > .expand-stub::before,
+.toc .nav > li.in > .expand-stub::before,
+.toc .nav > li.in.active > .expand-stub::before,
+.toc .nav > li.filtered > .expand-stub::before {
+	font-family: FontAwesome;
+	font-size: 0.7em;
+	font-weight: 700;
+	content: "\e00f";
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	position: absolute;
+	padding-top: 1px;
+}
+
+/* angle right on collapsed toc items (inspired by docs.microsoft.com) */
+.toc .nav > li > .expand-stub::before,
+.toc .nav > li.active > .expand-stub::before {
+	/* angle right */
+	font-family: FontAwesome;
+	font-size: 0.7em;
+	font-weight: 700;
+	content: "\e00f";
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	position: absolute;
+	padding-top: 1px;
+}
+
+/* inspired by docs.microsoft.com */
+.toc .level1 > li {
+	font-weight: normal;
+}

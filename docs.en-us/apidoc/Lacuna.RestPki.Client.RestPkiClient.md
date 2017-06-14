@@ -8,4 +8,4 @@ This is the most important class to use [Rest PKI](https://pki.rest/).
 > This is an awesome class
 >
 
-Make sure you take a look at <xref:lacunasoftware.com/using-restpki>.
+Make sure you take a look at <xref:docs.lacunasoftware.com/articles/pki-guide>.
