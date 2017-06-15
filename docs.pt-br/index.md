@@ -3,7 +3,7 @@
 </div>
 
 <div class="centered main-feature">
-	[Aprenda sobre nossas soluções para certificação digital](articles/pki-guide/index.md)
+	[Soluções para certificação digital](articles/pki-guide/index.md)
 </div>
 
 <div class="centered sub-features">
