@@ -1,3 +1,3 @@
-# Welcome to Lacuna Docs
+﻿# Welcome to Lacuna Docs
 
 Welcome!

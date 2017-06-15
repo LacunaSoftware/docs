@@ -1,4 +1,4 @@
-<div class="centered intro">
+﻿<div class="centered intro">
 	Welcome to docs.lacunasoftware.com, our new unified technical documentation experience. For end-user support, please visit our [Support Center](http://lacuna.help/).
 </div>
 

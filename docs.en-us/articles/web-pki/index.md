@@ -1,4 +1,4 @@
-# .NET Core
+﻿# .NET Core
 
 > Check out the ["Getting Started" tutorials](https://github.com/dotnet/docs/blob/master/docs/core/get-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
