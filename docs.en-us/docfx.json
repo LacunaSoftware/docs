@@ -4,14 +4,15 @@
 			"src": [
 				{
 					"files": [
-						"General/RestClient/RestClient/RestClient.csproj",
-						"RestPki/RestPkiClient/RestPkiClient/Lacuna.RestPki.Client.csproj"
+						"RestClient/RestClient/RestClient.csproj",
+						"RestPkiClient/RestPkiApi/Lacuna.RestPki.Api.csproj",
+						"RestPkiClient/RestPkiClient/Lacuna.RestPki.Client.csproj"
 					],
 					"exclude": [
 						"**/bin/**",
 						"**/obj/**"
 					],
-					"cwd": "../../.."
+					"cwd": "../.."
 				}
 			],
 			"dest": "../api",

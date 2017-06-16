@@ -43,6 +43,7 @@ blockquote {
 /* main link on root */
 .main-feature {
 	font-size: 3em;
+	line-height: 160%;
 }
 
 /* minor links on root */
