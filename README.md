@@ -5,4 +5,4 @@ To view the documentation, please visit [docs.lacunasoftware.com](https://docs.l
 
 ## Contributing
 
-Contributing is not available at this moment, but will be sometime in the future.
+Contributing is not available at this moment, but will be sometime in the future, stay tuned!
