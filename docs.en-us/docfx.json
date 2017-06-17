@@ -5,7 +5,6 @@
 				{
 					"files": [
 						"RestClient/RestClient/RestClient.csproj",
-						"RestPkiClient/RestPkiApi/Lacuna.RestPki.Api.csproj",
 						"RestPkiClient/RestPkiClient/Lacuna.RestPki.Client.csproj"
 					],
 					"exclude": [
