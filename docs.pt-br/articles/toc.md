@@ -5,6 +5,7 @@
 ## [Assinaturas web remotas](pki-guide/web-remote.md)
 ## [Assinaturas web locais](pki-guide/web-local.md)
 ## [Assinaturas de servidor](pki-guide/server.md)
+## [Tópicos avançados](pki-guide/advanced.md)
 <!-- End of PKI Products Guide -->
 
 <!-- Start of Web PKI -->

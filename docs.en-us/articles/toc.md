@@ -5,6 +5,7 @@
 ## [Web remote signatures](pki-guide/web-remote.md)
 ## [Web local signatures](pki-guide/web-local.md)
 ## [Server signatures](pki-guide/server.md)
+## [Advanced topics](pki-guide/advanced.md)
 <!-- End of PKI Products Guide -->
 
 <!-- Start of Web PKI -->
