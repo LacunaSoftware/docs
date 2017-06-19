@@ -1,0 +1,3 @@
+﻿# Políticas de assinatura
+
+TODO

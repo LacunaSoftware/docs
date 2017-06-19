@@ -1,0 +1,3 @@
+﻿# Assinaturas em série
+
+TODO

@@ -1,0 +1,3 @@
+﻿# Assinaturas padrão PAdES
+
+TODO

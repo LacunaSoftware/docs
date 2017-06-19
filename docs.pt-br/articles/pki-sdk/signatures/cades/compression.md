@@ -1,0 +1,3 @@
+﻿# Compressão de assinaturas
+
+TODO

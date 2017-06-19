@@ -1,0 +1,3 @@
+﻿# Resolução de IDs
+
+TODO

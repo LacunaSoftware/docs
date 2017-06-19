@@ -1,0 +1,3 @@
+﻿# Validando certificados
+
+TODO
