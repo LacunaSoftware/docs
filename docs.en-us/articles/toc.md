@@ -22,4 +22,5 @@
 
 <!-- Start of PKI SDK -->
 # [PKI SDK](pki-sdk/index.md)
+## [API Reference](xref:Lacuna.Pki)
 <!-- End of PKI SDK -->
