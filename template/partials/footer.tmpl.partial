@@ -4,6 +4,10 @@
   <div class="grad-bottom"></div>
   <div class="footer">
     <div class="container">
+      <select id="locale-picker">
+        <option value="en-us">English</option>
+        <option value="pt-br">Português</option>
+      </select>
       <span class="pull-right">
         <a href="#top">Back to top</a>
       </span>
