@@ -3,8 +3,6 @@ uid: Lacuna.Pki.Cades.CadesSignatureCompression
 summary: *content
 ---
 
-TODO: traduzir
-
 Class with methods for compressing and decompressing CAdES signatures storing objects likely to be repeated across different
 signatures such as certificates and CRLs on an external store, avoiding redundant storage of such objects.
 
