@@ -15,9 +15,9 @@
 
 <!-- Start of Rest PKI -->
 # [Rest PKI](rest-pki/index.md)
-## [Client libs](rest-pki/client-libs.md)
+## [Client libs](rest-pki/client-libs/index.md)
 ### [Guia da API (.NET)](xref:Lacuna.RestPki.Client)
-### [Guia da API (Java)](https://docs.lacunasoftware.com/en-us/content/javadocs/restpki-client/index.html) <!-- direct link to avoid warning -->
+### [Guia da API (Java)](rest-pki/client-libs/java.md)
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->
