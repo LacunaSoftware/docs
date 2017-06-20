@@ -11,8 +11,6 @@ uid: Lacuna.Pki.Cades.CadesSignatureCompression
 remarks: *content
 ---
 
-TODO: traduzir
-
 A CAdES signature may contain, somewhere in its encoding, several certificates, CRLs and other objects that may account to as 
 much as 99% of the length of the signature. Such objects tend to repeat themselves across different signatures performed close
 together in time. Therefore, if one stores several CAdES signatures, it will be needlessly storing such objects redundantly.
@@ -31,8 +29,6 @@ For more information see article [Signature Compression](../articles/pki-sdk/sig
 uid: Lacuna.Pki.Cades.CadesSignatureCompression
 example: [*content]
 ---
-
-TODO: traduzir
 
 In the following example, we take a signature previously performed (maybe with the @Lacuna.Pki.Cades.CadesSigner class, maybe imported
 from a 3rd party system, it doesn't really matter) and compress it using as store the @Lacuna.Pki.Stores.FileSystemSimpleStore.
