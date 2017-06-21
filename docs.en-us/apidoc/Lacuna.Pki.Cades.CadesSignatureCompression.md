@@ -33,23 +33,4 @@ example: [*content]
 In the following example, we take a signature previously performed (maybe with the @Lacuna.Pki.Cades.CadesSigner class, maybe imported
 from a 3rd party system, it doesn't really matter) and compress it using as store the @Lacuna.Pki.Stores.FileSystemSimpleStore.
 
-```csharp
-using System;
-using Lacuna.Pki;
-using Lacuna.Pki.Cades;
-using Lacuna.Pki.Stores;
- 
-class Test {
-	public static void Main() {
-		var signature = new byte[0];
-		var store = new FilesystemSimpleStore(@"C:\Temp");
-		var compressedSignature = CadesSignatureCompression.Compress(signature, store);
-		var decompressedSignature = CadesSignatureCompression.Decompress(compressedSignature, store);
-		if (decompressedSignature.SequenceEqual(signature)) {
-			Console.WriteLine("OK!");
-		} else {
-			Console.WriteLine("NOT OK!");
-		}
-	}
-}
-```
+[!code-csharp[CadesSignatureCompressionExample](../../snippets/pki-sdk/CadesSignatureCompression.cs#1)]
