@@ -10,7 +10,12 @@
 
 <!-- Start of Web PKI -->
 # [Web PKI](web-pki/index.md)
+## [Primeiros passos](web-pki/get-started.md)
+## [Browsers suportados](web-pki/browser-support.md)
+## [Licenciamento](web-pki/licensing.md)
 ## [Tópicos avançados](web-pki/advanced.md)
+## [Exemplos completos](web-pki/full-samples.md)
+## [Guia da API](web-pki/api.md)
 <!-- End of Web PKI -->
 
 <!-- Start of Rest PKI -->

@@ -10,7 +10,13 @@
 
 <!-- Start of Web PKI -->
 # [Web PKI](web-pki/index.md)
-## [Advanced Topics](web-pki/advanced.md)
+## [Get started](web-pki/get-started.md)
+### [Coding the first lines](web-pki/get-started.md#coding-the-first-lines)
+## [Browser support](web-pki/browser-support.md)
+## [Licensing](web-pki/licensing.md)
+## [Advanced topics](web-pki/advanced.md)
+## [Full samples](web-pki/full-samples.md)
+## [API reference](web-pki/api.md)
 <!-- End of Web PKI -->
 
 <!-- Start of Rest PKI -->
