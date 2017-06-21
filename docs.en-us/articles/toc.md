@@ -11,7 +11,6 @@
 <!-- Start of Web PKI -->
 # [Web PKI](web-pki/index.md)
 ## [Get started](web-pki/get-started.md)
-### [Coding the first lines](web-pki/get-started.md#coding-the-first-lines)
 ## [Browser support](web-pki/browser-support.md)
 ## [Licensing](web-pki/licensing.md)
 ## [Advanced topics](web-pki/advanced.md)
