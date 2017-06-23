@@ -51,6 +51,11 @@ blockquote {
 	margin-top: 36px;
 }
 
+/* prevent double vertical scrollbar on API Reference */
+body .toc {
+	overflow-x: visible;
+}
+
 /* angle down on expanded toc items (inspired by docs.microsoft.com) */
 .toc .nav > li.active > .expand-stub::before,
 .toc .nav > li.in > .expand-stub::before,
