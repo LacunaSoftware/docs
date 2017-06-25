@@ -6,7 +6,11 @@
 					"files": [
 						"RestClient/RestClient/RestClient.csproj",
 						"RestPkiClient/RestPkiClient/Lacuna.RestPki.Client.csproj",
-						"PKI/Pki/Lacuna.Pki.csproj"
+						"PKI/Pki/Lacuna.Pki.csproj",
+						"PkiNLogConnector/PkiNLogConnector/PkiNLogConnector.csproj",
+						"PkiEntityFrameworkConnector/PkiEntityFrameworkConnector/PkiEntityFrameworkConnector.csproj",
+						"PkiAmazonConnector/PkiAmazonConnector/PkiAmazonConnector.csproj",
+						"PkiAzureConnector/PkiAzureConnector/Lacuna.Pki.AzureConnector.csproj"
 					],
 					"exclude": [
 						"**/bin/**",
