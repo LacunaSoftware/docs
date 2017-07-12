@@ -4,7 +4,7 @@
 
 Antes de começar, você precisará de um certificado digital válido registrado no repositório de certificados do Windows (o registro é feito automaticamente quando você utiliza um certificado digital no Windows). Para verificar se você tem um certificado digital registrado no Windows, siga os passos abaixo:
 
-1. Iniciar > Executar... > certmgr.msc
+1. **Iniciar** > **Executar...** > **certmgr.msc**
 1. Deve haver pelo menos um certificado na pasta Pessoal. Dê um duplo-clique no certificado.
 1. Aparecerá uma janela com informações sobre o certificado. Deve haver a mensagem "Tem uma chave particular correspondente a este certificado."
 
@@ -95,7 +95,7 @@ pki.signHash({
 
 <iframe width="100%" height="300" src="https://jsfiddle.net/LacunaSoftware/6zkwejb9/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Para executar o exemplo, clique na aba *Result*. Se essa for a primeira vez que você utiliza o Web PKI, você será redirecionado para a página de instalação e voltará ao exemplo automaticamente após a instalação.
+Para executar o exemplo, clique na aba **Result**. Se essa for a primeira vez que você utiliza o Web PKI, você será redirecionado para a página de instalação e voltará ao exemplo automaticamente após a instalação.
 
 > [!NOTE]
 > O exemplo acima só funcionará na sua aplicação web se a mesma estiver no **localhost**. Isso significa que você pode testar o Web PKI à vontade sem pagar nada, desde que a
@@ -113,5 +113,5 @@ Agora que vimos as funções básicas do Web PKI ...
 * Veja como funciona o [licenciamento](licensing.md)
 * Leia os [tópicos avançados](advanced.md), por exemplo sobre [como customizar o comportamento quando o componente não estiver instalado](advanced.md#customizing-not-installed)
 * Se a sua aplicação utiliza AngularJS, leia a seção [Callbacks e AngularJS](advanced.md#angularjs)
-* Veja os [exemplos completos](full-sampled.md)
+* Veja os [exemplos completos](full-samples.md)
 * Veja o [Guia da API](api.md)

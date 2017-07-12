@@ -16,11 +16,4 @@ Passo | *Client-side* (Lacuna Web PKI) | *Server-side* (SDK no servidor)
 > [!NOTE]
 > Se você não possui um SDK para realizar o processamento no servidor, você pode usar o Lacuna PKI SDK. [Fale conosco](https://www.lacunasoftware.com/pt/home/purchase) para obter informações de licenciamento.
 
-Veja os seguintes artigos para aprender como utilizar o Web PKI:
-
-* [Primeiros passos](get-started.md)
-* [Browsers suportados](browser-support.md)
-* [Licenciamento](licensing.md)
-* [Tópicos avançados](advanced.md)
-* [Exemplos completos](full-samples.md)
-* [Guia da API](api.md)
+Veja o artigo [Primeiros passos](get-started.md) para começar a utilizar o Web PKI.
