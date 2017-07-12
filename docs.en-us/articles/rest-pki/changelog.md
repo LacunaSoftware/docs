@@ -122,7 +122,7 @@ Database model update: **Yes**
 - Add support for multipart upload of files
 - Add support for signing previously uploaded files, files from previous signatures and remote files
 - Add support for downloading the signed file on a separate HTTP request ("download link")
-- Add support for new PAdES visual representation tags (see [PadesTags.md](PadesTags.md))
+- Add support for new PAdES visual representation tags (see [pades-tags.md]())
 - Add support for decoding all fields in X.509 names
 - Add CAdES policy "Basic Electronic Signature (CAdES-BES) with signing-time and no CRLs"
 - Fix bug that prevented system intermediate CAs from taking effect
