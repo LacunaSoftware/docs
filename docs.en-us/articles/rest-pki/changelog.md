@@ -1,7 +1,6 @@
 ﻿# Rest PKI changelog
 
-1.13.0 (2017-07-03)
--------------------
+### 1.13.0 (2017-07-03)
 
 Database model update: No
 
@@ -10,16 +9,14 @@ Database model update: No
 - Improve transactions and events screens
 
 
-1.12.8 (2017-06-27)
--------------------
+### 1.12.8 (2017-06-27)
 
 Database model update: No
 
 - Fix bug that caused intermediate CAs to be ignored on open/validate signature APIs
 
 
-1.12.7 (2017-06-05)
--------------------
+### 1.12.7 (2017-06-05)
 
 Database model update: **Yes**
 
@@ -27,16 +24,14 @@ Database model update: **Yes**
 - Fix bug that caused errors on recently-created timestampers
 
 
-1.12.6 (2017-06-01)
--------------------
+### 1.12.6 (2017-06-01)
 
 Database model update: No
 
 - Create app settings TimeToCompleteSignatures and TimeToCompleteAuthentications
 
 
-1.12.5 (2017-05-11)
--------------------
+### 1.12.5 (2017-05-11)
 
 Database model update: No
 
@@ -45,16 +40,14 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.16.7 to improve download logs
 
 
-1.12.4 (2017-05-05)
--------------------
+### 1.12.4 (2017-05-05)
 
 Database model update: No
 
 - Fix bug that caused execution privileges over the site's folder to be required from the application
 
 
-1.12.3 (2017-05-04)
--------------------
+### 1.12.3 (2017-05-04)
 
 Database model update: No
 
@@ -63,24 +56,21 @@ Database model update: No
 - Fix bug on open/validate XML signatures API
 
 
-1.12.2 (2017-04-26)
--------------------
+### 1.12.2 (2017-04-26)
 
 Database model update: No
 
 - Fix bug on certificate authentication with Web PKI
 
 
-1.12.1 (2017-04-26)
--------------------
+### 1.12.1 (2017-04-26)
 
 Database model update: No
 
 - Fix bug on application startup that could cause double processing of background jobs
 
 
-1.12.0 (2017-04-25)
--------------------
+### 1.12.0 (2017-04-25)
 
 Database model update: **Yes**
 
@@ -95,8 +85,7 @@ Database model update: **Yes**
 - Update Lacuna PKI SDK to 1.16.6
 
 
-1.11.4 (2017-03-16)
--------------------
+### 1.11.4 (2017-03-16)
 
 Database model update: No
 
@@ -105,8 +94,7 @@ Database model update: No
 	- Changes on CAdES signature inspection to deal with incorrectly encoded timestamps
 
 
-1.11.3 (2017-02-13)
--------------------
+### 1.11.3 (2017-02-13)
 
 Database model update: No
 
@@ -114,23 +102,20 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.16.2
 	
 
-1.11.2 (2017-01-20)
--------------------
+### 1.11.2 (2017-01-20)
 
 Database model update: No
 
 - Fix bug on database maintenance page
 
-1.11.1 (2017-01-17)
--------------------
+### 1.11.1 (2017-01-17)
 
 Database model update: No
 
 - Fix bug on upload and download routes
 
 
-1.11.0 (2017-01-17)
--------------------
+### 1.11.0 (2017-01-17)
 
 Database model update: **Yes**
 
@@ -157,16 +142,14 @@ Database model update: **Yes**
 	- Update italian TSL uri and root
 
 
-1.10.1 (2016-10-01)
--------------------
+### 1.10.1 (2016-10-01)
 
 Database model update: No
 
 - Add standard PAdES policies "Basic with ICP-Brasil certificates" and "PAdES-T with ICP-Brasil certificates"
 
 
-1.10.0 (2016-09-27)
--------------------
+### 1.10.0 (2016-09-27)
 
 Database model update: **Yes**
 
@@ -174,16 +157,14 @@ Database model update: **Yes**
 - Improve user management
 
 
-1.9.1 (2016-09-22)
-------------------
+### 1.9.1 (2016-09-22)
 
 Database model update: No
 
 - Fix bug preventing use of tags {{signerEmail}} and {{issuerCommonName}} on PAdES visual representation
 
 
-1.9.0 (2016-08-25)
-------------------
+### 1.9.0 (2016-08-25)
 
 Database model update: **Yes**
 
@@ -191,16 +172,14 @@ Database model update: **Yes**
 - Improve billing report
 
 
-1.8.2 (2016-07-19)
-------------------
+### 1.8.2 (2016-07-19)
 
 Database model update: No
 
 - Fix bug on CAdES co-signatures with timestamp
 
 
-1.8.1 (2016-07-11)
-------------------
+### 1.8.1 (2016-07-11)
 
 Database model update: No
 
@@ -208,8 +187,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.13.1
 
 
-1.8.0 (2016-07-05)
-------------------
+### 1.8.0 (2016-07-05)
 
 Database model update: No
 
@@ -226,8 +204,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.13.0
 
 
-1.7.2 (2016-06-10)
-------------------
+### 1.7.2 (2016-06-10)
 
 Database model update: No
 
@@ -240,16 +217,14 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.12.2 (no bug fixes)
 
 
-1.7.1 (2016-06-03)
-------------------
+### 1.7.1 (2016-06-03)
 
 Database model update: No
 
 - Fix bug on download of a security context's trusted root certificate
 
 
-1.7.0 (2016-06-03)
-------------------
+### 1.7.0 (2016-06-03)
 
 Database model update: **Yes**
 
@@ -266,8 +241,7 @@ Database model update: **Yes**
 	- Add support for certificates with rare alternative SHA-1 with RSA signature algorithm OID (1.3.14.3.2.29)
 
 
-1.6.4 (2016-05-05)
-------------------
+### 1.6.4 (2016-05-05)
 
 Database model update: **Yes**
 
@@ -275,8 +249,7 @@ Database model update: **Yes**
 	- This change was done due to performance issues. The next release will add support for other storage options.
 
 
-1.6.3 (2016-05-02)
-------------------
+### 1.6.3 (2016-05-02)
 
 Database model update: **Yes**
 
@@ -293,24 +266,21 @@ Database model update: **Yes**
 	- Add ICP-Brasil trusted root "v5"
 
 
-1.6.2 (2016-04-18)
-------------------
+### 1.6.2 (2016-04-18)
 
 Database model update: No
 
 - Add support on PAdES visual representation for specifying a container inside the signature rectangle on which to place the text
 
 
-1.6.1 (2016-02-22)
-------------------
+### 1.6.1 (2016-02-22)
 
 Database model update: No
 
 - Fix bug causing delay on database access when running on Microsoft Azure
 
 
-1.6.0 (2016-01-21)
-------------------
+### 1.6.0 (2016-01-21)
 
 Database model update: **Yes**
 
@@ -319,16 +289,14 @@ Database model update: **Yes**
 	- Improve certificate validation to check the PathLenConstraint extension
 
 
-1.5.1 (2015-11-24)
-------------------
+### 1.5.1 (2015-11-24)
 
 Database model update: No
 
 - Aesthetic changes only
 
 
-1.5.0 (2015-11-23)
-------------------
+### 1.5.0 (2015-11-23)
 
 Database model update: **Yes**
 
@@ -344,32 +312,28 @@ Database model update: **Yes**
 	- Add support for ICP-Brasil CPF field on "OU" field of subject name having a space after the colon ("OU=CPF: xxxxxxxxxxx")
 
 	
-1.4.3 (2015-11-06)
-------------------
+### 1.4.3 (2015-11-06)
 
 Database model update: No
 
 - Aesthetic changes only
 
 
-1.4.2 (2015-11-06)
-------------------
+### 1.4.2 (2015-11-06)
 
 Database model update: No
 
 - Aesthetic changes only
 
 
-1.4.1 (2015-10-21)
-------------------
+### 1.4.1 (2015-10-21)
 
 Database model update: No
 
 - Aesthetic changes only
 
 
-1.4.0 (2015-10-21)
-------------------
+### 1.4.0 (2015-10-21)
 
 Database model update: No
 
@@ -378,8 +342,7 @@ Database model update: No
 - Fix bug on PAdES signatures
 
 
-1.3.1 (2015-10-14)
-------------------
+### 1.3.1 (2015-10-14)
 
 Database model update: No
 
@@ -390,8 +353,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.6.0, thus:
 	- Fix bug on logging which caused the "source" argument to have an incorrect value
 
-1.3.0 (2015-10-13)
-------------------
+### 1.3.0 (2015-10-13)
 
 - First version released publicly
 - Main features on this version:
