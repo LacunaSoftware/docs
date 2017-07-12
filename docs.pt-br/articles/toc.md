@@ -23,6 +23,7 @@
 ## [Client libs](rest-pki/client-libs/index.md)
 ### [Guia da API (.NET)](xref:Lacuna.RestPki.Client)
 ### [Guia da API (Java)](rest-pki/client-libs/java.md)
+## [Histórico de versões](rest-pki/changelog.md)
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->
