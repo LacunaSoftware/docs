@@ -2,20 +2,8 @@
 
 Currently, the following browsers are supported:
 
-| Chrome                             | Firefox                            | Internet Explorer                      | Microsoft Edge |
-| ---------------------------------- | ---------------------------------- | -------------------------------------- | -------------- |
-| Yes (on Windows, Mac OS and Linux) | Yes (on Windows, Mac OS and Linux) | Yes (IE9+, contact us for IE8 support) | Coming soon    |
-
-With images:
-
 | ![Chrome](../../../images/web-pki/chrome.gif) | ![Firefox](../../../images/web-pki/firefox.gif) | ![IE](../../../images/web-pki/ie.gif)  | ![Edge](../../../images/web-pki/edge.gif) |
-| --------------------------------------------- | ----------------------------------------------- | -------------------------------------- | ----------------------------------------- |
-| Yes (on Windows, Mac OS and Linux)            | Yes (on Windows, Mac OS and Linux)              | Yes (IE9+, contact us for IE8 support) | Coming soon                               |
-
-With images and legend:
-
-| ![Chrome](../../../images/web-pki/chrome.gif) | ![Firefox](../../../images/web-pki/firefox.gif) | ![IE](../../../images/web-pki/ie.gif)  | ![Edge](../../../images/web-pki/edge.gif) |
-| --------------------------------------------- | ----------------------------------------------- | -------------------------------------- | ----------------------------------------- |
+|:---------------------------------------------:|:-----------------------------------------------:|:--------------------------------------:|:-----------------------------------------:|
 | Yes (on Windows, Mac OS and Linux)            | Yes (on Windows, Mac OS and Linux)              | Yes (IE9+, contact us for IE8 support) | Coming soon¹                              |
 
 ¹ Although Microsoft has added partial support on Edge for browser extensions, not all necessary APIs are currently available. Specifically
