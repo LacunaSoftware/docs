@@ -16,6 +16,6 @@ The Web PKI component's main goal is to perform the client-side processing neces
 
 > [!NOTE]
 > If you don't have a server-side SDK to perform the server-side processing, you can use the [Lacuna PKI SDK](../pki-sdk/index.md).
-> [Contact us](https://www.lacunasoftware.com/pt/home/purchase) for licensing information.
+> [Contact us](https://www.lacunasoftware.com/en/home/purchase) for licensing information.
 
 See the article [Get started](get-started.md) to start using Web PKI.
