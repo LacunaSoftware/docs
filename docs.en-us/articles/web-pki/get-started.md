@@ -95,7 +95,7 @@ pki.signHash({
 
 <iframe width="100%" height="300" src="https://jsfiddle.net/LacunaSoftware/6zkwejb9/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-In order to run the example, click the **Result** tab. If this is the first time you're using WEb PKI, you'll be redirected to the installation page and will be automatically redirected back after the installation completes.
+In order to run the example, click the **Result** tab. If this is the first time you're using Web PKI, you'll be redirected to the installation page and will be automatically redirected back after the installation completes.
 
 > [!NOTE]
 > The example above will only work on your web application if it is running on **localhost**. That means you can go ahead and experiment with it in your web application,
