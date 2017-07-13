@@ -35,7 +35,7 @@ the method that returned the promise. You must check on each method's documentat
 
 The error callback always has the same signature, which is shown above. The argument `message` contains a user-friedly message and may be shown to the user. The
 arguments `error` and `origin` are more technical and are better suited to be logged somewhere for diagnostic purposes. For more information about each of these
-parameters, please refer to the [Promise.error() method documentation](https://webpki.lacunasoftware.com/Help/classes/Promise.html#method_error).
+parameters, please refer to the [Promise.error() method documentation](http://webpki.lacunasoftware.com/Help/classes/Promise.html#method_error).
 
 > [!NOTE]
 > All methods of the `LacunaWebPKI` class are asynchronous, with rare exceptions.
@@ -89,7 +89,7 @@ pki.init(onWebPkiReady);
 
 This method checks that the following conditions hold:
 
-1. The client is using a browser that is supported (click here for a list of supported browsers);
+1. The client is using a browser that is supported ([click here](browser-support.md) for a list of supported browsers);
 1. All the necessary components are installed;
 1. The components are up-to-date.
 
@@ -98,7 +98,7 @@ specific way so that, once the installation is completed, the user is redirected
 
 It is however possible to customize that behavior. For instance, you might want to display a message to the user explaining the problem and informing him that he
 will be redirected to the installation page before actually doing so. In order to do that, you must use the extensive syntax of the `init()` method (refer to the
-[method's documentation](https://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init) for further details) and pass a callback on the `notInstalled`
+[method's documentation](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init) for further details) and pass a callback on the `notInstalled`
 argument.
 
 ```javascript
@@ -118,7 +118,7 @@ function onWebPkiNotInstalled (status, message) {
 
 At some point you should redirect the user to the installation page. In order to do that, call the `redirectToInstallPage()` method, as shown above. For
 more information about the arguments passed to the `notInstalled` callback, please refer to the
-[method's documentation](https://webpki.lacunasoftware.com/classes/LacunaWebPKI.html#method_init).
+[method's documentation](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init).
 
 <a name="angularjs" />
 ## Callbacks and AngularJS

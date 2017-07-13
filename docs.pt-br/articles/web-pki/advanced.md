@@ -16,7 +16,7 @@ pki.listCertificates().success(function (certs) {
 O código acima é um exemplo de uma **chamada assíncrona**. O método `listCertificates()` não pode fazer imediatamente todo o procedimento necessário e retornar o
 resultado. Ele precisa de tempo para realizar essa operação. Nós *poderíamos* bloquear a execução até que a operação fosse concluída, mas isso é uma má-pratica em
 javascript e poderia causar sérios problemas, como a página web travar e o browser sugerir ao usuário que a página deveria ser fechada. Ao invés disso, o método
-imediatamente retorna uma **promessa** (uma instância da classe [Promise](https://webpki.lacunasoftware.com/Help/classes/Promise.html)).
+imediatamente retorna uma **promessa** (uma instância da classe [Promise](http://webpki.lacunasoftware.com/Help/classes/Promise.html)).
 
 Uma promessa é um objeto através do qual você pode registrar callbacks que serão chamados quando a promessa for cumprida, isso é, quando a operação for concluída.
 Você deve sempre registrar um callback para quando a operação for concluída com sucesso e, opcionalmente, pode registrar um outro callback para quando ocorrer um
@@ -35,7 +35,7 @@ do método que retornou a promessa. Você deve verificar a documentação de cad
 
 O callback de erro sempre tem a mesma assinatura (veja acima). O argumento `message` contém uma mensagem apropriada a ser mostrada ao usuário. Os argumentos
 `error` e `origin` são técnicos e mais apropriados a serem logados em algum lugar para diagnóstico em caso de erro. Para mais informações acerca desses parâmetros,
-consulte a [documentação do método Promise.error()](https://webpki.lacunasoftware.com/Help/classes/Promise.html#method_error).
+consulte a [documentação do método Promise.error()](http://webpki.lacunasoftware.com/Help/classes/Promise.html#method_error).
 
 > [!NOTE]
 > Todos os métodos da classe `LacunaWebPKI` são assíncronos, com raras exceções.
@@ -89,7 +89,7 @@ pki.init(onWebPkiReady);
 
 Esse método verifica que as seguintes condições são válidas:
 
-1. O usuário está utilizando um browser que é suportado ([clique aqui](supported-browsers.md) para visualizar os browsers suportados);
+1. O usuário está utilizando um browser que é suportado ([clique aqui](browser-support.md) para visualizar os browsers suportados);
 1. Todos os componentes necessários estão instalados;
 1. Todos os componentes estão atualizados.
 
@@ -98,7 +98,7 @@ de instalação do componente de uma forma específica tal que, quando a instala
 
 Entretanto, é possível customizar esse comportamento. Por exemplo, você pode querer primeiro exibir uma mensagem para o usuário explicando o problema e informando
 que ele será redirecionado para a página de instalação antes de efetivamente redirecionar o usuário. Para isso, você deve usar a forma extensa de chamar o método
-`init()` (consulte a [documentação do método](https://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init) para mais detalhes) e passar um callback
+`init()` (consulte a [documentação do método](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init) para mais detalhes) e passar um callback
 no argumento `notInstalled`.
 
 ```javascript
@@ -118,7 +118,7 @@ function onWebPkiNotInstalled (status, message) {
 
 Tipicamente você irá em algum momento redirecionar o usuário para a página de instalação. Para isso, chame o método `redirectToInstallPage()` como mostrado acima.
 Para mais informações sobre os argumentos passados para o callback `notInstalled`, consulte a
-[documentação do método](https://webpki.lacunasoftware.com/classes/LacunaWebPKI.html#method_init).
+[documentação do método](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init).
 
 <a name="angularjs" />
 ## Callbacks e AngularJS
