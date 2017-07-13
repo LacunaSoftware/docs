@@ -16,7 +16,7 @@ pki.listCertificates().success(function (certs) {
 This is an example of an **asynchronous call**. The `listCertificates()` method cannot immediately do all the processing that it needs to do and return the result.
 It needs some time to do its magic. We could block the execution until the result is available, but that is poor javascript design and can lead to very nasty things
 such your web page freezing up and the browser suggesting to the user that the page should be closed because of the freeze. Instead of that, the method immediately
-returns a [Promise](https://webpki.lacunasoftware.com/classes/Promise.html).
+returns a [Promise](http://webpki.lacunasoftware.com/Help/classes/Promise.html).
 
 A promise is an object through which you can register callbacks that will be called once the promise is fulfilled -- that is, once the operation is completed. You
 should always register a callback for when the operation is completed successfully and, optionally, another for when an error occurs during the operation. The methods

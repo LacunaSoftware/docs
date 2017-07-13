@@ -1,6 +1,6 @@
 ﻿# Full samples
 
-Below you'll find two examples -- one with jQuery and the other with AngularJS -- without the simplifications of the example shown on the [Get started](get-stared.md)
+Below you'll find two examples -- one with jQuery and the other with AngularJS -- without the simplifications of the example shown on the [Get started](get-started.md)
 article. These example showcase a usage of the Web PKI component that is closer to real-life situations. On them, instead of signing hardcoded dummy bytes, we make
 AJAX calls the server at webpki.lacunasoftware.com in order to interoperate with our SDK to digitally sign a PDF, as described in the [introduction](index.md).
 
