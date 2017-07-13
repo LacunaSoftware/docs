@@ -2,33 +2,37 @@
 
 As seguintes tags são suportadas:
 
-Tag               | Significado
+Tag               | Valor
 ----------------- | -----------
-`{{name}}`        | The best guess for the signer's full name (recommended for this purpose over `{{subject_cn}}`)
-`{{national_id}}` | The best guess for the signer's national ID. For ICP-Brasil certificates, this is resolved to the holder's CPF. For Italian certificates, this is resolved to the holder's *codice fiscale*.
-`{{email}}`       | Signer's email address
-`{{subject_cn}}`  | The Common Name (CN) part of the certificate's subject name field
-`{{issuer_cn}}`   | The Common Name (CN) part of the certificate's issuer name field
+`{{name}}`        | Valor mais apropriado para ser utilizado como nome do assinante (mais recomendado para esse propósito do que o `{{subject_cn}}`)
+`{{national_id}}` | Valor mais apropriado para ser utilizado como número de identidade nacional do assinante. Para certificados ICP-Brasil, corresponde ao CPF do assinante. Para certificados italianos, corresponde ao *codice fiscale* do assinante.
+`{{email}}`       | Endereço de email do assinante
+`{{subject_cn}}`  | O campo **Common Name** (CN) do titular (*subject name*) do certificado do signatário
+`{{issuer_cn}}`   | O campo **Common Name** (CN) do emissor (*issuer name*) do certificado do signatário
 
 ## Tags específicas para certificados ICP-Brasil
 
-* `{{br_cpf}}` - Certificate holder's CPF (*CPF do titular/responsável*)
-* `{{br_cpf_formatted}}` - Same as `{{br_cpf}}` but formatted as **000.000.000-00**
-* `{{br_cnpj}}` - Company's CNPJ
-* `{{br_cnpj_formatted}}` - Same as `{{br_cnpj}}` but formatted as **00.000.000/0000-00**
-* `{{br_responsavel}}` - Name of the certificate's holder (*nome do titular/responsável*)
-* `{{br_company}}` - Company name
-* `{{br_oab_numbero}}` - OAB's *Número de Inscrição junto a Seccional* (without leading zeroes)
-* `{{br_oab_uf}}` - OAB's *sigla do Estado da Seccional*
-* `{{br_rg_numero}}` - Certificate holder's ID  number (*número do RG do titular/responsável*) without leading zeroes
-* `{{br_rg_emissor}}` - Issuing entity of the certificate holder's ID (órgão emissor do RG do titular/responsável)
-* `{{br_rg_uf}}` - State code of the issuing entity of the certificate holder's ID (*UF do órgão emissor do RG do titular/responsável*)
+Tag                     | Valor
+----------------------- | -----------
+`{{br_cpf}}`            | CPF do titular (para certificados de PJ, CPF do responsável pelo certificado)
+`{{br_cpf_formatted}}`  | Mesmo que `{{br_cpf}}` porém formatado como **000.000.000-00**
+`{{br_cnpj}}`           | CNPJ da empresa
+`{{br_cnpj_formatted}}` | Mesmo que `{{br_cnpj}}` porém formatado como **00.000.000/0000-00**
+`{{br_responsavel}}`    | Nome do titular (para certificados de PJ, nome do responsável pelo certificado)
+`{{br_company}}`        | Nome da empresa
+`{{br_oab_numbero}}`    | Número de Inscrição junto a Seccional da OAB (sem zeros à esquerda)
+`{{br_oab_uf}}`         | Sigla do Estado da Seccional da OAB
+`{{br_rg_numero}}`      | Número do RG do titular/responsável (sem zeros à esquerda)
+`{{br_rg_emissor}}`     | Órgão emissor do RG do titular/responsável
+`{{br_rg_uf}}`          | UF do órgão emissor do RG do titular/responsável
 
 ## *Aliases*
 
-As seguintes tags são suportadas para retrocompatibilidade:
+As seguintes tags são suportadas para manter a retrocompatibilidade:
 
-* `{{signerName}}` - same as `{{name}}`
-* `{{signerEmail}}` - same as `{{email}}`
-* `{{signerNationalId}}` - same as `{{national_id}}`
-* `{{issuerCommonName}}` - same as `{{issuer_cn}}`
+Tag                    | Tag equivalente
+---------------------- | ---------------
+`{{signerName}}`       | `{{name}}`
+`{{signerEmail}}`      | `{{email}}`
+`{{signerNationalId}}` | `{{national_id}}`
+`{{issuerCommonName}}` | `{{issuer_cn}}`
