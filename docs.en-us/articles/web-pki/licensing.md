@@ -1,6 +1,6 @@
 ﻿# Licensing
 
-In order to be able to use the component in web pages outside of localhost, you'll first need to [acquire a license](https://www.lacunasoftware.com/pt/home/certificate#/webPlans).
+In order to be able to use the component in web pages outside of localhost, you'll first need to [acquire a license](https://www.lacunasoftware.com/en/home/certificate#/webPlans).
 Licensing is enforced in 2 ways:
 
 1. The domain of the website which hosts the javascript that is trying to use the component must be in the "allowed domains list" of the license;
@@ -30,7 +30,7 @@ var myLicense = {
 The two forms are equivalent. The difference is that the binary form hides the details of your license, while in the json form they're easily readable.
 If you don't mind users who go looking into your source code to be able to see the details of your license, the json form is preferred because it makes
 it easier to diagnose problems such as an expired license. However, if you'd rather hide such information, use the binary form. Please note that the
-details are not encrypted, in the binary form, just encoded in Base64.
+details are not encrypted in the binary form, just encoded in Base64.
 
 Once you have your license, you must pass it in the constructor of the `LacunaWebPKI` class:
 
