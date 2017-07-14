@@ -1,4 +1,5 @@
-﻿# [Welcome](welcome.md)
+﻿# [Welcome](welcome/index.md)
+## [Contributing](welcome/contributing.md)
 
 <!-- Start of PKI Solutions Guide -->
 # [PKI Solutions Guide](pki-guide/index.md)

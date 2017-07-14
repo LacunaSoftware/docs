@@ -1,4 +1,5 @@
-﻿# [Bem-vindo](welcome.md)
+﻿# [Bem-vindo](welcome/index.md)
+## [Contribuindo](welcome/contributing.md)
 
 <!-- Start of PKI Solutions Guide -->
 # [Certificação Digital](pki-guide/index.md)
