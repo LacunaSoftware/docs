@@ -1,14 +1,19 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docs.en-us", "docs.en-us\docs.en-us.csproj", "{4E574999-988E-49B9-908F-23C6EDA53FDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docs.en-us", "docs.en-us\docs.en-us.csproj", "{4E574999-988E-49B9-908F-23C6EDA53FDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docs.pt-br", "docs.pt-br\docs.pt-br.csproj", "{5548C9D5-F90E-4E24-8522-C54A33C84954}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docs.pt-br", "docs.pt-br\docs.pt-br.csproj", "{5548C9D5-F90E-4E24-8522-C54A33C84954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "template", "template\template.csproj", "{30CC65E0-5919-4EE5-A248-CA501570221B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "template", "template\template.csproj", "{30CC65E0-5919-4EE5-A248-CA501570221B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snippets", "snippets\snippets.csproj", "{CFF180D6-BECC-4840-8981-2C2ED428A8B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "snippets", "snippets\snippets.csproj", "{CFF180D6-BECC-4840-8981-2C2ED428A8B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{19DC71FC-B02C-46A4-9548-4D9BE567D66C}"
+	ProjectSection(SolutionItems) = preProject
+		includes\rest-pki-samples-matrix.md = includes\rest-pki-samples-matrix.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
