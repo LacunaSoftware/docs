@@ -67,15 +67,29 @@ Ordered:
 
 > The actual numbering does not matter, DocFX will order the list when rendering the file. Prefer repeating `1.` on every item instead of writing `1.`, `2.`, `3.` etc because this allows for easy reodering of items.
 
+Ordered, stating on zero:
+
+```md
+0. Item 0
+0. Item 1
+0.0. Item 1.0
+0. Item 2
+```
+
+0. Item 0
+0. Item 1
+0.0. Item 1.0
+0. Item 2
+
 ### Images
 
 ```md
 ![Alt Text](url)
 ```
 
-`url` can be a remote URL, but is usually a relative reference to an image on the `images` folder.
+`url` can be a remote URL, but is usually a relative reference to an image on the [images/](images/) folder.
 
-To reference an image on `images/project-name/image.png`:
+For instance, to reference an image on `images/project-name/image.png` from the following locations:
 
 From `docs.en-us/articles/project-name/article.md`:
 
