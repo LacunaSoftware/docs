@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net45</TargetFramework>
+		<RuntimeIdentifier>win7-x86</RuntimeIdentifier>
 		<StartupObject>snippets.Program</StartupObject>
   </PropertyGroup>
 
