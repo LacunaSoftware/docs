@@ -42,14 +42,17 @@ Unordered:
 ```md
 * Item A
 * Item B
-** Subitem
+  * Prefix subitems with two **spaces**
+    * And so on
 * Item C
 ```
 
 * Item A
 * Item B
-** Subitem
+  * Prefix subitems with two **spaces**
+    * And so on
 * Item C
+	* With tabs works?
 
 Ordered:
 
