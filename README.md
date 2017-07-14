@@ -25,11 +25,15 @@ Here are sintaxes for the most common elements.
 This is a **bold** statement
 ```
 
+This is a **bold** statement
+
 ### Italic
 
 ```md
 This is a *foreign word*.
 ```
+
+This is a *foreign word*.
 
 ### Lists
 
@@ -38,19 +42,30 @@ Unordered:
 ```md
 * Item A
 * Item B
+** Subitem
 * Item C
 ```
+
+* Item A
+* Item B
+** Subitem
+* Item C
 
 Ordered:
 
 ```md
 1. Item 1
 1. Item 2
-1.1. Item 2.1
+1.1. Subitem
 1. Item 3
 ```
 
-The actual numbering does not matter, DocFX will order the list when rendering the file. Prefer repeating `1.` on every item instead of writing `1.`, `2.`, `3.` etc because this allows for easy reodering of items.
+1. Item 1
+1. Item 2
+1.1. Subitem
+1. Item 3
+
+> The actual numbering does not matter, DocFX will order the list when rendering the file. Prefer repeating `1.` on every item instead of writing `1.`, `2.`, `3.` etc because this allows for easy reodering of items.
 
 ### Images
 
@@ -58,13 +73,17 @@ The actual numbering does not matter, DocFX will order the list when rendering t
 ![Alt Text](url)
 ```
 
-Images are kept on the `images` folder, either on project subfolders or on the folder itself. So, say you are on `docs.en-us/articles/project-name/article.md` trying to reference an image on `images/project-name/image.png`, you'd do:
+`url` can be a remote URL, but is usually a relative reference to an image on the `images` folder.
+
+To reference an image on `images/project-name/image.png`:
+
+From `docs.en-us/articles/project-name/article.md`:
 
 ```md
 ![Image name](../../../images/project-name/image.png)
 ```
 
-Now, say you are on a subfolder of a project, say `docs.en-us/articles/project-name/subfolder/article.md`, trying to reference that same image. You'd need one `../` more:
+From `docs.en-us/articles/project-name/subfolder/article.md`:
 
 ```md
 ![Image name](../../../../images/project-name/image.png)
@@ -72,8 +91,8 @@ Now, say you are on a subfolder of a project, say `docs.en-us/articles/project-n
 
 Samples:
 
-* [docs.pt-br/articles/pki-sdk/get-started/nuget.md](docs.pt-br/articles/pki-sdk/get-started/nuget.md)
-* [docs.en-us/articles/web-pki/browser-support.md](docs.en-us/articles/web-pki/browser-support.md) (image on table)
+* `docs.pt-br/articles/pki-sdk/get-started/nuget.md` \[[source](docs.pt-br/articles/pki-sdk/get-started/nuget.md)\] \[[result](https://docs.lacunasoftware.com/pt-br/articles/pki-sdk/get-started/nuget)\]
+* `docs.en-us/articles/web-pki/browser-support.md` (image on table) \[[source](docs.en-us/articles/web-pki/browser-support.md)\] \[[result](https://docs.lacunasoftware.com/articles/web-pki/browser-support)\]
 
 ### Tables
 
