@@ -9,7 +9,7 @@
 | Symbol  | Description                                                         |
 | ------- | --------------                                                      |
 | ✓      | Available                                                           |
-| ✗      | Not available                                                       |
+|         | Not available (coming soon)                                         |
 | Dev     | In development                                                      |
 | Preview | Implemented but pending review, can be previewed on separate branch |
-| NP      | Not Planned                                                         |
+| ✗      | Not Planned (won't implement)                                       |
