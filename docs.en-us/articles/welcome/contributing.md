@@ -12,7 +12,7 @@ Follow these guidelines to create a new article:
 > [!TIP]
 > An easy way to ensure that the new article has UTF-8 BOM encoding is to copy an existing article instead of creating a new file
 
-You don't need to write both versions of the article right away, you can write only the title and render a shortcut to the other version:
+You don't need to write both versions of the article right away, you can write one of the versions and put this on the other one:
 
 ```md
 # Article title
