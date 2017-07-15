@@ -77,7 +77,8 @@
 			"_appFooter": "Copyright © 2015-2017 Lacuna Software",
 			"_appLogoPath": "images/logo.png",
 			"_appFaviconPath": "images/favicon.png",
-			"_disableAffix": true
+			"_disableAffix": true,
+			"_editLabel": "Edit on GitHub"
 		},
 		"fileMetadataFiles": [],
 		"template": [ "default" ],
