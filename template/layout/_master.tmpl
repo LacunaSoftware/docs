@@ -37,9 +37,11 @@
           {{^_disableAffix}}
           <div class="col-md-10">
           {{/_disableAffix}}
+            {{#docurl}}
             <div class="contribution-body-container">
                 <a href="{{docurl}}" class="contribution-link">{{_editLabel}}</a>
             </div>
+            {{/docurl}}
             <article class="content wrap" id="_content" data-uid="{{uid}}">
                 {{!body}}
             </article>
