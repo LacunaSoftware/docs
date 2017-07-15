@@ -78,7 +78,12 @@
 			"_appLogoPath": "images/logo.png",
 			"_appFaviconPath": "images/favicon.png",
 			"_disableAffix": true,
-			"_editLabel": "Editar no GitHub"
+			"_editLabel": "Editar no GitHub",
+			"_gitContribute": {
+				"repo": "https://github.com/LacunaSoftware/docs.git",
+				"branch": "master",
+				"path": "docs.pt-br"
+			}
 		},
 		"fileMetadataFiles": [],
 		"template": [ "default" ],
