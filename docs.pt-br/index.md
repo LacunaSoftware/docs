@@ -1,4 +1,7 @@
-﻿<div class="centered intro">
+﻿---
+_disableContribution: true
+---
+<div class="centered intro">
 	Bem-vindo ao docs.lacunasoftware.com, a nossa nova experiência unificada de documentação técnica. Para suporte a usuário final, por favor visite nossa [Central de Suporte](http://lacuna.help/).
 </div>
 
