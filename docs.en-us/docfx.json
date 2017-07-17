@@ -80,6 +80,14 @@
 			"_disableAffix": true,
 			"_editLabel": "Edit on GitHub"
 		},
+		"fileMetadata": {
+			"_gitContribute": {
+				"articles/**.md": {
+					"repo": "https://github.com/LacunaSoftware/docs.git",
+					"branch": "master"
+				}
+			}
+		},
 		"fileMetadataFiles": [],
 		"template": [ "default" ],
 		"postProcessors": [],
