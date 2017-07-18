@@ -1,7 +1,4 @@
-﻿---
-docurl: https://github.com/LacunaSoftware/docs/blob/master/docs.en-us/articles/web-pki/index.md
----
-# Lacuna Web PKI
+﻿# Lacuna Web PKI
 
 The Lacuna Web PKI component enables web applications to interact with digital certificates through javascript. The main features are:
 
