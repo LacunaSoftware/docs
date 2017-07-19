@@ -2,8 +2,9 @@
 
 O componente Web PKI possibilita que páginas web interajam com certificados digitais através de código javascript. As principais funcionalidades são:
 
-* Recuperar os certificados disponíveis
-* Ler o *encoding* de um certificado
+* Recuperar os certificados disponíveis (A1, A3, etc)
+* Obter os atributos públicos do certificado (Nome, e-mail, etc)
+* Ler a codificação binária de um certificado
 * Assinar dados (ou um hash pré-computado) com um certificado
 
 O principal objetivo do Web PKI é realizar o processamento client-side necessário em operações com certificados digitais. Um exemplo de operação seria uma

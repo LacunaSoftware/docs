@@ -41,7 +41,20 @@ Here are the most important links about how to author documentation:
 
 ## Markdown cheatsheet
 
-Here are sintaxes for the most common elements.
+Here are sintaxes for the most common elements:
+
+* [Headers](#headers)
+* [Bold](#bold)
+* [Italic](#italic)
+* [Inline code](#inline-code)
+* [Lists](#lists)
+* [Links](#links)
+* [Code snippets](#code-snippets)
+* [Includes](#includes)
+* [Include code snippets](#include-code-snippets)
+* [Images](#images)
+* [Blockquotes, notes and warnings](#blockquotes-notes-and-warnings)
+* [Tables](#tables)
 
 ### Headers
 
