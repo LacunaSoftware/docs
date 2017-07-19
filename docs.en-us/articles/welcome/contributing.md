@@ -212,7 +212,7 @@ such as `docs.en-us/articles/project-name/article.md`:
 [!include[Rest PKI samples matrix](../../../includes/rest-pki-samples-matrix.md)]
 ```
 
-Example: [Rest PKI](../rest-pki/index.md) \[[src](https://github.com/LacunaSoftware/docs/blob/master/docs.en-us/articles/rest-pki/index.md)\]
+Example: [Rest PKI](../rest-pki/index.md)
 
 ### Include code snippets
 
@@ -243,8 +243,8 @@ From `docs.en-us/articles/project-name/subfolder/article.md`:
 
 Samples:
 
-* [PKI SDK / Get started / Adding the nuget package](../pki-sdk/get-started/nuget.md) \[[src](https://github.com/LacunaSoftware/docs/blob/master/docs.pt-br/articles/pki-sdk/get-started/nuget.md)\]
-* [Web PKI / Browser support](../web-pki/browser-support.md) \[[src](https://github.com/LacunaSoftware/docs/blob/master/docs.en-us/articles/web-pki/browser-support.md)\]
+* [PKI SDK / Get started / Adding the nuget package](../pki-sdk/get-started/nuget.md)
+* [Web PKI / Browser support](../web-pki/browser-support.md)
 
 ### Blockquotes, notes and warnings
 
@@ -369,7 +369,7 @@ See also:
 
 * [Organizing information with tables - GitHub Help](https://help.github.com/articles/organizing-information-with-tables/)
 * Examples
-	* Table with leftmost upper cell blank: [Web PKI / Introduction](../web-pki/index.md) \[[src](https://github.com/LacunaSoftware/docs/blob/master/docs.en-us/articles/web-pki/index.md)\]
-	* Table with centered text: [Web PKI / Browser support](../web-pki/browser-support.md) \[[src](https://github.com/LacunaSoftware/docs/blob/master/docs.en-us/articles/web-pki/browser-support.md)\]
+	* Table with leftmost upper cell blank: [Web PKI / Introduction](../web-pki/index.md)
+	* Table with centered text: [Web PKI / Browser support](../web-pki/browser-support.md)
 
 
