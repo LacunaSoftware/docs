@@ -2,7 +2,8 @@
 
 The Lacuna Web PKI component enables web applications to interact with digital certificates through javascript. The main features are:
 
-* Displaying available certificates
+* Displaying available certificates (either software- or hardware-based)
+* Obtaining public properties of certificates (name, email address, etc.)
 * Reading a certificate's binary encoding
 * Signing data (or a pre-computed digest) with a certificate
 
