@@ -75,7 +75,7 @@ function onWebPkiError(message, error, origin) {
 A partir de então, você pode registrar apenas o callback de sucesso em cada chamada assíncrona.
 
 > [!NOTE]
-> Quando um erro ocorre e não há callback de erro registrado para a operação, o callback de erro padrão é chamado. Se não houver callback de erro registrado,
+> Quando um erro ocorre e não há callback de erro registrado para a operação, o callback de erro padrão é chamado. Se também não houver callback de erro padrão registrado,
 > uma exceção é lançada.
 
 <a name="customizing-not-installed" />
