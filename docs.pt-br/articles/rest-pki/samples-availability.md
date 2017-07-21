@@ -1,4 +1,4 @@
-﻿# Examplos do Rest PKI - Disponibilidade por projeto
+﻿# Rest PKI - Disponibilidade de exemplos por projeto
 
 Como temos diversos projetos de exemplo e estamos constantamente adicionando novos exemplos aos projetos, nem todos os
 exemplos de funcionalidades estão disponíveis em cada projeto. A tabela abaixo relaciona quais exemplos estão disponíveis

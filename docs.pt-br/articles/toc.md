@@ -23,8 +23,11 @@
 # [Rest PKI](rest-pki/index.md)
 ## [Disponibilidade de exemplos](rest-pki/samples-availability.md)
 ## [Client libs](rest-pki/client-libs/index.md)
-### [Guia da API (.NET)](xref:Lacuna.RestPki.Client)
-### [Guia da API (Java)](rest-pki/client-libs/java.md)
+### [Para PHP](rest-pki/client-libs/php.md)
+### [Para Java](rest-pki/client-libs/java.md)
+### [Para .NET](rest-pki/client-libs/dotnet.md)
+### [Para Python](rest-pki/client-libs/python.md)
+### [Para NodeJS](rest-pki/client-libs/nodejs.md)
 ## [Tags PAdES](rest-pki/pades-tags.md)
 ## [Histórico de versões](rest-pki/changelog.md)
 <!-- End of Rest PKI -->
