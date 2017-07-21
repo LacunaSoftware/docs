@@ -21,6 +21,7 @@
 
 <!-- Start of Rest PKI -->
 # [Rest PKI](rest-pki/index.md)
+## [Disponibilidade de exemplos](rest-pki/samples-availability.md)
 ## [Client libs](rest-pki/client-libs/index.md)
 ### [Guia da API (.NET)](xref:Lacuna.RestPki.Client)
 ### [Guia da API (Java)](rest-pki/client-libs/java.md)
