@@ -26,7 +26,7 @@ We also support PHP versions 5.2, 5.3 and 5.4.
 ### PHP 5.3 and 5.4
 
 For PHP 5.3 and 5.4, use the file [RestPkiLegacy.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/RestPkiLegacy.php). It requires the
-package [nategood/httpful](nategood/httpful), which needs to be added to your `composer.json`:
+package [nategood/httpful](https://packagist.org/packages/nategood/httpful), which needs to be added to your `composer.json`:
 
 ```json
 {
