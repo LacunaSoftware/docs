@@ -3,7 +3,8 @@
 The client lib for Java consists of	the package **com.lacunasoftware.restpki:restpki-client**, which is compatible with Java 7+ (for Java 6, see section below).
 
 > [!NOTE]
-> The package is not currently on Maven Central but on the private Maven repository at *http://dl.bintray.com/lacunasoftware/maven*
+> The package is not currently on Maven Central but on the private Maven repository at http://dl.bintray.com/lacunasoftware/maven, which needs
+> to be added to the list of repositories of your build file.
 
 If your project uses **Maven**, add this to your `pom.xml`:
 
@@ -55,5 +56,5 @@ If your project uses Java 6, use the package **com.lacunasoftware.restpki:restpk
 
 Both packages are open-source and can be viewed on:
 
-* restpki-client (for Java 7+): [https://bitbucket.org/Lacunas/restpki-java-client](https://bitbucket.org/Lacunas/restpki-java-client)
-* restpki-client-java6 (for Java 6): [https://github.com/LacunaSoftware/RestPkiJava6Client](https://github.com/LacunaSoftware/RestPkiJava6Client)
+* restpki-client (for Java 7+): https://bitbucket.org/Lacunas/restpki-java-client
+* restpki-client-java6 (for Java 6): https://github.com/LacunaSoftware/RestPkiJava6Client
