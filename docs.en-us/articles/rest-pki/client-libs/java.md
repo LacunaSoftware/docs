@@ -1,6 +1,7 @@
 ﻿# Rest PKI client lib for Java
 
-The client lib for Java consists of	the package **com.lacunasoftware.restpki:restpki-client**, which is compatible with Java 7+ (for Java 6, see section below).
+The client lib for Java consists of	the package [com.lacunasoftware.restpki:restpki-client](https://bintray.com/lacunasoftware/maven/restpki-client),
+which is compatible with Java 7+ (for Java 6, see section below).
 
 > [!NOTE]
 > The package is not currently on Maven Central but on the private Maven repository at http://dl.bintray.com/lacunasoftware/maven, which needs
@@ -50,7 +51,7 @@ See the [javadoc](https://docs.lacunasoftware.com/en-us/content/javadocs/restpki
 
 ## Java 6
 
-If your project uses Java 6, use the package **com.lacunasoftware.restpki:restpki-client-java6** instead.
+If your project uses Java 6, use the package [com.lacunasoftware.restpki:restpki-client-java6](https://bintray.com/lacunasoftware/maven/restpki-client-java6) instead.
 
 ## Source code
 
