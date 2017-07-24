@@ -7,7 +7,7 @@ Before we can define what a digital signature is, we must first talk about a bro
 In this sense, an electronic signature can be understood as a wide range of processes for associating a **signer** to an **electronic document** through some kind of **commitment** (for instance the commitment to comply with the document's contents, or the commitment of having witnessed an agreement).
 
 > [!NOTE]
-> The terms *signatory* and *signer* are symnonyms. We use the latter.
+> The terms *signatory* and *signer* are synonyms. We use the latter.
 
 For instance, the printout of a document that is first signed by hand and later faxed over might be considered an electronic signature. However, it may be argued that such a signature can be easily forfeit. Different electronic signature processes offer different guarantees, or *assurances*.
 
