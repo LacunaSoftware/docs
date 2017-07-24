@@ -4,7 +4,7 @@ Before we can define what a digital signature is, we must first talk about a bro
 
 > An electronic signature, or e-signature, refers to data in electronic form, which is logically associated with other data in electronic form and which is used by the signatory to sign.
 
-In this sense, an electronic signature can be understood as a wide range of processes for associating a **signer** to a **document** through some kind of **commitment** (for instance the commitment to comply with the document's contents, or the commitment of having witnessed the agreement).
+In this sense, an electronic signature can be understood as a wide range of processes for associating a **signer** to an **electronic document** through some kind of **commitment** (for instance the commitment to comply with the document's contents, or the commitment of having witnessed an agreement).
 
 > [!NOTE]
 > The terms *signatory* and *signer* are symnonyms. We use the latter.
@@ -17,10 +17,12 @@ Electronic signature processes can be categorized into different **assurance lev
 1. Advanced electronic signatures
 1. Qualified electronic signatures
 
-For the intents and purposes of this documentation, a **digital signature** is an **implementation of electronic signature using X.509 public key certificates** and adhering to a specific signature standard in order to achieve the **highest levels of assurance**.
+For the intents and purposes of this documentation, a **digital signature** is an **implementation of electronic signature** using **X.509 public key certificates** and adhering to a specific **signature standard** in order to achieve the **highest levels of assurance**.
 
 > [!NOTE]
 > The term *digital signature* should not be confused with *digital signature* ***algorithm***, which is a type of asymmetric cryptographic algorithm (for instance, the RSA algorithm). Usually, digital signature algorithms are a small part of the implementation of digital signatures.
+
+In all other articles, when we say simply *signature*, we mean a *digital signature* as defined above.
 
 ## Signature standards
 
