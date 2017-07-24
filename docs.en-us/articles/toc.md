@@ -3,6 +3,7 @@
 
 <!-- Start of PKI Solutions Guide -->
 # [PKI Solutions Guide](pki-guide/index.md)
+## [Digital signatures](pki-guide/signatures.md)
 ## [Web remote signatures](pki-guide/web-remote.md)
 ## [Web local signatures](pki-guide/web-local.md)
 ## [Server signatures](pki-guide/server.md)

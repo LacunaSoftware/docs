@@ -3,6 +3,7 @@
 
 <!-- Start of PKI Solutions Guide -->
 # [Certificação Digital](pki-guide/index.md)
+## [Assinaturas digitais](pki-guide/signatures.md)
 ## [Assinaturas web remotas](pki-guide/web-remote.md)
 ## [Assinaturas web locais](pki-guide/web-local.md)
 ## [Assinaturas de servidor](pki-guide/server.md)
