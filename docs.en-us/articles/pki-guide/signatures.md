@@ -17,10 +17,10 @@ Electronic signature processes can be categorized into different **assurance lev
 1. Advanced electronic signatures
 1. Qualified electronic signatures
 
-For the intents and purposes of this documentation, a **digital signature** is an implementation of electronic signature using X.509 public key certificates and adhering to a specific signature standard in order to achieve the highest levels of assurance.
+For the intents and purposes of this documentation, a **digital signature** is an **implementation of electronic signature using X.509 public key certificates** and adhering to a specific signature standard in order to achieve the **highest levels of assurance**.
 
 > [!NOTE]
-> The term *digital signature* should not be confused with *digital signature **algorithm***, which is a type of asymmetric cryptographic algorithm (for instance, the RSA algorithm). Digital signature algorithms are used to implement digital signatures, but these usually involve a number of other algorithms.
+> The term *digital signature* should not be confused with *digital signature* ***algorithm***, which is a type of asymmetric cryptographic algorithm (for instance, the RSA algorithm). Usually, digital signature algorithms are a small part of the implementation of digital signatures.
 
 ## Signature standards
 
