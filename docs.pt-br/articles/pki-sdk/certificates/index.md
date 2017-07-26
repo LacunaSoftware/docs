@@ -1,4 +1,19 @@
 ﻿# Certificados
 
-Ainda estamos no processo de migração da documentação para o novo portal unificado de documentação. Por ora, por favor
-[veja esse artigo no portal antigo](http://pki.lacunasoftware.com/Help/html/f45fc93f-0aff-4e2a-bb9a-7bb255710fd8.htm)
+A classe @Lacuna.Pki.PKCertificate provê visualização e manipulação de informações de certificados X509. A classe
+suporta o carregamento de certificados com encoding BER, DER, Base64 ou PEM.
+
+```cs
+// Para certificados com encoded bytes em BER, DER, Base64 ou PEM
+PKCertificate PKCertificate.Decode(byte[] certContent);
+
+// Para certificados com encoding Base64 ou PEM
+PKCertificate PKCertificate.Decode(string certContent);
+```
+
+Para mais exemplos de como carregar um certificado e iniciar o uso em nosso SDK, verifique o tópico seguinte:
+[Carregando certificados](decoding.md)
+
+## Veja também
+
+* @Lacuna.Pki.PKCertificate
