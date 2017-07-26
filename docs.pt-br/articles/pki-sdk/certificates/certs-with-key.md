@@ -45,8 +45,8 @@ certsWithKey.ForEach(c => Console.WriteLine(c.Certificate));
 
 A classe @Lacuna.Pki.PKCertificateWithKey permite realizar as seguintes operações com a chave privada do certificado:
 
-* Realização de algoritmo de assinatura (métodos @Lacuna.Pki.PKCertificateWithKey.SignData(Lacuna.Pki.SignatureAlgorithm,System.Byte[]) e @Lacuna.Pki.PKCertificateWithKey.SignHash(Lacuna.Pki.SignatureAlgorithm,System.Byte[]))
-* Verificação de algoritmo de assinatura (métodos @Lacuna.Pki.PKCertificateWithKey.VerifyData(Lacuna.Pki.SignatureAlgorithm,System.Byte[],System.Byte[]) e @Lacuna.Pki.PKCertificateWithKey.VerifyHash(Lacuna.Pki.SignatureAlgorithm,System.Byte[],System.Byte[]))
+* Realização de algoritmo de assinatura (métodos @Lacuna.Pki.PKCertificateWithKey.SignData(Lacuna.Pki.SignatureAlgorithm,System.Byte[]) e <xref:Lacuna.Pki.PKCertificateWithKey.SignHash(Lacuna.Pki.SignatureAlgorithm,System.Byte[])>)
+* Verificação de algoritmo de assinatura (métodos @Lacuna.Pki.PKCertificateWithKey.VerifyData(Lacuna.Pki.SignatureAlgorithm,System.Byte[],System.Byte[]) e <xref:Lacuna.Pki.PKCertificateWithKey.VerifyHash(Lacuna.Pki.SignatureAlgorithm,System.Byte[],System.Byte[]>)
 
 Seu uso é exemplificado a seguir.
 
