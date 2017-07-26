@@ -43,7 +43,7 @@
 ### [Certificados com chave privada associada](pki-sdk/certificates/certs-with-key.md)
 ### [Validando certificados](pki-sdk/certificates/validation.md)
 ### [Autenticação com certificado](pki-sdk/certificates/auth.md)
-### [Construção assistida de cadeias](pki-sdk/certificates/path-building.md)
+### [Construção assistida de cadeias](pki-sdk/certificates/chain-building.md)
 ### [Certificados de Atributo](pki-sdk/certificates/attribute-certs.md)
 ## [Assinaturas](pki-sdk/signatures/index.md)
 ### [Assinaturas padrão CAdES](pki-sdk/signatures/cades/index.md)
