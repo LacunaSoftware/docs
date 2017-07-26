@@ -169,6 +169,7 @@ Database model update: No
 Database model update: **Yes**
 
 - Add support for PDF marks
+- Add support to get the encapsulated file when opening a CAdES signature
 - Improve billing report
 
 
