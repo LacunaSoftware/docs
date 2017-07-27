@@ -57,7 +57,7 @@ var vr = cert.Validate(arbitrator);
 ```
 
 Também é possível criar o conjunto de árbitros através do construtor
-<xref:Lacuna.Pki.LinkedTrustArbitrator.#ctor(Lacuna.Pki.ITrustArbitrator[])> ou também utilizando o método de extensão
+<xref:Lacuna.Pki.LinkedTrustArbitrator.%23ctor(Lacuna.Pki.ITrustArbitrator[])> ou também utilizando o método de extensão
 @Lacuna.Pki.LinkedTrustArbitratorExtension.GetLinkedWith(Lacuna.Pki.ITrustArbitrator,Lacuna.Pki.ITrustArbitrator[])
 conforme demonstrado no código abaixo:
 
