@@ -43,7 +43,7 @@
 ### [Certificates with private key](pki-sdk/certificates/certs-with-key.md)
 ### [Validating certificates](pki-sdk/certificates/validation.md)
 ### [Certificate authentication](pki-sdk/certificates/auth.md)
-### [Aiding the certificate chain build](pki-sdk/certificates/chain-building.md)
+### [Augmenting certificate chain build](pki-sdk/certificates/chain-building.md)
 ### [Attribute Certificates](pki-sdk/certificates/attribute-certs.md)
 ## [Signatures](pki-sdk/signatures/index.md)
 ### [CAdES Signatures](pki-sdk/signatures/cades/index.md)
