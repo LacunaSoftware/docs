@@ -25,7 +25,7 @@ Os seguintes pacotes opcionais oferecem outras possibilidade de armazenamento:
 
 * [Azure Connector](azure-connector.md) (armazenamento no Azure Blob Storage)
 * [Amazon Connector](amazon-connector.md) (armazenamento no Amazon S3)
-* [Entity Framework Connector](ef-connector) (armazenamento em banco de dados)
+* [Entity Framework Connector](ef-connector.md) (armazenamento em banco de dados)
 
 ## Integração para log
 

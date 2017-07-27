@@ -92,7 +92,7 @@ com nome "LacunaPkiLog" seja criada no banco de dados. Se o seu projeto estiver 
 alterações necessárias ao banco de dados aparecerão na próxima migração criada.
 
 A partir de então, basta incluir no código de inicialização do seu site ou aplicação uma chamada ao método estático
-<xref:Lacuna.Pki.EntityFrameworkConnector.EntityFrameworkLogger.Configure(Lacuna.Pki.EntityFrameworkConnector.IPkiLogContext,Lacuna.Pki.LogLevels)>
+<xref:Lacuna.Pki.EntityFrameworkConnector.EntityFrameworkLogger.Configure(Lacuna.Pki.EntityFrameworkConnector.IPkiLogContext,LogLevels)>
 da classe `EntityFrameworkLogger` passando uma instância do seu `DbContext`:
 
 ```cs

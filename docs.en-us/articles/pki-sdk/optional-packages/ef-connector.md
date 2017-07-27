@@ -97,7 +97,7 @@ using code-based migrations, the necessary database changes will appear in the
 next migration you create.
 
 Then, all you need to do is call the method
-<xref:Lacuna.Pki.EntityFrameworkConnector.EntityFrameworkLogger.Configure(Lacuna.Pki.EntityFrameworkConnector.IPkiLogContext,Lacuna.Pki.LogLevels)>
+<xref:Lacuna.Pki.EntityFrameworkConnector.EntityFrameworkLogger.Configure(Lacuna.Pki.EntityFrameworkConnector.IPkiLogContext,LogLevels)>
 of the `EntityFrameworkLogger` class passing an instance of your `DbContext`:
 
 ```cs
