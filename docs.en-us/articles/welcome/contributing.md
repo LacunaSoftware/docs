@@ -182,6 +182,12 @@ In some cases, the syntax `@uid` does not work for cross referencing. In such ca
 <xref:Lacuna.RestPki.Client.RestPkiClient>
 ```
 
+If the uid contains a `#`, encode it as `%23`:
+
+```md
+<xref:Lacuna.Pki.LinkedTrustArbitrator.%23ctor(Lacuna.Pki.ITrustArbitrator[])>
+```
+
 Links to article sections:
 
 First, you need to declare the anchor name right before the section header:
