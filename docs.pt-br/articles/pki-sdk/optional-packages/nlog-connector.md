@@ -1,4 +1,49 @@
 ﻿# NLog Connector
 
-Ainda estamos no processo de migração da documentação para o novo portal unificado de documentação. Por ora, por favor
-[veja esse artigo no portal antigo](http://pki.lacunasoftware.com/Help/html/a6a0eefd-01df-4144-8259-56d801653f35.htm)
+O pacote opcional [Lacuna PKI Entity NLog Connector](https://www.nuget.org/packages/Lacuna.Pki.NLogConnector/)
+possibilita enviar logs gerados pelo SDK para a biblioteca [NLog](http://nlog-project.org/).
+
+Para isso, basta incluir a seguinte chamada no código de inicialização do seu site ou aplicação:
+
+```cs
+Lacuna.Pki.NLogConnector.NLogLogger.Configure();
+```
+
+A partir de então, todas as mensagens de log geradas pelo SDK serão repassadas ao NLog. A configuração do NLog,
+entretanto, fica sob sua responsabilidade. O trecho abaixo mostra um exemplo de configuração do arquivo `web.config`
+para enviar os logs para um arquivo no disco local:
+
+```xml
+<configuration>
+  <configSections>
+    <section name="nlog" type="NLog.Config.ConfigSectionHandler, NLog" />
+  </configSections>
+  <nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <targets async="true">
+      <target name="pkiLog" xsi:type="File" fileName="C:\Logs\LacunaPKI.log" layout="${longdate} ${level}: ${message}" />
+    </targets>
+    <rules>
+      <logger name="Lacuna.Pki.*" writeTo="pkiLog" />
+    </rules>
+  </nlog>
+</configuration>
+```
+
+> [!NOTE]
+> É muito importante especificar logs assíncronos (`async="true"` na tag `targets`), caso contrário a performance do
+> SDK pode ser consideravelmente impactada.
+
+As mensagens são enviadas ao NLog com diferentes *logger names*, de acordo com o método interno do SDK que gerou a
+mensagem. Todos os *logger names* começam com `Lacuna.Pki.` (por isso o atributo `name="Lacuna.Pki.*"` na tag `logger`
+no exemplo acima).
+
+## Dependência do pacote NLog
+
+Para maximizar a compatibilidade, o pacote Lacuna PKI NLog Connector depende de uma versão antiga do pacote NLog.
+Entretanto, recomendamos fortemente que seja utilizado versão mais atual do pacote.
+
+## Código-fonte
+
+O código-fonte do pacote Lacuna PKI NLog Connector é aberto, ficando hospedado no
+[BitBucket](https://bitbucket.org/Lacunas/pkinlogconnector). Caso queira customizá-lo, você pode fazer um fork do
+projeto e utilizar a sua versão customizada ao invés do pacote opcional.
