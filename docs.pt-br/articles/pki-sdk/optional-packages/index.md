@@ -14,7 +14,7 @@ opcional depende dele e de um outro pacote, com o qual ele habilita integração
 Algumas operações requerem um "storage externo", um local para armazenar e recuperar dados. Alguns exemplos de
 operações que requerem um storage externo são:
 
-* Compressão e decompressão de assinaturas CAdES (para mais informações veja [Compressão de assinaturas](../signatures/cades/compression.md)).
+* Compressão e descompressão de assinaturas CAdES (para mais informações veja [Compressão de assinaturas](../signatures/cades/compression.md)).
 * Criação e validação de assinaturas CAdES com referências de validação porém sem valores de validação (por exemplo, políticas CAdES-C, CAdES-X Type 1 e ICP-Brasil AD-RV).
 
 Para realizar essa operações, é necessário passar para o SDK um objeto que implemente a interface
