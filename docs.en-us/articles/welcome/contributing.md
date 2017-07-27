@@ -176,6 +176,12 @@ See method @Lacuna.RestPki.Client.RestPkiClient.GetPkiBrazilTimestamper
 
 > To find out the exact UIDs of classes and methods, see .yml files on folder `api` after building the docfx project.
 
+In some cases, the syntax `@uid` does not work for cross referencing. In such cases, use:
+
+```md
+<xref:Lacuna.RestPki.Client.RestPkiClient>
+```
+
 Links to article sections:
 
 First, you need to declare the anchor name right before the section header:
