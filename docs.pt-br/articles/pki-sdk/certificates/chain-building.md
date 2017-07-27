@@ -26,16 +26,16 @@ certificados intermediários** no artigo da Microsoft
 
 ## Parâmetro ICertificateStore
 
-A biblioteca oferece o uso de um store de certificados em memória (@Lacuna.Pki.Stores.MemoryCertificateStore) e também
-a possibilidade do usuário criar sua própria implementação da interface @Lacuna.Pki.Stores.ICertificateStore caso deseje
-utilizar uma estrutura mais complexa e comunicável com outros sistemas como banco de dados, cache, entre outros.
+A biblioteca oferece o uso de um store de certificados em memória (<xref:Lacuna.Pki.Stores.MemoryCertificateStore>) e
+também a possibilidade do usuário criar sua própria implementação da interface @Lacuna.Pki.Stores.ICertificateStore caso
+deseje utilizar uma estrutura mais complexa e comunicável com outros sistemas como banco de dados, cache, entre outros.
 
 O parâmetro pode ser passado tanto no momento de carga do certificado (métodos
 <xref:Lacuna.Pki.PKCertificate.Decode(System.Byte[],Lacuna.Pki.Stores.ICertificateStore)>
 ou
 <xref:Lacuna.Pki.PKCertificate.Decode(System.String,Lacuna.Pki.Stores.ICertificateStore)>)
 quanto na propriedade @Lacuna.Pki.CertificateValidationOptions.CertificateStore das opções de validação
-(@Lacuna.Pki.CertificateValidationOptions).
+(<xref:Lacuna.Pki.CertificateValidationOptions>).
 
 Exemplo de uso na carga:
 
