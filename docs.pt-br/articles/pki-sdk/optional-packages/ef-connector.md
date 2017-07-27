@@ -3,7 +3,7 @@
 O pacote opcional
 [Lacuna PKI Entity Framework Connector](https://www.nuget.org/packages/Lacuna.Pki.EntityFrameworkConnector/)
 possibilita as seguintes integrações entre o SDK e o
-[Microsoft Entity Framework](https://msdn.microsoft.com/en-us/data/ef.aspx):
+[Microsoft Entity Framework](https://docs.microsoft.com/pt-br/ef/):
 
 * Compressão e descompressão de assinaturas CAdES armazenando as LCRs e certificados em banco de dados
 * Criação e validação de assinaturas CAdES com referência de revogação porém sem valores de revogação armazenando os valores em banco de dados
@@ -88,7 +88,7 @@ public class MyDbContext : DbContext, IPkiLogContext {
 ```
 
 Se o seu projeto estiver usando *automatic migrations*, essa alteração ao `DbContext` irá fazer com que uma nova tabela
-com nome "LacunaPkiLog" seja criada no banco de dados. Se o seu projeto estiver usando `code-based migrations`, as
+com nome "LacunaPkiLog" seja criada no banco de dados. Se o seu projeto estiver usando *code-based migrations*, as
 alterações necessárias ao banco de dados aparecerão na próxima migração criada.
 
 A partir de então, basta incluir no código de inicialização do seu site ou aplicação uma chamada ao método estático

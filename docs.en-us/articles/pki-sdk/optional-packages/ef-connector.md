@@ -1,9 +1,9 @@
 ﻿# Entity Framework Connector
 
-This package
+The package
 [Lacuna PKI Entity Framework Connector](https://www.nuget.org/packages/Lacuna.Pki.EntityFrameworkConnector/)
 enables the following integrations between the PKI SDK and
-[Microsoft Entity Framework](https://msdn.microsoft.com/en-us/data/ef.aspx):
+[Microsoft Entity Framework](https://docs.microsoft.com/en-us/ef/):
 
 * Compress and decompress CAdES signatures storing the CRLs and certificates in
   a database
@@ -46,7 +46,7 @@ using (var dbContext = new MyDbContext()) {
 	var store = new EntityFrameworkStore(dbContext);
 	...
 });
-```cs
+```
 
 Once you have an instance of `EntityFrameworkStore` you can, for instance,
 compress and decompress a CAdES signature:
@@ -59,9 +59,11 @@ var decompressedSignature = CadesSignatureCompression.Decompress(compressedSigna
 ```
 
 > [!WARNING]
-> The `EntityFrameworkStore` class WILL NOT CALL the `SaveChanges()` method, you
-> must call it yourself. This is meant to enable you to make the compression a
-> part of a transaction in your business logic. So, make sure you call `SaveChanges()` afterwards:
+> The `EntityFrameworkStore` class **will not call** the `SaveChanges()` method, you
+> must call it yourself.
+
+The `SaveChanges()` method is not called automatically in order to enable you to make the compression a part of a
+transaction in your business logic. Therefore, make sure you call `SaveChanges()` afterwards:
 
 ```cs
 using (var dbContext = new MyDbContext()) {
@@ -102,10 +104,10 @@ of the `EntityFrameworkLogger` class passing an instance of your `DbContext`:
 EntityFrameworkLogger.Configure(new MyDbContext());
 ```
 
-> [!TIP
+> [!TIP]
 > The `EntityFrameworkLogger` class will call `SaveChanges()` on the given context
 > whenever it deems necessary. Therefore, it is a good idea to pass to it a
-> DbContext instance of its own.
+> `DbContext` instance of its own.
 
 ## Dependency on Entity Framework
 
