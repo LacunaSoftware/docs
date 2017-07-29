@@ -48,5 +48,5 @@ interface @Lacuna.Pki.Stores.ISimpleStore.
 
 * @Lacuna.Pki.Cades.CadesSignatureCompression
 * @Lacuna.Pki.Stores.ISimpleStore
-* @Lacuna.PKi.Stores.FileSystemSimpleStore
+* @Lacuna.Pki.Stores.FileSystemSimpleStore
 * [Pacotes nuget opcionais](../../optional-packages/index.md)
