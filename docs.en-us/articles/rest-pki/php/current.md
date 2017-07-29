@@ -1,7 +1,7 @@
 ﻿# Using Rest PKI on PHP 5.5+
 
 > [!NOTE]
-> This article refers to usage on **PHP 5.5++** (including PHP 7.x). For earlier versions, [click here](index.md).
+> This article refers to usage on **PHP 5.5+** (including PHP 7.x). For earlier versions, [click here](index.md).
 
 We are still migrating the documentation to the new unified portal. For now, please[see this article on GitHub](https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP)
 ## Client lib
