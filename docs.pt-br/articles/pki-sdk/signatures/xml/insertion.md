@@ -28,7 +28,7 @@ nos assinadores.
 
 Como exemplo, iremos fazer uma assinatura do documetno XML inteiro abaixo:
 
-```cs
+```xml
 <invoice xmlns="http://www.lacunasoftware.com/sample">
   <issuer>
     <name>Lacuna Software Ltda EPP</name>
@@ -76,7 +76,7 @@ var signedXml = signer.GetSignedXml();   // Return signed XML
 
 O resultado do XML assinado terá o elemento de assinatura inserido como filho do elemento `<signaturePlaceholder>`.
 
-```cs
+```xml
 <invoice xmlns="http://www.lacunasoftware.com/sample">            
   ...
   <signaturePlaceholder>
