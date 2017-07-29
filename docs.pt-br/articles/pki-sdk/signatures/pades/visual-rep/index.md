@@ -30,7 +30,7 @@ Para mais informações verifique o guia da API de cada classe.
 	especificada. A figura abaixo exemplifica o comportamento do posicionamento automático. O retângulo vermelho representa
 	o container definido no qual as representações visuais serão posicionadas automaticamente em série.
 
-    ![Visual representation auto positioning](../../../../../../images/visual-rep-result-mini.png)
+    ![Visual representation auto positioning](../../../../../../images/pki-sdk/visual-rep-result-mini.png)
 
   * Posicionamento Manual
 
@@ -64,13 +64,13 @@ A posição do retângulo de assinatura em relação à página é especificada 
 @Lacuna.Pki.Pades.PadesVisualManualPositioning.SignatureRectangle. Um retângulo pode ter os parâmetros `Top`, `Bottom`,
 `Left`, `Right`, `Width` e `Height` conforme mostrado na figura abaixo.
 
-![PAdES rectangle](../../../../../../images/pades-rectangle.png)
+![PAdES rectangle](../../../../../../images/pki-sdk/pades-rectangle.png)
 
 Por exemplo, para especificar que a representação visual deve ser inserida na última página do documento, tendo tamanho
 7cm de largura e 3cm de altura, ficando a 2.5cm das margens esquerda e inferior, conforme a imagem abaixo, escreveríamos
 o seguinte código:
 
-![PAdES visual representation manual positioning](../../../../../../images/pades-visual-rep-manual-pos.png)
+![PAdES visual representation manual positioning](../../../../../../images/pki-sdk/pades-visual-rep-manual-pos.png)
 
 ```cs
 var signer = new PadesSigner();
@@ -115,7 +115,7 @@ documento dentro de um container espaçado 2.5cm das bordas esquerda, direita e 
 que cada retângulo de assinatura deve ter 7cm de largura por 3cm de altura, conforme ilustrado na imagem abaixo,
 escreveríamos o seguinte código:
 
-![PAdES visual representation auto positioning](../../../../../../images/auto-positioning.png)
+![PAdES visual representation auto positioning](../../../../../../images/pki-sdk/auto-positioning.png)
 
 ```cs
 var signer = new PadesSigner();
@@ -144,7 +144,7 @@ signer.SetVisualRepresentation(visual);
 
 As assinaturas realizadas com o código acima terão o resultado esperado conforme a imagem abaixo:
 
-![PAdES visual representation auto positioning result](../../../../../../images/visual-rep-result.png)
+![PAdES visual representation auto positioning result](../../../../../../images/pki-sdk/visual-rep-result.png)
 
 ## Posicionamento de texto e imagem
 
@@ -157,7 +157,7 @@ As assinaturas realizadas com o código acima terão o resultado esperado confor
 
   Como exemplo, definiremos um posicionamneto do texto relativo ao retângulo de assinatura conforme a figura abaixo.
 
-  ![PAdES visual text](../../../../../../images/pades-visual-text.png)
+  ![PAdES visual text](../../../../../../images/pki-sdk/pades-visual-text.png)
 
   ```cs
   var text = new PadesVisualText() {                          // Texto da representação visual
