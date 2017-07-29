@@ -1,6 +1,6 @@
 ﻿# Resolução de IDs
 
-Para ssinatura de um elemento do XML, é necessário que este elemento possua um atributo ID único no documento. Caso o
+Para assinatura de um elemento do XML, é necessário que este elemento possua um atributo ID único no documento. Caso o
 XML defina um nome diferente para o atributo ID, será necessário a definição de uma resolução de ID.
 
 A resolução de ID pode ser definida tanto globalmente, caso a mudança no atributo ID seja aplicada no XML inteiro,
@@ -32,7 +32,7 @@ signer.SetXml(xml);
 signer.SetSigningCertificate(cert);
 signer.SetPolicy(policy);
 signer.SetToSignElementId(":9e2e5bbc-b4a0-41dc-a342-98f1554f32a3");
-signer.SetIdResolutionTable(idResolutionTable);                      // set ID reolution table
+signer.SetIdResolutionTable(idResolutionTable);                      // set ID resolution table
 signer.ComputeSignature();
 ```
 
@@ -54,7 +54,7 @@ signer.SetXml(xml);
 signer.SetSigningCertificate(cert);
 signer.SetPolicy(policy);
 signer.SetToSignElementId(":9e2e5bbc-b4a0-41dc-a342-98f1554f32a3");
-signer.SetIdResolutionTable(idResolutionTable);                      // set ID reolution table
+signer.SetIdResolutionTable(idResolutionTable);                      // set ID resolution table
 signer.ComputeSignature();
 ```
 
