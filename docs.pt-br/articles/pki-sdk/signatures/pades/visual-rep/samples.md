@@ -145,7 +145,7 @@ signer.ComputeSignature();
 
 byte[] signedPdf = signer.GetPadesSignature();                  // Retorna os bytes do PDF assinado com
                                                                 // representação visual
-```cs
+```
 
 A execução do exemplo acima produz o seguinte resultado na assinatura de um PDF:
 
