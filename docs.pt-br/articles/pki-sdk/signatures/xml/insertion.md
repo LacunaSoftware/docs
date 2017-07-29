@@ -20,13 +20,14 @@ XML, portanto não se aplica a coluna *Padrão sem um documento XML passado*
 
 Caso se queira definir um local customizado para a inclusão do elemento de assinatura, verifique a seção seguinte.
 
+<a name="custom-location" />
 ## Definindo local para inclusão do elemento de assinatura
 
 No PKI SDK, é possível customizar o local de inclusão do elemento de assinatura através do método
 @Lacuna.Pki.Xml.XmlSigner.SetSignatureElementLocation(System.String,Lacuna.Pki.Xml.NamespaceManager,Lacuna.Pki.Xml.XmlInsertionOptions)
 nos assinadores.
 
-Como exemplo, iremos fazer uma assinatura do documetno XML inteiro abaixo:
+Como exemplo, iremos fazer uma assinatura do documento XML inteiro abaixo:
 
 ```xml
 <invoice xmlns="http://www.lacunasoftware.com/sample">
@@ -89,7 +90,7 @@ O resultado do XML assinado terá o elemento de assinatura inserido como filho d
 ```
 
 > [!NOTE]
-> Em relação ao parâmetro `string xpath` do métedo
+> Em relação ao parâmetro `string xpath` do método
 > @Lacuna.Pki.Xml.XmlSigner.SetSignatureElementLocation(System.String,Lacuna.Pki.Xml.NamespaceManager,Lacuna.Pki.Xml.XmlInsertionOptions)
 > no assinador @Lacuna.Pki.Xml.XmlElementSigner, o xpath é executado a partir do elemento escolhido para assinatura,
 enquanto nos outros assinadores é executado a partir do elemento raiz do XML.
