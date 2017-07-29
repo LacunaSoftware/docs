@@ -47,22 +47,22 @@ signer.ComputeSignature();                  // cria atributos e colhe assinatura
 var cadesSig = signer.GetSignature();       // monta o pacote de assinatura e retorna os bytes com encoding BER
 ```
 
-* @Lacuna.Pki.Cades.CadesSigner.SetSigningCertificate(Lacuna.Pki.PKCertificateWithKey)
+* @Lacuna.Pki.Cades.CadesSigner.SetSigningCertificate(Lacuna.Pki.PKCertificateWithKey) -
   Usado para definir o certificado do signatário na assinatura. No exemplo é utilizado um certificado com chave privada
   associada. Para mais informações de como carregar um certificado com chave privada associada veja o artigo
   [Certificados com chave privada associada](../../certificates/certs-with-key.md).
 
-* @Lacuna.Pki.Cades.CadesSigner.SetDataToSign(System.Byte[])
+* @Lacuna.Pki.Cades.CadesSigner.SetDataToSign(System.Byte[]) -
   Usado para definir os dados a serem assinados. O padrão CAdES permite que seja assinado qualquer tipo binário de arquivo
   ou dados.
 
-* @Lacuna.Pki.Cades.CadesSigner.SetPolicy(Lacuna.Pki.Cades.CadesPolicySpec)
+* @Lacuna.Pki.Cades.CadesSigner.SetPolicy(Lacuna.Pki.Cades.CadesPolicySpec) -
   Define a política de assinatura. O SDK possui políticas já configuradas nos padrões de algumas PKIs, como a ICP-Brasil,
   e também permite que você crie ou customize uma política própria. No exemplo foi passada uma política já configurada no
   padrão ICP-Brasil AD-RT. Para mais informações sobre poíticas de assinatura veja o artigo 
   [Políticas de assinatura](../policies/index.md).
 
-* @Lacuna.Pki.Cades.CadesSigner.SetTimestampRequester(Lacuna.Pki.ITimestampRequester)
+* @Lacuna.Pki.Cades.CadesSigner.SetTimestampRequester(Lacuna.Pki.ITimestampRequester) -
   Define um requester para solicitar carimbos de tempo a uma carimbadora. A política de assinatura utilizada no exemplo
   (ICP-Brasil AD-RT) requer o uso de carimbo de assinatura, portanto é necessário passar um requester de carimbo de tempo
   para o assinador.
