@@ -22,13 +22,16 @@
 
 <!-- Start of Rest PKI -->
 # [Rest PKI](rest-pki/index.md)
+## [Usando em PHP](rest-pki/php/index.md)
+### [PHP 5.3 e 5.4](rest-pki/php/legacy.md)
+### [PHP 5.2](rest-pki/php/legacy52.md)
+## [Usando em Java](rest-pki/java/index.md)
+### [Java 6](rest-pki/java/legacy.md)
+## [Usando em .NET](rest-pki/dotnet.md)
+## [Usando em Python](rest-pki/python.md)
+## [Usando em Node.js](rest-pki/nodejs.md)
+## [Usando em Ruby](rest-pki/ruby.md)
 ## [Disponibilidade de exemplos](rest-pki/samples-availability.md)
-## [Client libs](rest-pki/client-libs/index.md)
-### [Para PHP](rest-pki/client-libs/php.md)
-### [Para Java](rest-pki/client-libs/java.md)
-### [Para .NET](rest-pki/client-libs/dotnet.md)
-### [Para Python](rest-pki/client-libs/python.md)
-### [Para NodeJS](rest-pki/client-libs/nodejs.md)
 ## [Tags PAdES](rest-pki/pades-tags.md)
 ## [Histórico de versões](rest-pki/changelog.md)
 <!-- End of Rest PKI -->

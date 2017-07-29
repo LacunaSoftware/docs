@@ -1,4 +1,7 @@
-﻿# Rest PKI client lib for .NET
+﻿# Using Rest PKI on .NET
+
+We are still migrating the documentation to the new unified portal. For now, please[see this article on GitHub](https://github.com/LacunaSoftware/RestPkiSamples/tree/master/CSharp) 
+## Client lib
 
 The client lib for .NET (C# and Visual Basic .NET) consists of the Nuget package [Lacuna.RestPki.Client](https://www.nuget.org/packages/Lacuna.RestPki.Client/). The following platforms are supported:
 

@@ -1,2 +1,29 @@
 ﻿# Rest PKI
 
+O [Rest PKI](https://pki.rest/) é um serviço em nuvem para realizar operações de certificação digital como
+assinaturas digitais e autenticação por certificado digital que pode ser utilizado a partir de virtualmente qualquer
+linguagem de programação.
+
+Embora o Rest PKI ofereça diversas APIs REST que podem ser facilmente consumidas, elas normalmente não são utilizadas
+diretamente. Ao invés disso, oferecemos bibliotecas para consumir os serviços do Rest PKI (*client libs*) em diversas
+linguagens de programação e diversos projetos de exemplo que demonstram o uso dessas bibliotecas, de modo que os
+programadores não precisem se preocupar com os detalhes envolvidos no consumo de APIs e possam codificar diretamente
+em sua linguagem preferida.
+
+Escolha uma das linguagens de programação abaixo para começar:
+
+* [PHP](php/index.md)
+* [Java](java/index.md)
+* [.NET](dotnet.md) (C# e Visual Basic .NET)
+* [Python](python.md)
+* [Node.js](nodejs.md)
+* [Ruby](ruby.md)
+
+> [!NOTE]
+> Não encontrou a sua linguagem de programação favorita? [Fale com a gente](https://www.lacunasoftware.com/pt/home/purchase).
+
+## *On premises*
+
+Se por algum motivo você não possa ou não queira utilizar um serviço em nuvem, é possível hospedar sua própria
+instância do Rest PKI na sua própria infraestrutura ("on premises"). Veja o
+[material comercial do produto](https://www.lacunasoftware.com/pt/home/certificate#/rest) para mais informações.
