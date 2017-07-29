@@ -1,4 +1,89 @@
 ﻿# Assinaturas padrão CAdES
 
-Ainda estamos no processo de migração da documentação para o novo portal unificado de documentação. Por ora, por favor
-[veja esse artigo no portal antigo](http://pki.lacunasoftware.com/Help/html/7083205a-1dde-4931-b772-ba5a4b73e959.htm)
+O padrão CAdES permite que se faça uma assinatura de qualquer arquivo binário. A classe @Lacuna.Pki.Cades.CadesSigner é
+responsável pela criação, customização e montagem do pacote de assinatura CMS.
+
+## Exemplo de assinatura básica
+
+O código abaixo exemplifica uma assinatura CAdES básica com o objetivo de apresentar e exercitar os conceitos e
+propriedades desse assinador.
+
+```cs
+// Instanciamos o objeto signer que é responsável por criar a assinatura
+var signer = new CadesSigner();
+
+signer.SetSigningCertificate(signingCert);       // certificado do signatário com chave privada associada
+signer.SetDataToSign(toSign);                    // bytes ou stream do documento a ser assinado
+signer.SetPolicy(CadesPolicySpec.GetCadesBes()); // política de assinatura CAdES-BES com raízes do Windows como TrustArbitrator
+signer.ComputeSignature();                       // cria atributos e colhe assinatura do signatário
+
+var cadesSig = signer.GetSignature();            // monta o pacote de assinatura e retorna os bytes com encoding BER
+```
+
+## Exemplo de assinatura avançada
+
+Abaixo exemplificamos uma assinatura CAdES com política de assinatura ICP-Brasil AD-RT (com carimbo de tempo) e em seguida
+detalhamos cada método Set utilizado no assinador.
+
+```cs
+PKCertificateWithKey signingCert = ...
+byte[] toSign = ...
+
+// Política de assinatura ICP-Brasil AD-RT
+var policy = BrazilCadesPolicySpec.GetAdrTempoV21();
+
+// Criando requester de carimbo de tempo através da uri da carimbadora tsUri
+var tsRequester = new TimestampRequester(tsUri);
+
+// Instanciamos o objeto signer que é responsável por criar a assinatura
+var signer = new CadesSigner();
+
+signer.SetSigningCertificate(signingCert);  // certificado do signatário com chave privada associada
+signer.SetDataToSign(toSign);               // bytes ou stream dos dados a serem assinados
+signer.SetPolicy(policy);                   // política de assinatura
+signer.SetTimestampRequester(tsRequester);  // requester do carimbo de tempo
+signer.ComputeSignature();                  // cria atributos e colhe assinatura do signatário
+
+var cadesSig = signer.GetSignature();       // monta o pacote de assinatura e retorna os bytes com encoding BER
+```
+
+* @Lacuna.Pki.Cades.CadesSigner.SetSigningCertificate(Lacuna.Pki.PKCertificateWithKey)
+  Usado para definir o certificado do signatário na assinatura. No exemplo é utilizado um certificado com chave privada
+  associada. Para mais informações de como carregar um certificado com chave privada associada veja o artigo
+  [Certificados com chave privada associada](../../certificates/certs-with-key.md).
+
+* @Lacuna.Pki.Cades.CadesSigner.SetDataToSign(System.Byte[])
+  Usado para definir os dados a serem assinados. O padrão CAdES permite que seja assinado qualquer tipo binário de arquivo
+  ou dados.
+
+* @Lacuna.Pki.Cades.CadesSigner.SetPolicy(Lacuna.Pki.Cades.CadesPolicySpec)
+  Define a política de assinatura. O SDK possui políticas já configuradas nos padrões de algumas PKIs, como a ICP-Brasil,
+  e também permite que você crie ou customize uma política própria. No exemplo foi passada uma política já configurada no
+  padrão ICP-Brasil AD-RT. Para mais informações sobre poíticas de assinatura veja o artigo 
+  [Políticas de assinatura](../policies/index.md).
+
+* @Lacuna.Pki.Cades.CadesSigner.SetTimestampRequester(Lacuna.Pki.ITimestampRequester)
+  Define um requester para solicitar carimbos de tempo a uma carimbadora. A política de assinatura utilizada no exemplo
+  (ICP-Brasil AD-RT) requer o uso de carimbo de assinatura, portanto é necessário passar um requester de carimbo de tempo
+  para o assinador.
+
+## Assinatura remota
+
+O assinador @Lacuna.Pki.Cades.CadesSigner também permite a criação de CAdES em que a assinatura é realizada remotamente,
+por exemplo no browser do cliente. Para isso, o método a ser utilizado na definição do signatário não tem chave privada
+associada: @Lacuna.Pki.Cades.CadesSigner.SetSigningCertificate(Lacuna.Pki.PKCertificate). Também serão utilizado os métodos
+de gerar os dados a serem assinados pelo cliente
+(<xref:Lacuna.Pki.Cades.CadesSigner.GenerateToSignBytes(Lacuna.Pki.SignatureAlgorithm@)>)
+e o método de incluir os dados assinados no CAdES
+(<xref:Lacuna.Pki.Cades.CadesSigner.SetPrecomputedSignature(System.Byte[])>).
+
+Para mais informações sobre assinatura remota veja o artigo
+[Assinatura com chave remota (assinatura no browser)](../web-remote.md).
+
+## Veja também
+
+* @Lacuna.Pki.Cades.CadesSigner
+* @Lacuna.Pki.PKCertificateWithKey
+* @Lacuna.Pki.PKCertificate
+* [Políticas de assinatura](../policies/index.md)
+* [Assinatura com chave remota (assinatura no browser)](../web-remote.md)
