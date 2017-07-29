@@ -34,10 +34,10 @@ Para mais informações verifique o guia da API de cada classe.
 
   * Posicionamento Manual
 
-  O posicionamento manual é indicado para os casos em que cada representação das assinaturas serão inseridas em posições
-  arbitrárias, por exemplo a posição e a página serem informados pelo usuário.
+    O posicionamento manual é indicado para os casos em que cada representação das assinaturas serão inseridas em posições
+    arbitrárias, por exemplo a posição e a página serem informados pelo usuário.
 
-  ![Visual representation manual positioning](../../../../../../images/visual-rep-manual-mini.png)
+    ![Visual representation manual positioning](../../../../../../images/pki-sdk/visual-rep-manual-mini.png)
 
 * Texto
 
