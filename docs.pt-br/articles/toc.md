@@ -23,9 +23,11 @@
 <!-- Start of Rest PKI -->
 # [Rest PKI](rest-pki/index.md)
 ## [Usando em PHP](rest-pki/php/index.md)
+### [PHP 5.5+](rest-pki/php/current.md)
 ### [PHP 5.3 e 5.4](rest-pki/php/legacy.md)
 ### [PHP 5.2](rest-pki/php/legacy52.md)
 ## [Usando em Java](rest-pki/java/index.md)
+### [Java 7+](rest-pki/java/current.md)
 ### [Java 6](rest-pki/java/legacy.md)
 ## [Usando em .NET](rest-pki/dotnet.md)
 ## [Usando em Python](rest-pki/python.md)

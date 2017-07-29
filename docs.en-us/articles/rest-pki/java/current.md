@@ -1,14 +1,15 @@
-﻿# Using Rest PKI on Java 6
+﻿# Using Rest PKI on Java 7+
 
 > [!NOTE]
-> This article refers to usage on **Java 6**. For Java 7+, see article [Using Rest PKI on Java 7+](current.md).
+> This article refers to usage on **Java 7+**. For Java 6, see article [Using Rest PKI on Java 6](legacy.md).
 
 We are still migrating the documentation to the new unified portal. For now, please
-[see this article on GitHub](https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Java#java-6-sample)
+[see this article on GitHub](https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Java)
 
 ## Client lib
 
-The client lib for Java 6 consists of the package [com.lacunasoftware.restpki:restpki-client-java6](https://bintray.com/lacunasoftware/maven/restpki-client-java6).
+The client lib for Java consists of	the package [com.lacunasoftware.restpki:restpki-client](https://bintray.com/lacunasoftware/maven/restpki-client),
+which is compatible with Java 7+.
 
 > [!NOTE]
 > The package is not currently on Maven Central but on the private Maven repository at http://dl.bintray.com/lacunasoftware/maven, which needs
@@ -21,8 +22,8 @@ If your project uses **Maven**, add this to your `pom.xml`:
 	...
 	<dependency>
 		<groupId>com.lacunasoftware.restpki</groupId>
-		<artifactId>restpki-client-java6</artifactId>
-		<version>1.8.1</version>
+		<artifactId>restpki-client</artifactId>
+		<version>1.8.2</version>
 	</dependency>
 	...
 </dependencies>
@@ -47,7 +48,7 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client-java6:1.8.1")
+	compile("com.lacunasoftware.restpki:restpki-client:1.8.2")
 }
 ```
 
@@ -56,9 +57,6 @@ dependencies {
 <!-- Direct link to avoid DocFX warning -->
 See the [javadoc](https://docs.lacunasoftware.com/en-us/content/javadocs/restpki-client/).
 
-> [!NOTE]
-> The javadoc is actually for the Java 7+ version of the library, but the API is almost identical.
-
 ### Source code
 
-The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/RestPkiJava6Client)
+The package is open-source, hosted on [BitBucket](https://bitbucket.org/Lacunas/restpki-java-client)
