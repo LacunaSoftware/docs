@@ -15,8 +15,8 @@ SDK geralmente acompanham licenças de uso para o componente. Se você ainda nã
 [solicite uma](https://www.lacunasoftware.com/pt/home/purchase).
 
 O restante desse tópico trata da parte *server-side* da assinatura. Para detalhes sobre a parte *client-side*, veja a
-[documentação do componente Web PKI](../../web-pki/index.md) ou baixe o
-[projeto de exemplo](https://github.com/LacunaSoftware/PkiSdkSamples).
+[documentação do componente Web PKI](../../web-pki/index.md) ou veja o
+[projeto de exemplo](https://github.com/LacunaSoftware/PkiSdkSamples), que mostra o uso do SDK em conjunto com o Web PKI.
 
 ## Assinatura CAdES com chave remota
 
@@ -107,7 +107,7 @@ signer.ComputeSignature();
 
 byte[] signedPdf = signer.GetPdfBytes();
 //-----------------------------------------------------------------------
-```cs
+```
 
 ## Veja também
 
