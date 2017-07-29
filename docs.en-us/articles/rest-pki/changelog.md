@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+### 1.13.1 (2017-07-28)
+
+Database model update: No
+
+- Minor changes to billing API
+
+
 ### 1.13.0 (2017-07-03)
 
 Database model update: No
