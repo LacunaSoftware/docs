@@ -3,7 +3,7 @@
 Rest PKI can be used on Java applications using a wide range of frameworks and platforms.
 To get started, choose one of the available samples projects:
 
-* [Spring MVC](mvc.md) (Java 7+)
+* [Spring MVC (Java 7+)](mvc.md)
 * [Spring MVC (Java 6)](mvc-java6.md)
 
 ## Client libraries

@@ -27,7 +27,7 @@
 ### [PHP 5.3/5.4](rest-pki/php/legacy.md)
 ### [PHP 5.2](rest-pki/php/legacy52.md)
 ## [Usando em Java](rest-pki/java/index.md)
-### [Spring MVC](rest-pki/java/mvc.md)
+### [Spring MVC (Java 7+)](rest-pki/java/mvc.md)
 ### [Spring MVC (Java 6)](rest-pki/java/mvc-java6.md)
 ## [Usando em .NET](rest-pki/dotnet/index.md)
 ### [ASP.NET MVC](rest-pki/dotnet/mvc.md)
