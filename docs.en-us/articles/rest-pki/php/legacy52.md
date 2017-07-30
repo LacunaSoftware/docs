@@ -8,6 +8,8 @@ https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP/legacy52
 > [!NOTE]
 > Only use this project if you cannot use the [PHP 5.5+ samples project](current.md) nor the [PHP 5.3/5.4 samples project](legacy.md).
 
+## Running the project
+
 1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
 1. Generate an API access token on the [REST PKI website](https://pki.rest/)
 1. Paste your access token on the file [PHP/legacy52/util.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy52/util.php#L10-L14)
