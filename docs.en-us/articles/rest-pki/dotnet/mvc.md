@@ -76,7 +76,7 @@ Not yet available on this project.
 * Controller: [OpenPadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/OpenPadesSignatureController.cs)
 * View: [OpenPadesSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/OpenPadesSignature/Index.cshtml)
 
-<a name="printer-friendly" />
+<a name="print" />
 ### Printer-friendly version
 
 Not yet available on this project. See sample on [ASP.NET Web Forms samples project](web-forms.md) instead.
