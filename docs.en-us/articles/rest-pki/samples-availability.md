@@ -5,6 +5,10 @@ available on a given project. The matrix below shows which samples are available
 
 [!include[Rest PKI samples matrix](../../../includes/rest-pki-samples-matrix.md)]
 
+> [!TIP]
+> Some of the `✓` symbols above are links, which take to a description of the relevant files of the corresponding
+> sample on the corresponding samples project.
+
 ## Legend
 
 | Symbol  | Description                                                         |

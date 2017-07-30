@@ -6,6 +6,10 @@ em cada projeto.
 
 [!include[Rest PKI samples matrix](../../../includes/rest-pki-samples-matrix.md)]
 
+> [!TIP]
+> Alguns dos símbolos `✓` acima são clicáveis, levando à descrição dos arquivos relevantes para o exemplo
+> em questão no projeto de exemplos correspondente.
+
 ## Legenda
 
 | Símbolo | Descrição                                                                   |
