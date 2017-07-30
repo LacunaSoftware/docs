@@ -1,4 +1,4 @@
-﻿# Projeto de exemplos em PHP 5.2
+﻿# Projeto de exemplos em Node.js SPA (Single Page Application)
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>

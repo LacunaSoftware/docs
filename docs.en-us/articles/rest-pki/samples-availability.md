@@ -1,6 +1,6 @@
 ﻿# Rest PKI samples - Availability per project
 
-Since we have a number of sample projects and we are always adding new feature samples, not all feature samples are
+Since we have a number of samples projects and we are always adding new feature samples, not all feature samples are
 available on a given project. The matrix below shows which samples are available on which projects.
 
 [!include[Rest PKI samples matrix](../../../includes/rest-pki-samples-matrix.md)]

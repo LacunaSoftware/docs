@@ -1,20 +1,16 @@
-﻿# Using Rest PKI on PHP 5.3 and 5.4
+﻿# PHP 5.3/5.4 samples project
+
+The **PHP 5.3/5.4 samples project** shows how to use [Rest PKI](../index.md) together with [Web PKI](../../web-pki/index.md)
+on a project using **PHP 5.3** and **5.4**. It is hosted on GitHub at:
+
+https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP/legacy
 
 > [!NOTE]
-> This article refers to usage on **PHP 5.3** and **5.4**. For other versions, [click here](index.md).
+> Only use this project if you cannot use the [PHP 5.5+ samples project](current.md).
 
-We are still migrating the documentation to the new unified portal. For now, please
-[see this article on GitHub](https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP#legacy-sample-for-php-53-and-54)
-
-## Client lib
-
-For PHP 5.3 and 5.4, use the file [RestPkiLegacy.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/RestPkiLegacy.php). It requires the
-package [nategood/httpful](https://packagist.org/packages/nategood/httpful), which needs to be added to your `composer.json`:
-
-```json
-{
-    "require": {
-        "nategood/httpful": "*"
-    }
-}
-```
+1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
+1. Generate an API access token on the [REST PKI website](https://pki.rest/)
+1. Paste your access token on the file [PHP/legacy/util.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/util.php#L10-L14)
+1. In a command prompt, navigate to the folder `PHP/legacy` and run the command `composer install` to download the dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/))
+1. Setup a website on your local HTTP server pointing to the `PHP/legacy` folder
+1. Open the index.php file on the browser on the corresponding URL (depending on the previous step)

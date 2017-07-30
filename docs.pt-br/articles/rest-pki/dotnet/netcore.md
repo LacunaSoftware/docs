@@ -1,4 +1,4 @@
-﻿# Projeto de exemplos em PHP 5.2
+﻿# Projeto de exemplos em ASP.NET Core
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>

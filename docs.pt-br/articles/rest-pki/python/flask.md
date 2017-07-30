@@ -1,4 +1,4 @@
-﻿# Projeto de exemplos em PHP 5.2
+﻿# Projeto de exemplos em Python com Flask
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>

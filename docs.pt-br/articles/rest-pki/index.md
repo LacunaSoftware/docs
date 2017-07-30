@@ -6,7 +6,7 @@ linguagem de programação.
 
 Embora o Rest PKI ofereça diversas APIs REST que podem ser facilmente consumidas, elas normalmente não são utilizadas
 diretamente. Ao invés disso, oferecemos bibliotecas para consumir os serviços do Rest PKI (*client libs*) em diversas
-linguagens de programação e diversos projetos de exemplo que demonstram o uso dessas bibliotecas, de modo que os
+linguagens de programação e diversos projetos de exemplos que demonstram o uso dessas bibliotecas, de modo que os
 programadores não precisem se preocupar com os detalhes envolvidos no consumo de APIs e possam codificar diretamente
 em sua linguagem preferida.
 
@@ -14,10 +14,10 @@ Escolha uma das linguagens de programação abaixo para começar:
 
 * [PHP](php/index.md)
 * [Java](java/index.md)
-* [.NET](dotnet.md) (C# e Visual Basic .NET)
-* [Python](python.md)
-* [Node.js](nodejs.md)
-* [Ruby](ruby.md)
+* [.NET](dotnet/index.md) (C#, VB.NET, C++.NET)
+* [Python](python/index.md)
+* [Node.js](nodejs/index.md)
+* [Ruby](ruby/index.md)
 
 > [!NOTE]
 > Não encontrou a sua linguagem de programação favorita? [Fale com a gente](https://www.lacunasoftware.com/pt/home/purchase).

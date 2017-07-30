@@ -4,17 +4,17 @@
 certificate authentication that can be used from virtually any programming language.
 
 Even though Rest PKI exposes REST APIs which are easily consumable, they are not intended to be used directly. Instead, we
-provide client libraries and sample projects for several programming languages, so that programmers do not need to worry
+provide client libraries and samples projects for several programming languages, so that programmers do not need to worry
 about the details involved in calling APIs, and instead write code in their favorite language.
 
 Choose one of the programming languages below to get started:
 
 * [PHP](php/index.md)
 * [Java](java/index.md)
-* [.NET](dotnet.md) (C#, Visual Basic.NET, etc)
-* [Python](python.md)
-* [Node.js](nodejs.md)
-* [Ruby](ruby.md)
+* [.NET](dotnet/index.md) (C#, VB.NET, C++.NET)
+* [Python](python/index.md)
+* [Node.js](nodejs/index.md)
+* [Ruby](ruby/index.md)
 
 > [!NOTE]
 > Didn't find your favorite programming language? [Tell us about it](https://www.lacunasoftware.com/en/home/purchase).
