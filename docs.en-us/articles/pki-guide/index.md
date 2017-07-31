@@ -7,8 +7,9 @@ We have a complete line of solutions for Public Key Infrastructure (PKI):
 * [PKI SDK](../pki-sdk/index.md) - a software development kit for .NET applications for performing PKI operations
 
 The choice of which product (or combination of products) is right for your project depends on your scenario and what
-you're trying to accomplish:
+you're trying to accomplish. Read the article below that most closely matches your case to find out how to best
+implement it with our products:
 
 * [Web signatures](web-signatures/index.md) - perform [digital signatures](signatures.md) on web pages
-* [Server signatures](server-signatures.md) - perform [digital signatures](signatures.md) entirely on the backend, with keys located on the server
+* [Server signatures](server-signatures.md) - perform digital signatures entirely on the backend, with keys located on the server
 * [Certificate authentication](cert-auth.md) - authenticate users based on their digital certificates

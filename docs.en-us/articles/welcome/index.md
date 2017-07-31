@@ -2,7 +2,8 @@
 
 Welcome to [Lacuna Software](https://www.lacunasoftware.com/)'s new unified documentation portal. Using the same
 documentation technology as the [Microsoft Docs](https://docs.microsoft.com/) portal, this site combines every
-technical information you need to know about each of our products into a single, interconnected documentation.
+technical information you need to know about each of our products into a single, interconnected documentation
+experience.
 
 > [!TIP]
 > This site is targeted for software developers. If you are an end-user having trouble using one of our products,
