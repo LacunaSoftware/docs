@@ -1,4 +1,4 @@
-﻿# Soluções para certificação digital
+﻿# Autenticação de usuários com certificado digital
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>

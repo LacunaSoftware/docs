@@ -4,10 +4,11 @@
 <!-- Start of PKI Solutions Guide -->
 # [PKI Solutions Guide](pki-guide/index.md)
 ## [Digital signatures](pki-guide/signatures.md)
-## [Web remote signatures](pki-guide/web-remote.md)
-## [Web local signatures](pki-guide/web-local.md)
-## [Server signatures](pki-guide/server.md)
-## [Advanced topics](pki-guide/advanced.md)
+## [Web signatures](pki-guide/web-signatures/index.md)
+### [Web remote signatures](pki-guide/web-signatures/remote.md)
+### [Web local signatures](pki-guide/web-signatures/local.md)
+## [Server signatures](pki-guide/server-signatures.md)
+## [Certificate authentication](pki-guide/cert-auth.md)
 <!-- End of PKI Products Guide -->
 
 <!-- Start of Web PKI -->

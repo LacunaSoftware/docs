@@ -4,10 +4,11 @@
 <!-- Start of PKI Solutions Guide -->
 # [Certificação Digital](pki-guide/index.md)
 ## [Assinaturas digitais](pki-guide/signatures.md)
-## [Assinaturas web remotas](pki-guide/web-remote.md)
-## [Assinaturas web locais](pki-guide/web-local.md)
-## [Assinaturas de servidor](pki-guide/server.md)
-## [Tópicos avançados](pki-guide/advanced.md)
+## [Assinaturas web](pki-guide/web-signatures/index.md)
+### [Assinaturas web remotas](pki-guide/web-signatures/remote.md)
+### [Assinaturas web locais](pki-guide/web-signatures/local.md)
+## [Assinaturas de servidor](pki-guide/server-signatures.md)
+## [Autenticação com certificado](pki-guide/cert-auth.md)
 <!-- End of PKI Products Guide -->
 
 <!-- Start of Web PKI -->
