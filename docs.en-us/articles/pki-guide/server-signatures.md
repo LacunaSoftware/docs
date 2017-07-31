@@ -20,6 +20,6 @@ signatures.
 
 **The recommended way to implement server signatures on all other programming languages is using [Rest PKI](../rest-pki/index.html).**
 
-The Rest PKI samples that demonstrates how to implement this are called *PAdES server key** and **CAdES server key**.
-Check the [Rest PKI samples availability per project](../rest-pki/samples-availability.md) to see on which samples project
-this sample is available.
+The Rest PKI samples that demonstrate how to implement this are called *PAdES server key** and **CAdES server key**.
+Check the [Rest PKI samples availability per project](../rest-pki/samples-availability.md) to see on which samples projects
+these samples are available.
