@@ -1,6 +1,6 @@
 ﻿# Web signatures
 
-A *web signature* is a [digital signature](signatures.md) performed on a web page using one of the user's
+A *web signature* is a [digital signature](../signatures.md) performed on a web page using one of the user's
 certificates.
 
 This kind of signature necessarily involves performing operations on the **frontend** because the user
@@ -22,7 +22,7 @@ browser. Only a minimal data traffic is performed (approximately 3KB).
 Only in scenarios on which the file to be signed and the resulting signed file must not be uploaded to the server should
 **local signatures** be employed. Even so, this decision must be taken with care, because performing a digital signature is a complex
 process that requires network access to acquire revocation artifacs (Certificate Revocation Lists), which might fail on
-some users' computers. Moreover, currently local signatures are only supported on Windows, whereas remote signaures are
+some users' computers. Moreover, currently local signatures are only supported on Windows, whereas remote signatures are
 supported on Windows, Mac OS and Linux.
 
 Therefore, **we recommend choosing the [web remote signature](remote.md) approach on most cases.**

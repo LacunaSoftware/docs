@@ -1,3 +1,3 @@
-﻿# Web remote digital signatures
+﻿# Web local signatures
 
-Learn about web remote digital signatures
+Learn about web local signatures
