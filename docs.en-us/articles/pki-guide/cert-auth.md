@@ -33,7 +33,9 @@ The generation of the nonce and all validations must be done on the **backend**,
 1. Follow the steps to run the samples project
 1. Once you get the project running, click on *Authentication with digital certificate*
 
-The Rest PKI samples show the usage of Rest PKI together with Web PKI to implement certificate authentication.
+> [!TIP]
+> Although the solution involves both Rest PKI and Web PKI (for the back- and frontend respectively), you should
+> **focus on the Rest PKI documentation**, which shows the usage of both products integrated.
 
 ## Alternative implementations
 
