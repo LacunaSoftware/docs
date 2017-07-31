@@ -37,8 +37,8 @@ The Rest PKI samples show the usage of Rest PKI together with Web PKI to impleme
 
 ## Alternative implementations
 
-If your application is a .NET application (C#, VB.NET, C++.NET), you can also use the [PKI SDK](../pki-sdk/index.md).
-See article [Certificate authentication](../pki-sdk/certificates/auth.md).
+If your application is a .NET application (C#, VB.NET, C++.NET), you can also use the [PKI SDK](../pki-sdk/index.md)
+on the backend with Web PKI on the frontend. See article [Certificate authentication](../pki-sdk/certificates/auth.md).
 
-If you already have a 3rd party SDK for PKI operations or you wish to implement the backend code yourself, you can also use
-[Web PKI](../web-pki/index.md) separately just for the frontend part.
+If you already own a 3rd party crypto SDK or if you wish to implement the backend code yourself, you can also use
+[Web PKI](../web-pki/index.md) just for the frontend part.
