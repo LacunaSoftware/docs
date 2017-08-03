@@ -46,7 +46,7 @@ o [Web PKI](../../web-pki/index.md).
 
 Se a sua aplicação web for em .NET (C#, VB.NET, C++.NET), você pode também utilizar o [PKI SDK](../../pki-sdk/index.md) no backend
 em conjunto com o Web PKI no frontend. Para mais informações, veja o artigo
-[Assinaturas web remotas](../../pki-sdk/signatures/web-remote.md) na documentação do SDK.
+[Assinatura com chave remota](../../pki-sdk/signatures/web-remote.md) na documentação do SDK.
 
 Se você já possui uma biblioteca de terceiros para certificação digital ou deseja implementar o código do backend você mesmo,
 você pode também utilizar o [Web PKI](../../web-pki/index.md) apenas para realizar as operações necessárias no frontend.
