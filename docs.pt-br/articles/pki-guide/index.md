@@ -11,4 +11,4 @@ implementar. Leia o artigo abaixo que mais se aproxime do se caso para saber com
 
 * **[Assinaturas web](web-signatures/index.md) - realizar [assinaturas digitais](signatures.md) em páginas web**
 * [Assinaturas de servidor](server-signatures.md) - realizar assinaturas digitais inteiramente no backend, com chaves localizadas no servidor
-* [Certificate authentication](cert-auth.md) - autenticação de usuários (login) por certificado digital
+* [Login com certificado](cert-auth.md) - autenticação de usuários (login) por certificado digital
