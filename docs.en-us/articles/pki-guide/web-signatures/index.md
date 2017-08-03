@@ -10,9 +10,10 @@ private key is software-based, it is a bad practice to ask the user for it.
 We support two ways of implementing web signatures:
 
 * [Web remote signatures](remote.md) - on this approach, only the computations that must necessarily be performed on the frontend
-  are performed there, all other steps are performed on the backend.
+  are performed there, all other steps are performed on the backend. In a way, the backend performs a signature with a *remote* key
+  (being on the client side).
 
-* [Web local signatures](local.md) - on this approach, all computations are done on the frontend, without cooperation from
+* [Web local signatures](local.md) - on this approach, all computations are done *locally* on the frontend, without cooperation from
   the backend.
 
 On scenarios on which the file that will be signed is already on the server side and/or the resulting signed file needs to end up on the
