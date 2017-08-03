@@ -3,7 +3,7 @@
 A *web signature* is a [digital signature](../signatures.md) performed on a web page using one of the user's
 certificates.
 
-This kind of signature necessarily involves performing operations on the **frontend** because the user
+This kind of signature **necessarily involves performing operations on the frontend** because the user
 certificate's private key might be on a cryptographic device that never allows exporting it. Moreover, even if the
 private key is software-based, it is a bad practice to ask the user for it.
 
