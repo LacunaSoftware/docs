@@ -5,7 +5,9 @@ locally and therefore can be performed in a *synchronous* matter (as opposed to 
 be performed asynchronously). For instance, a digital signature performed on the backend with a private key
 that is available on the server side would be a local signature (we call these [server signatures](../server-signatures.md)).
 
-We call a *web local signature* the special case of a local signature performed on a web page.
+We call a *web local signature* the special case of a local signature performed on a web page
+with a key that is available on the client side (i.e. a key of one of the user's
+certificates)
 
 As outlined on the article [web signatures](index.md), this approach to implement web signatures should
 be considered with care, because performing a digital signature is a complex process that requires network access
