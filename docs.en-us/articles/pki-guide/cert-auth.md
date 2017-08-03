@@ -23,7 +23,7 @@ private key is software-based, it is a bad practice to ask the user for it.
 
 The generation of the nonce and all validations must be done on the **backend**, for obvious security reasons.
 
-**The recommended way of implementing certificate authentication is using [Rest PKI](../rest-pki/index.md) together with [Web PKI](../web-pki/index.md)**.
+**The recommended way of implementing certificate authentication is using [Rest PKI](../rest-pki/index.md)** together with [Web PKI](../web-pki/index.md).
 
 ## Recommended steps
 
