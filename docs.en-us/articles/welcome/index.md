@@ -12,4 +12,4 @@ experience.
 If you encounter an error or spot something that is missing on this documentation, please
 [create an issue](https://github.com/LacunaSoftware/docs/issues).
 
-To get started right away, see the article [PKI Solutions Guide](../pki-guide/index.md)
+To get started right away, see the article [PKI Solutions Guide](../pki-guide/index.md).
