@@ -3,7 +3,7 @@
 É possível realizar autenticação de usuários (login) baseada em certificado digital. Esse processo, em linhas gerais, ocorre da seguinte
 maneira:
 
-1. Gera-se um [once criptográfico](https://pt.wikipedia.org/wiki/Nonce)
+1. Gera-se um [nonce criptográfico](https://pt.wikipedia.org/wiki/Nonce)
 1. Solicita-se ao usuário que realize um algoritmo de assinatura sobre o *nonce* utilizando sua chave privada
 1. Verifica-se o resultado do algoritmo de assinatura utilizando a chave pública do certificado do usuário
 1. Valida-se o certificado do usuário
