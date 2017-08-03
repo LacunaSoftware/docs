@@ -17,7 +17,7 @@ Suportamos duas formas de implementar assinaturas web:
   do backend.
 
 Em situações em que o arquivo a ser assinado já está no servidor e/ou o resultado da assinatura precisa estar no servidor ao final
-do processo, **assinaturas remotas** possuem a grande vantagem de não requerer que arquivos sejam trafegados entre o servidor e o
+do processo, **assinaturas remotas** possuem a grande vantagem de não requerirem que arquivos sejam trafegados entre o servidor e o
 cliente. Apenas um tráfego de rede mínimo é realizado (da ordem de 3KB).
 
 Apenas em cenários em que em hipótese alguma pode ocorrer upload de arquivos para o servidor é que **assinaturas locais** devem ser
