@@ -11,7 +11,7 @@ As outlined on the article [web signatures](index.md), this approach to implemen
 be considered with care, because performing a digital signature is a complex process that requires network access
 to acquire revocation artifacs (Certificate Revocation Lists), which might fail on some users' computers.
 
-**Because of this, on most cases we recommend the [web remote signatures](remote.md) approach to implement web signatures.**
+**Because of this, on most cases we recommend the [web remote signatures](remote.md) approach to implement web signatures instead.**
 
 However, in cases on which files cannot be uploaded to the server under any circumstances, signing locally
 on the frontend can be the only option. For such cases, use the **local signature extension** of
