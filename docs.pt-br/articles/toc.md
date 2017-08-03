@@ -8,7 +8,7 @@
 ### [Assinaturas web remotas](pki-guide/web-signatures/remote.md)
 ### [Assinaturas web locais](pki-guide/web-signatures/local.md)
 ## [Assinaturas de servidor](pki-guide/server-signatures.md)
-## [Autenticação com certificado](pki-guide/cert-auth.md)
+## [Login com certificado](pki-guide/cert-auth.md)
 <!-- End of PKI Products Guide -->
 
 <!-- Start of Web PKI -->
