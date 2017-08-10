@@ -120,6 +120,16 @@ At some point you should redirect the user to the installation page. In order to
 more information about the arguments passed to the `notInstalled` callback, please refer to the
 [method's documentation](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init).
 
+<a name="customizing-not-installed" />
+##  Using a Customized Installation Page
+
+```javascript
+pki.init({
+    ready: onWebPkiReady,
+    brand: 'YourBrand'
+});
+```
+
 <a name="angularjs" />
 ## Callbacks and AngularJS
 
