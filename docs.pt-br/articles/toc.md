@@ -16,7 +16,11 @@
 ## [Primeiros passos](web-pki/get-started.md)
 ## [Browsers suportados](web-pki/browser-support.md)
 ## [Licenciamento](web-pki/licensing.md)
-## [Tópicos avançados](web-pki/advanced.md)
+## [Chamadas assíncronas](web-pki/async.md)
+## [Callback de erro padrão](web-pki/default-error-callback.md)
+## [Customizando o comportamento quando o componente não estiver instalado](web-pki/customizing-not-installed.md)
+## [Utilizando uma página de instalação personalizada](web-pki/brand.md)
+## [Callbacks e AngularJS](web-pki/angularjs.md)
 ## [Exemplos completos](web-pki/full-samples.md)
 ## [Guia da API](web-pki/api.md)
 <!-- End of Web PKI -->

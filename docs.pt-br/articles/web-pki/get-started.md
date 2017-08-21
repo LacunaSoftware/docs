@@ -51,7 +51,7 @@ pki.listCertificates().success(function (certs) {
 ```
 
 > [!NOTE]
-> Se você não estiver familharizado com chamadas assíncronas, veja a seção [Chamadas assícronas](advanced.md#async).
+> Se você não estiver familharizado com chamadas assíncronas, veja a seção [Chamadas assícronas](async.md).
 
 Para ler o *encoding* de um certificado, chame o método `readCertificate()`:
 
@@ -111,7 +111,7 @@ Agora que vimos as funções básicas do Web PKI ...
 
 * Veja os [browser suportados](browser-support.md)
 * Veja como funciona o [licenciamento](licensing.md)
-* Leia os [tópicos avançados](advanced.md), por exemplo sobre [como customizar o comportamento quando o componente não estiver instalado](advanced.md#customizing-not-installed)
-* Se a sua aplicação utiliza AngularJS, leia a seção [Callbacks e AngularJS](advanced.md#angularjs)
+* Veja [como customizar o comportamento quando o componente não estiver instalado](customizing-not-installed.md)
+* Se a sua aplicação utiliza AngularJS, leia a seção [Callbacks e AngularJS](angularjs.md)
 * Veja os [exemplos completos](full-samples.md)
 * Veja o [Guia da API](api.md)

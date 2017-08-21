@@ -16,7 +16,11 @@
 ## [Get started](web-pki/get-started.md)
 ## [Browser support](web-pki/browser-support.md)
 ## [Licensing](web-pki/licensing.md)
-## [Advanced topics](web-pki/advanced.md)
+## [Asynchronous calls](web-pki/async.md)
+## [Default error callback](web-pki/default-error-callback.md)
+## [Customizing the behavior when the component is not installed](web-pki/customizing-not-installed.md)
+## [Using a customized installation page](web-pki/brand.md)
+## [Callbacks and AngularJS](web-pki/angularjs.md)
 ## [Full samples](web-pki/full-samples.md)
 ## [API reference](web-pki/api.md)
 <!-- End of Web PKI -->

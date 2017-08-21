@@ -51,7 +51,7 @@ pki.listCertificates().success(function (certs) {
 ```
 
 > [!NOTE]
-> If you are not familiar with asynchronous calls, [read this](advanced.md#async).
+> If you are not familiar with asynchronous calls, [read this](async.md).
 
 To read a certificate's binary encoding, call the `readCertificate()` method:
 
@@ -111,7 +111,7 @@ Now that we've covered the basics ...
 
 * Check the [supported browsers](browser-support.md)
 * See how [licensing](licensing.md) works
-* Read the [advanced topics](advanced.md), such as [Customizing the behavior when the component is not installed](advanced.md#customizing-not-installed)
-* If your application uses AngularJS, read the section [Callbacks and AngularJS](advanced.md#angularjs)
+* See how to [customize the behavior when the component is not installed](customizing-not-installed.md)
+* If your application uses AngularJS, read the section [Callbacks and AngularJS](angularjs.md)
 * Check out the [full samples](full-samples.md)
 * See the [API Reference](api.md) for detailed information on each method
