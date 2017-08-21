@@ -8,7 +8,7 @@ O componente Web PKI possibilita que páginas web interajam com certificados dig
 * Assinar dados (ou um hash pré-computado) com um certificado
 
 O principal objetivo do Web PKI é realizar o processamento client-side necessário em operações com certificados digitais. Um exemplo de operação seria uma
-[assinatura digital remota](../pki-guide/web-remote.md) utilizando um SDK (Software Development Kit) no servidor:
+[assinatura digital remota](../pki-guide/web-signatures/remote.md) utilizando um SDK (Software Development Kit) no servidor:
 
 |   | *Client-side* (Lacuna Web PKI)                                                                    | *Server-side* (SDK no servidor)                                                                                                                              |
 | - | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |

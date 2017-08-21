@@ -23,12 +23,12 @@ chave seja baseada em software (certificado A1), solicitá-la ao usuário é uma
 
 Já a geração do *nonce* e todas as validações precisam ser realizadas no **backend** por motivos óbvios de segurança.
 
-**A forma recomendada de implementar login com certificado digital é utilizando o [Rest PKI](../../rest-pki/index.md)** em conjunto
-com o [Web PKI](../../web-pki/index.md).
+**A forma recomendada de implementar login com certificado digital é utilizando o [Rest PKI](../rest-pki/index.md)** em conjunto
+com o [Web PKI](../web-pki/index.md).
 
 ## Passo-a-passo
 
-1. Acesse a [documentação do Rest PKI](../../rest-pki/index.md)
+1. Acesse a [documentação do Rest PKI](../rest-pki/index.md)
 1. Escolha uma linguagem de programação
 1. Escolha um dos projetos de exemplos disponíveis
 1. Siga os passos para executar o projeto
@@ -40,9 +40,9 @@ com o [Web PKI](../../web-pki/index.md).
 
 ## Implementações alternativas
 
-Se a sua aplicação web for em .NET (C#, VB.NET, C++.NET), você pode também utilizar o [PKI SDK](../../pki-sdk/index.md) no backend
+Se a sua aplicação web for em .NET (C#, VB.NET, C++.NET), você pode também utilizar o [PKI SDK](../pki-sdk/index.md) no backend
 em conjunto com o Web PKI no frontend. Para mais informações, veja o artigo
-[Autenticação com certificado](../../pki-sdk/signatures/web-remote.md) na documentação do SDK.
+[Autenticação com certificado](../pki-sdk/certificates/auth.md) na documentação do SDK.
 
 Se você já possui uma biblioteca de terceiros para certificação digital ou deseja implementar o código do backend você mesmo,
-você pode também utilizar o [Web PKI](../../web-pki/index.md) apenas para realizar as operações necessárias no frontend.
+você pode também utilizar o [Web PKI](../web-pki/index.md) apenas para realizar as operações necessárias no frontend.

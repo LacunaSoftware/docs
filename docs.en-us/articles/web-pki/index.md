@@ -8,7 +8,7 @@ The Lacuna Web PKI component enables web applications to interact with digital c
 * Signing data (or a pre-computed digest) with a certificate
 
 The Web PKI component's main goal is to perform the client-side processing necessary for operations with digital certificates. An example would be performing digital signatures in a
-[web remote signature](../pki-guide/web-remote.md) using a server-side SDK (*Software Development Kit*):
+[web remote signature](../pki-guide/web-signatures/remote.md) using a server-side SDK (*Software Development Kit*):
 
 |   | Client-side (Lacuna Web PKI)                                                           | Server-side (SDK on server)                                                                                                                     |
 | - | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
