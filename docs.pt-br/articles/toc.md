@@ -14,6 +14,7 @@
 <!-- Start of Web PKI -->
 # [Web PKI](web-pki/index.md)
 ## [Primeiros passos](web-pki/get-started.md)
+## [Propriedades dos certificados](web-pki/cert-properties.md)
 ## [Browsers suportados](web-pki/browser-support.md)
 ## [Licenciamento](web-pki/licensing.md)
 ## [Chamadas assíncronas](web-pki/async.md)
