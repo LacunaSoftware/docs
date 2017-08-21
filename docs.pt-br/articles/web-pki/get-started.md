@@ -53,6 +53,9 @@ pki.listCertificates().success(function (certs) {
 > [!NOTE]
 > Se você não estiver familharizado com chamadas assíncronas, veja a seção [Chamadas assícronas](async.md).
 
+> [!TIP]
+> Para saber as propriedades disponíveis para cada certificado, veja o artigo [Propriedades dos certificados](cert-properties.md)
+
 Para ler o *encoding* de um certificado, chame o método `readCertificate()`:
 
 ```javascript

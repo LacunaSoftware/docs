@@ -53,6 +53,9 @@ pki.listCertificates().success(function (certs) {
 > [!NOTE]
 > If you are not familiar with asynchronous calls, [read this](async.md).
 
+> [!TIP]
+> To find out which properties are available for each certificate, see article [Certificate properties](cert-properties.md)
+
 To read a certificate's binary encoding, call the `readCertificate()` method:
 
 ```javascript
