@@ -23,6 +23,7 @@
 ## [Customizing the behavior when the component is not installed](web-pki/customizing-not-installed.md)
 ## [Using a customized installation page](web-pki/brand.md)
 ## [Callbacks and AngularJS](web-pki/angularjs.md)
+## [Certificate filters](web-pki/filters.md)
 ## [Full samples](web-pki/full-samples.md)
 ## [API reference](web-pki/api.md)
 <!-- End of Web PKI -->

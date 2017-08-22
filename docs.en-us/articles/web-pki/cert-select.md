@@ -42,9 +42,47 @@ function getCertText(cert) {
 
 On this article, we'll show how to customize the snippet above to:
 
+* [Sort the certificates](#sort)
 * [Customize the text displayed for each certificate](#customize-text)
-* [Filter the certificates that are shown](#filters)
 * [Validate the selected certificate](#validation)
+
+Below is a live example showing all three features being used:
+
+<iframe width="100%" height="300" src="https://jsfiddle.net/LacunaSoftware/grb8995x/5/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<a name="sort" />
+## Sorting the certificates
+
+In order to sort the certificates, use the standard Javascript `sort()` function on the certificates array yielded by `listCertificates()`:
+
+```js
+function onWebPkiReady() {
+	pki.listCertificates().success(function (certs) {
+		certs.sort(compareCerts);
+		var select = $('#certificateSelect');
+		for (var i = 0; i < certs.length; i++) {
+			var cert = certs[i];
+			select.append($('<option />').val(cert.thumbprint).text(getCertText(cert)));
+		}
+	});
+}
+
+function compareCerts(c1, c2) {
+	var t1 = getCertText(c1);
+	var t2 = getCertText(c2);
+	if (t1 < t2) {
+		return -1;
+	}
+	if (t1 > t2) {
+		return 1;
+	}
+	return 0;
+}
+
+function getCertText(cert) {
+	return cert.subjectName + ' (issued by ' + cert.issuerName + ')';
+}
+```
 
 <a name="customize-text" />
 ## Customizing the text displayed for each certificate
@@ -72,81 +110,6 @@ function getCertText(cert) {
 
 We recommend always using an additional information besides the subject name in order to help users that have two or more certificates with
 the same subject name (in other words, don't just do `return cert.subjectName;`)
-
-<a name="filters" />
-## Filtering the certificates that are shown
-
-You can also filter the certificates that are shown by passing a filter to the `listCertificates()` function.
-
-> [!WARNING]
-> Filtering certificates can cause unwanted user support. Users might expect to see certain certificates that are being filtered
-> out and wrongly assume they're not being shown due to a bug and therefore reach out for support. This is specially true when applying a filter based on the
-> expiration date, since a certificate might be shown on one day but "disappear" on the next. Because of this, we
-> **HIGHLY RECOMMEND** that you **DO NOT USE THIS FEATURE**. Instead, display all certificates and [validate the selected certificate](#validation).
-
-If for some reason you still want to use this feature despite the warning above, read on.
-
-To show only certificates that are within their validity period:
-
-```js
-pki.listCertificates({
-	filter: pki.isWithinValidity
-}).success(...);
-```
-
-To show only certificates that have a Brazilian CPF:
-
-```js
-pki.listCertificates({
-	filter: pki.hasPkiBrazilCpf
-}).success(...);
-```
-
-> [!TIP]
-> This is loosely equivalent to "showing only ICP-Brasil certificates", since every ICP-Brasil certificate has a CPF (even company certificates).
-
-> [!NOTE]
-> Please note that the fact that a certificate has a CPF does not actually mean it can be trusted to be a valid certificate issued under the
-> ICP-Brasil public key infrastructure, since there are a number of validations that need to be performed
-> (see [Certificate authentication](../pki-guide/cert-auth.md) for more details).
-
-To show only certificates that have a certain Brazilian CPF:
-
-```js
-pki.listCertificates({
-	filter: pki.pkiBrazilCpfEquals('11111111111')
-}).success(...);
-```
-
-You can also combine filters, requiring certificates to match **all** given criteria:
-
-```js
-pki.listCertificates({
-	filter: pki.filters.all(pki.isWithinValidity, pki.hasPkiBrazilCpf)
-}).success(...);
-```
-
-Or **any** of the given criteria:
-
-```js
-pki.listCertificates({
-	filter: pki.filters.any(pki.hasPkiBrazilCpf, pki.hasPkiItalyCodiceFiscale)
-}).success(...);
-```
-
-You can also write your own filter:
-
-```js
-pki.listCertificates({
-	filter: function (cert) {
-		var now = new Date();
-		return (cert.validityStart <= now && now <= cert.validityEnd);
-	}
-}).success(...);
-```
-
-As stated above, we **highly recommend that you do not use this feature** to avoid generating unnecessary user support.
-Instead, we recommend that you display all certificates and validate the selected certificate (see next section).
 
 <a name="validation" />
 ## Validating the selected certificate
@@ -213,7 +176,3 @@ function sign() {
 > Unfortunately, Web PKI currently does not support retrieving a given certificate's properties. Therefore, we have to store the array of
 > certificates yielded by the `listCertificates()` function to later recover the selected certificate's properties. This will be addressed
 > on a future release of the component.
-
-Live example:
-
-<iframe width="100%" height="300" src="https://jsfiddle.net/LacunaSoftware/grb8995x/2/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
