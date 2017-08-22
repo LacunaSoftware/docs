@@ -15,6 +15,7 @@
 # [Web PKI](web-pki/index.md)
 ## [Get started](web-pki/get-started.md)
 ## [Certificate properties](web-pki/cert-properties.md)
+## [Customizing certificate selection](web-pki/cert-select.md)
 ## [Browser support](web-pki/browser-support.md)
 ## [Licensing](web-pki/licensing.md)
 ## [Asynchronous calls](web-pki/async.md)
