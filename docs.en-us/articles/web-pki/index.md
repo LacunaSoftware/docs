@@ -1,6 +1,12 @@
 ﻿# Lacuna Web PKI
 
-The Lacuna Web PKI component enables web applications to interact with digital certificates through javascript. The main features are:
+The Lacuna Web PKI component enables web applications to interact with digital certificates through javascript.
+
+> [!TIP]
+> Web PKI is part of our line of products for PKI. We encourage you to read the article [PKI Solutions Guide](../pki-guide/index.md)
+> to make sure this is the right product for your case.
+
+The main features are:
 
 * Displaying available certificates (either software- or hardware-based)
 * Obtaining public properties of certificates (name, email address, etc.)

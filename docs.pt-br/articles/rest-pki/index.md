@@ -4,6 +4,10 @@ O [Rest PKI](https://pki.rest/) é um serviço em nuvem para realizar operaçõe
 assinaturas digitais e autenticação por certificado digital que pode ser utilizado a partir de virtualmente qualquer
 linguagem de programação.
 
+> [!TIP]
+> O Rest PKI faz parte da nossa linha de soluções para certificação digital. Recomendamos que você leia o artigo
+> [Certificação Digital](../pki-guide/index.md) para ter certeza de que esse é o produto mais indicado para o seu caso.
+
 Embora o Rest PKI ofereça diversas APIs REST que podem ser facilmente consumidas, elas normalmente não são utilizadas
 diretamente. Ao invés disso, oferecemos bibliotecas para consumir os serviços do Rest PKI (*client libs*) em diversas
 linguagens de programação e diversos projetos de exemplos que demonstram o uso dessas bibliotecas, de modo que os

@@ -3,6 +3,10 @@
 [Rest PKI](https://pki.rest/) is a cloud service for performing PKI operations such as digital signatures and
 certificate authentication that can be used from virtually any programming language.
 
+> [!TIP]
+> Rest PKI is part of our line of products for PKI. We encourage you to read the article [PKI Solutions Guide](../pki-guide/index.md)
+> to make sure this is the right product for your case.
+
 Even though Rest PKI exposes REST APIs which are easily consumable, they are not intended to be used directly. Instead, we
 provide client libraries and samples projects for several programming languages, so that programmers do not need to worry
 about the details involved in calling APIs, and instead write code in their favorite language.

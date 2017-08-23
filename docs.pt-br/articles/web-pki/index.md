@@ -1,6 +1,12 @@
 ﻿# Lacuna Web PKI
 
-O componente Web PKI possibilita que páginas web interajam com certificados digitais através de código javascript. As principais funcionalidades são:
+O componente Web PKI possibilita que páginas web interajam com certificados digitais através de código javascript.
+
+> [!TIP]
+> O Web PKI faz parte da nossa linha de soluções para certificação digital. Recomendamos que você leia o artigo
+> [Certificação Digital](../pki-guide/index.md) para ter certeza de que esse é o produto mais indicado para o seu caso.
+
+As principais funcionalidades são:
 
 * Recuperar os certificados disponíveis (A1, A3, etc)
 * Obter os atributos públicos do certificado (Nome, e-mail, etc)
