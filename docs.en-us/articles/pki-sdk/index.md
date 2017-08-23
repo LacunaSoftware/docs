@@ -3,8 +3,8 @@
 The PKI SDK is a software library for .NET applications to perform operations related to public key infrastructure (PKI).
 
 > [!TIP]
-> PKI SDK is part of our line of products for PKI. We encourage you to read the article [PKI Solutions Guide](../pki-guide/index.md)
-> to make sure this is the right product for your case.
+> PKI SDK is part of our line of public key infrastructure (PKI) solutions. We encourage you to check out the
+> [PKI Solutions Guide](../pki-guide/index.md) to make sure this is the right product for your case.
 
 With PKI SDK, you can:
 
