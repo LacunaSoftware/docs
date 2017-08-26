@@ -26,7 +26,7 @@ In all other articles, when we say simply *signature*, we mean a *digital signat
 
 ## Signature standards
 
-The most common digital signature standards in use today are:
+The main digital signature standards in use today are:
 
 * [CMS Advanced Electronic Signatures (CAdES)](https://en.wikipedia.org/wiki/CAdES_(computing))
 * [PDF Advanced Electronic Signatures (PAdES)](https://en.wikipedia.org/wiki/PAdES)
