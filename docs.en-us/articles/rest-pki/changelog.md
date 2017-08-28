@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+### 1.13.2 (2017-08-28)
+
+Database model update: No
+
+- Add proxy configuration
+
+
 ### 1.13.1 (2017-07-28)
 
 Database model update: No
