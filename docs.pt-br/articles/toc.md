@@ -24,6 +24,7 @@
 ## [Utilizando uma página de instalação personalizada](web-pki/brand.md)
 ## [Callbacks e AngularJS](web-pki/angularjs.md)
 ## [Filtros de certificados](web-pki/filters.md)
+## [Configurando RestPKI alternativo](web-pki/customizing-restpki-url.md)
 ## [Exemplos completos](web-pki/full-samples.md)
 ## [Guia da API](web-pki/api.md)
 <!-- End of Web PKI -->
