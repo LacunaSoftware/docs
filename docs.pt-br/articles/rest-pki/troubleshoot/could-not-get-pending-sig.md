@@ -8,13 +8,13 @@ pode ocorrer um erro no navegador do usuário final com a seguinte mensagem:
 Esse erro indica que a comunicação existente entre o Web PKI e o Rest PKI não está funcionando corretamente. Esse problema é comum quando se
 está utilizando uma instância própria do Rest PKI (*on premises*). Os motivos mais comuns para isso são:
 
+* O endereço da sua instância do Rest PKI não está configurado corretamente no Javascript
 * A sua instância do Rest PKI não está disponível publicamente
 * A sua instância do Rest PKI está disponível publicamente, porém usando um certificado de SSL inválido
 * A sua instância do Rest PKI está disponível publicamente, porém está sendo bloqueada por um firewall no ambiente do usuário final (isso só costuma ocorrer se o Rest PKI estiver sem hostname e/ou em porta não-padrão por exemplo 8080 ou 8443)
-* O endereço da sua instância do Rest PKI não está configurado corretamente no Javascript
 
 Para ajudar a identificar qual desses fatores é a real causa do problema, realize o seguinte procedimento na máquina onde está sendo observado o erro utilizando
-o navegador **Google Chrome**:
+o navegador **Chrome**:
 
 1. Clique com o botão direito no ícone do Web PKI (chip amarelo) no canto superior direito do navegador e clique na opção **Manage extensions**
 1. Marque a caixa **Developer mode** no topo da lista de extensões
@@ -26,5 +26,5 @@ o navegador **Google Chrome**:
 Os detalhes do erro da chamada de rede ao Rest PKI devem indicar a causa do problema.
 
 > [!NOTE]
-> Caso o problema só ocorra em outros navegadores que não o Google Chrome, entre em contato conosco para instruções específicas para
+> Caso o problema só ocorra em outros navegadores que não o Chrome, entre em contato conosco para instruções específicas para
 > outro navegador
