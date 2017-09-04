@@ -39,7 +39,7 @@ Caso a chamada falhe, o erro informado deve ajudar no diagnóstico do problema.
   * A sua instância do Rest PKI não está disponível publicamente
   * A sua instância do Rest PKI está disponível publicamente, porém está sendo bloqueada por um firewall no ambiente do usuário final. Nesse caso, para evitar
     possíveis bloqueios, assegure-se que a URL do seu Rest PKI:
-    * Seja por hostname, não por IP (ex: http://201.184.43.191/)
+    * Seja por hostname, não por IP (ex: `http://201.184.43.191/`)
     * Seja via HTTPS com certificado de SSL válido
     * Seja em porta padrão (443 ou, caso não esteja em HTTPS, porta 80)
 
@@ -57,7 +57,7 @@ utilizando o navegador **Chrome**:
 1. Repita o procedimento de assinatura no navegador
 1. Ficará registrado na aba Network a chamada de rede ao Rest PKI que falhou. Clique na chamada.
 
-Após esse procedimento, você deve estar visualizando uma tela similar à seguinte:
+Após esse procedimento, você visualizará uma tela similar à seguinte:
 
 ![Web PKI network error](../../../../images/rest-pki/web-pki-network-error.png)
 
@@ -74,7 +74,7 @@ Os detalhes do erro da chamada de rede ao Rest PKI devem indicar a causa do prob
     * ... e tenha falhado com **status code 404**: o endereço do Rest PKI pode não estar configurado corretamente no seu código de backend. Verifique
       a inicialização da classe `RestPkiClient` (o nome da classe pode ser ligeiramente diferente dependendo da linguagem de programação).
 
-    * .. e tenha falhado com **outro status code**: tente diagnosticar o problema observando o código de erro e a mensagem. **NOTA:** certificados de
+    * ... e tenha falhado com **outro status code**: tente diagnosticar o problema observando o código de erro e a mensagem. **NOTA:** certificados de
       SSL inválidos causam falha silenciosa na comunicação entre o Web PKI e o Rest PKI. É fundamental que o certificado de SSL sendo utilizado esteja
       dentro do período de validade e tenha sido emitido por uma Autoridade Certificadora confiada por padrão pelos sistemas operacionais.
 
