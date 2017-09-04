@@ -3,9 +3,7 @@
 Ao tentar implementar uma página com [assinatura web remota](../../pki-guide/web-signatures/remote.md) utilizando o [Rest PKI](../index.md) em conjunto com o [Web PKI](../../web-pki/index.md),
 pode ocorrer um erro no navegador do usuário final com a seguinte mensagem:
 
-```
-Could not get pending signature
-```
+> Could not get pending signature
 
 Esse erro indica que a comunicação existente entre o Web PKI e o Rest PKI não está funcionando corretamente. Esse problema é comum quando se
 está utilizando uma instância própria do Rest PKI (*on premises*). Os motivos mais comuns para isso são:
