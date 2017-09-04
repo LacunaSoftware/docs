@@ -14,8 +14,8 @@ premises*), mas pode ocorrer também utilizando o Rest PKI em nuvem (em https://
 O primeiro passo para diagnosticar o problema é verificar se a máquina do usuário em questão tem acesso à
 instância do Rest PKI sendo utilizada. Abra um navegador na máquina do usuário e acesse:
 
-* Caso esteja utilizando o Rest PKI em nuvem: https://restpki.lacunasoftware.com/Api/System/Info
-* Caso esteja utilizando uma instância própria do Rest PKI: https://restpki.suaempresa.com.br/Api/System/Info (substitua de acordo com a URL do seu Rest PKI)
+* Rest PKI em nuvem: https://restpki.lacunasoftware.com/Api/System/Info
+* Rest PKI *on premises*: https://restpki.suaempresa.com.br/Api/System/Info (substitua de acordo com a URL do seu Rest PKI)
 
 > [!NOTE]
 > Embora a URL padrão para acessar as APIs do Rest PKI seja `https://pki.rest/`, no Web PKI utiliza-se por padrão a URL alternativa
@@ -33,9 +33,9 @@ O resultado esperado é um XML similar ao seguinte:
 
 Caso a chamada falhe, o erro informado deve ajudar no diagnóstico do problema.
 
-* Caso esteja utilizando o Rest PKI em nuvem, a chamada provavelmente foi bloqueada pelo firewall da rede do usuário. Solicite ao responsável pela rede
+* Para Rest PKI em nuvem, a chamada provavelmente foi bloqueada pelo firewall da rede do usuário. Solicite ao responsável pela rede
   em questão a liberação do domínio `restpki.lacunasoftware.com` em protocolo HTTPS.
-* Caso esteja utilizando uma instância própria do Rest PKI, os principais motivos de falha são:
+* Para Rest PKI *on premises*, os principais motivos de falha são:
   * A sua instância do Rest PKI não está disponível publicamente
   * A sua instância do Rest PKI está disponível publicamente, porém está sendo bloqueada por um firewall no ambiente do usuário final. Nesse caso, para evitar
     possíveis bloqueios, assegure-se que a URL do seu Rest PKI:
