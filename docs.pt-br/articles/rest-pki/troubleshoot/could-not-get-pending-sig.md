@@ -11,7 +11,7 @@ entre o Web PKI e o Rest PKI para trafegar os dados da assinatura. Esse erro ind
 funcionando corretamente. Esse problema é comum quando se está utilizando uma instância própria do Rest PKI (*on
 premises*), mas pode ocorrer também utilizando o Rest PKI em nuvem (em https://pki.rest/).
 
-O primeiro passo para diagnosticar o problema é verificar se a máquina do usuário em questão é possível acessar a
+O primeiro passo para diagnosticar o problema é verificar se a máquina do usuário em questão tem acesso à
 instância do Rest PKI sendo utilizada. Abra um navegador na máquina do usuário e acesse:
 
 * Caso esteja utilizando o Rest PKI em nuvem: https://restpki.lacunasoftware.com/Api/System/Info
