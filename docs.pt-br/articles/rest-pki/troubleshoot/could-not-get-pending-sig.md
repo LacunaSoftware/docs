@@ -6,19 +6,21 @@ usuário final com a seguinte mensagem:
 
 > Could not get pending signature
 
-Esse erro indica que a comunicação existente entre o Web PKI e o Rest PKI não está funcionando corretamente. Esse
-problema é comum quando se está utilizando uma instância própria do Rest PKI (*on premises*), mas pode ocorrer também
-utilizando o Rest PKI em nuvem (em `https://pki.rest/`).
+Nos exemplos de assinatura remota que utilizam a função `signWithRestPki` do Web PKI ocorre uma comunicação direta
+entre o Web PKI e o Rest PKI para trafegar os dados da assinatura. Esse erro indica que essa comunicação não está
+funcionando corretamente. Esse problema é comum quando se está utilizando uma instância própria do Rest PKI (*on
+premises*), mas pode ocorrer também utilizando o Rest PKI em nuvem (em https://pki.rest/).
 
-O primeiro passo para diagnosticar o problema é verifique se a máquina do usuário em questão consegue acessar a
+O primeiro passo para diagnosticar o problema é verificar se a máquina do usuário em questão é possível acessar a
 instância do Rest PKI sendo utilizada. Abra um navegador na máquina do usuário e acesse:
 
-* Caso esteja utilizando o Rest PKI em nuvem: [https://restpki.lacunasoftware.com/Api/System/Info](https://restpki.lacunasoftware.com/Api/System/Info)
-* Caso esteja utilizando uma instância própria do Rest PKI: [https://restpki.suaempresa.com.br/Api/System/Info](https://restpki.suaempresa.com.br/Api/System/Info) (substitua de acordo com a URL do seu Rest PKI)
+* Caso esteja utilizando o Rest PKI em nuvem: https://restpki.lacunasoftware.com/Api/System/Info
+* Caso esteja utilizando uma instância própria do Rest PKI: https://restpki.suaempresa.com.br/Api/System/Info (substitua de acordo com a URL do seu Rest PKI)
 
 > [!NOTE]
 > Embora a URL padrão para acessar as APIs do Rest PKI seja `https://pki.rest/`, no Web PKI utiliza-se por padrão a URL alternativa
-> `https://restpki.lacunasoftware.com/` que, por ser mais convencional, tem uma chance menor de ser bloqueada por firewalls das redes dos usuários finais.
+> `https://restpki.lacunasoftware.com/` que, por ser mais convencional, tem uma chance menor de ser eventualmente bloqueada por
+> firewalls das redes dos usuários finais.
 
 O resultado esperado é um XML similar ao seguinte:
 
@@ -35,10 +37,10 @@ Caso a chamada falhe, o erro informado deve ajudar no diagnóstico do problema.
   em questão a liberação do domínio `restpki.lacunasoftware.com` em protocolo HTTPS.
 * Caso esteja utilizando uma instância própria do Rest PKI, os principais motivos de falha são:
   * A sua instância do Rest PKI não está disponível publicamente
-  * A sua instância do Rest PKI está disponível publicamente, está sendo bloqueada por um firewall no ambiente do usuário final. Nesse caso, para evitar
+  * A sua instância do Rest PKI está disponível publicamente, porém está sendo bloqueada por um firewall no ambiente do usuário final. Nesse caso, para evitar
     possíveis bloqueios, assegure-se que a URL do seu Rest PKI:
     * Seja por hostname, não por IP (ex: http://201.184.43.191/)
-    * Seja via HTTPS com SSL válido
+    * Seja via HTTPS com certificado de SSL válido
     * Seja em porta padrão (443 ou, caso não esteja em HTTPS, porta 80)
 
 Caso a chamada seja bem-sucedida, retornando um XML similar ao mostrado acima, realize o seguinte procedimento na máquina onde está sendo observado o erro
@@ -73,7 +75,8 @@ Os detalhes do erro da chamada de rede ao Rest PKI devem indicar a causa do prob
       a inicialização da classe `RestPkiClient` (o nome da classe pode ser ligeiramente diferente dependendo da linguagem de programação).
 
     * .. e tenha falhado com **outro status code**: tente diagnosticar o problema observando o código de erro e a mensagem. **NOTA:** certificados de
-      SSL inválidos causam falha silenciosa na comunicação entre o Web PKI e o Rest PKI.
+      SSL inválidos causam falha silenciosa na comunicação entre o Web PKI e o Rest PKI. É fundamental que o certificado de SSL sendo utilizado esteja
+      dentro do período de validade e tenha sido emitido por uma Autoridade Certificadora confiada por padrão pelos sistemas operacionais.
 
 * Caso você esteja usando a instância padrão do Rest PKI em `https://pki.rest/`: verifique o código de erro. Provavelmente o acesso ao Rest PKI está sendo
   bloqueado pelo firewall da rede do usuário em questão. Se for o caso, entre em contato com o responsável pela rede em questão.
