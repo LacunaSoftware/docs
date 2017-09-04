@@ -1,4 +1,4 @@
-﻿# Especificando a URL do RestPKI
+﻿# Especificando a URL do Rest PKI
 
 Na seção [Primeiros Passos](get-started.md), vimos que o método `init()` deve ser chamado antes de qualquer outra chamada:
 
