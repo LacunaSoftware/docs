@@ -15,7 +15,7 @@ O primeiro passo para diagnosticar o problema é verificar se a máquina do usu�
 instância do Rest PKI sendo utilizada. Abra um navegador na máquina do usuário e acesse:
 
 * Rest PKI em nuvem: https://restpki.lacunasoftware.com/Api/System/Info
-* Rest PKI *on premises*: https://restpki.suaempresa.com.br/Api/System/Info (substitua de acordo com a URL do seu Rest PKI)
+* Rest PKI *on premises*: https://restpki.suaempresa.com.br/Api/System/Info (substitua de acordo com a URL da sua instância)
 
 > [!NOTE]
 > Embora a URL padrão para acessar as APIs do Rest PKI seja `https://pki.rest/`, no Web PKI utiliza-se por padrão a URL alternativa
