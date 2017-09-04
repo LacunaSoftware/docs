@@ -52,6 +52,8 @@
 ### [Ruby on Rails](rest-pki/ruby/rails.md)
 ## [Disponibilidade de exemplos](rest-pki/samples-availability.md)
 ## [Tags PAdES](rest-pki/pades-tags.md)
+## [Resolução de problemas](rest-pki/troubleshoot/index.md)
+### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Histórico de versões](rest-pki/changelog.md)
 <!-- End of Rest PKI -->
 
