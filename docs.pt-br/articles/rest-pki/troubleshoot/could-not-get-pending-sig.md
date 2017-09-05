@@ -47,8 +47,7 @@ Caso a chamada seja bem-sucedida, retornando um XML similar ao mostrado acima, r
 utilizando o navegador **Chrome**:
 
 > [!NOTE]
-> Caso o problema só ocorra em outros navegadores que não o Chrome, entre em contato conosco para instruções específicas para
-> outro navegador
+> Caso o problema só ocorra em outros navegadores que não o Chrome, veja instruções no final do artigo
 
 1. Clique com o botão direito no ícone do Web PKI (chip amarelo) no canto superior direito do navegador e clique na opção **Manage extensions**
 1. Marque a caixa **Developer mode** no topo da lista de extensões
@@ -80,3 +79,21 @@ Os detalhes do erro da chamada de rede ao Rest PKI devem indicar a causa do prob
 
 * Caso você esteja usando a instância padrão do Rest PKI em `https://pki.rest/`: verifique o código de erro. Provavelmente o acesso ao Rest PKI está sendo
   bloqueado pelo firewall da rede do usuário em questão. Se for o caso, entre em contato com o responsável pela rede em questão.
+
+## Procedimento para Firefox
+
+Para diagnosticar falhas na comunicação do Web PKI com o Rest PKI no Firefox, siga os passos abaixo:
+
+1. Abra o menu do Firefox (ícone no canto superior direito)
+1. Clique em **Add-ons**
+1. Clique na engrenagem no topo da página, depois em **Debug Add-ons**
+1. Marque a caixa **Enable add-on debugging**
+1. Localize o Web PKI na lista de extensões e clique no link **Debug**
+1. No pop-up que aparecerá, clique em **Allow**
+1. Na janela que se abrirá, clique na aba **Network**
+1. Repita o processo de assinatura no navegador
+1. Ficará registrado na aba Network a chamada de rede ao Rest PKI que falhou. Clique na chamada.
+
+> [!NOTE]
+> No Firefox, ficam misturadas na aba *Network* da janela de debug da extensão as chamadas feitas pela página e feitas pela extensão. Para ajudar, a chamada
+> que o Web PKI faz para o Rest PKI pode ser identificada pela rota, chamada **Certificate**
