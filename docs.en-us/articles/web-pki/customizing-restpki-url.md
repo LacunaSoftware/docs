@@ -9,7 +9,7 @@ If a non-standard PKI Rest is used, other than https://pki.rest It is necessary 
 
 ```javascript
 pki.init({
-	 restPkiUrl: 'https://YourRestPKI.com/',
+    restPkiUrl: 'https://YourRestPKI.com/',
     ready: onWebPkiReady,
 });
 ```
