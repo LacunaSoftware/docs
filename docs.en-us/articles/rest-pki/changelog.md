@@ -1,5 +1,14 @@
 ﻿# Rest PKI changelog
 
+### 1.13.3 (2017-09-07)
+
+Database model update: No
+
+- Update Lacuna PKI SDK to 1.19.3 to fix bugs on revocation status checking
+- Full validation results now included on certificate authentication completed event
+- Improved logs to help diagnostic of trust parameterization errors
+
+
 ### 1.13.2 (2017-08-28)
 
 Database model update: No
