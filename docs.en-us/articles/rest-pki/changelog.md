@@ -1,5 +1,33 @@
 ﻿# Rest PKI changelog
 
+### 1.14.0 (2017-09-09)
+
+Database model update: **Yes**
+
+- Add transaction limits (system-wide or per user)
+- Add support for admins to block users
+- Improve timestamp requester fallback and recovery
+- Add various API validations to return status codes 400 and 422 instead of 500
+- Add support for admins to manage users' custom intermediate CAs
+- Add "Windows Server" option on custom security contexts' additional standard PKIs
+- Add warning on dashboard if PKI SDK license is close to expiration
+- Improvements on billing report
+  - Fix bug on paging buttons
+  - Add column with PDF marks
+  - Add totals row
+- Instrumentation improvements
+  - Operations differing only by parameter on route are now unified on application insights
+  - Failed TSP requests are now logged as so on application insights
+  - API trust parameters (security context and signature policy) are now registered on events
+  - Add client lib tracking
+- Fix bug that caused sensible settings to be written on the system log
+- Fix bug that prevented deletion of timestamp requesters
+
+#### Known issues
+
+- Version cannot be installed on PostgreSQL (will be fixed on next patch)
+
+
 ### 1.13.3 (2017-09-07)
 
 Database model update: No
