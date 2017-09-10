@@ -20,7 +20,7 @@ Tag                     | Value
 `{{br_cnpj_formatted}}` | Same as `{{br_cnpj}}` but formatted as **00.000.000/0000-00**
 `{{br_responsavel}}`    | Name of the certificate's holder (*nome do titular/responsável*)
 `{{br_company}}`        | Company name
-`{{br_oab_numbero}}`    | OAB's *Número de Inscrição junto a Seccional* (without leading zeroes)
+`{{br_oab_numero}}`     | OAB's *Número de Inscrição junto a Seccional* (without leading zeroes)
 `{{br_oab_uf}}`         | OAB's *sigla do Estado da Seccional*
 `{{br_rg_numero}}`      | Certificate holder's ID  number (*número do RG do titular/responsável*) without leading zeroes
 `{{br_rg_emissor}}`     | Issuing entity of the certificate holder's ID (órgão emissor do RG do titular/responsável)
@@ -36,3 +36,4 @@ Tag                    | Equivalent tag
 `{{signerEmail}}`      | `{{email}}`
 `{{signerNationalId}}` | `{{national_id}}`
 `{{issuerCommonName}}` | `{{issuer_cn}}`
+`{{br_oab_numbero}}`   | `{{br_oab_numero}}`
