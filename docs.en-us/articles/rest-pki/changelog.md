@@ -22,6 +22,7 @@ Database model update: **Yes**
   - Add client lib tracking
 - Fix bug that caused sensible settings to be written on the system log
 - Fix bug that prevented deletion of timestamp requesters
+- Fix name of PAdES tag `{{br_oab_numero}}` (old `{{br_oab_numbero}}` is still supported)
 
 #### Known issues
 
