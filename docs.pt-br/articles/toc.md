@@ -26,6 +26,8 @@
 ## [Filtros de certificados](web-pki/filters.md)
 ## [Configurando RestPKI alternativo](web-pki/customizing-restpki-url.md)
 ## [Exemplos completos](web-pki/full-samples.md)
+## [FAQ](web-pki/faq/index.md)
+### [signData vs. signHash](web-pki/faq/sign-data-vs-hash.md)
 ## [Guia da API](web-pki/api.md)
 <!-- End of Web PKI -->
 
