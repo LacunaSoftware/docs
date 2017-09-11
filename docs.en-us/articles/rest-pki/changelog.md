@@ -26,7 +26,7 @@ Database model update: **Yes**
 
 #### Known issues
 
-- Version cannot be installed on PostgreSQL (will be fixed on next patch)
+- Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
 
 
 ### 1.13.3 (2017-09-07)
