@@ -1,11 +1,23 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-14-2" />
+### 1.14.2 (2017-09-12)
+
+Database model update: No
+
+- Fix bug that caused successful TSP requests to be logged as failures on Azure Application Insights
+
+**Known issues:**
+
+- Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
+
+
 <a name="v1-14-1" />
 ### 1.14.1 (2017-09-11)
 
 Database model update: No
 
-- Fix bug that caused successful TSP requests to be logged as failures on Azure Application Insights
+- ~~Fix bug that caused successful TSP requests to be logged as failures on Azure Application Insights~~ (only really fixed on 1.14.2)
 
 **Known issues:**
 
