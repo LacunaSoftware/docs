@@ -1,5 +1,16 @@
 ﻿# Rest PKI changelog
 
+### 1.14.1 (2017-09-11)
+
+Database model update: No
+
+- Fix bug that caused successful TSP requests to be logged as failures on Azure Application Insights
+
+#### Known issues
+
+- Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
+
+
 ### 1.14.0 (2017-09-09)
 
 Database model update: **Yes**
