@@ -1,16 +1,18 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-14-1" />
 ### 1.14.1 (2017-09-11)
 
 Database model update: No
 
 - Fix bug that caused successful TSP requests to be logged as failures on Azure Application Insights
 
-#### Known issues
+**Known issues:**
 
 - Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
 
 
+<a name="v1-14-0" />
 ### 1.14.0 (2017-09-09)
 
 Database model update: **Yes**
@@ -35,11 +37,12 @@ Database model update: **Yes**
 - Fix bug that prevented deletion of timestamp requesters
 - Fix name of PAdES tag `{{br_oab_numero}}` (old `{{br_oab_numbero}}` is still supported)
 
-#### Known issues
+**Known issues:**
 
 - Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
 
 
+<a name="v1-13-3" />
 ### 1.13.3 (2017-09-07)
 
 Database model update: No
@@ -49,6 +52,7 @@ Database model update: No
 - Improved logs to help diagnostic of trust parameterization errors
 
 
+<a name="v1-13-2" />
 ### 1.13.2 (2017-08-28)
 
 Database model update: No
@@ -56,6 +60,7 @@ Database model update: No
 - Add proxy configuration
 
 
+<a name="v1-13-1" />
 ### 1.13.1 (2017-07-28)
 
 Database model update: No
@@ -63,6 +68,7 @@ Database model update: No
 - Minor changes to billing API
 
 
+<a name="v1-13-0" />
 ### 1.13.0 (2017-07-03)
 
 Database model update: No
@@ -72,6 +78,7 @@ Database model update: No
 - Improve transactions and events screens
 
 
+<a name="v1-12-8" />
 ### 1.12.8 (2017-06-27)
 
 Database model update: No
@@ -79,6 +86,7 @@ Database model update: No
 - Fix bug that caused intermediate CAs to be ignored on open/validate signature APIs
 
 
+<a name="v1-12-7" />
 ### 1.12.7 (2017-06-05)
 
 Database model update: **Yes**
@@ -87,6 +95,7 @@ Database model update: **Yes**
 - Fix bug that caused errors on recently-created timestampers
 
 
+<a name="v1-12-6" />
 ### 1.12.6 (2017-06-01)
 
 Database model update: No
@@ -94,6 +103,7 @@ Database model update: No
 - Create app settings TimeToCompleteSignatures and TimeToCompleteAuthentications
 
 
+<a name="v1-12-5" />
 ### 1.12.5 (2017-05-11)
 
 Database model update: No
@@ -103,6 +113,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.16.7 to improve download logs
 
 
+<a name="v1-12-4" />
 ### 1.12.4 (2017-05-05)
 
 Database model update: No
@@ -110,6 +121,7 @@ Database model update: No
 - Fix bug that caused execution privileges over the site's folder to be required from the application
 
 
+<a name="v1-12-3" />
 ### 1.12.3 (2017-05-04)
 
 Database model update: No
@@ -119,6 +131,7 @@ Database model update: No
 - Fix bug on open/validate XML signatures API
 
 
+<a name="v1-12-2" />
 ### 1.12.2 (2017-04-26)
 
 Database model update: No
@@ -126,6 +139,7 @@ Database model update: No
 - Fix bug on certificate authentication with Web PKI
 
 
+<a name="v1-12-1" />
 ### 1.12.1 (2017-04-26)
 
 Database model update: No
@@ -133,6 +147,7 @@ Database model update: No
 - Fix bug on application startup that could cause double processing of background jobs
 
 
+<a name="v1-12-0" />
 ### 1.12.0 (2017-04-25)
 
 Database model update: **Yes**
@@ -148,6 +163,7 @@ Database model update: **Yes**
 - Update Lacuna PKI SDK to 1.16.6
 
 
+<a name="v1-11-4" />
 ### 1.11.4 (2017-03-16)
 
 Database model update: No
@@ -157,6 +173,7 @@ Database model update: No
 	- Changes on CAdES signature inspection to deal with incorrectly encoded timestamps
 
 
+<a name="v1-11-3" />
 ### 1.11.3 (2017-02-13)
 
 Database model update: No
@@ -165,12 +182,14 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.16.2
 	
 
+<a name="v1-11-2" />
 ### 1.11.2 (2017-01-20)
 
 Database model update: No
 
 - Fix bug on database maintenance page
 
+<a name="v1-11-1" />
 ### 1.11.1 (2017-01-17)
 
 Database model update: No
@@ -178,6 +197,7 @@ Database model update: No
 - Fix bug on upload and download routes
 
 
+<a name="v1-11-0" />
 ### 1.11.0 (2017-01-17)
 
 Database model update: **Yes**
@@ -205,6 +225,7 @@ Database model update: **Yes**
 	- Update italian TSL uri and root
 
 
+<a name="v1-10-1" />
 ### 1.10.1 (2016-10-01)
 
 Database model update: No
@@ -212,6 +233,7 @@ Database model update: No
 - Add standard PAdES policies "Basic with ICP-Brasil certificates" and "PAdES-T with ICP-Brasil certificates"
 
 
+<a name="v1-10-0" />
 ### 1.10.0 (2016-09-27)
 
 Database model update: **Yes**
@@ -220,6 +242,7 @@ Database model update: **Yes**
 - Improve user management
 
 
+<a name="v1-9-1" />
 ### 1.9.1 (2016-09-22)
 
 Database model update: No
@@ -227,6 +250,7 @@ Database model update: No
 - Fix bug preventing use of tags {{signerEmail}} and {{issuerCommonName}} on PAdES visual representation
 
 
+<a name="v1-9-0" />
 ### 1.9.0 (2016-08-25)
 
 Database model update: **Yes**
@@ -236,6 +260,7 @@ Database model update: **Yes**
 - Improve billing report
 
 
+<a name="v1-8-2" />
 ### 1.8.2 (2016-07-19)
 
 Database model update: No
@@ -243,6 +268,7 @@ Database model update: No
 - Fix bug on CAdES co-signatures with timestamp
 
 
+<a name="v1-8-1" />
 ### 1.8.1 (2016-07-11)
 
 Database model update: No
@@ -251,6 +277,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.13.1
 
 
+<a name="v1-8-0" />
 ### 1.8.0 (2016-07-05)
 
 Database model update: No
@@ -268,6 +295,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.13.0
 
 
+<a name="v1-7-2" />
 ### 1.7.2 (2016-06-10)
 
 Database model update: No
@@ -281,6 +309,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.12.2 (no bug fixes)
 
 
+<a name="v1-7-1" />
 ### 1.7.1 (2016-06-03)
 
 Database model update: No
@@ -288,6 +317,7 @@ Database model update: No
 - Fix bug on download of a security context's trusted root certificate
 
 
+<a name="v1-7-0" />
 ### 1.7.0 (2016-06-03)
 
 Database model update: **Yes**
@@ -305,6 +335,7 @@ Database model update: **Yes**
 	- Add support for certificates with rare alternative SHA-1 with RSA signature algorithm OID (1.3.14.3.2.29)
 
 
+<a name="v1-6-4" />
 ### 1.6.4 (2016-05-05)
 
 Database model update: **Yes**
@@ -313,6 +344,7 @@ Database model update: **Yes**
 	- This change was done due to performance issues. The next release will add support for other storage options.
 
 
+<a name="v1-6-3" />
 ### 1.6.3 (2016-05-02)
 
 Database model update: **Yes**
@@ -330,6 +362,7 @@ Database model update: **Yes**
 	- Add ICP-Brasil trusted root "v5"
 
 
+<a name="v1-6-2" />
 ### 1.6.2 (2016-04-18)
 
 Database model update: No
@@ -337,6 +370,7 @@ Database model update: No
 - Add support on PAdES visual representation for specifying a container inside the signature rectangle on which to place the text
 
 
+<a name="v1-6-1" />
 ### 1.6.1 (2016-02-22)
 
 Database model update: No
@@ -344,6 +378,7 @@ Database model update: No
 - Fix bug causing delay on database access when running on Microsoft Azure
 
 
+<a name="v1-6-0" />
 ### 1.6.0 (2016-01-21)
 
 Database model update: **Yes**
@@ -353,6 +388,7 @@ Database model update: **Yes**
 	- Improve certificate validation to check the PathLenConstraint extension
 
 
+<a name="v1-5-1" />
 ### 1.5.1 (2015-11-24)
 
 Database model update: No
@@ -360,6 +396,7 @@ Database model update: No
 - Aesthetic changes only
 
 
+<a name="v1-5-0" />
 ### 1.5.0 (2015-11-23)
 
 Database model update: **Yes**
@@ -376,6 +413,7 @@ Database model update: **Yes**
 	- Add support for ICP-Brasil CPF field on "OU" field of subject name having a space after the colon ("OU=CPF: xxxxxxxxxxx")
 
 	
+<a name="v1-4-3" />
 ### 1.4.3 (2015-11-06)
 
 Database model update: No
@@ -383,6 +421,7 @@ Database model update: No
 - Aesthetic changes only
 
 
+<a name="v1-4-2" />
 ### 1.4.2 (2015-11-06)
 
 Database model update: No
@@ -390,6 +429,7 @@ Database model update: No
 - Aesthetic changes only
 
 
+<a name="v1-4-1" />
 ### 1.4.1 (2015-10-21)
 
 Database model update: No
@@ -397,6 +437,7 @@ Database model update: No
 - Aesthetic changes only
 
 
+<a name="v1-4-0" />
 ### 1.4.0 (2015-10-21)
 
 Database model update: No
@@ -406,6 +447,7 @@ Database model update: No
 - Fix bug on PAdES signatures
 
 
+<a name="v1-3-1" />
 ### 1.3.1 (2015-10-14)
 
 Database model update: No
@@ -417,6 +459,7 @@ Database model update: No
 - Update Lacuna PKI SDK to 1.6.0, thus:
 	- Fix bug on logging which caused the "source" argument to have an incorrect value
 
+<a name="v1-3-0" />
 ### 1.3.0 (2015-10-13)
 
 - First version released publicly
