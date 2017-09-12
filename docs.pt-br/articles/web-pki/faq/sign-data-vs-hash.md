@@ -24,7 +24,7 @@ A função `signData` recebe como entrada o *to-sign-data* e realiza sobre ele t
 `signHash` recebe como entrada o *to-sign-hash*, isto é, o hash pré-computado do *to-sign-data*, e realiza sobre ele
 apenas da segunda etapa em diante.
 
-Ambas funções podem ser usadas na implementação de [Assinaturas web remotas](../../pki-guide/web-signatures/remote.md)
+Ambas funções podem ser usadas na implementação de [assinaturas web remotas](../../pki-guide/web-signatures/remote.md)
 independentemente do esquema de assinatura (CAdES, PAdES, etc) sendo utilizado. A escolha da função a ser utilizada
 depende do *output* fornecido pelo código que executa em backend ao final do "preparo" da assinatura remota. Se for
 produzido um *to-sign-data*, utilize a função `signData`. Se for produzido um *to-sign-hash*, utilize a função `signHash`.
