@@ -9,3 +9,4 @@ Here you'll find answers to the most common questions on how to use the [Web PKI
 Questions:
 
 * [What is the difference between the functions signData and signHash?](sign-data-vs-hash.md)
+* [Does Web PKI support establishing SSL connections with the user's certificate?](ssl.md)

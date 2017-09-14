@@ -28,6 +28,7 @@
 ## [Full samples](web-pki/full-samples.md)
 ## [FAQ](web-pki/faq/index.md)
 ### [signData vs. signHash](web-pki/faq/sign-data-vs-hash.md)
+### [Support for SSL connections with users' certificates?](web-pki/faq/ssl.md)
 ## [API reference](web-pki/api.md)
 <!-- End of Web PKI -->
 

@@ -9,3 +9,4 @@ Aqui estão reunidas as repostas para as dúvidas mais frequentes sobre o uso do
 Perguntas:
 
 * [Qual é a diferença entre as funções signData e signHash?](sign-data-vs-hash.md)
+* [O Web PKI suporta conexões SSL usando o certificado do usuário? (ou Como faço para transmitir uma NFe Para a Receita/SEFAZ/prefeitura?)](ssl.md)
