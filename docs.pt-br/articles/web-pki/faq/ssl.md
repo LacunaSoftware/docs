@@ -1,6 +1,6 @@
 ﻿# O Web PKI suporta conexões SSL usando o certificado do usuário?
 
-## ou Como faço para transmitir uma NFe Para a Receita/SEFAZ/prefeitura?
+## (ou Como faço para transmitir uma NFe Para a Receita/SEFAZ/prefeitura?)
 
 Atualmente, é comum utilizar um mesmo certificado para emitir uma nota fiscal eletrônica (NFe) e transmiti-la ao órgão
 competente (a transmissão é feita via SSL com autenticação mútua). A predominância dessa arquitetura advém do fato de

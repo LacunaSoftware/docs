@@ -28,6 +28,8 @@
 ## [Exemplos completos](web-pki/full-samples.md)
 ## [FAQ](web-pki/faq/index.md)
 ### [signData vs. signHash](web-pki/faq/sign-data-vs-hash.md)
+### [Qual é o formato da assinatura retornada pelas funções signData e signHash?](web-pki/faq/sign-data-output.md)
+### [Como posso realizar uma assinatura digital utilizando o Web PKI?](web-pki/faq/digital-signature.md)
 ### [Suporte a SSL com o certificado do usuário?](web-pki/faq/ssl.md)
 ## [Guia da API](web-pki/api.md)
 <!-- End of Web PKI -->
