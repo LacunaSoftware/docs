@@ -1,5 +1,19 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-14-3" />
+### 1.14.3 (2017-09-17)
+
+Database model update: **Yes**
+
+- Fix compatibility with PostgreSQL (previous 1.14.x versions were not compatible)
+- Improve timestamp requester management
+- Improve validations on PDF marks API
+- Reduce files not used on on-premises installations
+- Fix bug that caused timestamp requesters to be marked as unavailable during database update
+- Fix bug that caused CA certificates without a CN (common name) field to be displayed incorrectly
+- Fix bug on loading of user limits page
+
+
 <a name="v1-14-2" />
 ### 1.14.2 (2017-09-12)
 
@@ -9,7 +23,7 @@ Database model update: No
 
 **Known issues:**
 
-- Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
+- Version cannot be installed on PostgreSQL (fixed on 1.14.3)
 
 
 <a name="v1-14-1" />
@@ -21,7 +35,7 @@ Database model update: No
 
 **Known issues:**
 
-- Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
+- Version cannot be installed on PostgreSQL (fixed on 1.14.3)
 
 
 <a name="v1-14-0" />
@@ -51,7 +65,7 @@ Database model update: **Yes**
 
 **Known issues:**
 
-- Version cannot be installed on PostgreSQL (will be fixed on upcoming patch)
+- Version cannot be installed on PostgreSQL (fixed on 1.14.3)
 
 
 <a name="v1-13-3" />
