@@ -4,7 +4,7 @@ Os requisitos para instalar uma instância [*on premises*](index.md) do [Rest PK
 
 * Sistema operacional: Windows Server 2008 R2 ou superior
 * Banco de dados:
-  * SQL Server 2008 R2 ou superior ou
+  * SQL Server 2008 R2 ou superior **ou**
   * PostgreSQL 9.3 ou superior
 
 Para começar a instalação, você precisará:

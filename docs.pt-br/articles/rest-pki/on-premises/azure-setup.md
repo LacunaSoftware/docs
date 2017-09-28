@@ -8,4 +8,4 @@ Para começar a instalação, você precisará:
 * Pacote de binários do Rest PKI: [restpki-1.13.3-azure.zip](https://files.lacunasoftware.com/restpki/restpki-1.13.3-azure.zip)
 * Licença binária de uso do Lacuna PKI SDK (arquivo LacunaPkiLicense.txt)
 
-De posse desses dois arquivos, [entre em contato conosco](https://www.lacunasoftware.com/en/home/purchase) para obter as instruções de instalação.
+De posse desses dois arquivos, [entre em contato conosco](https://www.lacunasoftware.com/pt/home/purchase) para obter as instruções de instalação.
