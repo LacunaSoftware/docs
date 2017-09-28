@@ -12,4 +12,5 @@ To start the installation procedure, you'll need:
 * Rest PKI binaries package: [restpki-1.13.3.zip](https://files.lacunasoftware.com/restpki/restpki-1.13.3.zip)
 * Binary license for the Lacuna PKI SDK (file LacunaPkiLicense.txt)
 
-Once you have both files, [contact us](https://www.lacunasoftware.com/en/home/purchase) for the installation procedure.
+Once you have both files, follow the steps on the [Setup manual for Windows Server](https://files.lacunasoftware.com/restpki/restpki-admin-guide-pt.pdf)
+([contact us](https://www.lacunasoftware.com/en/home/purchase) for the English version).
