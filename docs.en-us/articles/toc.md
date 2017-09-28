@@ -58,6 +58,8 @@
 ## [Samples availability](rest-pki/samples-availability.md)
 ## [PAdES tags](rest-pki/pades-tags.md)
 ## [On-premises](rest-pki/on-premises/index.md)
+## [Setup on Windows Server](rest-pki/on-premises/windows-setup.md)
+## [Setup on Azure App Service](rest-pki/on-premises/azure-setup.md)
 ## [Troubleshoot](rest-pki/troubleshoot/index.md)
 ### [Error "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Changelog](rest-pki/changelog.md)
