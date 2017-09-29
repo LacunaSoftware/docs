@@ -1,5 +1,21 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-14-4" />
+### 1.14.4 (2017-09-29)
+
+Database model update: No
+
+- Add option to export billing report to CSV
+- Improve validation of external file URLs passed to the API
+- Improve instrumentation
+  - Registering API error fields on Application Insights
+  - Increase verbosity of log level "Debug"
+  - Add events to help diagnosing problems on integration with Web PKI
+- Fix bug that could cause several background tasks to remain queued
+- Fix bug that caused a (handled) NullReferenceException during system startup
+- Fix bug on transaction limit enforcing
+
+
 <a name="v1-14-3" />
 ### 1.14.3 (2017-09-17)
 
