@@ -48,7 +48,7 @@ is done the control flow is the same as in the sample [PAdES signature with file
 After the control flow of the sample [PAdES singature with file already on server](#pades) is completed and the link *Co-sign with another certificate* is clicked, the
 same control flow is repeated, but now with the URL parameter `userfile` filled.
 
-<a name="pdf-marks">
+<a name="pdf-marks" />
 ### PAdES marks
 
 This feature is demonstrated as an optional configuration on the [PAdES signature with file already on server](#pades)
@@ -77,7 +77,7 @@ Not yet available on this project.
 <a name="print" />
 ### Printer-friendly version
 
-After the control flow of the sample [PAdES signature with file already on server](#pades) is completed and the link *Donwload a printer-friendly version of the signed file* is clicked,
+After the control flow of the sample [PAdES signature with file already on server](#pades) is completed and the link *Download a printer-friendly version of the signed file* is clicked,
 the flow goes to the file
 [printer-friendly-version.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/printer-friendly-version.php)
 with the URL parameter `file` filled.
