@@ -158,3 +158,13 @@ Not yet available on this project.
 * Controller: [BatchSignatureOptimizedController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/BatchSignatureOptimizedController.cs)
 * View: [BatchSignatureOptimized/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/BatchSignatureOptimized/Index.cshtml)
 * Javascript: (inside BatchSignatureOptimized/Index.cshtml)
+
+<a name="batch-cades" />
+### CAdES batch signature
+
+Not yet available on this project.
+
+<a name="batch-xml-element" />
+### XML Element batch signature on the same document
+
+Not yet available on this project.

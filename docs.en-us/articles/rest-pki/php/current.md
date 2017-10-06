@@ -150,3 +150,13 @@ Not yet available on this project.
 ### Optimized batch signature
 
 Not yet available on this project.
+
+<a name="batch-cades" />
+### CAdES batch signature
+
+Not yet available on this project.
+
+<a name="batch-xml-element" />
+### XML Element batch signature on the same document
+
+Not yet available on this project.
