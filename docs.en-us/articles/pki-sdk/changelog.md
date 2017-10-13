@@ -1,7 +1,7 @@
 ﻿# PKI SDK changelog
 
 <a name="v1-19-5" />
-### 1.19.5 (2017/10/02)
+### 1.19.5 (2017-10-02)
 
 - Add Certificate Signing Request (PKCS#10) object
 - Improve RFC 3161 response encoding
@@ -10,13 +10,13 @@
 
 
 <a name="v1-19-4" />
-### 1.19.4 (2017/09/14)
+### 1.19.4 (2017-09-14)
 
 - Improve issuer and subject names decode
 
 
 <a name="v1-19-3" />
-### 1.19.3 (2017/09/07)
+### 1.19.3 (2017-09-07)
 
 - Improved PAdES complete signature
 - Add Timestamp and signer revocation values after PAdES signature completed when LTV
@@ -25,13 +25,13 @@
 
 
 <a name="v1-19-1" />
-### 1.19.1 (2017/07/27)
+### 1.19.1 (2017-07-27)
 
 - Removed SHA1 hash algorithm from allowed algorithms on default signature policies. Affects XadesBasic, XmlDSigBasic, Xades AdrTempo timestamps, Pades Basic, Italy CadesBes, CadesBes, CadesT, CadesC, CadesXLong, CadesXType1, CadesXLongType1 and CadesA policies
 
 
 <a name="v1-19-0" />
-### 1.19.0 (2017/07/25)
+### 1.19.0 (2017-07-25)
 
 - Add PDF password protection feature
 - Add timespan range for OCSP validation
@@ -40,32 +40,32 @@
 
 
 <a name="v1-18-0" />
-### 1.18.0 (2017/07/04)
+### 1.18.0 (2017-07-04)
 
 - Improve PDF marks
 
 
 <a name="v1-17-1" />
-### 1.17.1 (2017/06/21)
+### 1.17.1 (2017-06-21)
 
 - Add Public Key X509 Certificate generation
 - Add PKCS#12 generation
 
 
 <a name="v1-16-9" />
-### 1.16.9 (2017/06/10)
+### 1.16.9 (2017-06-10)
 
 - Pdf date referenced signature validation also considering CMS SignedData revocation data set if present
 
 
 <a name="v1-16-8" />
-### 1.16.8 (2017/05/25)
+### 1.16.8 (2017-05-25)
 
 - Add property PadesVisualText.SigningTimeOffset
 
 
 <a name="v1-16-7" />
-### 1.16.7 (2017/05/10)
+### 1.16.7 (2017-05-10)
 
 - Fix XML signature validation rising UnacceptableSignaturePolicyException
 - Fix PDF marks image data redundancy
@@ -73,45 +73,45 @@
 
 
 <a name="v1-16-6" />
-### 1.16.6 (2017/04/26)
+### 1.16.6 (2017-04-26)
 
 - Fix license refresh on restricted product
 - New restricted product validation
 
 
 <a name="v1-16-5" />
-### 1.16.5 (2017/03/16)
+### 1.16.5 (2017-03-16)
 
 - Updated ICP-Brasil intermediate CAs
 
 
 <a name="v1-16-4" />
-### 1.16.4 (2017/03/01)
+### 1.16.4 (2017-03-01)
 
 - Changes on CAdES signature inspection and compression to deal with incorrectly encoded timestamps
 
 
 <a name="v1-16-3" />
-### 1.16.3 (2017/02/15)
+### 1.16.3 (2017-02-15)
 
 - Add PKI Peru certificate fields
 
 
 <a name="v1-16-2" />
-### 1.16.2 (2017/02/07)
+### 1.16.2 (2017-02-07)
 
 - Add Xml policy mappers
 - NFe policy without signature elements IDs
 
 
 <a name="v1-16-1" />
-### 1.16.1 (2017/01/23)
+### 1.16.1 (2017-01-23)
 
 - Fix last hotfix merge
 
 
 <a name="v1-16-0" />
-### 1.16.0 (2017/01/16)
+### 1.16.0 (2017-01-16)
 
 
 - Add grunt conditional packaging for both Net4.0 and Net4.5 frameworks
