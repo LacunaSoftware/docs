@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-1" />
+### 1.20.1 (2017-10-26)
+
+- Multi-target package supporting .Net Frameworks 4.5 and 4.0 Client Profile
+- Using new csproj technology
+
+
 <a name="v1-19-5" />
 ### 1.19.5 (2017-10-02)
 
