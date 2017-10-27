@@ -37,10 +37,21 @@ sudo tar xzf pkie-1.0.0.tar.gz -C /usr/share/pkie
 sudo chmod 755 -R /usr/share/pkie
 ```
 
-Crie um atalho para executar o PKI Express
+Crie um atalho para executar o PKI Express (opcional):
 
 ```sh
-echo -e '#!/bin/bash\ndotnet /usr/share/pkie/pkie.dll "$@"' > pkie
-chmod +x pkie
-sudo mv pkie /usr/local/bin/pkie
+sudo sh -c 'echo "#!/bin/bash\ndotnet /usr/share/pkie/pkie.dll \"\$@\"" > /usr/local/bin/pkie'
+sudo chmod +x /usr/local/bin/pkie
+```
+
+Teste o PKI Express:
+
+```sh
+pkie help
+```
+
+ou, caso não tenha criado o atalho:
+
+```sh
+dotnet /usr/share/pkie/pkie.dll help
 ```
