@@ -6,9 +6,9 @@ ser instalado tanto em servidores Windows quanto Linux.
 
 Com o PKI Express, é possível:
 
-* Criar assinaturas padrão CMS e CAdES
-* Criar assinaturas padrão PAdES
-* Criar assinaturas padrão XMLDSig e XAdES
+* Criar assinaturas padrão CMS/CAdES
+* Criar assinaturas padrão PDF/PAdES
+* Criar assinaturas padrão XmlDSig/XAdES
 
 > [!NOTE]
 > Para usar o PKI Express, você precisará de uma licença. Por favor [fale conosco](https://www.lacunasoftware.com/pt/home/purchase) para obter uma licença para testes.
