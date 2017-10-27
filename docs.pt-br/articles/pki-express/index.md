@@ -15,5 +15,5 @@ Com o PKI Express, é possível:
 
 Próximos passos:
 
-* [Instalação do PKI Express](setup/index.md)
+* [Instalação](setup/index.md)
 * [Usando em PHP](php/index.md)
