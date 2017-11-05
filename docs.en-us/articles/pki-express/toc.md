@@ -5,3 +5,4 @@
 ### [Linux CentOS/Oracle](setup/linux-centos.md)
 <!-- ### [Windows](setup/windows.md) -->
 ## [Using on PHP](php/index.md)
+## [Using on Java](java/index.md)
