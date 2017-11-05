@@ -28,7 +28,7 @@ O uso do PKI Express em Java deve ser feito com o pacote Maven [pki-express](htt
 
 > [!NOTE]
 > O pacote não encontra-se no repositório *Maven Central* mas sim no repositório de pacotes Maven da Lacuna Software, que precisa
-> ser adicionado à lista de repositórios do seu projeto no arquivo de build. Veja instruções abaixo.
+> ser adicionado à lista de repositórios do seu projeto. Veja instruções abaixo.
 
 Se o seu projeto é compilado com o **Maven**, adicione os seguintes trechos ao seu arquivo `pom.xml`:
 

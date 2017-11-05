@@ -17,3 +17,4 @@ Next steps:
 
 * [Install PKI Express](setup/index.md)
 * [Using on PHP](php/index.md)
+* [Using on Java](java/index.md)
