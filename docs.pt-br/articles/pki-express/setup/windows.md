@@ -1,6 +1,11 @@
 ﻿# Instalação do PKI Express em Windows
 
-Para instalar o PKI Express em um Windows 7 ou superior, baixe e execute o instalador:
+O PKI Express é compatível com os seguintes ambientes Windows:
+
+* Server: Windows Server 2008 R2 ou superior
+* Desktop: Windows 7 ou superior
+
+Para instalar o PKI Express, baixe e execute o instalador:
 
 [https://files.lacunasoftware.com/pki-express/pkie-x64-1.0.0.msi](https://files.lacunasoftware.com/pki-express/pkie-x64-1.0.0.msi)
 
