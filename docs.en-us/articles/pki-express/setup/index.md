@@ -6,4 +6,4 @@ To install PKI Express, choose one of the supported platforms:
   * [Ubuntu/Mint](linux-ubuntu.md)
   * [Red Hat Enterprise Linux (RHEL)](linux-redhat.md)
   * [CentOS/Oracle](linux-centos.md)
-* Windows
+* [Windows](windows.md)
