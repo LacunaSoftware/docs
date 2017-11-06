@@ -38,7 +38,7 @@ Se o seu projeto é compilado com o **Maven**, adicione os seguintes trechos ao 
 	<dependency>
 		<groupId>com.lacunasoftware.pkiexpress</groupId>
 		<artifactId>pki-express</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 	</dependency>
 	...
 </dependencies>
@@ -63,7 +63,7 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.pkiexpress:pki-express:1.0.1")
+	compile("com.lacunasoftware.pkiexpress:pki-express:1.0.2")
 }
 ```
 
