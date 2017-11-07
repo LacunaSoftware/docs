@@ -45,7 +45,7 @@ is done the control flow is the same as in the sample [PAdES signature with file
 <a name="pades-cosign" />
 ### PAdES co-signature
 
-After the control flow of the sample [PAdES singature with file already on server](#pades) is completed and the link *Click here to co-sign with another certificate* is clicked, the
+After the control flow of the sample [PAdES signature with file already on server](#pades) is completed and the link *Click here to co-sign with another certificate* is clicked, the
 same control flow is repeated, but now with the URL parameter `userfile` filled.
 
 <a name="pdf-marks" />
