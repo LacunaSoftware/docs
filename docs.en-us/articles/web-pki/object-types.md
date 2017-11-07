@@ -204,7 +204,7 @@ Name                     | Type                                                 
 Name                     | Type   | Description
 -------------------------|--------|------------
 `url`                    | String | Resource URL if is an online resource.
-`content`                | String | Base64 encoded content if is an local resource.
+`content`                | String | Base64 encoded content if is a local resource.
 `mimeType`               | String | Resource mimetype.
 
 <a name="pades-visual-rect" />
