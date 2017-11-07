@@ -16,12 +16,16 @@ LacunaWebPKI (license)
 ### Parameters
 
 `license` String | Object
+
 The license for the component. May be a string or an object (see examples). In order for the component to work, 
 you must set a valid purchased license that matches the URL of the site running the code. The exception is when 
 running the code from localhost. In that case, no license is needed, so you can test the component as much as you 
 want in development before deciding to license it.
 
 ### Examples
+
+Instantiate with a license object
+
 ```js
 // Here, we use the JSON format of our license. If you don't mind having the details of your license (expiration
 // date and allowed domains) in the source code of your page, this option is preferred because it makes it
@@ -39,6 +43,8 @@ var license = {
 // Constructor with license object
 var pki = new LacunaWebPKI(license);
 ```
+Instantiate with a license binary string
+
 ```js
 // Here, we use the binary format of our license. This is preferred if you want to hide the details of your license
 // (expiration date and allowed domains). Please note that the details are not encrypted, just encoded in Base64.
@@ -50,20 +56,26 @@ var pki = new LacunaWebPKI(license);
 
 <a name="init" />
 ## init
+
 Initializes the instance of the LacunaWebPKI object. This method must be called before calling any other methods.
 ```js
 init (readyCallback)
 init (args)
 ```
 
+| Since                    |
+|--------------------------|
+| lacuna-web-pki-1.3.10.js |
+
 ### Parameters
 `readyCallback` Function
+
 A function to be called when the component is ready to be used. The function receives no arguments.
 
-`args` InitObject
+`args` [InitArgs](lacunawebpki.md#init-object) Object
 
-<a name="init-object" />
-#### InitObject
+<a name="init-args" />
+#### InitArgs
 An object passed to the [init](lacunawebpki.md#init) method with the parameters below.
 | Parameter      | Type         | Obs      | Description 
 |----------------|--------------|----------|-------------
@@ -76,6 +88,7 @@ An object passed to the [init](lacunawebpki.md#init) method with the parameters 
 
 ### Examples
 
+Init with a ready callback
 ```js
 // This is the simplest way to call the method, in case you don't wish to register a default error callback nor
 // define a custom behavior for when the component is not installed/outdated.
@@ -86,6 +99,8 @@ function onWebPkiReady() {
     // start using the component
 }
 ```
+
+Init with an args object
 ```js
 // If you wish to pass any other argument, you must use the extended version of the method:
 pki.init({
@@ -120,19 +135,18 @@ function onWebPkiFail(ex) {
 }
 ```
 
-### Live examples
-
 <a name="list-certificates" />
 ## listCertificates
+
 Lists the available certificates.
 
 ```js
-listCertificates (args)
+listCertificates ()
 ```
 
-### Parameters
-
-`args` Object optional
+| Since                    |
+|--------------------------|
+| lacuna-web-pki-1.0.0.js  |
 
 ### Return
 
@@ -148,88 +162,125 @@ An array with the model of the available certificates.
 <a name="cert-model" />
 #### CertificateModel
 An object model of the available certificate with the parameters below.
-| Parameter       | Type      | Description 
-|-----------------|-----------|-------------
-| `subjectName`   | String    | The Common Name (CN) part of the certificate's subject name field.
-| `issuerName`    | String    | The Common Name (CN) part of the certificate's issuer name field.
-| `email`         | String    | The subject email address.
-| `thumbprint`    | String    | A Base64 string of the certificate SHA256 digest. This parameter is used as an identifier for the certificate selection.
-| `pkiBrazil`     | [PkiBrazil](lacunawebpki.md#pki-brazil) | A model with ICP-Brasil specific certificate fields.
-| `pkiItaly`      | [PkiItaly](lacunawebpki.md#pki-italy) | A model with PKI Italy specific certificate fields.
-| `keyUsage`      | [KeyUsage](lacunawebpki.md#key-usage) | A model of boolean certificate key usage types.
-| `validityEnd`   | Date      | The certificate expiration date.
-| `validityStart` | Date      | The certificate validity start date.
+Name            | Type                                | Description
+--------------- | ----------------------------------- | ----------------------------------------------------------------
+`subjectName`   | String                              | The Common Name (CN) part of the certificate's subject name field
+`issuerName`    | String                              | The Common Name (CN) part of the certificate's issuer name field
+`email`         | String                              | The subject email address.
+`thumbprint`    | String                              | The SHA-256 thumbprint (Base64-encoded) of the certificate's DER encoding. Used to reference the certificate on subsequent calls.
+`keyUsage`      | [KeyUsagesModel](#key-usages-model) | Object with boolean properties indicating wether each possible key usage is set on the certificate (see table below)
+`pkiBrazil`     | [PkiBrazilModel](#pki-brazil-model) | Object with Brazil-specific fields (see table below)
+`pkiItaly`      | [PkiItalyModel](#pki-italy-model)   | Object with Italy-specific fields (see table below)
+`validityStart` | Date                                | The *not before* field of the certificate
+`validityEnd`   | Date                                | The *not after* field of the certificate
+
+<a name="key-usages-model" />
+#### KeyUsagesModel
+
+Name               | Type
+------------------ | -------
+`crlSign`          | Boolean
+`dataEncipherment` | Boolean
+`decipherOnly`     | Boolean
+`digitalSignature` | Boolean
+`encipherOnly`     | Boolean
+`keyAgreement`     | Boolean
+`keyCertSign`      | Boolean
+`keyEncipherment`  | Boolean
+`nonRepudiation`   | Boolean
+
+<a name="pki-brazil-model" />
+#### PkiBrazilModel
+
+Name               | Type    | Description
+------------------ | ------- | ----------------------------------------------------------------
+`cpf`              | String  | Certificate holder's CPF (*CPF do titular/responsável*)
+`cnpj`             | String  | Company's CNPJ
+`responsavel`      | String  | Name of the certificate's holder (*nome do titular/responsável*)
+`dateOfBirth`      | Date    | Date of birth of the certificate's holder (time as midnight in the current machine's time zone)
+`certificateType`  | String  | The ICP-Brasil certificate type (possible values are "A1", "A2", "A3", "A4", "S1", "S2", "S3", "S4", "T3", "T4" and "Unknown")
+`isAplicacao`      | Boolean | Whether the certificate is an application certificate
+`isPessoaFisica`   | Boolean | Whether the certificate is a personal certificate (*pessoa física*)
+`isPessoaJuridica` | Boolean | Whether the certificate is a company certificate (*pessoa jurídica*)
+`companyName`      | String  | The responsible company name if it is an ICP-Brasil application certificate. The subject's common name without end id numbers if it is an ICP-Brasil company certificate. Null otherwise.
+`nis`              | String  | The certificate holder's "Número de Identificação Social - NIS (PIS, PASEP ou CI)". Returns value without leading zeroes. Returns null if information is not present.
+`rgNumero`         | String  | Certificate holder's ID number (*número do RG do titular/responsável*) without leading zeroes
+`rgEmissor`        | String  | Issuing entity of the certificate holder's ID (órgão emissor do RG do titular/responsável)
+`rgEmissorUF`      | String  | State code of the issuing entity of the certificate holder's ID (*UF do órgão emissor do RG do titular/responsável*)
+`oabNumero`        | String  | OAB's *Número de Inscrição junto a Seccional* (without leading zeroes)
+`oabUF`            | String  | OAB's *sigla do Estado da Seccional*
 
 > [!NOTE]
-> All certificate model parameters and sub-parameters are present in the returned object.
+> Each property on the `PkiBrazilModel` object may be null, but the object itself (`cert.pkiBrazil`) is never null.
 
-<a name="pki-brazil" />
-#### PkiBrazil
-An object with ICP-Brasil specific certificate fields.
+<a name="pki-italy-model" />
+#### PkiItalyModel
 
-| Parameter          | Type      | Description 
-|--------------------|-----------|-------------
-| `certificateType`  | String    | ICP-Brasil certificate type (`'A1'` | `'A2'` | `'A3'` ...).
-| `cnpj`             | String    | The company CNPJ (Id) number if it is a company certificate, `null ` otherwise
-| `companyName`      | String    | The company name if it is a company certificate, `null ` otherwise
-| `cpf`              | String    | The CPF (Id) of the certficate subject or of the company's legal representative, in case it is a company certificate
-| `dateOfBirth`      | Date      | The subject's or the company's legal representative date of birth, in case it is a company certificate
-| `isAplicacao`      | Boolean   | Whether or not is an application certificate
-| `isPessoaFisica`   | Boolean   | Whether or not is a personal certificate
-| `isPessoaJuridica` | Boolean   | Whether or not is a company certificate
-| `nis`              | String    | 
-| `oabNumero`        | String    | The OAB (Lawyer Id) of the subject
-| `oabUF`            | String    | The `oabNumero` state code
-| `responsavel`      | String    | The clean name of the subject or the legal representative, in case it is a company certificate
-| `rgNumero`         | String    | The general Id of the subject or the legal representative, in case it is a company certificate
-| `rgEmissorUF`      | String    | The `rgNumero` state code
-| `rgEmissor`        | String    | The `rgNumero` issuer code
+Name            | Type   | Description
+--------------- | ------ | --------------------------
+`codiceFiscale` | String | Subject's *codice fiscale*
 
-<a name="pki-italy" />
-#### PkiItaly
-An object with PKI Italy specific certificate fields.
-| Parameter          | Type      | Description 
-|--------------------|-----------|-------------
-| `codiceFiscale`    | String    | Che contiene il codice fiscale del titolare rilasciato dall'autorità fiscale dello Stato di residenza del titolare o, in mancanza, un analogo codice identificativo, quale ad esempio un codice di previdenza sociale o un codice identificativo generale.
+For instance, to log the *codice fiscale* of each certificate:
 
-<a name="key-usage" />
-### KeyUsage
-An object with the certificate key usage values
-
-| Parameter          | Type
-|--------------------|------
-| `crlSign`			 | Boolean
-| `dataEnciphermen`	 | Boolean
-| `decipherOnly`	 | Boolean
-| `digitalSignature` | Boolean
-| `encipherOnly`	 | Boolean
-| `keyAgreement`	 | Boolean
-| `keyCertSign`		 | Boolean
-| `keyEncipherment`	 | Boolean
-| `nonRepudiation`	 | Boolean
-
-### Examples
-
-```js
-pki.listCertificates().success(function (certificates) {
-    var select = $("#certificateSelect");
-    $.each(certificates, function() {
-        // The certificates parameter, passed to the success callback, is an array whose each element has the following properties:
-        // - thumbprint (used to reference the certificate in the other methods such as readCertificate and signData)
-        // - subjectName (the CommonName portion of the subject's name)
-        // - issuerName (the CommonName portion of the issuer's name)
-        select.append($("<option />").val(this.thumbprint).text(this.subjectName + ' (issued by ' + this.issuerName + ')'));
-    });
+```javascript
+pki.listCertificates().success(function (certs) {
+    for (var i = 0; i < certs.length; i++) {
+		var cert = certs[i];
+		console.log(cert.pkiItaly.codiceFiscale);
+	}
 });
 ```
 
-### Live examples
+> [!NOTE]
+> Each property on the `PkiItalyModel` object may be null, but the object itself (`cert.pkiItaly`) is never null.
+
+
+### Examples
+
+For instance, to log the Common Name (CN) part of each certificate:
+
+```javascript
+pki.listCertificates().success(function (certs) {
+    for (var i = 0; i < certs.length; i++) {
+		var cert = certs[i];
+		console.log(cert.subjectName);
+	}
+});
+```
+For instance, to check for the `nonRepudiation` key usage on each certificate:
+
+```javascript
+pki.listCertificates().success(function (certs) {
+    for (var i = 0; i < certs.length; i++) {
+		var cert = certs[i];
+		if (cert.keyUsage.nonRepudiation) {
+			// ...
+		}
+	}
+});
+```
+For instance, to log the CPF of each certificate:
+
+```javascript
+pki.listCertificates().success(function (certs) {
+    for (var i = 0; i < certs.length; i++) {
+		var cert = certs[i];
+		console.log(cert.pkiBrazil.cpf);
+	}
+});
+```
+> [!TIP]
+> For more examples and customization of certificate selection, please visit the section [Customizing certificate selection](cert-select.md)
 
 <a name="read-certificate" />
 ## readCertificate
 
 Reads a certificate's binary encoding.
 Most browser signature schemes that relay to the server-side code the responsibility of encoding the signature require that the signer certificate's binary encoding be read and sent back to the server for the generation of the "to-sign-bytes" or "signed attributes". This method enables your code to do that.
+
+| Since                    |
+|--------------------------|
+| lacuna-web-pki-1.0.0.js  |
 
 ### Parameters
 
@@ -258,9 +309,7 @@ pki.readCertificate(selectedCertThumbprint).success(function (certContent) {
     alert('Certificate read: ' + certContent);
 });
 ```
-
 ### Live examples
-
 
 <a name="redirect-install" />
 ## redirectToInstallPage
@@ -271,13 +320,14 @@ Redirects the user to the install page, with the appropriate url arguments so as
 redirectToInstallPage ()
 ```
 
-### Live examples
-
-
 <a name="sign-data" />
 ## signData
 
 Signs a collection of bytes with a certificate.
+
+| Since                    |
+|--------------------------|
+| lacuna-web-pki-1.0.0.js  |
 
 ### Parameters
 
@@ -291,11 +341,11 @@ signData (args)
 #### SignDataArgs
 An object with the following options:
 
-| Parameter       | Type         | Obs      | Description 
-|-----------------|--------------|----------|-------------
-| thumbprint      | String       |          | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
-| data            | String       |          | The bytes to be signed, encoded in Base64 string.
-| digestAlgorithm | String       |          | The name or OID of the digest algorithm to be used to compute the hash of the bytes during the signature operation. Common values for this parameter are `'SHA-256'` or `'SHA-1'`. The forms `'SHA256'`, `'sha256'`, `'sha 256'`, `'sha-256'` will also work.
+ Name              | Type   | Description 
+-------------------|--------|-------------
+ `thumbprint`      | String | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
+ `data`            | String | The bytes to be signed, encoded in Base64 string.
+ `digestAlgorithm` | String | The name or OID of the digest algorithm to be used to compute the hash of the bytes during the signature operation. Common values for this parameter are `'SHA-256'` or `'SHA-1'`. The forms `'SHA256'`, `'sha256'`, `'sha 256'`, `'sha-256'` will also work.
 
 ### Return
 
@@ -321,13 +371,14 @@ pki.signData({
 });
 ```
 
-### Live examples
-
-
 <a name="sign-hash" />
 ## signHash
 
 Signs a pre-computed digest value with a certificate.
+
+| Since                    |
+|--------------------------|
+| lacuna-web-pki-1.0.0.js  |
 
 ### Parameters
 
@@ -341,15 +392,15 @@ signHash (args)
 #### SignHashArgs
 An object with the following options:
 
-| Parameter       | Type         | Obs      | Description 
-|-----------------|--------------|----------|-------------
-| thumbprint      | String       |          | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
-| hash            | String       |          | The pre-computed digest value to be signed, encoded in Base64.
-| digestAlgorithm | String       |          | The name or OID of the digest algorithm to be used to compute the hash of the bytes during the signature operation. Common values for this parameter are `'SHA-256'` or `'SHA-1'`. The forms `'SHA256'`, `'sha256'`, `'sha 256'`, `'sha-256'` will also work.
+| Parameter       | Type   | Description 
+|-----------------|--------|-------------
+| thumbprint      | String | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
+| hash            | String | The pre-computed digest value to be signed, encoded in Base64.
+| digestAlgorithm | String | The name or OID of the digest algorithm to be used to compute the hash of the bytes during the signature operation. Common values for this parameter are `'SHA-256'` or `'SHA-1'`. The forms `'SHA256'`, `'sha256'`, `'sha 256'`, `'sha-256'` will also work.
 
 ### Return
 
-A [Promise](promise.md) object that can be used to register a callback to be called when the operation completes The success callback for this promise receives a string with the signature algorithm's output encoded in Base64.
+A [Promise](promise.md) object that can be used to register a callback to be called when the operation completes. The success callback for this promise receives a string with the signature algorithm's output encoded in Base64.
 
 ```js
 function (signature)
@@ -371,5 +422,220 @@ pki.signHash({
 });
 ```
 
-### Live examples
+<a name="pre-auth" />
+## preauthorizeSignatures
 
+Method to be called befora a batch signature. The user will authorize *n* signatures to be performed.
+
+| Since                    |
+|--------------------------|
+| lacuna-web-pki-2.0.0.js  |
+
+### Parameters
+
+```js
+preauthorizeSignatures (args)
+```
+
+`args` [PreAuthorizeArgs](lacunawebpki.md#pre-auth-args) Object
+
+<a name="pre-auth-args" />
+#### PreAuthorizeArgs
+
+Name                    | Type   | Description
+------------------------|--------|------------
+`certificateThumbprint` | String | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
+`signatureCount`        | Number | The batch signature count intended
+
+
+### Return
+
+A [Promise](promise.md) object that can be used to register a callback to be called when the operation completes. The success callback for this promise receives a Function to be called on success.
+
+```js
+function ()
+```
+
+### Examples
+
+```js
+pki.preauthorizeSignatures({
+	certificateThumbprint: ('#certificateSelect').val(),
+	signatureCount: 20
+}).success(function () {
+	// start signature batch process of 20 signatures
+});
+```
+
+<a name="sign-pdf" />
+## signPdf
+Signs a PDF file locally (available only for Windows)
+
+### Parameters
+
+```js
+signPdf (args)
+```
+
+`args` [SignPdfArgs](lacunawebpki.md#sign-pdf-args) Object
+
+<a name="sign-pdf-args" />
+#### SignPdfArgs
+An object with the following parameters
+
+Name                          | Type                                                                | Note     | Description
+------------------------------|---------------------------------------------------------------------|----------|------------
+`fileId`                      | String                                                              |          | The selected PDF to sign file Id returned by method [showFileBrowser](lacunawebpki.md#show-file-browser).
+`certificateThumbprint`       | String                                                              |          | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
+`output`                      | [Output](lacunawebpki.md#output-object)                             |          | The signature file output options.
+`trustArbitrators`            | Array of [TrustArbitrator](lacunawebpki.md#trust-arbitrator)        |          | 
+`clearPolicyTrustArbitrators` | Boolean                                                             | optional | Whether or not to clear any signature policy default trust arbitrator.
+`visualRepresentation`        | [SignatureRepresentation](lacunawebpki.md#signature-representation) | optional | 
+`pdfMarks`                    | Array of [PdfMarks](lacunawebpki.md#pdf-marks)                      | optional | 
+`bypassMarksIfSigned`         | Boolean                                                             | optional | Whether or not to ignore marks if PDF alredy signed. If signed PDF and `false` will throw exception. Applying marks on a signed PDF would invalidate the previous signatures
+`policy`                      | String                                                              |          | The signature policy to use. Can be ('Basic').
+
+### Returns
+
+A [Promise](promise.md) object that can be used to register a callback to be called when the operation completes. The success callback for this promise receives a [PdfSignResult](lacunawebpki.md#pdf-sign-result) object.
+
+```js
+function (result)
+```
+
+`result` [PdfSignResult](lacunawebpki.md#pdf-sign-result)
+
+<a name="pdf-sign-result" />
+#### PdfSignResult
+An object with the following parameters
+
+Name                                  | Type                                                    | Description
+--------------------------------------|---------------------------------------------------------|---------------------------------
+`isValid`                             | Boolean                                                 | Whether or not the signature was completed successfuly. If false, the `signingCertificateValidationResults` will have the failure results.
+`signatureInfo`                       | [SignatureInfo](lacunawebpki.md#signature-info)         | 
+`pagesCount`                          | Number                                                  | 
+`signingCertificateValidationResults` | [ValidationResults](lacunawebpki.md#validation-results) | 
+
+<a name="signature-info" />
+#### SignatureInfo
+An object with the following parameters
+
+Name                | Type                                           | Description
+--------------------|------------------------------------------------|-----------------
+`signerCertificate` | [CertificateModel](lacunawebpki.md#cert-model) | The signer certificate model.
+`messageDigest`     | [DigestModel](lacunawebpki.md#digest-model)    | The message digest.
+`file`              | [FileModel](lacunawebpki.md#file-model)        | The signature file information.
+`signingTime`       | Date                                           | The signing date time.
+
+<a name="digest-model" />
+#### DigestModel
+An object with the following parameters
+
+Name                  | Type   | Description
+----------------------|--------|---------------------------------
+`digestAlgorithmOid`  | String | The digest algorithm OID.
+`digestAlgorithmName` | String | The digest algorithm name.
+`digestValue`         | String | The digest valeu Base64 encoded.
+
+<a name="file-model" />
+#### FileModel
+An object with the following parameters
+
+Name     | Type   | Description
+---------|--------|----------------------
+`id`     | String | The id that represents the file.
+`name`   | String | The file name (with extension).
+`length` | Number | The file length in bytes.
+
+> [!NOTE]
+> The file is identified by Id, not by path, the files path are never exposed to the page javascript, to comply to user privacy policies of browsers.
+
+<a name="validation-results" />
+#### ValidationResults
+An object with the following parameters
+
+Name           | Type           | Description
+---------------|----------------|------------------
+`passedChecks` | [ValidationItem](lacunawebpki.md#validation-item) | Success validations.
+`warnings`     | [ValidationItem](lacunawebpki.md#validation-item) | Validation warnings.
+`errors`       | [ValidationItem](lacunawebpki.md#validation-item) | Validation errors.
+
+<a name="validation-item" />
+#### ValidationItem
+An object with the following parameters
+
+Name                     | Type                                                    | Description
+-------------------------|---------------------------------------------------------|------------
+`type`                   | String                                                  | Validation item type.
+`message`                | String                                                  | Validation message.
+`detail`                 | String                                                  | Validation details.
+`innerValidationResults` | [ValidationResults](lacunawebpki.md#validation-results) | Inner validations results.
+
+### Examples
+
+
+## signCades 
+
+
+### Parameters
+
+Name                          | Type                                                         | Note     | Description
+------------------------------|--------------------------------------------------------------|----------|------------
+`fileId`                      | String                                                       |          | The selected file to sign Id returned by method [showFileBrowser](lacunawebpki.md#show-file-browser).
+`certificateThumbprint`       | String                                                       |          | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
+`output`                      | [Output](lacunawebpki.md#output-object)                      |          | The signature file output options.
+`trustArbitrators`            | Array of [TrustArbitrator](lacunawebpki.md#trust-arbitrator) |          | 
+`clearPolicyTrustArbitrators` | Boolean                                                      | optional | Whether or not to clear any signature policy default trust arbitrator.
+`cmsToCosignFileId`           | String                                                       | optional | A CAdES signature file Id to co-sign. If the signature does not have an encapsulated content (detached), the original signed file must also be passed by the `fileId`.
+`autoDetectCosign`            | Boolean                                                      | optional | Whether or not to auto detect if the `fileId` is a CAdES signature to co-sign. If `true`, the CAdES signature file Id to co-sign can be passed directly to `fileId`. Only works if the CAdES signature to co-sign has an encapsulated content (attached).
+`includeEncapsulatedContent`  | Boolean                                                      | optional | Whether or not to inlcude the encpasulated content (attached) in the CAdES signature file. If not set, the default is `true`.
+`policy`                      | String                                                       |          | The signature policy to use. Can be ('CadesBes' | 'BrazilAdrBasica').
+
+
+### Returns
+
+A [Promise](promise.md) object that can be used to register a callback to be called when the operation completes. The success callback for this promise receives a [CadesSignResult](lacunawebpki.md#cades-sign-result) object.
+
+```js
+function (result)
+```
+
+`result` [CadesSignResult](lacunawebpki.md#cades-sign-result) Object
+
+text
+
+<a name="cades-sign-result" />
+#### CadesSignResult
+
+
+## openPades
+
+
+## openCades
+
+
+## showFileBrowser
+
+
+## showFolderBrowser
+
+
+## openFile
+
+
+## openFolder
+
+
+## listTokens
+
+
+## generateTokenRsaKeyPair
+
+
+## generateSoftwareRsaKeyPair
+
+
+## importTokenCertificate
+
+
+## importCertificate
