@@ -102,7 +102,7 @@ is done the control flow is the same as in the sample [CAdES signature with file
 ### CAdES co-signature
 
 After the control flow of the sample [CAdES signature with file already on server](#cades) is completed and the link *Co-sign with another certificate* is clicked, the
-same control flow is repeated, but now with the URL parameter `userfile` filled.
+same control flow is repeated, but now with the URL parameter `cmsfile` filled.
 
 <a name="cades-server" />
 ### CAdES signature using server key

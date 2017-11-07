@@ -96,7 +96,7 @@ The generated PDF contains links to the file [check.php](https://github.com/Lacu
 
 After the file upload (which is crudely implemented merely for demonstration purposes on
 [upload.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/upload.php))
-is done the control flow is the same as in the sample [CAdES signature with file already on server](#cades), but with the URL parameter `userfile` filled.
+is done the control flow is the same as in the sample [CAdES signature with file already on server](#cades), but with the URL parameter `cmsfile` filled.
 
 <a name="cades-cosign" />
 ### CAdES co-signature
