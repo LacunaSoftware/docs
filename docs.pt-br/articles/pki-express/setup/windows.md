@@ -7,9 +7,11 @@ O PKI Express é compatível com os seguintes ambientes Windows:
 
 Para instalar o PKI Express, baixe e execute o instalador:
 
+<br />
 <center>
 **[PKI Express (64-bit) 1.0.2 installer](https://files.lacunasoftware.com/pki-express/windows/pkie-x64-1.0.2.msi) (recomendado)**
 </center>
+<br />
 
 ## Downloads alternativos
 
@@ -25,8 +27,8 @@ Arquivo                                                                         
 Sempre que possível, escolha a versão 64 bits do PKI Express.
 
 > [!NOTE]
-> Os pacotes zip podem ser utilizados para instalar o PKI Express em um ambiente de desenvolvimento
-> para o qual você não tenha permissões de administrador.
+> Para instalar o PKI Express em um ambiente de desenvolvimento para o qual você não tenha permissões de administrador,
+> utilize um dos pacotes zip.
 
 ## .NET Framework
 
