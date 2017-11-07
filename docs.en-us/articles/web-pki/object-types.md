@@ -177,7 +177,7 @@ Name                     | Type                                                 
 `text`                   | String                                                    |
 `includeSigningTime`     | Boolean                                                   |
 `container`              | [PadesVisualRectangle](object-types.md#pades-visual-rect) |
-`horizontalAlign`        | String                                                    | Can be ('Left' | 'Right').
+`horizontalAlign`        | String                                                    | Can be ('Left', 'Right').
 `fontSize`               | Number                                                    |
 
 <a name="pades-visual-image" />
@@ -239,11 +239,11 @@ Name                     | Type   | Description
 ## PdfMark
 Name                | Type                                                        | Description
 --------------------|-------------------------------------------------------------|------------
-`measurementUnits`  | String                                                      | The measurement units to be used in the positioning values. Can be ('Centimeters' | 'PdfPoints').
+`measurementUnits`  | String                                                      | The measurement units to be used in the positioning values. Can be ('Centimeters', 'PdfPoints').
 `container`         | PadesVisualRectangle                                        | The mark content container.
 `borderWidth`       | Number                                                      | The container border width.
-`backgroundColor`   | String                                                      | The color of container background. If not set, default is transparent. Can be in the formats '#ff00ff' | 'rgb(255, 0, 255)' | 'rgba(255, 0, 255, 0.8)'.
-`borderColor`       | String                                                      | The color of container border. If not set, default is transparent. Can be in the formats '#ff00ff' | 'rgb(255, 0, 255)' | 'rgba(255, 0, 255, 0.8)'.
+`backgroundColor`   | String                                                      | The color of container background. If not set, default is transparent. Can be in the formats '#ff00ff', 'rgb(255, 0, 255)', 'rgba(255, 0, 255, 0.8)'.
+`borderColor`       | String                                                      | The color of container border. If not set, default is transparent. Can be in the formats '#ff00ff', 'rgb(255, 0, 255)', 'rgba(255, 0, 255, 0.8)'.
 `pageOptimization`  | Object                                                      |
 `elements`          | Array of [PdfMarkElement](object-types.md#pdf-mark-element) |
 
@@ -260,13 +260,13 @@ Name                | Type                                                      
 <a name="pdf-text-section" />
 ## PdfTextSection
 Name                | Type    | Description
---------------------|---------------------------------------
+--------------------|---------|-----------------------------
 `style`             | Number  | 
 `text`              | String  | 
 `color`             | String  | The text color. If not set, default is BLACK. Can be in the formats '#ff00ff', 'rgb(255, 0, 255)', 'rgba(255, 0, 255, 0.8)'.
 `fontSize`          | Number  | 
 
-<a name="pdf-mark-image">
+<a name="pdf-mark-image" />
 ## PdfMarkImage
 Name                | Type                                                             | Description
 --------------------|------------------------------------------------------------------|------------
@@ -397,7 +397,7 @@ Name     | Type                                        | Description
 
 ---
 
-<a name="cades-signature">
+<a name="cades-signature" />
 ## CadesSignature
 Name                      | Type                                                 | Description
 --------------------------|------------------------------------------------------|------------
