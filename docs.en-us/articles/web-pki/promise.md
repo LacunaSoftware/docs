@@ -24,30 +24,29 @@ pki.listCertificates()
 > [!WARNING]
 > NOTICE: You should not instantiate this object directly.
 
+<a name="success" />
 ## success
 
 ```js
-success (callbackFunction)
-callbackFunction(...)
+success (function (...))
 ```
 
-`callbackFunction` Function
-
-A callback function to be called on the method's success complete.
+A callback `function` to be called on the method's success complete.
 The `success` callback argument's type and meaning depend on the method that returns the promise. Please refer to each [method's documentation](lacunawebpki.md) for such information.
 
+---
+
+<a name="fail" />
 ## fail
 
 ```js
-fail (callbackFunction)
-callbackFunction(ex)
+fail (function (ex))
 ```
-
-`callbackFunction` Function
-
 `ex` [ExceptionModel](promise.md#exception-object)
 
 A callback function that receives an [ExceptionModel](promise.md#exception-model).
+
+---
 
 <a name="exception-model" />
 ## ExceptionModel

@@ -77,7 +77,7 @@ Name           | Type         | Note     | Description
 `ready`        | Function     |          | A function to be called when the component is ready to be used. The function receives no arguments.
 `notInstalled` | Function     | optional | A function to be called if the component's installation is not OK (component not installed, outdated or user is using an unsupported browser). Refer to examples below for the exact function signature. If no callback is given, the user is automatically redirected to the installation website and will be redirected back once the installation is completed. If you do pass a callback to override the default behavior, use the [redirectToInstallPage](lacunawebpki.md#redirect-to-install-page) method to redirect the user to the installation page whenever you think it's convenient.
 `defaultError` | Function     | obsolet  | Use `defaultFail` instead.
-`defaultFail`  | FailFunction | optional | The default callback to be called when an error occurrs (please refer to examples below for the exact function signature).
+`defaultFail`  | FailFunction | optional | The default callback to be called when an error occurrs (please refer to [fail specification](promise.md#fail) for details).
 `angularScope` | Object       | optional | If your webpage uses AngularJS, you can pass here a reference to your $scope, which will then be used to call the callback functions properly, relieving you of doing a "$scope.$apply(function() { ... });" on every callback. The calls are actually wrapped around a "safe $apply", as described in https://coderwall.com/p/ngisma/safe-apply-in-angular-js.
 `license`      | Object       | optional | The license for the component, if not already set when instantiating the object.
 

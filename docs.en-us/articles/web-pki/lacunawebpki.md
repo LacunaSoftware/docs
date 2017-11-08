@@ -109,11 +109,6 @@ function onWebPkiNotInstalled(status, message) {
     pki.redirectToInstallPage();
 }
 
-// The default failure callback receives an exception object with the parameters:
-// - message: a user-friendly message describing the error that occurred
-// - error:   a detailed string containing as much information about the error as possible, for instance the stack trace. This is a good value to be logged, not to be shown to the user.
-// - origin:  a string denoting where the error originated. This should also not be shown to the user, but rather logged for diagnostic purposes.
-// - code:    an error code string
 function onWebPkiFail(ex) {
     alert(ex.message);
     if (window.console) {
