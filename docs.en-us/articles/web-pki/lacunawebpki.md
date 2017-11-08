@@ -117,7 +117,7 @@ function onWebPkiNotInstalled(status, message) {
 function onWebPkiFail(ex) {
     alert(ex.message);
     if (window.console) {
-        window.console.log('Web PKI error from ' + ex.origin + ': ' + ex.error + ' - code: ' + ex.code, ex);
+        window.console.log('Web PKI error', ex);
     }
 }
 ```
