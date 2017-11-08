@@ -31,7 +31,9 @@ pki.listCertificates()
 success (function (...))
 ```
 
-A callback `function` to be called on the method's success complete.
+### Parameters
+
+A callback function to be called on the method's success complete.
 The `success` callback argument's type and meaning depend on the method that returns the promise. Please refer to each [method's documentation](lacunawebpki.md) for such information.
 
 ---
@@ -42,9 +44,12 @@ The `success` callback argument's type and meaning depend on the method that ret
 ```js
 fail (function (ex))
 ```
-`ex` [ExceptionModel](promise.md#exception-object)
 
-A callback function that receives an [ExceptionModel](promise.md#exception-model).
+### Parameters
+
+`function (ex)` Function receiving an [ExceptionModel](promise.md#exception-object)
+
+A callback function that receives an [ExceptionModel](promise.md#exception-model) to be called in case a failure happens.
 
 ---
 
