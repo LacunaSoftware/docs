@@ -25,9 +25,9 @@ sudo yum install wget
 Baixe o pacote do PKI Express e extraia para a pasta de destino:
 
 ```sh
-wget https://files.lacunasoftware.com/pki-express/linux/pkie-1.0.2.tar.gz
+wget https://files.lacunasoftware.com/pki-express/linux/pkie-1.0.3.tar.gz
 sudo mkdir /usr/share/pkie
-sudo tar xzf pkie-1.0.2.tar.gz -C /usr/share/pkie
+sudo tar xzf pkie-1.0.3.tar.gz -C /usr/share/pkie
 sudo chmod 755 -R /usr/share/pkie
 ```
 
