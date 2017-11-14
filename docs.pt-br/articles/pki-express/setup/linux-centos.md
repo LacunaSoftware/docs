@@ -55,3 +55,14 @@ ou, caso não tenha criado o atalho:
 ```sh
 dotnet /usr/share/pkie/pkie.dll help
 ```
+
+<a name="update" />
+## Atualização
+
+Para atualizar o PKI Express, apenas baixe o novo pacote e extraia para a pasta de destino:
+
+```sh
+wget https://files.lacunasoftware.com/pki-express/linux/pkie-1.0.3.tar.gz
+sudo tar xzf pkie-1.0.3.tar.gz -C /usr/share/pkie
+sudo chmod 755 -R /usr/share/pkie
+```
