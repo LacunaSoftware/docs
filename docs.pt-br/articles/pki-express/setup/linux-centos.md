@@ -40,7 +40,7 @@ sudo chmod 755 -R /usr/share/pkie
 Crie um atalho para executar o PKI Express (opcional):
 
 ```sh
-sudo sh -c 'echo "#!/bin/bash\ndotnet /usr/share/pkie/pkie.dll \"\$@\"" > /usr/local/bin/pkie'
+sudo sh -c 'echo -e "#!/bin/bash\ndotnet /usr/share/pkie/pkie.dll \"\$@\"" > /usr/local/bin/pkie'
 sudo chmod +x /usr/local/bin/pkie
 ```
 
