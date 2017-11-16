@@ -44,6 +44,7 @@ Database model update: No
 - Fix bug that could cause several background tasks to remain queued
 - Fix bug that caused a (handled) NullReferenceException during system startup
 - Fix bug on transaction limit enforcing
+- Update Lacuna PKI SDK to 1.19.4
 
 
 <a name="v1-14-3" />
