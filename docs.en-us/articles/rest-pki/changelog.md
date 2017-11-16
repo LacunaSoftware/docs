@@ -1,5 +1,23 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-15-0" />
+### 1.15.0 (2017-11-14)
+
+Database model update: **Yes**
+
+- Add B-Stamper integration
+- Add invoices APIs and reports
+- Improve validations on PAdES signatures API to return status codes 400/422 instead of 500
+- Improve Application Insights instrumentation
+  - Add UserId field
+  - Fix bug that caused some 422 responses to be logged without the ErrorCode field
+- Fix frontend bug that suggested that users could update their own CustomerId
+
+**Known issues:**
+
+- An exception may be thrown during database model update (to be fixed on the next version)
+
+
 <a name="v1-14-4" />
 ### 1.14.4 (2017-09-29)
 
