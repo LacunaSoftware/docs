@@ -1,5 +1,17 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-15-1" />
+### 1.15.1 (2017-11-16)
+
+Database model update: No
+
+- Fix model validation bug that could cause a 400 (BadRequest) response on the PDF marks API
+
+**Known issues:**
+
+- An exception may be thrown during database model update
+
+
 <a name="v1-15-0" />
 ### 1.15.0 (2017-11-14)
 
@@ -15,7 +27,7 @@ Database model update: **Yes**
 
 **Known issues:**
 
-- An exception may be thrown during database model update (to be fixed on the next version)
+- An exception may be thrown during database model update
 
 
 <a name="v1-14-4" />
@@ -32,6 +44,7 @@ Database model update: No
 - Fix bug that could cause several background tasks to remain queued
 - Fix bug that caused a (handled) NullReferenceException during system startup
 - Fix bug on transaction limit enforcing
+- Update Lacuna PKI SDK to 1.19.4
 
 
 <a name="v1-14-3" />
