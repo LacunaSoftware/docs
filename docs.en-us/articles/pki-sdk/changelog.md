@@ -1,5 +1,14 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-4" />
+### 1.20.4 (2017-11-17)
+
+- Add validation context feature for validating CAdES, PAdES and XAdES signatures
+- Add verify parameters method for signer classes
+- Add commitment type attribute option for CAdES signatures
+- Fix chain build loop possibility
+
+
 <a name="v1-20-1" />
 ### 1.20.1 (2017-10-26)
 
