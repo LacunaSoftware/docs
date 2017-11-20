@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-5" />
+### 1.20.5 (2017-11-20)
+
+- Fix PAdES signing-time
+
+
 <a name="v1-20-4" />
 ### 1.20.4 (2017-11-17)
 
