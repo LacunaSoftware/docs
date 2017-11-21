@@ -1,5 +1,18 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-15-2" />
+### 1.15.2 (2017-11-20)
+
+Database model update: No
+
+- Add B-Stamp information on response of open signature APIs
+- Improve audit package generation to return download link instead of content
+- Fix bug on B-Stamping of signatures sent to the open signature APIs
+- Fix validation of B-Stamped signatures
+- Fix bug on database model update
+- Update Lacuna PKI SDK to 1.20.5
+
+
 <a name="v1-15-1" />
 ### 1.15.1 (2017-11-16)
 
@@ -9,7 +22,7 @@ Database model update: No
 
 **Known issues:**
 
-- An exception may be thrown during database model update
+- An exception may be thrown during database model update (fixed on 1.15.2)
 
 
 <a name="v1-15-0" />
@@ -27,7 +40,7 @@ Database model update: **Yes**
 
 **Known issues:**
 
-- An exception may be thrown during database model update
+- An exception may be thrown during database model update (fixed on 1.15.2)
 
 
 <a name="v1-14-4" />
