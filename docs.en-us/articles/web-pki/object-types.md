@@ -66,7 +66,7 @@ Name            | Type   | Description
 > [!NOTE]
 > Each property on the `PkiItalyModel` object may be null, but the object itself (`cert.pkiItaly`) is never null.
 
----
+***
 
 <a name="init-args" />
 ## InitArgs
@@ -81,7 +81,7 @@ Name           | Type         | Note     | Description
 `angularScope` | Object       | optional | If your webpage uses AngularJS, you can pass here a reference to your $scope, which will then be used to call the callback functions properly, relieving you of doing a "$scope.$apply(function() { ... });" on every callback. The calls are actually wrapped around a "safe $apply", as described in https://coderwall.com/p/ngisma/safe-apply-in-angular-js.
 `license`      | Object       | optional | The license for the component, if not already set when instantiating the object.
 
----
+***
 
 <a name="sign-data-args" />
 ## SignDataArgs
@@ -93,7 +93,7 @@ An object passed to the [signData](lacunawebpki.md#sign-data) method with the fo
 `data`            | String | The bytes to be signed, encoded in Base64 string.
 `digestAlgorithm` | String | The name or OID of the digest algorithm to be used to compute the hash of the bytes during the signature operation. Common values for this parameter are `'SHA-256'` or `'SHA-1'`. The forms `'SHA256'`, `'sha256'`, `'sha 256'`, `'sha-256'` will also work.
 
----
+***
 
 <a name="sign-hash-args" />
 ## SignHashArgs
@@ -105,7 +105,7 @@ Name              | Type   | Description
 `hash`            | String | The pre-computed digest value to be signed, encoded in Base64.
 `digestAlgorithm` | String | The name or OID of the digest algorithm to be used to compute the hash of the bytes during the signature operation. Common values for this parameter are `'SHA-256'` or `'SHA-1'`. The forms `'SHA256'`, `'sha256'`, `'sha 256'`, `'sha-256'` will also work.
 
----
+***
 
 <a name="pre-auth-args" />
 ## PreAuthorizeArgs
@@ -116,7 +116,7 @@ Name                    | Type   | Description
 `certificateThumbprint` | String | The thumbprint of the certificate to be used, as yielded by the method [listCertificates](lacunawebpki.md#list-certificates).
 `signatureCount`        | Number | The batch signature count intended
 
----
+***
 
 <a name="sign-pdf-args" />
 ## SignPdfArgs
@@ -145,7 +145,7 @@ Name             | String | Description
 `fileNameSuffix` | String | The suffix for saved signed file name.
 `dialogTitle`    | String | The save dialog title (case `mode` is 'ShowSaveFileDialog').
 
----
+***
 
 <a name="trust-arbitrator" />
 ## TrustArbitrator
@@ -159,7 +159,7 @@ Name                 | Type   | Description
 `tslUrl`             | String | The TSL (Trust Service List) URL. Used case `type` is 'Tsl'.
 `tslRoot`            | String | The base64 encoded content of TSL (Trust Service List) signer's root X509 certificate. Used case `type` is 'Tsl'.
 
----
+***
 
 <a name="visual-representation" />
 ## VisualRepresentation
@@ -233,7 +233,7 @@ Name                     | Type   | Description
 `width`                  | Number | Signature visual representation rectangle width.
 `height`                 | Number | Signature visual representation rectangle height.
 
----
+***
 
 <a name="pdf-mark" />
 ## PdfMark
@@ -273,7 +273,7 @@ Name                | Type                                                      
 `opacity`           | Number                                                           | Default is 100, opaque.
 `resource`          | [ResourceContentOrReference](object-types.md#res-content-or-ref) |
 
----
+***
 
 <a name="pdf-sign-result" />
 ## PdfSignResult
@@ -341,7 +341,7 @@ Name                     | Type                                                 
 `detail`                 | String                                                  | Validation details.
 `innerValidationResults` | [ValidationResults](object-types.md#validation-results) | Inner validations results.
 
----
+***
 
 <a name="sign-cades-args" />
 ## SignCadesArgs
@@ -359,7 +359,7 @@ Name                          | Type                                            
 `includeEncapsulatedContent`  | Boolean                                                      | optional | Whether or not to inlcude the encpasulated content (attached) in the CAdES signature file. If not set, the default is `true`.
 `policy`                      | String                                                       |          | The signature policy to use. Can be ('CadesBes', 'BrazilAdrBasica').
 
----
+***
 
 <a name="cades-sign-result" />
 ## CadesSignResult
@@ -371,7 +371,7 @@ Name                                  | Type                                    
 `signatureInfo`                       | [SignatureInfo](object-types.md#signature-info)         | 
 `signingCertificateValidationResults` | [ValidationResults](object-types.md#validation-results) | 
 
----
+***
 
 <a name="sig-algorithm" />
 ## SignatureAlgorithm
@@ -384,7 +384,7 @@ Name                     | Type   | Description
 `digestAlgorithmOid`     | String | The digest algorithm OID
 `digestAlgorithmName`    | String | The digest algorithm name
 
----
+***
 
 <a name="sig-pol-id" />
 ## SignaturePolicyIdentifier
@@ -395,7 +395,7 @@ Name     | Type                                        | Description
 `oid`    | String                                      | The signature policy OID
 `uri`    | String                                      | The signature policy URI
 
----
+***
 
 <a name="cades-signature" />
 ## CadesSignature
@@ -430,7 +430,7 @@ Name                      | Type                                                
 `serialNumber`            | String                                               | The timestamp serialnumber
 `messageImprint`          | [DigestModel](object-types.md#digest-model)          | The timestampes message imprint
 
----
+***
 
 <a name="pades-signature" />
 ## PadesSignature

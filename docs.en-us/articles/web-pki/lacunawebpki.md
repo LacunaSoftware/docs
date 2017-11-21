@@ -54,7 +54,7 @@ var license = 'ASYAanNmaWRkbGUubmV0LHdlYnBraS5sYWN1bmFzb2Z0d2FyZS5jb20AAAABClKvO
 var pki = new LacunaWebPKI(license);
 ```
 
----
+***
 
 <a name="init" />
 ## init
@@ -117,7 +117,7 @@ function onWebPkiFail(ex) {
 }
 ```
 
----
+***
 
 <a name="list-certificates" />
 ## listCertificates
@@ -176,7 +176,7 @@ pki.listCertificates().success(function (certs) {
 > [!TIP]
 > For more examples and customization of certificate selection, please visit the section [Customizing certificate selection](cert-select.md)
 
----
+***
 
 <a name="read-certificate" />
 ## readCertificate
@@ -212,7 +212,7 @@ pki.readCertificate(selectedCertThumbprint).success(function (certContent) {
 });
 ```
 
----
+***
 
 <a name="redirect-install" />
 ## redirectToInstallPage
@@ -223,7 +223,7 @@ Redirects the user to the install page, with the appropriate url arguments so as
 redirectToInstallPage ()
 ```
 
----
+***
 
 <a name="sign-data" />
 ## signData
@@ -263,7 +263,7 @@ pki.signData({
 });
 ```
 
----
+***
 
 <a name="sign-hash" />
 ## signHash
@@ -303,7 +303,7 @@ pki.signHash({
 });
 ```
 
----
+***
 
 <a name="pre-auth" />
 ## preauthorizeSignatures
@@ -337,7 +337,7 @@ pki.preauthorizeSignatures({
 });
 ```
 
----
+***
 
 <a name="sign-pdf" />
 ## signPdf
@@ -363,7 +363,7 @@ function (result)
 
 ### Examples
 
----
+***
 
 <a name="sign-cades" />
 ## signCades 
@@ -382,17 +382,17 @@ function (result)
 
 text
 
----
+***
 
 <a name="open-pades" />
 ## openPades
 
----
+***
 
 <a name="open-cades" />
 ## openCades
 
----
+***
 
 <a name="show-file-browser" />
 ## showFileBrowser
@@ -400,7 +400,7 @@ text
 > [!NOTE]
 > The file is identified by Id, not by path, the files path are never exposed to the page javascript, complying to user privacy policies of browsers.
 
----
+***
 
 <a name="show-folder-browser" />
 ## showFolderBrowser
@@ -408,37 +408,53 @@ text
 > [!NOTE]
 > The folder is identified by Id, not by path, the folders path are never exposed to the page javascript, complying to user privacy policies of browsers.
 
----
+***
 
 <a name="open-file" />
 ## openFile
 
----
+***
 
 <a name="open-folder" />
 ## openFolder
 
----
+***
 
 <a name="list-tokens" />
 ## listTokens
 
----
+***
 
 <a name="generate-rsa-token" />
 ## generateTokenRsaKeyPair
 
----
+***
 
 <a name="generate-rsa-soft" />
 ## generateSoftwareRsaKeyPair
 
----
+***
 
 <a name="import-token-cert" />
 ## importTokenCertificate
 
----
+***
 
 <a name="import-cert" />
 ## importCertificate
+
+***
+
+<a name="pdf-sign-result" />
+## PdfSignResult
+
+***
+
+<a name="cades-sign-result" />
+## CadesSignResult
+
+***
+
+<a name="redirect-to-install-page" />
+## redirectToInstallPage
+

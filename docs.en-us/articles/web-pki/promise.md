@@ -47,7 +47,7 @@ fail (function (ex))
 
 ### Parameters
 
-`function (ex)` Function receiving an [ExceptionModel](promise.md#exception-object)
+`function (ex)` Function receiving an [ExceptionModel](promise.md#exception-model)
 
 A callback function that receives an [ExceptionModel](promise.md#exception-model) to be called in case a failure happens.
 
