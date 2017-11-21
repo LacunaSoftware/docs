@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-6" />
+### 1.20.6 (2017-11-21)
+
+- Add commitment type attribute option for XAdES and PAdES signatures
+- Fix unrecognized commitment type attribute on CAdES
+- Fix PdfMarks not respecting previous throw behaviour
+
+
 <a name="v1-20-5" />
 ### 1.20.5 (2017-11-20)
 
