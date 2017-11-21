@@ -36,7 +36,7 @@ success (function (...))
 A callback function to be called on the method's success complete.
 The `success` callback argument's type and meaning depend on the method that returns the promise. Please refer to each [method's documentation](lacunawebpki.md) for such information.
 
----
+***
 
 <a name="fail" />
 ## fail
@@ -51,7 +51,7 @@ fail (function (ex))
 
 A callback function that receives an [ExceptionModel](promise.md#exception-model) to be called in case a failure happens.
 
----
+***
 
 <a name="exception-model" />
 ## ExceptionModel
