@@ -50,6 +50,7 @@ Here are sintaxes for the most common elements:
 * [Italic](#italic)
 * [Inline code](#inline-code)
 * [Lists](#lists)
+* [Horizontal rulers](#hr)
 * [Links](#links)
 * [Code snippets](#code-snippets)
 * [Includes](#includes)
@@ -137,6 +138,22 @@ Ordered:
 1. Item 3
 
 > The actual numbering does not matter, DocFX will order the list when rendering the file. Prefer repeating `1.` on every item instead of writing `1.`, `2.`, `3.` etc because this allows for easy reodering of items.
+
+<a name="hr" />
+### Horizontal rulers
+
+Use `***` to insert a horizontal ruler:
+
+```md
+Something
+
+***
+
+Some other thing
+```
+
+> [!NOTE]
+> **Do not** use the syntax `---`, as it has a special meaning on DocFX
 
 ### Links
 
