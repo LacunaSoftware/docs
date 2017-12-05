@@ -1,0 +1,167 @@
+body {
+  font-family: "Segoe UI", "Verdana", "Arial";
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #575757;
+}
+body.slide {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+a {
+  color: rgb(19,112,171);  
+  font-size: 1em;
+  font-weight: normal;
+  text-decoration: none;
+  margin-left: 0px;
+  vertical-align: top;
+}
+a.slide {
+  font-size: 0.8em;
+}
+a.slidemessage {
+  font-size: 0.8em;
+  color: #575757;
+}
+a.disabled {
+  color: #FFFFFF;
+}
+a:link, a:visited {
+  color: rgb(19,112,171);
+  text-decoration: none;
+  vertical-align: top;
+}
+a:hover {
+  color: rgb(7,74,229);
+  text-decoration: underline;
+}
+h1 {
+  color: #4465A2;
+  font-size: 1.1em;
+  font-weight: normal;
+  vertical-align:bottom;
+  margin-top: 7px;
+  margin-bottom: 4px;
+}
+p {
+  font-size: 0.9em;
+  font-weight: normal;
+  margin-top: 1px;  
+  margin-bottom: 1px;
+}
+ul, ol
+{
+  font-size: 0.9em;
+  list-style-position: outside;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  line-height: 1.3em;
+}
+img.screenshot-thumb {
+  border: 2px solid rgb(19,112,171);
+  width: 756px;
+  margin-top: 5px;
+}
+img.screenshot {
+  border: 2px solid rgb(19,112,171);
+  margin-top: 5px;
+}
+img.slidescreenshot {
+  border: 2px solid rgb(19,112,171);
+}
+textarea.full-details {
+  width: 756px;
+  height: 560px;
+  margin-top: 5px;
+}
+div.noscreenshots {
+    padding: 30px 0px 30px 0px; 
+    margin-top: 5px; 
+    border: 1px solid rgb(19,112,171); 
+    text-align: center;
+}
+div.slidenoscreenshots {
+    width: 500px;
+    margin-top: 30%; 
+    padding: 30px 0px 30px 0px; 
+    border: 1px solid rgb(19,112,171); 
+    text-align: center;
+}
+.divider {
+  border-bottom: #B6BCC6 1px solid;
+}
+.topdivider {
+  border-top: #B6BCC6 1px solid;
+}
+.contentcell-width { 
+    width:760px; 
+}
+.titleSpacingAndDivider { 
+    font-size: 0.7em; 
+    font-weight: normal;
+    color: #787878;
+}
+.stepOptionsDivider { 
+    font-size: 0.7em; 
+    font-weight: normal; 
+    color: #787878; 
+    text-align: right;
+}
+#slide_navigation {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 1.5em;
+    width: 100%;
+    overflow: auto;
+}
+#slide_description {
+    position: fixed;
+    left: 0px;
+    top: 1.5em;
+    height: 1.5em;
+    width: 100%;
+    overflow: auto;    
+}
+#slide_screenshot {
+    position: fixed;
+    left: 0px;
+    top: 3em;
+    width: 100%;
+    height: 93%;
+    overflow: auto;
+}
+
+div.drawing_desktop {
+    border: 2px solid rgb(19,112,171);
+    background-color: white;
+}
+
+div.drawing_widget {
+    border:1px solid rgb(5,50,100);
+}
+
+div.drawing_toplevel {
+    background-color: rgb(20,110,170);
+}
+
+div.drawing_titlebar {
+    background-color: rgb(10,60,120);
+    color: white;
+    overflow: hidden;
+    font-size: 10px;
+}
+
+div.drawing_parent {
+    background-color: transparent;
+}
+
+div.drawing_target {
+    background-color: rgb(30,140,200);
+    color: white;
+    overflow: hidden;
+    font-size: 10px;
+}
