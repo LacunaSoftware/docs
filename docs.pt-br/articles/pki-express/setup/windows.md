@@ -9,9 +9,15 @@ Para instalar o PKI Express, baixe e execute o instalador:
 
 <br />
 <center>
-**[PKI Express (64-bit) 1.0.3 installer](https://files.lacunasoftware.com/pki-express/windows/pkie-x64-1.0.3.msi) (recomendado)**
+**[PKI Express (64-bit) 1.1.0 installer](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x64.msi) (recomendado)**
 </center>
 <br />
+
+Após a instalação, execute o aplicativo **PKI Express Configuration Manager** (arquivo `pkiemgr.exe` na pasta de instalação) e siga as instruções
+para ativar o PKI Express.
+
+> [!NOTE]
+> Só é possível encontrar o aplicativo navegando até a pasta, não há atalho no menu iniciar (isso será corrigido em uma versão futura)
 
 ## Downloads alternativos
 
@@ -19,10 +25,10 @@ Caso prefira, você pode optar por um dos downloads alternativos:
 
 Arquivo                                                                                           | Descrição
 ------------------------------------------------------------------------------------------------- | ------------------
-**[pkie-x64-1.0.3.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-x64-1.0.3.msi)** | **Instalador 64 bits**
-[pkie-x86-1.0.3.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-x86-1.0.3.msi)     | Instalador 32 bits
-[pkie-x64-1.0.3.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-x64-1.0.3.zip)     | Pacote zip 64 bits
-[pkie-x86-1.0.3.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-x86-1.0.3.zip)     | Pacote zip 32 bits
+**[pkie-1.1.0-x64.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x64.msi)** | **Instalador 64 bits**
+[pkie-1.1.0-x86.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x86.msi)     | Instalador 32 bits
+[pkie-1.1.0-x64.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x64.zip)     | Pacote zip 64 bits
+[pkie-1.1.0-x86.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x86.zip)     | Pacote zip 32 bits
 
 Sempre que possível, escolha a versão 64 bits do PKI Express.
 
