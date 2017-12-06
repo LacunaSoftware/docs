@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-7" />
+### 1.20.7 (2017-12-06)
+
+- Add signature element Id to XmlSignature
+- Fix case sensitive CRL cache path
+- Fix Windows certificate store not supported signature algorithm warnings
+
+
 <a name="v1-20-6" />
 ### 1.20.6 (2017-11-21)
 
