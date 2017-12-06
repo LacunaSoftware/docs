@@ -109,3 +109,14 @@
 ## [Histórico de versões](pki-sdk/changelog.md)
 ## [Guia da API](xref:Lacuna.Pki)
 <!-- End of PKI SDK -->
+
+<!-- Start of PKI Express -->
+# [PKI Express](pki-express/index.md)
+## [Instalação](pki-express/setup/index.md)
+### [Linux Ubuntu/Mint](pki-express/setup/linux-ubuntu.md)
+### [Linux Red Hat](pki-express/setup/linux-redhat.md)
+### [Linux CentOS/Oracle](pki-express/setup/linux-centos.md)
+### [Windows](pki-express/setup/windows.md)
+## [Usando em PHP](pki-express/php/index.md)
+## [Usando em Java](pki-express/java/index.md)
+<!-- End of PKI Express -->
