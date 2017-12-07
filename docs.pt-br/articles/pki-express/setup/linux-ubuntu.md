@@ -40,14 +40,14 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsof
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-trusty-prod trusty main" > /etc/apt/sources.list.d/dotnetdev.list'
 ```
 
-## 2. Instale o .NET Core SDK
+## 2. Instale o .NET Core Runtime
 
 > [!NOTE]
 > Se você tiver instalado alguma versão de *preview* do .NET Core, por favor desinstale-a antes de prosseguir.
 
 ```sh
 sudo apt-get update
-sudo apt-get install dotnet-sdk-2.0.0
+sudo apt-get install dotnet-runtime-2.0.3
 ```
 
 ## 3. Instale o PKI Express
