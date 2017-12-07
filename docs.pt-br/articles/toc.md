@@ -119,4 +119,5 @@
 ### [Windows](pki-express/setup/windows.md)
 ## [Usando em PHP](pki-express/php/index.md)
 ## [Usando em Java](pki-express/java/index.md)
+## [Histórico de versões](pki-express/changelog.md)
 <!-- End of PKI Express -->
