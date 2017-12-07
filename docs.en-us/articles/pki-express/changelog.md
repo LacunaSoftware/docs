@@ -34,7 +34,7 @@
 <a name="v1-0-0" />
 ### 1.0.0 (2017-10-26)
 
-- First version
+- First version released publicly
 - Commands available on this version:
   - list-certs
   - read-cert
