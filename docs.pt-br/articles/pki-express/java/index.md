@@ -17,8 +17,6 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Java
 
 1. [Instale o PKI Express](../setup/index.md)
 1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiExpressSamples.git)
-1. Copie o seu arquivo de licença **LacunaPkiLicense.config** para uma pasta à qual o site tenha permissões de leitura
-1. Preencha o caminho completo para o arquivo de licença na classe [sample/util/Util.java](https://github.com/LacunaSoftware/PkiExpressSamples/blob/master/Java/src/main/java/sample/util/Util.java)
 1. Em um terminal, navegue até a pasta `Java` e execute o comando `gradlew run` (no Linux, `./gradlew run`). Se você estiver em um ambiente Windows, você pode simplesmente dar um duplo-clique no arquivo `Run-Sample.bat`
 1. Quando aparecer a mensagem "Started Application in x.xxx seconds" (a porcentagem exibida não chegará a 100%), abra um navegador e visite a URL http://localhost:8080/
 
@@ -38,7 +36,7 @@ Se o seu projeto é compilado com o **Maven**, adicione os seguintes trechos ao 
 	<dependency>
 		<groupId>com.lacunasoftware.pkiexpress</groupId>
 		<artifactId>pki-express</artifactId>
-		<version>1.0.2</version>
+		<version>1.1.0</version>
 	</dependency>
 	...
 </dependencies>
@@ -63,7 +61,7 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.pkiexpress:pki-express:1.0.2")
+	compile("com.lacunasoftware.pkiexpress:pki-express:1.1.0")
 }
 ```
 
