@@ -1,5 +1,18 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-16-0" />
+### 1.16.0 (2017-12-12)
+
+Database model update: **Yes**
+
+- Add support for ignoring certificate validation errors due to unknown revocation status
+- Add support for enabling Lacuna Test PKI on on-premises instances
+- Add configuration of B-Stamper API key
+- Improve instrumentation of TSP requests
+- Fix bug that caused signatures to fail if the server `catest.lacunasoftware.com` was unreachable
+- Fix minor bugs on invoices API
+
+
 <a name="v1-15-2" />
 ### 1.15.2 (2017-11-20)
 
