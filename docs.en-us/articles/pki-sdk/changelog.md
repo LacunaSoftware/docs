@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-8" />
+### 1.20.8 (2017-12-13)
+
+- Add serial number option to public key certificate generation
+
+
 <a name="v1-20-7" />
 ### 1.20.7 (2017-12-06)
 
