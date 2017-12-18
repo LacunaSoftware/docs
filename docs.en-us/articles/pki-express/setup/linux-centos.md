@@ -9,7 +9,7 @@ With the license file (**LacunaPkiLicense.config**) at hand, follow the steps be
 
 ```sh
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-echo -e '[packages-microsoft-com-prod]\nname=packages-microsoft-com-prod \nbaseurl=https://packages.microsoft.com/yumrepos/microsoft-rhel7.3-prod\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc' | sudo tee /etc/yum.repos.d/dotnetdev.repo
+curl https://packages.microsoft.com/config/rhel/7/prod.repo | sudo tee /etc/yum.repos.d/microsoft.repo
 ```
 
 ## 2. Install .NET Core Runtime
