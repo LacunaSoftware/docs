@@ -2,7 +2,7 @@
 
 You can manage the following settings:
 
-* [Logging](logging.md)
+* [Logging](log.md)
 * [Temp directory](temp-dir.md)
 
 The configuration of PKI Express is managed with the command `pkie config`. To learn more about this command, read on.
