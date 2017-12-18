@@ -10,7 +10,7 @@ De posse do arquivo de licença (**LacunaPkiLicense.config**), siga os passos ab
 Antes de começar, é preciso que o seu sistema esteja registrado no *Subscription Manager* do Red Hat e que o canal do .NET esteja ativo.
 Veja como fazer isso na [documentação da Red Hat](https://access.redhat.com/documentation/en-us/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel).
 
-## 2. Instale e ative o .NET Core SDK
+## 2. Instale e ative o .NET Core
 
 ```sh
 sudo yum install rh-dotnet20 -y
@@ -33,7 +33,7 @@ sudo tar xzf pkie-1.1.0.tar.gz -C /usr/share/pkie
 sudo chmod 755 -R /usr/share/pkie
 ```
 
-Crie um atalho para executar o PKI Express (opcional):
+Crie um atalho para executar o PKI Express:
 
 ```sh
 echo -e '#!/bin/bash\nscl enable rh-dotnet20 -- dotnet /usr/share/pkie/pkie.dll "$@"' | sudo tee /usr/bin/pkie
