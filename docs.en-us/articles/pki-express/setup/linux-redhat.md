@@ -5,7 +5,7 @@ you will need a license file. If you don't have a license yet, [request a trial 
 
 With the license file (**LacunaPkiLicense.config**) at hand, follow the steps below:
 
-## 1. Enable the Red Hat .NET channel, available under your RHEL 7 subscription
+## 1. Enable the Red Hat .NET channel
 
 Before continuing, your system needs to be registered on the Red Hat Subscription Manager and the .NET Core channel needs to be enabled.
 For more information, check out the [Red Hat documentation](https://access.redhat.com/documentation/en-us/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel).
