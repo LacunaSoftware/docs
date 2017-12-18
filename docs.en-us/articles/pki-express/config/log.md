@@ -24,12 +24,12 @@ The directory should be writeable by your user and also by the user used to run 
 
 Logs are categorized in an increasing level of severity:
 
-1. **Verbose** - tracing information and debugging minutiae; generally only switched on in unusual situations
-1. **Debug** - internal control flow and diagnostic state dumps to facilitate pinpointing of recognised problems
-1. **Information** - events of interest or that have relevance to outside observers
-1. **Warning** - indicators of possible issues or service/functionality degradation **(default)**
-1. **Error** - indicating a failure within the application or connected system
-1. **Fatal** - critical errors causing complete failure of the application
+0. **Verbose** - tracing information and debugging minutiae; generally only switched on in unusual situations
+0. **Debug** - internal control flow and diagnostic state dumps to facilitate pinpointing of recognised problems
+0. **Information** - events of interest or that have relevance to outside observers
+0. **Warning** - indicators of possible issues or service/functionality degradation **(default)**
+0. **Error** - indicating a failure within the application or connected system
+0. **Fatal** - critical errors causing complete failure of the application
 
 The minimum log level defines the minimum severity which is written to the log file. The default minimum log level
 for PKI Express is **Warning**.
