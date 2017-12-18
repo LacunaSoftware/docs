@@ -13,7 +13,7 @@ Para instalar o PKI Express, baixe e execute o instalador:
 </center>
 <br />
 
-Após a instalação, execute o aplicativo **PKI Express Configuration Manager** (arquivo `pkiemgr.exe` na pasta de instalação) e siga as instruções
+Após a instalação, execute o aplicativo *PKI Express Configuration Manager* (**arquivo `pkiemgr.exe` na pasta de instalação**) e siga as instruções
 para ativar o PKI Express.
 
 > [!NOTE]
