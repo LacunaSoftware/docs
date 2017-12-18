@@ -24,12 +24,12 @@ The directory should be writeable by your user and also by the user used to run 
 
 Logs are categorized in an increasing level of severity:
 
-0. **Verbose** - tracing information and debugging minutiae; generally only switched on in unusual situations
-0. **Debug** - internal control flow and diagnostic state dumps to facilitate pinpointing of recognised problems
-0. **Information** - events of interest or that have relevance to outside observers
-0. **Warning** - indicators of possible issues or service/functionality degradation **(default)**
-0. **Error** - indicating a failure within the application or connected system
-0. **Fatal** - critical errors causing complete failure of the application
+* **Verbose** - tracing information and debugging minutiae; generally only switched on in unusual situations
+* **Debug** - internal control flow and diagnostic state dumps to facilitate pinpointing of recognised problems
+* **Information** - events of interest or that have relevance to outside observers
+* **Warning** - indicators of possible issues or service/functionality degradation **(default)**
+* **Error** - indicating a failure within the application or connected system
+* **Fatal** - critical errors causing complete failure of the application
 
 The minimum log level defines the minimum severity which is written to the log file. The default minimum log level
 for PKI Express is **Warning**.
@@ -40,14 +40,23 @@ To change the minimum log level:
 pkie config --set logLevel=LEVEL
 ```
 
-The `LEVEL` above may be the level name or number. For instance, to change the minimum level to Information:
+For instance, to change the minimum level to Information:
 
 ```sh
 pkie config --set logLevel=Information
 ```
 
-or
+You can also use the following integers as the value of the configuration:
+
+* 0 = Verbose
+* 1 = Debug
+* 2 = Information
+* 3 = Warning
+* 4 = Error
+* 5 = Fatal
+
+For instance, to change the minimum level to Information:
 
 ```sh
-pkie config --set logLevel=3
+pkie config --set logLevel=2
 ```
