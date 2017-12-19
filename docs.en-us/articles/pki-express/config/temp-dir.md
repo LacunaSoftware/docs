@@ -1,4 +1,4 @@
-﻿# Temp directory - PKI Express
+﻿# Temporary directory - PKI Express
 
 PKI Express uses a temporary directory to cache Certificate Revocation Lists (CRLs), Certification Authoriry (CA) certificates, among other artifacts.
 
@@ -13,4 +13,4 @@ To change the temporary directory:
 pkie config --set tempDir=path
 ```
 
-The directory should be writeable by your user and also by the user used to run the web application (on Linux, this usually is the `www-data` user).
+The directory **must exist and be writeable** by your user and also by the user used to run the web application (on Linux, this usually is the `www-data` user).

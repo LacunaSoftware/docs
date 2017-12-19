@@ -119,7 +119,7 @@
 ### [Windows](pki-express/setup/windows.md)
 ## [Configuration](pki-express/config/index.md)
 ### [Logging](pki-express/config/log.md)
-### [Temp directory](pki-express/config/temp-dir.md)
+### [Temporary directory](pki-express/config/temp-dir.md)
 ## [Using on PHP](pki-express/php/index.md)
 ## [Using on Java](pki-express/java/index.md)
 ## [Changelog](pki-express/changelog.md)
