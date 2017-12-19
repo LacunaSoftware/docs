@@ -37,8 +37,9 @@ pkie config --set logLevel=3
 
 O PKI Express pode eventualmente ignorar uma configuração inválida. Por exemplo, se a configuração
 `tempDir` for setada para um caminho inválido ou uma pasta à qual o PKI Express não possui permissões
-de escrita, a pasta temporária definida pelo ambiente será utilizada. Esse é o chamado valor *efetivo*
-da configuração, ou seja, o valor que o PKI Express está de fato utilizando.
+de escrita, a pasta temporária definida pelo ambiente será utilizada ao invés da pasta configurada.
+Esse é o chamado valor *efetivo* da configuração, ou seja, o valor que o PKI Express está de fato
+utilizando, que pode ser diferente do valor configurado manualmente.
 
 Para diagnosticar problemas relacionados à configuração, pode ser útil verificar a configuração
 efetiva do PKI Express:

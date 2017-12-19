@@ -29,7 +29,7 @@ Os logs são categorizados em níveis crescentes de severidade:
 * **Verbose**
 * **Debug**
 * **Information**
-* **Warning** **(nível mínimo padrão)**
+* **Warning** (nível mínimo padrão)
 * **Error**
 * **Fatal**
 

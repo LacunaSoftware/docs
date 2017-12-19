@@ -1,6 +1,6 @@
 ﻿# Pasta temporária - PKI Express
 
-O PKI Express utiliza uma pasta temporária para escrever *caches* de Listas de Certificados Revogados (LCRs), certificados de Autoridades Certificadoras (ACs),
+O PKI Express utiliza uma pasta temporária para manter um *cache* local de Listas de Certificados Revogados (LCRs), certificados de Autoridades Certificadoras (ACs),
 entre outros artefatos.
 
 Por padrão, a pasta temporária utilizada é:
