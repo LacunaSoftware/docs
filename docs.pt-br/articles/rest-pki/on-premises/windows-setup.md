@@ -9,7 +9,7 @@ Os requisitos para instalar uma instância [*on premises*](index.md) do [Rest PK
 
 Para começar a instalação, você precisará:
 
-* Pacote de binários do Rest PKI: [restpki-1.14.4.zip](https://files.lacunasoftware.com/restpki/restpki-1.14.4.zip)
+* Pacote de binários do Rest PKI: [restpki-1.16.0.zip](https://files.lacunasoftware.com/restpki/restpki-1.16.0.zip)
 * Licença binária de uso do Lacuna PKI SDK (arquivo LacunaPkiLicense.txt)
 
 De posse desses dois arquivos, siga o procedimento de instalação descrito no
