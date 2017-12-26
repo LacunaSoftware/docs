@@ -148,6 +148,6 @@ Not yet available on this project.
 Not yet available on this project.
 
 <a name="batch-xml-element" />
-### XML Element batch signature on the same document
+### Batch signature of XML elements on the same document
 
 Not yet available on this project.
