@@ -13,7 +13,7 @@ id-lacuna OBJECT IDENTIFIER ::= { id-pen-iana 46332 }
 ```
 
 <a name="cert-atts" />
-## Certificate attributes (.1)
+## 1. Certificate attributes
 
 The subtree `1.3.6.1.4.1.46332.1` is reserved for attributes to be used on X.509 attribute certificates:
 
@@ -22,7 +22,7 @@ id-lacuna-cert-atts OBJECT IDENTIFIER ::= { id-lacuna 1 }
 ```
 
 <a name="holder-photo-att" />
-### Holder Photo attribute (.1.1)
+### 1.1. Holder Photo attribute
 
 The OID `1.3.6.1.4.1.46332.1.1` identifies the attribute `LacunaHolderPhotoAttribute`:
 

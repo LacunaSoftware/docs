@@ -13,7 +13,7 @@ id-lacuna OBJECT IDENTIFIER ::= { id-pen-iana 46332 }
 ```
 
 <a name="cert-atts" />
-## Atributos de certificados de atributo (.1)
+## 1. Atributos de certificados de atributo
 
 A subárvore `1.3.6.1.4.1.46332.1` é reservada para atributos a serem utilizados em certificados de atributo:
 
@@ -22,7 +22,7 @@ id-lacuna-cert-atts OBJECT IDENTIFIER ::= { id-lacuna 1 }
 ```
 
 <a name="holder-photo-att" />
-### Atributo *Holder Photo* (.1.1)
+### 1.1. Atributo *Holder Photo*
 
 O OID `1.3.6.1.4.1.46332.1.1` identifica o atributo `LacunaHolderPhotoAttribute`:
 
