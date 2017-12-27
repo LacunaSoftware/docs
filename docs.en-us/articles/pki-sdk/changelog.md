@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-9" />
+### 1.20.9 (2017-12-27)
+
+- Add PDF/A standard and PDF version properties to PadesSignature
+- Add PKCertificate generation without certificate policy URI option
+- Improve ASN1 encoding util for primitive types
+
+
 <a name="v1-20-8" />
 ### 1.20.8 (2017-12-13)
 
