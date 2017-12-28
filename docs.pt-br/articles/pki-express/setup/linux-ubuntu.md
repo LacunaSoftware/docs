@@ -1,6 +1,6 @@
 ﻿# Instalação do PKI Express em Ubuntu ou Mint
 
-Para instalar o PKI Express em um Linux Ubuntu (*desktop* ou *server*) ou Mint,
+Para instalar o PKI Express em um Linux Ubuntu (*desktop* ou *server*) ou Linux Mint,
 você precisará de uma licença de uso. Caso ainda não tenha uma licença, [solicite uma licença de trial](https://www.lacunasoftware.com/pt/home/purchase).
 
 De posse do arquivo de licença (**LacunaPkiLicense.config**), siga os passos abaixo:
