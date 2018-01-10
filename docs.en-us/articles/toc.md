@@ -25,6 +25,7 @@
 ## [Callbacks and AngularJS](web-pki/angularjs.md)
 ## [Certificate filters](web-pki/filters.md)
 ## [Custom RestPKI settings](web-pki/customizing-restpki-url.md)
+## [Updates](web-pki/update.md)
 ## [Full samples](web-pki/full-samples.md)
 ## [FAQ](web-pki/faq/index.md)
 ### [signData vs. signHash](web-pki/faq/sign-data-vs-hash.md)
