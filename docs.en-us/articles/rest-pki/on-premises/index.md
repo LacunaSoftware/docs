@@ -8,10 +8,10 @@ details.
 
 Rest PKI is compatible with:
 
-* [Windows Server](windows-setup.md)
+* [Windows Server](windows-setup/index.md)
 * [Azure App Service](azure-setup.md)
 
 > [!NOTE]
-> Version 2.0 of Rest PKI will also support installation on Linux. Its release is planned for 2017 Q4.
+> For Linux environments, we recommend using [PKI Express](../../pki-express/index.md) instead
 
-Click on one of the above platforms for specific setup instructions.
+Click on one of the platforms above for specific setup instructions.

@@ -8,10 +8,10 @@ instância do [Rest PKI](../index.md) na sua própria infraestrutura ("on premis
 
 O Rest PKI é compatível com os seguintes ambientes:
 
-* [Windows Server](windows-setup.md)
+* [Windows Server](windows-setup/index.md)
 * [Azure App Service](azure-setup.md)
 
 > [!NOTE]
-> A versão 2.0 do Rest PKI será compatível também com Linux. A previsão de lançamento é para o final de 2017.
+> Para ambientes Linux, recomendamos o uso do [PKI Express](../../pki-express/index.md)
 
 Clique em um dos ambientes acima para obter instruções específicas de instalação e atualização.
