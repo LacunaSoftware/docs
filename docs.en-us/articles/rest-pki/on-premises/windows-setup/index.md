@@ -1,6 +1,6 @@
 ﻿# Rest PKI - Setup on Windows Server
 
-The minimum requirements for installing a [on premises](index.md) instance of [Rest PKI](../index.md) on Windows Server are:
+The minimum requirements for installing a [on premises](../index.md) instance of [Rest PKI](../../index.md) on Windows Server are:
 
 * OS: Windows Server 2008 R2 or later
 * Database:
