@@ -10,7 +10,7 @@ Caso seja utilizado um RestPKI não padrão, ou seja direfente de https://pki.re
 
 ```javascript
 pki.init({
-	 restPkiUrl: 'https://YourRestPKI.com/',
+    restPkiUrl: 'https://YourRestPKI.com/',
     ready: onWebPkiReady,
 });
 ```
