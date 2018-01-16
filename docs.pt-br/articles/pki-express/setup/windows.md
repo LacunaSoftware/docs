@@ -9,7 +9,7 @@ Para instalar o PKI Express, baixe e execute o instalador:
 
 <br />
 <center>
-**[PKI Express (64-bit) 1.1.0 installer](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x64.msi) (recomendado)**
+**[!include[main-link](../../../../includes/pki-express/windows/main-link.md)] (recomendado)**
 </center>
 <br />
 
@@ -23,12 +23,12 @@ para ativar o PKI Express.
 
 Caso prefira, você pode optar por um dos downloads alternativos:
 
-Arquivo                                                                                           | Descrição
-------------------------------------------------------------------------------------------------- | ------------------
-**[pkie-1.1.0-x64.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x64.msi)** | **Instalador 64 bits**
-[pkie-1.1.0-x86.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x86.msi)     | Instalador 32 bits
-[pkie-1.1.0-x64.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x64.zip)     | Pacote zip 64 bits
-[pkie-1.1.0-x86.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-1.1.0-x86.zip)     | Pacote zip 32 bits
+Arquivo                                                                         | Descrição
+------------------------------------------------------------------------------- | ------------------
+**[!include[msi-64](../../../../includes/pki-express/windows/link-msi-64.md)]** | **Instalador 64 bits**
+[!include[msi-86](../../../../includes/pki-express/windows/link-msi-86.md)]     | Instalador 32 bits
+[!include[zip-64](../../../../includes/pki-express/windows/link-zip-64.md)]     | Pacote zip 64 bits
+[!include[zip-86](../../../../includes/pki-express/windows/link-zip-86.md)]     | Pacote zip 32 bits
 
 Sempre que possível, escolha a versão 64 bits do PKI Express.
 
