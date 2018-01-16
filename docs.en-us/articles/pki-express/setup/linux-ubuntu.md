@@ -1,9 +1,8 @@
 ﻿# Install PKI Express on Ubuntu or Mint
 
-In order to install PKI Express on Ubuntu (either desktop or server) or on Linux Mint,
-you will need a license file. If you don't have a license yet, [request a trial license](https://www.lacunasoftware.com/en/home/purchase).
+[!include[To install](includes/intro-prefix.md)] on Ubuntu (either desktop or server) or on Linux Mint [!include[you will need](includes/intro-suffix.md)]
 
-With the license file (**LacunaPkiLicense.config**) at hand, follow the steps below:
+[!include[With the license file](includes/prereqs-reminder.md)]
 
 ## 1. Add the Microsoft package feed
 
@@ -17,8 +16,7 @@ Add the Microsoft package feed
 
 ## 2. Install .NET Core Runtime
 
-> [!NOTE]
-> Remove any previous preview versions of .NET Core from your system before continuing
+[!include[Remove previews](includes/remove-previews.md)]
 
 [!include[Install dotnet](../../../../includes/pki-express/ubuntu/install-dotnet.md)]
 
@@ -43,4 +41,4 @@ Activate PKI Express:
 <a name="update" />
 ## Update
 
-[!include[Update](../../../../includes/pki-express/linux/update-en.md)]
+[!include[Update](includes/update-wget.md)]

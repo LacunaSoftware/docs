@@ -1,9 +1,8 @@
 ﻿# Install PKI Express on CentOS or Oracle Linux
 
-In order to install PKI Express on CentOS or Oracle Linux,
-you will need a license file. If you don't have a license yet, [request a trial license](https://www.lacunasoftware.com/en/home/purchase).
+[!include[To install](includes/intro-prefix.md)] on CentOS or Oracle Linux [!include[you will need](includes/intro-suffix.md)]
 
-With the license file (**LacunaPkiLicense.config**) at hand, follow the steps below:
+[!include[With the license file](includes/prereqs-reminder.md)]
 
 ## 1. Add the Microsoft package feed
 
@@ -11,8 +10,7 @@ With the license file (**LacunaPkiLicense.config**) at hand, follow the steps be
 
 ## 2. Install .NET Core Runtime
 
-> [!NOTE]
-> Remove any previous preview versions of .NET Core from your system before continuing
+[!include[Remove previews](includes/remove-previews.md)]
 
 [!include[Install dotnet](../../../../includes/pki-express/centos/install-dotnet.md)]
 
@@ -37,4 +35,4 @@ Activate PKI Express:
 <a name="update" />
 ## Update
 
-[!include[Update](../../../../includes/pki-express/linux/update-en.md)]
+[!include[Update](includes/update-curl.md)]

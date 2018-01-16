@@ -1,0 +1,1 @@
+﻿With the license file (**LacunaPkiLicense.config**) at hand, follow the steps below:

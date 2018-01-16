@@ -1,9 +1,8 @@
 ﻿# Install PKI Express on Red Hat Linux
 
-In order to install PKI Express on Red Hat Enterprise Linux (RHEL),
-you will need a license file. If you don't have a license yet, [request a trial license](https://www.lacunasoftware.com/en/home/purchase).
+[!include[To install](includes/intro-prefix.md)] on Red Hat Enterprise Linux (RHEL) [!include[you will need](includes/intro-suffix.md)]
 
-With the license file (**LacunaPkiLicense.config**) at hand, follow the steps below:
+[!include[With the license file](includes/prereqs-reminder.md)]
 
 ## 1. Enable the Red Hat .NET channel
 
@@ -35,4 +34,4 @@ Activate PKI Express:
 <a name="update" />
 ## Update
 
-[!include[Update](../../../../includes/pki-express/linux/update-en.md)]
+[!include[Update](includes/update-curl.md)]
