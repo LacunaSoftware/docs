@@ -12,59 +12,27 @@ Veja como fazer isso na [documentação da Red Hat](https://access.redhat.com/do
 
 ## 2. Instale e ative o .NET Core
 
-```sh
-sudo yum install rh-dotnet20 -y
-```
+[!include[Install dotnet](../../../../includes/pki-express/redhat/install-dotnet.md)]
 
 ## 3. Instale o PKI Express
 
-Instale o `wget` se você ainda não o tiver instalado em seu sistema:
-
-```sh
-sudo yum install wget
-```
-
 Baixe o pacote do PKI Express e extraia para a pasta de destino:
 
-```sh
-wget https://files.lacunasoftware.com/pki-express/linux/pkie-1.1.0.tar.gz
-sudo mkdir /usr/share/pkie
-sudo tar xzf pkie-1.1.0.tar.gz -C /usr/share/pkie
-sudo chmod 755 -R /usr/share/pkie
-```
+[!include[Download and extract](../../../../includes/pki-express/linux/download-extract-curl.md)]
 
 Crie um atalho para executar o PKI Express:
 
-```sh
-echo -e '#!/bin/bash\nscl enable rh-dotnet20 -- dotnet /usr/share/pkie/pkie.dll "$@"' | sudo tee /usr/bin/pkie
-sudo chmod +x /usr/bin/pkie
-```
+[!include[Create shortcut](../../../../includes/pki-express/redhat/create-shortcut.md)]
 
 Crie uma pasta para os logs e configure o PKI Express para utilizá-la:
 
-```sh
-sudo mkdir /var/log/pkie
-sudo chmod 777 /var/log/pkie
-sudo pkie config --set logdir=/var/log/pkie
-```
+[!include[Configure log](../../../../includes/pki-express/linux/config-log.md)]
 
 Ative o PKI Express:
 
-```sh
-sudo pkie activate LacunaPkiLicense.config
-```
+[!include[Activate](../../../../includes/pki-express/linux/activate.md)]
 
 <a name="update" />
 ## Atualização
 
-Para atualizar o PKI Express, apenas baixe o novo pacote e extraia para a pasta de destino:
-
-```sh
-wget https://files.lacunasoftware.com/pki-express/linux/pkie-1.1.0.tar.gz
-sudo rm -R /usr/share/pkie/*
-sudo tar xzf pkie-1.1.0.tar.gz -C /usr/share/pkie
-sudo chmod 755 -R /usr/share/pkie
-```
-
-> [!NOTE]
-> Caso você esteja atualizando o PKI Express a partir de uma versão 1.0.x, é preciso realizar as tarefas de configuração da pasta de logs e de ativação do PKI Express (veja procedimento acima)
+[!include[Update](../../../../includes/pki-express/linux/update-pt.md)]

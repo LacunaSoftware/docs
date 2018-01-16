@@ -7,71 +7,34 @@ With the license file (**LacunaPkiLicense.config**) at hand, follow the steps be
 
 ## 1. Add the Microsoft package feed
 
-```sh
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-curl https://packages.microsoft.com/config/rhel/7/prod.repo | sudo tee /etc/yum.repos.d/microsoft.repo
-```
+[!include[Add Microsoft feed](../../../../includes/pki-express/centos/add-feed.md)]
 
 ## 2. Install .NET Core Runtime
 
 > [!NOTE]
 > Remove any previous preview versions of .NET Core from your system before continuing
 
-```sh
-sudo yum update
-sudo yum install libunwind libicu
-sudo yum install dotnet-runtime-2.0.3
-```
+[!include[Install dotnet](../../../../includes/pki-express/centos/install-dotnet.md)]
 
 ## 3. Install PKI Express
 
-Install `wget` if you haven't installed it previously:
-
-```sh
-sudo yum install wget
-```
-
 Download PKI Express and extract to the destination directory:
 
-```sh
-wget https://files.lacunasoftware.com/pki-express/linux/pkie-1.1.0.tar.gz
-sudo mkdir /usr/share/pkie
-sudo tar xzf pkie-1.1.0.tar.gz -C /usr/share/pkie
-sudo chmod 755 -R /usr/share/pkie
-```
+[!include[Download and extract](../../../../includes/pki-express/linux/download-extract-curl.md)]
 
 Create a shortcut to run PKI Express:
 
-```sh
-echo -e '#!/bin/bash\ndotnet /usr/share/pkie/pkie.dll "$@"' | sudo tee /usr/bin/pkie
-sudo chmod +x /usr/bin/pkie
-```
+[!include[Create shortcut](../../../../includes/pki-express/centos/create-shortcut.md)]
 
 Create a folder to write log files and configure it on PKI Express:
 
-```sh
-sudo mkdir /var/log/pkie
-sudo chmod 777 /var/log/pkie
-sudo pkie config --set logdir=/var/log/pkie
-```
+[!include[Configure log](../../../../includes/pki-express/linux/config-log.md)]
 
 Activate PKI Express:
 
-```sh
-sudo pkie activate LacunaPkiLicense.config
-```
+[!include[Activate](../../../../includes/pki-express/linux/activate.md)]
 
 <a name="update" />
 ## Update
 
-To update PKI Express, simply download the new package and extract to the destination folder:
-
-```sh
-wget https://files.lacunasoftware.com/pki-express/linux/pkie-1.1.0.tar.gz
-sudo rm -R /usr/share/pkie/*
-sudo tar xzf pkie-1.1.0.tar.gz -C /usr/share/pkie
-sudo chmod 755 -R /usr/share/pkie
-```
-
-> [!NOTE]
-> If you are updating from a version 1.0.x, you will need to configure the log folder and activate PKI Express (see instructions above)
+[!include[Update](../../../../includes/pki-express/linux/update-en.md)]
