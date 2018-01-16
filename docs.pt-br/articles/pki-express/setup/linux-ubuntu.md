@@ -24,7 +24,7 @@ Adicione o *feed* de pacotes da Microsoft
 
 Baixe o pacote do PKI Express e extraia para a pasta de destino:
 
-[!include[Download and extract](../../../../includes/pki-express/linux/download-extract-wget.md)]
+[!include[Install](../../../../includes/pki-express/linux/install-wget.md)]
 
 Crie um atalho para executar o PKI Express:
 

@@ -18,7 +18,7 @@
 
 Download PKI Express and extract to the destination directory:
 
-[!include[Download and extract](../../../../includes/pki-express/linux/download-extract-curl.md)]
+[!include[Install](../../../../includes/pki-express/linux/install-curl.md)]
 
 Create a shortcut to run PKI Express:
 
