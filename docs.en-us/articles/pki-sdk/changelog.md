@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-10" />
+### 1.20.10 (2018-01-17)
+
+- Add signers custom certificate validation configuration support
+- Add offline signer certificate validation configuration preset
+
+
 <a name="v1-20-9" />
 ### 1.20.9 (2017-12-27)
 
