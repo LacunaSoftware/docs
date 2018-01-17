@@ -1,5 +1,13 @@
 ﻿# PKI Express changelog
 
+<a name="v1-2-0" />
+### 1.2.0 (2018-01-17)
+
+- Add global flag "--offline" to allow offline operations
+- Fix bug that caused activation to be required for "help" command
+- Update PKI SDK to 2.0.10
+
+
 <a name="v1-1-0" />
 ### 1.1.0 (2017-12-06)
 
