@@ -3,8 +3,8 @@
 <a name="v1-2-0" />
 ### 1.2.0 (2018-01-17)
 
-- Add global flag "--offline" to allow offline operations
-- Fix bug that caused activation to be required for "help" command
+- Add global flag `--offline` to allow offline operations
+- Fix bug that caused activation to be required for `help` command
 - Update PKI SDK to 2.0.10
 
 
@@ -13,14 +13,14 @@
 
 - Add activation mechanism, relieving applications from passing the license file on every call
 - Improve logging
-- Add "config" command
+- Add `config` command
 - Update PKI SDK to 2.0.7, fixing CRL cache bug on Linux
 
 
 <a name="v1-0-3" />
 ### 1.0.3 (2017-11-15)
 
-- Update PKI SDK to 2.0.3, fixing "PlatformNotSupportedException bug" on certain Linux distributions
+- Update PKI SDK to 2.0.3, fixing *PlatformNotSupportedException bug* on certain Linux distributions
 
 
 <a name="v1-0-2" />
@@ -28,7 +28,7 @@
 
 - First version released for both Linux and Windows
 - Update PKI SDK to 2.0.2
-- Add version information on help command
+- Add version information on `help` command
 
 
 <a name="v1-0-1" />

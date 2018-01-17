@@ -3,8 +3,8 @@
 <a name="v1-2-0" />
 ### 1.2.0 (2018-01-17)
 
-- Adiciona flag global "--offline" para realizar assinaturas sem conexão de rede
-- Corrige bug que fazia com que o comando "help" não pudesse ser utilizado antes da ativação
+- Adiciona flag global `--offline` para realizar assinaturas sem conexão de rede
+- Corrige bug que fazia com que o comando `help` não pudesse ser utilizado antes da ativação
 - Atualiza o PKI PKI SDK para versão 2.0.10
 
 
@@ -13,14 +13,14 @@
 
 - Adiciona mecanismo de ativação, evitando que as aplicações precisem passar o arquivo de licença em cada chamada
 - Melhora o registro de logs
-- Adiciona comando "config"
+- Adiciona comando `config`
 - Atualiza o PKI SDK para versão 2.0.7, corrigindo bug no *cache* de LCRs em ambientes Linux
 
 
 <a name="v1-0-3" />
 ### 1.0.3 (2017-11-15)
 
-- Atualiza o PKI SDK para versão 2.0.3, corrigindo bug "PlatformNotSupportedException bug" em algumas distribuições de Linux
+- Atualiza o PKI SDK para versão 2.0.3, corrigindo bug *PlatformNotSupportedException bug* em algumas distribuições de Linux
 
 
 <a name="v1-0-2" />
@@ -28,7 +28,7 @@
 
 - Primeira versão disponível tanto para Linux quanto para Windows
 - Atualiza o PKI SDK para versão 2.0.2
-- Adiciona informação da versão do programa no comando "help"
+- Adiciona informação da versão do programa no comando `help`
 
 
 <a name="v1-0-1" />
