@@ -44,18 +44,18 @@
 
 - First version released publicly
 - Commands available on this version:
-  - list-certs
-  - read-cert
-  - import-pfx
-  - sign-data
-  - sign-hash
-  - sign-cades
-  - sign-pades
-  - sign-xml
-  - start-cades
-  - start-pades
-  - start-xml
-  - complete-sig
-  - help
+  - `list-certs`
+  - `read-cert`
+  - `import-pfx`
+  - `sign-data`
+  - `sign-hash`
+  - `sign-cades`
+  - `sign-pades`
+  - `sign-xml`
+  - `start-cades`
+  - `start-pades`
+  - `start-xml`
+  - `complete-sig`
+  - `help`
 
 *This version was only released for Linux*
