@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-2-1" />
+### 1.2.1 (2018-01-18)
+
+- Atualiza o PKI SDK para versão 2.0.11, corrigindo bug que causava atrasos devido à falta de conectividade mesmo com `--offline` habilitado
+
+
 <a name="v1-2-0" />
 ### 1.2.0 (2018-01-17)
 
