@@ -10,9 +10,9 @@
 
 ## 2. Instale o .NET Core Runtime
 
-[!include[Remova previews](includes/remove-previews.md)]
-
 [!include[Install dotnet](../../../../includes/pki-express/centos/install-dotnet.md)]
+
+[!include[Note on standalone dotnet setup](includes/dotnet-standalone-note.md)]
 
 ## 3. Instale o PKI Express
 
