@@ -1,3 +1,3 @@
 ﻿```sh
-sudo pkie activate LacunaPkiLicense.config --request
+pkie activate LacunaPkiLicense.config --request
 ```
