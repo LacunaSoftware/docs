@@ -31,6 +31,8 @@ Activate PKI Express:
 
 [!include[Activate](../../../../includes/pki-express/linux/activate.md)]
 
+[!include[If activation fails](includes/manual-activation.md)]
+
 <a name="update" />
 ## Update
 
