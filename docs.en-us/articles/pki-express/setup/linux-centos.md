@@ -14,6 +14,7 @@
 
 [!include[Install dotnet](../../../../includes/pki-express/centos/install-dotnet.md)]
 
+<a name="install" />
 ## 3. Install PKI Express
 
 Download PKI Express and extract to the destination directory:

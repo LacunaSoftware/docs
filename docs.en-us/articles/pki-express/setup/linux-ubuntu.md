@@ -20,6 +20,7 @@ Add the Microsoft package feed
 
 [!include[Install dotnet](../../../../includes/pki-express/ubuntu/install-dotnet.md)]
 
+<a name="install" />
 ## 3. Install PKI Express
 
 Download PKI Express and extract to the destination directory:

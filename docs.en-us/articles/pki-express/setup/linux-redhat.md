@@ -13,7 +13,8 @@ For more information, check out the [Red Hat documentation](https://access.redha
 
 [!include[Install dotnet](../../../../includes/pki-express/redhat/install-dotnet.md)]
 
-## 2. Install .NET Core Runtime
+<a name="install" />
+## 3. Install PKI Express
 
 Download PKI Express and extract to the destination directory:
 

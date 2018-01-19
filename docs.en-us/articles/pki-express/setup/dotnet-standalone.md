@@ -31,3 +31,5 @@ Test the installation:
 ```sh
 dotnet --info
 ```
+
+Now, proceed with the [installation of PKI Express](linux-centos.md#install).
