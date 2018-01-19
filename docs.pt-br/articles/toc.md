@@ -121,6 +121,7 @@
 ### [Linux Red Hat](pki-express/setup/linux-redhat.md)
 ### [Linux CentOS/Oracle](pki-express/setup/linux-centos.md)
 ### [Windows](pki-express/setup/windows.md)
+### [Ativação manual](pki-express/setup/manual-activation.md)
 ## [Configuração](pki-express/config/index.md)
 ### [Logs](pki-express/config/log.md)
 ### [Pasta temporária](pki-express/config/temp-dir.md)

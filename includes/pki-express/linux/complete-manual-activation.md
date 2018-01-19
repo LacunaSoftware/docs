@@ -1,0 +1,3 @@
+﻿```sh
+sudo pkie activate
+```
