@@ -14,11 +14,11 @@ Adicione o *feed* de pacotes da Microsoft
 
 [!include[Add Microsoft feed](../../../../includes/pki-express/ubuntu/add-feed.md)]
 
+[!include[Note on standalone dotnet setup](includes/dotnet-standalone-note.md)]
+
 ## 2. Instale o .NET Core Runtime
 
 [!include[Install dotnet](../../../../includes/pki-express/ubuntu/install-dotnet.md)]
-
-[!include[Note on standalone dotnet setup](includes/dotnet-standalone-note.md)]
 
 ## 3. Instale o PKI Express
 

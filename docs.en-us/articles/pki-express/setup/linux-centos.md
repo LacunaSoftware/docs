@@ -8,11 +8,11 @@
 
 [!include[Add Microsoft feed](../../../../includes/pki-express/centos/add-feed.md)]
 
+[!include[Note on standalone dotnet setup](includes/dotnet-standalone-note.md)]
+
 ## 2. Install .NET Core Runtime
 
 [!include[Install dotnet](../../../../includes/pki-express/centos/install-dotnet.md)]
-
-[!include[Note on standalone dotnet setup](includes/dotnet-standalone-note.md)]
 
 ## 3. Install PKI Express
 
