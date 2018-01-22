@@ -4,6 +4,7 @@
 
 * [Logs](log.md)
 * [Pasta temporária](temp-dir.md)
+* [Proxy](proxy.md)
 
 A configuração do PKI Express é gerenciada através do comando `pkie config`. Veja as seções abaixo para saber mais sobre esse comando.
 

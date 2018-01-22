@@ -126,6 +126,7 @@
 ## [Configuração](pki-express/config/index.md)
 ### [Logs](pki-express/config/log.md)
 ### [Pasta temporária](pki-express/config/temp-dir.md)
+### [Proxy](pki-express/config/proxy.md)
 ## [Usando em PHP](pki-express/php/index.md)
 ## [Usando em Java](pki-express/java/index.md)
 ## [Histórico de versões](pki-express/changelog.md)

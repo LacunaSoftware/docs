@@ -126,6 +126,7 @@
 ## [Configuration](pki-express/config/index.md)
 ### [Logging](pki-express/config/log.md)
 ### [Temporary directory](pki-express/config/temp-dir.md)
+### [Proxy](pki-express/config/proxy.md)
 ## [Using on PHP](pki-express/php/index.md)
 ## [Using on Java](pki-express/java/index.md)
 ## [Changelog](pki-express/changelog.md)
