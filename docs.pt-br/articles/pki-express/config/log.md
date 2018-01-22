@@ -19,6 +19,8 @@ Para alterar a pasta de logs:
 pkie config --set logDir=path
 ```
 
+[!include[Admin necessario](includes/admin-needed.md)]
+
 A pasta **deve existir e estar liberada para escrita** tanto pelo seu usuário quanto pelo usuário utilizado para executar a aplicação web
 (no Linux, geralmente esse usuário é o `www-data`).
 

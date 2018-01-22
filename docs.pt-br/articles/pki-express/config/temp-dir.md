@@ -14,5 +14,7 @@ Para alterar a pasta temporária:
 pkie config --set tempDir=path
 ```
 
+[!include[Admin necessario](includes/admin-needed.md)]
+
 A pasta **deve existir e estar liberada para escrita** pelo seu usuário e pelo usuário utilizado para executar a aplicação web (no Linux,
 esse usuário geralmente é o `www-data`). 

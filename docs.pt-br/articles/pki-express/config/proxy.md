@@ -1,21 +1,23 @@
 ﻿# Configuração de proxy - PKI Express
 
-Para configurar o [PKI Express](../index.md) para utilizar um proxy para fazer as chamadas web, execute:
+Para configurar o [PKI Express](../index.md) para utilizar um proxy para fazer as chamadas web, execute o comando abaixo:
 
 ```sh
-sudo pkie config --set proxyHost=IP --set proxyPort=PORTA
+pkie config --set proxyHost=IP --set proxyPort=PORTA
 ```
+
+[!include[Admin necessario](includes/admin-needed.md)]
 
 Caso o proxy exija autenticação com usuário e senha, faça também:
 
 ```sh
-sudo pkie config --set proxyUsername=USERNAME --set proxyPassword=PASSWORD
+pkie config --set proxyUsername=USERNAME --set proxyPassword=PASSWORD
 ```
 
 No Linux, certos caracteres na senha como `!` e `$` podem causar problemas. Nesse caso, utilize aspas simples no último argumento:
 
 ```sh
-sudo pkie config --set proxyUsername=USERNAME --set 'proxyPassword=PASSWORD'
+pkie config --set proxyUsername=USERNAME --set 'proxyPassword=PASSWORD'
 ```
 
 Alternativamente, essas configurações podem ser controladas alterando as seguintes variáveis de ambiente:

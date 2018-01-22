@@ -13,4 +13,6 @@ To change the temporary directory:
 pkie config --set tempDir=path
 ```
 
+[!include[Admin needed](includes/admin-needed.md)]
+
 The directory **must exist and be writeable** by your user and also by the user used to run the web application (on Linux, this usually is the `www-data` user).

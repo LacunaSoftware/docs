@@ -3,19 +3,21 @@
 To configure [PKI Express](../index.md) to use a proxy for web requests:
 
 ```sh
-sudo pkie config --set proxyHost=IP --set proxyPort=PORT
+pkie config --set proxyHost=IP --set proxyPort=PORT
 ```
 
-Ïf the proxy requires authentication with username and password, do also:
+[!include[Admin needed](includes/admin-needed.md)]
+
+If the proxy requires authentication with username and password, do also:
 
 ```sh
-sudo pkie config --set proxyUsername=USERNAME --set proxyPassword=PASSWORD
+pkie config --set proxyUsername=USERNAME --set proxyPassword=PASSWORD
 ```
 
 On Linux, certain characters on the password such as `!` and `$` may cause problems. In such cases, surround the last argument with simple quotes (`'`):
 
 ```sh
-sudo pkie config --set proxyUsername=USERNAME --set 'proxyPassword=PASSWORD'
+pkie config --set proxyUsername=USERNAME --set 'proxyPassword=PASSWORD'
 ```
 
 Alternatively, these settings may be changed by setting the following environment variables:
