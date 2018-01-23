@@ -12,17 +12,30 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Java
 > [!NOTE]
 > If you are using a previous version of Java, please [contact us](https://www.lacunasoftware.com/en/home/purchase).
 
-### Running the project
+### Running with Gradle
 
 1. [Install PKI Express](../setup/index.md)
 
 1. [Download the project](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiExpressSamples.git)
 
-1. In a command prompt, navigate to the folder `Java` and run the command `gradlew run` (on Linux `./gradlew run`).
+1. In a command prompt, navigate to the folder `Java` and run the command `gradlew bootRun` (on Linux `./gradlew bootRun`).
    If you are using Windows, you can alternatively double-click the file `Run-Sample.bat`.
 
 1. Once you see the message "Started Application in x.xxx seconds" (the on-screen percentage
-   will *not* reach 100%), open a web browser and go the URL http://localhost:8080/
+   will *not* reach 100%), open a web browser and go the URL http://localhost:60833/
+
+> [!NOTE]
+> If you are using a Spring Boot version lower than 1.3.X, you need to run the task `run` instead of `bootRun`.
+
+### Running with Maven
+1. [Install PKI Express](../setup/index.md)
+
+1. [Download the project](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiExpressSamples.git)
+
+1. In a command prompt, navigate to the folder `Java` and run the command `mvn spring-boot:run`.
+
+1. Once you see the message "Started Application in x.xxx seconds" (the on-screen percentage
+   will *not* reach 100%), open a web browser and go the URL http://localhost:60833/
 
 ## Maven package
 
@@ -39,7 +52,7 @@ If your project uses **Maven**, add this to your `pom.xml`:
 	<dependency>
 		<groupId>com.lacunasoftware.pkiexpress</groupId>
 		<artifactId>pki-express</artifactId>
-		<version>1.1.0</version>
+		<version>1.2.1</version>
 	</dependency>
 	...
 </dependencies>
@@ -64,7 +77,7 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.pkiexpress:pki-express:1.1.0")
+	compile("com.lacunasoftware.pkiexpress:pki-express:1.2.1")
 }
 ```
 
