@@ -25,7 +25,7 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Java
    will *not* reach 100%), open a web browser and go the URL http://localhost:60833/
 
 > [!NOTE]
-> If you are using a Spring Boot version lower than 1.3.X, you need to run the task `run` instead of `bootRun`.
+> If you are using a Spring Boot version lower than 1.3.x, you need to run the task `run` instead of `bootRun`.
 
 ### Running with Maven
 1. [Install PKI Express](../setup/index.md)
