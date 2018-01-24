@@ -30,40 +30,11 @@ O uso do PKI Express em Java deve ser feito com o pacote Maven [pki-express](htt
 
 Se o seu projeto é compilado com o **Maven**, adicione os seguintes trechos ao seu arquivo `pom.xml`:
 
-```xml
-<dependencies>
-	...
-	<dependency>
-		<groupId>com.lacunasoftware.pkiexpress</groupId>
-		<artifactId>pki-express</artifactId>
-		<version>1.1.0</version>
-	</dependency>
-	...
-</dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
-```
+[!include[pom.xml](../../../../includes/pki-express/java/maven.md)]
 
 Se o seu projeto é compilado com o **Gradle**, adicione os seguintes trechos ao seu arquivo `build.gradle`:
 
-```
-repositories {
-	mavenCentral()
-	maven {
-		url  "http://dl.bintray.com/lacunasoftware/maven" 
-	}
-} 
-
-dependencies {
-	compile("com.lacunasoftware.pkiexpress:pki-express:1.1.0")
-}
-```
+[!include[pom.xml](../../../../includes/pki-express/java/gradle.md)]
 
 O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/PkiExpressJava). Você pode fazer um *fork* para fazer
 customizações, e até mesmo submeter um *pull request*.
