@@ -1,6 +1,6 @@
-﻿# Install PKI Express on CentOS or Oracle Linux
+﻿# Install PKI Express on CentOS, Oracle Linux or Fedora
 
-[!include[To install](includes/intro-prefix.md)] on CentOS or Oracle Linux [!include[you will need](includes/intro-suffix.md)]
+[!include[To install](includes/intro-prefix.md)] on CentOS, Oracle Linux or Fedora [!include[you will need](includes/intro-suffix.md)]
 
 [!include[With the license file](includes/prereqs-reminder.md)]
 

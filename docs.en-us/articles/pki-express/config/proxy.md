@@ -1,5 +1,8 @@
 ﻿# Proxy configuration - PKI Express
 
+> [!NOTE]
+> This feature will be available on version 1.3 of PKI Express, currently in test phase.
+
 To configure [PKI Express](../index.md) to use a proxy for web requests:
 
 ```sh

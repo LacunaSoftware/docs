@@ -119,7 +119,7 @@
 ## [Instalação](pki-express/setup/index.md)
 ### [Linux Ubuntu/Mint](pki-express/setup/linux-ubuntu.md)
 ### [Linux Red Hat](pki-express/setup/linux-redhat.md)
-### [Linux CentOS/Oracle](pki-express/setup/linux-centos.md)
+### [Linux CentOS/Oracle/Fedora](pki-express/setup/linux-centos.md)
 ### [Windows](pki-express/setup/windows.md)
 ### [Ativação manual](pki-express/setup/manual-activation.md)
 ### [Instalação manual do .NET Core](pki-express/setup/dotnet-standalone.md)
