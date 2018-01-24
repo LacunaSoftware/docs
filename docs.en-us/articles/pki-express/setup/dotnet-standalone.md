@@ -8,7 +8,7 @@ However, if you cannot add private package feeds to your environments, follow th
 > [!NOTE]
 > If you Linux distribution is not listed below, please contact us.
 
-## CentOS / Oracle Linux
+## CentOS / Oracle Linux / Fedora
 
 Install the dependencies (these are usually already present and, if not, are available on the standard package feeds):
 
