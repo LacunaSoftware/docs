@@ -1,6 +1,5 @@
 ﻿# Instalação do PKI Express em Red Hat Enterprise Linux
 
-> [!WARNING]
-> Este artigo foi movido! Clique no link abaixo para ir para a nova localização do artigo.
+[!include[Article moved](../../../includes/article-moved.md)]
 
 [Instalação do PKI Express em Red Hat Enterprise Linux](linux-rhel.md)
