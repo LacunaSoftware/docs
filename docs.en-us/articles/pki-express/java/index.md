@@ -29,7 +29,7 @@ To run the project, it's necessary to have the Java Development Kit installed. Y
    will *not* reach 100%), open a web browser and go the URL http://localhost:60833/
 
 > [!NOTE]
-> If you are on Linux, you may have to add a execution permission to *gradlew* file by executing the command `chmod +x gradlew`.
+> If you are on Linux, you may have to add the execution permission to *gradlew* file by executing the command `chmod +x gradlew`.
 
 **Using Maven**
 
