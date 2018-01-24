@@ -118,7 +118,7 @@
 # [PKI Express](pki-express/index.md)
 ## [Instalação](pki-express/setup/index.md)
 ### [Linux Ubuntu/Mint](pki-express/setup/linux-ubuntu.md)
-### [Linux Red Hat](pki-express/setup/linux-redhat.md)
+### [Linux Red Hat Enterprise](pki-express/setup/linux-rhel.md)
 ### [Linux CentOS/Oracle/Fedora](pki-express/setup/linux-centos.md)
 ### [Windows](pki-express/setup/windows.md)
 ### [Ativação manual](pki-express/setup/manual-activation.md)
