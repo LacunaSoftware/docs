@@ -17,7 +17,7 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Java
 
 Para executar o projeto, é necessário ter o Java Development Kit instalado. Você pode usar as seguintes ferramentas:
 
-**Using Gradle**
+**Usando Gradle**
 
 1. [Instale o PKI Express](../setup/index.md)
 
@@ -27,7 +27,7 @@ Para executar o projeto, é necessário ter o Java Development Kit instalado. Vo
 
 1. Quando aparecer a mensagem "Started Application in x.xxx seconds" (a porcentagem exibida não chegará a 100%), abra um navegador e visite a URL http://localhost:60833/
 
-**Using Maven**
+**Usando Maven**
 
 1. [Instale o PKI Express](../setup/index.md)
 
