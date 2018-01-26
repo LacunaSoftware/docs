@@ -38,3 +38,7 @@ Se o seu projeto é compilado com o **Gradle**, adicione os seguintes trechos ao
 
 O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/PkiExpressJava). Você pode fazer um *fork* para fazer
 customizações, e até mesmo submeter um *pull request*.
+
+## Veja também
+
+* [Como funciona a assinatura com PKI Express em Java](how-it-works.md)

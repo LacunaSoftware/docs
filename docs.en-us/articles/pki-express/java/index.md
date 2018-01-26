@@ -53,3 +53,7 @@ If your project uses **Gradle**, add this to your `build.gradle`:
 [!include[pom.xml](../../../../includes/pki-express/java/gradle.md)]
 
 The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/PkiExpressJava). Feel free to fork it if you need to make any customizations.
+
+## See also
+
+[Signature sample explained](how-it-works.md)
