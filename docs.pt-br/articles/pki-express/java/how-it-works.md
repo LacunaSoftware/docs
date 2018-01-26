@@ -23,6 +23,7 @@ public String get(/* ... */) throws IOException {
 	// ...
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L24-L62)
 
 Nesse momento, apenas renderizamos a página de assinatura com a variável `state` setada para `initial`. Essa variável é utilizada para sinalizar em qual ponto o processo
 de assinatura se encontra.
@@ -34,6 +35,7 @@ model.addAttribute("fileToSign", fileToSign);
 model.addAttribute("userfile", userfile);
 return "pades-signature";
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L57-L61)
 
 > [!NOTE]
 > As variáveis `fileToSign` e `userfile` são meramente detalhes do exemplo.
@@ -57,6 +59,7 @@ $(document).ready(function () {
     });
 });
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/templates/pades-signature.html#L76-L90)
 
 O módulo `signatureForm`, quando `state == "initial"`, bloqueia a tela e dispara a inicialização do Web PKI, passando a função `loadCertificates()` como callback para quando a inicialização
 tiver sido concluída:
@@ -92,6 +95,7 @@ function init(fe) {
 
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L21-L38)
 
 Na função `loadCertificates()`, disparamos o carregamento dos certificados disponíveis no computador do usuário, populando o elemento `<select>` da página:
 
@@ -128,6 +132,7 @@ function loadCertificates() {
 
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L62-L92)
 
 ### 2. Usuário clica no botão **Sign File**
 
@@ -138,6 +143,7 @@ Anteriormente, o módulo de JavaScript `signatureForm` registrou a função de J
 formElements.signButton.click(startSignature);
 formElements.refreshButton.click(refresh);
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L23-L25)
 
 > [!NOTE]
 > Note que é fundamental que o botão na página tenha `type="button"`, e não `type="submit"`, caso contrário ocorreria um *postback* imediatamente ao clicar no botão.
@@ -156,6 +162,7 @@ function startSignature() {
     // ...
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L94-L115)
 
 Nessa função, após bloquear a página, obtemos o *thumbprint* do certificado selecionado e colocamos em um dos campos ocultos da página (esse valor será necessário em outro momento do processo
 de assinatura):
@@ -165,6 +172,7 @@ de assinatura):
 var selectedCertThumbprint = formElements.certificateSelect.val();
 formElements.certThumbField.val(selectedCertThumbprint);
 ``` 
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L102-L104)
 
 Invocamos então a função `readCertificate()` do Web PKI para obter a codificação do certificado escolhido (parte pública do certificado, o ".cer", sem a chave privada):
 
@@ -172,6 +180,7 @@ Invocamos então a função `readCertificate()` do Web PKI para obter a codifica
 // Get certificate content to be passed to "start" step of the signature.
 pki.readCertificate(selectedCertThumbprint).success(// ...
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L106-L107)
 
 Uma vez lido o certificado, preenchemos um campo oculto da página com o resultado, mudamos o `state` para `start` e fazemos o *postback*:
 
@@ -182,6 +191,7 @@ Uma vez lido o certificado, preenchemos um campo oculto da página com o resulta
 	formElements.form.submit();
 });
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L109-L112)
 
 ### 3. Início da assinatura no *backend*
 
@@ -198,6 +208,7 @@ public String post(/* ... */) throws IOException {
 	// ...
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L64-L79)
 
 Mais especificamente, como nesse momento temos `state == "start"`, o código executado é o seguinte trecho:
 
@@ -210,6 +221,7 @@ if (state.equals("start")) {
 
 	// ...
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L81-L142)
 
 Nesse ponto, iniciamos a assinatura usando a classe `PadesSignatureStarter` passando o arquivo a ser assinado e a codificação do certificado escolhido para assinatura:
 
@@ -227,6 +239,7 @@ signatureStarter.setPdfToSign(fileToSign);
 // Set Base64-encoded certificate's content to signature starter.
 signatureStarter.setCertificateBase64(certContent);
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L88-L99)
 
 Opcionalmente, configuramos a aparência da assinatura:
 
@@ -243,6 +256,7 @@ signatureStarter.setVisualRepresentation(PadesVisualElements.getVisualRepresenta
 // (see resources/static/vr.json).
 //signatureStarter.setVisualRepresentationFromFile(Util.getVisualRepresentationPath());
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L101-L111)
 
 > [!NOTE]
 > Para mais detalhes sobre as opções de configuração da aparência da assinatura, veja a classe
@@ -258,6 +272,7 @@ Por fim, concluímos a etapa inicial, obtendo os dados necessários para realiza
 // - transferFile: A temporary file to be passed to "complete" step.
 SignatureStartResult result = signatureStarter.start();
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L113-L119)
 
 Um ponto importante: a classe `PadesSignatureStarter` salva um arquivo chamado *transfer data file* contendo informações que precisam ser recuperadas
 mais à frente no processo de assinatura. Por padrão, esse arquivo é armazenado na pasta temporária do sistema, porém outra pasta pode ser configurada.
@@ -266,6 +281,7 @@ O método `PadesSignatureStarter.getTransferFile()` retorna o *filename* do arqu
 ```java
 model.addAttribute("transferFile", result.getTransferFile());
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L133)
 
 > [!NOTE]
 > Preocupações de segurança são tomadas na geração do nome desse arquivo, de modo que é impossível um usuário adivinhar o *transfer data file* de um
@@ -277,6 +293,7 @@ Após um pouco de *housekeeping*, renderizamos novamente a view `pades-signature
 ```java
 return "pades-signature";
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L193)
 
 ### 4. Realização do algoritmo de assinatura digital no *frontend*
 
@@ -296,6 +313,7 @@ dessa vez passando a função `sign()` como callback:
 
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L40-L49)
 
 Na função `sign()`, invocamos o Web PKI para realizar o algoritmo de assinatura digital com a chave privada do certificado, usando como dados de entrada
 os dados retornados pelo PKI Express no backend:
@@ -318,6 +336,7 @@ function sign() {
     });
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L117-L129)
 
 Uma vez finalizado o algoritmo de assinatura, preenchemos o resultado em um campo oculto na página, mudamos o `state` para `complete` e fazemos um novo *postback* para o backend:
 
@@ -330,6 +349,7 @@ Uma vez finalizado o algoritmo de assinatura, preenchemos o resultado em um camp
 
 });
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L129-L136)
 
 ### 5. Finalização da assinatura
 
@@ -346,6 +366,7 @@ O método `post()` é responsável por tratar a requisição, porém dessa vez t
 	// ...
 }
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L144-L192)
 
 Obtemos uma instância da classe `SignatureFinisher` e fornecemos o arquivo sendo assinado, o *filename* do arquivo de *transfer data* e o resultado do algoritmo de assinatura feito
 no frontend com o Web PKI:
@@ -366,6 +387,7 @@ signatureFinisher.setTransferFilePath(transferFile);
 // Set the signature value.
 signatureFinisher.setSignature(signature);
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L151-L164)
 
 Geramos um *filename* aleatório para receber o PDF assinado:
 
@@ -374,6 +396,7 @@ Geramos um *filename* aleatório para receber o PDF assinado:
 String filename = UUID.randomUUID() + ".pdf";
 signatureFinisher.setOutputFilePath(Application.getTempFolderPath().resolve(filename));
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L166-L168)
 
 Finalizamos o processo de assinatura:
 
@@ -381,6 +404,7 @@ Finalizamos o processo de assinatura:
 // Complete the signature process.
 signatureFinisher.complete();
 ```
+[view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/java/sample/controller/PadesSignatureController.java#L170-L171)
 
 Após esse comando, o arquivo assinado encontra-se salvo no *filename* gerado aleatóriamente acima. Fica, então, a critério da sua aplicação mover esse arquivo
 para o local correto, seja em banco de dados, sistema de arquivos ou serviço de storage.
