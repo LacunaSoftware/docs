@@ -351,7 +351,7 @@ Uma vez finalizado o algoritmo de assinatura, preenchemos o resultado em um camp
 ```
 [view on source](https://github.com/LacunaSoftware/PkiExpressSamples/blob/java-annotated/Java/src/main/resources/static/js/signature-form.js#L129-L136)
 
-### 5. Finalização da assinatura
+### 5. Finalização da assinatura no *backend*
 
 No backend, o controller `PadesController` novamente é invocado para tratar o postback feito com o resultado do algoritmo de assinatura digital.
 O método `post()` é responsável por tratar a requisição, porém dessa vez temos `state == 'complete'`:
