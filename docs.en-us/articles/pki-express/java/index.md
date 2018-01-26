@@ -62,4 +62,4 @@ The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware
 
 ## See also
 
-[Signature sample explained](how-it-works.md)
+* [Signature sample explained](how-it-works.md)

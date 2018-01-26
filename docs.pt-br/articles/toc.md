@@ -64,6 +64,7 @@
 #### [Atualização](rest-pki/on-premises/windows-setup/update.md)
 #### [Resolução de problemas](rest-pki/on-premises/windows-setup/troubleshoot/index.md)
 ### [Setup em Azure App Service](rest-pki/on-premises/azure-setup.md)
+### [Dimensionamento](rest-pki/on-premises/sizing.md)
 ## [Resolução de problemas](rest-pki/troubleshoot/index.md)
 ### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Histórico de versões](rest-pki/changelog.md)
