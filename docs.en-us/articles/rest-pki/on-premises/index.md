@@ -15,3 +15,7 @@ Rest PKI is compatible with:
 > For Linux environments, we recommend using [PKI Express](../../pki-express/index.md) instead
 
 Click on one of the platforms above for specific setup instructions.
+
+## See also
+
+* [Right-sizing guide](sizing.md)

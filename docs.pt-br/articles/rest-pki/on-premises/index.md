@@ -15,3 +15,7 @@ O Rest PKI é compatível com os seguintes ambientes:
 > Para ambientes Linux, recomendamos o uso do [PKI Express](../../pki-express/index.md)
 
 Clique em um dos ambientes acima para obter instruções específicas de instalação e atualização.
+
+## Veja também
+
+* [Dimensionamento de servidores](sizing.md)
