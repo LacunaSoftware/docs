@@ -12,27 +12,33 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Java
 > [!NOTE]
 > If you are using a previous version of Java, please [contact us](https://www.lacunasoftware.com/en/home/purchase).
 
-### Running with Gradle
+### Running the project
+
+To run the project, it's necessary to have the Java Development Kit installed. You can use the following tools:
+
+**Using Gradle**
 
 1. [Install PKI Express](../setup/index.md)
 
 1. [Download the project](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiExpressSamples.git)
 
 1. In a command prompt, navigate to the folder `Java` and run the command `gradlew bootRun` (on Linux `./gradlew bootRun`).
-   If you are using Windows, you can alternatively double-click the file `Run-Sample.bat`.
+   If you are using Windows, you can alternatively double-click the file `Run-Sample.bat`
 
 1. Once you see the message "Started Application in x.xxx seconds" (the on-screen percentage
    will *not* reach 100%), open a web browser and go the URL http://localhost:60833/
 
 > [!NOTE]
-> If you are using a Spring Boot version lower than 1.3.x, you need to run the task `run` instead of `bootRun`.
+> If you are on Linux, you may have to add the execution permission to *gradlew* file by executing the command `chmod +x gradlew`.
 
-### Running with Maven
+**Using Maven**
+
 1. [Install PKI Express](../setup/index.md)
 
 1. [Download the project](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiExpressSamples.git)
 
-1. In a command prompt, navigate to the folder `Java` and run the command `mvn spring-boot:run`.
+1. In a command prompt, navigate to the folder `Java` and run the command `mvn spring-boot:run`. To run the command, it's 
+necessary to have the Apache Maven installed.
 
 1. Once you see the message "Started Application in x.xxx seconds" (the on-screen percentage
    will *not* reach 100%), open a web browser and go the URL http://localhost:60833/

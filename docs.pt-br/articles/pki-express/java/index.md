@@ -15,10 +15,32 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Java
 
 ### Executando o projeto
 
+Para executar o projeto, é necessário ter o Java Development Kit instalado. Você pode usar as seguintes ferramentas:
+
+**Usando Gradle**
+
 1. [Instale o PKI Express](../setup/index.md)
+
 1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiExpressSamples.git)
-1. Em um terminal, navegue até a pasta `Java` e execute o comando `gradlew run` (no Linux, `./gradlew run`). Se você estiver em um ambiente Windows, você pode simplesmente dar um duplo-clique no arquivo `Run-Sample.bat`
-1. Quando aparecer a mensagem "Started Application in x.xxx seconds" (a porcentagem exibida não chegará a 100%), abra um navegador e visite a URL http://localhost:8080/
+
+1. Em um terminal, navegue até a pasta `Java` e execute o comando `gradlew bootRun` (no Linux, `./gradlew bootRun`). Se você estiver em um ambiente Windows, você pode simplesmente dar um duplo-clique no arquivo `Run-Sample.bat`
+
+1. Quando aparecer a mensagem "Started Application in x.xxx seconds" (a porcentagem exibida não chegará a 100%), abra um navegador e visite a URL http://localhost:60833/
+
+> [!NOTE]
+> Se você está no Linux, pode-se precisar adicionar a permissão de execução ao arquivo *gradlew* executando o commando 
+`chmod +x gradlew`.
+
+**Usando Maven**
+
+1. [Instale o PKI Express](../setup/index.md)
+
+1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiExpressSamples.git)
+
+1. Em um terminal, navegue até a pasta `Java` e execute o comando `mvn spring-boot:run`. Para executar esse comando, é necessário
+ter o Apache Maven instalado.
+
+1. Quando aparecer a mensagem "Started Application in x.xxx seconds" (a porcentagem exibida não chegará a 100%), abra um navegador e visite a URL http://localhost:60833/
 
 ## Pacote Maven
 
