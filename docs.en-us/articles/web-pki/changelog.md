@@ -10,7 +10,7 @@ required versions and will not force any unecessary user update.
 - Add XML local signature features:
 	- `signFullXml`
 	- `signXmlElement`
-	- `openXades`
+	- `openXmlSignature`
 - Add autheticated request feature:
 	- `sendAuthenticatedRequest`
 - Add user error message field on exception object:
