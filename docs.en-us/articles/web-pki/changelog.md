@@ -1,4 +1,4 @@
-# WebPKI API Changelog
+# WebPKI API
 
 The WebPKI API changelog is based on the *jslib* ([lacuna-web-pki.js](https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.7.0.js)) features development. 
 If you intend to use a specifc features set, check the usage of `requiredApiVersion` parameter on `init` method. Thus, you can ensure that the users will have the minimum components
@@ -13,9 +13,8 @@ required versions and will not force any unecessary user update.
 	- `openXades`
 - Add autheticated request feature:
 	- `sendAuthenticatedRequest`
-- Add user error message filed on exception object:
+- Add user error message field on exception object:
 	- `userMessage`
-- Add not mandatory native update option
 
 
 <a name="v1-3" />
@@ -41,7 +40,6 @@ required versions and will not force any unecessary user update.
 
 - Add license v2
 - Add local signature features:
-	- `saveFile`
 	- `showFileBrowser`
 	- `openFile`
 - Add PAdES local signature features:
