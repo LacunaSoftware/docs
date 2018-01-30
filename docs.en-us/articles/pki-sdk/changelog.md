@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-12" />
+### 1.20.12 (2018-01-30)
+
+- Add proxy configuration for the PKI SDK Web requests
+
+
 <a name="v1-20-10" />
 ### 1.20.10 (2018-01-17)
 
