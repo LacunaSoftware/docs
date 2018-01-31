@@ -6,14 +6,14 @@ e otimizado. O uso da finalização assíncrona visa as seguintes vantagens:
 * Resistência a falhas na distribuição de CRLs/OCSPs e carimbos de tempo.
 * Ganho de desempenho na parte síncrona do processo, pois não é mais necessário aguardar resposta de requisições de CRL,
   OCSP ou carimbo de tempo.
-* Uso de políticas de assiantura com grace period.
+* Uso de políticas de assinatura com grace period.
 
 Deste modo, a assinatura do cliente é solicitada apenas uma vez e é salva, encerrando-se o processo com o usuário. Em um
 outro momento, através de um *background worker* por exemplo, as requisições e verificações online ou em cache são realizadas
-e a assinatura é finalizada. Caso haja problemas neste segundo passo, não é necessário solicitar novamente a assiantura do
+e a assinatura é finalizada. Caso haja problemas neste segundo passo, não é necessário solicitar novamente a assinatura do
 cliente.
 
-## Finalizador de assiantura
+## Finalizador de assinaturas
 
 A finalização de assinatura é gerenciada pela classe @Lacuna.Pki.Cades.CadesSignatureFinisher. Abaixo temos um exemplo de
 uso do finalizador e em seguida um detalhamento dos métodos utilizados.
