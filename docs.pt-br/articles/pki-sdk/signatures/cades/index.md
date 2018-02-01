@@ -80,6 +80,52 @@ e o método de incluir os dados assinados no CAdES
 Para mais informações sobre assinatura remota veja o artigo
 [Assinatura com chave remota (assinatura no browser)](../web-remote.md).
 
+## Validação de Assinaturas
+
+Com o PKI SDK é possível validar o pacote inteiro de assinaturas de acordo com uma única política:
+
+```cs
+CadesSignature signature = ...
+
+Dictionary<CadesSignerInfo,ValidationResults> validationResults = signature.ValidateAllSignatures(CadesPoliciesForValidation.GetCadesBasic());
+
+foreach (var item in validationResults) {
+	Console.WriteLine("Passed checks:");
+	item.Value.PassedChecks.ForEach(vi => Console.WriteLine(vi.Detail)); // imprime todas as validações bem-sucedidas
+
+	if (item.Value.HasErrors) { // caso tenha erros
+		Console.WriteLine("Errors:");
+		item.Value.Errors.ForEach(e => Console.WriteLine(e.Message)); //imprime o motivo pelo qual não passaram
+	}
+}
+```
+Ou validar cada uma das assinaturas com uma política desejada:
+
+```cs
+
+var cadesSig = ...
+var myIssuer = ...
+
+CadesSignature signature = CadesSignature.Open(cadesSig);
+foreach (var signerInfo in signature.Signers) {
+
+	var policyMapper = signerInfo.SigningCertificate.Issuer.Equals(myIssuer)  // caso o certificado tenha sido emitido pelo emissor da minha empresa fora das raízes do Windows
+		? CadesPoliciesForValidation.GetCadesBasic(new CustomArbitrator() // utiliza um trust arbitrator costumizado que confia no meu emissor
+		: CadesPoliciesForValidation.GetCadesBasic();			  // caso contrário utiliza as raízes do Windows como raízes confiáveis
+
+	ValidationResults result = signature.ValidateSignature(signerInfo, policyMapper); // valida a assinatura conforme o política especificada
+
+	Console.WriteLine("Passed checks:");
+	result.PassedChecks.ForEach(vi => Console.WriteLine(vi.Detail)); // imprime todas as validações bem-sucedidas
+	if (result.HasErrors) {
+		Console.WriteLine("Errors:");
+		result.Errors.ForEach(e => Console.WriteLine($"{e.Message} - {e.Detail}")); //imprime o motivo pelo qual não passaram
+	}
+}
+			
+```
+
+
 ## Veja também
 
 * @Lacuna.Pki.Cades.CadesSigner
