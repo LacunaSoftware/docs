@@ -99,18 +99,28 @@ foreach (var item in validationResults) {
 	}
 }
 ```
+Ou validar cada uma das assinaturas com uma política desejada:
 
 ```cs
 
-byte[] cadesSig = ...
-CadesSignature cadesSig = CadesSignature.Open(cadesSig);
+var cadesSig = ...
+var myIssuer = ...
 
 CadesSignature signature = CadesSignature.Open(cadesSig);
 foreach (var signerInfo in signature.Signers) {
-  ValidationResults result = signature.ValidateSignature(signerInfo, CadesPoliciesForValidation.GetCadesBasic());
-  if (result.HasErrors) {
-    result.Errors.ForEach(e => Console.WriteLine($"{e.Message} - {e.Detail}"));
-  }
+
+	var policyMapper = signerInfo.SigningCertificate.Issuer.Equals(myIssuer)  // caso o certificado tenha sido emitido pelo emissor da minha empresa fora das raízes do Windows
+		? CadesPoliciesForValidation.GetCadesBasic(new CustomArbitrator() // utiliza um trust arbitrator costumizado que confia no meu emissor
+		: CadesPoliciesForValidation.GetCadesBasic();			  // caso contrário utiliza as raízes do Windows como raízes confiáveis
+
+	ValidationResults result = signature.ValidateSignature(signerInfo, policyMapper); // valida a assinatura conforme o política especificada
+
+	Console.WriteLine("Passed checks:");
+	result.PassedChecks.ForEach(vi => Console.WriteLine(vi.Detail)); // imprime todas as validações bem-sucedidas
+	if (result.HasErrors) {
+		Console.WriteLine("Errors:");
+		result.Errors.ForEach(e => Console.WriteLine($"{e.Message} - {e.Detail}")); //imprime o motivo pelo qual não passaram
+	}
 }
 			
 ```
