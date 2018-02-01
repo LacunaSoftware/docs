@@ -80,6 +80,42 @@ e o método de incluir os dados assinados no CAdES
 Para mais informações sobre assinatura remota veja o artigo
 [Assinatura com chave remota (assinatura no browser)](../web-remote.md).
 
+## Validação de Assinaturas
+
+Com o PKI SDK é possível validar o pacote inteiro de assinaturas de acordo com uma única política:
+
+```cs
+CadesSignature signature = ...
+
+Dictionary<CadesSignerInfo,ValidationResults> validationResults = signature.ValidateAllSignatures(CadesPoliciesForValidation.GetCadesBasic());
+
+foreach (var item in validationResults) {
+	Console.WriteLine("Passed checks:");
+	item.Value.PassedChecks.ForEach(vi => Console.WriteLine(vi.Detail)); // imprime todas as validações bem-sucedidas
+
+	if (item.Value.HasErrors) { // caso tenha erros
+		Console.WriteLine("Errors:");
+		item.Value.Errors.ForEach(e => Console.WriteLine(e.Message)); //imprime o motivo pelo qual não passaram
+	}
+}
+```
+
+```cs
+
+byte[] cadesSig = ...
+CadesSignature cadesSig = CadesSignature.Open(cadesSig);
+
+CadesSignature signature = CadesSignature.Open(cadesSig);
+foreach (var signerInfo in signature.Signers) {
+  ValidationResults result = signature.ValidateSignature(signerInfo, CadesPoliciesForValidation.GetCadesBasic());
+  if (result.HasErrors) {
+    result.Errors.ForEach(e => Console.WriteLine($"{e.Message} - {e.Detail}"));
+  }
+}
+			
+```
+
+
 ## Veja também
 
 * @Lacuna.Pki.Cades.CadesSigner
