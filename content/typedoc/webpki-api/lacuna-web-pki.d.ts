@@ -1311,7 +1311,9 @@ export interface XmlNodeNameModel {
 }
 
 export interface XmlSignatureElementLocation {
+	/** A xpath to select the element on which the [[XmlSignatureElementLocation.insertionOption]] will be applied relative to. */
 	xpath: string, 
+	/** The insertion option relative to the element selected by the [[XmlSignatureElementLocation.xpath]]. */
 	insertionOption: LacunaWebPKI.XmlInsertionOptions
 }
 
@@ -1323,9 +1325,9 @@ export interface NamespaceModel {
 export interface MechanismsModel {
 	/** Whether or not the token supports RSA key generation. */
 	rsaGenerateKeyPair: boolean,
-	/** If RSA key generation supported, the minimum key size supported. */
+	/** The minimum key size supported, if RSA key generation supported. */
 	rsaMinKeySize: number,
-	/** If RSA key generation supported, the maximum key size supported. */
+	/** The maximum key size supported, if RSA key generation supported. */
 	rsaMaxKeySize: number
 }
 
