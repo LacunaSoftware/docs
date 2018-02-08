@@ -9,7 +9,7 @@ npm install -g typedoc
 
 ## Web PKI typedoc build
 ```
-typedoc --out lacuna-webpki/ --theme themes/lacuna --readme none --name "Lacuna Web PKI - API" --excludeExternals --includeDeclarations lacuna-web-pki.d.ts
+typedoc --out web-pki/ --theme themes/lacuna --readme none --name "Web PKI - API Reference" --excludeExternals --includeDeclarations lacuna-web-pki.d.ts
 ```
 
 ## TODO
