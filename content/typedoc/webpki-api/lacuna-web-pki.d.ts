@@ -830,7 +830,7 @@ export namespace LacunaWebPKI {
 		SaveInFolder = 'saveInFolder',
 		/** Saves the output file in the same directory of the original file. The output file name will be the original file name plus a suffix. Make sure to pass the required arguments [[Output.fileNameSuffix]]. */
 		AutoSave = 'autoSave',
-		/** Returns to the page the output file content Base64 encoded bytes. */
+		/** Returns to the page the output file content Base64 encoded bytes. IMPORTANT, when working with Web PKI on web-extensions technologies (i.e. Chrome, Firefox), the maximum response length is limited up to 1MB. If exceeded, an [[ErrorCodes.IO_ERROR]] is returned. */
 		ReturnContent = 'returnContent'
 	}
 
@@ -1011,8 +1011,27 @@ export namespace LacunaWebPKI {
 
 }
 
-// TYPES
 
+/**************************************************************
+ * An object that represents a promise to be fulfilled, through which the programmer can register callbacks for when the promise is fulfilled successfully or for when an error occurrs. 
+ * All asyncronous methods from the [[LacunaWebPKI]] class return an instance of this object.
+
+ * For instance, the method [[listCertificates]] returns a promise which is fulfilled when the list of certificates is finally available. 
+ * You could register a callback for when that happens, and another one for if an error occurs, in the following manner:
+ *
+ *```js
+ * pki.listCertificates()
+ * .success(function(certs) {
+ *     // Every success callback receives a single argument. Its type (either string, array or object) and meaning depend on the method that returned the promise.
+ *     $scope.certificates = certs;
+ * })
+ * .fail(function (ex) {
+ * 	   // The fail callback always receives an ExceptionModel object.
+ *     alert('pki error from ' + ex.origin + ': ' + ex.message);
+ *     console.log('pki error', ex);
+ * });
+ * ```
+ */
 export interface Promise<T> {
 	success(callback: SuccessCallback<T>): Promise<T>;
 	//error(callback: ErrorCallback): Promise<T>;
