@@ -175,7 +175,7 @@ export declare class LacunaWebPKI {
 	 *     // Use certificate list "certs"
 	 * });
 	 * ```
-	 * JSFiddle live example: [Listing Certificates Example](https://jsfiddle.net/LacunaSoftware/h7gedst8/)
+	 * JSFiddle live example: [Listing Certificates](https://jsfiddle.net/LacunaSoftware/ezg6hz7n/)
 	 */
 	listCertificates(args?: {
 		/** A html `<select>` (dropdown) element `id` to be automatically populated with the available certificates. You can also pass the `selectOptionFormatter` function argument for formatting the populated options text. If no formatter function is passed, the default text formatting for a certificate `c` is "`c.subjectName` (issued by `c.issuerName`)" */
