@@ -108,8 +108,7 @@ export declare class LacunaWebPKI {
 	 * pki.init({
 	 *     ready: onWebPkiReady,
 	 *     notInstalled: onWebPkiNotInstalled,
-	 *     defaultFail: onWebPkiFail,
-	 *     angularScope: $scope
+	 *     defaultFail: onWebPkiFail
 	 * });
 	 * 
 	 * function onWebPkiReady() {
@@ -155,7 +154,7 @@ export declare class LacunaWebPKI {
 		/** If your webpage uses AngularJS, you can pass here a reference to your $scope, which will then be used to call the callback functions properly, relieving you of doing a `$scope.$apply(function() { ... });` on every callback. The calls are actually wrapped around a "safe $apply", as described in [coderwall](https://coderwall.com/p/ngisma/safe-apply-in-angular-js). */
 		angularScope?: Object,
 		
-		/** If your webpage uses Angular2+ technologies, you can pass a [NgZone](https://angular.io/api/core/NgZone) reference, so the callback functions can properly detect elements changes. */
+		/** If your webpage uses Angular2+ technologies, you can pass a [NgZone](https://angular.io/api/core/NgZone) reference, so the page can properly detect elements changes on the callback functions. */
 		ngZone?: Object,
 		
 		/** The brand name for customized install page, if license covered. */
@@ -380,7 +379,7 @@ export declare class LacunaWebPKI {
 	/**********************************************************
 	 * Opens the selected folder in OS directory explorer.
 	 * 
-	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a `boolean` argument with the success result.
+	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a *boolean* argument with the success result.
 	 */
 	openFolder(args: {
 		/** The selected [[ShowFolderBrowserResponse.folderId]], as returned by [[showFolderBrowser]] method. */
@@ -390,7 +389,7 @@ export declare class LacunaWebPKI {
 	/**************************************************************
 	 * Opens a file with the OS default registered program for the file type. If the file type is not in the Web PKI whitelist, the file directory will be opened instead.
 	 *
-	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a `boolean` argument with the success result.
+	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a *boolean* argument with the success result.
 	 */
 	openFile(args: {
 		/** The selected [[FileModel.id]], as returned by [[showFileBrowser]] method. */
