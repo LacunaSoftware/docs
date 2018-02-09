@@ -223,7 +223,7 @@ export declare class LacunaWebPKI {
 	 * });
 	 * ```
 	 *
-	 * JSFiddle live example: [Operates with selected certificate](https://jsfiddle.net/LacunaSoftware/6zkwejb9/)
+	 * JSFiddle live example: [Operates with selected certificate](https://jsfiddle.net/LacunaSoftware/4ayksync/)
 	 */
 	signHash(args: {
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
@@ -252,7 +252,7 @@ export declare class LacunaWebPKI {
 	 * });
 	 * ```
 	 *
-	 * JSFiddle live example: [Operates with selected certificate](https://jsfiddle.net/LacunaSoftware/6zkwejb9/)
+	 * JSFiddle live example: [Operates with selected certificate](https://jsfiddle.net/LacunaSoftware/4ayksync/)
 	 */
 	signData(args: {
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
