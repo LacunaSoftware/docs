@@ -11,7 +11,7 @@ The WebPKI API changelog is based on the *jslib* ([lacuna-web-pki.js](https://ge
 If you intend to use a specifc features set, check the usage of `requiredApiVersion` parameter on [`init`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init) method. Thus, you can ensure that the users will have the minimum components required versions and will not cause any unecessary user update.
 
 <a name="v1-4" />
-### 1.4 (2018-01-31)
+### 1.4 (Beta)
 
 - Add XML local signature features:
 	- [`signFullXml`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)
