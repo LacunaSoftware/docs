@@ -1204,7 +1204,10 @@ export interface SignatureInfo {
 	signerCertificate: CertificateModel,
 	messageDigest?: DigestModel,
 	file?: FileModel,
-	signingTime?: Date,
+	signingTime?: Date
+}
+
+export interface XmlSignatureInfo extends SignatureInfo {
 	content?: string
 }
 
@@ -1236,7 +1239,7 @@ export interface CadesSignResult extends SignResult {
 }
 
 export interface XmlSignResult extends SignResult {
-	// For now, XmlSignResult has only the same properties as BaseSignResult
+	signatureInfo: XmlSignatureInfo
 }
 
 export interface SignatureAlgorithmModel {
