@@ -16,7 +16,7 @@ If you intend to use a specifc features set, check the usage of `requiredApiVers
 - Add XML local signature features:
 	- [`signFullXml`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)
 	- [`signXmlElement`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signxmlelement)
-	- [`openXmlSignature`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openXmlSignature)
+	- [`openXmlSignature`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openxmlsignature)
 - Add autheticated request feature:
 	- [`sendAuthenticatedRequest`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)
 - Add user error message field on exception object:
