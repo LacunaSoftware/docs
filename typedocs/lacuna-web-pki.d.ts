@@ -200,10 +200,10 @@ export declare class LacunaWebPKI {
 	 *
 	 * JSFiddle live example: [Listing and reading certificates](https://jsfiddle.net/LacunaSoftware/ezg6hz7n/)
 	 */
-	readCertificate(
+	readCertificate(args: {
 		/** The certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
 		thumbprint: string
-	): Promise<string>;
+	}): Promise<string>;
 
 	/**************************************************************
 	 * Signs a hash with signer certificate private key.
