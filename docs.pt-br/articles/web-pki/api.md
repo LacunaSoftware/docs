@@ -1,3 +1,4 @@
-﻿# Guia da API
+﻿# Web PKI API
 
-Veja o [Guia da API](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/modules/_lacuna_web_pki_d_.html) para informações detalhadas sobre cada método.
+<!-- link to version in English -->
+<div data-alt-locales="en-us"></div>
