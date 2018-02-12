@@ -8,31 +8,31 @@ required versions and will not force any unecessary user update.
 ### 1.4 (2018-01-31)
 
 - Add XML local signature features:
-	- `signFullXml`
-	- `signXmlElement`
-	- `openXmlSignature`
+	- [`signFullXml`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)
+	- [`signXmlElement`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signxmlelement)
+	- [`openXmlSignature`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openXmlSignature)
 - Add autheticated request feature:
-	- `sendAuthenticatedRequest`
+	- [`sendAuthenticatedRequest`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)
 - Add user error message field on exception object:
-	- `userMessage`
+	- [`userMessage`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#usermessage)
 
 
 <a name="v1-3" />
 ### 1.3 (2017-11-10)
 
 - Add improved error handler with exception model
-	- `fail`
+	- [`fail`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#fail)
 
 
 <a name="v1-2" />
 ### 1.2 (2017-06-19)
 
 - Add local store and PKCS#11 certificate generation features:
-	- `generateSoftwareRsaKeyPair`
-	- `importCertificate`
-	- `listTokens`
-	- `generateTokenRsaKeyPair`
-	- `importTokenCertificate`
+	- [`generateSoftwareRsaKeyPair`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#generatesoftwarersakeypair)
+	- [`importCertificate`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#importcertificate)
+	- [`listTokens`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#listtokens)
+	- [`generateTokenRsaKeyPair`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#generatetokenrsakeypair)
+	- [`importTokenCertificate`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#importtokencertificate)
 
 
 <a name="v1-1" />
@@ -40,31 +40,31 @@ required versions and will not force any unecessary user update.
 
 - Add license v2
 - Add local signature features:
-	- `showFileBrowser`
-	- `openFile`
+	- [`showFileBrowser`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#showfilebrowser)
+	- [`openFile`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openfile)
 - Add PAdES local signature features:
-	- `signPdf`
-	- `openPdf`
+	- [`signPdf`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signpdf)
+	- [`openPdf`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openpdf)
 - Add CAdES local signature features:
-	- `signCades`
-	- `openCades`
+	- [`signCades`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signcades)
+	- [`openCades`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#opencades)
 
 
 <a name="v1-0" />
 ### 1.0 (2015-04-28)
 
 - Add basic features:
-	- `init`
-	- `listCertificates`
-	- `readCertificate`
-	- `signHash`
-	- `signData`
-	- `redirectToInstallPage`
+	- [`init`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init)
+	- [`listCertificates`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#listcertificates)
+	- [`readCertificate`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#readcertificate)
+	- [`signHash`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signhash)
+	- [`signData`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signdata)
+	- [`redirectToInstallPage`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#redirecttoinstallpage)
 - Add sign batch feature:
-	- `preauthorizeSignatures`
+	- [`preauthorizeSignatures`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#preauthorizesignatures)
 - Add downlad and directory selection features:
-	- `showFolderBrowser`
-	- `downloadToFolder`
-	- `openFolder`
+	- [`showFolderBrowser`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#showfolderbrowser)
+	- [`downloadToFolder`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#downloadtofolder)
+	- [`openFolder`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openfolder)
 - Add RestPKI sign integration:
-	- `signWithRestPki`
+	- [`signWithRestPki`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signwithrestpki)
