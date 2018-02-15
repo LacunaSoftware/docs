@@ -21,11 +21,11 @@ Nenhuma atualização desnecessária será exigida de usuários com versões suf
 ### 1.4 (2018-02-17)
 
 - Adiciona funcionalidades de assinatura local de XML:
-	- [`signFullXml`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)
-	- [`signXmlElement`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signxmlelement)
-	- [`openXmlSignature`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openxmlsignature)
+	- [`signFullXml`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)&ast;
+	- [`signXmlElement`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signxmlelement)&ast;
+	- [`openXmlSignature`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openxmlsignature)&ast;
 - Adiciona funcionalidades de requisição Web autenticada:
-	- [`sendAuthenticatedRequest`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)
+	- [`sendAuthenticatedRequest`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)&ast;
 - Adiciona mensagem de erro de usuário no objeto de exceção:
 	- [`userMessage`](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html#usermessage)
 
@@ -53,14 +53,14 @@ Nenhuma atualização desnecessária será exigida de usuários com versões suf
 
 - Adiciona licença v2
 - Adiciona funcionalidades para assinatura local:
-	- [`showFileBrowser`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#showfilebrowser)
-	- [`openFile`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openfile)
+	- [`showFileBrowser`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#showfilebrowser)&ast;
+	- [`openFile`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openfile)&ast;
 - Adiciona funcionalidades de assinatura local PAdES:
-	- [`signPdf`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signpdf)
-	- [`openPades`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openpades)
+	- [`signPdf`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signpdf)&ast;
+	- [`openPades`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#openpades)&ast;
 - Adiciona funcionalidades de assinatura local CAdES:
-	- [`signCades`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signcades)
-	- [`openCades`]&ast;(https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#opencades)
+	- [`signCades`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signcades)&ast;
+	- [`openCades`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#opencades)&ast;
 
 
 <a name="v1-0" />
