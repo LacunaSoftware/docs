@@ -32,8 +32,8 @@
 ### [What is the signature format outputted by the functions signData and signHash?](web-pki/faq/sign-data-output.md)
 ### [How can I perform a digital signature with Web PKI?](web-pki/faq/digital-signature.md)
 ### [Support for SSL connections with users' certificates?](web-pki/faq/ssl.md)
-## [API](web-pki/api/index.md)
-### [API Versions](web-pki/api/versions.md)
+## [API](web-pki/api-reference/index.md)
+### [API Versions](web-pki/api-reference/versions.md)
 <!-- End of Web PKI -->
 
 <!-- Start of Rest PKI -->
