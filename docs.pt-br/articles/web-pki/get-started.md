@@ -117,4 +117,4 @@ Agora que vimos as funções básicas do Web PKI ...
 * Veja [como customizar o comportamento quando o componente não estiver instalado](customizing-not-installed.md)
 * Se a sua aplicação utiliza AngularJS, leia a seção [Callbacks e AngularJS](angularjs.md)
 * Veja os [exemplos completos](full-samples.md)
-* Veja o [Guia da API](api.md)
+* Veja o [Guia da API](api/index.md)
