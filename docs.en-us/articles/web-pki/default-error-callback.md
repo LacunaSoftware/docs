@@ -1,23 +1,24 @@
-﻿# Default error callback
+﻿# Default fail callback
 
-Although you can register specific error callbacks on each asynchronous call, if you're always going to apply the same logic when an error occurs, it's better
-to register a **default error callback** when calling the `init()` method:
+Although you can register specific fail callbacks on each asynchronous call, if you're always going to apply the same logic when an error occurs, it's better
+to register a **default fail callback** when calling the [`init()`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init) method:
 
 ```javascript
 pki.init({
     ready: onWebPkiReady,
-    defaultError: onWebPkiError
+    defaultFail: onWebPkiFail
 });
-function onWebPkiError(message, error, origin) {
-    alert(message);
-    if (window.console) {
-        window.console.log('Web PKI error originated at ' + origin + ': ' + error);
-    }
+
+function onWebPkiFail(ex) {
+    alert(ex.userMessage);
+    console.log('Web PKI error originated at ' + ex.origin + ': ' + ex.error);
 }
 ```
 
 From then on you can register the success callback only on each asynchronous call.
 
 > [!NOTE]
-> When an error occurs and no error callback is registered for that specific operation, the default error callback is called If no default error callback is
+> When an error occurs and no fail callback is registered for that specific operation, the default error callback is called If no default fail callback is
 > registered, an exception is thrown.
+
+For more information, please see the documentation of [FailCallback](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.failcallback.html) and [Promise](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html)
