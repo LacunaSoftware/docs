@@ -1,6 +1,6 @@
 ﻿# Especificando a URL do Rest PKI
 
-Na seção [Primeiros Passos](get-started.md), vimos que o método `init()` deve ser chamado antes de qualquer outra chamada:
+Na seção [Primeiros Passos](get-started.md), vimos que o método [`init()`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init) deve ser chamado antes de qualquer outra chamada:
 
 ```javascript
 pki.init(onWebPkiReady);
@@ -18,5 +18,5 @@ pki.init({
 > [!NOTE]
 > Caso o WebPKI não esteja sendo utilizado em conjunto com o RestPKI essa configuração é desnecesária. 
 
-Para mais informações sobre o `init()`, consulte a
-[documentação do método](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init).
+Para mais informações sobre o [`init()`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init), consulte a
+[documentação do método](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init).
