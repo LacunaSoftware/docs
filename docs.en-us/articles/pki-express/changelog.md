@@ -3,7 +3,7 @@
 <a name="v1-2-1" />
 ### 1.2.1 (2018-01-18)
 
-- Update PKI SDK to 2.0.11, thus fixing bug that caused network delays even with `--offset` enabled
+- Update PKI SDK to 2.0.11, thus fixing bug that caused network delays even with `--offline` enabled
 
 
 <a name="v1-2-0" />
