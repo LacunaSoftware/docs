@@ -31,4 +31,4 @@ the method that returned the promise. You must check on each method's documentat
 For more information about each of the exception object parameters, please refer to the [`Promise.fail()`](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html#fail) method documentation and [ExceptionModel](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html).
 
 > [!NOTE]
-> All methods of the [`LacunaWebPKI`](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html) class are asynchronous, with rare exceptions.
+> All methods of the [`LacunaWebPKI`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html) class are asynchronous, with rare exceptions.
