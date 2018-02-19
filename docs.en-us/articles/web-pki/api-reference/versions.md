@@ -17,7 +17,7 @@ No unecessary update will be required for users with satisfying versions, even t
 ## API changelog
 
 <a name="v1-4" />
-### 1.4 (2018-02-17)
+### 1.4 BETA (2018-02-17)
 
 - Add XML local signature features:
 	- [`signFullXml`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)&ast;

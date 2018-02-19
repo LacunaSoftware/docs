@@ -18,7 +18,7 @@ Nenhuma atualização desnecessária será exigida de usuários com versões suf
 ## Histórico de versões da API
 
 <a name="v1-4" />
-### 1.4 (2018-02-17)
+### 1.4 BETA (2018-02-17)
 
 - Adiciona funcionalidades de assinatura local de XML:
 	- [`signFullXml`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)&ast;
