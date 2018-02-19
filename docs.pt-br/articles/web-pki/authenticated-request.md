@@ -14,19 +14,22 @@ Para tais casos, a requisição autenticada com o Web PKI permite a implementaç
 
 ## Exemplos
 
-No exemplo abaixo, demonstramos uma simples requisição autenticada que verifica o *status* operacional do serviço SEFAZ-RS
+No exemplo abaixo, demonstramos uma simples requisição autenticada que verifica o *status* operacional do serviço SEFAZ-RS em homologação.
 
 ```js
+// Definicao dos parametros do request
 var request = {
-	url: 'https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico2.asmx',
+	// URL do servico
+	url: 'https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx',
 	method: 'post',
 	headers: {
 		'Content-Type': 'application/soap+xml; charset=utf-8'
 	},
-	body: '<?xml version="1.0" encoding="utf-8"?><soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope"><soap12:Header><nfeCabecMsg xmlns="http://www.portalfiscal.inf.br/nfe/wsdl/NfeStatusServico2"><cUF>53<\/cUF><versaoDados>2.00<\/versaoDados><\/nfeCabecMsg><\/soap12:Header><soap12:Body><nfeDadosMsg xmlns="http://www.portalfiscal.inf.br/nfe/wsdl/NfeStatusServico2"><consStatServ xmlns="http://www.portalfiscal.inf.br/nfe" versao="2.00"><tpAmb>1<\/tpAmb><cUF>53<\/cUF><xServ>STATUS<\/xServ><\/consStatServ><\/nfeDadosMsg><\/soap12:Body><\/soap12:Envelope>'
+	// Envelope SOAP da requisicao
+	body: '<?xml version="1.0" encoding="utf-8"?><soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope"><soap12:Body><nfeDadosMsg xmlns="http://www.portalfiscal.inf.br/nfe/wsdl/NFeStatusServico4"><consStatServ xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00"><tpAmb>2</tpAmb><cUF>53</cUF><xServ>STATUS</xServ></consStatServ></nfeDadosMsg></soap12:Body></soap12:Envelope>'
 };
 
-// Define o certificado do usuario selecionado
+// Define o certificado do usuario para autenticar a requisicao 
 request.certificateThumbprint = $('#certificateSelect').val();
 
 // Envia a requisicao
@@ -38,4 +41,5 @@ pki.sendAuthenticatedRequest(request).success(function (response) {
 
 ## Veja também
 
-Para mais informações, veja a documentação do método [sendAuthenticatedRequest()](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest) e também o exemplo funcional no JSFiddle: [Exemplo de envio de requisição autenticada]()
+* Documentação do método [sendAuthenticatedRequest()](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)
+* Exemplo funcional no JSFiddle: [Exemplo de envio de requisição autenticada](https://jsfiddle.net/LacunaSoftware/3cv5xjov/)
