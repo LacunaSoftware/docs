@@ -5,7 +5,7 @@ Essa operação tem grande utilidade na comunicação com serviços da Receita F
 
 ## NFe - Nota Fiscal eletrônica
 
-Outro campo no qual a requisição autenticada se faz necessária são os serviços envolvendo notas fiscais eletrônicas (NFe).
+Outra área na qual a requisição autenticada se faz necessária é a de serviços envolvendo notas fiscais eletrônicas (NFe).
 No cenário de transmissão da NFe, o padrão nacional permite que seja utilizado, na autenticação, um certificado de uma empresa diferente da que emitiu a NFe.
 Isso possibilita que a transmissão seja feita no *backend* utilizando um certificado A1 emitido em nome da empresa que oferece o serviço de assinatura de NFe na web, por exemplo.
 
