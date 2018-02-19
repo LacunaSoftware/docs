@@ -39,6 +39,8 @@ pki.sendAuthenticatedRequest(request).success(function (response) {
 
 ```
 
+O método [sendAuthenticatedRequest()](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest) está disponível à partir da [versão da API 1.4](api-reference/versions#v1-4).
+
 ## Veja também
 
 * Documentação do método [sendAuthenticatedRequest()](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)
