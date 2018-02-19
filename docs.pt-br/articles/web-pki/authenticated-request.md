@@ -6,9 +6,9 @@ Essa operação tem grande utilidade na comunicação com serviços da Receita F
 ## NFe - Nota Fiscal eletrônica
 
 Outro campo no qual a requisição autenticada se faz necessária são os serviços envolvendo notas fiscais eletrônicas (NFe).
-No cenário de transmissão da NFe, o padrão nacional permite que seja utilizado, na autenticação, um certificado de uma empresa diferente da que emitiu a NFe. Isso possibilita que a transmissão seja feita no *backend* utilizando um certificado A1 emitido em nome da empresa que oferece o serviço de assinatura de NFe na web.
+No cenário de transmissão da NFe, o padrão nacional permite que seja utilizado, na autenticação, um certificado de uma empresa diferente da que emitiu a NFe. Isso possibilita que a transmissão seja feita no *backend* utilizando um certificado A1 emitido em nome da empresa que oferece o serviço de assinatura de NFe na web, por exemplo.
 
-No entanto, existem outros serviços, e.g. consultas e manifestações, nos quais se faz necessária a autenticação apenas com o certificado da empresa emissora da NFe. Pra tais casos, a requisição autenticada com o Web PKI permite a implementação dessas comunicações à partir do computador do usuário, respeitando ideais de segurança, tanto possibilitando a utilização de certificados em dispositivos criptográficos, A3, tanto evitando a necessidade do envio de certificados A1, deixando-os sob a guarda de terceiros.
+No entanto, existem outros serviços, e.g. consultas e manifestações, nos quais se faz necessária a autenticação apenas com o certificado da empresa emissora da NFe. Para tais casos, a requisição autenticada com o Web PKI permite a implementação dessas comunicações à partir do computador do usuário, respeitando ideais de segurança, tanto possibilitando a utilização de certificados em dispositivos criptográficos, A3, tanto evitando a necessidade do envio de certificados A1, deixando-os sob a guarda de terceiros.
 
 ## Exemplos
 
@@ -25,7 +25,7 @@ var request = {
 };
 
 // Define o certificado do usuario selecionado
-request.certificateThumbprint = $('certificateSelect').value;
+request.certificateThumbprint = $('#certificateSelect').val();
 
 // Envia a requisicao
 pki.sendAuthenticatedRequest(request).success(function (response) {

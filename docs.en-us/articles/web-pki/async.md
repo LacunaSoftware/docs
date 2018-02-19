@@ -28,7 +28,7 @@ pki.listCertificates().success(function (certs) {
 The success callback always receive a single argument representing the operation's result. However, its type (either string, array or object) and meaning depend on
 the method that returned the promise. You must check on each method's documentation for such information.
 
-For more information about each of the exception object parameters, please refer to the [`Promise.fail()`](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html#fail) method documentation and [ExceptionModel](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html).
+For more information about each of the exception object parameters, please refer to the [Promise.fail()](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html#fail) method documentation and [ExceptionModel](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html).
 
 > [!NOTE]
 > All methods of the [`LacunaWebPKI`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html) class are asynchronous, with rare exceptions.

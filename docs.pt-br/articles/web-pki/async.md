@@ -28,7 +28,7 @@ pki.listCertificates().success(function (certs) {
 O callback de sucesso sempre recebe um único argumento contendo o resultado da operação. Entretanto, o tipo (string, array ou objeto) e seu significado dependem
 do método que retornou a promessa. Você deve verificar a documentação de cada método para obter essas informações.
 
-Para mais informações sobre os parâmetros do objeto da exceção, veja a documentação do método [`Promise.fail()`](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html#fail) e [ExceptionModel](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html).
+Para mais informações sobre os parâmetros do objeto da exceção, veja a documentação do método [Promise.fail()](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html#fail) e [ExceptionModel](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html).
 
 > [!NOTE]
 > Todos os métodos da classe [`LacunaWebPKI`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html) são assíncronos, com raras exceções.
