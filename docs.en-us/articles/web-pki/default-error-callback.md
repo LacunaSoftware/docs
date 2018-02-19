@@ -18,8 +18,11 @@ function onWebPkiFail(ex) {
 From then on you can register the success callback only on each asynchronous call.
 
 > [!NOTE]
-> When an error occurs and no fail callback is registered for that specific operation, the default error callback is called If no default fail callback is
+> When an error occurs and no fail callback is registered for that specific operation, the default fail callback is called If no default fail callback is
 > registered, an exception is thrown.
 
-The `userMessage` parameter of exception object is available since [API version 1.4](api-reference/versions#v1-4).
-For more information, please see the documentation of [FailCallback](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.failcallback.html) and [Promise](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html) class.
+## See also
+
+* [`userMessage` documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html#usermessage) (since [API version 1.4](api-reference/versions#v1-4))
+* [FailCallback documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.failcallback.html) (since [API version 1.3](api-reference/versions#v1-3))
+* [Promise class documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html)
