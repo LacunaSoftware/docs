@@ -23,6 +23,6 @@ From then on you can register the success callback only on each asynchronous cal
 
 ## See also
 
-* [`userMessage` parameter documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html#usermessage) (available since [API version 1.4](api-reference/versions#v1-4))
-* [FailCallback documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.failcallback.html) (available since [API version 1.3](api-reference/versions#v1-3))
+* [`userMessage` parameter documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.exceptionmodel.html#usermessage) (available since [API version 1.4](api-reference/versions.md#v1-4))
+* [FailCallback documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.failcallback.html) (available since [API version 1.3](api-reference/versions.md#v1-3))
 * [Promise class documentation](https://docs.lacunasoftware.com/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.promise.html)
