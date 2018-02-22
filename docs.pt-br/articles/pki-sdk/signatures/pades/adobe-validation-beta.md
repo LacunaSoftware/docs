@@ -10,8 +10,7 @@ Ações para validar:
 1. [Ativar confiança do Adobe nas raízes do Windows](https://docs.lacunasoftware.com/en-us/content/configuring-windows-roots-on-adobe-reader/)
 1. Reiniciar o Adobe
 
-> [!NOTE]
-> Vale destacar que qualquer ação individual para contornar esta validação terá efeito apenas local, na conta do usuário.
+Vale destacar que qualquer ação individual para contornar esta validação terá efeito apenas local, na conta do usuário.
 
 ## Detalhes
 
@@ -42,8 +41,8 @@ Windows. O link contém um passo-a-passo de como fazer essa configuração: [Ati
 <a name="icp-brasil-v5" />
 ### ICP-Brasil AC Raiz V5
 
-Como abordado no [tópico anterior](#icp-brasil-v2), apenas o certificado AC Raíz V2, com restrições, foi adicionado à lista de confiança da Adobe.
-O certificado AC Raíz V5 da ICP-Brasil, por padrão, não é confiado pelo Adobe nem pelos sistema operacional, portanto, inicialmente, as assinaturas realizadas com certificados da cadeia V5 não serão validados com sucesso.
+Como abordado no [tópico anterior](#icp-brasil-v2), apenas o certificado AC Raiz V2, com restrições, foi adicionado à lista de confiança da Adobe.
+O certificado AC Raiz V5 da ICP-Brasil, por padrão, não é confiado pelo Adobe nem pelos sistema operacional, portanto, inicialmente, as assinaturas realizadas com certificados da cadeia V5 não serão validados com sucesso.
 
 Devido ao fato do certificado da AC Raiz V5 ser distibuído oficialmente por nenhum repositório de confiança padrão, para validação dos certificados sob ela, deve-se incluir manualmente esta raiz como confiável em seu sistema ou rede. Antes, veja o alerta abaixo:
 
