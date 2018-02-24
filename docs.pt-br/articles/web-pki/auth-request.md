@@ -41,5 +41,5 @@ pki.sendAuthenticatedRequest(request).success(function (response) {
 
 ## Veja também
 
-* [Documentação do método `sendAuthenticatedRequest()`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest) (disponível desde a [versão 1.4 da API](api-reference/versions#v1-4))
 * Exemplo funcional no JSFiddle: [Exemplo de envio de requisição autenticada](https://jsfiddle.net/LacunaSoftware/3cv5xjov/)
+* [Documentação do método `sendAuthenticatedRequest()`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest) (disponível desde a [versão 1.4 da API](api-reference/versions#v1-4))

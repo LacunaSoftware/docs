@@ -13,7 +13,14 @@ Updating the Javascript library:
 
 The latest version of the Javascript library is **2.7.0**. You can get it on the link below:
 
-https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.7.0.js
+https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.0.js
+
+Or include in your Web page as:
+```html
+<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.0.js"
+  integrity="sha256-6HGuOyRqUi6AOCQHdC6/AG2Cty7d8+gtwtFXzr1oUfg="
+  crossorigin="anonymous"></script>
+```
 
 > [!NOTE]
 > Feel free to refer to that URL directly, we will keep it online permanently.

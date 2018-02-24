@@ -16,5 +16,12 @@ A última versão da biblioteca de Javascript é a **2.7.0**. Você pode obtê-l
 
 https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.7.0.js
 
+Ou incluir na sua página como:
+```html
+<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.0.js"
+  integrity="sha256-6HGuOyRqUi6AOCQHdC6/AG2Cty7d8+gtwtFXzr1oUfg="
+  crossorigin="anonymous"></script>
+```
+
 > [!NOTE]
 > Caso queira, você pode referenciar a URL acima diretamente da sua aplicação, pois ela é permanente.
