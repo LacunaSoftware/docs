@@ -13,12 +13,13 @@ pki.init({
 No exemplo acima, definimos que iremos utilizar funcionalidades introduzidas na [API 1.2](#v1-2). Desta forma, a atualização dos componentes do Web PKI só será exigida aos usuários com versões inferiores às definidas pela [API 1.2](#v1-2).
 Nenhuma atualização desnecessária será exigida de usuários com versões suficientes, ainda que não sejam a mais recente.
 
+Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 
 <a name="changelog" />
 ## Histórico de versões da API
 
 <a name="v1-4" />
-### 1.4 BETA (2018-02-17)
+### 1.4 (2018-02-23)
 
 - Adiciona funcionalidades de assinatura local de XML:
 	- [`signFullXml`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signfullxml)&ast;
