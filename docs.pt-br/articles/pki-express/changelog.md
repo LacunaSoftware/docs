@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-3-0" />
+### 1.3.0 (2018-03-02)
+
+- Adiciona abertura e validação de assinaturas PAdES e CAdES (comandos `open-pades` e `open-cades`)
+- Adiciona edição de PDF (comando `edit-pdf`), possibilitando elaboração de "versão para impressão"
+- Adiciona assinatura de servidor utilizando arquivo PKCS #12 (.pfx)
+- Adiciona suporte à utilização de web proxy
+- Atualiza o PKI SDK para versão 2.0.13
+
+
 <a name="v1-2-1" />
 ### 1.2.1 (2018-01-18)
 

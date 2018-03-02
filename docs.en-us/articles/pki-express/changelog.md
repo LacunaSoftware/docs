@@ -1,5 +1,15 @@
 ﻿# PKI Express changelog
 
+<a name="v1-3-0" />
+### 1.3.0 (2018-03-02)
+
+- Add support for opening and validating PAdES and CAdES signatures (commands `open-pades` and `open-cades`)
+- Add support for editing PDFs (command `edit-pdf`), enabling generation of "printer-friendly versions"
+- Add support for server signatures using PKCS #12 files (.pfx)
+- Add support for using a web proxy
+- Update PKI SDK to 2.0.13
+
+
 <a name="v1-2-1" />
 ### 1.2.1 (2018-01-18)
 
