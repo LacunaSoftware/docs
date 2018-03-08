@@ -29,7 +29,7 @@ Para adicioná-lo ao seu projeto, adicione a linha abaixo ao seu arquivo `compos
 ```json
 {
 	"require": {
-		"lacuna/pki-express": "^1.1.0"
+		"lacuna/pki-express": "^1.3.0"
 	}
 }
 ```
