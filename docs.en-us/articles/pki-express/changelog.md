@@ -6,7 +6,7 @@
 - Add support for opening and validating PAdES and CAdES signatures (commands `open-pades` and `open-cades`)
 - Add support for editing PDFs (command `edit-pdf`), enabling generation of "printer-friendly versions"
 - Add support for server signatures using PKCS #12 files (.pfx)
-- Add support for using a web proxy
+- Add support for [using a web proxy](config/proxy.md)
 - Update PKI SDK to 2.0.13
 
 
