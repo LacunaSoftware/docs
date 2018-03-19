@@ -6,7 +6,7 @@
 - Adiciona abertura e validação de assinaturas PAdES e CAdES (comandos `open-pades` e `open-cades`)
 - Adiciona edição de PDF (comando `edit-pdf`), possibilitando elaboração de "versão para impressão"
 - Adiciona assinatura de servidor utilizando arquivo PKCS #12 (.pfx)
-- Adiciona suporte à utilização de web proxy
+- Adiciona suporte à [utilização de web proxy](config/proxy.md)
 - Atualiza o PKI SDK para versão 2.0.13
 
 
