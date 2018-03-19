@@ -1,8 +1,5 @@
 ﻿# Configuração de proxy - PKI Express
 
-> [!WARNING]
-> Esta funcionalidade só estará presente na versão 1.3 do PKI Express, atualmente em fase de testes.
-
 Para configurar o [PKI Express](../index.md) para utilizar um proxy para fazer as chamadas web, execute o comando abaixo:
 
 ```sh
