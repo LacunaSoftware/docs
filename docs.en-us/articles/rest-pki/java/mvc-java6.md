@@ -1,7 +1,7 @@
 ﻿# Java 6 Spring MVC samples project
 
 The **Java 6 Spring MVC samples project** shows how to use [Rest PKI](../index.md) together with [Web PKI](../../web-pki/index.md)
-on a **Java 6** web application 6 using the [Spring MVC](http://spring.io/) framework. It is hosted on GitHub at:
+on a **Java 6** web application using the [Spring MVC](http://spring.io/) framework. It is hosted on GitHub at:
 
 https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Java/spring-mvc-java6
 
