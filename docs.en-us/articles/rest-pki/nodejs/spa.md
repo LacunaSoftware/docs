@@ -109,22 +109,22 @@ Not yet available on this project.
 Not yet available on this project.
 
 <a name="batch" />
-### Batch signature
+### Batch of PAdES signatures
 
 Not yet available on this project.
 
 <a name="batch-optimized" />
-### Optimized batch signature
+### Optimized batch of PAdES signatures
 
 Not yet available on this project.
 
 <a name="batch-cades" />
-### CAdES batch signature
+### Batch of CAdES signatures
 
 Not yet available on this project.
 
 <a name="batch-xml-element" />
-### Batch signature of XML elements on the same document
+### Batch of XML signatures of elements on the same document
 
 Not yet available on this project.
 

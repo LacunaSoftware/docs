@@ -146,25 +146,25 @@ Not yet available on this project.
 * View: [OpenXmlSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/OpenXmlSignature/Index.cshtml)
 
 <a name="batch" />
-### Batch signature
+### Batch of PAdES signatures
 
 * Controller: [BatchSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/BatchSignatureController.cs)
 * View: [BatchSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/BatchSignature/Index.cshtml)
 * Javascript: (inside BatchSignature/Index.cshtml)
 
 <a name="batch-optimized" />
-### Optimized batch signature
+### Optimized batch of PAdES signatures
 
 * Controller: [BatchSignatureOptimizedController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/BatchSignatureOptimizedController.cs)
 * View: [BatchSignatureOptimized/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/BatchSignatureOptimized/Index.cshtml)
 * Javascript: (inside BatchSignatureOptimized/Index.cshtml)
 
 <a name="batch-cades" />
-### CAdES batch signature
+### Batch of CAdES signatures
 
 Not yet available on this project.
 
 <a name="batch-xml-element" />
-### Batch signature of XML elements on the same document
+### Batch of XML signatures of elements on the same document
 
 Not yet available on this project.

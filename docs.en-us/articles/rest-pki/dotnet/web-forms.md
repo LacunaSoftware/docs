@@ -158,25 +158,25 @@ Not yet available on this project.
 Not yet available on this project.
 
 <a name="batch" />
-### Batch signature
+### Batch of PAdES signatures
 
 * Web Form: [BatchSignature.aspx](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/WebForms/WebForms/BatchSignature.aspx)
 	* [BatchSignature.aspx.cs](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/WebForms/WebForms/BatchSignature.aspx.cs)
 * JavaScript: [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/WebForms/WebForms/Scripts/batch-signature-form.js)
 
 <a name="batch-optimized" />
-### Optimized batch signature
+### Optimized batch of PAdES signatures
 
 * Web Form: [BatchSignatureOptimized.aspx](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/WebForms/WebForms/BatchSignatureOptimized.aspx)
 	* [BatchSignatureOptimized.aspx.cs](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/WebForms/WebForms/BatchSignatureOptimized.aspx.cs)
 * JavaScript: [batch-signature-optimized-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/WebForms/WebForms/Scripts/batch-signature-optimized-form.js)
 
 <a name="batch-cades" />
-### CAdES batch signature
+### Batch of CAdES signatures
 
 Not yet available on this project.
 
 <a name="batch-xml-element" />
-### Batch signature of XML elements on the same document
+### Batch of XML signatures of elements on the same document
 
 Not yet available on this project.
