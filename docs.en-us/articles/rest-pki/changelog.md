@@ -1,5 +1,14 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-17-0" />
+### 1.17.0 (2018-03-29)
+
+Database model update: No
+
+- Improve dashboard
+- General billing improvements
+
+
 <a name="v1-16-0" />
 ### 1.16.0 (2017-12-12)
 
