@@ -30,7 +30,7 @@ To add it to your project, add the line below to your `composer.json` file:
 ```json
 {
 	"require": {
-		"lacuna/pki-express": "^1.3.1"
+		"lacuna/pki-express": "^1.4.0"
 	}
 }
 ```
