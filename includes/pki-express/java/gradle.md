@@ -7,6 +7,6 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.pkiexpress:pki-express:1.3.1")
+	compile("com.lacunasoftware.pkiexpress:pki-express:1.4.0")
 }
 ```
