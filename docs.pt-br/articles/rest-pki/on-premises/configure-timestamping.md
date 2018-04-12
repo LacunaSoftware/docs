@@ -28,6 +28,9 @@ instância do Rest PKI:
 1. Autentique-se com usuário "Admin" ou outro usuário administrador (a senha foi definida durante a instalação)
 1. No menu superior, vá em **Administração** &gt; **Tipos de Carimbo de Tempo**
 1. Clique no item *ICP-Brasil*
+
+   ![Select plan ICP-Brasil](../../../images/rest-pki/select-plan-icp-brasil.png)
+
 1. Na área **Carimbadoras de Tempo**, digite um nome e clique em **Criar**
 
    ![Create timestamper](../../../images/rest-pki/create-timestamper.png)
@@ -69,7 +72,7 @@ Rest PKI está instalado para importar o certificado para o repositório do Wind
 1. Conceda as permissões necessárias ao novo usuário na pasta de instalação do Rest PKI
    1. Localize a pasta na qual o Rest PKI está instalado (ex: `c:\inetpub\RestPKI`)
    1. Clique com o botão direito na pasta e vá na aba **Security**
-   1. Clique em **Edit...* &gt; **Add..** &gt; digite o nome do usuário criado e clique em **OK**
+   1. Clique em **Edit...** &gt; **Add..** &gt; digite o nome do usuário criado e clique em **OK**
    1. Deixe marcados apenas os itens **List folder contents** e **Read**
    1. Clique em **OK**
 1. Altere a identidade do *application pool*
