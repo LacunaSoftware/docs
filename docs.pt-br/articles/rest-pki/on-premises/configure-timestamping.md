@@ -7,9 +7,9 @@ políticas de assinatura que requeiram carimbo de tempo de assinatura, por exemp
 Você pode utilizar o Rest PKI em nuvem (https://pki.rest/) para esse fim (veja os preços [aqui](https://www.lacunasoftware.com/pt/certificate/#/restPlans)).
 Entretanto, qualquer outro serviço de provimento de carimbos de tempo pode ser usado, desde que atenda aos seguintes requisitos:
 
-* Comunicação via *Timestamp Protocol (TSP)* (RFC 3161) sobre HTTP ou HTTPS
+* Comunicação via *Timestamp Protocol* (TSP - RFC 3161) sobre HTTP ou HTTPS
 * Formas de autenticação suportadas:
-  * Basic authentication
+  * HTTP basic authentication
   * SSL/TLS com autenticação mútua
   * OAuth Bearer Token
 
@@ -29,14 +29,19 @@ instância do Rest PKI:
 1. No menu superior, vá em **Administração** &gt; **Tipos de Carimbo de Tempo**
 1. Clique no item *ICP-Brasil*
 1. Na área **Carimbadoras de Tempo**, digite um nome e clique em **Criar**
+
+   ![Create timestamper](../../../images/rest-pki/create-timestamper.png)
+
 1. Na tela seguinte, preencha a URL do provedor e clique em **Create**
    * No caso do Rest PKI cloud, a URL é: `https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310`
 1. Uma vez criada a carimbadora, entre nas configurações dela
-1. No campo Autenticação, escolha a opção especificada pelo provedor (no caso do Rest PKI cloud, a opção deve ser **OAuth Bearer Token**)
-   1. No caso de *Basic Authentication*, preencha o campo Credenciais com o usuário e senha fornecidos pelo provedor
-   1. No caso de *OAuth Berer Token*, preencha o campo *Token OAuth* com o valor do token fornecido pelo provedor (**sem** o prefixo "Bearer")
-   1. No caso de SSL com autenticação mútua, veja a [seção abaixo](#ssl-mutual-auth)
-1.	Clique no botão Testar. Caso apareça a mensagem "O teste foi bem sucedido", a configuração está OK.
+1. No campo **Autenticação**, escolha a opção especificada pelo provedor
+   * No caso do Rest PKI cloud, a opção deve ser **OAuth Bearer Token**
+1. Dependendo da escolha feita, um novo campo será exibido e deve ser preenchido:
+   1. *HTTP basic authentication*: preencha o campo **Credenciais** com o usuário e senha fornecidos pelo provedor
+   1. *OAuth Berer Token*: preencha o campo **Token OAuth** com o valor do token fornecido pelo provedor (**sem** o prefixo "Bearer")
+   1. SSL com autenticação mútua: veja a [seção abaixo](#ssl-mutual-auth)
+1. Clique no botão **Testar**. Caso apareça a mensagem "O teste foi bem sucedido", a configuração está OK.
 
 <a name="ssl-mutual-auth" />
 ## Autenticação via SSL/TLS com autenticação mútua
