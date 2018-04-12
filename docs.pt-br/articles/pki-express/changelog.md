@@ -1,5 +1,10 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-4-0" />
+### 1.4.0 (2018-04-10)
+
+- Adiciona autenticação com certificado (comandos `start-auth` and `complete-auth`)
+
 <a name="v1-3-0" />
 ### 1.3.0 (2018-03-02)
 

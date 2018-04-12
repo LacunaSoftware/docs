@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-4-0" />
+### 1.4.0 (2018-04-10)
+
+- Add support for authentication with certificate (commands `start-auth` and `complete-auth`)
+
 <a name="v1-3-0" />
 ### 1.3.0 (2018-03-02)
 
