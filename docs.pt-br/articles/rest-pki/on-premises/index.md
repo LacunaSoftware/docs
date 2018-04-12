@@ -19,3 +19,4 @@ Clique em um dos ambientes acima para obter instruções específicas de instala
 ## Veja também
 
 * [Dimensionamento de servidores](sizing.md)
+* [Configuração de Carimbo de Tempo](configure-timestamping.md)

@@ -19,3 +19,4 @@ Click on one of the platforms above for specific setup instructions.
 ## See also
 
 * [Right-sizing guide](sizing.md)
+* [Configure Timestamping](configure-timestamping.md)
