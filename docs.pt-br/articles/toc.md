@@ -66,6 +66,7 @@
 #### [Resolução de problemas](rest-pki/on-premises/windows-setup/troubleshoot/index.md)
 ### [Setup em Azure App Service](rest-pki/on-premises/azure-setup.md)
 ### [Dimensionamento](rest-pki/on-premises/sizing.md)
+### [Configuração de Carimbos de Tempo](rest-pki/on-premises/configure-timestamping.md)
 ## [Resolução de problemas](rest-pki/troubleshoot/index.md)
 ### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Histórico de versões](rest-pki/changelog.md)
