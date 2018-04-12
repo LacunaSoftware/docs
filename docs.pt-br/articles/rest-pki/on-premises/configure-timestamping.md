@@ -4,8 +4,11 @@ Para realizar assinaturas digitais na sua instância [*on premises*](index.md) d
 políticas de assinatura que requeiram carimbo de tempo de assinatura, por exemplo políticas **PAdES-T** ou
 **CAdES Ad-RT**, é necessário contratar um serviço externo de provimento de carimbos de tempo.
 
-Você pode utilizar o Rest PKI em nuvem (https://pki.rest/) para esse fim (veja os preços [aqui](https://www.lacunasoftware.com/pt/certificate/#/restPlans)).
-Entretanto, qualquer outro serviço de provimento de carimbos de tempo pode ser usado, desde que atenda aos seguintes requisitos:
+> [!NOTE]
+> Você pode utilizar o Rest PKI em nuvem (https://pki.rest/) para prover carimbos de tempo para a sua instância do Rest PKI.
+> Veja os preços [aqui](https://www.lacunasoftware.com/pt/certificate/#/restPlans).
+
+O serviço de provimento de carimbos de tempo deve atender aos seguintes requisitos:
 
 * Comunicação via *Timestamp Protocol* (TSP - RFC 3161) sobre HTTP ou HTTPS
 * Formas de autenticação suportadas:
