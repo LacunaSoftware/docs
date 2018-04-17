@@ -84,9 +84,9 @@ Not yet available on this project.
 ### CAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on the controller
-[UploadController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/UploadController.java)
+[UploadController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/upload_controller.rb)
 and view
-[index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/upload.html))
+[index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/upload/index.html.erb)
 is done the control flow is the same as in the sample [CAdES signature with file already on server](#pades), but with the URL parameter `userfile` filled.
 
 <a name="cades-cosign" />
@@ -108,7 +108,10 @@ Not yet available on this project.
 <a name="xml-full" />
 ### XML signature of the entire document
 
-Not yet available on this project.
+* Controller: [FullXmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/full_xml_signature_controller.rb)
+  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/full_xml_signature/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/full_xml_signature/action.html.erb)
 
 <a name="xml-element" />
 ### XML signature of an element
@@ -122,10 +125,7 @@ Not yet available on this project.
 <a name="xades-element" />
 ### XAdES signature of an element
 
-* Controller: [FullXmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/full_xml_signature_controller.rb)
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/full_xml_signature/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/full_xml_signature/action.html.erb)
+Not yet available on this project.
 
 <a name="open-xml" />
 ### Open/validate signatures on an existing XML file
