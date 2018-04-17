@@ -4,6 +4,10 @@ Se por algum motivo você não possa ou não queira utilizar um serviço em nuve
 instância do [Rest PKI](../index.md) na sua própria infraestrutura ("on premises"). Veja o
 [material comercial do produto](https://www.lacunasoftware.com/pt/home/certificate#/rest) para mais informações.
 
+## Configuração do WebPKI
+Caso a sua applição que utilize o WebPKI é necessário configurar a URL do RestPKI e a linceça do WebPKI.
+* [Configuração do WebPKI para urilização do RestPKI on premises](../../web-pki/customizing-restpki-url.md)
+
 ## Ambientes suportados
 
 O Rest PKI é compatível com os seguintes ambientes:
