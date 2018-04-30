@@ -61,6 +61,14 @@ Not yet available on this project.
 
 Not yet available on this project.
 
+<a name="pades-wo-client" />
+### PAdES signature without client communication
+
+* Controller: [PadesSignatureWithoutIntegrationController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/pades_signature_without_integration_controller.rb)
+* Views:
+  *	[index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/pades_signature_without_integration/index.html.erb)
+	(JavaScript on [signature-without-integration-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-without-integration-form.js))
+
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 

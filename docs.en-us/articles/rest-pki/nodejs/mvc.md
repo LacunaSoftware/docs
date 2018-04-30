@@ -61,6 +61,11 @@ Not yet available on this project.
 * Route: [pades-signature-server-key.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/pades-signature-server-key.js)
   * [pades-signature-complete.jade](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/pades-signature-complete.jade)
 
+<a name="pades-wo-client" />
+### PAdES signature without client communication
+
+Not yet available on this project.
+
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 

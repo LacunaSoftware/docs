@@ -22,17 +22,19 @@ This section lists where to find the relevant parts in each feature sample on th
 ### Authentication with digital certificate
 
 * Controller: [AuthenticationController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/AuthenticationController.cs)
-* Views: [Authentication/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/Authentication/Index.cshtml)
-  and [Authentication/Failed.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/Authentication/Failed.cshtml)
-* Javascript: (inside Authentication/Index.cshtml)
+* Views:
+  * [Authentication/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/Authentication/Index.cshtml)
+  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-form.js))
+  * [Authentication/Failed.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/Authentication/Failed.cshtml)
 
 <a name="pades" />
 ### PAdES signature with file already on server
 
 * Controller: [PadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/PadesSignatureController.cs)
-* Views: [PadesSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignature/Index.cshtml)
-  and [PadesSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignature/SignatureInfo.cshtml)
-* Javascript: (inside PadesSignature/Index.cshtml)
+* Views: 
+  * [PadesSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignature/Index.cshtml)
+  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-form.js))
+  * [PadesSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignature/SignatureInfo.cshtml)
 
 <a name="pades-upload" />
 ### PAdES signature with file uploaded by user
@@ -70,6 +72,17 @@ The relevant code is on the class [PadesVisualElements](https://github.com/Lacun
 
 Not yet available on this project.
 
+<a name="pades-wo-client" />
+### PAdES signature without client communication
+
+* Controller: [PadesSignatureWithoutDirectCommunicationControlller](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/PadesSignatureWithoutDirectCommunicationController.cs)
+* Views:
+  * [PadesSignatureWithoutDirectCommunication/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignatureWithoutDirectCommunication/Index.cshtml)
+  (JavaScript on [signature-start-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-start-form.js))
+  * [PadesSignatureWithoutDirectCommunication/Complete.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignatureWithoutDirectCommunication/Complete.cshtml)
+  (JavaScript on [signature-complete-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-complete-form.js))
+  * [PadesSignatureWithoutDirectCommunication/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignatureWithoutDirectCommunication/SignatureInfo.cshtml)
+
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 
@@ -85,9 +98,10 @@ Not yet available on this project. See sample on [ASP.NET Web Forms samples proj
 ### CAdES signature with file already on server
 
 * Controller: [CadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/CadesSignatureController.cs)
-* Views: [CadesSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/CadesSignature/Index.cshtml)
-  and [CadesSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/CadesSignature/SignatureInfo.cshtml)
-* Javascript: (inside CadesSignature/Index.cshtml)
+* Views: 
+  * [CadesSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/CadesSignature/Index.cshtml)
+  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-form.js))
+  * [CadesSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/CadesSignature/SignatureInfo.cshtml)
 
 <a name="cades-upload" />
 ### CAdES signature with file uploaded by user
@@ -119,25 +133,28 @@ Not yet available on this project.
 ### XML signature of the entire document
 
 * Controller: [XmlFullSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/XmlFullSignatureController.cs)
-* Views: [XmlFullSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlFullSignature/Index.cshtml)
-  and [XmlFullSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlFullSignature/SignatureInfo.cshtml)
-* Javascript: (inside XmlFullSignature/Index.cshtml)
+* Views: 
+  * [XmlFullSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlFullSignature/Index.cshtml)
+  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-form.js))
+  * [XmlFullSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlFullSignature/SignatureInfo.cshtml)
 
 <a name="xml-element" />
 ### XML signature of an element
 
 * Controller: [XmlElementSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/XmlElementSignatureController.cs)
-* Views: [XmlElementSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlElementSignature/Index.cshtml)
-  and [XmlElementSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlElementSignature/SignatureInfo.cshtml)
-* Javascript: (inside XmlElementSignature/Index.cshtml)
+* Views: 
+  * [XmlElementSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlElementSignature/Index.cshtml)
+  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-form.js))
+  * [XmlElementSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XmlElementSignature/SignatureInfo.cshtml)
 
 <a name="xades-element" />
 ### XAdES signature of an element
 
 * Controller: [XadesElementSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/XadesElementSignatureController.cs)
-* Views: [XadesElementSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XadesElementSignature/Index.cshtml)
-  and [XadesElementSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XadesElementSignature/SignatureInfo.cshtml)
-* Javascript: (inside XadesElementSignature/Index.cshtml)
+* Views: 
+  * [XadesElementSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XadesElementSignature/Index.cshtml)
+  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/signature-form.js))
+  * [XadesElementSignature/SignatureInfo.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/XadesElementSignature/SignatureInfo.cshtml)
 
 <a name="open-xml" />
 ### Open/validate signatures on an existing XML file
@@ -150,14 +167,14 @@ Not yet available on this project.
 
 * Controller: [BatchSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/BatchSignatureController.cs)
 * View: [BatchSignature/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/BatchSignature/Index.cshtml)
-* Javascript: (inside BatchSignature/Index.cshtml)
+  (JavaScript on [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/batch-signature-form.js))
 
 <a name="batch-optimized" />
 ### Optimized batch of PAdES signatures
 
 * Controller: [BatchSignatureOptimizedController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/BatchSignatureOptimizedController.cs)
 * View: [BatchSignatureOptimized/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/BatchSignatureOptimized/Index.cshtml)
-* Javascript: (inside BatchSignatureOptimized/Index.cshtml)
+  (JavaScript on [batch-signature-optimized-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Content/js/batch-signature-optimized-form.js))
 
 <a name="batch-cades" />
 ### Batch of CAdES signatures

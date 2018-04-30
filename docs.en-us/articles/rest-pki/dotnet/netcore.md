@@ -68,6 +68,11 @@ The relevant code is on the class [PadesVisualElements](https://github.com/Lacun
 
 Not yet available on this project.
 
+<a name="pades-wo-client" />
+### PAdES signature without client communication
+
+Not yet available on this project.
+
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 
