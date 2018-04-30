@@ -47,7 +47,8 @@ is done the control flow is the same as in the sample [PAdES signature with file
 <a name="pades-cosign" />
 ### PAdES co-signature
 
-Not yet available on this project.
+After the control flow of the sample [PAdES signature with file already on server](#pades) is completed and the link *Co-sign with another certificate* is clicked, the
+same control flow is repeated, but now with the URL parameter `userfile` filled.
 
 <a name="pdf-marks" />
 ### PAdES marks
@@ -63,12 +64,16 @@ Not yet available on this project.
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 
-Not yet available on this project.
+* Controller: [open-pades-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/open-pades-signature.js)
+  * [open-pades-signature.jade](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/open-pades-signature.jade)
 
 <a name="print" />
 ### Printer-friendly version
 
-Not yet available on this project.
+After the control flow of the sample [PAdES signature with file already on server](#pades) is completed and the link *Download a printer-friendly version of the signed file* is clicked,
+the flow goes to the file
+[printer-friendly-version.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/printer-friendly-version.js)
+with the URL parameter `file` filled.
 
 <a name="cades" />
 ### CAdES signature with file already on server
@@ -90,7 +95,8 @@ is done the control flow is the same as in the sample [CAdES signature with file
 <a name="cades-cosign" />
 ### CAdES co-signature
 
-Not yet available on this project.
+After the control flow of the sample [CAdES signature with file already on server](#cades) is completed and the link *Co-sign with another certificate* is clicked, the
+same control flow is repeated, but now with the URL parameter `cmsfile` filled.
 
 <a name="cades-server" />
 ### CAdES signature using server key
@@ -101,7 +107,8 @@ Not yet available on this project.
 <a name="open-cades" />
 ### Open/validate an existing CAdES signature
 
-Not yet available on this project.
+* Controller: [open-cades-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/open-cades-signature.js)
+  * [open-cades-signature.jade](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/open-cades-signature.jade)
 
 <a name="xml-full" />
 ### XML signature of the entire document
