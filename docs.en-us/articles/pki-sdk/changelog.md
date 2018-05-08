@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-14" />
+### 1.20.14 (2018-05-08)
+
+- Improve malformed certificate extensions decode
+- Improve OCSP nocheck validation
+
+
 <a name="v1-20-12" />
 ### 1.20.12 (2018-01-30)
 
