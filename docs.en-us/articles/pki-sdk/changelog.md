@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-15" />
+### 1.20.15 (2018-05-08)
+
+- Update ICP-Brasil CAs local certificate store
+
+
 <a name="v1-20-14" />
 ### 1.20.14 (2018-05-08)
 
