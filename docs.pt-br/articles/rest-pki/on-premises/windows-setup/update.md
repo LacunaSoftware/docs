@@ -24,7 +24,7 @@ Caso ao atualizar o Rest PKI apareça a mensagem "HTTP Error 503.0 - The server 
 
 > [!NOTE]
 > Para saber com antecedência se uma atualização demandará atualização do banco de dados, observe no [Histórico de versões](../../changelog.md) se alguma das
-> versões entre a versão que encontra-se instalada e a que você está instalando está marcada como demandando atualização do banco de dados.
+> versões entre a versão que encontra-se instalada (veja [este artigo](../check-version.md) para saber como descobrir a versão instalada) e a que você está instalando está marcada como demandando atualização do banco de dados.
 
 Nesse caso, acesse a URL `/Maintenance` relativa ao endereço do site (por exemplo, `http://localhost:9000/Maintenance`) e siga as instruções na tela.
 

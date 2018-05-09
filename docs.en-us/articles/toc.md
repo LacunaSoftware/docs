@@ -65,6 +65,7 @@
 #### [Update](rest-pki/on-premises/windows-setup/update.md)
 #### [Troubleshoot](rest-pki/on-premises/windows-setup/troubleshoot/index.md)
 ### [Setup on Azure App Service](rest-pki/on-premises/azure-setup.md)
+### [Checking the version](rest-pki/on-premises/check-version.md)
 ### [Right-sizing guide](rest-pki/on-premises/sizing.md)
 ### [Configure Timestamping](rest-pki/on-premises/configure-timestamping.md)
 ## [Requesting timestamps](rest-pki/requesting-timestamps.md)

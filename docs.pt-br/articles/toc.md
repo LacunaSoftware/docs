@@ -65,6 +65,7 @@
 #### [Atualização](rest-pki/on-premises/windows-setup/update.md)
 #### [Resolução de problemas](rest-pki/on-premises/windows-setup/troubleshoot/index.md)
 ### [Setup em Azure App Service](rest-pki/on-premises/azure-setup.md)
+### [Verificando a versão](rest-pki/on-premises/check-version.md)
 ### [Dimensionamento](rest-pki/on-premises/sizing.md)
 ### [Configuração de Carimbos de Tempo](rest-pki/on-premises/configure-timestamping.md)
 ## [Solicitando carimbos de tempo](rest-pki/requesting-timestamps.md)
