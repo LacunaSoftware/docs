@@ -1,5 +1,14 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-17-1" />
+### 1.17.1 (2018-05-09)
+
+Database model update: No
+
+- Update Lacuna PKI SDK to 1.20.15, thus:
+  - Improve tolerance for malformed certificates (fixing problems due to recent SERPRO malformed certificates)
+  - Update ICP-Brasil intermediate CAs
+
 <a name="v1-17-0" />
 ### 1.17.0 (2018-03-29)
 
