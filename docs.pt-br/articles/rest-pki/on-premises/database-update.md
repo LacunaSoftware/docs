@@ -1,24 +1,25 @@
 ﻿# Atualização do banco de dados - Rest PKI
 
 As atualizações do banco de dados em instâncias [*on premises*](index.md) do [Rest PKI](../index.md) podem
-ser feitas **automaticamente** ou **manualmente**. A configuração mais adequada depende sobretudo da escolha feita
-durante a instalação sistema no que se refere às permissões do sistema sobre o banco de dados:
+ser feitas **automaticamente** ou **manualmente**.
 
-1. Sistema ser "dono" (*owner*) do banco de dados
+No modo automático, o banco de dados é atualizado na primeira execução de uma nova versão do sistema, não sendo
+necessário qualquer procedimento adicional. Já no caso manual, após uma atualização de versão do sistema que
+requer atualização do banco de dados, o sistema fica inoperante até que o procedimento seja realizado manualmente
+(veja [seção abaixo](#manual-update)).
+
+A configuração mais adequada depende sobretudo da escolha feita durante a instalação sistema no que se refere às
+permissões do sistema sobre o banco de dados:
+
+1. Sistema ser "dono" (*owner*) do banco de dados **ou**
 1. Sistema ter apenas permissões de leitura e escrita no banco de dados
 
 Caso se tenha optado pela opção **1** (sistema ***owner* do banco**), ambas configurações de atualização do banco
 podem ser utilizadas, sendo recomendada a configuração de atualizações **automáticas**. Caso se tenha optado pela
 opção **2** (sistema com permissões de **leitura e escrita apenas** no banco de dados), o sistema deve ser
-configurado para efetuar atualizações no do banco de dados **manualmente**.
+obrigatoriamente configurado para efetuar atualizações no banco de dados **manualmente**.
 
-Quando o sistema está configurado para realizar atualizações automáticas do banco de dados, este é atualizado
-na primeira execução de uma nova versão do sistema, não sendo necessário qualquer procedimento adicional.
-
-Já no caso de atualizações manuais do banco de dados, o sistema verifica na primeira execução de uma nova versão se é
-necessário atualizar o banco de dados e, nesse caso, o sistema fica inoperante até que o procedimento seja realizado manualmente
-(veja [seção abaixo](#manual-update)).
-
+<a name="config" />
 ## Configuração do modo de atualização
 
 A configuração do modo de atualização -- manual ou automática -- é feita no arquivo `AppSettings.config`, no item `AutoUpdateDatabase`.
@@ -29,7 +30,7 @@ Para utilizar atualizações **automáticas** do banco de dados (configuração 
 <add key="AutoUpdateDatabase" value="True" />
 ```
 
-Para utilizar atualizações **manuais** do banco de dados (configuração recomendada para quando o sistema tem permissões de **leitura e escrita apenas** sobre o banco de dados):
+Para utilizar atualizações **manuais** do banco de dados (configuração obrigatória para quando o sistema tem permissões de **leitura e escrita apenas** sobre o banco de dados):
 
 ```xml
 <add key="AutoUpdateDatabase" value="False" />
