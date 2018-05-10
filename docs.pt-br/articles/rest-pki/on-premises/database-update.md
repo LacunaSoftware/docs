@@ -9,15 +9,15 @@ durante a instalação sistema no que se refere às permissões do sistema sobre
 
 Caso se tenha optado pelo sistema ter **apenas permissões de leitura e escrita** no banco de dados, o sistema deve ser
 configurado para efetuar atualizações no modelo do banco de dados **manualmente**. Caso se tenha optado pelo sistema
-ser ***owner* do banco**, ambas configurações de atualização do banco podem ser utilizadas, sendo recomendada a atualização
-**automática**.
+ser ***owner* do banco**, ambas configurações de atualização do banco podem ser utilizadas, sendo recomendada a configuração
+de atualizações **automáticas**.
 
 Quando o sistema está configurado para realizar atualizações automáticas do modelo do banco de dados, este é atualizado
 na primeira execução de uma nova versão do sistema, não sendo necessário qualquer procedimento adicional.
 
 Já no caso de atualizações manuais do banco de dados, o sistema verifica na primeira execução de uma nova versão se é
 necessário atualizar o banco de dados e, nesse caso, o sistema fica inoperante até que o procedimento seja realizado manualmente
-(veja [seção abaixo]()).
+(veja [seção abaixo](#manual-update)).
 
 ## Configuração do modo de atualização
 
