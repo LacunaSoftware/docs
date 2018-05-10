@@ -1,18 +1,18 @@
 ﻿# Atualização do banco de dados - Rest PKI
 
-A atualização do modelo do banco de dados em instâncias [*on premises*](index.md) do [Rest PKI](../index.md) pode
-ser feita **automaticamente** ou **manualmente**. A configuração mais adequada depende sobretudo da escolha feita
+As atualizações do banco de dados em instâncias [*on premises*](index.md) do [Rest PKI](../index.md) podem
+ser feitas **automaticamente** ou **manualmente**. A configuração mais adequada depende sobretudo da escolha feita
 durante a instalação sistema no que se refere às permissões do sistema sobre o banco de dados:
 
 1. Sistema ser "dono" (*owner*) do banco de dados
 1. Sistema ter apenas permissões de leitura e escrita no banco de dados
 
-Caso se tenha optado pelo sistema ter **apenas permissões de leitura e escrita** no banco de dados, o sistema deve ser
-configurado para efetuar atualizações no modelo do banco de dados **manualmente**. Caso se tenha optado pelo sistema
-ser ***owner* do banco**, ambas configurações de atualização do banco podem ser utilizadas, sendo recomendada a configuração
-de atualizações **automáticas**.
+Caso se tenha optado pela opção **1** (sistema ***owner* do banco**), ambas configurações de atualização do banco
+podem ser utilizadas, sendo recomendada a configuração de atualizações **automáticas**. Caso se tenha optado pela
+opção **2** (sistema com permissões de **leitura e escrita apenas** no banco de dados), o sistema deve ser
+configurado para efetuar atualizações no do banco de dados **manualmente**.
 
-Quando o sistema está configurado para realizar atualizações automáticas do modelo do banco de dados, este é atualizado
+Quando o sistema está configurado para realizar atualizações automáticas do banco de dados, este é atualizado
 na primeira execução de uma nova versão do sistema, não sendo necessário qualquer procedimento adicional.
 
 Já no caso de atualizações manuais do banco de dados, o sistema verifica na primeira execução de uma nova versão se é
@@ -21,22 +21,22 @@ necessário atualizar o banco de dados e, nesse caso, o sistema fica inoperante 
 
 ## Configuração do modo de atualização
 
-A configuração do modo de atualização -- manual ou automático -- é feita no arquivo `AppSettings.config`, no item `AutoUpdateDatabase`.
+A configuração do modo de atualização -- manual ou automática -- é feita no arquivo `AppSettings.config`, no item `AutoUpdateDatabase`.
 
-Para utilizar atualizações **automáticas** do banco de dados (configuração recomendada para quanto o sistema é *owner* do banco):
+Para utilizar atualizações **automáticas** do banco de dados (configuração recomendada para quanto o sistema é ***owner* do banco**):
 
 ```xml
 <add key="AutoUpdateDatabase" value="True" />
 ```
 
-Para utilizar atualizações **manuais** do banco de dados (configuração recomendada para quando o sistema tem apenas permissões de leitura e escrita sobre o banco de dados):
+Para utilizar atualizações **manuais** do banco de dados (configuração recomendada para quando o sistema tem permissões de **leitura e escrita apenas** sobre o banco de dados):
 
 ```xml
 <add key="AutoUpdateDatabase" value="False" />
 ```
 
 > [!NOTE]
-> Caso a configuração seja omitida, assume-se atualizaçao **manual**.
+> Caso a configuração seja omitida, assume-se atualização **manual** (que não é o ideal quando o sistema é *owner* do banco de dados).
 
 <a name="manual-update" />
 ## Atualização manual do banco de dados
@@ -66,4 +66,4 @@ Após seguir as instruções, a tela inicial com a mensagem "REST PKI on premise
 
 ## Veja também
 
-* [Resolução de problemas](troubleshoot/index.md)
+* [Resolução de problemas de instalação em Windows Server](windows-setup/troubleshoot/index.md)
