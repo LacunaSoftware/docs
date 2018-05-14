@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-4-1" />
+### 1.4.1 (2018-05-14)
+- Atualiza o PKI SDK para versão 1.20.15, assim:
+  - Melhora tolerância com certificados malformados (resolvendo problemas devidos a um recente certificado malformado SERPRO)
+  - Atualiza ACs ICP-Brasil intermediárias
+
 <a name="v1-4-0" />
 ### 1.4.0 (2018-04-10)
 
