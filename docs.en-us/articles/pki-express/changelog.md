@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-4-1" />
+### 1.4.1 (2018-05-14)
+- Update PKI SDK to 1.20.15, thus:
+  - Improve tolerance for malformed certificates (fixing problems due to recent SERPRO malformed certificates)
+  - Update ICP-Brasil intermediate CAs
+
 <a name="v1-4-0" />
 ### 1.4.0 (2018-04-10)
 
