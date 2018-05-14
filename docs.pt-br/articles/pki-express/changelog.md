@@ -2,7 +2,7 @@
 
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)
-- Atualiza o PKI SDK para versão 1.20.15, assim:
+- Atualiza o PKI SDK para versão 1.20.15, portanto:
   - Melhora tolerância com certificados malformados (resolvendo problemas devidos a um recente certificado malformado SERPRO)
   - Atualiza ACs ICP-Brasil intermediárias
 
