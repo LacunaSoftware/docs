@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v1-20-16" />
+### 1.20.16 (2018-05-15)
+
+- Fix certificate chain filling bug on PAdES
+
+
 <a name="v1-20-15" />
 ### 1.20.15 (2018-05-08)
 
