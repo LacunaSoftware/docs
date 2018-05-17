@@ -32,17 +32,17 @@ instância do Rest PKI:
 1. No menu superior, vá em **Administração** &gt; **Tipos de Carimbo de Tempo**
 1. Clique no item *ICP-Brasil*
 
-   ![Select plan ICP-Brasil](../../../images/rest-pki/select-plan-icp-brasil.png)
+   ![Select plan ICP-Brasil](../../../../images/rest-pki/select-plan-icp-brasil.png)
 
 1. Na área **Carimbadoras de Tempo**, digite um nome e clique em **Criar**
 
-   ![Create timestamper](../../../images/rest-pki/create-timestamper.png)
+   ![Create timestamper](../../../../images/rest-pki/create-timestamper.png)
 
 1. Na tela seguinte, preencha a URL do provedor e clique em **Create**
    * No caso do Rest PKI cloud, a URL é: `https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310`
 1. Uma vez criada a carimbadora, entre nas configurações dela
 
-   ![Edit timestamper](../../../images/rest-pki/edit-timestamper.png)
+   ![Edit timestamper](../../../../images/rest-pki/edit-timestamper.png)
 
 1. No campo **Autenticação**, escolha a opção especificada pelo provedor
    * No caso do Rest PKI cloud, a opção deve ser **OAuth Bearer Token**
@@ -93,7 +93,7 @@ Rest PKI está instalado para importar o certificado para o repositório do Wind
 1. Pressione a tecla SHIFT e clique com o botão direito no arquivo
 1. Clique na opção **Run as different user**
 
-   ![Run mmc.exe as different user](../../../images/rest-pki/run-mmc-as-different-user.png)
+   ![Run mmc.exe as different user](../../../../images/rest-pki/run-mmc-as-different-user.png)
 
 1. Entre com as credenciais do usuário criado
 1. Vá em **File** &gt; **Add/Remove Snap-in...**
