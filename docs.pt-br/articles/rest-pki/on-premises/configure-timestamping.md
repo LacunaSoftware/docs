@@ -20,7 +20,7 @@ Caso opte por utilizar o Rest PKI cloud, siga os passos abaixo para obter as cre
 
 1. Autentique-se no site do Rest PKI cloud (https://pki.rest/)
 1. No Painel de Controle, clique no botão **Gerar novo token de acesso**
-1. Copie o valor gerado e guarde temporariamente em um bloco de notas
+1. Copie o valor gerado
 
 Caso opte por outro provedor de carimbos de tempo, solicite os dados de acesso ao provedor (URL e credenciais).
 
