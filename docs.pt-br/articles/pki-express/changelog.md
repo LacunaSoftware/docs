@@ -1,7 +1,15 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-5-0" />
+### 1.5.0 (2018-05-18)
+
+- Adiciona escolha da política de assinatura com `--policy` habilitado nas assinaturas
+- Adiciona assinatura com carimbo de tempo (suporte para CAdES, PAdES e XAdES)
+- Atualiza PKI SDK to 1.20.16, corrigindo bug no preenchimento da cadeia de certificados na assinatura PAdES
+
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)
+
 - Atualiza o PKI SDK para versão 1.20.15, portanto:
   - Melhora tolerância com certificados malformados (resolvendo problemas devidos a um recente certificado malformado SERPRO)
   - Atualiza ACs ICP-Brasil intermediárias

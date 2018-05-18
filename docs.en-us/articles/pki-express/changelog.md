@@ -1,7 +1,15 @@
 ﻿# PKI Express changelog
 
+<a name="v1-5-0" />
+### 1.5.0 (2018-05-18)
+
+- Add support for choosing a signature policy with `--policy` enabled on the signatures
+- Add support for performing signatures with timestamp (support for PAdES, CAdES and XAdES)
+- Update PKI SDK to 1.20.16, fixing certificate chain filling bug on PAdES.
+
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)
+
 - Update PKI SDK to 1.20.15, thus:
   - Improve tolerance for malformed certificates (fixing problems due to recent SERPRO malformed certificates)
   - Update ICP-Brasil intermediate CAs
