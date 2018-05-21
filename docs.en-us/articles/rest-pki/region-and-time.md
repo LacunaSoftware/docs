@@ -1,4 +1,4 @@
-﻿# Configure Region and Date - Rest PKI
+﻿# Rest PKI - Configure Region and Date
 
 You can change the date format and time zone used to compose dates on PDF signatures done with [Rest PKI](index.md).
 
@@ -6,9 +6,12 @@ To alter this configuration, follow the steps below:
 
 1. Sign in to [https://pki.rest/]
 1. On the top menu, click your email and **Account**
+
    ![Image name](../../../images/rest-pki/access-account-settings.png)
+
 1. On the next page, use the controls on the area **Region and Date** to configure the date appearance:
-   ![Image name](../../../images/rest-pki/region-and-date.png)
+
+   ![Image name](../../../images/rest-pki/region-and-time.png)
 
 The following configurations are available:
 

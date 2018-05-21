@@ -1,4 +1,4 @@
-﻿# Configuração de Região e Data - Rest PKI
+﻿# Rest PKI - Configuração de Região e Data
 
 É possível alterar o formato e fuso horário das datas que aparecem nas assinaturas de PDF feitas com o [Rest PKI](index.md).
 
@@ -6,9 +6,12 @@ Para alterar essa configuração, siga os passos abaixo:
 
 1. Autentique-se em [https://pki.rest/]
 1. No menu superior, clique no seu email e em **Conta** ou *Account*
+
    ![Image name](../../../images/rest-pki/access-account-settings.png)
+
 1. Na tela seguinte, utilize os controle na seção **Região e Data** ou *Region and Date* para configurar a aparência das datas:
-   ![Image name](../../../images/rest-pki/region-and-date.png)
+
+   ![Image name](../../../images/rest-pki/region-and-time.png)
 
 As seguintes configurações estão disponíveis:
 
