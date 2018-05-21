@@ -21,17 +21,17 @@ The following configurations are available:
 
 For instance, the following configuration results in the date show below:
 
-* Culture: `Portuguese (Brazil)`
-* Time Zone: `UTC`
-* Date Format: `Complete with time zone`
+* Culture: **Portuguese (Brazil)**
+* Time Zone: **UTC**
+* Date Format: **Complete with time zone**
 
 ![Image name](../../../images/rest-pki/pdf-date-utc-long.png)
 
 Another possible configuration would be:
 
-* Culture: `Portuguese (Brazil)`
-* Time Zone: `(UTC-03:00) Brasilia`
-* Date Format: `Short date and time`
+* Culture: **Portuguese (Brazil)**
+* Time Zone: **(UTC-03:00) Brasilia**
+* Date Format: **Short date and time**
 
 ![Image name](../../../images/rest-pki/pdf-date-brasilia-short.png)
 
@@ -39,10 +39,10 @@ Another possible configuration would be:
 
 The supported date formats are:
 
-Date Format                | Culture = `English (United States)`        | Culture = `Portuguese (Brazil)`
--------------------------- | ------------------------------------------ | -------------------------------------
-`Complete with time zone`  | 5/21/2018 7:48:51 PM -03:00                | 21/05/2018 19:48:51 -03:00
-`Long date and time`       | Monday, May 21, 2018 7:48:51 PM            | segunda-feira, 21 de maio de 2018 19:48:51
-`Short date and time`      | 5/21/2018 7:48 PM                          | 21/05/2018 19:48
-`Long date and short time` | Monday, May 21, 2018 7:48 PM               | segunda-feira, 21 de maio de 2018 19:48    
-`Short date and long time` | 5/21/2018 7:48:51 PM                       | 21/05/2018 19:48:51                        
+Date Format              | Culture = *English (United States)*        | Culture = *Portuguese (Brazil)*
+------------------------ | ------------------------------------------ | -------------------------------------
+Complete with time zone  | 5/21/2018 7:48:51 PM -03:00                | 21/05/2018 19:48:51 -03:00
+Long date and time       | Monday, May 21, 2018 7:48:51 PM            | segunda-feira, 21 de maio de 2018 19:48:51
+Short date and time      | 5/21/2018 7:48 PM                          | 21/05/2018 19:48
+Long date and short time | Monday, May 21, 2018 7:48 PM               | segunda-feira, 21 de maio de 2018 19:48    
+Short date and long time | 5/21/2018 7:48:51 PM                       | 21/05/2018 19:48:51                        

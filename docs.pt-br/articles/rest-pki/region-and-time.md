@@ -4,7 +4,7 @@
 
 Para alterar essa configuração, siga os passos abaixo:
 
-1. Autentique-se em [https://pki.rest/]
+1. Autentique-se em https://pki.rest/
 1. No menu superior, clique no seu email e em **Conta** ou *Account*
 
    ![Image name](../../../images/rest-pki/access-account-settings.png)
@@ -39,10 +39,10 @@ Outra configuração possível seria:
 
 Os formatos de data suportados são:
 
-Formato                     | Cultura = **Portuguese (Brazil)**          | Cultura = **English (United States)**
---------------------------- | ------------------------------------------ | -------------------------------------
-**Completo com fuso**       | 21/05/2018 19:48:51 -03:00                 | 5/21/2018 7:48:51 PM -03:00
-**Data e hora longas**      | segunda-feira, 21 de maio de 2018 19:48:51 | Monday, May 21, 2018 7:48:51 PM
-**Data e hora curtas**      | 21/05/2018 19:48                           | 5/21/2018 7:48 PM
-**Data longa e hora curta** | segunda-feira, 21 de maio de 2018 19:48    | Monday, May 21, 2018 7:48 PM
-**Data curta e hora longa** | 21/05/2018 19:48:51                        | 5/21/2018 7:48:51 PM
+Formato                 | Cultura = *Portuguese (Brazil)*            | Cultura = *English (United States)*
+----------------------- | ------------------------------------------ | -------------------------------------
+Completo com fuso       | 21/05/2018 19:48:51 -03:00                 | 5/21/2018 7:48:51 PM -03:00
+Data e hora longas      | segunda-feira, 21 de maio de 2018 19:48:51 | Monday, May 21, 2018 7:48:51 PM
+Data e hora curtas      | 21/05/2018 19:48                           | 5/21/2018 7:48 PM
+Data longa e hora curta | segunda-feira, 21 de maio de 2018 19:48    | Monday, May 21, 2018 7:48 PM
+Data curta e hora longa | 21/05/2018 19:48:51                        | 5/21/2018 7:48:51 PM
