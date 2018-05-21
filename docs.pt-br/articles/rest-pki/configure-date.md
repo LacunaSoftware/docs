@@ -1,4 +1,4 @@
-﻿# Rest PKI - Configuração de Região e Data
+﻿# Rest PKI - Configuração de Data e Hora
 
 É possível alterar o formato e fuso horário das datas que aparecem nas assinaturas de PDF feitas com o [Rest PKI](index.md).
 
@@ -34,6 +34,9 @@ Outra configuração possível seria:
 * Formato de data: **Data e hora curtas**
 
 ![Image name](../../../images/rest-pki/pdf-date-brasilia-short.png)
+
+> [!NOTE]
+> O horário é ajustado automaticamente de acordo com o horário de verão (no caso dos fusos em que este se aplica).
 
 ## Formatos de data
 

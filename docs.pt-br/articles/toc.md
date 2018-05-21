@@ -69,7 +69,7 @@
 ### [Verificando a versão instalada](rest-pki/on-premises/check-version.md)
 ### [Dimensionamento](rest-pki/on-premises/sizing.md)
 ### [Configuração de Carimbos de Tempo](rest-pki/on-premises/configure-timestamping.md)
-## [Configuração de Região e Hora](rest-pki/region-and-time.md)
+## [Configuração de Data e Hora](rest-pki/configure-date.md)
 ## [Solicitando carimbos de tempo](rest-pki/requesting-timestamps.md)
 ## [Resolução de problemas](rest-pki/troubleshoot/index.md)
 ### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)

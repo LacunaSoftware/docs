@@ -1,4 +1,4 @@
-﻿# Rest PKI - Configure Region and Time
+﻿# Rest PKI - Configure Date and Time
 
 You can change the date format and time zone used to compose dates on PDF signatures done with [Rest PKI](index.md).
 
@@ -34,6 +34,9 @@ Another possible configuration would be:
 * Date Format: **Short date and time**
 
 ![Image name](../../../images/rest-pki/pdf-date-brasilia-short.png)
+
+> [!NOTE]
+> Time is adjusted automatically for daylight saving time on time zones on which it applies.
 
 ## Date formats
 
