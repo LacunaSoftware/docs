@@ -1,4 +1,4 @@
-﻿# Rest PKI - Configure Region and Date
+﻿# Rest PKI - Configure Region and Time
 
 You can change the date format and time zone used to compose dates on PDF signatures done with [Rest PKI](index.md).
 
