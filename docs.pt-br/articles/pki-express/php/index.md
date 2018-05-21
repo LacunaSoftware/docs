@@ -26,13 +26,7 @@ O uso do PKI Express em PHP deve ser feito com o pacote de composer [lacuna/pki-
 
 Para adicioná-lo ao seu projeto, adicione a linha abaixo ao seu arquivo `composer.json`:
 
-```json
-{
-	"require": {
-		"lacuna/pki-express": "^1.3.0"
-	}
-}
-```
+[!include[composer.json](../../../../includes/pki-express/php/composer.md)]
 
 Feito isso, execute o comando `composer install` para baixar o pacote e suas dependências (se você ainda não tem o Composer instalado, baixe-o [aqui](https://getcomposer.org/)).
 

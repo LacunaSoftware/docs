@@ -27,13 +27,7 @@ In order to use PKI Express on PHP you must include the composer package [lacuna
 
 To add it to your project, add the line below to your `composer.json` file:
 
-```json
-{
-	"require": {
-		"lacuna/pki-express": "^1.4.0"
-	}
-}
-```
+[!include[composer.json](../../../../includes/pki-express/php/composer.md)]
 
 After that, do a `composer install`  to download the package and its dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/)).
 
