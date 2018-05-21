@@ -69,6 +69,7 @@
 ### [Checking the installed version](rest-pki/on-premises/check-version.md)
 ### [Right-sizing guide](rest-pki/on-premises/sizing.md)
 ### [Configure Timestamping](rest-pki/on-premises/configure-timestamping.md)
+## [Configure Region and Time](rest-pki/region-and-time.md)
 ## [Requesting timestamps](rest-pki/requesting-timestamps.md)
 ## [Troubleshoot](rest-pki/troubleshoot/index.md)
 ### [Error "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
