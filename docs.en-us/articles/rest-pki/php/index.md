@@ -20,7 +20,7 @@ To add it to your project, put this on your `composer.json` file:
 ```json
 {
 	"require": {
-		"lacuna/restpki-client": "^2.2.4"
+		"lacuna/restpki-client": "^2.2.5"
 	}
 }
 ```
