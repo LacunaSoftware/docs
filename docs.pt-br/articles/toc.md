@@ -73,6 +73,7 @@
 ## [Solicitando carimbos de tempo](rest-pki/requesting-timestamps.md)
 ## [Resolução de problemas](rest-pki/troubleshoot/index.md)
 ### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
+## [Política de Privacidade](rest-pki/privacy-policy.md)
 ## [Histórico de versões](rest-pki/changelog.md)
 <!-- End of Rest PKI -->
 

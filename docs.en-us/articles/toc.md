@@ -73,6 +73,7 @@
 ## [Requesting timestamps](rest-pki/requesting-timestamps.md)
 ## [Troubleshoot](rest-pki/troubleshoot/index.md)
 ### [Error "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
+## [Privacy Policy](rest-pki/privacy-policy.md)
 ## [Changelog](rest-pki/changelog.md)
 <!-- End of Rest PKI -->
 
