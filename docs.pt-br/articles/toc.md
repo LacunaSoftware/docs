@@ -15,7 +15,7 @@
 # [Web PKI](web-pki/index.md)
 ## [Primeiros passos](web-pki/get-started.md)
 ## [Propriedades dos certificados](web-pki/cert-properties.md)
-## [Customizando a listagem de certificados](web-pki/cert-select.md)
+## [Personalizando a listagem de certificados](web-pki/cert-select.md)
 ## [Pré-validação de certificados](web-pki/cert-validation.md)
 ## [Browsers suportados](web-pki/browser-support.md)
 ## [Licenciamento](web-pki/licensing.md)
