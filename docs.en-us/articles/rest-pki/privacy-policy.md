@@ -1,5 +1,11 @@
 ﻿# Privacy Policy - Rest PKI
 
+* Last amended: May 24, 2018
+* Effective Date: May 25, 2018
+
+> [!NOTE]
+> We have reviewed our policies in order to make sure we are in compliance with the European Union's General Data Protection Regulation
+
 This Privacy Policy applies to the website [https://pki.rest](https://pki.rest) (the "Site") owned and operated by Lacuna Software Ltda (collectively, "Lacuna", "we", "us", or "our"). This Privacy Policy describes how Lacuna collects, uses, shares and secures the personal information you provide, as well as the information about our customers' end users that we process on behalf of our customers. It also describes your choices regarding use, access, correction and deletion of your personal information. 
 
 ## How we Collect Information
