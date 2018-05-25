@@ -45,7 +45,7 @@ Algumas das propriedades disponíveis são:
   * `pkiBrazil.cpf`: CPF do titular/responsável
   * `pkiBrazil.cnpj`: CNPJ da empresa (ou `null`, caso não seja um certificado de pessoa jurídica)
 * `pkiItaly`: Objeto com campos específicos de certificados italianos
-  * `pkiItaly.cnpj`: *codice fiscale* do titular
+  * `pkiItaly.codiceFiscale`: *codice fiscale* do titular
 
 > [!NOTE]
 > As propriedades `pkiBrazil` e `pkiItaly` estão sempre preenchidas, mesmo que o certificado não seja um certificado brasileiro ou italiano,
