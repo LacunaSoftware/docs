@@ -1,7 +1,7 @@
-﻿# Privacy Policy - Rest PKI
-
-> [!NOTE]
+﻿> [!NOTE]
 > We have reviewed our policies in order to make sure we are in compliance with the European Union's General Data Protection Regulation
+
+# Privacy Policy - Rest PKI
 
 * Last amended: May 24, 2018
 * Effective Date: May 25, 2018
