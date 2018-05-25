@@ -14,6 +14,7 @@ var certificates = null;
 function onWebPkiReady () {
 	pki.listCertificates({
 		selectId: 'certificateSelect'
+		// omit the "filter" argument to display all certificates
 	}).success(function (certs) {
 		// NOTE: we need to keep the "certs" array for later!
 		certificates = certs;
@@ -34,18 +35,12 @@ function getSelectedCert() {
 function sign() {
 	// get the selected certificate
 	var selectedCert = getSelectedCert();
-	// validate the certificate based on its properties
-	var now = new Date();
-	if (now > selectedCert.validityEnd) {
+	// perform a pre-check of the certificate
+	if (new Date() > selectedCert.validityEnd) {
 		alert('The chosen certificate has expired on ' + selectedCert.validityEnd.toLocaleDateString());
 		return;
 	}
-	if (now < selectedCert.validityStart) {
-		alert('The chosen certificate will only be valid starting '
-			+ selectedCert.validityStart.toLocaleDateString());
-		return;
-	}
-	// proceed with the signature process with the argument selectedCert.thumbprint
+	// proceed with the signature process with the argument "selectedCert.thumbprint"
 }
 ```
 
