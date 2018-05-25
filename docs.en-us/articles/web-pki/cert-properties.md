@@ -1,9 +1,9 @@
 ﻿# Certificate properties
 
-When you call the function `listCertificates()`, your callback receives an array of the available certificates on
+When you call the function `listCertificates()`, your callback receives an array with the available certificates on
 the user's machine. Each item on that array is an object of type
 [CertificateModel](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.certificatemodel.html)
-on which there several properties with information about the certificate:
+having several properties with information about the certificate:
 
 ```javascript
 pki.listCertificates().success(function (certs) {
@@ -14,6 +14,24 @@ pki.listCertificates().success(function (certs) {
 		console.log(cert.validityEnd);
 		console.log(cert.pkiBrazil.cpf);
 		console.log(cert.pkiItaly.codiceFiscale);
+	}
+});
+```
+
+The same object is received on the `selectOptionFormatter` callback which may be passed when calling `listCertificates()`:
+
+```javascript
+pki.listCertificates({
+	selectId: 'certificateSelect',
+	selectOptionFormatter: function (cert) {
+		var text = cert.subjectName + ' ('
+			+ 'issued by ' + cert.issuerName
+			+ ' on ' + cert.validityEnd.toLocaleDateString()
+			+ ')';
+		if (new Date() > cert.validityEnd) {
+			text = '[EXPIRED] ' + text;
+		}
+		return text;
 	}
 });
 ```

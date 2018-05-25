@@ -18,6 +18,24 @@ pki.listCertificates().success(function (certs) {
 });
 ```
 
+Esse mesmo objeto é recebido como argumento para o callback `selectOptionFormatter` que pode ser passado na chamada à função `listCertificates()`:
+
+```javascript
+pki.listCertificates({
+	selectId: 'certificateSelect',
+	selectOptionFormatter: function (cert) {
+		var text = cert.subjectName + ' ('
+			+ 'emitido por ' + cert.issuerName
+			+ ' em ' + cert.validityEnd.toLocaleDateString()
+			+ ')';
+		if (new Date() > cert.validityEnd) {
+			text = '[EXPIRADO] ' + text;
+		}
+		return text;
+	}
+});
+```
+
 Algumas das propriedades disponíveis são:
 
 * `subjectName`: Campo *Common Name* (CN) do nome do titular
