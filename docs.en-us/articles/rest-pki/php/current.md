@@ -12,7 +12,7 @@ https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP/standard
 
 1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
 1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [PHP/standard/util.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/util.php#L10-L14)
+1. Paste your access token on the file [PHP/standard/config.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/config.php#L21-L24)
 1. In a command prompt, navigate to the folder `PHP/standard` and run the command `composer install` to download the dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/))
 1. Setup a website on your local HTTP server pointing to the `PHP/standard` folder
 1. Open the index.php file on the browser on the corresponding URL (depending on the previous step)
@@ -25,14 +25,14 @@ This section lists where to find the relevant parts in each feature sample on th
 ### Authentication with digital certificate
 
 * [authentication.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/authentication.php)
-  * Javascript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
 * [authentication-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/authentication-action.php)
 
 <a name="pades" />
 ### PAdES signature with file already on server
 
 * [pades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/pades-signature.php)
-  * Javascript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
 * [pades-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/pades-signature-action.php)
 
 <a name="pades-upload" />
@@ -93,7 +93,7 @@ The generated PDF contains links to the file [check.php](https://github.com/Lacu
 ### CAdES signature with file already on server
 
 * [cades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/cades-signature.php)
-  * Javascript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
 * [cades-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/cades-signature-action.php)
 
 <a name="cades-upload" />
@@ -123,14 +123,14 @@ same control flow is repeated, but now with the URL parameter `cmsfile` filled.
 ### XML signature of the entire document
 
 * [xml-full-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-full-signature.php)
-  * Javascript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
 * [xml-full-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-full-signature-action.php)
 
 <a name="xml-element" />
 ### XML signature of an element
 
 * [xml-element-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-element-signature.php)
-  * Javascript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
 * [xml-element-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-element-signature-action.php)
 
 <a name="xades-element" />
@@ -147,7 +147,7 @@ Not yet available on this project.
 ### Batch of PAdES signatures
 
 * [batch-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-signature.php)
-  * Javascript: [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/batch-signature-form.js)
+  * JavaScript: [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/batch-signature-form.js)
   * AJAX handlers: [batch-signature-start.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-signature-start.php)
     and [batch-signature-complete.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-signature-complete.php)
 
@@ -164,4 +164,7 @@ Not yet available on this project.
 <a name="batch-xml-element" />
 ### Batch of XML signatures of elements on the same document
 
-Not yet available on this project.
+* [batch-xml-element-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-xml-element-signature.php)
+  * JavaScript: [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/batch-xml-element-signature-form.js)
+  * AJAX handlers: [batch-xml-element-signature-start.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-xml-element-signature-start.php)
+    and [batch-xml-element-signature-complete.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-xml-element-signature-complete.php)

@@ -12,7 +12,7 @@ https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP/legacy
 
 1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
 1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [PHP/legacy/util.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/util.php#L10-L14)
+1. Paste your access token on the file [PHP/legacy/config.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/config.php#L21-L24)
 1. In a command prompt, navigate to the folder `PHP/legacy` and run the command `composer install` to download the dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/))
 1. Setup a website on your local HTTP server pointing to the `PHP/legacy` folder
 1. Open the index.php file on the browser on the corresponding URL (depending on the previous step)
@@ -25,14 +25,14 @@ This section lists where to find the relevant parts in each feature sample on th
 ### Authentication with digital certificate
 
 * [authentication.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/authentication.php)
-	* JavaScript: (inside authentication.php)
+	* JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/content/js/signature-form.js)
 * [authentication-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/authentication-action.php)
 
 <a name="pades" />
 ### PAdES signature with file already on server
 
 * [pades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/pades-signature.php)
-  * JavaScript: (inside pades-signature.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/content/js/signature-form.js)
 * [pades-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/pades-signature-action.php)
 
 <a name="pades-upload" />
@@ -62,7 +62,7 @@ array_push($signatureStarter->pdfMarks, PadesVisualElements::getPdfMark(1));
 > [!TIP]
 > Try changing the argument to `getPdfMark()` function to see different PDF mark configurations
 
-The relevant code is on the file [pades-visual-elements.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/pades-visual-elements.php), function `getPdfMark()`.
+The relevant code is on the file [util-pades.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/util-pades.php), function `getPdfMark()`.
 
 <a name="pades-server" />
 ### PAdES signature using server key
@@ -93,7 +93,7 @@ The generated PDF contains links to the file [check.php](https://github.com/Lacu
 ### CAdES signature with file already on server
 
 * [cades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/cades-signature.php)
-  * JavaScript: (inside cades-signature.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/content/js/signature-form.js)
 * [cades-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/cades-signature-action.php)
 
 <a name="cades-upload" />
@@ -123,14 +123,14 @@ Not yet available on this project.
 ### XML signature of the entire document
 
 * [xml-full-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/xml-full-signature.php)
-  * JavaScript: (inside xml-full-signature.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/content/js/signature-form.js)
 * [xml-full-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/xml-full-signature-action.php)
 
 <a name="xml-element" />
 ### XML signature of an element
 
 * [xml-element-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/xml-element-signature.php)
-  * JavaScript: (inside xml-element-signature.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/content/js/signature-form.js)
 * [xml-element-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/xml-element-signature-action.php)
 
 <a name="xades-element" />
