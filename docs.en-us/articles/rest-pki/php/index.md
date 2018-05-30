@@ -20,7 +20,7 @@ To add it to your project, put this on your `composer.json` file:
 ```json
 {
 	"require": {
-		"lacuna/restpki-client": "^2.2.5"
+		"lacuna/restpki-client": "^2.2.7"
 	}
 }
 ```
@@ -32,18 +32,22 @@ it if you need to make any customizations.
 
 ### For PHP 5.3 and 5.4
 
-To use Rest PKI on PHP 5.3 and 5.4, use the file [RestPkiLegacy.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/RestPkiLegacy.php). It requires the
-package [nategood/httpful](https://packagist.org/packages/nategood/httpful), which needs to be added to your `composer.json`:
+To use Rest PKI on PHP 5.3 and 5.4, you should use the compoeser package [lacuna/restpki-client-legacy](https://packagist.org/packages/lacuna/restpki-client-legacy).
+
+To add it to your project, put this on your `composer.json` file:
 
 ```json
 {
     "require": {
-        "nategood/httpful": "*"
+        "lacuna/restpki-client-legacy": "^1.0.0"
     }
 }
 ```
 
 After that, do a `composer install` to download the package and its dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/)).
+
+The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/RestPkiPhpClientLegacy). Feel free to fork
+it if you need to make any customizations.
 
 ### For PHP 5.2
 
