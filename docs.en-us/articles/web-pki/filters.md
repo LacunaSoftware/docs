@@ -6,7 +6,7 @@ It is possible to filter the certificates that are shown on your page's certific
 > Filtering certificates can cause unwanted user support. Users might expect to see certain certificates that are being filtered
 > out and wrongly assume they're not being shown due to a bug and therefore reach out for support. This is specially true when applying a filter based on the
 > expiration date, since a certificate might be shown on one day but "disappear" on the next. Because of this, we
-> **HIGHLY RECOMMEND** that you **DO NOT USE THIS FEATURE**. Instead, display all certificates and [validate the selected certificate](cert-select.md#validation).
+> **HIGHLY RECOMMEND** that you **DO NOT USE THIS FEATURE**. Instead, display all certificates and [validate the selected certificate](cert-validation.md).
 
 If for some reason you still want to use this feature despite the warning above, read on.
 

@@ -16,6 +16,7 @@
 ## [Get started](web-pki/get-started.md)
 ## [Certificate properties](web-pki/cert-properties.md)
 ## [Customizing certificate selection](web-pki/cert-select.md)
+## [Certificate pre-validation](web-pki/cert-validation.md)
 ## [Browser support](web-pki/browser-support.md)
 ## [Licensing](web-pki/licensing.md)
 ## [Asynchronous calls](web-pki/async.md)
@@ -73,6 +74,7 @@
 ## [Requesting timestamps](rest-pki/requesting-timestamps.md)
 ## [Troubleshoot](rest-pki/troubleshoot/index.md)
 ### [Error "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
+## [Privacy Policy](rest-pki/privacy-policy.md)
 ## [Changelog](rest-pki/changelog.md)
 <!-- End of Rest PKI -->
 

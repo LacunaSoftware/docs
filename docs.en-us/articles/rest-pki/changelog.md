@@ -1,5 +1,22 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-17-3" />
+### 1.17.3 (2018-05-24)
+
+Database model update: No
+
+- Add link to the [privacy policy](privacy-policy.md) on the splash screen ([GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) compliance)
+
+
+<a name="v1-17-2" />
+### 1.17.2 (2018-05-15)
+
+Database model update: No
+
+- Update Lacuna PKI SDK to 1.20.16, thus:
+  - Fix certificate chain filling bug on PAdES
+
+
 <a name="v1-17-1" />
 ### 1.17.1 (2018-05-09)
 

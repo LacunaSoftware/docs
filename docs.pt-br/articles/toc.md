@@ -15,7 +15,8 @@
 # [Web PKI](web-pki/index.md)
 ## [Primeiros passos](web-pki/get-started.md)
 ## [Propriedades dos certificados](web-pki/cert-properties.md)
-## [Customizando a seleção de certificados](web-pki/cert-select.md)
+## [Personalizando a listagem de certificados](web-pki/cert-select.md)
+## [Pré-validação de certificados](web-pki/cert-validation.md)
 ## [Browsers suportados](web-pki/browser-support.md)
 ## [Licenciamento](web-pki/licensing.md)
 ## [Chamadas assíncronas](web-pki/async.md)
@@ -73,6 +74,7 @@
 ## [Solicitando carimbos de tempo](rest-pki/requesting-timestamps.md)
 ## [Resolução de problemas](rest-pki/troubleshoot/index.md)
 ### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
+## [Política de Privacidade](rest-pki/privacy-policy.md)
 ## [Histórico de versões](rest-pki/changelog.md)
 <!-- End of Rest PKI -->
 
