@@ -165,6 +165,6 @@ Not yet available on this project.
 ### Batch of XML signatures of elements on the same document
 
 * [batch-xml-element-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-xml-element-signature.php)
-  * JavaScript: [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/batch-xml-element-signature-form.js)
+  * JavaScript: [batch-xml-element-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/batch-xml-element-signature-form.js)
   * AJAX handlers: [batch-xml-element-signature-start.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-xml-element-signature-start.php)
     and [batch-xml-element-signature-complete.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-xml-element-signature-complete.php)
