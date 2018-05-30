@@ -1,4 +1,10 @@
-﻿* Ubuntu 17.10
+﻿* Ubuntu 18.04
+
+```sh
+wget -qO - https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft.list
+```
+
+* Ubuntu 17.10
 
 ```sh
 wget -qO - https://packages.microsoft.com/config/ubuntu/17.10/prod.list | sudo tee /etc/apt/sources.list.d/microsoft.list
