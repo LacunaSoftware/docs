@@ -12,7 +12,7 @@ However, if you cannot add private package feeds to your environments, follow th
 
 <!--
     Apparently, 2.1 no longer requires doing a `sudo yum install libunwind libicu`:
-    https://github.com/dotnet/core/blob/master/release-notes/download-archives/2.1.0-rc1-download.md
+    https://github.com/dotnet/core/blob/master/release-notes/download-archives/2.1.0-download.md
 -->
 
 Download the .NET Core Runtime standalone package, extract to the destination directory and create a symbolic link for the executable:
