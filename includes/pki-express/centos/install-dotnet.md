@@ -1,4 +1,5 @@
 ﻿```sh
 sudo yum update
-sudo yum install dotnet-runtime-2.1
+sudo yum install libunwind libicu
+sudo yum install dotnet-runtime-2.0.5
 ```
