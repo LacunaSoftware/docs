@@ -1,6 +1,6 @@
 ﻿# Install PKI Express on Ubuntu or Mint
 
-[!include[To install](includes/intro-prefix.md)] on Ubuntu (either desktop or server) or on Linux Mint [!include[you will need](includes/intro-suffix.md)]
+[!include[To install](includes/intro-prefix.md)] on Ubuntu (desktop or server) or on Linux Mint [!include[you will need](includes/intro-suffix.md)]
 
 [!include[With the license file](includes/prereqs-reminder.md)]
 
