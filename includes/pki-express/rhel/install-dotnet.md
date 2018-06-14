@@ -1,3 +1,3 @@
 ﻿```sh
-sudo yum install rh-dotnet20 -y
+sudo yum install rh-dotnet21 -y
 ```

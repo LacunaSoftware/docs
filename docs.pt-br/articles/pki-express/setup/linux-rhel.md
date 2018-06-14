@@ -7,7 +7,7 @@
 ## 1. Registre seu sistema no *Subscription Manager* do Red Hat e ative o canal do .NET
 
 Antes de começar, é preciso que o seu sistema esteja registrado no *Subscription Manager* do Red Hat e que o canal do .NET esteja ativo.
-Veja como fazer isso na [documentação da Red Hat](https://access.redhat.com/documentation/en-us/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel).
+Veja como fazer isso na [documentação da Red Hat](https://access.redhat.com/documentation/en-us/net_core/2.1/html/getting_started_guide/gs_install_dotnet#install_register_rehel).
 
 ## 2. Instale e ative o .NET Core
 
