@@ -18,6 +18,12 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 <a name="changelog" />
 ## API changelog
 
+<a name="v1-4-1" />
+### 1.4.1 (2018-06-15)
+
+- Fix [`sendAuthenticatedRequest`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)&ast; empty buffer bug
+
+
 <a name="v1-4" />
 ### 1.4 (2018-02-23)
 

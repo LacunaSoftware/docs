@@ -18,6 +18,12 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-4-1" />
+### 1.4.1 (2018-06-15)
+
+- Corrige *bug* de *buffer* vazio no comando [`sendAuthenticatedRequest`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest)&ast;
+
+
 <a name="v1-4" />
 ### 1.4 (2018-02-23)
 
