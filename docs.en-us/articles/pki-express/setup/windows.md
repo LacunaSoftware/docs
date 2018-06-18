@@ -13,7 +13,7 @@ To install PKI Express, download and run the installer:
 </center>
 <br />
 
-After completing the installation procedure, run the *PKI Express Configuration Manager* tool (**file `pkiemgr.exe` on the installation folder**)
+After completing the installation procedure, run the *PKI Express Configuration Manager* tool (**file `pkiemgr.exe` on the installation folder** example: C:\Program Files\Lacuna Software\PKI Express)
 and follow the instructions to activate PKI Express.
 
 > [!NOTE]
