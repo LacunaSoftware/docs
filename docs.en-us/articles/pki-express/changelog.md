@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-6-0" />
+### 1.6.0 (2018-06-18)
+
+- Add support for _Certificación de Origen Digital_ (COD) signature policy on XML signatures.
+
 <a name="v1-5-0" />
 ### 1.5.0 (2018-05-18)
 
