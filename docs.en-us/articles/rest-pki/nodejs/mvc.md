@@ -25,7 +25,7 @@ This section lists where to find the relevant parts in each feature sample on th
 * Views:
   * [authentication.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/authentication.pug)
     (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/public/javascripts/signature-form.js))
-  * [authentication-complete.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/authentication-complete.pug)
+  * [authentication-fail.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/authentication-fail.pug)
 
 <a name="pades" />
 ### PAdES signature with file already on server
