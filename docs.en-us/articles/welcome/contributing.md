@@ -1,7 +1,7 @@
 ﻿# Contributing
 
 We are not taking public contributions at the moment, but will soon begin accepting pull requests. For now,
-if you encounter an error or if you spot something that is missing on this documentation portal, please
+if you encounter an error or spot something that is missing on this documentation portal, please
 [create an issue](https://github.com/LacunaSoftware/docs/issues).
 
 ## Creating a new article
