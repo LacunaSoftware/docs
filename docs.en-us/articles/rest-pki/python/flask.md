@@ -106,7 +106,7 @@ Not yet available on this project.
 * View: [xml_signature.py](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/views/xml_signature.py)
 * Templates:
   * [full.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/templates/xml_signature/full.html)
-  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/templates/xml_signature/full.html))
+  (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/static/js/signature-form.js))
   * [action.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/templates/xml_signature/action.html)
 
 <a name="xml-element" />
@@ -114,7 +114,7 @@ Not yet available on this project.
 
 * View: [xml_signature.py](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/views/xml_signature.py)
 * Templates:
-  * [element.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/templates/xml_signature/element.html) (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/templates/xml_signature/full.html))
+  * [element.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/templates/xml_signature/element.html) (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/static/js/signature-form.js))
   * [action.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/sample/templates/xml_signature/action.html)
 
 <a name="xades-element" />
