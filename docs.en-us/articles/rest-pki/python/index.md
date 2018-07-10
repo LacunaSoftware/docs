@@ -4,5 +4,13 @@ Rest PKI can be used on Python. To get started, see the [Python Flask samples pr
 
 ## Client library
 
-To use Rest PKI on Python applications, use the helper file [lacunarestpki.py](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/lacunarestpki.py).
-See its [requiremets](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Python/requirements.txt).
+The Python/Flask sample project use the PyPi package [restpki-cient](https://pypi.org/project/restpki-client/) to access Rest PKI on Python applications. It supports Python 2 and Python 3.
+
+
+To add it to your project, put `restpki-client==1.0.0` on your `requirements.txt` file or install with `pip install restpki-client`.
+
+> If you don't have **pip** installed, get it [here](https://pip.pypa.io/en/stable/installing/)
+
+### Source code
+
+The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/RestPkiPythonClient). Feel free to fork the package if you need to make any customizations.
