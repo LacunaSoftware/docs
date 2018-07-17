@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-1-0" />
+### 2.1.0 (2018-07-16)
+
+- Add multi-target package support: .NETStandard 2.0, .NETFramework 4.5 and .NETFramework 4.0 Client
+
+
 <a name="v1-20-16" />
 ### 1.20.16 (2018-05-15)
 
