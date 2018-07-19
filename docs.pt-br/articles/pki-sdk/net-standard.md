@@ -1,7 +1,7 @@
 ﻿# Suporte a .NET Standard / .NET Core
 
 A partir da versão 2.1.0, o [PKI SDK](index.md) suporta o **[.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) 2.0**,
-além dos .NET Frameworks 4.5 e 4.0 Client Profile. Isso significa que o PKI SDK pode ser utilizado em aplicações em [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/index).
+além dos .NET Frameworks 4.5 e 4.0 Client Profile. Isso significa que o PKI SDK pode ser utilizado em aplicações escritas em [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/index).
 
 > [!TIP]
 > Aplicações em .NET Core possuem o importante diferencial de serem **compatíveis com servidores Linux**, removendo a necessidade de exigir um Windows Server na infraestrutura de seus clientes.
