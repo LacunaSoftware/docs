@@ -119,6 +119,7 @@
 ### [Amazon Connector](pki-sdk/optional-packages/amazon-connector.md)
 ### [Entity Framework Connector](pki-sdk/optional-packages/ef-connector.md)
 ### [NLog Connector](pki-sdk/optional-packages/nlog-connector.md)
+## [.NET Standard/Core](pki-sdk/net-standard.md)
 ## [Changelog](pki-sdk/changelog.md)
 ## [API Reference](xref:Lacuna.Pki)
 <!-- End of PKI SDK -->
