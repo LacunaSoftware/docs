@@ -1,1 +1,1 @@
-﻿[PKI Express (64-bit) 1.6.1 installer](https://files.lacunasoftware.com/pki-express/windows/pkie-1.6.1-x64.msi)
+﻿[PKI Express (64-bit) 1.6.2 installer](https://files.lacunasoftware.com/pki-express/windows/pkie-1.6.2-x64.msi)

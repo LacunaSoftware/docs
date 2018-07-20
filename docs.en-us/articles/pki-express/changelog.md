@@ -1,16 +1,27 @@
 ﻿# PKI Express changelog
 
+<a name="v1-6-2" />
+### 1.6.2 (2018-07-20)
+
+- Fix bug on manual activation with new license
+- Update PKI SDK to 2.1.0, adding support for multi-targeting: .NETStandard 2.0, .NETFramework 4.5 and .NETFramework 4.0
+
+<a name="v1-6-1" />
+### 1.6.1 (2018-07-11)
+
+- Fixed bug on activation that affected installation on Docker containers
+
 <a name="v1-6-0" />
 ### 1.6.0 (2018-06-18)
 
-- Add support for _Certificación de Origen Digital_ (COD) signature policy on XML signatures.
+- Add support for *Certificación de Origen Digital* (COD) signature policy on XML signatures.
 
 <a name="v1-5-0" />
 ### 1.5.0 (2018-05-18)
 
 - Add support for choosing a signature policy with `--policy` enabled on the signatures
 - Add support for performing signatures with timestamp (support for PAdES, CAdES and XAdES)
-- Update PKI SDK to 1.20.16, fixing certificate chain filling bug on PAdES.
+- Update PKI SDK to 1.20.16, fixing certificate chain filling bug on PAdES
 
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)

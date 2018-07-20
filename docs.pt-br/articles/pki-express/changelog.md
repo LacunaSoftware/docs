@@ -1,16 +1,27 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-6-2" />
+### 1.6.2 (2018-07-20)
+
+- Corrige bug na ativação manualmente com nova licença
+- Atualiza PKI SDK para a versão 1.20.16, adicionando suporte para *multi-targeting*: .NETStandard 2.0, .NETFramework 4.5 e .NETFramework 4.0
+
+<a name="v1-6-1" />
+### 1.6.1 (2018-07-11)
+
+- Corrige bug na ativação que afetava instalação em containers Docker
+
 <a name="v1-6-0" />
 ### 1.6.0 (2018-06-18)
 
-- Adiciona suporte para a política de assinatura _Certificación de Origen Digital_ (COD) nas assinaturas XML.
+- Adiciona suporte para a política de assinatura *Certificación de Origen Digital* (COD) nas assinaturas XML.
 
 <a name="v1-5-0" />
 ### 1.5.0 (2018-05-18)
 
 - Adiciona escolha da política de assinatura com `--policy` habilitado nas assinaturas
 - Adiciona assinatura com carimbo de tempo (suporte para CAdES, PAdES e XAdES)
-- Atualiza PKI SDK to 1.20.16, corrigindo bug no preenchimento da cadeia de certificados na assinatura PAdES
+- Atualiza PKI SDK para a versão 1.20.16, corrigindo bug no preenchimento da cadeia de certificados na assinatura PAdES
 
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)
