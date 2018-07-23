@@ -1,29 +1,58 @@
 ﻿# Licenciamento
 
-Para utilizar o Web PKI em aplicações web rodando fora do localhost, é preciso [adquirir uma licença](https://www.lacunasoftware.com/pt/home/certificate#/webPlans).
+Para utilizar o Web PKI em aplicações web rodando fora do localhost, é preciso configurar a licença de uso do componente.
+
+> [!NOTE]
+> A licença do Web PKI não é necessária quando utilizando o Web PKI em uma aplicação web rodando no localhost (qualquer porta)
+> ou ainda quando sendo utilizado em conjunto com o Rest PKI em nuvem.
+
+Para configurar a licença, basta escolher um dos dois formatos recebidos e passar no construtor da classe `LacunaWebPKI`:
+
+Caso prefira o formato binário:
+
+```javascript
+var webPkiLicense = new LacunaWebPKI('ASYAanNma...Q==');
+var pki = new LacunaWebPKI(webPkiLicense);
+```
+
+Ou, se preferir o formato em JSON:
+
+```javascript
+var webPkiLicense = {
+  "format": 1,
+  "allowedDomains": [
+    "www.lacunasoftware.com"
+  ],
+  ...
+};
+var pki = new LacunaWebPKI(webPkiLicense);
+```
+
+Para mais informações sobre a diferença entre os formatos de licença, veja a seção [Formatos de licença](#formats) abaixo.
+
+<a name="validation" />
+## Validação da licença
+
 O licenciamento é verificado da seguinte maneira:
 
 1. O domínio do site que contém o javascript que utiliza o Web PKI precisa estar na "lista de domínios autorizados" da licença;
 1. A data da máquina do usuário precisa ser anterior à data de expiração da licença (você pode optar por uma licença que não expira).
 
+<a name="formats" />
+## Formatos de licença
+
 Você receberá a licença em dois formatos, como essas:
 
 ```javascript
 // Binary license
-var myLicense = 'ASYAanNmaWRkbGUubmV0LHdlYnBraS5sYWN1bmFzb2Z0d2FyZS5jb20AAAABClKvO1J22vAD+YmfANiKQLbcLE1lNraPKCel6tRM+ZxR+h6M/crtJYRRVGGz7hrdbM0Y0mfTu15RMYGqQMi1QNZS6GrT4vNzIayv552Fl0EFWQA7jWlctUwfYoHRHVEnCNx9YGXDiA9+yDoGlVwgTR7fjzNeS3Fen1MVIyKBF464gN0JvdiCRJMI47JGVDkPmKjcrYIvJs6y5Lg25RW4ZnBKVruS+HR2s3k8ZrV4y4RCQE4UYMKbukF9vsF+JqAEifRlPq2xLcrNdxBveVDSXS/LRHAcrZrMM+Iw4A79jl0ngWPcy+CwinAhT+3dxVo5ZWMRQFpmTkylEMDvTjV9wQ==';
-
-// Json license
-var myLicense = {
+var webPkiLicense = 'ASYAanNma...Q==';
+// JSON license
+var webPkiLicense = {
   "format": 1,
   "allowedDomains": [
-    // This license enables the use of the component from web pages on the following domains:
-    "jsfiddle.net",
-    "webpki.lacunasoftware.com"
+    "www.lacunasoftware.com"
   ],
-  // This license does not expire
-  "expiration": null,
-  // Digital signature of the license to prevent tampering
-  "signature": "ClKvO1J22vAD+YmfANiKQLbcLE1lNraPKCel6tRM+ZxR+h6M/crtJYRRVGGz7hrdbM0Y0mfTu15RMYGqQMi1QNZS6GrT4vNzIayv552Fl0EFWQA7jWlctUwfYoHRHVEnCNx9YGXDiA9+yDoGlVwgTR7fjzNeS3Fen1MVIyKBF464gN0JvdiCRJMI47JGVDkPmKjcrYIvJs6y5Lg25RW4ZnBKVruS+HR2s3k8ZrV4y4RCQE4UYMKbukF9vsF+JqAEifRlPq2xLcrNdxBveVDSXS/LRHAcrZrMM+Iw4A79jl0ngWPcy+CwinAhT+3dxVo5ZWMRQFpmTkylEMDvTjV9wQ=="
+  ...
 };
 ```
 
@@ -32,10 +61,6 @@ Se você não se importar que usuários que por ventura inspecionem o código fo
 facilita o diagnóstico de problemas como uma licença expirada. Entretanto, se você preferir esconder essas informações, utilize o formato binário. Note que
 os detalhes não ficam cifrados no formato binário, apenas codificados em Base64.
 
-Após obter sua licença, passe-a no formato de sua preferência no construtor da classe `LacunaWebPKI`:
-
-```javascript
-var pki = new LacunaWebPKI('ASYAanNmaWRkbGUubmV0LHdlYnBraS5sYWN1bmFzb2Z0d2FyZS5jb20AAAABClKvO1J22vAD+YmfANiKQLbcLE1lNraPKCel6tRM+ZxR+h6M/crtJYRRVGGz7hrdbM0Y0mfTu15RMYGqQMi1QNZS6GrT4vNzIayv552Fl0EFWQA7jWlctUwfYoHRHVEnCNx9YGXDiA9+yDoGlVwgTR7fjzNeS3Fen1MVIyKBF464gN0JvdiCRJMI47JGVDkPmKjcrYIvJs6y5Lg25RW4ZnBKVruS+HR2s3k8ZrV4y4RCQE4UYMKbukF9vsF+JqAEifRlPq2xLcrNdxBveVDSXS/LRHAcrZrMM+Iw4A79jl0ngWPcy+CwinAhT+3dxVo5ZWMRQFpmTkylEMDvTjV9wQ==');
-```
-
-Executando o código a partir do localhost, o componente funciona mesmo que nenhuma licença seja passada.
+> [!WARNING]
+> A versão JSON da licença contém um campo `signature` que se assemelha à licença binária. Entretanto, o conteúdo desse campo não pode ser usado isoladamente
+> como uma licença, ele só faz sentido dentro do contexto da licença JSON.
