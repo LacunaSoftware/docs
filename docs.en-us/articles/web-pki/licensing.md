@@ -67,7 +67,7 @@ details are not encrypted in the binary form, just encoded in Base64.
 
 ## Usage on private IPs
 
-The Web PKI licenses are issued allowing the usage on private IP addresses for staging purposes:
+Licenses for Web PKI are issued including private IP ranges for staging purposes:
 
 ```javascript
   ...
@@ -81,11 +81,11 @@ The Web PKI licenses are issued allowing the usage on private IP addresses for s
   ...
 ```
 
-This means that all IP addresses on the private IP ranges cam be used to host applications:
+This means that all IP addresses on the private IP ranges can be used to stage applications:
 
 * 10.x.x.x
 * 127.x.x.x
 * 172.16.0.0 to 172.31.255.255
 * 192.168.x.x
 
-For instance, a staging web application hosted on `http://192.168.5.12:8000/signature/` would be acceptable.
+For instance, a web application hosted on `http://192.168.5.12:8000/signature/` would be acceptable.
