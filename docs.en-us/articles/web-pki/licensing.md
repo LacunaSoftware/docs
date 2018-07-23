@@ -43,7 +43,16 @@ var webPkiLicense = {
   "allowedDomains": [
     "www.patorum.com"
   ],
-  ...
+  "homologDomains": [
+    "staging.patorum.com",
+    "ip4:10.0.0.0/8",
+    "ip4:127.0.0.0/8",
+    "ip4:172.16.0.0/12",
+    "ip4:192.168.0.0/16"
+  ],
+  "productLevel": "Standard",
+  "expiration": null,
+  "signature": "LzdT1cgp...w=="
 };
 ```
 
@@ -53,5 +62,30 @@ it easier to diagnose problems such as an expired license. However, if you'd rat
 details are not encrypted in the binary form, just encoded in Base64.
 
 > [!WARNING]
-> The JSON version contains a field called `signature`. The value of this field *looks like* the binary license. However, it cannot be
-> used separately as a license, it can only be used inside its full JSON license.
+> The value of the field `signature` of the JSON license cannot be used as a licence on its own (although it looks like a binary license). Use either
+> the binary license or the entire JSON license. Choosing bits and pieces will result in a validation failure be the component.
+
+## Usage on private IPs
+
+The Web PKI licenses are issued allowing the usage on private IP addresses for staging purposes:
+
+```javascript
+  ...
+  "homologDomains": [
+    ...,
+    "ip4:10.0.0.0/8",
+    "ip4:127.0.0.0/8",
+    "ip4:172.16.0.0/12",
+    "ip4:192.168.0.0/16"
+  ],
+  ...
+```
+
+This means that all IP addresses on the private IP ranges cam be used to host applications:
+
+* 10.x.x.x
+* 127.x.x.x
+* 172.16.0.0 to 172.31.255.255
+* 192.168.x.x
+
+For instance, a staging web application hosted on `http://192.168.5.12:8000/signature/` would be acceptable.
