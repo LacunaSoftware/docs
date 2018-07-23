@@ -6,7 +6,7 @@ configurar a licença, basta escolher um dos dois formatos recebidos e passar no
 Caso prefira o formato binário:
 
 ```javascript
-var webPkiLicense = new LacunaWebPKI('ASYAanNma...Q==');
+var webPkiLicense = 'ASYAanNma...Q==';
 var pki = new LacunaWebPKI(webPkiLicense);
 ```
 

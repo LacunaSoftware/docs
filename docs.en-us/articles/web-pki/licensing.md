@@ -6,7 +6,7 @@ choose one of the formats given (binary or JSON) and pass it to the constructor 
 If you prefer the binary format:
 
 ```javascript
-var webPkiLicense = new LacunaWebPKI('ASYAanNma...Q==');
+var webPkiLicense = 'ASYAanNma...Q==';
 var pki = new LacunaWebPKI(webPkiLicense);
 ```
 
