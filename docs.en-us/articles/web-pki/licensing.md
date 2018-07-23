@@ -1,29 +1,49 @@
 ﻿# Licensing
 
-In order to be able to use the component in web pages outside of localhost, you'll first need to [acquire a license](https://www.lacunasoftware.com/en/home/certificate#/webPlans).
-Licensing is enforced in 2 ways:
+In order to use [Web PKI](index.md) on web pages outside of localhost, you must set the component license. To set the license,
+choose one of the formats given (binary or JSON) and pass it to the constructor of the `LacunaWebPKI` license.
 
-1. The domain of the website which hosts the javascript that is trying to use the component must be in the "allowed domains list" of the license;
-1. The current date on the client's machine must be before the license's expiration date (you can opt for a permanent license that never expires).
+If you prefer the binary format:
 
-Once you've purchased your license, you will receive it in two forms, such as:
+```javascript
+var webPkiLicense = new LacunaWebPKI('ASYAanNma...Q==');
+var pki = new LacunaWebPKI(webPkiLicense);
+```
+
+Or, if you prefer the JSON format:
+
+```javascript
+var webPkiLicense = {
+  "format": 1,
+  "allowedDomains": [
+    "www.patorum.com"
+  ],
+  ...
+};
+var pki = new LacunaWebPKI(webPkiLicense);
+```
+
+> [!NOTE]
+> A license is not required when trying out Web PKI on web applications running on localhost (whichever port)
+> or when using Web PKI together with Rest PKI on cloud (in this case, even in production).
+
+For more information on the different license formats, read the section below.
+
+<a name="formats" />
+## License formats
+
+You will receive it in two forms, such as:
 
 ```javascript
 // Binary license
-var myLicense = 'ASYAanNmaWRkbGUubmV0LHdlYnBraS5sYWN1bmFzb2Z0d2FyZS5jb20AAAABClKvO1J22vAD+YmfANiKQLbcLE1lNraPKCel6tRM+ZxR+h6M/crtJYRRVGGz7hrdbM0Y0mfTu15RMYGqQMi1QNZS6GrT4vNzIayv552Fl0EFWQA7jWlctUwfYoHRHVEnCNx9YGXDiA9+yDoGlVwgTR7fjzNeS3Fen1MVIyKBF464gN0JvdiCRJMI47JGVDkPmKjcrYIvJs6y5Lg25RW4ZnBKVruS+HR2s3k8ZrV4y4RCQE4UYMKbukF9vsF+JqAEifRlPq2xLcrNdxBveVDSXS/LRHAcrZrMM+Iw4A79jl0ngWPcy+CwinAhT+3dxVo5ZWMRQFpmTkylEMDvTjV9wQ==';
-
-// Json license
-var myLicense = {
+var webPkiLicense = 'ASYAanNma...Q==';
+// JSON license
+var webPkiLicense = {
   "format": 1,
   "allowedDomains": [
-    // This license enables the use of the component from web pages on the following domains:
-    "jsfiddle.net",
-    "webpki.lacunasoftware.com"
+    "www.patorum.com"
   ],
-  // This license does not expire
-  "expiration": null,
-  // Digital signature of the license to prevent tampering
-  "signature": "ClKvO1J22vAD+YmfANiKQLbcLE1lNraPKCel6tRM+ZxR+h6M/crtJYRRVGGz7hrdbM0Y0mfTu15RMYGqQMi1QNZS6GrT4vNzIayv552Fl0EFWQA7jWlctUwfYoHRHVEnCNx9YGXDiA9+yDoGlVwgTR7fjzNeS3Fen1MVIyKBF464gN0JvdiCRJMI47JGVDkPmKjcrYIvJs6y5Lg25RW4ZnBKVruS+HR2s3k8ZrV4y4RCQE4UYMKbukF9vsF+JqAEifRlPq2xLcrNdxBveVDSXS/LRHAcrZrMM+Iw4A79jl0ngWPcy+CwinAhT+3dxVo5ZWMRQFpmTkylEMDvTjV9wQ=="
+  ...
 };
 ```
 
@@ -32,10 +52,6 @@ If you don't mind users who go looking into your source code to be able to see t
 it easier to diagnose problems such as an expired license. However, if you'd rather hide such information, use the binary form. Please note that the
 details are not encrypted in the binary form, just encoded in Base64.
 
-Once you have your license, you must pass it in the constructor of the `LacunaWebPKI` class:
-
-```javascript
-var pki = new LacunaWebPKI('ASYAanNmaWRkbGUubmV0LHdlYnBraS5sYWN1bmFzb2Z0d2FyZS5jb20AAAABClKvO1J22vAD+YmfANiKQLbcLE1lNraPKCel6tRM+ZxR+h6M/crtJYRRVGGz7hrdbM0Y0mfTu15RMYGqQMi1QNZS6GrT4vNzIayv552Fl0EFWQA7jWlctUwfYoHRHVEnCNx9YGXDiA9+yDoGlVwgTR7fjzNeS3Fen1MVIyKBF464gN0JvdiCRJMI47JGVDkPmKjcrYIvJs6y5Lg25RW4ZnBKVruS+HR2s3k8ZrV4y4RCQE4UYMKbukF9vsF+JqAEifRlPq2xLcrNdxBveVDSXS/LRHAcrZrMM+Iw4A79jl0ngWPcy+CwinAhT+3dxVo5ZWMRQFpmTkylEMDvTjV9wQ==');
-```
-
-When running a web application hosted on localhost, the component will work even if no license is given.
+> [!WARNING]
+> The JSON version contains a field called `signature`. The value of this field *looks like* the binary license. However, it cannot be
+> used separately as a license, it can only be used inside its full JSON license.

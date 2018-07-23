@@ -1,12 +1,7 @@
 ﻿# Licenciamento
 
-Para utilizar o Web PKI em aplicações web rodando fora do localhost, é preciso configurar a licença de uso do componente.
-
-> [!NOTE]
-> A licença do Web PKI não é necessária quando utilizando o Web PKI em uma aplicação web rodando no localhost (qualquer porta)
-> ou ainda quando sendo utilizado em conjunto com o Rest PKI em nuvem.
-
-Para configurar a licença, basta escolher um dos dois formatos recebidos e passar no construtor da classe `LacunaWebPKI`:
+Para utilizar o Web PKI em aplicações web rodando fora do localhost, é preciso configurar a licença de uso do componente. Para
+configurar a licença, basta escolher um dos dois formatos recebidos e passar no construtor da classe `LacunaWebPKI`:
 
 Caso prefira o formato binário:
 
@@ -21,22 +16,18 @@ Ou, se preferir o formato em JSON:
 var webPkiLicense = {
   "format": 1,
   "allowedDomains": [
-    "www.lacunasoftware.com"
+    "www.patorum.com"
   ],
   ...
 };
 var pki = new LacunaWebPKI(webPkiLicense);
 ```
 
-Para mais informações sobre a diferença entre os formatos de licença, veja a seção [Formatos de licença](#formats) abaixo.
+> [!NOTE]
+> A licença do Web PKI não é necessária quando utilizando o Web PKI em uma aplicação web rodando no localhost (qualquer porta)
+> ou ainda quando sendo utilizado em conjunto com o Rest PKI em nuvem.
 
-<a name="validation" />
-## Validação da licença
-
-O licenciamento é verificado da seguinte maneira:
-
-1. O domínio do site que contém o javascript que utiliza o Web PKI precisa estar na "lista de domínios autorizados" da licença;
-1. A data da máquina do usuário precisa ser anterior à data de expiração da licença (você pode optar por uma licença que não expira).
+Para mais informações sobre a diferença entre os formatos de licença, veja a seção abaixo.
 
 <a name="formats" />
 ## Formatos de licença
@@ -50,7 +41,7 @@ var webPkiLicense = 'ASYAanNma...Q==';
 var webPkiLicense = {
   "format": 1,
   "allowedDomains": [
-    "www.lacunasoftware.com"
+    "www.patorum.com"
   ],
   ...
 };
