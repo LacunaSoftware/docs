@@ -18,3 +18,4 @@ Próximos passos:
 * [Instalação](setup/index.md)
 * [Usando em PHP](php/index.md)
 * [Usando em Java](java/index.md)
+* [Usando em Python](python/index.md)

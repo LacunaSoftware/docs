@@ -58,7 +58,7 @@ If your project uses **Gradle**, add this to your `build.gradle`:
 
 [!include[build.gradle](../../../../includes/pki-express/java/gradle.md)]
 
-The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/PkiExpressJava). Feel free to fork it if you need to make any customizations.
+The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/PkiExpressJava). Feel free to fork it if you need to make any customizations, and even submit and *pull request*.
 
 ## See also
 

@@ -31,4 +31,4 @@ To add it to your project, add the line below to your `composer.json` file:
 
 After that, do a `composer install`  to download the package and its dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/)).
 
-The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/PkiExpressPhp). Feel free to fork it if you need to make any customizations.
+The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/PkiExpressPhp). Feel free to fork it if you need to make any customizations, and even submit an *pull request*.
