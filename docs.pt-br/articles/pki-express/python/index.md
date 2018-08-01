@@ -24,8 +24,6 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Python
 Opcionalmente, você pode criar e ativar seu "virtualenv" para evitar misturar diferentes versões de uma biblioteca:
 
 [!include[virtualenv](../../../../includes/pki-express/python/virtualenv.md)]
-    virtualenv <venv>
-    source bin/activate (on Windows: ./<venv>/Scripts/activate)
 
 ### Pacote do PyPi
 
