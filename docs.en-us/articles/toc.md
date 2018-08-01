@@ -139,7 +139,7 @@
 ### [Proxy](pki-express/config/proxy.md)
 ## [Using on PHP](pki-express/php/index.md)
 ## [Using on Java](pki-express/java/index.md)
-## [Using on Python](pki-express/python/index.md)
 ### [Signature process explained](pki-express/java/how-it-works.md)
+## [Using on Python](pki-express/python/index.md)
 ## [Changelog](pki-express/changelog.md)
 <!-- End of PKI Express -->
