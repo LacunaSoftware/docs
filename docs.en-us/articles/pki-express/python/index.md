@@ -5,7 +5,7 @@ This article describes how to use [PKI Express](../index.md) on Python
 ## Sample project
 
 The sample project shows the usage of PKI Express together with the [Web PKI](../../web-pki/index.md) browser component
-on a **Python 2.7+** project (including **Python 3**). It is hosted on GitHub:
+on a **Python** project. It is hosted on GitHub:
 
 https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Python
 
