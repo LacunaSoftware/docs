@@ -1,5 +1,23 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-17-5" />
+### 1.17.5 (2018-08-01)
+
+Database model update: No
+
+- Fixed bug on Swagger metadata
+- Improve users API
+
+
+<a name="v1-17-4" />
+### 1.17.4 (2018-07-11)
+
+Database model update: No
+
+- Fixed bug affecting operations performed with security contexts that include PKI Italy
+- Improve invoice API
+
+
 <a name="v1-17-3" />
 ### 1.17.3 (2018-05-24)
 

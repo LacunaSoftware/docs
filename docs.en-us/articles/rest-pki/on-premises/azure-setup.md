@@ -5,7 +5,7 @@ a cloud service provided by Microsoft which allows hosting web applications with
 
 To start the installation procedure, you'll need:
 
-* Rest PKI binaries package: [restpki-1.17.3-azure.zip](https://files.lacunasoftware.com/restpki/restpki-1.17.3-azure.zip)
+* Rest PKI binaries package: [restpki-1.17.5-azure.zip](https://files.lacunasoftware.com/restpki/restpki-1.17.5-azure.zip)
 * Binary license for the Lacuna PKI SDK (file LacunaPkiLicense.txt)
 
 Once you have both files, [contact us](https://www.lacunasoftware.com/en/home/purchase) for the installation procedure.
