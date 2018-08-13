@@ -14,12 +14,12 @@ Atualizações à biblioteca de Javascript:
 
 A última versão da biblioteca de Javascript é a **2.9.0**. Você pode obtê-la no link abaixo:
 
-https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.0.js
+https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.1.js
 
 Ou incluir na sua página como:
 ```html
-<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.0.js"
-  integrity="sha256-6HGuOyRqUi6AOCQHdC6/AG2Cty7d8+gtwtFXzr1oUfg="
+<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.1.js"
+  integrity="sha256-pgpM5O/qzbrJ5KU9Q5UcADYHQGojQIYreXx7sjW9PAk="
   crossorigin="anonymous"></script>
 ```
 
