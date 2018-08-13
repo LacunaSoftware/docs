@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-1-3" />
+### 2.1.3 (2018-08-13)
+
+- Add TSA optional parameter: TSA policy OID
+- Improve Name encoding policies
+- Fix archive signature finisher
+
+
 <a name="v2-1-0" />
 ### 2.1.0 (2018-07-16)
 
