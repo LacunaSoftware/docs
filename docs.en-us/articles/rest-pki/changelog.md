@@ -1,5 +1,13 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-18-0" />
+### 1.18.0 (2018-08-13)
+
+Database model update: **Yes**
+
+- Add support for configuring a TSA Policy ID on outgoing timestamp requests
+
+
 <a name="v1-17-5" />
 ### 1.17.5 (2018-08-01)
 
