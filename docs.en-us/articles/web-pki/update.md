@@ -11,7 +11,7 @@ Updating the Javascript library:
 > [!TIP]
 > All updates are guaranteed to be 100% backward compatible, so you can update the library without fear of breaking existing code
 
-The latest version of the Javascript library is **2.9.0**. You can get it on the link below:
+The latest version of the Javascript library is **2.9.1**. You can get it on the link below:
 
 https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.9.1.js
 
