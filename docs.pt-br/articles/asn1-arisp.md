@@ -1,4 +1,7 @@
-﻿# ARISP - Estruturas ASN.1
+﻿# ARISP - Estruturas ASN.1 - DRAFT
+
+> [!WARNING]
+> **Este documento é um draft**, portanto estas definições ainda não estão sujeitas a mudanças!
 
 O OID 1.3.6.1.4.1 representa o [registro de empresas privadas](https://www.iana.org/assignments/enterprise-numbers) no Internet Assigned Numbers Authority (IANA):
 
@@ -6,7 +9,7 @@ O OID 1.3.6.1.4.1 representa o [registro de empresas privadas](https://www.iana.
 id-pen-iana OBJECT IDENTIFIER ::= { 1 3 6 1 4 1 }
 ```
 
-A **Associação dos Registradores Imobiliários de São Paulo - ARISP** está registrada sob o número 43373, sendo portanto dona do OID `1.3.6.1.4.1.43373` e arco de OID correspondente:
+A **Associação dos Registradores Imobiliários de São Paulo - ARISP** está registrada sob o número **43373**, sendo portanto dona do OID `1.3.6.1.4.1.43373` e arco de OID correspondente:
 
 ```
 id-arisp OBJECT IDENTIFIER ::= { id-pen-iana 43373 }
@@ -24,7 +27,7 @@ id-arisp-cert-atts OBJECT IDENTIFIER ::= { id-arisp 1 }
 <a name="holder-photo-att" />
 ### 1.1. Atributo *FuncionarioCartorio*
 
-O OID `1.3.6.1.4.1.43373.1.1` identifica o atributo `FuncionarioCartorio`:
+O OID `1.3.6.1.4.1.43373.1.1` identifica o atributo `FuncionarioCartorioInfo`:
 
 ```
 id-arisp-funcionario-cartorio-att OBJECT IDENTIFIER ::= { id-arisp-cert-atts 1 }
