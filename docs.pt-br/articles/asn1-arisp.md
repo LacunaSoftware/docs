@@ -16,32 +16,22 @@ id-arisp OBJECT IDENTIFIER ::= { id-pen-iana 43373 }
 ```
 
 <a name="cert-atts" />
-## 1. Atributos de certificados de atributo
+## 1. Estruturas de nome (*other names*)
 
-O subarco `1.3.6.1.4.1.43373.1` é reservado para atributos a serem utilizados em certificados de atributo:
+O subarco `1.3.6.1.4.1.43373.1` é reservado para estruturas a serem utilizados na opção `OtherName` de `GeneralName`s:
 
 ```
-id-arisp-cert-atts OBJECT IDENTIFIER ::= { id-arisp 1 }
+id-arisp-names OBJECT IDENTIFIER ::= { id-arisp 1 }
 ```
 
 <a name="holder-photo-att" />
-### 1.1. Atributo *FuncionarioCartorio*
+### 1.1. Estrutura *CartorioInfo*
 
-O OID `1.3.6.1.4.1.43373.1.1` identifica o atributo `FuncionarioCartorioInfo`:
+O OID `1.3.6.1.4.1.43373.1.1` identifica a estrutura de nome `CartorioInfo` a ser utilizada na opção `OtherName` de `GeneralName`s:
 
 ```
-id-arisp-funcionario-cartorio-att OBJECT IDENTIFIER ::= { id-arisp-cert-atts 1 }
+id-arisp-cartorio-info OBJECT IDENTIFIER ::= { id-arisp-names 1 }
  
-FuncionarioCartorioInfo ::= SEQUENCE {
-    version    FuncionarioCartorioInfoVersion,
-    nome       UTF8String,
-    cpf        IA5String,
-    cargo      UTF8String,
-    cartorio   CartorioInfo
-}
-
-FuncionarioCartorioInfoVersion ::= INTEGER { v1(0) }
-
 CartorioInfo ::= SEQUENCE {
 	cns      IA5String,
 	numero   IA5String,
