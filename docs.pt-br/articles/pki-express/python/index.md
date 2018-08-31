@@ -9,10 +9,6 @@ em um projeto que utilizando **Python**. Ele encontra-se hospedado no GitHub:
 
 https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Python
 
-> [!NOTE]
-> Se você utiliza uma versão anterior do Python, por favor [fale conosco]
-(https://www.lacunasoftware.com/pt/home/purchase).
-
 ### Executando o projeto
 
 1. [Instale o PKI Express](../setup/index.md)
@@ -20,7 +16,7 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Python
 1. Em um terminal, navegue ate a pasta `Python` e execute o comando `pip install -r requirements.txt` para baixar as dependências do projeto.
 1. Defina a variável de ambiente `FLASK_APP` com o nome da aplicação que deve ser executada: `FLASK_APP=sample`
 1. Execute a aplicação web: `flask run`
-1. Acesse a URL: http://localhost:5000
+1. Acesse a URL: [http://localhost:5000](http://localhost:5000)
 
 Opcionalmente, você pode criar e ativar seu "virtualenv" para evitar misturar diferentes versões de uma biblioteca:
 
@@ -28,7 +24,7 @@ Opcionalmente, você pode criar e ativar seu "virtualenv" para evitar misturar d
 
 ### Pacote do PyPi
 
-O uso do PKI Expresse em Python deve ser feito com o pacode de PyPi [pkiexpress](https://pypi.org/project/pkiexpress)
+O uso do PKI Express em Python deve ser feito com o pacote de PyPi [pkiexpress](https://pypi.org/project/pkiexpress)
 
 Para adicioná-lo ao seu projeto, adicione a linha abaixo ao seu arquivo `requirements.txt`:
 

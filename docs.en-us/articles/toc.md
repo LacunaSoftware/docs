@@ -141,5 +141,6 @@
 ## [Using on Java](pki-express/java/index.md)
 ### [Signature process explained](pki-express/java/how-it-works.md)
 ## [Using on Python](pki-express/python/index.md)
+## [Using on Node.js](pki-express/nodejs/index.md)
 ## [Changelog](pki-express/changelog.md)
 <!-- End of PKI Express -->

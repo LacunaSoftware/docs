@@ -19,7 +19,7 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Python
 1. In a command prompt, navigate to the folder `Python` and run the command `pip install -r requirements.txt` to download the dependencies
 1. Define the `FLASK_APP` environment variable to define the name of app the should be run: `FLASK_APP=sample`
 1. Run the web application: `flask run` or `python -m flask run`
-1. Access the URL: http://localhost:5000
+1. Access the URL: [http://localhost:5000](http://localhost:5000)
 
 Optionally, you can create and activate a "virtualenv" to avoid mixing library versions:
 
