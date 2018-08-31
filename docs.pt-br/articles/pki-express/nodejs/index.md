@@ -17,7 +17,7 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/NodeJS
 1. Execute a aplicação web: `npm start`
 1. Acesse a URL: [http://localhost:3000](http://localhost:3000)
 
-> Se você utiliza [Yarn](https://yarnpkg.com), você pode executar `yarn install` ou `yarn` para **baixar as dependências e
+> Se você utiliza [Yarn](https://yarnpkg.com), você pode executar `yarn install` ou `yarn` para **baixar as dependências** e
 > `yarn start` para **executar a aplicação**.
 
 ### Pacote do NPM
