@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-7-0" />
+### 1.7.0 (2018-09-20)
+
+- Add support for timestamping (command `stamp-pdf`) on PDF files.
+
 <a name="v1-6-2" />
 ### 1.6.2 (2018-07-20)
 

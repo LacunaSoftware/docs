@@ -1,5 +1,10 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-7-0" />
+### 1.7.0 (2018-09-20)
+
+- Adiciona suporte a carimbo de tempo (comando `stamp-pdf`) em PDFs.
+
 <a name="v1-6-2" />
 ### 1.6.2 (2018-07-20)
 
