@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-8-0">
+### 1.8.0 (2018-08-25)
+
+- Adiciona suporte ao retorno do certificado do assinante depois de uma assinatura.
+- Atualiza PKI SDK para a versão 2.1.3, portanto:
+  - Adiciona opção de TSA: TSA policy OID
+  - Melhora as políticas de codificação de Name
+  - Corrige archieve signature finisher
+
 <a name="v1-7-0" />
 ### 1.7.0 (2018-09-20)
 
@@ -9,7 +18,7 @@
 ### 1.6.2 (2018-07-20)
 
 - Corrige bug na ativação manualmente com nova licença
-- Atualiza PKI SDK para a versão 1.20.16, adicionando suporte para *multi-targeting*: .NETStandard 2.0, .NETFramework 4.5 e .NETFramework 4.0
+- Atualiza PKI SDK para a versão 2.1.0, adicionando suporte para *multi-targeting*: .NETStandard 2.0, .NETFramework 4.5 e .NETFramework 4.0
 
 <a name="v1-6-1" />
 ### 1.6.1 (2018-07-11)

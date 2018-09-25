@@ -1,5 +1,14 @@
 ﻿# PKI Express changelog
 
+<a name="v1-8-0" />
+### 1.8.0 (2018-09-25)
+
+- Add support for returning the signer certificate after a signature.
+- Update PKI SDK to 2.1.3, thus:
+  - Add TSA option parameter: TSA policy OID
+  - Improve Name encoding policies
+  - Fix archieve signature finisher
+
 <a name="v1-7-0" />
 ### 1.7.0 (2018-09-20)
 
