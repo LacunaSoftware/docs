@@ -21,6 +21,7 @@ var pem = "-----BEGIN CERTIFICATE-----\nMIIFLTCCBBegAwIBAgIQAPlQfZfK+GbabULPDzWH
 
 // Carregando certificado
 var cert = PKCertificate.Decode(pem);
+// cert.GetCertificateChain()
 
 // Exibindo informações básicas
 Console.WriteLine(cert);
@@ -30,33 +31,29 @@ Console.WriteLine(cert);
 
    Titular: Pierre de Fermat
    Expira em: 20/01/2019 10:23:55 +00:00
-   Emissor: 
-      Titular: Lacuna CA
-      Expira em: 16/01/2021 19:54:21 +00:00
-      Emissor: 
-         Titular: Lacuna Root Test v1
-         Expira em: 16/01/2025 19:51:55 +00:00
-         Emissor: Lacuna Root Test v1
-.*/
+   Emissor: Lacuna CA
+ */
 ```
 
-É possível notar no output que além do certificado de teste (Pierre de Fermat) há informação da AC que emitiu o
-certificado de teste e também da raiz de teste (Lacuna Root Test v1). Isso ocorreu pois o SDK automaticamente
-completa a cadeia de certificação. Para melhor compreensão desta funcionalidade, verifique a seção a seguir:
-[Cadeia do certificado](#chain)
+É possível notar no output que além do certificado de teste (Pierre de Fermat) há somente o nome da AC que
+emitiu o certificado de teste, não mostra as informações do certicado emissor. Isso ocorre pois a cadeia de
+certificado é carregada em *lazy load*, ou seja, só será carregada no momento em que for realmente necessária.
+Para carregar o certificados, é preciso utilizar o método @Lacuna.Pki.PKCertificate.GetCertificateChain().
+O carregamento é feito dessa maneira, pelo fato da existência de certificados que não seguem os padrões já
+estabelecidos para tornar possível a construção da cadeia de forma automática.
 
-
-Nota: se, em seu ambiente, o output da execução do código de carregamente básico apresentou somente informações do
-certificado com titular Pierre de Fermat, verifique sua conexão com a internet.
+No entanto, para carregar a cadeia de certificados no momento da codificação, é necessário informar a Certificate Store
+para o método Decode(), de forma a auxiliar o SDK a construir a cadeia de certificados. Para melhor compreensão desta
+funcionalidade, verifique a seção a seguir: [Cadeia do certificate](#chain)
 
 <a name="chain" />
 ## Cadeia do certificado
 
-Ao carregar um certificado utilizando os métodos @Lacuna.Pki.PKCertificate.Decode(System.Byte[]) ou
-@Lacuna.Pki.PKCertificate.Decode(System.String), o SDK automaticamente tentará montar a cadeia do certificado através
-de recursos online como AuthorityInformationAccess, OCSP requests ou Certificate Store de ACs interno do SDK. Os
-certificados das ACs encontrados online são guardados no Certificate Store interno do SDK, oferecendo desempenho
-otimizado para próximas operações.
+Ao carregar um certificado utilizando os métodos @Lacuna.Pki.PKCertificate.Decode(System.Byte[], ICertificateStore) ou
+@Lacuna.Pki.PKCertificate.Decode(System.String, ICertificateStore), o SDK automaticamente tentará montar a cadeia do 
+certificado através de recursos online como AuthorityInformationAccess, OCSP requests, Certificate Store de ACs interno
+do SDK ou Certificate Store passado como parâmetro da função. Os certificados das ACs encontrados online são guardados no
+Certificate Store interno do SDK, oferecendo desempenho otimizado para próximas operações.
 
 A construção da cadeia é fundamental para o processo de validação de um certificado, pois esta validação também é
 realizada em seus emissores de forma recursiva. O Lacuna PKI SDK apresenta boa aderência a diferentes padrões de PKI,
