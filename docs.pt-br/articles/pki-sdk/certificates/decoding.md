@@ -48,8 +48,8 @@ funcionalidade, verifique a seção a seguir: [Cadeia do certificate](#chain)
 <a name="chain" />
 ## Cadeia do certificado
 
-Ao carregar um certificado utilizando os métodos @Lacuna.Pki.PKCertificate.Decode(System.Byte[], Lacuna.Pki.Stores.ICertificateStore) ou
-@Lacuna.Pki.PKCertificate.Decode(System.String, Lacuna.Pki.Stores.ICertificateStore), o SDK automaticamente tentará montar a cadeia do 
+Ao carregar um certificado utilizando os métodos <xref:Lacuna.Pki.PKCertificate.Decode(System.Byte[],Lacuna.Pki.Stores.ICertificateStore)> ou
+<xref:Lacuna.Pki.PKCertificate.Decode(System.String,Lacuna.Pki.Stores.ICertificateStore)>, o SDK automaticamente tentará montar a cadeia do 
 certificado através de recursos online como AuthorityInformationAccess, OCSP requests, Certificate Store de ACs interno
 do SDK ou Certificate Store passado como parâmetro da função. Os certificados das ACs encontrados online são guardados no
 Certificate Store interno do SDK, oferecendo desempenho otimizado para próximas operações.
