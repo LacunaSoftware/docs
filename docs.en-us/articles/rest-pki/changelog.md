@@ -1,11 +1,31 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-18-2" />
+### 1.18.2 (2018-09-26)
+
+Database model update: No
+
+- Fix bugs that prevented correct certificate chain loading on certain scenarios:
+  - On CAdES signatures, whenever the last link (to the root CA) could not be automatically constructed
+  - On all XML signatures
+
+
+<a name="v1-18-1" />
+### 1.18.1 (2018-09-11)
+
+Database model update: No
+
+- Improve Application Insights instrumentation
+  - Add support for specifing the AI API key, apart from the instrumentation key
+
+
 <a name="v1-18-0" />
 ### 1.18.0 (2018-08-13)
 
 Database model update: **Yes**
 
 - Add support for configuring a TSA Policy ID on outgoing timestamp requests
+- Updated PKI SDK to [2.1.3](../pki-sdk/changelog.md#v2-1-3)
 
 
 <a name="v1-17-5" />
