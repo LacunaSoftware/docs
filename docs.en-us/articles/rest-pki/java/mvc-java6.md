@@ -12,12 +12,12 @@ https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Java/spring-mvc-jav
 
 1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
 1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [Java/spring-mvc-java6/src/main/java/sample/util/Util.java](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/java/sample/util/Util.java#L22-L26)
-1. In a command prompt, navigate to the folder `Java/sample-spring-mvc` and run the command
+1. Paste your access token on the file [Java/spring-mvc-java6/src/main/resources/application.properties](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/resources/application.properties#L27-L30)
+1. In a command prompt, navigate to the folder `Java/sample-spring-java6` and run the command
    `gradlew run` (on Linux `./gradlew run`). If you are using Windows, you can alternatively
    double-click the file `Run-Sample.bat`.
 1. Once you see the message "Started Application in x.xxx seconds" (the on-screen percentage
-   will *not* reach 100%), open a web browser and go the URL [http://localhost:8080/](http://localhost:8080/)
+   will *not* reach 100%), open a web browser and go the URL http://localhost:60458
 
 ## Project map
 
@@ -132,7 +132,7 @@ Not yet available on this project.
 <a name="xml-full" />
 ### XML signature of the entire document
 
-* Controller: [FullXmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/java/sample/controller/FullXmlSignatureController.java)
+* Controller: [XmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/java/sample/controller/XmlSignatureController.java)
 * Views:
   * [xml-full-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/resources/templates/xml-full-signature.html)
   (Javascript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/resources/static/js/signature-form.js))
@@ -141,7 +141,7 @@ Not yet available on this project.
 <a name="xml-element" />
 ### XML signature of an element
 
-* Controller: [XmlElementSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/java/sample/controller/XmlElementSignatureController.java)
+* Controller: [XmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/java/sample/controller/XmlSignatureController.java)
 * Views:
   * [xml-element-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/resources/templates/xml-element-signature.html)
   (Javascript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/spring-mvc-java6/src/main/resources/static/js/signature-form.js))

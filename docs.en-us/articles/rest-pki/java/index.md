@@ -26,6 +26,45 @@ If your project uses **Maven**, add this to your `pom.xml`:
 	<dependency>
 		<groupId>com.lacunasoftware.restpki</groupId>
 		<artifactId>restpki-client</artifactId>
+		<version>1.9.2</version>
+	</dependency>
+	...
+</dependencies>
+...
+<repositories>
+	<repository>
+		<id>lacuna.repository</id>
+		<name>lacuna repository</name>
+		<url>http://dl.bintray.com/lacunasoftware/maven</url>
+	</repository>
+</repositories>
+```
+
+If your project uses **Gradle**, add this to your `build.gradle`:
+
+```
+repositories {
+	mavenCentral()
+	maven {
+		url  "http://dl.bintray.com/lacunasoftware/maven" 
+	}
+} 
+
+dependencies {
+	compile("com.lacunasoftware.restpki:restpki-client:1.9.2")
+}
+```
+
+### Referencing the package (Java 6)
+
+If your project uses **Maven**, add this to your `pom.xml`:
+
+```xml
+<dependencies>
+	...
+	<dependency>
+		<groupId>com.lacunasoftware.restpki</groupId>
+		<artifactId>restpki-client-java6</artifactId>
 		<version>1.9.0</version>
 	</dependency>
 	...
@@ -51,46 +90,7 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client:1.9.0")
-}
-```
-
-### Referencing the package (Java 6)
-
-If your project uses **Maven**, add this to your `pom.xml`:
-
-```xml
-<dependencies>
-	...
-	<dependency>
-		<groupId>com.lacunasoftware.restpki</groupId>
-		<artifactId>restpki-client-java6</artifactId>
-		<version>1.8.1</version>
-	</dependency>
-	...
-</dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
-```
-
-If your project uses **Gradle**, add this to your `build.gradle`:
-
-```
-repositories {
-	mavenCentral()
-	maven {
-		url  "http://dl.bintray.com/lacunasoftware/maven" 
-	}
-} 
-
-dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client-java6:1.8.1")
+	compile("com.lacunasoftware.restpki:restpki-client-java6:1.9.0")
 }
 ```
 
