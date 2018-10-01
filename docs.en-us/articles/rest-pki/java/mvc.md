@@ -9,7 +9,7 @@ https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Java/sample-spring-
 
 1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
 1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [Java/sample-spring-mvc/src/main/java/sample/util/Util.java](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/util/Util.java#L24-L28)
+1. Paste your access token on the file [Java/sample-spring-mvc/src/main/resources/application.properties](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/application.properties#L27-L30)
 1. In a command prompt, navigate to the folder `Java/sample-spring-mvc` and run the command
    `gradlew run` (on Linux `./gradlew run`). If you are using Windows, you can alternatively
    double-click the file `Run-Sample.bat`.
