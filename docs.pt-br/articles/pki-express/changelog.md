@@ -1,6 +1,12 @@
 ﻿# Histórico de versões do PKI Express
 
-<a name="v1-8-0">
+<a name="v1-9.0" />
+### 1.9.0 (2018-10-05)
+
+- Adiciona suporte a fusão de assinaturas CMS/CAdES (comando `merge-cms`).
+- Melhora validação de assinaturas PAdES e CAdES para suportar políticas com carimbo de tempo.
+
+<a name="v1-8-0" />
 ### 1.8.0 (2018-08-25)
 
 - Adiciona suporte ao retorno do certificado do assinante depois de uma assinatura.

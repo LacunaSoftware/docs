@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-9-0" />
+### 1.9.0 (2018-10-05)
+
+- Add support for merging CMS/CAdES signatures (command `merge-cms`).
+- Improve PAdES and CAdES signatures validation to support policies with timestamp.
+
 <a name="v1-8-0" />
 ### 1.8.0 (2018-09-25)
 
