@@ -7,7 +7,7 @@
 - Melhora validação de assinaturas PAdES e CAdES para suportar políticas com carimbo de tempo.
 
 <a name="v1-8-0" />
-### 1.8.0 (2018-08-25)
+### 1.8.0 (2018-09-25)
 
 - Adiciona suporte ao retorno do certificado do assinante depois de uma assinatura.
 - Atualiza PKI SDK para a versão 2.1.3, portanto:
