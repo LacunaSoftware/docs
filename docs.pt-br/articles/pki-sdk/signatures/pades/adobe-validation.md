@@ -8,3 +8,12 @@ Geralmente orientamos os usuários a configurarem seus leitores para aceitar tam
 Windows. O link abaixo contém um passo-a-passo de como fazer essa configuração:
 
 [Configuring Adobe Reader to trust Windows roots for signature validation](https://docs.lacunasoftware.com/en-us/content/configuring-windows-roots-on-adobe-reader/)
+
+Caso queira distribuir essa configuração via *Group Policy Object* (GPO), a alteração necessária no *Registry* é a seguinte:
+
+```
+[HKEY_CURRENT_USER\Software\Adobe\Acrobat Reader\DC\Security\cASPKI\cMSCAPI_DirectoryProvider]
+"iMSStoreTrusted"=dword:00000060
+```
+
+[Clique aqui](https://docs.lacunasoftware.com/en-us/content/enable-adobe-trust-on-windows-roots.zip) para obter um arquivo .reg que realiza a alteração acima.
