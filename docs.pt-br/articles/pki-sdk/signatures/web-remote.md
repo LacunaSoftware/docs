@@ -105,7 +105,7 @@ signer.SetPreComputedSignature(signature, transData);  // Define a assinatura re
 signer.SetPolicy(policy);
 signer.ComputeSignature();
 
-byte[] signedPdf = signer.GetPdfBytes();
+byte[] signedPdf = signer.GetPadesSignature();
 //-----------------------------------------------------------------------
 ```
 
