@@ -1,5 +1,14 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-2-2" />
+### 2.2.2 (2018-10-17)
+
+- Add functional PAdES signer reason
+- Add FIPS compliant digest algorithms on .NETFramework 4.0 Client target
+- Add Role attribute for Attribute Certificates
+- Fix PDF marks rotation bug
+
+
 <a name="v2-1-3" />
 ### 2.1.3 (2018-08-13)
 
