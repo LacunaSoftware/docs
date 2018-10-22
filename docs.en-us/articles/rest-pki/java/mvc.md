@@ -73,7 +73,8 @@ The relevant code is on the class [PadesVisualElements](https://github.com/Lacun
 <a name="pades-server" />
 ### PAdES signature using server key
 
-Not yet available on this project.
+* Controller: [PadesSignatureServerKeyController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/PadesSignatureServerKeyController.java)
+* View: [pades-signature-server-key.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/pades-signature-server-key.html)
 
 <a name="pades-wo-client" />
 ### PAdES signature without client communication
@@ -89,7 +90,8 @@ Not yet available on this project.
 <a name="print" />
 ### Printer-friendly version
 
-Not yet available on this project.
+After the control flow of the sample [PAdES signature with already on server](#pades) is completed and the link *Download a 
+printer-friendly version of the signed file* is clicked, the flow goes to the controller [PrinterFriendlyVersionController.java](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/PrinterFriendlyVersionController.java) with the URL parameter `fileId` filled.
 
 <a name="cades" />
 ### CAdES signature with file already on server
@@ -118,7 +120,8 @@ same control flow is repeated, but now with the URL parameter `cmsfile` filled.
 <a name="cades-server" />
 ### CAdES signature using server key
 
-Not yet available on this project.
+* Controller: [CadesSignatureServerKeyController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/CadesSignatureServerKeyController.java)
+* View: [cades-signature-server-key.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/cades-signature-server-key.html)
 
 <a name="open-cades" />
 ### Open/validate an existing CAdES signature
