@@ -1,4 +1,4 @@
-﻿# Recover administrator password - Rest PKI
+﻿# Recover admin password - Rest PKI
 
 If you lose the password for the *Admin* user, configured during the setup of your
 [*on premises*](index.md) instance of [Rest PKI](../index.md), execute the following query on the

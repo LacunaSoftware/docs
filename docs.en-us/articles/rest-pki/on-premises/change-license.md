@@ -1,21 +1,21 @@
-﻿# Alterando a licença de uso - Rest PKI
+﻿# Change license - Rest PKI
 
-Para utilizar uma instância [*on premises*](index.md) do [Rest PKI](../index.md), é necessária uma licença
-de uso do Lacuna PKI SDK, a qual é solicitada durante o processo de instalação.
+In order to run an [*on premises*](index.md) instance of [Rest PKI](../index.md), you need a license for the
+Lacuna PKI SDK, which is configured during the setup procedure.
 
-Caso seja necessário futuramente alterar a licença sendo utilizada, siga os passos abaixo:
+If you need to change the license afterwards, follow the steps below:
 
-1. Autentique-se como administrador na sua instância do Rest PKI (caso não saiba a senha, veja o artigo [Recuperação de senha de administrador](admin-recover.md))
-1. No menu superior, clique em **Administração** &gt; **Status do sistema**
-1. No item **SDK license loaded**, clique no botão **Alterar**
-1. Localize no arquivo **LacunaPkiLicense.txt** a licença binária do PKI SDK, na seção "Binary license content (Base64-encoded)"
+1. Sign in as administrator on your instance of Rest PKI (if you have lost the password, see the article [Recover administrator password](admin-recover.md))
+1. On the top menu, click on **Administration** &gt; **System status**
+1. On the item **SDK license loaded**, click on the button **Change**
+1. Locate on the file **LacunaPkiLicense.txt** the binary license, under the section "Binary license content (Base64-encoded)"
    ```
    Binary license content (Base64-encoded)
    ---------------------------------------
    
-   AxAA..............iw==
-   ^^^^^^^^^^^^^^^^^^^^^^
+   AxAA........................................iw==
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    ```
-1. Copie e cole o conteúdo da linha inteira, em seguida clique no botão **Configurar licença**
+1. Copy and paste the entire line, and then click on **Configure license**
 
 ![Image name](../../../../images/rest-pki/sdk-license.png)

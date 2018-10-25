@@ -1,4 +1,4 @@
-﻿# Recuperação de senha de administrador - Rest PKI
+﻿# Recuperação de senha de admin - Rest PKI
 
 Caso tenha esquecido a senha do usuário *Admin*, criado durante o processo de instalação da sua instância
 [*on premises*](index.md) do [Rest PKI](../index.md), execute no banco de dados o comando SQL abaixo
