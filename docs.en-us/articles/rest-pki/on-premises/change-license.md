@@ -16,6 +16,6 @@ If you need to change the license afterwards, follow the steps below:
    AxAA........................................iw==
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    ```
-1. Copy and paste the entire line, and then click on **Configure license**
+1. Copy and paste **the entire line**, and then click on **Configure license**
 
 ![Image name](../../../../images/rest-pki/sdk-license.png)

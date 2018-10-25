@@ -16,6 +16,6 @@ Caso seja necessário futuramente alterar a licença sendo utilizada, siga os pa
    AxAA........................................iw==
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    ```
-1. Copie e cole o conteúdo da linha inteira, em seguida clique no botão **Configurar licença**
+1. Copie e cole **a linha inteira**, em seguida clique no botão **Configurar licença**
 
 ![Image name](../../../../images/rest-pki/sdk-license.png)
