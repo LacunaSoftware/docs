@@ -1,5 +1,17 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-18-3" />
+### 1.18.3 (2018-10-23)
+
+Database model update: No
+
+- Add support for the XML signature standard *Certificación de Origen Digital* (COD),
+  from *Asociación Latinoamericana de Integración* (ALADI). For more information, see standard in
+  [Spanish](http://www.aladi.org/nsfweb/Documentos/2327Rev2.pdf) or in
+  [Portuguese](http://www.mdic.gov.br/images/REPOSITORIO/secex/deint/coreo/2014_09_19_-_Brasaladi_761_-_Documento_ALADI_SEC__di_2327__Rev_2_al_port_.pdf)
+- Update PKI SDK to [2.2.2](../pki-sdk/changelog.md#v2-2-2), thus fixing bug on PDF marks rotation
+
+
 <a name="v1-18-2" />
 ### 1.18.2 (2018-09-26)
 
@@ -25,7 +37,7 @@ Database model update: No
 Database model update: **Yes**
 
 - Add support for configuring a TSA Policy ID on outgoing timestamp requests
-- Updated PKI SDK to [2.1.3](../pki-sdk/changelog.md#v2-1-3)
+- Update PKI SDK to [2.1.3](../pki-sdk/changelog.md#v2-1-3)
 
 
 <a name="v1-17-5" />
