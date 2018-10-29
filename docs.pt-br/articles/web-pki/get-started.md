@@ -12,11 +12,11 @@ Pronto, você já pode começar.
 
 ## Codificando as primeiras linhas
 
-Primeiro, inclua na sua página o arquivo [lacuna-web-pki.js](https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.11.0.js) mais recente:
+Primeiro, inclua na sua página o arquivo [lacuna-web-pki.js](https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.11.1.js) mais recente:
 
 ```html
-<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.11.0.js"
-  integrity="sha256-UE+cv2P2Hsw+GG5jfCUMxV8ZjCDucM4sZXfPqlEc7C0="
+<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.11.1.js"
+  integrity="sha256-2X4INwwHyIDt2nT+XrbKgjYQfXlOO+b2luyo8G59DPE="
   crossorigin="anonymous"></script>
 ```
 
