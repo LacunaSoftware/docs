@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-2-3" />
+### 2.2.3 (2018-11-01)
+
+- Improve memory usage on PAdES signatures
+- Add invalid CAdES signature file exception
+
+
 <a name="v2-2-2" />
 ### 2.2.2 (2018-10-17)
 
