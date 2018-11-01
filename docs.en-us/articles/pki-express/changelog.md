@@ -1,5 +1,12 @@
 ﻿# PKI Express changelog
 
+<a name="v1-10-0" />
+### 1.10.0 (2018-10-31)
+
+- Add support for setting culture and timezone with `--culture` and `--timezone` enabled on the signatures
+- Add support for setting date time format on PAdES visual representation
+- Add support for listing available timezones on the system (command `list-timezones`)
+
 <a name="v1-9-0" />
 ### 1.9.0 (2018-10-05)
 

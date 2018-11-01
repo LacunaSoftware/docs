@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-10-0" />
+### 1.10.0 (2018-10-31)
+
+- Adiciona suporte a configuração da cultura e do fuso horário com `--culture` e `--timezone` habilitado nas assinaturas
+- Adiciona suporte a configuração do formato de data e hora na representação visual da assinatura PAdES
+- Adiciona suporte a listar todos os timezones disponíveis no sistema (comando `list-timezones`)
+
 <a name="v1-9.0" />
 ### 1.9.0 (2018-10-05)
 
