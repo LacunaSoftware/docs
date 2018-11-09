@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-2-4" />
+### 2.2.4 (2018-11-09)
+
+- Fix CadesSigner quick certificate validation with more permisssive configurator
+
+
 <a name="v2-2-3" />
 ### 2.2.3 (2018-11-01)
 
