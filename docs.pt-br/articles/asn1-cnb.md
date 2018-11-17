@@ -9,7 +9,7 @@ O OID 1.3.6.1.4.1 representa o [registro de empresas privadas](https://www.iana.
 id-pen-iana OBJECT IDENTIFIER ::= { 1 3 6 1 4 1 }
 ```
 
-O **Colégio Notarial do Brasil - CNB** está registrada sob o número **51928**, sendo portanto dono do OID `1.3.6.1.4.1.51928` e arco de OID correspondente:
+O **Colégio Notarial do Brasil - CNB** está registrado sob o número **51928**, sendo portanto dono do OID `1.3.6.1.4.1.51928` e arco de OID correspondente:
 
 ```
 id-cnb OBJECT IDENTIFIER ::= { id-pen-iana 51928 }
