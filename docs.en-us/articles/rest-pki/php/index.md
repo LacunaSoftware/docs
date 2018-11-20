@@ -39,7 +39,7 @@ To add it to your project, put this on your `composer.json` file:
 ```json
 {
     "require": {
-        "lacuna/restpki-client-legacy": "^1.0.0"
+        "lacuna/restpki-client-legacy": "^1.1.0"
     }
 }
 ```
