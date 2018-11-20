@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-2-5" />
+### 2.2.5 (2018-11-20)
+
+- Improve PAdES validation with DSS OCSP stored
+- Improve Name fields generation order
+- Improve self-signed certificate generation
+
+
 <a name="v2-2-4" />
 ### 2.2.4 (2018-11-09)
 
