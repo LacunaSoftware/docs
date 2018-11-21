@@ -12,7 +12,7 @@ Follow these guidelines to create a new article:
 1. Alter the `toc.md` **from both projects** including the article
 
 > [!TIP]
-> An easy way to ensure that the new article has UTF-8 BOM encoding is to copy an existing article instead of creating a new file
+> An easy way to ensure that the new article has UTF-8 BOM encoding is to copy an existing article instead of creating a new file.
 
 You don't need to write both versions of the article right away, you can write one of the versions and put this on the other one:
 
