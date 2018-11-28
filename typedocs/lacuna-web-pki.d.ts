@@ -285,6 +285,7 @@ export declare class LacunaWebPKI {
 	 * });
 	 * ```
 	 *
+	 * JSFiddle live example: [Sign Hash Batch](https://jsfiddle.net/LacunaSoftware/1car2yjz)
 	 */
 	signHashBatch(args: {
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
