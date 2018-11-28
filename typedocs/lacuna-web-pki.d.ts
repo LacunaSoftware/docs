@@ -293,7 +293,7 @@ export declare class LacunaWebPKI {
 		batch: string[],
 		/** The digest algorithm identifier of the hashes on `batch` parameter. It can be the algorithm name or OID (i.e. `'SHA-256'` or `'2.16.840.1.101.3.4.2.1'`). */
 		digestAlgorithm: string
-	}): Promise<string>;
+	}): Promise<SignHashBatchResponse>;
 
 	/**************************************************************
 	 * Executes a document signature with Rest PKI (server-side) integration. See [Rest PKI documentation](https://docs.lacunasoftware.com/articles/rest-pki/) for more informations.
@@ -1448,6 +1448,11 @@ export interface ShowFolderBrowserResponse {
 	userCancelled: boolean,
 	/** An Id handle for future references to the selected folder. In order to comply to user privacy policies, user paths are **never** returned to the page. All paths are handled inside extension or addon logic and this `Id` is returned instead. */
 	folderId: string
+}
+
+export interface SignHashBatchResponse {
+	/** A Base64 encoded signatures array. */
+	signatures: string[]
 }
 
 // Visual Representation Types
