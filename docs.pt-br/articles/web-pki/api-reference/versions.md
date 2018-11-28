@@ -18,6 +18,14 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-5" />
+### 1.5 (2018-11-27)
+
+- Adiciona comando mais eficiente de assinatura de lote: [`signHashBatch`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signhashbatch)
+- Adiciona licença v3
+- Adiciona integração com _mobile_
+
+
 <a name="v1-4-1" />
 ### 1.4.1 (2018-06-15)
 

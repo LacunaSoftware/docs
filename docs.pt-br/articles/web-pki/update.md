@@ -12,14 +12,14 @@ Atualizações à biblioteca de Javascript:
 > Todas as atualizações são 100% retrocompatíveis, de modo que você pode atualizar a biblioteca sem
 > perigo de causar problemas à sua aplicação web existente
 
-A última versão da biblioteca de Javascript é a **2.11.1**. Você pode obtê-la no link abaixo:
+A última versão da biblioteca de Javascript é a **2.12.0**. Você pode obtê-la no link abaixo:
 
-https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.11.1.js
+https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.12.0.js
 
 Ou incluir na sua página como:
 ```html
-<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.11.1.js"
-  integrity="sha256-2X4INwwHyIDt2nT+XrbKgjYQfXlOO+b2luyo8G59DPE="
+<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.12.0.min.js"
+  integrity="sha256-jDF8LDaAvViVZ7JJAdzDVGgY2BhjOUQ9py+av84PVFA="
   crossorigin="anonymous"></script>
 ```
 

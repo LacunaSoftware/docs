@@ -264,6 +264,38 @@ export declare class LacunaWebPKI {
 	}): Promise<string>;
 
 	/**************************************************************
+	 * Signs a batch of hashes with signer certificate private key.
+	 *
+	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives the (Base64 encoded) signature bytes array.
+	 *
+	 * Usage example (JavaScript)
+	 * ```javascript
+	 * var batch = [
+	 *     'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk=', // Base64 encoded SHA-256 of 'Hello World!'
+	 *     'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk=',
+	 *     'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk='
+	 * ];
+	 *
+	 * pki.signHashBatch({
+	 *     thumbprint: $('#certificateSelect').val(),
+	 *     batch: batch,
+	 *     digestAlgorithm: 'SHA-256'
+	 * }).success(function (signatures) {
+	 *     // Use signatures array
+	 * });
+	 * ```
+	 *
+	 */
+	signHashBatch(args: {
+		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
+		thumbprint: string,
+		/** The Array of Base64 encoded hashes to be signed. */
+		batch: string[],
+		/** The digest algorithm identifier of the hashes on `batch` parameter. It can be the algorithm name or OID (i.e. `'SHA-256'` or `'2.16.840.1.101.3.4.2.1'`). */
+		digestAlgorithm: string
+	}): Promise<string>;
+
+	/**************************************************************
 	 * Executes a document signature with Rest PKI (server-side) integration. See [Rest PKI documentation](https://docs.lacunasoftware.com/articles/rest-pki/) for more informations.
 	 *
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives the current signature process `token`.
@@ -782,7 +814,9 @@ export namespace LacunaWebPKI {
 		v1_1 = '1.1',
 		v1_2 = '1.2',
 		v1_3 = '1.3',
-		v1_4 = '1.4'
+		v1_4 = '1.4',
+		v1_4_1 = '1.4.1',
+		v1_5 = '1.5'
 	}
 
 	export const enum HttpMethods {
@@ -1005,7 +1039,12 @@ export namespace LacunaWebPKI {
 		/** Certificate key not found. Please check if the selected certificate smart-card or USB token is connected to your computer or remove and insert it again. */
 		CSP_KEYSET_NOT_DEFINED         = 'csp_keyset_not_defined',
 		CSP_INVALID_ALGORITHM          = 'csp_invalid_algorithm',
-		CSP_INVALID_PROVIDER_TYPE      = 'csp_invalid_provider_type'
+		CSP_INVALID_PROVIDER_TYPE      = 'csp_invalid_provider_type',
+		MOBILE_TIMEOUT                 = 'mobile_timeout',
+		MOBILE_NOT_AUTHORIZED          = 'mobile_not_authorized',
+		MOBILE_SEND_MESSAGE            = 'mobile_send_message',
+		COMMAND_DECRYPT_ERROR          = 'command_decrypt_error',
+		BLOCKED_DOMAIN                 = 'blocked_domain'
 	}
 
 }
@@ -1105,6 +1144,8 @@ export interface CertificateModel {
 	subjectName: string,
 	/** The Common Name (CN) part of the certificate's issuer name field. */
 	issuerName: string,
+	/** `true` if the certificate is stored on Web PKI mobile app. `null` or `false` otherwise. */
+	isRemote?: boolean,
 	/** The subject e-mail address. */
 	email: string,
 	/** The SHA-256 thumbprint (Base64 encoded) of the certificate's DER encoding. Used to reference the certificate on subsequent calls. */

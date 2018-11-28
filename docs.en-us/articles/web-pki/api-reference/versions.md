@@ -18,6 +18,14 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 <a name="changelog" />
 ## API changelog
 
+<a name="v1-5" />
+### 1.5 (2018-11-27)
+
+- Add more efficient batch signature command: [`signHashBatch`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#signhashbatch)
+- Add license v3
+- Add mobile integration
+
+
 <a name="v1-4-1" />
 ### 1.4.1 (2018-06-15)
 
