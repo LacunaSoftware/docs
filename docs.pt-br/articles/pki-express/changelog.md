@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-11-0" />
+### 1.11.0 (2018-12-04)
+
+- Adiciona suporte a geração de chave (command `gen-key`)
+- Adiciona suporte a geração de certificado PKCS #12 (command `create-pfx`)
+
 <a name="v1-10-0" />
 ### 1.10.0 (2018-10-31)
 

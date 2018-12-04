@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-11-0" />
+### 1.11.0 (2018-12-04)
+
+- Add support for key generation (command `gen-key`)
+- Add support for PKCS #12 certificate generation (command `create-pfx`)
+
 <a name="v1-10-0" />
 ### 1.10.0 (2018-10-31)
 
