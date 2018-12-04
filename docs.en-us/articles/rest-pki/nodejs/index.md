@@ -15,7 +15,7 @@ To add it to your project, put this on your `package.json` file:
 ```json
 {
     "dependencies": {
-        "restpki-client": "1.0.0"
+        "restpki-client": "1.0.1"
     }
 }
 ```
