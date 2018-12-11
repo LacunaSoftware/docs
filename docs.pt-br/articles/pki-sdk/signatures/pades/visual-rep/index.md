@@ -129,7 +129,7 @@ var signatureVisualRep = new PadesVisualAutoPositioning() {
             Bottom = 2.00,                           // Distância da margem inferior = 2.00cm
             Top = 8.00                               // Distância da margem superior = 8.00cm
         },
-        SignatureRectangleSize = new PadesSize(7, 3) // Tamanho de cada retângulo de assinatura (largura x altura),
+        SignatureRectangleSize = new PadesSize(7, 3), // Tamanho de cada retângulo de assinatura (largura x altura),
         RowSpacing = 1                               // 1.00cm de espaçamento entre linhas
     },
     Text = ...,
