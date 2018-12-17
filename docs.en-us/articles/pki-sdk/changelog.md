@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-2-6" />
+### 2.2.6 (2018-12-17)
+
+- Fix Name generation with special characters support
+
+
 <a name="v2-2-5" />
 ### 2.2.5 (2018-11-20)
 
