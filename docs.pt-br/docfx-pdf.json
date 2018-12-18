@@ -93,19 +93,26 @@
 				"files": [
 					"api/**.yml",
 					"api/index.md"
+				],
+				"exclude": [
+					"**/toc.md",
+					"**/toc.yml"
 				]
 			},
 			{
 				"files": [
 					"articles/**.md",
-					"articles/**/toc.yml",
-					"toc.yml",
 					"*.md"
 				],
 				"exclude": [
 					"obj/**",
-					"_site/**"
+					"_site/**",
+					"**/toc.md",
+					"**/toc.yml"
 				]
+			},
+			{
+				"files": "articles/toc.md"
 			}
 		],
 		"resource": [
