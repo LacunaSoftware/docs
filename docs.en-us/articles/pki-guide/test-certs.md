@@ -8,7 +8,7 @@ use one of the certificates in our test PKI.
 
 <br />
 <center>
-[Download test certificates](https://docs.lacunasoftware.com/en-us/content/test-certs.zip)
+**[Download test certificates](https://docs.lacunasoftware.com/en-us/content/test-certs.zip)**
 </center>
 <br />
 

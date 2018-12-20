@@ -8,7 +8,7 @@ utilizar um dos certificados para testes da ICP de testes da Lacuna Software.
 
 <br />
 <center>
-[Baixar certificados para testes](https://docs.lacunasoftware.com/pt-br/content/test-certs.zip)
+**[Baixar certificados para testes](https://docs.lacunasoftware.com/pt-br/content/test-certs.zip)**
 </center>
 <br />
 
