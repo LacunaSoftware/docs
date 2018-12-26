@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-2-7" />
+### 2.2.7 (2018-12-26)
+
+- Improve Pdf Marks with owner restrictions
+
+
 <a name="v2-2-6" />
 ### 2.2.6 (2018-12-17)
 
