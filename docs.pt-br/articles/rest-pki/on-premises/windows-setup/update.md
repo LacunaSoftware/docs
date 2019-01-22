@@ -5,7 +5,7 @@ Para atualizar a sua instância do [Rest PKI](../../index.md), siga as instruç�
 > [!TIP]
 > Antes de começar, verifique a [configuração de atualizações do banco de dados](../database-update.md) do sistema.
 
-1. Tire um backup do banco de dados e da pasta do site
+1. Crie um backup do banco de dados e da pasta do site
 1. Extraia o conteúdo do novo pacote do Rest PKI ([restpki-1.18.3.zip](https://files.lacunasoftware.com/restpki/restpki-1.18.3.zip)) para a pasta do site, sobrescrevendo todos os arquivos
 1. Acesse o site
 
