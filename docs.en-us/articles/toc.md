@@ -9,6 +9,7 @@
 ### [Web local signatures](pki-guide/web-signatures/local.md)
 ## [Server signatures](pki-guide/server-signatures.md)
 ## [Certificate authentication](pki-guide/cert-auth.md)
+## [Test certificates](pki-guide/test-certs.md)
 <!-- End of PKI Products Guide -->
 
 <!-- Start of Web PKI -->
