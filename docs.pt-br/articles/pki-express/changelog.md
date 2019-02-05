@@ -1,10 +1,28 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-12-0" />
+### 1.12.0 (2019-02-05)
+
+- Adiciona suporte as políticas ICP-Brasil em assinaturas PAdES (políticas `adrb`, `adrb-ltv`, e `adrt`)
+- Atualiza PKI SDK a versão 2.2.7, portanto:
+  - Adiciona razão funcional do assinante PAdES
+  - Adiciona algoritmos de digest compatíveis com FIPS em .NETFramework 4.0 Client target
+  - Adiciona atributo "Cargo" em certificados de atributo
+  - Corrige bug na rotação de PDF marks
+  - Melhora o uso da memória em assinaturas PAdES
+  - Adiciona a exceção para arquivos de assinaturas CAdES inválidas
+  - Corrige a verificação rápida de um CadesSigner com um configurador mais permissivo
+  - Melhora a validação de assinatura PAdES com DSS OCSP armazenado
+  - Melhora ordem de geração de campos "Name"
+  - Melhora a geração de certificados auto-assinados
+  - Corrige suporte a geração de Names com caracteres especiais
+  - Melhora as marcas de PDF quando tem restrições de proprietário do documento
+
 <a name="v1-11-0" />
 ### 1.11.0 (2018-12-04)
 
-- Adiciona suporte a geração de chave (command `gen-key`)
-- Adiciona suporte a geração de certificado PKCS #12 (command `create-pfx`)
+- Adiciona suporte a geração de chave (comando `gen-key`)
+- Adiciona suporte a geração de certificado PKCS #12 (comando `create-pfx`)
 
 <a name="v1-10-0" />
 ### 1.10.0 (2018-10-31)

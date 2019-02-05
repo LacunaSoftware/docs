@@ -1,5 +1,23 @@
 ﻿# PKI Express changelog
 
+<a name="v1-12-0" />
+### 1.12.0 (2019-02-05)
+
+- Add support to PKI-Brazil policies on PAdES signatures (policies `adrb`, `adrb-ltv`, and `adrt`)
+- Update PKI SDK to 2.2.7, thus:
+  - Add functional PAdES signer reason
+  - Add FIPS compliant digest algorithms on .NETFramework 4.0 Client target
+  - Add Role attribute for Attribute Certificates
+  - Fix PDF marks rotation bug
+  - Improve memory usage on PAdES signatures
+  - Add invalid CAdES signature file exception
+  - Fix CadesSigner quick certificate validation with more permissive configurator
+  - Improve PAdES validation with DSS OCSP stored
+  - Improve Name fields generation order
+  - Improve self-signed certificate generation
+  - Fix Name generation with special characters support
+  - Improve PDF marks with owner restrictions
+
 <a name="v1-11-0" />
 ### 1.11.0 (2018-12-04)
 

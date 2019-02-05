@@ -1,1 +1,1 @@
-﻿[pkie-1.11.0-x64.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-1.11.0-x64.zip)
+﻿[pkie-1.12.0-x64.zip](https://files.lacunasoftware.com/pki-express/windows/pkie-1.12.0-x64.zip)
