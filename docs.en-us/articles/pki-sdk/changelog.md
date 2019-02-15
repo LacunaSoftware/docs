@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-2-8" />
+### 2.2.8 (2019-02-15)
+
+- Improve CadesSigner validation configurator
+
+
 <a name="v2-2-7" />
 ### 2.2.7 (2018-12-26)
 
