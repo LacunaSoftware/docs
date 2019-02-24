@@ -1,5 +1,14 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-3-0" />
+### 2.3.0 (2019-02-22)
+
+- Add support for Elliptic-curve certificates validation
+- Add support for Elliptic-curve certificates generation
+- Improve access to validation artifacts
+- Fix email regex validation
+
+
 <a name="v2-2-8" />
 ### 2.2.8 (2019-02-15)
 
