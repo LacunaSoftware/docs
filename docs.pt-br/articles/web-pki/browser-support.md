@@ -12,4 +12,4 @@ Versões dos sistemas suportados:
 
 * Windows 7+
 * Linux (distribuições baseadas em Debian, RedHat e Slackware)
-* Mac OS X 10.9+
+* Mac OS X 10.12+
