@@ -1,3 +1,3 @@
 ```
-pkiexpress==1.3.2
+pkiexpress==1.4.1
 ```
