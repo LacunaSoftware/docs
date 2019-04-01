@@ -1,1 +1,1 @@
-﻿[pkie-1.12.0-x64.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-1.12.0-x64.msi)
+﻿[pkie-1.12.2-x64.msi](https://files.lacunasoftware.com/pki-express/windows/pkie-1.12.2-x64.msi)

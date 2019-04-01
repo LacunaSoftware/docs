@@ -1,11 +1,23 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-12-2" />
+### 1.12.2 (2019-04-01)
+
+- Adiciona suporte a configuração de timeout no download de CRLs e certificados emissores de AC
+- Adiciona suporte a configuração de timeout na requisição de um timestamp
+- Atualiza PKI SDK para a versão 2.3.0, portanto:
+  - Melhora o configurador da validação do CadesSigner
+  - Adiciona suporte a validação de certificados de curva elíptica
+  - Adiciona suporte a geração de certificados de curva elíptica
+  - Melhora acesso a validação de artefatos
+  - Corrige validação de emails com expressão regular
+
 <a name="v1-12-0" />
 ### 1.12.0 (2019-02-05)
 
 - Adiciona suporte as políticas ICP-Brasil em assinaturas PAdES (políticas `adrb`, `adrb-ltv`, e `adrt`)
-- Atualiza PKI SDK a versão 2.2.7, portanto:
-  - Adiciona razão funcional do assinante PAdES
+- Atualiza PKI SDK para a versão 2.2.7, portanto:
+  - Adiciona razão do assinante PAdES
   - Adiciona algoritmos de digest compatíveis com FIPS em .NETFramework 4.0 Client target
   - Adiciona atributo "Cargo" em certificados de atributo
   - Corrige bug na rotação de PDF marks

@@ -1,5 +1,17 @@
 ﻿# PKI Express changelog
 
+<a name="v1-12-2" />
+### 1.12.2 (2019-04-01)
+
+- Add support to timeout configuration for CRLs and CA issuers download
+- Add support to timeout configuration for timestamp request
+- Update PKI SDK to 2.3.0, thus:
+  - Improve CadesSigner validation configurator
+  - Add support for Elliptic-curve certificates validation
+  - Add support for Elliptic-curve certificates generation
+  - Improve access to validation artifacts
+  - Fix email regex validation
+
 <a name="v1-12-0" />
 ### 1.12.0 (2019-02-05)
 
