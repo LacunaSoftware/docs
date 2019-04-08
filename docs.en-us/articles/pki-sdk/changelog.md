@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-4-0" />
+### 2.4.0 (2019-04-08)
+
+- Add LAPP support
+- Add objects PEM encoder
+- Improve access to validation artifacts
+
+
 <a name="v2-3-0" />
 ### 2.3.0 (2019-02-22)
 
