@@ -4,7 +4,7 @@ If you need test certificates to use in a development or staging environment, yo
 use one of the certificates in our test PKI.
 
 > [!WARNING]
-> The Lacuna Test PKI should never be trusted in a production environment
+> The Lacuna Test PKI should never be trusted in a production environment!
 
 <br />
 <center>
