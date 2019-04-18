@@ -4,7 +4,7 @@ Se você não tiver um certificado ICP-Brasil para testar nossos produtos, você
 utilizar um dos certificados para testes da ICP de testes da Lacuna Software.
 
 > [!WARNING]
-> A ICP de testes da Lacuna Software nunca deve ser aceita em ambiente de produção
+> A ICP de testes da Lacuna Software nunca deve ser aceita em ambiente de produção!
 
 <br />
 <center>
