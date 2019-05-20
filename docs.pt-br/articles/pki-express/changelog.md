@@ -1,5 +1,10 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-12-3" />
+### 1.12.3 (2019-05-20)
+
+- Mudanças na compilação
+
 <a name="v1-12-2" />
 ### 1.12.2 (2019-04-01)
 

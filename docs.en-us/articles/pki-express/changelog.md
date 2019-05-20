@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-12-3" />
+### 1.12.3 (2019-05-20)
+
+- Compilation changes
+
 <a name="v1-12-2" />
 ### 1.12.2 (2019-04-01)
 

@@ -1,6 +1,6 @@
 ﻿```sh
-curl -O https://files.lacunasoftware.com/pki-express/linux/pkie-1.12.2.tar.gz
+curl -O https://files.lacunasoftware.com/pki-express/linux/pkie-1.12.3.tar.gz
 sudo rm -R /usr/share/pkie/*
-sudo tar xzf pkie-1.12.2.tar.gz -C /usr/share/pkie
+sudo tar xzf pkie-1.12.3.tar.gz -C /usr/share/pkie
 sudo chmod -R a=r,a+X,u+w /usr/share/pkie
 ```
