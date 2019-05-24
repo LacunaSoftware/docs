@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-5-1" />
+### 2.5.1 (2019-05-23)
+
+- Add PKI Paraguay certificate fields
+- Add PAdES auto-positioning vertical and horizontal directions control
+
+
 <a name="v2-4-0" />
 ### 2.4.0 (2019-04-08)
 
