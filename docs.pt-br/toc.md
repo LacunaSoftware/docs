@@ -3,3 +3,4 @@
 # [Rest PKI](articles/rest-pki/index.md)
 # [PKI SDK](articles/pki-sdk/index.md)
 # [PKI Express](articles/pki-express/index.md)
+# [Amplia](articles/amplia/index.md)

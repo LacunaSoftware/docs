@@ -27,5 +27,9 @@ _disableContribution: true
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 		[PKI Express](articles/pki-express/index.md)
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		[Amplia](articles/amplia/index.md)
 	</p>
 </div>

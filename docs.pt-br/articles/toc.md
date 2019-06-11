@@ -147,3 +147,8 @@
 ## [Usando em Node.js](pki-express/nodejs/index.md)
 ## [Histórico de versões](pki-express/changelog.md)
 <!-- End of PKI Express -->
+
+<!-- Start of Amplia -->
+# [Amplia](amplia/index.md)
+## [Histórico de versões](amplia/changelog.md)
+<!-- End of Amplia -->
