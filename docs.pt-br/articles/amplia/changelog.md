@@ -66,8 +66,14 @@ Mudanças de configuração: nenhuma
 <a name="v2-11-0" />
 ### 2.11.0 (2019-02-15)
 
-* Adicionado suporte a certificados para [IBM Hyperledger](https://www.ibm.com/blockchain/hyperledger)
-* Adicionado suporte a certificados com criptografia de curvas elípticas (ECC)
+* Adicionado suporte a certificados para blockchain [IBM Hyperledger](https://www.ibm.com/blockchain/hyperledger)
+* Adicionado suporte a curvas elípticas (ECC)
+  * Emissão de certificados com chave ECC
+  * Armazenamento de chaves ECC em Azure Key Vault -- curvas suportadas:
+    * P-256 (secp256r1)
+    * P-256K (secp256k1)
+    * P-384 (secp384r1)
+    * P-521 (secp521r1)
 * PKI SDK atualizado para versão [2.3.0](../pki-sdk/changelog.md#v2-3-0) (beta 3)
 
 Atualiza modelo do banco de dados: não
