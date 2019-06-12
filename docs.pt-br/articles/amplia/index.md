@@ -15,6 +15,11 @@ Sistema para criar autoridades certificadoras privadas. O Amplia é um sistema c
 * Emissão de certificados do tipo A1 (em software) ou A3 (em crypto device)
 * Emissão customizável para as necessidades de identificação do cliente
 
+## *On premises*
+
+O Amplia pode ser utilizado em nuvem (SaaS) ou você pode ter uma instância na sua própria infraestrutura ("on premises"). Veja o
+artigo [Amplia *on premises*](on-premises/index.md) para mais informações.
+
 ## Veja também
 
 * [Histórico de versões](changelog.md)

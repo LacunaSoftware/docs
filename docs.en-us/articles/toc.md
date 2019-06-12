@@ -150,5 +150,15 @@
 
 <!-- Start of Amplia -->
 # [Amplia](amplia/index.md)
+## [On-premises](amplia/on-premises/index.md)
+### [Setup on Windows Server](amplia/on-premises/windows/index.md)
+#### [Install](amplia/on-premises/windows/install.md)
+#### [Update](amplia/on-premises/windows/update.md)
+### [Setup on Azure App Services](amplia/on-premises/azure/index.md)
+#### [Install](amplia/on-premises/azure/install.md)
+#### [Update](amplia/on-premises/azure/update.md)
+### [Troubleshooting](amplia/on-premises/troubleshoot/index.md)
+### [Database model update](amplia/on-premises/database-update.md)
+### [Checking the installed version](amplia/on-premises/check-version.md)
 ## [Changelog](amplia/changelog.md)
 <!-- End of Amplia -->

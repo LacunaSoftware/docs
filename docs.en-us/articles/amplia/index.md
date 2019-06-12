@@ -15,6 +15,10 @@ System design to create private certification authorities. Amplia is a customiza
 * Emission of type A1 (in software) or A3 (in crypto device) certificates
 * Customizable issue for customer identification needs
 
+## On-premises
+
+Amplia can be used as a service (SaaS) or you can host your own instance. See the article [Amplia on-premises](on-premises/index.md) for more information.
+
 ## See also
 
 * [Changelog](changelog.md)
