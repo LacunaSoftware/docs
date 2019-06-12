@@ -28,7 +28,7 @@ Mudanças de configuração:
 <a name="v2-12-1" />
 ### 2.12.1 (2019-04-18)
 
-* PKI SDK atualizado para versão [2.4.0](../pki-sdk/changelog.md#v2-4-0)
+* PKI SDK atualizado para versão [2.4.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-4-0)
 * Correções de bugs
   * Certificados SSL não permitem uso de wildcard
   * "Encavalamento" de jobs de emissão de LCR quando a emissão fica impossibilitada por muito tempo
@@ -57,7 +57,7 @@ Mudanças de configuração
 ### 2.11.1 (2019-02-26)
 
 * Adicionada validação de endereço de e-mail na criação de pedidos de certificados tipo ICP-Brasil (`PkiBrazil`)
-* PKI SDK atualizado para versão [2.3.0](../pki-sdk/changelog.md#v2-3-0) (RTM)
+* PKI SDK atualizado para versão [2.3.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-3-0) (RTM)
 
 Atualiza modelo do banco de dados: não
 
@@ -74,7 +74,7 @@ Mudanças de configuração: nenhuma
     * P-256K (secp256k1)
     * P-384 (secp384r1)
     * P-521 (secp521r1)
-* PKI SDK atualizado para versão [2.3.0](../pki-sdk/changelog.md#v2-3-0) (beta 3)
+* PKI SDK atualizado para versão [2.3.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-3-0) (beta 3)
 
 Atualiza modelo do banco de dados: não
 
@@ -84,7 +84,7 @@ Mudanças de configuração: nenhuma
 ### 2.10.3 (2019-01-21)
 
 * Melhorias à configuração de envio de SMS
-* PKI SDK atualizado para versão [2.2.6](../pki-sdk/changelog.md#v2-2-6)
+* PKI SDK atualizado para versão [2.2.6](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-2-6)
 
 Atualiza modelo do banco de dados: não
 
