@@ -1,5 +1,16 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v2-14-1" />
+### 2.14.1 (2019-06-13)
+
+* Correções de bugs
+  * Pesquisa textual nos certificados e pedidos não estava funcionando com termos parciais
+  * Corrigido erro ao tentar revogar certificado de atributo
+
+Atualiza modelo do banco de dados: não
+
+Mudanças de configuração: nenhuma
+
 <a name="v2-14-0" />
 ### 2.14.0 (2019-06-11)
 
