@@ -14,7 +14,7 @@ O Amplia é uma plataforma para criar e gerenciar Autoridades Certificadoras (AC
 * Gestão completa do ciclo de vida do certificado
 * Usuários podem emitir certificados no desktop ou em celular
   * Desktop: suporte a Windows, Linux e Mac OS -- tipo A1 (em software) ou A3 (em crypto device -- token/smartcard)
-  * Mobile: suporte a Android and iOS
+  * Mobile: suporte a Android e iOS
 * Certificados customizáveis para as necessidades de identificação do cliente
 
 ## *On premises*
