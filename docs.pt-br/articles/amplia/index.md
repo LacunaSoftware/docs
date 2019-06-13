@@ -1,6 +1,6 @@
 ﻿# Amplia
 
-Sistema para criar autoridades certificadoras privadas. O Amplia é um sistema customizável que gerencia toda a cadeia de emissão dos certificados.
+O Amplia é uma plataforma para criar e gerenciar Autoridades Certificadoras (ACs) ou Infraestruturas de Chaves Públicas (ICPs) completas.
 
 > [!NOTE]
 > A documentação deste sistema encontra-se em construção. Pedimos desculpas pela inconveniência. Por favor contate-nos caso
@@ -8,17 +8,23 @@ Sistema para criar autoridades certificadoras privadas. O Amplia é um sistema c
 
 ## Características
 
-* Emissão de Certificado Digital
+* Emissão de certificados X.509 de chave pública 
+* Emissão de certificados X.509 de atributo
+* Emissão e gerenciamento de certificados de AC
 * Gestão completa do ciclo de vida do certificado
-* Software com a possibilidade da inclusão no sistema da empresa via WebAPI
-* Disponível para Windows, Linux e Mac
-* Emissão de certificados do tipo A1 (em software) ou A3 (em crypto device)
-* Emissão customizável para as necessidades de identificação do cliente
+* Usuários podem emitir certificados no desktop ou em celular
+  * Desktop: suporte a Windows, Linux e Mac OS -- tipo A1 (em software) ou A3 (em crypto device -- token/smartcard)
+  * Mobile: suporte a Android and iOS
+* Certificados customizáveis para as necessidades de identificação do cliente
 
 ## *On premises*
 
 O Amplia pode ser utilizado em nuvem (SaaS) ou você pode ter uma instância na sua própria infraestrutura ("on premises"). Veja o
 artigo [Amplia *on premises*](on-premises/index.md) para mais informações.
+
+## Origem do nome
+
+AMPLIA é um [acrônimo recursivo](https://pt.wikipedia.org/wiki/Acr%C3%B4nimo_recursivo) em inglês para "AMPLIA is a Modern Private Label Issuing Authority".
 
 ## Veja também
 
