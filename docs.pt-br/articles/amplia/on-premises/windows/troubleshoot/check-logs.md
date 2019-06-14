@@ -24,3 +24,7 @@ Para acompanhar o log de maneira contínua, você pode abrir um Powershell e dig
 ```ps
 gc C:\Logs\Amplia.log -Tail 100 -Wait
 ```
+
+> [!NOTE]
+> Alguns erros, geralmente os que ocorrem durante a inicialização do sistema, podem não ser registrados no arquivo de log do sistema.
+> Para diagnosticar tais erros, veja [Diagnosticando problemas na inicialização](startup-errors.md).

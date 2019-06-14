@@ -1,4 +1,4 @@
-﻿# Enabling ASP.NET Core stdout log (Azure App Services)
+﻿# Troubleshooting startup errors (Azure App Services)
 
 > [!NOTE]
 > The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please

@@ -7,4 +7,4 @@
 ## Veja também
 
 * [Atualização do Amplia em Azure App Services](update.md)
-* [Resolução de problemas](../troubleshoot/index.md)
+* [Resolução de problemas](troubleshoot/index.md)

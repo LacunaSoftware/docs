@@ -16,5 +16,4 @@ Click on one of the platforms above for specific setup instructions.
 
 ## See also
 
-* [Troubleshooting](troubleshoot/index.md)
 * [Changelog](../changelog.md)

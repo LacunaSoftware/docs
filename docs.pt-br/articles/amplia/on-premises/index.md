@@ -16,5 +16,4 @@ Clique em um dos ambientes acima para obter instruções específicas de instala
 
 ## Veja também
 
-* [Resolução de problemas](troubleshoot/index.md)
 * [Histórico de versões](../changelog.md)

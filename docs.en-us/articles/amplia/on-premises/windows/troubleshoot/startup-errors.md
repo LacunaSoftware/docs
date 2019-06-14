@@ -1,7 +1,16 @@
-﻿# Enabling ASP.NET Core stdout log (Windows Server)
+﻿# Troubleshooting startup errors (Windows Server)
 
-Some errors that occurr during application startup prevent Amplia's logging framework from working. In such cases, enabling the
-ASP.NET Core stdout log usually helps to diagnose the issue.
+Some errors that occurr during application startup prevent Amplia's logging framework from working. In such cases, attempt one of the
+solutions below to diagnose the problem.
+
+## 1. Application Event Log
+
+1. Open the Start menu, search for **Event Viewer**, and then select the **Event Viewer** app.
+1. In **Event Viewer**, open the **Windows Logs** node.
+1. Select **Application** to open the Application Event Log.
+1. Search for errors associated with the failing app. Errors have a value of *IIS AspNetCore Module* or *IIS Express AspNetCore Module* in the *Source* column.
+
+## 2. Enable the ASP.NET Core stdout log
 
 > [!IMPORTANT]
 > Disable stdout logging when troubleshooting is complete.
@@ -17,7 +26,7 @@ To enable ASP.NET Core stdout log:
 1. Navigate to the *logs* folder. Find and open the most recent stdout log.
 1. Study the log for errors.
 
-To disabled it after troubleshooting is complete:
+To disable it after troubleshooting is complete:
 
 1. Edit the *web.config* file.
 1. Set **stdoutLogEnabled** to `false`.
@@ -25,3 +34,7 @@ To disabled it after troubleshooting is complete:
 
 > [!WARNING]
 > Failure to disable the stdout log can lead to app or server failure. There's no limit on log file size or the number of log files created.
+
+## See also
+
+* [Troubleshoot ASP.NET Core on IIS](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/troubleshoot?view=aspnetcore-2.2)

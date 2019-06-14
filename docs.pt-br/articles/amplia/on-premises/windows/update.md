@@ -19,4 +19,4 @@ Para atualizar a sua instância do [Amplia](../../index.md), siga as instruçõe
 ## Veja também
 
 * [Instalação do Amplia em Windows Server](install.md)
-* [Resolução de problemas](../troubleshoot/index.md)
+* [Resolução de problemas](troubleshoot/index.md)

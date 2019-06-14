@@ -8,4 +8,4 @@
 
 * [Instalação do Amplia em Windows Server](install.md)
 * [Atualização do Amplia em Windows Server](update.md)
-* [Resolução de problemas](../troubleshoot/index.md)
+* [Resolução de problemas](troubleshoot/index.md)

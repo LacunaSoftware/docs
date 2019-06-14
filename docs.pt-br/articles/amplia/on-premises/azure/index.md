@@ -8,4 +8,4 @@
 
 * [Instalação do Amplia em Azure App Services](install.md)
 * [Atualização do Amplia em Azure App Services](update.md)
-* [Resolução de problemas](../troubleshoot/index.md)
+* [Resolução de problemas](troubleshoot/index.md)

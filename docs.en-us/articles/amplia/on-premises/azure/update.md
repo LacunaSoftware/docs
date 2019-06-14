@@ -7,4 +7,4 @@
 ## See also
 
 * [Installing Amplia on Azure App Services](install.md)
-* [Troubleshooting](../troubleshoot/index.md)
+* [Troubleshooting](troubleshoot/index.md)

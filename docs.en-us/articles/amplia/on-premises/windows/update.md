@@ -6,4 +6,4 @@
 ## See also
 
 * [Installing Amplia on Windows Server](install.md)
-* [Troubleshooting](../troubleshoot/index.md)
+* [Troubleshooting](troubleshoot/index.md)
