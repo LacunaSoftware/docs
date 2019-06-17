@@ -14,7 +14,7 @@ Alguns erros que ocorrem durante a inicialização do sistema impedem que o fram
 > [!IMPORTANT]
 > Desative o log de stdout quando a solução de problemas for concluída.
 
-Para habilitar o log do stdout ASP.NET Core:
+Para habilitar o log de stdout ASP.NET Core:
 
 1. Navegue até a pasta de instalação do site no servidor.
 1. Se a pasta *logs* não estiver presente, crie a pasta.
