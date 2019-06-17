@@ -156,7 +156,7 @@
 #### [Update](amplia/on-premises/windows/update.md)
 #### [Troubleshooting](amplia/on-premises/windows/troubleshoot/index.md)
 ##### [Checking logs](amplia/on-premises/windows/troubleshoot/check-logs.md)
-##### [Enabling ASP.NET Core stdout log](amplia/on-premises/windows/troubleshoot/startup-errors.md)
+##### [Troubleshooting startup errors](amplia/on-premises/windows/troubleshoot/startup-errors.md)
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](amplia/on-premises/windows/troubleshoot/502-5.md)
 ### [Setup on Azure App Services](amplia/on-premises/azure/index.md)
 #### [Install](amplia/on-premises/azure/install.md)
