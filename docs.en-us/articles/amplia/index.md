@@ -23,7 +23,7 @@ Amplia can be used as a service (SaaS) or you can host your own instance. See th
 
 ## Why the name?
 
-AMPLIA is [recursive acronym](https://en.wikipedia.org/wiki/Recursive_acronym) for "AMPLIA is a Modern Private Label Issuing Authority"
+AMPLIA is [recursive acronym](https://en.wikipedia.org/wiki/Recursive_acronym) for "AMPLIA is a Modern Private Label Issuing Authority".
 
 ## See also
 
