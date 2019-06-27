@@ -153,6 +153,7 @@
 ## [On premises](amplia/on-premises/index.md)
 ### [Setup em Windows Server](amplia/on-premises/windows/index.md)
 #### [Instalação](amplia/on-premises/windows/install.md)
+#### [Preparando o banco de dados](amplia/on-premises/windows/prepare-database.md)
 #### [Atualização](amplia/on-premises/windows/update.md)
 #### [Resolução de problemas](amplia/on-premises/windows/troubleshoot/index.md)
 ##### [Verificando os logs](amplia/on-premises/windows/troubleshoot/check-logs.md)

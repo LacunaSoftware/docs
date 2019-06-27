@@ -153,6 +153,7 @@
 ## [On-premises](amplia/on-premises/index.md)
 ### [Setup on Windows Server](amplia/on-premises/windows/index.md)
 #### [Install](amplia/on-premises/windows/install.md)
+#### [Preparing the database](amplia/on-premises/windows/prepare-database.md)
 #### [Update](amplia/on-premises/windows/update.md)
 #### [Troubleshooting](amplia/on-premises/windows/troubleshoot/index.md)
 ##### [Checking logs](amplia/on-premises/windows/troubleshoot/check-logs.md)
