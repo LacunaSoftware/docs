@@ -137,8 +137,8 @@ Change the `path` setting to the folder on which to write the log files.
 Under section **General**:
 
 * `SiteUrl`: publicly accessible URL of the website (e.g.: `https://ca.patorum.com/`). This address is used to compose emails with links back to the website 
-* `AutoUpdateDatabase`: se to `false` if the application does not have permissions to perform model changes to the database, or leave commented otherwise (or se to `true`)
-* `SupportEmailAddress`: the support email address (used when composing emails)
+* `AutoUpdateDatabase`: by default, the application tries to perform model changes to the database after an update (when needed). Set to `false` if the application does not have owner permissions over the database.
+* `SupportEmailAddress`: the support email address (used on the footer of outgoing emails)
 
 ### Amplia settings
 
