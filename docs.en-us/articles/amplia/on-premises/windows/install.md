@@ -12,10 +12,11 @@ For other platforms, [click here](../index.md).
 
 Amplia can operate in two ways regarding the access to the database:
 
-* Having owner privileges over the database and automatically updating the database model after an update (when needed)
-* Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
+1. Having owner privileges over the database and automatically updating the database model after an update (when needed)
+1. Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
 
-Granting owner privileges to the application is simpler, while granting only read and write ensures you greater control over the database.
+Granting owner privileges to the application is simpler, while granting only read and write ensures you greater control over the database. The decision
+is up to you. If not sure what to choose, we recommend granting owner privileges (option 1), since the updates are simpler that way.
 
 Some of the setup instructions depend on the option you choose.
 
@@ -24,15 +25,15 @@ Some of the setup instructions depend on the option you choose.
 * Windows Server 2016 or newer (any edition)
 * SQL Server 2016 or newer (recommended edition Standard or better)
 * PKI SDK license (in Base64 format)
-* If users will issue certificates on their computers (web issuing procedure), you will also need a Web PKI license (Base64/binary format)
+* Web PKI license (Base64/binary format) -- only needed if users will issue certificates on their computers (web issuing procedure)
 
 > [!NOTE]
 > This documentation is intended for Windows Servers with GUI installed. For Core installations (shell access only), please contact us.
 
-You will also need a **connection string** to a database previously created having:
+You will also need a connection string to a **database** previously created having:
 
-* Database collation: `Latin1_General_100_CI_AI`
-* Credentials corresponding to a user with the folloing database roles:
+* Collation: `Latin1_General_100_CI_AI`
+* Credentials corresponding to a user with the following database roles:
   * If the application should be owner of the database: `db_owner`
   * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
 
@@ -43,15 +44,38 @@ If you need help preparing the database, [click here](prepare-database.md).
 
 ## Planning before installation
 
-
+Before you start, you should plan ahead on where you intend to store your Certification Authority (CA) keys and where will your Certificate
+Revocation Lists (CRLs) be published. Please read the sections below for details on each of these decisions.
 
 ### Key storage
 
 TODO
 
-### CRL Access
+### CRL publishing (*access domains*)
 
-TODO
+Certificates issued by Amplia include the X.509 *CRL Distribution Point* extension, which contains links to locations where a third party desiring to validate
+the certificate should obtain the latest Certificate Revocation List (CRL) of the CA, required to determine the revocation status of the certificate.
+
+These links have the following format: *http://your-ca-domain/crls/my-ca.crl*
+
+The `your-ca-domain` part of the link is called on the Amplia configuration an *access domain*. You must choose at least one access domain, but
+it is recommended to have two access domains, preferably independent of each other, for instance:
+
+* *ca.patorum.com*
+* *ca.patorum.net*
+
+These domains should be chosen keeping in mind that they will have to be maintained for a long time (for the entire lifetime of the certificates
+issued on your Amplia instance, which is tipically several years). They also need to be allocated exclusively for the Amplia instance -- using a virtual
+directory (subfolder) on a domain hosting another web application is not supported.
+
+The chosen access domains should be created on the DNS servers (either A or CNAME records) pointing to the server on which Amplia will be installed.
+
+> [!TIP]
+> One of the access domains may me the domain on which the Amplia dashboard will be accessed.
+
+> [!TIP]
+> You do not need an SSL certificate for your access domains. Since X.509 recommends that CRLs be distributed over HTTP instead of HTTPS, the
+> certificates are issued with links using the HTTP protocol.
 
 ## Installation
 
@@ -122,6 +146,7 @@ TODO
     * `MessageFrom`: the sender phone number provided by Twilio (e.g.: `+12125550000`)
     * `AccountSid`: the account SID, provided by Twilio
     * `AuthToken`: the authentication token, provided by Twilio
+  * If you wish to use other SMS provider, please contact us
 
 * Section `KeyStores`: on this section, each key is the name of a key store, having as value a JSON section with the key store's configuration. For instance:
   ```json
