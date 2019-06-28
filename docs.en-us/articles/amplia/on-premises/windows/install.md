@@ -17,6 +17,18 @@ The keys for your Certification Authorities (CAs) can be stored on a variety of 
 CA keys is one of the most important decisions when planning for a CA. See article [Key Store configuration](key-stores/index.md) for more information
 on where you can store your CA keys and how to configure Amplia accordingly.
 
+### Dashboard domain / SSL certificate
+
+The application has a web interface called the *dashboard* to manage CAs, keys etc. You must choose a domain to access it, for instance `ca.patorum.com`.
+
+The chosen domain should be created on the DNS server of the zone (either A or CNAME records) prior to the installation, pointing to the server on which
+Amplia will be installed.
+
+> [!NOTE]
+> Using a virtual directory (subfolder) on a domain hosting another web application is not supported
+
+It is also recommended that you have a **valid SSL certificate** for the chosen domain.
+
 ### CRL publishing (*access domains*)
 
 Certificates issued by Amplia include the X.509 *CRL Distribution Point* extension, which contains links to locations where a third party desiring to validate
@@ -30,14 +42,16 @@ it is recommended to have two access domains, preferably independent of each oth
 * *ca.patorum.com*
 * *ca.patorum.net*
 
-These domains should be chosen keeping in mind that they will have to be maintained for a long time (for the entire lifetime of the certificates
-issued on your Amplia instance, which is typically several years). They also need to be allocated exclusively for the Amplia instance -- using a virtual
-directory (subfolder) on a domain hosting another web application is not supported.
-
-The chosen access domains should be created on the DNS servers (either A or CNAME records) pointing to the server on which Amplia will be installed.
-
 > [!TIP]
 > One of the access domains may me the domain on which the Amplia dashboard will be accessed.
+
+These domains should be chosen keeping in mind that they **will have to be maintained for a long time** (for the entire lifetime of the certificates
+issued on your Amplia instance, which is typically several years).
+
+> [!NOTE]
+> Using a virtual directory (subfolder) on a domain hosting another web application is not supported
+
+The chosen access domains should be created on the DNS servers (either A or CNAME records) pointing to the server on which Amplia will be installed.
 
 > [!TIP]
 > You do not need an SSL certificate for your access domains. Since X.509 recommends that CRLs be distributed over HTTP instead of HTTPS, the
@@ -61,9 +75,13 @@ Some of the setup instructions depend on the option you choose.
 * SQL Server 2016 or newer (recommended edition Standard or better)
 * PKI SDK license (in Base64 format)
 * Web PKI license (Base64/binary format) -- only needed if users will issue certificates on their computers (web issuing procedure)
+* DNS entries previously created for:
+  * Dashboard access
+  * CRL publishing (*access domains*)
+* (recommended) Valid SSL certificate for the dashboard domain
 
 > [!NOTE]
-> This documentation is intended for Windows Servers with GUI installed. For Core installations (shell access only), please contact us.
+> This documentation is intended for Windows Servers with UI installed. For "core" installations (shell access only), please contact us.
 
 You will also need a connection string to a **database** previously created having:
 
@@ -139,6 +157,15 @@ Under section **General**:
 * **SiteUrl**: publicly accessible URL of the website (e.g.: `https://ca.patorum.com/`). This address is used to compose emails with links back to the website 
 * **AutoUpdateDatabase**: by default, the application tries to perform model changes to the database after an update (when needed). Set to `false` if the application does not have owner permissions over the database.
 * **SupportEmailAddress**: the support email address (used on the footer of outgoing emails)
+
+### Bindings
+
+Under section **Bindings**:
+
+* **HttpsMode**: by default, both the dashboard and the REST APIs can only be accessed through HTTPS, which is the recommended behavior if you have a valid SSL certificate. To change this behavior, you can set this setting to:
+  * `RedirectPages`: allow REST APIs to be accessed through HTTP, but still redirect users accessing the dashboard to HTTPS (use this value if you have a valid SSL certificate but some legacy client applications do not recognize it)
+  * `Optional`: allow REST APIs to be accessed through HTTP and do not redirect users accessing the dashboard to HTTPS (use this value if you don't have a valid SSL certificate)
+* **SslPort**: by default, users accessing the dashboard through HTTP are redirected to HTTPS on the standard TCP port 43. If the site is using HTTPS on a non-standard port, set it here.
 
 ### Amplia settings
 
