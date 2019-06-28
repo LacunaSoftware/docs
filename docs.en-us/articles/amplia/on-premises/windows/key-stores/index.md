@@ -44,7 +44,7 @@ The supported key store types are:
 * [PKCS #11](pkcs11.md)
 * [Windows CryptoAPI (CAPI)](capi.md)
 * [Windows Cryptography API - Next Generation (CNG)](cng.md)
-* [Azure Key Vault](azure.md) (proprietary API)
+* [Azure Key Vault](azure.md)
 
 ## Key Store configuration
 
