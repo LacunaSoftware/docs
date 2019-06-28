@@ -43,7 +43,7 @@ it is recommended to have two access domains, preferably independent of each oth
 * *ca.patorum.net*
 
 > [!TIP]
-> One of the access domains may me the domain on which the Amplia dashboard will be accessed.
+> One of the access domains may be the same domain on which the Amplia dashboard will be accessed.
 
 These domains should be chosen keeping in mind that they **will have to be maintained for a long time** (for the entire lifetime of the certificates
 issued on your Amplia instance, which is typically several years).
