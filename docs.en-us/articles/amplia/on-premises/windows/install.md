@@ -95,7 +95,7 @@ to configure your Amplia instance.
 
 ### Database connection string
 
-Under section `ConnectionStrings`, setting `DefaultConnection`, set the connection string to the previously created database. A typical connection string looks like this:
+Under section **ConnectionStrings**, on the setting `DefaultConnection`, set the connection string to the previously created database. A typical connection string looks like this:
 
 ```
 Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD
@@ -106,7 +106,7 @@ Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD
 
 ### Logging
 
-Under section `Serilog`, configure the application logging:
+Under section **Serilog**, configure the application logging:
 
 ```json
 ...
@@ -134,7 +134,7 @@ Change the `path` setting to the folder on which to write the log files.
 
 ### General settings
 
-Under section `General`:
+Under section **General**:
 
 * `SiteUrl`: publicly accessible URL of the website (e.g.: `https://ca.patorum.com/`). This address is used to compose emails with links back to the website 
 * `AutoUpdateDatabase`: se to `false` if the application does not have permissions to perform model changes to the database, or leave commented otherwise (or se to `true`)
@@ -142,7 +142,7 @@ Under section `General`:
 
 ### Amplia settings
 
-Under section `Amplia`:
+Under section **Amplia**:
 
 * `DefaultKeyStore`: the default key store on which to create new keys
 * `DefaultAccessDomains`: domains to be used when composing the CRL distribution points
@@ -151,7 +151,7 @@ Under section `Amplia`:
 
 In order to keep the database tidy, Amplia does stores files outside of the database. Files may be stored in different *providers*.
 
-The section `Storage` configures the file storage. The setting `Type` defines which provider should be used, and the remaining settings depend on the provider chosen:
+The section **Storage** configures the file storage. The setting `Type` defines which provider should be used, and the remaining settings depend on the provider chosen:
 
 * File system
   * `Type`: set this setting to `FileSystem` to store files on the local file system
@@ -164,7 +164,7 @@ The section `Storage` configures the file storage. The setting `Type` defines wh
 
 ### PKI Suite
 
-Under section `PkiSuite`:
+Under section **PkiSuite**:
 
 * `SdkLicense`: your license for the PKI SDK, in Base64 format (**required**)
 * `WebLicense`: your license for the Web PKI component in binary (Base64) format. Only required if users will issue certificates on their computers (web issuing procedure)
@@ -172,7 +172,7 @@ Under section `PkiSuite`:
 
 ### Email sending
 
-Under section `Email`:
+Under section **Email**:
 
 * `Enabled`: by default, email sending is enabled. To disable it, set this setting to `false` and ignore the remainder of this section
 * `ServerHost`: hostname of the SMTP server
@@ -186,7 +186,7 @@ Under section `Email`:
 
 The Amplia dashboard requires an Open ID Connect (OIDC) server to perform authentication of users.
 
-The section `Oidc` configures the OIDC server:
+The section **Oidc** configures the OIDC server:
 
 * `Authority`: the OIDC authority (e.g.: `https://id.patorum.com`)
 * `ApiName`: the API scope that will be required on access tokens
@@ -197,7 +197,7 @@ The section `Oidc` configures the OIDC server:
 If users will issue certificates (either web or mobile issuing procedure), a SMS confirmation is required to confirm the identity of the user during the
 certificate issue procedure. SMS messages may be sent using different *providers*.
 
-The section `SMS` configures the SMS sending. The setting `Type` defines which provider should be used, and the remaining settings depend on the provider chosen:
+The section **SMS** configures the SMS sending. The setting `Type` defines which provider should be used, and the remaining settings depend on the provider chosen:
 
 * [Twilio](https://www.twilio.com/)
   * `Type`: set this setting to `Twilio` to send SMS messages using Twilio
@@ -210,21 +210,27 @@ The section `SMS` configures the SMS sending. The setting `Type` defines which p
 
 ### Key store configuration
 
-On the section `KeyStores`, each key is the name of a key store, having as value a section with the key store's configuration. For instance:
+On the section **KeyStores**, each key is the name of a key store, having as value a section with the key store's configuration. For instance:
 
 ```json
+...
 "KeyStores": {
   "Store1": {
     "Type": "...",
     "Setting1": "...",
-    "Setting2": "...",
-	...
+    "Setting2": "..."
   },
-  ...
+  "Store2": {
+    "Type": "...",
+    "Setting1": "...",
+    "Setting2": "...",
+    "Setting3": "..."
+  },
 }
+...
 ```
 
-The setting `Type` defines the type of the key store, and the remaining settings depend on the provider chosen. See article [Key Store configuration](key-stores/index.md) for details.
+The setting `Type` on each key store configuration defines the type of the key store, and the remaining settings depend on the provider chosen. See article [Key Store configuration](key-stores/index.md) for details.
 
 ### Application Insights (additional instrumentation)
 
