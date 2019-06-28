@@ -6,18 +6,6 @@
 
 To install your own instance of [Amplia](../../index.md) on Windows Server, follow the steps on this article. For other platforms, [click here](../index.md).
 
-## Database operation mode
-
-Amplia can operate in two ways regarding the access to the database:
-
-1. Having owner privileges over the database and automatically updating the database model after an update (when needed)
-1. Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
-
-Granting owner privileges to the application is simpler, while granting only read and write ensures you greater control over the database. The decision
-is up to you. If not sure what to choose, we recommend granting owner privileges (option 1), since it makes updating the application easier.
-
-Some of the setup instructions depend on the option you choose.
-
 ## Planning before installation
 
 Before you start, you should plan ahead on where you intend to store your Certification Authority (CA) keys and where will your Certificate
@@ -54,6 +42,18 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 > [!TIP]
 > You do not need an SSL certificate for your access domains. Since X.509 recommends that CRLs be distributed over HTTP instead of HTTPS, the
 > certificates are issued with links using the HTTP protocol.
+
+## Database operation mode
+
+Amplia can operate in two ways regarding the access to the database:
+
+1. Having owner privileges over the database and automatically updating the database model after an update (when needed)
+1. Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
+
+Granting owner privileges to the application is simpler, while granting only read and write ensures you greater control over the database. The decision
+is up to you. If not sure what to choose, we recommend granting owner privileges (option 1), since it makes updating the application easier.
+
+Some of the setup instructions depend on the option you choose.
 
 ## Prerequisites
 
