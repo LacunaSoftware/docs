@@ -17,3 +17,18 @@ To configure an Azure Key Vault key store on Amplia, use the following settings:
 * `CertThumb`: thumbprint of the certificate to be used to authenticate with Azure (hex-encoded, as provided by the Azure Portal)
 * `UseHsm`: by default, [HSM-protected](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-hsm-protected-keys) keys are created. To use "software"
   keys, set this value to `false`
+
+Sample configuration:
+
+```json
+"KeyStores": {
+	...,
+	"MyKeyVault": {
+		"Type": "AzureKeyVault",
+		"Endpoint": "https://xxx.vault.azure.net/",
+		"AppId": "00000000-0000-0000-0000-000000000000",
+		"AppKey": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+	},
+	...
+}
+```

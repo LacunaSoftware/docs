@@ -18,11 +18,34 @@ Sample configuration:
 ```json
 "KeyStores": {
 	...,
-	"eToken": {
+	"MyDevice": {
 		"Type": "Pkcs11",
-		"Module": "eTPKCS11.dll",
-		"Pin": "1234"
+		"Module": "...",
+		"Pin": "..."
 	},
 	...
+}
+```
+
+## Common PKCS #11 key stores
+
+Safenet eToken cryptographic USB token (one token plugged in only):
+
+```json
+"Pkcs11AnyToken": {
+	"Type": "Pkcs11",
+	"Module": "eTPKCS11.dll",
+	"Pin": "..."
+}
+```
+
+Safenet eToken cryptographic USB token (multiple tokens present, specifying the token to be used):
+
+```json
+"Pkcs11AnyToken": {
+	"Type": "Pkcs11",
+	"Module": "eTPKCS11.dll",
+	"Pin": "...",
+	"TokenSerialNumber": "01f5cfe4"
 }
 ```
