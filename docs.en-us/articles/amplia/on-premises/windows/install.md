@@ -45,11 +45,11 @@ it is recommended to have two access domains, preferably independent of each oth
 > [!TIP]
 > One of the access domains may be the same domain on which the Amplia dashboard will be accessed.
 
-These domains should be chosen keeping in mind that they **will have to be maintained for a long time** (for the entire lifetime of the certificates
-issued on your Amplia instance, which is typically several years).
-
 > [!NOTE]
 > Using a virtual directory (subfolder) on a domain hosting another web application is not supported
+
+These domains should be chosen keeping in mind that they **will have to be maintained for a long time** (for the entire lifetime of the certificates
+issued on your Amplia instance, which is typically several years).
 
 The chosen access domains should be created on the DNS servers (either A or CNAME records) pointing to the server on which Amplia will be installed.
 
