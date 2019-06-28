@@ -49,7 +49,7 @@ Revocation Lists (CRLs) be published. Please read the sections below for details
 
 ### Key storage
 
-TODO
+See article [Key Store configuration](key-stores/index.md).
 
 ### CRL publishing (*access domains*)
 
@@ -91,23 +91,18 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 1. Edit appsettings.iis.json
 
 * Configure the connection string
-
 * Configure the log folder
-
 * Section `General`
   * `SiteUrl`: publicly accessible URL of the website (e.g.: `https://ca.patorum.com/`). This address is used to compose emails with links back to the website 
   * `AutoUpdateDatabase`: se to `false` if the application does not have permissions to perform model changes to the database, or leave commented otherwise (or se to `true`)
   * `SupportEmailAddress`: the support email address (used when composing emails)
-
 * Section `Amplia`
   * `DefaultKeyStore`: the default key store on which to create new keys
   * `DefaultAccessDomains`: domains to be used when composing the CRL distribution points
-
 * Section `ApplicationInsights`
   * `InstrumentationKey`: if you want to collect additional instrumentation data with
     [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview), fill this setting with the "instrumentation key"
 	for an Insights account
-
 * Section `Storage`: in order to keep the database tidy, Amplia does stores files outside of the database. Files may be stored in different *providers*. The setting
   `Type` defines which provider should be used, and the remaining settings depend on the provider chosen.
   * File system
@@ -118,12 +113,10 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 	* `ConnectionString`: provide a connection string to the account
 	* `ContainerName`: the of the blob container on which to store files
   * Amazon S3 (coming soon, contact us if you need it)
-
 * Section `PkiSuite`
   * `SdkLicense`: your license for the PKI SDK, in Base64 format (**required**)
   * `WebLicense`: your license for the Web PKI component in binary (Base64) format. Only required if users will issue certificates on their computers (web issuing procedure)
   * `WebBrand`: if you have a custom *setup brand* on Web PKI, set it here
-
 * Section `Email`
   * `Enabled`: by default, email sending is enabled. To disable it, set this setting to `false` and ignore the remainder of this section
   * `ServerHost`: hostname of the SMTP server
@@ -132,12 +125,10 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
   * If the SMTP server requires authentication, set the settings `Username` and `Password`
   * `SenderAddress`: email address to be used as sender (*from* field)
   * `SenderName`: name to be used as the sender name (optional)
-
 * Section `Oidc`: the Amplia dashboard requires an Open ID Connect (OIDC) server to perform authentication of users
   * `Authority`: the OIDC authority (e.g.: `https://id.patorum.com`)
   * `ApiName`: the API scope that will be required on access tokens
   * `DashboardClientId`: the *client id* of the dashboard app
-
 * Section `SMS`: if users will issue certificates (either web or mobile issuing procedure), a SMS confirmation is required to confirm the identity of the user during the
   certificate issue procedure. SMS messages may be sent using different *providers*. The setting `Type` defines which provider should be used, and the remaining settings
   depend on the provider chosen.
@@ -147,11 +138,10 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
     * `AccountSid`: the account SID, provided by Twilio
     * `AuthToken`: the authentication token, provided by Twilio
   * If you wish to use other SMS provider, please contact us
-
 * Section `KeyStores`: on this section, each key is the name of a key store, having as value a JSON section with the key store's configuration. For instance:
   ```json
     "KeyStores": {
-      "MyHSM": {
+      "Store1": {
         "Type": "...",
         "Setting1": "...",
         "Setting2": "...",
@@ -160,37 +150,8 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
       ...
     }
   ```
-  The setting `Type` defines the type of the key store, and the remaining settings depend on the provider chosen.
-  * PKCS #11
-    * `Type`: set this setting to `Pkcs11` to specify a key store which uses a PKCS #11 module to store keys
-    * `Module`: name of the PKCS #11 DLL (e.g.: `eTPKCS11.dll`)
-    * `Pin`: PIN of the module, if required
-    * If multiple tokens will be present, you can specify the token to be used with the setting `TokenSerialNumber`
-  * CAPI (Windows Cryptographic API)
-    * `Type`: set this setting to `CAPI` to specify a key store which uses a CAPI crypto service provider (CSP) to store keys
-    * Every CAPI CSP is identified by its *name* and *type*. Set these values on the settings `ProviderName` and `ProviderType`
-    * `ExportableKeys`: whether to generate keys marked as exportable (`true` or `false`, default `true`)
-    * `UseMachineStore`: every CAPI CSP has the concept of storing keys on the *user store* or on the *machine store*`. By default, the
-      user store is used. Set this setting to `true` to use the machine store
-    * `Pin`: the PIN of the store, if required
-    * `OverrideKeyPins`: ?
-    * `RememberKeyPins`: ?
-  * CNG (Windows Cryptography API - Next Generation)
-    * `Type`: set this setting to `CNG` to specify a key store which uses a CNG key storage provider (KSP) to store keys
-    * `ProviderName`: name that identifies the KSP to be used
-    * `UseMachineStore`: every CNG KSP has the concept of storing keys on the *user store* or on the *machine store*`. By default, the
-      user store is used. Set this setting to `true` to use the machine store
-    * `Pin`: the PIN of the store, if required
-    * `OverrideKeyPins`: ?
-    * `RememberKeyPins`: ?
-  * [Azure Key Vault](https://azure.microsoft.com/en-in/services/key-vault/)
-    * `Type`: set this setting to `AzureKeyVault` to specify a key store which stores keys on an Azure Key Vault account
-	* `Endpoint`: DNS Name of the key vault (show on tab *Overview* of key vault) -- e.g.: `https://my-keys.vault.azure.net/`
-	* `AppId`: Application ID to be used to authenticate with Azure
-	* `AppKey`: Application secret key to be used to authenticate with Azure (for additional security, omit this value and specify the `CertThumb` instead)
-	* `CertThumb`: thumbprint of the certificate to be used to authenticate with Azure (hex-encoded, as provided by the Azure Portal)
-	* `UseHsm`: by default, [HSM-protected](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-hsm-protected-keys) keys are created. To use "software"
-	   keys, set this value to `false`
+  The setting `Type` defines the type of the key store, and the remaining settings depend on the provider chosen. See article [Key Store configuration](key-stores/index.md)
+  for details.
 
 ## See also
 
