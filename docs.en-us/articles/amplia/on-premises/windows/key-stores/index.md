@@ -37,15 +37,14 @@ budget.
 ## Key Store types
 
 Regardless of your option on where to store keys, key stores typically support one or more communication protocols. Amplia interfaces
-with key stores through such protocols. The supported protocols are:
+with key stores through such protocols. The communication protocols define the **key store types** supported by Amplia.
+
+The supported key store types are:
 
 * [PKCS #11](pkcs11.md)
 * [Windows CryptoAPI (CAPI)](capi.md)
 * [Windows Cryptography API - Next Generation (CNG)](cng.md)
-
-Additionally, Amplia can use [Azure Key Vault](azure.md) stores through their proprietary API.
-
-The communication protocols, plus the Azure Key Vault, are the **key store types** supported by Amplia.
+* [Azure Key Vault](azure.md) (proprietary API)
 
 ## Key Store configuration
 
@@ -69,11 +68,6 @@ On the section **KeyStores** of the configuration file, each key is the name of 
 ...
 ```
 
-The setting `Type` on each key store configuration defines the type of the key store, and the remaining settings depend on the provider chosen.
+The setting **Type** on each key store configuration defines the type of the key store, and the remaining settings depend on the provider chosen.
 
-See the article for each key store type for configuration instructions:
-
-* [PKCS #11](pkcs11.md)
-* [Windows CryptoAPI (CAPI)](capi.md)
-* [Windows Cryptography API - Next Generation (CNG)](cng.md)
-* [Azure Key Vault](azure.md)
+See the article for each key store type for configuration instructions (links above).

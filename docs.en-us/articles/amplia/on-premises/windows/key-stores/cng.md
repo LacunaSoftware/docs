@@ -12,11 +12,11 @@ to find the name and type of the KSP. Additionally, see the section below for co
 
 To configure a CNG key store on Amplia, use the following settings:
 
-* `Type`: `CNG`
-* `ProviderName`: name that identifies the KSP to be used
+* **Type**: `CNG`
+* **ProviderName**: name that identifies the KSP to be used
 * `UseMachineStore`: some KSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably the OS's native KSP).
   By default, the user store is used. Set this setting to `true` to use the machine store.
-* `Pin`: the PIN of the store, if required
+* **Pin**: the PIN of the store, if required
 
 <!--
 TODO:
@@ -69,3 +69,11 @@ Safenet eToken cryptographic USB token:
 	"ProviderName": "SafeNet Smart Card Key Storage Provider"
 }
 ```
+
+## See also
+
+* [Amplia - Key Stores](index.md)
+* [Amplia - CAPI Key Stores](capi.md)
+* [Amplia - PKCS #11 key stores](pkcs11.md)
+* [Installing Amplia on Windows Server](install.md)
+* [Troubleshooting](troubleshoot/index.md)

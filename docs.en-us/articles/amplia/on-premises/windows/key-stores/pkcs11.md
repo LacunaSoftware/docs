@@ -8,10 +8,10 @@ PKCS #11 protocol.
 
 To configure a PKCS #11 key store on Amplia, use the following settings:
 
-* `Type`: `Pkcs11`
-* `Module`: name of the PKCS #11 library (e.g.: `eTPKCS11.dll`)
-* `Pin`: PIN of the token, if required
-* `TokenSerialNumber`: if multiple tokens will be present, you can specify the token to be used with this setting 
+* **Type**: `Pkcs11`
+* **Module**: name of the PKCS #11 library (e.g.: `eTPKCS11.dll`)
+* **Pin**: PIN of the token, if required
+* **TokenSerialNumber**: if multiple tokens will be present, you can specify the token to be used with this setting 
 
 Sample configuration:
 
@@ -49,3 +49,11 @@ Safenet eToken cryptographic USB token (multiple tokens present, specifying the 
 	"TokenSerialNumber": "01f5cfe4"
 }
 ```
+
+## See also
+
+* [Amplia - Key Stores](index.md)
+* [Amplia - CAPI Key Stores](capi.md)
+* [Amplia - CNG Key Stores](cng.md)
+* [Installing Amplia on Windows Server](install.md)
+* [Troubleshooting](troubleshoot/index.md)

@@ -12,9 +12,9 @@ to find the name and type of the CSP.
 
 To configure a CAPI key store on Amplia, use the following settings:
 
-* `Type`: `CAPI`
-* `ProviderName`: name of the CSP
-* `ProviderType`: type of the CSP. Valid values are:
+* **Type**: `CAPI`
+* **ProviderName**: name of the CSP
+* **ProviderType**: type of the CSP. Valid values are:
 	* **PROV_RSA_FULL** (common)
 	* PROV_RSA_SIG
 	* PROV_DSS
@@ -33,10 +33,10 @@ To configure a CAPI key store on Amplia, use the following settings:
 	* PROV_INTEL_SEC
 	* PROV_REPLACE_OWF
 	* **PROV_RSA_AES** (also common)
-* `ExportableKeys`: by default, keys are generated marked as exportable. To generate non-exportable keys, set this to `false`.
-* `UseMachineStore`: some CSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably the OS's native CSP).
+* **ExportableKeys**: by default, keys are generated marked as exportable. To generate non-exportable keys, set this to `false`.
+* **UseMachineStore**: some CSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably the OS's native CSP).
   By default, the user store is used. Set this setting to `true` to use the machine store.
-* `Pin`: the PIN of the store, if required
+* **Pin**: the PIN of the store, if required
 
 <!--
 TODO:

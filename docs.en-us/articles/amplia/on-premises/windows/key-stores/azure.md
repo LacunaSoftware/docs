@@ -10,12 +10,12 @@ projects which otherwise would not have the necessary budget.
 
 To configure an Azure Key Vault key store on Amplia, use the following settings:
 
-* `Type`: `AzureKeyVault`
-* `Endpoint`: DNS Name of the key vault (show on tab *Overview* of key vault) -- e.g.: https://my-pki.vault.azure.net/
-* `AppId`: Application ID to be used to authenticate with Azure
-* `AppKey`: Application secret key to be used to authenticate with Azure (for additional security, omit this value and specify the `CertThumb` instead)
-* `CertThumb`: thumbprint of the certificate to be used to authenticate with Azure (hex-encoded, as provided by the Azure Portal)
-* `UseHsm`: by default, [HSM-protected](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-hsm-protected-keys) keys are created. To use "software"
+* **Type**: `AzureKeyVault`
+* **Endpoint**: DNS Name of the key vault (show on tab *Overview* of key vault) -- e.g.: https://my-pki.vault.azure.net/
+* **AppId**: Application ID to be used to authenticate with Azure
+* **AppKey**: Application secret key to be used to authenticate with Azure (for additional security, omit this value and specify the `CertThumb` instead)
+* **CertThumb**: thumbprint of the certificate to be used to authenticate with Azure (hex-encoded, as provided by the Azure Portal)
+* **UseHsm**: by default, [HSM-protected](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-hsm-protected-keys) keys are created. To use "software"
   keys, set this value to `false`
 
 Sample configuration:
@@ -32,3 +32,12 @@ Sample configuration:
 	...
 }
 ```
+
+## See also
+
+* [Amplia - Key Stores](index.md)
+* [Amplia - CAPI Key Stores](capi.md)
+* [Amplia - CNG Key Stores](cng.md)
+* [Amplia - PKCS #11 key stores](pkcs11.md)
+* [Installing Amplia on Windows Server](install.md)
+* [Troubleshooting](troubleshoot/index.md)
