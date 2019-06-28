@@ -85,10 +85,8 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 1. Create folder for site
 1. Create folder for logs
 1. Create site
-   * No managed code
+   * Set no managed code
 1. Extract files
-1. Rename appsettings.iis-template.json
-1. Edit appsettings.iis.json
 
 ## Configuration
 
@@ -97,94 +95,153 @@ to configure your Amplia instance.
 
 ### Database connection string
 
+Under section `ConnectionStrings`, setting `DefaultConnection`, set the connection string to the previously created database. A typical connection string looks like this:
+
+```
+Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD
+```
+
+> [!NOTE]
+> If you created the database using advanced features such as log shipping or mirroring, your connection string may be different
+
 ### Logging
+
+Under section `Serilog`, configure the application logging:
+
+```json
+...
+"Serilog": {
+	"MinimumLevel": {
+		"Default": "Warning",
+	},
+	"WriteTo": [
+		{
+			"Name": "File",
+			"Args": {
+				"path": "C:\\Logs\\Amplia.log",
+				"outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}",
+			}
+		}
+	],
+}
+...
+```
+
+Change the `path` setting to the folder on which to write the log files.
+
+> [!NOTE]
+> Remember to grant full access to the application user on the log folder
 
 ### General settings
 
+Under section `General`:
+
+* `SiteUrl`: publicly accessible URL of the website (e.g.: `https://ca.patorum.com/`). This address is used to compose emails with links back to the website 
+* `AutoUpdateDatabase`: se to `false` if the application does not have permissions to perform model changes to the database, or leave commented otherwise (or se to `true`)
+* `SupportEmailAddress`: the support email address (used when composing emails)
+
 ### Amplia settings
+
+Under section `Amplia`:
+
+* `DefaultKeyStore`: the default key store on which to create new keys
+* `DefaultAccessDomains`: domains to be used when composing the CRL distribution points
 
 ### File storage
 
+In order to keep the database tidy, Amplia does stores files outside of the database. Files may be stored in different *providers*.
+
+The section `Storage` configures the file storage. The setting `Type` defines which provider should be used, and the remaining settings depend on the provider chosen:
+
+* File system
+  * `Type`: set this setting to `FileSystem` to store files on the local file system
+  * `Path`: set the path of the folder on which to store files. Make sure the application has access to the folder
+* [Azure Storage](https://azure.microsoft.com/en-us/services/storage/)
+  * `Type`: set this setting to `Azure` to store files on an Azure Storage account
+  * `ConnectionString`: provide a connection string to the account
+  * `ContainerName`: the of the blob container on which to store files
+* Amazon S3 (coming soon, contact us if you need it)
+
 ### PKI Suite
+
+Under section `PkiSuite`:
+
+* `SdkLicense`: your license for the PKI SDK, in Base64 format (**required**)
+* `WebLicense`: your license for the Web PKI component in binary (Base64) format. Only required if users will issue certificates on their computers (web issuing procedure)
+* `WebBrand`: if you have a custom *setup brand* on Web PKI, set it here
 
 ### Email sending
 
+Under section `Email`:
+
+* `Enabled`: by default, email sending is enabled. To disable it, set this setting to `false` and ignore the remainder of this section
+* `ServerHost`: hostname of the SMTP server
+* `EnableSsl`: by default, the SMTP conversation is performed over SSL. To disable SSL, set this setting to `false`
+* `ServerPort`: by default, the SMTP conversation is performed over port 587. Set this setting to use a different port
+* If the SMTP server requires authentication, set the settings `Username` and `Password`
+* `SenderAddress`: email address to be used as sender (*from* field)
+* `SenderName`: name to be used as the sender name (optional)
+
 ### Open ID Connect configuration
+
+The Amplia dashboard requires an Open ID Connect (OIDC) server to perform authentication of users.
+
+The section `Oidc` configures the OIDC server:
+
+* `Authority`: the OIDC authority (e.g.: `https://id.patorum.com`)
+* `ApiName`: the API scope that will be required on access tokens
+* `DashboardClientId`: the *client id* of the dashboard app
 
 ### SMS sending
 
+If users will issue certificates (either web or mobile issuing procedure), a SMS confirmation is required to confirm the identity of the user during the
+certificate issue procedure. SMS messages may be sent using different *providers*.
+
+The section `SMS` configures the SMS sending. The setting `Type` defines which provider should be used, and the remaining settings depend on the provider chosen:
+
+* [Twilio](https://www.twilio.com/)
+  * `Type`: set this setting to `Twilio` to send SMS messages using Twilio
+  * `MessageFrom`: the sender phone number provided by Twilio (e.g.: `+12125550000`)
+  * `AccountSid`: the account SID, provided by Twilio
+  * `AuthToken`: the authentication token, provided by Twilio
+
+> [!NOTE]
+> If you wish to use other SMS provider, please contact us
+
 ### Key store configuration
+
+On the section `KeyStores`, each key is the name of a key store, having as value a section with the key store's configuration. For instance:
+
+```json
+"KeyStores": {
+  "Store1": {
+    "Type": "...",
+    "Setting1": "...",
+    "Setting2": "...",
+	...
+  },
+  ...
+}
+```
+
+The setting `Type` defines the type of the key store, and the remaining settings depend on the provider chosen. See article [Key Store configuration](key-stores/index.md) for details.
 
 ### Application Insights (additional instrumentation)
 
+If you want to collect additional instrumentation data with [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview), fill this
+section. Otherwise, ignore it.
+
+Under section `ApplicationInsights`:
+
+* `InstrumentationKey`: the instrumentation key for the Insights account to be used
+
 ## Starting up application
 
-
-
-* Configure the connection string
-* Configure the log folder
-* Section `General`
-  * `SiteUrl`: publicly accessible URL of the website (e.g.: `https://ca.patorum.com/`). This address is used to compose emails with links back to the website 
-  * `AutoUpdateDatabase`: se to `false` if the application does not have permissions to perform model changes to the database, or leave commented otherwise (or se to `true`)
-  * `SupportEmailAddress`: the support email address (used when composing emails)
-* Section `Amplia`
-  * `DefaultKeyStore`: the default key store on which to create new keys
-  * `DefaultAccessDomains`: domains to be used when composing the CRL distribution points
-* Section `ApplicationInsights`
-  * `InstrumentationKey`: if you want to collect additional instrumentation data with
-    [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview), fill this setting with the "instrumentation key"
-	for an Insights account
-* Section `Storage`: in order to keep the database tidy, Amplia does stores files outside of the database. Files may be stored in different *providers*. The setting
-  `Type` defines which provider should be used, and the remaining settings depend on the provider chosen.
-  * File system
-    * `Type`: set this setting to `FileSystem` to store files on the local file system
-    * `Path`: set the path of the folder on which to store files. Make sure the application has access to the folder
-  * [Azure Storage](https://azure.microsoft.com/en-us/services/storage/)
-    * `Type`: set this setting to `Azure` to store files on an Azure Storage account
-	* `ConnectionString`: provide a connection string to the account
-	* `ContainerName`: the of the blob container on which to store files
-  * Amazon S3 (coming soon, contact us if you need it)
-* Section `PkiSuite`
-  * `SdkLicense`: your license for the PKI SDK, in Base64 format (**required**)
-  * `WebLicense`: your license for the Web PKI component in binary (Base64) format. Only required if users will issue certificates on their computers (web issuing procedure)
-  * `WebBrand`: if you have a custom *setup brand* on Web PKI, set it here
-* Section `Email`
-  * `Enabled`: by default, email sending is enabled. To disable it, set this setting to `false` and ignore the remainder of this section
-  * `ServerHost`: hostname of the SMTP server
-  * `EnableSsl`: by default, the SMTP conversation is performed over SSL. To disable SSL, set this setting to `false`
-  * `ServerPort`: by default, the SMTP conversation is performed over port 587. Set this setting to use a different port
-  * If the SMTP server requires authentication, set the settings `Username` and `Password`
-  * `SenderAddress`: email address to be used as sender (*from* field)
-  * `SenderName`: name to be used as the sender name (optional)
-* Section `Oidc`: the Amplia dashboard requires an Open ID Connect (OIDC) server to perform authentication of users
-  * `Authority`: the OIDC authority (e.g.: `https://id.patorum.com`)
-  * `ApiName`: the API scope that will be required on access tokens
-  * `DashboardClientId`: the *client id* of the dashboard app
-* Section `SMS`: if users will issue certificates (either web or mobile issuing procedure), a SMS confirmation is required to confirm the identity of the user during the
-  certificate issue procedure. SMS messages may be sent using different *providers*. The setting `Type` defines which provider should be used, and the remaining settings
-  depend on the provider chosen.
-  * [Twilio](https://www.twilio.com/)
-    * `Type`: set this setting to `Twilio` to send SMS messages using Twilio
-    * `MessageFrom`: the sender phone number provided by Twilio (e.g.: `+12125550000`)
-    * `AccountSid`: the account SID, provided by Twilio
-    * `AuthToken`: the authentication token, provided by Twilio
-  * If you wish to use other SMS provider, please contact us
-* Section `KeyStores`: on this section, each key is the name of a key store, having as value a JSON section with the key store's configuration. For instance:
-  ```json
-    "KeyStores": {
-      "Store1": {
-        "Type": "...",
-        "Setting1": "...",
-        "Setting2": "...",
-		...
-      },
-      ...
-    }
-  ```
-  The setting `Type` defines the type of the key store, and the remaining settings depend on the provider chosen. See article [Key Store configuration](key-stores/index.md)
-  for details.
+1. Start site
+1. Access site
 
 ## See also
 
+* [Key Store configuration](key-stores/index.md)
 * [Updating Amplia on Windows Server](update.md)
 * [Troubleshooting](troubleshoot/index.md)
