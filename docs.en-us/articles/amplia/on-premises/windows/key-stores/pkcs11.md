@@ -1,10 +1,28 @@
-﻿# Amplia - PKCS #11 Key Stores
+﻿# Amplia - PKCS #11 key stores
+
+Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens usually support communication through the
+PKCS #11 protocol.
 
 > [!NOTE]
-> The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please
-> contact us if there's any information you need that is not currently documented.
+> In the PKCS #11 standard, any device capable of storing keys is called a *token*
 
-* `Type`: set this setting to `Pkcs11` to specify a key store which uses a PKCS #11 module to store keys
-* `Module`: name of the PKCS #11 DLL (e.g.: `eTPKCS11.dll`)
-* `Pin`: PIN of the module, if required
-* If multiple tokens will be present, you can specify the token to be used with the setting `TokenSerialNumber`
+To configure a PKCS #11 key store on Amplia, use the following settings:
+
+* `Type`: `Pkcs11`
+* `Module`: name of the PKCS #11 library (e.g.: `eTPKCS11.dll`)
+* `Pin`: PIN of the token, if required
+* `TokenSerialNumber`: if multiple tokens will be present, you can specify the token to be used with this setting 
+
+Sample configuration:
+
+```json
+"KeyStores": {
+	...,
+	"eToken": {
+		"Type": "Pkcs11",
+		"Module": "eTPKCS11.dll",
+		"Pin": "1234"
+	},
+	...
+}
+```

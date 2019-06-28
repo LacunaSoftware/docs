@@ -90,6 +90,37 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 1. Rename appsettings.iis-template.json
 1. Edit appsettings.iis.json
 
+## Configuration
+
+On the installtion folder, rename the file `appsettings.iis-template.json` to `appsettings.iis.json` (remove the `-template` suffix). Then, edit the file
+to configure your Amplia instance.
+
+### Database connection string
+
+### Logging
+
+### General settings
+
+### Amplia settings
+
+### File storage
+
+### PKI Suite
+
+### Email sending
+
+### Open ID Connect configuration
+
+### SMS sending
+
+### Key store configuration
+
+### Application Insights (additional instrumentation)
+
+## Starting up application
+
+
+
 * Configure the connection string
 * Configure the log folder
 * Section `General`
@@ -108,7 +139,7 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
   * File system
     * `Type`: set this setting to `FileSystem` to store files on the local file system
     * `Path`: set the path of the folder on which to store files. Make sure the application has access to the folder
-  * [Azure Storage](https://azure.microsoft.com/en-in/services/storage/)
+  * [Azure Storage](https://azure.microsoft.com/en-us/services/storage/)
     * `Type`: set this setting to `Azure` to store files on an Azure Storage account
 	* `ConnectionString`: provide a connection string to the account
 	* `ContainerName`: the of the blob container on which to store files

@@ -1,11 +1,17 @@
-﻿# Storing keys on Azure Key Vault
+﻿# Amplia - Azure Key Vault key stores
 
-> [!NOTE]
-> The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please
-> contact us if there's any information you need that is not currently documented.
+[Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) can be though of as a cloud HSM. Keys are stored on FIPS 140-2 Level 2
+validated HSMs for a relatively low cost of ~5 dollars per month per key. This service from Microsoft has enabled the employment of HSMs on
+projects which otherwise would not have the necessary budget.
 
-* `Type`: set this setting to `AzureKeyVault` to specify a key store which stores keys on an Azure Key Vault account
-* `Endpoint`: DNS Name of the key vault (show on tab *Overview* of key vault) -- e.g.: `https://my-keys.vault.azure.net/`
+> [!TIP]
+> Lacuna Software's cloud-based Amplia instance (SaaS offering) stores all CA keys on Azure Key Vault, and we highly recommend it
+> for instances installed both on the cloud or on local servers.
+
+To configure an Azure Key Vault key store on Amplia, use the following settings:
+
+* `Type`: `AzureKeyVault`
+* `Endpoint`: DNS Name of the key vault (show on tab *Overview* of key vault) -- e.g.: https://my-pki.vault.azure.net/
 * `AppId`: Application ID to be used to authenticate with Azure
 * `AppKey`: Application secret key to be used to authenticate with Azure (for additional security, omit this value and specify the `CertThumb` instead)
 * `CertThumb`: thumbprint of the certificate to be used to authenticate with Azure (hex-encoded, as provided by the Azure Portal)
