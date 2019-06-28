@@ -35,7 +35,7 @@ Safenet eToken cryptographic USB token (one token plugged in only):
 "Pkcs11AnyToken": {
 	"Type": "Pkcs11",
 	"Module": "eTPKCS11.dll",
-	"Pin": "..."
+	"Pin": "XXXX"
 }
 ```
 
@@ -45,7 +45,7 @@ Safenet eToken cryptographic USB token (multiple tokens present, specifying the 
 "Pkcs11AnyToken": {
 	"Type": "Pkcs11",
 	"Module": "eTPKCS11.dll",
-	"Pin": "...",
+	"Pin": "XXXX",
 	"TokenSerialNumber": "01f5cfe4"
 }
 ```

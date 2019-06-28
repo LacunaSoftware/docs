@@ -33,10 +33,11 @@ To configure a CAPI key store on Amplia, use the following settings:
 	* PROV_INTEL_SEC
 	* PROV_REPLACE_OWF
 	* **PROV_RSA_AES** (also common)
-* `ExportableKeys`: whether to generate keys marked as exportable (`true` or `false`, defaults to `true`)
-* `UseMachineStore`: some CSPs have the concept of storing keys on the *user store* or on the *machine store*, most notably the OS's native CSP.
+* `ExportableKeys`: by default, keys are generated marked as exportable. To generate non-exportable keys, set this to `false`.
+* `UseMachineStore`: some CSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably the OS's native CSP).
   By default, the user store is used. Set this setting to `true` to use the machine store.
 * `Pin`: the PIN of the store, if required
+
 <!--
 TODO:
 OverrideKeyPins: ?
@@ -90,7 +91,7 @@ Safenet eToken cryptographic USB token:
 	"Type": "Capi",
 	"ProviderName": "eToken Base Cryptographic Provider",
 	"ProviderType": "PROV_RSA_FULL",
-	"Pin": "1234"
+	"Pin": "XXXX"
 }
 ```
 

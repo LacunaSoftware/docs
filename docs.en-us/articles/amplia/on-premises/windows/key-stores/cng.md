@@ -14,13 +14,14 @@ To configure a CNG key store on Amplia, use the following settings:
 
 * `Type`: `CNG`
 * `ProviderName`: name that identifies the KSP to be used
-* `UseMachineStore`: some KSPs have the concept of storing keys on the *user store* or on the *machine store*, most notably the OS's native KSP.
+* `UseMachineStore`: some KSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably the OS's native KSP).
   By default, the user store is used. Set this setting to `true` to use the machine store.
 * `Pin`: the PIN of the store, if required
+
 <!--
 TODO:
-- OverrideKeyPins: ?
-- RememberKeyPins: ?
+OverrideKeyPins: ?
+RememberKeyPins: ?
 -->
 
 Sample configuration:
