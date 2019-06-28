@@ -1,16 +1,20 @@
 ﻿# Preparing a database for installation of Amplia
 
-To [install Amplia](install.md), you will need a SQL Server database with collation **Latin1_General_100_CI_AI** and a connection string
-for a user either having role **db_owner** or, in case you want to update the database model manually, roles **db_datareader** and **db_datawriter**.
+In order to [install Amplia](install.md), you will need a connection string for a **SQL Server database** having:
+
+* Collation: `Latin1_General_100_CI_AI`
+* Credentials corresponding to a user with the following database roles:
+  * If the application should be owner of the database: `db_owner`
+  * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
+
+> [!WARNING]
+> The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
 
 If you need help preparing the database, follow the steps in this article.
 
 > [!NOTE]
 > You do not need to follow these specific instructions. If you wish to prepare the database differently, for instance using advanced
 > features such as log shipping or mirroring, you may do so, as long as the collation and role memberships are observed.
-
-> [!WARNING]
-> The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
 
 ## Creating the database
 
@@ -27,8 +31,8 @@ GO
 
 As mentioned above, Amplia can operate in two ways regarding the access to the database:
 
-* Having owner privileges over the database and automatically updating the database model after an update (when needed)
-* Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
+1. Having owner privileges over the database and automatically updating the database model after an update (when needed)
+1. Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
 
 Follow one of the sections below according to the option you choose for the database operation mode.
 
@@ -74,10 +78,6 @@ The connection string would then be:
 ```
 Data Source=.;Initial Catalog=Amplia;User ID=AmpliaApp;Password=XXXXX
 ```
-
-> [!NOTE]
-> The connection string above assumes the database server is installed on the same server as the web app. If this is not true,
-> the value after `Data Source=` would have to be changed.
 
 ## See also
 

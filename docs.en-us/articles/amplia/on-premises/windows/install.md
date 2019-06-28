@@ -18,28 +18,6 @@ is up to you. If not sure what to choose, we recommend granting owner privileges
 
 Some of the setup instructions depend on the option you choose.
 
-## Prerequisites
-
-* Windows Server 2016 or newer (any edition)
-* SQL Server 2016 or newer (recommended edition Standard or better)
-* PKI SDK license (in Base64 format)
-* Web PKI license (Base64/binary format) -- only needed if users will issue certificates on their computers (web issuing procedure)
-
-> [!NOTE]
-> This documentation is intended for Windows Servers with GUI installed. For Core installations (shell access only), please contact us.
-
-You will also need a connection string to a **database** previously created having:
-
-* Collation: `Latin1_General_100_CI_AI`
-* Credentials corresponding to a user with the following database roles:
-  * If the application should be owner of the database: `db_owner`
-  * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
-
-> [!WARNING]
-> The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
-
-If you need help preparing the database, [click here](prepare-database.md).
-
 ## Planning before installation
 
 Before you start, you should plan ahead on where you intend to store your Certification Authority (CA) keys and where will your Certificate
@@ -76,6 +54,28 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 > [!TIP]
 > You do not need an SSL certificate for your access domains. Since X.509 recommends that CRLs be distributed over HTTP instead of HTTPS, the
 > certificates are issued with links using the HTTP protocol.
+
+## Prerequisites
+
+* Windows Server 2016 or newer (any edition)
+* SQL Server 2016 or newer (recommended edition Standard or better)
+* PKI SDK license (in Base64 format)
+* Web PKI license (Base64/binary format) -- only needed if users will issue certificates on their computers (web issuing procedure)
+
+> [!NOTE]
+> This documentation is intended for Windows Servers with GUI installed. For Core installations (shell access only), please contact us.
+
+You will also need a connection string to a **database** previously created having:
+
+* Collation: `Latin1_General_100_CI_AI`
+* Credentials corresponding to a user with the following database roles:
+  * If the application should be owner of the database: `db_owner`
+  * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
+
+> [!WARNING]
+> The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
+
+If you need help preparing the database, [click here](prepare-database.md).
 
 ## Installation
 
