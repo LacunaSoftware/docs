@@ -32,7 +32,7 @@ GO
 As mentioned above, Amplia can operate in two ways regarding the access to the database:
 
 1. Having owner privileges over the database and automatically updating the database model after an update (when needed)
-1. Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
+1. Having only read and write privileges over the database, requiring the database model to be updated by the administrator (using a command line tool)
 
 Follow one of the sections below according to the option you choose for the database operation mode.
 
