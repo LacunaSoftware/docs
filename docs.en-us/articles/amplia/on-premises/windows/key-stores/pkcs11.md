@@ -55,5 +55,5 @@ Safenet eToken cryptographic USB token (multiple tokens present, specifying the 
 * [Amplia - Key Stores](index.md)
 * [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - CNG Key Stores](cng.md)
-* [Installing Amplia on Windows Server](install.md)
-* [Troubleshooting](troubleshoot/index.md)
+* [Installing Amplia on Windows Server](../install.md)
+* [Troubleshooting](../troubleshoot/index.md)
