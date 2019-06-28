@@ -8,6 +8,17 @@ To install your own instance of [Amplia](../../index.md) on Windows Server, foll
 
 For other platforms, [click here](../index.md).
 
+## Database operation mode
+
+Amplia can operate in two ways regarding the access to the database:
+
+* Having owner privileges over the database and automatically updating the database model after an update (when needed)
+* Having only read and write privileges over the database, requiring the database model to be updated by the administrador (using a command line tool)
+
+Granting owner privileges to the application is simpler, while granting only read and write ensures you greater control over the database.
+
+Some of the setup instructions depend on the option you choose.
+
 ## Prerequisites
 
 * Windows Server 2016 or newer (any edition)
@@ -18,9 +29,21 @@ For other platforms, [click here](../index.md).
 > [!NOTE]
 > This documentation is intended for Windows Servers with GUI installed. For Core installations (shell access only), please contact us.
 
-## Decisions before installation
+You will also need a **connection string** to a database previously created having:
 
-TODO
+* Database collation: `Latin1_General_100_CI_AI`
+* Credentials corresponding to a user with the folloing database roles:
+  * If the application should be owner of the database: `db_owner`
+  * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
+
+> [!WARNING]
+> The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
+
+If you need help preparing the database, [click here](prepare-database.md).
+
+## Planning before installation
+
+
 
 ### Key storage
 
@@ -143,56 +166,6 @@ TODO
 	* `CertThumb`: thumbprint of the certificate to be used to authenticate with Azure (hex-encoded, as provided by the Azure Portal)
 	* `UseHsm`: by default, [HSM-protected](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-hsm-protected-keys) keys are created. To use "software"
 	   keys, set this value to `false`
-
-## Database preparation
-
-Create database:
-
-```
--- Cria banco
-USE Master;
-CREATE DATABASE Amplia
-COLLATE Latin1_General_100_CI_AI
-GO
-```
-
-Create database credentials...
-
-... with application having owner permissions:
-
-```
--- Cria login
-USE master;
-CREATE LOGIN AmpliaAdmin WITH PASSWORD = 'Senha!01';
-
--- Cria usuario no banco associado ao login
-USE Amplia;
-CREATE USER AmpliaAdmin FOR LOGIN AmpliaAdmin;
-
--- Atribui role de owner ao usuario
-EXEC sp_addrolemember 'db_owner', 'AmpliaAdmin';
-```
-
-... with application not having owner permissions:
-
-```
--- Cria logins para o sistema e para administracao do banco
-USE master;
-CREATE LOGIN AmpliaAdmin WITH PASSWORD = 'Senha!01';
-CREATE LOGIN AmpliaApp WITH PASSWORD = 'Senha!01';
-
--- Cria usuarios no banco associados aos logins
-USE Amplia;
-CREATE USER AmpliaAdmin FOR LOGIN AmpliaAdmin;
-CREATE USER AmpliaApp FOR LOGIN AmpliaApp;
-
--- Atribui role de owner ao usuario de administracao
-EXEC sp_addrolemember 'db_owner', 'AmpliaAdmin';
-
--- Atribui roles de leitura e escrita ao usuario do sistema
-EXEC sp_addrolemember 'db_datareader', 'AmpliaApp';
-EXEC sp_addrolemember 'db_datawriter', 'AmpliaApp';
-```
 
 ## See also
 
