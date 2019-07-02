@@ -1,6 +1,6 @@
 ﻿# Diagnosticando problemas na inicialização (Windows Server)
 
-Alguns erros que ocorrem durante a inicialização do sistema impedem que o framework de log do Amplia funcione. Nesses casos, tente uma das solução abaixo para diagnosticar o problema.
+Alguns erros que ocorrem durante a inicialização do sistema impedem que o framework de log do Amplia funcione. Nesses casos, tente uma das soluções abaixo para diagnosticar o problema.
 
 ## 1. Logs do Windows
 
