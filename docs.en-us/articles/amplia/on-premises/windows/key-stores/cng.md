@@ -1,7 +1,7 @@
 ﻿# Amplia - CNG Key Stores
 
 The **Cryptography API: Next Generation (CNG)** works with key storage through a number of **Key Storage Providers (KSPs)**
-that do the actual work of providing key storage.
+that do the actual work of storing keys.
 
 Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens may provide a CNG KSP that can
 be used to communicate with the device. Moreover, Windows Server has its own KSP which provide access to its
