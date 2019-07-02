@@ -3,7 +3,7 @@
 To update your instance of [Amplia](../../index.md), follow the instructions on that page.
 
 > [!NOTE]
-> To see if an update will require settings, look in the [Amplia changelog](../../changelog.md) for the configuration changes between the version you are installing and the version you are currently installing (how to check the installed version of the system, see [this article](../check-version.md) ).
+> To see if an update will require changing any settings, look in the [Amplia changelog](../../changelog.md) for the configuration changes between the version you are installing and the version you are currently installing (to know how to check the installed version of the system, see [this article](../check-version.md) ).
 
 1. Stop the web site in IIS Manager.
 1. Create a backup of database and site folder.
