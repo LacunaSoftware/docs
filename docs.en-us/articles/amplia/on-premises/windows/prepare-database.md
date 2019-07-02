@@ -22,8 +22,7 @@ To create the database, use the following T-SQL query (optionally changing the d
 
 ```sql
 USE Master;
-CREATE DATABASE Amplia
-COLLATE Latin1_General_100_CI_AI
+CREATE DATABASE Amplia COLLATE Latin1_General_100_CI_AI
 GO
 ```
 
