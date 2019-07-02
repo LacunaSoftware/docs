@@ -32,7 +32,7 @@ Sample configuration:
 Safenet eToken cryptographic USB token (one token plugged in only):
 
 ```json
-"Pkcs11AnyToken": {
+"eToken": {
 	"Type": "Pkcs11",
 	"Module": "eTPKCS11.dll",
 	"Pin": "XXXX"
@@ -42,7 +42,7 @@ Safenet eToken cryptographic USB token (one token plugged in only):
 Safenet eToken cryptographic USB token (multiple tokens present, specifying the token to be used):
 
 ```json
-"Pkcs11AnyToken": {
+"eTokenA": {
 	"Type": "Pkcs11",
 	"Module": "eTPKCS11.dll",
 	"Pin": "XXXX",
