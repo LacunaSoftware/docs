@@ -21,7 +21,7 @@ If you need help preparing the database, follow the steps in this article.
 To create the database, use the following T-SQL query (optionally changing the database name):
 
 ```sql
-USE Master;
+USE master;
 CREATE DATABASE Amplia COLLATE Latin1_General_100_CI_AI
 GO
 ```
