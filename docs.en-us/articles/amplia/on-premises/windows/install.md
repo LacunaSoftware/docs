@@ -145,7 +145,7 @@ Under section **Serilog**, configure the application logging:
 ...
 ```
 
-Change the **path** setting to the folder on which to write the log files.
+Change the **path** setting to the log file path.
 
 > [!NOTE]
 > Remember to grant full access to the application user on the log folder
