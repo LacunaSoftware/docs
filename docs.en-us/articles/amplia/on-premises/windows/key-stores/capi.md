@@ -60,6 +60,9 @@ Sample configuration:
 
 ## Common CAPI key stores
 
+> [!TIP]
+> In order to use one of the operating system's native key stores, [configure Amplia to use a local user account](../configure-app-user.md)
+
 Operating system's native user key store:
 
 ```json
@@ -81,8 +84,9 @@ Operating system's native machine key store:
 }
 ```
 
-> [!NOTE]
-> Using the OS machine key store requires administrative privileges of the user running the application
+> [!TIP]
+> To use the OS machine key store, [configure Amplia to use a local user account](../configure-app-user.md) and
+> add the application user to the local *Administrators* user group.
 
 Safenet eToken cryptographic USB token:
 
