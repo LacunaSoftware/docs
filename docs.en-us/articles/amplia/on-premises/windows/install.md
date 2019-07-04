@@ -109,6 +109,9 @@ If you need help preparing the database, [click here](prepare-database.md).
    ![Load user profile](../../../../../images/windows/load-user-profile.png)
 1. Extract files
 
+> [!NOTE]
+> If you intend to to use one of the operating system's native key stores, [configure Amplia to use a local user account](configure-app-user.md)
+
 ## Configuration
 
 On the installation folder, rename the file **appsettings.iis-template.json** to **appsettings.iis.json** (remove the `-template` suffix). Then, edit the file
