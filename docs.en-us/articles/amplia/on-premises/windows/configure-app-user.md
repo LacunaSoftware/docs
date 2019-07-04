@@ -17,7 +17,9 @@ To configure Amplia to run as a local user:
    1. Enter a username (e.g.: `AmpliaApp`) and a password
    1. Uncheck the box **User must change password at next logon**
    1. Check the box **Password never expires**
+
       ![Create user dialog](../../../../../images/windows/create-user-dialog.png)
+
    1. Click *Create*
 1. Configure the application pool
    1. Open the *Internet Information Services (IIS) Manager*
