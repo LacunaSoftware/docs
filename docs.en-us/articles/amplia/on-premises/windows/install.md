@@ -106,7 +106,7 @@ If you need help preparing the database, [click here](prepare-database.md).
    * Set no managed code
    * Set load user profile to `True`
 
-   ![Load user profile](../../../../../images/iis/load-user-profile.png)
+   ![Load user profile](../../../../../images/windows/load-user-profile.png)
 1. Extract files
 
 ## Configuration
