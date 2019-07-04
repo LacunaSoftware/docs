@@ -63,7 +63,7 @@ Operating system's native machine key store:
 
 > [!TIP]
 > To use the OS machine key store, [configure Amplia to use a local user account](../configure-app-user.md) and
-> add the application user to the local *Administrators* user group.
+> [add the application user to the local *Administrators* user group](../configure-app-user.md#grant-admin).
 
 Safenet eToken cryptographic USB token:
 
