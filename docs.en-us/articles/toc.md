@@ -154,6 +154,7 @@
 ### [Setup on Windows Server](amplia/on-premises/windows/index.md)
 #### [Install](amplia/on-premises/windows/install.md)
 #### [Preparing the database](amplia/on-premises/windows/prepare-database.md)
+#### [Configure application user](amplia/on-premises/windows/configure-app-user.md)
 #### [Key Store configuration](amplia/on-premises/windows/key-stores/index.md)
 ##### [PKCS #11](amplia/on-premises/windows/key-stores/pkcs11.md)
 ##### [CAPI](amplia/on-premises/windows/key-stores/capi.md)
