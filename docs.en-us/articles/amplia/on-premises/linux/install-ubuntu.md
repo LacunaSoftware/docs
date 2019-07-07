@@ -46,7 +46,37 @@ sudo mv /usr/share/amplia/appsettings.linux-template.json /usr/share/amplia/apps
 sudo nano /usr/share/amplia/appsettings.linux.json
 ```
 
-<!-- TODO: include common configuration instructions -->
+[!include[Database config](../includes/database-config.md)]
+
+### Logging
+
+Under section **Serilog**, configure the application logging:
+
+```json
+...
+"Serilog": {
+	"MinimumLevel": {
+		"Default": "Warning",
+	},
+	"WriteTo": [
+		{
+			"Name": "File",
+			"Args": {
+				"path": "/var/log/amplia.log",
+				"outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}",
+			}
+		}
+	],
+}
+...
+```
+
+If desired, change the **path** setting to the log file path.
+
+> [!NOTE]
+> If you change the default log file path, remember to grant full access to the application user (`amplia`) on the log folder
+
+[!include[Common config](../includes/common-config.md)]
 
 ## Set up a daemon
 
