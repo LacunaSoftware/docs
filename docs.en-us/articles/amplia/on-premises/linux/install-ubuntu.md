@@ -10,7 +10,7 @@ Follow these instructions: [Install .NET Core 2.2 Runtime on Linux Ubuntu](https
 > Select your Ubuntu version on the combo box at the top of the page
 
 > [!TIP]
-> Ignore the footnote on the instructions about installing just the .NET Core runtime. You need the full "runtime bundle" (in other words, make sure you get the package `aspnetcore-runtime-2.2`, not ~~dotnet-runtime-2.2~~)
+> Ignore the footnote on the instructions about installing just the .NET Core runtime. You need the full "runtime bundle". In other words, make sure you get the package `aspnetcore-runtime-2.2`, not ~~dotnet-runtime-2.2~~
 
 ## Install Amplia
 
