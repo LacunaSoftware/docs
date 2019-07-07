@@ -4,7 +4,7 @@
 
 ## Install the ASP.NET Core Runtime
 
-Click the link below, then **select your Ubuntu version** on the combo box at the top of the page and follow the instructions:
+Click the link below, then **select your Ubuntu version** and follow the instructions:
 
 <br />
 <center>
