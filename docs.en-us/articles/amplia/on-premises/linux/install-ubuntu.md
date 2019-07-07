@@ -35,7 +35,7 @@ sudo chmod -R a=rX,u+w /usr/share/amplia
 ```
 
 > [!NOTE]
-> The commands above cause the application user (amplia) to be able to read the site files, but not modify them. This is intended.
+> The commands above cause the application user (*amplia*) to be able to read the site files, but not modify them. This is intended.
 
 ## Configure Amplia
 
@@ -74,7 +74,7 @@ Under section **Serilog**, configure the application logging:
 If desired, change the **path** setting to the log file path.
 
 > [!NOTE]
-> If you change the default log file path, remember to grant full access to the application user (`amplia`) on the log folder
+> If you change the default log file path, remember to grant full access to the application user (*amplia*) to the log folder
 
 [!include[Common config](../includes/common-config.md)]
 
