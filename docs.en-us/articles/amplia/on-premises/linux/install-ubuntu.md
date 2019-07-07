@@ -74,7 +74,7 @@ Under section **Serilog**, configure the application logging:
 If desired, change the **path** setting to the log file path.
 
 > [!NOTE]
-> If you change the default log file path, remember to grant full access to the application user (*amplia*) to the log folder
+> If you change the default log file path, remember to grant write permissions to the application user (*amplia*) to the directory
 
 [!include[Common config](../includes/common-config.md)]
 
