@@ -6,9 +6,8 @@
 
 Click the link below, then **select your Ubuntu version** and follow the instructions:
 
-<br />
 <center>
-[Install .NET Core 2.2 Runtime on Linux Ubuntu](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/runtime-2.2.5)
+<a href="https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/runtime-2.2.5" target="_blank">Install .NET Core 2.2 Runtime on Linux Ubuntu</a>
 </center>
 <br />
 
