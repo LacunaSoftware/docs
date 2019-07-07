@@ -1,5 +1,8 @@
 ﻿# Amplia - CNG Key Stores
 
+> [!NOTE]
+> CNG Key Stores are only compatible with Windows Server installations
+
 The **Cryptography API: Next Generation (CNG)** works with key storage through a number of **Key Storage Providers (KSPs)**
 that do the actual work of storing keys.
 

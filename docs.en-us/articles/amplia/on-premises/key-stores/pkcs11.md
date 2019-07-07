@@ -1,5 +1,8 @@
 ﻿# Amplia - PKCS #11 key stores
 
+> [!NOTE]
+> PKCS #11 Key Stores are compatible with Windows Server and Linux installations only. To store keys on an HSM on an Amplia instance hosted on Azure App Services, use the an [Azure Key Vault key store](azure.md) instead.
+
 Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens usually support communication through the
 PKCS #11 protocol.
 

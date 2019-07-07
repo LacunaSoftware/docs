@@ -1,5 +1,8 @@
 ﻿# Amplia - CAPI Key Stores
 
+> [!NOTE]
+> CAPI Key Stores are only compatible with Windows Server installations
+
 The **Windows CryptoAPI (CAPI)** works with a number of **Cryptographic Service Providers (CSPs)** that do the actual work
 of providing various "cryptographic services", such as key storage.
 
