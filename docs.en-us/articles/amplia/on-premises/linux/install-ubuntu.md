@@ -6,6 +6,7 @@
 
 Click the link below, then **select your Ubuntu version** and follow the instructions:
 
+<br />
 <center>
 <a href="https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/runtime-2.2.5" target="_blank">Install .NET Core 2.2 Runtime on Linux Ubuntu</a>
 </center>
@@ -112,6 +113,9 @@ Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 WantedBy=multi-user.target
 ```
 
+> [!NOTE]
+> If you intend to use Elliptic Curve (EC) keys, uncomment the line marked above. In that case, you also need to make sure your server has OpenSSL 1.1 installed.
+
 Save the file and enable the service:
 
 ```sh
@@ -148,7 +152,7 @@ The expected output is something like:
 ## Set up a reverse proxy server
 
 > [!NOTE]
-> This manual suggests the usage of Nginx to set up a reverse proxy server. If you prefer to use Apache, [see this article](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-2.2#configure-apache).
+> If you prefer to use Apache instead of Nginx, [see this article](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-2.2#configure-apache).
 
 Install Nginx (if not already installed):
 
