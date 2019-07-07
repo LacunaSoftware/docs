@@ -43,7 +43,7 @@ Sample configuration:
 ## Common CNG key stores
 
 > [!TIP]
-> In order to use one of the operating system's native key stores, [configure Amplia to use a local user account](../configure-app-user.md)
+> In order to use one of the operating system's native key stores, [configure Amplia to use a local user account](../windows/configure-app-user.md)
 
 Operating system's native user key store:
 
@@ -65,8 +65,8 @@ Operating system's native machine key store:
 ```
 
 > [!TIP]
-> To use the OS machine key store, [configure Amplia to use a local user account](../configure-app-user.md) and
-> [add the application user to the local *Administrators* user group](../configure-app-user.md#grant-admin).
+> To use the OS machine key store, [configure Amplia to use a local user account](../windows/configure-app-user.md) and
+> [add the application user to the local *Administrators* user group](../windows/configure-app-user.md#grant-admin).
 
 Safenet eToken cryptographic USB token:
 
@@ -82,5 +82,4 @@ Safenet eToken cryptographic USB token:
 * [Amplia - Key Stores](index.md)
 * [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - PKCS #11 key stores](pkcs11.md)
-* [Installing Amplia on Windows Server](../install.md)
-* [Troubleshooting](../troubleshoot/index.md)
+* [Amplia on premises](../index.md)
