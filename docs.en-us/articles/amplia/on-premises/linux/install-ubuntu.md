@@ -2,24 +2,62 @@
 
 <!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
 
-Follow instructions: [Install .NET Core 2.2 Runtime on Linux Ubuntu 18.04](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/runtime-2.2.5)
+## Install the ASP.NET Core Runtime
+
+Follow these instructions: [Install .NET Core 2.2 Runtime on Linux Ubuntu](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/runtime-2.2.5)
+
+> [!NOTE]
+> Select your Ubuntu version on the combo box at the top of the page
 
 > [!TIP]
-> Ignore the instructions footnote about installing just the .NET Core runtime. You need the full "runtime bundle" (package `aspnetcore-runtime-2.2`)
+> Ignore the footnote on the instructions about installing just the .NET Core runtime. You need the full "runtime bundle" (in other words, make sure you get the package `aspnetcore-runtime-2.2`, not ~~dotnet-runtime-2.2~~)
+
+## Install Amplia
+
+Create a local user to run the Amplia server:
 
 ```sh
 sudo adduser --home /var/amplia --disabled-password amplia
 sudo usermod -aG syslog amplia
 sudo chmod -R a=,g=rX,u=rwX /var/amplia
+```
+
+> [!NOTE]
+> If you intend to use the native key store, keys will be stored on the directory */var/amplia/.dotnet*. The above `chmod` command is important to restrict access to the keys.
+
+Create the site folder, download and extract the binaries:
+
+```sh
 sudo mkdir /usr/share/amplia
 wget https://cdn.lacunasoftware.com/amplia/amplia-2.15.0.tar.gz
 sudo tar xzf amplia-2.15.0.tar.gz -C /usr/share/amplia
 sudo chmod -R a=rX,u+w /usr/share/amplia
+```
+
+> [!NOTE]
+> The commands above cause the application user (amplia) to be able to read the site files, but not modify them. This is intended.
+
+## Configure Amplia
+
+Rename the file *appsettings.iis-linux.json* to *appsettings.linux.json*, then edit the file to configure your Amplia instance:
+
+```sh
 sudo mv /usr/share/amplia/appsettings.linux-template.json /usr/share/amplia/appsettings.linux.json
 sudo nano /usr/share/amplia/appsettings.linux.json
+```
+
+<!-- TODO: include common configuration instructions -->
+
+## Set up a daemon
+
+Create the service definition file:
+
+```sh
 sudo touch /etc/systemd/system/amplia.service
 sudo nano /etc/systemd/system/amplia.service
 ```
+
+Enter the following:
 
 ```
 [Unit]
@@ -42,6 +80,8 @@ Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 WantedBy=multi-user.target
 ```
 
+Save the file and enable the service:
+
 ```sh
 sudo systemctl enable amplia
 sudo systemctl status amplia
@@ -61,15 +101,24 @@ The expected output is similar to:
 
 If necessary, restart the service: `sudo systemctl restart amplia`
 
-To test that the Amplia server is running, type `curl http://localhost:5000/api/system/info`. The expected output is something like:
+To test that the Amplia server is running, run:
+
+```sh
+curl http://localhost:5000/api/system/info
+```
+
+The expected output is something like:
 
 ```json
 {"productName":"Lacuna Amplia","productVersion":"2.15.0"}
 ```
 
-## Configure a reverse proxy server
+## Set up a reverse proxy server
 
-Install *nginx* if you don't already have it:
+> [!NOTE]
+> This manual suggests the usage of Nginx to set up a reverse proxy server. If you prefer to use Apache, [see this article](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-2.2#configure-apache).
+
+Install Nginx (if not already installed):
 
 ```sh
 sudo apt-get install nginx
@@ -81,7 +130,7 @@ It's usually a good idea to disable the default Nginx site:
 sudo rm /etc/nginx/sites-enabled/default
 ```
 
-Create a site configuration for Amplia:
+Create a site configuration file for Amplia:
 
 ```sh
 sudo touch /etc/nginx/sites-available/amplia
@@ -108,9 +157,9 @@ server {
 ```
 
 > [!TIP]
-> Ideally, your site configuration should contain the entries `ssl_certificate` and `ssl_certificate_key` with a valid SSL certificate. This configuration is outside the scope of these instructions.
+> Ideally, your site configuration should contain the entries `ssl_certificate` and `ssl_certificate_key` with a valid SSL certificate. This configuration is outside of the scope of these instructions.
 
-Next, we'll enable the site, test the Nginx configuration and restart it:
+Enable the site, test the Nginx configuration and reload it:
 
 ```sh
 sudo ln -sf /etc/nginx/sites-available/amplia /etc/nginx/sites-enabled/amplia
