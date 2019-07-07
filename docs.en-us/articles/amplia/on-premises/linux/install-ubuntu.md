@@ -1,4 +1,4 @@
-﻿# Installing Amplia on Linux Ubuntu
+﻿# Installing Amplia on Ubuntu Server
 
 <!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
 

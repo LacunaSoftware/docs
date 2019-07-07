@@ -1,4 +1,4 @@
-﻿# Instalação do Amplia em Linux Ubuntu
+﻿# Instalação do Amplia em Ubuntu Server
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>

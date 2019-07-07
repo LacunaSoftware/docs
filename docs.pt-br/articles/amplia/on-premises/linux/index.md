@@ -2,7 +2,7 @@
 
 O [Amplia](../../index.md) pode ser instalado nas seguintes distribuições de Linux:
 
-* [Ubuntu](install-ubuntu.md)
+* [Ubuntu Server](install-ubuntu.md)
 
 > [!NOTE]
 > Em breve adicionaremos suporte a mais distribuições. Caso necessite suporte a uma distribuição específica, entre em contato conosco.
