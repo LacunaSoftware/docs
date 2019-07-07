@@ -6,9 +6,6 @@
 Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens usually support communication through the
 PKCS #11 protocol.
 
-> [!NOTE]
-> In the PKCS #11 standard, any device capable of storing keys is called a *token*
-
 To configure a PKCS #11 key store on Amplia, use the following settings:
 
 * **Type**: `Pkcs11`
