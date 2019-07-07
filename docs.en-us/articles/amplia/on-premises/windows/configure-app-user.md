@@ -1,6 +1,6 @@
 ﻿# Configuring Amplia to run with a local user
 
-If you intend to use either the current user or local machine [Key stores](key-stores/index.md), it is highly recommended
+If you intend to use either the current user or local machine [Key stores](../key-stores/index.md), it is highly recommended
 that you configure Amplia to run with a local user account, instead of the default application pool identity.
 
 Since the default app pool identity is not a full-fledged user account, it can be difficult to perform certain operations
@@ -56,5 +56,5 @@ To use the operating system's machine key store the application user must be add
 ## See also
 
 * [Installing Amplia on Windows Server](install.md)
-* [Key Store configuration](key-stores/index.md)
+* [Key Store configuration](../key-stores/index.md)
 * [Troubleshooting](troubleshoot/index.md)

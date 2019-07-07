@@ -14,7 +14,7 @@ Revocation Lists (CRLs) be published. Please read the sections below for details
 ### Key storage
 
 The keys for your Certification Authorities (CAs) can be stored on a variety of locations, called *key stores*. The choice of where to store
-CA keys is one of the most important decisions when planning for a CA. See article [Key Store configuration](key-stores/index.md) for more information
+CA keys is one of the most important decisions when planning for a CA. See article [Key Store configuration](../key-stores/index.md) for more information
 on where you can store your CA keys and how to configure Amplia accordingly.
 
 ### Dashboard domain / SSL certificate
@@ -157,6 +157,6 @@ Change the **path** setting to the log file path.
 
 ## See also
 
-* [Key Store configuration](key-stores/index.md)
+* [Key Store configuration](../key-stores/index.md)
 * [Updating Amplia on Windows Server](update.md)
 * [Troubleshooting](troubleshoot/index.md)

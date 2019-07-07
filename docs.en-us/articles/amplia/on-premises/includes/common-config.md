@@ -105,7 +105,7 @@ On the section **KeyStores**, each key is the name of a key store, having as val
 ...
 ```
 
-The setting **Type** on each key store configuration defines the type of the key store, and the remaining settings depend on the provider chosen. See article [Key Store configuration](key-stores/index.md) for details.
+The setting **Type** on each key store configuration defines the type of the key store, and the remaining settings depend on the provider chosen. See article [Key Store configuration](../key-stores/index.md) for details.
 
 ### Application Insights (additional instrumentation)
 
