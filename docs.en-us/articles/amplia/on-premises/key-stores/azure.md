@@ -1,5 +1,8 @@
 ﻿# Amplia - Azure Key Vault key stores
 
+> [!NOTE]
+> Azure Key Vault stores are compatible with all supported platforms
+
 [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) can be though of as a cloud HSM. Keys are stored on FIPS 140-2 Level 2
 validated HSMs for a relatively low cost of ~5 dollars per month per key. This service from Microsoft has enabled the employment of HSMs on
 projects which otherwise would not have the necessary budget.
@@ -39,5 +42,4 @@ Sample configuration:
 * [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - CNG Key Stores](cng.md)
 * [Amplia - PKCS #11 key stores](pkcs11.md)
-* [Installing Amplia on Windows Server](../install.md)
-* [Troubleshooting](../troubleshoot/index.md)
+* [Amplia on premises](../index.md)

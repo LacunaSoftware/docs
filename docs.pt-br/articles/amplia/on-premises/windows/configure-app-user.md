@@ -6,5 +6,5 @@
 ## Veja também
 
 * [Instalando Amplia no Windows Server](install.md)
-* [Configuração de Key Stores](key-stores/index.md)
+* [Configuração de Key Stores](../key-stores/index.md)
 * [Resolução de problemas](troubleshoot/index.md)
