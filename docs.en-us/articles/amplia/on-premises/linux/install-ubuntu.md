@@ -211,5 +211,5 @@ curl http://localhost/api/system/info
 
 ## See also
 
-* [Updating Amplia on Azure App Services](update.md)
+* [Updating Amplia on Linux](update.md)
 * [Troubleshooting](troubleshoot/index.md)

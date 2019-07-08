@@ -175,6 +175,7 @@
 ##### [Enabling ASP.NET Core stdout log](amplia/on-premises/azure/troubleshoot/startup-errors.md)
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](amplia/on-premises/azure/troubleshoot/502-5.md)
 ### [Key Store configuration](amplia/on-premises/key-stores/index.md)
+#### [Native](amplia/on-premises/key-stores/native.md)
 #### [PKCS #11](amplia/on-premises/key-stores/pkcs11.md)
 #### [CAPI](amplia/on-premises/key-stores/capi.md)
 #### [CNG](amplia/on-premises/key-stores/cng.md)

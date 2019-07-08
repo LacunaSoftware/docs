@@ -80,6 +80,8 @@ Safenet eToken cryptographic USB token:
 ## See also
 
 * [Amplia - Key Stores](index.md)
+* [Amplia - Native Key Stores](native.md)
 * [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - PKCS #11 key stores](pkcs11.md)
+* [Amplia - Azure Key Vault Key Stores](azure.md)
 * [Amplia on premises](../index.md)
