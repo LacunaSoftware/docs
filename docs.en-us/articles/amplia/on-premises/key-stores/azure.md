@@ -39,6 +39,7 @@ Sample configuration:
 ## See also
 
 * [Amplia - Key Stores](index.md)
+* [Amplia - Database Key Store](database.md)
 * [Amplia - Native Key Stores](native.md)
 * [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - CNG Key Stores](cng.md)

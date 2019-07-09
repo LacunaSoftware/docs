@@ -1,12 +1,4 @@
-﻿### General settings
-
-Under section **General**:
-
-* **SiteUrl**: publicly accessible URL of the website (e.g.: `https://ca.patorum.com/`). This address is used to compose emails with links back to the website 
-* **AutoUpdateDatabase**: by default, the application tries to perform model changes to the database after an update (when needed). Set to `false` if the application does not have owner permissions over the database.
-* **SupportEmailAddress**: the support email address (used on the footer of outgoing emails)
-
-### Bindings
+﻿### Bindings
 
 Under section **Bindings**:
 
@@ -19,6 +11,9 @@ Under section **Bindings**:
 
 Under section **Amplia**:
 
+* **DatabaseKeyStoreEnabled**: to enable the [database key store](../key-stores/database.md), set this to `true`
+* **NativeUserKeyStoreEnabled**: to enable the [native user key store](../key-stores/native.md), set this to `true`
+* **NativeMachineKeyStoreEnabled**: to enable the [native machine key store](../key-stores/native.md), set this to `true`
 * **DefaultKeyStore**: the default key store on which to create new keys
 * **DefaultAccessDomains**: domains to be used when composing the CRL distribution points
 

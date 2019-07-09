@@ -148,6 +148,16 @@ Change the **path** setting to the log file path.
 > [!NOTE]
 > Remember to grant full access to the application user on the log folder
 
+[!include[General config](../includes/general-config.md)]
+
+To generate the *EncryptionKey*, run the following on a Powershell:
+
+```ps
+$k = New-Object byte[] 32;
+[System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($k);
+[Convert]::ToBase64String($k);
+```
+
 [!include[Common config](../includes/common-config.md)]
 
 ## Starting up application

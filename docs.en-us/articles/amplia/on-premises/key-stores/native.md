@@ -81,8 +81,8 @@ To backup the keys, simply backup the directory mentioned above (sudo required).
 Unlike other key stores, you don't need to add entries to the **KeyStores** configuration section to use native key stores. Instead,
 they can be enabled on the section **Amplia** of the configuration file:
 
-* `NativeUserKeyStoreEnabled`: set this setting to `true` to enable the native user store, called `NativeUserStore`
-* `NativeMachineKeyStoreEnabled`: set this setting to `true` to enable the native machine store, called `NativeMachineStore` (not available on Linux)
+* `NativeUserKeyStoreEnabled`: set this setting to `true` to enable the native user store, called `NativeUser`
+* `NativeMachineKeyStoreEnabled`: set this setting to `true` to enable the native machine store, called `NativeMachine` (not available on Linux)
 
 You can use the names of the stores mentioned above to configure the `DefaultKeyStore`. For instance:
 
@@ -91,7 +91,7 @@ You can use the names of the stores mentioned above to configure the `DefaultKey
 	"Amplia": {
 		...,
 		"NativeUserKeyStoreEnabled": true,
-		"DefaultKeyStore": "NativeUserStore",
+		"DefaultKeyStore": "NativeUser",
 		...
 	},
 	...
@@ -107,14 +107,14 @@ you must add an entry to the **KeyStores** configuration section, like either of
 	"KeyStores": {
 		...,
 
-		"NativeUserStore": {
+		"NativeUser": {
 			"Type": "Native",
 			"ExportableKeys": true
 		},
 
 		...,
 
-		"NativeMachineStore": {
+		"NativeMachine": {
 			"Type": "Native",
 			"UseMachineStore": true,
 			"ExportableKeys": true
@@ -131,6 +131,8 @@ you must add an entry to the **KeyStores** configuration section, like either of
 ## See also
 
 * [Amplia - Key Stores](index.md)
+* [Amplia - Database Key Store](database.md)
+* [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - CNG Key Stores](cng.md)
 * [Amplia - PKCS #11 key stores](pkcs11.md)
 * [Amplia - Azure Key Vault Key Stores](azure.md)
