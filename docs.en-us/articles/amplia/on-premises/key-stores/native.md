@@ -35,17 +35,18 @@ the current user or local machine's *Personal* certificate stores (also called t
 ![Windows Native Key Store](../../../../../images/amplia/windows-native-store.png)
 
 > [!WARNING]
-> In order to use native key stores on Windows Server, you should [configure Amplia to use a local user account](../windows/configure-app-user.md)
+> In order to use native key stores on Windows Server you must [configure Amplia to use a local user account](../windows/configure-app-user.md), otherwise
+> you will not be able to backup the generated keys.
 
 To backup keys stores on the *user store*:
 
 1. On *Windows Explorer*, navigate to the folder *C:\Windows\System32* and locate the executable **mmc.exe**
 1. **Hold the SHIFT key and right-click the file**, then click on **Run as different user**
-1. Enter the username and password of the local account created for Amplia
+1. Enter the username and password of the local account created for Amplia (see warning above)
 1. Click *File* and then *Add/Remove Snap-in...*
-1. Select the **Certificates** snap-in and click *Add &gt;*
+1. Select the **Certificates** snap-in and click *Add*
 1. Choose the **My user account** option, and then *Finish*, and *OK* on the previous dialog
-1. Expand the item *Certificates - Current User*, and the folder *Personal* under it
+1. Expand the item *Certificates - Current User*, and the folder **Personal** under it
 1. Click the folder *Certificates*
 1. Right-click the certificate corresponding to the key you want to backup, select *All Tasls*, then **Export...**
 1. Choose **Yes, export the key**
@@ -53,12 +54,12 @@ To backup keys stores on the *user store*:
 1. Enter a strong password to protect the .PFX file
 1. Enter a location for the .PFX file
 
-To use the machine machine key store on Windows Server, you must first [configure Amplia to use a local user account](../windows/configure-app-user.md) and
-then [add the application user to the local *Administrators* user group](../windows/configure-app-user.md#grant-admin).
+To use the *machine key store* on Windows Server, after you [configure Amplia to use a local user account](../windows/configure-app-user.md)
+you must [add the application user to the local *Administrators* user group](../windows/configure-app-user.md#grant-admin).
 
 To backup keys stored on the *machine store*, repeat the process above but, on **step 6**, choose **Computer account** instead.
 
-## Linux native key store
+## Linux native user key store
 
 On Linux, keys stored on the native user store are stored as PFX files containing a self-signed certificate with the corresponding key,
 stored on the directory */var/amplia/.dotnet/corefx/cryptography/x509stores/my*.
@@ -66,26 +67,31 @@ stored on the directory */var/amplia/.dotnet/corefx/cryptography/x509stores/my*.
 > [!NOTE]
 > The native machine key store is not supported on Linux.
 
-The PFX files are stored without a password, so the keys are essencially in plain text. Therefore, it is essencial to restrict access to the directory.
+The PFX files have no password, so the keys are essencially stored in plain text. Therefore, it is essencial to restrict access to the directory.
 That is why, during the installation, a `sudo chmod -R a=,g=rX,u=rwX /var/amplia` is performed, removing all access from "others" (except members of the
 *amplia* group and sudo users).
+
+> [!TIP]
+> For additional key protection on Linux environments, consider using an HSM or Azure Key Vault.
 
 To backup the keys, simply backup the directory mentioned above (sudo required).
 
 ## Configuring Amplia to use native key stores
 
-The native key stores are enabled on the section **Amplia** of the configuration file:
+Unlike other key stores, you don't need to add entries to the **KeyStores** configuration section to use native key stores. Instead,
+they can be enabled on the section **Amplia** of the configuration file:
 
-* `NativeUserKeyStoreEnabled`: set this setting to `true` to enable the native user store
-* `NativeMachineKeyStoreEnabled`: set this setting to `true` to enable the native machine store (not available on Linux)
+* `NativeUserKeyStoreEnabled`: set this setting to `true` to enable the native user store, called `NativeUserStore`
+* `NativeMachineKeyStoreEnabled`: set this setting to `true` to enable the native machine store, called `NativeMachineStore` (not available on Linux)
 
-For instance:
+You can use the names of the stores mentioned above to configure the `DefaultKeyStore`. For instance:
 
 ```json
 	...,
 	"Amplia": {
 		...,
 		"NativeUserKeyStoreEnabled": true,
+		"DefaultKeyStore": "NativeUserStore",
 		...
 	},
 	...
@@ -93,18 +99,34 @@ For instance:
 
 ### Generating non-exportable keys
 
+If you want to generate non-exportable keys on a native key store, instead of using the simplified configuration method mentioned above,
+you must add an entry to the **KeyStores** configuration section, like either of the illustrated below:
+
 ```json
 	...,
 	"KeyStores": {
 		...,
+
 		"NativeUserStore": {
 			"Type": "Native",
 			"ExportableKeys": true
-		}
+		},
+
+		...,
+
+		"NativeMachineStore": {
+			"Type": "Native",
+			"UseMachineStore": true,
+			"ExportableKeys": true
+		},
+
 		...
 	},
 	...
 ```
+
+> [!WARNING]
+> Non-exportable keys on native stores cannot be backed up!
 
 ## See also
 

@@ -4,11 +4,11 @@
 > CNG Key Stores are only compatible with Windows Server installations
 
 The **Cryptography API: Next Generation (CNG)** works with key storage through a number of **Key Storage Providers (KSPs)**
-that do the actual work of storing keys.
+that do the actual work of storing keys. Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens may
+provide a CNG KSP that can be used to communicate with the device.
 
-Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens may provide a CNG KSP that can
-be used to communicate with the device. Moreover, Windows Server has its own KSP which provide access to its
-native key stores.
+> [!TIP]
+> Although Windows Server has its own KSP which provides access to its native key stores, for that purpose you should use [Native Key Stores](native.md) instead.
 
 Every CNG KSP is identified by a *name*. If using an HSM or crypto token, refer to the device's documentation
 to find the name and type of the KSP. Additionally, see the section below for common KSP names.
@@ -41,32 +41,6 @@ Sample configuration:
 ```
 
 ## Common CNG key stores
-
-> [!TIP]
-> In order to use one of the operating system's native key stores, [configure Amplia to use a local user account](../windows/configure-app-user.md)
-
-Operating system's native user key store:
-
-```json
-"CngUserStore": {
-	"Type": "Cng",
-	"ProviderName": "Microsoft Software Key Storage Provider"
-}
-```
-
-Operating system's native machine key store:
-
-```json
-"CngMachineStore": {
-	"Type": "Cng",
-	"ProviderName": "Microsoft Software Key Storage Provider",
-	"UseMachineStore": true
-}
-```
-
-> [!TIP]
-> To use the OS machine key store, [configure Amplia to use a local user account](../windows/configure-app-user.md) and
-> [add the application user to the local *Administrators* user group](../windows/configure-app-user.md#grant-admin).
 
 Safenet eToken cryptographic USB token:
 

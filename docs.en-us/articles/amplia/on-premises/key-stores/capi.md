@@ -4,11 +4,11 @@
 > CAPI Key Stores are only compatible with Windows Server installations
 
 The **Windows CryptoAPI (CAPI)** works with a number of **Cryptographic Service Providers (CSPs)** that do the actual work
-of providing various "cryptographic services", such as key storage.
+of providing various "cryptographic services", such as key storage. Devices such as Hardware Security Modules (HSMs) and
+cryptographic USB tokens usually provide a CAPI CSP that can be used to communicate with the device.
 
-Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens usually provide a CAPI CSP that can
-be used to communicate with the device. Moreover, Windows Server has its own CSP which provide access to its
-native key stores.
+> [!TIP]
+> Although Windows Server has its own CSP which provides access to its native key stores, for that purpose you should use [Native Key Stores](native.md) instead.
 
 Every CAPI CSP is identified by its *name* and *type*. If using an HSM or crypto token, refer to the device's documentation
 to find the name and type of the CSP.
@@ -18,7 +18,7 @@ To configure a CAPI key store on Amplia, use the following settings:
 * **Type**: `CAPI`
 * **ProviderName**: name of the CSP
 * **ProviderType**: type of the CSP. Valid values are:
-	* **PROV_RSA_FULL** (common)
+	* **PROV_RSA_FULL**
 	* PROV_RSA_SIG
 	* PROV_DSS
 	* PROV_FORTEZZA
@@ -35,7 +35,7 @@ To configure a CAPI key store on Amplia, use the following settings:
 	* PROV_RNG
 	* PROV_INTEL_SEC
 	* PROV_REPLACE_OWF
-	* **PROV_RSA_AES** (also common)
+	* **PROV_RSA_AES**
 * **ExportableKeys**: by default, keys are generated marked as exportable. To generate non-exportable keys, set this to `false`.
 * **UseMachineStore**: some CSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably the OS's native CSP).
   By default, the user store is used. Set this setting to `true` to use the machine store.
@@ -55,41 +55,16 @@ Sample configuration:
 	"MyCapiKeyStore": {
 		"Type": "Capi",
 		"ProviderName": "...",
-		"ProviderType": "PROV_RSA_AES"
+		"ProviderType": "PROV_RSA_FULL"
 	},
 	...
 }
 ```
 
+> [!TIP]
+> If the HSM documentation is not clear on the *type* of the CSP, try using `PROV_RSA_FULL` or `PROV_RSA_AES`
+
 ## Common CAPI key stores
-
-> [!TIP]
-> In order to use one of the operating system's native key stores, [configure Amplia to use a local user account](../windows/configure-app-user.md)
-
-Operating system's native user key store:
-
-```json
-"CapiUserStore": {
-	"Type": "Capi",
-	"ProviderName": "Microsoft Enhanced RSA and AES Cryptographic Provider",
-	"ProviderType": "PROV_RSA_AES"
-}
-```
-
-Operating system's native machine key store:
-
-```json
-"CapiMachineStore": {
-	"Type": "Capi",
-	"ProviderName": "Microsoft Enhanced RSA and AES Cryptographic Provider",
-	"ProviderType": "PROV_RSA_AES",
-	"UseMachineStore": true
-}
-```
-
-> [!TIP]
-> To use the OS machine key store, [configure Amplia to use a local user account](../windows/configure-app-user.md) and
-> [add the application user to the local *Administrators* user group](../windows/configure-app-user.md#grant-admin).
 
 Safenet eToken cryptographic USB token:
 
