@@ -9,9 +9,9 @@
 Unlike other key stores, you don't need to add an entry to the **KeyStores** configuration section to use the database key store. Instead,
 it can be enabled on the section **Amplia** of the configuration file:
 
-* `DatabaseKeyStoreEnabled`: set this setting to `true` to enable the database key store, called `Database`
+* `DatabaseKeyStoreEnabled`: set this setting to `true` to enable the database key store, called *Database*
 
-You can use the name of the store (`Database`) to configure the `DefaultKeyStore`. For instance:
+You can use the name of the store (*Database*) to configure the `DefaultKeyStore`. For instance:
 
 ```json
 	...,

@@ -81,8 +81,8 @@ To backup the keys, simply backup the directory mentioned above (sudo required).
 Unlike other key stores, you don't need to add entries to the **KeyStores** configuration section to use native key stores. Instead,
 they can be enabled on the section **Amplia** of the configuration file:
 
-* `NativeUserKeyStoreEnabled`: set this setting to `true` to enable the native user store, called `NativeUser`
-* `NativeMachineKeyStoreEnabled`: set this setting to `true` to enable the native machine store, called `NativeMachine` (not available on Linux)
+* `NativeUserKeyStoreEnabled`: set this setting to `true` to enable the native user store, called *NativeUser*
+* `NativeMachineKeyStoreEnabled`: set this setting to `true` to enable the native machine store, called *NativeMachine* (not available on Linux)
 
 You can use the names of the stores mentioned above to configure the `DefaultKeyStore`. For instance:
 
