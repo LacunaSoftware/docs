@@ -37,7 +37,7 @@ To configure a CAPI key store on Amplia, use the following settings:
 	* PROV_REPLACE_OWF
 	* **PROV_RSA_AES**
 * **ExportableKeys**: by default, keys are generated marked as exportable. To generate non-exportable keys, set this to `false`.
-* **UseMachineStore**: some CSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably the OS's native CSP).
+* **UseMachineStore**: some CSPs have the concept of storing keys on the *user store* or on the *machine store* (most notably Windows's native CSP).
   By default, the user store is used. Set this setting to `true` to use the machine store.
 * **Pin**: the PIN of the store, if required
 
@@ -62,7 +62,7 @@ Sample configuration:
 ```
 
 > [!TIP]
-> If the HSM documentation is not clear on the *type* of the CSP, try using `PROV_RSA_FULL` or `PROV_RSA_AES`
+> If the HSM documentation is unclear about the *type* of the CSP, try using `PROV_RSA_FULL` or `PROV_RSA_AES`
 
 ## Common CAPI key stores
 
@@ -76,6 +76,8 @@ Safenet eToken cryptographic USB token:
 	"Pin": "XXXX"
 }
 ```
+
+<!-- TODO: add Thales nCipher configuration -->
 
 ## See also
 

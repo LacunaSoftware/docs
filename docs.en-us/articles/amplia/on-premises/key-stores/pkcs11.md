@@ -50,6 +50,8 @@ Safenet eToken cryptographic USB token (multiple tokens present, specifying the 
 }
 ```
 
+<!-- TODO: add Thales nCipher configuration -->
+
 ## See also
 
 * [Amplia - Key Stores](index.md)
