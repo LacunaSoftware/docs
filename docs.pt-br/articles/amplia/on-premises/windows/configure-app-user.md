@@ -17,6 +17,7 @@ Para configurar o Amplia para executar como um usuário local:
     1. Digite um nome de usuário (ex.: `AmpliaApp`) e uma senha
     1. Não selecione a caixa **User must chenge password at next logon**
     1. Selecione a caixa **Password never expires**
+    
         ![Create user dialog](../../../../../images/windows/create-user-dialog.png)
     
     1. Clique em **Create**
