@@ -41,6 +41,7 @@ with key stores through such protocols. The communication protocols define the *
 
 The supported key store types are:
 
+* [Database](database.md)
 * [Native](native.md)
 * [PKCS #11](pkcs11.md)
 * [Windows CryptoAPI (CAPI)](capi.md)
