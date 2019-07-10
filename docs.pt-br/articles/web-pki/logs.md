@@ -6,6 +6,7 @@ O [Web PKI](index.md) pode registrar logs tanto do componente do navegador quant
 
 Para habilitar o registro de logs detalhados no console da página do navegador e na aplicação nativa, clique no ícone da extensão e depois em
 `Configurações > Avançadas > Logs detalhados`
+
 ![Enable verbose logging](../../../../images/web-pki/enable-log.png)
 
 ## Logs da aplicação nativa
