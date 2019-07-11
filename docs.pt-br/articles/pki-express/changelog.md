@@ -10,30 +10,13 @@
 
 - Adiciona suporte a configuração de timeout no download de CRLs e certificados emissores de AC
 - Adiciona suporte a configuração de timeout na requisição de um timestamp
-- Atualiza PKI SDK para a versão 2.3.0, portanto:
-  - Melhora o configurador da validação do CadesSigner
-  - Adiciona suporte a validação de certificados de curva elíptica
-  - Adiciona suporte a geração de certificados de curva elíptica
-  - Melhora acesso a validação de artefatos
-  - Corrige validação de emails com expressão regular
+- Atualiza PKI SDK para a versão [2.3.0](../pki-sdk/changelog.md#v2-3-0)
 
 <a name="v1-12-0" />
 ### 1.12.0 (2019-02-05)
 
 - Adiciona suporte as políticas ICP-Brasil em assinaturas PAdES (políticas `adrb`, `adrb-ltv`, e `adrt`)
-- Atualiza PKI SDK para a versão 2.2.7, portanto:
-  - Adiciona razão do assinante PAdES
-  - Adiciona algoritmos de digest compatíveis com FIPS em .NETFramework 4.0 Client target
-  - Adiciona atributo "Cargo" em certificados de atributo
-  - Corrige bug na rotação de PDF marks
-  - Melhora o uso da memória em assinaturas PAdES
-  - Adiciona a exceção para arquivos de assinaturas CAdES inválidas
-  - Corrige a verificação rápida de um CadesSigner com um configurador mais permissivo
-  - Melhora a validação de assinatura PAdES com DSS OCSP armazenado
-  - Melhora ordem de geração de campos "Name"
-  - Melhora a geração de certificados auto-assinados
-  - Corrige suporte a geração de Names com caracteres especiais
-  - Melhora as marcas de PDF quando tem restrições de proprietário do documento
+- Atualiza PKI SDK para a versão [2.2.7](../pki-sdk/changelog.md#v2-2-7)
 
 <a name="v1-11-0" />
 ### 1.11.0 (2018-12-04)
@@ -58,10 +41,7 @@
 ### 1.8.0 (2018-09-25)
 
 - Adiciona suporte ao retorno do certificado do assinante depois de uma assinatura.
-- Atualiza PKI SDK para a versão 2.1.3, portanto:
-  - Adiciona opção de TSA: TSA policy OID
-  - Melhora as políticas de codificação de Name
-  - Corrige archieve signature finisher
+- Atualiza PKI SDK para a versão [2.1.3](../pki-sdk/changelog.md#v2-1-3)
 
 <a name="v1-7-0" />
 ### 1.7.0 (2018-09-20)
@@ -72,7 +52,7 @@
 ### 1.6.2 (2018-07-20)
 
 - Corrige bug na ativação manualmente com nova licença
-- Atualiza PKI SDK para a versão 2.1.0, adicionando suporte para *multi-targeting*: .NETStandard 2.0, .NETFramework 4.5 e .NETFramework 4.0
+- Atualiza PKI SDK para a versão [2.1.0](../pki-sdk/changelog.md#v2-1-0)
 
 <a name="v1-6-1" />
 ### 1.6.1 (2018-07-11)
@@ -89,14 +69,12 @@
 
 - Adiciona escolha da política de assinatura com `--policy` habilitado nas assinaturas
 - Adiciona assinatura com carimbo de tempo (suporte para CAdES, PAdES e XAdES)
-- Atualiza PKI SDK para a versão 1.20.16, corrigindo bug no preenchimento da cadeia de certificados na assinatura PAdES
+- Atualiza PKI SDK para a versão [1.20.16](../pki-sdk/changelog.md#v1-20-16), corrigindo bug no preenchimento da cadeia de certificados na assinatura PAdES
 
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)
 
-- Atualiza o PKI SDK para versão 1.20.15, portanto:
-  - Melhora tolerância com certificados malformados (resolvendo problemas devidos a um recente certificado malformado SERPRO)
-  - Atualiza ACs ICP-Brasil intermediárias
+- Atualiza o PKI SDK para versão [1.20.15](../pki-sdk/changelog.md#v1-20-15)
 
 <a name="v1-4-0" />
 ### 1.4.0 (2018-04-10)

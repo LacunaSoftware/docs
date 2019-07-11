@@ -10,30 +10,13 @@
 
 - Add support to timeout configuration for CRLs and CA issuers download
 - Add support to timeout configuration for timestamp request
-- Update PKI SDK to 2.3.0, thus:
-  - Improve CadesSigner validation configurator
-  - Add support for Elliptic-curve certificates validation
-  - Add support for Elliptic-curve certificates generation
-  - Improve access to validation artifacts
-  - Fix email regex validation
+- Update PKI SDK to [2.3.0](../pki-sdk/changelog.md#v2-3-0)
 
 <a name="v1-12-0" />
 ### 1.12.0 (2019-02-05)
 
 - Add support to PKI-Brazil policies on PAdES signatures (policies `adrb`, `adrb-ltv`, and `adrt`)
-- Update PKI SDK to 2.2.7, thus:
-  - Add functional PAdES signer reason
-  - Add FIPS compliant digest algorithms on .NETFramework 4.0 Client target
-  - Add Role attribute for Attribute Certificates
-  - Fix PDF marks rotation bug
-  - Improve memory usage on PAdES signatures
-  - Add invalid CAdES signature file exception
-  - Fix CadesSigner quick certificate validation with more permissive configurator
-  - Improve PAdES validation with DSS OCSP stored
-  - Improve Name fields generation order
-  - Improve self-signed certificate generation
-  - Fix Name generation with special characters support
-  - Improve PDF marks with owner restrictions
+- Update PKI SDK to [2.2.7](../pki-sdk/changelog.md#v2-2-7)
 
 <a name="v1-11-0" />
 ### 1.11.0 (2018-12-04)
@@ -58,10 +41,7 @@
 ### 1.8.0 (2018-09-25)
 
 - Add support for returning the signer certificate after a signature.
-- Update PKI SDK to 2.1.3, thus:
-  - Add TSA option parameter: TSA policy OID
-  - Improve Name encoding policies
-  - Fix archieve signature finisher
+- Update PKI SDK to [2.1.3](../pki-sdk/changelog.md#v2-1-3)
 
 <a name="v1-7-0" />
 ### 1.7.0 (2018-09-20)
@@ -72,7 +52,7 @@
 ### 1.6.2 (2018-07-20)
 
 - Fix bug on manual activation with new license
-- Update PKI SDK to 2.1.0, adding support for multi-targeting: .NETStandard 2.0, .NETFramework 4.5 and .NETFramework 4.0
+- Update PKI SDK to [2.1.0](../pki-sdk/changelog.md#v2-1-0)
 
 <a name="v1-6-1" />
 ### 1.6.1 (2018-07-11)
@@ -89,14 +69,12 @@
 
 - Add support for choosing a signature policy with `--policy` enabled on the signatures
 - Add support for performing signatures with timestamp (support for PAdES, CAdES and XAdES)
-- Update PKI SDK to 1.20.16, fixing certificate chain filling bug on PAdES
+- Update PKI SDK to [1.20.16](../pki-sdk/changelog.md#v1-20-16), fixing certificate chain filling bug on PAdES
 
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)
 
-- Update PKI SDK to 1.20.15, thus:
-  - Improve tolerance for malformed certificates (fixing problems due to recent SERPRO malformed certificates)
-  - Update ICP-Brasil intermediate CAs
+- Update PKI SDK to [1.20.15](../pki-sdk/changelog.md#v1-20-15)
 
 <a name="v1-4-0" />
 ### 1.4.0 (2018-04-10)
