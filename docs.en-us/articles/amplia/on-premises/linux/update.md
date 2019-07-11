@@ -13,12 +13,9 @@ sudo systemctl start amplia
 ```
 
 > [!TIP]
-> If the first command fails because your system lacks *wget*, use curl instead:<br/>`curl -O https://cdn.lacunasoftware.com/amplia/amplia-2.15.0.tar.gz`
-
-> [!TIP]
 > If the first command fails because your system lacks *wget*, use curl instead:
 > ```sh
-> curl -O https://cdn.lacunasoftware.com/amplia/amplia-2.15.0.tar.gz`
+> curl -O https://cdn.lacunasoftware.com/amplia/amplia-2.15.0.tar.gz
 > ```
 
 ## See also
