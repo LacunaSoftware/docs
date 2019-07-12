@@ -27,18 +27,19 @@ public static class Util {
 ```
 
 Entretanto, como o código de verificação desempenha um papel crucial na proteção do acesso aos seus documentos, nós
-agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para fazer a geração dos códigos. O código-fonte
-da geração passou por uma auditoria minuciosa e recebeu algumas importantes melhorias.
+agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para fazer a geração dos códigos.
 
 <a name="update-code" />
 ## Updating your app to use *AlphaCode*
 
 > [!WARNING]
-> Recomendamos fortemente que você substitua o código-fonte antigo de geração de códigos de verificação copiado dos exemplos para a sua aplicação
-> por chamadas à nova classe *AlphaCode*
+> A lógica de geração de códigos de verificação passou por uma auditoria minuciosa e recebeu importantes melhorias.
+> Por isso, recomendamos fortemente que você atualize a sua aplicação para utilizar a classe *AlphaCode* ao invés de utilizar
+> o código-fonte antigo.
 
-Você provavelmente copiou os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
-dos exemplos para a sua aplicação. Simplesmente substitua a implementação dos métodos por chamadas aos métodos da classe *AlphaCode*:
+Você provavelmente copiou anteriormente os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
+dos exemplos para a sua aplicação. Para atualizar a sua aplicação, simplesmente substitua a implementação desses métodos por chamadas aos métodos
+da classe *AlphaCode*:
 
 ```cs
 public static string GenerateVerificationCode() => AlphaCode.Generate();
