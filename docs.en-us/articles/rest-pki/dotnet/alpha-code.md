@@ -8,23 +8,19 @@ In the past, we provided the source code to generate this verification code as p
 
 ```cs
 public static class Util {
-	
-	// ...
+   
+   // ...
 
-	public static string GenerateVerificationCode() {
-		// String with exactly 32 letters and numbers to be used on the codes. We recommend leaving this value as is.
-		const string Alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-		// Allocate a byte array large enough to receive the necessary entropy
-		var bytes = new byte[(int)Math.Ceiling(VerificationCodeSize * 5 / 8.0)];
-		// Generate the entropy with a cryptographic number generator
-		using (var rng = RandomNumberGenerator.Create()) {
-			rng.GetBytes(bytes);
-		}
-		// ...
-		return sb.ToString();
-	}
+   public static string GenerateVerificationCode() {
+      // String with exactly 32 letters and numbers to be used on the codes.
+      const string Alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      // Allocate a byte array large enough to receive the necessary entropy
+      var bytes = new byte[(int)Math.Ceiling(VerificationCodeSize * 5 / 8.0)];
+      // ...
+      return sb.ToString();
+   }
 
-	// ...
+   // ...
 
 }
 ```
@@ -33,10 +29,10 @@ However, since the verification code plays an important role in protecting the a
 the `AlphaCode` class on the *Lacuna.RestPki.Client* package to perform the code generation.
 
 <a name="update-code">
-## Updating your app to use `AlphaCode`
+## Updating your app to use *AlphaCode*
 
 > [!WARNING]
-> We highly recommend that you replace the old provided code with calls to `AlphaCode`. See section below on how to update your code.
+> We highly recommend that you replace the old provided code with calls to `AlphaCode`
 
 You probably brought the (now obsolete) methods `GenerateVerificationCode`, `FormatVerificationCode` and `ParseVerificationCode`
 into your own code. Simply replace the implementation with calls to `AlphaCode`:
@@ -51,7 +47,7 @@ public static string ParseVerificationCode(string formattedCode) => AlphaCode.Pa
 
 ## Design principles
 
-The class `AlphaCode` generates alphanumeric codes that are easy for humans to read, such that:
+The class *AlphaCode* generates alphanumeric codes that are easy for humans to read, such that:
 
 1. Codes should be easy to read
 1. Codes should be easy to type back with low risk of mistaking similar characters such as "O" and "0"
@@ -63,9 +59,9 @@ still maintaining a relatively high entropy per character. There are 32 possible
 entropy (25% better than using hexadecimal) which results in smaller codes for the same intended entropy.
 
 For instance, to generate a code with 80 bits of entropy (2^80 possible codes), an hexadecimal code have to be 20 characters, while a code generated
-by the `AlphaCode` class needs only 16 characters.
+by the *AlphaCode* class needs only 16 characters.
 
-In general terms, the `AlphaCode` class is used as follows:
+In general terms, the *AlphaCode* class is used as follows:
 
 * During the generation of a printer-friendly version:
   1. Call `AlphaCode.Generate()` to generate a code, e.g.: `XXXXXXXXXXXXXXXX`
