@@ -28,14 +28,14 @@ public static class Util {
 However, since the verification code plays an important role in protecting the access to your documents, we now offer
 the `AlphaCode` class on the *Lacuna.RestPki.Client* package to perform the code generation.
 
-<a name="update-code">
+<a name="update-code" />
 ## Updating your app to use *AlphaCode*
 
 > [!WARNING]
-> We highly recommend that you replace the old provided code with calls to `AlphaCode`
+> We highly recommend that you replace the old provided code with calls to *AlphaCode*
 
 You probably brought the (now obsolete) methods `GenerateVerificationCode`, `FormatVerificationCode` and `ParseVerificationCode`
-into your own code. Simply replace the implementation with calls to `AlphaCode`:
+into your own code. Simply replace the implementation with calls to methods of the *AlphaCode* class:
 
 ```cs
 public static string GenerateVerificationCode() => AlphaCode.Generate();
