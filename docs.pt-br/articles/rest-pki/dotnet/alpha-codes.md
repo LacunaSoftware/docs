@@ -34,7 +34,8 @@ da geração passou por uma auditoria minuciosa e recebeu algumas importantes me
 ## Updating your app to use *AlphaCode*
 
 > [!WARNING]
-> Recomendamos fortemente que você substitua o código antigo copiado dos exemplos para a sua aplicação por chamadas à nova classe *AlphaCode*
+> Recomendamos fortemente que você substitua o código-fonte antigo de geração de códigos de verificação copiado dos exemplos para a sua aplicação
+> por chamadas à nova classe *AlphaCode*
 
 Você provavelmente copiou os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
 dos exemplos para a sua aplicação. Simplesmente substitua a implementação dos métodos por chamadas aos métodos da classe *AlphaCode*:

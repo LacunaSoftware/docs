@@ -26,13 +26,14 @@ public static class Util {
 ```
 
 However, since the verification code plays an important role in protecting the access to your documents, we now offer
-the `AlphaCode` class on the *Lacuna.RestPki.Client* package to perform the code generation.
-
-> [!WARNING]
-> We highly recommend that you replace the old provided code with calls to *AlphaCode*
+the `AlphaCode` class on the *Lacuna.RestPki.Client* package to perform the code generation. The source code has recently
+undergone a careful audit and has received important improvements.
 
 <a name="update-code" />
 ## Updating your app to use *AlphaCode*
+
+> [!WARNING]
+> We highly recommend that you replace the old provided source code for generating verification codes with calls to *AlphaCode*
 
 You probably brought the (now obsolete) methods `GenerateVerificationCode`, `FormatVerificationCode` and `ParseVerificationCode`
 into your own code. Simply replace the implementation with calls to methods of the *AlphaCode* class:
