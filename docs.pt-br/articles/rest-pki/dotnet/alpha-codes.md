@@ -40,16 +40,17 @@ agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para faz
 > o código-fonte antigo.
 
 Você provavelmente copiou anteriormente os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
-dos exemplos para o seu código. Para atualizar a sua aplicação, simplesmente substitua a implementação desses métodos por chamadas aos métodos
-da classe *AlphaCode*:
+dos exemplos para o seu código. Para atualizar a sua aplicação:
 
-```cs
-public static string GenerateVerificationCode() => AlphaCode.Generate();
-
-public static string FormatVerificationCode(string code) => AlphaCode.Format(code);
-
-public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(code);
-```
+1. Atualize o pacote de nuget *Lacuna.RestPki.Client*
+1. Substitua a implementação desses métodos no seu código por chamadas aos métodos da classe *AlphaCode*:
+   ```cs
+   public static string GenerateVerificationCode() => AlphaCode.Generate();
+   
+   public static string FormatVerificationCode(string code) => AlphaCode.Format(code);
+   
+   public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(formattedCode);
+   ```
 
 ## Princípios de projeto
 
@@ -66,8 +67,8 @@ com 5 bits à entropia total do código gerado (25% a mais do que num código he
 
 Por exemplo, paga gerar um código com 80 bits de entropia (2^80 possíveis códigos):
 
-* Em hexadecimal, seria necessário um código de 20 caracteres, ex: `90A0-F20F-5883-8D55-AD31`
-* Com a classe *AlphaCode*, o código teria apenas 16 caracteres, ex: `FFWC-RHC5-9NLF-VM42`
+* Um código em hexadecimal teria 20 caracteres, ex: `90A0-F20F-5883-8D55-AD31`
+* Um código gerado pelo *AlphaCode* teria apenas 16 caracteres, ex: `FFWC-RHC5-9NLF-VM42`
 
 ## Veja também
 

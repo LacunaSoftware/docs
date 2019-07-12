@@ -38,15 +38,18 @@ the `AlphaCode` class on the *Lacuna.RestPki.Client* package to perform the code
 > We highly recommend that you update your application to use *AlphaCode* instead of the old provided code.
 
 You probably brought the (now obsolete) methods `GenerateVerificationCode`, `FormatVerificationCode` and `ParseVerificationCode`
-into your own code. To update your application, simply replace the implementation with calls to methods of the *AlphaCode* class:
+into your own code. To update your application:
 
-```cs
-public static string GenerateVerificationCode() => AlphaCode.Generate();
+1. Update the nuget package *Lacuna.RestPki.Client*
+1. Replace the implementation of these methods on your code with calls to methods of the *AlphaCode* class:
 
-public static string FormatVerificationCode(string code) => AlphaCode.Format(code);
-
-public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(formattedCode);
-```
+   ```cs
+   public static string GenerateVerificationCode() => AlphaCode.Generate();
+   
+   public static string FormatVerificationCode(string code) => AlphaCode.Format(code);
+   
+   public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(formattedCode);
+   ```
 
 ## Design principles
 
