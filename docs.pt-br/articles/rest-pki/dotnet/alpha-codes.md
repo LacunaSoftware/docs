@@ -30,7 +30,7 @@ Entretanto, como o código de verificação desempenha um papel crucial na prote
 agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para fazer a geração dos códigos.
 
 <a name="update-code" />
-## Atualizando sua aplicação para usar o *AlphaCode*
+## Atualizando sua aplicação para usar a classe *AlphaCode*
 
 > [!WARNING]
 > A lógica de geração de códigos de verificação passou por uma auditoria minuciosa e recebeu importantes melhorias.
@@ -64,18 +64,6 @@ com 5 bits à entropia total do código gerado (25% a mais do que num código he
 
 Por exemplo, para gerar um código com entropia de 80 bits (2^80 possíveis códigos), um código hexadecimal precisaria ter 20 caracteres,
 enquanto que um código gerado pela classe *AlphaCode* só precisaria ter 16 caracteres.
-
-De maneira geral, o uso da classe se dá da seguinte maneira:
-
-* Durante a geração de uma versão para impressão de um documento assinado digitalmente:
-  1. Chame `AlphaCode.Generate()` para obter um código, ex: `XXXXXXXXXXXXXXXX`
-  1. Armazene o código no seu banco de dados indexando o documento ou entidade associada
-  1. Chame `AlphaCode.Format(code)` para formatar o código de maneira mais legível, ex: `XXXX-XXXX-XXXX-XXXX`
-  1. Escreva o código formatado no PDF de versão para impressão sendo gerado
-* Durante a verificação de um documento:
-  1. Solicite ao usuário o código de verificação
-  1. Chame `AlphaCode.Parse(code)` para remover pontuações que o usuário possa ter digitado, obtendo de volta o código não-formatado
-  1. Pesquisa no seu banco de dados o documento ou entidade pelo código não-formatado
 
 ## Veja também
 

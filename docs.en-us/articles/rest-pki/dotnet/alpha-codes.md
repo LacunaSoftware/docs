@@ -62,18 +62,6 @@ entropy (25% better than using hexadecimal) which results in smaller codes for t
 For instance, to generate a code with 80 bits of entropy (2^80 possible codes), an hexadecimal code have to be 20 characters, while a code generated
 by the *AlphaCode* class needs only 16 characters.
 
-In general terms, the *AlphaCode* class is used as follows:
-
-* During the generation of a printer-friendly version:
-  1. Call `AlphaCode.Generate()` to generate a code, e.g.: `XXXXXXXXXXXXXXXX`
-  1. Store the code on your database indexing the document or related entity
-  1. Call `AlphaCode.Format(code)` to get a more human-readable version of the code, e.g.: `XXXX-XXXX-XXXX-XXXX`
-  1. Write the formatted code to printer-friendly PDF
-* During the verification of a document:
-  1. Ask the user for the verification code
-  1. Call `AlphaCode.Parse(code)` to remove any punctiation that the user might have entered, obtaining the unformatted code
-  1. Lookup your database with the unformatted code
-
 ## See also
 
 * [Using Rest PKI on .NET](index.md)
