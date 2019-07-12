@@ -52,6 +52,7 @@
 ### [ASP.NET Web Forms](rest-pki/dotnet/web-forms.md)
 ### [ASP.NET Core](rest-pki/dotnet/netcore.md)
 ### [Visual Studio 2008](rest-pki/dotnet/vs2008.md)
+### [Gerando códigos alfanuméricos](rest-pki/dotnet/alpha-codes.md)
 ## [Usando em Python](rest-pki/python/index.md)
 ### [Flask](rest-pki/python/flask.md)
 ## [Usando em Node.js](rest-pki/nodejs/index.md)
