@@ -2,7 +2,9 @@
 
 When generating a printer-friendly version of a signed file, a "document verification code" needs to be included in the
 document so that a third party receiving the printed document can access your website and provide the code to get back the
-digitally signed version.
+digitally signed version:
+
+![Codigo de verificacao](../../../../images/verification-code.png)
 
 In the past, we provided the source code to generate this verification code as part of the samples, for instance:
 

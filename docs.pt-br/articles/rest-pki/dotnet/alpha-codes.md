@@ -2,7 +2,9 @@
 
 Ao gerar uma versão para impressão de um arquivo assinado, é necessário gerar um *código de verificação* a ser
 incluido no documento para que um terceiro que porventura receba o documento impresso possa visitar o seu site e fornecer o
-código, obtendo assim a versão assinada digitalmente (que é a que efetivamente tem validade jurídica).
+código, obtendo assim a versão assinada digitalmente (que é a que efetivamente tem validade jurídica):
+
+![Codigo de verificacao](../../../../images/verification-code.png)
 
 No passado, nós províamos o código-fonte para geração desse código de verificação como parte dos exemplos, a ser copiado
 para o código da sua aplicação. Por exemplo:
