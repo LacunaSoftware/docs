@@ -171,7 +171,7 @@ $k = New-Object byte[] 32;
 [Convert]::ToBase64String($k);
 ```
 
-[!include[Common config](../includes/common-config.md)]
+[!include [Common config](../includes/common-config.md)]
 
 ## Iniciando o aplicativo
 
