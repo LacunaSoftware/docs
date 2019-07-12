@@ -1,8 +1,8 @@
 ﻿# Gerando códigos alfanuméricos em .NET
 
-Ao gerar uma versão para impressão de um arquivo assinado, é necessário gerar um "código de verificação do documento" a ser
+Ao gerar uma versão para impressão de um arquivo assinado, é necessário gerar um *código de verificação* a ser
 incluido no documento para que um terceiro que porventura receba o documento impresso possa visitar o seu site e fornecer o
-código, obtendo assim a versão assinada digitalmente (que é o documento que efeticamente tem validade jurídica).
+código, obtendo assim a versão assinada digitalmente (que é a que efetivamente tem validade jurídica).
 
 No passado, nós províamos o código-fonte para geração desse código de verificação como parte dos exemplos, a ser copiado
 para o código da sua aplicação. Por exemplo:
@@ -30,7 +30,7 @@ Entretanto, como o código de verificação desempenha um papel crucial na prote
 agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para fazer a geração dos códigos.
 
 <a name="update-code" />
-## Updating your app to use *AlphaCode*
+## Atualizando sua aplicação para usar o *AlphaCode*
 
 > [!WARNING]
 > A lógica de geração de códigos de verificação passou por uma auditoria minuciosa e recebeu importantes melhorias.
@@ -38,7 +38,7 @@ agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para faz
 > o código-fonte antigo.
 
 Você provavelmente copiou anteriormente os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
-dos exemplos para a sua aplicação. Para atualizar a sua aplicação, simplesmente substitua a implementação desses métodos por chamadas aos métodos
+dos exemplos para o seu código. Para atualizar a sua aplicação, simplesmente substitua a implementação desses métodos por chamadas aos métodos
 da classe *AlphaCode*:
 
 ```cs
@@ -51,7 +51,7 @@ public static string ParseVerificationCode(string formattedCode) => AlphaCode.Pa
 
 ## Princípios de projeto
 
-A classe *AlphaCode* gera códigos alfanuméricos feitos para serem lidos por pessoas, de modo que:
+A classe *AlphaCode* gera códigos alfanuméricos feitos para serem lidos por pessoas seguindo os princípios abaixo:
 
 1. Os códigos devem de fácil leitura
 1. Os códigos devem poder ser facilmente digitados com baixo risco de confundir caracteres similares como `O` e `0`
