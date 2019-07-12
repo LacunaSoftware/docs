@@ -44,6 +44,7 @@ dos exemplos para o seu código. Para atualizar a sua aplicação:
 
 1. Atualize o pacote de nuget *Lacuna.RestPki.Client*
 1. Substitua a implementação desses métodos no seu código por chamadas aos métodos da classe *AlphaCode*:
+
    ```cs
    public static string GenerateVerificationCode() => AlphaCode.Generate();
    
@@ -65,10 +66,10 @@ Para melhorar a legibilidade, são utilizadas apenas letras maiúsculas e não s
 por caractere é relativamente alta, se comparada com um código hexadecimal: como existem 32 possíveis caracteres, cada caractere contribui
 com 5 bits à entropia total do código gerado (25% a mais do que num código hexadecimal), o que resulta em códigos menores para uma dada entropia mínima.
 
-Por exemplo, paga gerar um código com 80 bits de entropia (2^80 possíveis códigos):
+Por exemplo, para gerar um código com 80 bits de entropia (2^80 possíveis códigos):
 
-* Um código em hexadecimal teria 20 caracteres, ex: `90A0-F20F-5883-8D55-AD31`
-* Um código gerado pelo *AlphaCode* teria apenas 16 caracteres, ex: `FFWC-RHC5-9NLF-VM42`
+* Em hexadecimal, seria necessário um código de 20 caracteres, ex: `90A0-F20F-5883-8D55-AD31`
+* Com a classe *AlphaCode*, o código teria apenas 16 caracteres, ex: `FFWC-RHC5-9NLF-VM42`
 
 ## Veja também
 
