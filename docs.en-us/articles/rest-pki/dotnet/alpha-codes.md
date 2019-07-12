@@ -45,7 +45,7 @@ public static string GenerateVerificationCode() => AlphaCode.Generate();
 
 public static string FormatVerificationCode(string code) => AlphaCode.Format(code);
 
-public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(code);
+public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(formattedCode);
 ```
 
 ## Design principles
