@@ -175,8 +175,8 @@ $k = New-Object byte[] 32;
 
 ## Iniciando o aplicativo
 
-1. Iniciar o site.
-1. Acesse o site.
+1. Iniciar o site
+1. Acesse o site
 
 ## Veja também
 
