@@ -61,8 +61,10 @@ To improve readability, the codes contain only uppercase letters and do not incl
 still maintaining a relatively high entropy per character. There are 32 possible characters, so every character adds 5 bits to the overall
 entropy (25% better than using hexadecimal) which results in smaller codes for the same intended entropy.
 
-For instance, to generate a code with 80 bits of entropy (2^80 possible codes), an hexadecimal code have to be 20 characters, while a code generated
-by the *AlphaCode* class needs only 16 characters.
+For instance, to generate a code with 80 bits of entropy (2^80 possible codes):
+
+* A hexadecimal code would need 20 characters, e.g.: `90A0-F20F-5883-8D55-AD31`
+* An *AlphaCode* code would only need 16 characters, e.g.: `FFWC-RHC5-9NLF-VM42`
 
 ## See also
 

@@ -64,8 +64,10 @@ Para melhorar a legibilidade, são utilizadas apenas letras maiúsculas e não s
 por caractere é relativamente alta, se comparada com um código hexadecimal: como existem 32 possíveis caracteres, cada caractere contribui
 com 5 bits à entropia total do código gerado (25% a mais do que num código hexadecimal), o que resulta em códigos menores para uma dada entropia mínima.
 
-Por exemplo, para gerar um código com entropia de 80 bits (2^80 possíveis códigos), um código hexadecimal precisaria ter 20 caracteres,
-enquanto que um código gerado pela classe *AlphaCode* só precisaria ter 16 caracteres.
+Por exemplo, paga gerar um código com 80 bits de entropia (2^80 possíveis códigos):
+
+* Em hexadecimal, seria necessário um código de 20 caracteres, ex: `90A0-F20F-5883-8D55-AD31`
+* Com a classe *AlphaCode*, o código teria apenas 16 caracteres, ex: `FFWC-RHC5-9NLF-VM42`
 
 ## Veja também
 
