@@ -36,7 +36,7 @@ agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para faz
 
 > [!WARNING]
 > A lógica de geração de códigos de verificação passou por uma auditoria minuciosa e recebeu importantes melhorias.
-> Por isso, recomendamos fortemente que você atualize a sua aplicação para utilizar a classe *AlphaCode* ao invés de utilizar
+> Por isso, recomendamos que você atualize a sua aplicação para utilizar a classe *AlphaCode* ao invés de utilizar
 > o código-fonte antigo.
 
 Você provavelmente copiou anteriormente os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
