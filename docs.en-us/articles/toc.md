@@ -125,6 +125,7 @@
 ### [Entity Framework Connector](pki-sdk/optional-packages/ef-connector.md)
 ### [NLog Connector](pki-sdk/optional-packages/nlog-connector.md)
 ## [.NET Standard / .NET Core](pki-sdk/net-standard.md)
+## [Generating alpha codes](pki-sdk/alpha-codes.md)
 ## [Changelog](pki-sdk/changelog.md)
 ## [API Reference](xref:Lacuna.Pki)
 <!-- End of PKI SDK -->
