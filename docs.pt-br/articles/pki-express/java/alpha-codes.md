@@ -9,16 +9,16 @@ dos exemplos para o seu código. Para atualizar a sua aplicação:
 1. Substitua a implementação desses métodos no seu código por chamadas aos métodos da classe *AlphaCode*:
 
    ```java
-   public static string generateVerificationCode() {
+   public static String generateVerificationCode() {
       return AlphaCode.generate();
    }
    
-   public static string formatVerificationCode(String code) {
-      return AlphaCode.format(code)
+   public static String formatVerificationCode(String code) {
+      return AlphaCode.format(code);
    }
    
-   public static string parseVerificationCode(String formattedCode) {
-      return AlphaCode.parse(formattedCode)
+   public static String parseVerificationCode(String formattedCode) {
+      return AlphaCode.parse(formattedCode);
    }
    ```
 

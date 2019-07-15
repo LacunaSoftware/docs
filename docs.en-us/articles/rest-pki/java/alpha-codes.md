@@ -9,16 +9,16 @@ into your own code. To update your application:
 1. Replace the implementation of these methods on your code with calls to methods of the *AlphaCode* class:
 
    ```java
-   public static string generateVerificationCode() {
+   public static String generateVerificationCode() {
       return AlphaCode.generate();
    }
    
-   public static string formatVerificationCode(String code) {
-      return AlphaCode.format(code)
+   public static String formatVerificationCode(String code) {
+      return AlphaCode.format(code);
    }
    
-   public static string parseVerificationCode(String formattedCode) {
-      return AlphaCode.parse(formattedCode)
+   public static String parseVerificationCode(String formattedCode) {
+      return AlphaCode.parse(formattedCode);
    }
    ```
 
