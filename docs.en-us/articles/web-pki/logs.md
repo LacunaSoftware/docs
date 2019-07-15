@@ -7,7 +7,7 @@ The [Web PKI](index.md) is able to write logs on both browser component and nati
 In order to write verbose logging to the Web page console on the browser and to the native app, click the web-extension button and then select
 `Settings > Advanced > Verbose logging`
 
-![Enable verbose logging](../../../../images/web-pki/enable-log.png)
+![Enable verbose logging](../../../images/web-pki/enable-log.png)
 
 ## Native app logs
 
