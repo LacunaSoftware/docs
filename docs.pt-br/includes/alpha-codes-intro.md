@@ -27,7 +27,7 @@ public static class Util {
 ```
 
 Entretanto, como o código de verificação desempenha um papel crucial na proteção do acesso aos seus documentos, nós
-agora oferecemos a classe `AlphaCode` no pacote *Lacuna.RestPki.Client* para fazer a geração dos códigos.
+agora oferecemos a classe `AlphaCode` para fazer a geração dos códigos.
 
 <a name="update-code" />
 ## Atualizando sua aplicação para usar a classe *AlphaCode*

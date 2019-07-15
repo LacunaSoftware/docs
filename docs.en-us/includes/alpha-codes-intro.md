@@ -26,7 +26,7 @@ public static class Util {
 ```
 
 However, since the verification code plays an important role in protecting the access to your documents, we now offer
-the `AlphaCode` class on the *Lacuna.RestPki.Client* package to perform the code generation.
+the `AlphaCode` class to perform the code generation.
 
 <a name="update-code" />
 ## Updating your app to use *AlphaCode*
