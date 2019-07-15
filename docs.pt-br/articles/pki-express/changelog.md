@@ -10,13 +10,13 @@
 
 - Adiciona suporte a configuração de timeout no download de CRLs e certificados emissores de AC
 - Adiciona suporte a configuração de timeout na requisição de um timestamp
-- Atualiza PKI SDK para a versão [2.3.0](../pki-sdk/changelog.md#v2-3-0)
+- Atualiza PKI SDK para a versão [2.3.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog.md#v2-3-0)
 
 <a name="v1-12-0" />
 ### 1.12.0 (2019-02-05)
 
 - Adiciona suporte as políticas ICP-Brasil em assinaturas PAdES (políticas `adrb`, `adrb-ltv`, e `adrt`)
-- Atualiza PKI SDK para a versão [2.2.7](../pki-sdk/changelog.md#v2-2-7)
+- Atualiza PKI SDK para a versão [2.2.7](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog.md#v2-2-7)
 
 <a name="v1-11-0" />
 ### 1.11.0 (2018-12-04)
@@ -41,7 +41,7 @@
 ### 1.8.0 (2018-09-25)
 
 - Adiciona suporte ao retorno do certificado do assinante depois de uma assinatura.
-- Atualiza PKI SDK para a versão [2.1.3](../pki-sdk/changelog.md#v2-1-3)
+- Atualiza PKI SDK para a versão [2.1.3](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog.md#v2-1-3)
 
 <a name="v1-7-0" />
 ### 1.7.0 (2018-09-20)
@@ -52,7 +52,7 @@
 ### 1.6.2 (2018-07-20)
 
 - Corrige bug na ativação manualmente com nova licença
-- Atualiza PKI SDK para a versão [2.1.0](../pki-sdk/changelog.md#v2-1-0)
+- Atualiza PKI SDK para a versão [2.1.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog.md#v2-1-0)
 
 <a name="v1-6-1" />
 ### 1.6.1 (2018-07-11)
@@ -69,12 +69,12 @@
 
 - Adiciona escolha da política de assinatura com `--policy` habilitado nas assinaturas
 - Adiciona assinatura com carimbo de tempo (suporte para CAdES, PAdES e XAdES)
-- Atualiza PKI SDK para a versão [1.20.16](../pki-sdk/changelog.md#v1-20-16), corrigindo bug no preenchimento da cadeia de certificados na assinatura PAdES
+- Atualiza PKI SDK para a versão [1.20.16](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog.md#v1-20-16), corrigindo bug no preenchimento da cadeia de certificados na assinatura PAdES
 
 <a name="v1-4-1" />
 ### 1.4.1 (2018-05-14)
 
-- Atualiza o PKI SDK para versão [1.20.15](../pki-sdk/changelog.md#v1-20-15)
+- Atualiza o PKI SDK para versão [1.20.15](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog.md#v1-20-15)
 
 <a name="v1-4-0" />
 ### 1.4.0 (2018-04-10)
