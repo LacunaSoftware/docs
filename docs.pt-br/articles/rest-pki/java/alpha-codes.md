@@ -26,4 +26,5 @@ dos exemplos para o seu código. Para atualizar a sua aplicação:
 
 ## Veja também
 
+* [Gerando códigos alfanuméricos em Java (PKI Express)](../../pki-express/java/alpha-codes.md)
 * [Usando o Rest PKI em Java](index.md)

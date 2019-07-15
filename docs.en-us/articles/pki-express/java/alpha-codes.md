@@ -26,4 +26,5 @@ into your own code. To update your application:
 
 ## See also
 
+* [Generating alphanumeric codes on Java (Rest PKI)](../../rest-pki/java/alpha-codes.md)
 * [Using PKI Express on .Java](index.md)

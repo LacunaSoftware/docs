@@ -20,4 +20,5 @@ into your own code. To update your application:
 
 ## See also
 
+* [Generating alphanumeric codes on .NET (Rest PKI)](../rest-pki/dotnet/alpha-codes.md)
 * [Lacuna PKI SDK](index.md)

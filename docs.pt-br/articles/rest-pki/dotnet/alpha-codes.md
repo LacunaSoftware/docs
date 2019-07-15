@@ -20,4 +20,5 @@ dos exemplos para o seu código. Para atualizar a sua aplicação:
 
 ## Veja também
 
+* [Gerando códigos alfanuméricos (PKI SDK)](../../pki-sdk/alpha-codes.md)
 * [Usando o Rest PKI em .NET](index.md)
