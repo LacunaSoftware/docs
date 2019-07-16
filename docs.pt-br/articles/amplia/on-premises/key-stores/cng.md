@@ -7,8 +7,7 @@ A **Cryptography API: Next Generation trabalha com armazenamento de chaves atrav
 como HSMs *(Hardware Security Modules)* e tokens USB criptográficos podem fornecer um CNG KSP que pode ser usado para se comunicar com o dispositivo.
 
 > [!TIP]
-
-Embora o Windows Server tenha seu próprio KSP que fornece acesso a seus armazenamentos de chaves nativos, para isso você deve usar [Armazenamento de chaves no store nativo](native.md).
+> Embora o Windows Server tenha seu próprio KSP que fornece acesso a seus armazenamentos de chaves nativos, para isso você deve usar [Armazenamento de chaves no store nativo](native.md).
 
 Cada CNG KSP é identificado por um *nome*. Se estiver usando um token de criptografia ou HSM, consulte a documentação do dispositivo para encontrar o nome e o tipo do KSP. Além disso,
 consulte a seção abaixo para nomes comuns de KSP.
