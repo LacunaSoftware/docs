@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-5-2" />
+### 2.5.2 (2019-07-16)
+
+- Add AlphaCode (a pseudorandom alhpa code generator and handler)
+
+
 <a name="v2-5-1" />
 ### 2.5.1 (2019-05-23)
 
