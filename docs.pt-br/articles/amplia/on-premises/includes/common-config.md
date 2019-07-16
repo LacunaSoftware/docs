@@ -1,7 +1,7 @@
-### Ligações
+### Bindings
 
 
-Na seção **Ligações**
+Na seção **Bindings**
 
 * **HttpsMode**: por padrão, o painel e as REST APIs só podem ser acessados por meio de HTTPS, que é o comportamento recomendado se você tiver um certificado SSL válido.
   * Se você não tiver um certificado SSL válido, definir esta configuração como `Optional`. Os usuários que acessam o painel não serão redirecionados para HTTPS, e as REST APIs poderão ser acessadas por meio de HTTP.
@@ -9,7 +9,7 @@ Na seção **Ligações**
   reconhecerem, defina essa configuração como `RedirectPages`. As REST APIs ainda estarão acessíveis por meio do HTTP (como no modo `Opcional`), mas os usuários que acessam o painel serão redirecionados para o HTTPS.
 * **SslPort**: por padrão, os usuários que acessam o painel por meio de HTTP são redirecionados para HTTPS na porta TCP padrão 43. Se o site estiver usando HTTPS em uma porta não padrão, defina-o aqui.
 
-### Configuração do Amplia
+### Configuração Amplia
 
 Na seção **Amplia**
 
@@ -19,13 +19,13 @@ Na seção **Amplia**
 * **DefaultKeyStore**: o armazenamento de chaves padrão no qual criar novas chaves.
 * **DefaultAccessDomains**: domínios a serem usados ao compor os pontos de distribuição da LCR.
 
-### Armazenamento de arquivos
+### File storage
 
 Para manter o banco de dados organizado, o Amplia armazena arquivos fora do banco de dados. Os arquivos podem ser armazenados em provedores diferentes.
 
 Na seção **Storage** configura o armazenamento de arquivos. A configuração **Type** define qual provedor deve ser usado e as configurações restantes dependem do provedor escolhido:
 
-* Sistema de arquivo
+* File system
   * **Type**: definir esta configuração como `FileSystem` para armazenar arquivos no sistema de arquivos locais
   * **Path**: defina o caminho da pasta na qual armazenar arquivos. Certifique-se de que o aplicativo tenha acesso à pasta
 
@@ -46,7 +46,7 @@ Na seção **PKI Suite**:
 
 Na seção **Email**:
 
-  * **Habilitado**: por padrão, o envio de email está habilitado. Para desabilitar isto, defina esta configuração como `false` e ignore o restante desta seção.
+  * **Enabled**: por padrão, o envio de email está habilitado. Para desabilitar isto, defina esta configuração como `false` e ignore o restante desta seção.
   * **ServerHost**: *hostname* do servidor SMTP
   * **EnableSsl**: por padrão, a conversação SMTP é executada por SSL. Para desativar o SSL, defina essa configuração como `false`
   * **ServerPort**: Por padrão, a conversação SMTP é realizada pela porta 587. Defina esta configuração para usar uma porta diferente
