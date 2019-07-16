@@ -5,7 +5,7 @@
 Você provavelmente copiou anteriormente os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
 dos exemplos para o seu código. Para atualizar a sua aplicação:
 
-1. Atualize o pacote de nuget *Lacuna.RestPki.Client*
+1. Atualize o pacote de nuget [Lacuna.RestPki.Client](https://www.nuget.org/packages/Lacuna.RestPki.Client) para a versão **1.18.0** ou superior
 1. Substitua a implementação desses métodos no seu código por chamadas aos métodos da classe *AlphaCode*:
 
    ```cs

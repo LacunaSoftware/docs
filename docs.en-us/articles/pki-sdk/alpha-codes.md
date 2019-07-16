@@ -5,7 +5,7 @@
 You probably brought the (now obsolete) methods `GenerateVerificationCode`, `FormatVerificationCode` and `ParseVerificationCode`
 into your own code. To update your application:
 
-1. Update the nuget package *Lacuna.Pki*
+1. Update the nuget package [Lacuna.Pki](https://www.nuget.org/packages/Lacuna.Pki) to version **2.5.2** or greater
 1. Replace the implementation of these methods on your code with calls to methods of the *AlphaCode* class:
 
    ```cs
