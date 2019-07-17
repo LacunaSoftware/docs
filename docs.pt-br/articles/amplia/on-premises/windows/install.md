@@ -148,14 +148,14 @@ Na seção ***Serilog***, configure o registro do aplicativo:
 ...
 ```
 
-Altere a configuração do ***path*** para ***path*** do arquivo de log.
+Altere a configuração do ***path*** para outra pasta de log.
 
 > [!NOTE]
 > Lembre-se de conceder acesso total ao usuário do aplicativo na pasta de log.
 
-### Configurações Gerais
+### Configurações *General*
 
-Na seção **Geral**:
+Na seção **General**:
 
 * **SiteUrl**: URL publicamente acessível do site (ex.: `https://ca.patorum.com/`). Este endereço é usado para compor emails com links de volta ao site.
 * **EncryptionKey**: chave 256 bits usada para criptografar segredos temporiários emitidos pelo site e chaves [armazenamento de chaves em banco de dados](../key-stores/database.md). Veja abaixo como gerar essa chave.
