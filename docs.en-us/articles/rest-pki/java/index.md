@@ -26,7 +26,7 @@ If your project uses **Maven**, add this to your `pom.xml`:
 	<dependency>
 		<groupId>com.lacunasoftware.restpki</groupId>
 		<artifactId>restpki-client</artifactId>
-		<version>1.10.2</version>
+		<version>1.11.0</version>
 	</dependency>
 	...
 </dependencies>
@@ -51,7 +51,7 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client:1.10.2")
+	compile("com.lacunasoftware.restpki:restpki-client:1.11.0")
 }
 ```
 
