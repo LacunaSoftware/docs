@@ -28,7 +28,6 @@ Na seção **Storage** configura o armazenamento de arquivos. A configuração *
 * File system
   * **Type**: definir esta configuração como `FileSystem` para armazenar arquivos no sistema de arquivos locais
   * **Path**: defina o caminho da pasta na qual armazenar arquivos. Certifique-se de que o aplicativo tenha acesso à pasta
-
 * [Azure Storage](https://azure.microsoft.com/en-us/services/storage/)
   * **Type**: definir esta configuração como `Azure`para armazenar arquivos em uma conta Azure Storage
   * **ConnectionString**: fornecer uma string de conexão para a outra
