@@ -4,7 +4,7 @@
 	<dependency>
 		<groupId>com.lacunasoftware.pkiexpress</groupId>
 		<artifactId>pki-express</artifactId>
-		<version>1.9.3</version>
+		<version>1.10.0</version>
 	</dependency>
 	...
 </dependencies>
