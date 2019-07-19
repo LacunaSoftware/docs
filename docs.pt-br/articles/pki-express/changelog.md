@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-13-0" />
+### 1.13.0 (2019-07-19)
+
+- Adiciona integração com o serviço LAPP
+- Adiciona suporte a razão do assinante para uma assinatura PAdES com `--reason` habilitado
+
 <a name="v1-12-3" />
 ### 1.12.3 (2019-05-20)
 

@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-13-0" />
+### 1.13.0 (2019-07-19)
+
+- Add integration with LAPP service
+- Add support for signer's reason for a PAdES signature with `--reason` enabled
+
 <a name="v1-12-3" />
 ### 1.12.3 (2019-05-20)
 
