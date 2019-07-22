@@ -23,7 +23,7 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 
 - Add option for returning de signed document content on local signature commands without the 1MB size limit: [`returnContent`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/enums/_lacuna_web_pki_d_.lacunawebpki.outputmodes.html#returncontent)
 - Add certificate validation levels on local signatura commands: [`CertificateValidationLevels`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/enums/_lacuna_web_pki_d_.lacunawebpki.certificatevalidationlevels.html)
-- Add vertical and horizontal direction control on PAdES visual representation: [`PadesVisualAutoPositioning`]([https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.padesvisualautopositioning.html)
+- Add vertical and horizontal direction control on PAdES (PDF) visual representation: [`PadesVisualAutoPositioning`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.padesvisualautopositioning.html)
 - Add native app life cycle control on `init` method: [`useDomainNativePool`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init)
 
 
