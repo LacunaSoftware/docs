@@ -11,14 +11,14 @@ Updating the Javascript library:
 > [!TIP]
 > All updates are guaranteed to be 100% backward compatible, so you can update the library without fear of breaking existing code
 
-The latest version of the Javascript library is **2.12.0**. You can get it on the link below:
+The latest version of the Javascript library is **2.13.0**. You can get it on the link below:
 
-https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.12.0.min.js
+https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.13.0.min.js
 
 Or include in your Web page as:
 ```html
-<script type="text/javascript" src="https://get.webpkiplugin.com/Scripts/LacunaWebPKI/lacuna-web-pki-2.12.0.min.js"
-  integrity="sha256-jDF8LDaAvViVZ7JJAdzDVGgY2BhjOUQ9py+av84PVFA="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.13.0.min.js"
+  integrity="sha256-nVy9sLakeQ03Xl+jOjBdjdfnZ9UVwwqNgAYszhxi4VQ="
   crossorigin="anonymous"></script>
 ```
 
