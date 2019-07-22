@@ -16,17 +16,15 @@ Database model update: No
 
 Database model update: No
 
-- No changes (version skipped)
-
-
-<a name="v1-20-0" />
-### 1.20.0 (2019-07-04)
-
-Database model update: No
-
 - Add PAdES auto positioning directions (`LeftToRight`/`RightToLeft` and `TopDown`/`BottomUp`)
 - Add support for Lapp integration (*Lapp* is an Artifact Provider for PKI, used as a CRL proxy)
 - Update PKI SDK to [2.5.1](../pki-sdk/changelog.md#v2-5-1)
+
+
+<a name="v1-20-0" />
+### 1.20.0
+
+*No changes (version skipped)*
 
 
 <a name="v1-19-1" />
