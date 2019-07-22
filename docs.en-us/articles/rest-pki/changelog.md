@@ -1,5 +1,68 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-20-2" />
+### 1.20.2 (2019-07-21)
+
+Database model update: No
+
+- Fix high CPU usage problem that occurred on certain conditions
+- Improve timestamp scheduling to try requesters marked as unavailable (with less priority)
+- Add settings `ProcessBackgroundJobs` and `WatchTimestampRequesters`
+- Update PKI SDK to [2.5.2](../pki-sdk/changelog.md#v2-5-2)
+
+
+<a name="v1-20-1" />
+### 1.20.1 (2019-07-04)
+
+Database model update: No
+
+- No changes (version skipped)
+
+
+<a name="v1-20-0" />
+### 1.20.0 (2019-07-04)
+
+Database model update: No
+
+- Add PAdES auto positioning directions (`LeftToRight`/`RightToLeft` and `TopDown`/`BottomUp`)
+- Add support for Lapp integration (*Lapp* is an Artifact Provider for PKI, used as a CRL proxy)
+- Update PKI SDK to [2.5.1](../pki-sdk/changelog.md#v2-5-1)
+
+
+<a name="v1-19-1" />
+### 1.19.1 (2019-07-03)
+
+Database model update: No
+
+- Improve maintenance jobs
+
+
+<a name="v1-19-0" />
+### 1.19.0 (2019-03-15)
+
+Database model update: No
+
+- Refactored integration with B-Stamper
+- Update PKI SDK to [2.2.8](../pki-sdk/changelog.md#v2-2-8)
+
+
+<a name="v1-18-5" />
+### 1.18.5 (2019-01-03)
+
+Database model update: No
+
+- Performance improvements on billing (does not affect on-premises installations)
+
+
+<a name="v1-18-4" />
+### 1.18.4 (2018-12-11)
+
+Database model update: No
+
+- Improve validations on PAdES and CAdES signature exploring APIs to return status code 422 instead of 500
+- Update PKI SDK to [2.2.3](../pki-sdk/changelog.md#v2-2-3)
+
+
 <a name="v1-18-3" />
 ### 1.18.3 (2018-10-23)
 
