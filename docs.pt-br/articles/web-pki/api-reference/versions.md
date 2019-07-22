@@ -18,6 +18,15 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-5-2" />
+### 1.5.2 (2019-07-19)
+
+- Adiciona opção de retorno do conteúdo do documento assinado nos comandos de assinatura local sem limite de 1MB: [`returnContent`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/enums/_lacuna_web_pki_d_.lacunawebpki.outputmodes.html#returncontent)
+- Adiciona nível de validação do certificado do assinante nos comandos de assinatura local: [`CertificateValidationLevels`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/enums/_lacuna_web_pki_d_.lacunawebpki.certificatevalidationlevels.html)
+- Adiconal controle de direção vertical e horizontal na representação visual da assinatura PAdES (PDF): [`PadesVisualAutoPositioning`]([https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.padesvisualautopositioning.html)
+- Adiciona controle do ciclo de vida da aplicação nativa no método `init`: [`useDomainNativePool`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init)
+
+
 <a name="v1-5" />
 ### 1.5 (2018-11-27)
 

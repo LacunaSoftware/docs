@@ -35,6 +35,7 @@ export declare class LacunaWebPKI {
 	 */
 	constructor(license?: string | Object);
 
+// @ifdef JSLIB
 	readonly standardTrustArbitrators: {
 		pkiBrazil: TrustArbitrator,
 		pkiItaly: TrustArbitrator,
@@ -84,6 +85,8 @@ export declare class LacunaWebPKI {
 		/** Any PKI Brazil acceptable policies */
 		pkiBrazil: LacunaWebPKI.XmlPolicies[]
 	}
+
+// @endif
 
 	/**************************************************************
 	 * Initializes the instance of the LacunaWebPKI object. This method must be called before calling any other methods.
@@ -150,6 +153,9 @@ export declare class LacunaWebPKI {
 		
 		/** The default callback to be called when an error occurrs (please refer to examples below for the exact function signature). */
 		defaultFail?: FailCallback,
+
+		/** Whether or not to share and persiste the native app instances per hostname. Default is one native app instance per page. */
+		useDomainNativePool?: boolean,
 		
 		/** If your webpage uses AngularJS, you can pass here a reference to your $scope, which will then be used to call the callback functions properly, relieving you of doing a `$scope.$apply(function() { ... });` on every callback. The calls are actually wrapped around a "safe $apply", as described in [coderwall](https://coderwall.com/p/ngisma/safe-apply-in-angular-js). */
 		angularScope?: Object,
@@ -204,6 +210,8 @@ export declare class LacunaWebPKI {
 		/** The certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
 		thumbprint: string
 	}): Promise<string>;
+
+// @ifdef JSLIB
 
 	/**************************************************************
 	 * Signs a hash with signer certificate private key.
@@ -449,6 +457,9 @@ export declare class LacunaWebPKI {
 		/** The selected PDF [[FileModel.id]], as returned by [[showFileBrowser]] method. */
 		fileId: string,
 
+		/** A PDF content (Base64 encoded bytes) to sign can be passed optionally to `filedId`. */
+		content?: string,
+
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
 		certificateThumbprint: string,
 
@@ -471,7 +482,10 @@ export declare class LacunaWebPKI {
 		bypassMarksIfSigned?: boolean,
 
 		/** The PDF signature policy. */
-		policy: LacunaWebPKI.PadesPolicies
+		policy: LacunaWebPKI.PadesPolicies,
+
+		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
+		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels
 	}): Promise<PdfSignResult>;
 
 	/**************************************************************
@@ -482,6 +496,9 @@ export declare class LacunaWebPKI {
 	signCades(args: {
 		/** The selected document [[FileModel.id]], as returned by [[showFileBrowser]] method. */
 		fileId?: string,
+
+		/** A content (Base64 encoded bytes) to sign can be passed optionally to `filedId`. */
+		content?: string,
 
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
 		certificateThumbprint: string,
@@ -505,7 +522,10 @@ export declare class LacunaWebPKI {
 		includeEncapsulatedContent?: boolean,
 
 		/** The CAdES signature policy. */
-		policy: LacunaWebPKI.CadesPolicies
+		policy: LacunaWebPKI.CadesPolicies,
+
+		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
+		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels
 	}): Promise<CadesSignResult>;
 
 	/**************************************************************
@@ -534,6 +554,9 @@ export declare class LacunaWebPKI {
 
 		/** The XML signature policy. */
 		policy: LacunaWebPKI.XmlPolicies,
+
+		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
+		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels,
 
 		/** The signature element Id. If not set, a random Id will be generated. */
 		signatureElementId?: string,
@@ -583,6 +606,9 @@ export declare class LacunaWebPKI {
 
 		/** The XML signature policy. */
 		policy: LacunaWebPKI.XmlPolicies,
+
+		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
+		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels,
 
 		/** The signature element Id. If not set, a random Id will be generated. */
 		signatureElementId?: string,
@@ -797,6 +823,26 @@ export declare class LacunaWebPKI {
 		timeout?: number
 	}): Promise<HttpResponseModel>;
 
+// @endif
+
+// @ifdef CHROMELIB
+
+	pollNative(args: { requiredApiVersion?: string }): Promise<null>;
+
+	importPkcs12(): Promise<boolean>;
+
+	removeCertificate(args: { thumbprint: string }): Promise<boolean>;
+
+	startSyncDevice(): Promise<RemoteConnectionInfo>;
+
+	waitSyncDevice(args: { sessionId: string }): Promise<RemoteDeviceInfo>;
+
+	finishSyncDevice(args: { sessionId: string }): Promise<RemoteDeviceInfo>;
+
+	refreshDevice(args: { deviceId: string }): Promise<{ version: string }>;
+
+// @endif
+
 }
 
 // USABLE ENUMS
@@ -817,157 +863,9 @@ export namespace LacunaWebPKI {
 		v1_3 = '1.3',
 		v1_4 = '1.4',
 		v1_4_1 = '1.4.1',
-		v1_5 = '1.5'
-	}
-
-	export const enum HttpMethods {
-		Get = 'get',
-		Post = 'post'
-	}
-
-	//-------------Pki Options
-	export const enum PadesPolicies {
-		/** PAdES-BES policy */
-		Basic = 'basic',
-		/** ICP-Brasil AD-RB policy */
-		BrazilAdrBasica = 'brazilAdrBasica'
-	}
-
-	export const enum CadesPolicies {
-		/** CAdES-BES policy */
-		Bes = 'cadesBes',
-		/** ICP-Brasil AD-RB policy */
-		BrazilAdrBasica = 'brazilAdrBasica'
-	}
-
-	export const enum XmlPolicies {
-		/** XML D-Sign policy */
-		XmlDSig = 'xmlDSig',
-		/** XAdES-BES policy */
-		XadesBes = 'xadesBes',
-		/** Brazil national NFe policy */
-		BrazilNFe = 'brazilNFe',
-		/** ICP-Brasil AD-RB policy */
-		BrazilAdrBasica = 'brazilAdrBasica',
-	}
-
-	export const enum XmlSignedEntityTypes {
-		FullXml = 'fullXml',        
-		XmlElement = 'xmlElement'
-		//DetachedResource = 'detachedResource'
-	}
-
-	export const enum OutputModes {
-		/** Shows a save file dialog so the user can select where and which name to save the output file. */
-		ShowSaveFileDialog = 'showSaveFileDialog',
-		/** Saves the output file in a pre-selected folder. The output file name will be the original file name plus a suffix. Make sure to pass the required arguments [[Output.folderId]] and [[Output.fileNameSuffix]]. */
-		SaveInFolder = 'saveInFolder',
-		/** Saves the output file in the same directory of the original file. The output file name will be the original file name plus a suffix. Make sure to pass the required arguments [[Output.fileNameSuffix]]. */
-		AutoSave = 'autoSave',
-		/** Returns to the page the output file content Base64 encoded bytes. IMPORTANT, when working with Web PKI on web-extensions technologies (i.e. Chrome, Firefox), the maximum response length is limited up to 1MB. If exceeded, an [[ErrorCodes.IO_ERROR]] is returned. */
-		ReturnContent = 'returnContent'
-	}
-
-	export const enum TrustArbitratorTypes {
-		TrustedRoot = 'trustedRoot',
-		Tsl = 'tsl',
-		Standard = 'standard'
-	}
-
-	export const enum StandardArbitrators {
-		PkiBrazil = 'pkiBrazil',
-		PkiItaly = 'pkiItaly',
-		Windows = 'windows'
-	}
-
-	export const enum CertificateTypes {
-		A1 = 'A1',
-		A2 = 'A2',
-		A3 = 'A3',
-		A4 = 'A4',
-		S1 = 'S1',
-		S2 = 'S2',
-		S3 = 'S3',
-		S4 = 'S4',
-		T3 = 'T3',
-		T4 = 'T4',
-		Unknown = 'Unknown'
-	}
-
-	export const enum XmlInsertionOptions{
-		AppendChild = 'appendChild',
-		PrependChild = 'prependChild',
-		AppendSibling = 'appendSibling',
-		PrependSibling = 'prependSibling'
-	}
-
-	export const enum CmsContentTypes {
-		Data              = 'Data',
-		SignedData        = 'SignedData',
-		EnvelopedData     = 'EnvelopedData',
-		DigestedData      = 'DigestedData',
-		EncryptedData     = 'EncryptedData',
-		AuthenticatedData = 'AuthenticatedData',
-		TstInfo           = 'TstInfo',
-	}
-
-	// visual representation
-	export const enum PadesPaperSizes {
-		Custom = 'custom',
-		A0 = 'a0',
-		A1 = 'a1',
-		A2 = 'a2',
-		A3 = 'a3',
-		A4 = 'a4',
-		A5 = 'a5',
-		A6 = 'a6',
-		A7 = 'a7',
-		A8 = 'a8',
-		Letter = 'letter',
-		Legal = 'legal',
-		Ledger = 'ledger'
-	}
-
-	export const enum PadesHorizontalAlign {
-		Left = 'left',
-		Center = 'center',
-		Rigth = 'rigth'
-	}
-
-	export const enum PadesVerticalAlign {
-		Top = 'top',
-		Center = 'center',
-		Bottom = 'bottom'
-	}
-
-	export const enum PadesMeasurementUnits {
-		Centimeters = 'centimeters',
-		PdfPoints = 'pdfPoints'
-	}
-
-	export const enum PadesPageOrientations {
-		Auto = 'auto',
-		Portrait = 'portrait',
-		Landscape = 'landscape'
-	}
-
-	// pdf mark
-	export const enum PdfElementTypes {
-		Text = 'text',
-		Image = 'image'
-	}
-
-	export const enum PdfTextStyles {
-		Normal = 'normal',
-		Bold = 'bold',
-		Italic = 'italic'
-	}
-
-	// password policies
-	export const enum PasswordPolicies {
-		LettersAndNumbers = 1,
-		UpperAndLowerCase = 2,
-		SpecialCharacters = 4
+		v1_5 = '1.5',
+		v1_5_1 = '1.5.1',
+		v1_5_2 = '1.5.2'
 	}
 
 	/**************************************************************
@@ -1048,6 +946,193 @@ export namespace LacunaWebPKI {
 		BLOCKED_DOMAIN                 = 'blocked_domain'
 	}
 
+	export const enum CertificateTypes {
+		A1 = 'A1',
+		A2 = 'A2',
+		A3 = 'A3',
+		A4 = 'A4',
+		S1 = 'S1',
+		S2 = 'S2',
+		S3 = 'S3',
+		S4 = 'S4',
+		T3 = 'T3',
+		T4 = 'T4',
+		Unknown = 'Unknown'
+	}
+
+// @ifdef JSLIB
+
+	export const enum HttpMethods {
+		Get = 'get',
+		Post = 'post'
+	}
+
+	//-------------Pki Options
+
+	export const enum CertificateValidationLevels {
+		/** Default. Executes a full certificate validation.*/
+		Full = 'full',
+		/** Skips validation of any online artifact needed. */
+		Offline = 'offline'
+	}
+
+	export const enum PadesPolicies {
+		/** PAdES-BES policy */
+		Basic = 'basic',
+		/** ICP-Brasil AD-RB policy */
+		BrazilAdrBasica = 'brazilAdrBasica'
+	}
+
+	export const enum CadesPolicies {
+		/** CAdES-BES policy */
+		Bes = 'cadesBes',
+		/** ICP-Brasil AD-RB policy */
+		BrazilAdrBasica = 'brazilAdrBasica'
+	}
+
+	export const enum XmlPolicies {
+		/** XML D-Sign policy */
+		XmlDSig = 'xmlDSig',
+		/** XAdES-BES policy */
+		XadesBes = 'xadesBes',
+		/** Brazil national NFe policy */
+		BrazilNFe = 'brazilNFe',
+		/** ICP-Brasil AD-RB policy */
+		BrazilAdrBasica = 'brazilAdrBasica',
+	}
+
+	export const enum XmlSignedEntityTypes {
+		FullXml = 'fullXml',        
+		XmlElement = 'xmlElement'
+		//DetachedResource = 'detachedResource'
+	}
+
+	export const enum OutputModes {
+		/** Shows a save file dialog so the user can select where and which name to save the output file. */
+		ShowSaveFileDialog = 'showSaveFileDialog',
+		/** Saves the output file in a pre-selected folder. The output file name will be the original file name plus a suffix. Make sure to pass the required arguments [[Output.folderId]] and [[Output.fileNameSuffix]]. */
+		SaveInFolder = 'saveInFolder',
+		/** Saves the output file in the same directory of the original file. The output file name will be the original file name plus a suffix. Make sure to pass the required arguments [[Output.fileNameSuffix]]. */
+		AutoSave = 'autoSave',
+		/** Returns to the page the output file content Base64 encoded bytes. */
+		ReturnContent = 'returnContent'
+	}
+
+	export const enum TrustArbitratorTypes {
+		TrustedRoot = 'trustedRoot',
+		Tsl = 'tsl',
+		Standard = 'standard'
+	}
+
+	export const enum StandardArbitrators {
+		PkiBrazil = 'pkiBrazil',
+		PkiItaly = 'pkiItaly',
+		Windows = 'windows'
+	}
+
+	export const enum XmlInsertionOptions{
+		AppendChild = 'appendChild',
+		PrependChild = 'prependChild',
+		AppendSibling = 'appendSibling',
+		PrependSibling = 'prependSibling'
+	}
+
+	export const enum CmsContentTypes {
+		Data              = 'Data',
+		SignedData        = 'SignedData',
+		EnvelopedData     = 'EnvelopedData',
+		DigestedData      = 'DigestedData',
+		EncryptedData     = 'EncryptedData',
+		AuthenticatedData = 'AuthenticatedData',
+		TstInfo           = 'TstInfo',
+	}
+
+	// visual representation
+	export const enum PadesPaperSizes {
+		Custom = 'custom',
+		A0 = 'a0',
+		A1 = 'a1',
+		A2 = 'a2',
+		A3 = 'a3',
+		A4 = 'a4',
+		A5 = 'a5',
+		A6 = 'a6',
+		A7 = 'a7',
+		A8 = 'a8',
+		Letter = 'letter',
+		Legal = 'legal',
+		Ledger = 'ledger'
+	}
+
+	export const enum PadesHorizontalAlign {
+		Left = 'left',
+		Center = 'center',
+		Rigth = 'rigth'
+	}
+
+	export const enum PadesVerticalAlign {
+		Top = 'top',
+		Center = 'center',
+		Bottom = 'bottom'
+	}
+
+	export const enum PadesMeasurementUnits {
+		Centimeters = 'centimeters',
+		PdfPoints = 'pdfPoints'
+	}
+
+	export const enum PadesPageOrientations {
+		Auto = 'auto',
+		Portrait = 'portrait',
+		Landscape = 'landscape'
+	}
+
+	export const enum PadesAutoPositioningHorizontalDirections {
+		LeftToRight = 'leftToRight',
+		RightToLeft = 'rightToLeft'
+	}
+
+	export const enum PadesAutoPositioningVerticalDirections {
+		TopDown = 'topDown',
+		BottomUp = 'bottomUp'
+	}
+
+	// pdf mark
+	export const enum PdfElementTypes {
+		Text = 'text',
+		Image = 'image'
+	}
+
+	export const enum PdfTextStyles {
+		Normal = 'normal',
+		Bold = 'bold',
+		Italic = 'italic'
+	}
+
+	// password policies
+	export const enum PasswordPolicies {
+		LettersAndNumbers = 1,
+		UpperAndLowerCase = 2,
+		SpecialCharacters = 4
+	}
+
+// @endif
+
+// @ifdef CHROMELIB
+
+	export const enum MobileOSs {
+		Android = 'Android',
+		iOS = 'iOS'
+	}
+
+	export const enum ResyncLevels {
+		Good = 'good',
+		Warn = 'warn',
+		Alert = 'alert'
+	}
+
+// @endif
+
 }
 
 
@@ -1094,48 +1179,6 @@ export interface ExceptionModel {
 }
 
 /**************************************************************
- * Object that holds an output option.
- */
-export interface Output {
-	/** The output mode */
-	mode: LacunaWebPKI.OutputModes,
-	/** The selected [[ShowFolderBrowserResponse.folderId]], as returned by [[showFolderBrowser]] method. Argument mandatory if [[Output.mode]] is [[LacunaWebPKI.OutputModes.SaveInFolder]]. */
-	folderId?: string,
-	/** A title for the save file dialog. Applies if [[Output.mode]] is [[LacunaWebPKI.OutputModes.ShowSaveFileDialog]]. */
-	dialogTitle?: string,
-	/** A output file name suffix to be added to the original file name. Argument mandatory if [[Output.mode]] is [[LacunaWebPKI.OutputModes.SaveInFolder]] or [[LacunaWebPKI.OutputModes.AutoSave]] */
-	fileNameSuffix?: string
-}
-
-/**************************************************************
- * Object that holds a trust arbitrator information.
- */
-export interface TrustArbitrator {
-	/** The trust arbitrator type. */
-	type: LacunaWebPKI.TrustArbitratorTypes,
-	/** A standard trust arbitrator. Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.Standard]]. */
-	standardArbitrator?: LacunaWebPKI.StandardArbitrators,
-	/** A trusted root certificate content (PEM or Base64 encoded DER bytes). Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.TrustedRoot]]. */
-	trustedRoot?: string,
-	/** A TSL URL. Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.Tsl]]. */
-	tslUrl?: string,
-	/** The TSL signer certificate root content (PEM or Base64 encoded DER bytes). Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.Tsl]]. */
-	tslRoot?: string
-}
-
-/**************************************************************
- * Object with PKCS#11 lib module name or path for each Operating System supported.
- */
-export interface Pkcs11Module {
-	/** The PKCS#11 `.dll` lib name or path for Windows. */
-	win: string,
-	/** The PKCS#11 `.so` lib name or path for Linux. */
-	linux: string,
-	/** The PKCS#11 `.dylib` lib name or path for Mac OS. */
-	mac: string
-}
-
-/**************************************************************
  * Object with returned certificate informations.
  *
  * Each property on the [[PkiBrazilModel]] and [[PkiItalyModel]] objects may be null, but the objects themselves (`cert.pkiBrazil` or `cert.pkiItaly`) are **never** null.
@@ -1161,28 +1204,6 @@ export interface CertificateModel {
 	validityStart: Date,
 	/** The not after field of the certificate. */
 	validityEnd: Date
-}
-
-export interface DigestModel {
-	digestAlgorithmOid: string,
-	digestAlgorithmName: string,
-	digestValue: string
-}
-
-export interface FileModel {
-	/** An Id handle for future references to this file. In order to comply to user privacy policies, user paths are **never** returned to the page. All paths are handled inside extension or addon logic and this `id` is returned instead. */
-	id: string,
-	/** The file name. */
-	name: string,
-	/** The file length in bytes. */
-	length: number
-}
-
-export interface FileFilterModel {
-	/** The file type description. E.g `'PDF files'`. */
-	description: string,
-	/** The file type extension (with '.'). E.g `'.pdf'` */
-	extension: string
 }
 
 export interface KeyUsagesModel {
@@ -1242,15 +1263,96 @@ export interface PkiItalyModel {
 	codiceFiscale: string
 }
 
+// Common Functions
+
+export interface SuccessCallback<T> {
+	(arg: T) : void;
+}
+
+export interface FailCallback {
+	(ex: ExceptionModel) : void;
+}
+
+//export interface ErrorCallback {
+//	(message: string, error: string, origin: string, code: string) : void;
+//}
+
+export interface Filter {
+	(cert: CertificateModel) : boolean;
+}
+
+// @ifdef JSLIB
+
+/**************************************************************
+ * Object that holds an output option.
+ */
+export interface Output {
+	/** The output mode */
+	mode: LacunaWebPKI.OutputModes,
+	/** The selected [[ShowFolderBrowserResponse.folderId]], as returned by [[showFolderBrowser]] method. Argument mandatory if [[Output.mode]] is [[LacunaWebPKI.OutputModes.SaveInFolder]]. */
+	folderId?: string,
+	/** A title for the save file dialog. Applies if [[Output.mode]] is [[LacunaWebPKI.OutputModes.ShowSaveFileDialog]]. */
+	dialogTitle?: string,
+	/** A output file name suffix to be added to the original file name. Argument mandatory if [[Output.mode]] is [[LacunaWebPKI.OutputModes.SaveInFolder]] or [[LacunaWebPKI.OutputModes.AutoSave]] */
+	fileNameSuffix?: string
+}
+
+/**************************************************************
+ * Object that holds a trust arbitrator information.
+ */
+export interface TrustArbitrator {
+	/** The trust arbitrator type. */
+	type: LacunaWebPKI.TrustArbitratorTypes,
+	/** A standard trust arbitrator. Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.Standard]]. */
+	standardArbitrator?: LacunaWebPKI.StandardArbitrators,
+	/** A trusted root certificate content (PEM or Base64 encoded DER bytes). Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.TrustedRoot]]. */
+	trustedRoot?: string,
+	/** A TSL URL. Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.Tsl]]. */
+	tslUrl?: string,
+	/** The TSL signer certificate root content (PEM or Base64 encoded DER bytes). Argument mandatory if [[TrustArbitrator.type]] is [[LacunaWebPKI.TrustArbitratorTypes.Tsl]]. */
+	tslRoot?: string
+}
+
+/**************************************************************
+ * Object with PKCS#11 lib module name or path for each Operating System supported.
+ */
+export interface Pkcs11Module {
+	/** The PKCS#11 `.dll` lib name or path for Windows. */
+	win: string,
+	/** The PKCS#11 `.so` lib name or path for Linux. */
+	linux: string,
+	/** The PKCS#11 `.dylib` lib name or path for Mac OS. */
+	mac: string
+}
+
+export interface DigestModel {
+	digestAlgorithmOid: string,
+	digestAlgorithmName: string,
+	digestValue: string
+}
+
+export interface FileModel {
+	/** An Id handle for future references to this file. In order to comply to user privacy policies, user paths are **never** returned to the page. All paths are handled inside extension or addon logic and this `id` is returned instead. */
+	id: string,
+	/** The file name. */
+	name: string,
+	/** The file length in bytes. */
+	length: number
+}
+
+export interface FileFilterModel {
+	/** The file type description. E.g `'PDF files'`. */
+	description: string,
+	/** The file type extension (with '.'). E.g `'.pdf'` */
+	extension: string
+}
+
 export interface SignatureInfo {
 	signerCertificate: CertificateModel,
 	messageDigest?: DigestModel,
 	file?: FileModel,
+	content?: string,
 	signingTime?: Date
-}
-
-export interface XmlSignatureInfo extends SignatureInfo {
-	content?: string
 }
 
 export interface ValidationResults {
@@ -1281,7 +1383,7 @@ export interface CadesSignResult extends SignResult {
 }
 
 export interface XmlSignResult extends SignResult {
-	signatureInfo: XmlSignatureInfo
+	// For now, XmlSignResult has only the same properties as BaseSignResult
 }
 
 export interface SignatureAlgorithmModel {
@@ -1505,7 +1607,9 @@ export interface PadesVisualRectangle {
 export interface PadesVisualAutoPositioning {
 	container: PadesVisualRectangle,
 	signatureRectangleSize: PadesSize,
-	rowSpacing: number
+	rowSpacing: number,
+	horizontalDirection?: LacunaWebPKI.PadesAutoPositioningHorizontalDirections,
+	verticalDirection?: LacunaWebPKI.PadesAutoPositioningVerticalDirections
 }
 
 export interface PadesSize {
@@ -1549,20 +1653,29 @@ export interface PadesPageOptimization {
 	pageOrientation: LacunaWebPKI.PadesPageOrientations
 }
 
-// Common Functions
+// @endif
 
-export interface SuccessCallback<T> {
-	(arg: T) : void;
+// @ifdef CHROMELIB
+
+export interface RemoteConnectionInfo {
+	sessionId: string,
+	sessionIdRaw: string,
+	encodedX: string
 }
 
-export interface FailCallback {
-	(ex: ExceptionModel) : void;
+export interface RemoteDeviceInfo {
+	deviceId: string,
+	name: string,
+	os: LacunaWebPKI.MobileOSs,
+	resyncNeededLevel?: LacunaWebPKI.ResyncLevels,
+	knownCertificates?: { [thumbprint: string]: CertificateModel },
 }
 
-//export interface ErrorCallback {
-//	(message: string, error: string, origin: string, code: string) : void;
-//}
-
-export interface Filter {
-	(cert: CertificateModel) : boolean;
+export interface InitResult {
+	isInstalled?: boolean,
+	status?: LacunaWebPKI.InstallationStates,
+	platformInfo?: any,
+	nativeInfo?: any,
 }
+
+// @endif
