@@ -52,7 +52,7 @@ Caso ao atualizar o Rest PKI apareça a mensagem "HTTP Error 503.0 - The server 
 Nesse caso, acesse a URL `/Maintenance` relativa ao endereço do site (por exemplo, `http://localhost:9000/Maintenance`) e siga as instruções na tela.
 
 > [!NOTE]
-> Para acessar essa URL é preciso estar acessando o site localmente ou via HTTPS. Caso precise acessar essa URL remotamente via HTTP, veja a seção 2.4.5 do [Manual de instalação em Windows Server](https://files.lacunasoftware.com/restpki/restpki-admin-guide-pt.pdf)
+> Para acessar essa URL é preciso estar acessando o site localmente ou via HTTPS. Caso precise acessar essa URL remotamente via HTTP, veja a seção 2.4.5 do [Manual de instalação em Windows Server](https://cdn.lacunasoftware.com/restpki/restpki-admin-guide-pt.pdf)
 
 ![Database update page](../../../../images/rest-pki/db-update.png)
 
