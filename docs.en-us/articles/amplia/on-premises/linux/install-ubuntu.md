@@ -22,7 +22,7 @@ Create a local user to run the Amplia server:
 ```sh
 sudo adduser --home /var/amplia --disabled-password amplia
 sudo usermod -aG syslog amplia
-sudo chmod -R a=,g=rX,u=rwX /var/amplia
+sudo chmod -R a=,g+rX,u+rwX /var/amplia
 ```
 
 > [!NOTE]
@@ -34,7 +34,8 @@ Create the site folder, download and extract the binaries:
 sudo mkdir /usr/share/amplia
 wget https://cdn.lacunasoftware.com/amplia/amplia-2.15.0.tar.gz
 sudo tar xzf amplia-2.15.0.tar.gz -C /usr/share/amplia
-sudo chmod -R a=rX,u+w /usr/share/amplia
+sudo chown -R root:amplia /usr/share/amplia
+sudo chmod -R a=,g+rX,u+rwX /usr/share/amplia
 ```
 
 > [!NOTE]
