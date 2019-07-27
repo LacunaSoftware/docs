@@ -22,11 +22,8 @@ Create a local user to run the Amplia server:
 ```sh
 sudo adduser --home /var/amplia --disabled-password amplia
 sudo usermod -aG syslog amplia
-sudo chmod -R a=,g+rX,u+rwX /var/amplia
+sudo chmod a=,g+rX,u+rwX /var/amplia
 ```
-
-> [!NOTE]
-> If you intend to use the native key store, keys will be stored on the directory */var/amplia/.dotnet*. The above `chmod` command is important to restrict access to the keys.
 
 Create the site folder, download and extract the binaries:
 
@@ -39,7 +36,8 @@ sudo chmod -R a=,g+rX,u+rwX /usr/share/amplia
 ```
 
 > [!NOTE]
-> The commands above cause the application user (*amplia*) to be able to read the site files, but not modify them. This is intended.
+> The commands above cause the application user (*amplia*) to be able to read the site files, but not modify them. This is intended. Also, users outside
+> of the *amplia* group cannot read the files, which is important to protect access to the JSON settings files which contain sensitive data.
 
 ## Configure Amplia
 
