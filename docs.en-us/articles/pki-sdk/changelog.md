@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-5-3" />
+### 2.5.3 (2019-08-06)
+
+- Improve PdfMarks new page template.
+- Add PdfMarker preserve signatures visual representation feature.
+
+
 <a name="v2-5-2" />
 ### 2.5.2 (2019-07-16)
 
