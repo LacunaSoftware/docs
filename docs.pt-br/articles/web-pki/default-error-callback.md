@@ -10,8 +10,8 @@ pki.init({
 });
 
 function onWebPkiFail(ex) {
-    alert(ex.userMessage);
-    console.log('Web PKI error originated at ' + ex.origin + ': ' + ex.error);
+    alert(ex.userMessage + ' (' + ex.code + ')');
+    console.log('Web PKI error originated at ' + ex.origin + ': (' + ex.code + ') ' + ex.error);
 }
 ```
 
