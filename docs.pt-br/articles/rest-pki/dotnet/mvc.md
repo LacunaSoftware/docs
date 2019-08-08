@@ -1,6 +1,6 @@
 ﻿# Projeto de exemplos em ASP.NET MVC
 
-O **Projeto de exemplos em Java 7+ com Spring MVC** mostra como usar o [Rest PKI](../index.md) junto com [Web PKI](../../web-pki/index.md)
+O **Projeto de exemplos em ASP.NET MVC** mostra como usar o [Rest PKI](../index.md) junto com [Web PKI](../../web-pki/index.md)
 em um projeto usando [ASP.NET MVC 5](https://docs.microsoft.com/en-us/aspnet/mvc/mvc5). É hospedado no GiHub em:
 
 ## Executando o projeto
