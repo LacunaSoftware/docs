@@ -22,7 +22,6 @@ Create a local user to run the Amplia server:
 ```sh
 sudo adduser --home /var/amplia --disabled-password amplia
 sudo usermod -aG syslog amplia
-sudo chmod a=,g+rX,u+rwX /var/amplia
 ```
 
 Create the site folder, download and extract the binaries:
@@ -31,21 +30,30 @@ Create the site folder, download and extract the binaries:
 sudo mkdir /usr/share/amplia
 wget https://cdn.lacunasoftware.com/amplia/amplia-2.15.0.tar.gz
 sudo tar xzf amplia-2.15.0.tar.gz -C /usr/share/amplia
-sudo chown -R root:amplia /usr/share/amplia
-sudo chmod -R a=,g+rX,u+rwX /usr/share/amplia
+sudo chmod -R a=,u+rwX,go+rX /usr/share/amplia
 ```
 
 > [!NOTE]
-> The commands above cause the application user (*amplia*) to be able to read the site files, but not modify them. This is intended. Also, users outside
-> of the *amplia* group cannot read the files, which is important to protect access to the JSON settings files which contain sensitive data.
+> Site binaries can be read by any user and can only be changed by root users. This means that the application user (*amplia*) can read but not change the files, which is intended.
+
+Create the configuration file from the given template:
+
+```sh
+sudo mkdir /etc/amplia
+sudo cp /usr/share/amplia/config-templates/appsettings.linux.json /etc/amplia/
+sudo chown -R root:amplia /etc/amplia
+sudo chmod -R a=,u+rwX,g+rX /etc/amplia
+```
+
+> [!NOTE]
+> Configuration files can only be read by members of the *amplia* group and can only be changed by root users. This is important to protect sensitive data stored on the configuration files from unauthorized access.
 
 ## Configure Amplia
 
-Rename the file *appsettings.iis-linux.json* to *appsettings.linux.json*, then edit the file to configure your Amplia instance:
+Edit the conmfiguration file to configure your Amplia instance:
 
 ```sh
-sudo mv /usr/share/amplia/appsettings.linux-template.json /usr/share/amplia/appsettings.linux.json
-sudo nano /usr/share/amplia/appsettings.linux.json
+sudo nano /etc/amplia/appsettings.linux.json
 ```
 
 [!include[Database config](../includes/database-config.md)]
