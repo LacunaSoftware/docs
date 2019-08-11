@@ -14,8 +14,9 @@ Na seção **Bindings**
 Na seção **Amplia**
 
 * **DatabaseKeyStoreEnabled**: para habilitar o [Armazenamento de chaves em banco de dados](../key-stores/database.md), definir como `true`.
-* **NativeUserKeyStoreEnabled**: para habilitar o [Armazenamento de chaves no store nativo](../key-stores/native.md), definir como `true`.
-* **NativeMachineKeyStoreEnabled**: para habilitar [Armazenamento de chaves no store nativo da máquina](../key-stores/native.md), definir como `true`.
+<!-- Native key stores will remain undocumented for the moment
+**NativeUserKeyStoreEnabled**: para habilitar o [Armazenamento de chaves no store nativo](../key-stores/native.md), definir como `true`.
+**NativeMachineKeyStoreEnabled**: para habilitar [Armazenamento de chaves no store nativo da máquina](../key-stores/native.md), definir como `true`. -->
 * **DefaultKeyStore**: o armazenamento de chaves padrão no qual criar novas chaves.
 * **DefaultAccessDomains**: domínios a serem usados ao compor os pontos de distribuição da LCR.
 
@@ -71,13 +72,13 @@ de emissão do certificado. Mensagens SMS podem ser enviadas usando *provedores*
 A seção **SMS** configura o envio de SMS. A configuração **Type** define qual provedor deve ser usado e as configurações restantes dependem do provedor escolhido:
 
 * [Twilio](https://www.twilio.com/)
-  * **Type**: definir esta configuração para `Twilio`para enviar mensagens SMS usando Twilio
+  * **Type**: definir esta configuração para `Twilio` para enviar mensagens SMS usando o Twilio
   * **MessageFrom**: o número de telefone do remetente fornecido por Twilio (ex.: `+55125550000`)
   * **AccountSid**: a conta SID, fornecida pelo Twilio
-  * **AuthToken**: o token de autenticidade, fornecido pelo Twilio
-
-> [!NOTE]
-> Se você desejar utilizar outro provedor de SMS, por favor entre em contato conosco.
+  * **AuthToken**: o token de autenticação, fornecido pelo Twilio
+* [TotalVoice](https://totalvoice.com.br/)
+  * **Type**: definir esta configuração para `TotalVoice` para enviar mensagens SMS usando o TotalVoice
+  * **AccessToken**: o token de acesso, fornecido pelo TotalVoice
 
 ### Configuração Key store
 

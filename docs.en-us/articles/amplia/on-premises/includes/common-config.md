@@ -5,15 +5,16 @@ Under section **Bindings**:
 * **HttpsMode**: by default, both the dashboard and the REST APIs can only be accessed through HTTPS, which is the recommended behavior if you have a valid SSL certificate.
   * If you do not have a valid SSL certificate, set this setting to `Optional`. Users accessing the dashboard will not be redirected to HTTPS and REST APIs will be accessible through HTTP.
   * If you have a valid SSL certificate but some legacy client applications do not recognize it, set this setting to `RedirectPages`. REST APIs will still be accessible through HTTP (like in `Optional` mode), but users accessing the dashboard will be redirected to HTTPS.
-* **SslPort**: by default, users accessing the dashboard through HTTP are redirected to HTTPS on the standard TCP port 43. If the site is using HTTPS on a non-standard port, set it here.
+* **SslPort**: by default, users accessing the dashboard through HTTP are redirected to HTTPS on the standard TCP port 443. If the site is using HTTPS on a non-standard port, set it here.
 
 ### Amplia settings
 
 Under section **Amplia**:
 
 * **DatabaseKeyStoreEnabled**: to enable the [database key store](../key-stores/database.md), set this to `true`
-* **NativeUserKeyStoreEnabled**: to enable the [native user key store](../key-stores/native.md), set this to `true`
-* **NativeMachineKeyStoreEnabled**: to enable the [native machine key store](../key-stores/native.md), set this to `true`
+<!-- Native key stores will remain undocumented for the moment
+**NativeUserKeyStoreEnabled**: to enable the [native user key store](../key-stores/native.md), set this to `true`
+**NativeMachineKeyStoreEnabled**: to enable the [native machine key store](../key-stores/native.md), set this to `true` -->
 * **DefaultKeyStore**: the default key store on which to create new keys
 * **DefaultAccessDomains**: domains to be used when composing the CRL distribution points
 
@@ -74,9 +75,9 @@ The section **SMS** configures the SMS sending. The setting **Type** defines whi
   * **MessageFrom**: the sender phone number provided by Twilio (e.g.: `+12125550000`)
   * **AccountSid**: the account SID, provided by Twilio
   * **AuthToken**: the authentication token, provided by Twilio
-
-> [!NOTE]
-> If you wish to use other SMS provider, please contact us
+* [TotalVoice](https://totalvoice.com.br/)
+  * **Type**: set this setting to `TotalVoice` to send SMS messages using TotalVoice
+  * **AccessToken**: the access token, provided by TotalVoice (e.g.: `0123456789abcdef0123456789abcdef`)
 
 ### Key store configuration
 
