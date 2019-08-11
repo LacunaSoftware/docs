@@ -19,6 +19,7 @@ Atualiza modelo do banco de dados: **sim**
 
 Mudanças de configuração:
 * `General:EncryptionKey`: opcional (para *backward compatibility*), mas altamente recomendado ser preenchido com uma chave gerada aleatoriamente
+  (veja instruções para geração da chave em [Windows](on-premises/windows/install.md#encryption-key-generation) ou em [Linux](on-premises/linux/install-ubuntu.md#encryption-key-generation))
 
 <!-- TODO: add link to EncryptionKey generation instructions -->
 

@@ -19,6 +19,7 @@ Updates database model: **yes**
 
 Configuration changes:
 * `General:EncryptionKey`: optional (for backward compatibility), but highly recommended to fill this setting with an encryption key
+  (see key generation instructions for [Windows](on-premises/windows/install.md#encryption-key-generation) or [Linux](on-premises/linux/install-ubuntu.md#encryption-key-generation))
 
 <!-- TODO: add link to EncryptionKey generation instructions -->
 

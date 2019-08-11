@@ -83,6 +83,7 @@ Se preferir, mude a configuração **path** para outra pasta.
 
 [!include[General config](../includes/general-config.md)]
 
+<a name="encryption-key-generation" />
 Para gerar a *EncryptionKey*, execeute o comando seguinte:
 
 ```sh

@@ -163,6 +163,7 @@ Na seção **General**:
 permissões de proprietário sobre o banco de dados.
 * **SupportEmailAdress**: o endereço de e-mail de suporte (usado no rodapé dos e-mails enviados)
 
+<a name="encryption-key-generation" />
 Para gerar a *EncryptionKey*, execute o seguinte em um Powershell:
 
 ```ps
