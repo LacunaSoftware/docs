@@ -115,7 +115,7 @@ If you need help preparing the database, [click here](prepare-database.md).
 
 ## Configuration
 
-On the installation folder, rename the file **appsettings.iis-template.json** to **appsettings.iis.json** (remove the `-template` suffix). Then, edit the file
+On the installation folder, move the file **appsettings.iis.json** from the folder **config-templates** to the root folder of the site. Then, edit the file
 to configure your Amplia instance.
 
 [!include[Database config](../includes/database-config.md)]
