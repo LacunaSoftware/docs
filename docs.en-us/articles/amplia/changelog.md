@@ -1,5 +1,27 @@
 ﻿# Amplia changelog
 
+<a name="v2-15-0" />
+### 2.15.0 (2019-08-10)
+
+* Add support for Linux installations
+* Add database key store
+* Add support for storing blobs on local file system
+* Add support for SMS provider [TotalVoice](https://www.totalvoice.com.br/)
+* Add certificate type information (A1/A3) to PKI Brazil (ICP-Brasil) certificates
+* Improve certificate order creation page
+* Scalability improvement: data protection keys are now stored on the database
+* Security improvement: add support for encrypting data protection keys (required to use the new database key store)
+* Bug fixes
+  * Fix race condition that allowed two certificates to be issued for the same order
+  * Fix validation bug that allowed an order to be created without a `validityEnd` with a template without a default validity
+
+Updates database model: **yes**
+
+Configuration changes:
+* `General:EncryptionKey`: optional (for backward compatibility), but highly recommended to fill this setting with an encryption key
+
+<!-- TODO: add link to EncryptionKey generation instructions -->
+
 
 <a name="v2-14-1" />
 ### 2.14.1 (2019-06-13)
@@ -69,7 +91,7 @@ Configuration changes:
 <a name="v2-11-1" />
 ### 2.11.1 (2019-02-26)
 
-* Added validation of email address in the creation of ICP-Brazil type certificate requests (PKIBrazil)
+* Added validation of email address in the creation of ICP-Brasil type certificate requests (PKIBrazil)
 * PKI SDK updated to version [2.3.0]
 (https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-3-0) (RTM)
 

@@ -1,5 +1,28 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v2-15-0" />
+### 2.15.0 (2019-08-10)
+
+* Adicionado suporte a instalação em Linux
+* Adicionado suporte a armazenamento de chaves de AC no banco de dados
+* Adicionado suporte a armazenamento de arquivos no sistema de arquivos local
+* Adicionado suporte ao provedor de SMS [TotalVoice](https://www.totalvoice.com.br/)
+* Adicionada informação de tipo de certificado (A1/A3) em certificados ICP-Brasil
+* Melhorias à página de criação de pedido de certificado
+* Melhoria de escalabilidade: chaves de *data protection* agora são armazenadas no banco de dados
+* Melhoria de segurança: chaves de *data protection* podem ser cifradas (obrigatório para utilizar armazenamento de chaves de AC em banco de dados)
+* Correções de bugs
+  * Corrigida condição de corrida que permitida que dois certificados fossem emitidos para um mesmo pedido
+  * Corrigido erro de validação que permitia que um pedido fosse criado sem especificar data de validade com um template sem validade padrão
+
+Atualiza modelo do banco de dados: **sim**
+
+Mudanças de configuração:
+* `General:EncryptionKey`: opcional (para *backward compatibility*), mas altamente recomendado ser preenchido com uma chave gerada aleatoriamente
+
+<!-- TODO: add link to EncryptionKey generation instructions -->
+
+
 <a name="v2-14-1" />
 ### 2.14.1 (2019-06-13)
 
