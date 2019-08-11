@@ -86,9 +86,9 @@ If desired, change the **path** setting to the log file path.
 > [!NOTE]
 > If you change the default log file path, remember to grant write permissions to the application user (*amplia*) to the directory
 
-[!include[General config](../includes/general-config.md)]
+<a name="encryption-key-generation" /> <!-- This anchor actually belongs a bit farther below, placing it here is a workaround -->
 
-<a name="encryption-key-generation" />
+[!include[General config](../includes/general-config.md)]
 
 To generate the *EncryptionKey*, run the following command:
 

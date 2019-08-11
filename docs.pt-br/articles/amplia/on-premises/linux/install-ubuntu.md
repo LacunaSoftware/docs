@@ -81,9 +81,9 @@ Se preferir, mude a configuração **path** para outra pasta.
 > [!NOTE]
 > Se você mudar o padrão do arquivo *path*, lembre-se de conceder permissões de gravação para o usuário do aplicativo (*amplia*) do diretório.
 
-[!include[General config](../includes/general-config.md)]
+<a name="encryption-key-generation" /> <!-- This anchor actually belongs a bit farther below, placing it here is a workaround -->
 
-<a name="encryption-key-generation" />
+[!include[General config](../includes/general-config.md)]
 
 Para gerar a *EncryptionKey*, execute o comando seguinte:
 

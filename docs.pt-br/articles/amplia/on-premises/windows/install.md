@@ -155,6 +155,8 @@ Altere a configuração do ***path*** para outra pasta de log.
 
 ### Configurações *General*
 
+<a name="encryption-key-generation" /> <!-- This anchor actually belongs a bit farther below, placing it here is a workaround -->
+
 Na seção **General**:
 
 * **SiteUrl**: URL publicamente acessível do site (ex.: `https://ca.patorum.com/`). Este endereço é usado para compor emails com links de volta ao site.
@@ -162,8 +164,6 @@ Na seção **General**:
 * **AutoUpdateDatabase**: Por padrão, o aplicativo tenta realizar alterações de modelo no banco de dados após uma atualização (quando necessário). Defina como `false` se o aplicativo não tiver
 permissões de proprietário sobre o banco de dados.
 * **SupportEmailAdress**: o endereço de e-mail de suporte (usado no rodapé dos e-mails enviados)
-
-<a name="encryption-key-generation" />
 
 Para gerar a *EncryptionKey*, execute o seguinte em um Powershell:
 
