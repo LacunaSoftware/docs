@@ -89,6 +89,7 @@ If desired, change the **path** setting to the log file path.
 [!include[General config](../includes/general-config.md)]
 
 <a name="encryption-key-generation" />
+
 To generate the *EncryptionKey*, run the following command:
 
 ```sh

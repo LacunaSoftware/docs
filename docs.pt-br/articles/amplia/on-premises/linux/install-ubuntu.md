@@ -18,7 +18,7 @@ Clique no link abaixo, então **selecione sua versão Ubuntu** e siga as instru�
 
 ## Instalar o Amplia
 
-Crie um usuário local para execeutar o servidor Amplia:
+Crie um usuário local para executar o servidor Amplia:
 
 ```sh
 sudo adduser --home /var/amplia --disabled-password amplia
@@ -84,7 +84,8 @@ Se preferir, mude a configuração **path** para outra pasta.
 [!include[General config](../includes/general-config.md)]
 
 <a name="encryption-key-generation" />
-Para gerar a *EncryptionKey*, execeute o comando seguinte:
+
+Para gerar a *EncryptionKey*, execute o comando seguinte:
 
 ```sh
 openssl rand -base64 32

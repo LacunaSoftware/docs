@@ -151,6 +151,7 @@ Change the **path** setting to the log file path.
 [!include[General config](../includes/general-config.md)]
 
 <a name="encryption-key-generation" />
+
 To generate the *EncryptionKey*, run the following on a Powershell:
 
 ```ps
