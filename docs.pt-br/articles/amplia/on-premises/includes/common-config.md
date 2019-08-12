@@ -104,7 +104,7 @@ Na seção **KeyStores**, cada chave é o nome de um armazenamento de chaves, te
 
 A configuração **Type** em cada configuração de armazenamento de chaves define o tipo de armazenamento de chaves e as configurações restantes dependem do provedor escolhido. Veja este artigo [Configuração de Key Store](../key-stores/index.md) para detalhes.
 
-### Insights de aplicativo (instrumento adicional)
+### Application Insights (instrumentação adicional)
 
 Se você deseja coletar dados de instrumentação adicionais com o [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview), configure a
 seção **ApplicationInsights**
