@@ -35,7 +35,6 @@ export declare class LacunaWebPKI {
 	 */
 	constructor(license?: string | Object);
 
-// @ifdef JSLIB
 	readonly standardTrustArbitrators: {
 		pkiBrazil: TrustArbitrator,
 		pkiItaly: TrustArbitrator,
@@ -86,7 +85,6 @@ export declare class LacunaWebPKI {
 		pkiBrazil: LacunaWebPKI.XmlPolicies[]
 	}
 
-// @endif
 
 	/**************************************************************
 	 * Initializes the instance of the LacunaWebPKI object. This method must be called before calling any other methods.
@@ -210,8 +208,6 @@ export declare class LacunaWebPKI {
 		/** The certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
 		thumbprint: string
 	}): Promise<string>;
-
-// @ifdef JSLIB
 
 	/**************************************************************
 	 * Signs a hash with signer certificate private key.
@@ -823,25 +819,7 @@ export declare class LacunaWebPKI {
 		timeout?: number
 	}): Promise<HttpResponseModel>;
 
-// @endif
 
-// @ifdef CHROMELIB
-
-	pollNative(args: { requiredApiVersion?: string }): Promise<null>;
-
-	importPkcs12(): Promise<boolean>;
-
-	removeCertificate(args: { thumbprint: string }): Promise<boolean>;
-
-	startSyncDevice(): Promise<RemoteConnectionInfo>;
-
-	waitSyncDevice(args: { sessionId: string }): Promise<RemoteDeviceInfo>;
-
-	finishSyncDevice(args: { sessionId: string }): Promise<RemoteDeviceInfo>;
-
-	refreshDevice(args: { deviceId: string }): Promise<{ version: string }>;
-
-// @endif
 
 }
 
@@ -959,8 +937,6 @@ export namespace LacunaWebPKI {
 		T4 = 'T4',
 		Unknown = 'Unknown'
 	}
-
-// @ifdef JSLIB
 
 	export const enum HttpMethods {
 		Get = 'get',
@@ -1116,22 +1092,7 @@ export namespace LacunaWebPKI {
 		SpecialCharacters = 4
 	}
 
-// @endif
 
-// @ifdef CHROMELIB
-
-	export const enum MobileOSs {
-		Android = 'Android',
-		iOS = 'iOS'
-	}
-
-	export const enum ResyncLevels {
-		Good = 'good',
-		Warn = 'warn',
-		Alert = 'alert'
-	}
-
-// @endif
 
 }
 
@@ -1280,8 +1241,6 @@ export interface FailCallback {
 export interface Filter {
 	(cert: CertificateModel) : boolean;
 }
-
-// @ifdef JSLIB
 
 /**************************************************************
  * Object that holds an output option.
@@ -1653,29 +1612,4 @@ export interface PadesPageOptimization {
 	pageOrientation: LacunaWebPKI.PadesPageOrientations
 }
 
-// @endif
 
-// @ifdef CHROMELIB
-
-export interface RemoteConnectionInfo {
-	sessionId: string,
-	sessionIdRaw: string,
-	encodedX: string
-}
-
-export interface RemoteDeviceInfo {
-	deviceId: string,
-	name: string,
-	os: LacunaWebPKI.MobileOSs,
-	resyncNeededLevel?: LacunaWebPKI.ResyncLevels,
-	knownCertificates?: { [thumbprint: string]: CertificateModel },
-}
-
-export interface InitResult {
-	isInstalled?: boolean,
-	status?: LacunaWebPKI.InstallationStates,
-	platformInfo?: any,
-	nativeInfo?: any,
-}
-
-// @endif
