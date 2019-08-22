@@ -1,10 +1,21 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-13-2" />
+### 1.13.2 (2019-08-21)
+
+- Atualiza PKI SDK para a versão [2.5.3](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-5-3)
+
+<a name="v1-13-1" />
+### 1.13.1 (2019-07-31)
+
+- Adiciona a opção de não mostrar a representação visual padrão em uma assinatura PAdES com `--suppress-default-visual-rep` habilitado
+
 <a name="v1-13-0" />
 ### 1.13.0 (2019-07-19)
 
 - Adiciona integração com o serviço LAPP
 - Adiciona suporte a razão do assinante para uma assinatura PAdES com `--reason` habilitado
+- Atualiza PKI SDK para a versão [2.5.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-5-1)
 
 <a name="v1-12-3" />
 ### 1.12.3 (2019-05-20)

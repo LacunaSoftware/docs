@@ -1,10 +1,21 @@
 ﻿# PKI Express changelog
 
+<a name="v1-13-2" />
+### 1.13.2 (2019-08-21)
+
+- Update PKI SDK to [2.5.3](../pki-sdk/changelog.md#v2-5-3)
+
+<a name="v1-13.1" />
+### 1.13.1 (2019-07-31)
+
+- Add the option of not showing the default visual representation on a PAdES signature with `--suppress-default-visual-rep` enabled
+
 <a name="v1-13-0" />
 ### 1.13.0 (2019-07-19)
 
 - Add integration with LAPP service
 - Add support for signer's reason for a PAdES signature with `--reason` enabled
+- Update PKI SDK to [2.5.1](../pki-sdk/changelog.md#v2-5-1)
 
 <a name="v1-12-3" />
 ### 1.12.3 (2019-05-20)
