@@ -267,6 +267,40 @@ export declare class LacunaWebPKI {
 		digestAlgorithm: string
 	}): Promise<string>;
 
+	/**********************************************************
+	 * Signs a hash with a generated private key.
+	 *
+	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives the (Base64 encoded) signature bytes.
+	 *
+	 */
+	keySignHash(args: {
+		/** The private key Id returned in the generate key pair methods [[generateSoftwareRsaKeyPair]] or [[generateTokenRsaKeyPair]]. */
+		privateKeyId: string,
+		/** The Base64 encoded hash to be signed. */
+		hash: string,
+		/** The digest algorithm identifier of the `hash` parameter. It can be the algorithm name or OID (i.e. `'SHA-256'` or `'2.16.840.1.101.3.4.2.1'`). */
+		digestAlgorithm: string,
+		/** The user crypto device returned from [[listTokens]], if the key pair was generated on a crypto device. */
+		token?: TokenModel
+	}): Promise<string>;
+
+	/**********************************************************
+	 * Signs data with a generated private key.
+	 *
+	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives the (Base64 encoded) signature bytes.
+	 *
+	 */
+	keySignData(args: {
+		/** The private key Id returned in the generate key pair methods [[generateSoftwareRsaKeyPair]] or [[generateTokenRsaKeyPair]]. */
+		privateKeyId: string,
+		/** The Base64 encoded data to be signed. */
+		data: string,
+		/** The digest algorithm identifier to be used in the signature algorithm. It can be the algorithm name or OID (i.e. `'SHA-256'` or `'2.16.840.1.101.3.4.2.1'`). */
+		digestAlgorithm: string,
+		/** The user crypto device returned from [[listTokens]], if the key pair was generated on a crypto device. */
+		token?: TokenModel
+	}): Promise<string>;
+
 	/**************************************************************
 	 * Signs a batch of hashes with signer certificate private key.
 	 *
@@ -281,11 +315,12 @@ export declare class LacunaWebPKI {
 	 * ];
 	 *
 	 * pki.signHashBatch({
-	 *     thumbprint: $('#certificateSelect').val(),
+	 *     certificateThumbprint: $('#certificateSelect').val(),
 	 *     batch: batch,
 	 *     digestAlgorithm: 'SHA-256'
-	 * }).success(function (signatures) {
+	 * }).success(function (result) {
 	 *     // Use signatures array
+	 *     var signatures = result.signatures;
 	 * });
 	 * ```
 	 *
@@ -293,7 +328,7 @@ export declare class LacunaWebPKI {
 	 */
 	signHashBatch(args: {
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
-		thumbprint: string,
+		certificateThumbprint: string,
 		/** The Array of Base64 encoded hashes to be signed. */
 		batch: string[],
 		/** The digest algorithm identifier of the hashes on `batch` parameter. It can be the algorithm name or OID (i.e. `'SHA-256'` or `'2.16.840.1.101.3.4.2.1'`). */
@@ -730,12 +765,14 @@ export declare class LacunaWebPKI {
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[GenerateTokenKeyPairResponse]] object.
 	 */
 	generateTokenRsaKeyPair(args: {
+		/** The selected token to generate the key pair. As returned by [[listTokens]] method. Passing this parameter removes the need of `pkcs11Modules` and `tokenSerialNumber` parameters */
+		token?: TokenModel,
 		/** The PKCS#11 modules to use for crypto devices communication. See standard supported [[pkcs11Modules]] */
 		pkcs11Modules?: Pkcs11Module[],
 		/** A subject name (DN) string for the generated CSR. E.g. `'CN=My Name, O=ACME Inc., C=BR'` */
 		subjectName?: string,
 		/** The selected token serial number, available in [[TokenModel.serialNumber]] as returned by [[listTokens]] method. */
-		tokenSerialNumber: string,
+		tokenSerialNumber?: string,
 		/** A label for the generated keys objects in the token. If not set, a random Id is used. */
 		keyLabel?: string,
 		/** The RSA keys size to be genarated. Be sure that the selected device supports the requested key size on [[TokenModel.mechanisms]]. */
@@ -760,10 +797,14 @@ export declare class LacunaWebPKI {
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[ImportTokenCertificateResponse]] object.
 	 */
 	importTokenCertificate(args: {
+		/** The generated private key Id returned on [[GenerateTokenKeyPairResponse.privateKeyId]] */
+		privateKeyId?: string,
+		/** The selected token to import the certificate to. As returned by [[listTokens]] method. Passing this parameter removes the need of `pkcs11Modules` and `tokenSerialNumber` parameters */
+		token?: TokenModel,
 		/** The PKCS#11 modules to use for crypto devices communication. See standard supported [[pkcs11Modules]] */
 		pkcs11Modules?: Pkcs11Module[],
 		/** The selected token serial number, available in [[TokenModel.serialNumber]] as returned by [[listTokens]] method. */
-		tokenSerialNumber: string,
+		tokenSerialNumber?: string,
 		/** The digital certificate content (PEM or Base64 encoded DER bytes formats). */
 		certificateContent: string,
 		/** A label for the imported certificate object in the token. If not set, the same key Id is used. */
@@ -777,6 +818,8 @@ export declare class LacunaWebPKI {
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[ImportSoftwareCertificateResponse]] object.
 	 */
 	importCertificate(args: {
+		/** The generated private key Id returned on [[GenerateKeyPairResponse.privateKeyId]] */
+		privateKeyId?: string,
 		/** The digital certificate content (PEM or Base64 encoded DER bytes formats). */
 		certificateContent: string,
 		/** A password secure level policy for the PFX file backup. Applies only if `savePkcs12` is `true`. */
@@ -843,7 +886,8 @@ export namespace LacunaWebPKI {
 		v1_4_1 = '1.4.1',
 		v1_5 = '1.5',
 		v1_5_1 = '1.5.1',
-		v1_5_2 = '1.5.2'
+		v1_5_2 = '1.5.2',
+		v1_6 = '1.6.0'
 	}
 
 	/**************************************************************
@@ -1462,6 +1506,7 @@ export interface TokenModel {
 	manufacturer: string,
 	model: string,
 	serialNumber: string,
+	pkcs11Module: string,
 	/** Whether or not the token is initialized, operable, already with a user PIN and PUK. */
 	initialized: boolean,
 	mechanisms: MechanismsModel
@@ -1475,8 +1520,10 @@ export interface HttpResponseModel {
 }
 
 export interface GenerateKeyPairResponse {
-	/** The CSR (PKCS#10 Certificate Signing Request) relative to the generated key pair. */
-	csr: string
+	/** The PEM encoded CSR (PKCS#10 Certificate Signing Request) relative to the generated key pair. */
+	csr: string,
+	/** The Id of generated private key */
+	privateKeyId: string
 }
 
 export interface GenerateTokenKeyPairResponse extends GenerateKeyPairResponse {

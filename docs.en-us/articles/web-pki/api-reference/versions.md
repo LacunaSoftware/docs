@@ -18,6 +18,14 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 <a name="changelog" />
 ## API changelog
 
+<a name="v1-6" />
+### 1.6 (2019-10-13)
+
+- Add methods [`keySignData`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#keysigndata) and [`keySignHash`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#keysignhash) for signing with a generated private key Id.
+- Add `privateKeyId` parameter to the generate key pair response: [`GenerateKeyPairResponse`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.generatekeypairresponse.html)
+- Fix bug on [`sendAuthenticatedRequest`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest) response payload when it comes without content length header property.
+
+
 <a name="v1-5-2" />
 ### 1.5.2 (2019-07-19)
 

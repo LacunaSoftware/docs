@@ -18,6 +18,14 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-6" />
+### 1.6 (2019-10-13)
+
+- Adiciona métodos [`keySignData`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#keysigndata) e [`keySignHash`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#keysignhash) para assinatura com Id de chave privada gerada.
+- Adiciona o parâmetro `privateKeyId` ao resultado da geração de par de chaves [`GenerateKeyPairResponse`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.generatekeypairresponse.html).
+- Corrige bug na resposta do método [`sendAuthenticatedRequest`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#sendauthenticatedrequest) quando o *payload* retornado não possui a propriedade `Content-Length` no *Header*.
+
+
 <a name="v1-5-2" />
 ### 1.5.2 (2019-07-19)
 
