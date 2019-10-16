@@ -12,4 +12,4 @@ To solve the problem of signing NFe in the browser, the PKI Web component fits p
 necessary to use the same certificate used to issue the eletronic invoice. The national standard allows a certificate issued 
 to a company other than the company that issued the eletronic invoice to be used for transmission.
 
-This enables**the transmission to be done on the backend using an A1 certificate issued on behalf of the company offering the eletronic invoice web signing service (your company), rather than using the NFe issuing company certificate (your client)**. This avoids the problem of transmitting the eletronic invoice with a certificate available only on the frontend.
+This enables **the transmission to be done on the backend using an A1 certificate issued on behalf of the company offering the eletronic invoice web signing service (your company), rather than using the NFe issuing company certificate (your client)**. This avoids the problem of transmitting the eletronic invoice with a certificate available only on the frontend.
