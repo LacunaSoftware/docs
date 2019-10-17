@@ -485,9 +485,10 @@ export declare class LacunaWebPKI {
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[PdfSignResult]] obejct.
 	 * 
 	 * **Live Examples**
-	 * JSFiddle example with the to sign PDF passed from JavasSript and the signed PDF returned to JavasSript: [InCode PDF Signature](https://jsfiddle.net/LacunaSoftware/Lxts3keh/)
+	 *
+	 * [InCode PDF Signature](https://jsfiddle.net/LacunaSoftware/Lxts3keh/): JSFiddle example with the to sign PDF passed from JavasSript and the signed PDF returned to JavasSript.
 	 * 
-	 * JSFiddle example with local computer PDF file and signed PDF result saved in the same directory with suffix '-signed': [Local PDF File Signature](https://jsfiddle.net/LacunaSoftware/8r63boLd/)
+	 * [Local PDF File Signature](https://jsfiddle.net/LacunaSoftware/8r63boLd/): JSFiddle example with local computer PDF file and signed PDF result saved in the same directory with suffix '-signed'.
 	 */
 	signPdf(args: {
 		/** The selected PDF [[FileModel.id]], as returned by [[showFileBrowser]] method. */
@@ -530,9 +531,10 @@ export declare class LacunaWebPKI {
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[CadesSignResult]] object.
 	 * 
 	 * **Live Examples**
-	 * JSFiddle example with the to sign file content passed from JavasSript and the signed CAdES (P7S) result returned to JavasSript: [InCode Content CAdES Signature](https://jsfiddle.net/LacunaSoftware/01gLv3es/)
+	 *
+	 * [InCode Content CAdES Signature](https://jsfiddle.net/LacunaSoftware/01gLv3es/): JSFiddle example with the to sign file content passed from JavasSript and the signed CAdES (P7S) result returned to JavasSript.
 	 * 
-	 * JSFiddle example with local computer file and signed CAdES (P7S) saved in the same directory with suffix '-signed': [Local File CAdES Signature](https://jsfiddle.net/LacunaSoftware/njcz048y/)
+	 * [Local File CAdES Signature](https://jsfiddle.net/LacunaSoftware/njcz048y/): JSFiddle example with local computer file and signed CAdES (P7S) saved in the same directory with suffix '-signed'.
 	 */
 	signCades(args: {
 		/** The selected document [[FileModel.id]], as returned by [[showFileBrowser]] method. */
@@ -846,7 +848,8 @@ export declare class LacunaWebPKI {
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[HttpResponseModel]] object.
 	 *
 	 * **Live Example**
-	 * JSFiddle example with SOAP POST request to a staging invoice server: [Authenticated Request Sample](https://jsfiddle.net/LacunaSoftware/3cv5xjov/)
+	 *
+	 * [Authenticated Request Sample](https://jsfiddle.net/LacunaSoftware/3cv5xjov/): JSFiddle example with SOAP POST request to a staging invoice server.
 	 */
 	sendAuthenticatedRequest(args: {
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
