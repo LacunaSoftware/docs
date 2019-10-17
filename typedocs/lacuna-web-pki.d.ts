@@ -483,6 +483,10 @@ export declare class LacunaWebPKI {
 	/**************************************************************
 	 * Signs a PDF document.
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[PdfSignResult]] obejct.
+	 * 
+	 * JSFiddle live example with the to sign PDF passed from JavasSript and the signed PDF returned to JavasSript: [InCode PDF Signature](https://jsfiddle.net/LacunaSoftware/Lxts3keh/)
+	 * 
+	 * JSFiddle live example with local computer PDF file and signed PDF result saved in the same directory with suffix '-signed': [Local PDF File Signature](https://jsfiddle.net/LacunaSoftware/8r63boLd/)
 	 */
 	signPdf(args: {
 		/** The selected PDF [[FileModel.id]], as returned by [[showFileBrowser]] method. */
@@ -523,6 +527,10 @@ export declare class LacunaWebPKI {
 	 * Signs a document with CAdES standard, generates a P7S.
 	 *
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[CadesSignResult]] object.
+	 * 
+	 * JSFiddle live example with the to sign file content passed from JavasSript and the signed CAdES (P7S) result returned to JavasSript: [InCode Content CAdES Signature](https://jsfiddle.net/LacunaSoftware/01gLv3es/)
+	 * 
+	 * JSFiddle live example with local computer file and signed CAdES (P7S) saved in the same directory with suffix '-signed': [Local File CAdES Signature](https://jsfiddle.net/LacunaSoftware/njcz048y/)
 	 */
 	signCades(args: {
 		/** The selected document [[FileModel.id]], as returned by [[showFileBrowser]] method. */
@@ -834,6 +842,8 @@ export declare class LacunaWebPKI {
 	 * Sends an authenticated Web request (Web request with mutual SSL/TLS authentication).
 	 *
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[HttpResponseModel]] object.
+	 *
+	 * JSFiddle live example with SOAP POST request to a staging invoice server: [Authenticated Request Sample](https://jsfiddle.net/LacunaSoftware/3cv5xjov/)
 	 */
 	sendAuthenticatedRequest(args: {
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
