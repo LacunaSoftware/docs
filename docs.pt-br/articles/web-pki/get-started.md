@@ -20,6 +20,12 @@ Primeiro, inclua na sua página o arquivo [lacuna-web-pki.js](https://cdn.lacuna
   crossorigin="anonymous"></script>
 ```
 
+Ou instale através do [Pacote NPM web-pki](https://www.npmjs.com/package/web-pki):
+
+```
+$ npm install web-pki --save
+```
+
 > [!NOTE]
 > Não é necessário incluir nenhum arquivo CSS pois o componente não interfere na interface da página.
 

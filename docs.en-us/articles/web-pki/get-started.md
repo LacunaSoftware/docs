@@ -20,6 +20,12 @@ First, you must include the latest [lacuna-web-pki.js](https://cdn.lacunasoftwar
   crossorigin="anonymous"></script>
 ```
 
+Or install the [NPM web-pki package](https://www.npmjs.com/package/web-pki):
+
+```
+$ npm install web-pki --save
+```
+
 > [!NOTE]
 > No CSS files have to be included because the component does not interfere in any way in the look and feel of your page.
 

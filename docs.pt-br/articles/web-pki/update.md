@@ -23,5 +23,11 @@ Ou incluir na sua página como:
   crossorigin="anonymous"></script>
 ```
 
+Ou instalar através do [Pacote NPM web-pki](https://www.npmjs.com/package/web-pki):
+
+```
+$ npm install web-pki --save
+```
+
 > [!NOTE]
 > Caso queira, você pode referenciar a URL acima diretamente da sua aplicação, pois ela é permanente.

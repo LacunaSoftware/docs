@@ -22,5 +22,11 @@ Or include in your Web page as:
   crossorigin="anonymous"></script>
 ```
 
+Or install the [NPM web-pki package](https://www.npmjs.com/package/web-pki):
+
+```
+$ npm install web-pki --save
+```
+
 > [!NOTE]
 > Feel free to refer to that URL directly, we will keep it online permanently.
