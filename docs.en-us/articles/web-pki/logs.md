@@ -29,8 +29,6 @@ On Mac, the log file is placed on:
 
 Note: `~` is a terminal shortcut for the current user home directory.
 
->[Note]
-
 ### Linux
 
 On Linux, the log file is placed on:
