@@ -83,7 +83,7 @@ Save the file and enable the service:
 
 The expected output is similar to:
 
-[!include[Enable service](../../../../../includes/amplia/ubuntu/enable-service-output.md)]
+[!include[Expected output](../../../../../includes/amplia/ubuntu/enable-service-output.md)]
 
 If necessary, restart the service: `sudo systemctl restart amplia`
 
@@ -93,7 +93,7 @@ To test that the Amplia server is running, run:
 
 The expected output is something like:
 
-[!include[Test service output](../../../../../includes/amplia/ubuntu/test-service-output.md)]
+[!include[Expected output](../../../../../includes/amplia/ubuntu/test-service-output.md)]
 
 ## Set up a reverse proxy server
 
@@ -125,7 +125,7 @@ Enable the site, test the Nginx configuration and reload it:
 
 Test the site:
 
-[!include[Enable site](../../../../../includes/amplia/ubuntu/test-site.md)]
+[!include[Test site](../../../../../includes/amplia/ubuntu/test-site.md)]
 
 ## See also
 
