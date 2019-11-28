@@ -104,7 +104,7 @@ Install Nginx (if not already installed):
 
 [!include[Install nginx](../../../../../includes/amplia/ubuntu/install-nginx.md)]
 
-It's usually a good idea to disable the default Nginx site: 
+Disable the default Nginx site:
 
 [!include[Disable default site](../../../../../includes/amplia/ubuntu/disable-default-site.md)]
 
