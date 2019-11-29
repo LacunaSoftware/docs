@@ -15,6 +15,57 @@ Amplia is compatible with:
 
 Click on one of the platforms above for specific setup instructions.
 
+## Planning before installation
+
+Before you start, you should plan ahead on where you intend to store your Certification Authority (CA) keys and where will your Certificate
+Revocation Lists (CRLs) be published. Please read the sections below for details on each of these decisions.
+
+### Key storage
+
+The keys for your Certification Authorities (CAs) can be stored on a variety of locations, called *key stores*. The choice of where to store
+CA keys is one of the most important decisions when planning for a CA. See article [Key Store configuration](key-stores/index.md) for more information
+on where you can store your CA keys and how to configure Amplia accordingly.
+
+### Dashboard domain / SSL certificate
+
+The application has a web interface called the *dashboard* to manage CAs, keys etc. You must choose a domain to access it, for instance `ca.patorum.com`.
+
+The chosen domain should be created on the DNS server of the zone (either A or CNAME records) prior to the installation, pointing to the server on which
+Amplia will be installed.
+
+> [!NOTE]
+> Using a virtual directory (subfolder) on a domain hosting another web application is not supported
+
+It is also recommended that you have a **valid SSL certificate** for the chosen domain.
+
+### CRL publishing (*access domains*)
+
+Certificates issued by Amplia include the X.509 *CRL Distribution Point* extension, which contains links to locations where a third party desiring to validate
+the certificate should obtain the latest Certificate Revocation List (CRL) of the CA, required to determine the revocation status of the certificate.
+
+These links have the following format: `http://your-ca-domain/crls/my-ca.crl`
+
+The `your-ca-domain` part of the link is called on the Amplia configuration an *access domain*. You must choose at least one access domain, but
+it is recommended to have two access domains, preferably independent of each other, for instance:
+
+* *ca.patorum.com*
+* *ca.patorum.net*
+
+> [!TIP]
+> One of the access domains may be the same domain on which the Amplia dashboard will be accessed.
+
+> [!NOTE]
+> Using a virtual directory (subfolder) on a domain hosting another web application is not supported
+
+These domains should be chosen keeping in mind that they **will have to be maintained for a long time** (for the entire lifetime of the certificates
+issued on your Amplia instance, which is typically several years).
+
+The chosen access domains should be created on the DNS servers (either A or CNAME records) pointing to the server on which Amplia will be installed.
+
+> [!TIP]
+> You do not need an SSL certificate for your access domains. Since X.509 recommends that CRLs be distributed over HTTP instead of HTTPS, the
+> certificates are issued with links using the HTTP protocol.
+
 ## See also
 
 * [Changelog](../changelog.md)
