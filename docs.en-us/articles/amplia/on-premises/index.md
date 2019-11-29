@@ -43,7 +43,7 @@ It is also recommended that you have a **valid SSL certificate** for the chosen 
 Certificates issued by Amplia include the X.509 *CRL Distribution Point* extension, which contains links to locations where a third party desiring to validate
 the certificate should obtain the latest Certificate Revocation List (CRL) of the CA, required to determine the revocation status of the certificate.
 
-These links have the following format: `http://your-ca-domain/crls/my-ca.crl`
+These links have the following format: `http://your-ca-domain/crls/your-ca.crl`
 
 The `your-ca-domain` part of the link is called on the Amplia configuration an *access domain*. You must choose at least one access domain, but
 it is recommended to have two access domains, preferably independent of each other, for instance:
