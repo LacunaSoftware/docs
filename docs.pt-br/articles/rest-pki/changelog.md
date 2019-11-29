@@ -8,7 +8,7 @@ Atualização do modelo do banco de dados: Não
 - Corrija o problema de alto uso da CPU que ocorreu em determinadas condições
 - Melhore a programação do carimbo de data e hora para tentar solicitantes marcados como indisponíveis (com menos prioridade)
 - Adicionar configurações `ProcessBackgrounJobs` e `WatchTimestampRequesters`
-- Atualização PKI SDK para [2.5.2](../pki-sdk/changelog.md#v2-5-2)
+- Atualização PKI SDK para [2.5.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-5-2)
 
 
 <a name="v1-20-1" />
@@ -18,7 +18,7 @@ Atualização do modelo do banco de dados: Não
 
 - Adicionar direções de posicionamento automático do PAdES (`LeftToRight`/`RightToLeft` e `TopDown`/`BottomUp`)
 - Adiconar suporte para integração Lapp (*Lapp* é um Provedor de Artefato para PKI, usado como um proxy CRL)
-- Atualização PKI SDK para [2.5.1](../pki-sdk/changelog.md#v2-5-1)
+- Atualização PKI SDK para [2.5.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-5-1)
 
 
 <a name="v1-20-0" />
@@ -41,7 +41,7 @@ Atualização do modelo do banco de dados: Não
 Atualização do modelo do banco de dados: Não
 
 - Integração refatorada com B-Stamper
-- Atualização PKI SDK para [2.2.8](../pki-sdk/changelog.md#v2-2-8)
+- Atualização PKI SDK para [2.2.8](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-2-8)
 
 
 <a name="v1-18-5" />
@@ -58,7 +58,7 @@ Atualização do modelo do banco de dados: Não
 Atualização do modelo do banco de dados: Não
 
 - Melhora as validações nas assinaturas PAdES e CAdES que exploram APIs para retornar o código de status 422 em vez de 500
-- Atualização PKI SDK para [2.2.3](../pki-sdk/changelog.md#v2-2-3)
+- Atualização PKI SDK para [2.2.3](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-2-3)
 
 
 <a name="v1-18-3" />
@@ -69,7 +69,7 @@ Atualização do modelo do banco de dados: Não
 - Adiciona suporte para assinatura padrão XML *Certificación de Origen Digital* (COD),
   da *Asociación Latinoamericana de Integración* (ALADI). Para maiores informações, veja o padrão em [Espanhol](http://www.aladi.org/nsfweb/Documentos/2327Rev2.pdf) ou em
   [Português](http://www.mdic.gov.br/images/REPOSITORIO/secex/deint/coreo/2014_09_19_-_Brasaladi_761_-_Documento_ALADI_SEC__di_2327__Rev_2_al_port_.pdf)
-- Atualização PKI SDK para [2.2.2](../pki-sdk/changelog.md#v2-2-2), corrigindo erros na rotação das marcas PDF
+- Atualização PKI SDK para [2.2.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-2-2), corrigindo erros na rotação das marcas PDF
 
 
 <a name="v1-18-2" />
@@ -97,7 +97,7 @@ Atualização do modelo do banco de dados: Não
 Atualização do modelo do banco de dados: **Sim**
 
 - Adicionado suporte para configurar um ID da política TSA em solicitações de carimbo de data e hora de saída
-- Atualização PKI SDK para [2.1.3](../pki-sdk/changelog.md#v2-1-3)
+- Atualização PKI SDK para [2.1.3](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-1-3)
 
 
 <a name="v1-17-5" />
