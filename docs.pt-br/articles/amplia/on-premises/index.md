@@ -15,6 +15,8 @@ O Amplia é compatível com os seguintes ambientes:
 
 Clique em um dos ambientes acima para obter instruções específicas de instalação e atualização.
 
+<a name="planning" />
+
 ## Planejamento antes da instalação
 
 Antes de você começar, você deve planejar com antecedência onde pretende armazenar suas chaves da Autoridade Certificadora (CA) e onde pretende publicar suas Listas de Certificados Revogados (LCRs).

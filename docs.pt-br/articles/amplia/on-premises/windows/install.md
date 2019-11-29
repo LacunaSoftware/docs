@@ -4,6 +4,8 @@
 > A documentação para este sistema está atualmente em construção. Nos desculpamos por qualquer inconveniência que pode causar. Por favor, entre em contato conosco se houver alguma informação
 que você precise que não esteja documentada no momento.
 
+Antes de começar, leia a seção [Planejamento antes da instalação](../index.md#planning).
+
 Para sua própria instalação do [Amplia](../../index.md) no Windows Server, siga os passos neste artigo. Para outras plataformas, [clique aqui](../index.md).
 
 ## Modo de operação do banco de dados

@@ -15,6 +15,8 @@ Amplia is compatible with:
 
 Click on one of the platforms above for specific setup instructions.
 
+<a name="planning" />
+
 ## Planning before installation
 
 Before you start, you should plan ahead on where you intend to store your Certification Authority (CA) keys and where will your Certificate

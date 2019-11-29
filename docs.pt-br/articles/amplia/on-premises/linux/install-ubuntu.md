@@ -2,6 +2,8 @@
 
 <!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
 
+Antes de começar, leia a seção [Planejamento antes da instalação](../index.md#planning).
+
 ## Instale o APS.NET Core Runtime
 
 Clique no link abaixo, então **selecione sua versão Ubuntu** e siga as instruções:

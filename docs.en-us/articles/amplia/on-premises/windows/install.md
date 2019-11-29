@@ -4,6 +4,8 @@
 > The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please
 > contact us if there's any information you need that is not currently documented.
 
+Before you start, make sure you have read the section [Planning before installation](../index.md#planning).
+
 To install your own instance of [Amplia](../../index.md) on Windows Server, follow the steps on this article. For other platforms, [click here](../index.md).
 
 ## Database operation mode

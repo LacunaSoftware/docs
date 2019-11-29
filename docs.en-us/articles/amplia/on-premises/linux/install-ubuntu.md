@@ -2,13 +2,15 @@
 
 <!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
 
+Before you start, make sure you have read the section [Planning before installation](../index.md#planning).
+
 ## Install the ASP.NET Core Runtime
 
 Click the link below, then **select your Ubuntu version** and follow the instructions:
 
 <br />
 <center>
-<a href="https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/runtime-current" target="_blank">Install .NET Core Runtime on Linux Ubuntu</a>
+<a href="https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-1804" target="_blank">Install ASP.NET Core Runtime on Linux Ubuntu</a>
 </center>
 <br />
 
