@@ -9,6 +9,7 @@ Before you start, make sure you have read the section [Planning before installat
 ## Prerequisites
 
 * Ubuntu x64 version 16.04, 18.04 or 19.04
+
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
 ## Install the ASP.NET Core Runtime

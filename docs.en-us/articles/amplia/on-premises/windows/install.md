@@ -13,6 +13,7 @@ To install your own instance of [Amplia](../../index.md) on Windows Server, foll
 ## Prerequisites
 
 * Windows Server 2016 or newer (any edition)
+
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
 ## Installation

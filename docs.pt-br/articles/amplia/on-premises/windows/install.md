@@ -13,6 +13,7 @@ Para sua própria instalação do [Amplia](../../index.md) no Windows Server, si
 ## Pré-requisitos
 
 * Windows Server 2016 ou mais recente (qualquer edição)
+
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
 ## Instalação
