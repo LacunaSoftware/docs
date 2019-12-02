@@ -23,8 +23,7 @@ Clique no link abaixo, então **selecione sua versão Ubuntu** e siga as instru�
 <br />
 
 > [!TIP]
-> Ignore a nota de rodapé das instruções sobre instalar somente o *.NET Core runtime*. Você precisa do "runtime bundle" completo. Em outras palavras, tenha certeza que você pegou o pacote
-`aspnetcore-runtime-xxx`, não ~~dotnet-runtime-xxx~~
+> Ignore a nota de rodapé das instruções sobre instalar somente o *.NET Core runtime*. Você precisa do "runtime bundle" completo. Em outras palavras, tenha certeza que você pegou o pacote `aspnetcore-runtime-xxx`, não ~~dotnet-runtime-xxx~~
 
 ## Instalar o Amplia
 
@@ -54,7 +53,7 @@ Edite o arquivo de configuração para configurar sua instância do Amplia:
 
 [!include[Edit settings](../../../../../includes/amplia/ubuntu/edit-settings.md)]
 
-[!include[Database config](../includes/general-config.md)]
+[!include[Database config](../includes/database-config.md)]
 
 ### Logging
 
