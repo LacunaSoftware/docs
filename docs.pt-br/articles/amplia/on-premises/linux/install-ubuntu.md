@@ -12,7 +12,7 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-## Instale o APS.NET Core Runtime
+## Instale o ASP.NET Core Runtime
 
 Clique no link abaixo, então **selecione sua versão Ubuntu** e siga as instruções:
 
