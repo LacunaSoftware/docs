@@ -8,43 +8,12 @@ Before you start, make sure you have read the section [Planning before installat
 
 To install your own instance of [Amplia](../../index.md) on Windows Server, follow the steps on this article. For other platforms, [click here](../index.md).
 
-## Database operation mode
-
-Amplia can operate in two ways regarding the access to the database:
-
-1. Having owner privileges over the database and automatically updating the database model after an update (when needed)
-1. Having only read and write privileges over the database, requiring the database model to be updated by the administrator (using a command line tool)
-
-Granting owner privileges to the application is simpler, while granting only read and write ensures you greater control over the database. The decision
-is up to you. If not sure what to choose, we recommend granting owner privileges (option 1), since it makes updating the application easier.
-
-Some of the setup instructions depend on the option you choose.
+[!include[Database operation mode](../includes/database-mode.md)]
 
 ## Prerequisites
 
 * Windows Server 2016 or newer (any edition)
-* SQL Server 2016 or newer (recommended edition Standard or better)
-* PKI SDK license (in Base64 format)
-* Web PKI license (Base64/binary format) -- only needed if users will issue certificates on their computers (web issuing procedure)
-* DNS entries previously created for:
-  * Dashboard access
-  * CRL publishing (*access domains*)
-* (recommended) Valid SSL certificate for the dashboard domain
-
-> [!NOTE]
-> This documentation is intended for Windows Servers with UI installed. For "core" installations (shell access only), please contact us.
-
-You will also need a connection string to a **database** previously created having:
-
-* Collation: `Latin1_General_100_CI_AI`
-* Credentials corresponding to a user with the following database roles:
-  * If the application should be owner of the database: `db_owner`
-  * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
-
-> [!WARNING]
-> The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
-
-If you need help preparing the database, [click here](prepare-database.md).
+[!include[Common prerequisites](../includes/common-requisites.md)]
 
 ## Installation
 

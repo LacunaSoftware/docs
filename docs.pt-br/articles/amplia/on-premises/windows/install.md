@@ -8,43 +8,12 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 Para sua própria instalação do [Amplia](../../index.md) no Windows Server, siga os passos neste artigo. Para outras plataformas, [clique aqui](../index.md).
 
-## Modo de operação do banco de dados
-
-Amplia pode operar de duas maneiras em relação ao acesso do banco de dados:
-
-1. Sendo *owner* do banco de dados e atualizar automaticamente o modelo do banco de dados após uma atualização (quando necessário)
-1. Ter privilégios apenas de leitura e escrita no banco de dados, exigindo que o modelo do banco de dados seja atualizado pelo administrador (usando uma ferramenta de linha de comando)
-
-Concessão de ser *owner* do aplicativo é simples, enquanto conceder somente leitura e gravação garante maior controle sobre o banco de dados. A decisão cabe à você. Se não tiver certeza do
-que escolher, recomendamos a concessão de ser *owner* (opção 1), pois isso facilita a atualização do aplicativo.
-
-Algumas das instruções de configuração depende da opção que você escolhe.
+[!include[Database operation mode](../includes/database-mode.md)]
 
 ## Pré-requisitos
 
 * Windows Server 2016 ou mais recente (qualquer edição)
-* SQL Server 2016 ou mais recente (edião recomendada Padrão ou melhor)
-* Licença PKI SDK (no formato Base64)
-* Licença Web PKI (formato Base64/binário) -- necessário apenas se os usuários irão emitir certificados em seus computadores (procedimento de emissão da web)
-* Entradas de DNS criadas anteriormente para:
-    * Acesso *dashboard*
-    * Publicação LCR (domínios de acesso)
-* (recomendado) Certificado SSL válido para o domínio *dashboard*
-
-> [!NOTE]
-> Esta documentação é destinada a Windows Server com UI instalado. Para instalações "core" (apenas linhas de código), entre em contato conosco.
-
-Você vai precisar também de uma *connection string* para o **banco de dados** previamente criado tendo:
-
-* Collation: `Latin1_General_100_CI_AI`
-* Credentials corresponding to a user with the following database roles:
-    * If the application should be owner of the database: `db_owner`
-    * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
-
-> [!WARNING]
-> A *collation* do banco de dados **PRECISA SER** `Latin1_General_100_CI_AI`. Criar o banco de dados com uma *collation* diferente provavelmente fará com que a instalação falhe!
-
-Se você precisar de ajuda para preparar o banco de dados, [clique aqui](prepare-database.md).
+[!include[Common prerequisites](../includes/common-requisites.md)]
 
 ## Instalação
 

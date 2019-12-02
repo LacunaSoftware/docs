@@ -4,6 +4,13 @@
 
 Antes de começar, leia a seção [Planejamento antes da instalação](../index.md#planning).
 
+[!include[Database operation mode](../includes/database-mode.md)]
+
+## Pré-requisitos
+
+* Ubuntu x64 versão 16.04, 18.04 or 19.04
+[!include[Common prerequisites](../includes/common-requisites.md)]
+
 ## Instale o APS.NET Core Runtime
 
 Clique no link abaixo, então **selecione sua versão Ubuntu** e siga as instruções:
