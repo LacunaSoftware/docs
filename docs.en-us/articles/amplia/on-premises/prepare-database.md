@@ -1,6 +1,6 @@
 ﻿# Preparing a database for installation of Amplia
 
-In order to [install Amplia](install.md), you will need a connection string for a **SQL Server database** having:
+In order to install a [on-premises installation](index.md) of [Amplia](../index.md), you will need a connection string for a **SQL Server database** having:
 
 * Collation: `Latin1_General_100_CI_AI`
 * Credentials corresponding to a user with the following database roles:
@@ -80,5 +80,4 @@ Data Source=.;Initial Catalog=Amplia;User ID=AmpliaApp;Password=XXXXX
 
 ## See also
 
-* [Installing Amplia on Windows Server](install.md)
-* [Troubleshooting](troubleshoot/index.md)
+* [Database model update](database-update.md)

@@ -1,6 +1,6 @@
 ﻿# Preparando o banco de dados para instalação do Amplia
 
-Para [instalar o Amplia](install.md), você vai precisar de uma *connection string* para um **banco de dados do SQL Server** com:
+Para instalar uma [instância *on premises*](index.md) do [Amplia](../index.md), você vai precisar de uma *connection string* para um **banco de dados do SQL Server** com:
 
 * Collation: `Latin1_General_100_CI_AI`
 * Credenciais correspondentes a um usuário com as seguintes funções do banco de dados:
@@ -80,5 +80,4 @@ Data Source=.;Initial Catalog=Amplia;User ID=AmpliaApp;Password=XXXXX
 
 ## See also
 
-* [Instalando Amplia no Windows Server](install.md)
-* [Resolução de problemas](troubleshoot/index.md)
+* [Atualização do banco de dados](database-update.md)
