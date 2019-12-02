@@ -14,16 +14,15 @@ Before you start, make sure you have read the section [Planning before installat
 
 ## Install the ASP.NET Core Runtime
 
-Click the link below, then **select your Ubuntu version** and follow the instructions:
+Follow the instructions below depending on your Ubuntu version to:
 
-<br />
-<center>
-<a href="https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-1804" target="_blank">Install ASP.NET Core Runtime on Linux Ubuntu</a>
-</center>
-<br />
+1. Register the Microsoft key and add the product repository (this only needs to be done once per machine)
+1. Install the package `aspnetcore-runtime-2.2`
 
 > [!TIP]
-> Ignore the footnote on the instructions about installing just the .NET Core runtime. You need the full "runtime bundle". In other words, make sure you get the package `aspnetcore-runtime-xxx`, not ~~dotnet-runtime-xxx~~
+> For alternative ways to install the ASP.NET Core Runtime, see [this page](https://docs.microsoft.com/en-us/dotnet/core/install/runtime?pivots=os-linux)
+
+[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/ubuntu/install-aspnetcore.md)]
 
 ## Install Amplia
 
