@@ -16,18 +16,19 @@ Amplia is compatible with:
 Click on one of the platforms above for specific setup instructions.
 
 <a name="planning" />
-
 ## Planning before installation
 
 Before you start, you should plan ahead on where you intend to store your Certification Authority (CA) keys and where will your Certificate
 Revocation Lists (CRLs) be published. Please read the sections below for details on each of these decisions.
 
+<a name="key-storage" />
 ### Key storage
 
 The keys for your Certification Authorities (CAs) can be stored on a variety of locations, called *key stores*. The choice of where to store
 CA keys is one of the most important decisions when planning for a CA. See article [Key Store configuration](key-stores/index.md) for more information
 on where you can store your CA keys and how to configure Amplia accordingly.
 
+<a name="dashboard-domain" />
 ### Dashboard domain / SSL certificate
 
 The application has a web interface called the *dashboard* to manage CAs, keys etc. You must choose a domain to access it, for instance `ca.patorum.com`.
@@ -40,6 +41,7 @@ Amplia will be installed.
 
 It is also recommended that you have a **valid SSL certificate** for the chosen domain.
 
+<a name="access-domains" />
 ### CRL publishing (*access domains*)
 
 Certificates issued by Amplia include the X.509 *CRL Distribution Point* extension, which contains links to locations where a third party desiring to validate

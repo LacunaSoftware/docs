@@ -121,7 +121,7 @@ Create a site configuration file for Amplia:
 
 [!include[Create site](../../../../../includes/amplia/ubuntu/create-site.md)]
 
-Enter the following, replacing the dashboard domain on the `server_name` entry:
+Enter the following, replacing the dashboard domain on the `server_name` entry (see [Dashboard domain](../index.md#dashboard-domain)):
 
 [!include[Site definition](../../../../../includes/amplia/linux/site-definition.md)]
 

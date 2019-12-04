@@ -16,29 +16,31 @@ O Amplia é compatível com os seguintes ambientes:
 Clique em um dos ambientes acima para obter instruções específicas de instalação e atualização.
 
 <a name="planning" />
-
 ## Planejamento antes da instalação
 
 Antes de você começar, você deve planejar com antecedência onde pretende armazenar suas chaves da Autoridade Certificadora (CA) e onde pretende publicar suas Listas de Certificados Revogados (LCRs).
 Por favor leia as seções abaixo para detalhes de cada uma das decisões.
 
+<a name="key-storage" />
 ### Armazenamento de chaves
 
 As chaves das suas Autoridades Certificadoras (ACs) podem ser armazenadas em uma variedade de locais, chamadas *key stores*. A escolha de onde armazenar chaves AC é uma das mais importantes
 decisões ao se planejar a implantação de uma AC. Veja o artigo [Configuração de Key Store](key-stores/index.md) para mais informações sobre opções de armazenamento de chaves de AC e como configurar
 o Amplia de acordo.
 
-### Domínio Dashboard / Certificado SSL
+<a name="dashboard-domain" />
+### Domínio de acesso ao painel de controle / Certificado SSL
 
-A aplicação tem uma interface chamada *dashboard* para gerenciar ACs, chaves etc. Você deve escolher um domínio para acessá-la, por exemplo `ca.patorum.com`.
+A aplicação tem um painel de controle para gerenciar ACs, chaves etc. Você deve escolher um domínio para acessá-lo, por exemplo `ac.patorum.com`.
 
 O domínio escolhido deve ser criado no servidor de DNS da zona (registro A ou CNAME) antes da instalação, apontando para o servidor onde o Amplia será instalado.
 
 > [!NOTE]
-> Não há suporte para o uso de um diretório virtual (subpasta) em um domínio que hospeda outro site
+> Não há suporte para o uso de um diretório virtual (subpasta) em um domínio que hospeda outro site, por exemplo *www.patorum.com/ac*
 
 É também recomendado que você tenha um **certificado SSL válido** para o domínio escolhido.
 
+<a name="access-domains" />
 ### Publicação LCR (domínios de acesso)
 
 Certificados emitidos pelo Amplia incluem a extensão X.509 *CRL Distribution Point*, que contém links para endereços online onde um terceiro que deseje validar um certificado deve obter a Lista de Certificados Revogados (LCR) mais recente da AC,

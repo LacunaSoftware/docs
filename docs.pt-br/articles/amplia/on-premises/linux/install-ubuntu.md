@@ -123,7 +123,7 @@ Crie um arquivo de configuração para o site do Amplia:
 
 [!include[Create site](../../../../../includes/amplia/ubuntu/create-site.md)]
 
-Digite o seguinte, substituindo o domínio do painel na entrada `server_name`:
+Digite o seguinte, substituindo o valor do item `server_name` pelo domínio de acesso ao painel de controle (veja [Domínio de acesso ao painel de controle](../index.md#dashboard-domain)):
 
 [!include[Site definition](../../../../../includes/amplia/linux/site-definition.md)]
 
