@@ -1,8 +1,8 @@
 ﻿# Amplia - Checking the system logs (Linux)
 
-The standard location of the system logs is `/var/log/amplia.log`.
+The standard location of the system logs is `/var/log/amplia/error.log`.
 
-To check which file is being used, check the `appsettings.iis.json` file in the site folder (usually `/usr/share/amplia`). Locate the section `Serilog`, subsection `WriteTo`.
+To check which file is being used, check file `/etc/amplia/appsettings.linux.json`. Locate the section `Serilog`, subsection `WriteTo`.
 
 Example:
 ```json
@@ -11,7 +11,7 @@ Example:
 		{
 			"Name": "File",
 			"Args": {
-				"path": "/var/log/amplia.log",
+				"path": "/some-custom-path/error.log",
 			}
 		}
 	],
@@ -21,7 +21,7 @@ Example:
 To follow the log continuously, you can use:
 
 ```sh
-tail -f /var/log/amplia.log
+tail -f /var/log/amplia/error.log
 ```
 
 > [!NOTE]

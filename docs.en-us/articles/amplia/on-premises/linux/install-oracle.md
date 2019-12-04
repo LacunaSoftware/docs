@@ -160,7 +160,7 @@ Test the site:
 
 [!include[Test site](../../../../../includes/amplia/linux/test-site.md)]
 
-Allow HTTP and HTTPS traffic to your system:
+Allow HTTP and HTTPS traffic to your system (if not already allowed):
 
 [!include[Allow traffic](../../../../../includes/amplia/centos/allow-http.md)]
 
