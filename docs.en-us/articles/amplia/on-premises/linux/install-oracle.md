@@ -106,6 +106,8 @@ The expected output is similar to:
 
 [!include[Expected output](../../../../../includes/amplia/centos/start-service-output.md)]
 
+If necessary, restart the service: `sudo systemctl restart amplia`
+
 To test that the Amplia server is running, run:
 
 [!include[Test service](../../../../../includes/amplia/linux/test-service.md)]
@@ -121,7 +123,7 @@ The expected output is something like:
 
 Install Nginx (if not already installed):
 
-[!include[Install nginx](../../../../../includes/amplia/centos/install-nginx.md)]
+[!include[Install nginx](../../../../../includes/amplia/oracle/install-nginx.md)]
 
 Test that Nginx is running:
 
