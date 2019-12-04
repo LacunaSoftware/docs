@@ -16,7 +16,7 @@ Before you start, make sure you have read the section [Planning before installat
 
 Register the Microsoft key and package repository (this only needs to be done once per machine), then install the ASP.NET Core runtime package:
 
-[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/centos/install-aspnetcore.md)]
+[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/oracle/install-aspnetcore.md)]
 
 To test the installation, run:
 

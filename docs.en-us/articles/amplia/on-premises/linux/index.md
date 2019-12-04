@@ -3,7 +3,7 @@
 [Amplia](../../index.md) can currently be installed on the following Linux distributions:
 
 * [Ubuntu](install-ubuntu.md)
-* [Oracle Linux](install-centos.md)
+* [Oracle Linux](install-oracle.md)
 
 > [!NOTE]
 > Please contact us if you need support for a specific distribution.
