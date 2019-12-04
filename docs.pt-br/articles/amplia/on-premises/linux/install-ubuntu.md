@@ -88,7 +88,7 @@ Digite o seguinte:
 > [!NOTE]
 > Se você pretende usar chaves de curvas elípticas (EC), descomente a linha marcada acima. Neste caso, você também precisa ter certeza do seu servido ter o OpenSSL 1.1 instalado.
 
-Salve o arquivo e inicie o serviço:
+Salve o arquivo, habilite o serviço e inicie-o:
 
 [!include[Start service](../../../../../includes/amplia/linux/start-service.md)]
 
@@ -97,10 +97,6 @@ A saída esperada é semelhante a:
 [!include[Expected output](../../../../../includes/amplia/linux/start-service-output.md)]
 
 Se necessário, reinicie o serviço: `sudo systemctl restart amplia`
-
-Ative o serviço para ser iniciado junto com o sistema:
-
-[!include[Enable service](../../../../../includes/amplia/linux/enable-service.md)]
 
 Para testar se o servidor do Amplia está rodando, execute:
 

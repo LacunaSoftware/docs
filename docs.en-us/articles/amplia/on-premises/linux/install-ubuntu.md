@@ -86,7 +86,7 @@ Enter the following:
 > [!NOTE]
 > If you intend to use Elliptic Curve (EC) keys, uncomment the line marked above. In that case, you also need to make sure your server has OpenSSL 1.1 installed.
 
-Save the file and start the service:
+Save the file, enable the service and start it:
 
 [!include[Start service](../../../../../includes/amplia/linux/start-service.md)]
 
@@ -95,10 +95,6 @@ The expected output is similar to:
 [!include[Expected output](../../../../../includes/amplia/linux/start-service-output.md)]
 
 If necessary, restart the service: `sudo systemctl restart amplia`
-
-Enable the service so that it starts on every boot:
-
-[!include[Enable service](../../../../../includes/amplia/linux/enable-service.md)]
 
 To test that the Amplia server is running, run:
 
