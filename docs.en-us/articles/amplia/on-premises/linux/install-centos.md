@@ -1,4 +1,4 @@
-﻿# Installing Amplia on Ubuntu Server
+﻿# Installing Amplia on Oracle Linux
 
 <!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
 
@@ -8,31 +8,43 @@ Before you start, make sure you have read the section [Planning before installat
 
 ## Prerequisites
 
-* Ubuntu x64 version 16.04, 18.04 or 19.04
+* Oracle Linux 7.x
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
 ## Install the ASP.NET Core Runtime
 
-Follow the instructions below depending on your Ubuntu version to:
+Register the Microsoft key and package repository (this only needs to be done once per machine), then install the package ASP.NET Core runtime:
 
-1. Register the Microsoft key and add the product repository (this only needs to be done once per machine)
-1. Install the package `aspnetcore-runtime-2.2`
+[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/centos/install-aspnetcore.md)]
+
+To test the installation, run:
+
+[!include[Test ASP.NET Core installation](../../../../../includes/amplia/linux/test-aspnetcore.md)]
+
+The expected output is similar to:
+
+[!include[Expected output](../../../../../includes/amplia/linux/test-aspnetcore-output.md)]
 
 > [!TIP]
 > For alternative ways to install the ASP.NET Core Runtime, see [this page](https://docs.microsoft.com/en-us/dotnet/core/install/runtime?pivots=os-linux)
 
-[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/ubuntu/install-aspnetcore.md)]
-
 ## Install Amplia
+
+> [!NOTE]
+> Some steps use the `nano` command, which might not be installed on your system. Feel free to replace the command by `vi` or install nano with `sudo yum install nano`
 
 Create a local user to run the Amplia server:
 
-[!include[Create user](../../../../../includes/amplia/ubuntu/create-user.md)]
+[!include[Create user](../../../../../includes/amplia/centos/create-user.md)]
+
+Create a directory to hold the application logs:
+
+[!include[Create log directory](../../../../../includes/amplia/centos/create-log-dir.md)]
 
 Create the site folder, download and extract the binaries:
 
-[!include[Copy files](../../../../../includes/amplia/ubuntu/copy-files.md)]
+[!include[Copy files](../../../../../includes/amplia/centos/copy-files.md)]
 
 > [!NOTE]
 > Site binaries can be read by any user and can only be changed by root users. This means that the application user (*amplia*) can read but not change the files, which is intended.
@@ -115,15 +127,23 @@ The expected output is something like:
 
 Install Nginx (if not already installed):
 
-[!include[Install nginx](../../../../../includes/amplia/ubuntu/install-nginx.md)]
+[!include[Install nginx](../../../../../includes/amplia/centos/install-nginx.md)]
+
+Test that Nginx is running:
+
+[!include[Test nginx](../../../../../includes/amplia/centos/test-nginx.md)]
+
+Check the first lines of the output, which should be similar to:
+
+[!include[Expected output](../../../../../includes/amplia/centos/test-nginx-output.md)]
 
 Disable the default Nginx site:
 
-[!include[Disable default site](../../../../../includes/amplia/ubuntu/disable-default-site.md)]
+[!include[Disable default site](../../../../../includes/amplia/centos/disable-default-site.md)]
 
 Create a site configuration file for Amplia:
 
-[!include[Create site](../../../../../includes/amplia/ubuntu/create-site.md)]
+[!include[Create site](../../../../../includes/amplia/centos/create-site.md)]
 
 Enter the following, replacing the dashboard domain on the `server_name` entry:
 
@@ -132,9 +152,9 @@ Enter the following, replacing the dashboard domain on the `server_name` entry:
 > [!TIP]
 > Ideally, your site configuration should contain the entries `ssl_certificate` and `ssl_certificate_key` with a valid SSL certificate. This configuration is outside of the scope of these instructions.
 
-Enable the site:
+Allow Nginx to access the Amplia service:
 
-[!include[Enable site](../../../../../includes/amplia/ubuntu/enable-site.md)]
+[!include[Allow service access](../../../../../includes/amplia/centos/allow-service-access.md)]
 
 Test the Nginx configuration and reload it:
 
@@ -143,6 +163,10 @@ Test the Nginx configuration and reload it:
 Test the site:
 
 [!include[Test site](../../../../../includes/amplia/linux/test-site.md)]
+
+Allow HTTP and HTTPS traffic to your system:
+
+[!include[Allow traffic](../../../../../includes/amplia/centos/allow-http.md)]
 
 ## See also
 
