@@ -2,7 +2,14 @@
 
 The standard location of the system logs is `/var/log/amplia/error.log`.
 
-To check which file is being used, check file `/etc/amplia/appsettings.linux.json`. Locate the section `Serilog`, subsection `WriteTo`.
+To follow the log continuously, you can use:
+
+```sh
+tail -f /var/log/amplia/error.log
+```
+
+If Amplia is not logging to that file, you might have set a different logging path during setup. To check which file is being used,
+check the file `/etc/amplia/appsettings.linux.json`. Locate the section `Serilog`, subsection `WriteTo`.
 
 Example:
 ```json
@@ -16,12 +23,6 @@ Example:
 		}
 	],
 },
-```
-
-To follow the log continuously, you can use:
-
-```sh
-tail -f /var/log/amplia/error.log
 ```
 
 > [!NOTE]

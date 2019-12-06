@@ -2,7 +2,14 @@
 
 Por padrão, os logs de sistema ficam localizados no arquivo `/var/log/amplia.log`.
 
-Para conferir qual arquivo está sendo utilizado, verifique o arquivo `appsettings.iis.json` na pasta do site (geralmente `/usr/share/amplia`). Localize a seção `Serilog`, subseção `WriteTo`.
+Para acompanhar o log de maneira contínua, você pode usar:
+
+```sh
+tail -f /var/log/amplia.log
+```
+
+Caso o Amplia não esteja escrevendo os logs nesse arquivo, talvez você tenha configurado um diretório personalizado para logs durante a instalação.
+Para conferir qual arquivo está sendo utilizado, verifique o arquivo `/etc/amplia/appsettings.linux.json`. Localize a seção `Serilog`, subseção `WriteTo`.
 
 Exemplo:
 ```json
@@ -11,17 +18,11 @@ Exemplo:
 		{
 			"Name": "File",
 			"Args": {
-				"path": "/var/log/amplia.log",
+				"path": "/some-custom-path/amplia.log",
 			}
 		}
 	],
 },
-```
-
-Para acompanhar o log de maneira contínua, você pode usar:
-
-```sh
-tail -f /var/log/amplia.log
 ```
 
 > [!NOTE]
