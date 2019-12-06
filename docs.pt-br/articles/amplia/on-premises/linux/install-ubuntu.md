@@ -28,85 +28,7 @@ Siga as instruções abaixo dependendo da versão do seu Ubuntu para:
 
 ## Instalar o Amplia
 
-Crie um usuário local para executar o servidor de aplicação do Amplia:
-
-[!include[Create user](../../../../../includes/amplia/ubuntu/create-user.md)]
-
-Crie a pasta do site, baixe e extraia os binários:
-
-[!include[Copy files](../../../../../includes/amplia/ubuntu/copy-files.md)]
-
-> [!NOTE]
-> Os arquivos do site podem ser lidos por qualquer usuário mas só podem ser alterados por usuários com permissões elevadas. Isso significa que o usuário da aplicação (*amplia*)
-> pode ler os arquivos mas não pode alterá-los (isso é intencional).
-
-Crie o arquivo de configuração do Amplia a partir do template fornecido:
-
-[!include[Move settings template](../../../../../includes/amplia/linux/move-settings-template.md)]
-
-> [!NOTE]
-> Arquivos de configuração só podem ser lidos por membros do grupo *amplia* e só podem ser alterados por usuários com permissões elevadas. Isso é importante para proteger informações
-> sigilosas armazenadas no arquivo de configuração dos demais usuários da máquina.
-
-## Configure o Amplia
-
-Edite o arquivo de configuração para configurar sua instância do Amplia:
-
-[!include[Edit settings](../../../../../includes/amplia/linux/edit-settings.md)]
-
-[!include[Database config](../includes/database-config.md)]
-
-### Logging
-
-Na seção **Serilog**, configure o log da applicação:
-
-[!include[Log configuration](../../../../../includes/amplia/linux/log-config.md)]
-
-Se preferir, mude a configuração **path** para outra pasta.
-
-> [!NOTE]
-> Se você mudar o *path*, lembre-se de conceder permissões de escrita para o usuário do aplicativo (*amplia*) no diretório
-
-<a name="encryption-key-generation" /> <!-- This anchor actually belongs a bit farther below, placing it here is a workaround -->
-
-[!include[General config](../includes/general-config.md)]
-
-Para gerar a *EncryptionKey*, execute o comando seguinte:
-
-[!include[Generate key](../../../../../includes/amplia/linux/gen-key.md)]
-
-[!include[Common config](../includes/common-config.md)]
-
-## Configurar um *daemon*
-
-Crie o arquivo de definição do serviço:
-
-[!include[Create service](../../../../../includes/amplia/linux/create-service.md)]
-
-Digite o seguinte:
-
-[!include[Service definition](../../../../../includes/amplia/linux/service-definition.md)]
-
-> [!NOTE]
-> Se você pretende usar chaves de curvas elípticas (EC), descomente a linha marcada acima. Neste caso, você também precisa ter certeza do seu servido ter o OpenSSL 1.1 instalado.
-
-Salve o arquivo, habilite o serviço e inicie-o:
-
-[!include[Start service](../../../../../includes/amplia/linux/start-service.md)]
-
-A saída esperada é semelhante a:
-
-[!include[Expected output](../../../../../includes/amplia/linux/start-service-output.md)]
-
-Se necessário, reinicie o serviço: `systemctl restart amplia`
-
-Para testar se o servidor do Amplia está rodando, execute:
-
-[!include[Test service](../../../../../includes/amplia/linux/test-service.md)]
-
-A saída esperada é algo como:
-
-[!include[Expected output](../../../../../includes/amplia/linux/test-service-output.md)]
+[!include[Common Linux installation](includes/common-linux-install.md)]
 
 ## Configurar um servidor proxy reverso
 
@@ -117,6 +39,8 @@ Instale o Nginx (se ainda não estiver instalado)
 
 [!include[Install nginx](../../../../../includes/amplia/ubuntu/install-nginx.md)]
 
+[!include[Test nginx](includes/test-nginx.md)]
+
 Desabilite o site padrão do Nginx:
 
 [!include[Disable default site](../../../../../includes/amplia/ubuntu/disable-default-site.md)]
@@ -125,25 +49,13 @@ Crie um arquivo de configuração para o site do Amplia:
 
 [!include[Create site](../../../../../includes/amplia/ubuntu/create-site.md)]
 
-Digite o seguinte, substituindo o valor do item `server_name` pelo domínio de acesso ao painel de controle (veja [Domínio de acesso ao painel de controle](../index.md#dashboard-domain)):
-
-[!include[Site definition](../../../../../includes/amplia/linux/site-definition.md)]
-
-> [!TIP]
-> Idealmente, a configuração do site deve conter as entradas `ssl_certificate` e `ssl_certificate_key` com o certificado SSL válido. Essa configuração está fora do escopo dessas
-> instruções.
+[!include[Configure site](includes/configure-site.md)]
 
 Ative o site:
 
 [!include[Enable site](../../../../../includes/amplia/ubuntu/enable-site.md)]
 
-Teste a configuração do Nginx e recarregue-a:
-
-[!include[Test Nginx](../../../../../includes/amplia/linux/reload-nginx.md)]
-
-Teste o site:
-
-[!include[Test site](../../../../../includes/amplia/linux/test-site.md)]
+[!include[Reload nginx and test site](includes/reload-and-test.md)]
 
 ## Veja também
 
