@@ -1,4 +1,4 @@
-﻿# Installing Amplia on Oracle Linux
+﻿# Installing Amplia on Red Hat Enterprise Linux
 
 <!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
 
@@ -8,7 +8,10 @@ Before you start, make sure you have read the section [Planning before installat
 
 ## Prerequisites
 
-* Oracle Linux 7.x
+> [!NOTE]
+> These instructions are for RHEL 7. If you use RHEL 8, please contact us.
+
+* Red Hat Enterprise Linux 7.x
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
@@ -18,7 +21,7 @@ Before you start, make sure you have read the section [Planning before installat
 
 Register the Microsoft key and package repository (this only needs to be done once per machine), then install the ASP.NET Core runtime package:
 
-[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/oracle/install-aspnetcore.md)]
+[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/rhel/install-aspnetcore.md)]
 
 [!include[Test dotnet](includes/test-dotnet.md)]
 
@@ -36,17 +39,21 @@ Register the Microsoft key and package repository (this only needs to be done on
 
 Install Nginx (if not already installed):
 
-[!include[Install nginx](../../../../../includes/amplia/oracle/install-nginx.md)]
+[!include[Install nginx](../../../../../includes/amplia/rhel/install-nginx.md)]
 
 [!include[Test nginx](includes/test-nginx.md)]
 
-Disable the default Nginx site:
+Edit the Nginx configuration:
 
-[!include[Disable default site](../../../../../includes/amplia/centos/disable-default-site.md)]
+[!include[Edit nginx config](../../../../../includes/amplia/rhel/edit-nginx-config.md)]
+
+Delete or comment-out (with `#`s) the entire `server` section, shown below:
+
+[!include[Section of nginx config to delete](../../../../../includes/amplia/rhel/nginx-config-to-delete.md)]
 
 Create a site configuration file for Amplia:
 
-[!include[Create site](../../../../../includes/amplia/centos/create-site.md)]
+[!include[Create site](../../../../../includes/amplia/rhel/create-site.md)]
 
 [!include[Configure site](includes/configure-site.md)]
 
