@@ -1,24 +1,21 @@
 ﻿```
-    server {
-        listen       80;
-        server_name  localhost;
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        server_name  _;
+        root         /opt/rh/rh-nginx114/root/usr/share/nginx/html;
 
-        #charset koi8-r;
-
-        #access_log  logs/host.access.log  main;
+        # Load configuration files for the default server block.
+        include      /etc/opt/rh/rh-nginx114/nginx/default.d/*.conf;
 
         location / {
-            root   html;
-            index  index.html index.htm;
         }
 
-        #error_page  404              /404.html;
+        error_page 404 /404.html;
+        location = /40x.html {
+        }
 
-        # redirect server error pages to the static page /50x.html
-        #
-        error_page   500 502 503 504  /50x.html;
+        error_page 500 502 503 504  /50x.html;
         location = /50x.html {
-            root   html;
         }
 
         # proxy the PHP scripts to Apache listening on 127.0.0.1:80

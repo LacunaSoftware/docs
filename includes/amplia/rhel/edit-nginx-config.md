@@ -1,3 +1,3 @@
 ﻿```sh
-nano /etc/opt/rh/rh-nginx18/nginx/conf.d/nginx.conf
+nano /etc/opt/rh/rh-nginx114/nginx/nginx.conf
 ``` 
