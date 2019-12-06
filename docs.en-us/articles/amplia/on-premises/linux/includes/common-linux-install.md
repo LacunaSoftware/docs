@@ -68,7 +68,7 @@ Save the file, then enable the service and start it:
 
 The expected output is similar to:
 
-[!include[Expected output](../../../../../../includes/amplia/centos/start-service-output.md)]
+[!include[Expected output](../../../../../../includes/amplia/linux/start-service-output.md)]
 
 If necessary, restart the service: `systemctl restart amplia`
 
