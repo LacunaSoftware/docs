@@ -18,7 +18,7 @@ Example:
 		{
 			"Name": "File",
 			"Args": {
-				"path": "/some-custom-path/error.log",
+				"path": "/some-custom-path/amplia.log",
 			}
 		}
 	],
