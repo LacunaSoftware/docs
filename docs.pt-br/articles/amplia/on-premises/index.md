@@ -41,7 +41,7 @@ O domínio escolhido deve ser criado no servidor de DNS da zona (registro A ou C
 É também recomendado que você tenha um **certificado SSL válido** para o domínio escolhido.
 
 <a name="access-domains" />
-### Publicação LCR (domínios de acesso)
+### Publicação de LCRs (domínios de acesso)
 
 Certificados emitidos pelo Amplia incluem a extensão X.509 *CRL Distribution Point*, que contém links para endereços online onde um terceiro que deseje validar um certificado deve obter a Lista de Certificados Revogados (LCR) mais recente da AC,
 etapa necessária para determinar o status de revogação do certificado.
@@ -51,11 +51,11 @@ Estes links possuem o seguinte formato: `http://seu-dominio-de-acesso/crls/sua-a
 A parte do link `seu-dominio-de-acesso` é chamada na configuração Amplia de um *domínio de acesso*. Você deve escolher pelo menos um domínio de acesso, mas é recomendado ter dois domínios de acesso,
 preferencialmente um independente do outro, por exemplo:
 
-* *ca.patorum.com*
-* *ca.patorum.net*
+* *ac.patorum.com*
+* *ac.patorum.net*
 
 > [!TIP]
-> Um dos domínios de acesso pode ser o mesmo domínio onde o *dashboard* do Amplia será acessado.
+> Um dos domínios de acesso pode ser o mesmo domínio onde o painel de controle do Amplia será acessado.
 
 > [!NOTE]
 > Não há suporte para o uso de um diretório virtual (subpasta) em um domínio que hospeda outro site
@@ -65,8 +65,8 @@ Esses domínios devem ser escolhidos tendo em mente que eles **terão que ser ma
 Os domínios de acesso escolhidos devem ser criados nos servidores DNS (registros A ou CNAME) apontando para o servidor no qual o Amplia será instalado.
 
 > [!TIP]
-> Você não precisa de um certificado SSL para seus domínios de acesso. Uma vez que o padrão X.509 recomenda que LCRs sejam distribuídas por HTTP em vez de HTTPS, os certificados são emitidios com
-> links usando protocolo HTTP.
+> Você não precisa de um certificado SSL para seus domínios de acesso. Uma vez que o padrão X.509 recomenda que LCRs sejam distribuídas por HTTP em vez de HTTPS, os certificados
+> são emitidos com links usando protocolo HTTP.
 
 ## Veja também
 
