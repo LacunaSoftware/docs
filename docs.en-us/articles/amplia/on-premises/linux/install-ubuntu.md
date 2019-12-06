@@ -14,6 +14,8 @@ Before you start, make sure you have read the section [Planning before installat
 
 ## Install the ASP.NET Core Runtime
 
+[!include[Proceed as root](includes/su.md)]
+
 Follow the instructions below depending on your Ubuntu version to:
 
 1. Register the Microsoft key and add the product repository (this only needs to be done once per machine)
@@ -94,7 +96,7 @@ The expected output is similar to:
 
 [!include[Expected output](../../../../../includes/amplia/linux/start-service-output.md)]
 
-If necessary, restart the service: `sudo systemctl restart amplia`
+If necessary, restart the service: `systemctl restart amplia`
 
 To test that the Amplia server is running, run:
 

@@ -12,6 +12,8 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 ## Instale o ASP.NET Core Runtime
 
+[!include[Proceed as root](includes/su.md)]
+
 Registre a chave da Microsoft e o repositório de pacotes (só precisa ser feito uma única vez por máquina),
 e então instale o pacote do ASP.NET Core Runtime:
 
@@ -32,7 +34,7 @@ A saída esperada é semelhante a:
 
 > [!NOTE]
 > Alguns passos utilizam o comando `nano`, que pode não estar disponível no seu sistema. Substitua o comando pelo
-> `vi` ou instale o nano executando `sudo yum install nano`.
+> `vi` ou instale o nano executando `yum install nano`.
 
 Crie um usuário local para executar o servidor de aplicação do Amplia:
 
@@ -108,7 +110,7 @@ A saída esperada é semelhante a:
 
 [!include[Expected output](../../../../../includes/amplia/centos/start-service-output.md)]
 
-Se necessário, reinicie o serviço: `sudo systemctl restart amplia`
+Se necessário, reinicie o serviço: `systemctl restart amplia`
 
 Para testar se o servidor do Amplia está rodando, execute:
 

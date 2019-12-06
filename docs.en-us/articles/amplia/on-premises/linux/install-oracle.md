@@ -14,6 +14,8 @@ Before you start, make sure you have read the section [Planning before installat
 
 ## Install the ASP.NET Core Runtime
 
+[!include[Proceed as root](includes/su.md)]
+
 Register the Microsoft key and package repository (this only needs to be done once per machine), then install the ASP.NET Core runtime package:
 
 [!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/oracle/install-aspnetcore.md)]
@@ -32,7 +34,7 @@ The expected output is similar to:
 ## Install Amplia
 
 > [!NOTE]
-> Some steps use the `nano` command, which might not be installed on your system. Feel free to replace the command by `vi` or install nano with `sudo yum install nano`
+> Some steps use the `nano` command, which might not be installed on your system. Feel free to replace the command by `vi` or install nano with `yum install nano`
 
 Create a local user to run the Amplia server:
 
@@ -106,7 +108,7 @@ The expected output is similar to:
 
 [!include[Expected output](../../../../../includes/amplia/centos/start-service-output.md)]
 
-If necessary, restart the service: `sudo systemctl restart amplia`
+If necessary, restart the service: `systemctl restart amplia`
 
 To test that the Amplia server is running, run:
 

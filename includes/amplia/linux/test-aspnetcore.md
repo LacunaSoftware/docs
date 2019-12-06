@@ -1,3 +1,3 @@
 ﻿```sh
-sudo dotnet --list-runtimes
+dotnet --list-runtimes
 ```

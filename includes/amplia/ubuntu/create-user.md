@@ -1,4 +1,4 @@
 ﻿```sh
-sudo adduser --home /var/amplia --disabled-password amplia
-sudo usermod -aG syslog amplia
+adduser --home /var/amplia --disabled-password amplia
+usermod -aG syslog amplia
 ```

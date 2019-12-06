@@ -1,4 +1,4 @@
 ﻿```sh
-sudo mkdir /var/log/amplia
-sudo chown amplia:amplia /var/log/amplia
+mkdir /var/log/amplia
+chown amplia:amplia /var/log/amplia
 ```

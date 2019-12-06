@@ -1,4 +1,4 @@
 ﻿```sh
-sudo nginx -t
-sudo nginx -s reload
+nginx -t
+nginx -s reload
 ```

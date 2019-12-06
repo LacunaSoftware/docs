@@ -1,5 +1,5 @@
 ﻿```sh
-sudo mkdir /var/amplia
-sudo useradd --system --home-dir /var/amplia amplia
-sudo chown amplia:amplia /var/amplia
+mkdir /var/amplia
+useradd --system --home-dir /var/amplia amplia
+chown amplia:amplia /var/amplia
 ```

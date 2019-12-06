@@ -14,6 +14,8 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 ## Instale o ASP.NET Core Runtime
 
+[!include[Proceed as root](includes/su.md)]
+
 Siga as instruções abaixo dependendo da versão do seu Ubuntu para:
 
 1. Registrar a chave da Microsoft e adicionar o repositório de pacotes (só precisa ser feito uma única vez por máquina)
@@ -96,7 +98,7 @@ A saída esperada é semelhante a:
 
 [!include[Expected output](../../../../../includes/amplia/linux/start-service-output.md)]
 
-Se necessário, reinicie o serviço: `sudo systemctl restart amplia`
+Se necessário, reinicie o serviço: `systemctl restart amplia`
 
 Para testar se o servidor do Amplia está rodando, execute:
 
