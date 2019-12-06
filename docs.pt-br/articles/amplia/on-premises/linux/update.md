@@ -1,8 +1,10 @@
 ﻿# Atualização do Amplia em Linux
 
-> [!NOTE]
-> A documentação deste sistema encontra-se em construção. Pedimos desculpas pela inconveniência. Por favor contate-nos caso
-> precise de alguma informação que ainda não está documentada.
+Para atualizar sua [instância *on premises*](../index.md) do [Amplia](../../index.md), siga os passos abaixo:
+
+[!include[Proceed as root](includes/su.md)]
+
+[!include[Update steps](../../../../../includes/amplia/linux/update.md)]
 
 ## Veja também
 

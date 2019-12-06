@@ -4,13 +4,7 @@ To update your [on-premises installation](../index.md) of [Amplia](../../index.m
 
 [!include[Proceed as root](includes/su.md)]
 
-```sh
-curl -O https://cdn.lacunasoftware.com/amplia/amplia-2.15.2.tar.gz
-systemctl stop amplia
-tar xzf amplia-2.15.2.tar.gz -C /usr/share/amplia
-chmod -R a=,u+rwX,go+rX /usr/share/amplia
-systemctl start amplia
-```
+[!include[Update steps](../../../../../includes/amplia/linux/update.md)]
 
 ## See also
 
