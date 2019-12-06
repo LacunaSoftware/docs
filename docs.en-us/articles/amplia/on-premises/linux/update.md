@@ -1,22 +1,16 @@
 ﻿# Updating Amplia on Linux
 
-> [!NOTE]
-> The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please
-> contact us if there's any information you need that is not currently documented.
+To update your [on-premises installation](../index.md) of [Amplia](../../index.md), follow the steps below:
+
+[!include[Proceed as root](includes/su.md)]
 
 ```sh
-wget https://cdn.lacunasoftware.com/amplia/amplia-2.15.2.tar.gz
-sudo systemctl stop amplia
-sudo tar xzf amplia-2.15.2.tar.gz -C /usr/share/amplia
-sudo chmod -R a=,u+rwX,go+rX /usr/share/amplia
-sudo systemctl start amplia
+curl -O https://cdn.lacunasoftware.com/amplia/amplia-2.15.2.tar.gz
+systemctl stop amplia
+tar xzf amplia-2.15.2.tar.gz -C /usr/share/amplia
+chmod -R a=,u+rwX,go+rX /usr/share/amplia
+systemctl start amplia
 ```
-
-> [!TIP]
-> If the first command fails because your system lacks *wget*, use curl instead:
-> ```sh
-> curl -O https://cdn.lacunasoftware.com/amplia/amplia-2.15.2.tar.gz
-> ```
 
 ## See also
 
