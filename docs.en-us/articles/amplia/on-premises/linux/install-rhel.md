@@ -11,6 +11,9 @@ Before you start, make sure you have read the section [Planning before installat
 > [!NOTE]
 > These instructions are for RHEL 7. If you use RHEL 8, please contact us.
 
+> [!WARNING]
+> Before starting, make sure your system is [registered and subscribed to the Red Hat Customer Portal](https://access.redhat.com/solutions/253273)
+
 * Red Hat Enterprise Linux 7.x
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
