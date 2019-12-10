@@ -37,3 +37,25 @@ LacunaHolderPhotoAttribute ::= SEQUENCE {
  
 LacunaHolderPhotoAttVersion ::= INTEGER { v1(0) }
 ```
+
+<a name="access-identity-types" />
+## 2. Tipos de identificação
+
+A subárvore `1.3.6.1.4.1.46332.2` é reservada para identificar estruturas `OtherName`s utilizadas em atributos de Identificação de Acesso (conforme descrito no
+[DOC-ICP 16.01](https://www.iti.gov.br/images/repositorio/legislacao/documentos-principais/16.1/DOC-ICP-16.01_Versao_1.1.pdf) item 3.7.1.2 e na
+[RFC 5755 item 4.4.2](https://tools.ietf.org/html/rfc5755#section-4.4.2))
+
+```
+id-lacuna-access-identity-types OBJECT IDENTIFIER ::= { id-lacuna 2 }
+```
+
+Estruturas `OtherName` identificadas com OIDs dessa subárvore possuem valor codificado como `IA5String` exceto se explicitamente especificado no OID.
+
+<a name="crc" />
+### 2.1. Número de registro no CRC
+
+O OID `1.3.6.1.4.1.46332.2.1` identifica o número de registro no CRC (Conselho Regional de Contabilidade) do titular do certificado:
+
+```
+id-crc OBJECT IDENTIFIER ::= { id-lacuna-access-identity-types 1 }
+```

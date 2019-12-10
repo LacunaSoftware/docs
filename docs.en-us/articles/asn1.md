@@ -37,3 +37,24 @@ LacunaHolderPhotoAttribute ::= SEQUENCE {
  
 LacunaHolderPhotoAttVersion ::= INTEGER { v1(0) }
 ```
+
+<a name="access-identity-types" />
+## 2. Access Identity Types
+
+The subtree `1.3.6.1.4.1.46332.2` is reserved for usage on `OtherName`s present in [Access Identity attributes](https://tools.ietf.org/html/rfc5755#section-4.4.2):
+
+```
+id-lacuna-access-identity-types OBJECT IDENTIFIER ::= { id-lacuna 2 }
+```
+
+`OtherName`s identified with OIDs from this subtree have their value encoded as `IA5String` unless explicitly noted on the OID.
+
+<a name="crc" />
+### 2.1. Professional Identification for Conselho Regional de Contabilidade (CRC)
+
+The OID `1.3.6.1.4.1.46332.2.1` identifies an `OtherName` whose value corresponds to the subject's professional identification issued by
+the Conselho Regional de Contabilidade (CRC):
+
+```
+id-crc OBJECT IDENTIFIER ::= { id-lacuna-access-identity-types 1 }
+```
