@@ -49,12 +49,12 @@ id-lacuna-access-identity-types OBJECT IDENTIFIER ::= { id-lacuna 2 }
 
 `OtherName`s identified with OIDs from this subtree have their value encoded as `PrintableString` unless explicitly noted on the OID.
 
-<a name="crc" />
+<a name="crc-number" />
 ### 2.1. Professional Identification for Conselho Regional de Contabilidade (CRC)
 
 The OID `1.3.6.1.4.1.46332.2.1` identifies an `OtherName` whose value corresponds to the subject's professional identification issued by
 the Conselho Regional de Contabilidade (CRC):
 
 ```
-id-crc OBJECT IDENTIFIER ::= { id-lacuna-access-identity-types 1 }
+id-crc-number OBJECT IDENTIFIER ::= { id-lacuna-access-identity-types 1 }
 ```
