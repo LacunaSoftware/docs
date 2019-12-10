@@ -49,7 +49,7 @@ A subárvore `1.3.6.1.4.1.46332.2` é reservada para identificar estruturas `Oth
 id-lacuna-access-identity-types OBJECT IDENTIFIER ::= { id-lacuna 2 }
 ```
 
-Estruturas `OtherName` identificadas com OIDs dessa subárvore possuem valor codificado como `IA5String` exceto se explicitamente especificado no OID.
+Estruturas `OtherName` identificadas com OIDs dessa subárvore possuem valor codificado como `PrintableString` exceto se explicitamente especificado no OID.
 
 <a name="crc" />
 ### 2.1. Número de registro no CRC

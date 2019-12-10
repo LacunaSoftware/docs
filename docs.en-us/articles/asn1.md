@@ -47,7 +47,7 @@ The subtree `1.3.6.1.4.1.46332.2` is reserved for usage on `OtherName`s present 
 id-lacuna-access-identity-types OBJECT IDENTIFIER ::= { id-lacuna 2 }
 ```
 
-`OtherName`s identified with OIDs from this subtree have their value encoded as `IA5String` unless explicitly noted on the OID.
+`OtherName`s identified with OIDs from this subtree have their value encoded as `PrintableString` unless explicitly noted on the OID.
 
 <a name="crc" />
 ### 2.1. Professional Identification for Conselho Regional de Contabilidade (CRC)
