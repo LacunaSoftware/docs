@@ -1,5 +1,37 @@
 ﻿# Amplia changelog
 
+<a name="v2-16-1" />
+### 2.16.1 (2019-12-12)
+
+* Add option to configure an alias for the identity type on the *PrivateID* certificate template
+
+Updates database model: no
+
+
+<a name="v2-16-0" />
+### 2.16.0 (2019-12-10)
+
+* Add attribute certificate type *PrivateID*
+
+Updates database model: no
+
+
+<a name="v2-15-2" />
+### 2.15.2 (2019-12-04)
+
+* Changed Linux configuration template to log to */var/log/amplia* directory
+
+Updates database model: no
+
+
+<a name="v2-15-1" />
+### 2.15.1 (2019-09-12)
+
+* Improve PK certificate type *Cnb* (customer-specific)
+
+Updates database model: no
+
+
 <a name="v2-15-0" />
 ### 2.15.0 (2019-08-10)
 

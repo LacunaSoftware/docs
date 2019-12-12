@@ -1,5 +1,37 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v2-16-1" />
+### 2.16.1 (2019-12-12)
+
+* Adicionada opção de configurar um *alias* para o tipo de entidade em templates de certificado do tipo *PrivateID*
+
+Atualiza modelo do banco de dados: não
+
+
+<a name="v2-16-0" />
+### 2.16.0 (2019-12-10)
+
+* Adicionado certificado de atributo tipo *PrivateID* (para carteiras de identidade de entidades de classe)
+
+Atualiza modelo do banco de dados: não
+
+
+<a name="v2-15-2" />
+### 2.15.2 (2019-12-04)
+
+* Alterado modelo de configuração para Linux para logar para a pasta */var/log/amplia*
+
+Atualiza modelo do banco de dados: não
+
+
+<a name="v2-15-1" />
+### 2.15.1 (2019-09-12)
+
+* Melhorias ao certificado de chave pública tipo *Cnb* (funcionalidade específica para um cliente)
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v2-15-0" />
 ### 2.15.0 (2019-08-10)
 
