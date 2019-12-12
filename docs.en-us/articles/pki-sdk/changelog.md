@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-5-4" />
+### 2.5.4 (2019-11-21)
+
+- Fix PdfMark points per centimeters unit computation.
+- Fix retrieving PDF signature visual representation size when malformed rectangle definition on PDF.
+
+
 <a name="v2-5-3" />
 ### 2.5.3 (2019-08-06)
 
