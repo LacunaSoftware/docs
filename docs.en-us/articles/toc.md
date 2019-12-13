@@ -10,6 +10,7 @@
 ## [Server signatures](pki-guide/server-signatures.md)
 ## [Certificate authentication](pki-guide/cert-auth.md)
 ## [Test certificates](pki-guide/test-certs.md)
+## [Adobe Trust](pki-guide/adobe-trust.md)
 <!-- End of PKI Products Guide -->
 
 <!-- Start of Web PKI -->
