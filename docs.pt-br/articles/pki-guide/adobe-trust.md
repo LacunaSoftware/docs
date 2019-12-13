@@ -1,4 +1,4 @@
-﻿# Cetificados confiados pela Adobe
+﻿# Certificados confiados pela Adobe
 
 A partir de dez/2019, a Adobe incluiu a cadeia V5 da ICP-Brasil na sua lista de raízes confiáveis (AATL). Entretanto, a Adobe só considera como
 confiáveis certificados A3 e, por isso, implementa uma restrição por política de certificação. Essa restrição possui o efeito colateral de 
