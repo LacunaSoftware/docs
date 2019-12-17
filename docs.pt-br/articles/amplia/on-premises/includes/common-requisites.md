@@ -1,4 +1,4 @@
-﻿* SQL Server 2016 ou mais recente (edião recomendada Padrão ou melhor)
+﻿* SQL Server 2016 ou mais recente (recomendada edição *Standard* ou superior)
 * Licença PKI SDK (no formato Base64)
 * Licença Web PKI (formato Base64/binário) -- necessário apenas se os usuários forem emitir certificados em seus computadores (procedimento de emissão na web)
 * Entradas de DNS criadas anteriormente para:
