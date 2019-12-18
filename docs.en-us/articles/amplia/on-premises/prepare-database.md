@@ -22,7 +22,7 @@ To create the database, use the following T-SQL query (optionally changing the d
 
 ```sql
 USE master;
-CREATE DATABASE Amplia COLLATE Latin1_General_100_CI_AI
+CREATE DATABASE Amplia COLLATE Latin1_General_100_CI_AI;
 GO
 ```
 
@@ -46,10 +46,12 @@ To create a credential having owner privileges over the database (if you chose a
 ```sql
 USE master;
 CREATE LOGIN AmpliaAdm WITH PASSWORD = 'XXXXX';
+GO
 
 USE Amplia;
 CREATE USER AmpliaAdm FOR LOGIN AmpliaAdm;
 EXEC sp_addrolemember 'db_owner', 'AmpliaAdm';
+GO
 ```
 
 The connection string would then be:
@@ -65,11 +67,13 @@ To create a credential having only read and write permissions over the database:
 ```sql
 USE master;
 CREATE LOGIN AmpliaApp WITH PASSWORD = 'XXXXXX';
+GO
 
 USE Amplia;
 CREATE USER AmpliaApp FOR LOGIN AmpliaApp;
 EXEC sp_addrolemember 'db_datareader', 'AmpliaApp';
 EXEC sp_addrolemember 'db_datawriter', 'AmpliaApp';
+GO
 ```
 
 The connection string would then be:

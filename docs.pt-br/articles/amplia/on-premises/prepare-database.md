@@ -21,8 +21,7 @@ Para criar o banco de dados, use a seguinte consulta T-SQL (opcionalmente altera
 
 ```sql
 USE Master;
-CREATE DATABASE Amplia
-COLLATE Latin1_General_100_CI_AI
+CREATE DATABASE Amplia COLLATE Latin1_General_100_CI_AI;
 GO
 ```
 
@@ -46,10 +45,12 @@ Para criar uma credencial com privilégios de *owner* sobre o banco de dados (se
 ```sql
 USE master;
 CREATE LOGIN AmpliaAdm WITH PASSWORD = 'XXXXX';
+GO
 
 USE Amplia;
 CREATE USER AmpliaAdm FOR LOGIN AmpliaAdm;
 EXEC sp_addrolemember 'db_owner', 'AmpliaAdm';
+GO
 ```
 
 A *connection string* seria:
@@ -65,11 +66,13 @@ Para criar uma credencial com privilégios apenas para leitura e escrita no banc
 ```sql
 USE master;
 CREATE LOGIN AmpliaApp WITH PASSWORD = 'XXXXXX';
+GO
 
 USE Amplia;
 CREATE USER AmpliaApp FOR LOGIN AmpliaApp;
 EXEC sp_addrolemember 'db_datareader', 'AmpliaApp';
 EXEC sp_addrolemember 'db_datawriter', 'AmpliaApp';
+GO
 ```
 
 A *connection string* seria:
