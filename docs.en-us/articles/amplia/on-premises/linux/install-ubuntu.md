@@ -26,6 +26,10 @@ Follow the instructions below depending on your Ubuntu version to:
 
 [!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/ubuntu/install-aspnetcore.md)]
 
+### Test the installation
+
+[!include[Test dotnet](includes/test-dotnet.md)]
+
 ## Install Amplia
 
 [!include[Common Linux installation](includes/common-linux-install.md)]
