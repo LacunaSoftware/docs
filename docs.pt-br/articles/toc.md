@@ -75,6 +75,7 @@
 ### [Verificando a versão instalada](rest-pki/on-premises/check-version.md)
 ### [Dimensionamento](rest-pki/on-premises/sizing.md)
 ### [Configuração de Carimbos de Tempo](rest-pki/on-premises/configure-timestamping.md)
+### [Configuração de Storage](rest-pki/on-premises/configure-storage.md)
 ### [Alterando a licença](rest-pki/on-premises/change-license.md)
 ### [Recuperação de senha de admin](rest-pki/on-premises/admin-recover.md)
 ## [Configuração de Data e Hora](rest-pki/configure-date.md)
