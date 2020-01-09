@@ -25,6 +25,9 @@ e então instale o pacote do ASP.NET Core Runtime:
 
 [!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/rhel/install-aspnetcore.md)]
 
+> [!NOTE]
+> Se o comando acima falhar devido a dependencias faltando, por exemplo pelo pacote *libicu* não estar disponível, certifique-se de que o seu sistema está [registrado e associado a uma subscription da Red Hat](https://access.redhat.com/solutions/253273)
+
 [!include[Test dotnet](includes/test-dotnet.md)]
 
 ## Instalar o Amplia
