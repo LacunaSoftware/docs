@@ -1,4 +1,4 @@
-﻿# Colégio Notarial do Brasil - Estruturas ASN.1
+﻿# Colégio Notarial do Brasil - Atribuição de OIDs
 
 O OID 1.3.6.1.4.1 representa o [registro de empresas privadas](https://www.iana.org/assignments/enterprise-numbers) no Internet Assigned Numbers Authority (IANA):
 
