@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-21-0" />
+### 1.20.2 (2019-07-21)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar uma política de assinatura CAdES ICP-Brasil sem LCRs
+
 <a name="v1-20-2" />
 ### 1.20.2 (2019-07-21)
 

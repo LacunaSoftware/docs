@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-21-0" />
+### 1.21.0 (2020-01-10)
+
+Database model update: No
+
+- Add a ICP-Brasil CAdES signature policy without CRLs
+
 <a name="v1-20-2" />
 ### 1.20.2 (2019-07-21)
 
