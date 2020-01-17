@@ -42,14 +42,18 @@ Check that the *amplia_app* service is up and running:
 docker service logs amplia_app
 ```
 
-## Volumes
+## Persistent data (backup considerations)
 
-The compose file `amplia-mssql.yml` defines two volumes: **sql** and **files**, which if left unchanged will probably be created
-automatically with the names **amplia_sql** and **amplia_files**. These volumes contain all data needed to recreate the Amplia
-stack. Feel free to alter these volumes according to your infrastructure, for instance mapping them to folders on the host.
+The stack uses two volumes: **sql** and **files** (which will probably be mapped by the container orchestrator to the
+automatically created volumes **amplia_sql** and **amplia_files**). Feel free to alter these volumes according to your
+infrastructure, for instance mapping them to folders on the host.
 
-> [!NOTE]
-> If on a production environment, make sure you take the necessary steps to backup these volumes!
+The stack also uses two external secrets generated manually during the setup: **amplia_encryption_key** and **amplia_sql_password**.
+
+These volumes and secrets contain all data needed to recreate the Amplia stack.
+
+> [!WARNING]
+> On a production environment, make sure you take the necessary steps to backup these resources!
 
 ## External database
 
