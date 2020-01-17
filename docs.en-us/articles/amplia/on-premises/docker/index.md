@@ -3,7 +3,7 @@
 > [!WARNING]
 > This article is a draft, Docker support on Amplia will be added on the upcoming version 3.0
 
-To run [Amplia](../../index.md) on a Docker, follow the steps below.
+To run [Amplia](../../index.md) on Docker, follow the steps below.
 
 Download the compose file and the environment file template:
 
