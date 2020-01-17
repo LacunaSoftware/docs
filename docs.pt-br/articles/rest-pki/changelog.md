@@ -1,7 +1,7 @@
 ﻿# Histórico de versões do Rest PKI
 
 <a name="v1-21-0" />
-### 1.20.2 (2019-07-21)
+### 1.21.0 (2020-01-10)
 
 Atualização do modelo do banco de dados: Não
 
