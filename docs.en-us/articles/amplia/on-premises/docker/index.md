@@ -42,9 +42,18 @@ Check that the *amplia_app* service is up and running:
 docker service logs amplia_app
 ```
 
+## Volumes
+
+The compose file `amplia-mssql.yml` defines two volumes: **sql** and **files**, which if left unchanged will probably be created
+automatically with the names **amplia_sql** and **amplia_files**. These volumes contain all data needed to recreate the Amplia
+stack. Feel free to alter these volumes according to your infrastructure, for instance mapping them to folders on the host.
+
+> [!NOTE]
+> If on a production environment, make sure you take the necessary steps to backup these volumes!
+
 ## External database
 
-The compose file *amplia-mssql.yml* defines a stack containing a service for the database (Microsoft SQL Server Express edition).
+The compose file *amplia-mssql.yml* includes a service for the database (Microsoft SQL Server Express edition).
 If you prefer to run the database out of the stack, use the compose file *amplia-extdb.yml* instead:
 
 ```sh
