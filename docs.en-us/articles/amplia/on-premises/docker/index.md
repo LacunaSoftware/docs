@@ -20,7 +20,7 @@ openssl rand -base64 24 | docker secret create amplia_sql_password -
 ```
 
 > [!NOTE]
-> If you prefer, you can instead set a SQL password of your choice with `echo 'mypass' | docker secret create amplia_sql_password -`
+> You can instead run `echo 'mypass' | docker secret create amplia_sql_password -` to use a SQL password of your choice
 
 Edit the environment file:
 
@@ -56,7 +56,7 @@ In this case, you must provide the connection string on the file *amplia.env*:
 ```
 # Amplia service configuration
 
-# Uncomment and fill the line below if you are using an external database (leave commented if using amplia-mssql.yml)
+# Uncomment and fill the line below if you are using an external database
 ConnectionStrings__DefaultConnection=Data Source=SERVER;Initial Catalog=DATABASE;User ID=USER;Password=PASSWORD
 ```
 
