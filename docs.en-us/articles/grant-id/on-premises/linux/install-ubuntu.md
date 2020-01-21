@@ -24,7 +24,7 @@ Create a site configuration file for the component:
 
 Enter the following, replacing the public domain of the Identity Service on the `server_name` entry:
 
-[!include[Site definition](../../../../../../includes/grant-id/linux/site-definition-identity-service.md)]
+[!include[Site definition](../../../../../includes/grant-id/linux/site-definition-identity-service.md)]
 
 Enable the site:
 
@@ -48,7 +48,7 @@ Create a site configuration file for the component:
 
 Enter the following, replacing the public domain of the Auth Server on the `server_name` entry:
 
-[!include[Site definition](../../../../../../includes/grant-id/linux/site-definition-auth-server.md)]
+[!include[Site definition](../../../../../includes/grant-id/linux/site-definition-auth-server.md)]
 
 Enable the site:
 
@@ -72,7 +72,7 @@ Create a site configuration file for the component:
 
 Enter the following, replacing the public domain of the Console on the `server_name` entry:
 
-[!include[Site definition](../../../../../../includes/grant-id/linux/site-definition-console.md)]
+[!include[Site definition](../../../../../includes/grant-id/linux/site-definition-console.md)]
 
 Enable the site:
 
