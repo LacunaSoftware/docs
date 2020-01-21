@@ -39,13 +39,13 @@ Create a site configuration file for Amplia:
 
 Allow Nginx to access the Amplia service:
 
-[!include[Allow service access](../../../../../includes/amplia/centos/allow-service-access.md)]
+[!include[Allow service access](../../../../../includes/linux/centos/allow-service-access.md)]
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
 Allow HTTP and HTTPS traffic to your system (if not already allowed):
 
-[!include[Allow traffic](../../../../../includes/amplia/centos/allow-http.md)]
+[!include[Allow traffic](../../../../../includes/linux/centos/allow-http.md)]
 
 ## See also
 

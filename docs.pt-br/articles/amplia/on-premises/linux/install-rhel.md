@@ -38,13 +38,13 @@ Crie um arquivo de configuração para o site do Amplia:
 
 Permita que o Nginx acesse o serviço do Amplia:
 
-[!include[Allow service access](../../../../../includes/amplia/centos/allow-service-access.md)]
+[!include[Allow service access](../../../../../includes/linux/centos/allow-service-access.md)]
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
 Abra as portas HTTP e HTTPS do seu servidor para tráfego externo (caso ainda não estejam abertas):
 
-[!include[Allow traffic](../../../../../includes/amplia/centos/allow-http.md)]
+[!include[Allow traffic](../../../../../includes/linux/centos/allow-http.md)]
 
 ## Veja também
 
