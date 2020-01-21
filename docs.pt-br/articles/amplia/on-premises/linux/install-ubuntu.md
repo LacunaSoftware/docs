@@ -14,7 +14,7 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 ## Instale o ASP.NET Core Runtime
 
-[!include[Proceed as root](includes/su.md)]
+[!include[Proceed as root](../../../includes/su.md)]
 
 Siga as instruções abaixo dependendo da versão do seu Ubuntu para:
 

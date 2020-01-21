@@ -12,7 +12,7 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 ## Instale o ASP.NET Core Runtime
 
-[!include[Proceed as root](includes/su.md)]
+[!include[Proceed as root](../../../includes/su.md)]
 
 Registre a chave da Microsoft e o repositório de pacotes (só precisa ser feito uma única vez por máquina),
 e então instale o pacote do ASP.NET Core Runtime:
