@@ -2,7 +2,7 @@
 incluido no documento para que um terceiro que porventura receba o documento impresso possa visitar o seu site e fornecer o
 código, obtendo assim a versão assinada digitalmente (que é a que efetivamente tem validade jurídica):
 
-![Codigo de verificacao](../../images/verification-code.png)
+![Codigo de verificacao](../../../images/verification-code.png)
 
 No passado, nós províamos o código-fonte para geração desse código de verificação como parte dos exemplos, a ser copiado
 para o código da sua aplicação. Por exemplo:
