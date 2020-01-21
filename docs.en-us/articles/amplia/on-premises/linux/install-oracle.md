@@ -12,15 +12,7 @@ Before you start, make sure you have read the section [Planning before installat
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-## Install the ASP.NET Core Runtime
-
-[!include[Proceed as root](../../../includes/linux/su.md)]
-
-Register the Microsoft key and package repository (this only needs to be done once per machine), then install the ASP.NET Core runtime package:
-
-[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/oracle/install-aspnetcore.md)]
-
-[!include[Test dotnet](includes/test-dotnet.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/oracle/install-aspnetcore-22.md)]
 
 ## Install Amplia
 
@@ -31,18 +23,7 @@ Register the Microsoft key and package repository (this only needs to be done on
 
 ## Set up a reverse proxy server
 
-> [!NOTE]
-> If you prefer to use Apache instead of Nginx, [see this article](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-2.2#configure-apache).
-
-Install Nginx (if not already installed):
-
-[!include[Install nginx](../../../../../includes/amplia/oracle/install-nginx.md)]
-
-[!include[Test nginx](includes/test-nginx.md)]
-
-Disable the default Nginx site:
-
-[!include[Disable default site](../../../../../includes/amplia/centos/disable-default-site.md)]
+[!include[Install Nginx](../../../includes/linux/oracle/install-nginx.md)]
 
 Create a site configuration file for Amplia:
 
@@ -52,13 +33,13 @@ Create a site configuration file for Amplia:
 
 Allow Nginx to access the Amplia service:
 
-[!include[Allow service access](../../../../../includes/amplia/centos/allow-service-access.md)]
+[!include[Allow service access](../../../../../includes/linux/centos/allow-service-access.md)]
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
 Allow HTTP and HTTPS traffic to your system (if not already allowed):
 
-[!include[Allow traffic](../../../../../includes/amplia/centos/allow-http.md)]
+[!include[Allow traffic](../../../../../includes/linux/centos/allow-http.md)]
 
 ## See also
 

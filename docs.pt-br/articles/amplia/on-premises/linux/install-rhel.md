@@ -16,19 +16,7 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-## Instale o ASP.NET Core Runtime
-
-[!include[Proceed as root](../../../includes/linux/su.md)]
-
-Registre a chave da Microsoft e o repositório de pacotes (só precisa ser feito uma única vez por máquina),
-e então instale o pacote do ASP.NET Core Runtime:
-
-[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/rhel/install-aspnetcore.md)]
-
-> [!NOTE]
-> Se o comando acima falhar devido a dependencias faltando, por exemplo pelo pacote *libicu* não estar disponível, certifique-se de que o seu sistema está [registrado e associado a uma subscription da Red Hat](https://access.redhat.com/solutions/253273)
-
-[!include[Test dotnet](includes/test-dotnet.md)]
+[!include[Install ASP.NET Core Runtime 2.2](../../../includes/linux/rhel/install-aspnetcore-22.md)]
 
 ## Instalar o Amplia
 
@@ -40,22 +28,7 @@ e então instale o pacote do ASP.NET Core Runtime:
 
 ## Configurar um servidor proxy reverso
 
-> [!NOTE]
-> Se você preferir usar o Apache ao invés do Nginx, [veja este artigo](https://docs.microsoft.com/pt-br/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-2.2#configure-apache).
-
-Instale o Nginx (se ainda não estiver instalado):
-
-[!include[Install nginx](../../../../../includes/amplia/rhel/install-nginx.md)]
-
-[!include[Test nginx](includes/test-nginx.md)]
-
-Edite o arquivo de configuração do Nginx:
-
-[!include[Edit nginx config](../../../../../includes/amplia/rhel/edit-nginx-config.md)]
-
-Apague ou comente (prefixando cada linha com `#`) a seção `server` inteira, mostrada abaixo:
-
-[!include[Section of nginx config to delete](../../../../../includes/amplia/rhel/nginx-config-to-delete.md)]
+[!include[Install Nginx](../../../includes/linux/rhel/install-nginx.md)]
 
 Crie um arquivo de configuração para o site do Amplia:
 

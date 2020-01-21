@@ -1,6 +1,6 @@
 ﻿Test the Nginx configuration and reload it:
 
-[!include[Reload Nginx](../../../../../../includes/amplia/linux/reload-nginx.md)]
+[!include[Reload Nginx](../../../../../../includes/linux/reload-nginx.md)]
 
 Test the site:
 

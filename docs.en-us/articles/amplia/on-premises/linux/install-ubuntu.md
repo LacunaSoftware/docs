@@ -12,23 +12,7 @@ Before you start, make sure you have read the section [Planning before installat
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-## Install the ASP.NET Core Runtime
-
-[!include[Proceed as root](../../../includes/linux/su.md)]
-
-Follow the instructions below depending on your Ubuntu version to:
-
-1. Register the Microsoft key and add the product repository (this only needs to be done once per machine)
-1. Install the package `aspnetcore-runtime-2.2`
-
-> [!TIP]
-> For alternative ways to install the ASP.NET Core Runtime, see [this page](https://docs.microsoft.com/en-us/dotnet/core/install/runtime?pivots=os-linux)
-
-[!include[Install ASP.NET Core Runtime](../../../../../includes/amplia/ubuntu/install-aspnetcore.md)]
-
-### Test the installation
-
-[!include[Test dotnet](includes/test-dotnet.md)]
+[!include[Install ASP.NET Core Runtime 2.2](../../../includes/linux/ubuntu/install-aspnetcore-22.md)]
 
 ## Install Amplia
 
@@ -36,18 +20,7 @@ Follow the instructions below depending on your Ubuntu version to:
 
 ## Set up a reverse proxy server
 
-> [!NOTE]
-> If you prefer to use Apache instead of Nginx, [see this article](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-2.2#configure-apache).
-
-Install Nginx (if not already installed):
-
-[!include[Install nginx](../../../../../includes/amplia/ubuntu/install-nginx.md)]
-
-[!include[Test nginx](includes/test-nginx.md)]
-
-Disable the default Nginx site:
-
-[!include[Disable default site](../../../../../includes/amplia/ubuntu/disable-default-site.md)]
+[!include[Install Nginx](../../../includes/linux/ubuntu/install-nginx.md)]
 
 Create a site configuration file for Amplia:
 
