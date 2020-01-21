@@ -1,6 +1,6 @@
 ﻿# Generating alphanumeric codes
 
-[!include[Alpha Codes introduction](../../includes/alpha-codes-intro.md)]
+[!include[Alpha Codes introduction](../includes/alpha-codes-intro.md)]
 
 You probably brought the (now obsolete) methods `GenerateVerificationCode`, `FormatVerificationCode` and `ParseVerificationCode`
 into your own code. To update your application:
@@ -16,7 +16,7 @@ into your own code. To update your application:
    public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(formattedCode);
    ```
 
-[!include[Alpha Codes principles](../../includes/alpha-codes-principles.md)]
+[!include[Alpha Codes principles](../includes/alpha-codes-principles.md)]
 
 ## See also
 

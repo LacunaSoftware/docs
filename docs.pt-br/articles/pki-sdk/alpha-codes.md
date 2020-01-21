@@ -1,6 +1,6 @@
 ﻿# Gerando códigos alfanuméricos
 
-[!include[Alpha Codes introduction](../../includes/alpha-codes-intro.md)]
+[!include[Alpha Codes introduction](../includes/alpha-codes-intro.md)]
 
 Você provavelmente copiou anteriormente os métodos (agora obsoletos) `GenerateVerificationCode`, `FormatVerificationCode` e `ParseVerificationCode`
 dos exemplos para o seu código. Para atualizar a sua aplicação:
@@ -16,7 +16,7 @@ dos exemplos para o seu código. Para atualizar a sua aplicação:
    public static string ParseVerificationCode(string formattedCode) => AlphaCode.Parse(formattedCode);
    ```
 
-[!include[Alpha Codes principles](../../includes/alpha-codes-principles.md)]
+[!include[Alpha Codes principles](../includes/alpha-codes-principles.md)]
 
 ## Veja também
 

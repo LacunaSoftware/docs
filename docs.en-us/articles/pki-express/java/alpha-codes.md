@@ -1,6 +1,6 @@
 ﻿# Generating alphanumeric codes on Java
 
-[!include[Alpha Codes introduction](../../../includes/alpha-codes-intro.md)]
+[!include[Alpha Codes introduction](../../includes/alpha-codes-intro.md)]
 
 You probably brought the (now obsolete) methods `generateVerificationCode`, `formatVerificationCode` and `parseVerificationCode`
 into your own code. To update your application:
@@ -22,7 +22,7 @@ into your own code. To update your application:
    }
    ```
 
-[!include[Alpha Codes principles](../../../includes/alpha-codes-principles.md)]
+[!include[Alpha Codes principles](../../includes/alpha-codes-principles.md)]
 
 ## See also
 
