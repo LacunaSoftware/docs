@@ -2,7 +2,7 @@
 
 To update your [on-premises installation](../index.md) of [Amplia](../../index.md), follow the steps below:
 
-[!include[Proceed as root](../../../includes/su.md)]
+[!include[Proceed as root](../../../includes/linux/su.md)]
 
 [!include[Update steps](../../../../../includes/amplia/linux/update.md)]
 

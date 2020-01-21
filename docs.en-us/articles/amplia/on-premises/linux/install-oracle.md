@@ -14,7 +14,7 @@ Before you start, make sure you have read the section [Planning before installat
 
 ## Install the ASP.NET Core Runtime
 
-[!include[Proceed as root](../../../includes/su.md)]
+[!include[Proceed as root](../../../includes/linux/su.md)]
 
 Register the Microsoft key and package repository (this only needs to be done once per machine), then install the ASP.NET Core runtime package:
 
