@@ -39,5 +39,5 @@ Fill the following settings:
   * **UseReverseProxy**: leave this setting as `true` unless you intend to run the components without a reverse proxy
   * **ReverseProxyAddress**: leave this setting commented for now
   * **IdentityServiceUrl**: internal URL of the Identity Service component. Leave this setting as is unless you intend to run the Identity Service on a different local port.
-  * **AuthServerUrl**: public URL of the Auth Server component, e.g. *https://id.patorum.com*
-  * **ConsoleUrl**: public URL of the Console component, e.g. *https://console.id.patorum.com*
+  * **AuthServerUrl**: public URL of the Auth Server component, e.g. *https://patorumid.com*
+  * **ConsoleUrl**: public URL of the Console component, e.g. *https://console.patorumid.com*
