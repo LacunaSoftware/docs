@@ -22,7 +22,6 @@ Follow these steps to install an [on-premises](../index.md) instance of [Grant I
 > [!NOTE]
 > The Identity Service component does not need to be publicly accessible. If your applications don't call GrantID's APIs
 > directly, you can skip the remainder of this section and go to the [Auth Server installation](#auth-server)
-> (or <a href="#auth-server">Auth Server installation</a> or yet [Auth Server installation](.#auth-server) or lastly [Auth Server installation](./#auth-server))
 
 Create a site configuration file for the component:
 
@@ -40,7 +39,7 @@ Test the Nginx configuration and reload it:
 
 [!include[Reload Nginx](../../../../../includes/linux/reload-nginx.md)]
 
-Test the site (replace the domain below with the public domain of your Identity Service):
+Test the site (replace *api.patorumid.com* with the public domain of your Identity Service):
 
 [!include[Test site](../../../../../includes/grant-id/linux/test-site-identity-service.md)]
 
@@ -65,7 +64,7 @@ Test the Nginx configuration and reload it:
 
 [!include[Reload Nginx](../../../../../includes/linux/reload-nginx.md)]
 
-Test the site (replace the domain below with the public domain of your Auth Server):
+Test the site (replace *patorumid.com* with the public domain of your Auth Server):
 
 [!include[Test site](../../../../../includes/grant-id/linux/test-site-auth-server.md)]
 
@@ -90,6 +89,6 @@ Test the Nginx configuration and reload it:
 
 [!include[Reload Nginx](../../../../../includes/linux/reload-nginx.md)]
 
-Test the site (replace the domain below with the public domain of your Console):
+Test the site (replace *console.patorumid.com* with the public domain of your Console):
 
 [!include[Test site](../../../../../includes/grant-id/linux/test-site-console.md)]
