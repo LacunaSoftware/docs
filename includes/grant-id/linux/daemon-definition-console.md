@@ -10,8 +10,8 @@ RestartSec=10
 KillSignal=SIGINT
 SyslogIdentifier=grantid
 User=grantid
-Environment=ASPNETCORE_ENVIRONMENT=Linux
-Environment=ASPNETCORE_URLS=http://+:5002
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=ASPNETCORE_URLS=http://+:5012
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 
 [Install]

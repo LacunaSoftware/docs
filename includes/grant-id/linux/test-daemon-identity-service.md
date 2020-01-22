@@ -1,3 +1,3 @@
 ﻿```sh
-curl http://localhost:5000/api/version
+curl http://localhost:5010/api/version
 ```

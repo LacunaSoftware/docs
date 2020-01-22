@@ -12,6 +12,6 @@ Jan 21 19:25:57 ubuntu1804 grantid[28519]: info: Grant.Id.Console.Startup[0]
 Jan 21 19:25:57 ubuntu1804 grantid[28519]:       Console has started.
 Jan 21 19:25:57 ubuntu1804 grantid[28519]: Hosting environment: Linux
 Jan 21 19:25:57 ubuntu1804 grantid[28519]: Content root path: /usr/share/grantid/console
-Jan 21 19:25:57 ubuntu1804 grantid[28519]: Now listening on: http://[::]:5002
+Jan 21 19:25:57 ubuntu1804 grantid[28519]: Now listening on: http://[::]:5012
 Jan 21 19:25:57 ubuntu1804 grantid[28519]: Application started. Press Ctrl+C to shut down.
 ```

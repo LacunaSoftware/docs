@@ -8,7 +8,7 @@ server {
     ssl_certificate_key  /etc/grantid/grantid.key;
 
     location / {
-        proxy_pass         http://localhost:5000;
+        proxy_pass         http://localhost:5010;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;

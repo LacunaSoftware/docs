@@ -12,6 +12,6 @@ Jan 21 14:45:44 ubuntu1804 grantid[776]: Signing certificate PFX path: '/etc/gra
 Jan 21 14:45:44 ubuntu1804 grantid[776]: Audit is enabled
 Jan 21 14:45:50 ubuntu1804 grantid[776]: Hosting environment: Linux
 Jan 21 14:45:50 ubuntu1804 grantid[776]: Content root path: /usr/share/grantid/identity-service
-Jan 21 14:45:50 ubuntu1804 grantid[776]: Now listening on: http://localhost:5000
+Jan 21 14:45:50 ubuntu1804 grantid[776]: Now listening on: http://localhost:5010
 Jan 21 14:45:50 ubuntu1804 grantid[776]: Application started. Press Ctrl+C to shut down.
 ```
