@@ -34,6 +34,6 @@ If necessary, restart the service: `systemctl restart grantid-console`
 
 To test that the service is running, run:
 
-[!include[Test service](../../../../../../includes/grant-id/linux/test-console.md)]
+[!include[Test service](../../../../../../includes/grant-id/linux/test-daemon-console.md)]
 
 The source for an HTML document should be outputted.

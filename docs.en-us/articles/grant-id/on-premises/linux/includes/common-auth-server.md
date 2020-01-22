@@ -35,6 +35,6 @@ If necessary, restart the service: `systemctl restart grantid-auth-server`
 
 To test that the service is running, run:
 
-[!include[Test service](../../../../../../includes/grant-id/linux/test-auth-server.md)]
+[!include[Test service](../../../../../../includes/grant-id/linux/test-daemon-auth-server.md)]
 
 The source for an HTML document should be outputted.

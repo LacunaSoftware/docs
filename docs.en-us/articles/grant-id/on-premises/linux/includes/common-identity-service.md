@@ -48,6 +48,6 @@ If necessary, restart the service: `systemctl restart grantid-identity-service`
 
 To test that the service is running, run:
 
-[!include[Test service](../../../../../../includes/grant-id/linux/test-identity-service.md)]
+[!include[Test service](../../../../../../includes/grant-id/linux/test-daemon-identity-service.md)]
 
 The version of the component should be outputted.
