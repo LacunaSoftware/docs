@@ -12,10 +12,6 @@ Create a local user to run the components:
 
 [!include[Create user](../../../../../../includes/grant-id/linux/create-user.md)]
 
-Create a directory to hold the application logs:
-
-[!include[Create log directory](../../../../../../includes/grant-id/linux/create-log-dir.md)]
-
 Create the folder that will contain the binaries for each component:
 
 [!include[Create bin directory](../../../../../../includes/grant-id/linux/create-bin-dir.md)]
