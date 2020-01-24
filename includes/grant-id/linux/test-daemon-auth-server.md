@@ -1,3 +1,3 @@
 ﻿```sh
-curl http://localhost:5011/
+curl -H "X-Forwarded-Proto: https" http://localhost:5011/
 ```
