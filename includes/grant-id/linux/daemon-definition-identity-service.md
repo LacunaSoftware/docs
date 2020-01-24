@@ -8,7 +8,7 @@ ExecStart=/usr/bin/dotnet Grant.Id.Service.dll
 Restart=always
 RestartSec=10
 KillSignal=SIGINT
-SyslogIdentifier=grantid
+SyslogIdentifier=grantid-identity-service
 User=grantid
 Environment=ASPNETCORE_ENVIRONMENT=Linux
 Environment=ASPNETCORE_URLS=http://+:5010
