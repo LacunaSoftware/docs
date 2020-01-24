@@ -8,7 +8,7 @@ server {
 
 	# Path of the SSL certificate and key in PEM format
     ssl_certificate      /etc/ssl/certs/grantid.pem;
-    ssl_certificate_key  /etc/ssl/keys/grantid.key;
+    ssl_certificate_key  /etc/ssl/private/grantid.key;
 
     location / {
         proxy_pass         http://localhost:5012;
