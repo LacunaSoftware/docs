@@ -32,14 +32,14 @@ Create a subfolder of the configuration folder to hold the data protection keys 
 
 Generate a self-signed certificate to sign the JSON Web Tokens. Provide the information below, pressing ENTER on the remaining questions. Avoid using diacritics.
 
-* **Country Name**: enter the two-letter code of your country (e.g.: *BR*)
-* **State or Province Name**: enter the name of your organization's state (e.g.: *Sao Paulo*)
-* **Organization Name**: enter the name of your organization (e.g. *Patorum Inc*)
+* **Country Name**: enter the two-letter code of your country, e.g.: *BR*
+* **State or Province Name**: enter the name of your organization's state, e.g.: *Sao Paulo*
+* **Organization Name**: enter the name of your organization, e.g. *Patorum Inc*
 * **Common Name**: enter the name of your Grant ID instance, e.g. *Patorum ID*
 
 [!include[Generate certificate step 1](../../../../../../includes/grant-id/linux/gen-cert-step1.md)]
 
-Merge the key and certificate into a single PFX file:
+Merge the key and certificate into a single PFX file. When asked for a password, simply press ENTER twice.
 
 [!include[Generate certificate step 2](../../../../../../includes/grant-id/linux/gen-cert-step2.md)]
 
