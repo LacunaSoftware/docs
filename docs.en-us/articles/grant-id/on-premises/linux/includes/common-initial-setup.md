@@ -17,11 +17,14 @@ Create the folder that will contain the binaries for each component:
 [!include[Create bin directory](../../../../../../includes/grant-id/linux/create-bin-dir.md)]
 
 > [!NOTE]
-> Site binaries can be read by any user and can only be changed by root users. This means that the application user (*grantid*) can read but not change the files, which is intended.
+> Site binaries can be read by any user and can only be changed by root users. This means that the application user (*grantid*) can read but not change the files, which is intentional.
 
 Create the folder that will contain the configuration files and copy over the configuration file templates:
 
 [!include[Create etc directory](../../../../../../includes/grant-id/linux/create-etc-dir.md)]
+
+> [!NOTE]
+> Configuration files can only be read by members of the *grantid* group and can only be changed by the root user. This is important to protect sensitive data stored on the configuration files from unauthorized access.
 
 Edit the common configuration file:
 

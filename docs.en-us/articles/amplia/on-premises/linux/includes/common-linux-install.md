@@ -11,14 +11,14 @@ Create the site folder, download and extract the binaries:
 [!include[Copy files](../../../../../../includes/amplia/linux/copy-files.md)]
 
 > [!NOTE]
-> Site binaries can be read by any user and can only be changed by root users. This means that the application user (*amplia*) can read but not change the files, which is intended.
+> Site binaries can be read by any user and can only be changed by root users. This means that the application user (*amplia*) can read but not change the files, which is intentional.
 
 Create the configuration file from the given template:
 
 [!include[Move settings template](../../../../../../includes/amplia/linux/move-settings-template.md)]
 
 > [!NOTE]
-> Configuration files can only be read by members of the *amplia* group and can only be changed by root users. This is important to protect sensitive data stored on the configuration files from unauthorized access.
+> Configuration files can only be read by members of the *amplia* group and can only be changed by the root user. This is important to protect sensitive data stored on the configuration files from unauthorized access.
 
 ## Configure Amplia
 
