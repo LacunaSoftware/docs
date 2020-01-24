@@ -26,6 +26,29 @@ Create the folder that will contain the configuration files and copy over the co
 > [!NOTE]
 > Configuration files can only be read by members of the *grantid* group and can only be changed by the root user. This is important to protect sensitive data stored on the configuration files from unauthorized access.
 
+Generate a self-signed certificate to sign the JSON Web Tokens. Provide the following information:
+
+* **Country Name**: enter the two-letter code of your country (e.g.: *BR*)
+* **State or Province Name**: enter the name of your organization's state (e.g.: *Sao Paulo*)
+* **Organization Name**: enter the name of your organization (e.g. *Patorum Inc*)
+* **Common Name**: enter the name of your Grant ID instance, e.g. *Patorum ID*
+
+Simply press ENTER on the remaining questions. Avoid using diacritics.
+
+[!include[Generate certificate step 1](../../../../../../includes/grant-id/linux/gen-cert-step1.md)]
+
+Merge the key and certificate into a single PFX file:
+
+[!include[Generate certificate step 2](../../../../../../includes/grant-id/linux/gen-cert-step2.md)]
+
+Do some housekeeping:
+
+[!include[Generate certificate step 3](../../../../../../includes/grant-id/linux/gen-cert-step3.md)]
+
+Generate a key used to encrypt "tokens" sent on emails:
+
+[!include[Generate temp token key](../../../../../../includes/grant-id/linux/gen-temp-token-key.md)]
+
 Edit the common configuration file:
 
 [!include[Edit common settings](../../../../../../includes/grant-id/linux/edit-settings-common.md)]
