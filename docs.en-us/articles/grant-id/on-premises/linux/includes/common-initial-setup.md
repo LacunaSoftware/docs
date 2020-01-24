@@ -30,14 +30,12 @@ Create a subfolder of the configuration folder to hold the data protection keys 
 
 [!include[Create key store directory](../../../../../../includes/grant-id/linux/create-key-store-dir.md)]
 
-Generate a self-signed certificate to sign the JSON Web Tokens. Provide the following information:
+Generate a self-signed certificate to sign the JSON Web Tokens. Provide the information below, pressing ENTER on the remaining questions. Avoid using diacritics.
 
 * **Country Name**: enter the two-letter code of your country (e.g.: *BR*)
 * **State or Province Name**: enter the name of your organization's state (e.g.: *Sao Paulo*)
 * **Organization Name**: enter the name of your organization (e.g. *Patorum Inc*)
 * **Common Name**: enter the name of your Grant ID instance, e.g. *Patorum ID*
-
-Simply press ENTER on the remaining questions. Avoid using diacritics.
 
 [!include[Generate certificate step 1](../../../../../../includes/grant-id/linux/gen-cert-step1.md)]
 
