@@ -2,17 +2,18 @@
 
 [!include[Copy Console files](../../../../../../includes/grant-id/linux/copy-files-console.md)]
 
+<!--
 Create the configuration file from the given template and edit it:
 
 [!include[Create Console settings](../../../../../../includes/grant-id/linux/create-settings-console.md)]
 
 Fill the following settings:
 
-* Section **Logging**: ?
-* Section **Serilog**: ?
-* Section **Application**
-  * **EnableExternalFingerprintValidationConfiguration**: ?
-  * **EnableExternalTokenValidationConfiguration**: ?
+THERE ARE CURRNTLY NO SPECIFIC SETTINGS FOR CONSOLE, SO THIS SECTION WAS OMMITTED
+-->
+
+> [!NOTE]
+> Typically, the Console does not need any additional configuration, so we won't need create and configure a *console.json* file
 
 Create the service definition file:
 

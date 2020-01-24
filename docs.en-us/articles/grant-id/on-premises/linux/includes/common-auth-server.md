@@ -8,12 +8,8 @@ Create the configuration file from the given template and edit it:
 
 Fill the following settings:
 
-* Section **Logging**
-* Section **Serilog**
 * Section **Application**
-  * **WebPkiLicense**: your license for the Web PKI component in binary (Base64) format. Required if you intend to enable login with X.509 certificates
-  * **DisableSignUp**: whether user sign-up should be disabled (in which case users can only be created by applications through API integration)
-* Section **ActiveDirectory**
+  * **WebPkiLicense**: your license for the Web PKI component in binary (Base64) format. Required if you intend to enable login with X.509 certificates.
 
 Create the service definition file:
 
