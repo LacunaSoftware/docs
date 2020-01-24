@@ -19,13 +19,13 @@ Create the folder that will contain the binaries for each component:
 > [!NOTE]
 > Site binaries can be read by any user and can only be changed by root users. This means that the application user (*grantid*) can read but not change the files, which is intended.
 
-Create the folder that will contain the configuration files:
+Create the folder that will contain the configuration files and copy over the configuration file templates:
 
 [!include[Create etc directory](../../../../../../includes/grant-id/linux/create-etc-dir.md)]
 
-Create the configuration file from the given template and edit it:
+Edit the common configuration file:
 
-[!include[Create common settings](../../../../../../includes/grant-id/linux/create-settings-common.md)]
+[!include[Edit common settings](../../../../../../includes/grant-id/linux/edit-settings-common.md)]
 
 Fill the following settings:
 

@@ -2,9 +2,9 @@
 
 [!include[Copy Identity Service files](../../../../../../includes/grant-id/linux/copy-files-identity-service.md)]
 
-Create the configuration file from the given template and edit it:
+Edit the Identity Service configuration file:
 
-[!include[Create Identity Service settings](../../../../../../includes/grant-id/linux/create-settings-identity-service.md)]
+[!include[Edit Identity Service settings](../../../../../../includes/grant-id/linux/edit-settings-identity-service.md)]
 
 Fill the following settings:
 

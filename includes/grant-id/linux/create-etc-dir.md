@@ -1,5 +1,6 @@
 ﻿```sh
 mkdir /etc/grantid
-chown root:grantid /etc/grantid
-chmod 750 /etc/grantid
+cp config-templates/* /etc/grantid/
+chown -R root:grantid /etc/grantid
+chmod -R a=,u+rwX,go+rX /etc/grantid
 ```

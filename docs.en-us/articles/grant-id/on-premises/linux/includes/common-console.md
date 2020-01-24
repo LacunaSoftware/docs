@@ -3,9 +3,9 @@
 [!include[Copy Console files](../../../../../../includes/grant-id/linux/copy-files-console.md)]
 
 <!--
-Create the configuration file from the given template and edit it:
+Edit the component-specific configuration file:
 
-[!include[Create Console settings](../../../../../../includes/grant-id/linux/create-settings-console.md)]
+[!include[Edit Console settings](../../../../../../includes/grant-id/linux/edit-settings-console.md)]
 
 Fill the following settings:
 
@@ -13,7 +13,7 @@ THERE ARE CURRNTLY NO SPECIFIC SETTINGS FOR CONSOLE, SO THIS SECTION WAS OMMITTE
 -->
 
 > [!NOTE]
-> Typically, the Console does not need any additional configuration, so we won't need create and configure a *console.json* file
+> Typically, the Console does not need any additional configuration, so we don't need to fill anything on */etc/grantid/console.log*
 
 Create the service definition file:
 

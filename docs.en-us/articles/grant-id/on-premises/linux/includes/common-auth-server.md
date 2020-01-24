@@ -2,9 +2,9 @@
 
 [!include[Copy Auth Server files](../../../../../../includes/grant-id/linux/copy-files-auth-server.md)]
 
-Create the configuration file from the given template and edit it:
+Edit the Auth Server configuration file:
 
-[!include[Create Auth Server settings](../../../../../../includes/grant-id/linux/create-settings-auth-server.md)]
+[!include[Edit Auth Server settings](../../../../../../includes/grant-id/linux/edit-settings-auth-server.md)]
 
 Fill the following settings:
 
