@@ -2,10 +2,13 @@
 server {
     listen        80;
     listen        443 ssl;
+
+	# Public domain of the Auth Server
     server_name   console.patorumid.com;
 
-    ssl_certificate      /etc/grantid/grantid.cer;
-    ssl_certificate_key  /etc/grantid/grantid.key;
+	# Path of the SSL certificate and key in PEM format
+    ssl_certificate      /etc/ssl/certs/grantid.pem;
+    ssl_certificate_key  /etc/ssl/keys/grantid.key;
 
     location / {
         proxy_pass         http://localhost:5012;
