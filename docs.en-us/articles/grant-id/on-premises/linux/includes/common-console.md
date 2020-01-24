@@ -2,18 +2,8 @@
 
 [!include[Copy Console files](../../../../../../includes/grant-id/linux/copy-files-console.md)]
 
-<!--
-Edit the component-specific configuration file:
-
-[!include[Edit Console settings](../../../../../../includes/grant-id/linux/edit-settings-console.md)]
-
-Fill the following settings:
-
-THERE ARE CURRNTLY NO SPECIFIC SETTINGS FOR CONSOLE, SO THIS SECTION WAS OMMITTED
--->
-
 > [!NOTE]
-> Typically, the Console does not need any additional configuration, so we don't need to fill anything on */etc/grantid/console.log*
+> Typically, the Console does not need any additional configuration, so there's nothing to fill on */etc/grantid/console.log*
 
 Create the service definition file:
 

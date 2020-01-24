@@ -10,8 +10,6 @@ Fill the following settings:
 
 * Section **ConnectionStrings**
   * **DefaultConnection**: Database connection string (required)
-* Section **PkiSuite**
-  * **SdkLicense**: Your license for the PKI SDK, in Base64 format (required)
 * Section **SMS**: configures the SMS sending. The setting **Type** defines which provider should be used, and the remaining settings depend on the provider chosen:
   * [Twilio](https://www.twilio.com/)
     * **Type**: set this setting to `Twilio` to send SMS messages using Twilio

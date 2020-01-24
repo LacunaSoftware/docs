@@ -34,3 +34,6 @@ Fill the following settings:
   * **AuthServerUrl**: public URL of the Auth Server component, e.g. *https://patorumid.com*
   * **ConsoleUrl**: public URL of the Console component, e.g. *https://console.patorumid.com*
   * **UseSSL**: whether the public URLs will use HTTPS (fill according to the previous URLs)
+* Section **PkiSuite**
+  * **SdkLicense**: your license for the PKI SDK, in Base64 format
+  * **WebLicense**: your license for the Web PKI component in binary (Base64) format. Required if you intend to enable login with X.509 certificates.

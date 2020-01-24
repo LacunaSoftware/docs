@@ -2,14 +2,8 @@
 
 [!include[Copy Auth Server files](../../../../../../includes/grant-id/linux/copy-files-auth-server.md)]
 
-Edit the Auth Server configuration file:
-
-[!include[Edit Auth Server settings](../../../../../../includes/grant-id/linux/edit-settings-auth-server.md)]
-
-Fill the following settings:
-
-* Section **Application**
-  * **WebPkiLicense**: your license for the Web PKI component in binary (Base64) format. Required if you intend to enable login with X.509 certificates.
+> [!NOTE]
+> Typically, the Auth Server does not need any additional configuration, so there's nothing to fill on */etc/grantid/auth-server.log*
 
 Create the service definition file:
 
