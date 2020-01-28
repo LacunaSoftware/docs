@@ -8,16 +8,20 @@ We'll first do some initial setup, then we'll install each component.
 
 ### Initial setup
 
+Create a temporary work directory, then download and extract the binaries:
+
+[!include[Download binaries](../../../../../../includes/grant-id/linux/download-binaries.md)]
+
 Create a local user to run the components:
 
 [!include[Create user](../../../../../../includes/grant-id/linux/create-user.md)]
 
-Create the folder that will contain the binaries for each component:
+Create the folder that will contain the binaries for each component and copy the binary files over:
 
 [!include[Create bin directory](../../../../../../includes/grant-id/linux/create-bin-dir.md)]
 
 > [!NOTE]
-> Site binaries can be read by any user and can only be changed by root users. This means that the application user (*grantid*) can read but not change the files, which is intentional.
+> Component binaries can be read by any user and can only be changed by root users. This means that the application user (*grantid*) can read but not change the files, which is intentional.
 
 Create the folder that will contain the configuration files and copy over the configuration file templates:
 
