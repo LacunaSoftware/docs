@@ -1,6 +1,4 @@
-﻿We'll now install the **Auth Server** component. First, copy the binaries:
-
-[!include[Copy Auth Server files](../../../../../../includes/grant-id/linux/copy-files-auth-server.md)]
+﻿We'll now install the **Auth Server** component.
 
 > [!NOTE]
 > Typically, the Auth Server does not need any additional configuration, so there's nothing to fill on */etc/grantid/auth-server.log*

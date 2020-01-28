@@ -1,6 +1,4 @@
-﻿We'll now install the **Console** component. First, copy the binaries:
-
-[!include[Copy Console files](../../../../../../includes/grant-id/linux/copy-files-console.md)]
+﻿We'll now install the **Console** component.
 
 > [!NOTE]
 > Typically, the Console does not need any additional configuration, so there's nothing to fill on */etc/grantid/console.log*

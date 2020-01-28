@@ -1,8 +1,4 @@
-﻿We'll now install the **Identity Service** component. First, copy the binaries:
-
-[!include[Copy Identity Service files](../../../../../../includes/grant-id/linux/copy-files-identity-service.md)]
-
-Edit the Identity Service configuration file:
+﻿We'll now install the **Identity Service** component. Edit the configuration file:
 
 [!include[Edit Identity Service settings](../../../../../../includes/grant-id/linux/edit-settings-identity-service.md)]
 
