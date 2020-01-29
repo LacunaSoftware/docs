@@ -8,9 +8,9 @@ We'll first do some initial setup, then we'll install each component.
 
 ### Initial setup
 
-Create a temporary work directory, then download and extract the binaries:
+Create a temporary work directory, then download and extract the distribution package:
 
-[!include[Download binaries](../../../../../../includes/grant-id/linux/download-binaries.md)]
+[!include[Download binaries](../../../../../../includes/grant-id/linux/download-package.md)]
 
 Create a local user to run the components:
 
