@@ -36,7 +36,11 @@ Generate a key used to encrypt "tokens" sent on emails:
 
 [!include[Generate temp token key](../../../../../includes/grant-id/docker/gen-temp-token-key.md)]
 
-Edit the *grantid.json* file (`nano grantid.json`) and fill the following settings:
+Edit the GrantID configuration file:
+
+[!include[Edit GrantID config](../../../../../includes/grant-id/docker/edit-grantid-config.md)]
+
+Fill the following settings:
 
 * Section **Application**
   * **ProductName**: the name of your Grant ID instance, e.g. *Patorum ID*
@@ -54,7 +58,11 @@ Edit the *grantid.json* file (`nano grantid.json`) and fill the following settin
 > Even if you have an SSL certificate, use URLs with `http://` and leave **UseSSL** as `false` for now. When you get GrantID
 > up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
-Edit the *nginx.conf* file (`nano nginx.conf`) and make the following changes:
+Edit the Nginx configuration file:
+
+[!include[Edit Nginx config](../../../../../includes/grant-id/docker/edit-nginx-config.md)]
+
+Make the following changes to the file:
 
 * On the **Identity Service** server, replace the `server_name` entry with your [API domain](../index.md#planning)
 * On the **Auth Server** server, replace the `server_name` entry with your [base and login domains](../index.md#planning)

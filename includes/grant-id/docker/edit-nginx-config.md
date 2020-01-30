@@ -1,0 +1,3 @@
+﻿```sh
+nano nginx.conf
+```
