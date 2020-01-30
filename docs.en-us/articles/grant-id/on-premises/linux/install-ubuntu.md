@@ -95,3 +95,7 @@ Test the Nginx configuration and reload it:
 Test the site (replace *console.id.patorum.com* with your [console domain](../index.md#planning)):
 
 [!include[Test site](../../../../../includes/grant-id/linux/test-site-console.md)]
+
+## Post-installation
+
+Follow the steps on [GrantID post-installation](../post-install.md) to complete the installation procedure.
