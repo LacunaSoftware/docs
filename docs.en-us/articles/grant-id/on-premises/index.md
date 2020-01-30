@@ -28,7 +28,7 @@ that will host your GrantID instance:
 > Although only the login domain needs to be a subdomain of the base domain, we recommend choosing a base domain and defining the remaining
 > domains as subdomains of it.
 
-For instance, suppose you choose as a base domain **easy.net**:
+For instance, suppose you choose as a base domain **easyid.net**:
 
 Domain type | Chosen domain name
 ----------- | ------------------
