@@ -1,6 +1,6 @@
 ﻿# Enabling SSL on Docker - GrantID
 
-Stop the stack:
+Stop the stack (if already running):
 
 [!include[Remove stack](../../../../../includes/grant-id/docker/remove-stack.md)]
 

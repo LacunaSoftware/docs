@@ -44,7 +44,8 @@ Data Source=HOST;Initial Catalog=DATABASE;User ID=USER;Password=PASSWORD
 
 On certain scenarios the connection string might be more complex, for instance if the database is mirrored.
 
-On such cases, omit the database connection parameters on the *environment* section of the *grantid* service.
+On such cases, omit the database connection parameters on the Docker compose file (you may also remove the reference to the
+external secret *grantid_sql_password*, since it will not be used).
 
 Edit the GrantID configuration file:
 
