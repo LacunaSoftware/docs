@@ -4,7 +4,8 @@
 
 Follow these steps to install an [on-premises](../index.md) instance of [Grant ID](../../index.md) on an Ubuntu Server.
 
-Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning).
+> [!TIP]
+> Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning)
 
 [!include[Install ASP.NET Core Runtime 2.1](../../../includes/linux/ubuntu/install-aspnetcore-21.md)]
 
