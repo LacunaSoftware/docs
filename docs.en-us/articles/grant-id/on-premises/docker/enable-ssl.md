@@ -4,7 +4,7 @@ Stop the stack:
 
 [!include[Remove stack](../../../../../includes/grant-id/docker/remove-stack.md)]
 
-Store the certificate and key files as secrets:
+Store the certificate and key files as secrets (replace *grantid.pem* and *grantid.key* below with your certificate and key files):
 
 [!include[Create SSL certificate secrets](../../../../../includes/grant-id/docker/create-ssl-cert-secret.md)]
 
