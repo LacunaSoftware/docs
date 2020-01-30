@@ -80,7 +80,32 @@ The expected output is similar to:
 
 [!include[Expected output](../../../../../includes/grant-id/docker/check-logs-grantid-output.md)]
 
+> [!NOTE]
+> During first the run of the stack you might see the error *A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible.*
+> This is because the SQL Server service takes some time to become ready. The stack usually recovers from this automatically.
+
+Test the Identity Service component (replace *api.id.patorum.com* with your [API domain](../index.md#planning)):
+
+[!include[Test Identity Service](../../../../../includes/grant-id/docker/test-identity-service.md)]
+
+The version of the component should be outputted.
+
+Test the Auth Server component (replace *id.patorum.com* with your [base domain](../index.md#planning)):
+
+[!include[Test Auth Server](../../../../../includes/grant-id/docker/test-auth-server.md)]
+
+The source for an HTML document should be outputted.
+
+Test the Console component (replace *console.id.patorum.com* with your [console domain](../index.md#planning)):
+
+[!include[Test Console](../../../../../includes/grant-id/docker/test-console.md)]
+
+The source for an HTML document should be outputted.
+
+## Post-installation
+
+Follow the steps on [GrantID post-installation](../post-install.md) to complete the installation procedure.
+
 ## See also
 
 * [Enabling SSL on Docker](enable-ssl.md)
-
