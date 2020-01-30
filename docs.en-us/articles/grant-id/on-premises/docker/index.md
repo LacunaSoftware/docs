@@ -51,7 +51,7 @@ Edit the *grantid.json* file (`nano grantid.json`) and fill the following settin
 [!include[Email config](../includes/email-config.md)]
 
 > [!NOTE]
-> Even if you have an SSL certificate, use URLs with `http://` and leave *UseSSL* as `false` for now. When you get GrantID
+> Even if you have an SSL certificate, use URLs with `http://` and leave **UseSSL** as `false` for now. When you get GrantID
 > up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
 Edit the *nginx.conf* file (`nano nginx.conf`) and make the following changes:
@@ -64,6 +64,15 @@ Deploy the GrantID stack:
 
 [!include[Generate temp token key](../../../../../includes/grant-id/docker/deploy.md)]
 
+Check the logs for the *grantid* service:
+
+[!include[Check grantid logs](../../../../../includes/grant-id/docker/check-logs-grantid.md)]
+
+The expected output is similar to:
+
+[!include[Expected output](../../../../../includes/grant-id/docker/check-logs-grantid-output.md)]
+
 ## See also
 
 * [Enabling SSL on Docker](enable-ssl.md)
+

@@ -29,7 +29,7 @@ Click on **Create Subscription**.
 
 To test the procedure, open the following URL (replace *login.id.patorum.com* with your [login domain](index.md#planning)):
 
-```
+```plaintext
 https://login.id.patorum.com/.well-known/openid-configuration
 ```
 
