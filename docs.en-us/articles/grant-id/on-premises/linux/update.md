@@ -1,8 +1,6 @@
 ﻿# Updating Grant ID on Linux
 
-> [!NOTE]
-> The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please
-> contact us if there's any information you need that is not currently documented.
+Follow these steps to update an [on-premises](../index.md) instance of [Grant ID](../../index.md) installed on Linux.
 
 [!include[Proceed as root](../../../includes/linux/su.md)]
 
