@@ -14,7 +14,7 @@ Edit the Docker compose file:
 
 [!include[Edit docker compose file](../../../../../includes/grant-id/docker/edit-compose.md)]
 
-Remove the following items:
+Make the following changes:
 
 * Section **volumes**: remove item **sql**
 * Section **services**:
@@ -42,10 +42,22 @@ The method above uses the provided host, database, user and password file to bui
 Data Source=HOST;Initial Catalog=DATABASE;User ID=USER;Password=PASSWORD
 ```
 
-On certain scenarios the connection string might be more complex, for instance if the database is mirrored.
+On certain scenarios the connection string might be more complex, for instance if the database is mirrored. On such cases, follow
+the steps below to use a custom connection string.
 
-On such cases, omit the database connection parameters on the Docker compose file (you may also remove the reference to the
-external secret *grantid_sql_password*, since it will not be used).
+Edit the Docker compose file:
+
+[!include[Edit docker compose file](../../../../../includes/grant-id/docker/edit-compose.md)]
+
+Make the following changes:
+
+* Section **volumes**: remove item **sql**
+* Section **secrets**: remove item **grantid_sql_password**
+* Section **services**:
+  * Remove entire service **sql**
+  * Service **grantid**
+    * On section **secrets**, remove item **grantid_sql_password**
+    * On section **environment**, remove item **SQL_PASS_FILE**
 
 Edit the GrantID configuration file:
 
