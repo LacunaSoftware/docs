@@ -48,15 +48,15 @@ Fill the following settings:
   * **ConsoleUrl**: public URL of the Console component, hosted on the [console domain](../index.md#planning), e.g. *http://console.id.patorum.com*
   * **UseSSL**: whether the public URLs will use HTTPS (leave `false` for now, see below)
 
+> [!NOTE]
+> Even if you have an SSL certificate, use URLs with `http://` and leave **UseSSL** as `false` for now. When you get GrantID
+> up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
+
 [!include[PKI config](../includes/pki-config.md)]
 
 [!include[SMS config](../includes/sms-config.md)]
 
 [!include[Email config](../includes/email-config.md)]
-
-> [!NOTE]
-> Even if you have an SSL certificate, use URLs with `http://` and leave **UseSSL** as `false` for now. When you get GrantID
-> up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
 Edit the Nginx configuration file:
 
