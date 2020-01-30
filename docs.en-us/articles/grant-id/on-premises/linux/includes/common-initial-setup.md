@@ -62,10 +62,6 @@ Fill the following settings:
   * **AuthServerUrl**: public URL of the Auth Server component, hosted on the [base domain](../../index.md#planning), e.g. *https://id.patorum.com*
   * **ConsoleUrl**: public URL of the Console component, hosted on the [console domain](../../index.md#planning), e.g. *https://console.id.patorum.com*
   * **UseSSL**: whether the public URLs will use HTTPS (fill according to the previous URLs)
-* Section **PkiSuite**
-  * **SdkLicense**: your license for the PKI SDK, in Base64 format
-  * **WebLicense**: your license for the Web PKI component in binary (Base64) format. Required if you intend to enable login with X.509 certificates.
+[!include[PKI settings](../../includes/pki-settings.md)]
 
-> [!NOTE]
-> As mentioned on the [planning section](../../index.md#planning), you should ideally have a valid SSL certificate for the domains. If you
-> don't have a certificate yet, use URLs with `http://` above and set **UseSSL** to `false`.
+[!include[Replace HTTPS above if no SSL certificate](../../includes/replace-https-above.md)]
