@@ -15,6 +15,8 @@ Fill the following settings:
   * [TotalVoice](https://totalvoice.com.br/)
     * **Type**: set this setting to `TotalVoice` to send SMS messages using TotalVoice
     * **AccessToken**: the access token, provided by TotalVoice (e.g.: *0123456789abcdef0123456789abcdef*)
+  * Simulator (for debugging purposes only)
+    * **Type**: set this setting to `Simulator` to simulate sending SMS messages (but instead only log the messages that would be sent)
 * Section **Email**: configures email sending through AWS Simple Email Service (SES)
   * **AwsAccessKey**: The AWS access key
   * **AwsSecretKey**: The AWS secret key

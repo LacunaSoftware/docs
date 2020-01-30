@@ -4,6 +4,8 @@
 
 Follow these steps to install an [on-premises](../index.md) instance of [Grant ID](../../index.md) on an Ubuntu Server.
 
+Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning).
+
 [!include[Install ASP.NET Core Runtime 2.1](../../../includes/linux/ubuntu/install-aspnetcore-21.md)]
 
 ## Install Nginx
@@ -27,7 +29,7 @@ Create a site configuration file for the component:
 
 [!include[Create site](../../../../../includes/grant-id/ubuntu/create-site-identity-service.md)]
 
-Enter the following, replacing the public domain of the Identity Service on the `server_name` entry:
+Enter the following, replacing the `server_name` entry with your [API domain](../index.md#planning):
 
 [!include[Site definition](../../../../../includes/grant-id/linux/site-definition-identity-service.md)]
 
@@ -39,7 +41,7 @@ Test the Nginx configuration and reload it:
 
 [!include[Reload Nginx](../../../../../includes/linux/reload-nginx.md)]
 
-Test the site (replace *api.patorumid.com* with the public domain of your Identity Service):
+Test the site (replace *api.id.patorum.com* with your [API domain](../index.md#planning)):
 
 [!include[Test site](../../../../../includes/grant-id/linux/test-site-identity-service.md)]
 
@@ -52,7 +54,7 @@ Create a site configuration file for the component:
 
 [!include[Create site](../../../../../includes/grant-id/ubuntu/create-site-auth-server.md)]
 
-Enter the following, replacing the public domain of the Auth Server on the `server_name` entry:
+Enter the following, replacing the `server_name` entry with your [base and login domains](../index.md#planning):
 
 [!include[Site definition](../../../../../includes/grant-id/linux/site-definition-auth-server.md)]
 
@@ -64,7 +66,7 @@ Test the Nginx configuration and reload it:
 
 [!include[Reload Nginx](../../../../../includes/linux/reload-nginx.md)]
 
-Test the site (replace *patorumid.com* with the public domain of your Auth Server):
+Test the site (replace *id.patorum.com* with your [base domain](../index.md#planning)):
 
 [!include[Test site](../../../../../includes/grant-id/linux/test-site-auth-server.md)]
 
@@ -77,7 +79,7 @@ Create a site configuration file for the component:
 
 [!include[Create site](../../../../../includes/grant-id/ubuntu/create-site-console.md)]
 
-Enter the following, replacing the public domain of the Console on the `server_name` entry:
+Enter the following, replacing the `server_name` entry with your [console domain](../index.md#planning):
 
 [!include[Site definition](../../../../../includes/grant-id/linux/site-definition-console.md)]
 
@@ -89,6 +91,6 @@ Test the Nginx configuration and reload it:
 
 [!include[Reload Nginx](../../../../../includes/linux/reload-nginx.md)]
 
-Test the site (replace *console.patorumid.com* with the public domain of your Console):
+Test the site (replace *console.id.patorum.com* with your [console domain](../index.md#planning)):
 
 [!include[Test site](../../../../../includes/grant-id/linux/test-site-console.md)]

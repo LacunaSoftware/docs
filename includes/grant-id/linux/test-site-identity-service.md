@@ -1,3 +1,3 @@
 ﻿```sh
-curl -H "Host: api.patorumid.com" http://localhost/api/version
+curl -H "Host: api.id.patorum.com" http://localhost/api/version
 ```

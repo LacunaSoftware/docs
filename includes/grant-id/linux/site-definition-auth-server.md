@@ -1,12 +1,12 @@
 ﻿```nginx
 server {
     listen        80;
-    listen        443 ssl;
+    listen        443 ssl;  # comment if you don't have an SSL certificate yet
 
-	# Public domain of the Auth Server
-    server_name   patorumid.com;
+	# Replace with your base domain and your login domain
+    server_name   id.patorum.com  login.id.patorum.com;
 
-	# Path of the SSL certificate and key in PEM format
+	# Path of the SSL certificate and key (comment if you don't have an SSL certificate yet)
     ssl_certificate      /etc/ssl/certs/grantid.pem;
     ssl_certificate_key  /etc/ssl/private/grantid.key;
 

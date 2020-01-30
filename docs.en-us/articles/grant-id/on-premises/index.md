@@ -32,13 +32,13 @@ For instance, suppose you choose as a base domain **easy.net**:
 
 Domain type | Chosen domain name
 ----------- | ------------------
-Base domain | **easyid.net**
-Login       | **login**.easyid.net
-Console     | **console**.easyid.net
-API         | **api**.easyid.net
+Base domain | *easyid.net*
+Login       | **login**.*easyid.net*
+Console     | **console**.*easyid.net*
+API         | **api**.*easyid.net*
 
-Instead suppose you have an existing organizational domain, say *patorum.com*, and prefer to use as base domain a subdomain
-of it, for instance **id.patorum.com**:
+Instead suppose you have an existing organizational domain, say *patorum.com*, and prefer to use a subdomain as the GrantID base
+domain, for instance **id.patorum.com**:
 
 Domain type | Chosen domain name
 ----------- | ------------------
