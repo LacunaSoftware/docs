@@ -6,7 +6,10 @@ Fill the following settings:
 
 * Section **ConnectionStrings**
   * **DefaultConnection**: Database connection string (required)
-[!include[Common Identity Service settings](../../includes/common-identity-service-settings.md)]
+
+[!include[SMS config](../../includes/sms-config.md)]
+
+[!include[Email config](../../includes/email-config.md)]
 
 Create the service, then enable and start it:
 

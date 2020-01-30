@@ -30,12 +30,7 @@ Create the folder that will contain the configuration files and copy over the co
 > [!NOTE]
 > Configuration files can only be read by members of the *grantid* group and can only be changed by the root user. This is important to protect sensitive data stored on the configuration files from unauthorized access.
 
-Generate a self-signed certificate to sign the JSON Web Tokens. Provide the information below, pressing ENTER on the remaining questions. Avoid using diacritics ("accents" e.g. *á*, *ã*, *ç* etc).
-
-* **Country Name**: enter the two-letter code of your country, e.g.: *BR*
-* **State or Province Name**: enter the name of your organization's state, e.g.: *Sao Paulo*
-* **Organization Name**: enter the name of your organization, e.g. *Patorum Inc*
-* **Common Name**: enter the name of your Grant ID instance, e.g. *Patorum ID*
+[!include[Generate self-signed certificate](../../includes/gen-cert.md)]
 
 [!include[Generate certificate step 1](../../../../../../includes/grant-id/linux/gen-cert-step1.md)]
 
@@ -62,6 +57,7 @@ Fill the following settings:
   * **AuthServerUrl**: public URL of the Auth Server component, hosted on the [base domain](../../index.md#planning), e.g. *https://id.patorum.com*
   * **ConsoleUrl**: public URL of the Console component, hosted on the [console domain](../../index.md#planning), e.g. *https://console.id.patorum.com*
   * **UseSSL**: whether the public URLs will use HTTPS (fill according to the previous URLs)
-[!include[PKI settings](../../includes/pki-settings.md)]
+
+[!include[PKI config](../../includes/pki-config.md)]
 
 [!include[Replace HTTPS above if no SSL certificate](../../includes/replace-https-above.md)]
