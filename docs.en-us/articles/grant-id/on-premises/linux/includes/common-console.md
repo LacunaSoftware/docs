@@ -3,17 +3,9 @@
 > [!NOTE]
 > Typically, the Console does not need any additional configuration, so there's nothing to fill on */etc/grantid/console.log*
 
-Create the service definition file:
+Create the service, then enable and start it:
 
 [!include[Create Console daemon](../../../../../../includes/grant-id/linux/create-daemon-console.md)]
-
-Enter the following:
-
-[!include[Console daemon definition](../../../../../../includes/grant-id/linux/daemon-definition-console.md)]
-
-Save the file, then enable the service and start it:
-
-[!include[Start service](../../../../../../includes/grant-id/linux/start-console.md)]
 
 The expected output is similar to:
 

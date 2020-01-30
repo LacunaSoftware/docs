@@ -3,17 +3,9 @@
 > [!NOTE]
 > Typically, the Auth Server does not need any additional configuration, so there's nothing to fill on */etc/grantid/auth-server.log*
 
-Create the service definition file:
+Create the service, then enable and start it:
 
 [!include[Create Auth Server daemon](../../../../../../includes/grant-id/linux/create-daemon-auth-server.md)]
-
-Enter the following:
-
-[!include[Auth Server daemon definition](../../../../../../includes/grant-id/linux/daemon-definition-auth-server.md)]
-
-Save the file, then enable the service and start it:
-
-[!include[Start service](../../../../../../includes/grant-id/linux/start-auth-server.md)]
 
 The expected output is similar to:
 

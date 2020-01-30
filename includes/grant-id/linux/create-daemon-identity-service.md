@@ -1,4 +1,6 @@
 ﻿```sh
-touch /etc/systemd/system/grantid-identity-service.service
-nano /etc/systemd/system/grantid-identity-service.service
+cp service-defs/grantid-identity-service.service /etc/systemd/system/
+systemctl enable grantid-identity-service
+systemctl start grantid-identity-service
+systemctl status grantid-identity-service
 ```

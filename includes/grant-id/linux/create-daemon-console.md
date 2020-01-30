@@ -1,4 +1,6 @@
 ﻿```sh
-touch /etc/systemd/system/grantid-console.service
-nano /etc/systemd/system/grantid-console.service
+cp service-defs/grantid-console.service /etc/systemd/system/
+systemctl enable grantid-console
+systemctl start grantid-console
+systemctl status grantid-console
 ```

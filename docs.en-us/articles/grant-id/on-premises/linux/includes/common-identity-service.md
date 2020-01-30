@@ -24,17 +24,9 @@ Fill the following settings:
   * **Support**: Address written on the footer of outgoing e-mails, e.g. *support@patorum.com*
   * **LogoUrl** (optional): Public URL of the image that is used on the header of outgoing emails. If omitted, the GrantID logo will be used.
 
-Create the service definition file:
+Create the service, then enable and start it:
 
 [!include[Create Identity Service daemon](../../../../../../includes/grant-id/linux/create-daemon-identity-service.md)]
-
-Enter the following:
-
-[!include[Identity Service daemon definition](../../../../../../includes/grant-id/linux/daemon-definition-identity-service.md)]
-
-Save the file, then enable the service and start it:
-
-[!include[Start service](../../../../../../includes/grant-id/linux/start-identity-service.md)]
 
 The expected output is similar to:
 
