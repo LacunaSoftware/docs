@@ -1,5 +1,9 @@
 ﻿# Enabling SSL on Docker - GrantID
 
+Stop the stack:
+
+[!include[Remove stack](../../../../../includes/grant-id/docker/remove-stack.md)]
+
 Store the certificate and key files as secrets:
 
 [!include[Create SSL certificate secrets](../../../../../includes/grant-id/docker/create-ssl-cert-secret.md)]
@@ -10,7 +14,7 @@ Edit the Docker compose file:
 
 Uncomment the following entries:
 
-[!include[Enable SSL on compose file](../../../../../includes/grant-id/docker/compose-enable-ssl.md)]
+[!include[Enable SSL on compose file](../../../../../includes/grant-id/docker/enable-ssl-docker-compose.md)]
 
 Edit the Nginx configuration file:
 
@@ -18,7 +22,7 @@ Edit the Nginx configuration file:
 
 Uncomment the following entries:
 
-(TODO)
+[!include[Enable SSL on Nginx config file](../../../../../includes/grant-id/docker/enable-ssl-nginx-config.md)]
 
 Edit the GrantID configuration file:
 
@@ -30,6 +34,10 @@ Make the following changes:
   * **AuthServerUrl**: change the protocol of the URL to `https`, e.g. *https://id.patorum.com*
   * **ConsoleUrl**: change the protocol of the URL to `https`, e.g. *https://console.id.patorum.com*
   * **UseSSL**: change to `true`
+
+Deploy the stack with the new configurations:
+
+[!include[Deploy stack](../../../../../includes/grant-id/docker/deploy.md)]
 
 ## See also
 

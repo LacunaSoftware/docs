@@ -17,8 +17,8 @@ services:
 
   nginx:
     ...
+    # Uncomment to enable SSL
     secrets:
-      # Uncomment to enable SSL
       - grantid_ssl_cert
       - grantid_ssl_cert_key
     ports:
