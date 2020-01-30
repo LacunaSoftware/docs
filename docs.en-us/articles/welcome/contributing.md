@@ -240,7 +240,7 @@ Common language IDs:
 * javascript or js
 * html
 
-See all supported [Language names and aliases](http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html#language-names-and-aliases).
+See all supported [Language names and aliases](https://github.com/highlightjs/highlight.js#supported-languages).
 
 ### Includes
 
