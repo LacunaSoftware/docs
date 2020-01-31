@@ -49,7 +49,7 @@ Fill the following settings:
   * **UseSSL**: whether the public URLs will use HTTPS (leave `false` for now, see below)
 
 > [!NOTE]
-> Even if you have an SSL certificate, use URLs with `http://` and leave **UseSSL** as `false` for now. When you get GrantID
+> Even if you have an SSL certificate, use URLs with `http://` and leave **UseSSL** as `false` for now. Once you get GrantID
 > up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
 [!include[PKI config](../includes/pki-config.md)]
