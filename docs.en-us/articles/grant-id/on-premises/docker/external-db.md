@@ -1,6 +1,6 @@
 ﻿# Using an external database on Docker - GrantID
 
-The [standard Docker compose file for GrantID](https://cdn.lacunasoftware.com/grantid/docker/grantid.yml) includes an internal service for the database
+The [standard Docker compose file for GrantID](https://cdn.lacunasoftware.com/grantid/docker/grantid-stack.yml) includes an internal service for the database
 (Microsoft SQL Server).
 
 For production environments, there may be [concerns about running the database on Docker](https://vsupalov.com/database-in-docker/). If you prefer,

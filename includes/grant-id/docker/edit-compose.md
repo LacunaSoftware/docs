@@ -1,3 +1,3 @@
 ﻿```sh
-nano grantid.yml
+nano grantid-stack.yml
 ```

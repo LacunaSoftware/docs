@@ -8,7 +8,7 @@ To run an [on-premises](../index.md) of [GrantID](../../index.md) on Docker, fol
 Download the compose file and the configuration file templates:
 
 ```sh
-curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid.yml
+curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid-stack.yml
 curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid.json
 curl -O https://cdn.lacunasoftware.com/grantid/docker/nginx.conf
 ```
