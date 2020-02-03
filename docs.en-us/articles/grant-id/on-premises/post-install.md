@@ -22,7 +22,7 @@ Once signed in, click on **Start Now**
 On the subscription creation form, enter:
 
 * **Name**: preferred name of your organization, e.g. *Patorum*
-* **Identifier**: leftmost part of the [login domain](index.md#planning). For instance, `login` on **login*.*id.patorum.com*
+* **Identifier**: leftmost part of the [login domain](index.md#planning). For instance, `login` on **login**.*id.patorum.com*
 * **Username**: choose the information that be used as identifier of your users (usually email or CPF)
 
 Click on **Create Subscription**.
