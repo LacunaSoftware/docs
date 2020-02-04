@@ -30,26 +30,29 @@ Edite o arquivo de configuração para configurar sua instância do Amplia:
 
 [!include[Database config](../../includes/database-config.md)]
 
-### Logging
+<a name="encryption-key-generation" />
 
-Na seção **Serilog**, configure o log da applicação:
+### Configurações gerais
 
-[!include[Log configuration](../../../../../../includes/amplia/linux/log-config.md)]
-
-Se preferir, mude a configuração **path** para outra pasta.
-
-> [!NOTE]
-> Se você mudar o *path*, lembre-se de conceder permissões de escrita para o usuário do aplicativo (*amplia*) no diretório
-
-<a name="encryption-key-generation" /> <!-- This anchor actually belongs a bit farther below, placing it here is a workaround -->
-
-[!include[General config](../../includes/general-config.md)]
-
-Para gerar a *EncryptionKey*, execute o comando seguinte:
+Gere uma chave de 256 bits para cifrar chaves de AC [armazenadas em banco de dados](../key-stores/database.md):
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 
-[!include[Common config](../../includes/common-config.md)]
+[!include[General config](../../includes/general-config.md)]
+
+[!include[Bindings config](../../includes/bindings-config.md)]
+
+[!include[Amplia config](../../includes/amplia-config.md)]
+
+[!include[PKI Suite config](../../includes/pki-config.md)]
+
+[!include[Email config](../../includes/email-config.md)]
+
+[!include[OIDC config](../../includes/oidc-config.md)]
+
+[!include[SMS config](../../includes/sms-config.md)]
+
+[!include[Key store config](../../includes/key-store-config.md)]
 
 ## Configurar um *daemon*
 

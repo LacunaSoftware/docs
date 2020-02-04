@@ -28,26 +28,29 @@ Edit the configuration file to configure your Amplia instance:
 
 [!include[Database config](../../includes/database-config.md)]
 
-### Logging
+<a name="encryption-key-generation" />
 
-Under section **Serilog**, configure the application logging:
+### General settings
 
-[!include[Log configuration](../../../../../../includes/amplia/linux/log-config.md)]
-
-If desired, change the **path** setting to the log file path.
-
-> [!NOTE]
-> If you change the default log file path, remember to grant write permissions to the application user (*amplia*) to the directory
-
-<a name="encryption-key-generation" /> <!-- This anchor actually belongs a bit farther below, placing it here is a workaround -->
-
-[!include[General config](../../includes/general-config.md)]
-
-To generate the *EncryptionKey*, run the following command:
+Generate a 256-bit key to encrypt CA keys [stored on the database](../key-stores/database.md):
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 
-[!include[Common config](../../includes/common-config.md)]
+[!include[General config](../../includes/general-config.md)]
+
+[!include[Bindings config](../../includes/bindings-config.md)]
+
+[!include[Amplia config](../../includes/amplia-config.md)]
+
+[!include[PKI Suite config](../../includes/pki-config.md)]
+
+[!include[Email config](../../includes/email-config.md)]
+
+[!include[OIDC config](../../includes/oidc-config.md)]
+
+[!include[SMS config](../../includes/sms-config.md)]
+
+[!include[Key store config](../../includes/key-store-config.md)]
 
 ## Set up a daemon
 
