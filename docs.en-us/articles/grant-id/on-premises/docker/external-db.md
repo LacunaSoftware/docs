@@ -74,3 +74,4 @@ Add the **ConnectionStrings** section to the file, with a single item named `Def
 * [Installing GrantID on Docker](index.md)
 * [Enabling SSL on Docker](enable-ssl.md)
 * [Checking the system logs on Docker](check-logs.md)
+* [Persistent data (backup considerations)](persistent-data.md)
