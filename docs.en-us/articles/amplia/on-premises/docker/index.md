@@ -29,9 +29,12 @@ Edit the Amplia configuration file:
 
 Fill the following settings outlined below.
 
-<!-- The "general-config" include file does not have a heading, so we must add it here -->
 ### General settings
-[!include[General config](../includes/general-config.md)]
+
+Under section **General**:
+
+* **SiteUrl**: publicly accessible URL of the website (e.g.: `http://ca.patorum.com/`). This address is used to compose emails with links back to the website.
+* **SupportEmailAddress**: the support email address (used on the footer of outgoing emails)
 
 [!include[Bindings config](../includes/bindings-config.md)]
 
