@@ -5,13 +5,9 @@ To run an [on-premises](../index.md) instance of [Amplia](../../index.md) on Doc
 > [!TIP]
 > Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning)
 
-Download the compose file and the environment file template:
+Download the compose file and the configuration file templates:
 
-```sh
-curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml
-curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia.json
-curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia-proxy.conf
-```
+[!include[Download files](../../../../../includes/amplia/docker/download.md)]
 
 Generate the SQL password and store as a Docker secret:
 
