@@ -1,6 +1,6 @@
 ﻿# Amplia on Docker - Using a stack with GrantID
 
-The [standard Amplia stack](https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml) depends on an external [GrantID](../../../index.md) service,
+The [standard Amplia stack](https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml) depends on an external [GrantID](../../../grant-id/index.md) service,
 which provides OpenID Connect services for user login and registration.
 
 If you wish to run GrantID internally on the same stack as Amplia, instead of the standard *amplia-stack.yml* file use the file
