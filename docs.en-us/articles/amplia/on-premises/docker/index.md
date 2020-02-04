@@ -31,23 +31,23 @@ Fill the following settings outlined below.
 
 <!-- The "general-config" include file does not have a heading, so we must add it here -->
 ### General settings
-[!include[General config](../../includes/general-config.md)]
+[!include[General config](../includes/general-config.md)]
 
-[!include[Bindings config](../../includes/bindings-config.md)]
+[!include[Bindings config](../includes/bindings-config.md)]
 
 > [!NOTE]
 > Even if you have an SSL certificate, use URLs with `http://` and leave **HttpsMode** commented for now. Once you get Amplia
 > up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
-[!include[Amplia config](../../includes/amplia-config.md)]
+[!include[Amplia config](../includes/amplia-config.md)]
 
-[!include[PKI Suite config](../../includes/pki-config.md)]
+[!include[PKI Suite config](../includes/pki-config.md)]
 
-[!include[Email config](../../includes/email-config.md)]
+[!include[Email config](../includes/email-config.md)]
 
-[!include[OIDC config](../../includes/oidc-config.md)]
+[!include[OIDC config](../includes/oidc-config.md)]
 
-[!include[SMS config](../../includes/sms-config.md)]
+[!include[SMS config](../includes/sms-config.md)]
 
 Edit the Nginx configuration file:
 
