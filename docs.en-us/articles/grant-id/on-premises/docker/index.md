@@ -110,3 +110,4 @@ Follow the steps on [GrantID post-installation](../post-install.md) to complete 
 
 * [Enabling SSL on Docker](enable-ssl.md)
 * [Using an external database on Docker](external-db.md)
+* [Checking the system logs on Docker](check-logs.md)
