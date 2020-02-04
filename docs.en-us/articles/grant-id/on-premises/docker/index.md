@@ -10,7 +10,7 @@ Download the compose file and the configuration file templates:
 ```sh
 curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid-stack.yml
 curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid.json
-curl -O https://cdn.lacunasoftware.com/grantid/docker/nginx.conf
+curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid-proxy.conf
 ```
 
 Generate the SQL password and store as a Docker secret:
@@ -70,7 +70,7 @@ Make the following changes to the file:
 
 Deploy the GrantID stack:
 
-[!include[Generate temp token key](../../../../../includes/grant-id/docker/deploy.md)]
+[!include[Deploy stack](../../../../../includes/grant-id/docker/deploy.md)]
 
 Check the logs for the *grantid* service:
 

@@ -1,80 +1,80 @@
 ﻿# Amplia - Setup on Docker
 
-> [!WARNING]
-> This article is a draft, Docker support on Amplia will be added on the upcoming version 3.0
+To run an [on-premises](../index.md) instance of [Amplia](../../index.md) on Docker, follow the steps below.
 
-To run [Amplia](../../index.md) on Docker, follow the steps below.
+> [!TIP]
+> Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning)
 
 Download the compose file and the environment file template:
 
 ```sh
-curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia-mssql.yml
-curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia.env
+curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml
+curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia.json
+curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia-proxy.conf
 ```
 
-Generate the encryption key and SQL password and store as Docker secrets:
+Generate the SQL password and store as a Docker secret:
 
-```sh
-openssl rand -hex 32 | docker secret create amplia_encryption_key -
-openssl rand -base64 24 | docker secret create amplia_sql_password -
-```
+[!include[Generate SQL password](../../../../../includes/amplia/docker/gen-sql-password.md)]
 
 > [!NOTE]
 > You can instead run `echo 'mypass' | docker secret create amplia_sql_password -` to use a SQL password of your choice
 
-Edit the environment file:
+Generate the encryption key and store as a Docker secret:
 
-```sh
-nano amplia.env
-```
+[!include[Generate encryption key](../../../../../includes/amplia/docker/gen-encryption-key.md)]
 
-Fill the settings accordingly. <!-- TODO: expand this section -->
+> [!NOTE]
+> If migrating from a previous installation, make sure to use the previosly generated encryption key
 
-Deploy the stack:
+Edit the Amplia configuration file:
 
-```sh
-docker stack deploy -c amplia-mssql.yml amplia
-```
+[!include[Edit Amplia config](../../../../../includes/amplia/docker/edit-amplia-config.md)]
 
-Check that the *amplia_app* service is up and running:
+Fill the following settings:
 
-```sh
-docker service logs amplia_app
-```
+* TODO
 
-## Persistent data (backup considerations)
+> [!NOTE]
+> Even if you have an SSL certificate, use URLs with `http://` and leave **UseSSL** as `false` for now. Once you get GrantID
+> up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
-The stack uses two volumes: **sql** and **files** (which will probably be mapped by the container orchestrator to the
-automatically created volumes **amplia_sql** and **amplia_files**). Feel free to alter these volumes according to your
-infrastructure, for instance mapping them to folders on the host.
+Edit the Nginx configuration file:
 
-The stack also uses two external secrets generated manually during the setup: **amplia_encryption_key** and **amplia_sql_password**.
+[!include[Edit Nginx config](../../../../../includes/amplia/docker/edit-nginx-config.md)]
 
-These volumes and secrets contain all data needed to recreate the Amplia stack.
+Replace the `server_name` entry with your [dashboard domain](../index.md#dashboard-domain).
 
-> [!WARNING]
-> On a production environment, make sure you take the necessary steps to backup these resources!
+Deploy the Amplia stack:
 
-## External database
+[!include[Deploy stack](../../../../../includes/amplia/docker/deploy.md)]
 
-The compose file *amplia-mssql.yml* includes a service for the database (Microsoft SQL Server Express edition).
-If you prefer to run the database out of the stack, use the compose file *amplia-extdb.yml* instead:
+Check the logs for the *amplia* service:
 
-```sh
-curl -O https://cdn.lacunasoftware.com/amplia/docker/amplia-extdb.yml
-```
+[!include[Check logs](../../../../../includes/amplia/docker/check-logs-amplia.md)]
 
-In this case, you must provide the connection string on the file *amplia.env*:
+The expected output is similar to:
 
-```
-# Amplia service configuration
+[!include[Expected output](../../../../../includes/amplia/docker/check-logs-amplia-output.md)]
 
-# Uncomment and fill the line below if you are using an external database
-ConnectionStrings__DefaultConnection=Data Source=SERVER;Initial Catalog=DATABASE;User ID=USER;Password=PASSWORD
-```
+> [!NOTE]
+> During first the run of the stack you might see the error *A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible.*
+> This is because the SQL Server service takes some time to become ready. The stack usually recovers from this automatically.
 
-Remember to deploy using the alternative compose file:
+Test the dashboard (replace *ca.patorum.com* with your [dashboard domain](../index.md#dashboard-domain)):
 
-```sh
-docker stack deploy -c amplia-extdb.yml amplia
-```
+[!include[Test dashboard](../../../../../includes/amplia/docker/test-dashboard.md)]
+
+The expected output is similar to:
+
+[!include[Test dashboard](../../../../../includes/amplia/linux/test-service-output.md)]
+
+If you have a valid SSL certificate for your [dashboard domain](../index.md#dashboard-domain), follow the steps on [Enabling SSL on Docker](enable-ssl.md).
+
+## See also
+
+* [Enabling SSL on Docker](enable-ssl.md)
+* [Using an external database on Docker](external-db.md)
+* [Checking the system logs on Docker](check-logs.md)
+* [Persistent data (backup considerations)](persistent-data.md)
+* [Using a stack with GrantID](internal-grantid.md)

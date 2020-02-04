@@ -1,3 +1,3 @@
 ﻿```sh
-nano nginx.conf
+nano grantid-proxy.conf
 ```
