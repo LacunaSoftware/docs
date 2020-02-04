@@ -30,10 +30,10 @@ Edit the GrantID configuration file:
 
 Make the following changes:
 
-* Section **Application**
-  * **AuthServerUrl**: change the protocol of the URL to `https`, e.g. *https://id.patorum.com*
-  * **ConsoleUrl**: change the protocol of the URL to `https`, e.g. *https://console.id.patorum.com*
-  * **UseSSL**: change to `true`
+* Section **Bindings**
+  * **HttpsMode**: change to `RedirectPages` to redirect to HTTPS users accessing the dashboard on HTTP
+* Section **General**
+  * **SiteUrl**: change the protocol of the URL to `https`, e.g. *https://ca.patorum.com*
 
 Deploy the stack with the new configurations:
 

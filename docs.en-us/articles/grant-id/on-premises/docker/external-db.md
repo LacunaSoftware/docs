@@ -25,6 +25,7 @@ Make the following changes:
       * **SQL_PORT** (optional): port of the database server (if omitted port 1433 is assumed)
       * **SQL_DATABASE**: name of the database to use
       * **SQL_USER**: username to authenticate on the database server
+	* Remove section **depends_on**
 
 The password should be added as the secret *grantid_sql_password*:
 
@@ -57,7 +58,8 @@ Make the following changes:
   * Remove entire service **sql**
   * Service **grantid**
     * On section **secrets**, remove item **grantid_sql_password**
-    * On section **environment**, remove item **SQL_PASS_FILE**
+    * On section **environment**, remove all items starting with **SQL_**
+	* Remove section **depends_on**
 
 Edit the GrantID configuration file:
 

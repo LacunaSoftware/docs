@@ -25,6 +25,7 @@ Make the following changes:
       * **SQL_PORT** (optional): port of the database server (if omitted port 1433 is assumed)
       * **SQL_DATABASE**: name of the database to use
       * **SQL_USER**: username to authenticate on the database server
+	* Remove section **depends_on**
 
 The password should be added as the secret *amplia_sql_password*:
 
@@ -57,7 +58,8 @@ Make the following changes:
   * Remove entire service **sql**
   * Service **amplia**
     * On section **secrets**, remove item **amplia_sql_password**
-    * On section **environment**, remove item **SQL_PASS_FILE**
+    * On section **environment**, remove all items starting with **SQL_**
+	* Remove section **depends_on**
 
 Edit the Amplia configuration file:
 
@@ -69,7 +71,7 @@ Add the **ConnectionStrings** section to the file, with a single item named `Def
 
 ## See also
 
-* [Installing GrantID on Docker](index.md)
+* [Installing Amplia on Docker](index.md)
 * [Enabling SSL on Docker](enable-ssl.md)
 * [Checking the system logs on Docker](check-logs.md)
 * [Persistent data (backup considerations)](persistent-data.md)

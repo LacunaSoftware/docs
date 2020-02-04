@@ -19,7 +19,7 @@ The stack also uses two secrets, generated manually during the setup:
 These **two volumes and two secrets** contain all data needed to recreate the Amplia stack. No additional data is persisted inside the
 containers, and the stack may be recreated freely at any time.
 
-> [!WARNING]
+> [!CAUTION]
 > On a production environment, make sure you take the necessary steps to backup these resources!
 
 ## See also
