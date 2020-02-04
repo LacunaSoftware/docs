@@ -34,7 +34,7 @@ Edite o arquivo de configuração para configurar sua instância do Amplia:
 
 ### Configurações gerais
 
-Gere uma chave de 256 bits para cifrar chaves de AC [armazenadas em banco de dados](../key-stores/database.md):
+Gere uma chave de 256 bits para cifrar chaves de AC [armazenadas em banco de dados](../../key-stores/database.md):
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 

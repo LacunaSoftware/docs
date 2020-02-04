@@ -32,7 +32,7 @@ Edit the configuration file to configure your Amplia instance:
 
 ### General settings
 
-Generate a 256-bit key to encrypt CA keys [stored on the database](../key-stores/database.md):
+Generate a 256-bit key to encrypt CA keys [stored on the database](../../key-stores/database.md):
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 
