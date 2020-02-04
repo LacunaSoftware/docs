@@ -4,7 +4,7 @@ The [standard Amplia stack](https://cdn.lacunasoftware.com/amplia/docker/amplia-
 which provides OpenID Connect services for user login and registration.
 
 If you wish to run GrantID internally on the same stack as Amplia, instead of the standard *amplia-stack.yml* file use the file
-[https://cdn.lacunasoftware.com/amplia/docker/amplia-grantid-stack.yml]
+[amplia-grantid-stack.yml](https://cdn.lacunasoftware.com/amplia/docker/amplia-grantid-stack.yml)
 
 Download the compose file and the configuration file templates:
 
