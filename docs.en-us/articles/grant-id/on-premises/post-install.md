@@ -33,7 +33,7 @@ To test the procedure, open the following URL (replace *login.id.patorum.com* wi
 https://login.id.patorum.com/.well-known/openid-configuration
 ```
 
-The output should be similar to the following, but with your [login domain](index.md#planning):
+The output should be similar to the following, but with your [login domain](index.md#planning) (actual output is unformatted):
 
 ```json
 { 

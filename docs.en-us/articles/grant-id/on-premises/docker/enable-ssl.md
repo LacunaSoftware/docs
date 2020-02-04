@@ -43,3 +43,4 @@ Deploy the stack with the new configurations:
 
 * [Installing GrantID on Docker](index.md)
 * [Using an external database on Docker](external-db.md)
+* [Checking the system logs on Docker](check-logs.md)

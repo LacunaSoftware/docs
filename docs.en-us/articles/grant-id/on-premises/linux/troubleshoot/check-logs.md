@@ -1,34 +1,33 @@
 ﻿# Grant ID - Checking the system logs (Linux)
 
-The standard location of the system logs is */var/log/grantid*:
+When installed on Linux, [GrantID](../../../index.md) sends its logs to the systemd journal, a centralized management solution for logging
+all kernel and userland processes. To view the logs, use the `journalctl` utility.
 
-* Identity service: */var/log/grantid/identity-service.log*
-* Auth server: */var/log/grantid/auth-server.log*
-* Console: */var/log/grantid/console.log*
+To check the Identity Service logs:
 
-To follow the log continuously, you can use:
+[!include[Check Identity Service logs](../../../../../../includes/grant-id/linux/check-logs-identity-service.md)]
 
-```sh
-tail -f /var/log/grantid/COMPONENT.log
-```
+To check the Auth Server logs:
 
-If Grant ID is not logging to that file, you might have set a different logging path during setup. To check which file is being used,
-check the file */etc/grantid/COMPONENT.json*. Locate the section `Serilog`, subsection `WriteTo`.
+[!include[Check Auth Server logs](../../../../../../includes/grant-id/linux/check-logs-auth-server.md)]
 
-Example:
-```json
-"Serilog": {
-	"WriteTo": [
-		{
-			"Name": "File",
-			"Args": {
-				"path": "/some-custom-path/some-custom-filename.log",
-			}
-		}
-	],
-},
-```
+To check the Console logs:
 
-> [!NOTE]
-> Some errors, usually those that occur during system startup, may not be logged in the system log file.
-> To diagnose such errors, see [Troubleshooting startup errors](startup-errors.md).
+[!include[Check Console logs](../../../../../../includes/grant-id/linux/check-logs-console.md)]
+
+## Useful parameters
+
+The `journalctl` command has many parameters that can help you to find the information you seek on the logs.
+
+Use the `-f` flag to view logs in "follow" mode (like `tail -f`):
+
+[!include[Check log in follow mode](../../../../../../includes/grant-id/linux/check-logs-identity-service-follow.md)]
+
+Use the `--since` parameter to view only recent logs:
+
+[!include[Check recent logs](../../../../../../includes/grant-id/linux/check-logs-identity-service-since.md)]
+
+## See also
+
+* [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) (DigitalOcean post)
+* [Troubleshooting issues on your Grant ID instance (Linux)](index.md)
