@@ -30,7 +30,10 @@ Edit the Amplia configuration file:
 
 Make the following changes:
 
-* TODO
+* Section **Bindings**
+  * **HttpsMode**: change to `RedirectPages` to redirect to HTTPS users accessing the dashboard on HTTP
+* Section **General**
+  * **SiteUrl**: change the protocol of the URL to `https`, e.g. *https://ca.patorum.com*
 
 Deploy the stack with the new configurations:
 
