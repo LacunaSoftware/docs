@@ -29,16 +29,16 @@ Edit the Amplia configuration file:
 
 Fill the following settings outlined below.
 
-### General / Bindings
+### Bindings / General
+
+Under section **Bindings**:
+
+* **HttpsMode**: leave commented for now
 
 Under section **General**:
 
 * **SiteUrl**: publicly accessible URL of the website, hosted on the [dashboard domain](../index.md#dashboard-domain) (e.g.: `http://ca.patorum.com/`)
 * **SupportEmailAddress**: the support email address (used on the footer of outgoing emails)
-
-Under section **Bindings**:
-
-* **HttpsMode**: leave commented for now
 
 > [!NOTE]
 > Even if you have an SSL certificate, use the **SiteUrl** configuration with `http://` and leave **HttpsMode** commented for now. Once you get Amplia
