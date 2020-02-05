@@ -29,20 +29,21 @@ Edit the Amplia configuration file:
 
 Fill the following settings outlined below.
 
-### General settings
+### General / Bindings
 
 Under section **General**:
 
-* **SiteUrl**: publicly accessible URL of the website (e.g.: `http://ca.patorum.com/`). This address is used to compose emails with links back to the website.
+* **SiteUrl**: publicly accessible URL of the website, hosted on the [dashboard domain](../index.md#dashboard-domain) (e.g.: `http://ca.patorum.com/`)
 * **SupportEmailAddress**: the support email address (used on the footer of outgoing emails)
 
-[!include[Bindings config](../includes/bindings-config.md)]
+Under section **Bindings**:
+
+* **HttpsMode**: leave commented for now
 
 > [!NOTE]
-> Even if you have an SSL certificate, use URLs with `http://` and leave **HttpsMode** commented for now. Once you get Amplia
+> Even if you have an SSL certificate, use the **SiteUrl** configuration with `http://` and leave **HttpsMode** commented for now. Once you get Amplia
 > up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
-<!-- [!include[Amplia config](../includes/amplia-config.md)] -->
 ### Amplia settings
 
 Under section **Amplia**:
