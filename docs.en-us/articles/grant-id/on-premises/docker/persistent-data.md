@@ -1,4 +1,4 @@
-﻿## GrantID on Docker - Persistent data (backup considerations)
+﻿# GrantID on Docker - Persistent data (backup considerations)
 
 The [standard Docker compose file for GrantID](https://cdn.lacunasoftware.com/grantid/docker/grantid-stack.yml) uses two volumes:
 

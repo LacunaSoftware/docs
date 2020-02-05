@@ -1,4 +1,4 @@
-﻿## Amplia on Docker - Persistent data (backup considerations)
+﻿# Amplia on Docker - Persistent data (backup considerations)
 
 The [standard Docker compose file for Amplia](https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml) uses two volumes:
 
