@@ -68,6 +68,12 @@ Deploy the Amplia stack:
 
 [!include[Deploy stack](../../../../../includes/amplia/docker/deploy.md)]
 
+Check the status of the deployment:
+
+[!include[Check deployment status](../../../../../includes/amplia/docker/check-deploy.md)]
+
+Check the column *CURRENT STATE*. Keep checking the status until all services are *Running* (this may take a few minutes for the *amplia_sql* service).
+
 Check the logs for the *amplia* service:
 
 [!include[Check logs](../../../../../includes/amplia/docker/check-logs-amplia.md)]
