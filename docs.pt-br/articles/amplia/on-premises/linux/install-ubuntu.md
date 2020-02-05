@@ -1,8 +1,8 @@
 ﻿# Instalação do Amplia em Ubuntu Server
 
-<!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
+Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../index.md) em Ubuntu Server, siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
 
-Antes de começar, leia a seção [Planejamento antes da instalação](../index.md#planning).
+[!include[Veja o planejamento](../includes/see-planning.md)]
 
 ## Pré-requisitos
 

@@ -1,8 +1,8 @@
 ﻿# Installing Amplia on Ubuntu Server
 
-<!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
+To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on Ubuntu Server, follow the steps below. For other platforms, [click here](../index.md).
 
-Before you start, make sure you have read the section [Planning before installation](../index.md#planning).
+[!include[See planning](../includes/see-planning.md)]
 
 ## Prerequisites
 

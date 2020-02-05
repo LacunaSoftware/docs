@@ -1,9 +1,8 @@
 ﻿# Amplia - Setup on Docker
 
-To run an [on-premises](../index.md) instance of [Amplia](../../index.md) on Docker, follow the steps below.
+To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on Docker, follow the steps below. For other platforms, [click here](../index.md).
 
-> [!TIP]
-> Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning)
+[!include[See planning](../includes/see-planning.md)]
 
 Download the compose file and the configuration file templates:
 

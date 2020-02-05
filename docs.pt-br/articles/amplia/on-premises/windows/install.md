@@ -1,12 +1,8 @@
 ﻿# Instalação do Amplia em Windows Server
 
-> [!NOTE]
-> A documentação para este sistema está atualmente em construção. Nos desculpamos por qualquer inconveniência que pode causar. Por favor, entre em contato conosco se houver alguma informação
-que você precise que não esteja documentada no momento.
+Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../index.md) no Windows Server, siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
 
-Antes de começar, leia a seção [Planejamento antes da instalação](../index.md#planning).
-
-Para sua própria instalação do [Amplia](../../index.md) no Windows Server, siga os passos neste artigo. Para outras plataformas, [clique aqui](../index.md).
+[!include[Veja o planejamento](../includes/see-planning.md)]
 
 ## Pré-requisitos
 

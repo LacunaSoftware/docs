@@ -1,6 +1,8 @@
 ﻿# Instalação do Amplia em Red Hat Enterprise Linux
 
-Antes de começar, leia a seção [Planejamento antes da instalação](../index.md#planning).
+Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../index.md) em Red Hat Enterprise Linux, siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
+
+[!include[Veja o planejamento](../includes/see-planning.md)]
 
 ## Pré-requisitos
 

@@ -167,7 +167,7 @@
 ##### [Troubleshooting startup errors](amplia/on-premises/windows/troubleshoot/startup-errors.md)
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](amplia/on-premises/windows/troubleshoot/502-5.md)
 ### [Setup on Linux](amplia/on-premises/linux/index.md)
-#### [Install on Ubuntu](amplia/on-premises/linux/install-ubuntu.md)
+#### [Install on Ubuntu Server](amplia/on-premises/linux/install-ubuntu.md)
 #### [Install on Red Hat Enterprise](amplia/on-premises/linux/install-rhel.md)
 #### [Install on Oracle Linux](amplia/on-premises/linux/install-oracle.md)
 #### [Update](amplia/on-premises/linux/update.md)

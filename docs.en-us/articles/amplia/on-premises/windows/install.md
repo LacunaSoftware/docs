@@ -1,12 +1,8 @@
 ﻿# Installing Amplia on Windows Server
 
-> [!NOTE]
-> The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please
-> contact us if there's any information you need that is not currently documented.
+To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on Windows Server, follow the steps below. For other platforms, [click here](../index.md).
 
-Before you start, make sure you have read the section [Planning before installation](../index.md#planning).
-
-To install your own instance of [Amplia](../../index.md) on Windows Server, follow the steps on this article. For other platforms, [click here](../index.md).
+[!include[See planning](../includes/see-planning.md)]
 
 ## Prerequisites
 
