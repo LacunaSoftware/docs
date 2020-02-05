@@ -68,6 +68,12 @@ Deploy the GrantID stack:
 
 [!include[Deploy stack](../../../../../includes/grant-id/docker/deploy.md)]
 
+Check the status of the deployment:
+
+[!include[Check deployment status](../../../../../includes/grant-id/docker/check-deploy.md)]
+
+Check the column *CURRENT STATE*. Keep checking the status until all services are *Running* (this may take a few minutes for the *grantid_sql* service).
+
 Check the logs for the *grantid* service:
 
 [!include[Check grantid logs](../../../../../includes/grant-id/docker/check-logs-grantid.md)]
