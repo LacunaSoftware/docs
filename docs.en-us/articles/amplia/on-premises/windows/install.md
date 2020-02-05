@@ -8,8 +8,6 @@ Before you start, make sure you have read the section [Planning before installat
 
 To install your own instance of [Amplia](../../index.md) on Windows Server, follow the steps on this article. For other platforms, [click here](../index.md).
 
-[!include[Database operation mode](../includes/database-mode.md)]
-
 ## Prerequisites
 
 * Windows Server 2016 or newer (any edition)

@@ -2,8 +2,6 @@
 
 Antes de começar, leia a seção [Planejamento antes da instalação](../index.md#planning).
 
-[!include[Database operation mode](../includes/database-mode.md)]
-
 ## Pré-requisitos
 
 > [!NOTE]

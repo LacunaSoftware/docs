@@ -8,8 +8,6 @@ Antes de começar, leia a seção [Planejamento antes da instalação](../index.
 
 Para sua própria instalação do [Amplia](../../index.md) no Windows Server, siga os passos neste artigo. Para outras plataformas, [clique aqui](../index.md).
 
-[!include[Database operation mode](../includes/database-mode.md)]
-
 ## Pré-requisitos
 
 * Windows Server 2016 ou mais recente (qualquer edição)

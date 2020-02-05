@@ -9,9 +9,10 @@
 Você vai precisar também de uma *connection string* para o **banco de dados** previamente criado tendo:
 
 * Collation: `Latin1_General_100_CI_AI`
-* Credenciais para um usuário com as seguintes *roles*:
-    * Se a aplicação for operar como dona (*owner*) do banco de dados: `db_owner`
-    * Se a aplicação for operar tendo apenas permissões de leitura e escrita sobre o banco de dados: `db_datareader` and `db_datawriter`
+* Credenciais para um usuário com o papel `db_owner`
+
+> [!NOTE]
+> Se você preferir operar o Amplia sem conceder `db_owner` ao usuário da aplicação, siga as instruções [neste artigo](../unprivileged-db-user.md)
 
 > [!WARNING]
 > A *collation* do banco de dados **PRECISA SER** `Latin1_General_100_CI_AI`. Criar o banco de dados com uma *collation* diferente provavelmente fará com que a instalação falhe!

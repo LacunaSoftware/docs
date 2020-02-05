@@ -4,8 +4,6 @@
 
 Before you start, make sure you have read the section [Planning before installation](../index.md#planning).
 
-[!include[Database operation mode](../includes/database-mode.md)]
-
 ## Prerequisites
 
 * Oracle Linux 7.x

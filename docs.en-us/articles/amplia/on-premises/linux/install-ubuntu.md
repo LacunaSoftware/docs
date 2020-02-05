@@ -4,8 +4,6 @@
 
 Before you start, make sure you have read the section [Planning before installation](../index.md#planning).
 
-[!include[Database operation mode](../includes/database-mode.md)]
-
 ## Prerequisites
 
 * Ubuntu x64 version 16.04, 18.04 or 19.04
