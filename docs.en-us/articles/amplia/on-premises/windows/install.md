@@ -75,6 +75,16 @@ $k = New-Object byte[] 32;
 [Convert]::ToBase64String($k);
 ```
 
+<!--
+$p = Read-Host -AsSecureString
+$c = New-SelfSignedCertificate `
+	-Subject "CN=Amplia Encryption Certificate,O=Contoso Inc" `
+	-CertStoreLocation "Cert:\CurrentUser\My"
+Export-PfxCertificate $c -FilePath amplia-encryption.pfx -Password $p
+$c|rm
+Import-PfxCertificate amplia-encryption.pfx -Password $p -CertStoreLocation "cert:\CurrentUser\My"
+-->
+
 [!include[Common config](../includes/common-config.md)]
 
 ## Starting up application
