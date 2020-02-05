@@ -196,6 +196,7 @@
 #### [CNG](amplia/on-premises/key-stores/cng.md)
 #### [Azure Key Vault](amplia/on-premises/key-stores/azure.md)
 ### [Preparing the database](amplia/on-premises/prepare-database.md)
+### [Run without db_owner](amplia/on-premises/unprivileged-db-user.md)
 ### [Database model update](amplia/on-premises/database-update.md)
 ### [Checking the installed version](amplia/on-premises/check-version.md)
 ## [Changelog](amplia/changelog.md)

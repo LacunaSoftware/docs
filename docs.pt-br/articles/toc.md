@@ -196,6 +196,7 @@
 #### [CNG](amplia/on-premises/key-stores/cng.md)
 #### [Azure Key Vault](amplia/on-premises/key-stores/azure.md)
 ### [Preparando o banco de dados](amplia/on-premises/prepare-database.md)
+### [Operando sem db_owner](amplia/on-premises/unprivileged-db-user.md)
 ### [Atualização do banco de dados](amplia/on-premises/database-update.md)
 ### [Verificando a versão instalada](amplia/on-premises/check-version.md)
 ## [Histórico de versões](amplia/changelog.md)
