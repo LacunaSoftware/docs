@@ -6,7 +6,7 @@ In order to install a [on-premises installation](index.md) of [Amplia](../index.
 * Credentials corresponding to a user with `db_owner` role
 
 > [!NOTE]
-> If you prefer to run Amplia without granting `db_owner` to the application user, see [this article](../unprivileged-db-user.md)
+> If you prefer to run Amplia without granting `db_owner` to the application user, see [this article](unprivileged-db-user.md)
 
 > [!WARNING]
 > The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!

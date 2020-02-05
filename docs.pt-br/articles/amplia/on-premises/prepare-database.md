@@ -6,7 +6,7 @@ Para instalar uma [instância *on premises*](index.md) do [Amplia](../index.md),
 * Credenciais correspondentes a um usuário com papel `db_owner`
 
 > [!NOTE]
-> Se você preferir operar o Amplia sem conceder `db_owner` ao usuário da aplicação, siga as instruções [neste artigo](../unprivileged-db-user.md)
+> Se você preferir operar o Amplia sem conceder `db_owner` ao usuário da aplicação, siga as instruções [neste artigo](unprivileged-db-user.md)
 
 > [!WARNING]
 > A *collation* do banco de dados **PRECISA SER** `Latin1_General_100_CI_AI`. Criar o banco de dados com uma *collation* diferente provavelmente fará com que a instalação falhe!
