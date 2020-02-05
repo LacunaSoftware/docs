@@ -62,7 +62,8 @@ Edit the Nginx configuration file:
 
 [!include[Edit Nginx config](../../../../../includes/amplia/docker/edit-nginx-config.md)]
 
-Replace the `server_name` entry with your [dashboard domain](../index.md#dashboard-domain).
+Replace the `server_name` entry with your [dashboard domain](../index.md#dashboard-domain)
+and [access domains](../index.md#access-domains).
 
 Deploy the Amplia stack:
 
