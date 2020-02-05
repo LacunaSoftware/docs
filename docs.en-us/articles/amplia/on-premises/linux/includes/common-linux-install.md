@@ -2,10 +2,6 @@
 
 [!include[Create user](../../../../../../includes/amplia/linux/create-user.md)]
 
-Create a directory to hold the application logs:
-
-[!include[Create log directory](../../../../../../includes/amplia/linux/create-log-dir.md)]
-
 Create the site folder, download and extract the binaries:
 
 [!include[Copy files](../../../../../../includes/amplia/linux/copy-files.md)]

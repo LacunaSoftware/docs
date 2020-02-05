@@ -173,7 +173,6 @@
 #### [Atualização](amplia/on-premises/linux/update.md)
 #### [Resolução de problemas](amplia/on-premises/linux/troubleshoot/index.md)
 ##### [Verificando os logs](amplia/on-premises/linux/troubleshoot/check-logs.md)
-##### [Diagnosticando problemas na inicialização](amplia/on-premises/linux/troubleshoot/startup-errors.md)
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](amplia/on-premises/linux/troubleshoot/502-5.md)
 ### [Setup em Azure App Services](amplia/on-premises/azure/index.md)
 #### [Instalação](amplia/on-premises/azure/install.md)

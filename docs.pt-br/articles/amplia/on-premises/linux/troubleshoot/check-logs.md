@@ -1,31 +1,25 @@
 ﻿# Verificando os logs de sistema (Linux)
 
-Por padrão, os logs de sistema ficam localizados no arquivo `/var/log/amplia.log`.
+Quanto instalado em Linux, o [Amplia](../../../index.md) escreve seus logs no *systemd journal*, uma solução para gerenciamento de logs centralizada do Linux. Para
+visualizar os logs, utiliza-se o utilitário `journalctl`.
 
-Para acompanhar o log de maneira contínua, você pode usar:
+Para verificar os logs do Amplia:
 
-```sh
-tail -f /var/log/amplia.log
-```
+[!include[Check logs](../../../../../../includes/amplia/linux/check-logs.md)]
 
-Caso o Amplia não esteja escrevendo os logs nesse arquivo, talvez você tenha configurado um diretório personalizado para logs durante a instalação.
-Para conferir qual arquivo está sendo utilizado, verifique o arquivo `/etc/amplia/appsettings.linux.json`. Localize a seção `Serilog`, subseção `WriteTo`.
+## Parâmetros úteis
 
-Exemplo:
-```json
-"Serilog": {
-	"WriteTo": [
-		{
-			"Name": "File",
-			"Args": {
-				"path": "/some-custom-path/amplia.log",
-			}
-		}
-	],
-},
-```
+O comando `journalctl` possui diversos parâmetros que podem ajudar a encontrar informações úteis nos logs.
 
-> [!NOTE]
-> Alguns erros, geralmente os que ocorrem durante a inicialização do sistema, podem não ser registrados no arquivo de log do sistema.
-> Para diagnosticar tais erros, veja [Diagnosticando problemas na inicialização](startup-errors.md).
+Utilize a flag `-f` para acompanhar o log de maneira contínua (como o comando `tail -f`):
 
+[!include[Check log in follow mode](../../../../../../includes/grant-id/linux/check-logs-follow.md)]
+
+Utilize o parâmetro `--since` para visualizar apenas os logs mais recentes:
+
+[!include[Check recent logs](../../../../../../includes/grant-id/linux/check-logs-since.md)]
+
+## Veja também
+
+* [*How To Use Journalctl to View and Manipulate Systemd Logs*](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) (artigo da DigitalOcean)
+* [Resolução de problemas em Linux](index.md)

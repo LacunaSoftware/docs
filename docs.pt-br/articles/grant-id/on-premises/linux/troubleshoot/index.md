@@ -10,4 +10,3 @@ Problemas comuns:
 ## Veja também
 
 * [Verificando os logs de sistema](check-logs.md)
-* [Diagnosticando problemas na inicialização](startup-errors.md)

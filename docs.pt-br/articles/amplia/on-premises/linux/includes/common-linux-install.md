@@ -2,10 +2,6 @@
 
 [!include[Create user](../../../../../../includes/amplia/linux/create-user.md)]
 
-Crie uma pasta para armazenar os logs da aplicação:
-
-[!include[Create log directory](../../../../../../includes/amplia/linux/create-log-dir.md)]
-
 Crie a pasta do site, baixe e extraia os binários:
 
 [!include[Copy files](../../../../../../includes/amplia/linux/copy-files.md)]
