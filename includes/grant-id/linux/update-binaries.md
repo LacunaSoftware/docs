@@ -1,5 +1,5 @@
 ﻿```sh
 rm -fR /usr/share/grantid/*
-cp components/* /usr/share/grantid/
+cp -r components/* /usr/share/grantid/
 chmod -R a=,u+rwX,go+rX /usr/share/grantid
 ```
