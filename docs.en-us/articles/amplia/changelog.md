@@ -1,5 +1,20 @@
 ﻿# Amplia changelog
 
+<a name="v3-0-0" />
+### 3.0.0 (2019-02-05)
+
+* Dashboard entirely redesigned
+* Add support for performing operations on the dashboard that before had to be done via API:
+  * Certificate template management
+  * Creation of CAs that issue attribute certificates
+* Add support for Docker
+* Improve end-user PK certificate profile, adding extension AuthorityKeyIdentifier
+
+Updates database model: **yes**
+
+Configuration changes: see [Update Amplia from 2.16 to 3.0](update-30.md)
+
+
 <a name="v2-16-1" />
 ### 2.16.1 (2019-12-12)
 

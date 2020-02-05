@@ -1,5 +1,20 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-0-0" />
+### 3.0.0 (2019-02-05)
+
+* Dashboard completamente refatorado
+* Adicionado suporte à realização de operações no dashboard que antes só podiam ser feitas via API:
+  * Gerenciamento de templates de certificados
+  * Criação de ACs para emissão de certificados de atributo
+* Adicionado suporte a Docker
+* Melhoria ao formato dos certificados de chave pública de usuários finais, adicionando extensão *AuthorityKeyIdentifier*
+
+Atualiza modelo do banco de dados: **sim**
+
+Mudanças de configuração: veja [Atualizando o Amplia da versão 2.16 para 3.0](update-30.md)
+
+
 <a name="v2-16-1" />
 ### 2.16.1 (2019-12-12)
 

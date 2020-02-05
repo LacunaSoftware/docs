@@ -198,5 +198,6 @@
 ### [Run without db_owner](amplia/on-premises/unprivileged-db-user.md)
 ### [Database model update](amplia/on-premises/database-update.md)
 ### [Checking the installed version](amplia/on-premises/check-version.md)
+### [Update to 3.0](amplia/on-premises/update-30.md)
 ## [Changelog](amplia/changelog.md)
 <!-- End of Amplia -->
