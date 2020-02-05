@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-5-5" />
+### 2.5.5 (2019-12-18)
+
+- Add Access Identity and Authentication Info certificate attributes encoding
+- Update ICP-Brasil CAs local cache
+- Fix Unix systems CA certificate store loading
+
+
 <a name="v2-5-4" />
 ### 2.5.4 (2019-11-21)
 
