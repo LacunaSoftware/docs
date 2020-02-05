@@ -13,11 +13,11 @@ O comando `journalctl` possui diversos parâmetros que podem ajudar a encontrar 
 
 Utilize a flag `-f` para acompanhar o log de maneira contínua (como o comando `tail -f`):
 
-[!include[Check log in follow mode](../../../../../../includes/grant-id/linux/check-logs-follow.md)]
+[!include[Check log in follow mode](../../../../../../includes/amplia/linux/check-logs-follow.md)]
 
 Utilize o parâmetro `--since` para visualizar apenas os logs mais recentes:
 
-[!include[Check recent logs](../../../../../../includes/grant-id/linux/check-logs-since.md)]
+[!include[Check recent logs](../../../../../../includes/amplia/linux/check-logs-since.md)]
 
 ## Veja também
 

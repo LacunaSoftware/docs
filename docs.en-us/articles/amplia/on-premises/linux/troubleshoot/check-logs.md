@@ -13,11 +13,11 @@ The `journalctl` command has many parameters that can help you to find the infor
 
 Use the `-f` flag to view logs in "follow" mode (like `tail -f`):
 
-[!include[Check log in follow mode](../../../../../../includes/grant-id/linux/check-logs-follow.md)]
+[!include[Check log in follow mode](../../../../../../includes/amplia/linux/check-logs-follow.md)]
 
 Use the `--since` parameter to view only recent logs:
 
-[!include[Check recent logs](../../../../../../includes/grant-id/linux/check-logs-since.md)]
+[!include[Check recent logs](../../../../../../includes/amplia/linux/check-logs-since.md)]
 
 ## See also
 
