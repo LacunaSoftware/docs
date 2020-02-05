@@ -42,7 +42,12 @@ Under section **General**:
 > Even if you have an SSL certificate, use URLs with `http://` and leave **HttpsMode** commented for now. Once you get Amplia
 > up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
-[!include[Amplia config](../includes/amplia-config.md)]
+<!-- [!include[Amplia config](../includes/amplia-config.md)] -->
+### Amplia settings
+
+Under section **Amplia**:
+
+* **DefaultAccessDomains**: domains to be used when composing the CRL distribution points (see [Access domains](../index.md#access-domains))
 
 [!include[PKI Suite config](../includes/pki-config.md)]
 
