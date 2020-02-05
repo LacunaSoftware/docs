@@ -10,8 +10,10 @@ garante ao administrador maior controle sobre o banco de dados. Se você preferi
 
 ## Criando credenciais de leitura e escrita
 
-Ao invés de criar um usuário chamado *AmpliaAdm* e associá-lo ao papel `db_owner` conforme descrito no [artigo sobre preparação do banco de dados](prepare-database.md),
-crie um usuário limitado chamado **AmpliaApp** e associe-o apenas aos papeis `db_datareader` e `db_datawriter`:
+Crie o banco de dados normalmente conforme descrito na [preparação do banco de dados](prepare-database.md).
+
+Em seguida, ao invés de criar um usuário chamado *AmpliaAdm* e associá-lo ao papel `db_owner`, crie um usuário limitado chamado **AmpliaApp**
+e associe-o apenas aos papeis `db_datareader` e `db_datawriter`:
 
 ```sql
 USE master;
@@ -30,6 +32,10 @@ A *connection string* seria, então:
 ```
 Data Source=.;Initial Catalog=Amplia;User ID=AmpliaApp;Password=XXXXX
 ```
+
+> [!NOTE]
+> Essa *connection string* presume que o servidor do banco de dados esteja instalado no mesmo servidor que o aplicativo da web. Se este não for o caso,
+> o valor após `Data Source=` deve ser alterado.
 
 ## Desabilitando a atualização automática do banco de dados
 

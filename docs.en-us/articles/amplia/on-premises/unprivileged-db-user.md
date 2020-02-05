@@ -11,8 +11,9 @@ steps on this article.
 
 ## Create unprivileged credentials
 
-Instead of creating a *AmpliaAdm* user and granting it the `db_owner` role as specified on the [Preparing a database article](prepare-database.md), create
-a limited user **AmpliaApp** and grant it only the roles `db_datareader` and `db_datawriter`:
+Create the database normally as specified on the [Preparing a database article](prepare-database.md).
+
+Then, instead of creating the *AmpliaAdm* user and granting it the `db_owner` role, create a limited user **AmpliaApp** and grant it only the roles `db_datareader` and `db_datawriter`:
 
 ```sql
 USE master;
@@ -31,6 +32,10 @@ The connection string would then be:
 ```
 Data Source=.;Initial Catalog=Amplia;User ID=AmpliaApp;Password=XXXXX
 ```
+
+> [!NOTE]
+> This connection string assumes the database server is installed on the same server as the web app. If this is not true,
+> the value after `Data Source=` would have to be changed.
 
 ## Disable automatic database update
 

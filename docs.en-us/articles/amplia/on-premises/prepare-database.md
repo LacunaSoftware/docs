@@ -3,9 +3,10 @@
 In order to install a [on-premises installation](index.md) of [Amplia](../index.md), you will need a connection string for a **SQL Server database** having:
 
 * Collation: `Latin1_General_100_CI_AI`
-* Credentials corresponding to a user with the following database roles:
-  * If the application should be owner of the database: `db_owner`
-  * If the application should only have read and write permissions: `db_datareader` and `db_datawriter`
+* Credentials corresponding to a user with `db_owner` role
+
+> [!NOTE]
+> If you prefer to run Amplia without granting `db_owner` to the application user, see [this article](../unprivileged-db-user.md)
 
 > [!WARNING]
 > The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
@@ -28,20 +29,7 @@ GO
 
 ## Creating the credentials
 
-As mentioned above, Amplia can operate in two ways regarding the access to the database:
-
-1. Having owner privileges over the database and automatically updating the database model after an update (when needed)
-1. Having only read and write privileges over the database, requiring the database model to be updated by the administrator (using a command line tool)
-
-Follow one of the sections below according to the option you choose for the database operation mode.
-
-> [!NOTE]
-> The connection strings mentioned below assume the database server is installed on the same server as the web app. If this is not true,
-> the value after `Data Source=` would have to be changed.
-
-### Application having owner privileges
-
-To create a credential having owner privileges over the database (if you chose a different database name when creating the database, remember to change it accordingly):
+Create a user and grant it the `db_owner` role:
 
 ```sql
 USE master;
@@ -60,27 +48,9 @@ The connection string would then be:
 Data Source=.;Initial Catalog=Amplia;User ID=AmpliaAdm;Password=XXXXX
 ```
 
-### Application having read and write privileges only
-
-To create a credential having only read and write permissions over the database:
-
-```sql
-USE master;
-CREATE LOGIN AmpliaApp WITH PASSWORD = 'XXXXXX';
-GO
-
-USE Amplia;
-CREATE USER AmpliaApp FOR LOGIN AmpliaApp;
-EXEC sp_addrolemember 'db_datareader', 'AmpliaApp';
-EXEC sp_addrolemember 'db_datawriter', 'AmpliaApp';
-GO
-```
-
-The connection string would then be:
-
-```
-Data Source=.;Initial Catalog=Amplia;User ID=AmpliaApp;Password=XXXXX
-```
+> [!NOTE]
+> This connection string assumes the database server is installed on the same server as the web app. If this is not true,
+> the value after `Data Source=` would have to be changed.
 
 ## See also
 
