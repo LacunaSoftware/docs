@@ -12,7 +12,7 @@
 
 Updates database model: **yes**
 
-Configuration changes: see [Update Amplia from 2.16 to 3.0](update-30.md)
+Configuration changes: see [Update Amplia from 2.16 to 3.0](on-premises/update-30.md)
 
 
 <a name="v2-16-1" />

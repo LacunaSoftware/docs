@@ -1,6 +1,6 @@
 ﻿# Atualizando o Amplia da versão 2.16 para 3.0
 
-Para atualizar sua instância [*on premises*](index.md) do [Amplia](../index.md) da versão 2.16.x para a [versão 3.0](changelog.md#v3-0-0), algumas
+Para atualizar sua instância [*on premises*](index.md) do [Amplia](../index.md) da versão 2.16.x para a [versão 3.0](../changelog.md#v3-0-0), algumas
 alterações são necessárias.
 
 ## ASP.NET Core Environment

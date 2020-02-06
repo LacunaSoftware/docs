@@ -1,6 +1,6 @@
 ﻿# Update Amplia from 2.16 to 3.0
 
-To update your [on-premises](index.md) instance of [Amplia](../index.md) from version 2.16.x to [version 3.0](changelog.md#v3-0-0), a few
+To update your [on-premises](index.md) instance of [Amplia](../index.md) from version 2.16.x to [version 3.0](../changelog.md#v3-0-0), a few
 changes are required.
 
 ## ASP.NET Core Environment

@@ -12,7 +12,7 @@
 
 Atualiza modelo do banco de dados: **sim**
 
-Mudanças de configuração: veja [Atualizando o Amplia da versão 2.16 para 3.0](update-30.md)
+Mudanças de configuração: veja [Atualizando o Amplia da versão 2.16 para 3.0](on-premises/update-30.md)
 
 
 <a name="v2-16-1" />
