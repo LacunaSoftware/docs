@@ -8,6 +8,7 @@
   * Certificate template management
   * Creation of CAs that issue attribute certificates
 * Add support for Docker
+* Changed logging on Linux to write logs on the systemd journal ([click here for details](on-premises/linux/troubleshoot/check-logs.md))
 * Improve end-user PK certificate profile, adding extension AuthorityKeyIdentifier
 
 Updates database model: **yes**

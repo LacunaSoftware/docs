@@ -8,6 +8,7 @@
   * Gerenciamento de templates de certificados
   * Criação de ACs para emissão de certificados de atributo
 * Adicionado suporte a Docker
+* Alterado comportamento em Linux para logar para o *systemd journal* ([clique aqui para mais detalhes](on-premises/linux/troubleshoot/check-logs.md))
 * Melhoria ao formato dos certificados de chave pública de usuários finais, adicionando extensão *AuthorityKeyIdentifier*
 
 Atualiza modelo do banco de dados: **sim**
