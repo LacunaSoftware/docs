@@ -21,15 +21,15 @@ Em Azure App Services, vá na aba **Configuração** do seu app service e adicio
 ## Mudanças de configuração
 
 * Seção `Oidc`
-  * `DashboardClientId` =&gt; `ClientAppId`
+  * `DashboardClientId` → `ClientAppId`
   * Preencha as configurações `ApiEndpoint`, `AppId` e `AppSecret` (verifique com o suporte técnico os valores apropriados para a sua instância)
   * Altere a configuração da aplicação no GrantID, alterando a *allowed redirect URLs* de `https://your-amplia-domain/dashboard` para apenas `https://your-amplia-domain` i.e. remova o sufixo `/dashboard` (mantenha a *return URL* com final *silent-refresh.html*, ela ainda é necessária)
 * Na seção `PkiSuite`, se você possui alguma configuração `Mobile*` (por exemplo `MobileAppName`), crie uma seção chamada `MobileApp` e mova
   essas configurações para essa nova seção, renomeando-as conforme abaixo:
-  * `PkiSuite:MobileAppName` =&gt; `MobileApp:Name`
-  * `PkiSuite:MobileAppCodeSuffix` =&gt; `MobileApp:CodeSuffix`
-  * `PkiSuite:MobileIOSStoreUri` =&gt; `MobileApp:IOSStoreUri`
-  * `PkiSuite:MobileAndroidStoreUri` =&gt; `MobileApp:AndroidStoreUri`
+  * `PkiSuite:MobileAppName` → `MobileApp:Name`
+  * `PkiSuite:MobileAppCodeSuffix` → `MobileApp:CodeSuffix`
+  * `PkiSuite:MobileIOSStoreUri` → `MobileApp:IOSStoreUri`
+  * `PkiSuite:MobileAndroidStoreUri` → `MobileApp:AndroidStoreUri`
 
 Em Azure App Services:
 
