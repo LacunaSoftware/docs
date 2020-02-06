@@ -16,18 +16,18 @@ curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid.json
 curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid-proxy.conf
 ```
 
-Then, follow setup instructions for both [Amplia](index.md) and [GrantID](../../../grant-id/on-premises/docker/index.md), skipping
-the initial download steps since we've already downloaded the appropriate files.
-
-> [!NOTE]
-> Remember to replace occurrences of `amplia-stack.yml` and `grantid-stack.yml` on commands in both setup instructions with `amplia-grantid-stack.yml`
-
-You will also need an additional step -- edit the stack file:
+Edit the stack file:
 
 [!include[Edit compose file](../../../../../includes/amplia/docker/edit-compose-grantid.md)]
 
 Under **services** &gt; **nginx** &gt; **networks** &gt; **default** &gt; **aliases**, add your
 [base domain, login domain and API domain for GrantID](../../../grant-id/on-premises/index.md#planning).
+
+Then, follow setup instructions for both [Amplia](index.md) and [GrantID](../../../grant-id/on-premises/docker/index.md), skipping
+the initial download steps since we've already downloaded the appropriate files.
+
+> [!NOTE]
+> Remember to replace occurrences of `amplia-stack.yml` and `grantid-stack.yml` on commands in both setup instructions with `amplia-grantid-stack.yml`
 
 ## See also
 
