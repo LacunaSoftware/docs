@@ -1,7 +1,7 @@
 ﻿# Histórico de versões do Amplia
 
 <a name="v3-0-0" />
-### 3.0.0 (2019-02-05)
+### 3.0.0 (2019-02-06)
 
 * Dashboard completamente refatorado
 * Adicionado suporte à realização de operações no dashboard que antes só podiam ser feitas via API:

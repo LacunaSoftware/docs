@@ -1,7 +1,7 @@
 ﻿# Amplia changelog
 
 <a name="v3-0-0" />
-### 3.0.0 (2019-02-05)
+### 3.0.0 (2019-02-06)
 
 * Dashboard entirely redesigned
 * Add support for performing operations on the dashboard that before had to be done via API:
