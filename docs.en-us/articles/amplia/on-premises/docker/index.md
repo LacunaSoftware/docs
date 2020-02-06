@@ -64,6 +64,14 @@ Edit the Nginx configuration file:
 Replace the `server_name` entry with your [dashboard domain](../index.md#dashboard-domain)
 and [access domains](../index.md#access-domains).
 
+Pull the images beforehand:
+
+[!include[Pull images](../../../../../includes/amplia/docker/pull-images.md)]
+
+> [!NOTE]
+> This steps is not really necessary, as the images would be pulled automatically on the next command. However, it
+> avoids transient errors during deployment since not every orchestrator honors the `depends_on` instructions.
+
 Deploy the Amplia stack:
 
 [!include[Deploy stack](../../../../../includes/amplia/docker/deploy.md)]
