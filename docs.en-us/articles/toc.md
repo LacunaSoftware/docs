@@ -196,7 +196,6 @@
 #### [Azure Key Vault](amplia/on-premises/key-stores/azure.md)
 ### [Preparing the database](amplia/on-premises/prepare-database.md)
 ### [Run without db_owner](amplia/on-premises/unprivileged-db-user.md)
-### [Database model update](amplia/on-premises/database-update.md)
 ### [Checking the installed version](amplia/on-premises/check-version.md)
 ### [Update to 3.0](amplia/on-premises/update-30.md)
 ## [Changelog](amplia/changelog.md)

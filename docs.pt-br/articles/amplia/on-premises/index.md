@@ -70,4 +70,8 @@ Os domínios de acesso escolhidos devem ser criados nos servidores DNS (registro
 
 ## Veja também
 
+* [Preparando o banco de dados para instalação do Amplia](prepare-database.md)
+* [Operando o Amplia sem ser *owner* do banco de dados](unprivileged-db-user.md)
+* [Verificando a versão instalada do Amplia](check-version.md)
+* [Atualizando o Amplia da versão 2.16 para 3.0](update-30.md)
 * [Histórico de versões](../changelog.md)

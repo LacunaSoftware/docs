@@ -49,4 +49,4 @@ Edite o arquivo JSON de configuração do Amplia (a localização do arquivo dep
 
 ## Veja também
 
-* [Atualização do banco de dados](database-update.md)
+* [Preparando o banco de dados para instalação do Amplia](prepare-database.md)

@@ -19,3 +19,4 @@ O retorno é um JSON contendo a versão do sistema, por exemplo:
 
 * [Atualização do Amplia em Windows Server](windows/update.md)
 * [Atualização do Amplia em Azure App Services](azure/update.md)
+* [Atualização do Amplia em Linux](linux/update.md)

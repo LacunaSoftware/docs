@@ -19,3 +19,4 @@ The system will return a JSON with the version, for instance:
 
 * [Updating Amplia on Windows Server](windows/update.md)
 * [Updating Amplia on Azure App Services](azure/update.md)
+* [Updating Amplia on Linux](linux/update.md)

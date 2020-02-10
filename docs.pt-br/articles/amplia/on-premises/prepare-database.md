@@ -54,4 +54,4 @@ Data Source=.;Initial Catalog=Amplia;User ID=AmpliaAdm;Password=XXXXX
 
 ## See also
 
-* [Atualização do banco de dados](database-update.md)
+* [Operando o Amplia sem ser *owner* do banco de dados](unprivileged-db-user.md)

@@ -70,4 +70,8 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 
 ## See also
 
+* [Preparing a database for installation of Amplia](prepare-database.md)
+* [Running Amplia without db_owner privileges](unprivileged-db-user.md)
+* [Checking the version of Amplia](check-version.md)
+* [Update Amplia from 2.16 to 3.0](update-30.md)
 * [Changelog](../changelog.md)
