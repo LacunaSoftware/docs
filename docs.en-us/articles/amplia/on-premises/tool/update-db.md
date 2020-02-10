@@ -1,4 +1,4 @@
-﻿# Amplia - *update-db* command
+﻿# Amplia command: **update-db**
 
 ## Name
 

@@ -1,4 +1,4 @@
-﻿# Amplia - *hash-root-pass* command
+﻿# Amplia command: **hash-root-pass**
 
 ## Name
 
