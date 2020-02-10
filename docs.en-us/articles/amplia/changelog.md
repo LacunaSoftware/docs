@@ -51,7 +51,7 @@ Updates database model: no
 <a name="v2-15-0" />
 ### 2.15.0 (2019-08-10)
 
-* Add support for Linux installations
+* Add [support for Linux](on-premises/linux/index.md)
 * Add database key store
 * Add support for storing blobs on local file system
 * Add support for SMS provider [TotalVoice](https://www.totalvoice.com.br/)

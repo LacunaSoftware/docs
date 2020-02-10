@@ -51,7 +51,7 @@ Atualiza modelo do banco de dados: não
 <a name="v2-15-0" />
 ### 2.15.0 (2019-08-10)
 
-* Adicionado suporte a instalação em Linux
+* Adicionado suporte a [instalação em Linux](on-premises/linux/index.md)
 * Adicionado suporte a armazenamento de chaves de AC no banco de dados
 * Adicionado suporte a armazenamento de arquivos no sistema de arquivos local
 * Adicionado suporte ao provedor de SMS [TotalVoice](https://www.totalvoice.com.br/)
