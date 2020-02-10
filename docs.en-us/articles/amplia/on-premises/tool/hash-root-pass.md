@@ -1,16 +1,18 @@
-﻿# Amplia - `hash-root-pass` command
+﻿# Amplia - *hash-root-pass* command
+
+## Name
 
 `hash-root-pass` - Computes a salted hash for a given root password
 
 ## Syntax
 
-```bash
+```sh
 dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
 ```
 
 Or, on Docker:
 
-```bash
+```sh
 docker run lacunasoftware/amplia:3.0.0 -- hash-root-pass
 ```
 

@@ -1,4 +1,4 @@
-﻿# Amplia - `update-db` command
+﻿# Amplia - *update-db* command
 
 ## Name
 
@@ -6,13 +6,13 @@
 
 ## Syntax
 
-```bash
+```sh
 dotnet Lacuna.Amplia.Site.dll [settings] -- update-db
 ```
 
 Or, on Docker:
 
-```bash
+```sh
 docker run lacunasoftware/amplia:3.0.0 [settings] -- update-db
 ```
 
@@ -26,8 +26,8 @@ The `update-db` command updates the database model by applying a series of *migr
 Since in this scenario Amplia's database credentials do not grant permissions to change the database model, you typically
 will want to run this command passing a **privileged connection string**:
 
-```bash
-dotnet Lacuna.Amplia.Site.dkk --ConnectionStrings:DefaultConnection='Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD' -- update-db
+```sh
+dotnet Lacuna.Amplia.Site.dll --ConnectionStrings:DefaultConnection='Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD' -- update-db
 ```
 
 ## See also
