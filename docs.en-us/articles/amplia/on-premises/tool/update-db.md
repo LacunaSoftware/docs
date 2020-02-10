@@ -27,8 +27,12 @@ Since in this scenario Amplia's database credentials do not grant permissions to
 will want to run this command passing a **privileged connection string**:
 
 ```sh
-dotnet Lacuna.Amplia.Site.dll --ConnectionStrings:DefaultConnection='Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD' -- update-db
+dotnet Lacuna.Amplia.Site.dll --ConnectionStrings:DefaultConnection="Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD" -- update-db
 ```
+
+> [!TIP]
+> On Linux, if your password contains the `!` character, use single quotes instead, e.g. `--ConnectionStrings:DefaultConnection='...'`, to avoid
+> shell history expansions
 
 ## See also
 
