@@ -7,7 +7,7 @@
 * Add support for performing operations on the dashboard that before had to be done via API:
   * Certificate template management
   * Creation of CAs that issue attribute certificates
-* Add support for Docker
+* Add [support for Docker](on-premises/docker/index.md)
 * Changed logging on Linux to write logs on the systemd journal ([click here for details](on-premises/linux/troubleshoot/check-logs.md))
 * Improve end-user PK certificate profile, adding extension AuthorityKeyIdentifier
 

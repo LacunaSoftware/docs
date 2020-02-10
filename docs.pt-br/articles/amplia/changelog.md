@@ -7,7 +7,7 @@
 * Adicionado suporte à realização de operações no dashboard que antes só podiam ser feitas via API:
   * Gerenciamento de templates de certificados
   * Criação de ACs para emissão de certificados de atributo
-* Adicionado suporte a Docker
+* Adicionado [suporte a Docker](on-premises/docker/index.md)
 * Alterado comportamento em Linux para logar para o *systemd journal* ([clique aqui para mais detalhes](on-premises/linux/troubleshoot/check-logs.md))
 * Melhoria ao formato dos certificados de chave pública de usuários finais, adicionando extensão *AuthorityKeyIdentifier*
 
