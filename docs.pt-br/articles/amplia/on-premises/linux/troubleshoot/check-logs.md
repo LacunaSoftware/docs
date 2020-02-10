@@ -7,10 +7,6 @@ Para verificar os logs do Amplia:
 
 [!include[Check logs](../../../../../../includes/amplia/linux/check-logs.md)]
 
-## Parâmetros úteis
-
-O comando `journalctl` possui diversos parâmetros que podem ajudar a encontrar informações úteis nos logs.
-
 Utilize a flag `-f` para acompanhar o log de maneira contínua (como o comando `tail -f`):
 
 [!include[Check log in follow mode](../../../../../../includes/amplia/linux/check-logs-follow.md)]
