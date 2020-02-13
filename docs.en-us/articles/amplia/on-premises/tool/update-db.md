@@ -37,4 +37,4 @@ dotnet Lacuna.Amplia.Site.dll --ConnectionStrings:DefaultConnection="Data Source
 ## See also
 
 * [Amplia command-line tool](index.md)
-* [Running Amplia without db_owner privileges](unprivileged-db-user.md)
+* [Running Amplia without db_owner privileges](../unprivileged-db-user.md)
