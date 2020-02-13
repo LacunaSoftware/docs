@@ -24,7 +24,7 @@ Generate the encryption key and store as a Docker secret:
 
 Choose a strong password for root access to the dashboard, hash it using the [command-line tool](../tool/index.md) and store as a Docker secret:
 
-[!include[Generate encryption key](../../../../../includes/amplia/docker/hash-root-pass.md)]
+[!include[Hash root password](../../../../../includes/amplia/docker/hash-root-pass.md)]
 
 Edit the Amplia configuration file:
 
