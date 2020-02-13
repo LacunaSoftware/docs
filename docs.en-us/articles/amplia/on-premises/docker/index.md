@@ -22,6 +22,10 @@ Generate the encryption key and store as a Docker secret:
 > [!NOTE]
 > If migrating from a previous installation, make sure to use the previosly generated encryption key
 
+Choose a strong password for root access to the dashboard, hash it and store as a Docker secret:
+
+[!include[Generate encryption key](../../../../../includes/amplia/docker/hash-root-pass.md)]
+
 Edit the Amplia configuration file:
 
 [!include[Edit Amplia config](../../../../../includes/amplia/docker/edit-amplia-config.md)]
