@@ -49,4 +49,5 @@ Edit the Amplia JSON configuration file (depends on the platform you are using) 
 
 ## See also
 
+* [`update-db` command](tool/update-db.md)
 * [Preparing a database for installation of Amplia](prepare-database.md)

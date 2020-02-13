@@ -34,6 +34,10 @@ Gere uma chave de 256 bits para cifrar chaves de AC [armazenadas em banco de dad
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 
+Escolha uma senha forte para o acesso de root e compute o *hash* da senha utilizando o [utilitário de comando de linha](../../tool/index.md):
+
+[!include[Hash root password](../../../../../../includes/amplia/linux/hash-root-pass.md)]
+
 [!include[General config](../../includes/general-config.md)]
 
 [!include[Bindings config](../../includes/bindings-config.md)]

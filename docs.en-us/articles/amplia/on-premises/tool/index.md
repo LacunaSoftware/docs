@@ -29,8 +29,8 @@ The `command-options` arguments depend on each command, see the command's specif
 
 Available commands:
 
-* [update-db](update-db.md)
 * [hash-root-pass](hash-root-pass.md)
+* [update-db](update-db.md)
 
 ## See also
 

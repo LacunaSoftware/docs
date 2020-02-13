@@ -32,6 +32,10 @@ Generate a 256-bit key to encrypt CA keys [stored on the database](../../key-sto
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 
+Choose a strong password for root access to the dashboard and hash it with the [command-line tool](../../tool/index.md):
+
+[!include[Hash root password](../../../../../../includes/amplia/linux/hash-root-pass.md)]
+
 [!include[General config](../../includes/general-config.md)]
 
 [!include[Bindings config](../../includes/bindings-config.md)]

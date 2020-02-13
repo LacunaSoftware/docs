@@ -34,5 +34,6 @@ Enable the site:
 
 ## See also
 
+* [Enabling user management](../enable-user-management.md)
 * [Updating Amplia on Linux](update.md)
 * [Troubleshooting](troubleshoot/index.md)
