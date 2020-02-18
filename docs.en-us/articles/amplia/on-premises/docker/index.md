@@ -84,7 +84,7 @@ Check the status of the deployment:
 
 [!include[Check deployment status](../../../../../includes/amplia/docker/check-deploy.md)]
 
-Check the column *CURRENT STATE*. Keep checking the status until all services are *Running* (this may take a few minutes for the *amplia_sql* service).
+Watch the column *CURRENT STATE*. Wait until all services are *Running* (this may take a few minutes for the *amplia_sql* service).
 
 Check the logs for the *amplia* service:
 

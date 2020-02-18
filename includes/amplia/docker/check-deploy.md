@@ -1,3 +1,3 @@
 ﻿```sh
-docker stack ps amplia
+watch docker stack ps amplia
 ```

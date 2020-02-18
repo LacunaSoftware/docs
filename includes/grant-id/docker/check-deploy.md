@@ -1,3 +1,3 @@
 ﻿```sh
-docker stack ps grantid
+watch docker stack ps grantid
 ```
