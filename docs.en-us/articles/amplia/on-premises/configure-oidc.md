@@ -1,4 +1,4 @@
-﻿# Enabling user management on Amplia
+﻿# Configure OpenID Connect - Amplia
 
 To perform user management, Amplia requires an Open ID Connect (OIDC) server, more specifically a [GrantID](../../grant-id/index.md) subscription.
 

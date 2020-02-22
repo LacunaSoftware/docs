@@ -32,16 +32,11 @@ Edit the Amplia configuration file:
 
 Fill the following settings outlined below.
 
-### Bindings / General
-
-Under section **Bindings**:
-
-* **HttpsMode**: leave commented for now
+### General
 
 Under section **General**:
 
 * **SiteUrl**: publicly accessible URL of the website, hosted on the [dashboard domain](../index.md#dashboard-domain) (e.g.: `http://ca.patorum.com/`)
-* **SupportEmailAddress**: the support email address (used on the footer of outgoing emails)
 
 > [!NOTE]
 > Even if you have an SSL certificate, use the **SiteUrl** configuration with `http://` and leave **HttpsMode** commented for now. Once you get Amplia
@@ -55,11 +50,26 @@ Under section **Amplia**:
 
 [!include[PKI Suite config](../includes/pki-config.md)]
 
+### Optional settings
+
+We recommend leaving the following sections with **Enabled** as `false` for now. Once you get Amplia running,
+you can see each link below to enable optional features:
+
+* **Email**: configures email sending. To enable this feature, see [Configure email sending](../configure-email.md).
+* **Oidc**: configures OpenID Connect integration, required for user management.
+  To enable this feature, see [Configure OpenID Connect](../configure-oidc.md).
+* **SMS**: configures SMS sending, required for the SMS confirmation during the end-user certificate issuing
+  procedure. To enable this feature, see [Configure SMS sending](../configure-sms.md)
+
+<!--
+
 [!include[Email config](../includes/email-config.md)]
 
 [!include[OIDC config](../includes/oidc-config.md)]
 
 [!include[SMS config](../includes/sms-config.md)]
+
+-->
 
 Edit the Nginx configuration file:
 

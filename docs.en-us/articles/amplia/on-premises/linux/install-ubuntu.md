@@ -34,6 +34,6 @@ Enable the site:
 
 ## See also
 
-* [Enabling user management](../enable-user-management.md)
+* [Configure OpenID Connect](../configure-oidc.md)
 * [Updating Amplia on Linux](update.md)
 * [Troubleshooting](troubleshoot/index.md)
