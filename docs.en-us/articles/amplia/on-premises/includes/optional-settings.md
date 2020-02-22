@@ -1,6 +1,6 @@
 ﻿### Optional settings
 
-We recommend leaving the remaining sections unchanged for now. Once you get Amplia up and running, you can see
+We recommend leaving the remaining sections unchanged for now. Once you get Amplia up and running, you can visit
 each link below to enable optional features:
 
 * [HTTPS redirection](../configure-https-redirect.md)
