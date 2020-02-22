@@ -39,7 +39,7 @@ Under section **General**:
 * **SiteUrl**: publicly accessible URL of the website, hosted on the [dashboard domain](../index.md#dashboard-domain) (e.g.: `http://ca.patorum.com/`)
 
 > [!NOTE]
-> Even if you have an SSL certificate, use the **SiteUrl** configuration with `http://` and leave **HttpsMode** commented for now. Once you get Amplia
+> Even if you have an SSL certificate, use the **SiteUrl** configuration with `http://`. Once you get Amplia
 > up and running on HTTP, follow the steps on [Enabling SSL](enable-ssl.md) to enable SSL.
 
 ### Amplia settings
