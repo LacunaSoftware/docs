@@ -5,5 +5,5 @@ each link below to enable optional features:
 
 * [HTTPS redirection](../configure-https-redirect.md)
 * [Email sending](../configure-email.md)
-* [OpenID Connect integration](../configure-email.md) (required for user management)
+* [OpenID Connect integration](../configure-oidc.md) (required for user management)
 * [SMS sending](../configure-sms.md) (required for the end-user certificate issuing page)
