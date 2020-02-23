@@ -1,5 +1,18 @@
 ﻿# Amplia changelog
 
+<a name="v3-1-0" />
+### 3.1.0 (2019-02-22)
+
+* OpenID Connect integration is now optional
+* Add [command-line tool](on-premises/tool/index.md) with:
+  * Command [update-db](on-premises/tool/update-db.md) to manually update the database
+  * Command [hash-root-pass](on-premises/tool/hash-root-pass.md) to compute a salted hash for a given root password
+* Default subscription is now created on first run
+* Fix bug that caused settings on JSON configuration file to have precedence over environment variables (which should have top precedence)
+
+Updates database model: no
+
+
 <a name="v3-0-0" />
 ### 3.0.0 (2019-02-06)
 

@@ -1,5 +1,18 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-1-0" />
+### 3.1.0 (2019-02-22)
+
+* Integração com servidor de OpenID Connect passa a ser opcional
+* Adicionado [utilitário de linha de comando](on-premises/tool/index.md) com:
+  * Comando [update-db](on-premises/tool/update-db.md) para atualizar manualmente o modelo do banco de dados
+  * Comando [hash-root-pass](on-premises/tool/hash-root-pass.md) para calcular o hash de uma senha de *root*
+* Conta padrão agora é criada na primeira execução do sistema
+* Corrigido bug que fazia com que configurações feitas no arquivo de configuração JSON tivessem precedência sobre variáveis de ambiente (que deveriam ter precedência máxima)
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-0-0" />
 ### 3.0.0 (2019-02-06)
 
