@@ -1,5 +1,23 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-22-0" />
+### 1.22.0 (2020-02-28)
+
+Database model update: No
+
+- Add PAdES signature policy without LTV
+- Add option "PreserveSignaturesVisualRepresentation" when adding PDF marks
+- Add option "TrustUncertifiedSigningTime" on PAdES and CAdES signature validation
+- Add validation policy for Adobe Reader signatures
+- Add configuration for throttling API requests
+
+<a name="v1-21-1" />
+### 1.21.1 (2020-02-21)
+
+Database model update: No
+
+- Update PKI SDK to [2.5.5](../pki-sdk/changelog.md#v2-5-5)
+
 <a name="v1-21-0" />
 ### 1.21.0 (2020-01-10)
 

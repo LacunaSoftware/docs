@@ -1,5 +1,23 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-22-0" />
+### 1.22.0 (2020-02-28)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar política de assinatura PAdES sem LTV
+- Adicionar opção "PreserveSignaturesVisualRepresentation" na adição de marcas de PDF
+- Adicionar opção "TrustUncertifiedSigningTime" na validação de assinaturas PAdES e CAdES
+- Adicionar política de validação para assinaturas feitas no Adobe Reader
+- Adicionar configuração para limitar quantidade de requisições feitas à API *throttling*
+
+<a name="v1-21-1" />
+### 1.21.1 (2020-02-21)
+
+Atualização do modelo do banco de dados: Não
+
+- Atualização PKI SDK para [2.5.5](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-5-5)
+
 <a name="v1-21-0" />
 ### 1.21.0 (2020-01-10)
 
