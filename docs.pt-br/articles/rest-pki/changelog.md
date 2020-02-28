@@ -9,7 +9,7 @@ Atualização do modelo do banco de dados: Não
 - Adicionar opção "PreserveSignaturesVisualRepresentation" na adição de marcas de PDF
 - Adicionar opção "TrustUncertifiedSigningTime" na validação de assinaturas PAdES e CAdES
 - Adicionar política de validação para assinaturas feitas no Adobe Reader
-- Adicionar configuração para limitar quantidade de requisições feitas à API *throttling*
+- Adicionar configuração para limitar a quantidade (*throttling*) de requisições feitas à API 
 
 <a name="v1-21-1" />
 ### 1.21.1 (2020-02-21)
