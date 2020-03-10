@@ -190,6 +190,7 @@
 ### [Utilitário de linha de comando](amplia/on-premises/tool/index.md)
 #### [hash-root-pass](amplia/on-premises/tool/hash-root-pass.md)
 #### [update-db](amplia/on-premises/tool/update-db.md)
+#### [test-email](amplia/on-premises/tool/test-email.md)
 ### [Key Stores](amplia/on-premises/key-stores/index.md)
 #### [Banco de dados](amplia/on-premises/key-stores/database.md)
 #### [Nativo](amplia/on-premises/key-stores/native.md)

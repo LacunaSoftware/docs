@@ -8,7 +8,8 @@
 * Adicionado suporte à criação de pedidos de certificado associados a contas de usuários
 * Nome da AC passa a ser sugerido a partir do nome da chave
 * Campo unidade organizacional (OU) não precisa mais ser informado durante a emissão de certificado de AC e criação de AC raiz
-* Adiciondo suporte parcial a temas (por ora apenas os emails são afetados)
+* Adicionado suporte parcial a temas (por ora apenas os emails são afetados)
+* Adicionado comando [test-email](on-premises/tool/test-email.md)
 * Corrigido bug que fazia com que o campo *validade* fosse exibido durante a criação de um pedido de certificado mesmo quando o formato selecionado não permite validade diferenciada
 
 Atualiza modelo do banco de dados: **sim**

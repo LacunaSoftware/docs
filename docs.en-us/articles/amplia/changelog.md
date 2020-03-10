@@ -9,6 +9,7 @@
 * CA name is now suggested based on the selected key
 * Allow empty organizational units field during CA Certificate issuing and root CA creation
 * Add partial support for theming (only affects emails for now)
+* Add command [test-email](on-premises/tool/test-email.md)
 * Fix bug that caused the validity field to be shown during order creation even when the selected template did not allow a custom validity
 
 Updates database model: **yes**
