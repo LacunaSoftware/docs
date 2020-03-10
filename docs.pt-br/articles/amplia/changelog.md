@@ -1,5 +1,19 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-2-0" />
+### 3.2.0 (2019-03-10)
+
+* Dashboard internacionalizado (português e inglês)
+* Adicionado suporte a armazenamento de chaves de usuários finais protegidas por PIN ("HSM cloud")
+* Adicionado suporte à criação de pedidos de certificado associados a contas de usuários
+* Nome da AC passa a ser sugerido a partir do nome da chave
+* Campo unidade organizacional (OU) não precisa mais ser informado durante a emissão de certificado de AC e criação de AC raiz
+* Adiciondo suporte parcial a temas (por ora apenas os emails são afetados)
+* Corrigido bug que fazia com que o campo *validade* fosse exibido durante a criação de um pedido de certificado mesmo quando o formato selecionado não permite validade diferenciada
+
+Atualiza modelo do banco de dados: **sim**
+
+
 <a name="v3-1-0" />
 ### 3.1.0 (2019-02-22)
 

@@ -1,5 +1,19 @@
 ﻿# Amplia changelog
 
+<a name="v3-2-0" />
+### 3.2.0 (2019-03-10)
+
+* Dashboard internationalized (English and Portuguese)
+* Add support for storing end-user keys with PIN protection ("cloud HSM")
+* Add support for creating certificate orders associated with user accounts
+* CA name is now suggested based on the selected key
+* Allow empty organizational units field during CA Certificate issuing and root CA creation
+* Add partial support for theming (only affects emails for now)
+* Fix bug that caused the validity field to be shown during order creation even when the selected template did not allow a custom validity
+
+Updates database model: **yes**
+
+
 <a name="v3-1-0" />
 ### 3.1.0 (2019-02-22)
 
