@@ -7,9 +7,11 @@ O **Windows CryptoAPI (CAPI)** trabalha com o número dos Provedores de Serviço
 armazenamento de chaves. Dispositivos como Hardware Security Modules (HSMs) e token criptográfico USB geralmente fornecem um CAPI CSP que pode ser usado para se comunicar com o
 dispositivo.
 
+<!--
 > [!TIP]
 > Embora o Windows Server tenha seu próprio CSP, que fornece acesso a seus armazenamentos de chaves nativos, para essa finalidade, você deve usar o
 [Armazenamento de chaves no store nativo](native.md).
+-->
 
 Cada CAPI CSP é identificado por seu *nome* e *type*. Se estiver usando um HSM ou um token de criptografia, consulte a documentação do dispositivo para encontrar o nome e o tipo do CSP.
 
@@ -83,7 +85,7 @@ Safenet eToken criptográfico USB token:
 
 * [Amplia - Armazenamento de chaves](index.md)
 * [Amplia - Armazenamento de chaves do banco de dados](database.md)
-* [Amplia - Armazenamento de chaves nativo](native.md)
+<!-- [Amplia - Armazenamento de chaves nativo](native.md) -->
 * [Amplia - Armazenamento de chaves em CNG](cng.md)
 * [Amplia - Armazenamento de chaves em PKCS #11](pkcs11.md)
 * [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)

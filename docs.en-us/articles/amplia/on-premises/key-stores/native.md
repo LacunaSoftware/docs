@@ -1,5 +1,9 @@
 ﻿# Amplia - Native Key Stores
 
+> [!IMPORTANT]
+> **Native Key Stores are deprecated**. Please use the [Database Key Store](database.md) instead, which offer the same capabilities, are more widely compatible
+> and can be used on high-availability scenarios.
+
 > [!NOTE]
 > Native Key Stores are compatible with Windows Server and Linux installations only. On Azure App Services, use an [Azure Key Vault key store](azure.md) instead.
 

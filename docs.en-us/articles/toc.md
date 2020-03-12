@@ -193,7 +193,7 @@
 #### [test-email](amplia/on-premises/tool/test-email.md)
 ### [Key Stores](amplia/on-premises/key-stores/index.md)
 #### [Database](amplia/on-premises/key-stores/database.md)
-#### [Native](amplia/on-premises/key-stores/native.md)
+<!-- [Native](amplia/on-premises/key-stores/native.md) -->
 #### [PKCS #11](amplia/on-premises/key-stores/pkcs11.md)
 #### [CAPI](amplia/on-premises/key-stores/capi.md)
 #### [CNG](amplia/on-premises/key-stores/cng.md)

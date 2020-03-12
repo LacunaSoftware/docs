@@ -5,12 +5,15 @@ chaves AC é umas das decisões mais importantes ao planejar uma autoridade de c
 
 Alguns dos locais que você pode fazer o armazenamento de chaves são:
 
+* No banco de dados
 * Um HSM *(Hardware Security Module)*
 * Um USB token criptográfico
-* O armazenamento de chaves nativas do sistema operacional 
 * A [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
 
 Cada opção tem suas vantagens e desvantagens.
+
+Chaves armazenadas no **banco de dados** não têm custo e são de fácil configuração, mas seu acesso é difícil de controlar pois, embora as chaves
+sejam armazenadas protegidas com criptografia de 256 bits, a "chave mestra" precisa estar disponível para o sistema e por isso é difícil controlar o acesso a esta.
 
 Do ponto de vista de segurança e confiabilidade, talvez a melhor opção seja armazenar as chaves em um **HSM**. Tais dispositivos permitem que chaves 
 sejam geradas dentro de um ambiente protegido por criptografia de tal forma que as chaves nunca podem deixar o confinamento de tal ambiente,
@@ -21,9 +24,6 @@ HSMs também pode ser cara, já que geralmente requer pessoal especializado.
 Um **USB token criptográfico** é muito mais barato, custa cerca de 10 doláres por unidade e também pode gerar chaves dentro
 de um ambiente protegido contra criptografia, nunca sendo capaz de sair desse ambiente. No entanto, chaves geradas dentro de tokens de criptografia geralmente não podem ser submetidas a backup,
 deixando a AC vulnerável à perda de chaves, que é um evento grave para uma AC.
-
-Chaves armazenadas no **armazenamento de chaves nativo do sistema operacional** praticamente não têm custos e podem ser realizados backup, mas seu acesso é difícil
-de controlar, já que as chaves são armazenadas nos arquivos do sistema operacional.
 
 Uma opção que reúne o melhor dos principais armazenamentos de chaves do HSM com custo relativamente baixo é o **[Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)**, que pode ser considerado como um HSM de nuvem. As chaves são armazenadas no FIPS 140-2 Nível 2 validado HSMs por um custo relativamente baixo de 5 doláres
 por mês por chave. Este serviço da Microsoft permitiu o emprego de HSMs nos projetos que, de outra forma, não teriam o orçamento necessário. 

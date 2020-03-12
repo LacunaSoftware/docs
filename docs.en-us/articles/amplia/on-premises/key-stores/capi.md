@@ -7,8 +7,10 @@ The **Windows CryptoAPI (CAPI)** works with a number of **Cryptographic Service 
 of providing various "cryptographic services", such as key storage. Devices such as Hardware Security Modules (HSMs) and
 cryptographic USB tokens usually provide a CAPI CSP that can be used to communicate with the device.
 
+<!--
 > [!TIP]
 > Although Windows Server has its own CSP which provides access to its native key stores, for that purpose you should use [Native Key Stores](native.md) instead.
+-->
 
 Every CAPI CSP is identified by its *name* and *type*. If using an HSM or crypto token, refer to the device's documentation
 to find the name and type of the CSP.
@@ -83,7 +85,7 @@ Safenet eToken cryptographic USB token:
 
 * [Amplia - Key Stores](index.md)
 * [Amplia - Database Key Store](database.md)
-* [Amplia - Native Key Stores](native.md)
+<!-- [Amplia - Native Key Stores](native.md) -->
 * [Amplia - CNG Key Stores](cng.md)
 * [Amplia - PKCS #11 key stores](pkcs11.md)
 * [Amplia - Azure Key Vault Key Stores](azure.md)

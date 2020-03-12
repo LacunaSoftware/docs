@@ -38,7 +38,7 @@ Configuração de amostra:
 
 * [Amplia - Armazenamento de chaves](index.md)
 * [Amplia - Armazenamento de chaves do banco de dados](database.md)
-* [Amplia - Armazenamento de chaves nativo](native.md)
+<!-- [Amplia - Armazenamento de chaves nativo](native.md) -->
 * [Amplia - Armazenamento de chaves em CAPI](capi.md)
 * [Amplia - Armazenamento de chaves em CNG](cng.md)
 * [Amplia - Armazenamento de chaves em PKCS #11](pkcs11.md)

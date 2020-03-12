@@ -56,7 +56,7 @@ Token USB criptográfico Safenet eToken (múltiplos tokens presentes, especifica
 
 * [Amplia - Configuração de Key Stores](index.md)
 * [Amplia - Armazenamento de chaves em banco de dados](database.md)
-* [Amplia - Armazenamento de chaves no store nativo](native.md)
+<!-- [Amplia - Armazenamento de chaves no store nativo](native.md) -->
 * [Amplia - Armazenamento de chaves em CAPI](capi.md)
 * [Amplia - Armazenamento de chaves em CNG](cng.md)
 * [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)

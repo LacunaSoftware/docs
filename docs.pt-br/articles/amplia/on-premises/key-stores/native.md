@@ -1,4 +1,8 @@
-﻿# Armazenamento de chaves no store nativo
+﻿# Key store nativo
+
+> [!IMPORTANT]
+> **O key store nativo foi descontinuado**. Utilize o [Armazenamento de chaves em banco de dados](database.md), que oferece as mesmas funcionalidades, é compatível
+> com uma maior gama de ambientes e pode ser utilizado em cenários de alta disponibilidade.
 
 > [!NOTE]
 > Armazenamento de chaves no store nativo são compatíveis somente com instalações Windows Server e Linux. No Azure App Services, use [Armazenamento de chaves em Azure Key Vault](azure.md).

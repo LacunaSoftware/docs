@@ -7,8 +7,10 @@ The **Cryptography API: Next Generation (CNG)** works with key storage through a
 that do the actual work of storing keys. Devices such as Hardware Security Modules (HSMs) and cryptographic USB tokens may
 provide a CNG KSP that can be used to communicate with the device.
 
+<!--
 > [!TIP]
 > Although Windows Server has its own KSP which provides access to its native key stores, for that purpose you should use [Native Key Stores](native.md) instead.
+-->
 
 Every CNG KSP is identified by a *name*. If using an HSM or crypto token, refer to the device's documentation
 to find the name and type of the KSP. Additionally, see the section below for common KSP names.
@@ -57,7 +59,7 @@ Safenet eToken cryptographic USB token:
 
 * [Amplia - Key Stores](index.md)
 * [Amplia - Database Key Store](database.md)
-* [Amplia - Native Key Stores](native.md)
+<!-- [Amplia - Native Key Stores](native.md) -->
 * [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - PKCS #11 key stores](pkcs11.md)
 * [Amplia - Azure Key Vault Key Stores](azure.md)
