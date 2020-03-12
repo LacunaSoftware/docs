@@ -4,3 +4,4 @@
 # [PKI SDK](articles/pki-sdk/index.md)
 # [PKI Express](articles/pki-express/index.md)
 # [Amplia](articles/amplia/index.md)
+# [GrantID](articles/grant-id/index.md)

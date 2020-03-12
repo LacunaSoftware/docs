@@ -31,5 +31,9 @@ _disableContribution: true
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 		[Amplia](articles/amplia/index.md)
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		[GrantID](articles/grant-id/index.md)
 	</p>
 </div>
