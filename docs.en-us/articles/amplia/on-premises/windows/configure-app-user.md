@@ -1,5 +1,8 @@
 ﻿# Configuring Amplia to run with a local user
 
+> [!IMPORTANT]
+> Since **native key stores are deprecated**, these instructions are no longer recommended.
+
 If you intend to use either the current user or local machine [Key stores](../key-stores/index.md), it is highly recommended
 that you configure Amplia to run with a local user account, instead of the default application pool identity.
 

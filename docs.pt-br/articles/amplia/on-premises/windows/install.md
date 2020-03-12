@@ -25,8 +25,10 @@ Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../inde
 
 1. Extrair arquivos.
 
+<!--
 > [!NOTE]
 > Se você pretende usar um dos armazenamentos de chaves nativos do sistema operacional, [configure o Amplia para usar uma conta de usuário local](configure-app-user.md)
+-->
 
 ## Configuração
 

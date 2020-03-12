@@ -1,5 +1,8 @@
 ﻿# Amplia - Configuração para usar um usuário local
 
+> [!IMPORTANT]
+> Como **o key store nativo foi descontinuado**, essas instruções não são mais recomendadas.
+
 Se você pretende usar o usuário atual ou a máquina local [Configuração de Key Stores](../key-stores/index.md), é altamente recomendado que você configure o Amplia para executar com
 um conta de usuário local, ao contrário do padrão *application pool identify*.
 

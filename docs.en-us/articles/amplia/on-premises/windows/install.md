@@ -25,8 +25,10 @@ To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on
 
 1. Extract files
 
+<!--
 > [!NOTE]
 > If you intend to to use one of the operating system's native key stores, [configure Amplia to use a local user account](configure-app-user.md)
+-->
 
 ## Configuration
 
