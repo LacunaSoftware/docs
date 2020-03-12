@@ -110,15 +110,15 @@ Unordered:
 ```md
 * Item A
 * Item B
-	* Subitem (prefix with a tab or two spaces)
-		* And so on
+  * Subitem (prefix spaces to align with parent)
+    * And so on
 * Item C
 ```
 
 * Item A
 * Item B
-	* Subitem (prefix with a tab or two spaces)
-		* And so on
+  * Subitem (prefix spaces to align with parent)
+    * And so on
 * Item C
 
 Ordered:
@@ -126,15 +126,15 @@ Ordered:
 ```md
 1. Item 1
 1. Item 2
-	1. Subitem (prefix with a tab or two spaces)
-		1. And so on
+   1. Subitem (prefix spaces to align with parent)
+      1. And so on
 1. Item 3
 ```
 
 1. Item 1
 1. Item 2
-	1. Subitem (prefix with a tab or two spaces)
-		1. And so on
+   1. Subitem (prefix spaces to align with parent)
+      1. And so on
 1. Item 3
 
 > The actual numbering does not matter, DocFX will order the list when rendering the file. Prefer repeating `1.` on every item instead of writing `1.`, `2.`, `3.` etc because this allows for easy reodering of items.
