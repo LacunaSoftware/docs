@@ -8,7 +8,7 @@ For atualizate your instance from [Rest PKI](../../index.md), follow the instruc
 1. Create a backup of the database and of the site folder
 1. Delete all files on the site folder **EXCEPT THE FILES** `AppSettings.config` and `Connections.config`
 1. Extract the contests of the new Rest PKI package ([restpki-1.22.0.zip](https://cdn.lacunasoftware.com/restpki/restpki-1.22.0.zip)) to the site folder
-1. Acess the website
+1. Access the website
 
 > [!NOTE]
 > Since the package does not contain files named AppSettings.config and Connections.config, its files with these names containing system settings will be preserved during the operation.
