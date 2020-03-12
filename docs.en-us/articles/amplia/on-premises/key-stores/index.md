@@ -12,7 +12,7 @@ Some of the locations where you may store keys are:
 
 Each option has its advantages and disadvantages.
 
-Keys stored on the database have no cost and require the least configuration but their access is hard to control. Although keys are stored
+Keys stored on the **database** have no cost and require the least configuration but their access is hard to control. Although keys are stored
 with 256-bit encription, it can be hard to restrict access to the "master key" used to encrypt keys.
 
 From a security and reliability standpoint, perhaps the best option is to store keys on an **HSM**. Such devices allow keys to be

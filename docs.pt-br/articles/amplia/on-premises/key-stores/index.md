@@ -39,10 +39,11 @@ O Amplia faz interface com armazenamentos de chaves através de tais protocolos.
 
 Os tipos de armazenamento de chaves suportados são:
 
-* [Armazenamento de chaves em PKCS #11](pkcs11.md)
-* [Armazenamento de chaves em CAPI](capi.md)
-* [Armazenamento de chaves em CNG](cng.md)
-* [Armazenamento de chaves em Azure Key Vault](azure.md)
+* [Banco de dados](database.md)
+* [PKCS #11](pkcs11.md)
+* [CAPI](capi.md)
+* [CNG](cng.md)
+* [Azure Key Vault](azure.md)
 
 ## Configuração do armazenamento de chaves
 
