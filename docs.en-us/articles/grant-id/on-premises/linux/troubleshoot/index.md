@@ -1,4 +1,4 @@
-﻿# Troubleshooting issues on your Grant ID instance (Linux)
+﻿# Troubleshooting issues on your GrantID instance (Linux)
 
 Common issues:
 

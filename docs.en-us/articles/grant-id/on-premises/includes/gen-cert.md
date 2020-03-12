@@ -3,4 +3,4 @@
 * **Country Name**: enter the two-letter code of your country, e.g.: *BR*
 * **State or Province Name**: enter the name of your organization's state, e.g.: *Sao Paulo*
 * **Organization Name**: enter the name of your organization, e.g. *Patorum Inc*
-* **Common Name**: enter the name of your Grant ID instance, e.g. *Patorum ID*
+* **Common Name**: enter the name of your GrantID instance, e.g. *Patorum ID*

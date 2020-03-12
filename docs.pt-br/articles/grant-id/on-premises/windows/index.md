@@ -1,4 +1,4 @@
-﻿# Grant ID - Setup em Windows Server
+﻿# GrantID - Setup em Windows Server
 
 > [!NOTE]
 > A documentação deste sistema encontra-se em construção. Pedimos desculpas pela inconveniência. Por favor contate-nos caso

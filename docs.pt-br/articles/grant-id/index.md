@@ -1,4 +1,4 @@
-﻿# Grant ID
+﻿# GrantID
 
 O GrantID adiciona segurança aos seus aplicativos com Single Sign On, múltiplos fatores de autenticação e ferramentas analíticas poderosas.
 
@@ -13,5 +13,5 @@ O GrantID adiciona segurança aos seus aplicativos com Single Sign On, múltiplo
 
 ## *On premises*
 
-O Grant ID pode ser utilizado em nuvem (SaaS) em [grantid.com](https://grantid.com) ou você pode ter uma instância na sua própria
-infraestrutura ("on premises"). Veja o artigo [Grant ID *on premises*](on-premises/index.md) para mais informações.
+O GrantID pode ser utilizado em nuvem (SaaS) em [grantid.com](https://grantid.com) ou você pode ter uma instância na sua própria
+infraestrutura ("on premises"). Veja o artigo [GrantID *on premises*](on-premises/index.md) para mais informações.

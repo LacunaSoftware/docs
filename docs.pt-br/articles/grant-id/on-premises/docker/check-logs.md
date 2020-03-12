@@ -1,4 +1,4 @@
-﻿# Instalação do GrantID em Ubuntu Server
+﻿# GrantID em Docker - Verificando os logs 
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>

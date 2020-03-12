@@ -1,8 +1,8 @@
-﻿# Installing Grant ID on Ubuntu Server
+﻿# Installing GrantID on Ubuntu Server
 
 <!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
 
-Follow these steps to install an [on-premises](../index.md) instance of [Grant ID](../../index.md) on an Ubuntu Server.
+Follow these steps to install an [on-premises](../index.md) instance of [GrantID](../../index.md) on an Ubuntu Server.
 
 > [!TIP]
 > Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning)
@@ -13,7 +13,7 @@ Follow these steps to install an [on-premises](../index.md) instance of [Grant I
 
 [!include[Install Nginx](../../../includes/linux/ubuntu/install-nginx.md)]
 
-## Install Grant ID
+## Install GrantID
 
 [!include[Initial setup](includes/common-initial-setup.md)]
 

@@ -1,10 +1,10 @@
-﻿# Grant ID on-premises
+﻿# GrantID on-premises
 
-[Grant ID](../index.md) can be used as a service (SaaS) at [grantid.com](https://grantid.com) or you can host your own instance.
+[GrantID](../index.md) can be used as a service (SaaS) at [grantid.com](https://grantid.com) or you can host your own instance.
 
 ## Supported platforms
 
-Grant ID is compatible with:
+GrantID is compatible with:
 
 * [Windows Server](windows/index.md)
 * [Linux](linux/index.md)

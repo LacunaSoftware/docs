@@ -1,6 +1,6 @@
 ﻿# GrantID post-installation steps
 
-After installing your [on premises](index.md) instance of [Grant ID](../index.md), follow these steps to prepare the instance for usage.
+After installing your [on premises](index.md) instance of [GrantID](../index.md), follow these steps to prepare the instance for usage.
 
 > [!NOTE]
 > If you installed GrantID without an SSL certificate, use `http://` on the URLs mentioned on this page

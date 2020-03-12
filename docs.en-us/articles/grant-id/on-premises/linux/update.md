@@ -1,6 +1,6 @@
-﻿# Updating Grant ID on Linux
+﻿# Updating GrantID on Linux
 
-Follow these steps to update an [on-premises](../index.md) instance of [Grant ID](../../index.md) installed on Linux.
+Follow these steps to update an [on-premises](../index.md) instance of [GrantID](../../index.md) installed on Linux.
 
 [!include[Proceed as root](../../../includes/linux/su.md)]
 

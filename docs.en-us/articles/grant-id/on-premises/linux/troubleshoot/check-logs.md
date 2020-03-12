@@ -1,4 +1,4 @@
-﻿# Grant ID - Checking the system logs (Linux)
+﻿# GrantID - Checking the system logs (Linux)
 
 When installed on Linux, [GrantID](../../../index.md) sends its logs to the systemd journal, a centralized management solution for logging
 all kernel and userland processes. To view the logs, use the `journalctl` utility.
@@ -30,4 +30,4 @@ Use the `--since` parameter to view only recent logs:
 ## See also
 
 * [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) (DigitalOcean post)
-* [Troubleshooting issues on your Grant ID instance (Linux)](index.md)
+* [Troubleshooting issues on your GrantID instance (Linux)](index.md)

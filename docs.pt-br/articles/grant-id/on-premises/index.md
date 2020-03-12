@@ -1,11 +1,11 @@
-﻿# Grant ID *on premises*
+﻿# GrantID *on premises*
 
-O [Grant ID](../index.md) pode ser utilizado em nuvem (SaaS) em [grantid.com](https://grantid.com) ou você pode ter uma instância
+O [GrantID](../index.md) pode ser utilizado em nuvem (SaaS) em [grantid.com](https://grantid.com) ou você pode ter uma instância
 na sua própria infraestrutura ("on premises").
 
 ## Ambientes suportados
 
-O Grant ID é compatível com os seguintes ambientes:
+O GrantID é compatível com os seguintes ambientes:
 
 * [Windows Server](windows/index.md)
 * [Linux](linux/index.md)

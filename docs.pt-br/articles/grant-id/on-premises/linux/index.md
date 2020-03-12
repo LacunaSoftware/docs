@@ -1,8 +1,8 @@
-﻿# Setup do Grant ID em Linux
+﻿# Setup do GrantID em Linux
 
 O [Amplia](../../index.md) pode ser instalado nas seguintes distribuições de Linux:
 
-* [Ubuntu](install-ubuntu.md)
+* [Ubuntu Server](install-ubuntu.md)
 <!--
 [Red Hat Enterprise Linux](install-rhel.md)
 [Oracle Linux](install-oracle.md)
@@ -13,5 +13,5 @@ O [Amplia](../../index.md) pode ser instalado nas seguintes distribuições de L
 
 ## Veja também
 
-* [Atualização do Grant ID em Linux](update.md)
+* [Atualização do GrantID em Linux](update.md)
 * [Resolução de problemas](troubleshoot/index.md)

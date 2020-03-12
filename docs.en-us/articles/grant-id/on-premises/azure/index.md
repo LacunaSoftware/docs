@@ -1,4 +1,4 @@
-﻿# Installing Grant ID on Azure App Services
+﻿# Installing GrantID on Azure App Services
 
 > [!NOTE]
 > The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please

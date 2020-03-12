@@ -1,6 +1,6 @@
-﻿# Grant ID - Setup on Linux
+﻿# GrantID - Setup on Linux
 
-[Grant ID](../../index.md) can currently be installed on the following Linux distributions:
+[GrantID](../../index.md) can currently be installed on the following Linux distributions:
 
 * [Ubuntu Server](install-ubuntu.md)
 <!--
@@ -13,5 +13,5 @@
 
 ## See also
 
-* [Updating Grant ID on Linux](update.md)
+* [Updating GrantID on Linux](update.md)
 * [Troubleshooting](troubleshoot/index.md)

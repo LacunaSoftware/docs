@@ -1,4 +1,4 @@
-﻿# Resolução de problemas do Grant ID (Linux)
+﻿# Resolução de problemas do GrantID (Linux)
 
 Problemas comuns:
 

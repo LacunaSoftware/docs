@@ -39,7 +39,7 @@ Edit the GrantID configuration file:
 Fill the following settings:
 
 * Section **Application**
-  * **ProductName**: the name of your Grant ID instance, e.g. *Patorum ID*
+  * **ProductName**: the name of your GrantID instance, e.g. *Patorum ID*
   * **AuthServerUrl**: public URL of the Auth Server component, hosted on the [base domain](../index.md#planning), e.g. *http://id.patorum.com*
   * **ConsoleUrl**: public URL of the Console component, hosted on the [console domain](../index.md#planning), e.g. *http://console.id.patorum.com*
   * **UseSSL**: whether the public URLs will use HTTPS (leave `false` for now, see below)

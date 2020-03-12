@@ -208,3 +208,22 @@
 ### [Update to 3.0](amplia/on-premises/update-30.md)
 ## [Changelog](amplia/changelog.md)
 <!-- End of Amplia -->
+
+<!-- Start of GrantID -->
+# [GrantID](grant-id/index.md)
+## [On-premises](grant-id/on-premises/index.md)
+### [Setup on Windows Server](grant-id/on-premises/windows/index.md)
+### [Setup on Linux](grant-id/on-premises/linux/index.md)
+#### [Install on Ubuntu Server](grant-id/on-premises/linux/install-ubuntu.md)
+#### [Update](grant-id/on-premises/linux/update.md)
+#### [Troubleshooting](grant-id/on-premises/linux/troubleshoot/index.md)
+##### [Checking logs](grant-id/on-premises/azure/troubleshoot/check-logs.md)
+##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](grant-id/on-premises/azure/troubleshoot/502-5.md)
+### [Setup on Docker](grant-id/on-premises/docker/index.md)
+#### [Enable SSL](grant-id/on-premises/docker/enable-ssl.md)
+#### [Using an external database](grant-id/on-premises/docker/external-db.md)
+#### [Checking the system logs](grant-id/on-premises/docker/check-logs.md)
+#### [Persistent data](grant-id/on-premises/docker/persistent-data.md)
+### [Setup on Azure App Services](grant-id/on-premises/azure/index.md)
+## [Post-installation steps](grant-id/on-premises/post-install.md)
+<!-- End of GrantID -->

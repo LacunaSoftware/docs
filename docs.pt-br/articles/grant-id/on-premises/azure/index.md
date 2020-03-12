@@ -1,4 +1,4 @@
-﻿# Grant ID - Setup em Azure App Services
+﻿# GrantID - Setup em Azure App Services
 
 > [!NOTE]
 > A documentação deste sistema encontra-se em construção. Pedimos desculpas pela inconveniência. Por favor contate-nos caso

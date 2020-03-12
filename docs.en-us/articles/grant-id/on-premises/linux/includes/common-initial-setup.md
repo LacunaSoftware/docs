@@ -1,4 +1,4 @@
-﻿Grant ID is composed of three components:
+﻿GrantID is composed of three components:
 
 * **Identity Service**: contains the business logic and encapsulates access to the database
 * **Auth Server**: accessed by end-users during logins, redirects and sign-ups
@@ -53,7 +53,7 @@ Edit the common configuration file:
 Fill the following settings:
 
 * Section **Application**
-  * **ProductName**: the name of your Grant ID instance, e.g. *Patorum ID*
+  * **ProductName**: the name of your GrantID instance, e.g. *Patorum ID*
   * **AuthServerUrl**: public URL of the Auth Server component, hosted on the [base domain](../../index.md#planning), e.g. *https://id.patorum.com*
   * **ConsoleUrl**: public URL of the Console component, hosted on the [console domain](../../index.md#planning), e.g. *https://console.id.patorum.com*
   * **UseSSL**: whether the public URLs will use HTTPS (fill according to the previous URLs)
