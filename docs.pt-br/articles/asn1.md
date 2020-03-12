@@ -59,3 +59,16 @@ O OID `1.3.6.1.4.1.46332.2.1` identifica o número de registro no CRC (Conselho 
 ```
 id-crc-number OBJECT IDENTIFIER ::= { id-lacuna-access-identity-types 1 }
 ```
+
+<a name="certificate-policies" />
+## 3. Políticas de Certificado
+
+A subárvore `1.3.6.1.4.1.46332.3` é reservada para **Políticas de Certificado**.
+
+```
+id-lacuna-certificate-policies OBJECT IDENTIFIER ::= { id-lacuna 3 }
+```
+
+### 3.1. Política de Certificado ANOREG/DF
+
+O OID `1.3.6.1.4.1.46332.3.1` identifica a política de certificados adotada pela Associação dos Notários e Registradores do Distrito Federal - ANOREG/DF.

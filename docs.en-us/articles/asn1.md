@@ -58,3 +58,16 @@ the Conselho Regional de Contabilidade (CRC):
 ```
 id-crc-number OBJECT IDENTIFIER ::= { id-lacuna-access-identity-types 1 }
 ```
+
+<a name="certificate-policies" />
+## 3. Certificate Policies
+
+The subtree `1.3.6.1.4.1.46332.3` is reserved for **Certificate Policies**.
+
+```
+id-lacuna-certificate-policies OBJECT IDENTIFIER ::= { id-lacuna 3 }
+```
+
+### 3.1. ANOREG/DF certificate policy
+
+The OID `1.3.6.1.4.1.46332.3.1` identifies the certificate policy adopted by Associação dos Notários e Registradores do Distrito Federal - ANOREG/DF.
