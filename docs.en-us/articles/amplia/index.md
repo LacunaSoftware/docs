@@ -2,10 +2,6 @@
 
 Amplia is a platform for creating and managing Certification Authorities (CAs) or entire Public Key Infrastructures (PKIs).
 
-> [!NOTE]
-> The documentation for this system is currently under construction. We apologize for any inconvenience this may cause. Please
-> contact us if there's any information you need that is not currently documented.
-
 ## Characteristics
 
 * Issue X.509 public key (PK) certificates

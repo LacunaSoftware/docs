@@ -2,10 +2,6 @@
 
 O Amplia é uma plataforma para criar e gerenciar Autoridades Certificadoras (ACs) ou Infraestruturas de Chaves Públicas (ICPs) completas.
 
-> [!NOTE]
-> A documentação deste sistema encontra-se em construção. Pedimos desculpas pela inconveniência. Por favor contate-nos caso
-> precise de alguma informação que ainda não está documentada.
-
 ## Características
 
 * Emissão de certificados X.509 de chave pública 
