@@ -5,27 +5,18 @@ After installing your [on premises](index.md) instance of [GrantID](../index.md)
 > [!NOTE]
 > If you installed GrantID without an SSL certificate, use `http://` on the URLs mentioned on this page
 
-Open the console on a browser, e.g. *https://console.id.patorum.com* (replace with your [console domain](index.md#planning))
-
-Proceed to login
-
-On the sign in form, click on *Register*
-
-Fill the form and press **Submit**
-
-On the next page, click *Send verification email*
-
-Check your inbox. Open the e-mail message and click on **Activate Account**
-
-Once signed in, click on **Start Now**
-
-On the subscription creation form, enter:
-
-* **Name**: preferred name of your organization, e.g. *Patorum*
-* **Identifier**: leftmost part of the [login domain](index.md#planning). For instance, `login` on **login**.*id.patorum.com*
-* **Username**: choose the information that be used as identifier of your users (usually email or CPF)
-
-Click on **Create Subscription**.
+1. Open the console on a browser, e.g. *https://console.id.patorum.com* (replace with your [console domain](index.md#planning))
+1. Proceed to login
+1. On the sign in form, click on *Register*
+1. Fill the form and press **Submit**
+1. On the next page, click *Send verification email*
+1. Check your inbox. Open the e-mail message and click on **Activate Account**
+1. Once signed in, click on **Start Now**
+1. On the subscription creation form, enter:
+   * **Name**: preferred name of your organization, e.g. *Patorum*
+   * **Identifier**: leftmost part of the [login domain](index.md#planning). For instance, `login` on **login**.*id.patorum.com*
+   * **Username**: choose the information that be used as identifier of your users (usually email or CPF)
+1. Click on **Create Subscription**
 
 To test the procedure, open the following URL (replace *login.id.patorum.com* with your [login domain](index.md#planning)):
 
