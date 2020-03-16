@@ -10,7 +10,9 @@
 * Allow empty organizational units field during CA Certificate issuing and root CA creation
 * Add partial support for theming (only affects emails for now)
 * Add command [test-email](on-premises/tool/test-email.md)
-* Fix bug that caused the validity field to be shown during order creation even when the selected template did not allow a custom validity
+* Bug fixes
+  * Validity field was shown during order creation even when the selected template did not allow a custom validity
+  * Initialization errors were not shown on dashboard
 
 Updates database model: **yes**
 

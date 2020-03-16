@@ -10,7 +10,9 @@
 * Campo unidade organizacional (OU) não precisa mais ser informado durante a emissão de certificado de AC e criação de AC raiz
 * Adicionado suporte parcial a temas (por ora apenas os emails são afetados)
 * Adicionado comando [test-email](on-premises/tool/test-email.md)
-* Corrigido bug que fazia com que o campo *validade* fosse exibido durante a criação de um pedido de certificado mesmo quando o formato selecionado não permite validade diferenciada
+* Correções de bugs
+  * Campo *validade* era exibido durante a criação de um pedido de certificado mesmo quando o formato selecionado não permite validade diferenciada
+  * Erros de inicialização não eram acusados no dashboard
 
 Atualiza modelo do banco de dados: **sim**
 
