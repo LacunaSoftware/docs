@@ -1,5 +1,21 @@
 ﻿# Amplia changelog
 
+<a name="v3-3-0" />
+### 3.3.0 (2019-03-17)
+
+* Add support for configuring a custom *certification policies* extension on templates
+* Add new user role: *Registration Agent* (can only create certificate orders and revoke certificates)
+* Full theming support (except customization of the home page)
+* Add option to hide buttons for basic order creation or user order creation
+* Bug fixes
+  * On certain scenarios certificates might be issued with 0 day validity
+  * Error when creating order certificate without a template
+  * Error "You cannot specify the root subscription" upon entering the system administration 
+  * Logo is not shown on invitation emails
+
+Updates database model: **yes**
+
+
 <a name="v3-2-0" />
 ### 3.2.0 (2019-03-10)
 

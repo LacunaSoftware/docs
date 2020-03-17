@@ -1,5 +1,21 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-3-0" />
+### 3.3.0 (2019-03-17)
+
+* Adicionada possibilidade de configuração da extensão *certification policies* nos modelos de certificado
+* Adicionado novo papel: *Agente de Registro* (pode apenas criar pedidos de certificado e revogar certificados)
+* Suporte completo a temas (exceto personalização da página inicial)
+* Adicionada possibilidade de ocultar botões de criação de pedido básico e associado a usuário
+* Correções de bugs
+  * Em certas circunstâncias certificados podem ser emitidos com validade de 0 dias
+  * Erro ao criar pedido de certificado com usuário associado sem template
+  * Erro "You cannot specify the root subscription" ao entrar no sys admin
+  * Erro na logo do convite
+
+Atualiza modelo do banco de dados: **sim**
+
+
 <a name="v3-2-0" />
 ### 3.2.0 (2019-03-10)
 
