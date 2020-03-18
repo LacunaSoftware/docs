@@ -245,15 +245,6 @@ Example of indented code snippet:
 1. Installation
    1. Set things up
    1. Run this:
-      ```bash
-	  sudo apt install something
-	  ```
-   1. Finish things up
-1. Done
-
-1. Installation
-   1. Set things up
-   1. Run this:
 
       ```bash
 	  sudo apt install something
@@ -261,6 +252,8 @@ Example of indented code snippet:
 
    1. Finish things up
 1. Done
+
+Attempt 2:
 
 1. Installation
    1. Set things up
@@ -273,15 +266,18 @@ sudo apt install something
    1. Finish things up
 1. Done
 
+Attempt 3:
+
 1. Installation
    1. Set things up
    1. Run this:
-      ```bash
+
+```bash
 sudo apt install something
 ```
+
    1. Finish things up
 1. Done
-
 
 See all supported [Language names and aliases](https://github.com/highlightjs/highlight.js#supported-languages).
 
