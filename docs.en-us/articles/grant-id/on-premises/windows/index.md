@@ -29,7 +29,7 @@
 
 ## Installation Package Overview
 
-An installation package named grantid-<version_number>.zip will be made available whenever you need to install/update GrantID.
+An installation package named `grantid-<version_number>.zip` will be made available whenever you need to install/update GrantID.
 
 GrantID is composed by 3 components:
 
@@ -37,7 +37,7 @@ GrantID is composed by 3 components:
 1. AuthServer: OAuth 2.0 and OpenID Connect autorization server.
 1. Console: console interface to setup applications.
 
-The components may be instsalled in different servers or in the same, according to your needs once the following requirements are met:
+The components may be installed in different servers or in the same, according to your needs once the following requirements are met:
 
 * The AuthServer must have network access to the IdentityService.
 * The Console must have network access to the IdentityService. It does not need explicit network access to the AuthServer, but it may redirect an user to it, as all logins/registrations are handled by the AuthServer.
@@ -46,5 +46,5 @@ The components may be instsalled in different servers or in the same, according 
 
 ## Installation Package Setup
 
-1. Create a working directory, for example: "C:\GrantId-Install"
+1. Create a working directory, for example: `C:\GrantId-Install`
 1. Unzip the installation package into a subfolder with the same name as the package (in the working directory).
