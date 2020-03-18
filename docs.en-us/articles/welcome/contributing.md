@@ -240,39 +240,13 @@ Common language IDs:
 * javascript or js
 * html
 
-Example of indented code snippet:
+Code snippets can be indented with lists:
 
 1. Installation
    1. Set things up
    1. Run this:
 
       ```bash
-	  sudo apt install something
-	  ```
-
-   1. Finish things up
-1. Done
-
-Attempt 2:
-
-1. Installation
-   1. Set things up
-   1. Run this:
-
-      ```bash
-sudo apt install something
-```
-
-   1. Finish things up
-1. Done
-
-Attempt 3:
-
-1. Installation
-   1. Set things up
-   1. Run this:
-
-```bash
 sudo apt install something
 ```
 
