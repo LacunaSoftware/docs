@@ -1,11 +1,11 @@
 
-# ICPBravo Replacement
+# ICPBravoAccess Replacement
 
 The replacement of the ICPBravoAccess library for the Web PKI component can be made
 in a easy way.
 
 First, *remove* the `<script>` tag that imports the ICPBravoAccess. After that, add
-that the `<script>` tags that imports the Web PKI component and replacement library. For example:
+the `<script>` tags that imports the Web PKI component and replacement library. For example:
 
 ```html
 <!-- Remove the following line -->
@@ -19,9 +19,12 @@ that the `<script>` tags that imports the Web PKI component and replacement libr
 ## Licensing
 
 > [!NOTE]
-> This license is not the same used by ICPBravoAccess. If you don't have, please contact our support at suporte@lacunasoftware.com.
+> This license is not the same used by ICPBravoAccess. If you don't have it, please contact
+our support at suporte@lacunasoftware.com.
 
-In order to use [Web PKI](http://docs.lacunasoftware.com/en-us/articles/web-pki/index.html) on web pages outside of localhost, you must set the component license. To set the license, choose one of the formats given (binary or JSON) and pass it to the variable `window.lacunaWebPkiLicense`.
+In order to use [Web PKI](http://docs.lacunasoftware.com/en-us/articles/web-pki/index.html) on
+web pages outside of localhost, you must set the component license. To set the license, choose one
+of the formats given (binary or JSON) and pass it to the variable `window.lacunaWebPkiLicense`.
 
 If you prefer the binary format:
 
