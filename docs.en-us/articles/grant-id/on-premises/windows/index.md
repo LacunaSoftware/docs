@@ -14,6 +14,7 @@
 1. In the Role Services section, select the desired services or accept the default options:
 ![Role Services](../../../../../images/grant-id/role-services.png)
 1. Open Internet Information Services (IIS) Manager and remove the Default Web Site:
+![Remove default website](../../../../../images/grant-id/remove-default-website.png)
 
 
 ## .NET Core Setup
