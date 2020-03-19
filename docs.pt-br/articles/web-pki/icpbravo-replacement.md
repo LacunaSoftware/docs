@@ -9,7 +9,6 @@ Basta seguir os passos:
 ```html
 <!-- Remover a inclusão do  icpbravo.access.ext.js -->
 <script type="text/javascript" src="icpbravo.access.ext.js"></script>
-
 ```
 
 1. Adicione por último na tag `<head>` do seu HTML:
@@ -19,9 +18,9 @@ Basta seguir os passos:
     ...
 
     <!-- Adicionar as seguintes linhas -->
-    <script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/pibask/lacuna-pibask-1.0.0.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.1.min.js"></script>
+    <script src="https://cdn.lacunasoftware.com/libs/pibask/lacuna-pibask-1.0.0.js"></script>
+    <script>
 	  window.lacunaWebPkiLicense = '>>> Insira aqui sua licença binária do Web PKI <<<';
     </script>
   </head>
@@ -33,7 +32,7 @@ Basta seguir os passos:
 >
 > Para utilizar o [Web PKI](http://docs.lacunasoftware.com/en-us/articles/web-pki/index.html) em 
 > ambiente de produção, é necessária a inclusão da licença através do parâmetro `window.lacunaWebPkiLicense`
-> acima. Caso ainda não tenha uma licença, solicite o envio através do email [suporte@lacunasoftware.com](suporte@lacunasoftware.com)
+> acima. Caso ainda não tenha uma licença, solicite o envio através do email **[suporte@lacunasoftware.com](suporte@lacunasoftware.com)**
 > informando os *hostnames* ou *URLs* nos quais o plugin será executado.
 
 Pronto, o Web PKI deve agora substituir completamente o ICPBravoAccess, adicionando suporte a outros navegadores
