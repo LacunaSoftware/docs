@@ -10,6 +10,7 @@ Basta seguir os passos:
 <!-- Remover a inclusão do  icpbravo.access.ext.js -->
 <script type="text/javascript" src="icpbravo.access.ext.js"></script>
 ```
+
 1. Adicione por último na tag `<head>` do seu HTML:
 ```html
 <html>
