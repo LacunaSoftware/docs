@@ -1,5 +1,20 @@
 ﻿# Amplia changelog
 
+<a name="v3-4-0" />
+### 3.4.0 (upcoming)
+
+* Add support for digitally signing the Certificate Agreement containing the subject's public key during the issue procedure
+* Add birth date to PKI Brazil (ICP-Brasil) order creation page
+* Setting `General.QRCodeGatewayUrl` is now optional
+* Bug fixes
+  * The logo image should not be a link on the certificate issue page
+  * Error when trying to edit an attribute certificate template
+  * Initial message on certificate issue page does not change upon changing the language
+  * QR Code is not being displayed when clicking the *Issue QR Code* button on the order details page
+
+Updates database model: **yes**
+
+
 <a name="v3-3-0" />
 ### 3.3.0 (2019-03-17)
 

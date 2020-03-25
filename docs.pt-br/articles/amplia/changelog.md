@@ -1,5 +1,20 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-4-0" />
+### 3.4.0 (em breve)
+
+* Adicionada possibilidade de assinar digitalmente o Termo de Titularidade contendo a chave pública do certificado durante o processo de emissão
+* Adicionada data de nascimento ao formulário de criação de pedido ICP-Brasil
+* Configuração `General.QRCodeGatewayUrl` passa a ser opcional
+* Correções de bugs
+  * A logo não deve ser clicável na página de emissão de certificado
+  * Erro ao tentar editar template de certificado de atributo
+  * Texto inicial da tela de emissão de certificado não muda ao alterar o idioma
+  * QR Code de emissão não está sendo exibido ao clicar no botão *QR Code de emissão* nos detalhes do pedido
+
+Atualiza modelo do banco de dados: **sim**
+
+
 <a name="v3-3-0" />
 ### 3.3.0 (2019-03-17)
 
