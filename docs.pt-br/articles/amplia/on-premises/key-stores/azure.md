@@ -1,7 +1,7 @@
 ﻿# Armazenamento de chaves em Azure Key Vault
 
 > [!NOTE]
-> Armazenamento de chaves em Azure Key Vault são compatíveis com todas as plataformas suportadas.
+> O armazenamento de chaves em Azure Key Vault é compatível com todas as plataformas suportadas.
 
 O [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) pode ser pensado como um HSM em nuvem. As chaves são armazenadas no FIPS 140-2 Nível 2 validadas HSMs por um preço
 relativamente baixo de aproximadamente 5 doláres por mês por chave de 4096 bits. Este serviço da Microsoft permite o emprego de HSMs em projetos, que de outra forma, não teriam o orçamento necessário.
