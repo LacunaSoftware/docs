@@ -10,9 +10,11 @@ relativamente baixo de aproximadamente 5 doláres por mês por chave de 4096 bit
 > A nuvem base da Lacuna Software na instância do Amplia (oferencendo SaaS) armazena todas chaves de AC no Azure Key Vault,
 > e recomendamos seu uso em instâncias instaladas tanto na nuvem quanto em servidores locais.
 
+## Procedimento
+
 Para configurar um armazenamento em Azure Key Vault no Amplia, autentique-se no <a href="https://portal.azure.com" target="_blank">portal do Azure</a> e siga os passos abaixo.
 
-## Criação de aplicação e segredo de autenticação
+### Criação de aplicação e segredo de autenticação
 
  Crie uma aplicação correspondente à sua instância do Amplia:
 
@@ -28,7 +30,7 @@ Gere um segredo para identificação da aplicação:
 1. Preencha uma descrição e na validade escolha **Never** (não expira)
 1. **Copie o valor exibido** (não será possível recuperar esse valor posteriormente!)
 
-## Criação do Key Vault
+### Criação do Key Vault
 
 Crie o Key Vault (pule essa parte caso queira usar um Key Vault existente):
 
@@ -50,7 +52,7 @@ Conceda permissões à aplicação:
 > [!WARNING]
 > Esse último passo (clicar no botão **Save**) é necessário, caso contrário as permissões não são salvas!
 
-## Configuração do Amplia
+### Configuração do Amplia
 
 Edite o seu arquivo de configuração JSON ou os settings do seu App Service e adicione à seção **KeyStores** uma seção com um nome
 que identifique o Key Vault (veja exemplo abaixo), e coloque as seguintes configurações nesta:
