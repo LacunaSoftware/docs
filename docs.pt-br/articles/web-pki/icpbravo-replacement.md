@@ -32,7 +32,7 @@ Basta seguir os passos:
 >
 > Para utilizar o [Web PKI](http://docs.lacunasoftware.com/en-us/articles/web-pki/index.html) em 
 > ambiente de produção, é necessária a inclusão da licença através do parâmetro `window.lacunaWebPkiLicense`
-> acima. Caso ainda não tenha uma licença, solicite o envio através do email **[suporte@lacunasoftware.com](suporte@lacunasoftware.com)**
+> acima. Caso ainda não tenha uma licença, solicite o envio através do email **[suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com)**
 > informando os *hostnames* ou *URLs* nos quais o plugin será executado.
 
 Pronto, o Web PKI deve agora substituir completamente o ICPBravoAccess, adicionando suporte a outros navegadores
