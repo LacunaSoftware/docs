@@ -44,7 +44,7 @@ Conceda permissões à aplicação:
 1. Nas configurações do Key Vault, clique em **Access policies**, depois em **Add Access Policy**
 1. Em *Configure from template*, não preencha nada
 1. Em *Key permissions*, selecione **Get**, **List**, **Create**, **Verify** e **Sign**
-1. Em *Select principal*, selecione a aplicação criada no passo 2 e clique em **Select**
+1. Em *Select principal*, selecione a aplicação criada e clique em **Select**
 1. Deixe os campos *Secret permissions*, *Certificate permissions* e *Authorized application* inalterados
 1. Clique em **Add**
 1. De volta à tela de *policies*, clique em **Save** (atenção: )
