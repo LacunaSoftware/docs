@@ -1,5 +1,14 @@
 ﻿# Amplia - Azure Key Vault key stores
 
+<!--
+	2020-03-26 LeonardoP:
+	This article was severely changed on the Portuguese version. Please translate. Hiding outdated English version for now.
+-->
+
+<!-- link to version in Portuguese -->
+<div data-alt-locales="pt-br"></div>
+
+<!--
 > [!NOTE]
 > Azure Key Vault stores are compatible with all supported platforms
 
@@ -40,8 +49,8 @@ Sample configuration:
 
 * [Amplia - Key Stores](index.md)
 * [Amplia - Database Key Store](database.md)
-<!-- [Amplia - Native Key Stores](native.md) -->
 * [Amplia - CAPI Key Stores](capi.md)
 * [Amplia - CNG Key Stores](cng.md)
 * [Amplia - PKCS #11 key stores](pkcs11.md)
 * [Amplia on premises](../index.md)
+-->
