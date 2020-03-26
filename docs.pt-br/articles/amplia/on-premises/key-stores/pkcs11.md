@@ -1,4 +1,4 @@
-﻿# Armazenamento de chaves em PKCS #11
+﻿# Armazenamento de chaves via PKCS #11
 
 > [!NOTE]
 > PKCS #11 são compatíveis apenas com as instalações do Windows Server e Linux. Para armazenar chaves em um HSM em uma instância do Amplia hospedada no Azure App Services, use o armazenamento
@@ -57,7 +57,7 @@ Token USB criptográfico Safenet eToken (múltiplos tokens presentes, especifica
 * [Amplia - Configuração de Key Stores](index.md)
 * [Amplia - Armazenamento de chaves em banco de dados](database.md)
 <!-- [Amplia - Armazenamento de chaves no store nativo](native.md) -->
-* [Amplia - Armazenamento de chaves em CAPI](capi.md)
-* [Amplia - Armazenamento de chaves em CNG](cng.md)
+* [Amplia - Armazenamento de chaves via CAPI](capi.md)
+* [Amplia - Armazenamento de chaves via CNG](cng.md)
 * [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)
 * [Amplia on premises](../index.md)

@@ -28,8 +28,8 @@ Você pode usar o nome do armazenamento (banco de dados) para configurar o `Defa
 
 * [Amplia - Configuração de Key Stores](index.md)
 <!-- [Amplia - Armazenamento de chaves de store nativo](native.md) -->
-* [Amplia - Armazenamento de chaves em CAPI](capi.md)
-* [Amplia - Armazenamento de chaves em CNG](cng.md)
-* [Amplia - Armazenamento de chaves em PKCS #11](pkcs11.md)
+* [Amplia - Armazenamento de chaves via CAPI](capi.md)
+* [Amplia - Armazenamento de chaves via CNG](cng.md)
+* [Amplia - Armazenamento de chaves via PKCS #11](pkcs11.md)
 * [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)
 * [Amplia on premises](../index.md)

@@ -1,7 +1,7 @@
-﻿# Armazenamento de chaves em CAPI
+﻿# Armazenamento de chaves via CAPI
 
 > [!NOTE]
-> Armazenamento de chaves em CAPI são compatíveis somente com instalações Windows Server.
+> Armazenamento de chaves via CAPI são compatíveis somente com instalações Windows Server.
 
 O **Windows CryptoAPI (CAPI)** trabalha com o número dos Provedores de Serviço de Criptografia (CSPs) que fazem o trabalho real de fornecer vários "serviços criptográficos", como
 armazenamento de chaves. Dispositivos como Hardware Security Modules (HSMs) e token criptográfico USB geralmente fornecem um CAPI CSP que pode ser usado para se comunicar com o
@@ -15,7 +15,7 @@ dispositivo.
 
 Cada CAPI CSP é identificado por seu *nome* e *type*. Se estiver usando um HSM ou um token de criptografia, consulte a documentação do dispositivo para encontrar o nome e o tipo do CSP.
 
-Para configurar o armazenamento de chaves em CAPI no Amplia, use as seguintes configurações:
+Para configurar o armazenamento de chaves via CAPI no Amplia, use as seguintes configurações:
 
 * **Type**: `CAPI`
 * **ProviderName**: nome do CSP
@@ -66,7 +66,7 @@ Configuração de amostra:
 > [!TIP]
 > Se a documentação HSM não estiver clara sobre o tipo do CSP, tente usar `PROV_RSA_FULL` ou `PROV_RSA_AES`
 
-## Common armazenamento de chaves em CAPI
+## Common armazenamento de chaves via CAPI
 
 Safenet eToken criptográfico USB token:
 
@@ -86,7 +86,7 @@ Safenet eToken criptográfico USB token:
 * [Amplia - Armazenamento de chaves](index.md)
 * [Amplia - Armazenamento de chaves do banco de dados](database.md)
 <!-- [Amplia - Armazenamento de chaves nativo](native.md) -->
-* [Amplia - Armazenamento de chaves em CNG](cng.md)
-* [Amplia - Armazenamento de chaves em PKCS #11](pkcs11.md)
+* [Amplia - Armazenamento de chaves via CNG](cng.md)
+* [Amplia - Armazenamento de chaves via PKCS #11](pkcs11.md)
 * [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)
 * [Amplia on premises](../index.md)

@@ -1,7 +1,7 @@
-﻿# Armazenamento de chaves em CNG
+﻿# Armazenamento de chaves via CNG
 
 > [!NOTE]
-> Armazenamento de chaves em CNG são compatíveis somente com instalações Windows Server
+> Armazenamento de chaves via CNG são compatíveis somente com instalações Windows Server
 
 A **Cryptography API: Next Generation** trabalha com armazenamento de chaves através de um número de **Key Storage Providers (KSPs)** que fazem o trabalho real de armazenar chaves.
 Dispositivos como HSMs *(Hardware Security Modules)* e tokens USB criptográficos podem fornecer um CNG KSP que pode ser usado para se comunicar com o dispositivo.
@@ -14,7 +14,7 @@ Dispositivos como HSMs *(Hardware Security Modules)* e tokens USB criptográfico
 Cada CNG KSP é identificado por um *nome*. Se estiver usando um token de criptografia ou HSM, consulte a documentação do dispositivo para encontrar o nome e o tipo do KSP. Além disso,
 consulte a seção abaixo para nomes comuns de KSP.
 
-Para configurar um armazenamento de chaves em CNG no Amplia, use as seguintes configurações:
+Para configurar um armazenamento de chaves via CNG no Amplia, use as seguintes configurações:
 
 * **Type**: `CNG`
 * **ProviderName**: nome que identifica o KSP a ser usado
@@ -40,7 +40,7 @@ Configuração de amostra:
 }
 ```
 
-## Armazenamento comum de chaves em CNG
+## Armazenamento comum de chaves via CNG
 
 Safenet eToken criptográfico USB token:
 
@@ -58,7 +58,7 @@ Safenet eToken criptográfico USB token:
 * [Amplia - Armazenamento de chaves](index.md)
 * [Amplia - Armazenamento de chaves do banco de dados](database.md)
 <!-- [Amplia - Armazenamento de chaves nativo](native.md) -->
-* [Amplia - Armazenamento de chaves em CAPI](capi.md)
-* [Amplia - Armazenamento de chaves em PKCS #11](pkcs11.md)
+* [Amplia - Armazenamento de chaves via CAPI](capi.md)
+* [Amplia - Armazenamento de chaves via PKCS #11](pkcs11.md)
 * [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)
 * [Amplia on premises](../index.md)
