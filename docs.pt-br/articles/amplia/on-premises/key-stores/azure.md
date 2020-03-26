@@ -50,7 +50,7 @@ Conceda permissões à aplicação:
 1. De volta à tela de *policies*, clique em **Save** (atenção: )
 
 > [!WARNING]
-> Esse último passo (clicar no botão **Save**) é necessário, caso contrário as permissões não são salvas!
+> Esse último passo (clicar no botão **Save** após clicar em **Add**) é necessário, caso contrário as permissões não são salvas!
 
 ### Configuração do Amplia
 
