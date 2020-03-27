@@ -135,7 +135,7 @@ Uma vez adicionados os domínios ao App Service, clique em **TLS/SSL settings** 
 
 1. Clique na aba **Private Key Certificates (.pfx)**
 1. Clique em **Create App Service Managed Certificate**
-1. Escolha o domínio
+1. Selecione o domínio
 1. Clique em **Create**
 
 Após criar os certificados SSL para cada domínio, volte em **Custom domains** e siga os passos abaixo para cada domínio:
@@ -145,24 +145,59 @@ Após criar os certificados SSL para cada domínio, volte em **Custom domains** 
 1. Em *TLS/SSL Type*, escolha **SNI SSL**
 1. Clique em **Add Binding**
 
+## Cópia dos binários
+
+Agora iremos copiar os binários do site. Primeiramente, na seção **Overview** do App Service, pare o serviço clicando em **Stop**.
+
+Em seguida, ainda na seção **Overview**, obtenha os dados de acesso via FTP:
+
+* FTP hostname
+* FTP deployment username
+
+Utilizando os dados obtidos (a senha provavelmente foi cadastrada anteriormente), conecte-se ao App Service utilizando um cliente de FTP
+(sugerimos o <a href="https://filezilla-project.org/" target="_blank">FileZilla Client</a> ou o <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a>)
+e siga os passos abaixo:
+
+1. Navegue até a pasta `site/wwwroot`
+1. Apague o arquivo existente na pasta
+1. Extraia o conteúdo do [pacote de binários do Amplia](https://cdn.lacunasoftware.com/amplia/amplia-3.3.0.zip) para uma pasta temporária no seu computador
+1. Copie o conteúdo extraído para a pasta `wwwroot` do App Service
+
 ## Configuração do Amplia
 
-Agora iremos configurar o site. Primeiramente, gere a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados. Para isso,
-execute o seguinte código em um Powershell na sua máquina:
+Nas configurações do App Service, vá em **Advanced Tools** e clique em **Go**. Você será levado para o painel de controle *Kudu* do App Service.
 
-```ps
-$k = New-Object byte[] 32;
-[System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($k);
-[Convert]::ToBase64String($k);
+Clique em **Debug console**, depois em **CMD**. No console, digite os seguintes comando:
+
+```cmd
+cd site\wwwroot
+dir Lacuna*
 ```
 
-Em seguida, de volta ao portal do Azure, pare o App Service clicando em **Stop**. Em seguida, vá em **Configuration** e insira as seguintes configurações:
+Você deve ver diversos arquivos do site (copiados por FTP no passo anterior):
+
+![Site files on console](../../../../../images/amplia/console-dir.png)
+
+Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados, e tome nota do valor gerado:
+
+```cmd
+dotnet Lacuna.Amplia.Site.dll -- gen-enc-key
+```
+
+Escolha uma senha forte para proteger o acesso de *root* ao painel de controle, e calcule o hash dessa senha com o comando abaixo:
+
+```cmd
+dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
+```
+
+Novamente, tome nota do valor gerado. Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e insira as seguintes configurações:
+
+* `ASPNETCORE_ENVIRONMENT`: `Azure`
 
 ### General
 
 Configurações gerais:
 
-* `ASPNETCORE_ENVIRONMENT`: `Azure`
 * `General:EncryptionKey`: chave criptográfica gerada acima
 * `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
@@ -179,13 +214,13 @@ Configurações específicas do Amplia:
 
 Configurações do PKI Suite:
 
-* **PkiSuite:SdkLicense**: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
-* **PkiSuite:WebLicense**: sua licença para o componente Web PKI no formato binário (Base64). Somente obrigatório se usuário vai emitir certificados em seus computadores (procedimento de emissão web)
+* `PkiSuite:SdkLicense`: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
+* `PkiSuite:WebLicense`: sua licença para o componente Web PKI no formato binário (Base64). Somente obrigatório se usuário vai emitir certificados em seus computadores (procedimento de emissão web)
 
 [!include[Optional settings](../includes/optional-settings.md)]
 
 > [!NOTE]
-> Nos links acima, sempre que for mencionado algo como *na seção **Sec**, atribua a configuração **Conf** ao valor ...*, no Azure App Services você deve
+> Nos links acima, sempre que for mencionado algo como "na seção **Sec**, atribua a configuração **Conf** ao valor ...", no Azure App Services você deve
 > compor o nome da configuração com os nomes da seção e da configuração separados por `:`, ou seja, no exemplo acima: `Sec:Conf`
 
 Na seção *Connection strings*, clique em **+ New connection string** e preencha:
@@ -194,23 +229,11 @@ Na seção *Connection strings*, clique em **+ New connection string** e preench
 * **Value**: valor da connection string obtido durante a criação do banco de dados
 * **Type**: escolha **SQLAzure**
 
-## Cópia dos binários
+## Iniciando o App Service
 
-Na seção **Overview** do App Service, obtenha os dados de acesso via FTP:
+Por fim, em **Overview** do App Service, clique em **Start**. Em seguida, acesse a URL do painel de controle (o primeiro acesso pode demorar alguns instantes).
 
-* FTP hostname
-* FTP deployment username
-
-Utilizando os dados obtidos (a senha provavelmente foi cadastrada anteriormente), conecte-se ao App Service utilizando um cliente de FTP
-(sugerimos o <a href="https://filezilla-project.org/" target="_blank">FileZilla Client</a> ou o <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a>)
-e siga os passos abaixo:
-
-1. Navegue até a pasta `site/wwwroot`
-1. Apague o arquivo existente na pasta
-1. Extraia o conteúdo do [pacote de binários do Amplia](https://cdn.lacunasoftware.com/amplia/amplia-3.3.0.zip) para uma pasta temporária no seu computador
-1. Copie o conteúdo extraído para a pasta `wwwroot` do App Service
-
-Por fim, em **Overview** do App Service, clique em **Start**.
+Autentique-se com a senha de *root* escolhida durante a configuração. Você então terá acesso ao painel de controle, e a instalação estará concluída.
 
 ## Veja também
 
