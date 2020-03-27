@@ -199,25 +199,15 @@ dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
 
 Novamente, tome nota do valor gerado.
 
-Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e adicione as configurações descritas nas seções a seguir.
-
-### Connection string
-
-Na seção *Connection strings* (final da página de configurações), clique em **+ New connection string** e preencha:
-
-* **Name**: `DefaultConnection`
-* **Value**: valor da connection string obtido durante a criação do banco de dados
-* **Type**: escolha **SQLAzure**
-
-### General
-
-Nas **application settings**, adicione:
+Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e adicione as seguintes configurações:
 
 * `ASPNETCORE_ENVIRONMENT`: `Azure`
 * `General:EncryptionKey`: chave criptográfica gerada acima
 * `General:RootPasswordHash`: hash da senha de *root* calculado acima
 * `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
+
+Adicione, também, as configurações descritas nas seções a seguir.
 
 ### Domínios de acesso
 
@@ -248,9 +238,17 @@ Configuração de log:
 * `Serilog:WriteTo:0:Args:connectionString`: *connection string* da *storage account* criada anteriormente
 * `Serilog:WriteTo:0:Args:storageTableName` (opcional): nome da tabela a ser utilizada para armazenar os logs. Caso omitido, uma tabela denomiada *AmpliaLog* é utilizada.
 
-### Armazenamento de chaves
+### Connection string
+
+Na seção *Connection strings* (final da página de configurações), clique em **+ New connection string** e preencha:
+
+* **Name**: `DefaultConnection`
+* **Value**: valor da connection string obtido durante a criação do banco de dados
+* **Type**: escolha **SQLAzure**
 
 Salve as configurações feitas até o momento clicando em **Save**.
+
+### Armazenamento de chaves
 
 Conforme explicado na seção [Armazenamento de chaves](../index.md#key-storage) do planejamento da instalação, é preciso configurar pelo menos um key store para
 armazenar chaves. No Azure, recomendamos armazenar chaves no **Azure Key Vault**. Para tanto, siga as [instruções de configuração](../key-stores/azure.md) usando
