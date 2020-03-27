@@ -13,7 +13,7 @@ dotnet Lacuna.Amplia.Site.dll -- gen-enc-key
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/amplia:3.3 -- gen-enc-key
+docker run -i lacunasoftware/amplia:3.4 -- gen-enc-key
 ```
 
 ## Description

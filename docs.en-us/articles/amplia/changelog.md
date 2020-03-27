@@ -1,10 +1,11 @@
 ﻿# Amplia changelog
 
 <a name="v3-4-0" />
-### 3.4.0 (upcoming)
+### 3.4.0 (2020-03-27)
 
 * Add support for digitally signing the Certificate Agreement containing the subject's public key during the issue procedure
 * Add birth date to PKI Brazil (ICP-Brasil) order creation page
+* Add command [gen-enc-key](on-premises/tool/gen-enc-key.md)
 * Setting `General.QRCodeGatewayUrl` is now optional
 * Bug fixes
   * The logo image should not be a link on the certificate issue page

@@ -15,7 +15,7 @@ Antes de começar, obtenha o pacote de binários:
 
 <br />
 <center>
-**[Pacote de binários do Amplia 3.3.0](https://cdn.lacunasoftware.com/amplia/amplia-3.3.0.zip)**
+**[Pacote de binários do Amplia 3.4.0](https://cdn.lacunasoftware.com/amplia/amplia-3.4.0.zip)**
 </center>
 <br />
 
@@ -162,7 +162,7 @@ e siga os passos abaixo:
 
 1. Navegue até a pasta `site/wwwroot`
 1. Apague o arquivo `hostingstart.html`
-1. Extraia o conteúdo do [pacote de binários do Amplia](https://cdn.lacunasoftware.com/amplia/amplia-3.3.0.zip) para uma pasta temporária no seu computador
+1. Extraia o conteúdo do [pacote de binários do Amplia](https://cdn.lacunasoftware.com/amplia/amplia-3.4.0.zip) para uma pasta temporária no seu computador
 1. Copie o conteúdo extraído para a pasta `wwwroot` do App Service
 
 ## Configuração do Amplia

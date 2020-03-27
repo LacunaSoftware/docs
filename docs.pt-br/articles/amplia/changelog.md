@@ -1,10 +1,11 @@
 ﻿# Histórico de versões do Amplia
 
 <a name="v3-4-0" />
-### 3.4.0 (em breve)
+### 3.4.0 (2020-03-27)
 
 * Adicionada possibilidade de assinar digitalmente o Termo de Titularidade contendo a chave pública do certificado durante o processo de emissão
 * Adicionada data de nascimento ao formulário de criação de pedido ICP-Brasil
+* Adicionado comando [gen-enc-key](on-premises/tool/gen-enc-key.md)
 * Configuração `General.QRCodeGatewayUrl` passa a ser opcional
 * Correções de bugs
   * A logo não deve ser clicável na página de emissão de certificado
