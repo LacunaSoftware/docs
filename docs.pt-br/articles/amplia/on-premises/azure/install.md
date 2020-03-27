@@ -206,6 +206,7 @@ Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuratio
 * `General:RootPasswordHash`: hash da senha de *root* calculado acima
 * `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
+* `Oidc:Enabled`: `false` (desabilita a [integração com OpenID Connect](../configure-oidc.md), por ora)
 
 Adicione, também, as configurações descritas nas seções a seguir.
 
