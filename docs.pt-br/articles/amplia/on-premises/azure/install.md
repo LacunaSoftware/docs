@@ -105,6 +105,9 @@ Uma vez criado o App Service, tome nota de seu domínio, por exemplo `meu-app-se
 Crie os apontamentos necessários para o [domínio de acesso ao painel de controle](../index.md#dashboard-domain) e
 os [domínios de acesso](../index.md#access-domains).
 
+> [!NOTE]
+> Caso você não utilize o Azure como servidor de DNS das zonas, realize o procedimento equivalente no seu servidor de DNS
+
 Dependendo das suas escolhas, o procedimento abaixo pode ter que ser feito apenas 1 vez (se você escolheu apenas um
 domínio de acesso e pretende usá-lo também como domínio de acesso ao painel de controle) ou até 3 vezes (se você escolheu
 dois domínios de acesso e pretende usar um terceiro domínio para acessar o painel de controle).
@@ -144,9 +147,46 @@ Após criar os certificados SSL para cada domínio, volte em **Custom domains** 
 
 ## Configuração do Amplia
 
-Agora iremos configurar o site. Pare-o clicando em **Stop**. Em seguida, vá em **Configuration** e insira as seguintes configurações:
+Agora iremos configurar o site. Primeiramente, gere a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados. Para isso,
+execute o seguinte código em um Powershell na sua máquina:
 
-(TODO...)
+```ps
+$k = New-Object byte[] 32;
+[System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($k);
+[Convert]::ToBase64String($k);
+```
+
+Em seguida, de volta ao portal do Azure, pare o App Service clicando em **Stop**. Em seguida, vá em **Configuration** e insira as seguintes configurações:
+
+### General
+
+Configurações gerais:
+
+* `ASPNETCORE_ENVIRONMENT`: `Azure`
+* `General:EncryptionKey`: chave criptográfica gerada acima
+* `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
+* `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
+
+### Amplia
+
+Configurações específicas do Amplia:
+
+* `Amplia:DefaultAccessDomains:N`: n-ésimo [domínio de acesso](../index.md#access-domains), ex:
+  * `Amplia:DefaultAccessDomains:0`: `ca.patorum.com`
+  * `Amplia:DefaultAccessDomains:1`: `ca.patorum.org`
+
+### PKI Suite
+
+Configurações do PKI Suite:
+
+* **PkiSuite:SdkLicense**: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
+* **PkiSuite:WebLicense**: sua licença para o componente Web PKI no formato binário (Base64). Somente obrigatório se usuário vai emitir certificados em seus computadores (procedimento de emissão web)
+
+[!include[Optional settings](../includes/optional-settings.md)]
+
+> [!NOTE]
+> Nos links acima, sempre que for mencionado algo como *na seção **Sec**, atribua a configuração **Conf** ao valor ...*, no Azure App Services você deve
+> compor o nome da configuração com os nomes da seção e da configuração separados por `:`, ou seja, no exemplo acima: `Sec:Conf`
 
 Na seção *Connection strings*, clique em **+ New connection string** e preencha:
 
