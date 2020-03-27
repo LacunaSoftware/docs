@@ -11,14 +11,13 @@ siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
 
 ## Preparação
 
-Durante a instalação, serão criados alguns *resources*:
+Antes de começar, obtenha o pacote de binários:
 
-* Um banco de dados (*SQL database*)
-* Uma *storage account*
-* Um App Service
-
-Sugerimos criar um **resource group** para agrupar os *resources* criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
-realmente é importante é que **todos os resources sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
+<br />
+<center>
+**[Pacote de binários do Amplia 3.3.0](https://cdn.lacunasoftware.com/amplia/amplia-3.3.0.zip)**
+</center>
+<br />
 
 As instruções a seguir assumem que você já tem os seguintes *resources* criados na sua conta do Azure:
 
@@ -27,13 +26,14 @@ As instruções a seguir assumem que você já tem os seguintes *resources* cria
 * Zonas de DNS referentes ao [domínio de acesso ao painel de controle](../index.md#dashboard-domain)
   e aos [domínios de acesso](../index.md#access-domains)
 
-Antes de começar, obtenha o pacote de binários:
+Durante a instalação, serão criados alguns *resources*:
 
-<br />
-<center>
-**[Pacote de binários do Amplia 3.3.0](https://cdn.lacunasoftware.com/amplia/amplia-3.3.0.zip)**
-</center>
-<br />
+* Um banco de dados (*SQL database*)
+* Uma *storage account*
+* Um App Service
+
+Sugerimos criar um **resource group** para agrupar os *resources* criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
+realmente é importante é que **todos os resources sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
 
 ## Criação do banco de dados
 
@@ -55,7 +55,7 @@ Siga os procedimentos abaixo para criar um banco de dados para o sistema (você 
 > [!WARNING]
 > A *collation* do banco de dados **PRECISA SER** `Latin1_General_100_CI_AI`. Criar o banco de dados com uma *collation* diferente provavelmente fará com que a instalação falhe!
 
-Uma vez criado o banco de dados, obtenha a *connection string*:
+Uma vez concluida a criação do banco de dados, clique em **Go to resource**. Em seguida, obtenha a *connection string*:
 
 1. Clique em **Connection strings**
 1. Tome nota da connection string exibida na seção **ADO.NET (SQL authentication)**
@@ -167,7 +167,7 @@ e siga os passos abaixo:
 
 Nas configurações do App Service, vá em **Advanced Tools** e clique em **Go**. Você será levado para o painel de controle *Kudu* do App Service.
 
-Clique em **Debug console**, depois em **CMD**. No console, digite os seguintes comando:
+Clique em **Debug console**, depois em **CMD**. No console, execute os comandos abaixo:
 
 ```cmd
 cd site\wwwroot
@@ -178,11 +178,13 @@ Você deve ver diversos arquivos do site (copiados por FTP no passo anterior):
 
 ![Site files on console](../../../../../images/amplia/console-dir.png)
 
-Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados, e tome nota do valor gerado:
+Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados:
 
 ```cmd
 dotnet Lacuna.Amplia.Site.dll -- gen-enc-key
 ```
+
+Tome nota do valor gerado.
 
 Escolha uma senha forte para proteger o acesso de *root* ao painel de controle, e calcule o hash dessa senha com o comando abaixo:
 
@@ -190,9 +192,13 @@ Escolha uma senha forte para proteger o acesso de *root* ao painel de controle, 
 dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
 ```
 
-Novamente, tome nota do valor gerado. Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e insira as seguintes configurações:
+Novamente, tome nota do valor gerado.
+
+Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e insira as seguinte configuração:
 
 * `ASPNETCORE_ENVIRONMENT`: `Azure`
+
+Adicione também as configurações descritas nas seções a seguir.
 
 ### General
 
@@ -202,11 +208,11 @@ Configurações gerais:
 * `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
 
-### Amplia
+### Domínios de acesso
 
-Configurações específicas do Amplia:
+Configure os [domínios de acesso](../index.md#access-domains):
 
-* `Amplia:DefaultAccessDomains:N`: n-ésimo [domínio de acesso](../index.md#access-domains), ex:
+* `Amplia:DefaultAccessDomains:N`: n-ésimo domínio de acesso, ex:
   * `Amplia:DefaultAccessDomains:0`: `ca.patorum.com`
   * `Amplia:DefaultAccessDomains:1`: `ca.patorum.org`
 
@@ -216,6 +222,33 @@ Configurações do PKI Suite:
 
 * `PkiSuite:SdkLicense`: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
 * `PkiSuite:WebLicense`: sua licença para o componente Web PKI no formato binário (Base64). Somente obrigatório se usuário vai emitir certificados em seus computadores (procedimento de emissão web)
+
+### Blob Storage
+
+Configuração da *storage account*:
+
+* `BlobStorage:ConnectionString`: *connection string* da *storage account* criada anteriormente
+* `BlobStorage:ContainerName` (opcional): nome do *container* a ser utilizado para armazenar arquivos. Caso omitido, um container denominado *amplia* é utilizado.
+
+### Logging
+
+Configuração de log:
+
+* `Serilog:WriteTo:0:Args:connectionString`: *connection string* da *storage account* criada anteriormente
+* `Serilog:WriteTo:0:Args:storageTableName` (opcional): nome da tabela a ser utilizada para armazenar os logs. Caso omitido, uma tabela denomiada *AmpliaLog* é utilizada.
+
+### Armazenamento de chaves
+
+Conforme explicado na seção [Armazenamento de chaves](../index.md#key-storage) do planejamento da instalação, é preciso configurar pelo menos um key store para
+armazenar chaves. No Azure, recomendamos armazenar chaves no **Azure Key Vault**. Para tanto, siga as [instruções de configuração](../key-stores/index.md) usando
+como nome do key store o valor `Azure`. Em seguida, adicione a configuração:
+
+* `Amplia:DefaultKeyStore`: `Azure`
+
+Outra opção é utilizar o [Armazenamento em banco de dados](../key-stores/database.md). Nesse caso, adicione as seguintes configurações:
+
+* `Amplia:DatabaseKeyStoreEnabled`: `true`
+* `Amplia:DefaultKeyStore`: `Database`
 
 [!include[Optional settings](../includes/optional-settings.md)]
 
