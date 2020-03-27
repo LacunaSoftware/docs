@@ -8,8 +8,8 @@ Amplia is compatible with:
 
 * [Windows Server](windows/index.md)
 * [Linux](linux/index.md)
-* [Azure App Services](azure/index.md)
 * [Docker](docker/index.md)
+* [Azure App Services](azure/index.md)
 
 Click on one of the platforms above for specific setup instructions.
 

@@ -8,10 +8,8 @@ O Amplia é compatível com os seguintes ambientes:
 
 * [Windows Server](windows/index.md)
 * [Linux](linux/index.md)
+* [Docker](docker/index.md)
 * [Azure App Services](azure/index.md)
-
-> [!NOTE]
-> Em breve adicionaremos suporte a Docker. Entre em contato conosco caso queira instalar o Amplia em Docker.
 
 Clique em um dos ambientes acima para obter instruções específicas de instalação e atualização.
 
