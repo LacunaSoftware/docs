@@ -22,9 +22,9 @@ realmente é importante é que **todos os resources sejam criados na mesma regi�
 
 As instruções a seguir assumem que você já tem os seguintes *resources* criados na sua conta do Azure:
 
-* Um *SQL Server* previamente criado (a criação do *SQL database* é coberta por este artigo)
-* Um *App Service Plan* previamente criado (a criação do App Service é coberta por este artigo)
-* Zonas de DNS previamente criadas referentes ao [domínio de acesso ao painel de controle](../index.md#dashboard-domain)
+* Um *SQL Server* (a criação do *SQL database* é coberta por este artigo)
+* Um *App Service Plan* (a criação do App Service é coberta por este artigo)
+* Zonas de DNS referentes ao [domínio de acesso ao painel de controle](../index.md#dashboard-domain)
   e aos [domínios de acesso](../index.md#access-domains)
 
 Antes de começar, obtenha o pacote de binários:
