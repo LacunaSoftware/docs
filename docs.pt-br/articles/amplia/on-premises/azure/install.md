@@ -31,6 +31,7 @@ Durante a instalação, serão criados alguns *resources*:
 * Um banco de dados (*SQL database*)
 * Uma *storage account*
 * Um App Service
+* Um Azure Key Vault (opcional)
 
 Sugerimos criar um **resource group** para agrupar os *resources* criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
 realmente é importante é que **todos os resources sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
@@ -82,7 +83,7 @@ logs de sistema. Siga os passos abaixo para criar uma *storage account* (caso qu
 1. Clique em **Review + create** (caso queira restringir o acesso de rede à *storage account*, clique em *Next: Networking* e faça as configurações necessárias)
 1. Clique em **Create**
 
-Uma vez criada a *storage account*, obtenha uma *connection string*:
+Uma vez concluída a criação da *storage account*, clique em **Go to resource**. Em seguida, obtenha uma *connection string*:
 
 1. Nas configurações da *storage acount*, clique em **Access keys**
 1. Na seção **key1**, tome nota do valor do campo **Connection string**
@@ -95,10 +96,11 @@ Siga os procedimentos abaixo para criar um *App Service* (você precisa ter um *
 1. Na primeira aba (*Basics*), preencha os dados conforme a sua infraestrutura (seguindo a região escolhida para o sistema)
    * Em *Publish*, escolha **Code**
    * Em *Runtime stack*, escolha **.NET Core 2.1 (LTS)**
+   * Em *Operating System*, escolha **Windows**
 1. Clique em **Review + create**
 1. Clique em **Create**
 
-Uma vez criado o App Service, tome nota de seu domínio, por exemplo `meu-app-service.azurewebsites.net`.
+Uma vez concluída a criação do App Service, clique em **Go to resource**. Em seguida, tome nota de seu domínio, por exemplo `meu-app-service.azurewebsites.net`.
 
 ## Configuração de domínios
 
@@ -159,7 +161,7 @@ Utilizando os dados obtidos (a senha provavelmente foi cadastrada anteriormente)
 e siga os passos abaixo:
 
 1. Navegue até a pasta `site/wwwroot`
-1. Apague o arquivo existente na pasta
+1. Apague o arquivo `hostingstart.html`
 1. Extraia o conteúdo do [pacote de binários do Amplia](https://cdn.lacunasoftware.com/amplia/amplia-3.3.0.zip) para uma pasta temporária no seu computador
 1. Copie o conteúdo extraído para a pasta `wwwroot` do App Service
 
@@ -184,6 +186,9 @@ Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar
 dotnet Lacuna.Amplia.Site.dll -- gen-enc-key
 ```
 
+> [!NOTE]
+> Por ser a primeira execução, o comando pode levar cerca de 1-2 minutos para completar
+
 Tome nota do valor gerado.
 
 Escolha uma senha forte para proteger o acesso de *root* ao painel de controle, e calcule o hash dessa senha com o comando abaixo:
@@ -194,17 +199,23 @@ dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
 
 Novamente, tome nota do valor gerado.
 
-Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e insira as seguinte configuração:
+Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e adicione as configurações descritas nas seções a seguir.
 
-* `ASPNETCORE_ENVIRONMENT`: `Azure`
+### Connection string
 
-Adicione também as configurações descritas nas seções a seguir.
+Na seção *Connection strings* (final da página de configurações), clique em **+ New connection string** e preencha:
+
+* **Name**: `DefaultConnection`
+* **Value**: valor da connection string obtido durante a criação do banco de dados
+* **Type**: escolha **SQLAzure**
 
 ### General
 
-Configurações gerais:
+Nas **application settings**, adicione:
 
+* `ASPNETCORE_ENVIRONMENT`: `Azure`
 * `General:EncryptionKey`: chave criptográfica gerada acima
+* `General:RootPasswordHash`: hash da senha de *root* calculado acima
 * `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
 
@@ -239,8 +250,10 @@ Configuração de log:
 
 ### Armazenamento de chaves
 
+Salve as configurações feitas até o momento clicando em **Save**.
+
 Conforme explicado na seção [Armazenamento de chaves](../index.md#key-storage) do planejamento da instalação, é preciso configurar pelo menos um key store para
-armazenar chaves. No Azure, recomendamos armazenar chaves no **Azure Key Vault**. Para tanto, siga as [instruções de configuração](../key-stores/index.md) usando
+armazenar chaves. No Azure, recomendamos armazenar chaves no **Azure Key Vault**. Para tanto, siga as [instruções de configuração](../key-stores/azure.md) usando
 como nome do key store o valor `Azure`. Em seguida, adicione a configuração:
 
 * `Amplia:DefaultKeyStore`: `Azure`
@@ -255,12 +268,6 @@ Outra opção é utilizar o [Armazenamento em banco de dados](../key-stores/data
 > [!NOTE]
 > Nos links acima, sempre que for mencionado algo como "na seção **Sec**, atribua a configuração **Conf** ao valor ...", no Azure App Services você deve
 > compor o nome da configuração com os nomes da seção e da configuração separados por `:`, ou seja, no exemplo acima: `Sec:Conf`
-
-Na seção *Connection strings*, clique em **+ New connection string** e preencha:
-
-* **Name**: `DefaultConnection`
-* **Value**: valor da connection string obtido durante a criação do banco de dados
-* **Type**: escolha **SQLAzure**
 
 ## Iniciando o App Service
 
