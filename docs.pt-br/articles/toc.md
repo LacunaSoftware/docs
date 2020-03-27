@@ -188,6 +188,7 @@
 #### [Dados persistentes](amplia/on-premises/docker/persistent-data.md)
 #### [Usando com GrantID integrado](amplia/on-premises/docker/internal-grantid.md)
 ### [Utilitário de linha de comando](amplia/on-premises/tool/index.md)
+#### [gen-enc-key](amplia/on-premises/tool/gen-enc-key.md)
 #### [hash-root-pass](amplia/on-premises/tool/hash-root-pass.md)
 #### [update-db](amplia/on-premises/tool/update-db.md)
 #### [test-email](amplia/on-premises/tool/test-email.md)

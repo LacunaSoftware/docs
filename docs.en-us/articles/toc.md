@@ -188,6 +188,7 @@
 #### [Persistent data](amplia/on-premises/docker/persistent-data.md)
 #### [Using a stack with GrantID](amplia/on-premises/docker/internal-grantid.md)
 ### [Command-line tool](amplia/on-premises/tool/index.md)
+#### [gen-enc-key](amplia/on-premises/tool/gen-enc-key.md)
 #### [hash-root-pass](amplia/on-premises/tool/hash-root-pass.md)
 #### [update-db](amplia/on-premises/tool/update-db.md)
 #### [test-email](amplia/on-premises/tool/test-email.md)
