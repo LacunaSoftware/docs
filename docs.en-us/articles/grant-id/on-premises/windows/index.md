@@ -21,7 +21,7 @@
 
 1. Download and install the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145" target="_blank">Microsoft Visual C++ 2015 Redistributable package</a>
 1. Download and install the <a href="https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-2.1.16-windows-hosting-bundle-installer" target="_blank">NET Core 2.1 Hosting Bundle</a>
-1. Download and install the <a href="https://go.microsoft.com/fwlink/?linkid=839516" target="_blank">Windows Management Framework (WMF) 5.1</a>
+1. (Only for Windows Server 2012 or lower) Download and install the <a href="https://go.microsoft.com/fwlink/?linkid=839516" target="_blank">Windows Management Framework (WMF) 5.1</a>
 
 > [!WARNING]
 > After the installation is complete, the server must be restarted.
