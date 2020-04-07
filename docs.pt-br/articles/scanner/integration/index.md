@@ -10,9 +10,13 @@ Por exemplo, suponha que na sua aplicação exista um formulário que aceita *up
 
 ![Demo step 1](../../../../images/scanner/demo-1.png)
 
-Ao clicar no botão, o usuário seria redirecionado para a página de digitalização, no Scanner Service:
+Ao clicar no botão, o usuário é redirecionado para a página de digitalização:
 
 ![Demo step 2](../../../../images/scanner/demo-2.png)
+
+> [!NOTE]
+> A página de digitalização pode ser personalizada com a logomarca e cores da sua aplicação de modo a oferecer ao usuário uma experiência
+> homogênea (a imagem acima é um exemplo de personalização).
 
 Ao concluir o processo de digitalização, o usuário é redirecionado de volta à sua aplicação:
 
@@ -24,16 +28,25 @@ A sua aplicação então faz uma chamada à API do serviço para obter o documen
 
 ## Visão geral
 
-O procedimento se inicia com a sua aplicação criando uma *sessão de digitalização*, passando o *returnUrl* &mdash; a URL à qual o usuário deve ser
-levado de volta ao final do processo. A sua aplicação recebe de volta o *redirectUrl* &mdash; a URL à qual o usuário deve ser levado para iniciar o
+O procedimento se inicia com a sua aplicação criando uma **sessão de digitalização**, passando o **returnUrl** &ndash; a URL à qual o usuário deve ser
+levado de volta ao final do processo. A sua aplicação recebe de volta o **redirectUrl** &ndash; a URL à qual o usuário deve ser levado para iniciar o
 processo de digitalização:
 
 ![Integration part 1](../../../../images/scanner/integration-1.png)
 
-Ao final do processo de digitalização, o usuário é levado de volta à sua aplicação (na URL *returnUrl*). É adicionado à URL um argumento chamado *scanSessionId*.
+Ao final do processo de digitalização, o usuário é levado de volta à sua aplicação (na URL **returnUrl**). É adicionado à URL um argumento chamado **scanSessionId**.
 Com esse argumento, a sua aplicação faz uma chamada à API do serviço para obter o(s) documento(s) digitalizado(s):
 
 ![Integration part 2](../../../../images/scanner/integration-2.png)
+
+## Parâmetros de comunicação
+
+Você precisará dos seguintes parâmetros:
+
+* **Endpoint**: endereço do Scanner Service, ex: `https://scanner.lacunasoftware.com/`
+* **API Key**: chave de acesso à API
+
+Solicite ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com) seus parâmetros.
 
 ## Linguagens de programação
 
