@@ -1,6 +1,6 @@
 ﻿# Guia de Integração - Scanner Service
 
-O Lacuna Scanner Service lhe permite adicionar uma página de digitalização à sua aplicação web existente de maneira rápida e fácil porque
+O [Lacuna Scanner Service](../index.md) lhe permite adicionar uma página de digitalização à sua aplicação web existente de maneira rápida e fácil porque
 a digitalização em si ocorre em uma página do serviço, e não da sua aplicação, liberando esta de lidar com as complexidades envolvidas na
 comunicação com scanners e no preenchimento dos metadados obrigatórios previstos no [Decreto Nº 10.278/2020](http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2020/Decreto/D10278.htm).
 

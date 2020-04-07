@@ -68,19 +68,22 @@ Caso a sua aplicação web seja em ASP.NET Core, utilize o pacote [Lacuna.Scanne
 No método `ConfigureServices` do *startup* da sua aplicação, adicione:
 
 ```cs
-services.AddScanner()
-	.Configure(Configuration.GetSection("Scanner"));
+public void ConfigureServices(IServiceCollection services) {
+	...
+	services.AddScanner()
+		.Configure(Configuration.GetSection("Scanner"));
+}
 ```
 
 No arquivo de configuração `appsettings.json`, adicione a seção **Scanner**:
 
 ```json
-	...
-	"Scanner": {
-		"Endpoint": "https://scanner.lacunasoftware.com/",
-		"ApiKey": "..."
-	},
-	...
+...
+"Scanner": {
+	"Endpoint": "https://scanner.lacunasoftware.com/",
+	"ApiKey": "..."
+},
+...
 ```
 
 Nas partes da aplicação que precisarem fazer chamadas à API do serviço, peça via *dependency injection* uma instância de `IScannerService`:

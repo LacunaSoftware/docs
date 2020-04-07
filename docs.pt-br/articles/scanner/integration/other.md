@@ -4,7 +4,8 @@ A API do Lacuna Scanner é um REST com mensagens em formato JSON, facilmente cha
 
 Veja a [documentação da API](http://scanner.lacunasoftware.com/swagger).
 
-Passe a **chave de acesso à API** no *header* `X-Api-Key`:
+O parâmetro de comunicação **endpoint** deve ser utilizado para prefixar todas as URLs relativas mencionadas nesta página. Já a **chave de acesso à API** deve
+ser enviada no *header* `X-Api-Key` de cada requisição:
 
 ```plaintext
 X-Api-Key: ...
@@ -29,13 +30,13 @@ Quando detectar que o usuário voltou ao seu site (procure pelo argumento `scanS
 documentos digitalizados:
 
 ```plaintext
-GET /api/scan-sessions/...
+GET /api/scan-sessions/{id}
 ```
 
 Para cada documento retornado (array `Documents`), utilize a chamada `GET /api/documents/{id}/content` para obter o conteúdo do arquivo:
 
 ```plaintext
-GET /api/documents/.../content
+GET /api/documents/{id}/content
 ```
 
 > [!NOTE]
@@ -45,7 +46,7 @@ Caso prefira, utilize a chamada `GET /api/documents/{id}/file-link` para obter u
 no frontend para que o usuário clique e obtenha o documento:
 
 ```plaintext
-GET /api/documents/.../file-link
+GET /api/documents/{id}/file-link
 ```
 
 > [!NOTE]
