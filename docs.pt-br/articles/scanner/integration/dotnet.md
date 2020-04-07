@@ -1,7 +1,10 @@
 ﻿# Guia de Integração em .NET
 
-Para integrar a sua aplicação web ao [Lacuna Scanner Service](../index.md), adicione o pacote [Lacuna.Scanner.Client](https://www.nuget.org/packages/Lacuna.Scanner.Client)
-ao seu projeto.
+Para integrar a sua aplicação web em .NET ao [Lacuna Scanner Service](../index.md), siga os passos descritos neste artigo.
+
+[!include[See overview](includes/see-overview.md)]
+
+Primeiramente, adicione o pacote [Lacuna.Scanner.Client](https://www.nuget.org/packages/Lacuna.Scanner.Client) ao seu projeto.
 
 > [!TIP]
 > Veja a sessão [ASP.NET Core](#aspnet-core) abaixo caso a sua aplicação utilize essa tecnologia.

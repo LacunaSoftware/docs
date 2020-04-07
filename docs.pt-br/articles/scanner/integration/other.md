@@ -1,6 +1,8 @@
-﻿# Guia de Integração - Outras linguagens
+﻿# Integração por REST API - Lacuna Scanner
 
 A API do Lacuna Scanner é um REST com mensagens em formato JSON, facilmente chamada em qualquer linguagem de programação com suporte a realizar chamadas HTTP.
+
+[!include[See overview](includes/see-overview.md)]
 
 Veja a [documentação da API](http://scanner.lacunasoftware.com/swagger).
 

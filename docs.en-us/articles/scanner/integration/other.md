@@ -1,4 +1,4 @@
-﻿# API Integration (other languages)
+﻿# REST API Integration
 
 <!-- link to version in Portuguese -->
 <div data-alt-locales="pt-br"></div>

@@ -26,6 +26,7 @@ A sua aplicação então faz uma chamada à API do serviço para obter o documen
 
 ![Demo step 4](../../../../images/scanner/demo-4.png)
 
+<a name="overview" />
 ## Visão geral
 
 O procedimento se inicia com a sua aplicação criando uma **sessão de digitalização**, passando o **returnUrl** &ndash; a URL à qual o usuário deve ser
@@ -53,4 +54,4 @@ Solicite ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com) 
 Escolha uma linguagem de programação para instruções específicas:
 
 * [.NET](dotnet.md)
-* [Outras linguagens](other.md)
+* Para outras linguagens: [Integração por REST API](other.md)

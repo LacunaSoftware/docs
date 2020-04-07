@@ -228,3 +228,10 @@
 ### [Setup on Azure App Services](grant-id/on-premises/azure/index.md)
 ## [Post-installation steps](grant-id/on-premises/post-install.md)
 <!-- End of GrantID -->
+
+<!-- Start of Scanner -->
+# [Scanner](scanner/index.md)
+## [API Integration](scanner/integration/index.md)
+### [.NET](scanner/integration/dotnet.md)
+### [REST API](scanner/integration/other.md)
+<!-- End of GrantID -->
