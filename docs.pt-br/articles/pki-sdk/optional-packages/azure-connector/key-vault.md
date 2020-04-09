@@ -35,7 +35,7 @@ chave que deseja utilizar:
 
 ```cs
 var azureKeyProvider = new AzureKeyProvider(options, azureApiAuthenticator);
-var key = await azureKeyProvider.GetKeyAsync("...");
+var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
 ```
 
 > [!NOTE]
@@ -51,7 +51,7 @@ var signature = key.GetSignatureCsp(DigestAlgorithm.SHA256).SignHash(toSignHash)
 Entretanto, a forma mais fácil de usar a chave é chamando o método `GetCertificateWithKey()` passando um @Lacuna.Pki.PKCertificate, obtendo de volta um @Lacuna.Pki.PKCertificateWithKey:
 
 ```cs
-var certificate = PKCertificate.Decode(...);
+var certificate = PKCertificate.Decode(/* certificate file path or content */);
 var certificateWithKey = key.GetCertificateWithKey(certificate);
 ```
 
@@ -62,7 +62,7 @@ Com um `PKCertificateWithKey`, é possível fazer assinaturas em "um único pass
 
 ```cs
 var signer = new PadesSigner();
-signer.SetPdfToSign(...);
+signer.SetPdfToSign(/* PDF file path, content or stream */);
 signer.SetSigningCertificate(certWithKey);
 signer.SetPolicy(PadesPoliciesForGeneration.GetPadesBasic(TrustArbitrators.PkiBrazil));
 signer.ComputeSignature();
@@ -83,12 +83,12 @@ Global.AzureApiAuthenticator = new AzureApiAuthenticator(options);
 ...
 
 var azureKeyProvider = new AzureKeyProvider(Global.AzureKeyVaultOptions, Global.AzureApiAuthenticator);
-var key = await azureKeyProvider.GetKeyAsync("...");
-var certificate = PKCertificate.Decode(...);
+var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
+var certificate = PKCertificate.Decode(/* certificate file path or content */);
 var certificateWithKey = key.GetCertificateWithKey(certificate);
 
 var signer = new PadesSigner();
-signer.SetPdfToSign(...);
+signer.SetPdfToSign(/* PDF file path, content or stream */);
 signer.SetSigningCertificate(certWithKey);
 signer.SetPolicy(PadesPoliciesForGeneration.GetPadesBasic(TrustArbitrators.PkiBrazil));
 signer.ComputeSignature();
