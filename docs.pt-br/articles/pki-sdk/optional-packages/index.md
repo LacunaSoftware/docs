@@ -23,7 +23,7 @@ Para realizar essa operações, é necessário passar para o SDK um objeto que i
 para sistemas em larga escala, o armazenamento em disco pode não ser suficiente no que se refere à confiabilidade.
 Os seguintes pacotes opcionais oferecem outras possibilidade de armazenamento:
 
-* [Azure Connector](azure-connector.md) (armazenamento no Azure Blob Storage)
+* [Azure Connector](azure-connector/index.md) (armazenamento no Azure Blob Storage)
 * [Amazon Connector](amazon-connector.md) (armazenamento no Amazon S3)
 * [Entity Framework Connector](ef-connector.md) (armazenamento em banco de dados)
 
@@ -33,7 +33,7 @@ Os seguintes pacotes oferecem a possibilidade de logar mensagens internas do SDK
 
 * [NLog Connector](nlog-connector.md) (enviar logs para a biblioteca NLog)
 * [Entity Framework Connector](ef-connector.md) (enviar logs para o banco de dados)
-* [Azure Connector](azure-connector.md) (enviar logs para o Azure Table Storage)
+* [Azure Connector](azure-connector/index.md) (enviar logs para o Azure Table Storage)
 
 O pacote recomendado para log é o [NLog Connector](nlog-connector.md), pois através do **NLog** é possível enviar logs
 para diferentes locais, inclusive para o Azure e para o banco de dados, aproveitando os benefícios de performance dessa
