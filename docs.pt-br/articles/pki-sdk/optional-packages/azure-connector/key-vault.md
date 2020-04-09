@@ -140,12 +140,12 @@ public MyController : ApiController {
 Daí em diante, o uso é idêntico ao descrito na seção anterior:
 
 ```cs
-var key = await azureKeyProvider.GetKeyAsync("...");
-var certificate = PKCertificate.Decode(...);
+var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
+var certificate = PKCertificate.Decode(/* certificate file path or content */);
 var certificateWithKey = key.GetCertificateWithKey(certificate);
 
 var signer = new PadesSigner();
-signer.SetPdfToSign(...);
+signer.SetPdfToSign(/* PDF file path, content or stream */);
 signer.SetSigningCertificate(certWithKey);
 signer.SetPolicy(PadesPoliciesForGeneration.GetPadesBasic(TrustArbitrators.PkiBrazil));
 signer.ComputeSignature();
