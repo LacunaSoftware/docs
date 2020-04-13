@@ -66,9 +66,7 @@ if (scanSession.Result == ScanSessionResults.Success) {
 <a name="aspnet-core" />
 ## ASP.NET Core
 
-Caso a sua aplicação web seja em ASP.NET Core, utilize o pacote [Lacuna.Scanner.Client.AspNetCore](https://www.nuget.org/packages/Lacuna.Scanner.Client.AspNetCore).
-
-No método `ConfigureServices` do *startup* da sua aplicação, adicione:
+Caso a sua aplicação web seja em ASP.NET Core, no método `ConfigureServices` do *startup* da sua aplicação, adicione:
 
 ```cs
 public void ConfigureServices(IServiceCollection services) {
@@ -77,6 +75,10 @@ public void ConfigureServices(IServiceCollection services) {
 		.Configure(Configuration.GetSection("Scanner"));
 }
 ```
+
+> [!NOTE]
+> Não utilize o pacote ~~Lacuna.Scanner.Client.AspNetCore~~. O pacote [Lacuna.Scanner.Client](https://www.nuget.org/packages/Lacuna.Scanner.Client) já
+> possui tudo o que você precisa para usar o Scanner em ASP.NET Core.
 
 No arquivo de configuração `appsettings.json`, adicione a seção **Scanner**:
 
