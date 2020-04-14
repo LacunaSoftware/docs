@@ -9,6 +9,6 @@ Register the Microsoft key and package repository (this only needs to be done on
 [!include[Install ASP.NET Core Runtime](../../../../../includes/linux/rhel/install-aspnetcore-31.md)]
 
 > [!NOTE]
-> If the command above fails due to broken dependencies, for instance on *libicu*, make sure your system is [registered and attached to a Red Hat subscription](https://access.redhat.com/solutions/253273)
+> If the command above fails, make sure your system is [registered and attached to a Red Hat subscription](https://access.redhat.com/solutions/253273)
 
 [!include[Test dotnet](../test-dotnet-31.md)]
