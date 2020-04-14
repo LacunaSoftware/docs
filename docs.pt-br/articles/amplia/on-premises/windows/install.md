@@ -10,7 +10,7 @@ Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../inde
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-<a name="install-asp-net-core" /> <!-- TODO: move this to a better place once proper instructions are written -->
+<a name="install-aspnet-core" /> <!-- TODO: move this to a better place once proper instructions are written -->
 
 ## Instalação
 

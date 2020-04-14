@@ -10,7 +10,7 @@ To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-<a name="install-asp-net-core" /> <!-- TODO: move this to a better place once proper instructions are written -->
+<a name="install-aspnet-core" /> <!-- TODO: move this to a better place once proper instructions are written -->
 
 ## Installation
 
