@@ -3,10 +3,10 @@
         listen       80 default_server;
         listen       [::]:80 default_server;
         server_name  _;
-        root         /opt/rh/rh-nginx114/root/usr/share/nginx/html;
+        root         /opt/rh/rh-nginx116/root/usr/share/nginx/html;
 
         # Load configuration files for the default server block.
-        include      /etc/opt/rh/rh-nginx114/nginx/default.d/*.conf;
+        include      /etc/opt/rh/rh-nginx116/nginx/default.d/*.conf;
 
         location / {
         }
