@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-5-0" />
+### 3.5.0 (2020-04-14)
+
+* Sistema migrado para ASP.NET Core 3.1 (versão LTS, suportada até dez/2022)
+
+Veja [Atualizando o Amplia da versão 3.0-3.4 para 3.5](on-premises/update-35.md)
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-4-0" />
 ### 3.4.0 (2020-03-27)
 

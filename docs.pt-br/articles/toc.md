@@ -208,6 +208,7 @@
 ### [Configuração de redirecionamento para HTTPS](amplia/on-premises/configure-https-redirect.md)
 ### [Verificando a versão instalada](amplia/on-premises/check-version.md)
 ### [Atualizando para 3.0](amplia/on-premises/update-30.md)
+### [Atualizando para 3.5](amplia/on-premises/update-35.md)
 ## [Histórico de versões](amplia/changelog.md)
 <!-- End of Amplia -->
 
