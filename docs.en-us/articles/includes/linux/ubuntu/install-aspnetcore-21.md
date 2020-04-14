@@ -1,4 +1,6 @@
-﻿## Install the ASP.NET Core Runtime 2.1
+﻿<a name="install-aspnet-core" />
+
+## Install the ASP.NET Core Runtime 2.1
 
 [!include[Proceed as root](../su.md)]
 
