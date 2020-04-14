@@ -12,7 +12,7 @@ Example: https://amplia.lacunasoftware.com/api/system/info
 The system will return a JSON with the version, for instance:
 
 ```json
-{"productName":"Lacuna Amplia","productVersion":"2.14.0"}
+{"productName":"Lacuna Amplia","productVersion":"3.x.x"}
 ```
 
 ## See also

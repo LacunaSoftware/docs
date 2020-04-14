@@ -10,11 +10,12 @@ To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
+<a name="install-asp-net-core" /> <!-- TODO: move this to a better place once proper instructions are written -->
+
 ## Installation
 
 1. Install IIS
-1. https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.2.5-windows-hosting-bundle-installer
-   * https://aka.ms/dotnetcore-2-2-windowshosting
+1. https://aka.ms/dotnetcore-3-1-windowshosting
 1. Create folder for site
 1. Create folder for logs
 1. Create site

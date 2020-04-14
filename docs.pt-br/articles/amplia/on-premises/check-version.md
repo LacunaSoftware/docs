@@ -12,7 +12,7 @@ Exemplo: https://amplia.lacunasoftware.com/api/system/info
 O retorno é um JSON contendo a versão do sistema, por exemplo:
 
 ```json
-{"productName":"Lacuna Amplia","productVersion":"2.14.0"}
+{"productName":"Lacuna Amplia","productVersion":"3.x.x"}
 ```
 
 ## Veja também

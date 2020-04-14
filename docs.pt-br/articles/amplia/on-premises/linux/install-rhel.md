@@ -16,7 +16,7 @@ Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../inde
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime 2.2](../../../includes/linux/rhel/install-aspnetcore-22.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/rhel/install-aspnetcore-31.md)]
 
 ## Instalar o Amplia
 

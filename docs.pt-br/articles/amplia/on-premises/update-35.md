@@ -1,5 +1,8 @@
 ﻿# Atualizando o Amplia da versão 3.0-3.4 para 3.5
 
+> [!NOTE]
+> Se a sua instância do Amplia está em uma versão 2.x, [atualize primeiro para a versão 3.0](update-30.md)
+
 Com o término do suporte por parte da Microsoft ao ASP.NET Core 2.2, a versão [3.5](../changelog.md#v3-5-0) do [Amplia](../index.md) foi migrada
 para o ASP.NET Core 3.1, que é a versão mais recente com suporte de longo prazo, [sendo suportada até dezembro de 2022](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#lifecycle).
 

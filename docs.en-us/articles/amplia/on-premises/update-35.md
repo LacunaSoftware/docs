@@ -1,5 +1,8 @@
 ﻿# Update Amplia from 3.0-3.4 to 3.5
 
+> [!NOTE]
+> If your Amplia instance is on a 2.x version, [update first to 3.0](update-30.md)
+
 Now that ASP.NET Core 2.2 is deprecated, version [3.5](../changelog.md#v3-5-0) of [Amplia](../index.md) has been migrated to use ASP.NET Core 3.1, which is
 the newest LTS release of ASP.NET Core, [to be supported by Microsoft until December 2022](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#lifecycle).
 
