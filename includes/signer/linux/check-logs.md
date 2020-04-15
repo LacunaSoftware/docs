@@ -1,3 +1,3 @@
 ﻿```sh
-journalctl -u signer
+journalctl -u lacuna-signer
 ```

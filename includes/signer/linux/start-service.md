@@ -1,5 +1,5 @@
 ﻿```sh
-systemctl enable signer
-systemctl start signer
-systemctl status signer
+systemctl enable lacuna-signer
+systemctl start lacuna-signer
+systemctl status lacuna-signer
 ```

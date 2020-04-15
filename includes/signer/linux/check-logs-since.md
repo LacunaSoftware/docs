@@ -1,3 +1,3 @@
 ﻿```sh
-journalctl -u signer --since "1 min ago"
+journalctl -u lacuna-signer --since "1 min ago"
 ```

@@ -1,3 +1,3 @@
 ﻿```sh
-nano /etc/signer/appsettings.linux.json
+nano /etc/lacuna-signer/appsettings.linux.json
 ```

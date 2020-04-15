@@ -1,3 +1,3 @@
 ﻿```sh
-dotnet /usr/share/signer/Lacuna.Signer.Site.dll -- hash-root-pass
+dotnet /usr/share/lacuna-signer/Lacuna.Signer.Site.dll -- hash-root-pass
 ```

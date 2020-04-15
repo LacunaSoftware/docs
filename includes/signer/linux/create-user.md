@@ -1,5 +1,5 @@
 ﻿```sh
-mkdir /var/signer
-useradd --system --home-dir /var/signer signer
-chown signer:signer /var/signer
+mkdir /var/lacuna-signer
+useradd --system --home-dir /var/lacuna-signer lacuna-signer
+chown lacuna-signer:lacuna-signer /var/lacuna-signer
 ```
