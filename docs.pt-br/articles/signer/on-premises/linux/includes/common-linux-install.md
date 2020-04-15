@@ -34,23 +34,15 @@ Gere uma chave de 256 bits para cifrar segredos armazenadas em banco de dados:
 
 [!include[Generate key](../../../../../../includes/signer/linux/gen-key.md)]
 
-**TODO: SITE CONFIG**
+[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
 
-<!--
 [!include[General config](../../includes/general-config.md)]
-
-[!include[Bindings config](../../includes/bindings-config.md)]
-
-[!include[Signer config](../../includes/signer-config.md)]
 
 [!include[PKI Suite config](../../includes/pki-config.md)]
 
 [!include[Email config](../../includes/email-config.md)]
 
 [!include[OIDC config](../../includes/oidc-config.md)]
-
-[!include[SMS config](../../includes/sms-config.md)]
--->
 
 ## Configurar um *daemon*
 
