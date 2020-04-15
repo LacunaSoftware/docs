@@ -3,5 +3,6 @@
 # [Rest PKI](articles/rest-pki/index.md)
 # [PKI SDK](articles/pki-sdk/index.md)
 # [PKI Express](articles/pki-express/index.md)
+# [Signer](articles/signer/index.md)
 # [Amplia](articles/amplia/index.md)
 # [GrantID](articles/grant-id/index.md)

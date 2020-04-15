@@ -157,6 +157,20 @@
 ## [Changelog](pki-express/changelog.md)
 <!-- End of PKI Express -->
 
+<!-- Start of Signer -->
+# [Signer](signer/index.md)
+## [On-premises](signer/on-premises/index.md)
+### [Setup on Windows Server](signer/on-premises/windows/index.md)
+### [Setup on Linux](signer/on-premises/linux/index.md)
+#### [Install on Ubuntu Server](signer/on-premises/linux/install-ubuntu.md)
+#### [Update](signer/on-premises/linux/update.md)
+#### [Troubleshooting](signer/on-premises/linux/troubleshoot/index.md)
+##### [Checking logs](signer/on-premises/linux/troubleshoot/check-logs.md)
+### [Setup on Docker](signer/on-premises/docker/index.md)
+### [Setup on Azure App Services](signer/on-premises/azure/index.md)
+### [Preparing the database](signer/on-premises/prepare-database.md)
+<!-- End of Signer -->
+
 <!-- Start of Amplia -->
 # [Amplia](amplia/index.md)
 ## [On-premises](amplia/on-premises/index.md)
