@@ -4,7 +4,7 @@
 
 [!include[Proceed as root](../su.md)]
 
-Registre a chave da Microsoft e o repositório de pacotes (só precisa ser feito uma única vez por máquina),
+Habilite o repositório oficial de pacotes do .NET (só precisa ser feito uma única vez por máquina),
 e então instale o pacote do ASP.NET Core Runtime:
 
 [!include[Install ASP.NET Core Runtime](../../../../../includes/linux/rhel/install-aspnetcore-31.md)]
