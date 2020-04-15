@@ -251,4 +251,5 @@
 ## [API Integration](scanner/integration/index.md)
 ### [.NET](scanner/integration/dotnet.md)
 ### [REST API](scanner/integration/other.md)
+## [Simulator](scanner/simulator.md)
 <!-- End of GrantID -->
