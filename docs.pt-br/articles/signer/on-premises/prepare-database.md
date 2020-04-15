@@ -47,7 +47,7 @@ GO
 A *connection string* seria, então:
 
 ```
-Data Source=.;Initial Catalog=Amplia;User ID=SignerAdm;Password=XXXXX
+Data Source=.;Initial Catalog=Signer;User ID=SignerAdm;Password=XXXXX
 ```
 
 > [!NOTE]
@@ -56,5 +56,5 @@ Data Source=.;Initial Catalog=Amplia;User ID=SignerAdm;Password=XXXXX
 
 <!--
 ## See also
-[Operando o Amplia sem ser *owner* do banco de dados](unprivileged-db-user.md)
+[Operando o Signer sem ser *owner* do banco de dados](unprivileged-db-user.md)
 -->
