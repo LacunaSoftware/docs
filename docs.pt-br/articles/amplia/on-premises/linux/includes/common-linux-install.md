@@ -40,7 +40,7 @@ Escolha uma senha forte para o acesso de root e compute o *hash* da senha utiliz
 
 [!include[General config](../../includes/general-config.md)]
 
-[!include[Bindings config](../../includes/bindings-config.md)]
+[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 

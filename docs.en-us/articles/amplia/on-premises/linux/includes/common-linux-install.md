@@ -38,7 +38,7 @@ Choose a strong password for root access to the dashboard and hash it with the [
 
 [!include[General config](../../includes/general-config.md)]
 
-[!include[Bindings config](../../includes/bindings-config.md)]
+[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 

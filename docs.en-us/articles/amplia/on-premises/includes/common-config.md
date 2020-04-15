@@ -1,4 +1,4 @@
-﻿[!include[Bindings config](bindings-config.md)]
+﻿[!include[Bindings config](../../../includes/spa-config/bindings.md)]
 [!include[Amplia config](amplia-config.md)]
 [!include[Storage config](storage-config.md)]
 [!include[PKI Suite config](pki-config.md)]
