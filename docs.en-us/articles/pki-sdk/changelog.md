@@ -1,5 +1,14 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-6-0" />
+### 2.6.0 (2020-04-14)
+
+- Add embedded font on PAdES PDF/A visual representation
+- Add background color option to PAdES visual representation
+- Add XAdES long term policies
+- Add TimestampException type on mandatory timestamp attributes failure
+
+
 <a name="v2-5-5" />
 ### 2.5.5 (2019-12-18)
 
