@@ -76,6 +76,7 @@
 ### [Right-sizing guide](rest-pki/on-premises/sizing.md)
 ### [Configure Timestamping](rest-pki/on-premises/configure-timestamping.md)
 ### [Configure Storage](rest-pki/on-premises/configure-storage.md)
+### [Configure Proxy](rest-pki/on-premises/configure-proxy.md)
 ### [Change license](rest-pki/on-premises/change-license.md)
 ### [Recover admin password](rest-pki/on-premises/admin-recover.md)
 ## [Configure Date and Time](rest-pki/configure-date.md)
