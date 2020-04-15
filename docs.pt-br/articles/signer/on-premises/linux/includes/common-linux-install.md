@@ -34,9 +34,9 @@ Gere uma chave de 256 bits para cifrar segredos armazenadas em banco de dados:
 
 [!include[Generate key](../../../../../../includes/signer/linux/gen-key.md)]
 
-[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
-
 [!include[General config](../../includes/general-config.md)]
+
+[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
 
 [!include[PKI Suite config](../../includes/pki-config.md)]
 

@@ -2,7 +2,7 @@
 
 Na seção **Email**:
 
-  * **Enabled**: por padrão, o envio de email está habilitado. Para desabilitar isto, defina esta configuração como `false` e ignore o restante desta seção.
+  * **Enabled**: por padrão, o envio de email está habilitado. Para desabilitar, defina esta configuração como `false` e ignore o restante desta seção.
   * **ServerHost**: *hostname* do servidor SMTP
   * **EnableSsl**: por padrão, a conversação SMTP é executada por SSL. Para desativar o SSL, defina essa configuração como `false`
   * **ServerPort**: Por padrão, a conversação SMTP é realizada pela porta 587. Defina esta configuração para usar uma porta diferente
