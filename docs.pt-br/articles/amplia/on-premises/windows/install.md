@@ -88,11 +88,7 @@ permissões de proprietário sobre o banco de dados.
 
 Para gerar a *EncryptionKey*, execute o seguinte em um Powershell:
 
-```ps
-$k = New-Object byte[] 32;
-[System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($k);
-[Convert]::ToBase64String($k);
-```
+[!include[Generate encryption key](../../../../../includes/windows/gen-encryption-key.md)]
 
 [!include [Common config](../includes/common-config.md)]
 
