@@ -41,7 +41,7 @@ realmente é importante é que **todos os resources sejam criados na mesma regi�
 
 [!include[Criação de uma storage account](../../../includes/azure/create-storage.md)]
 
-[!include[Criação do App Service](../../../includes/azure/create-webapp.md)]
+[!include[Criação do App Service](../../../includes/azure/create-webapp-31.md)]
 
 ## Configuração de domínios
 
