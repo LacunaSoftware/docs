@@ -18,7 +18,7 @@ Antes de começar, obtenha o pacote de binários:
 
 <br />
 <center>
-**[Pacote de binários do Signer 1.2.0](https://cdn.lacunasoftware.com/signer/signer-1.2.0.zip)**
+**[Pacote de binários do Signer 1.1.1](https://cdn.lacunasoftware.com/signer/signer-1.1.1.zip)**
 </center>
 <br />
 
@@ -178,9 +178,10 @@ Salve as configurações feitas até o momento clicando em **Save**.
 
 ## Iniciando o App Service
 
-Por fim, em **Overview** do App Service, clique em **Start**. Em seguida, acesse a URL do painel de controle (o primeiro acesso pode demorar alguns instantes).
+Por fim, em **Overview** do App Service, clique em **Start**. Em seguida, acesse a URL do site (o primeiro acesso pode demorar alguns instantes).
 
-Autentique-se com a senha de *root* escolhida durante a configuração. Você então terá acesso ao painel de controle, e a instalação estará concluída.
+Clique em **Login** e registre-se. Você então será "promovido" a administrador (o primeiro usuário que se registra é automaticamente promovido),
+tendo acesso pleno ao sistema, e a instalação estará concluída.
 
 <!--
 ## Veja também
