@@ -151,15 +151,15 @@ De posse dos parâmetros da sua *subscription* do GrantID, adicione as seguintes
 
 Configuração da *storage account*:
 
-* `BlobStorage:ConnectionString`: *connection string* da *storage account* criada anteriormente
-* `BlobStorage:ContainerName` (opcional): nome do *container* a ser utilizado para armazenar arquivos. Caso omitido, um container denominado *signer* é utilizado.
+* `BlobStorage__ConnectionString`: *connection string* da *storage account* criada anteriormente
+* `BlobStorage__ContainerName` (opcional): nome do *container* a ser utilizado para armazenar arquivos. Caso omitido, um container denominado *signer* é utilizado.
 
 ### Logging
 
 Configuração de log:
 
-* `Serilog:WriteTo:0:Args:connectionString`: *connection string* da *storage account* criada anteriormente
-* `Serilog:WriteTo:0:Args:storageTableName` (opcional): nome da tabela a ser utilizada para armazenar os logs. Caso omitido, uma tabela denomiada *SignerLog* é utilizada.
+* `Serilog__WriteTo__0__Args__connectionString`: *connection string* da *storage account* criada anteriormente
+* `Serilog__WriteTo__0__Args__storageTableName` (opcional): nome da tabela a ser utilizada para armazenar os logs. Caso omitido, uma tabela denomiada *SignerLog* é utilizada.
 
 ### Connection string
 
