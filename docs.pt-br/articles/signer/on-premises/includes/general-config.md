@@ -4,7 +4,7 @@
 * **SiteName**: nome do site, usado como título das páginas web (ex: *Assinador Patorum*)
 * **EncryptionKey**: chave gerada acima
 * **SupportEmailAdress**: o endereço de e-mail de suporte (usado no rodapé dos e-mails enviados)
-* **Theme**: esquema de cores do site -- esquemas disponíveis:
+* **Theme** (opcional): esquema de cores do site -- esquemas disponíveis:
   * `acr`: amazon + cornell-red
   * `alg`: azure-lime + green
   * `clg`: cerulean-lime + green
