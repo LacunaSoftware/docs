@@ -53,7 +53,7 @@ Após criar o apontamento, adicione o domínio ao *App Service*:
 
 [!include[Adicione o domínio](../../../includes/azure/add-custom-domain.md)]
 
-Uma vez adicionado o domínio ao App Service, crie um *App Service Managed Certificate* para este (certificado SSL gratuito ofertado pelo Azure):
+Uma vez adicionado o domínio ao App Service, crie um *App Service Managed Certificate* para ele (certificado SSL gratuito ofertado pelo Azure):
 
 [!include[Crie um Managed Certificate](../../../includes/azure/create-managed-certificate.md)]
 
@@ -63,7 +63,12 @@ Após criar o certificado SSL, associe-o ao domínio:
 
 ## Cópia dos binários
 
-**TODO**
+Agora iremos copiar os binários do site. Primeiramente, na seção **Overview** do App Service, pare o serviço clicando em **Stop**.
+
+Em seguida, vá em **Advanced Tools** e clique em **Go**. Você será levado para o painel de controle Kudu do App Service.
+
+1. No menu superior, clique em **Tools**, em seguida em **Zip Push Deploy**
+1. Arraste e solte o pacote de binários (arquivo .zip) sobre a lista de arquivos
 
 ## Configuração do Signer
 
@@ -76,13 +81,71 @@ Tome nota do valor gerado.
 No App Service, vá em **Configuration** e adicione as seguintes configurações:
 
 * `ASPNETCORE_ENVIRONMENT`: `Azure`
-* `General:EncryptionKey`: chave criptográfica gerada acima
-* `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
-* `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
+* `General__EncryptionKey`: chave criptográfica gerada acima
+* `General__SiteUrl`: URL pública do site, no domínio configurado anteriormente (ex: `https://assinador.patorum.com/`)
+* `General__SiteName`: nome da sua instância do Amplia, ex: *Assinador Patorum*
+* `General__SupportEmailAdress`: o endereço de e-mail de suporte (usado no rodapé dos e-mails enviados)
+* `General__Theme` (opcional): esquema de cores do site -- esquemas disponíveis:
+  * `acr`: amazon + cornell-red
+  * `alg`: azure-lime + green
+  * `clg`: cerulean-lime + green
+  * `cam`: charcoal + amazonite
+  * `clc`: cobalt-lemon + curry
+  * `dcg`: dark-cerulean + green
+  * `dgy`: dark-grey + yellow
+  * `dir`: dark-indigo + red
+  * `eva`: english-vermillion + arsenic
+  * `gdc`: green + dark-coral
+  * `idg`: independence-green
+  * `osg`: onyx + satin-gold
+  * `qbm`: queen-blue + mint
+  * `tbg`: teal-blue + gold
+* `General__PersonalAccountsEnabled`: por padrão, o sistema é "fechado", ou seja, exige que usuários sejam previamente cadastrados em uma organização para poderem utilizar o sistema.
+  Para deixar o sistema "aberto" ou seja, permitir que usuários se registrem e utilizem livremente o sistema (sem aprovação de um administrador), inclua essa configuração com valor `true`
+* `General__EnableDocumentTypes`: por padrão, a seleção de tipo de documento não é exibida ao criar documentos. Para exibi-la, inclua essa configuração com valor `true`
+* `General__EnableElectronicSignature`: por padrão, assinaturas eletrônicas (sem certificado digital) estão desabilitadas. Para habilitá-las, inclua essa configuração com valor `true`
 
 Adicione, também, as configurações descritas nas seções a seguir.
 
-**TODO**
+### PKI Suite
+
+Configurações do PKI Suite:
+
+  * `PKiSuite__SdkLicense`: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
+  * `PKiSuite__WebLicense`: sua licença para o componente Web PKI no formato binário (Base64) (**obrigatório**)
+
+### Envio de email
+
+Configurações de envio de email:
+
+  * `Email__Enabled`: por padrão, o envio de email está habilitado. Para desabilitar, defina esta configuração como `false` e ignore o restante desta seção.
+  * `Email__ServerHost`: *hostname* do servidor SMTP
+  * `Email__EnableSsl`: por padrão, a conversação SMTP é executada por SSL. Para desativar o SSL, defina essa configuração como `false`
+  * `Email__ServerPort`: Por padrão, a conversação SMTP é realizada pela porta 587. Defina esta configuração para usar uma porta diferente
+  * `Email__Username` e `Email__Password`: se o servidor SMTP exigir autenticação, defina essas configurações
+  * `Email__SenderAdress`: endereço de e-mail a ser usado como remetente (do campo)
+  * `Email__SenderName`: nome a ser usado como o nome do remetente (opcional)
+
+### Integração com provedor de OpenID Connect
+
+O Signer requer um provedor de Open ID Connect (OIDC), mais especificamente uma *subscription* do [GrantID](../../../grant-id/index.md).
+
+Você pode usar uma *subscription* em nosso serviço SaaS em [grantid.com](https://grantid.com/) ou [instalar sua instância própria do GrantID](../../../grant-id/on-premises/index.md).
+
+<!--
+> [!TIP]
+> On Docker, see [Using a stack with GrantID](docker/internal-grantid.md) to install both Amplia and GrantID on the same stack
+-->
+
+De posse dos parâmetros da sua *subscription* do GrantID, adicione as seguintes configurações:
+
+* `Oidc__Authority`: a *OIDC authority* (ex: `https://patorum.grantid.com`)
+* `Oidc__ApiEndpoint`: o endereço da API do GrantID (ex: `https://api.grantid.com`)
+* `Oidc__ApiName`: o escopo de API que será exigido nos tokens de acesso
+* `Oidc__ClientAppId`: o *App-Id* da aplicação frontend
+* `Oidc__AppId`: o *App-Id* da aplicação backend
+* `Oidc__AppSecret`: um segredo para autenticação da aplicação backend
+* `Oidc__RequireHttps` (opcional): atribua o valor `false` caso esteja usando uma instância própria do GrantID sem HTTPS (não recomendado)
 
 ## Iniciando o App Service
 
@@ -90,7 +153,9 @@ Por fim, em **Overview** do App Service, clique em **Start**. Em seguida, acesse
 
 Autentique-se com a senha de *root* escolhida durante a configuração. Você então terá acesso ao painel de controle, e a instalação estará concluída.
 
+<!--
 ## Veja também
 
 * [Atualização do Amplia em Azure App Services](update.md)
 * [Resolução de problemas](troubleshoot/index.md)
+-->
