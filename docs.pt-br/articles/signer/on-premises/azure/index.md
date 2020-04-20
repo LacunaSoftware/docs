@@ -68,7 +68,7 @@ Agora iremos copiar os binários do site. Primeiramente, na seção **Overview**
 Em seguida, vá em **Advanced Tools** e clique em **Go**. Você será levado para o painel de controle Kudu do App Service.
 
 1. No menu superior, clique em **Tools**, em seguida em **Zip Push Deploy**
-1. Arraste e solte o pacote de binários (arquivo .zip) sobre a lista de arquivos
+1. Arraste e solte o pacote de binários (arquivo .zip) sobre a lista de arquivos e aguarde o progresso do *deploy*
 
 ## Configuração do Signer
 
@@ -82,7 +82,7 @@ No App Service, vá em **Configuration** e adicione as seguintes configurações
 
 * `ASPNETCORE_ENVIRONMENT`: `Azure`
 * `General__EncryptionKey`: chave criptográfica gerada acima
-* `General__SiteUrl`: URL pública do site, no domínio configurado anteriormente (ex: `https://assinador.patorum.com/`)
+* `General__SiteUrl`: URL pública do site, no domínio configurado anteriormente, ex: `https://assinador.patorum.com/`
 * `General__SiteName`: nome da sua instância do Amplia, ex: *Assinador Patorum*
 * `General__SupportEmailAdress`: o endereço de e-mail de suporte (usado no rodapé dos e-mails enviados)
 * `General__Theme` (opcional): esquema de cores do site -- esquemas disponíveis:
@@ -146,6 +146,30 @@ De posse dos parâmetros da sua *subscription* do GrantID, adicione as seguintes
 * `Oidc__AppId`: o *App-Id* da aplicação backend
 * `Oidc__AppSecret`: um segredo para autenticação da aplicação backend
 * `Oidc__RequireHttps` (opcional): atribua o valor `false` caso esteja usando uma instância própria do GrantID sem HTTPS (não recomendado)
+
+### Blob Storage
+
+Configuração da *storage account*:
+
+* `BlobStorage:ConnectionString`: *connection string* da *storage account* criada anteriormente
+* `BlobStorage:ContainerName` (opcional): nome do *container* a ser utilizado para armazenar arquivos. Caso omitido, um container denominado *signer* é utilizado.
+
+### Logging
+
+Configuração de log:
+
+* `Serilog:WriteTo:0:Args:connectionString`: *connection string* da *storage account* criada anteriormente
+* `Serilog:WriteTo:0:Args:storageTableName` (opcional): nome da tabela a ser utilizada para armazenar os logs. Caso omitido, uma tabela denomiada *SignerLog* é utilizada.
+
+### Connection string
+
+Na seção *Connection strings* (final da página de configurações), clique em **+ New connection string** e preencha:
+
+* **Name**: `DefaultConnection`
+* **Value**: valor da connection string obtido durante a criação do banco de dados
+* **Type**: escolha **SQLAzure**
+
+Salve as configurações feitas até o momento clicando em **Save**.
 
 ## Iniciando o App Service
 
