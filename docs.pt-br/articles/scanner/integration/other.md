@@ -4,7 +4,7 @@ A API do Lacuna Scanner é um REST com mensagens em formato JSON, facilmente cha
 
 [!include[See overview](includes/see-overview.md)]
 
-Veja a [documentação da API](http://scanner.lacunasoftware.com/swagger).
+Veja a [documentação da API](http://scn.lacunasoftware.com/swagger).
 
 O parâmetro de comunicação **endpoint** deve ser utilizado para prefixar todas as URLs relativas mencionadas nesta página. Já a **chave de acesso à API** deve
 ser enviada no *header* `X-Api-Key` de cada requisição:

@@ -44,7 +44,7 @@ Com esse argumento, a sua aplicação faz uma chamada à API do serviço para ob
 
 Você precisará dos seguintes parâmetros:
 
-* **Endpoint**: endereço do Scanner Service, ex: `https://scanner.lacunasoftware.com/`
+* **Endpoint**: endereço do Scanner Service, ex: `https://scn.lacunasoftware.com/`
 * **API Key**: chave de acesso à API
 
 Solicite ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com) seus parâmetros.

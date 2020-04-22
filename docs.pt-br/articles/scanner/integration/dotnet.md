@@ -85,7 +85,7 @@ No arquivo de configuração `appsettings.json`, adicione a seção **Scanner**:
 ```json
 ...
 "Scanner": {
-	"Endpoint": "https://scanner.lacunasoftware.com/",
+	"Endpoint": "https://scn.lacunasoftware.com/",
 	"ApiKey": "..."
 },
 ...
