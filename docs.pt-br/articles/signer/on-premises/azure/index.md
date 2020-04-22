@@ -145,7 +145,7 @@ De posse dos parâmetros da sua *subscription* do GrantID, adicione as seguintes
 * `Oidc__ClientAppId`: o *App-Id* da aplicação frontend
 * `Oidc__AppId`: o *App-Id* da aplicação backend
 * `Oidc__AppSecret`: um segredo para autenticação da aplicação backend
-* `Oidc__CpfClaim`: coloque o nome da *claim* de CPF da subscription
+* `Oidc__CpfClaim`: coloque o nome da *claim* de CPF da subscription caso não seja `cpf`
 * `Oidc__CustomScopes`: coloque o nome do escopo de CPF da subscription
 * `Oidc__RequireHttps` (opcional): atribua o valor `false` caso esteja usando uma instância própria do GrantID sem HTTPS (não recomendado)
 
