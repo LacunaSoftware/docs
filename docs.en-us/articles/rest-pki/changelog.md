@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-22-1" />
+### 1.22.1 (2020-04-22)
+
+Database model update: No
+
+- Improved error handling when the user provides an invalid token
+
 <a name="v1-22-0" />
 ### 1.22.0 (2020-02-28)
 

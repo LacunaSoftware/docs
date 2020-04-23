@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-22-1" />
+### 1.22.1 (2020-04-22)
+
+Atualização do modelo do banco de dados: Não
+
+- Melhorar tratamento do erro quando o usuário fornece um token inválido
+
+
 <a name="v1-22-0" />
 ### 1.22.0 (2020-02-28)
 
