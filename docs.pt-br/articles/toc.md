@@ -250,6 +250,7 @@
 # [Scanner](scanner/index.md)
 ## [Integração](scanner/integration/index.md)
 ### [.NET](scanner/integration/dotnet.md)
+### [PHP](scanner/integration/php.md)
 ### [REST API](scanner/integration/other.md)
 ## [Simulador](scanner/simulator.md)
 <!-- End of GrantID -->
