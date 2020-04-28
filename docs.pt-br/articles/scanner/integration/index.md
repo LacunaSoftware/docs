@@ -54,4 +54,5 @@ Solicite ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com) 
 Escolha uma linguagem de programação para instruções específicas:
 
 * [.NET](dotnet.md)
+* [PHP](php.md)
 * Para outras linguagens: [Integração por REST API](other.md)
