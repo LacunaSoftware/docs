@@ -1,3 +1,4 @@
 ﻿# Signer - Setup on Azure App Services
 
-[!include[Under construction](../../../includes/under-construction.md)]
+<!-- link to version in Portuguese -->
+<div data-alt-locales="pt-br"></div>
