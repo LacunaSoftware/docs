@@ -69,38 +69,24 @@ Após criar os certificados SSL para cada domínio, associe-os aos domínios (re
 
 [!include[Associe o certificado](../../../includes/azure/bind-certificate.md)]
 
-## Cópia dos binários
-
-Agora iremos copiar os binários do site. Primeiramente, na seção **Overview** do App Service, pare o serviço clicando em **Stop**.
-
-Em seguida, ainda na seção **Overview**, obtenha os dados de acesso via FTP:
-
-* FTP hostname
-* FTP deployment username
-
-Utilizando os dados obtidos (a senha provavelmente foi cadastrada anteriormente), conecte-se ao App Service utilizando um cliente de FTP
-(sugerimos o <a href="https://filezilla-project.org/" target="_blank">FileZilla Client</a> ou o <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a>)
-e siga os passos abaixo:
-
-1. Navegue até a pasta `site/wwwroot`
-1. Apague o arquivo `hostingstart.html`
-1. Extraia o conteúdo do [pacote de binários do Amplia](https://cdn.lacunasoftware.com/amplia/amplia-3.5.0.zip) para uma pasta temporária no seu computador
-1. Copie o conteúdo extraído para a pasta `wwwroot` do App Service
+[!include[Cópia dos binários](../../../includes/azure/deploy.md)]
 
 ## Configuração do Amplia
 
-Nas configurações do App Service, vá em **Advanced Tools** e clique em **Go**. Você será levado para o painel de controle *Kudu* do App Service.
+No menu lateral do App Service, na seção *Development Tools*, clique em **Console** ou em **SSH** (apenas uma dessas opções estará disponível, dependendo se o
+*App Service Plan* é em Windows ou em Linux). Você será levado a um terminal. Execute os comandos abaixo, dependendo do tipo do seu *App Service Plan*:
 
-Clique em **Debug console**, depois em **CMD**. No console, execute os comandos abaixo:
+No caso de **Windows**:
 
 ```cmd
-cd site\wwwroot
-dir Lacuna*
+cd \home\site\wwwroot
 ```
 
-Você deve ver diversos arquivos do site (copiados por FTP no passo anterior):
+No caso de **Linux**:
 
-![Site files on console](../../../../../images/amplia/console-dir.png)
+```bash
+cd ~/site/wwwroot
+```
 
 Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados:
 
@@ -121,7 +107,7 @@ dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
 
 Novamente, tome nota do valor gerado.
 
-Feche o Kudu, voltando ao portal do Azure. No App Service, vá em **Configuration** e adicione as seguintes configurações:
+Feche o terminal, voltando ao portal do Azure. No App Service, vá em **Configuration** e adicione as seguintes configurações:
 
 * `ASPNETCORE_ENVIRONMENT`: `Azure`
 * `General:EncryptionKey`: chave criptográfica gerada acima
