@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-6-0" />
+### 3.6.0 (2020-05-01)
+
+* Adicionada integração com HSMs Dinamo via comunicação proprietária
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-5-0" />
 ### 3.5.0 (2020-04-14)
 

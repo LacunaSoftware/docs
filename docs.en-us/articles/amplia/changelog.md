@@ -1,5 +1,13 @@
 ﻿# Amplia changelog
 
+<a name="v3-6-0" />
+### 3.6.0 (2020-05-01)
+
+* Add Dinamo HSM integration via proprietary API
+
+Updates database model: no
+
+
 <a name="v3-5-0" />
 ### 3.5.0 (2020-04-14)
 
