@@ -1,4 +1,12 @@
 ﻿# Troubleshooting issues on your Signer instance (Linux)
 
-<!-- link to version in Portuguese -->
-<div data-alt-locales="pt-br"></div>
+Common issues:
+
+[!include[Under construction](../../../../includes/under-construction.md)]
+
+> [!NOTE]
+> If you are encountering an unlisted problem, try [check the system logs](check-logs.md) or contact us.
+
+## See too
+
+* [Checking the system logs](check-logs.md)
