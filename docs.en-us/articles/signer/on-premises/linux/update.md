@@ -1,4 +1,12 @@
 ﻿# Updating Signer on Linux
 
-<!-- link to version in Portuguese -->
-<div data-alt-locales="pt-br"></div>
+To update your [instance *on premises*](../index.md) of [Signer] (../../ index.md), follow the steps below:
+
+[!include[Proceed as root](../../../includes/linux/su.md)]
+
+[!include[Update steps](../../../../../includes/signer/linux/update.md)]
+
+## See too
+
+* [Setup on Linux - Signer](index.md)
+* [Troubleshooting](troubleshoot/index.md)
