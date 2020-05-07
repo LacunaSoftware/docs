@@ -1,5 +1,15 @@
 ﻿# Amplia changelog
 
+<a name="v3-7-0" />
+### 3.7.0 (2020-05-06)
+
+* Add support for PIN-protecting keys on Dinamo HSMs
+* Add filter by `keyMedia` on list pending certificates for user API
+* Add themes *eva*, *dir* and *cam*
+
+Updates database model: no
+
+
 <a name="v3-6-0" />
 ### 3.6.0 (2020-05-01)
 

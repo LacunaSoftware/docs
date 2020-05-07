@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-7-0" />
+### 3.7.0 (2020-05-06)
+
+* Adicionado suporte a proteção de chaves com PIN em HSMs Dinamo
+* Adicionado filtro por `keyMedia` na API para obter pedidos de certificado pendentes para um usuário
+* Adicionados temas *eva*, *dir* e *cam*
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-6-0" />
 ### 3.6.0 (2020-05-01)
 
