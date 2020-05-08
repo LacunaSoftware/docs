@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-6-1" />
+### 2.6.1 (2020-05-07)
+
+- Fix non-printable characters on stack trace
+
+
 <a name="v2-6-0" />
 ### 2.6.0 (2020-04-14)
 
