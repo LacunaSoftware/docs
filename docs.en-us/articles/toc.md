@@ -169,6 +169,7 @@
 ### [Setup on Docker](signer/on-premises/docker/index.md)
 ### [Setup on Azure App Services](signer/on-premises/azure/index.md)
 ### [Preparing the database](signer/on-premises/prepare-database.md)
+## [Changelog](signer/changelog.md)
 <!-- End of Signer -->
 
 <!-- Start of Amplia -->

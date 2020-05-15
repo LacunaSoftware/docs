@@ -11,3 +11,7 @@ O Lacuna Signer é um gerenciador de assinaturas inteligente. Com ele, você pod
 
 Conforme citado acima, o Signer pode ser utilizado em nuvem (modalidade SaaS, em [dropsigner.com](https://www.dropsigner.com/)) ou você pode ter uma instância própria
 ("on premises"). Veja o artigo [Signer *on premises*](on-premises/index.md) para mais informações.
+
+## Veja também
+
+* [Histórico de versões](changelog.md)

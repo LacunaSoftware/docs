@@ -10,3 +10,7 @@ Lacuna Signer is an intelligent subscription manager. With it, you can collect d
 ## *On premises*
 
 As mentioned above, Signer can be used in the cloud (modality SaaS, in [dropsigner.com](https://www.dropsigner.com/)) or you can have your own instance ("on premises"). See the article [Signer *on premises*](on-premises/index.md) for more informations.
+
+## See also
+
+* [Changelog](changelog.md)
