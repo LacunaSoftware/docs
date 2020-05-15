@@ -5,22 +5,76 @@
 > trabalhando para documentar as versões mais antigas.
 
 <a name="v1-3-2" />
-### 1.3.2 (2020-05-08)
+### 1.3.2 (2020-05-15)
 
-* Adicionado suporte a ...
 * Correções de bugs
-  * ...
-  * ...
+  * [SIG-310] - Exceções lançadas ao logar caracteres especiais gerados pelo PKI SDK
 
-Atualiza modelo do banco de dados: **sim**
+Atualiza modelo do banco de dados: não
 
 
 <a name="v1-3-1" />
 ### 1.3.1 (2020-05-05)
 
-* Adicionado suporte a ...
 * Correções de bugs
-  * ...
-  * ...
+  * [SIG-309] - Esconder opção de download em lote até atualização do Web PKI
 
 Atualiza modelo do banco de dados: não
+
+<a name="v1-3-0" />
+### 1.3.0 (2020-05-05)
+
+* Novas funcionalidades
+  * [SIG-178] - Download em lote
+  * [SIG-187] - Permitir selecionar Padrão de assinatura Cades ou Pades na submissão por API
+  * [SIG-190] - Permitir administradores visualizaram documentos de usuários/organizações
+  * [SIG-287] - Permitir que aplicações possam pegar link para ação externa
+
+* Melhorias
+  * [SIG-161] - Permitir alterar dados do usuário na administração
+  * [SIG-193] - Adicionar links para PDF de documentação do usuário
+  * [SIG-262] - Melhorias na funcionalidade de Autenticação
+  * [SIG-293] - Permitir assinar o termo de adesão com assinatura eletronica
+  * [SIG-297] - Adicionar listagem de documentos na administração
+  * [SIG-301] - Ajustes de responsividade e remoção de scrolls quando loader é exibido
+  * [SIG-302] - Validar Assinaturas PDF feitas no Adobe
+  * [SIG-305] - Tratar erro PinValidationFailed do Amplia
+
+
+* Correções de bugs
+  * [SIG-304] - Pedidos de certificado que não podem ser emitidos em Cloud deveriam ser ignorados
+  * [SIG-306] - Corrigir envio de notificações por email quando o SMS estiver desabilitado
+
+Atualiza modelo do banco de dados: **sim**
+
+
+<a name="v1-2-0" />
+### 1.2.0 (2020-04-29)
+
+* Novas funcionalidades
+  * [SIG-284] - Permitir subir um arquivo para ser validado na tela de validação do documento
+  * [SIG-296] - Configurar margens da marcação lateral na versão para impressão
+
+
+* Melhorias
+  * [SIG-225] - Melhorar desempenho da Assinatura em Lote
+
+
+* Correções de bugs
+  * [SIG-292] - Uniformizar exibição do nome e apelido de subscriptions entre os componentes da SPA e Signer
+  * [SIG-295] - Corrigir assinatura XAdES sem parâmetros
+  * [SIG-298] - Erro ao tentar obter o fuso de Brasília no Linux
+
+Atualiza modelo do banco de dados: **sim**
+
+
+#<a name="v1-0-0" />
+#### 1.0.0 (2020-00-00)
+#
+#* Novas funcionalidades
+#* Melhorias
+#* Correções de bugs
+#  * ...
+#  * ...
+#
+#Atualiza modelo do banco de dados: não
