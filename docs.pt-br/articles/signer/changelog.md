@@ -68,13 +68,13 @@ Atualiza modelo do banco de dados: **sim**
 Atualiza modelo do banco de dados: **sim**
 
 
-#<a name="v1-0-0" />
-#### 1.0.0 (2020-00-00)
-#
-#* Novas funcionalidades
-#* Melhorias
-#* Correções de bugs
-#  * ...
-#  * ...
-#
-#Atualiza modelo do banco de dados: não
+# <a name="v1-0-0" />
+# ### 1.0.0 (2020-00-00)
+# 
+# * Novas funcionalidades
+# * Melhorias
+# * Correções de bugs
+#   * ...
+#   * ...
+# 
+# Atualiza modelo do banco de dados: não
