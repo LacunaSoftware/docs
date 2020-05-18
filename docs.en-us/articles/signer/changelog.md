@@ -65,14 +65,3 @@ Updates database model: **yes**
 
 Updates database model: **yes**
 
-
-# <a name="v1-0-0" />
-#  ### 1.0.0 (2020-00-00)
-# 
-# * New Features
-# * Improvements
-# * Bug fixes
-#   * ...
-#   * ...
-# 
-# Updates database model: no
