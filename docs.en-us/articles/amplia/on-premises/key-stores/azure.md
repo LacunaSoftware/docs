@@ -3,7 +3,7 @@
 > [!NOTE]
 > Azure Key Vault stores are compatible with all supported platforms
 
-[Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) can be though of as a cloud HSM. Keys are stored on FIPS 140-2 Level 2
+[Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) can be thought of as a cloud HSM. Keys are stored on FIPS 140-2 Level 2
 validated HSMs for a relatively low cost of ~5 dollars per month per key. This service from Microsoft has enabled the employment of HSMs on
 projects which otherwise would not have the necessary budget.
 
@@ -15,14 +15,14 @@ projects which otherwise would not have the necessary budget.
 
 To configure an Azure Key Vault key store on Amplia, log in <a href="https://portal.azure.com" target="_blank">Azure portal</a> and use the following settings:
 
-### Application creation and authentication secret
+### Creating an application and authentication secret
 
 Create an application corresponding to your Amplia instance:
 
 1. In the option **Azure Active Directory**, go to **App registrations** and click in **New registration**
 1. Enter a name for the application
 1. Leave the rest of the fields in the default options
-1. Click in **Register**
+1. Click on **Register**
 
 Once the application is created, take note of the **Application (client) ID**.
 
@@ -31,7 +31,7 @@ Generate a secret for application identification:
 1. In the application settings, click in **Certificate &amp; secrets**
 1. In **Client secrets**, click in **New client secret**
 1. Fill in a description and choose validity **Never** (does not expire)
-1. Click in **Add**
+1. Click on **Add**
 1. **Copy the displayed value** in column **Value** (it will not be possible to recover this value later!)
 
 ### Creating the Key Vault
@@ -41,10 +41,10 @@ Create the Key Vault (skip this part if you want to use an existing Key Vault):
 1. In the option **Key Vaults**, click in **Add**
 1. Fill in the data according to your infrastructure
 1. In the *Pricing tier* option, choose **Premium** to be able to generate keys stored in HSM
-1. Click in **Review + create**
-1. Click in **Create**
+1. Click on **Review + create**
+1. Click on **Create**
 
-Once the creation of the Key Vault is complete, click **Go to resource**. Then, take note of the Key Vault's **DNS Name** (ex: `https: // my-key-vault.vault.azure.net /`).
+Once the creation of the Key Vault is complete, click **Go to resource**. Then, take note of the Key Vault's **DNS Name** (ex: `https://my-key-vault.vault.azure.net/`).
 
 Grant permissions to the application:
 
@@ -53,7 +53,7 @@ Grant permissions to the application:
 1. In *Key permissions*, select **Get**, **List**, **Create**, **Verify** and **Sign**
 1. In *Select principal*, select the created application and click **Select**
 1. Leave the *Secret permissions*, *Certificate permissions* and *Authorized application* fields unchanged
-1. Click in **Add**
+1. Click on **Add**
 1. Back in the *policies* screen, click **Save**
 
 > [!WARNING]
