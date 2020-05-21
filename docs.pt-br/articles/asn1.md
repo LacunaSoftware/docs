@@ -72,3 +72,22 @@ id-lacuna-certificate-policies OBJECT IDENTIFIER ::= { id-lacuna 3 }
 ### 3.1. Política de Certificado ANOREG/DF
 
 O OID `1.3.6.1.4.1.46332.3.1` identifica a política de certificados adotada pela Associação dos Notários e Registradores do Distrito Federal - ANOREG/DF.
+
+### 3.2. Políticas de Certificado do 8º Ofício de Notas do Rio de Janeiro
+
+A subárvore `1.3.6.1.4.1.46332.3.2` identifica as políticas de certificados adotadas pelo 8º Ofício de Notas do Rio de Janeiro:
+
+#### 3.2.1. Certificado A1 do 8º Ofício de Notas do Rio de Janeiro
+
+O OID `1.3.6.1.4.1.46332.3.2.1` identifica a política de certificados do 8º Ofício de Notas do Rio de Janeiro para certificados
+cuja chave privada é gerada no computador pessoal do titular.
+
+#### 3.2.2. Certificado em Dispositivo Móvel do 8º Ofício de Notas do Rio de Janeiro
+
+O OID `1.3.6.1.4.1.46332.3.2.2` identifica a política de certificados do 8º Ofício de Notas do Rio de Janeiro para certificados
+cuja chave privada é gerada em dispositivo móvel do titular.
+
+#### 3.2.3. Certificado A3 do 8º Ofício de Notas do Rio de Janeiro
+
+O OID `1.3.6.1.4.1.46332.3.2.3` identifica a política de certificados do 8º Ofício de Notas do Rio de Janeiro para certificados
+cuja chave privada é gerada em dispositivo criptográfico (token USB ou *smartcard*) do titular.
