@@ -76,17 +76,6 @@ The OID `1.3.6.1.4.1.46332.3.1` identifies the certificate policy adopted by Ass
 
 The subtree `1.3.6.1.4.1.46332.3.2` identifies the certificate policies adopted by 8º Ofício de Notas do Rio de Janeiro:
 
-#### 3.2.1. 8º Ofício de Notas do Rio de Janeiro A1 certificate policy
-
-The OID `1.3.6.1.4.1.46332.3.2.1` identifies the certificate policy adopted by 8º Ofício de Notas do Rio de Janeiro
-for certificates with a private key generated on the subject's personal computer.
-
-#### 3.2.2. 8º Ofício de Notas do Rio de Janeiro Mobile certificate policy
-
-The OID `1.3.6.1.4.1.46332.3.2.2` identifies the certificate policy adopted by 8º Ofício de Notas do Rio de Janeiro
-for certificates with a private key generated on the subject's mobile device.
-
-#### 3.2.3. 8º Ofício de Notas do Rio de Janeiro A3 certificate policy
-
-The OID `1.3.6.1.4.1.46332.3.2.3` identifies the certificate policy adopted by 8º Ofício de Notas do Rio de Janeiro
-for certificates with a private key generated on the subject's cryptographic device.
+* `1.3.6.1.4.1.46332.3.2.1`: certificates with a private key generated on the subject's personal computer
+* `1.3.6.1.4.1.46332.3.2.2`: certificates with a private key generated on the subject's mobile device
+* `1.3.6.1.4.1.46332.3.2.3`: certificates with a private key generated on the subject's cryptographic device
