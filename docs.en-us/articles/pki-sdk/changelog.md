@@ -1,5 +1,15 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-7-0" />
+### 2.7.0 (2020-05-22)
+
+- Add Banco Central del Ecuador certificate fields
+- Add PKI Argentina certificate fields
+- Add ICP-Brasil missing certificate fields (e.g: RIC, CEI, Dados eleitorais, SIGEPE)
+- Add text font color option to PAdES visual representation
+- Improve CRL local cache performance
+
+
 <a name="v2-6-1" />
 ### 2.6.1 (2020-05-07)
 
