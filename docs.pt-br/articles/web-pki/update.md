@@ -12,14 +12,14 @@ Atualizações à biblioteca de Javascript:
 > Todas as atualizações são 100% retrocompatíveis, de modo que você pode atualizar a biblioteca sem
 > perigo de causar problemas à sua aplicação web existente
 
-A última versão da biblioteca de Javascript é a **2.14.1**. Você pode obtê-la no link abaixo:
+A última versão da biblioteca de Javascript é a **2.14.2**. Você pode obtê-la no link abaixo:
 
-https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.1.min.js
+https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.2.min.js
 
 Ou incluir na sua página como:
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.1.min.js"
-  integrity="sha256-osjtqNLA+8qEEXommLFj37W2lmtjBNDw7i0BC57G6Kw="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.2.min.js"
+  integrity="sha256-Dy4bEzPYr34NKsCLY0tC0uiT79vwavODNCi581OMVEA="
   crossorigin="anonymous"></script>
 ```
 

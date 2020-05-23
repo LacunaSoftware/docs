@@ -85,6 +85,11 @@ export declare class LacunaWebPKI {
 		pkiBrazil: LacunaWebPKI.XmlPolicies[]
 	}
 
+	/**************************************************************
+	 * Whether or not currently running on a supported mobile platform (andoird, iOS) and current vendor supports mobile.
+	 */
+	readonly isSupportedMobile: boolean;
+
 
 	/**************************************************************
 	 * Initializes the instance of the LacunaWebPKI object. This method must be called before calling any other methods.
@@ -163,6 +168,9 @@ export declare class LacunaWebPKI {
 		
 		/** The brand name for customized install page, if license covered. */
 		brand?: string,
+
+		/** The mobile integration mode. Default is [[LacunaWebPKI.MobileIntegrationModes.AppIntegration]]. */
+		mobileIntegrationMode?: LacunaWebPKI.MobileIntegrationModes,
 		
 		/** The *on premises* Rest PKI URL. For *on premises* Rest PKI clients integration only. */
 		restPkiUrl?: string
@@ -903,7 +911,8 @@ export namespace LacunaWebPKI {
 		v1_5 = '1.5',
 		v1_5_1 = '1.5.1',
 		v1_5_2 = '1.5.2',
-		v1_6 = '1.6.0'
+		v1_6 = '1.6.0',
+		v1_6_1 = '1.6.1'
 	}
 
 	/**************************************************************
@@ -996,6 +1005,13 @@ export namespace LacunaWebPKI {
 		T3 = 'T3',
 		T4 = 'T4',
 		Unknown = 'Unknown'
+	}
+
+	export const enum MobileIntegrationModes {
+		/** Redirects and continue execution inside Web PKI App. Direct integration without bouncing between Browser App and Web PKI App. */
+		AppIntegration = 'appIntegration',
+		/** Integration on Browser App. Requires bouncing between Browser App and Web PKI App. */
+		BrowserIntegration = 'browserIntegration'
 	}
 
 	export const enum HttpMethods {

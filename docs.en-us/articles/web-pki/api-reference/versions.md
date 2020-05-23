@@ -18,6 +18,12 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 <a name="changelog" />
 ## API changelog
 
+<a name="v1-6-1" />
+### 1.6.1 (2020-05-23)
+
+- Add [`downloadToFolder`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#downloadtofolder)&ast; command with TLS 1.2 forced support
+
+
 <a name="v1-6" />
 ### 1.6 (2019-10-13)
 

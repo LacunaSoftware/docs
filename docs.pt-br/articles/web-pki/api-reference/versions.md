@@ -18,6 +18,12 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-6-1" />
+### 1.6.1 (2020-05-23)
+
+- Adiciona comando [`downloadToFolder`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#downloadtofolder)&ast; com suporte forçado a TLS 1.2
+
+
 <a name="v1-6" />
 ### 1.6 (2019-10-13)
 
