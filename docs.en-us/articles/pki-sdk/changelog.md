@@ -3,7 +3,7 @@
 <a name="v2-7-1" />
 ### 2.7.1 (2020-05-28)
 
-- Add custom X09 extensions feature to certificate generation
+- Add custom X509 extensions feature to certificate generation
 
 <a name="v2-7-0" />
 ### 2.7.0 (2020-05-22)
