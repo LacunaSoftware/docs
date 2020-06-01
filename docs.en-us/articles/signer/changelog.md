@@ -4,6 +4,26 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-4-0" />
+### 1.4.0 (2020-06-01)
+
+* New Features
+  * [SIG-216] - Instance settings to configure details of the print version
+
+* Improvements
+  * [SIG-249] - Add notification internationalization
+  * [SIG-285] - Removed fast scan button and updated behaviour of the scan flow
+  * [SIG-294] - Send set password email for new users
+  * [SIG-312] - Add setting to configure if visual representation information should be placed in the middle of the rectangle
+  * [SIG-314] - Improve Scanner integration settings
+  * [SIG-323] - Enable batch download
+  * [SIG-329] - Add more auditing events
+
+* Bug fixes
+  * [SIG-313] - Folder document status shown as Pending when it is concluded
+
+Updates database model: sim
+
 <a name="v1-3-2" />
 ### 1.3.2 (2020-05-15)
 
@@ -40,7 +60,7 @@ Updates database model: no
   * [SIG-305] - Handle PinValidationFailed error from Amplia
 
 
-* Correções de bugs
+* Bug fixes
   * [SIG-304] - Certificate issue requests that cannot be issued in Cloud should be ignored
   * [SIG-306] - Emails not being sent when SMS is disabled
 

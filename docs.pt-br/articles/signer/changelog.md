@@ -4,6 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-4-0" />
+### 1.4.0 (2020-06-01)
+
+* Novas funcionalidades
+  * [SIG-216] - Permitir configuração de instância dos detalhes da Versão para impressão
+
+* Melhorias
+  * [SIG-249] - Internacionalizar notificações
+  * [SIG-285] - Remover digitalização rápida e alterar comportamento da digitalização
+  * [SIG-294] - Enviar email para configurar senha ao cadastrar novos usuários
+  * [SIG-312] - Adicionada configuração para definir se o texto da representação visual deve começar no meio do retângulo
+  * [SIG-314] - Melhorar configuração de integração com Scanner
+  * [SIG-323] - Ativar download em lote
+  * [SIG-329] - Adicionar mais eventos
+
+* Correções de bugs
+  * [SIG-313] - Status de documento na listagem de pastas está "Pendente" quando está concluído
+
+Atualiza modelo do banco de dados: sim
+
+
 <a name="v1-3-2" />
 ### 1.3.2 (2020-05-15)
 
