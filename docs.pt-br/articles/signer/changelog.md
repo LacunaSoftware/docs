@@ -4,6 +4,14 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-4-1" />
+### 1.4.1 (2020-06-01)
+
+* Correções de bugs
+  * [SIG-313] - Internacionalização errada (en) no email de aprovar e assinar
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-4-0" />
 ### 1.4.0 (2020-06-01)
 

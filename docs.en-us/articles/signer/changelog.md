@@ -4,6 +4,14 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-4-1" />
+### 1.4.1 (2020-06-01)
+
+* Bug fixes
+  * [SIG-313] - Wrong internationalization (en) for the approval and sign email
+
+Updates database model: no
+
 <a name="v1-4-0" />
 ### 1.4.0 (2020-06-01)
 
@@ -22,7 +30,7 @@
 * Bug fixes
   * [SIG-313] - Folder document status shown as Pending when it is concluded
 
-Updates database model: sim
+Updates database model: yes
 
 <a name="v1-3-2" />
 ### 1.3.2 (2020-05-15)
