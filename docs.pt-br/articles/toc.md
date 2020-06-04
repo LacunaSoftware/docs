@@ -31,6 +31,7 @@
 ## [Atualizações](web-pki/update.md)
 ## [Requisição Autenticada](web-pki/auth-request.md)
 ## [Logs](web-pki/logs.md)
+## [Substituição do ICPBravoAccess](web-pki/icpbravo-replacement.md)
 ## [FAQ](web-pki/faq/index.md)
 ### [signData vs. signHash](web-pki/faq/sign-data-vs-hash.md)
 ### [Qual é o formato da assinatura retornada pelas funções signData e signHash?](web-pki/faq/sign-data-output.md)
