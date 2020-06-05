@@ -1,5 +1,9 @@
 # Como converter do REST PKI para o PKI Express em NodeJS
-Este artigo explica as alterações necessárias para converter do [REST PKI](../../rest-pki/index.md) para o [PKI Express](../index.md) em NodeJS.
+Este artigo explica as alterações necessárias para converter uma aplicação NodeJS utilizando [REST PKI](../../rest-pki/index.md) para uma aplicação NodeJS que utilize [PKI Express](../index.md).
+
+## Equivalência de políticas
+Ao migrar sua aplicação NodeJS que utiliza o PKI Express para utilizar o REST PKI, é importante se atentar aos nomes das políticas usadas na aplicação.  
+Na tabela a seguir, é possível encontrar as equivalências entre os nomes das políticas em ambas bibliotecas. Na primeira coluna temos os nomes das políticas na biblioteca PKI Express, e na segunda coluna temos os nomes das mesmas políticas só que na biblioteca REST PKI.
 
 ## Equivalência de políticas
 
