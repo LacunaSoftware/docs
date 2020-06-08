@@ -246,6 +246,7 @@
 #### [Persistent data](grant-id/on-premises/docker/persistent-data.md)
 ### [Setup on Azure App Services](grant-id/on-premises/azure/index.md)
 ## [Post-installation steps](grant-id/on-premises/post-install.md)
+## [Changelog](grant-id/changelog.md)
 <!-- End of GrantID -->
 
 <!-- Start of Scanner -->

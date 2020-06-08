@@ -5,7 +5,7 @@
 > documenting older versions.
 
 <a name="v1-4-1" />
-### 1.4.1 (2020-06-01)
+### 1.4.1 (2020-06-08)
 
 * Bug fixes
   * [SIG-313] - Wrong internationalization (en) for the approval and sign email
@@ -13,7 +13,7 @@
 Updates database model: no
 
 <a name="v1-4-0" />
-### 1.4.0 (2020-06-01)
+### 1.4.0 (2020-06-08)
 
 * New Features
   * [SIG-216] - Instance settings to configure details of the print version

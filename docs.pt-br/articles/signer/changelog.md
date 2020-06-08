@@ -5,7 +5,7 @@
 > trabalhando para documentar as versões mais antigas.
 
 <a name="v1-4-1" />
-### 1.4.1 (2020-06-01)
+### 1.4.1 (2020-06-08)
 
 * Correções de bugs
   * [SIG-313] - Internacionalização errada (en) no email de aprovar e assinar
@@ -13,7 +13,7 @@
 Atualiza modelo do banco de dados: não
 
 <a name="v1-4-0" />
-### 1.4.0 (2020-06-01)
+### 1.4.0 (2020-06-08)
 
 * Novas funcionalidades
   * [SIG-216] - Permitir configuração de instância dos detalhes da Versão para impressão
