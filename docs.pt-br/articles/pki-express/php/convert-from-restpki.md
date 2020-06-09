@@ -28,4 +28,5 @@ Na tabela a seguir, é possível encontrar as equivalências entre os nomes das 
 | XML_COD_SHA1                            | Política ainda não existente (a constante equivalente seria "cod-sha1")  |
 | XML_COD_SHA256                          | Política ainda não existente (a constante equivalente seria "cod-sh256") |
 
-> [!WARNING] A política de validação PADES_ADOBE_READER não apresenta equivalência no PKI Express.
+> [!WARNING]
+> A política de validação PADES_ADOBE_READER não apresenta equivalência no PKI Express.

@@ -28,4 +28,5 @@ The following table shows the equivalence in policy names between REST PKI (1st 
 | XML_COD_SHA1                            | Policy not yet avaliable (the equivalent constant would be "cod-sha1")  |
 | XML_COD_SHA256                          | Policy not yet avaliable (the equivalent constant would be "cod-sh256") |
 
-> [!WARNING] The validation policy PADES_ADOBE_READER does not have an equivalent policy in PKI Express.
+> [!WARNING]
+> The validation policy PADES_ADOBE_READER does not have an equivalent policy in PKI Express.
