@@ -13,7 +13,7 @@ id-tc OBJECT IDENTIFIER ::= { id-pen-iana 55432 }
 ```
 
 <a name="cert-policies" />
-## 1. Políticas de certificado (*certificate policies*)
+## 1. Políticas de certificado
 
 O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas de certificado:
 
@@ -23,5 +23,5 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.4 - [AC EMGE](https://ac.emge.edu.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.5 - [AC Ipemig](https://ac.ipemig.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.6 - [AC Uniasselvi](https://ac.uniasselvi.com.br/certs/ac.txt)
-* 1.3.6.1.4.1.55432.1.7 - [AC Afya](https://ac.afya.com.br/certs/ac.cer)
+* 1.3.6.1.4.1.55432.1.7 - [AC Afya](https://ac.afya.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.8 - (AC FECAP)
