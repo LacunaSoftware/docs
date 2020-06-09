@@ -170,6 +170,7 @@
 ### [Setup em Docker](signer/on-premises/docker/index.md)
 ### [Setup em Azure App Services](signer/on-premises/azure/index.md)
 ### [Preparando o banco de dados](signer/on-premises/prepare-database.md)
+### [Configurações](signer/on-premises/settings.md)
 ## [Histórico de versões](signer/changelog.md)
 <!-- End of Signer -->
 
