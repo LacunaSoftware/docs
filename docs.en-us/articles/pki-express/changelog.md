@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-14-0" />
+### 1.14.0 (2020-06-09)
+
+- Add support for signature (CAdES, PAdES and XAdES) using key stored on Azure Key Vault
+- Update PKI SDK to [2.7.0](../pki-sdk/changelog.md#v2-7-0)
+
 <a name="v1-13-2" />
 ### 1.13.2 (2019-08-21)
 

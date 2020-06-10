@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-14-0" />
+### 1.14.0 (2020-06-09)
+
+- Adiciona suporte a assinatura (CAdES, PAdES e XAdES) utilizando chave armazenada no Azure Key Vault
+- Atualiza PKI SDK para a versão [2.7.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-7-0)
+
 <a name="v1-13-2" />
 ### 1.13.2 (2019-08-21)
 
