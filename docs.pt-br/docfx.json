@@ -60,6 +60,14 @@
 					"_site/**",
 					"**.pdn"
 				]
+			},
+			{
+				"files": [
+					"articles/*/images/**"
+				],
+				"exclude": [
+					"**.pdn"
+				]
 			}
 		],
 		"overwrite": [

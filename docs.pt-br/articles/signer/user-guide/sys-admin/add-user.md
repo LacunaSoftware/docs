@@ -2,4 +2,4 @@
 
 [!include[Under construction](../../../includes/under-construction.md)]
 
-![Select user](../images/select-user-sys-admin.png)
+![Select user](../../images/select-user-sys-admin.png)
