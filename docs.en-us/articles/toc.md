@@ -171,6 +171,10 @@
 ### [Setup on Azure App Services](signer/on-premises/azure/index.md)
 ### [Preparing the database](signer/on-premises/prepare-database.md)
 ### [Settings](signer/on-premises/settings.md)
+## [User guide](signer/user-guide/index.md)
+### [System admin](signer/user-guide/sys-admin/index.md)
+#### [Add user to system admin](signer/user-guide/sys-admin/add-user.md)
+#### [Browse system documents](signer/user-guide/sys-admin/browse-docs.md)
 ## [Changelog](signer/changelog.md)
 <!-- End of Signer -->
 
