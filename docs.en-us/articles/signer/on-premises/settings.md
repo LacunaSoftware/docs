@@ -72,7 +72,7 @@ a custom visual representation that has information about his lawyer or accounta
 * **AuthenticationSignatureWidthCentimetersOnA4**: width of the authentication signature visual representation in centimeters (optimized for A4 paper size). The default value is `19.31`.
 * **AuthenticationSignatureHeightCentimetersOnA4**: height of the authentication signature visual representation in centimeters (optimized for A4 paper size). The default value is `3.436`.
 
-###  *PrinterFriendlySection* Settings
+###  *PrinterFriendly* Settings
 
 
 * **ShowSummaryBottom** (default: `true`): if `true`, shows the signature summary at the bottom of every page.
@@ -98,7 +98,7 @@ a custom visual representation that has information about his lawyer or accounta
 * **LineHeight**: approximated height of a font with the normal font size. The default value is `0.74`.
 * **SmallLineHeight**: approximated height of a font with the small font size. The default value is `0.6`.
 
-###  *SigningTagsSection* Settings
+###  *SigningTags* Settings
 
 * **PageHeight**:
 * **PageWidth**:
@@ -107,7 +107,7 @@ a custom visual representation that has information about his lawyer or accounta
 * **PageMarginBottom**:
 * **PageMarginLeft**:
 
-###  *AmpliaSection* Settings
+###  *Amplia* Settings
 
 * **EndpointUrl**:
 * **ApiKey**:
@@ -129,7 +129,7 @@ a custom visual representation that has information about his lawyer or accounta
 * **MasterPassword**: subsection:
 
 
-###  *TimestamperSection* Settings
+###  *Timestamper* Settings
 
 * **Enabled**:
 * **Url**:
@@ -148,7 +148,7 @@ a custom visual representation that has information about his lawyer or accounta
 * **UploadApi**:
 * **StartNotarizationApi**:
 
-###  *AuthenticatorSection* Settings
+###  *Authenticator* Settings
 
 * **HashAlgorithm**:
 * **NumberOfDigits**:
@@ -157,7 +157,7 @@ a custom visual representation that has information about his lawyer or accounta
 * **TokenAuthTimeValidation**:
 
 
-###  *BusinessHoursSection* Settings
+###  *BusinessHours* Settings
 
 * **StartHour**:
 * **EndHour**:
