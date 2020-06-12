@@ -19,3 +19,5 @@ Clique em **Adicionar**
 Selecione o botão **Convidar usuário**. 
 
 ![Select user](../../images/select-user-sys-admin.png)
+
+O usuário foi adicionado com sucesso! 
