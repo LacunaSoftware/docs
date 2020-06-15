@@ -94,7 +94,7 @@ Mesmo se você excluir sua conta, lembre-se de que a exclusão por nossos fornec
 
 ## Política em relação às crianças
 
-Os Serviços não são direcionados a crianças menores de 16 anos. Não coletamos intencionalmente Informações Pessoais de crianças menores de 16 anos. Se você tem menos de 16 anos, não use os Serviços e não forneça nenhuma informação pessoal para nós. Se você perceber que uma criança menor de 16 anos nos forneceu informações pessoais sem o seu consentimento, entre em contato conosco em [suporte@lacunasoftware.com] (mailto: suporte@lacunasoftware.com). Se você é residente na Califórnia com menos de 18 anos e deseja remover o conteúdo disponível publicamente, entre em contato conosco em [suporte@lacunasoftware.com] (mailto: suporte@lacunasoftware.com) com a linha de assunto "Borracha da Califórnia".
+Os Serviços não são direcionados a crianças menores de 16 anos. Não coletamos intencionalmente Informações Pessoais de crianças menores de 16 anos. Se você tem menos de 16 anos, não use os Serviços e não forneça nenhuma informação pessoal para nós. Se você perceber que uma criança menor de 16 anos nos forneceu informações pessoais sem o seu consentimento, entre em contato conosco em [suporte@lacunasoftware.com](mailto: suporte@lacunasoftware.com). Se você é residente na Califórnia com menos de 18 anos e deseja remover o conteúdo disponível publicamente, entre em contato conosco em [suporte@lacunasoftware.com](mailto: suporte@lacunasoftware.com) com a linha de assunto "Borracha da Califórnia".
 
 ## Transferências de informações que não são do EEE
 

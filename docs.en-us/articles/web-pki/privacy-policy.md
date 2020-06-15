@@ -6,7 +6,7 @@
 * Last amended: June 16, 2020
 * Effective Date: June 16, 2020
 
-This Privacy Policy applies to the Plugin [https://get.webpkiPlugin.com/Help?brand=&jslib=&returnUrl=#](Web PKI) (the "Plugin", the "Extension") owned and operated by Lacuna Software Ltda (collectively, "Lacuna", "we", "us", or "our"). This Privacy Policy describes how Lacuna collects, uses, shares and secures the personal information you provide, as well as the information about our customers' end users that we process on behalf of our customers. It also describes your choices regarding use, access, correction and deletion of your personal information. 
+This Privacy Policy applies to the Plugin [Web PKI](https://get.webpkiPlugin.com/Help?brand=&jslib=&returnUrl=#) (the "Plugin", the "Extension") owned and operated by Lacuna Software Ltda (collectively, "Lacuna", "we", "us", or "our"). This Privacy Policy describes how Lacuna collects, uses, shares and secures the personal information you provide, as well as the information about our customers' end users that we process on behalf of our customers. It also describes your choices regarding use, access, correction and deletion of your personal information. 
 
 ## How we Collect Information
 
