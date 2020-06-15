@@ -1,4 +1,4 @@
-﻿> [!NOTE]
+> [!NOTE]
 > Revisamos nossas políticas para garantir que estamos em conformidade com o Regulamento Geral de Proteção de Dados da União Europeia
 
 # Rest PKI - Política de Privacidade
@@ -25,7 +25,7 @@ Se você não fornecer essas informações, não poderemos fornecer os Serviços
 
 ### Informação que você fornece sobre seus usuários e contatos
 
-Para a prestação de nossos serviços a você, você nos fornece informações que podem identificar seus usuários finais ou funcionários.
+Para que possamos efetivar a prestação de nossos serviços, você nos fornece informações que podem identificar seus usuários finais ou funcionários.
 Essas informações incluem:
 
 * Certificado digital;
@@ -35,7 +35,7 @@ Essas informações incluem:
 Você também pode nos fornecer informações pessoais sobre seus funcionários como Nome e endereço de e-mail onde podemos enviar recibo de suas compras. Quando você nos fornece informações pessoais sobre seus funcionários, essas informações serão 
 usadas apenas pelo motivo específico pelo qual foram fornecidas. Se você acredita que um de seus funcionários nos forneceu suas informações pessoais e gostaria de solicitar que elas sejam removidas de nosso banco de dados, entre em contato conosco pelas informações de contato abaixo.
 
-### Informação coletada automicamente
+### Informação coletada automaticamente
 
 Quando você utiliza nossos Serviços, nós utilizamos cookies e tecnologias similares para coletar informações sobre sua localização, e suas atividades em nosso site, informações sobre o seu dispositivo e informações de registro. Isso é descrito 
 com mais detalhes abaixo. Estes cookies e tecnologias similares coletam endereço de protocolo de Internet (IP) anonimizado, tipo do browser, serviço de provedor de internet (ISP), páginas de saída/referências, os arquivos vistos no seu site (e.g., página HTML, gráficos, etc.), sistema de operação, data/hora, e/ou dados do fluxo de cliques.
@@ -57,13 +57,13 @@ Usamos as informações sobre você para fornecer os serviços e para melhorá-l
 
 *Para otimizar ou melhorar os serviços:* Usamos suas informações para autenticar você, evitar fraudes e abusos de nossos serviços e realizar pesquisas. A base legal para esses usos é nosso interesse legítimo na melhoria e otimização de nossas ofertas de serviços e em garantir a segurança de nossos serviços, e aplicamos safeguards adequadas para proteger suas informações (veja [section Security](#security)).
 
-## Como nos compartilhamos sua informação
+## Como nós compartilhamos sua informação
 
 Compartilhamos informações com os provedores de serviços, conforme exigido por lei, e em conexão com a proteção e aplicação de nossos direitos legais e contratuais.
 
-*Com provedores de serviços:* Compartilhamos suas informações com terceiros que prestam serviços em nosso nome para ajudar em nossas atividades comerciais. Isto inclue: processamento de pagamento, prestação de serviço ao cliente, enviando comunicação de marketing (este não está incluido informações sobre seu cliente), conduzindo pesquisas e análises e fornecendo infraestrutura de computação em nuvem. A base legal para o compartilhamento dessas informações é o nosso interesse legítimo em fornecer nossos Serviços com eficiência e implementamos medidas para proteger suas informações.
+*Com provedores de serviços:* Compartilhamos suas informações com terceiros que prestam serviços em nosso nome para ajudar em nossas atividades comerciais. Isto inclui: processamento de pagamento, prestação de serviço ao cliente, enviando comunicação de marketing (este não está incluído informações sobre seu cliente), conduzindo pesquisas e análises e fornecendo infraestrutura de computação em nuvem. A base legal para o compartilhamento dessas informações é o nosso interesse legítimo em fornecer nossos Serviços com eficiência e implementamos medidas para proteger suas informações.
 
-*Com autoridades públicas ou autoridades policiais:* Em determinadas situações, a Lacuna pode ser obrigada a divulgar dados pessoais em resposta a solicitações legais de autoridades públicas, inclusive para atender aos requisitos de segurança nacional ou de aplicação da lei. Também podemos divulgar suas informações pessoais conforme exigido por lei, como para cumprir uma intimação ou outro processo legal, quando acreditarmos de boa fé que a divulgação é necessária para proteger nossos direitos, quando acreditarmos que há uma violação de nossos Termos de Serviço. Serviço (consulte os Termos de Serviço RestPKI, Termos de Serviço Beanstalk), proteja sua segurança ou a segurança de outras pessoas, investigue fraudes ou responda a uma solicitação do governo. Se a Lacuna estiver envolvida em uma fusão, aquisição ou venda de todos ou parte de seus ativos, você será notificado por e-mail e / ou um aviso em destaque em nosso site sobre qualquer alteração de propriedade, uso de suas informações pessoais e escolhas que você possa ter em relação às suas informações pessoais. Não vendemos, alugamos ou compartilhamos informações pessoais com terceiros sem o seu consentimento prévio. A base legal para isso é nosso interesse legítimo em proteger nossos direitos legais e os de terceiros, o cumprimento de obrigações legais e nosso interesse legítimo em cumprir obrigações legais impostas por autoridades legais fora da EU.
+*Com autoridades públicas ou autoridades policiais:* Em determinadas situações, a Lacuna pode ser obrigada a divulgar dados pessoais em resposta a solicitações legais de autoridades públicas, inclusive para atender aos requisitos de segurança nacional ou de aplicação da lei. Também podemos divulgar suas informações pessoais conforme exigido por lei, como para cumprir uma intimação ou outro processo legal, quando acreditarmos de boa fé que a divulgação é necessária para proteger nossos direitos, quando acreditarmos que há uma violação de nossos Termos de Serviço. Serviço (consulte os Termos de Serviço Rest PKI, Termos de Serviço Beanstalk), proteja sua segurança ou a segurança de outras pessoas, investigue fraudes ou responda a uma solicitação do governo. Se a Lacuna estiver envolvida em uma fusão, aquisição ou venda de todos ou parte de seus ativos, você será notificado por e-mail e / ou um aviso em destaque em nosso site sobre qualquer alteração de propriedade, uso de suas informações pessoais e escolhas que você possa ter em relação às suas informações pessoais. Não vendemos, alugamos ou compartilhamos informações pessoais com terceiros sem o seu consentimento prévio. A base legal para isso é nosso interesse legítimo em proteger nossos direitos legais e os de terceiros, o cumprimento de obrigações legais e nosso interesse legítimo em cumprir obrigações legais impostas por autoridades legais fora da EU.
 
 *Prevenir fraudes e abusos dos Serviços:* Compartilharemos informações para prevenir ou detectar fraudes ou solucionar problemas técnicos e, se acharmos necessário investigar, impedir ou tomar medidas em relação a situações que envolvam abuso da infraestrutura dos Serviços. A base legal para isso é o nosso interesse legítimo em manter a segurança de nossos Serviços.
 
@@ -100,7 +100,7 @@ Os Serviços não são direcionados a crianças menores de 16 anos. Não coletam
 
 Na medida em que informações pessoais são transferidas para os Estados Unidos de outros países da Área Econômica Européia e da Suíça, incluindo informações pessoais que são transferidas do Canadá, empregamos safeguard semelhantes, como selecionar cuidadosamente fornecedores de terceiros, garantindo que as informações pessoais usadas e divulgado apenas conforme estabelecido nesta política de privacidade e protegido por safeguard de segurança apropriadas.
 
-No entanto, em conexão com essas transferências de informações pessoais, suas informações pessoais podem estar sujeitas a leis de privacidade que podem não fornecer a mesma proteção que seu país de residência. Por exemplo, entidades governamentais em outros países podem ter certos direitos para acessar suas informações pessoais. Ao usar este Site ou nosso Serviço relacionado a este aviso de privacidade, você concorda com a transferência de suas informações pessoais.
+No entanto, em conexão com essas transferências de dados, suas informações pessoais podem estar sujeitas a leis de privacidade que podem não fornecer a mesma proteção que seu país de residência. Por exemplo, entidades governamentais em outros países podem ter certos direitos para acessar suas informações pessoais. Ao usar este plugin ou nosso Serviço relacionado a este aviso de privacidade, você concorda com a transferência de suas informações pessoais.
 
 ## Navegador Do Not Track
 
@@ -112,4 +112,4 @@ Podemos atualizar esta Política de Privacidade para refletir alterações em no
 
 ## Perguntas / Comentários sobre privacidade
 
-Se você tiver questões ou sugestões sobre a Política de Privacidade da Lacuna, por favor entre em contato conosco em [info@lacunasoftware.com](mailto:info@lacunasoftware.com) ou CLN 110 - A - Sala 203, Brasília-DF, Brasil. Telefone: +55 61 3030-5700.
+Se você tiver questões ou sugestões sobre a Política de Privacidade da Lacuna, por favor entre em contato conosco em [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) ou CLN 110 - A - Sala 203, Brasília-DF, Brasil. Telefone: +55 61 3030-5700.
