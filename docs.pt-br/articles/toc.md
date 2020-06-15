@@ -1,5 +1,6 @@
 ﻿# [Bem-vindo](welcome/index.md)
 ## [Contribuindo](welcome/contributing.md)
+## [Política de Privacidade](welcome/privacy-policy.md)
 
 <!-- Start of PKI Solutions Guide -->
 # [Certificação Digital](pki-guide/index.md)
@@ -39,6 +40,7 @@
 ### [Suporte a SSL com o certificado do usuário?](web-pki/faq/ssl.md)
 ## [API](web-pki/api-reference/index.md)
 ### [Versões da API](web-pki/api-reference/versions.md)
+## [Política de Privacidade](web-pki/privacy-policy.md)
 <!-- End of Web PKI -->
 
 <!-- Start of Rest PKI -->
