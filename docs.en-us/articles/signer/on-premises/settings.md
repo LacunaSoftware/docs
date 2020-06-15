@@ -48,6 +48,12 @@ a custom visual representation that has information about his lawyer or accounta
 * **SetPasswordEmailExpiration**: The expiration of the set password link, in minutes. The default value is `1440` (24 hours).
 
 
+###  *SupportChat* Settings (v1.6.0)
+
+* **Type**: the support chat provider. Available options are `Movidesk` and `Jivo`.
+* **Enabled**: if `true`, enables the support chat for the selected type.
+* **Key**: the key for the support chat account.
+
 <a name="electronic-settings" />
 ###  *ElectronicSignature* Settings
 
