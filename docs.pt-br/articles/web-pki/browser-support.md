@@ -10,7 +10,6 @@ Atualmente, os seguintes browsers são suportados:
 
 Versões dos sistemas suportados:
 
-* Windows 7+
-	* Não há impedimentos de tecnologia para o funcionamento também em Windows Vista e XP, no entanto, o suporte **oficial** do produto acompanha o suporte corrente da Microsoft aos sistemas.
+* Windows 7 SP2 ou superior 
 * Linux (distribuições baseadas em Debian, RedHat e Slackware)
 * Mac OS X 10.12+
