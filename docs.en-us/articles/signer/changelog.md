@@ -4,6 +4,26 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-5-0" />
+### 1.5.0 (2020-06-15)
+
+* New Features
+  * [SIG-331] - Send email to all participants after the document is concluded
+  * [SIG-343] - Batch Electronic Signature
+  * [SIG-344] - Option to configure if electronic signature is allowed by default
+
+* Improvements
+  * [SIG-311] - Setting to set geolocation as required for electronic signature
+  * [SIG-318] - Allow participant to access the document after signing/approving in the public area
+  * [SIG-326] - Automated tests for scanned document with Scanner
+  * [SIG-332] - Add application name in the PDF properties
+  * [SIG-341] - Hide printer friendly version
+
+* Bug fixes
+  * [SIG-347] - Fix translations in the document validation page
+
+Updates database model: yes
+
 <a name="v1-4-1" />
 ### 1.4.1 (2020-06-08)
 

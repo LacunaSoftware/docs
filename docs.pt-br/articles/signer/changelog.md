@@ -4,6 +4,26 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-5-0" />
+### 1.5.0 (2020-06-15)
+
+* Novas funcionalidades
+  * [SIG-331] - Enviar email para todos participantes do fluxo após a conclusão do documento
+  * [SIG-343] - Assinatura eletronica em lote
+  * [SIG-344] - Permitir configurar se a assinatura eletronica aparece marcada por padrão
+
+* Melhorias
+  * [SIG-311] - Obrigatoriedade de enviar informação de geolocalização
+  * [SIG-318] - Permitir que o participante tenha acesso ao documento após assinar/aprovar na área externa
+  * [SIG-326] - Testes automatizados de documento escaneado pelo Scanner
+  * [SIG-332] - Adicionar nome da aplicação nas propriedades do PDF
+  * [SIG-341] - Esconder versão para impressão
+
+* Correções de bugs
+  * [SIG-347] - Corrigir traduções na página de validação de documentos
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-4-1" />
 ### 1.4.1 (2020-06-08)
 
