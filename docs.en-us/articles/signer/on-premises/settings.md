@@ -62,7 +62,7 @@ a custom visual representation that has information about his lawyer or accounta
 * **EnableOtpAuthentication**: if `true`, enables the OTP App verification option for electronic signatures.
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
-* **IsGeolocationRequired**: if `true`, the geolocation of an user must be sent in order to sign electronically.
+* **IsGeolocationRequired** (v1.5.0): if `true`, the geolocation of an user must be sent in order to sign electronically.
 
 ###  *VisualRepresentation* Settings
 
