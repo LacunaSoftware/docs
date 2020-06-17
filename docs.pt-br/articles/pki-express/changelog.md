@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-15-0" />
+### 1.15.0 (2020-06-17)
+
+- Adiciona campo "customSignatureFieldName" na assinatura PAdES
+- Atualiza PKI SDK para a versão [2.7.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-7-2)
+
 <a name="v1-14-0" />
 ### 1.14.0 (2020-06-09)
 

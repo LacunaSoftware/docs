@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-15-0" />
+### 1.15.0 (2020-06-17)
+
+- Add field "customSignatureFieldName" in PAdES signature
+- Update PKI SDK to [2.7.2](../pki-sdk/changelog.md#v2-7-2)
+
 <a name="v1-14-0" />
 ### 1.14.0 (2020-06-09)
 
