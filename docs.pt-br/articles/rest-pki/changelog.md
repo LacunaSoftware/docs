@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-23-0" />
+### 1.23.0 (2020-06-19)
+
+Atualização do modelo do banco de dados: Não
+
+- Corrigir exceção que ocorre ao abrir uma assinatura PAdES com o campo "SignaturePolicy" sem a URI
+- Adicionar campo "CustomSignatureFieldName" em assinaturas PAdES
+
 <a name="v1-22-1" />
 ### 1.22.1 (2020-04-22)
 

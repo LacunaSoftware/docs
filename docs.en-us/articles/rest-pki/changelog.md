@@ -1,5 +1,13 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-23-0" />
+### 1.23.0 (2020-06-19)
+
+Database model update: No
+
+- Fixed exception that occurs when opening a PAdES signature with the field "SignaturePolicy" without its URI
+- Added "CustomSignatureFieldName" field on PAdES signatures
+
 <a name="v1-22-1" />
 ### 1.22.1 (2020-04-22)
 
