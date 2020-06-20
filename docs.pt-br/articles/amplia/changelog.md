@@ -1,5 +1,41 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-7-4" />
+### 3.7.4 (2020-06-19)
+
+* Correções de bugs
+  * Provider de logs para o event log está causando erros em Azure App Service
+  * Um excesso de rotinas de emissão de LCR "encavaladas" poderia exaurir as conexões com o banco de dados disponíveis
+
+Updates database model: no
+
+
+<a name="v3-7-3" />
+### 3.7.3 (2020-06-05)
+
+* Adicionado tema "green dark coral"
+* Correção de bug
+  * Campo `SmsEnabled` da API de *client config* é preenchido de maneira errada em algumas situações
+
+Updates database model: no
+
+
+<a name="v3-7-2" />
+### 3.7.2 (2020-06-03)
+
+* Melhorados *labels* de telefone e "pedido para usuário (HSM em nuvem)"Remover acentos de mensagens de SMS
+
+Atualiza modelo do banco de dados: não
+
+
+<a name="v3-7-1" />
+### 3.7.1 (2020-05-21)
+
+* Melhorados *labels* de telefone e "pedido para usuário (HSM em nuvem)"
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-7-0" />
 ### 3.7.0 (2020-05-06)
 

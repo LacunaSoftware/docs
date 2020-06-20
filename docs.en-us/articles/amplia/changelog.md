@@ -1,5 +1,41 @@
 ﻿# Amplia changelog
 
+<a name="v3-7-4" />
+### 3.7.4 (2020-06-19)
+
+* Bug fixes
+  * EventLog log provider causing errors on Azure App Service
+  * Too many enqueued jobs for CRL issuing could cause database connection exaustion
+
+Updates database model: no
+
+
+<a name="v3-7-3" />
+### 3.7.3 (2020-06-05)
+
+* Add "green dark coral" theme
+* Bug fix
+  * App client config API field `SmsEnabled` is wrongly filled with false in certain scenarios
+
+Updates database model: no
+
+
+<a name="v3-7-2" />
+### 3.7.2 (2020-06-03)
+
+* Remove diacritics from SMS messages
+
+Updates database model: no
+
+
+<a name="v3-7-1" />
+### 3.7.1 (2020-05-21)
+
+* Improve phone and user order labels
+
+Updates database model: no
+
+
 <a name="v3-7-0" />
 ### 3.7.0 (2020-05-06)
 
