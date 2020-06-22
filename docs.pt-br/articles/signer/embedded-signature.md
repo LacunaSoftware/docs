@@ -61,7 +61,7 @@ widget.listen(function (e) {
 Por fim, carregue o iFrame utilizando o método `render()`, que recebe duas entradas:
 
 * `embedUrl`: a URL para ação que deseja ser realizada. Corresponde ao parâmetro embedUrl retornado pela [API Action URL](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url)
-* elementId: id do elemento no qual será exibido o componente de assinatura.
+* `elementId`: id do elemento no qual será exibido o componente de assinatura.
 
 ```javascript
 widget.render(embedUrl, 'embed-container');
@@ -75,6 +75,6 @@ widget.renderElement(embedUrl, document.getElementById('embed-container'));
 
 ## Exemplo online
 
-<iframe width="100%" height="300" src="https://jsfiddle.net/LacunaSoftware/hgutm4fL/16/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/hgutm4fL/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Para executar o exemplo, clique na aba **Result**. Se essa for a primeira vez que você utiliza o Web PKI, você será redirecionado para a página de instalação e voltará ao exemplo automaticamente após a instalação.
