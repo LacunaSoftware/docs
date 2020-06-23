@@ -1,5 +1,14 @@
 ﻿# Amplia changelog
 
+<a name="v3-7-5" />
+### 3.7.5 (2020-06-23)
+
+* Optimize job history storage
+* Add argument `--heavy` to command [update-db](on-premises/tool/update-db.md)
+
+Updates database model: no
+
+
 <a name="v3-7-4" />
 ### 3.7.4 (2020-06-19)
 

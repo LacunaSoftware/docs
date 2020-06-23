@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-7-5" />
+### 3.7.5 (2020-06-23)
+
+* Otimizado armazenamento de histórico de execuções de rotinas em background
+* Adicionado argumento `--heavy` ao comando [update-db](on-premises/tool/update-db.md)
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-7-4" />
 ### 3.7.4 (2020-06-19)
 
@@ -7,7 +16,7 @@
   * Provider de logs para o event log está causando erros em Azure App Service
   * Um excesso de rotinas de emissão de LCR "encavaladas" poderia exaurir as conexões com o banco de dados disponíveis
 
-Updates database model: no
+Atualiza modelo do banco de dados: não
 
 
 <a name="v3-7-3" />
@@ -17,7 +26,7 @@ Updates database model: no
 * Correção de bug
   * Campo `SmsEnabled` da API de *client config* é preenchido de maneira errada em algumas situações
 
-Updates database model: no
+Atualiza modelo do banco de dados: não
 
 
 <a name="v3-7-2" />
