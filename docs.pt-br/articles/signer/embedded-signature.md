@@ -77,4 +77,5 @@ widget.renderElement(embedUrl, document.getElementById('embed-container'));
 
 <iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/hgutm4fL/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Para executar o exemplo, clique na aba **Result**. Se essa for a primeira vez que você utiliza o Web PKI, você será redirecionado para a página de instalação e voltará ao exemplo automaticamente após a instalação.
+Para executar o exemplo, clique na aba **Result**. Se você ainda não tem o Web PKI instalado, será preciso seguir as intruções para instalá-lo. 
+Ao usar este componente em sua própria aplicação, o usuário será redirecionado para a página de instalação e voltará à aplicação automaticamente ao final do processo.
