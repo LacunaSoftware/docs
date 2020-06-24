@@ -5,6 +5,14 @@
 > documenting older versions.
 
 
+<a name="v1-6-1" />
+### 1.6.1 (2020-06-24)
+
+* Improvements
+  * [SIG-374] - Add metallic-seaweed-emerald (MSE) theme
+
+Updates database model: no
+
 <a name="v1-6-0" />
 ### 1.6.0 (2020-06-24)
 

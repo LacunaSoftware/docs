@@ -4,6 +4,13 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-6-1" />
+### 1.6.1 (2020-06-24)
+
+* Melhorias
+  * [SIG-374] - Adicionar tema metallic-seaweed-emerald (MSE)
+
+Atualiza modelo do banco de dados: não
 
 <a name="v1-6-0" />
 ### 1.6.0 (2020-06-24)
