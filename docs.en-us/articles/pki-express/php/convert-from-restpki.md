@@ -1,7 +1,9 @@
 # How to convert from REST PKI to PKI Express in PHP
+
 This articles explains the modifications necessary to convert a PHP application using [REST PKI](../../rest-pki/index.md) to a PHP application using [PKI Express](../index.md).
 
 ## Policies Equivalence
+
 When converting your PHP application from using REST PKI to PKI Express, you must pay atention to the policy names used in the application.  
 The following table shows the equivalence in policy names between REST PKI (1st column) and PKI Express (2nd column). 
 

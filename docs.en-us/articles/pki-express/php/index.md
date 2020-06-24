@@ -1,34 +1,19 @@
 ﻿# Using PKI Express on PHP
 
-This article describes how to use [PKI Express](../index.md) on PHP
+This article describes how to use [PKI Express](../index.md) on PHP. To get started, choose one of
+the available samples' projects (organized by framework):s
 
-## Sample project
+- [Plain](/plain.md)
 
-The sample project shows the usage of PKI Express together with the [Web PKI](../../web-pki/index.md) browser component
-on a **PHP 5.5+** project (including 7.x). It is hosted on GitHub:
+## Composer Package
 
-https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/PHP
+> [NOTE!]
+> This package only supports PHP *5.5+*.
 
-> [!NOTE]
-> If you are using a previous version of PHP, please [contact us](https://www.lacunasoftware.com/en/home/purchase).
-
-### Running the project
-
-1. [Install PKI Express](../setup/index.md)
-1. [Download the project](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiExpressSamples.git)
-1. In a command prompt, navigate to the folder `PHP` and run the command `composer install` to download the dependencies
-   (if you don't have Composer installed, get it [here](https://getcomposer.org/))
-1. Setup a website on your local HTTP server pointing to the `PHP` folder
-1. Open the index.php file on the browser on the corresponding URL (depending on the previous step)
-
-## Composer package
-
-In order to use PKI Express on PHP you must include the composer package [lacuna/pki-express](https://packagist.org/packages/lacuna/pki-express)
-
-To add it to your project, add the line below to your `composer.json` file:
+To use PKI Express on PHP, you must include the composer package [lacuna/pki-express](https://packagist.org/packages/lacuna/pki-express), by adding the following line to your `composer.json` file:
 
 [!include[composer.json](../../../../includes/pki-express/php/composer.md)]
 
-After that, do a `composer install`  to download the package and its dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/)).
+After that, execute the command `composer install`  to download the package and its dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/)).
 
-The package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/PkiExpressPhp). Feel free to fork it if you need to make any customizations, and even submit an *pull request*.
+This package is open-source, hosted on [GitHub](https://github.com/LacunaSoftware/PkiExpressPhp). Feel free to fork it if you need to make any customizations, and even submit a *pull request*.
