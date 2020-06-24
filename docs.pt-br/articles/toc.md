@@ -174,7 +174,7 @@
 ### [Preparando o banco de dados](signer/on-premises/prepare-database.md)
 ### [Configurações](signer/on-premises/settings.md)
 ## [Guia do usuário](signer/user-guide/index.md)
-### [Gerando documentos](signer/user-guide/gen-docs.md)
+### [Geração de documentos](signer/user-guide/gen-docs.md)
 ### [Administração de sistema](signer/user-guide/sys-admin/index.md)
 #### [Adicionando usuário](signer/user-guide/sys-admin/add-user.md)
 #### [Visualizando os documentos do sistema](signer/user-guide/sys-admin/browse-docs.md)
