@@ -21,6 +21,7 @@ able to use the logged user area if they are added previously in an organization
 instead as this option is now deprecated.
 
 * **NotifyConclusion** (v1.5.0): if `true` sends an email to all participants of a document when it is concluded.
+* **AreActionsOrderedByDefault** (v1.6.0): if `true`, actions of the document flow will be ordered by default unless overriden by the user during the document creation.
 * **FlowActionTicketValidityMinutes**: defines the validity in minutes of the ticket that is sent in the signature reminder email which allows an user to sign without logging in. 
 The default value is `1440` (24 hours).
 
@@ -86,8 +87,8 @@ a custom visual representation that has information about his lawyer or accounta
 * **SummaryHeightCentimeters**: the height of the summary in centimeters. The default value is `2`.
 * **SummaryLeadingCentimeters**: the horizontal (or vertical if summary is on right) offset in centimeters from the start of the page. The default value is `1.5`.
 * **SummaryTrailingCentimeters**: the horizontal (or vertical if summary is on right) offset in centimeters from the end of the page. The default value is `3.5`.
-* **SummaryBottomMarginCentimeters**: the margin in centimeters from the bottom (or right side if summary is on right) of the page. The default value is `0.3`.
-* **SummaryFontSize**: the font size of the summary in points. The default value is `8`.
+* **SummaryMarginToPageCentimeters** (v1.6.0): the margin in centimeters from the bottom (or right side if summary is on right) of the page. The default value is `0.3`.
+* **SummaryFontSize** (v1.6.0): the font size of the summary in points. The default value is `8`.
 
 * **ShowLogo** (default: `true`): if `true`, shows logo at bottom-right corner of every page.
 * **LogoWidthCentimeters**: width of the logo in centimeters. The default value is `1`.

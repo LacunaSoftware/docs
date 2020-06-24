@@ -4,6 +4,32 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+
+<a name="v1-6-0" />
+### 1.6.0 (2020-06-24)
+
+* Novas funcionalidades
+  * [SIG-349] - Carregar tela de criação de documento com upload já realizado
+  * [SIG-360] - Integração com página de Assinatura (Assinatura embutida)
+
+* Melhorias
+  * [SIG-227] - Simplificar exemplos no Swagger
+  * [SIG-320] - Melhorar tratamento das marcas de assinatura para documentos com muitos assinantes
+  * [SIG-327] - Alterar para o singular mensagem de upload de validação
+  * [SIG-334] - Adicionar documentação das APIs de validação de documento no Swagger
+  * [SIG-335] - Integração com MoviDesk e JivoChat
+  * [SIG-339] - Permitir configurar padrão da opção assinaturas ao mesmo tempo
+
+* Correções de bugs
+  * [SIG-307] - Corrigir testes no DevOps
+  * [SIG-352] - Erro ao consultar eventos de um usuário
+  * [SIG-356] - Erro ao submeter documento se assinatura eletronica estiver desabilitada e isAllowedByDefault for true
+  * [SIG-357] - Timeout ao buscar documento com muitos participantes
+  * [SIG-358] - Faltando traduções no email de fluxo editado
+  * [SIG-359] - Assinatura eletronica em lote está exigindo Web PKI instalado
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-5-0" />
 ### 1.5.0 (2020-06-15)
 

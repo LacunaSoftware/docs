@@ -4,6 +4,32 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+
+<a name="v1-6-0" />
+### 1.6.0 (2020-06-24)
+
+* New Features
+  * [SIG-349] - Load document creation page with an upload file pre-loaded
+  * [SIG-360] - Embedded signature integration
+
+* Improvements
+  * [SIG-227] - Simplify Swagger samples
+  * [SIG-320] - Improve signature marks in printer friendly version for documents with a lot of signers
+  * [SIG-327] - Update message in document upload validation to singular
+  * [SIG-334] - Add document validation APIs documentation on Swagger
+  * [SIG-335] - MoviDesk and JivoChat integration
+  * [SIG-339] - Add Setting to configure if actions in the document flow should be ordered by default
+
+* Bug fixes
+  * [SIG-307] - Fix DevOps tests
+  * [SIG-352] - Error while viewing user's events
+  * [SIG-356] - Error while creating document if electronic signature is enabled and IsAllowedByDefault setting is true
+  * [SIG-357] - Timeout retrieving document details with many participants
+  * [SIG-358] - Missing translations in the edit flow email notification
+  * [SIG-359] - Batch electronic signature is redirecting to Web PKI installation page
+
+Updates database model: yes
+
 <a name="v1-5-0" />
 ### 1.5.0 (2020-06-15)
 
