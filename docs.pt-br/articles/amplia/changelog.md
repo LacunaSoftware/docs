@@ -32,7 +32,7 @@ Atualiza modelo do banco de dados: não
 <a name="v3-7-2" />
 ### 3.7.2 (2020-06-03)
 
-* Melhorados *labels* de telefone e "pedido para usuário (HSM em nuvem)"Remover acentos de mensagens de SMS
+* Remover acentos de mensagens de SMS
 
 Atualiza modelo do banco de dados: não
 
