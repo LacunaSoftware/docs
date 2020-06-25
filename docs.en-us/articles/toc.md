@@ -152,6 +152,7 @@
 ### [Temporary directory](pki-express/config/temp-dir.md)
 ### [Proxy](pki-express/config/proxy.md)
 ## [Using on PHP](pki-express/php/index.md)
+### [Plain](pki-express/php/plain.md)
 ## [Using on Java](pki-express/java/index.md)
 ### [Signature process explained](pki-express/java/how-it-works.md)
 ### [Generating alpha codes](pki-express/java/alpha-codes.md)
