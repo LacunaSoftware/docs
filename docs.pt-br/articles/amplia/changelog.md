@@ -1,13 +1,20 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-8-1" />
+### 3.8.1 (2020-06-24)
+
+* Correção de bug: Ao aceitar a oferta para emitir o certificado no celular, o QR Code não aparece
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-8-0" />
 ### 3.8.0 (2020-06-24)
 
 * Implementado *soft delete* de pedidos de certificado
 * Adicionada API para atualizar pedidos de certificado
 * Melhorada experiência ao acessar pelo PC a página de emissão de um pedido de certificado que só pode ser emitido no celular
-* Correção de bug
-  * Sistema está permitindo remoção de pedido com certificado já emitido
+* Correção de bug: Sistema está permitindo remoção de pedido com certificado já emitido
 
 Atualiza modelo do banco de dados: **sim**
 

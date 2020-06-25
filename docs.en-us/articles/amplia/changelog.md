@@ -1,13 +1,20 @@
 ﻿# Amplia changelog
 
+<a name="v3-8-1" />
+### 3.8.1 (2020-06-24)
+
+* Bug fix: upon accepting suggestion to issue certificate on mobile, QR Code is not shown
+
+Updates database model: no
+
+
 <a name="v3-8-0" />
 ### 3.8.0 (2020-06-24)
 
 * Implement soft deletion of certificate ortders
 * Add API to update certificate orders
 * Improve user experience upon accessing on a PC the issue page for a certificate order that can only be issued on a mobile device
-* Bug fix
-  * Application is allowing a fulfilled certificate order to be deleted
+* Bug fix: Application is allowing a fulfilled certificate order to be deleted
 
 Updates database model: **yes**
 
