@@ -152,6 +152,7 @@
 ### [Pasta temporária](pki-express/config/temp-dir.md)
 ### [Proxy](pki-express/config/proxy.md)
 ## [Usando em PHP](pki-express/php/index.md)
+### [Plain](pki-express/php/plain.md)
 ## [Usando em Java](pki-express/java/index.md)
 ### [Como funciona a assinatura](pki-express/java/how-it-works.md)
 ### [Gerando códigos alfanuméricos](pki-express/java/alpha-codes.md)
