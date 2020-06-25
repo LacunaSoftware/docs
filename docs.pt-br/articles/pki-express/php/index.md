@@ -1,30 +1,15 @@
 ﻿# Usando o PKI Express em PHP
 
-Este artigo mostra como usar o [PKI Express](../index.md) em PHP
+Este artigo mostra como usar o [PKI Express](../index.md) em PHP. Para começar, escolha um dos projetos de exemplo disponíveis (organizado por framework):
 
-## Projeto de exemplos
+- [Plain](/plain.md)
 
-O projeto de exemplos demonstra o uso do PKI Express junto com o [Web PKI](../../web-pki/index.md)
-em um projeto utilizando **PHP 5.5+** (incluindo 7.x). Ele encontra-se hospedado no GitHub:
+## Pacote de Composer
 
-https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/PHP
+> [NOTE!]
+> Este pacote só suporta PHP *5.5+*.
 
-> [!NOTE]
-> Se você utiliza uma versão anterior do PHP, por favor [fale conosco](https://www.lacunasoftware.com/pt/home/purchase).
-
-### Executando o projeto
-
-1. [Instale o PKI Express](../setup/index.md)
-1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiExpressSamples.git)
-1. Em um terminal, navegue até a pasta `PHP` e execute o comando `composer install` para baixar as dependências (se você não possuir o Composer instalado, baixe-o [aqui](https://getcomposer.org/))
-1. Configure um site no seu servidor web local apontando para a pasta `PHP`
-1. Abra o index.php em um navegador (a URL depende das configurações do seu servidor web)
-
-## Pacote de composer
-
-O uso do PKI Express em PHP deve ser feito com o pacote de composer [lacuna/pki-express](https://packagist.org/packages/lacuna/pki-express)
-
-Para adicioná-lo ao seu projeto, adicione a linha abaixo ao seu arquivo `composer.json`:
+Para usar o PKI Express em PHP, você deve incluir o pacote composer [lacuna/pki-express](https://packagist.org/packages/lacuna/pki-express), adicionando a seguinte linha no seu arquivo `composer.json`:
 
 [!include[composer.json](../../../../includes/pki-express/php/composer.md)]
 

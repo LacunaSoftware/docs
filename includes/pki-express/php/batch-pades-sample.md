@@ -1,0 +1,3 @@
+- [index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/batch-pades-signature-rest/index.php)
+  - JavaScript: [batch-signature-rest-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/scripts/batch-signature-rest-form.js)
+- Ajax handlers: [start.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/batch-pades-signature-rest/start.php) and [complete.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/batch-pades-signature-rest/complete.php)
