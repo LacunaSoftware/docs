@@ -1,5 +1,17 @@
 ﻿# Amplia changelog
 
+<a name="v3-8-0" />
+### 3.8.0 (2020-06-24)
+
+* Implement soft deletion of certificate ortders
+* Add API to update certificate orders
+* Improve user experience upon accessing on a PC the issue page for a certificate order that can only be issued on a mobile device
+* Bug fix
+  * Application is allowing a fulfilled certificate order to be deleted
+
+Updates database model: **yes**
+
+
 <a name="v3-7-5" />
 ### 3.7.5 (2020-06-23)
 

@@ -1,5 +1,17 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-8-0" />
+### 3.8.0 (2020-06-24)
+
+* Implementado *soft delete* de pedidos de certificado
+* Adicionada API para atualizar pedidos de certificado
+* Melhorada experiência ao acessar pelo PC a página de emissão de um pedido de certificado que só pode ser emitido no celular
+* Correção de bug
+  * Sistema está permitindo remoção de pedido com certificado já emitido
+
+Atualiza modelo do banco de dados: **sim**
+
+
 <a name="v3-7-5" />
 ### 3.7.5 (2020-06-23)
 
