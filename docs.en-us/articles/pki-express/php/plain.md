@@ -1,6 +1,6 @@
 # PHP Plain Samples Project
 
-This *samples project* shows how to use [PKI Express](../../index.md) together with the [Web PKI](../../../web-pki/index.md) browser component on a **PHP 5.5+ plain** project (including 7.x). This project is hosted on GitHub:
+This *samples project* shows how to use [PKI Express](../index.md) together with the [Web PKI](../../web-pki/index.md) browser component on a **PHP 5.5+ plain** project (including 7.x). This project is hosted on GitHub:
 
 <https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/php/plain>
 
