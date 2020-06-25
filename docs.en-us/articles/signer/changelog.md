@@ -4,6 +4,13 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-6-2" />
+### 1.6.2 (2020-06-25)
+
+* Improvements
+  * [SIG-377] - Error viewing document details of a document with observer that is not in the flow
+
+Updates database model: no
 
 <a name="v1-6-1" />
 ### 1.6.1 (2020-06-24)
