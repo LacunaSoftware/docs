@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-16-0" />
+### 1.16.0 (2020-06-26)
+
+- Add field "certificationLevel" in PAdES signature
+
 <a name="v1-15-0" />
 ### 1.15.0 (2020-06-17)
 
