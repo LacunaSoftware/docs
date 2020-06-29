@@ -4,6 +4,15 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-22-0" />
+### 3.22.0 (2020-06-29)
+
+* Improvements
+  * [LI-339] - Set default country for phone number inputs
+
+Updates database model: yes
+
+
 <a name="v3-21-0" />
 ### 3.21.0 (2020-06-08)
 

@@ -4,6 +4,15 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-22-0" />
+### 3.22.0 (2020-06-29)
+
+* Melhorias
+  * [LI-339] - Permitir configurar pais padrão para os formulários de telefone
+
+Atualiza modelo do banco de dados: sim
+
+
 <a name="v3-21-0" />
 ### 3.21.0 (2020-06-08)
 
