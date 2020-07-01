@@ -16,7 +16,7 @@ You will also need to know the **name** of the certificate or key you intend to 
 > [!TIP]
 > If your application uses ASP.NET Core, [see the section below](#aspnet-core)
 
-Once you have the required parameters, create na instance of @Lacuna.Pki.AzureConnector.AzureKeyVaultOptions and, with it, an instance of @Lacuna.Pki.AzureConnector.AzureApiAuthenticator:
+Once you have the required parameters, create an instance of @Lacuna.Pki.AzureConnector.AzureKeyVaultOptions and, with it, an instance of @Lacuna.Pki.AzureConnector.AzureApiAuthenticator:
 
 ```cs
 var options = new AzureKeyVaultOptions() {
@@ -30,8 +30,7 @@ var azureApiAuthenticator = new AzureApiAuthenticator(options);
 > [!NOTE]
 > Your application should keep a single instance of `AzureApiAuthenticator` (singleton lifetime).
 
-Then, create an instance of
-<!-- @ Lacuna.Pki.AzureConnector.AzureCertificateProvider (build issues are preventing the usage of this reference) --> `AzureCertificateProvider`
+Then, create an instance of @Lacuna.Pki.AzureConnector.AzureCertificateProvider
 and request to it a @Lacuna.Pki.PKCertificateWithKey passing the `certificateName` of the certificate:
 
 > [!NOTE]
@@ -45,7 +44,7 @@ var certWithKey = await azureCertProvider.GetCertificateWithKeyAsync(/* certific
 > [!NOTE]
 > The instance of `AzureCertificateProvider` should be created and disposed as needed (transient lifetime).
 
-With a `PKCertificateWithKey`, you can perform "single step" signatures (as if they were not remote signatures), such as this:
+With a `PKCertificateWithKey`, you can perform "single step" signatures (as if they were not remote signatures), e.g.:
 
 ```cs
 var signer = new PadesSigner();
@@ -83,7 +82,7 @@ var signedPdf = signer.GetPadesSignature();
 <a name="aspnet-core" />
 ## ASP.NET Core
 
-If your application is an ASP.NET Core web application, add the following to your `ConfigureServices` on your app's startup:
+If your application uses ASP.NET Core, add the following to your `ConfigureServices` on your app's startup:
 
 ```cs
 public void ConfigureServices(IServiceCollection services) {
@@ -93,7 +92,7 @@ public void ConfigureServices(IServiceCollection services) {
 }
 ```
 
-Add a section named **AzureKeyVault** to your `appsettings.json` file:
+Add a section named `AzureKeyVault` to your *appsettings.json* file:
 
 ```json
 ...
@@ -105,8 +104,7 @@ Add a section named **AzureKeyVault** to your `appsettings.json` file:
 ...
 ```
 
-Whenever your need to use certificates stored on Azure Key Vault, get an instance of
-<!-- @ Lacuna.Pki.AzureConnector.IAzureCertificateProvider (build issues are preventing the usage of this reference) --> `IAzureCertificateProvider`
+Whenever your need to use certificates stored on a Key Vault, request an instance of @Lacuna.Pki.AzureConnector.IAzureCertificateProvider
 through dependency injection:
 
 ```cs
@@ -138,12 +136,12 @@ var signedPdf = signer.GetPadesSignature();
 ```
 
 <a name="external-cert" />
-## Using certificates which have only the key stored on Azure Key Vault
+## Using certificates having stored only the key on a Key Vault
 
 You may choose to store only your certificate keys on Azure Key Vault, storing on your application the public portion of the certificates (.cer/.crt/.pem files)
 corresponding to the keys.
 
-In this case, create an instance of @Lacuna.Pki.AzureConnector.AzureKeyProvider and request from it an @Lacuna.Pki.AzureConnector.AzureKey passing the `keyName` of the key:
+In this case, create an instance of @Lacuna.Pki.AzureConnector.AzureKeyProvider and request to it an @Lacuna.Pki.AzureConnector.AzureKey passing the `keyName` of the key:
 
 ```cs
 var azureKeyProvider = new AzureKeyProvider(options, azureApiAuthenticator);
@@ -160,16 +158,16 @@ byte[] toSignHash = ...;
 var signature = key.GetSignatureCsp(DigestAlgorithm.SHA256).SignHash(toSignHash);
 ```
 
-However, the easiest way to use the key is by calling the `GetCertificateWithKey()` with the certificate (which may be hardcoded, or stored on your database,
-or available as a configuration):
+However, the easiest way to use the key is by calling the `GetCertificateWithKey()` method with the certificate
+(which may be available as one of your app's configurations, or stored on the database or even hardcoded):
 
 ```cs
 var certificate = PKCertificate.Decode(/* certificate file path or content */);
 var certWithKey = key.GetCertificateWithKey(certificate);
 ```
 
-For **ASP.NET Core** applications, instead of asking for an instance of `IAzureCertificateProvider` through dependency injection, ask for
-@Lacuna.Pki.AzureConnector.IAzureKeyProvider and call its `GetKeyAsync()` method:
+For **ASP.NET Core** applications, instead of asking for an instance of @Lacuna.Pki.AzureConnector.IAzureCertificateProvider through dependency injection,
+ask for @Lacuna.Pki.AzureConnector.IAzureKeyProvider and call its `GetKeyAsync()` method:
 
 ```cs
 using Lacuna.Pki.AzureConnector;

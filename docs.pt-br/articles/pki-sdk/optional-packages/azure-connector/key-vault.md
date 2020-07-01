@@ -9,7 +9,7 @@ Para utilizar certificados ou chaves armazenados em um key vault, você precisar
 * **AppId**: campo **Application ID** de uma aplicação registrada no *Azure Active Directory*
 * **AppSecret**: segredo da aplicação, gerado na área *Certificates &amp; secrets* da aplicação
 
-Além disso, para cada certificado ou chave que se pretende utilizar é necessário saber seu **name**.
+Além disso, para cada certificado ou chave que se pretende utilizar é necessário saber seu ***name***.
 
 ## Instruções para uso
 
@@ -30,8 +30,7 @@ var azureApiAuthenticator = new AzureApiAuthenticator(options);
 > [!NOTE]
 > A sua aplicação deve manter uma única instância do `AzureApiAuthenticator` (*singleton lifetime*).
 
-Em seguida, instancie um
-<!-- @ Lacuna.Pki.AzureConnector.AzureCertificateProvider (build issues are preventing the usage of this reference) --> `AzureCertificateProvider`
+Em seguida, instancie um @Lacuna.Pki.AzureConnector.AzureCertificateProvider
 e então solicite um @Lacuna.Pki.PKCertificateWithKey passando o `certificateName` do certificado que deseja utilizar:
 
 > [!NOTE]
@@ -93,7 +92,7 @@ public void ConfigureServices(IServiceCollection services) {
 }
 ```
 
-No arquivo de configuração `appsettings.json`, adicione a seção **AzureKeyVault**:
+No arquivo de configuração *appsettings.json*, adicione a seção `AzureKeyVault`:
 
 ```json
 ...
@@ -105,8 +104,8 @@ No arquivo de configuração `appsettings.json`, adicione a seção **AzureKeyVa
 ...
 ```
 
-Nas partes da aplicação que precisarem fazer chamadas à API do serviço, peça via *dependency injection* uma instância de
-<!-- @ Lacuna.Pki.AzureConnector.IAzureCertificateProvider (build issues are preventing the usage of this reference) --> `IAzureCertificateProvider`:
+Nas partes da aplicação que precisarem utilizar certificados armazenados no Key Vault, peça via *dependency injection* uma instância de
+@Lacuna.Pki.AzureConnector.IAzureCertificateProvider:
 
 ```cs
 using Lacuna.Pki.AzureConnector;
@@ -137,14 +136,12 @@ var signedPdf = signer.GetPadesSignature();
 ```
 
 <a name="external-cert" />
-## Usando certificados apenas com chave no Azure Key Vault
+## Usando certificados apenas com chave armazenada em Key Vault
 
-Você pode optar por armazenar no Key Vault apenas as chaves dos certificados, armazenando na sua aplicação a parte pública dos certificados (arquivos .cer/.crt/.pem)
-correspondentes às chaves.
+Você pode optar por armazenar em Azure Key Vault apenas as chaves dos certificados, armazenando na sua aplicação a parte pública dos certificados (arquivos .cer/.crt/.pem)
+correspondente às chaves.
 
-Nesse caso, 
-
-In this case, instancie um @Lacuna.Pki.AzureConnector.AzureKeyProvider e então solicite uma @Lacuna.Pki.AzureConnector.AzureKey passando o `keyName` da
+Nesse caso, instancie um @Lacuna.Pki.AzureConnector.AzureKeyProvider e então solicite uma @Lacuna.Pki.AzureConnector.AzureKey passando o `keyName` da
 chave que deseja utilizar:
 
 ```cs
@@ -162,16 +159,16 @@ byte[] toSignHash = ...;
 var signature = key.GetSignatureCsp(DigestAlgorithm.SHA256).SignHash(toSignHash);
 ```
 
-Entretanto, a forma mais fácil de usar a chave é chamando o método `GetCertificateWithKey()` com o certificado (que pode estar *hardcoded* ou disponível como
-uma configuração da sua aplicação ou ainda armazenado em banco de dados):
+Entretanto, a forma mais fácil de usar a chave é chamando o método `GetCertificateWithKey()` com o certificado (que pode estar disponível como
+uma configuração da sua aplicação, ou armazenado em banco de dados, ou ainda estar *hardcoded*):
 
 ```cs
 var certificate = PKCertificate.Decode(/* certificate file path or content */);
 var certWithKey = key.GetCertificateWithKey(certificate);
 ```
 
-No caso de aplicações em **ASP.NET Core**, ao invés de pedir uma instância de `IAzureCertificateProvider` por injeção de dependência, peça um
-@Lacuna.Pki.AzureConnector.IAzureKeyProvider e chame o método `GetKeyAsync()` quando necessário:
+No caso de aplicações em **ASP.NET Core**, ao invés de pedir uma instância de @Lacuna.Pki.AzureConnector.IAzureCertificateProvider por injeção de dependência,
+peça um @Lacuna.Pki.AzureConnector.IAzureKeyProvider e chame o método `GetKeyAsync()` quando necessário:
 
 ```cs
 using Lacuna.Pki.AzureConnector;
