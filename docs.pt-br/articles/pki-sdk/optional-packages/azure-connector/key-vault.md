@@ -1,15 +1,15 @@
 ﻿# Integração com Azure Key Vault
 
-O pacote [Lacuna PKI Azure Connector](https://www.nuget.org/packages/Lacuna.Pki.AzureConnector/) possibilita utilizar chaves armazenadas em
+O pacote [Lacuna PKI Azure Connector](https://www.nuget.org/packages/Lacuna.Pki.AzureConnector/) possibilita utilizar certificados e chaves armazenadas em
 [Azure Key Vaults](https://azure.microsoft.com/pt-br/services/key-vault/) para assinar documentos, emitir certificados etc.
 
-Para utilizar chaves armazenadas em um key vault, você precisará dos seguintes parâmetros:
+Para utilizar certificados ou chaves armazenados em um key vault, você precisará dos seguintes parâmetros:
 
 * **Endpoint**: campo `DnsName` do key vault, pode ser obtido na área *Overview* do vault
 * **AppId**: campo **Application ID** de uma aplicação registrada no *Azure Active Directory*
 * **AppSecret**: segredo da aplicação, gerado na área *Certificates &amp; secrets* da aplicação
 
-Além disso, para cada chave que se pretende utilizar é necessário saber o **keyName**.
+Além disso, para cada certificado ou chave que se pretende utilizar é necessário saber seu **name**.
 
 ## Instruções para uso
 
@@ -30,33 +30,20 @@ var azureApiAuthenticator = new AzureApiAuthenticator(options);
 > [!NOTE]
 > A sua aplicação deve manter uma única instância do `AzureApiAuthenticator` (*singleton lifetime*).
 
-Em seguida, instancie um @Lacuna.Pki.AzureConnector.AzureKeyProvider e então solicite uma @Lacuna.Pki.AzureConnector.AzureKey passando o `keyName` da
-chave que deseja utilizar:
+Em seguida, instancie um
+<!-- @ Lacuna.Pki.AzureConnector.AzureCertificateProvider (build issues are preventing the usage of this reference) --> `AzureCertificateProvider`
+e então solicite um @Lacuna.Pki.PKCertificateWithKey passando o `certificateName` do certificado que deseja utilizar:
+
+> [!NOTE]
+> Se você armazena apenas as chaves dos certificados no Azure Key Vault, mas não os próprios certificados, leia a [seção abaixo](#external-cert).
 
 ```cs
-var azureKeyProvider = new AzureKeyProvider(options, azureApiAuthenticator);
-var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
+var azureCertProvider = new AzureCertificateProvider(options, azureApiAuthenticator);
+var certWithKey = await azureCertProvider.GetCertificateWithKeyAsync(/* certificateName */);
 ```
 
 > [!NOTE]
-> A instância do `AzureKeyProvider` deve ser criada e descartada à medida que for necessário (*transient lifetime*).
-
-A classe `AzureKey` implementa a interface @Lacuna.Pki.IPrivateKey, portanto pode ser usada como tal:
-
-```cs
-byte[] toSignHash = ...;
-var signature = key.GetSignatureCsp(DigestAlgorithm.SHA256).SignHash(toSignHash);
-```
-
-Entretanto, a forma mais fácil de usar a chave é chamando o método `GetCertificateWithKey()` passando um @Lacuna.Pki.PKCertificate, obtendo de volta um @Lacuna.Pki.PKCertificateWithKey:
-
-```cs
-var certificate = PKCertificate.Decode(/* certificate file path or content */);
-var certificateWithKey = key.GetCertificateWithKey(certificate);
-```
-
-> [!NOTE]
-> Recomendamos armazenar no Key Vault apenas chaves. Guarde os certificados (arquivos .cer/.crt/.pem) correspondentes às chaves na sua aplicação.
+> A instância do `AzureCertificateProvider` deve ser criada e descartada à medida que for necessário (*transient lifetime*).
 
 Com um `PKCertificateWithKey`, é possível fazer assinaturas em "um único passo", por exemplo:
 
@@ -82,10 +69,8 @@ Global.AzureApiAuthenticator = new AzureApiAuthenticator(options);
 
 ...
 
-var azureKeyProvider = new AzureKeyProvider(Global.AzureKeyVaultOptions, Global.AzureApiAuthenticator);
-var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
-var certificate = PKCertificate.Decode(/* certificate file path or content */);
-var certificateWithKey = key.GetCertificateWithKey(certificate);
+var azureCertProvider = new AzureCertificateProvider(Global.AzureKeyVaultOptions, Global.AzureApiAuthenticator);
+var certWithKey = await azureCertProvider.GetCertificateWithKeyAsync(/* certificateName */);
 
 var signer = new PadesSigner();
 signer.SetPdfToSign(/* PDF file path, content or stream */);
@@ -120,7 +105,73 @@ No arquivo de configuração `appsettings.json`, adicione a seção **AzureKeyVa
 ...
 ```
 
-Nas partes da aplicação que precisarem fazer chamadas à API do serviço, peça via *dependency injection* uma instância de `IAzureKeyProvider`:
+Nas partes da aplicação que precisarem fazer chamadas à API do serviço, peça via *dependency injection* uma instância de
+<!-- @ Lacuna.Pki.AzureConnector.IAzureCertificateProvider (build issues are preventing the usage of this reference) --> `IAzureCertificateProvider`:
+
+```cs
+using Lacuna.Pki.AzureConnector;
+
+public MyController : ApiController {
+
+	private readonly IAzureCertificateProvider azureCertProvider;
+
+	public MyController(IAzureCertificateProvider azureCertProvider) {
+		this.azureCertProvider = azureCertProvider;
+	}
+
+	...
+}
+```
+
+Daí em diante, o uso é idêntico ao descrito na seção anterior:
+
+```cs
+var certWithKey = await azureCertProvider.GetCertificateWithKeyAsync(/* certificateName */);
+
+var signer = new PadesSigner();
+signer.SetPdfToSign(/* PDF file path, content or stream */);
+signer.SetSigningCertificate(certWithKey);
+signer.SetPolicy(PadesPoliciesForGeneration.GetPadesBasic(TrustArbitrators.PkiBrazil));
+signer.ComputeSignature();
+var signedPdf = signer.GetPadesSignature();
+```
+
+<a name="external-cert" />
+## Usando certificados apenas com chave no Azure Key Vault
+
+Você pode optar por armazenar no Key Vault apenas as chaves dos certificados, armazenando na sua aplicação a parte pública dos certificados (arquivos .cer/.crt/.pem)
+correspondentes às chaves.
+
+Nesse caso, 
+
+In this case, instancie um @Lacuna.Pki.AzureConnector.AzureKeyProvider e então solicite uma @Lacuna.Pki.AzureConnector.AzureKey passando o `keyName` da
+chave que deseja utilizar:
+
+```cs
+var azureKeyProvider = new AzureKeyProvider(options, azureApiAuthenticator);
+var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
+```
+
+> [!NOTE]
+> A instância do `AzureKeyProvider` deve ser criada e descartada à medida que for necessário (*transient lifetime*).
+
+A classe `AzureKey` implementa a interface @Lacuna.Pki.IPrivateKey, portanto pode ser usada como tal:
+
+```cs
+byte[] toSignHash = ...;
+var signature = key.GetSignatureCsp(DigestAlgorithm.SHA256).SignHash(toSignHash);
+```
+
+Entretanto, a forma mais fácil de usar a chave é chamando o método `GetCertificateWithKey()` com o certificado (que pode estar *hardcoded* ou disponível como
+uma configuração da sua aplicação ou ainda armazenado em banco de dados):
+
+```cs
+var certificate = PKCertificate.Decode(/* certificate file path or content */);
+var certWithKey = key.GetCertificateWithKey(certificate);
+```
+
+No caso de aplicações em **ASP.NET Core**, ao invés de pedir uma instância de `IAzureCertificateProvider` por injeção de dependência, peça um
+@Lacuna.Pki.AzureConnector.IAzureKeyProvider e chame o método `GetKeyAsync()` quando necessário:
 
 ```cs
 using Lacuna.Pki.AzureConnector;
@@ -134,20 +185,23 @@ public MyController : ApiController {
 	}
 
 	...
+
+	public async Task<ActionResult> Post() {
+
+		...
+
+		var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
+		var certificate = PKCertificate.Decode(/* certificate file path or content */);
+		var certWithKey = key.GetCertificateWithKey(certificate);
+
+		var signer = new PadesSigner();
+		signer.SetPdfToSign(/* PDF file path, content or stream */);
+		signer.SetSigningCertificate(certWithKey);
+		signer.SetPolicy(PadesPoliciesForGeneration.GetPadesBasic(TrustArbitrators.PkiBrazil));
+		signer.ComputeSignature();
+		var signedPdf = signer.GetPadesSignature();
+
+		...
+	}
 }
-```
-
-Daí em diante, o uso é idêntico ao descrito na seção anterior:
-
-```cs
-var key = await azureKeyProvider.GetKeyAsync(/* keyName */);
-var certificate = PKCertificate.Decode(/* certificate file path or content */);
-var certificateWithKey = key.GetCertificateWithKey(certificate);
-
-var signer = new PadesSigner();
-signer.SetPdfToSign(/* PDF file path, content or stream */);
-signer.SetSigningCertificate(certWithKey);
-signer.SetPolicy(PadesPoliciesForGeneration.GetPadesBasic(TrustArbitrators.PkiBrazil));
-signer.ComputeSignature();
-var signedPdf = signer.GetPadesSignature();
 ```
