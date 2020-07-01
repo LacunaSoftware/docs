@@ -4,10 +4,26 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-7-0" />
+### 1.7.0 (2020-07-02)
+
+* Bug fixes
+  * [SIG-370] - Ticket parameter displayed in the Upload API documentation
+  * [SIG-379] - Fix organization creation without Identifier (CNPJ)
+  * [SIG-380] - Fix deed creation
+
+* Improvements
+  * [SIG-316] - Batch signature with HSM certificates
+  * [SIG-317] - Changes to support Ecuador
+  * [SIG-361] - Configure enabled/displayed document types
+  * [SIG-376] - List documents with API key
+
+Updates database model: no
+
 <a name="v1-6-2" />
 ### 1.6.2 (2020-06-25)
 
-* Improvements
+* Bug fixes
   * [SIG-377] - Error viewing document details of a document with observer that is not in the flow
 
 Updates database model: no

@@ -4,6 +4,22 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-7-0" />
+### 1.7.0 (2020-07-02)
+
+* Correções de bugs
+  * [SIG-370] - Parâmetro ticket sendo exibido na documentação da API de upload
+  * [SIG-379] - Corrigir criação de organizações sem CNPJ
+  * [SIG-380] - Corrigir criação de escrituras
+
+* Melhorias
+  * [SIG-316] - Assinatura em lote com certificados em HSM
+  * [SIG-317] - Adequação para Ecuador
+  * [SIG-361] - Permitir configurar tipos de documentos permitidos/exibidos
+  * [SIG-376] - Permitir listar documentos a partir de API Key
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-6-2" />
 ### 1.6.2 (2020-06-25)
 

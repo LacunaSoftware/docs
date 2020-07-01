@@ -14,7 +14,8 @@ In **General** section:
 * **PersonalAccountsEnabled**: if `true`, any user that logs/registers in the website may use the application and create documents in his personal account. If `false`, users will only be 
 able to use the logged user area if they are added previously in an organization.
 
-* **EnableDocumentTypes**: if `true` shows a select to determine the type of a document when creating one. The available types are `Deed` and `Power of Attorney`.
+* **EnableDocumentTypes** (deprecated v1.7.0): if `true` shows a select to determine the type of a document when creating one. The available types are `Deed` and `Power of Attorney`.
+Please use the [Document Types settings](#document-types-settings) instead as this option is now deprecated.
 * **OriginalFileWatermarkText**: Documents of type `Deed`, will have a watermark with this text on the original version until the document is concluded. 
 
 * **EnableElectronicSignature** (deprecated v1.1.0): if `true` displays the option to accept electronic signatures when creating documents. Please use the [Electronic Signature settings](#electronic-settings) 
@@ -48,6 +49,16 @@ a custom visual representation that has information about his lawyer or accounta
 
 * **SetPasswordEmailExpiration**: The expiration of the set password link, in minutes. The default value is `1440` (24 hours).
 
+* **IdentifierType** (default: `Cpf`, v1.7.0): the type of user identifier of this instance. Available options are `Cpf` and `EcuadorBceId`.
+* **FilterCertificatesByIdentifier** (default: `true`, v1.7.0): if `true`, filters certificates by the user's identifier automatically.
+* **FilterCertificatesByKeyUsage** (v1.7.0): if `true`, filters certificates that have non repudiation and digital signature attributes.
+
+<a name="document-types-settings" />
+###  *DocumentTypes* Settings (v1.7.0)
+
+* **Enabled**: if `true` shows a select to determine the type of a document when creating one. The available types are `Deed` and `Power of Attorney`.
+* **EnabledOptions**: comma separated list of types that will be enabled/displayed. The order of the types will be respected when displaying them. Example: `PowerOfAttorney,Deed`.
+If this setting is not provided and document types are enabled, all available options will be displayed.
 
 ###  *SupportChat* Settings (v1.6.0)
 
@@ -67,6 +78,9 @@ a custom visual representation that has information about his lawyer or accounta
 
 ###  *VisualRepresentation* Settings
 
+* **Enabled** (default: `true`, v1.7.0): if `true`, all PDF documents signed with CAdES will have a signature visual representation that can be automatically
+or manually positioned.
+
 * **SignatureWidthCentimetersOnA4**: width of the signature visual representation in centimeters (optimized for A4 paper size). The default value is `6`.
 * **SignatureHeightCentimetersOnA4**: height of the signature visual representation in centimeters (optimized for A4 paper size). The default value is `3.3`.
 
@@ -79,8 +93,21 @@ a custom visual representation that has information about his lawyer or accounta
 * **AuthenticationSignatureWidthCentimetersOnA4**: width of the authentication signature visual representation in centimeters (optimized for A4 paper size). The default value is `19.31`.
 * **AuthenticationSignatureHeightCentimetersOnA4**: height of the authentication signature visual representation in centimeters (optimized for A4 paper size). The default value is `3.436`.
 
-###  *PrinterFriendly* Settings
+###  *ValidationStamp* Settings (v1.7.0)
 
+* **Enabled**: if `true`, adds a stamp to all PDF documents after they are uploaded. The stamp contains information of where the document was
+created and where it's signatures can be validated. This is a recommended option if visual representation is disabled.
+
+* **ShowOnBottom**: if `true`, shows the validation stamp at the bottom of every page.
+* **ShowOnRight** (default: `true`): if `true`, shows the validation stamp at the right of every page.
+
+* **HeightCentimeters**: the height of the stamp in centimeters. The default value is `0.5`.
+* **LeadingCentimeters**: the horizontal (or vertical if stamp is on right) offset in centimeters from the start of the page. The default value is `1.5`.
+* **TrailingCentimeters**: the horizontal (or vertical if stamp is on right) offset in centimeters from the end of the page. The default value is `1.5`.
+* **MarginToPageCentimeters**: the margin in centimeters from the bottom (or right side if stamp is on right) of the page. The default value is `0.3`.
+* **SummaryFontSize**: the font size of the stamp in points. The default value is `8`.
+
+###  *PrinterFriendly* Settings
 
 * **ShowSummaryBottom** (default: `true`): if `true`, shows the signature summary at the bottom of every page.
 * **ShowSummaryRight**: if `true`, shows the signature summary at the right of every page.
