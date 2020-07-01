@@ -78,7 +78,7 @@ If this setting is not provided and document types are enabled, all available op
 
 ###  *VisualRepresentation* Settings
 
-* **Enabled** (default: `true`, v1.7.0): if `true`, all PDF documents signed with CAdES will have a signature visual representation that can be automatically
+* **Enabled** (default: `true`, v1.7.0): if `true`, all PDF documents signed with PAdES will have a signature visual representation that can be automatically
 or manually positioned.
 
 * **SignatureWidthCentimetersOnA4**: width of the signature visual representation in centimeters (optimized for A4 paper size). The default value is `6`.
