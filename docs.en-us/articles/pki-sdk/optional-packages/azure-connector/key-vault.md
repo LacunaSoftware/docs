@@ -1,7 +1,7 @@
 ﻿# Azure Key Vault integration
 
 The package [Lacuna PKI Azure Connector](https://www.nuget.org/packages/Lacuna.Pki.AzureConnector/) enables usage of certificates and keys stored on
-[Azure Key Vaults](https://azure.microsoft.com/pt-br/services/key-vault/) to sign documents, issue certificates etc.
+[Azure Key Vaults](https://azure.microsoft.com/en-us/services/key-vault/) to sign documents, issue certificates etc.
 
 To use certificates or keys stored on a key vault, you will need the following parameters:
 
