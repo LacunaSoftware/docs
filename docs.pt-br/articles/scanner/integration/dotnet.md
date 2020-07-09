@@ -23,6 +23,20 @@ Utilize o método `CreateScanSessionAsync(string)` passando o **returnUrl** para
 var scanSessionParams = await scanner.CreateScanSessionAsync("https://your-return-url/");
 ```
 
+> [!NOTE]
+> Por motivos de *backward compatibility*, sessões criadas como acima (apenas com o *returnUrl*) exigem os passos de entrada de
+> metadados e assinatura do documento.
+
+Ou, caso queira maior controle sobre as opções da sessão:
+
+```cs
+var scanSessionParams = await scanner.CreateScanSessionAsync(new CreateScanSessionRequest2() {
+	ReturnUrl = "https://your-return-url/",
+	MetadataInputEnabled = ...,
+	SignatureEnabled = ...,
+});
+```
+
 Utilize o valor retornado no campo `RedirectUrl` para redirecionar o usuário no frontend:
 
 ```js
@@ -44,6 +58,7 @@ if (scanSession.Result == ScanSessionResults.Success) {
 }
 ```
 
+<a name="multifile" />
 ## Sessões *multifile*
 
 Você pode permitir que o usuário digitalize múltiplos documentos. Para isso, passe o parâmetro `multifile: true` ao criar a sessão:
@@ -62,6 +77,33 @@ if (scanSession.Result == ScanSessionResults.Success) {
 	}
 }
 ```
+
+<a name="optional-steps" />
+## Sessões com entrada de metadados e/ou assinatura
+
+Caso deseje solicitar ao digitalizador a entrada dos metadados requeridos pela Medida Provisória 10.278/2020, preencha a propriedade `MetadataInputEnabled = true`:
+
+```cs
+var scanSessionParams = await scanner.CreateScanSessionAsync(new CreateScanSessionRequest2() {
+	ReturnUrl = "https://your-return-url/",
+	MetadataInputEnabled = true,
+});
+```
+
+> [!NOTE]
+> O pacote `Lacuna.Scanner.Client` deve estar na versão **1.3.0** ou superior
+
+Caso deseje que o digitalizador assine digitalmente o documento ao final do processo, preencha a propriedade `SignatureEnabled = true`:
+
+```cs
+var scanSessionParams = await scanner.CreateScanSessionAsync(new CreateScanSessionRequest2() {
+	ReturnUrl = "https://your-return-url/",
+	SignatureEnabled = true,
+});
+```
+
+> [!TIP]
+> Para aderir à Medida Provisória 10.278/2020, devem ser habilitados tanto a entrada de metadados quanto a assinatura do documento
 
 <a name="aspnet-core" />
 ## ASP.NET Core

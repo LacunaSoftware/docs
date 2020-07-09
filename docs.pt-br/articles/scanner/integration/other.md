@@ -16,7 +16,7 @@ X-Api-Key: ...
 Utilize a chamda `POST /api/scan-sessions` passando o **returnUrl** para iniciar uma sessão:
 
 ```plaintext
-POST /api/scan-sessions
+POST /api/v2/scan-sessions
 {
 	"returnUrl": "https://your-return-url/"
 }
@@ -53,3 +53,44 @@ GET /api/documents/{id}/file-link
 
 > [!NOTE]
 > O link retornado pode ser acessado sem autenticação, ou seja, pode ser usado em um `<a href=...` ou em um `location.href = ...`
+
+<a name="multifile" />
+## Sessões *multifile*
+
+Você pode permitir que o usuário digitalize múltiplos documentos. Para isso, passe o parâmetro `"multifile": true` ao criar a sessão:
+
+```plaintext
+POST /api/v2/scan-sessions
+{
+	"returnUrl": "https://your-return-url/",
+	"multifile": true
+}
+```
+
+Ao final do processo, ao invés de levar em consideração apenas o primeiro documento, itere a lista de documentos digitalizados.
+
+<a name="optional-steps" />
+## Sessões com entrada de metadados e/ou assinatura
+
+Caso deseje solicitar ao digitalizador a entrada dos metadados requeridos pela Medida Provisória 10.278/2020, passe o parâmetro `"metadataInputEnabled": true`:
+
+```plaintext
+POST /api/v2/scan-sessions
+{
+	"returnUrl": "https://your-return-url/",
+	"metadataInputEnabled": true
+}
+```
+
+Caso deseje que o digitalizador assine digitalmente o documento ao final do processo, passe o parâmetro `"signatureEnabled": true`:
+
+```plaintext
+POST /api/v2/scan-sessions
+{
+	"returnUrl": "https://your-return-url/",
+	"signatureEnabled": true
+}
+```
+
+> [!TIP]
+> Para aderir à Medida Provisória 10.278/2020, devem ser habilitados tanto a entrada de metadados quanto a assinatura do documento
