@@ -13,7 +13,7 @@ ser enviada no *header* `X-Api-Key` de cada requisição:
 X-Api-Key: ...
 ```
 
-Utilize a chamda `POST /api/scan-sessions` passando o **returnUrl** para iniciar uma sessão:
+Utilize a chamada `POST /api/v2/scan-sessions` passando o **returnUrl** para iniciar uma sessão:
 
 ```plaintext
 POST /api/v2/scan-sessions
@@ -28,7 +28,7 @@ Utilize o valor retornado no campo `RedirectUrl` para redirecionar o usuário no
 location.href = scanSessionParams.RedirectUrl;
 ```
 
-Quando detectar que o usuário voltou ao seu site (procure pelo argumento `scanSessionId` na URL), utilize o método `GetScanSessionAsync(Guid)` para obter os
+Quando detectar que o usuário voltou ao seu site (procure pelo argumento `scanSessionId` na URL), utilize a chamada `GET /api/scan-sessions/{id}` para obter os
 documentos digitalizados:
 
 ```plaintext
