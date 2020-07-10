@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-24-0" />
+### 1.24.0 (2020-07-09)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar campo "CertificationLevel" em assinaturas PAdES
+
 <a name="v1-23-0" />
 ### 1.23.0 (2020-06-19)
 

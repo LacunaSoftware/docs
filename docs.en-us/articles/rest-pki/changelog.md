@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-24-0" />
+### 1.24.0 (2020-07-09)
+
+Database model update: No
+
+- Added "CertificationLevel" field on PAdES signatures
+
 <a name="v1-23-0" />
 ### 1.23.0 (2020-06-19)
 
