@@ -158,6 +158,7 @@
 ### [Generating alpha codes](pki-express/java/alpha-codes.md)
 ## [Using on Python](pki-express/python/index.md)
 ## [Using on Node.js](pki-express/nodejs/index.md)
+## [Return Codes](pki-express/return-codes.md)
 ## [Changelog](pki-express/changelog.md)
 <!-- End of PKI Express -->
 
