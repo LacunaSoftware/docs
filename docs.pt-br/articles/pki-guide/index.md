@@ -7,7 +7,7 @@ Temos uma linha completa de soluções para certificação digital:
 * [PKI SDK](../pki-sdk/index.md) - uma biblioteca para aplicações .NET para certificação digital
 
 A escolha de qual(is) produto(s) se adequa(m) melhor ao seu projeto depende do seu cenário e do que você está tentando
-implementar. Leia o artigo abaixo que mais se aproxime do se caso para saber como melhor implementá-lo:
+implementar. Leia o artigo abaixo que mais se aproxime do seu caso para saber como melhor implementá-lo:
 
 * **[Assinaturas web](web-signatures/index.md)** - realizar [assinaturas digitais](signatures.md) em páginas web
 * [Assinaturas de servidor](server-signatures.md) - realizar assinaturas digitais inteiramente no backend, com chaves localizadas no servidor
