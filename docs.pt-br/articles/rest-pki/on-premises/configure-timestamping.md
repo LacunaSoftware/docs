@@ -6,7 +6,7 @@ políticas de assinatura que requeiram carimbo de tempo de assinatura, por exemp
 
 > [!NOTE]
 > Você pode utilizar o Rest PKI em nuvem (https://pki.rest/) para prover carimbos de tempo para a sua instância do Rest PKI.
-> Veja os preços [aqui](https://www.lacunasoftware.com/pt/certificate/#/restPlans).
+> Veja os preços [aqui](https://www.lacunasoftware.com/pt-br/pricing/#cloud-simulator).
 
 O serviço de provimento de carimbos de tempo deve atender aos seguintes requisitos:
 
