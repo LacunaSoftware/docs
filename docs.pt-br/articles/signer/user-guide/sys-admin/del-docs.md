@@ -18,6 +18,6 @@ Para excluir, selecione a lixeira. Confirme sua ação selecionando **Excluir**.
 
 Conclua a ação, selecione **Concluir**.
 
-![Delete](../../images/delete-docs2.png)
+![Delete](../../images/delete-docs-2.png)
 
 O documento foi excluido com sucesso! 
