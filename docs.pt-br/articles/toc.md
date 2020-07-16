@@ -180,6 +180,7 @@
 ### [Administração de sistema](signer/user-guide/sys-admin/index.md)
 #### [Adicionando usuário](signer/user-guide/sys-admin/add-user.md)
 #### [Visualizando os documentos do sistema](signer/user-guide/sys-admin/browse-docs.md)
+#### [Excluindo documentos](signer/user-guide/sys-admin/del-docs.md)
 ## [Assinatura Embutida](signer/embedded-signature.md)
 ## [Histórico de versões](signer/changelog.md)
 <!-- End of Signer -->
