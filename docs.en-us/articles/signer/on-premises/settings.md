@@ -26,7 +26,8 @@ instead as this option is now deprecated.
 * **FlowActionTicketValidityMinutes**: defines the validity in minutes of the ticket that is sent in the signature reminder email which allows an user to sign without logging in. 
 The default value is `1440` (24 hours).
 
-* **RestrictedUserAutocomplete**: if `true` shows in the participant autocomplete suggestions only users that are in the same organizations as the current user. 
+* **RestrictedUserAutocomplete**: if `true` shows in the participant autocomplete suggestions only users that are in the same organizations as the current user and (as of v1.8.0) 
+that were added as participants in the current user's documents. 
 If `false` the suggestions will search all of the users in the database. This option  doesn't affect the autocomplete experience for system administrators. 
 
 * **EnableDocumentAuthentication**: if `true` shows the document authentication option in the fast signature screen. This allows an user to authenticate a document by inserting 
@@ -75,6 +76,9 @@ If this setting is not provided and document types are enabled, all available op
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
 * **IsGeolocationRequired** (v1.5.0): if `true`, the geolocation of an user must be sent in order to sign electronically.
+* **Mode** (default: `Timestamp` if there is a timestamper configured, `SelfSigned` otherwise, v1.8.0): the mode in which the electronic signatures will be performed. The available modes are `SelfSigned` and `Timestamp`: 
+	* `SelfSigned`: a self signed certificate is generated once and used for every electronic signagure in the application.
+	* `Timestamp`: the electronic signature is added to the document as a timestamp signature. Requires that a Timestamper is configured.
 
 ###  *VisualRepresentation* Settings
 

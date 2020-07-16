@@ -4,6 +4,25 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+
+<a name="v1-8-0" />
+### 1.8.0 (2020-07-16)
+
+* Novas funcionalidades
+  * [SIG-364] - Tipos de documentos para receitas médicas
+
+* Melhorias
+  * [SIG-337] - Trocar nome do botão assinatura rápida
+  * [SIG-362] - Criar lista de contato pessoal (Adequação LGPD)
+  * [SIG-365] - Assinatura eletronica com carimbo de tempo
+
+* Correções de bugs
+  * [SIG-385] - Verificar se o título dos signatários está funcionando quando o fluxo possui regras de assinatura
+  * [SIG-391] - Não é possível adicionar observadores na edição do fluxo
+  * [SIG-392] - Corrigir título da página de termos de uso
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-7-0" />
 ### 1.7.0 (2020-07-02)
 

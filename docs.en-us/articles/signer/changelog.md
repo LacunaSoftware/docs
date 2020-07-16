@@ -4,6 +4,24 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-8-0" />
+### 1.8.0 (2020-07-16)
+
+* New Features
+  * [SIG-364] - Document Types for medical prescriptions
+
+* Improvements
+  * [SIG-337] - Updated fast signature button name
+  * [SIG-362] - Create personal contacts list (LGPD adjustments)
+  * [SIG-365] - Electronic signature with timestamp
+
+* Bug fixes
+  * [SIG-385] - Check if signer title is working when the flow has signature rules
+  * [SIG-391] - Cannot add observers in the flow update
+  * [SIG-392] - Fix Terms of use screen title
+
+Updates database model: yes
+
 <a name="v1-7-0" />
 ### 1.7.0 (2020-07-02)
 
