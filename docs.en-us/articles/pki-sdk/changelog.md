@@ -1,5 +1,15 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-7-3" />
+### 2.7.3 (2020-07-18)
+
+- Add PDF metadata include and recover on PadesSigner, PadesSignature and PdfMarker
+- Add global configuration for prioritizing revocation status validation trhough OCSP over CRL
+- Add PDF Document Timestamp signature visual representation option
+- Improve Ecuador certificate fields
+- Improve PdfMarker required area calculation with text rotation
+
+
 <a name="v2-7-2" />
 ### 2.7.2 (2020-05-29)
 
