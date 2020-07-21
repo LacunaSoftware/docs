@@ -1,5 +1,23 @@
 ﻿# Amplia changelog
 
+<a name="v3-8-3" />
+### 3.8.3 (2020-07-21)
+
+* Bug fix: [AMP-174] - Issue certificate page stays loading indefinitely
+
+Updates database model: no
+
+
+<a name="v3-8-2" />
+### 3.8.2 (2020-07-10)
+
+* Bug fixes
+  * [AMP-175] - Information application logs are being logged by default on Linux and Docker
+  * [AMP-176] - Subject agreement signature package filename is not internationalized
+
+Updates database model: no
+
+
 <a name="v3-8-1" />
 ### 3.8.1 (2020-06-24)
 

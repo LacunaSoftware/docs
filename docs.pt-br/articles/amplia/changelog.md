@@ -1,5 +1,23 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-8-3" />
+### 3.8.3 (2020-07-21)
+
+* Bug fix: [AMP-174] - Tela de emissão fica em "loading" indefinidamente
+
+Updates database model: no
+
+
+<a name="v3-8-2" />
+### 3.8.2 (2020-07-10)
+
+* Bug fixes
+  * [AMP-175] - Logs de aplicação de nível *Information* estão sendo escritos para o log de sistema por padrão no Linux e em Docker
+  * [AMP-176] - Nome do arquivo do termo de titularidade assinado não está internacionalizado
+
+Updates database model: no
+
+
 <a name="v3-8-1" />
 ### 3.8.1 (2020-06-24)
 
