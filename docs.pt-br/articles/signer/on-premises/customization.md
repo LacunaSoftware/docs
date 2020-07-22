@@ -1,13 +1,13 @@
 ﻿# Personalização do Signer
 
-Esta página descreve os principais aspectos que podem ser personalizados para adequar sua instância à identidade visual desejada.
+Esta página descreve os principais aspectos que podem ser personalizados em sua instância do Signer.
 
-### Esquema de cores
+## Esquema de cores
 
 A aplicação é tematizada de acordo com um tema com duas cores principais:
 
-* Theme: cor do tema.
-* Accent: cor de contraste.
+* **Theme**: cor do tema.
+* **Accent**: cor de contraste.
 
 Conforme a imagem abaixo:
 
@@ -83,46 +83,47 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/tbg.png)
 
-Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 
+> [!NOTE]
+> Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 
-### Logos
+## Logos
 
 A aplicação utiliza duas logos principais: 
 
 * light-logo: para aplicação em fundo escuro.
 
-![Color Scheme](../images/light-logo-sample.png)
+![Light Logo](../images/light-logo-sample.png)
 
 * dark-logo: para aplicação em fundo claro.
 
-![Color Scheme](../images/dark-logo-sample.png)
+![Dark Logo](../images/dark-logo-sample.png)
 
-### Configuração da Home
+## Configuração da Home
 
 Existem duas formas de configurar a Home page:
 
 * Configuração simples.
 * Configuração avançada (página estática).
 
-####  Configuração Simples
+###  Configuração Simples
 
 Permite personalizar a área demarcada abaixo:
 
-![Color Scheme](../images/home-page.png)
+![Custom Home Page](../images/home-page.png)
 
 É preciso apenas fornecer uma imagem de como gostaria que ficasse ou então o HTML/CSS correspondente.
 
-####  Configuração Avançada (página estática)
+###  Configuração Avançada (página estática)
 
-Permite personalizar toda a home page, de maneira que a página passa a ser estática: 
+Permite personalizar toda a home page, de maneira que a página passa a ser estática. Exemplo:
 
-![Color Scheme](../images/advanced-home-page.png)
+![Custom Home page advanced](../images/advanced-home-page.png)
 
 Para isso, é preciso fornecer um arquivo HTML chamado `index.html` acompanhado de uma pasta denominada `theme-assets` com todos 
 recursos que o arquivo depender: imagens, CSS e JS:
 
-![Color Scheme](../images/advanced-folder-structure.png)
+![Folder Structure](../images/advanced-folder-structure.png)
 
 > [!WARNING]
 > Ao usar esta abordagem, recomenda-se que não sejam feitas muitas alterações no cabeçalho da página, tendo em vista que existem 
@@ -130,15 +131,15 @@ recursos que o arquivo depender: imagens, CSS e JS:
 > validação de documentos.
 
 
-### Configuração do footer
+## Configuração do footer
 
 Permite personalizar o footer da home page, caso a configuração de home page seja a simples:
 
-![Color Scheme](../images/footer.png)
+![Footer](../images/footer.png)
 
 É preciso apenas fornecer uma imagem de como gostaria que ficasse ou então o HTML/CSS correspondente.
 
-### Envio de Emails
+## Envio de Emails
 
 É possível personalizar o envio de emails para que sejam enviados com seu próprio servidor SMTP. Para isso devem ser informados
 os dados abaixo:
@@ -151,7 +152,12 @@ os dados abaixo:
 * **SenderAddress**: endereço de email que será utilizado para enviar emails.
 * **SenderName**: nome que será exibido como remetente dos emails enviados. Recomenda-se usar o mesmo nome da aplicação.
 
-### Envio de SMS
+## Envio de SMS
 
 Caso o envio de SMS esteja habilitado (assinatura eletrônica com código via SMS) deve ser configurada sua própria conta no provedor
 de SMS <a href="https://www.twilio.com" target="_blank">Twilio</a> ou <a href="https://www.totalvoice.com.br" target="_blank">Total Voice</a>.
+
+## Domínio
+
+Basta adicionar um registro DNS de tipo CNAME apontando para o endereço da instância que será fornecido e notificar
+a equipe de implantação para que façam os ajustes necessários.
