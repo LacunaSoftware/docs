@@ -175,6 +175,7 @@
 ### [Setup on Azure App Services](signer/on-premises/azure/index.md)
 ### [Preparing the database](signer/on-premises/prepare-database.md)
 ### [Settings](signer/on-premises/settings.md)
+### [Customization](signer/on-premises/customization.md)
 ## [User guide](signer/user-guide/index.md)
 ### [Generate documents](signer/user-guide/gen-docs.md)
 ### [System admin](signer/user-guide/sys-admin/index.md)
