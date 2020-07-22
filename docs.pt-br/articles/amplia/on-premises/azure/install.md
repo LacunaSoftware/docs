@@ -16,7 +16,7 @@ Antes de começar, obtenha o pacote de binários:
 
 <br />
 <center>
-**[Pacote de binários do Amplia 3.8.3](https://cdn.lacunasoftware.com/amplia/amplia-3.8.3.zip)**
+**[Pacote de binários do Amplia 3.8.4](https://cdn.lacunasoftware.com/amplia/amplia-3.8.4.zip)**
 </center>
 <br />
 

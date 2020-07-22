@@ -1,5 +1,13 @@
 ﻿# Amplia changelog
 
+<a name="v3-8-4" />
+### 3.8.4 (2020-07-22)
+
+* [AMP-177] - Add *Dark cerulean & Green* (`dcg`) theme
+
+Updates database model: no
+
+
 <a name="v3-8-3" />
 ### 3.8.3 (2020-07-21)
 
@@ -59,7 +67,7 @@ Updates database model: no
 <a name="v3-7-3" />
 ### 3.7.3 (2020-06-05)
 
-* Add "green dark coral" theme
+* Add *Green & Dark coral* (`gdc`) theme
 * Bug fix
   * App client config API field `SmsEnabled` is wrongly filled with false in certain scenarios
 

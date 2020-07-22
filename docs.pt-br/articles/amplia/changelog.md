@@ -1,21 +1,29 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-8-4" />
+### 3.8.4 (2020-07-22)
+
+* [AMP-177] - Adicionar tema *Dark cerulean & Green* (`dcg`)
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-8-3" />
 ### 3.8.3 (2020-07-21)
 
-* Bug fix: [AMP-174] - Tela de emissão fica em "loading" indefinidamente
+* Correção de bug: [AMP-174] - Tela de emissão fica em "loading" indefinidamente
 
-Updates database model: no
+Atualiza modelo do banco de dados: não
 
 
 <a name="v3-8-2" />
 ### 3.8.2 (2020-07-10)
 
-* Bug fixes
+* Correções de bugs
   * [AMP-175] - Logs de aplicação de nível *Information* estão sendo escritos para o log de sistema por padrão no Linux e em Docker
   * [AMP-176] - Nome do arquivo do termo de titularidade assinado não está internacionalizado
 
-Updates database model: no
+Atualiza modelo do banco de dados: não
 
 
 <a name="v3-8-1" />
@@ -59,7 +67,7 @@ Atualiza modelo do banco de dados: não
 <a name="v3-7-3" />
 ### 3.7.3 (2020-06-05)
 
-* Adicionado tema "green dark coral"
+* Adicionado tema *Green & Dark coral* (`gdc`)
 * Correção de bug
   * Campo `SmsEnabled` da API de *client config* é preenchido de maneira errada em algumas situações
 
