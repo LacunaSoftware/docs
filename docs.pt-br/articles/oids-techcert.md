@@ -26,3 +26,4 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.7 - [AC Afya](https://ac.afya.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.8 - [AC FECAP](https://ac.fecap.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.9 - [AC Prefeitura de Vespasiano](https://ac.vespasiano.mg.gov.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.10 - [AC Clinica Regis](https://ac.clinicaregis.com.br/certs/ac.txt)
