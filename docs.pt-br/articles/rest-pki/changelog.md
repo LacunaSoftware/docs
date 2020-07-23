@@ -14,6 +14,7 @@ Atualização do modelo do banco de dados: Não
 
 - Corrigir exceção que ocorre ao abrir uma assinatura PAdES com o campo "SignaturePolicy" sem a URI
 - Adicionar campo "CustomSignatureFieldName" em assinaturas PAdES
+- Atualização PKI SDK para [2.7.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-7-2)
 
 <a name="v1-22-1" />
 ### 1.22.1 (2020-04-22)
