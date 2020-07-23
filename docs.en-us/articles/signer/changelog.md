@@ -4,6 +4,14 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-9-1" />
+### 1.9.1 (2020-07-23)
+
+* Bug fixes
+  * [SIG-410] - Unnecessary scroll in home page
+
+Updates database model: no
+
 <a name="v1-9-0" />
 ### 1.9.0 (2020-07-23)
 

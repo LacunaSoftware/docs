@@ -4,6 +4,14 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-9-1" />
+### 1.9.1 (2020-07-23)
+
+* Correções de bugs
+  * [SIG-410] - Scroll desnecessário na home page
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-9-0" />
 ### 1.9.0 (2020-07-23)
 
