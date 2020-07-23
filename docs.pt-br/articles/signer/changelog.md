@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-9-0" />
+### 1.9.0 (2020-07-23)
+
+* Novas funcionalidades
+  * [SIG-378] - Procedimento para recuperação de documentos excluídos
+
+* Melhorias
+  * [SIG-338] - Melhorar descrição de informações sobre assinatura eletrônica
+  * [SIG-394] - Mostrar os participantes das etapas do fluxo em ordem alfabética
+  * [SIG-395] - Reposicionar powered by do footer
+
+* Correções de bugs
+  * [SIG-403] - Assinatura eletronica está adicionando representação visual mesmo com representação visual desabilitada
+
+Atualiza modelo do banco de dados: não
 
 <a name="v1-8-0" />
 ### 1.8.0 (2020-07-16)

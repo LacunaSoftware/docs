@@ -4,6 +4,22 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-9-0" />
+### 1.9.0 (2020-07-23)
+
+* New Features
+  * [SIG-378] - Recovery procedure for deleted documents
+
+* Improvements
+  * [SIG-338] - Improve electronic signature description
+  * [SIG-394] - Display participant actions of the document flow in alphabetic order
+  * [SIG-395] - Refactor powered by position in the footer
+
+* Bug fixes
+  * [SIG-403] - Electronic signature with visual representation even with visual representations disabled
+
+Updates database model: no
+
 <a name="v1-8-0" />
 ### 1.8.0 (2020-07-16)
 

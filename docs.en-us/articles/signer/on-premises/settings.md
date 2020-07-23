@@ -37,6 +37,7 @@ a custom visual representation that has information about his lawyer or accounta
 
 * **UseCustomStaticHomePage**: if `true`, uses the static file index.html from the theme-assets as the home page. After the login, users will always be redirected to the 
 `<SiteUrl>/private` as the home page will be static. You may change the redirect URL using the `RedirectUri` setting in the OIDC Config section. 
+* **HidePoweredBy** (v1.9.0): if `true`, hides the powered by section that is displayed on the default home page.
 
 * **EnableSignaturePositioning** (default: `true`): if `true`, displays option to pre-select a signer signature position while creating documents.
 
@@ -79,6 +80,7 @@ If this setting is not provided and document types are enabled, all available op
 * **Mode** (default: `Timestamp` if there is a timestamper configured, `SelfSigned` otherwise, v1.8.0): the mode in which the electronic signatures will be performed. The available modes are `SelfSigned` and `Timestamp`: 
 	* `SelfSigned`: a self signed certificate is generated once and used for every electronic signagure in the application.
 	* `Timestamp`: the electronic signature is added to the document as a timestamp signature. Requires that a Timestamper is configured.
+* **AdditionalInfoUrl** (v1.9.0): URL to redirect the user when he clicks the electronic signature info icon in the document creation screen.
 
 ###  *VisualRepresentation* Settings
 
