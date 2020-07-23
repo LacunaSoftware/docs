@@ -14,6 +14,7 @@ Database model update: No
 
 - Fixed exception that occurs when opening a PAdES signature with the field "SignaturePolicy" without its URI
 - Added "CustomSignatureFieldName" field on PAdES signatures
+- Update PKI SDK to [2.7.2](../pki-sdk/changelog.md#v2-7-2)
 
 <a name="v1-22-1" />
 ### 1.22.1 (2020-04-22)
