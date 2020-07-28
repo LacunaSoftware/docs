@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-7-5" />
+### 2.7.5 (2020-07-28)
+
+- Add default XPath transformation on XML enveloped signatures
+
+
 <a name="v2-7-3" />
 ### 2.7.3 (2020-07-18)
 
