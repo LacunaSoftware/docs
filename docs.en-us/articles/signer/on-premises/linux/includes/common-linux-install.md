@@ -18,13 +18,13 @@ Create the Signer configuration file from the template provided:
 > Configuration files can only be read by members of the * signer * group and can only be changed by users with elevated permissions. This is important to protect information
 > confidential information stored in the configuration file of other users of the machine.
 
-## Configure the Signer
+## Configure Signer
 
 Edit the configuration file to configure your Signer instance:
 
 [!include[Edit settings](../../../../../../includes/signer/linux/edit-settings.md)]
 
-[!include[Database config](../../includes/database-config.md)]
+[!include[Database config](../../../../includes/spa-config/database-config.md)]
 
 <a name="encryption-key-generation" />
 
@@ -38,11 +38,11 @@ Generate a 256-bit key to encrypt secrets stored in the database:
 
 [!include[Bindings config](../../../../includes/spa-config/bindings.md)]
 
-[!include[PKI Suite config](../../includes/pki-config.md)]
+[!include[PKI Suite config](../../../../includes/spa-config/pki-config.md)]
 
-[!include[Email config](../../includes/email-config.md)]
+[!include[Email config](../../../../includes/spa-config/email-config.md)]
 
-[!include[OIDC config](../../includes/oidc-config.md)]
+[!include[OIDC config](../../../../includes/spa-config/oidc-config.md)]
 
 ## Configure a *daemon*
 
