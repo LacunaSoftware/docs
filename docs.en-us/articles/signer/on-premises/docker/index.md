@@ -24,9 +24,10 @@ Edit the Signer configuration file:
 
 [!include[Edit Signer config](../../../../../includes/signer/docker/edit-signer-config.md)]
 
-> [!WARNING]
-> This documentation is under construction. For instructions on filling out the *signer.json* file,
-> please refer to the [Ubuntu setup instructions](../linux/install-ubuntu.md)
+Follow the instructions on the file to fill it out.
+
+> [!TIP]
+> For instructions on specific configurations on the *signer.json* file, please refer to the [Ubuntu setup instructions](../linux/install-ubuntu.md)
 
 Edit the Nginx configuration file:
 

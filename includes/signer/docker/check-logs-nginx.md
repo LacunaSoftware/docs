@@ -1,3 +1,3 @@
 ﻿```sh
-docker service logs amplia_nginx -f
+docker service logs signer_nginx -f
 ```
