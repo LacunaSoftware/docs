@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-17-0" />
+### 1.17.0 (2020-07-30)
+
+- Adiciona suporte a assinatura usando certificados em nuvem (integração com PSCs brasileiras)
+- Melhorar merge de assinaturas CAdEs para aceitar um arquivo de assinatura
+
 <a name="v1-16-0" />
 ### 1.16.0 (2020-06-26)
 

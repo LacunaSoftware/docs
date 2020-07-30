@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-17-0" />
+### 1.17.0 (2020-07-30)
+
+- Add support to signature using cloud certificates (integration with Brazilian PSCs)
+- Improved CAdES signature merge to accept one signature file
+
 <a name="v1-16-0" />
 ### 1.16.0 (2020-06-26)
 
