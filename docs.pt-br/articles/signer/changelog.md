@@ -8,6 +8,7 @@
 ### 1.9.1 (2020-07-23)
 
 * Correções de bugs
+  * [SIG-396] - String não traduzida nas configurações de pasta
   * [SIG-410] - Scroll desnecessário na home page
 
 Atualiza modelo do banco de dados: não

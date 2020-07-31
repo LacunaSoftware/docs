@@ -8,6 +8,7 @@
 ### 1.9.1 (2020-07-23)
 
 * Bug fixes
+  * [SIG-396] - String not translated in folder settings
   * [SIG-410] - Unnecessary scroll in home page
 
 Updates database model: no
