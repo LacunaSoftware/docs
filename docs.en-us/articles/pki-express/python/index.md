@@ -7,7 +7,7 @@ This article describes how to use [PKI Express](../index.md) on Python
 The sample project shows the usage of PKI Express together with the [Web PKI](../../web-pki/index.md) browser component
 on a **Python** project. It is hosted on GitHub:
 
-https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Python
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/python/flask
 
 > [!NOTE]
 > If you are using a previous version of Ptyhon, please [contact us](https://www.lacunasoftware.com/en/home/purchase).
@@ -15,8 +15,8 @@ https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Python
 ### Running the project
 
 1. [Install PKI Express](../setup/index.md)
-1. [Download the project](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiExpressSamples.git)
-1. In a command prompt, navigate to the folder `Python` and run the command `pip install -r requirements.txt` to download the dependencies
+1. [Download the project](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
+1. In a command prompt, navigate to the folder `Python/Flask` and run the command `pip install -r requirements.txt` to download the dependencies
 1. Define the `FLASK_APP` environment variable to define the name of app the should be run: `FLASK_APP=sample`
 1. Run the web application: `flask run` or `python -m flask run`
 1. Access the URL: [http://localhost:5000](http://localhost:5000)

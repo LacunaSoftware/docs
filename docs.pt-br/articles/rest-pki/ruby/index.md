@@ -7,7 +7,7 @@ O Rest PKI pode ser usado em Ruby. Para começar, veja [Projeto de Exemplos em R
 Para usar o Rest PKI em aplicações Ruby, use nosso **Ruby Gem** [rest_pki](https://rubygems.org/gems/rest_pki) declarando em seu `Gemfile`:
 
 ```gemspec
-gem 'rest_pki', '~> 1.0.0'
+gem 'rest_pki', '~> 1.1.0'
 ```
 
 Após isos, faça um `bundle install` para download do gem e suas dependências (se você não tiver o Bundler instalado, pegue [aqui](http://bundler.io/))

@@ -7,13 +7,13 @@ Este artigo mostra como usar o [PKI Express](../index.md) em Node.js
 O projeto de exemplos demonstra o uso de PKI Express junto com o componente [Web PKI](../../web-pki/index.md)
 em um projeto que utilizando **NodeJS**. Ele encontra-se hospedado no GitHub:
 
-https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/NodeJS
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/nodejs/expressmvc
 
 ### Executando o projeto
 
 1. [Instale o PKI Express](../setup/index.md)
-1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiExpressSamples.git)
-1. Em um terminal, navegue ate a pasta `NodeJS` e execute o comando `npm install` para baixar as dependências do projeto.
+1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
+1. Em um terminal, navegue ate a pasta `nodejs/expressmvc` e execute o comando `npm install` para baixar as dependências do projeto.
 1. Execute a aplicação web: `npm start`
 1. Acesse a URL: [http://localhost:3000](http://localhost:3000)
 

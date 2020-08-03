@@ -8,7 +8,7 @@ O projeto de exemplos demonstra o uso do PKI Express junto com o [Web PKI](../..
 em um projeto compatível com **Java 7+** (incluindo 8 e 9) utilizando o framework [Spring MVC](http://spring.io/).
 Ele encontra-se hospedado no GitHub:
 
-https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/Java
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/java/springmvc
 
 > [!NOTE]
 > Se você utiliza uma versão anterior do Java, por favor [fale conosco](https://www.lacunasoftware.com/pt/home/purchase).
@@ -21,7 +21,7 @@ Para executar o projeto, é necessário ter o Java Development Kit instalado. Vo
 
 1. [Instale o PKI Express](../setup/index.md)
 
-1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiExpressSamples.git)
+1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 
 1. Em um terminal, navegue até a pasta `Java` e execute o comando `gradlew bootRun` (no Linux, `./gradlew bootRun`). Se você estiver em um ambiente Windows, você pode simplesmente dar um duplo-clique no arquivo `Run-Sample.bat`
 
@@ -35,7 +35,7 @@ Para executar o projeto, é necessário ter o Java Development Kit instalado. Vo
 
 1. [Instale o PKI Express](../setup/index.md)
 
-1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiExpressSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiExpressSamples.git)
+1. [Baixe o projeto](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) ou faça um *clone* do [repositório](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 
 1. Em um terminal, navegue até a pasta `Java` e execute o comando `mvn spring-boot:run`. Para executar esse comando, é necessário
 ter o Apache Maven instalado.

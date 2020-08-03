@@ -8,7 +8,7 @@ To use Rest PKI on Ruby applications, use our **Ruby Gem** [rest_pki](https://ru
 by declaring on your `Gemfile`:
 
 ```gemspec
-gem 'rest_pki', '~> 1.0.0'
+gem 'rest_pki', '~> 1.1.0'
 ```
 
 After that, do a `bundle install` to download the gem and its dependencies (if you don't have Bundler installed,
