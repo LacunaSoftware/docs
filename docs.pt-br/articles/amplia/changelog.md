@@ -1,5 +1,20 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-9-0" />
+### 3.9.0 (2020-08-04)
+
+Novas funcionalidades:
+
+* [AMP-154] - Suporte a emissão de certificados conforme norma do Banco Central do Equador
+
+Melhorias:
+
+* [AMP-168] - Melhorar mecanismo de emissão de LCRs de modo a otimizar casos com centenas ou milhares de ACs
+* [AMP-161] - Atualizar Angular para versão 9
+
+Atualiza modelo do banco de dados: **sim**
+
+
 <a name="v3-8-4" />
 ### 3.8.4 (2020-07-22)
 
@@ -11,6 +26,7 @@ Atualiza modelo do banco de dados: não
 <a name="v3-8-3" />
 ### 3.8.3 (2020-07-21)
 
+* [AMP-173] - Não gerar preemptivamente o arquivo na API de obter link para download do termo de titularidade
 * Correção de bug: [AMP-174] - Tela de emissão fica em "loading" indefinidamente
 
 Atualiza modelo do banco de dados: não

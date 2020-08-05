@@ -1,5 +1,20 @@
 ﻿# Amplia changelog
 
+<a name="v3-9-0" />
+### 3.9.0 (2020-08-04)
+
+New features:
+
+* [AMP-154] - Issue certificates in compliance to Ecuador's Banco Central format
+
+Improvements:
+
+* [AMP-168] - Refactor CRL issuing procedure to improve performance on cases with hundreds or thousands of CAs
+* [AMP-161] - Update Angular to version 9
+
+Updates database model: **yes**
+
+
 <a name="v3-8-4" />
 ### 3.8.4 (2020-07-22)
 
@@ -11,6 +26,7 @@ Updates database model: no
 <a name="v3-8-3" />
 ### 3.8.3 (2020-07-21)
 
+* [AMP-173] - Don't generate preemptively certificate agreement file when providing access link on API
 * Bug fix: [AMP-174] - Issue certificate page stays loading indefinitely
 
 Updates database model: no
