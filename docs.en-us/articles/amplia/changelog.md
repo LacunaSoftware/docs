@@ -1,5 +1,13 @@
 ﻿# Amplia changelog
 
+<a name="v3-9-1" />
+### 3.9.1 (2020-08-05)
+
+* Bug fix: [AMP-178] - Blank page when returning from login on Internet Explorer
+
+Updates database model: no
+
+
 <a name="v3-9-0" />
 ### 3.9.0 (2020-08-04)
 

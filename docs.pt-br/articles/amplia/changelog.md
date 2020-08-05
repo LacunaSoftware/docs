@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-9-1" />
+### 3.9.1 (2020-08-05)
+
+* Correção de bug: [AMP-178] - Tela fica em branco após login no Internet Explorer
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-9-0" />
 ### 3.9.0 (2020-08-04)
 
