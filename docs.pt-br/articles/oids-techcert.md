@@ -29,3 +29,4 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.10 - [AC Clinica Regis](https://ac.clinicaregis.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.11 - [AC UNEB](https://ac.uneb.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.12 - [AC FMABC](https://ac.fmabc.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.13 - [AC Ferreira e Chagas](https://ac.ferreiraechagas.com.br/certs/ac.txt)
