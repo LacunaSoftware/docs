@@ -104,16 +104,16 @@ Cada participante receberá um e-mail com um link que permitirá a assinatura/ap
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * C#: 
-	* [Documento com um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithOneSignerScenario.cs),
-	* [Documento com dois ou mais assinantes com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.cs) 
-	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.cs) 
-	* [Documento com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithApproversScenario.cs).
+	* [Documento com um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithOneSignerScenario.cs)
+	* [Documento com dois ou mais assinantes com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.cs)
+	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.cs)
+	* [Documento com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithApproversScenario.cs)
 
 * Java: 
-	* [Documento com um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithOneSignerScenario.java),
-	* [Documento com dois ou mais assinantes com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.java) 
-	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.java) 
-	* [Documento com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithApproversScenario.java).
+	* [Documento com um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithOneSignerScenario.java)
+	* [Documento com dois ou mais assinantes com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.java)
+	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.java)
+	* [Documento com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithApproversScenario.java)
 
 #### Assinatura em sua própria aplicação
 
@@ -195,6 +195,8 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 * Para saber se um participante assinou/aprovou, verifique se a propriedade `status` corresponde a `Completed` para o elemento da lista de 
 ações (`flowActions`) que corresponde a ele.
 
+***
+
 Adicionalmente, você pode configurar um **Webhook** que será disparado toda vez que um documento de sua organização for concluído. Para isso, 
 acesse a tela da Organização e registre a URL desejada na opção **Integração**:
 
@@ -232,7 +234,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 ### Validar assinaturas de um documento
 
-Você pode validar as assinaturas de um documento de duas formas: com **chave de validação do documento** (caso ele tenha sido assinado nesta instância do Signer) ou com o **arquivo
+Você pode validar as assinaturas de um documento de duas formas: com a **chave de validação do documento** (caso ele tenha sido assinado nesta instância do Signer) ou com o **arquivo
 assinado**.
 
 #### Validação de documento com chave de validação
