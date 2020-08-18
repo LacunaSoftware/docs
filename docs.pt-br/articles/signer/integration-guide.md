@@ -8,13 +8,13 @@ discute as possíveis opções de integração para que sua aplicação possa ap
 
 ## Autenticação
 
-Todas as chamadas de API exigem uma chave de acesso de API (API Key). Essa chave deve ser colocada no cabeçalho de todas requisições ao signer:
+Todas as chamadas de API exigem uma chave de acesso de API (*API Key*). Essa chave deve ser colocada no cabeçalho de todas requisições:
 
 ```javascript
 X-Api-Key: sua-aplicacao|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Toda chave de API está associada uma Organização previamente cadastrada no Signer. Sendo assim, o escopo dessa chave fica restrito àquela organização,
+Toda chave de API está associada uma Organização previamente cadastrada no Signer. Sendo assim, o escopo dessa chave fica **restrito àquela organização**,
 isto é, aquela chave só permitirá acessar/criar documentos daquela organização.
 
 > [!NOTE]
@@ -40,9 +40,11 @@ Para assinar um documento siga o passo a passo abaixo:
 
 1. Faça o upload do arquivo a ser assinado usando a [API de Upload (POST /api/uploads)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads). 
 Será retornado um ID de upload que identifica aquele arquivo.
-```javascript
 
-```
+	```javascript
+
+	```
+
 1. Crie um documento à partir do upload usando a [API de Criação de Documentos (POST /api/documents)](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
 Nessa chamada você irá montar o fluxo do documento, isto é, definir quem deverá assinar o documento e em qual ordem.
 
