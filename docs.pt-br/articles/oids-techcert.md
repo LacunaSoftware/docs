@@ -21,9 +21,9 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.2 - [AC Previsa](https://ac.previsa.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.3 - [AC Dom Helder](https://ac.domhelder.edu.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.4 - [AC EMGE](https://ac.emge.edu.br/certs/ac.txt)
-* 1.3.6.1.4.1.55432.1.5 - [AC Ipemig](https://ac.ipemig.com.br/certs/ac.txt)
+* ~~1.3.6.1.4.1.55432.1.5 - [AC Ipemig](https://ac.ipemig.com.br/certs/ac.txt)~~
 * 1.3.6.1.4.1.55432.1.6 - [AC Uniasselvi](https://ac.uniasselvi.com.br/certs/ac.txt)
-* 1.3.6.1.4.1.55432.1.7 - [AC Afya](https://ac.afya.com.br/certs/ac.txt)
+* ~~1.3.6.1.4.1.55432.1.7 - [AC Afya](https://ac.afya.com.br/certs/ac.txt)~~
 * 1.3.6.1.4.1.55432.1.8 - [AC FECAP](https://ac.fecap.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.9 - [AC Prefeitura de Vespasiano](https://ac.vespasiano.mg.gov.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.10 - [AC Clinica Regis](https://ac.clinicaregis.com.br/certs/ac.txt)
