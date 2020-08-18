@@ -34,43 +34,115 @@ Para começar escolha um dos itens abaixo:
 * [Validar assinaturas de um documento](#validate-signatures)
 
 <a name="sign-document" />
-## Assinar um documento
+### Assinar um documento
 
 Para assinar um documento siga o passo a passo abaixo:
 
 1. Faça o upload do arquivo a ser assinado usando a [API de Upload (POST /api/uploads)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads). 
+O arquivo deve ser enviado com uma requisição [multipart/form-data](https://ec.haxx.se/http/http-multipart).
+
 Será retornado um ID de upload que identifica aquele arquivo.
 
 	```javascript
-
+	{
+	  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+	}
 	```
 
-1. Crie um documento à partir do upload usando a [API de Criação de Documentos (POST /api/documents)](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
-Nessa chamada você deve montar o fluxo do documento, isto é, definir quem assinará o documento e em qual ordem.
+1. Crie um documento à partir do upload usando a [API de Criação de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
+Nessa chamada você deve montar o fluxo do documento, isto é, definir quais serão os participantes do documento e em qual ordem devem tomar suas ações. Exemplo:
+
+	```javascript
+	POST /api/documents
+
+	{
+	  "files": [
+		{
+		  "displayName": "Contrato Integração", //Nome que será dado ao documento criado
+		  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6", //ID do upload
+		  "name": "Contrato.pdf", //Nome do arquivo original
+		  "contentType": "application/pdf" //mime type do arquivo original
+		}
+	  ],
+	  "flowActions": [
+		{
+		  "type": "Signer",//Tipo do participante, nesse caso, assinante
+		  "step": 1,//Ordem de assinatura
+		  "user": {
+			"name": "John Wick",//Nome do participante
+			"identifier": "81976153069",//CPF do participante
+			"email": "john.wick@mailinator.com"//Email do participante
+		  }
+		}
+	  ]
+	}
+	```
 
 > [!NOTE]
-> Você pode criar mais de um documento na mesma chamada. A resposta irá retornar o ID do documento criado associado ao ID do upload, assim você
-> sabe exatamente qual documento corresponde a cada upload.
+> Você pode criar mais de um documento na mesma chamada de criação, adicionando quantos arquivos forem necessários. Nesse caso, todos documentos
+> terão o mesmo fluxo.
 
-Ao criar o documento, o Signer automaticamente notifica os signatários adicionados no fluxo seguindo a ordem especificada. 
+A resposta retornará o ID do documento criado associado ao ID do upload, assim você sabe exatamente qual documento corresponde a cada upload:
 
-Cada signatário receberá um e-mail com um link que permitirá a assinatura do documento. Não é preciso se autenticar para assinar ou aprovar o documento.
+	```javascript
+	[
+		{
+		"uploadId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+		"documentId": "b12cb1b2-5d6e-40b2-a050-097d068c4c11"
+		}
+	]
+	```
+
+Ao criar o documento, o Signer automaticamente notifica os participantes adicionados no fluxo seguindo a ordem especificada.
+
+Cada participante receberá um e-mail com um link que permitirá a assinatura/aprovação do documento. 
+
+> [!TIP]
+> Não é preciso se autenticar para assinar ou aprovar o documento.
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithOneSignerScenario.cs)
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithOneSignerScenario.java)
+* C#: criação de documentos com: [um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithOneSignerScenario.cs),
+dois ou mais assinantes [com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.cs) 
+ou [sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.cs) 
+e [com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithApproversScenario.cs).
 
-### Assinatura em sua própria aplicação
+* Java: criação de documentos com: [um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithOneSignerScenario.java),
+dois ou mais assinantes [com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.java) 
+ou [sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.java) 
+e [com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithApproversScenario.java).
+
+#### Assinatura em sua própria aplicação
 
 Caso você queira realizar a assinatura do documento em sua própria aplicação, você pode usar a opção de **Assinatura Embutida**.
 
-Para isso, você deve seguir os mesmos passos exibidos na seção anterior, no entanto, ao enviar o documento, recomenda-se marcar a opção 
-`disablePendingActionNotifications` como `true`. Dessa forma o Signer não vai enviar notificações para os assinantes.
+Para isso, você deve seguir os mesmos passos exibidos na seção anterior, no entanto, ao enviar o documento, recomenda-se adicionar o parâmetro
+`disablePendingActionNotifications` com valor `true`. Dessa forma, o Signer não vai enviar notificações para os participantes.
 
-Após a criação do documento, utilize o ID do documento para obter a URL de Assinatura usando a [API de URL de Ação (POST /api/documents/{id}/action-url)](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url).
+Após a criação do documento, utilize o ID do documento para obter a URL de Assinatura usando a [API de URL de Ação](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url):
 
-Uma vez obtida a URL de assinatura, utilize o **Widget de assinatura** para exibir a página de assinatura do Signer na sua aplicação.
+	```javascript
+	POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/action-url
+
+	{
+		//devem ser enviadas informações que identifiquem o participante desejado
+		"identifier": "81976153069",
+		"emailAddress": "john.wick@mailinator.com"
+	}
+	```
+
+A resposta irá apresentar duas URLs:
+
+	```javascript
+	{
+		//URL para redirecionar o usuário para a página de assinatura no Signer
+		"url": "https://...",
+		//URL para usar com o Widget de assinatura
+		"embedUrl": "https://..."
+	}
+	```
+
+Uma vez obtida a URL `embedUrl`, utilize o **Widget de assinatura** para exibir a página de assinatura do Signer na sua aplicação.
 A página [Assinatura embutida](embedded-signature.md) descreve como utilizar o *Widget*.
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
@@ -80,12 +152,39 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 
 <a name="check-document" />
-## Verificar o status de um documento
+### Verificar o status de um documento
 
-Para verificar o status de um documento é preciso conhecer o seu ID. Em seguida, basta fazer uma chamada à [API de Detalhes do Documento (GET /api/documents/{id})](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
+Para verificar o status de um documento é preciso conhecer o seu ID. Em seguida, basta fazer uma chamada à [API de Detalhes do Documento](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
 
 ```javascript
+GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 
+{
+	"id": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
+	"name": "Contrato Integração",
+	"isConcluded": true,
+	"creationDate": "2019-08-18T16:26:03.372Z",
+	"updateDate": "2019-08-18T16:26:03.372Z",
+	...
+	"flowActions": [
+		{
+			"id": "4bf61c68-eaf1-455f-b4a1-6141554f1dae",
+			"type": "Signer",
+			"status": "Completed",
+			"step": 1,
+			...
+			"user":
+			{
+				"id": "4d961566-9b03-450c-b144-930e0294bac2",
+				"name": "John Wick",
+				"identifier": "81976153069",
+				"email": "john.wick@mailinator.com"
+			},
+			"title": "Parte",
+			"allowElectronicSignature": true
+		}
+	]
+}
 ```
 
 * Para saber se o documento está concluído, verifique a propriedade `isConcluded`.
@@ -103,14 +202,19 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CheckDocumentStatusScenario.java)
 
 <a name="document-reminders" />
-## Enviar lembretes de assinatura
+### Enviar lembretes de assinatura
 
 Uma vez verificado o status de um participante, conforme mostrado no caso de uso de [Verificação de status](#check-document),
-caso você queira enviar lembretes periódicos para participantes do fluxo que ainda não completaram uma ação, você pode usar a [API de Envio de Lembretes (POST /api/notifications/flow-action-reminder)](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_)
-informando o ID do documento e o ID do participante (`flowActionId`):
+caso você queira enviar lembretes periódicos para participantes do fluxo que ainda não completaram uma ação, você pode usar a [API de Envio de Lembretes](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_)
+informando o ID do documento e o ID da ação do participante (`flowActionId`):
 
 ```javascript
+POST /api/notifications/flow-action-reminder
 
+{
+	"documentId": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
+	"flowActionId": "4bf61c68-eaf1-455f-b4a1-6141554f1dae"
+}
 ```
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
@@ -119,29 +223,88 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/NotifyFlowParticipantsScenario.java)
 
 <a name="validate-signatures" />
-## Validar assinaturas de um documento
+### Validar assinaturas de um documento
 
-Você pode validar as assinaturas de um documento de duas formas: com **chave de validação do documento** (caso ele tenha sido assinado no signer) ou com o **arquivo
+Você pode validar as assinaturas de um documento de duas formas: com **chave de validação do documento** (caso ele tenha sido assinado nesta instância do Signer) ou com o **arquivo
 assinado**.
 
-### Validação de documento com chave de validação
+#### Validação de documento com chave de validação
 
 Para validar um documento com chave de validação, use a [API de Validação de Chave](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents_keys__key__signatures) informando a chave correspondente.
 
-```javascript
-
-```
-
-Serão retornados os dados básicos do documento e as informações de cada uma das assinaturas encontradas naquele documento.
-
-### Validação de documento com arquivo assinado
-
-Para validar um documento assinado é preciso fazer primeiro o upload do arquivo assinado usando a [API de Upload](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads).
+Serão retornados os dados básicos do documento e as informações de cada uma das assinaturas encontradas naquele documento:
 
 ```javascript
+GET /api/documents/keys/AX4F8FV8NNAX25TENE2S/signatures
 
+{
+	"id": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
+	"name": "string",
+	"filename": "string",
+	"mimeType": "string",
+	"isConcluded": true,
+	"isFile": true,
+	...
+	"creationDate": "2020-08-18T16:38:40.538Z",
+	"updateDate": "2020-08-18T16:38:40.538Z",
+	"signers": [
+		{
+			"subjectName": "John Wick",
+			"emailAddress": "john.wick@mailinator.com",
+			"issuerName": "Lacuna CA",
+			"identifier": "81976153069",
+			"companyName": null,
+			"companyIdentifier": null,
+			"isElectronic": false,
+			"signingTime": "2020-08-18T16:38:40.538Z",
+			"certificateThumbprint": "a0sRR9cWOc0PORMhTBg49ub/5BO3W5vWQ1w7+YquK5g=",
+			...
+			"validationResults":
+			{
+				...
+				"isValid": true
+			}
+		}
+	]
+}
 ```
+
+#### Validação de documento com arquivo assinado
+
+Para validar um documento assinado é preciso fazer primeiro o upload do arquivo assinado usando a [API de Upload](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads)
+assim como informado na seção [Assinar um Documento](#sign-document).
 
 Em seguida, utilize a [API de validação de arquivo](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents_validate_signatures).
 
+```javascript
+POST /api/documents/validate-signatures
+
+{
+  "fileId": "f5ea05d7-0a5f-4933-a6d6-9a8aa3955b14",
+  "mimeType": "application/pdf"
+}
+```
+
 Serão retornados os dados de cada uma das assinaturas encontradas no documento.
+
+```javascript
+[
+	{
+		"subjectName": "John Wick",
+		"emailAddress": "john.wick@mailinator.com",
+		"issuerName": "Lacuna CA",
+		"identifier": "81976153069",
+		"companyName": null,
+		"companyIdentifier": null,
+		"isElectronic": false,
+		"signingTime": "2020-08-18T16:38:40.538Z",
+		"certificateThumbprint": "a0sRR9cWOc0PORMhTBg49ub/5BO3W5vWQ1w7+YquK5g=",
+		...
+		"validationResults":
+		{
+			...
+			"isValid": true
+		}
+	}
+]
+```
