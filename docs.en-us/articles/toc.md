@@ -199,6 +199,7 @@
 #### [Add user to system admin](signer/user-guide/sys-admin/add-user.md)
 #### [Browse system documents](signer/user-guide/sys-admin/browse-docs.md)
 #### [Removing documents](signer/user-guide/sys-admin/del-docs.md)
+## [Integration Guide](signer/integration-guide.md)
 ## [Embedded Signature](signer/embedded-signature.md)
 ## [Changelog](signer/changelog.md)
 <!-- End of Signer -->
