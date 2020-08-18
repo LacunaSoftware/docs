@@ -46,14 +46,15 @@ Será retornado um ID de upload que identifica aquele arquivo.
 	```
 
 1. Crie um documento à partir do upload usando a [API de Criação de Documentos (POST /api/documents)](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
-Nessa chamada você irá montar o fluxo do documento, isto é, definir quem deverá assinar o documento e em qual ordem.
+Nessa chamada você deve montar o fluxo do documento, isto é, definir quem assinará o documento e em qual ordem.
 
 > [!NOTE]
 > Você pode criar mais de um documento na mesma chamada. A resposta irá retornar o ID do documento criado associado ao ID do upload, assim você
 > sabe exatamente qual documento corresponde a cada upload.
 
-Ao criar o documento, o Signer automaticamente notifica os signatários adicionados no fluxo seguindo a ordem especificada. Cada signatário receberá
-um e-mail com um link que permitirá a assinatura do documento. Não é preciso se autenticar para assinar ou aprovar o documento.
+Ao criar o documento, o Signer automaticamente notifica os signatários adicionados no fluxo seguindo a ordem especificada. 
+
+Cada signatário receberá um e-mail com um link que permitirá a assinatura do documento. Não é preciso se autenticar para assinar ou aprovar o documento.
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
@@ -64,12 +65,12 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 Caso você queira realizar a assinatura do documento em sua própria aplicação, você pode usar a opção de **Assinatura Embutida**.
 
-Para isso, você deve seguir os mesmos passos exibidos na seção anterior, no entanto, ao enviar o documento deve marcar a opção 
+Para isso, você deve seguir os mesmos passos exibidos na seção anterior, no entanto, ao enviar o documento, recomenda-se marcar a opção 
 `disablePendingActionNotifications` como `true`. Dessa forma o Signer não vai enviar notificações para os assinantes.
 
-Após a criação do documento, utilize o ID do documento para obter a URL de Assinatura usando a [API de URL de Ação](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url).
+Após a criação do documento, utilize o ID do documento para obter a URL de Assinatura usando a [API de URL de Ação (POST /api/documents/{id}/action-url)](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url).
 
-Uma vez obtida a URL de assinatura, utilize o *Widget de assinatura* para renderizar a página de assinatura do Signer na sua aplicação.
+Uma vez obtida a URL de assinatura, utilize o **Widget de assinatura** para exibir a página de assinatura do Signer na sua aplicação.
 A página [Assinatura embutida](embedded-signature.md) descreve como utilizar o *Widget*.
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
@@ -81,18 +82,18 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 <a name="check-document" />
 ## Verificar o status de um documento
 
-Para verificar o status de um documento é preciso conhecer o seu ID. Em seguida, basta fazer uma chamada à [API de Detalhes do Documento](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
+Para verificar o status de um documento é preciso conhecer o seu ID. Em seguida, basta fazer uma chamada à [API de Detalhes do Documento (GET /api/documents/{id})](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
 
 ```javascript
 
 ```
 
-	* Para saber se o documento está concluído, verifique a propriedade `isConcluded`.
-	* Para saber se um participante assinou/aprovou, verifique se a propriedade `status` corresponde a `Completed` do elemento da lista de 
-	ações (`flowActions`) que corresponde a ele.
+* Para saber se o documento está concluído, verifique a propriedade `isConcluded`.
+* Para saber se um participante assinou/aprovou, verifique se a propriedade `status` corresponde a `Completed` do elemento da lista de 
+ações (`flowActions`) que corresponde a ele.
 
 Adicionalmente, você pode configurar um Webhook que será disparado toda vez que um documento de uma organização for concluído. Para isso, basta 
-acessar a tela da Organização e registrar a URL desejada na opção Integração:
+acessar a tela da Organização e registrar a URL desejada na opção **Integração**:
 
 ![Webhook](./images/org-webhook.png)
 
@@ -104,9 +105,9 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 <a name="document-reminders" />
 ## Enviar lembretes de assinatura
 
-Uma vez verificado o status de um participante conforme mostrado no caso de uso de [Verificação de status](#check-document),
-caso você queira enviar lembretes periódicos para participantes do fluxo que ainda não completaram uma ação, você pode usar a [API de Envio de Lembretes](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_)
-informando o Id do documento e o ID do participante (`flowActionId`):
+Uma vez verificado o status de um participante, conforme mostrado no caso de uso de [Verificação de status](#check-document),
+caso você queira enviar lembretes periódicos para participantes do fluxo que ainda não completaram uma ação, você pode usar a [API de Envio de Lembretes (POST /api/notifications/flow-action-reminder)](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_)
+informando o ID do documento e o ID do participante (`flowActionId`):
 
 ```javascript
 
@@ -120,8 +121,8 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 <a name="validate-signatures" />
 ## Validar assinaturas de um documento
 
-Você pode validar as assinaturas de um documento de duas formas: com chave de validação do documento (caso ele tenha sido assinado no signer) ou com o arquivo
-assinado.
+Você pode validar as assinaturas de um documento de duas formas: com **chave de validação do documento** (caso ele tenha sido assinado no signer) ou com o **arquivo
+assinado**.
 
 ### Validação de documento com chave de validação
 
