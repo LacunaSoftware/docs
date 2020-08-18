@@ -40,7 +40,7 @@ Escolha um dos casos de uso abaixo:
 
 Para assinar um documento siga o passo a passo abaixo:
 
-1. Faça o upload do arquivo a ser assinado usando a [API de Upload (POST /api/uploads)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads). 
+1- Faça o upload do arquivo a ser assinado usando a [API de Upload (POST /api/uploads)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads). 
 O arquivo deve ser enviado com uma requisição [multipart/form-data](https://ec.haxx.se/http/http-multipart). Será retornado um ID de upload que identifica aquele arquivo:
 
 ```javascript
@@ -50,7 +50,7 @@ O arquivo deve ser enviado com uma requisição [multipart/form-data](https://ec
 }
 ```
 
-1. Crie um documento à partir do upload usando a [API de Criação de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
+2- Crie um documento à partir do upload usando a [API de Criação de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
 Nessa chamada você deve montar o fluxo do documento, isto é, definir quais serão os participantes do documento e em qual ordem devem tomar suas ações:
 
 ```javascript
@@ -83,7 +83,7 @@ POST /api/documents
 > Você pode criar mais de um documento na mesma chamada de criação, adicionando quantos arquivos forem necessários. Nesse caso, todos documentos
 > terão o mesmo fluxo.
 
-A resposta retornará o ID do documento criado associado ao ID do upload, assim você sabe exatamente qual documento corresponde a cada upload:
+A resposta retornará o ID do documento criado associado ao ID do upload, assim você sabe exatamente qual documento corresponde a qual upload:
 
 ```javascript
 [
@@ -98,7 +98,7 @@ Ao criar o documento, o Signer automaticamente notifica os participantes adicion
 
 Cada participante receberá um e-mail com um link que permitirá a assinatura/aprovação do documento. 
 
-> [!DICA]
+> [!TIP]
 > Não é preciso se autenticar para assinar ou aprovar o documento.
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
@@ -106,13 +106,13 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * C#: 
 	* [Documento com um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithOneSignerScenario.cs),
 	* [Documento com dois ou mais assinantes com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.cs) 
-	* [Documento com dois ou mais assinnantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.cs) 
+	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.cs) 
 	* [Documento com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithApproversScenario.cs).
 
 * Java: 
 	* [Documento com um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithOneSignerScenario.java),
 	* [Documento com dois ou mais assinantes com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.java) 
-	* [Documento com dois ou mais assinnantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.java) 
+	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.java) 
 	* [Documento com aprovação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithApproversScenario.java).
 
 #### Assinatura em sua própria aplicação
@@ -120,7 +120,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 Caso você queira realizar a assinatura do documento em sua própria aplicação, você pode usar a opção de **Assinatura Embutida**.
 
 Para isso, você deve seguir os mesmos passos exibidos na seção anterior, no entanto, ao enviar o documento, recomenda-se adicionar o parâmetro
-`disablePendingActionNotifications` com valor `true`. Dessa forma, o Signer não vai enviar notificações para os participantes.
+`disablePendingActionNotifications` com valor `true`. Dessa forma, não serão enviadas notificações para os participantes.
 
 Após a criação do documento, utilize o ID do documento para obter a URL de Assinatura usando a [API de URL de Ação](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url):
 
@@ -195,18 +195,19 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 * Para saber se um participante assinou/aprovou, verifique se a propriedade `status` corresponde a `Completed` para o elemento da lista de 
 ações (`flowActions`) que corresponde a ele.
 
-Adicionalmente, você pode configurar um Webhook que será disparado toda vez que um documento de sua organização for concluído. Para isso, 
+Adicionalmente, você pode configurar um **Webhook** que será disparado toda vez que um documento de sua organização for concluído. Para isso, 
 acesse a tela da Organização e registre a URL desejada na opção **Integração**:
 
 ![Webhook](./images/org-webhook.png)
 
+<a name="document-reminders" />
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CheckDocumentStatusScenario.cs)
 
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CheckDocumentStatusScenario.java)
 
-<a name="document-reminders" />
+
 ### Enviar lembretes de assinatura
 
 Uma vez verificado o status de um participante, conforme mostrado no caso de uso de [Verificação de status](#check-document),
