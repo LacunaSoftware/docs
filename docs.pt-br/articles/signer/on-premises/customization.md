@@ -75,6 +75,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/osg.png)
 
+* oxford-blue-green (v1.10.1):
+
+![Color Scheme](../images/themes/obg.png)
+
 * queen-blue-mint:
 
 ![Color Scheme](../images/themes/qbm.png)
