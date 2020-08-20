@@ -1,5 +1,14 @@
 ﻿# PKI Express changelog
 
+<a name="v1-18-0" />
+### 1.18.0 (2020-08-20)
+
+- Add support for using document hashes in CAdES signature detached
+- Add support for visual representation with `visual-rep` in timestamps
+- Improve command return when completing authentication with Brazilian PSCs
+- Fix parse for sessionType field in command `discover-services`
+- Update PKI SDK to [2.7.5](../pki-sdk/changelog.md#v2-7-5)
+
 <a name="v1-17-0" />
 ### 1.17.0 (2020-07-30)
 

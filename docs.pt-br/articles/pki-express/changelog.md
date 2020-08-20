@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-18-0" />
+### 1.18.0 (2020-08-20)
+
+- Adicionar suporte a usar hashes do documento em assinaturas CAdES *detached*
+- Adicionar suporte a representação visual com `visual-rep` em carimbos de tempo
+- Melhorar retorno do comando quando finaliza a autenticação com PSCs brasileiras
+- Corrigir parse do campo sessionType do comando `discover-services`
+- Atualiza PKI SDK para a versão [2.7.5](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-7-5)
+
 <a name="v1-17-0" />
 ### 1.17.0 (2020-07-30)
 
