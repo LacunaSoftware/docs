@@ -31,6 +31,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/alg.png)
 
+* castleton-green-orange (v1.10.1):
+
+![Color Scheme](../images/themes/cgo.png)
+
 * cerulean-lime-green:
 
 ![Color Scheme](../images/themes/clg.png)

@@ -4,6 +4,37 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+
+<a name="v1-10-1" />
+### 1.10.1 (2020-08-21)
+
+* Novas funcionalidades
+  * [SIG-435] - Criar tema oxford-blue-green
+  * [SIG-436] - Criar tema castleton-green-orange
+
+* Correções de bugs
+  * [SIG-420] - Tela bloqueada após tentativa de assinatura com certificado A3 que não está conectado na máquina
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-10-0" />
+### 1.10.0 (2020-08-19)
+
+* Melhorias
+  * [SIG-382] - Associar Aplicações a pastas
+  * [SIG-384] - Linguagem padrão para o sistema
+  * [SIG-389] - Ao adicionar um usuário em organização, verificar se o usuário já está cadastrado
+  * [SIG-399] - Ajustar limite máximo de envio de documento por email
+  * [SIG-400] - Carregar tela de assinatura rápida com upload já realizado
+  * [SIG-404] - Adicionar manifesto simplificado juntamente com Validation Stamp
+  * [SIG-409] - Melhorar mensagem de erro quando o email já está sendo utilizado em outra conta
+
+* Correções de bugs
+  * [SIG-407] - Validation Stamp não aparece em documento com tamanho menor que A4
+  * [SIG-416] - Erro ao submeter arquivo que não é PDF com o Validation Stamp habilitado
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-9-1" />
 ### 1.9.1 (2020-07-23)
 

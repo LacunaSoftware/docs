@@ -4,6 +4,18 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-23-0" />
+### 3.23.0 (2020-08-20)
+
+* Novas funcionalidades
+  * [LI-341] - Adicionar configuração para possibilitar assinatura com certificados com revocation status unknown
+  * [LI-347] - Enviar email com servidor SMTP personalizado por subscription (app setting)
+
+* Melhorias
+  * [LI-344] - Atualizar PKI SDK para permitir certificados security data
+
+Atualiza modelo do banco de dados: não
+
 <a name="v3-22-0" />
 ### 3.22.0 (2020-06-29)
 

@@ -4,6 +4,18 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-23-0" />
+### 3.23.0 (2020-08-20)
+
+* New Features
+  * [LI-341] - Add setting to enable signature with certificates that have unknown revocation status
+  * [LI-347] - Send mail with custom SMTP server by subscription (app setting)
+
+* Improvements
+  * [LI-344] - Update PKI SDK to accept security data certificates
+
+Updates database model: no
+
 <a name="v3-22-0" />
 ### 3.22.0 (2020-06-29)
 

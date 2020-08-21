@@ -4,6 +4,36 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-10-1" />
+### 1.10.1 (2020-08-21)
+
+* New Features
+  * [SIG-435] - Create oxford-blue-green theme
+  * [SIG-436] - Create castleton-green-orange theme
+
+* Bug fixes
+  * [SIG-420] - Blocked screen after failed attempt to sign document with A3 certificate
+
+Updates database model: no
+
+<a name="v1-10-0" />
+### 1.10.0 (2020-08-19)
+
+* Improvements
+  * [SIG-382] - Associate Applications to folders
+  * [SIG-384] - Standard language for the system
+  * [SIG-389] - Check if user is already registered in organization while adding
+  * [SIG-399] - Check maximum attachment size while sending email
+  * [SIG-400] - Load fast signature screen with pre-uploaded file 
+  * [SIG-404] - Add simplified manifest option for the Validation Stamp
+  * [SIG-409] - Improve error message when an email is already being used by another account
+
+* Bug fixes
+  * [SIG-407] - Validation Stamp not showing for documents with size smaller than A4
+  * [SIG-416] - Error creating non PDF documents when Validation Stamp is enabled
+
+Updates database model: yes
+
 <a name="v1-9-1" />
 ### 1.9.1 (2020-07-23)
 
