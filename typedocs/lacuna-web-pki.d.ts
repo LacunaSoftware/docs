@@ -187,7 +187,8 @@ export declare class LacunaWebPKI {
 	 *     // Use certificate list "certs"
 	 * });
 	 * ```
-	 * JSFiddle live example: [Listing Certificates](https://jsfiddle.net/LacunaSoftware/ezg6hz7n/)
+	 * Lacuna Live Example: [Listing Certificates](https://jsfiddle.net/LacunaSoftware/ezg6hz7n/)
+	 * Lacuna Live Example: [Listing Certificates And Show Details](https://jsfiddle.net/LacunaSoftware/fxpavm8y/)
 	 */
 	listCertificates(args?: {
 		/** A html `<select>` (dropdown) element `id` to be automatically populated with the available certificates. You can also pass the `selectOptionFormatter` function argument for formatting the populated options text. If no formatter function is passed, the default text formatting for a certificate `c` is "`c.subjectName` (issued by `c.issuerName`)" */
@@ -772,7 +773,7 @@ export declare class LacunaWebPKI {
 	 * });
 	 * ```
 	 *
-	 * Lacuna Live Example: [List Tokens Example](https://www.lacunasoftware.com/DemoWebPKI/recoverTokens)
+	 * Lacuna Live Example: [List Tokens And Show Details Example](https://jsfiddle.net/LacunaSoftware/t6c5jw2L/)
 	 */
 	listTokens(args: {
 		/** The PKCS#11 modules to use for crypto devices communication. See standard supported [[pkcs11Modules]] */
@@ -783,6 +784,8 @@ export declare class LacunaWebPKI {
 	 * Generates a RSA key pair in the user selected crypto device and returns a CSR (PKCS#10 Certificate Signing Request).
 	 *
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[GenerateTokenKeyPairResponse]] object.
+	 *
+	 * Lacuna Live Example: [Issue Token Certificate Example](https://jsfiddle.net/LacunaSoftware/oq36n7ka/)
 	 */
 	generateTokenRsaKeyPair(args: {
 		/** The selected token to generate the key pair. As returned by [[listTokens]] method. Passing this parameter removes the need of `pkcs11Modules` and `tokenSerialNumber` parameters */
@@ -803,6 +806,8 @@ export declare class LacunaWebPKI {
 	 * Generates a RSA key pair in the user computer, or OS certificate store, and returns a CSR (PKCS#10 Certificate Signing Request).
 	 *
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[GenerateKeyPairResponse]] object.
+	 *
+	 * Lacuna Live Example: [Issue Software Certificate Example](https://jsfiddle.net/LacunaSoftware/s9daqkr2/) 
 	 */
 	generateSoftwareRsaKeyPair(args: {
 		/** A subject name (DN) string for the generated CSR. E.g. `'CN=My Name, O=ACME Inc., C=BR'` */
@@ -815,6 +820,8 @@ export declare class LacunaWebPKI {
 	 * Imports a digital certificate into the user crypto device. The device must be the one holding the private key of the certificate being imported.
 	 *
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[ImportTokenCertificateResponse]] object.
+	 *
+	 * Lacuna Live Example: [Issue Token Certificate Example](https://jsfiddle.net/LacunaSoftware/oq36n7ka/)
 	 */
 	importTokenCertificate(args: {
 		/** The generated private key Id returned on [[GenerateTokenKeyPairResponse.privateKeyId]] */
@@ -836,6 +843,8 @@ export declare class LacunaWebPKI {
 	 * The command can result with the certificate available for usage and also with a PFX (PKCS#12) backup copy, in this last case, see arguments `savePkcs12`, `passwordMinLength` and `passwordPolicies`.
 	 *
 	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[ImportSoftwareCertificateResponse]] object.
+	 *
+	 * Lacuna Live Example: [Issue Software Certificate Example](https://jsfiddle.net/LacunaSoftware/s9daqkr2/) 
 	 */
 	importCertificate(args: {
 		/** The generated private key Id returned on [[GenerateKeyPairResponse.privateKeyId]] */
