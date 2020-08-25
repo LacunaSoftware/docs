@@ -4,6 +4,18 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-10-2" />
+### 1.10.2 (2020-08-25)
+
+* New Features
+  * [SIG-449] - Create viridian green yellow theme
+
+* Bug fixes
+  * [SIG-447] - Error sending SMS with TotalVoice
+  * [SIG-448] - Timeout in login process
+
+Updates database model: no
+
 <a name="v1-10-1" />
 ### 1.10.1 (2020-08-21)
 

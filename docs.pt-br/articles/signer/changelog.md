@@ -4,6 +4,17 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-10-2" />
+### 1.10.2 (2020-08-25)
+
+* Novas funcionalidades
+  * [SIG-449] - Criar tema viridian green yellow
+
+* Correções de bugs
+  * [SIG-447] - Erro ao enviar SMS com a TotalVoice
+  * [SIG-448] - Timeout no processo de login
+
+Atualiza modelo do banco de dados: não
 
 <a name="v1-10-1" />
 ### 1.10.1 (2020-08-21)
