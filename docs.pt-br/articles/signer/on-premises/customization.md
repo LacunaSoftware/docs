@@ -93,7 +93,7 @@ Os temas disponíveis são:
 
 * viridian-green-yellow:
 
-![Color Scheme](../images/themes/viridian-green-yellow.png)
+![Color Scheme](../images/themes/vgy.png)
 
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
