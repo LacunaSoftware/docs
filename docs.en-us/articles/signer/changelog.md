@@ -4,6 +4,15 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-10-3" />
+### 1.10.3 (2020-08-26)
+
+* New Features
+  * [SIG-429] - Add indicative text to download App for the QR code signature feature
+  * [SIG-439] - Update texts and watermark of the simplified manifest
+
+Updates database model: no
+
 <a name="v1-10-2" />
 ### 1.10.2 (2020-08-25)
 
@@ -39,6 +48,7 @@ Updates database model: no
   * [SIG-400] - Load fast signature screen with pre-uploaded file 
   * [SIG-404] - Add simplified manifest option for the Validation Stamp
   * [SIG-409] - Improve error message when an email is already being used by another account
+  * [SIG-412] - Support to medical prescriptions in document generation
 
 * Bug fixes
   * [SIG-407] - Validation Stamp not showing for documents with size smaller than A4

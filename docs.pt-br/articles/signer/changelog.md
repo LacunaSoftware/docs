@@ -4,6 +4,15 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-10-3" />
+### 1.10.3 (2020-08-26)
+
+* Novas funcionalidades
+  * [SIG-429] - Inserir texto indicativo para Baixar APP QRCode
+  * [SIG-439] - Alterar frases do Manifesto e da versão sem validade jurídica
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-10-2" />
 ### 1.10.2 (2020-08-25)
 
@@ -39,6 +48,7 @@ Atualiza modelo do banco de dados: não
   * [SIG-400] - Carregar tela de assinatura rápida com upload já realizado
   * [SIG-404] - Adicionar manifesto simplificado juntamente com Validation Stamp
   * [SIG-409] - Melhorar mensagem de erro quando o email já está sendo utilizado em outra conta
+  * [SIG-412] - Suporte a solicitações de exames na geração de documentos
 
 * Correções de bugs
   * [SIG-407] - Validation Stamp não aparece em documento com tamanho menor que A4
