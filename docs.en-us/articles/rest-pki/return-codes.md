@@ -29,10 +29,10 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 | CACertificate                 | Intermediate CA certificates cannot be added as trusted root                  |
 | SelfSignedCertificate         | Self-signed certificates cannot be added as intermediate CA                   |
 | TimestampPlanRequired         | No given timestamp plan                                                       |
-<!-- | StorageUnavailable            |  | -->
+| StorageUnavailable            | TODO                                                                          |
 | InvalidPdf                    | The provided PDF is not valid                                                 |
 | InvalidVisualRepresentation   | The provided visual representation is not valid                               |
-<!-- | SignaturePolicyRequired       |  | -->
+| SignaturePolicyRequired       | TODO                                                                          |
 | MissingDataHash               | No given data hash                                                            |
 | CannotApplyPdfMarks           | The PDF is already digitally signed and AbortIfSigned was set                 |
 | BadDigest                     | The given digest does not match the received content                          |
@@ -47,11 +47,12 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 | UnsupportedDigestAlgorithm    | The digest algorithm is not supported                                         |
 | UnsupportedSignatureAlgorithm | The signature algorithm is not supported                                      |
 | PadesPositionNotFilled        | PadesPositionModel must have either Auto or Manual fields filled              |
-<!-- | SignatureHashNotFound         |  | -->
+| SignatureHashNotFound         | TODO                                                                          |
 | InvoiceNotCreated             | The searched invoice was not created yet                                      |
 | InvalidCades                  | The provided p7s file is not valid                                            |
 | InvalidToken                  | The provided signature token is not valid                                     |
 
+<a name="validation-errors" />
 ### Validation Errors
 
 | Validation Error                        | Meaning                                                                            |
@@ -81,7 +82,7 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 | UnknownUnsignedAttributesPresent        | The signature contains one or more unknwon unsigned attributes                      |
 | TimestampWithMoreThanOneSigner          | The timestamp has more than one signer                                              |
 | TimestampMessageImprintMismatch         | The timestamp message-imprint is not the same as the computed message-imprint       |
-<!-- | TimestampValidationException            | Timestamp validation exception | *NOT USED -->
+| TimestampValidationException            | TODO                                                                                |
 | CompleteReferencesMismatch              | The certificate's complete reference is not valid                                   |
 | InvalidSignatureTimestamp               | The signature timestamp is not valid                                                |
 | InvalidReferencesTimestamp              | The reference timestamp is not valid                                                |
