@@ -18,7 +18,7 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 | EntityIsReadOnly              | The entity is read-only (timestamp or policy)                                 |
 | SecurityContextRequired       | No given security context                                                     |
 | PKCertificateMalformed        | The provided certificate content is malformed                                 |
-| ValidationError               | For more information on this error see the tables [below](#validation-errors) |
+| ValidationError               | For more information on this error see the tables [below](#val-errors)        |
 | ClientSignatureNotSet         | No client signature was provided                                              |
 | ClientSignatureAlreadySet     | The client signature is provided twice                                        |
 | ToSignHashNotAvailable        | The hash to be signed is not avaliable                                        |
@@ -52,7 +52,7 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 | InvalidCades                  | The provided p7s file is not valid                                            |
 | InvalidToken                  | The provided signature token is not valid                                     |
 
-<a name="validation-errors" />
+<a name="val-errors" />
 ### Validation Errors
 
 | Validation Error                        | Meaning                                                                            |

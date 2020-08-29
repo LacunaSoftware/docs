@@ -18,7 +18,7 @@ As operações do REST PKI apresentam um conjunto de códigos de retorno que pod
 | EntityIsReadOnly              | Política ou carimbo de tempo fornecido é apenas para leitura (read-only)       |
 | SecurityContextRequired       | Contexto de segurança não fornecido                                            |
 | PKCertificateMalformed        | Conteúdo do certificado fornecido é malformado                                 |
-| ValidationError               | Para mais informações nesse erro veja a tabela [abaixo](#validation-errors)    |
+| ValidationError               | Para mais informações nesse erro veja a tabela [abaixo](#val-errors)           |
 | ClientSignatureNotSet         | Quando o processo de autenticação ou assinatura tenta finalizar, mas nenhuma assinatura foi fornecida pelo WebPKI |
 | ClientSignatureAlreadySet     | Assinatura realizada pelo WebPKI foi fornecida mais de uma vez                 |
 | ToSignHashNotAvailable        | Hash a ser assinado está indisponível                                          |
@@ -52,7 +52,7 @@ As operações do REST PKI apresentam um conjunto de códigos de retorno que pod
 | InvalidCades                  | Arquivo p7s fornecido não é válido                                             |
 | InvalidToken                  | Token de assinatura fornecido não é válido                                     |
 
-<a name="validation-errors" />
+<a name="val-errors" />
 ### Erros de validação
 
 | Erros de Validação                      | Significado                                                                        |
