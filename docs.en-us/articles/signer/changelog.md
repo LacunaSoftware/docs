@@ -4,6 +4,17 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-10-4" />
+### 1.10.4 (2020-08-31)
+
+* New Features
+  * [SIG-455] - Add persian-plum-sand theme
+
+* Improvements
+  * [SIG-417] - Add file segmented upload
+
+Updates database model: no
+
 <a name="v1-10-3" />
 ### 1.10.3 (2020-08-26)
 

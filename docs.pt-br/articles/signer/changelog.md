@@ -4,6 +4,17 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-10-4" />
+### 1.10.4 (2020-08-31)
+
+* Novas funcionalidades
+  * [SIG-455] - Implementar tema persian-plum-sand
+
+* Melhorias
+  * [SIG-417] - Adicionar upload segmentado nos uploads de arquivos
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-10-3" />
 ### 1.10.3 (2020-08-26)
 

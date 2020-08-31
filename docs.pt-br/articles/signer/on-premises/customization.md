@@ -83,6 +83,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/obg.png)
 
+* persian-plum-sand (v1.10.4):
+
+![Color Scheme](../images/themes/pps.png)
+
 * queen-blue-mint:
 
 ![Color Scheme](../images/themes/qbm.png)
@@ -91,7 +95,7 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/tbg.png)
 
-* viridian-green-yellow:
+* viridian-green-yellow (v1.10.2):
 
 ![Color Scheme](../images/themes/vgy.png)
 
