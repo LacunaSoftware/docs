@@ -90,13 +90,13 @@ If this setting is not provided and document types are enabled, all available op
 * **Enabled**: if `true`, displays cloud certificate providers wherever a signature is required. Only the providers that have a certificate for the user's identifier
 will be shown. If a user does not have any certificate in the configured providers nothing will be displayed.
 * Service info options (`Services`): each service must be configured individually like shown bellow. Available services are: `BirdID`, `SafeID`, `NeoID` and `VIDaaS`:
-** **&lt;provider>:ClientId**: the client id for this provider.
-** **&lt;provider>:ClientSecret**: the client secret for this provider.
-** **&lt;provider>:Endpoint** (optional): should only be set for non standard providers such as staging environments. Specificies the service endpoint.
-** **&lt;provider>:BadgeUrl** (optional): should only be set for non standard providers such as staging environments. Specificies the badge image that will be shown
-to the user.
-** **&lt;provider>:Provider** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the provider.
-** **&lt;provider>:ProtocolVariant** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the protocol variant.
+	* **&lt;provider>:ClientId**: the client id for this provider.
+	* **&lt;provider>:ClientSecret**: the client secret for this provider.
+	* **&lt;provider>:Endpoint** (optional): should only be set for non standard providers such as staging environments. Specificies the service endpoint.
+	* **&lt;provider>:BadgeUrl** (optional): should only be set for non standard providers such as staging environments. Specificies the badge image that will be shown
+	to the user.
+	* **&lt;provider>:Provider** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the provider.
+	* **&lt;provider>:ProtocolVariant** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the protocol variant.
 
 ###  *VisualRepresentation* Settings
 
