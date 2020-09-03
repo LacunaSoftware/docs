@@ -55,6 +55,9 @@ a custom visual representation that has information about his lawyer or accounta
 * **FilterCertificatesByIdentifier** (default: `true`, v1.7.0): if `true`, filters certificates by the user's identifier automatically.
 * **FilterCertificatesByKeyUsage** (v1.7.0): if `true`, filters certificates that have non repudiation and digital signature attributes.
 
+* **MaximumItemsInBatchNotifications** (default: `10`, v1.10.4): defines a maximum number of items included in notifications that list a 
+batch of items (for example all documents a user was added as observer).
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
@@ -82,6 +85,19 @@ If this setting is not provided and document types are enabled, all available op
 	* `Timestamp`: the electronic signature is added to the document as a timestamp signature. Requires that a Timestamper is configured.
 * **AdditionalInfoUrl** (v1.9.0): URL to redirect the user when he clicks the electronic signature info icon in the document creation screen.
 
+###  *TrustServices* Settings (Cloud Certificates, v1.11.0)
+
+* **Enabled**: if `true`, displays cloud certificate providers wherever a signature is required. Only the providers that have a certificate for the user's identifier
+will be shown. If a user does not have any certificate in the configured providers nothing will be displayed.
+* Service info options (`Services`): each service must be configured individually like shown bellow. Available services are: `BirdID`, `SafeID`, `NeoID` and `VIDaaS`:
+** **<provider>:ClientId**: the client id for this provider.
+** **<provider>:ClientSecret**: the client secret for this provider.
+** **<provider>:Endpoint** (optional): should only be set for non standard providers such as staging environments. Specificies the service endpoint.
+** **<provider>:BadgeUrl** (optional): should only be set for non standard providers such as staging environments. Specificies the badge image that will be shown
+to the user.
+** **<provider>:Provider** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the provider.
+** **<provider>:ProtocolVariant** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the protocol variant.
+
 ###  *VisualRepresentation* Settings
 
 * **Enabled** (default: `true`, v1.7.0): if `true`, all PDF documents signed with PAdES will have a signature visual representation that can be automatically
@@ -103,6 +119,9 @@ or manually positioned.
 
 * **Enabled**: if `true`, adds a stamp to all PDF documents after they are uploaded. The stamp contains information of where the document was
 created and where it's signatures can be validated. This is a recommended option if visual representation is disabled.
+
+* **AddSimplifiedManifest** (v1.10.1): if `true`, adds a simplified manifest as the last page of a document. It will also prevent document flows from 
+beeing edited since the manifest will only contain the participants added when the document is created.
 
 * **ShowOnBottom**: if `true`, shows the validation stamp at the bottom of every page.
 * **ShowOnRight** (default: `true`): if `true`, shows the validation stamp at the right of every page.

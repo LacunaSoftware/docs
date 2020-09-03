@@ -4,6 +4,16 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+
+<a name="v1-11-0" />
+### 1.11.0 (2020-09-02)
+
+* Melhorias
+  * [SIG-373] - Gerar widget com Typescript
+  * [SIG-397] - Integração com Certificados em nuvem
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-10-4" />
 ### 1.10.4 (2020-08-31)
 

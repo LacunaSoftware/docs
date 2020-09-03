@@ -4,6 +4,17 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-11-0" />
+### 1.11.0 (2020-09-02)
+
+* New Features
+
+* Improvements
+  * [SIG-373] - Generate signing widget with Typescript
+  * [SIG-397] - Cloud certificates support
+
+Updates database model: no
+
 <a name="v1-10-4" />
 ### 1.10.4 (2020-08-31)
 
