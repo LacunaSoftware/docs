@@ -1,5 +1,24 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-9-2" />
+### 3.9.2 (2020-09-03)
+
+Melhorias:
+
+* [AMP-181] - Adicionados novos temas
+  * *Metallic seaweed & Emerald* (`mse`)
+  * *Oxford blue & Green* (`obg`)
+  * *Castleton green & Orange* (`cgo`)
+  * *Viridian green & Yellow* (`vgy`)
+
+Correções de bugs:
+
+* [AMP-179] - QR Code de emissão não funciona quando o `QRCodeGatewayUrl` não está configurado
+* [AMP-180] - Página de chaves de aplicação não abre
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-9-1" />
 ### 3.9.1 (2020-08-05)
 

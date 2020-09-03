@@ -1,5 +1,25 @@
 ﻿# Amplia changelog
 
+<a name="v3-9-2" />
+### 3.9.2 (2020-09-03)
+
+Improvements:
+
+* [AMP-181] - Add new themes
+  * *Metallic seaweed & Emerald* (`mse`)
+  * *Oxford blue & Green* (`obg`)
+  * *Castleton green & Orange* (`cgo`)
+  * *Viridian green & Yellow* (`vgy`)
+
+Bug fixes:
+
+* [AMP-179] - Issuing QR Code not working when `QRCodeGatewayUrl` is not configured
+* [AMP-180] - Application keys page does not load
+
+
+Updates database model: no
+
+
 <a name="v3-9-1" />
 ### 3.9.1 (2020-08-05)
 
