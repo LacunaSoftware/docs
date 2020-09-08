@@ -1,5 +1,14 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-7-6" />
+### 2.7.6 (2020-09-08)
+
+- Set exclusive c14n as XML signatures default canonicalization method
+- Add forced removal of XML default namespaces on to-sign elements (which is not beeing correctly suppressed on .NET c14n implementation, see [issue report](https://github.com/dotnet/runtime/issues/28844))
+- Fix namespaces propagation on XML signature validation
+- Fix ValidationContext usage on XAdES validation with archive timestamps
+
+
 <a name="v2-7-5" />
 ### 2.7.5 (2020-07-28)
 
