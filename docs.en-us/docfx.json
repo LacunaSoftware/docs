@@ -82,7 +82,7 @@
 		"dest": "../_site/en-us",
 		"globalMetadata": {
 			"_appTitle": "Lacuna Docs",
-			"_appFooter": "Copyright © 2015-2018 Lacuna Software",
+			"_appFooter": "Copyright © 2015-2020 Lacuna Software",
 			"_appLogoPath": "images/logo.png",
 			"_appFaviconPath": "images/favicon.png",
 			"_disableAffix": true,

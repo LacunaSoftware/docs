@@ -20,6 +20,9 @@ O administrador deve acessar a Área de Administração para cadastrar os usuár
 
 ![Add user to Organization](../images/add-user-org.png)
 
+<!--  Caso você não tenha os dados completos do usuários, você pode cadastrá-lo em uma organização através de um **convite**. Nesse caso, somente é
+necessário selecionar a organização e informar o email e papel a ser concedido ao usuário: -->
+
 ## Perfis básicos
 
 Tanto para o sistema Aberto ou Fechado, é possível definir quais são as permissões básicas serão disponibilizadas para os usuários que se cadastrarem no sistema.
