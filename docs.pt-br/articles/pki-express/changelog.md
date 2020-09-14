@@ -1,19 +1,26 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-19-0" />
+### 1.19.0 (2020-09-14)
+
+- Adiciona suporte a geração de chave de proteção de dados (comando `generate-data-protection-key`)
+- Adiciona suporte a configuração de chave de proteção de dados
+- Atualiza PKI SDK para a versão [2.7.8](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-7-8)
+
 <a name="v1-18-0" />
 ### 1.18.0 (2020-08-20)
 
-- Adicionar suporte a usar hashes do documento em assinaturas CAdES *detached*
-- Adicionar suporte a representação visual com `visual-rep` em carimbos de tempo
-- Melhorar retorno do comando quando finaliza a autenticação com PSCs brasileiras
-- Corrigir parse do campo sessionType do comando `discover-services`
+- Adiciona suporte a usar hashes do documento em assinaturas CAdES *detached*
+- Adiciona suporte a representação visual com `visual-rep` em carimbos de tempo
+- Melhora retorno do comando quando finaliza a autenticação com PSCs brasileiras
+- Corrigi parse do campo sessionType do comando `discover-services`
 - Atualiza PKI SDK para a versão [2.7.5](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-7-5)
 
 <a name="v1-17-0" />
 ### 1.17.0 (2020-07-30)
 
 - Adiciona suporte a assinatura usando certificados em nuvem (integração com PSCs brasileiras)
-- Melhorar merge de assinaturas CAdEs para aceitar um arquivo de assinatura
+- Melhora merge de assinaturas CAdEs para aceitar um arquivo de assinatura
 
 <a name="v1-16-0" />
 ### 1.16.0 (2020-06-26)

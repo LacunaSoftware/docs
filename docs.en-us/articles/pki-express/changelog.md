@@ -1,5 +1,12 @@
 ﻿# PKI Express changelog
 
+<a name="v1-19-0" />
+### 1.19.0 (2020-09-14)
+
+- Add support for data protection key generation (command `generate-data-protection-key`)
+- Add support for data protection key configuration
+- Update PKI SDK to [2.7.8](../pki-sdk/changelog.md#v2-7-8)
+
 <a name="v1-18-0" />
 ### 1.18.0 (2020-08-20)
 
