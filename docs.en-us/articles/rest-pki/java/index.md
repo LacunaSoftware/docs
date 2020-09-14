@@ -20,79 +20,21 @@ The usage of Rest PKI on Java applications should be done using one of the follo
 
 If your project uses **Maven**, add this to your `pom.xml`:
 
-```xml
-<dependencies>
-	...
-	<dependency>
-		<groupId>com.lacunasoftware.restpki</groupId>
-		<artifactId>restpki-client</artifactId>
-		<version>1.11.0</version>
-	</dependency>
-	...
-</dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
-```
+[!include[pom.xml](../../../../includes/rest-pki/java/maven.md)]
 
 If your project uses **Gradle**, add this to your `build.gradle`:
 
-```
-repositories {
-	mavenCentral()
-	maven {
-		url  "http://dl.bintray.com/lacunasoftware/maven" 
-	}
-} 
-
-dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client:1.11.0")
-}
-```
+[!include[build.gradle](../../../../includes/rest-pki/java/gradle.md)]
 
 ### Referencing the package (Java 6)
 
 If your project uses **Maven**, add this to your `pom.xml`:
 
-```xml
-<dependencies>
-	...
-	<dependency>
-		<groupId>com.lacunasoftware.restpki</groupId>
-		<artifactId>restpki-client-java6</artifactId>
-		<version>1.9.0</version>
-	</dependency>
-	...
-</dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
-```
+[!include[pom.xml](../../../../includes/rest-pki/java/maven-java6.md)]
 
 If your project uses **Gradle**, add this to your `build.gradle`:
 
-```
-repositories {
-	mavenCentral()
-	maven {
-		url  "http://dl.bintray.com/lacunasoftware/maven" 
-	}
-} 
-
-dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client-java6:1.9.0")
-}
-```
+[!include[build.gradle](../../../../includes/rest-pki/java/gradle-java6.md)]
 
 ### API Reference
 

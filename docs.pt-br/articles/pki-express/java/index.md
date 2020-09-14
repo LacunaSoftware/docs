@@ -56,7 +56,7 @@ Se o seu projeto é compilado com o **Maven**, adicione os seguintes trechos ao 
 
 Se o seu projeto é compilado com o **Gradle**, adicione os seguintes trechos ao seu arquivo `build.gradle`:
 
-[!include[pom.xml](../../../../includes/pki-express/java/gradle.md)]
+[!include[build.gradle](../../../../includes/pki-express/java/gradle.md)]
 
 O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/PkiExpressJava). Você pode fazer um *fork* para fazer
 customizações, e até mesmo submeter um *pull request*.

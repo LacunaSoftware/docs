@@ -16,13 +16,7 @@ O uso do Rest PKI no PHP 5.5+ (incluindo 7.x), você deve usar o pacote do compo
 
 Para adicionar o seu projeto, coloque isso no seu arquivo `composer.json`:
 
-```json
-{
-	"require": {
-		"lacuna/restpki-client": "^2.3.1"
-	}
-}
-```
+[!include[composer.json](../../../../includes/rest-pki/php/composer.md)] 
 
 Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
 
@@ -35,13 +29,7 @@ Para usar Rest PKI no PHP 5.3 e 5.4, você deve usar o pacote do compositor [lac
 
 Para adicionar o seu projeto, coloque isto em seu arquivo `composer.json`:
 
-```json
-{
-    "require": {
-        "lacuna/restpki-client-legacy": "^1.1.0"
-    }
-}
-```
+[!include[composer.json](../../../../includes/rest-pki/php/composer-legacy.md)] 
 
 Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
 

@@ -7,9 +7,7 @@ PKI Express can be used on Ruby. To get started, see the [Ruby on Rails samples 
 To use PKI Express on Ruby applications, use our **Ruby Gem** [pki_express](https://rubygems.org/gems/pki_express)
 by declaring on your `Gemfile`:
 
-```gemspec
-gem 'pki_express', '~> 1.0.0'
-```
+[!include[Gemfile](../../../../includes/pki-express/ruby/gemfile.md)]
 
 After that, do a `bundle install` to download the gem and its dependencies (if you don't have Bundler installed,
 get it [here](http://bundler.io/))

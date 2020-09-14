@@ -21,9 +21,7 @@ https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/ruby/rails
  
 Para usar o PKI Express em aplicações Ruby, use nosso **Ruby Gem** [pki_express](https://rubygems.org/gems/pki_express) declarando em seu `Gemfile`:
 
-```gemspec
-gem 'pki_express', '~> 1.0.0'
-```
+[!include[Gemfile](../../../../includes/pki-express/ruby/gemfile.md)]
 
 Após isos, faça um `bundle install` para download do gem e suas dependências (se você não tiver o Bundler instalado, pegue [aqui](http://bundler.io/))
 

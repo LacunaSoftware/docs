@@ -20,79 +20,21 @@ as instruções abaixo.
 
 Se seu projeto usa **Maven**, adicione isso ao seu `pom.xml`:
 
-```xml
-<dependencies>
-	...
-	<dependency>
-		<groupId>com.lacunasoftware.restpki</groupId>
-		<artifactId>restpki-client</artifactId>
-		<version>1.11.0</version>
-	</dependency>
-	...
-</dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
-```
+[!include[pom.xml](../../../../includes/rest-pki/java/maven.md)] 
 
 Se seu projeto usa **Gradle**, adicione isso ao seu `build.gradle`:
 
-```
-repositories {
-	mavenCentral()
-	maven {
-		url  "http://dl.bintray.com/lacunasoftware/maven" 
-	}
-} 
-
-dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client:1.11.0")
-}
-```
+[!include[build.gradle](../../../../includes/rest-pki/java/gradle.md)] 
 
 ### Referenciando o pacote (Java 6)
 
 Se seu projeto usa **Maven**, adicione isso ao seu `pom.xml`:
 
-```xml
-<dependencies>
-	...
-	<dependency>
-		<groupId>com.lacunasoftware.restpki</groupId>
-		<artifactId>restpki-client-java6</artifactId>
-		<version>1.9.0</version>
-	</dependency>
-	...
-</dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
-```
+[!include[pom.xml](../../../../includes/rest-pki/java/maven-java6.md)] 
 
 Se seu projeto usa **Gradle**, adicione isso ao seu `build.gradle`:
 
-```
-repositories {
-	mavenCentral()
-	maven {
-		url  "http://dl.bintray.com/lacunasoftware/maven" 
-	}
-} 
-
-dependencies {
-	compile("com.lacunasoftware.restpki:restpki-client-java6:1.9.0")
-}
-```
+[!include[build.gradle](../../../../includes/rest-pki/java/gradle-java6.md)] 
 
 ## Referência API
 

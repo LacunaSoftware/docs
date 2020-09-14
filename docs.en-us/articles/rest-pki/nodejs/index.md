@@ -12,13 +12,7 @@ to access Rest PKI on Node.js applications.
 
 To add it to your project, put this on your `package.json` file:
 
-```json
-{
-    "dependencies": {
-        "restpki-client": "1.0.1"
-    }
-}
-```
+[!include[package.json](../../../../includes/rest-pki/nodejs/package.md)] 
 
 After that, do a `npm install` to download the package and its dependencies (if you don't have **npm** installed, get it [here](https://www.npmjs.com/get-npm))
 

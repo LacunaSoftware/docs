@@ -17,13 +17,7 @@ To use Rest PKI on PHP 5.5+ (including 7.x), you should use the composer package
 
 To add it to your project, put this on your `composer.json` file:
 
-```json
-{
-	"require": {
-		"lacuna/restpki-client": "^2.3.1"
-	}
-}
-```
+[!include[composer.json](../../../../includes/rest-pki/php/composer.md)] 
 
 After that, do a `composer install` to download the package and its dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/)).
 

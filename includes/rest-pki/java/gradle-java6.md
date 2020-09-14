@@ -7,6 +7,6 @@ repositories {
 } 
 
 dependencies {
-	compile("com.lacunasoftware.pkiexpress:pki-express:1.14.1")
+	compile("com.lacunasoftware.restpki:restpki-client-java6:1.9.0")
 }
 ```

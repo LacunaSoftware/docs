@@ -2,9 +2,9 @@
 <dependencies>
 	...
 	<dependency>
-		<groupId>com.lacunasoftware.pkiexpress</groupId>
-		<artifactId>pki-express</artifactId>
-		<version>1.14.1</version>
+		<groupId>com.lacunasoftware.restpki</groupId>
+		<artifactId>restpki-client</artifactId>
+		<version>1.14.0</version>
 	</dependency>
 	...
 </dependencies>
