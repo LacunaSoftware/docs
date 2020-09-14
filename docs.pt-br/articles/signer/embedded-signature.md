@@ -89,4 +89,4 @@ Para este exemplo é utilizado o certificado de teste do BirdID (CPF 026.102.470
 
 Para executar o exemplo, clique na aba **Result**. Para usar o usuário de teste do ambiente de homologação do BirdID use o QR code abaixo no aplicativo:
 
-![BirdID HML credentials](../images/birdidhml.png)
+![BirdID HML credentials](/images/birdidhml.png)
