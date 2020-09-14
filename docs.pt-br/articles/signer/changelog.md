@@ -4,12 +4,26 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-12-0" />
+### 1.12.0 (2020-09-14)
+
+* Novas funcionalidades
+  * [SIG-462] - Adicionar perfis para habilitar/restringir criação de documentos e organizações
+  * [SIG-464] - Permitir enviar telefone celular de participante ao submeter documento por API
+
+* Melhorias
+  * [SIG-373] - Gerar widget com Typescript
+  * [SIG-465] - Certificado em nuvem na assinatura rápida
+
+* Correções de bugs
+  * [SIG-466] - Erro ao editar fluxo com ordem
+
+Atualiza modelo do banco de dados: não
 
 <a name="v1-11-0" />
 ### 1.11.0 (2020-09-02)
 
 * Melhorias
-  * [SIG-373] - Gerar widget com Typescript
   * [SIG-397] - Integração com Certificados em nuvem
 
 Atualiza modelo do banco de dados: não

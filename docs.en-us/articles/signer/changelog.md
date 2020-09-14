@@ -4,13 +4,28 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-12-0" />
+### 1.12.0 (2020-09-14)
+
+* New Features
+  * [SIG-462] - Add profiles to enable/disable creation of documents and organizations
+  * [SIG-464] - Add phone number parameter to document creation API
+
+* Improvements
+  * [SIG-373] - Generate signing widget with Typescript
+  * [SIG-465] - Fast signature with cloud certificate
+
+* Bug fixes
+  * [SIG-466] - Error editing order of flow actions
+
+Updates database model: no
+
 <a name="v1-11-0" />
 ### 1.11.0 (2020-09-02)
 
 * New Features
 
 * Improvements
-  * [SIG-373] - Generate signing widget with Typescript
   * [SIG-397] - Cloud certificates support
 
 Updates database model: no
