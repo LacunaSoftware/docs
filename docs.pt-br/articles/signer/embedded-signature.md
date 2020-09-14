@@ -9,12 +9,12 @@ A integração com Assinatura embutida permite assinar/aprovar documentos submet
 
 ## Instalação
 
-Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.1.0.min.js) mais recente:
+Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.2.0.min.js) mais recente:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.1.0.min.js"
-  integrity="sha256-hupAA1iVhMCSPQOHBGEYHwhPaZ8vJfmQqgcSwCsMOkM="
-  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.2.0.min.js"
+    integrity="sha256-nUIZxmwjMxcAFAs4uIA6Krg8GtmymXSUuMwtKYEigyA="
+    crossorigin="anonymous"></script>
 ```
 
 Em seguida, instancie a classe `LacunaSignerWidget`:
