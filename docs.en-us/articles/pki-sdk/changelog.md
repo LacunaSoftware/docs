@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-7-8" />
+### 2.7.8 (2020-09-14)
+
+- Update ICP-Brasil CAdES, PAdES and XAdES validation policies
+- Fix XML with comments signature 
+
+
 <a name="v2-7-7" />
 ### 2.7.7 (2020-09-09)
 
