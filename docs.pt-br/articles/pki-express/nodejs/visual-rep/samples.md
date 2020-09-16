@@ -49,10 +49,17 @@ const textContainer = {
 // Definindo imagem de fundo
 const image = {
     resource: {
-        content: getPdfStampContent()   // Bytes da imagem a ser inserida
+        // Bytes da imagem a ser inserida
+        content: getPdfStampContent()
     },
-    horizontalAlign: 'right',         // Define imagem alinhada à direita no retângulo da representação visual
-    verticalAlign: 'center',            // Define imagem alinhada verticalmente centralizada no retângulo da representação visual
+    // Define imagem alinhada à direita no retângulo da 
+    // representação visual. Valores possíveis: 'right',
+    // 'center', 'left'
+    horizontalAlign: 'right',
+    // Define imagem alinhada verticalmente centralizada no
+    // retângulo da representação visual. Valores 
+    // possíveis: 'top', 'center', 'bottom'
+    verticalAlign: 'center',
 };
 ```
 
@@ -70,58 +77,100 @@ await signer.certPassword = 'password';
 await signer.setPdfToSignFromRaw(pdfBytes);
 signer.signaturePolicy = StandardSignaturePolicies.PADES_BASIC_WITH_LTV;
 
-// Cria uma referencia para o arquivo stamp. E posteriormente esse arquivo pode ser 
-// referenciado como "fref://{alias}" no campo "url" da representação visual
+// Cria uma referencia para o arquivo stamp. E 
+// posteriormente esse arquivo pode ser referenciado como
+// "fref://{alias}" no campo "url" da representação visual
 await signer.addFileReference('stamp', getPdfStampPath());
 
 // Criando objeto de representação visual
 const visual = {
     position: {
         pageNumber: -1,
-        auto: {                                         // Define posicionamento automático
-            container: {                                // Define o container para posicionamento das representações visuais
+        // Define a unidade das medidas fornecidas como
+        // centímetros (unidade padrão). Valores possíveis:
+        // 'centimeters' e 'pdfPoints'.
+        measurementUnits: 'centimeters',
+        // Define posicionamento automático
+        auto: {
+            // Define o container para posicionamento das
+            // representações visuais
+            container: {
                 left: 3.00,
                 right: 3.00,
                 bottom: 2.00,
                 top: 8.00
             },
-            signatureRectangleSize: {                   // Define o retângulo da representação visual
+            // Define o retângulo da representação visual
+            signatureRectangleSize: {
                 height: 3.0,
                 width: 7.0,
             },
-            rowSpacing: 1.0,                            // Define o espaçamento entre linhas de representações visuais
-            horizontalDirection: "leftToRight",         // Define que as representações serão posicionadas da esquerda para direita (comportamento padrão).
-            verticalDirection: "topDown",              // Define que as representações serão posicionadas de cima para baixo (comportamento padrão).
-    },
-    text: {                                             // Texto da representação visual
-
-        text: 'Signed by {{name}} ({{national_id}})',   // Define o texto a ser inserido.
-        fontSize: 13.0,                                 // Define o tamanho da fonte do texto.
-        includeSigningTime: true,                       // Define que o horário da assinatura também seja renderizado.
-        horizontalAlign: 'right',                       // Define texto alinhado à direita no container.
-        container: {  
-            left: 0,                                    // Opicional. Define o container retangular dentro da
-            top: 0,                                     // representação da assinatura onde o texto será inserido.
-            right: 1.5,                                 // Por padrão, o texto pode ocupar todo o retângulo da 
-            bottom: 0,                                  // representação (o quanto será de fato preenchido depende 
-        },                                              // do comprimento do texto e do tamanho da fonte).
-
-    },
-    image: {                                             // Imagem da representação visual
-        resource: {
-            url: 'fref://stamp',                         // Referência para a imagem a ser inserida.
+            // Define o espaçamento entre linhas de
+            // representações visuais
+            rowSpacing: 1.0,
+            // Define que as representações serão 
+            // posicionadas da esquerda para direita
+            // (comportamento padrão). Valores possíveis:
+            // 'leftToRight' e 'rightToLeft'.
+            horizontalDirection: "leftToRight",
+            // Define que as representações serão
+            // posicionadas de cima para baixo
+            // (comportamento padrão). Valores possíveis:
+            // 'topDown' e 'BottomUp'.
+            verticalDirection: "topDown",
         },
-        horizontalAlign: 'Right',                        // Define imagem alinhada à direita no retângulo da representação visual.
-        verticalAlign: 'Center',                         // Define imagem centralizada verticalmente no retângulo da representação visual.
+    },
+    text: {    // Texto da representação visual
+        // Define o texto a ser inserido. Para ver a lista
+        // completa de tags suportadas, veja: 
+        // https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PadesTags.md
+        text: 'Signed by {{name}} ({{national_id}})',
+        // Define o tamanho da fonte do texto.
+        fontSize: 13.0,
+        // Define que o horário da assinatura também seja 
+        // renderizado.
+        includeSigningTime: true,
+        // Define texto alinhado à direita no container.
+        // Valores possíveis: 'right' e 'left'
+        horizontalAlign: 'right',
+        // Opicional. Define o container retangular dentro 
+        // da representação da assinatura onde o texto será
+        // inserido. Por padrão, o texto pode ocupar todo o
+        // retângulo da representação (o quanto será de 
+        // fato preenchido depende do comprimento do texto
+        // e do tamanho da fonte).
+        container: {  
+            left: 0,
+            top: 0,
+            right: 1.5,
+            bottom: 0,
+        },
+    },
+    image: {    // Imagem da representação visual
+        resource: {
+            // Referência para a imagem a ser inserida.
+            url: 'fref://stamp',
+        },
+        // Define imagem alinhada à direita no retângulo da
+        // representação visual. Valores possíveis: 
+        // 'right', 'center' e 'left'
+        horizontalAlign: 'right',
+        // Define imagem centralizada verticalmente no 
+        // retângulo da representação visual. Valores 
+        // possíveis: 'top', 'center' e 'bottom'
+        verticalAlign: 'center',
     }
 };
 
-await signer.setVisualRepresentation(visual);            // Define representação visual na assinatura
+// Define representação visual na assinatura
+await signer.setVisualRepresentation(visual);
 
-const signedPdf = `${uuidv4()}.pdf`;                     // Gera o nome do arquivo PDF assinado com representação visual
-
+// Gera o nome do arquivo PDF assinado com representação
+// visual
+const signedPdf = `${uuidv4()}.pdf`;
 signer.outputFile = signedPdf;
-await signer.sign(false);                                // Assina o documento e insere a representação visual
+// Assina o documento e insere a representação visual
+await signer.sign(false);
 ```
 
 A execução do exemplo acima produz o seguinte resultado na assinatura de um PDF:

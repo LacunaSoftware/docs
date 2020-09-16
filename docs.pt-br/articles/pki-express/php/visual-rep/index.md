@@ -2,7 +2,7 @@
 
 A representação visual na assinatura de PDF é a inclusão de um texto ou imagem contendo informações sobre a assinatura que está interna ao documento. Dependendo do software de visualização do PDF, esta representação pode fazer uma ligação com os dados e propriedades da assinatura e do signatário.
 
-Esta representação possui uma relação biunívoca com a assinatura interna ao PDF, ou seja, **cada assinatura pode ter apenas uma representação visual e cada representação visual ser relativa a apenas uma assinatura no PDF**.
+**Cada representação visual é sempre relativa a apenas uma assinatura no PDF e cada assinatura  pode ter até uma representação visual.**
 
 Nas seções abaixo exploraremos as opções, parâmetros e customizações na definição de uma representação visual para assinaturas em PDF.
 
