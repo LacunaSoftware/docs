@@ -5,7 +5,7 @@
 
 Database model update: No
 
-- Improved "Adobe Reader" validation policy to handle "forbidden signed attribute is present"
+- Improved "Adobe Reader" validation policy to handle "forbidden signed attribute is present" error
 - Update PKI SDK to [2.7.8](../pki-sdk/changelog.md#v2-7-8)
 
 <a name="v1-24-0" />
