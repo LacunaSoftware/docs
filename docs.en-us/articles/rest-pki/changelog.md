@@ -1,5 +1,13 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-24-1" />
+### 1.24.1 (2020-09-16)
+
+Database model update: No
+
+- Improved "Adobe Reader" validation policy to handle "forbidden signed attribute is present"
+- Update PKI SDK to [2.7.8](../pki-sdk/changelog.md#v2-7-8)
+
 <a name="v1-24-0" />
 ### 1.24.0 (2020-07-09)
 

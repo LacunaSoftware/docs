@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-24-1" />
+### 1.24.1 (2020-09-16)
+
+Atualização do modelo do banco de dados: Não
+
+- Melhorar política de validação "Adobe Reader" para lidar com o erro "forbidden signed attribute is present"
+- Atualização PKI SDK para [2.7.8](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-7-8)
+
 <a name="v1-24-0" />
 ### 1.24.0 (2020-07-09)
 
