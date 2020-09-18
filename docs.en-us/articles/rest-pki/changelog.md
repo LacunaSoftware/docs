@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-24-2" />
+### 1.24.2 (2020-09-17)
+
+Database model update: No
+
+- Update PKI SDK to [2.7.9](../pki-sdk/changelog.md#v2-7-9)
+
 <a name="v1-24-1" />
 ### 1.24.1 (2020-09-16)
 
