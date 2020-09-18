@@ -3,8 +3,8 @@
 <a name="v2-7-9" />
 ### 2.7.9 (2020-09-17)
 
-- Add access to private key interface on PKCertificateWithKey
-- Add simple class to self-signed certificates generation
+- Add access to private key interface on [PKCertificateWithKey](https://docs.lacunasoftware.com/api/Lacuna.Pki.PKCertificateWithKey#Lacuna_Pki_PKCertificateWithKey_PrivateKey)
+- Add self-signed certificate generation simpler class: [SelfSignedPKCertificateGeneration](https://docs.lacunasoftware.com/api/Lacuna.Pki.Issuer.SelfSignedPKCertificateGenerator)
 - Fix Brazil NFe XML signature canonicalization algorithm usage
 
 
