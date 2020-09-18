@@ -154,7 +154,7 @@ As assinaturas realizadas com o código acima terão o resultado esperado confor
   @Lacuna.Pki.Pades.PadesVisualText.Container. Se nenhum container for definido, o texto preencherá todo o retângulo
   de assinatura.
 
-  Como exemplo, definiremos um posicionamneto do texto relativo ao retângulo de assinatura conforme a figura abaixo.
+  Como exemplo, definiremos um posicionamento do texto relativo ao retângulo de assinatura conforme a figura abaixo.
 
   ![PAdES visual text](../../../../../../images/pki-sdk/pades-visual-text.png)
 

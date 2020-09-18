@@ -36,7 +36,7 @@ O array de representação visual possui 3 parâmetros que podem ser definidos: 
 
 ## Posicionamento da representação da assinatura
 
-No posicionamento, define-se a página na qual a representação da assinatura será inserida, sua a posição na página e a unidade de medida utilizada para informar a posição.
+No posicionamento, define-se a página na qual a representação da assinatura será inserida, sua posição na página e a unidade de medida utilizada para informar a posição.
 
 A página é especificada pelo parâmetro `pageNumber`. 
 Números negativos são contados a partir do final do documento (-1 significa última página, -2 penúltima, etc).
@@ -94,7 +94,7 @@ Quando não há mais espaço em uma linha, as representações são inseridas em
 
 Por padrão, as assinaturas são inseridas da esquerda para direita, de cima para baixo. No entanto, esse comportamento pode ser customizado com os parâmetros `horizontalDirection` (`"rightToLeft"` ou `"leftToRight"`) e `verticalDirection` (`"topDown"` ou `"bottomUp"`).
 
-Por exemplo, para especificar que as representações visuais devem ser inseridas sucessivamente na última página do documento dentro de um container espaçado 2.5cm das bordas esquerda, direita e inferior e 10cm da borda superior, sendo que cada retângulo de assinatura deve ter 7cm de largura por 3cm de altura, conforme ilustrado na imagem abaixo, escreveríamos o seguinte código:
+Por exemplo, para especificar que as representações visuais devem ser inseridas sucessivamente na última página do documento dentro de um container espaçado 3cm das bordas laterais, 2cm da borda inferior e 8cm da borda superior, sendo que cada retângulo de assinatura deve ter 7cm de largura por 3cm de altura, conforme ilustrado na imagem abaixo, escreveríamos o seguinte código:
 
 ![PAdES visual representation auto positioning](../../../../../images/pki-sdk/auto-positioning.png)
 
@@ -141,7 +141,7 @@ As assinaturas realizadas com o código acima terão o resultado esperado confor
 
   Para inserir a data e hora da assinatura é necessario colocar o parâmetro `includeSigningTime` como verdadeiro. E a formatação da data e hora da assinatura é customizável pelo parâmetro `signingTimeFormat`.
 
-  Como exemplo, definiremos um posicionamneto do texto relativo ao retângulo de assinatura conforme a figura abaixo.
+  Como exemplo, definiremos um posicionamento do texto relativo ao retângulo de assinatura conforme a figura abaixo.
 
   ![PAdES visual text](../../../../../images/pki-sdk/pades-visual-text.png)
 

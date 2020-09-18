@@ -7,7 +7,7 @@ O PKI SDK oferece dois templates para o posicionamento automático das represenr
 O método @Lacuna.Pki.Pades.PadesVisualAutoPositioning.GetFootnote(System.Int32,System.Int32) retorna um posicionamento que
 organiza automaticamente as assinaturas no rodapé da página.
 
-O método @Lacuna.Pki.Pades.PadesVisualAutoPositioning.GetNewPage retorna um posicionamneto que insere uma nova página em
+O método @Lacuna.Pki.Pades.PadesVisualAutoPositioning.GetNewPage retorna um posicionamento que insere uma nova página em
 branco ao final do documento e organiza automaticamente as assinaturas em grid nesta página adicionada.
 
 O exemplo de código abaixo demonstra uma assinatura básica com representação visual com posicionamento automático padrão
