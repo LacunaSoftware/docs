@@ -1,4 +1,5 @@
 ﻿# Defining a container
 
-<!-- link to version in Portuguese -->
-<div data-alt-locales="pt-br"></div>
+In PHP, the PAdES visual representation rectangles and containers are arrays treated as maps (key, value).
+
+[!include[Containers](../../../includes/visual-rep/containers.md)]

@@ -59,7 +59,7 @@ o seguinte código:
 ```javascript
 const signer = new PadesSigner();
 ...
-visual = {
+let visual = {
   position: {
     pageNumber: -1,     // Define inserção na última página do documento
     manual: {
@@ -101,7 +101,7 @@ Por exemplo, para especificar que as representações visuais devem ser inserida
 ```javascript
 const signer = new PadesSigner();
 ...
-visual = {
+let visual = {
   position: {
     pageNumber: -1,               // Define inserção na última página do documento
     auto: {
@@ -146,7 +146,7 @@ As assinaturas realizadas com o código acima terão o resultado esperado confor
   ![PAdES visual text](../../../../../images/pki-sdk/pades-visual-text.png)
 
 ```javascript
-visual = {
+let visual = {
   text: {                                       // Texto da representação visual
     text: 'Signed by {{name}}',                 // Inclui o nome do signatário
     container: array  (                         // Define container do texto

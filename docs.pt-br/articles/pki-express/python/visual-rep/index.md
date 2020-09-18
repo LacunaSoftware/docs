@@ -149,7 +149,7 @@ As assinaturas realizadas com o código acima terão o resultado esperado confor
 visual = {
   'text': {                                       # Texto da representação visual
     'text': 'Signed by {{name}}',                 # Inclui o nome do signatário
-    'container': array  (                         # Define container do texto
+    'container': {                                # Define container do texto
       'left': 0,
       'top': 0,
       'right': 1.5,

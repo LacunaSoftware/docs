@@ -1,4 +1,5 @@
 ﻿# Defining a container
 
-<!-- link to version in Portuguese -->
-<div data-alt-locales="pt-br"></div>
+In Python, the PAdES visual representation rectangles and containers are dictionaries.
+
+[!include[Containers](../../../includes/visual-rep/containers.md)]
