@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-7-9" />
+### 2.7.9 (2020-09-17)
+
+- Add access to private key interface on PKCertificateWithKey
+- Add simple class to self-signed certificates generation
+- Fix Brazil NFe XML signature canonicalization algorithm usage
+
+
 <a name="v2-7-8" />
 ### 2.7.8 (2020-09-14)
 
