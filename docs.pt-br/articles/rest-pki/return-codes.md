@@ -18,7 +18,7 @@ As operações do REST PKI apresentam um conjunto de códigos de retorno que pod
 | EntityIsReadOnly              | Política ou carimbo de tempo fornecido é apenas para leitura (read-only)       |
 | SecurityContextRequired       | Contexto de segurança não fornecido                                            |
 | PKCertificateMalformed        | Conteúdo do certificado fornecido é malformado                                 |
-| ValidationError               | Para mais informações nesse erro veja a tabela [abaixo](#val-errors)           |
+| ValidationError               | No momento da assinatura ou da autenticação, o certificado do assinante não está válido. Para mais informações nesse erro veja a tabela [abaixo](#val-errors) |
 | ClientSignatureNotSet         | Quando o processo de autenticação ou assinatura tenta finalizar, mas nenhuma assinatura foi fornecida pelo WebPKI |
 | ClientSignatureAlreadySet     | Assinatura realizada pelo WebPKI foi fornecida mais de uma vez                 |
 | ToSignHashNotAvailable        | Hash a ser assinado está indisponível                                          |
@@ -29,25 +29,22 @@ As operações do REST PKI apresentam um conjunto de códigos de retorno que pod
 | CACertificate                 | Certificados de AC intermediária não podem ser adicionado como raíz confiável  |
 | SelfSignedCertificate         | Certificados auto-assinados não podem ser adicionados como AC intermediária    |
 | TimestampPlanRequired         | Plano de carimbo de tempo não fornecido                                        |
-| StorageUnavailable            | TODO                                                                           |
 | InvalidPdf                    | PDF fornecido não é válido                                                     |
 | InvalidVisualRepresentation   | Representação visual fornecida é inválida                                      |
-| SignaturePolicyRequired       | TODO                                                                           |
 | MissingDataHash               | Data hash não fornecido                                                        |
-| CannotApplyPdfMarks           | PDF já está assinado digitalmente e AbortIfSigned está setado                  |
+| CannotApplyPdfMarks           | PDF já está assinado digitalmente e o parâmetro AbortIfSigned está setado como True |
 | BadDigest                     | Digest fornecido não corresponde ao conteúdo recebido                          |
 | InvalidXml                    | XML fornecido não é válido                                                     |
 | TransactionLimitAlreadyExists | Limite de transação já definido, para atualizá-lo use request com método PUT   |
 | InvalidSortField              | Parâmetro de ordenação não foi encontrado na consulta ao banco de dados        |
 | FontSizeZero                  | Tamanho da fonte deve ser maior que 0                                          |
-| InvalidPage                   | TODO                                                                           |
-| FileDownloadFailed            | Download falhou                                                                |
-| InvalidElementType            | Tipo do elemento do pdk mark é desconhecido                                    |
-| UnsupportedCMSContentType     | Conteúdo CMS não é suportado                                                   |
-| UnsupportedDigestAlgorithm    | Digest algorithm não é suportado                                               |
-| UnsupportedSignatureAlgorithm | Algoritmo de assinatura não é suportado                                        |
+| InvalidPage                   | O número do página da representação visual fornecida é inválido                |
+| FileDownloadFailed            | Download de arquivo falhou                                                     |
+| InvalidElementType            | O tipo do elemento do pdk mark fornecido é desconhecido                        |
+| UnsupportedCMSContentType     | O conteúdo CMS fornecido não é suportado                                       |
+| UnsupportedDigestAlgorithm    | O algoritmo de *digest* fornecido não é suportado                              |
+| UnsupportedSignatureAlgorithm | O algoritmo de assinatura fornecido não é suportado                            |
 | PadesPositionNotFilled        | PadesPositionModel deve ter ao menos um dos campos, Auto ou Manual, preenchido |
-| SignatureHashNotFound         | TODO                                                                           |
 | InvoiceNotCreated             | Fatura pesquisada ainda não foi criada                                         |
 | InvalidCades                  | Arquivo p7s fornecido não é válido                                             |
 | InvalidToken                  | Token de assinatura fornecido não é válido                                     |
@@ -55,12 +52,13 @@ As operações do REST PKI apresentam um conjunto de códigos de retorno que pod
 <a name="val-errors" />
 ### Erros de validação
 
+Erros de validação ocorrem durante assinaturas ou autenticações ou podem ser retornados nos *endpoints* de validação de assinatura.
+
 | Erros de Validação                      | Significado                                                                        |
 |-----------------------------------------|------------------------------------------------------------------------------------|
-| Success                                 | Sucesso na validação                                                               |
-| CertificateNotYetValid                  | Na data de validação o certificado não é aindo válido                              |
-| CertificateExpired                      | Na data de validação o certificado está expirado                                   |
-| CertificateRevoked                      | Na data de validação o certificado estava revogado                                 |
+| CertificateNotYetValid                  | Na data de referência, o certificado não é aindo válido                            |
+| CertificateExpired                      | Na data de referência, o certificado está expirado                                 |
+| CertificateRevoked                      | Na data de referência, o certificado estava revogado                               |
 | CertificateIssuerNotFound               | Emissor do certificado não foi encontrado                                          |
 | CertificateRevocationStatusUnknown      | Estado de revogação do certificado não pode ser verificado. Provavelmente, o REST PKI não conseguiu acessar os certificados CRLs |
 | CertificateChainRootNotTrusted          | A raiz da cadeia de certificado não é confiável                                    |
@@ -82,7 +80,6 @@ As operações do REST PKI apresentam um conjunto de códigos de retorno que pod
 | UnknownUnsignedAttributesPresent        | Assinatura contém um ou mais atributos não assinados não reconhecidos              |
 | TimestampWithMoreThanOneSigner          | Carimbo de tempo contém mais de um assinante                                       |
 | TimestampMessageImprintMismatch         | The timestamp message-imprint is not the same as the computed message-imprint      |
-| TimestampValidationException            | TODO                                                                               |
 | CompleteReferencesMismatch              | Referências completas de certificados não são válidas                              |
 | InvalidSignatureTimestamp               | Carimbo de tempo da assinatura não é válido                                        |
 | InvalidReferencesTimestamp              | Nenhum carimbo de tempo de referenência válido foi encontrado                      |

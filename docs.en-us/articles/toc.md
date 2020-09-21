@@ -72,6 +72,7 @@
 ### [Ruby on Rails](rest-pki/ruby/rails.md)
 ### [Converting from PKI Express](rest-pki/ruby/convert-from-express.md)
 ## [Samples availability](rest-pki/samples-availability.md)
+## [Return codes](rest-pki/return-codes.md)
 ## [PAdES tags](rest-pki/pades-tags.md)
 ## [On-premises](rest-pki/on-premises/index.md)
 ### [Setup on Windows Server](rest-pki/on-premises/windows-setup/index.md)

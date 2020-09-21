@@ -18,36 +18,33 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 | EntityIsReadOnly              | The entity is read-only (timestamp or policy)                                 |
 | SecurityContextRequired       | No given security context                                                     |
 | PKCertificateMalformed        | The provided certificate content is malformed                                 |
-| ValidationError               | For more information on this error see the tables [below](#val-errors)        |
+| ValidationError               | During the signature or the authentication, the signing certificate was not valid. For more information on this error see the tables [below](#val-errors) |
 | ClientSignatureNotSet         | No client signature was provided                                              |
 | ClientSignatureAlreadySet     | The client signature is provided twice                                        |
 | ToSignHashNotAvailable        | The hash to be signed is not avaliable                                        |
 | CertificateMismatch           | The certificate content differes from the one that started the signature      |
 | InvalidRequest                | The request is not valid                                                      |
-| TimestampingUnavailable       | The timestamping service are not available                                    |
+| TimestampingUnavailable       | The timestamping service is not available                                     |
 | EndUserCertificate            | End-user certificates cannot be added as trusted root or intermediate CA      |
 | CACertificate                 | Intermediate CA certificates cannot be added as trusted root                  |
 | SelfSignedCertificate         | Self-signed certificates cannot be added as intermediate CA                   |
 | TimestampPlanRequired         | No given timestamp plan                                                       |
-| StorageUnavailable            | TODO                                                                          |
 | InvalidPdf                    | The provided PDF is not valid                                                 |
 | InvalidVisualRepresentation   | The provided visual representation is not valid                               |
-| SignaturePolicyRequired       | TODO                                                                          |
 | MissingDataHash               | No given data hash                                                            |
-| CannotApplyPdfMarks           | The PDF is already digitally signed and AbortIfSigned was set                 |
+| CannotApplyPdfMarks           | The PDF is already digitally signed and the AbortIfSigned parameter was set as True |
 | BadDigest                     | The given digest does not match the received content                          |
 | InvalidXml                    | The provided XML is not valid                                                 |
 | TransactionLimitAlreadyExists | The transaction limit already exists, to update it use the PUT request method |
 | InvalidSortField              | The sort field provided could not be found in the query                       |
 | FontSizeZero                  | The font size must be greater than 0                                          |
 | InvalidPage                   | The visual representation positioned in invalid page                          |
-| FileDownloadFailed            | Download failed                                                               |
+| FileDownloadFailed            | File download has failed                                                      |
 | InvalidElementType            | Unknown pdf mark element type                                                 |
-| UnsupportedCMSContentType     | The CMS content type is not supported                                         |
-| UnsupportedDigestAlgorithm    | The digest algorithm is not supported                                         |
-| UnsupportedSignatureAlgorithm | The signature algorithm is not supported                                      |
+| UnsupportedCMSContentType     | The provided CMS content type is not supported                                |
+| UnsupportedDigestAlgorithm    | The provided digest algorithm is not supported                                |
+| UnsupportedSignatureAlgorithm | The provided signature algorithm is not supported                             |
 | PadesPositionNotFilled        | PadesPositionModel must have either Auto or Manual fields filled              |
-| SignatureHashNotFound         | TODO                                                                          |
 | InvoiceNotCreated             | The searched invoice was not created yet                                      |
 | InvalidCades                  | The provided p7s file is not valid                                            |
 | InvalidToken                  | The provided signature token is not valid                                     |
@@ -55,12 +52,13 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 <a name="val-errors" />
 ### Validation Errors
 
+Validation errors occur during signatures or authentications, or they are returned by signature validation endpoints.
+
 | Validation Error                        | Meaning                                                                            |
 |-----------------------------------------|------------------------------------------------------------------------------------|
-| Success                                 | Successful validation                                                              |
-| CertificateNotYetValid                  | At the validation date, the certificate is not valid yet                           |
-| CertificateExpired                      | At the validation date, the certificate has expired                                |
-| CertificateRevoked                      | At the validation date, the certificate has been revoked                           |
+| CertificateNotYetValid                  | At the date reference, the certificate is not valid yet                            |
+| CertificateExpired                      | At the date reference, the certificate has expired                                 |
+| CertificateRevoked                      | At the date reference, the certificate has been revoked                            |
 | CertificateIssuerNotFound               | The issuer of the certificate could not be found                                   |
 | CertificateRevocationStatusUnknown      | The revocation status of the certificate could not be verify. Mostly, REST PKI could not access the certificate's CRLs |
 | CertificateChainRootNotTrusted          | The root of the certificate chain is not trusted                                   |
@@ -82,7 +80,6 @@ The REST PKI operations have a set of return codes shown bellow with the meaning
 | UnknownUnsignedAttributesPresent        | The signature contains one or more unknwon unsigned attributes                      |
 | TimestampWithMoreThanOneSigner          | The timestamp has more than one signer                                              |
 | TimestampMessageImprintMismatch         | The timestamp message-imprint is not the same as the computed message-imprint       |
-| TimestampValidationException            | TODO                                                                                |
 | CompleteReferencesMismatch              | The certificate's complete reference is not valid                                   |
 | InvalidSignatureTimestamp               | The signature timestamp is not valid                                                |
 | InvalidReferencesTimestamp              | The reference timestamp is not valid                                                |
