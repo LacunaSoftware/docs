@@ -1,6 +1,6 @@
 # Códigos de Retorno do REST PKI
 
-REST PKI returns the following HTTP status codes:
+O REST PKI retorna os seguintes códigos HTTP:
 
 ## 401 - Unauthorized
 
