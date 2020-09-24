@@ -26,9 +26,9 @@ instead as this option is now deprecated.
 * **FlowActionTicketValidityMinutes**: defines the validity in minutes of the ticket that is sent in the signature reminder email which allows an user to sign without logging in. 
 The default value is `1440` (24 hours).
 
-* **RestrictedUserAutocomplete**: if `true` shows in the participant autocomplete suggestions only users that are in the same organizations as the current user and (as of v1.8.0) 
+* **RestrictedUserAutocomplete** (default: `true`): if `true` shows in the participant autocomplete suggestions only users that are in the same organizations as the current user and (as of v1.8.0) 
 that were added as participants in the current user's documents. 
-If `false` the suggestions will search all of the users in the database. This option  doesn't affect the autocomplete experience for system administrators. 
+If `false` the suggestions will search all of the users in the database. This option doesn't affect the autocomplete experience for system administrators. 
 
 * **EnableDocumentAuthentication**: if `true` shows the document authentication option in the fast signature screen. This allows an user to authenticate a document by inserting 
 a custom visual representation that has information about his lawyer or accountant registration number.
@@ -57,6 +57,9 @@ a custom visual representation that has information about his lawyer or accounta
 
 * **MaximumItemsInBatchNotifications** (default: `10`, v1.10.4): defines a maximum number of items included in notifications that list a 
 batch of items (for example all documents a user was added as observer).
+
+* **NormalizePdfs** (default: `true`, v1.13.0): if `true`, the system automatically attempts to normalize PDFs when they are submitted to create a document to 
+prevent protected file and append mode errors.
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)

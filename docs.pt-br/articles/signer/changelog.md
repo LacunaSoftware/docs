@@ -4,6 +4,23 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-13-0" />
+### 1.13.0 (2020-09-23)
+
+* Melhorias
+  * [SIG-366] - Permitir reprovar na ação de aprovação
+  * [SIG-383] - Melhorar preview de certificados
+  * [SIG-411] - Melhorar mensagem de erro quando o PDF tem senha e permitir assinatura de PDFs protegidos
+  * [SIG-438] - Restricted autocomplete por padrão
+
+* Correções de bugs
+  * [SIG-442] - Não é possível validar arquivo XML
+  * [SIG-457] - Botão de faturas aparece mesmo com módulo de cobrança desabilitado
+  * [SIG-459] - Tratar caso em que o pageNumber da representação visual está em uma página que não existe no PDF
+  * [SIG-479] - Título do signatário não está aparecendo na representação visual da assinatura eletrônica
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-12-0" />
 ### 1.12.0 (2020-09-14)
 

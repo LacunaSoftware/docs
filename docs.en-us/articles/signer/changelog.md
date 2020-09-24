@@ -4,6 +4,23 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-13-0" />
+### 1.13.0 (2020-09-23)
+
+* Improvements
+  * [SIG-366] - Allow reproval in the approval flow action
+  * [SIG-383] - Improve preview of digital certificates
+  * [SIG-411] - Improve error message when a PDF has password and allow signature of protected PDFs
+  * [SIG-438] - Set Restricted autocomplete mode as default
+
+* Bug fixes
+  * [SIG-442] - Cannot validate signed XML file
+  * [SIG-457] - Invoices button is displayed even with billing disabled
+  * [SIG-459] - Handle case where page number of a visual representation is set to a page that does not exist in the PDF
+  * [SIG-479] - Electronic signature visual representation does not contain the tile specified for the signer
+
+Updates database model: yes
+
 <a name="v1-12-0" />
 ### 1.12.0 (2020-09-14)
 
