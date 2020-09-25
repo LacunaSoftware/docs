@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-24-3" />
+### 1.24.3 (2020-09-22)
+
+Database model update: No
+
+- Improved initial page
+
 <a name="v1-24-2" />
 ### 1.24.2 (2020-09-17)
 
