@@ -4,6 +4,19 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-14-0" />
+### 1.14.0 (2020-09-30)
+
+* Improvements
+  * [SIG-427] - Notify the creator of a document upon flow conclusion
+
+* Bug fixes
+  * [SIG-499] - Validation screen shows email from registration instead of the one validated in the electronic signature
+  * [SIG-505] - Flow order is lost when using a flow from another document
+  * [SIG-512] - Error displaying document status in the document administration screen
+
+Updates database model: no
+
 <a name="v1-13-0" />
 ### 1.13.0 (2020-09-23)
 

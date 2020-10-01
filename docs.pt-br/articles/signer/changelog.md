@@ -4,6 +4,19 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-14-0" />
+### 1.14.0 (2020-09-30)
+
+* Melhorias
+  * [SIG-427] - Notificar criador do documento na conclusão
+
+* Correções de bugs
+  * [SIG-499] - Tela de validação apresenta email do cadastro ao invés de email validado na assinatura eletrônica
+  * [SIG-505] - Ordem das etapas perdidas ao usar fluxo de outro documento
+  * [SIG-512] - Erro na exibição de status de documento na administração de documentos
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-13-0" />
 ### 1.13.0 (2020-09-23)
 
