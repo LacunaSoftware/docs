@@ -32,6 +32,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.14 - [AC Controller](http://ac.controller-rnc.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.15 - [AC CONSMEPI](http://ac.consmepi.mg.gov.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.16 - [AC Planej](http://ac.planej-rnc.com.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.17 - [AC Educação Metodista](http://ac.educacaometodista.org.br/certs/ac.txt)
 
 ## 2. Políticas de certificado A1
 
