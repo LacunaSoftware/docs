@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-20-0" />
+### 1.20.0 (2020-10-05)
+
+- Adiciona suporte a validação PAdES segundo diferentes políticas com a opção `--policy`
+- Adiciona suporte a configuração do *commitment type* nos comandos `sign-cades` and `start-cades` com a opção`--commitment-type`
+- Adiciona suporte a decodificação e validação de certificados (comando `open-cert`)
+
 <a name="v1-19-0" />
 ### 1.19.0 (2020-09-14)
 

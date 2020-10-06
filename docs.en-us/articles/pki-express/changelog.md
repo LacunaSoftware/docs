@@ -1,5 +1,12 @@
 ﻿# PKI Express changelog
 
+<a name="v1-20-0" />
+### 1.20.0 (2020-10-05)
+
+- Add support for PAdES validation according different policies with the option `--policy`
+- Add support for setting the commitment type on `sign-cades` and `start-cades` commands with the option `--commitment-type`
+- Add support for certificate decoding and validation (command `open-cert`)
+
 <a name="v1-19-0" />
 ### 1.19.0 (2020-09-14)
 
