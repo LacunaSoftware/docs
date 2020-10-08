@@ -50,6 +50,9 @@ O arquivo deve ser enviado com uma requisição [multipart/form-data](https://ec
 }
 ```
 
+Alternativamente pode ser utilizada a [API simplificada de Upload (POST /api/uploads/bytes)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads_bytes),
+na qual os bytes podem ser enviados em formato Base64.
+
 2- Crie um documento à partir do upload usando a [API de Criação de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
 Nessa chamada você deve montar o fluxo do documento, isto é, definir quais serão os participantes do documento e em qual ordem devem tomar suas ações:
 
@@ -280,6 +283,7 @@ GET /api/documents/keys/AX4F8FV8NNAX25TENE2S/signatures
 #### Validação de documento com arquivo assinado
 
 Para validar um documento assinado é preciso fazer primeiro o upload do arquivo assinado usando a [API de Upload](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads)
+ou [API simplificada de Upload (POST /api/uploads/bytes)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads_bytes) 
 assim como informado na seção [Assinar um Documento](#sign-document).
 
 Em seguida, utilize a [API de validação de arquivo assinado](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents_validate_signatures).

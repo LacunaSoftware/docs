@@ -4,6 +4,19 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-15-0" />
+### 1.15.0 (2020-10-08)
+
+* Novas funcionalidades
+  * [SIG-520] - API para download direto das versões do documento
+  * [SIG-521] - API simplificada de Upload
+  * [SIG-522] - Configurar tamanho máximo de upload
+
+* Melhorias
+  * [SIG-471] - Alterar frase marca d'água da versão sem validade jurídica
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-14-0" />
 ### 1.14.0 (2020-09-30)
 

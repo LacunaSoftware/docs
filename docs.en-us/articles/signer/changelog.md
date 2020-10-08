@@ -4,6 +4,19 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-15-0" />
+### 1.15.0 (2020-10-08)
+
+* New Features
+  * [SIG-520] - Document versions direct download API
+  * [SIG-521] - Simplified API for uploads
+  * [SIG-522] - Enable configuration of maximum upload size
+
+* Improvements
+  * [SIG-471] - Update watermark text for the validation stamp
+
+Updates database model: no
+
 <a name="v1-14-0" />
 ### 1.14.0 (2020-09-30)
 

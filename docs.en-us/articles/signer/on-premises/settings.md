@@ -61,6 +61,9 @@ batch of items (for example all documents a user was added as observer).
 * **NormalizePdfs** (default: `true`, v1.13.0): if `true`, the system automatically attempts to normalize PDFs when they are submitted to create a document to 
 prevent protected file and append mode errors.
 
+* **MaxUploadSizeInBytes** (default: `106954752` - 100 MB, v1.15.0): defines the maximum upload size in bytes. There is a 1 GB upper limit that can only be changed by
+updating the web.config file in the installation package.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
