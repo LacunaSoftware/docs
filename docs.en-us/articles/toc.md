@@ -171,6 +171,7 @@
 ## [Using on Ruby](pki-express/ruby/index.md)
 ### [Ruby on Rails](pki-express/ruby/rails.md)
 ### [Converting from REST PKI](pki-express/ruby/convert-from-restpki.md)
+## [PAdES tags](pki-express/pades-tags.md)
 ## [Return Codes](pki-express/return-codes.md)
 ## [Changelog](pki-express/changelog.md)
 <!-- End of PKI Express -->

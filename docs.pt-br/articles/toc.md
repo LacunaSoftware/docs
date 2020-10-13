@@ -170,6 +170,7 @@
 ### [Convertendo do REST PKI](pki-express/nodejs/convert-from-restpki.md)
 ## [Usando em Ruby](pki-express/ruby/index.md)
 ### [Convertendo do REST PKI](pki-express/ruby/convert-from-restpki.md)
+## [Tags PAdES](pki-express/pades-tags.md)
 ## [Códigos de Retorno](pki-express/return-codes.md)
 ## [Histórico de versões](pki-express/changelog.md)
 <!-- End of PKI Express -->
