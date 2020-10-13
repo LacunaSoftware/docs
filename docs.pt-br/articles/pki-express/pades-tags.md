@@ -20,7 +20,7 @@ Tag                     | Valor
 `{{br_cnpj_formatted}}` | Mesmo que `{{br_cnpj}}` porém formatado como **00.000.000/0000-00**
 `{{br_responsavel}}`    | Nome do titular (para certificados de PJ, nome do responsável pelo certificado)
 `{{br_company}}`        | Nome da empresa
-`{{br_oab_numbero}}`    | Número de Inscrição junto a Seccional da OAB (sem zeros à esquerda)
+`{{br_oab_numero}}`     | Número de Inscrição junto a Seccional da OAB (sem zeros à esquerda)
 `{{br_oab_uf}}`         | Sigla do Estado da Seccional da OAB
 `{{br_rg_numero}}`      | Número do RG do titular/responsável (sem zeros à esquerda)
 `{{br_rg_emissor}}`     | Órgão emissor do RG do titular/responsável
@@ -36,3 +36,4 @@ Tag                    | Tag equivalente
 `{{signerEmail}}`      | `{{email}}`
 `{{signerNationalId}}` | `{{national_id}}`
 `{{issuerCommonName}}` | `{{issuer_cn}}`
+`{{br_oab_numbero}}`   | `{{br_oab_numero}}`
