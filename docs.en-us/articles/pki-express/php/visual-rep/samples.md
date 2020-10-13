@@ -52,11 +52,11 @@ $image = array(
     // Right-align image inside the visual 
     // representation rectangle. Valid values are
     // 'right', 'center' and 'left'.
-    'horizontalAlign' => 'Right',
+    'horizontalAlign' => 'right',
     // Vertically centralize the image inside the
     // representation rectangle. Valid values are 
     // 'top', 'center', 'bottom'.
-    'verticalAlign' => 'Center',
+    'verticalAlign' => 'center',
 );
 ```
 

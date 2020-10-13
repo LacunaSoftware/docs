@@ -127,7 +127,7 @@ The figure below shows the expected result after signing a document using the ab
 
   Inside the visual representation rectangle, the PKI Express supports the customization of text alignment, positioning, and content. A `container` can be defined to set the text position. If none is defined, the text will fill all the rectangle.
 
-  The parameter `HorizontalAlign` (`'left'` or `'right'`) sets the text alignment. The parameter `fontSize` sets the font size used on the text of the visual representation.
+  The parameter `horizontalAlign` (`'left'` or `'right'`) sets the text alignment. The parameter `fontSize` sets the font size used on the text of the visual representation.
 
   The parameter `includeSigningTime` must be `true` to include the signature's date and time in the visual representation. Use the parameter `signingTimeFormat` to customize the data display format.
 

@@ -110,12 +110,12 @@ visual = {
             # posicionadas da esquerda para direita 
             # (comportamento padrão). Valores possíveis:
             # 'leftToRight' e 'rightToLeft'.
-            'horizontalDirection': "leftToRight",
+            'horizontalDirection': 'leftToRight',
             # Define que as representações serão 
             # posicionadas de cima para baixo 
             # (comportamento padrão). Valores possíveis:
             # 'topDown' e 'BottomUp'.
-            'verticalDirection': "topDown",
+            'verticalDirection': 'topDown',
         },
     },
     'text': {    # Texto da representação visual
@@ -151,11 +151,11 @@ visual = {
         # Define imagem alinhada à direita no retângulo da 
         # representação visual. Valores possíveis: 
         # 'right', 'center' e 'left'
-        'horizontalAlign': 'Right',
+        'horizontalAlign': 'right',
         # Define imagem centralizada verticalmente no 
         # retângulo da representação visual. Valores 
         # possíveis: 'top', 'center' e 'bottom'
-        'verticalAlign': 'Center',
+        'verticalAlign': 'center',
     }
 }
 

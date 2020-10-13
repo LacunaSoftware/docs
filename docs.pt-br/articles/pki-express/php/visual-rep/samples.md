@@ -73,7 +73,7 @@ automaticamente é o apresentado na imagem abaixo.
 ```php
 $signer = new PadesSigner();
 $signer->setPkcs12($cert_path);
-$signer->setCertPassword("password");
+$signer->setCertPassword('password');
 $signer->setPdfToSignFromContentRaw($pdfBytes);
 $signer->signaturePolicy = StandardSignaturePolicies::PADES_BASIC_WITH_LTV;
 
@@ -112,12 +112,12 @@ $visual = array(
             // posicionadas da esquerda para direita 
             // (comportamento padrão). Valores possíveis:
             // 'leftToRight' e 'rightToLeft'.
-            'horizontalDirection' => "leftToRight",
+            'horizontalDirection' => 'leftToRight',
             // Define que as representações serão 
             // posicionadas de cima para baixo 
             // (comportamento padrão). Valores possíveis:
             // 'topDown' e 'BottomUp'.
-            'verticalDirection' => "topDown",
+            'verticalDirection' => 'topDown',
         )
     ),
     'text' => array(   // Texto da representação visual
@@ -154,11 +154,11 @@ $visual = array(
         // Define imagem alinhada à direita no retângulo da
         // representação visual. Valores possíveis: 
         // 'right', 'center' e 'left'
-        'horizontalAlign' => 'Right',
+        'horizontalAlign' => 'right',
         // Define imagem centralizada verticalmente no 
         // retângulo da representação visual. Valores 
         // possíveis: 'top', 'center' e 'bottom'
-        'verticalAlign' => 'Center',
+        'verticalAlign' => 'center',
     )
 );
 

@@ -52,11 +52,11 @@ const image = {
     // Right-align image inside the visual 
     // representation rectangle. Valid values are
     // 'right', 'center' and 'left'.
-    horizontalAlign: 'Right',
+    horizontalAlign: 'right',
     // Vertically centralize the image inside the visual
     // representation rectangle. Valid values are 
     // 'top', 'center', 'bottom'.
-    verticalAlign: 'Center',
+    verticalAlign: 'center',
 };
 ```
 
@@ -107,11 +107,11 @@ const visual = {
             // Horizontally insert representations from
             // left to right (default behavior). Valid
             // values are 'leftToRight' and 'rightToLeft'.
-            horizontalDirection: "leftToRight",
+            horizontalDirection: 'leftToRight',
             // Vertically insert representations from top
             // to bottom (default behavior). Valid values
             // are 'leftToRight' and 'rightToLeft'.
-            verticalDirection: "topDown",
+            verticalDirection: 'topDown',
         }
     },
     text: {  // Visual representation text.
@@ -148,11 +148,11 @@ const visual = {
         // Right-align image inside the visual 
         // representation rectangle. Valid values are
         // 'right', 'center' and 'left'.
-        horizontalAlign: 'Right',
+        horizontalAlign: 'right',
         // Vertically centralize the image inside the
         // representation rectangle. Valid values are
         // 'top', 'center', 'bottom'.
-        verticalAlign: 'Center',
+        verticalAlign: 'center',
     }
 };
 
