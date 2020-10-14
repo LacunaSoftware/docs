@@ -2,7 +2,7 @@
 
 O projeto de exemplos demonstra o uso do [PKI Express](../index.md) junto com o componente [Web PKI](../../web-pki/index.md) em um projeto utilizando **PHP 5.5+ plain** (incluindo 7.x). Ele encontra-se hospedado no GitHub:
 
-<https://github.com/LacunaSoftware/PkiExpressSamples/tree/master/PHP>
+<https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/php>
 
 > [!NOTE]
 > Se você utiliza uma versão anterior do PHP, por favor [fale conosco](https://www.lacunasoftware.com/pt/home/purchase).

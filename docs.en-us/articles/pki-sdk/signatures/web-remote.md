@@ -17,7 +17,7 @@ licenses for the component. If you do not already have a license to use the
 component, [request a](https://www.lacunasoftware.com/pt/home/purchase).
 
 The rest of this topic deals with the server-side part of the subscription. For details on the client-side part, see the [Web PKI component documentation](../../web-pki/index.md) or see the
-[example project](https://github.com/LacunaSoftware/PkiSdkSamples), which shows the use of the SDK in conjunction with the Web PKI.
+[example project](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/dotnet), which shows the use of the SDK in conjunction with the Web PKI.
 
 ## CAdES signature with remote key
 

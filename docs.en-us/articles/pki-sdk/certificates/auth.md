@@ -100,4 +100,4 @@ public class AuthenticationController : ApiController {
 }
 ```
 
-For a complete example including the client-side part, see the project [PkiSdkSamples](https://github.com/LacunaSoftware/PkiSdkSamples) in the GitHub.
+For a complete example including the client-side part, see the project [PkiSuiteSamples](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/dotnet) in the GitHub.

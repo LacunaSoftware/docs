@@ -16,4 +16,4 @@ Com o PKI SDK, é possível:
 
 Esta documentação contém informações conceituais sobre o uso da biblioteca, exemplos de código e o guia completo da API.
 
-Para começar a usar o SDK, veja o tópico [Primeiros Passos](get-started/index.md) ou acesse os [projetos de exemplo](https://github.com/LacunaSoftware/PkiSdkSamples).
+Para começar a usar o SDK, veja o tópico [Primeiros Passos](get-started/index.md) ou acesse os [projetos de exemplo](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/dotnet).

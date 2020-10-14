@@ -16,7 +16,7 @@ SDK geralmente acompanham licenças de uso para o componente. Se você ainda nã
 
 O restante desse tópico trata da parte *server-side* da assinatura. Para detalhes sobre a parte *client-side*, veja a
 [documentação do componente Web PKI](../../web-pki/index.md) ou veja o
-[projeto de exemplo](https://github.com/LacunaSoftware/PkiSdkSamples), que mostra o uso do SDK em conjunto com o Web PKI.
+[projeto de exemplo](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/dotnet), que mostra o uso do SDK em conjunto com o Web PKI.
 
 ## Assinatura CAdES com chave remota
 
