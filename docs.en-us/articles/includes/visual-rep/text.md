@@ -17,6 +17,7 @@ The figure below shows the expected result after signing a document using the ab
 
   The parameter `text` supports tags that the PKI Express will substitute with the certificate's information.
 
+  <a name="pades-tags" />
   * Generic Tags:
     Tag               | Value
     ----------------- | -----------
@@ -41,7 +42,7 @@ The figure below shows the expected result after signing a document using the ab
     `{{br_rg_emissor}}`     | Issuing entity of the certificate holder's ID (órgão emissor do RG do titular/responsável)
     `{{br_rg_uf}}`          | State code of the issuing entity of the certificate holder's ID (*UF do órgão emissor do RG do titular/responsável*)
 
-  * *Tags* supported for backward compatibility:
+  * Tags supported for backward compatibility:
     Tag                    | Equivalent tag
     ---------------------- | --------------
     `{{signerName}}`       | `{{name}}`

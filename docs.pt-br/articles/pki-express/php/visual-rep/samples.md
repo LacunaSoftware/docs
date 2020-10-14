@@ -123,7 +123,7 @@ $visual = array(
     'text' => array(   // Texto da representação visual
         // Define o texto a ser inserido. Para ver a lista 
         // completa de tags suportadas, veja: 
-        // https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PadesTags.md
+        // https://docs.lacunasoftware.com/articles/pki-express/php/visual-rep/index.html#pades-tags
         'text' => 'Signed by {{name}} ({{national_id}})',
         // Define o tamanho da fonte do texto.
         'fontSize' => 13.0,

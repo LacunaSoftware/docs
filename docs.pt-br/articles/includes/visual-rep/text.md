@@ -16,6 +16,8 @@ As assinaturas realizadas com o código acima terão o resultado esperado confor
   Para inserir a data e hora da assinatura é necessario colocar o parâmetro `includeSigningTime` como verdadeiro. E a formatação da data e hora da assinatura é customizável pelo parâmetro `signingTimeFormat`.
 
   O parâmetro `text` suporta o uso de *tags* que o PKI Express substitui pelas informações contidas no certificado. 
+
+  <a name="pades-tags" />
   * *Tags* genéricas:
 
     Tag               | Valor

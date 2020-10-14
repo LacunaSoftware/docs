@@ -117,7 +117,7 @@ visual = {
     'text': {    # Visual representation text.
         # Set text to be rendered. For a full list of the
         # supported tags, see:
-        # https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PadesTags.md
+        # https://docs.lacunasoftware.com/articles/pki-express/python/visual-rep/index.html#pades-tags
         'text': 'Signed by {{name}} ({{national_id}})',
         # Set text's font size.
         'fontSize': 13.0,
