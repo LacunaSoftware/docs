@@ -196,6 +196,7 @@
 ### [Settings](signer/on-premises/settings.md)
 ### [Access control](signer/on-premises/access-control.md)
 ### [Customization](signer/on-premises/customization.md)
+### [Payments](signer/on-premises/payments.md)
 ## [User guide](signer/user-guide/index.md)
 ### [Generate documents](signer/user-guide/gen-docs.md)
 ### [System admin](signer/user-guide/sys-admin/index.md)

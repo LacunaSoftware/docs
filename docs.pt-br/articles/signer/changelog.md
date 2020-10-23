@@ -4,6 +4,28 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-16-0" />
+### 1.16.0 (2020-10-22)
+
+* Melhorias
+  * [SIG-484] - Envio dos dados de faturamento no Webhook de fechamento de fatura
+  * [SIG-485] - Atualização de status de fatura por API
+  * [SIG-525] - Melhorar mensagem de erro quando upload não é encontrado
+
+* Correções de bugs
+  * [SIG-511] - Botão de digitalização fica sobre o botão de excluir documento na tela de criação de documento
+  * [SIG-526] - Erro na assinatura rápida de documentos não PDF
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-15-1" />
+### 1.15.1 (2020-10-21)
+
+* Correções de bugs
+  * [SIG-529] - Tela de acesso restrito não aparece se os perfis básicos estiverem configurados
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-15-0" />
 ### 1.15.0 (2020-10-08)
 

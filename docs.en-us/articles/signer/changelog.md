@@ -4,6 +4,28 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-16-0" />
+### 1.16.0 (2020-10-22)
+
+* Improvements
+  * [SIG-484] - Include billing information in the closed invoice Webhook
+  * [SIG-485] - API to Update invoice status
+  * [SIG-525] - Improve error message when upload is not found
+
+* Bug fixes
+  * [SIG-511] - Scan button is over the exclude file button in the document submit screen
+  * [SIG-526] - Error in unique signature for non PDF documents
+
+Updates database model: no
+
+<a name="v1-15-1" />
+### 1.15.1 (2020-10-21)
+
+* Bug fixes
+  * [SIG-529] - Restricted access screen does not show if basic profiles are set as default
+
+Updates database model: no
+
 <a name="v1-15-0" />
 ### 1.15.0 (2020-10-08)
 

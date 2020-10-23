@@ -29,13 +29,13 @@ Tanto para o sistema Aberto ou Fechado, é possível definir quais são as permi
 As permissões configuráveis são:
 
 1. Criação de documentos
-1. Criação de empresas
+1. Criação de empresas*
 
 Por padrão, esses duas permissões já são concedidas a todos usuários. No entanto, se isso não for desejado para seu caso de uso, elas podem ser desabilitadas por
 configuração de instância. Nesse caso, você deverá dar essas permissões manualmente para cada usuário, concedendo um ou mais dos perfis exibidos abaixo:
 
 1. Criador de documentos
-1. Criador de empresas
+1. Criador de empresas*
 
 Esses perfis devem ser configurados pelo administrador da instância no menu Usuários > Detalhes do Usuário > Editar Acesso do Usuário:
 
@@ -43,3 +43,5 @@ Esses perfis devem ser configurados pelo administrador da instância no menu Usu
 
 Um exemplo comum, é a necessidade de disponibilizar as funcionalidades básicas de visualização de documentos, relatórios e assinatura em lote para os assinantes 
 dos documentos sem permitir que eles enviem novos documentos ou criem empresas.
+
+<small>*: O papel de criador de empresas é ignorado no sistema Fechado, pois nessa modalidade a criação de empresas é sempre responsabilidade do administrador da instância.</small>
