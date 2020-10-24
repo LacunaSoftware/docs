@@ -157,7 +157,7 @@ Ao detectar o pagamento da fatura, ele deve enviar uma requisição ao Signer pa
 abaixo:
 
 ```javascript
-POST /api/invoice/{id}/payment
+PUT /api/invoices/{id}/payment
 
 {
 	"isPaid": true
@@ -171,8 +171,7 @@ Para exemplos de código, veja os links abaixo:
 * [Java]() em construção.
 
 > [!WARNING]
-> Para esta requisição será necessária uma chave de API com privilégios de administração de faturamento no sistema. Para gerá-la crie uma aplicação selecionado
-> a organização Sys Admin e em seguida gere a chave na opção "Chaves".
+> Para esta requisição será necessária uma chave de API com privilégios de administração de faturamento no sistema.
 
 #### Criação de chave de API de administração de faturamento
 
@@ -187,3 +186,5 @@ Em seguida gere a chave na opção "Chaves":
 ![Application keys](../images/application-keys.png)
 
 ![Application create key](../images/application-keys-add.png)
+
+![Create key submit](../images/create-key.png)

@@ -44,4 +44,4 @@ Esses perfis devem ser configurados pelo administrador da instância no menu Usu
 Um exemplo comum, é a necessidade de disponibilizar as funcionalidades básicas de visualização de documentos, relatórios e assinatura em lote para os assinantes 
 dos documentos sem permitir que eles enviem novos documentos ou criem empresas.
 
-<small>*: O papel de criador de empresas é ignorado no sistema Fechado, pois nessa modalidade a criação de empresas é sempre responsabilidade do administrador da instância.</small>
+<small>* O papel de criador de empresas é ignorado no sistema Fechado, pois nessa modalidade a criação de empresas é sempre responsabilidade do administrador da instância.</small>
