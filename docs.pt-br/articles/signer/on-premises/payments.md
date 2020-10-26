@@ -171,9 +171,9 @@ Para exemplos de código, veja os links abaixo:
 * [Java]() em construção.
 
 > [!WARNING]
-> Para esta requisição será necessária uma chave de API com privilégios de administração de faturamento no sistema.
+> Para esta requisição será necessária uma chave de API com privilégios de administração de cobrança no sistema.
 
-#### Criação de chave de API de administração de faturamento
+#### Criação de chave de API de administração de cobrança
 
 Para gerá-la crie uma aplicação selecionado a organização Sys Admin: 
 
