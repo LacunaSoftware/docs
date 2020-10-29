@@ -4,6 +4,24 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-17-0" />
+### 1.17.0 (2020-10-28)
+
+* Melhorias
+  * [SIG-437] - Permitir editar fluxo mesmo com Manifesto Simplificado habilitado
+  * [SIG-506] - Adicionar logo na marca lateral (validation stamp)
+  * [SIG-517] - Alterações no manifesto e manifesto simplificado
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-16-1" />
+### 1.16.1 (2020-10-23)
+
+* Melhorias
+  * [SIG-534] - Criar perfil de administração de faturamento
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-16-0" />
 ### 1.16.0 (2020-10-22)
 

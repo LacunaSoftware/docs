@@ -143,6 +143,15 @@ beeing edited since the manifest will only contain the participants added when t
 * **MarginToPageCentimeters**: the margin in centimeters from the bottom (or right side if stamp is on right) of the page. The default value is `0.3`.
 * **SummaryFontSize**: the font size of the stamp in points. The default value is `8`.
 
+* **ShowLogo**: if `true`, shows logo at bottom-right corner of every page.
+* **LogoWidthCentimeters**: width of the logo in centimeters. The default value is `1`.
+* **LogoHeightCentimeters**: height of the logo in centimeters. The default value is `1`.
+* **LogoMarginRightCentimeters**: the margin of the logo in centimeters from the bottom of the page. The default value is `1`.
+* **LogoMarginBottomCentimeters**: the margin of the logo in centimeters from the right side of the page. The default value is `1`.
+
+* **EnableEditFlow**: if `true` allows small changes to document flow after submission even if **AddSimplifiedManifest** is also `true`. The changes allowed are:
+adding/removing observers and updating participant emails (if allowed by other settings).
+
 ###  *PrinterFriendly* Settings
 
 * **ShowSummaryBottom** (default: `true`): if `true`, shows the signature summary at the bottom of every page.

@@ -4,6 +4,24 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-17-0" />
+### 1.17.0 (2020-10-28)
+
+* Improvements
+  * [SIG-437] - Allow flow edit even with Simplified Manifest enabled
+  * [SIG-506] - Add logo to lateral mark (validation stamp)
+  * [SIG-517] - Changes to manifest and simplified manifest
+
+Updates database model: no
+
+<a name="v1-16-1" />
+### 1.16.1 (2020-10-23)
+
+* Improvements
+  * [SIG-534] - Create billing administration profile
+
+Updates database model: no
+
 <a name="v1-16-0" />
 ### 1.16.0 (2020-10-22)
 
