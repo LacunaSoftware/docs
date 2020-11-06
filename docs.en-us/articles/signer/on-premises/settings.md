@@ -39,6 +39,8 @@ If `false` the suggestions will search all of the users in the database. This op
 a custom visual representation that has information about his lawyer or accountant registration number.
 
 * **EnableBilling**: if `true` enables the billing module.
+* **DisableBillingInformationCheck** (v1.18.0): if `true` disables the check that verifies if the billing information has been set whenever a paid transaction is created by a user 
+or organization.
 
 * **UseCustomStaticHomePage**: if `true`, uses the static file index.html from the theme-assets as the home page. After the login, users will always be redirected to the 
 `<SiteUrl>/private` as the home page will be static. You may change the redirect URL using the `RedirectUri` setting in the OIDC Config section. 
@@ -68,6 +70,9 @@ prevent protected file and append mode errors.
 
 * **MaxUploadSizeInBytes** (default: `106954752` - 100 MB, v1.15.0): defines the maximum upload size in bytes. There is a 1 GB upper limit that can only be changed by
 updating the web.config file in the installation package.
+
+* **EnableDeletedDocumentValidation** (v1.18.0): if `true`, the system will validate documents by the validation code even if they were deleted 
+by their owners.
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
@@ -126,6 +131,9 @@ or manually positioned.
 * **AuthenticationSignatureWidthCentimetersOnA4**: width of the authentication signature visual representation in centimeters (optimized for A4 paper size). The default value is `19.31`.
 * **AuthenticationSignatureHeightCentimetersOnA4**: height of the authentication signature visual representation in centimeters (optimized for A4 paper size). The default value is `3.436`.
 
+* **DisableAutomaticSignaturePositioning** (v1.18.0): if `true` a signature visual representation will not be addeed to the document if the user does not
+manually selects a position while signing.
+
 ###  *ValidationStamp* Settings (v1.7.0)
 
 * **Enabled**: if `true`, adds a stamp to all PDF documents after they are uploaded. The stamp contains information of where the document was
@@ -143,13 +151,13 @@ beeing edited since the manifest will only contain the participants added when t
 * **MarginToPageCentimeters**: the margin in centimeters from the bottom (or right side if stamp is on right) of the page. The default value is `0.3`.
 * **SummaryFontSize**: the font size of the stamp in points. The default value is `8`.
 
-* **ShowLogo**: if `true`, shows logo at bottom-right corner of every page.
-* **LogoWidthCentimeters**: width of the logo in centimeters. The default value is `1`.
-* **LogoHeightCentimeters**: height of the logo in centimeters. The default value is `1`.
-* **LogoMarginRightCentimeters**: the margin of the logo in centimeters from the bottom of the page. The default value is `1`.
-* **LogoMarginBottomCentimeters**: the margin of the logo in centimeters from the right side of the page. The default value is `1`.
+* **ShowLogo** (v1.17.0): if `true`, shows logo at bottom-right corner of every page.
+* **LogoWidthCentimeters** (v1.17.0): width of the logo in centimeters. The default value is `1`.
+* **LogoHeightCentimeters** (v1.17.0): height of the logo in centimeters. The default value is `1`.
+* **LogoMarginRightCentimeters** (v1.17.0): the margin of the logo in centimeters from the bottom of the page. The default value is `1`.
+* **LogoMarginBottomCentimeters** (v1.17.0): the margin of the logo in centimeters from the right side of the page. The default value is `1`.
 
-* **EnableEditFlow**: if `true` allows small changes to document flow after submission even if **AddSimplifiedManifest** is also `true`. The changes allowed are:
+* **EnableEditFlow** (v1.17.0): if `true` allows small changes to document flow after submission even if **AddSimplifiedManifest** is also `true`. The changes allowed are:
 adding/removing observers and updating participant emails (if allowed by other settings).
 
 ###  *PrinterFriendly* Settings
