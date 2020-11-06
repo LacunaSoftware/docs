@@ -1,5 +1,13 @@
 ﻿# PKI Express changelog
 
+<a name="v1-21-0" />
+### 1.21.0 (2020-11-05)
+
+- Fix ValidationItemType conversion
+- Improve certificate model to reaturn KeyUsage value
+- Add support to return the program's current version (command `version`)
+
+
 <a name="v1-20-0" />
 ### 1.20.0 (2020-10-05)
 

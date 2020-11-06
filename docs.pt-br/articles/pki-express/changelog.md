@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-21-0" />
+### 1.21.0 (2020-11-05)
+
+- Corrige conversão do ValidationItemType
+- Melhora o model do certificado para returnar o valor de KeyUsage
+- Adiciona suporte para o retorno da versão atual do programa (comando `version`)
+
 <a name="v1-20-0" />
 ### 1.20.0 (2020-10-05)
 
