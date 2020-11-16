@@ -1,5 +1,35 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-9-5" />
+### 3.9.5 (2020-10-20)
+
+Correção de bug:
+
+* [AMP-182] - Dependendo do relógio da máquina do usuário, o processo de emissão imediatamente acusa estar expirado
+
+Atualiza modelo do banco de dados: não
+
+
+<a name="v3-9-4" />
+### 3.9.4 (2020-10-08)
+
+Correção de bug:
+
+* [AMP-186] - Erros recorrentes na emissão de LCR
+
+Atualiza modelo do banco de dados: não
+
+
+<a name="v3-9-3" />
+### 3.9.3 (2020-09-30)
+
+Correção de bug:
+
+* [AMP-185] - Erro no envio de SMS com provedor TotalVoice
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-9-2" />
 ### 3.9.2 (2020-09-03)
 

@@ -1,5 +1,35 @@
 ﻿# Amplia changelog
 
+<a name="v3-9-5" />
+### 3.9.5 (2020-10-20)
+
+Bug fixes:
+
+* [AMP-182] - Depending on the user machine's system clock, the issue procedure immediately fails reporting expired session
+
+Updates database model: no
+
+
+<a name="v3-9-4" />
+### 3.9.4 (2020-10-08)
+
+Bug fixes:
+
+* [AMP-186] - Recurring errors on CRL issuing
+
+Updates database model: no
+
+
+<a name="v3-9-3" />
+### 3.9.3 (2020-09-30)
+
+Bug fixes:
+
+* [AMP-185] - Error sending SMS messages using TotalVoice provider
+
+Updates database model: no
+
+
 <a name="v3-9-2" />
 ### 3.9.2 (2020-09-03)
 
