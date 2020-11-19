@@ -39,7 +39,7 @@ If `false` the suggestions will search all of the users in the database. This op
 a custom visual representation that has information about his lawyer or accountant registration number.
 
 * **EnableBilling**: if `true` enables the billing module.
-* **DisableBillingInformationCheck** (v1.18.0): if `true` disables the check that verifies if the billing information has been set whenever a paid transaction is created by a user 
+* **EnableBillingInformationCheck** (v1.19.0): if `true` enables the check that verifies if the billing information has been set whenever a paid transaction is created by a user 
 or organization.
 
 * **UseCustomStaticHomePage**: if `true`, uses the static file index.html from the theme-assets as the home page. After the login, users will always be redirected to the 

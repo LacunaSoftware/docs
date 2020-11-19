@@ -4,6 +4,35 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-19-0" />
+### 1.19.0 (2020-11-18)
+
+* Melhorias
+  * [SIG-468] - Permitir criação de Subpastas
+  * [SIG-544] - Identificar assinaturas eletronicas no manifesto e na validação por código
+  * [SIG-548] - Direcionar usuário para tela de cobrança caso tenha sido verificado que as informações de faturamento não foram preenchidas
+  * [SIG-557] - Trocar nome do botão inicial de aprovação para revisar
+
+* Correções de bugs
+  * [SIG-546] - Documento aparece como assinado caso outro participante tenha recusado
+  * [SIG-547] - Erro na assinatura de arquivo XLSX
+  * [SIG-558] - Não normalizar PDFs caso ele tenha vindo do Scanner ou possua assinaturas
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v1-18-0" />
+### 1.18.0 (2020-11-05)
+
+* Novas funcionalidades
+  * [SIG-483] - Bloqueio de uso enquanto informações de faturamento não estiverem preenchidas
+  * [SIG-513] - Desabilitar posicionamento automático de representação visual
+  * [SIG-519] - Webhook após conclusão de etapa
+
+* Melhorias
+  * [SIG-528] - Permitir validação de documento mesmo excluído
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-17-0" />
 ### 1.17.0 (2020-10-28)
 

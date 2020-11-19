@@ -4,6 +4,35 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-19-0" />
+### 1.19.0 (2020-11-18)
+
+* Improvements
+  * [SIG-468] - Allow creation of subfolders
+  * [SIG-544] - Recognize electronic signatures in the manifest and code validation
+  * [SIG-548] - Direct user to billing screen if he has not set billing information
+  * [SIG-557] - Replace the name of the initial approval button to review
+
+* Bug fixes
+  * [SIG-546] - Document is displayed as signed if another participant has refused it
+  * [SIG-547] - Error signing XLSX file
+  * [SIG-558] - Prevent normalization of PDFs if they are signed
+
+Updates database model: yes
+
+<a name="v1-18-0" />
+### 1.18.0 (2020-11-05)
+
+* New Features
+  * [SIG-483] - Prevent completion of billable actions while billing information is not set
+  * [SIG-513] - Disable signature visual representation automatic positioning
+  * [SIG-519] - Webhook for completed flow actions
+
+* Improvements
+  * [SIG-528] - Allow validation of deleted document
+
+Updates database model: no
+
 <a name="v1-17-0" />
 ### 1.17.0 (2020-10-28)
 
