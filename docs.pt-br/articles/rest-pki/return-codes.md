@@ -56,7 +56,7 @@ Erros de validação ocorrem durante assinaturas ou autenticações ou podem ser
 
 | Erros de Validação                      | Significado                                                                        |
 |-----------------------------------------|------------------------------------------------------------------------------------|
-| CertificateNotYetValid                  | Na data de referência, o certificado não é aindo válido                            |
+| CertificateNotYetValid                  | Na data de referência, o certificado ainda não é válido                            |
 | CertificateExpired                      | Na data de referência, o certificado está expirado                                 |
 | CertificateRevoked                      | Na data de referência, o certificado estava revogado                               |
 | CertificateIssuerNotFound               | Emissor do certificado não foi encontrado                                          |
@@ -73,13 +73,13 @@ Erros de validação ocorrem durante assinaturas ou autenticações ou podem ser
 | SigningCertificateDigestMismatch        | Atributo signing certificate especifica um digest diferente do digest do certificado do assinante |
 | SignatureAlgorithmValidationFailed      | Validação do algoritmo da assinatura falhou                                        |
 | RevocationDataIssuedBeforeGracePeriod   | Dados de revogação emitidos antes do fim do período de carência                    |
-| UncertifiedDateReference                | The date reference used to validate the signature is not certified                 |
+| UncertifiedDateReference                | A referência de tempo utilizada na validação da assinatura não é certificada       |
 | SignaturePolicyMismatch                 | Na validação a política de assinatura difere da política fornecida                 |
 | SigningTimeOutOfCertificateValidity     | Assinatura realizada fora do período de validade do certificado                    |
 | UnknownSignedAttributesPresent          | Assinatura contém um ou mais atributos assinados não reconhecidos                  |
 | UnknownUnsignedAttributesPresent        | Assinatura contém um ou mais atributos não assinados não reconhecidos              |
 | TimestampWithMoreThanOneSigner          | Carimbo de tempo contém mais de um assinante                                       |
-| TimestampMessageImprintMismatch         | The timestamp message-imprint is not the same as the computed message-imprint      |
+| TimestampMessageImprintMismatch         | Message-imprint do timestamp não é igual a computada                               |
 | CompleteReferencesMismatch              | Referências completas de certificados não são válidas                              |
 | InvalidSignatureTimestamp               | Carimbo de tempo da assinatura não é válido                                        |
 | InvalidReferencesTimestamp              | Nenhum carimbo de tempo de referenência válido foi encontrado                      |

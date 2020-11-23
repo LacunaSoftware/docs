@@ -48,3 +48,61 @@ As operações do PKI Express apresentam um conjunto de códigos de retorno que 
 | 41 - KeyNotFound                    | Chave não encontrada                                                         |
 | 42 - NoCertificateFile              | Nenhum certificado fornecido                                                 |
 | 43 - BadCertificationLevel          | Nível de certificação inválido                                               |
+
+## Erros de validação
+
+Erros de validação ocorrem durante assinaturas, autenticações ou inspeções com validação.
+
+| Erros de Validação                      | Significado                                                                    |
+|-----------------------------------------|--------------------------------------------------------------------------------|
+| Success                                 | Validação bem sucedida                                                         |
+| CertificateNotYetValid                  | Na data de referência, o certificado ainda não é válido                        |
+| CertificateExpired                      | Na data de referência, o certificado está expirado                             |
+| CertificateRevoked                      | Na data de referência, o certificado estava revogado                           |
+| CertificateIssuerNotFound               | Emissor do certificado não foi encontrado                                      |
+| CertificateRevocationStatusUnknown      | Estado de revogação do certificado não pode ser verificado. Provavelmente, o REST PKI não conseguiu acessar os certificados CRLs |
+| CertificateChainRootNotTrusted          | A raiz da cadeia de certificado não é confiável                                |
+| InvalidCertificateSignature             | Assinatura não é válida, baseado na chave pública fornecida para o certificado |
+| DecodeError                             | Não foi possível decodificar parte do objeto sendo validado                    |
+| RequiredSignedAttributeMissing          | Assinatura não contém todos os atributos assinados que são requeridos          |
+| ForbiddenSignedAttributePresent         | Assinatura contém um ou mais atributos assinados que são proibidos             |
+| RequiredUnsignedAttributeMissing        | Assinatura não contém todos os atributos não assinados que são requeridos      |
+| ForbiddenUnsignedAttributePresent       | Assinatura contém um ou mais atributos não assinados que são proibidos         |
+| ContentTypeMismatch                     | Atributo content-type especifica um tipo de conteúdo diferente do CMS          |
+| MessageDigestMismatch                   | Atributo message digest especifica um digest diferente do digest do dado assinado |
+| SigningCertificateDigestMismatch        | Atributo signing certificate especifica um digest diferente do digest do certificado do assinante |
+| SignatureAlgorithmValidationFailed      | Validação do algoritmo da assinatura falhou                                     |
+| RevocationDataIssuedBeforeGracePeriod   | Dados de revogação emitidos antes do fim do período de carência                 |
+| UncertifiedDateReference                | A referência de tempo utilizada na validação da assinatura não é certificada    |
+| SignaturePolicyMismatch                 | Na validação a política de assinatura difere da política fornecida              |
+| SigningTimeOutOfCertificateValidity     | Assinatura realizada fora do período de validade do certificado                 |
+| UnknownSignedAttributesPresent          | Assinatura contém um ou mais atributos assinados não reconhecidos               |
+| UnknownUnsignedAttributesPresent        | Assinatura contém um ou mais atributos não assinados não reconhecidos           |
+| TimestampWithMoreThanOneSigner          | Carimbo de tempo contém mais de um assinante                                    |
+| TimestampMessageImprintMismatch         | Message-imprint do timestamp não é igual a computada                            |
+| CompleteReferencesMismatch              | Referências completas de certificados não são válidas                           |
+| InvalidSignatureTimestamp               | Carimbo de tempo da assinatura não é válido                                     |
+| InvalidReferencesTimestamp              | Carimbo de tempo de referenência não é válido                                   |
+| InvalidSigAndRefsTimestamp              | Carimbo de tempo da assinatura e de referência são inválidos                    |
+| InvalidArchiveTimestamp                 | Carimbo de tempo do arquivo não é válido                                        |
+| InvalidKeyUsage                         | Certificado assinante não tem permissão para realizar esse tipo de operação     |
+| InvalidOcspResponse                     | Resposta OCSP não é válida                                                      |
+| UnauthorizedIssuer                      | Emissor do certificado não é uma AC                                             |
+| UnknownRootTrustStatus                  | Estado de confiança da raiz não conhecido                                       |
+| InvalidTsl                              | TSL não é válido                                                                |
+| InvalidCrl                              | Certificado LCR não é válido                                                    |
+| CertificateIssuerValid                  | Emissor do certificado é confiável                                              |
+| CertificateIssuerInvalid                | Emissor do certificado não é confiável                                          |
+| CertificateValidationFailed             | Validação do certificado falhou                                                 |
+| SignatureVulnerableToSignerSubstitution | Assinatura é vulnerável a ataques de substituição de signatário                 |
+| InvalidXmlSignatureSchema               | Validação do schema da assinatura (XSD)falhou                                   |
+| XmlDSigCoreValidationFailed             | Validação primária (core validation) da assinatura falhou (o digest ou assinatura estão incorretos) |
+| SignatureTimestampIgnored               | Um carimbo de tempo de assinatura foi ignorado                                  |
+| InvalidCertificationPathLen             | Caminho de certificação das ACs é inválido                                      |
+| SigningCertificateNotFound              | Certificado do signatário não foi encontrado                                    |
+| UnauthorizedACIssuer                    | Emissor do certificado é uma AC, portanto não pode ser usado como emissor de certificados de atributo |
+| AlgorithmNotAllowed                     | Algoritmo não é permitido                                                       |
+| UnacceptableSignaturePolicy             | Política de assinatura não permitida                                            |
+| TslNotAvailable                         | TSL não disponível                                                              |
+
+<!-- TimestampValidationException: foi apagado da listagem pois não é utilizado -->
