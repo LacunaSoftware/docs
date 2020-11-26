@@ -1,5 +1,24 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-9-6" />
+### 3.9.6 (2020-11-26)
+
+Melhorias:
+
+* [AMP-184] - Adicionar configuração para esconder informações de "powered by"
+* [AMP-187] - Permitir que a API de criação de pedido para usuário seja chamada para um usuário existente sem preencher o campo `subject`
+
+Correções de bugs:
+
+* [AMP-183] - Erro ao cadastrar pedido porque o email não está normalizado
+* [AMP-188] - Dependendo do tamanho da tela, não é possível marcar a checkbox na assinatura do termo
+* [AMP-189] - Erros em templates do tipo `EcuadorBce`
+* [AMP-190] - Após remover uma chave que era de uma CA, erro ao listar CA Certificates
+* [AMP-191] - Data de nascimento é pré-preenchida de maneira incorreta na criação de pedido para usuário
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-9-5" />
 ### 3.9.5 (2020-10-20)
 

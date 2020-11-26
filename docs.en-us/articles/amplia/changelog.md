@@ -1,5 +1,24 @@
 ﻿# Amplia changelog
 
+<a name="v3-9-6" />
+### 3.9.6 (2020-11-26)
+
+Improvements:
+
+* [AMP-184] - Add configuration to hide "powered by" information
+* [AMP-187] - Allow user order creation API to be called for an existing user without filling the `subject` field
+
+Bug fixes:
+
+* [AMP-183] - Order creation results in error if invalid email is inputted
+* [AMP-188] - On the agreement signature, the *I agree* checkbox cannot be checked on certain screen resolutions
+* [AMP-189] - Errors when using `EcuadorBce` templates
+* [AMP-190] - Errors when listing CA certificates after removing keys used by CAs
+* [AMP-191] - Birth date is incorrectly pre-filled on the user order creation page if the user already exists
+
+Updates database model: no
+
+
 <a name="v3-9-5" />
 ### 3.9.5 (2020-10-20)
 
