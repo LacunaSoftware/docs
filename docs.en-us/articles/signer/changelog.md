@@ -4,6 +4,21 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-20-0" />
+### 1.20.0 (2020-11-27)
+
+* New Features
+  * [SIG-477] - Integration with Securiti to automate LGDP/DSR requests
+  * [SIG-486] - Billing of timestamps and SMS
+
+* Improvements
+  * [SIG-508] - Create option to disable email change while submitting a document
+  * [SIG-553] - Add participant title in the Simplified manifest
+  * [SIG-563] - Enable organization creation via integrations
+  * [SIG-565] - Disable indexing of the document validation page
+
+Updates database model: no
+
 <a name="v1-19-0" />
 ### 1.19.0 (2020-11-18)
 

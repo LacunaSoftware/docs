@@ -74,6 +74,10 @@ updating the web.config file in the installation package.
 * **EnableDeletedDocumentValidation** (v1.18.0): if `true`, the system will validate documents by the validation code even if they were deleted 
 by their owners.
 
+* **AllowSetFlowActionEmail** (default: `true`, v1.20.0): if `true`, allows a participant to have a document specific email, that is, if a document is submitted to a user
+but the email provided is different from what is registered for that user, the provided email will be the one considered in the notifications of the submitted document(s).
+This option has no effect if the username is email.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 

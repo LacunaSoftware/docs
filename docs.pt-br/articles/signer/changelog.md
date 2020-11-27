@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-20-0" />
+### 1.20.0 (2020-11-27)
+
+* Novas funcionalidades
+  * [SIG-477] - Integração com Securiti para automatização de solicitações da LGPD
+  * [SIG-486] - Cobrança por Carimbo de tempo e SMS
+
+* Melhorias
+  * [SIG-508] - Permitir desabilitar troca de email no momento da submissão do documento
+  * [SIG-553] - Inserir Titulo do Signatário no Manifesto Simplificado
+  * [SIG-563] - Permitir criar organizações via integração
+  * [SIG-565] - Desabilitar indexação da página de validação de documentos
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-19-0" />
 ### 1.19.0 (2020-11-18)
 
