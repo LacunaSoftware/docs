@@ -6,3 +6,4 @@
 # [Signer](articles/signer/index.md)
 # [Amplia](articles/amplia/index.md)
 # [GrantID](articles/grant-id/index.md)
+# [Scanner](articles/scanner/index.md)

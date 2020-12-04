@@ -39,5 +39,9 @@ _disableContribution: true
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		
 		[GrantID](articles/grant-id/index.md)
+
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		[Scanner](articles/scanner/index.md)
 	</p>
 </div>
