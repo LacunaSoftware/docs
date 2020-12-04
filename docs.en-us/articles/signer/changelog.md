@@ -4,6 +4,14 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-21-0" />
+### 1.21.0 (2020-12-03)
+
+* New Features
+  * [SIG-217] - Allow CPF to be nullable
+
+Updates database model: yes
+
 <a name="v1-20-0" />
 ### 1.20.0 (2020-11-27)
 

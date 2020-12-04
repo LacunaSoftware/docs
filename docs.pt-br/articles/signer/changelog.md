@@ -4,6 +4,14 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-21-0" />
+### 1.21.0 (2020-12-03)
+
+* Novas funcionalidades
+  * [SIG-217] - Remover obrigatoriedade de CPF
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-20-0" />
 ### 1.20.0 (2020-11-27)
 

@@ -78,6 +78,12 @@ by their owners.
 but the email provided is different from what is registered for that user, the provided email will be the one considered in the notifications of the submitted document(s).
 This option has no effect if the username is email.
 
+* **CountryIdentifierMode** (default: `Unique`, v1.21.0): defines the behaviour of the country identifier. The available types are `Unique`, `NonUnique`, `Nullable` and
+`NullableUnique`. The country identifier claim must also be set accordingly in GrantID.
+* **FilterCertificatesByEmailIfNoIdentifier** (default: `true`, v1.21.0): if `true`, filters by email the digital certificates of a user who has no identifier.
+* **UpdatedUserWithoutIdentifierAfterSignature** (default: `true`, v1.21.0): if `true`, attemps to add an identifier to a user after he has successfully signed a document
+with a certificate that has an identifier.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
