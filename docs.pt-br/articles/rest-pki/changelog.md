@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-25-0" />
+### 1.25.0 (2020-12-06)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar campo "Reason" em assinaturas PAdES
+
 <a name="v1-24-3" />
 ### 1.24.3 (2020-09-22)
 

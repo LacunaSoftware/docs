@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-25-0" />
+### 1.25.0 (2020-12-06)
+
+Database model update: No
+
+- Added "Reason" field on PAdES signatures
+
 <a name="v1-24-3" />
 ### 1.24.3 (2020-09-22)
 
