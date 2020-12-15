@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-25-1" />
+### 1.25.1 (2020-12-15)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar política "CmsPermissive" para validação de assinaturas CAdES
+
 <a name="v1-25-0" />
 ### 1.25.0 (2020-12-06)
 

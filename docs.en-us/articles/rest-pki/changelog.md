@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-25-1" />
+### 1.25.1 (2020-12-15)
+
+Database model update: No
+
+- Added policy "CmsPermissive" for validation of CAdES signatures
+
 <a name="v1-25-0" />
 ### 1.25.0 (2020-12-06)
 
