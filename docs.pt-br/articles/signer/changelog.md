@@ -4,6 +4,29 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-22-0" />
+### 1.22.0 (2020-12-17)
+
+* Novas funcionalidades
+  * [SIG-144] - Exibir evidências de assinatura eletronica
+  * [SIG-551] - Adicionar campo para observações do documento
+  * [SIG-541] - Permitir definir mensagem a ser adicionada nos emails de assinatura/aprovação pendente
+
+* Melhorias
+  * [SIG-330] - Permitir definir posição de assinatura de múltiplos arquivos
+  * [SIG-390] - Exibir todas assinaturas no pré-posicionamento de assinaturas
+  * [SIG-425] - Validar Hash do Arquivo Scanner no Validador
+  * [SIG-426] - Marca lateral no documento scanneado
+  * [SIG-531] - Melhorar tratamento de erro na assinatura de HSM
+  * [SIG-545] - API para validar assinaturas por ID do documento e incluir evidências da assinatura eletrônica
+  * [SIG-550] - Aumentar número de pastas recuperadas na tela de criação de documento
+  * [SIG-559] - Atualizar Lacuna PKI para permitir certificados da ANF (Equador)
+  * [SIG-570] - Corrigir internacionalização do email de boas vindas e termos de uso
+  * [SIG-571] - Permitir configurar moeda a ser utilizada no sistema
+  * [SIG-572] - Permitir definir tipos de arquivo aceitáveis na criação de documentos
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-21-0" />
 ### 1.21.0 (2020-12-03)
 

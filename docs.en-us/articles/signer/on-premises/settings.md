@@ -84,6 +84,11 @@ This option has no effect if the username is email.
 * **UpdatedUserWithoutIdentifierAfterSignature** (default: `true`, v1.21.0): if `true`, attemps to add an identifier to a user after he has successfully signed a document
 with a certificate that has an identifier.
 
+* **DefaultCurrency** (default: `R$`, v1.22.0): sets the default currency for the application.
+
+* **DocumentAcceptedMimeTypes** (v1.22.0): defines the accepted mime types for document uploads. Values should be separated by comma. Set as null if types should not 
+be restricted.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
@@ -254,9 +259,9 @@ adding/removing observers and updating participant emails (if allowed by other s
 * **TokenAuthTimeValidation**:
 
 
-###  *BusinessHours* Settings
+###  *Scanner* Settings
 
-* **StartHour**:
-* **EndHour**:
-* **IsWeekendBusinessDays**:
-* **TimeZoneId**:
+* **Disabled**: if `true`, disables Scanner integration.
+* **Endpoint**: the Scanner endpoint.
+* **ApiKey**: a Scanner API Key. To enable validation of documents from all subscriptions of Scanner, you must provide a key with Root Admin privileges and set the `SubscriptionId` parameter.
+* **SubscriptionId** (optional): should only be set if the `ApiKey` is a Root key. Defines the subscription to which scanned documents will be associated.

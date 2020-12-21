@@ -4,6 +4,29 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-22-0" />
+### 1.22.0 (2020-12-17)
+
+* New Features
+  * [SIG-144] - Display electronic signature evidences
+  * [SIG-551] - Add document description field
+  * [SIG-541] - Allow user to set a message that will be added to pending signature/approval emails
+
+* Improvements
+  * [SIG-330] - Allow user to define signature positions for multiple files
+  * [SIG-390] - Show all signature in signature pre-positioning
+  * [SIG-425] - Validate Scanner verification code of any Scanner subscription
+  * [SIG-426] - Add validation stamp in Scanned document
+  * [SIG-531] - Improve error handling of HSM signatures
+  * [SIG-545] - API to validate signatures and retrieve electronic signature evidences by document ID
+  * [SIG-550] - Increase number of retrieved folder in document creation screen
+  * [SIG-559] - Update Lacuna PKI to allow ANF certificates (Ecuador)
+  * [SIG-570] - Fix welcome and terms of use emails i18n
+  * [SIG-571] - Parameterize application default currency
+  * [SIG-572] - Parameterize accepted file types for document creation
+
+Updates database model: yes
+
 <a name="v1-21-0" />
 ### 1.21.0 (2020-12-03)
 
