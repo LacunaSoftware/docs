@@ -129,10 +129,10 @@ Em ASP.NET Core, adicione a propriedade `CultureName` à seção de configuraç�
 Em .NET convencional, altere a propriedade `CultureName` do objeto `RestPkiOptions`:
 
 ```cs
-		this.restPkiService = RestPkiServiceFactory.GetService(new RestPkiOptions() {
-			...,
-			CultureName = "pt-BR",
-		});
+this.restPkiService = RestPkiServiceFactory.GetService(new RestPkiOptions() {
+	...,
+	CultureName = "pt-BR",
+});
 ```
 
 #### Exceções
@@ -180,14 +180,14 @@ X-Api-Key: yourapp|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 A API responde com os seguintes códigos HTTP:
 
-Código                          | Descrição
-------------------------------- | ---------
-**200 (OK)**                    | Requisição processada com sucesso. A resposta é diferente para cada API, consulte a [documentação da API](https://core-hml.pki.rest/swagger) para saber o formato da resposta de cada chamada.
-**400 (Bad Request)**           | Erro de sintaxe na requisição. Por exemplo, um campo obrigatório não foi informado.
-**401 (Unauthorized)**          | A chave de API não foi fornecida ou está inválida.
-**403 (Forbidden)**             | A chave de API passada é válida, porém a aplicação não possui permissões suficientes para realizar a operação solicitada.
-**422 (Unprocessable Entity)**  | Erro de API. O corpo da reposta é um `ErrorModel`, descrito abaixo.
-**500 (Internal Server Error)** | Um erro inesperado aconteceu. O campo `exceptionCode` (string) informado no corpo da resposta pode ajudar no diagnóstico do problema.
+Código                      | Descrição
+--------------------------- | ---------
+200 (OK)                    | Requisição processada com sucesso. A resposta é diferente para cada API, consulte a [documentação da API](https://core-hml.pki.rest/swagger) para saber o formato da resposta de cada chamada.
+400 (Bad Request)           | Erro de sintaxe na requisição. Por exemplo, um campo obrigatório não foi informado.
+401 (Unauthorized)          | A chave de API não foi fornecida ou está inválida.
+403 (Forbidden)             | A chave de API passada é válida, porém a aplicação não possui permissões suficientes para realizar a operação solicitada.
+422 (Unprocessable Entity)  | Erro de API (geralmente um mal uso da API que pode ser sanado adequando os parâmetros da requisição). O corpo da reposta é um `ErrorModel`, descrito abaixo.
+500 (Internal Server Error) | Um erro inesperado aconteceu. O campo `exceptionCode` (string) informado no corpo da resposta pode ajudar no diagnóstico do problema.
 
 #### ErrorModel
 
