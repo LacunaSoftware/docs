@@ -139,7 +139,7 @@ prematuramente fechando a aba do navegador.
 
 ## Validação de arquivos
 
-Caso você tenha uma regra de formação para os nomes de arquivos que são aceitos, voc6e pode configurar sua conta do Rest PKI Core com um *padrão aceito de nomes de
+Caso você tenha uma regra de formação para os nomes de arquivos que são aceitos, você pode configurar sua conta do Rest PKI Core com um *padrão aceito de nomes de
 arquivos* com uma expressão regular que represente as suas regras.
 
 Também é possível configurar uma API de validação de arquivos, implementada pela sua aplicação, a ser chamada pelo Rest PKI Core para validar cada arquivo escolhido
