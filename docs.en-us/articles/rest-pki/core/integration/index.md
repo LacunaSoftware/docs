@@ -1,4 +1,7 @@
 ﻿# Integration Guide - Rest PKI Core
 
-<!-- link to version in Portuguese -->
-<div data-alt-locales="pt-br"></div>
+To integrate your app to [Rest PKI Core](../index.md), first follow the steps on the [Get started](get-started.md) article.
+
+Then, check out the integration guide for a specific feature:
+
+* [Signature sessions](signature-sessions.md)
