@@ -154,7 +154,7 @@ Em breve estará disponível o pacote para PHP **lacuna/restpkicore-client** (pr
 
 ### Chamando a API em Java
 
-Em breve estará disponível o pacote para Java **com.lacunasoftware.restpki:restpkicore-client** (previsão: 01/02/2021)
+Em breve estará disponível o pacote para Java **com.lacunasoftware.restpkicore:restpkicore-client** (previsão: 01/02/2021)
 
 
 <a name="rest" />
