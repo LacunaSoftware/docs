@@ -18,7 +18,7 @@ Antes de começar, obtenha o pacote de binários:
 
 <br />
 <center>
-**[Pacote de binários do Signer 1.21.0](https://cdn.lacunasoftware.com/signer/signer-1.21.0.zip)**
+**[Pacote de binários do Signer 1.22.0](https://cdn.lacunasoftware.com/signer/signer-1.22.0.zip)**
 </center>
 <br />
 
