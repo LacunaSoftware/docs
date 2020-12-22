@@ -106,6 +106,35 @@ public MyController : ApiController {
 No exemplo acima, o endpoint e chave de API ficariam na seção `appSettings` do arquivo *web.config* (entradas `RestPkiEndpoint` e `RestPkiApiKey` respectivamente).
 Entretanto, essa correspondência é apenas um exemplo. Os parâmetros podem ficar onde você preferir, por exemplo no banco de dados ou um arquivo de configuração JSON.
 
+#### Cultura / internacionalização (i18n)
+
+A cultura da thread atual (`Thread.CurrentThread.CurrentUICulture`) é usada para sinalizar nas chamadas ao Rest PKI Core qual a cultura que a API deve observar.
+Esse comportamento funciona bem caso a sua aplicação configure a cultura adequada na thread atual (`CurrentThread`).
+
+Caso queira, você também pode alterar esse comportamento, sobrepondo a cultura da thread atual com uma cultura fixa.
+
+Em ASP.NET Core, adicione a propriedade `CultureName` à seção de configuração do Rest PKI no arquivo *appSettings.json*:
+
+```json
+{
+	...
+	"RestPki": {
+		...,
+		"CultureName": "pt-BR"
+	},
+	...
+}
+```
+
+Em .NET convencional, altere a propriedade `CultureName` do objeto `RestPkiOptions`:
+
+```cs
+		this.restPkiService = RestPkiServiceFactory.GetService(new RestPkiOptions() {
+			...,
+			CultureName = "pt-BR",
+		});
+```
+
 #### Exceções
 
 As seguintes exceções podem ser lançadas nas chamadas aos métodos do `IRestPkiService`:
