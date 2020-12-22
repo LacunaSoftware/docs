@@ -53,7 +53,7 @@ Em .NET, a implementação do tratamento de retorno seria algo como:
 
 [!include[Callback in dotnet](../../../../../includes/rest-pki/core/signature-sessions/callback-dotnet.md)]
 
-Note que verificamos o `Status` da sessão e enviamos o usuário para um local padrão caso o estado não seja `Completed`.
+Note que verificamos o estado (`Status`) da sessão e enviamos o usuário para um local padrão caso o estado não seja `Completed`.
 
 > [!NOTE]
 > Quando um usuário é redirecionado de volta à sua aplicação, a sessão terá um de dois possíveis estados: `Completed` ou `UserCancelled`, esse último ocorrendo quando a

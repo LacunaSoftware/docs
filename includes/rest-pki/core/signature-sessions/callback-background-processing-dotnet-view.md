@@ -1,4 +1,4 @@
-﻿```cshtml
+﻿```html
 @using Lacuna.RestPki.Api
 @using Lacuna.RestPki.Client
 @model SignatureSession
