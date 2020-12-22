@@ -94,6 +94,12 @@
 ### [Error "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Privacy Policy](rest-pki/privacy-policy.md)
 ## [Changelog](rest-pki/changelog.md)
+## [Rest PKI Core](rest-pki/core/index.md)
+### [Integration Guide](rest-pki/core/integration/index.md)
+#### [.NET](rest-pki/core/integration/dotnet.md)
+#### [PHP](rest-pki/core/integration/php.md)
+#### [Java](rest-pki/core/integration/java.md)
+#### [Rest API](rest-pki/core/integration/other.md)
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->

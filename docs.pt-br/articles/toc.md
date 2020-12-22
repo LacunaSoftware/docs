@@ -205,6 +205,12 @@
 ## [Guia de Integração](signer/integration-guide.md)
 ## [Assinatura Embutida](signer/embedded-signature.md)
 ## [Histórico de versões](signer/changelog.md)
+## [Rest PKI Core](rest-pki/core/index.md)
+### [Guia de Integração](rest-pki/core/integration/index.md)
+#### [.NET](rest-pki/core/integration/dotnet.md)
+#### [PHP](rest-pki/core/integration/php.md)
+#### [Java](rest-pki/core/integration/java.md)
+#### [Rest API](rest-pki/core/integration/other.md)
 <!-- End of Signer -->
 
 <!-- Start of Amplia -->
