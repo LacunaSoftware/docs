@@ -98,6 +98,7 @@
 ### [Integration Guide](rest-pki/core/integration/index.md)
 #### [Get started](rest-pki/core/integration/get-started.md)
 #### [Signature sessions](rest-pki/core/integration/signature-sessions.md)
+#### [Error codes](rest-pki/core/integration/error-codes.md)
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->
