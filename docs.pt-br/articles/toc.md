@@ -94,6 +94,10 @@
 ### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Política de Privacidade](rest-pki/privacy-policy.md)
 ## [Histórico de versões](rest-pki/changelog.md)
+## [Rest PKI Core](rest-pki/core/index.md)
+### [Guia de Integração](rest-pki/core/integration/index.md)
+#### [Primeiros passos](rest-pki/core/integration/get-started.md)
+#### [Sessões de assinatura](rest-pki/core/integration/signature-sessions.md)
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->
@@ -205,12 +209,6 @@
 ## [Guia de Integração](signer/integration-guide.md)
 ## [Assinatura Embutida](signer/embedded-signature.md)
 ## [Histórico de versões](signer/changelog.md)
-## [Rest PKI Core](rest-pki/core/index.md)
-### [Guia de Integração](rest-pki/core/integration/index.md)
-#### [.NET](rest-pki/core/integration/dotnet.md)
-#### [PHP](rest-pki/core/integration/php.md)
-#### [Java](rest-pki/core/integration/java.md)
-#### [Rest API](rest-pki/core/integration/other.md)
 <!-- End of Signer -->
 
 <!-- Start of Amplia -->

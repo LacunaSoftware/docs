@@ -1,3 +1,3 @@
-﻿# Integração com .NET - Rest PKI Core
+﻿# Sessões de assinatura - Rest PKI Core
 
 [!include[Em construção](../../../includes/under-construction.md)]
