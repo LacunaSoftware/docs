@@ -7,15 +7,15 @@ Nesse artigo, você dará os primeiros passos para integrar a sua aplicação co
 
 Para começar, você precisará dos seguintes parâmetros:
 
-* **Endpoint**: endereço da instância do Rest PKI Core que será utilizada
+* **Endpoint**: endereço da instância do Rest PKI Core a ser utilizada
 * **Chave de API**: chave de autenticação com a API
 
-Solicite ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com) seus parâmetros.
+Solicite seus parâmetros ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com).
 
 
 ## Chamando a API
 
-Embora o Rest PKI Core ofereça APIs REST que podem ser facilmente consumidas, elas normalmente não são utilizadas
+Embora o Rest PKI Core ofereça APIs REST que podem ser facilmente chamadas, elas normalmente não são utilizadas
 diretamente. Ao invés disso, oferecemos bibliotecas para consumir os serviços do Rest PKI Core (*client libs*) em diversas
 linguagens de programação e diversos projetos de exemplos que demonstram o uso dessas bibliotecas, de modo que os
 programadores não precisem se preocupar com os detalhes envolvidos no consumo de APIs e possam codificar diretamente
@@ -36,33 +36,34 @@ Caso sua aplicação utilize outra linguagem de programação, [chame as APIs di
 
 Comece adicionando o pacote de Nuget [Lacuna.RestPkiCore.Client](https://www.nuget.org/packages/Lacuna.RestPkiCore.Client/), disponível para:
 
-* .NET Standard 2.0+ (para uso em .NET Core 2, .NET Core 3 ou .NET 5 ou ainda em plataformas como Xamarim, UWP etc)
+* .NET Standard 2.0+ (para uso em .NET Core 2, .NET Core 3 ou .NET 5 ou ainda em plataformas como UWP)
 * .NET Framework 4.5+
 
 #### Aplicações em ASP.NET Core
 
-Em seguida, se a sua aplicação for em ASP.NET Core, adicione o seguinte ao método `ConfigureServices()` da classe *Startup.cs* do seu projeto:
+Se a sua aplicação for em ASP.NET Core, adicione o código abaixo ao método `ConfigureServices()` da classe *Startup.cs* do seu projeto:
 
 ```cs
 public void ConfigureServices(IServiceCollection services) {
 	...
-	services.AddRestPki()
-		.Configure(Configuration.GetSection("RestPki"));
+	services.AddRestPki().Configure(Configuration.GetSection("RestPki"));
 }
 ```
 
 No arquivo de configuração *appsettings.json*, adicione a seção `RestPki`:
 
 ```json
+{
 	...
 	"RestPki": {
-		"Endpoint": "...",
-		"ApiKey": "..."
+		"Endpoint": "SEU_ENDPOINT_AQUI",
+		"ApiKey": "SUA_CHAVE_DE_API_AQUI"
 	},
 	...
+}
 ```
 
-Nas partes da aplicação que precisarem fazer chamadas à API do serviço, peça via *dependency injection* uma instância de `IScannerService`:
+Nas partes da aplicação que precisarem fazer chamadas à API do serviço, peça via *dependency injection* uma instância de `IRestPkiService`:
 
 ```cs
 using Lacuna.RestPki.Client;
@@ -81,7 +82,7 @@ public MyController : ApiController {
 
 #### Aplicações em .NET convencional
 
-Caso a sua aplicação não seja em ASP.NET Core, utilize os parâmetros de **endpoint** e **API key** para solicitar uma implementação da interface
+Caso a sua aplicação não seja em ASP.NET Core, utilize os parâmetros de **endpoint** e **chave de API** para solicitar uma implementação da interface
 `IRestPkiService` à classe estática `RestPkiServiceFactory`:
 
 ```cs
@@ -102,12 +103,12 @@ public MyController : ApiController {
 }
 ```
 
-No exemplo acima, o endpoint e API Key ficariam na seção `appSettings` do arquivo *web.config* (entradas `RestPkiEndpoint` e `RestPkiApiKey` respectivamente).
+No exemplo acima, o endpoint e chave de API ficariam na seção `appSettings` do arquivo *web.config* (entradas `RestPkiEndpoint` e `RestPkiApiKey` respectivamente).
 Entretanto, essa correspondência é apenas um exemplo. Os parâmetros podem ficar onde você preferir, por exemplo no banco de dados ou um arquivo de configuração JSON.
 
 #### Exceções
 
-As seguintes exceções podem ocorrer nas chamdas aos métodos do `IRestPkiService`:
+As seguintes exceções podem ser lançadas nas chamadas aos métodos do `IRestPkiService`:
 
 * `RestPkiException`: erro de API (geralmente um mal uso da API que pode ser sanado adequando os parâmetros da requisição). A propriedade `Code` contém o código
   de erro da API. Veja os [códigos de erro](error-codes.md).
@@ -131,17 +132,20 @@ Em breve estará disponível o pacote para Java **com.lacunasoftware.restpki:res
 
 ### Chamando a API diretamente
 
-As APIs do Rest PKI Core são RESTful recebendo e retornando mensagens JSON, sendo de fácil uso em qualquer linguagem de programação moderna.
+As APIs do Rest PKI Core são RESTful recebendo e retornando mensagens JSON, sendo de fácil uso em qualquer linguagem de programação moderna. Caso
+a sua aplicação não utilize nenhuma das linguagens de programação elencadas acima, opte por chamar as APIs do Rest PKI Core diretamente.
+
+Veja a [documentação da API](https://core-hml.pki.rest/).
 
 O parâmetro **endpoint** mencionado acima deve ser prefixado a todas as URLs relativas mencionadas nessa seção.
 
-Já a **chave de API** deve ser passado no header `X-Api-Key` de cada requisição:
+Já a **chave de API** deve ser passada no header `X-Api-Key` de cada requisição:
 
 ```plaintext
 X-Api-Key: yourapp|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-<a name="http-status-codes">
+<a name="http-status-codes" />
 
 #### Códigos de resposta HTTP
 

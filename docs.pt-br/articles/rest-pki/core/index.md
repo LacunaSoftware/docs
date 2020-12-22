@@ -14,11 +14,12 @@ Rest PKI Core esteja disponível em nuvem como serviço (SaaS) aproximadamente n
 
 As versões 1.x do Rest PKI Core suportarão algumas, porém não todas, as funcionalidades hoje disponíveis no Rest PKI 1.x (além de algumas funcionalidades
 novas exclusivas da versão Core). À medida que o desenvolvimento do Rest PKI Core progredir, mais e mais funcionalidades do Rest PKI serão suportadas. Quanto
-o Rest PKI Core atingir compatibilidade plena* com o Rest PKI, a versão 2.0 será lançada, unificando ambos módulos e se chamando simplesmente *Rest PKI 2*.
+o Rest PKI Core atingir compatibilidade plena com o Rest PKI, a versão 2.0 será lançada, unificando ambos módulos e se chamando simplesmente *Rest PKI 2*.
 
 A previsão de lançamento da versão 2.0 que unificará Rest PKI e Rest PKI Core é para o segundo semestre de 2021.
 
-&ast; *algumas APIs atualmente em processo de descontinuação serão definitivamente abandonadas na versão 2 do Rest PKI. Procure usar as versões mais recentes das APIs.*
+> [!NOTE]
+> Algumas APIs atualmente em processo de descontinuação serão definitivamente abandonadas na versão 2 do Rest PKI. Procure usar as versões mais recentes das APIs.
 
 ## Integração
 
