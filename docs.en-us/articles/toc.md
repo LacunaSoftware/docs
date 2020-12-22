@@ -21,6 +21,7 @@
 ## [Customizing certificate selection](web-pki/cert-select.md)
 ## [Certificate pre-validation](web-pki/cert-validation.md)
 ## [Browser support](web-pki/browser-support.md)
+## [Installation and distribution of WEB PKI components via GPO](web-pki/installation-webpki-gpo.md)
 ## [Licensing](web-pki/licensing.md)
 ## [Asynchronous calls](web-pki/async.md)
 ## [Default error callback](web-pki/default-error-callback.md)

@@ -21,6 +21,7 @@
 ## [Personalizando a listagem de certificados](web-pki/cert-select.md)
 ## [Pré-validação de certificados](web-pki/cert-validation.md)
 ## [Browsers suportados](web-pki/browser-support.md)
+## [Instalação e distribuição de componentes do Web PKI via GPO](web-pki/installation-webpki-gpo.md)
 ## [Licenciamento](web-pki/licensing.md)
 ## [Chamadas assíncronas](web-pki/async.md)
 ## [Callback de erro padrão](web-pki/default-error-callback.md)
