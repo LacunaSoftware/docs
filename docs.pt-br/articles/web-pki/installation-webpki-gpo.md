@@ -7,8 +7,7 @@ Como exemplo, vamos usar o diretório: "C:\temp\webpki-ext"
 
 **Distribuição automática do plugin no Chrome**
 
-Criar uma chave com caminho:
-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\dcngeagmmhegagicpcmpinaoklddcgon
+Criar uma chave com caminho: HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\dcngeagmmhegagicpcmpinaoklddcgon
 
 Adicione as *Strings Value*:
 
@@ -29,11 +28,9 @@ Data: 2.15.0
 
 Como na imagem abaixo:
 
-[String Value](../../../images/web-pki/string-values-gpo.png)
+![String Value](../../../images/web-pki/string-values-gpo.png)
 
-Criar uma chave com caminho:
-
-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist
+Criar uma chave com caminho: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist
 
 E adicionar uma String Value
 
@@ -44,12 +41,11 @@ Data: dcngeagmmhegagicpcmpinaoklddcgon;https://clients2.google.com/service/updat
 
 Como na imagem abaixo:
 
-[String Value](../../../images/web-pki/string-values-gpo2.png)
+![String Value](../../../images/web-pki/string-values-gpo2.png)
 
 **Distribuição automática do plugin no Firefox**
 
-Criar uma chave com caminho:
-HKEY_LOCAL_MACHINE\Software\Policies\Mozilla\Firefox\Extensions\Install
+Criar uma chave com caminho: HKEY_LOCAL_MACHINE\Software\Policies\Mozilla\Firefox\Extensions\Install
 
 E adicionar uma String Value:
 
@@ -60,7 +56,7 @@ Data: C:\temp\webpki-ext\webpki-firefox-ext.xpi
 
 Como na imagem abaixo:
 
-[String Value](../../../images/web-pki/string-values-gpo3.png)
+![String Value](../../../images/web-pki/string-values-gpo3.png)
 
 **Distribuição automática da aplicação nativa**
 
