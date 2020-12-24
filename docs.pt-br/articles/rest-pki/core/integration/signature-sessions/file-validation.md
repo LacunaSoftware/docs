@@ -18,7 +18,7 @@ Para validar essa condição, configurar-se-ia a regra de formação para:
 
 O usuário fica então impedido de escolher arquivos com nome fora do padrão:
 
-![Arquivo rejeitado por padrão](../../../../../../rest-pki/core/file-rejected-pattern.png)
+![Arquivo rejeitado por padrão](../../../../../../images/rest-pki/core/file-rejected-pattern.png)
 
 > [!NOTE]
 > Nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com) pode auxiliá-lo a montar a expressão regular a partir de uma descrição textual da sua
@@ -63,4 +63,4 @@ Ou, em caso de rejeição:
 
 A mensagem retornada pela sua aplicação será exibida para o usuário, por exemplo:
 
-![Arquivo rejeitado por API](../../../../../../rest-pki/core/file-rejected-api.png)
+![Arquivo rejeitado por API](../../../../../../images/rest-pki/core/file-rejected-api.png)
