@@ -78,28 +78,28 @@ Direct API integration:
 Then, users will only be able to download documents through your app, and thus will be far less inclined to quit the process prematurely.
 
 > [!NOTE]
-> Outra forma de lidar com esse problema é optar pelo **Fluxo com webhook** (veja seção abaixo)
+> Another way of dealing with this issue is to opt for the **Webhook flow** instead (see next section)
 
 <a name="webhook-flow" />
 
-## Fluxo com webhook
+## Webhook flow
 
-No fluxo padrão descrito acima, a sua aplicação toma conhecimento dos documentos assinados quando o usuário é redirecionado de volta com a *query parameter*
-`signatureSessionId` adicionada à URL.
+On the standard integration flow described above, your app detects that documents have been signed when the user is redirect back with the `signatureSessionId`
+query parameter appended to the `returnUrl`.
 
-Uma alternativa a esse fluxo é tomar conhecimento dos documentos assinados através de [notificação de evento por webhook](../webhook.md). Nesse caso, pode-se
-abrir a página de assinatura em uma nova aba, a qual é fechada ao final do processo, não havendo portando o redirecionamento do usuário de volta à aplicação nem
-tampouco o "tratamento de retorno" descrito acima.
+An alternative flow is to instead be notified of signed documents through [webhook notifications](../webhook.md). In this case, the signature page can be instead
+opened on a new tab, which is closed by the end of the process. Hence, the user is never redirected back, and there is no need to implement the callback handler
+(instead, you'll implement the webhook handler).
 
-Esse fluxo tem a vantagem não depender do retorno do usuário à sua aplicacão para tratar os documentos que são assinados. Além disso, esse fluxo favorece o
-[processamento em background](background-processing.md).
+This flow has the advantage of not requiring the user to stick around while they are redirected by to your app for it to take notice of signed files. Also,
+enabling [background processing](background-processing.md), which greatly enhances the user's experience, is simpler in this flow.
 
-Para abrir a página de assinatura em outra aba, omita o parâmetro `returnUrl` ao criar a sessão. Além disso, é preciso que a aba seja aberta com uma tag `<a>`
-de HTML com `target="_blank"`, ou com uma chamada ao `window.open()` em Javascript. Nesse caso, a aba será fechada pelo Rest PKI Core ao final do processo.
+To open the signature page on a new tab, omit the `returnUrl` parameter when creating the session. Furthermore, you must open the tab with an HTML anchor tag with
+`target="_blank"`, or with the `window.open()` function on Javascript. The tab will then be closed by the end of the process.
 
-## Melhorando a experiência do usuário
+## Improving the user experience
 
-Você pode optar por alguns dos recursos abaixo para melhorar a experiência do usuário durante suas sessões de assinatura:
+You may use the following optional features to improve the user experience:
 
-* [Validação de arquivos](file-validation.md)
-* [Processamento em background](background-processing.md)
+* [File validation](file-validation.md)
+* [Background processing](background-processing.md)
