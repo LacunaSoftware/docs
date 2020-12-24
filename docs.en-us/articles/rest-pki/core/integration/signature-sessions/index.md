@@ -94,8 +94,24 @@ opened on a new tab, which is closed by the end of the process. Hence, the user 
 This flow has the advantage of not requiring the user to stick around while they are redirected by to your app for it to take notice of signed files. Also,
 enabling [background processing](background-processing.md), which greatly enhances the user's experience, is simpler in this flow.
 
-To open the signature page on a new tab, omit the `returnUrl` parameter when creating the session. Furthermore, you must open the tab with an HTML anchor tag with
-`target="_blank"`, or with the `window.open()` function on Javascript. The tab will then be closed by the end of the process.
+To open the signature page on a new tab, use an anchor (`<a>` element) with `target="_blank"`:
+
+[!include[Webhook flow link](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-link.md)]
+
+> [!NOTE]
+> Another option is to open the tab with the `window.open()` function in Javascript
+
+Furthermore, you must omit the `returnUrl` parameter when creating the session.
+
+On .NET:
+
+[!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]
+
+Direct API integration:
+
+[!include[Create session with webhook API](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-api.md)]
+
+Then, the tab will be closed by Rest PKI Core by the end of the session.
 
 ## Improving the user experience
 

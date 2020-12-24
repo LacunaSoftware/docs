@@ -98,8 +98,24 @@ implementar o recebimento de notificação de evento).
 Esse fluxo tem a vantagem de não depender do retorno do usuário à sua aplicacão para tratar os documentos que são assinados. Além disso, esse fluxo facilita
 o uso de [processamento em background](background-processing.md), recurso que melhora significativamente a experiência do usuário.
 
-Para abrir a página de assinatura em outra aba, omita o parâmetro `returnUrl` ao criar a sessão. Além disso, é preciso que a aba seja aberta com uma tag `<a>`
-de HTML com `target="_blank"`, ou com uma chamada ao `window.open()` em Javascript. Nesse caso, a aba será fechada pelo Rest PKI Core ao final do processo.
+Para abrir a página de assinatura em outra aba, é preciso utilizar um *anchor* (elemento `<a>`) com `target="_blank"`:
+
+[!include[Webhook flow link](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-link.md)]
+
+> [!NOTE]
+> Outra opção é abrir a aba com uma chamada ao `window.open()` em Javascript
+
+Além disso, é preciso omitir o parâmetro `returnUrl` ao criar a sessão.
+
+Em .NET:
+
+[!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]
+
+Integração direta por API:
+
+[!include[Create session with webhook API](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-api.md)]
+
+Dessa forma, a aba será fechada pelo Rest PKI Core ao final do processo.
 
 ## Melhorando a experiência do usuário
 
