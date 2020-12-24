@@ -14,7 +14,7 @@ A sample webhook notification of a `DocumentSignatureCompleted` event is shown b
 
 When configuring webhook notifications, you must specify:
 
-* The URL to which the HTTP request should be made
+* The **URL** to which the HTTP request should be made
 * Optionally, an authentication type
   * **Basic**: specify also a username and password, sent on the `Authentication` request header with schema `Basic`
   * **Bearer**: specify also a bearer token, sent on the `Authentication` request header with schema `Bearer`

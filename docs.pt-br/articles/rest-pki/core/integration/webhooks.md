@@ -16,7 +16,7 @@ Abaixo temos um exemplo de notificação do tipo `DocumentSignatureCompleted`:
 
 Ao configurar as notificações de eventos por webhook, você deve especificar:
 
-* A URL para a qual as requisições HTTP devem ser enviadas
+* A **URL** para a qual as requisições HTTP devem ser enviadas
 * Opcionalmente, um tipo de autenticação a ser utilizada para autorizar a chamada junto à sua aplicação:
   * **Basic**: forneça também o *username* e *password*, enviados no header `Authentication` com *schema* `Basic`
   * **Bearer**: forneça também um *bearer token*, enviado no header `Authentication` com *schema* `Bearer`

@@ -1,5 +1,9 @@
-﻿# Signature sessions - Webhook flow
+﻿# Webhook flow - Signature sessions
 
+<!-- link to version in Portuguese -->
+<div data-alt-locales="pt-br"></div>
+
+<!--
 You may configure your Rest PKI Core subscription to inform your app of any documents that are signed on signature sessions created by it. This way, you don't
 need to rely on users landing back on your page to detect that documents have been signed.
 
@@ -11,3 +15,4 @@ browser tab.
 
 Alternatively, you may want to display the signature page on a new tab. In this case, omit the `returnUrl` parameter when creating the session. Furthermore, you must
 open the tab with an HTML anchor tag with `target="_blank"`, or with the `window.open()` function on Javascript. The tab will then be closed by the end of the process.
+-->

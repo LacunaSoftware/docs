@@ -1,6 +1,6 @@
 ﻿```json
 {
-	"type": "DocumentSignatureCompleted"
+	"type": "DocumentSignatureCompleted",
 	"document": {
 		"id": "3dfdd6f0-884e-4092-abed-00f18ea6716a",
 		"key": "FUFYQ7SL6XKMBW9A",
@@ -9,13 +9,13 @@
 			"name": "P100001-001.pdf",
 			"length": 101730,
 			"contentType": "application/pdf",
-			"location": "https://core.pki.rest/api/documents/3dfdd6f0-884e-4092-abed-00f18ea6716a/original-file?access_ticket=..."
+			"location": "https://..."
 		},
 		"signedFile": {
 			"name": "P100001-001.pdf",
 			"length": 273429,
 			"contentType": "application/pdf",
-			"location": "https://core.pki.rest/api/documents/3dfdd6f0-884e-4092-abed-00f18ea6716a/signed-file?access_ticket=..."
+			"location": "https://..."
 		},
 		"status": "Completed",
 		"signatureType": "Pades"
