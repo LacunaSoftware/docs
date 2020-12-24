@@ -11,8 +11,11 @@ Direct API integration:
 
 [!include[Enable background processing API](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-api.md)]
 
-In this case, users do not wait for documents to be processed. However, your application must be ready to handle the case of a signature session whose documents are
-not yet available for download.
+In this case, users do not wait for documents to be processed. However, your callback implementation must be ready to handle the case of a signature session whose
+documents are not yet available for download.
+
+> [!NOTE]
+> No changes are needed to your app if you opt for the [Webhook flow](index.md#webhook-flow), since in this case there's no callback handling
 
 ## Aditional statuses
 
@@ -38,6 +41,3 @@ Notice that now we also consider the status `Processing` to be normal. Now, let'
 [!include[Callback with background processing in dotnet - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-dotnet-view.md)]
 
 Notice how we render each list item differently based on each document's status.
-
-> [!NOTE]
-> No changes are needed to your app if you opt for the [Webhook flow](index.md#webhook-flow), since in this case there's no callback handling

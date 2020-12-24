@@ -11,8 +11,11 @@ Integração direta por API:
 
 [!include[Enable background processing API](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-api.md)]
 
-Nesse caso, o usuário será redirecionado de volta à sua aplicação assim que concluir as assinaturas, sem aguardar o processamento, Entretanto, a sua aplicação
-precisa ser adequada para lidar com o caso de uma sessão de assinatura cujos documentos ainda não estão prontos para download.
+Nesse caso, o usuário será redirecionado de volta à sua aplicação assim que concluir as assinaturas, sem aguardar o processamento, Entretanto, o seu tratemento de
+retorno precisa ser adequado para lidar com o caso de uma sessão de assinatura cujos documentos ainda não estão prontos para download.
+
+> [!NOTE]
+> Nenhuma adequação é necessária no caso do [Fluxo com webhook](index.md#webhook-flow), pois nesse caso não há tratamento de retorno
 
 ## Estados adicionais
 
@@ -39,6 +42,3 @@ Note que agora também consideramos o estado `Processing` como normal. Vamos alt
 [!include[Callback with background processing in dotnet - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-dotnet-view.md)]
 
 Note que renderizamos cada item da lista de maneira diferente baseado no estado do documento.
-
-> [!NOTE]
-> Nenhuma adequação é necessária no caso do [Fluxo com webhook](index.md#webhook-flow), pois nesse caso não há tratamento de retorno
