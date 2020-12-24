@@ -91,7 +91,7 @@ fechando a aba do navegador.
 No fluxo padrão descrito acima, a sua aplicação toma conhecimento dos documentos assinados quando o usuário é redirecionado de volta com a *query parameter*
 `signatureSessionId` adicionada à URL.
 
-Uma alternativa a esse fluxo é tomar conhecimento dos documentos assinados através de [notificação de evento por webhooks](../webhook.md). Nesse caso, pode-se
+Uma alternativa a esse fluxo é tomar conhecimento dos documentos assinados através de [notificação de evento por webhook](../webhooks.md). Nesse caso, pode-se
 abrir a página de assinatura em uma nova aba, a qual é fechada ao final do processo, dispensando a implementação do "tratamento de retorno" (é necessário, entretanto,
 implementar o recebimento de notificação de evento).
 
