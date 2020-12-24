@@ -102,6 +102,7 @@
 ##### [File validation](rest-pki/core/integration/signature-sessions/file-validation.md)
 ##### [Background processing](rest-pki/core/integration/signature-sessions/background-processing.md)
 ##### [Webhook flow](rest-pki/core/integration/signature-sessions/webhook-flow.md)
+#### [Webhooks](rest-pki/core/integration/webhooks.md)
 #### [Error codes](rest-pki/core/integration/error-codes.md)
 <!-- End of Rest PKI -->
 
