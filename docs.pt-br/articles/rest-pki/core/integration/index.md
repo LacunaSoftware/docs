@@ -4,4 +4,4 @@ Para integrar a sua aplicação ao [Rest PKI Core](../index.md), comece pelo art
 
 Em seguida, veja o guia de integração de uma funcionalidade específica:
 
-* [Sessões de assinatura](signature-sessions.md)
+* [Sessões de assinatura](signature-sessions/index.md)

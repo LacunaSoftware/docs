@@ -98,7 +98,10 @@
 ## [Rest PKI Core](rest-pki/core/index.md)
 ### [Integration Guide](rest-pki/core/integration/index.md)
 #### [Get started](rest-pki/core/integration/get-started.md)
-#### [Signature sessions](rest-pki/core/integration/signature-sessions.md)
+#### [Signature sessions](rest-pki/core/integration/signature-sessions/index.md)
+##### [File validation](rest-pki/core/integration/signature-sessions/file-validation.md)
+##### [Background processing](rest-pki/core/integration/signature-sessions/background-processing.md)
+##### [Webhook flow](rest-pki/core/integration/signature-sessions/webhook-flow.md)
 #### [Error codes](rest-pki/core/integration/error-codes.md)
 <!-- End of Rest PKI -->
 
