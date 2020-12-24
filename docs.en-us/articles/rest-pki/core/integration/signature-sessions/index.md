@@ -76,3 +76,30 @@ Direct API integration:
 [!include[Disable downloads API](../../../../../../includes/rest-pki/core/signature-sessions/disable-downloads-api.md)]
 
 Then, users will only be able to download documents through your app, and thus will be far less inclined to quit the process prematurely.
+
+> [!NOTE]
+> Outra forma de lidar com esse problema é optar pelo **Fluxo com webhook** (veja seção abaixo)
+
+<a name="webhook-flow" />
+
+## Fluxo com webhook
+
+No fluxo padrão descrito acima, a sua aplicação toma conhecimento dos documentos assinados quando o usuário é redirecionado de volta com a *query parameter*
+`signatureSessionId` adicionada à URL.
+
+Uma alternativa a esse fluxo é tomar conhecimento dos documentos assinados através de [notificação de evento por webhook](../webhook.md). Nesse caso, pode-se
+abrir a página de assinatura em uma nova aba, a qual é fechada ao final do processo, não havendo portando o redirecionamento do usuário de volta à aplicação nem
+tampouco o "tratamento de retorno" descrito acima.
+
+Esse fluxo tem a vantagem não depender do retorno do usuário à sua aplicacão para tratar os documentos que são assinados. Além disso, esse fluxo favorece o
+[processamento em background](background-processing.md).
+
+Para abrir a página de assinatura em outra aba, omita o parâmetro `returnUrl` ao criar a sessão. Além disso, é preciso que a aba seja aberta com uma tag `<a>`
+de HTML com `target="_blank"`, ou com uma chamada ao `window.open()` em Javascript. Nesse caso, a aba será fechada pelo Rest PKI Core ao final do processo.
+
+## Melhorando a experiência do usuário
+
+Você pode optar por alguns dos recursos abaixo para melhorar a experiência do usuário durante suas sessões de assinatura:
+
+* [Validação de arquivos](file-validation.md)
+* [Processamento em background](background-processing.md)
