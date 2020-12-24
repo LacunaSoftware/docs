@@ -35,13 +35,13 @@ Vamos analisar o `returnUrl` utilizado nos exemplos acima:
 ```plaintext
 http://localhost:8080/SessionCallback
 ^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^
-Endereço da sua app   Rota para o tratamento do retorno
+Endereço da sua app   Rota para o tratamento de retorno
 ```
 
 Ao adaptar os exemplos para a sua aplicação, você precisa alterar a primeira porção para o endereço da sua própria aplicação e também a rota para o tratamento do
 retorno na sua aplicação (veja a seção abaixo).
 
-## Implementando o tratamento do retorno
+## Implementando o tratamento de retorno
 
 O `returnUrl` é o endereço para no qual o Rest PKI Core enviará o seu usuário de volta para a sua aplicação uma vez que o processo de assinatura seja concluído.
 
