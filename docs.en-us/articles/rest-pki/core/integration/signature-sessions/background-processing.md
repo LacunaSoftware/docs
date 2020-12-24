@@ -14,9 +14,6 @@ Direct API integration:
 In this case, users do not wait for documents to be processed. However, your application must be ready to handle the case of a signature session whose documents are
 not yet available for download.
 
-> [!NOTE]
-> No changes are needed to your app if you opt for the [Webhook flow](webhook-flow.md), since your app will only be notified once the background processing is completed.
-
 ## Aditional statuses
 
 In addition to the possible statuses `Completed` and `UserCancelled`, two additional statuses are possible when the user is redirected on your app: `Processing` and `ProcessingError`.
@@ -41,3 +38,6 @@ Notice that now we also consider the status `Processing` to be normal. Now, let'
 [!include[Callback with background processing in dotnet - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-dotnet-view.md)]
 
 Notice how we render each list item differently based on each document's status.
+
+> [!NOTE]
+> No changes are needed to your app if you opt for the [Webhook flow](index.md#webhook-flow), since in this case there's no callback handling

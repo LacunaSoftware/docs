@@ -16,7 +16,7 @@ Para validar essa condição, configurar-se-ia a regra de formação para:
 ^[PX]\d{6}\.pdf$
 ```
 
-O usuário fica então impedido de escolher arquivos com nome fora do padrão:
+O usuário ficaria então impedido de escolher arquivos com nome fora desse padrão:
 
 ![Arquivo rejeitado por padrão](../../../../../../images/rest-pki/core/file-rejected-pattern.png)
 

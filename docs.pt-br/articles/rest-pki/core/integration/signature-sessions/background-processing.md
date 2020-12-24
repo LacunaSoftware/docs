@@ -14,9 +14,6 @@ Integração direta por API:
 Nesse caso, o usuário será redirecionado de volta à sua aplicação assim que concluir as assinaturas, sem aguardar o processamento, Entretanto, a sua aplicação
 precisa ser adequada para lidar com o caso de uma sessão de assinatura cujos documentos ainda não estão prontos para download.
 
-> [!NOTE]
-> Nenhuma adequação é necessária no caso do [Fluxo com webhook](webhook-flow.md), pois a sua aplicação só será notificada ao final do processamento em background.
-
 ## Estados adicionais
 
 Além dos estados `Completed` e `UserCancelled`, a sessão pode estar em dois outros estados quando o usuário chega de volta à sua aplicação: `Processing` e
@@ -42,3 +39,6 @@ Note que agora também consideramos o estado `Processing` como normal. Vamos alt
 [!include[Callback with background processing in dotnet - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-dotnet-view.md)]
 
 Note que renderizamos cada item da lista de maneira diferente baseado no estado do documento.
+
+> [!NOTE]
+> Nenhuma adequação é necessária no caso do [Fluxo com webhook](index.md#webhook-flow), pois nesse caso não há tratamento de retorno

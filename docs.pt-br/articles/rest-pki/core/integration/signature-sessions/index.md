@@ -78,8 +78,8 @@ Integração direta por API:
 
 [!include[Disable downloads API](../../../../../../includes/rest-pki/core/signature-sessions/disable-downloads-api.md)]
 
-Nesse caso, os usuários só conseguirão baixar os arquivos assinados na sua aplicação e, portanto, ficarão muito menos inclinados a interromper o processo
-prematuramente fechando a aba do navegador.
+Nesse caso, os usuários só conseguirão baixar os arquivos assinados na sua aplicação e, portanto, ficarão menos inclinados a interromper o processo prematuramente
+fechando a aba do navegador.
 
 > [!NOTE]
 > Outra forma de lidar com esse problema é optar pelo **Fluxo com webhook** (veja seção abaixo)
@@ -91,12 +91,12 @@ prematuramente fechando a aba do navegador.
 No fluxo padrão descrito acima, a sua aplicação toma conhecimento dos documentos assinados quando o usuário é redirecionado de volta com a *query parameter*
 `signatureSessionId` adicionada à URL.
 
-Uma alternativa a esse fluxo é tomar conhecimento dos documentos assinados através de [notificação de evento por webhook](../webhook.md). Nesse caso, pode-se
-abrir a página de assinatura em uma nova aba, a qual é fechada ao final do processo, não havendo portando o redirecionamento do usuário de volta à aplicação nem
-tampouco o "tratamento de retorno" descrito acima.
+Uma alternativa a esse fluxo é tomar conhecimento dos documentos assinados através de [notificação de evento por webhooks](../webhook.md). Nesse caso, pode-se
+abrir a página de assinatura em uma nova aba, a qual é fechada ao final do processo, dispensando a implementação do "tratamento de retorno" (é necessário, entretanto,
+implementar o recebimento de notificação de evento).
 
-Esse fluxo tem a vantagem não depender do retorno do usuário à sua aplicacão para tratar os documentos que são assinados. Além disso, esse fluxo favorece o
-[processamento em background](background-processing.md).
+Esse fluxo tem a vantagem de não depender do retorno do usuário à sua aplicacão para tratar os documentos que são assinados. Além disso, esse fluxo facilita
+o uso de [processamento em background](background-processing.md), recurso que melhora significativamente a experiência do usuário.
 
 Para abrir a página de assinatura em outra aba, omita o parâmetro `returnUrl` ao criar a sessão. Além disso, é preciso que a aba seja aberta com uma tag `<a>`
 de HTML com `target="_blank"`, ou com uma chamada ao `window.open()` em Javascript. Nesse caso, a aba será fechada pelo Rest PKI Core ao final do processo.

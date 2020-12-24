@@ -75,7 +75,7 @@ Direct API integration:
 
 [!include[Disable downloads API](../../../../../../includes/rest-pki/core/signature-sessions/disable-downloads-api.md)]
 
-Then, users will only be able to download documents through your app, and thus will be far less inclined to quit the process prematurely.
+Then, users will only be able to download documents through your app, and thus will be less inclined to quit the process prematurely.
 
 > [!NOTE]
 > Another way of dealing with this issue is to opt for the **Webhook flow** instead (see next section)
@@ -87,7 +87,7 @@ Then, users will only be able to download documents through your app, and thus w
 On the standard integration flow described above, your app detects that documents have been signed when the user is redirect back with the `signatureSessionId`
 query parameter appended to the `returnUrl`.
 
-An alternative flow is to instead be notified of signed documents through [webhook notifications](../webhook.md). In this case, the signature page can be instead
+An alternative flow is to instead be notified of signed documents through [webhook notifications](../webhooks.md). In this case, the signature page can be instead
 opened on a new tab, which is closed by the end of the process. Hence, the user is never redirected back, and there is no need to implement the callback handler
 (instead, you'll implement the webhook handler).
 
