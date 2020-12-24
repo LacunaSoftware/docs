@@ -12,7 +12,14 @@ Direct API integration:
 [!include[Enable background processing API](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-api.md)]
 
 In this case, users do not wait for documents to be processed. However, your application must be ready to handle the case of a signature session whose documents are
-not yet available for download. In addition to the possible statuses `Completed` and `UserCancelled`, two additional statuses are possible when the user is redirected on your app: `Processing` and `ProcessingError`.
+not yet available for download.
+
+> [!NOTE]
+> No changes are needed to your app if you opt for the [Webhook flow](webhook-flow.md), since your app will only be notified once the background processing is completed.
+
+## Aditional statuses
+
+In addition to the possible statuses `Completed` and `UserCancelled`, two additional statuses are possible when the user is redirected on your app: `Processing` and `ProcessingError`.
 
 While a session is still `Processing`, some documents will be in status `Processing` and cannot be downloaded. Only when the session transitions to the `Complete`
 status are all documents ready to be downloaded.

@@ -12,8 +12,15 @@ Integração direta por API:
 [!include[Enable background processing API](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-api.md)]
 
 Nesse caso, o usuário será redirecionado de volta à sua aplicação assim que concluir as assinaturas, sem aguardar o processamento, Entretanto, a sua aplicação
-precisa ser adequada para lidar com o caso de uma sessão de assinatura cujos documentos ainda não estão prontos para download. Além dos estados `Completed`
-e `UserCancelled`, a sessão pode estar em dois outros estados quando o usuário chega de volta à sua aplicação: `Processing` e `ProcessingError`.
+precisa ser adequada para lidar com o caso de uma sessão de assinatura cujos documentos ainda não estão prontos para download.
+
+> [!NOTE]
+> Nenhuma adequação é necessária no caso do [Fluxo com webhook](webhook-flow.md), pois a sua aplicação só será notificada ao final do processamento em background.
+
+## Estados adicionais
+
+Além dos estados `Completed` e `UserCancelled`, a sessão pode estar em dois outros estados quando o usuário chega de volta à sua aplicação: `Processing` e
+`ProcessingError`.
 
 Enquanto uma sessão estiver em `Processing`, alguns documentos estarão com estado `Processing` e não estarão disponíveis para download. Apenas quando a sessão
 mudar de estado para `Completed` é que todos os documentos estarão prontos para download.
