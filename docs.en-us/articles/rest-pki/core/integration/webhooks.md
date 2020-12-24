@@ -8,16 +8,9 @@ Event type                   | Description
 
 If enabled, webhook notifications consist of HTTP `POST` requests with a `WebhookEventModel`. See the [API Reference](https://core-hml.pki.rest/swagger) for the model schema.
 
-A sample webhook notification is shown below:
+A sample webhook notification of a `DocumentSignatureCompleted` event is shown below:
 
-```json
-{
-	"type": "DocumentSignatureCompleted"
-	"document": {
-		...
-	}
-}
-```
+[!include[Webhook event sample](../../../../../includes/rest-pki/core/webhook-event-sample.md)]
 
 When configuring webhook notifications, you must specify:
 
