@@ -4,6 +4,23 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-24-0" />
+### 3.24.0 (2020-12-29)
+
+* Novas funcionalidades
+  * [LI-350] - Adicionar política de senha nas telas que definem senha
+  * [LI-351] - Alterar mensagem de CPF já encontrado no sistema
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-23-1" />
+### 3.23.1 (2020-12-29)
+
+* Correções de bugs
+  * [LI-348] - Eventos de login com certificado digital não estão sendo registrados
+
+Atualiza modelo do banco de dados: não
+
 <a name="v3-23-0" />
 ### 3.23.0 (2020-08-20)
 

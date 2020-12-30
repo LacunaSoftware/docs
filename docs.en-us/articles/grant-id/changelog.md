@@ -4,6 +4,23 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-24-0" />
+### 3.24.0 (2020-12-29)
+
+* New Features
+  * [LI-350] - Add password policy to screens that define a password
+  * [LI-351] - Update CPF already found message
+
+Updates database model: no
+
+<a name="v3-23-1" />
+### 3.23.1 (2020-12-29)
+
+* Bug fixes
+  * [LI-348] - Digital certificate login events are not registered
+
+Updates database model: no
+
 <a name="v3-23-0" />
 ### 3.23.0 (2020-08-20)
 
