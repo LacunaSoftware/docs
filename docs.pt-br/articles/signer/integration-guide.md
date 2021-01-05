@@ -1,4 +1,4 @@
-﻿# Guia de Integração Signer Lacuna Software
+﻿# Guia de Integração
 
 ## Introdução
 
