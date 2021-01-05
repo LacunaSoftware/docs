@@ -4,6 +4,22 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-23-0" />
+### 1.23.0 (2021-01-07)
+
+* New Features
+  * [SIG-430] - Electronic signature with Selfie
+  * [SIG-554] - Allow adding attachments to documents
+
+* Improvements
+  * [SIG-408] - Allow signature pre-positioning in edit flow screen
+  * [SIG-583] - Update PKI SDK to correct text positioning
+
+* Bug fixes
+  * [SIG-582] - Fix RUC validation (Ecuador)
+
+Updates database model: yes
+
 <a name="v1-22-0" />
 ### 1.22.0 (2020-12-17)
 

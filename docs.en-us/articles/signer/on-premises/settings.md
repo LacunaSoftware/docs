@@ -108,6 +108,7 @@ If this setting is not provided and document types are enabled, all available op
 * **Enabled**: if `true`, displays the option to accept electronic signatures when creating documents.
 * **EnableSmsAuthentication**: if `true`, enables the SMS verification option for electronic signatures.
 * **EnableOtpAuthentication**: if `true`, enables the OTP App verification option for electronic signatures.
+* **EnableSelfieAuthentication** (v1.23.0): if `true`, enables the selfie capture for electronic signatures.
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
 * **IsGeolocationRequired** (v1.5.0): if `true`, the geolocation of an user must be sent in order to sign electronically.

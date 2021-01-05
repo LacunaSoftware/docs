@@ -4,6 +4,22 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-23-0" />
+### 1.23.0 (2021-01-07)
+
+* Novas funcionalidades
+  * [SIG-430] - Assinatura eletronica com Selfie
+  * [SIG-554] - Permitir adicionar anexos a documentos
+
+* Melhorias
+  * [SIG-408] - Permitir posicionar assinatura na edição de fluxo
+  * [SIG-583] - Atualizar PKI SDK para corrigir posicionamento de textos
+
+* Correções de bugs
+  * [SIG-582] - Corrigir validação de RUC (Ecuador)
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-22-0" />
 ### 1.22.0 (2020-12-17)
 
