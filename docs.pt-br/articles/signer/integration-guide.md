@@ -200,13 +200,13 @@ ações (`flowActions`) que corresponde a ele.
 
 ***
 
-Adicionalmente, você pode configurar um **Webhook** que será disparado toda vez que um documento de sua organização for concluído. Para isso, 
+Adicionalmente, você pode configurar um **Webhook** que será disparado toda vez que um documento de sua organização for concluído, aprovado, recusado ou assinado. Para isso, 
 acesse a tela da Organização e registre a URL desejada na opção **Integração**:
 
 ![Webhook](./images/org-webhook.png)
 
 <a name="document-reminders" />
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+Para mais detalhes sobre esses casos de uso, veja nossos exemplos no github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CheckDocumentStatusScenario.cs)
 
@@ -234,17 +234,6 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/NotifyFlowParticipantsScenario.cs)
 
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/NotifyFlowParticipantsScenario.java)
-
-
-### Webhook de aprovação e assinatura
-
-(exemplos em produção)
-
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
-
-* [C#]
-
-* [Java]
 
 ### Validar assinaturas de um documento
 
