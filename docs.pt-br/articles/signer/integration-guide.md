@@ -235,6 +235,17 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/NotifyFlowParticipantsScenario.java)
 
+
+### Webhook de aprovação e assinatura
+
+(exemplos em produção)
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+
+* [C#]
+
+* [Java]
+
 ### Validar assinaturas de um documento
 
 Você pode validar as assinaturas de um documento de duas formas: com a **chave de validação do documento** (caso ele tenha sido assinado nesta instância do Signer) ou com o **arquivo
