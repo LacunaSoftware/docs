@@ -235,6 +235,26 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/NotifyFlowParticipantsScenario.java)
 
+
+### Download das versões de um documento
+
+A partir do momento que um documento foi criado, é possível fazer o download de diferente tipos de versões deste mesmo documento (de acordo com o estágio no qual ele se encontra). 
+As opções são:
+
+* Arquivo Assinado
+* Versão para impressão
+* Etiquetas de assinatura
+* Marcas de Assinatura
+* Arquivo Original
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+
+* C#: (Exemplos em produção)
+	
+* Java: (Exemplos em produção)
+	
+
+
 ### Validar assinaturas de um documento
 
 Você pode validar as assinaturas de um documento de duas formas: com a **chave de validação do documento** (caso ele tenha sido assinado nesta instância do Signer) ou com o **arquivo
