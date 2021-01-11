@@ -1,5 +1,15 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-0" />
+### 2.8.0 (2021-01-11)
+
+- Add CAdES signing description feature 
+- Add XAdES DataObjectFormat description feature 
+- Add PAdES visual representation text vertical alignment
+- Add PdfMarker text vertical alignment
+- Improve CAdES signing certificate issuner name validation
+
+
 <a name="v2-7-9" />
 ### 2.7.9 (2020-09-17)
 
