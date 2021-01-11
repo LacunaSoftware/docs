@@ -249,11 +249,12 @@ As opções são:
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
-* C#: (Exemplos em produção)
+(Exemplos em produção)
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-503/dotnet/console/Console/Scenarios/DownloadDocumentVersionScenario.cs)
 	
 * Java: (Exemplos em produção)
 	
-
 
 ### Validar assinaturas de um documento
 
