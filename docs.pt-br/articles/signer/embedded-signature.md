@@ -58,19 +58,24 @@ widget.listen(function (e) {
 > [!NOTE]
 > Sempre verifique no backend se o documento foi de fato concluído, dado que os callbacks podem ser acionados por outros arquivos javascript.
 
-Por fim, carregue o iFrame utilizando o método `render()`, que recebe duas entradas:
+Por fim, carregue o iFrame utilizando o método `render()`, que recebe duas entradas obrigatórias:
 
 * `embedUrl`: a URL para ação que deseja ser realizada. Corresponde ao parâmetro embedUrl retornado pela [API Action URL](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url)
 * `elementId`: id do elemento no qual será exibido o componente de assinatura.
 
+E duas entradas opcionais:
+
+* `page`: numero da página na qual o documento será aberto em sua inicialização (para abrir a última página de qualquer documento, não importando o tamanho dele, atribui-se o número `'-1'`).
+* `scale`: a porcentagem que definirá em qual escala o documento será aberto. Pode ser definido através de um simples string `'100'` ou através do `widget.scaleOptions.S100`
+
 ```javascript
-widget.render(embedUrl, 'embed-container');
+widget.render(embedUrl, 'embed-container', page, scale);
 ```
 
 Caso prefira, pode ser fornecido o elemento DOM diretamente:
 
 ```javascript
-widget.renderElement(embedUrl, document.getElementById('embed-container'));
+widget.renderElement(embedUrl, document.getElementById('embed-container'), page, scale);
 ```
 
 ## Exemplo online
