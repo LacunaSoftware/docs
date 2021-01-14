@@ -4,6 +4,26 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-24-0" />
+### 1.24.0 (2021-01-14)
+
+* Novas funcionalidades
+  * [SIG-463] - Exibir assinatura eletrônica como primeira opção
+  * [SIG-594] - Validação de assinatura eletrônica CAdES e XAdES
+
+* Melhorias
+  * [SIG-441] - Permitir definir qual página deve ser exibida ao carregar PDF com Widget de assinatura
+  * [SIG-474] - Adicionar consentimentos em tela para LGPD
+  * [SIG-496] - Melhorar tratamento de PDFs com senha na assinatura rápida
+  * [SIG-566] - Email de conclusão de fluxo deveria redirecionar para a área pública
+  * [SIG-584] - Simplificar tela de assinatura externa
+
+* Correções de bugs
+  * [SIG-568] - Instrução de posicionamento continua aparecendo após assinatura
+  * [SIG-595] - Erro ao excluir aprovador no final do fluxo
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-23-0" />
 ### 1.23.0 (2021-01-07)
 

@@ -4,6 +4,26 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-24-0" />
+### 1.24.0 (2021-01-14)
+
+* New Features
+  * [SIG-463] - Display electronic signature as first option in signature page
+  * [SIG-594] - Electronic signature validation for CAdES and XAdES
+
+* Improvements
+  * [SIG-441] - Create options to define which PDF page should be displayed first in the Embedded Signature Widget
+  * [SIG-474] - Add consent message in screens for LGPD
+  * [SIG-496] - Improve handling of password protected PDFs in Fast Signature
+  * [SIG-566] - Document flow completion email should redirect to public area
+  * [SIG-584] - Simplify user experience of the public signature page
+
+* Bug fixes
+  * [SIG-568] - Signature position instructions still displayed after signature
+  * [SIG-595] - Error deleting approver that is last participant in the flow
+
+Updates database model: yes
+
 <a name="v1-23-0" />
 ### 1.23.0 (2021-01-07)
 
