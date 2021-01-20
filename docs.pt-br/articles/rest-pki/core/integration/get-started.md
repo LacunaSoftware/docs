@@ -147,14 +147,14 @@ As seguintes exceções podem ser lançadas nas chamadas aos métodos do `IRestP
 
 ### Chamando a API em PHP
 
-Em breve estará disponível o pacote para PHP **lacuna/restpkicore-client** (previsão: 18/01/2021)
+Em breve estará disponível o pacote para PHP **lacuna/restpkicore-client** (previsão: 25/01/2021)
 
 
 <a name="java" />
 
 ### Chamando a API em Java
 
-Em breve estará disponível o pacote para Java **com.lacunasoftware.restpkicore:restpkicore-client** (previsão: 01/02/2021)
+Em breve estará disponível o pacote para Java **com.lacunasoftware.restpkicore:restpkicore-client** (previsão: 08/02/2021)
 
 
 <a name="rest" />
