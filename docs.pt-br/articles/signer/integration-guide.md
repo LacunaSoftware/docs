@@ -76,7 +76,7 @@ POST /api/documents
 		"name": "John Wick",//Nome do participante
 		"identifier": "81976153069",//CPF do participante
 		"email": "john.wick@mailinator.com",//Email do participante
-		"allowelectronicsignature": true //
+		"allowelectronicsignature": true //Permite assinatura eletrônica
 		}
 	}
 	]
