@@ -255,6 +255,24 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-503/dotnet/console/Console/Scenarios/DownloadDocumentVersionScenario.cs)
 	
 * Java: (Exemplos em produção)
+
+### Listar documentos
+
+É possível listar os documentos de acordo com padrões e necessidades diferentes:
+
+* Documentos pendentes para um determinado participante
+* Documentos concluídos
+* Listar por pastas
+* Listar por organização
+
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+
+(Exemplos em produção)
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-504/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
+	
+* Java: (Exemplos em produção)
 	
 
 ### Validar assinaturas de um documento
