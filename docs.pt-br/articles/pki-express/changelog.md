@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-22-0" />
+### 1.22.0 (2021-01-21)
+
+- Adiciona suporte para o retorno do *commitment type* de assinaturas CAdES (comando `open-cades`)
+- Adiciona suporte para o retorno do conteúdo do certificado no comando `open-cert` com a opção `--fill-content`
+- Adiciona suporte para o retorno dos certificados emissores no comando `open-cert` com a opção `--fill-issuer`
+
 <a name="v1-21-0" />
 ### 1.21.0 (2020-11-05)
 

@@ -1,5 +1,12 @@
 ﻿# PKI Express changelog
 
+<a name="v1-22-0" />
+### 1.22.0 (2021-01-21)
+
+- Add support to return the commitment type of CAdES signatures (command `open-cades`)
+- Add support to return the certificate's content on command `open-cert` with the option `--fill-content`
+- Add support to return the certificate's issuers on command `open-cert` with the option `--fill-issuer`
+
 <a name="v1-21-0" />
 ### 1.21.0 (2020-11-05)
 
