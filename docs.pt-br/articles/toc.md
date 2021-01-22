@@ -288,6 +288,7 @@
 #### [Verificando os logs](grant-id/on-premises/docker/check-logs.md)
 #### [Dados persistentes](grant-id/on-premises/docker/persistent-data.md)
 ### [Setup em Azure App Services](grant-id/on-premises/azure/index.md)
+### [Integração com SAML 2](grant-id/on-premises/saml2.md)
 ## [Pós-instalação](grant-id/on-premises/post-install.md)
 ## [Histórico de versões](grant-id/changelog.md)
 <!-- End of GrantID -->
