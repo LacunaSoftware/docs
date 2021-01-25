@@ -117,6 +117,7 @@
 ### [Certificate authentication](pki-sdk/certificates/auth.md)
 ### [Augmenting certificate chain build](pki-sdk/certificates/chain-building.md)
 ### [Attribute Certificates](pki-sdk/certificates/attribute-certs.md)
+### [Cloud Certificates](pki-sdk/cloud-certificates/index.md)
 ## [Signatures](pki-sdk/signatures/index.md)
 ### [CAdES Signatures](pki-sdk/signatures/cades/index.md)
 #### [Delayed completion of signatures](pki-sdk/signatures/cades/finisher.md)
