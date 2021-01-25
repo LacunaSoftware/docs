@@ -4,6 +4,22 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-24-2" />
+### 1.24.2 (2021-01-18)
+
+* Bug fixes
+  * [SIG-598] - Error opening document creation screen without organizations in the closed system mode
+
+Updates database model: no
+
+<a name="v1-24-1" />
+### 1.24.1 (2021-01-15)
+
+* Bug fixes
+  * [SIG-597] - Wrong theming of the signature position message
+
+Updates database model: no
+
 <a name="v1-24-0" />
 ### 1.24.0 (2021-01-14)
 

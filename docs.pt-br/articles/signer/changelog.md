@@ -4,6 +4,22 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-24-2" />
+### 1.24.2 (2021-01-18)
+
+* Correções de bugs
+  * [SIG-598] - Erro ao visualizar tela de criação de documento sem estar em nenhuma organização no modo Fechado
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-24-1" />
+### 1.24.1 (2021-01-15)
+
+* Correções de bugs
+  * [SIG-597] - Tematização incorreta da mensagem de posicionamento de assinatura
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-24-0" />
 ### 1.24.0 (2021-01-14)
 
