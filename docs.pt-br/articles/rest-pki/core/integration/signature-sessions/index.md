@@ -26,7 +26,7 @@ Em .NET, chame `IRestPkiService.CreateSignatureSessionAsync()` e use o `Redirect
 
 [!include[Create session in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/create-dotnet.md)]
 
-Em PHP, chame `RestPkiServiceInterface.createSignatureSession` e use o campo `$redirectUrl` retornado para redirecionar o usuário:
+Em PHP, chame `RestPkiServiceInterface.createSignatureSession()` e use o campo `$redirectUrl` retornado para redirecionar o usuário:
 
 [!include[Create session in php](../../../../../../includes/rest-pki/core/signature-sessions/create-php.md)]
 

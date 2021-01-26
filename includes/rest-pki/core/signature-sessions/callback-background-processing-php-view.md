@@ -5,10 +5,10 @@
 		$document = $session->documents[$i]; ?>
 
 		<li>
-			<?php if ($document->status == SignatureSessionStatus::COMPLETED { ?>
+			<?php if ($document->status == SignatureSessionStatus::COMPLETED) { ?>
 				<a href="<?= $document->signedFile->location ?>"><?= $document->signedFile->name ?></a>
 			<?php } else { ?>
-				<?= $document->originalFile.Name ?>
+				<?= $document->originalFile->name ?>
 				<text> (processing)</text>
 			<?php } ?>
 		</li>
