@@ -26,6 +26,10 @@ Em .NET, chame `IRestPkiService.CreateSignatureSessionAsync()` e use o `Redirect
 
 [!include[Create session in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/create-dotnet.md)]
 
+Em PHP, chame `RestPkiServiceInterface.createSignatureSession` e use o campo `$redirectUrl` retornado para redirecionar o usuário:
+
+[!include[Create session in php](../../../../../../includes/rest-pki/core/signature-sessions/create-php.md)]
+
 Caso esteja chamando a API diretamente:
 
 [!include[Create session API](../../../../../../includes/rest-pki/core/signature-sessions/create-api.md)]
@@ -53,6 +57,10 @@ Em .NET, a implementação do tratamento de retorno seria algo como:
 
 [!include[Callback in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/callback-dotnet.md)]
 
+Em PHP, a implementação do tratamento de retorno seria algo como:
+
+[!include[Callback in PHP](../../../../../../includes/rest-pki/core/signature-sessions/callback-php.md)]
+
 Note que verificamos o estado (`Status`) da sessão e enviamos o usuário para um local padrão caso o estado não seja `Completed`.
 
 > [!NOTE]
@@ -60,9 +68,13 @@ Note que verificamos o estado (`Status`) da sessão e enviamos o usuário para u
 > sessão é cancelada pelo usuário. Seu código deve sempre checar esse estado, pois é perfeitamente normal um usuário ser direcionado ao endereço de tratamento de
 > retorno porque cancelou a sessão.
 
-Agora, a view de Razor:
+Em .NET, a view de Razor seria algo como:
 
 [!include[Callback in dotnet - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-dotnet-view.md)]
+
+Em PHP, o lado do cliente seria algo como:
+
+[!include[Callback in PHP - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-php-view.md)]
 
 ## Desabilitando downloads
 
@@ -73,6 +85,10 @@ arquivos assinados durante a sessão de assinatura especificando `DisableDownloa
 Em .NET:
 
 [!include[Disable downloads in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/disable-downloads-dotnet.md)]
+
+Em PHP:
+
+[!include[Disable downloads in PHP](../../../../../../includes/rest-pki/core/signature-sessions/disable-downloads-php.md)]
 
 Integração direta por API:
 
@@ -109,7 +125,11 @@ Além disso, é preciso omitir o parâmetro `returnUrl` ao criar a sessão.
 
 Em .NET:
 
-[!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]
+[!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]´
+
+Em PHP:
+
+[!include[Create session with webhook in PHP](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-php.md)]
 
 Integração direta por API:
 

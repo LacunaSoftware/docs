@@ -7,6 +7,10 @@ Em .NET:
 
 [!include[Enable background processing in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-dotnet.md)]
 
+Em PHP:
+
+[!include[Enable background processing in PHP](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-php.md)]
+
 Integração direta por API:
 
 [!include[Enable background processing API](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-api.md)]
@@ -37,8 +41,18 @@ Em .NET:
 
 [!include[Callback with background processing in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-dotnet.md)]
 
-Note que agora também consideramos o estado `Processing` como normal. Vamos alterar a view:
+Em PHP:
+
+[!include[Callback with background processing in PHP](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-php.md)]
+
+Note que agora também consideramos o estado `Processing` como normal. Com isso, podemos alterar a forma que os documentos serão mostrados.
+
+Em .NET, alteraríamos a view de Razor da seguinte maneira:
 
 [!include[Callback with background processing in dotnet - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-dotnet-view.md)]
+
+Em PHP, alteraríamos o lado do cliente da seguinte maneira: 
+
+[!include[Callback with background processing in PHP - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-php-view.md)]
 
 Note que renderizamos cada item da lista de maneira diferente baseado no estado do documento.
