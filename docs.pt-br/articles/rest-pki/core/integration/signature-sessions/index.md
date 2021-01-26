@@ -125,7 +125,7 @@ Além disso, é preciso omitir o parâmetro `returnUrl` ao criar a sessão.
 
 Em .NET:
 
-[!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]´
+[!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]
 
 Em PHP:
 

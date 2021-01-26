@@ -147,8 +147,29 @@ As seguintes exceções podem ser lançadas nas chamadas aos métodos do `IRestP
 
 ### Chamando a API em PHP
 
-Em breve estará disponível o pacote para PHP **lacuna/restpkicore-client** (previsão: 25/01/2021)
+Comece adicionando o pacote do compositor [lacuna/restpkicore-client](https://packagist.org/packages/lacuna/restpkicore-client), disponível para:
 
+* PHP 5.5+ (incluindo 7.x)
+
+Para adicionar no seu projeto, coloque isso no seu arquivo `composer.json`:
+
+[!include[composer.json](../../../../../includes/rest-pki/core/get-started/composer.md)] 
+
+Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
+
+O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiNgPhpClient). Sinta-se à vontade para bifurcá-lo se precisar fazer alguma personalização.
+
+#### Aplicações em PHP
+
+Para obter uma implementação da interface `RestPkiServiceInterface`, forneça uma instância da classe `RestPkiCoreClient`, tendo fornecido os parâmetros de **endpoint** e **chave de API** da classe `RestPkiOptions`, conforme código abaixo:
+
+[!include[index.php](../../../../../includes/rest-pki/core/get-started/service-php.md)] 
+
+#### Cultura / internacionalização (i18n)
+
+Caso queira, você pode alterar a cultura que a API deve observar. Para isso, forneça o parâmetro `cultureName` à sua instância do `RestPkiOptions` passado na configuração do cliente `RestPkiCoreClient`:
+
+[!include[index.php](../../../../../includes/rest-pki/core/get-started/culture-php.md)] 
 
 <a name="java" />
 

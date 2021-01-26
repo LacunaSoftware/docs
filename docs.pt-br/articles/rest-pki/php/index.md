@@ -20,7 +20,7 @@ Para adicionar o seu projeto, coloque isso no seu arquivo `composer.json`:
 
 Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
 
-O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiPhpClientLegacy). Sinta-se à vontade para bifurcá-lo
+O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiPhpClient). Sinta-se à vontade para bifurcá-lo
 se precisar fazer alguma personalização.
 
 ### Para PHP 5.3 e 5.4
