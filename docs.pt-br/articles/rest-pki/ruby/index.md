@@ -16,4 +16,4 @@ Como alternativa, você pode instalar a gema diretamente na linha de comando:
 gem install rest_pki
 ```
 
-O gem é código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiRubyClient). Sinta-se à vontade para bifurcá-lo se precisar fazer personalizações.
+O gem é código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiRubyClient). Sinta-se à vontade para fazer o *fork* do repositório se precisar de alguma personalização.

@@ -12,29 +12,27 @@ O uso do Rest PKI em aplicações PHP dependem da versão PHP. Veja esta seção
 
 ### Para PHP 5.5+
 
-O uso do Rest PKI no PHP 5.5+ (incluindo 7.x), você deve usar o pacote do compositor [lacuna/restpki-client](https://packagist.org/packages/lacuna/restpki-client).
+O uso do Rest PKI no PHP 5.5+ (incluindo 7.x), você deve usar o pacote do Composer [lacuna/restpki-client](https://packagist.org/packages/lacuna/restpki-client).
 
 Para adicionar o seu projeto, coloque isso no seu arquivo `composer.json`:
 
 [!include[composer.json](../../../../includes/rest-pki/php/composer.md)] 
 
-Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
+Após isso, faça um `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
 
-O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiPhpClient). Sinta-se à vontade para bifurcá-lo
-se precisar fazer alguma personalização.
+O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiPhpClient). Sinta-se à vontade para fazer o *fork* do repositório se precisar de alguma personalização.
 
 ### Para PHP 5.3 e 5.4
 
-Para usar Rest PKI no PHP 5.3 e 5.4, você deve usar o pacote do compositor [lacuna/restpki-client-legacy](https://packagist.org/packages/lacuna/restpki-client-legacy).
+Para usar Rest PKI no PHP 5.3 e 5.4, você deve usar o pacote do Composer [lacuna/restpki-client-legacy](https://packagist.org/packages/lacuna/restpki-client-legacy).
 
 Para adicionar o seu projeto, coloque isto em seu arquivo `composer.json`:
 
 [!include[composer.json](../../../../includes/rest-pki/php/composer-legacy.md)] 
 
-Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
+Após isso, faça um `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
 
-O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiPhpClientLegacy). Sinta-se à vontade para bifurcá-lo
-se precisar fazer alguma personalização.
+O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiPhpClientLegacy). Sinta-se à vontade para fazer o *fork* do repositório se precisar de alguma personalização.
 
 ### Para PHP 5.2
 
@@ -49,4 +47,4 @@ precisa ser adicionado ao seu `composer.json`:
 }
 ```
 
-Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
+Após isso, faça um `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).

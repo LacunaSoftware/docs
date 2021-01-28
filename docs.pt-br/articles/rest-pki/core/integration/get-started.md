@@ -147,7 +147,7 @@ As seguintes exceções podem ser lançadas nas chamadas aos métodos do `IRestP
 
 ### Chamando a API em PHP
 
-Comece adicionando o pacote do compositor [lacuna/restpkicore-client](https://packagist.org/packages/lacuna/restpkicore-client), disponível para:
+Comece adicionando o pacote do Composer [lacuna/restpkicore-client](https://packagist.org/packages/lacuna/restpkicore-client), disponível para:
 
 * PHP 5.5+ (incluindo 7.x)
 
@@ -155,9 +155,9 @@ Para adicionar no seu projeto, coloque isso no seu arquivo `composer.json`:
 
 [!include[composer.json](../../../../../includes/rest-pki/core/get-started/composer.md)] 
 
-Após isso, faça uum `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
+Após isso, faça um `composer install` para download do pacote e e suas dependências (se você não tiver o Composer instalado, pegue [aqui](https://getcomposer.org/)).
 
-O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiNgPhpClient). Sinta-se à vontade para bifurcá-lo se precisar fazer alguma personalização.
+O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiNgPhpClient). Sinta-se à vontade para fazer o *fork* do repositório se precisar de alguma personalização.
 
 #### Aplicações em PHP
 
