@@ -185,7 +185,7 @@ Em breve estará disponível o pacote para Java **com.lacunasoftware.restpkicore
 As APIs do Rest PKI Core são RESTful recebendo e retornando mensagens JSON, sendo de fácil uso em qualquer linguagem de programação moderna. Caso
 a sua aplicação não utilize nenhuma das linguagens de programação elencadas acima, opte por chamar as APIs do Rest PKI Core diretamente.
 
-Veja a [documentação da API](https://core-hml.pki.rest/swagger).
+Veja a [documentação da API](https://core.pki.rest/swagger).
 
 O parâmetro **endpoint** mencionado acima deve ser prefixado a todas as URLs relativas mencionadas nessa seção.
 
@@ -203,7 +203,7 @@ A API responde com os seguintes códigos HTTP:
 
 Código                      | Descrição
 --------------------------- | ---------
-200 (OK)                    | Requisição processada com sucesso. A resposta é diferente para cada API, consulte a [documentação da API](https://core-hml.pki.rest/swagger) para saber o formato da resposta de cada chamada.
+200 (OK)                    | Requisição processada com sucesso. A resposta é diferente para cada API, consulte a [documentação da API](https://core.pki.rest/swagger) para saber o formato da resposta de cada chamada.
 400 (Bad Request)           | Erro de sintaxe na requisição. Por exemplo, um campo obrigatório não foi informado.
 401 (Unauthorized)          | A chave de API não foi fornecida ou está inválida.
 403 (Forbidden)             | A chave de API passada é válida, porém a aplicação não possui permissões suficientes para realizar a operação solicitada.

@@ -6,7 +6,7 @@ Event type                   | Description
 ---------------------------- | -----------
 `DocumentSignatureCompleted` | Triggered when a document is signed and has finished being processed
 
-If enabled, webhook notifications consist of HTTP `POST` requests with a `WebhookEventModel`. See the [API Reference](https://core-hml.pki.rest/swagger) for the model schema.
+If enabled, webhook notifications consist of HTTP `POST` requests with a `WebhookEventModel`. See the [API Reference](https://core.pki.rest/swagger) for the model schema.
 
 A sample webhook notification of a `DocumentSignatureCompleted` event is shown below:
 

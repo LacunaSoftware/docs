@@ -8,7 +8,7 @@ Tipo do evento               | Descrição
 `DocumentSignatureCompleted` | Disparado quando um documento é assinado e tem seu processamento concluído
 
 Caso habilitadas, as notificações de eventos por webhook consistem em requisições HTTP `POST` com um `WebhookEventModel`. Consulte a
-[Referência da API](https://core-hml.pki.rest/swagger) para a definição do *schema* do modelo.
+[Referência da API](https://core.pki.rest/swagger) para a definição do *schema* do modelo.
 
 Abaixo temos um exemplo de notificação do tipo `DocumentSignatureCompleted`:
 

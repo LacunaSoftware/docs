@@ -33,7 +33,7 @@ A sua aplicação recebe o nome do arquivo (além do *MIME type* e tamanho em by
 rejeição).
 
 A solicitação de validação consiste em uma requisição HTTP com verbo `POST` tendo como *payload* um objeto `ValidateFileRequest` (consulte a
-[Referência da API](https://core-hml.pki.rest/swagger) para a definição do modelo). Veja um exemplo abaixo:
+[Referência da API](https://core.pki.rest/swagger) para a definição do modelo). Veja um exemplo abaixo:
 
 ```json
 {
