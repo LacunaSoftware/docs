@@ -71,24 +71,24 @@ In the application details, choose the Settings tab to set:
 * Deselect the following checkboxes: `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
 * **Allowed URLs**: name of this application on GrantID. Suggestion: `<My App Name>`
   * **Redirect**: you must add 4 redirect URLs that are based on your application URL (configured in Application URL setting):
-  `<applicationURL>` without final slash.
-  `<applicationURL>/silent-refresh.html`
-  `<applicationURL>/private/profile/refresh`
-  `<applicationURL>/private`
+    * `<applicationURL>` without final slash.
+    * `<applicationURL>/silent-refresh.html`
+    * `<applicationURL>/private/profile/refresh`
+    * `<applicationURL>/private`
   * **CORS origins**: `<applicationURL>` without final slash.
   * **Post Logout**: `<applicationURL>` without final slash.
 * **Allowed Identification Scopes**: select the information you want to include in Identity Tokens. Select at least: 
-`User identifier (sub)`
-`User profile (name, email, phone)`
-`Name`
-`Email` 
-`Phone number` 
-`Username`
-`CPF` (if created as Custom Identification Scope)
+  * `User identifier (sub)`
+  * `User profile (name, email, phone)`
+  * `Name`
+  * `Email` 
+  * `Phone number` 
+  * `Username`
+  * `CPF` (if created as Custom Identification Scope)
 * **Allowed API scopes**: select the API connection created.
 * **Required Claims**: select the custom claim created (CPF) if it is required that all users in application have this information.
 * **Login Options**: you may enable digital certificate login by selecting the corresponding checkbox. 
-* It is recommended to select the option Verify user's email so only verified email users are allowed to complete the login process.
+* It is recommended to select the option `Verify user's email` so only verified email users are allowed to complete the login process.
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
