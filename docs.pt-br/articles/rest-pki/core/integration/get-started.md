@@ -174,7 +174,7 @@ Caso queira, você pode alterar a cultura que a API deve observar. Para isso, fo
 #### Exemplos em PHP
 
 Em nosso [repositório de exemplos](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/php/plain/public), 
-todas as pastas terminadas em `-rest-ng` contém exemplos referentes ao pacote do Composer [lacuna/restpkicore-client](https://packagist.org/packages/lacuna/restpkicore-client).
+todas as pastas terminadas em `-rest-core` contém exemplos referentes ao pacote do Composer [lacuna/restpkicore-client](https://packagist.org/packages/lacuna/restpkicore-client).
 
 <a name="java" />
 

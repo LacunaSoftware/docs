@@ -30,6 +30,8 @@ Em PHP, chame `RestPkiServiceInterface.createSignatureSession()` e use o campo `
 
 [!include[Create session in php](../../../../../../includes/rest-pki/core/signature-sessions/create-php.md)]
 
+Disponibilizamos um código completo de [exemplo de criação de sessão de assinatura em PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/index.php).
+
 Caso esteja chamando a API diretamente:
 
 [!include[Create session API](../../../../../../includes/rest-pki/core/signature-sessions/create-api.md)]
@@ -76,6 +78,7 @@ Em PHP, o lado do cliente seria algo como:
 
 [!include[Callback in PHP - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-php-view.md)]
 
+Disponibilizamos um código completo de [exemplo de tratamento de retorno em PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/complete.php).
 ## Desabilitando downloads
 
 Caso tenha a impressão de que alguns de seus usuários, ao invés de concluirem a sessão e retornarem à sua aplicação, simplesmente fazem o download dos arquivos
@@ -130,6 +133,8 @@ Em .NET:
 Em PHP:
 
 [!include[Create session with webhook in PHP](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-php.md)]
+
+Disponibilizamos um código completo de [exemplo do início do fluxo com webhook em PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/using-webhook.php).
 
 Integração direta por API:
 
