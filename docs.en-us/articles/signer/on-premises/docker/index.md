@@ -10,9 +10,9 @@ For Docker-based setup the following image is provided on DockerHub:
 
 This image requires: 
 
-* A SQL Server Database connection: the database collation must be Latin1_General_100_CI_AI (or Latin1_General_CI_AI). 
+* A SQL Server Database connection: the database collation must be Latin1_General_100_CI_AI or Latin1_General_CI_AI. 
 * Storage (shared between all instances of the image): see BlobStorage settings bellow for further information.
-* OIDC Server (GrantID) Cloud or OnPremises.
+* OIDC Server ([GrantID](../../../grant-id/index.md)) Cloud or On-Premises.
 
 ## Basic Configuration
 
@@ -33,20 +33,17 @@ Configures the database connection:
 Server=tcp:mysqlserverendoint.com,1433;Initial Catalog=databasename;Persist Security Info=False;User ID=user;Password=userpassword;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;
 ```
 
-### Blob Storage Section
+### BlobStorage Section
 
 Defines how the application will store and retrieve files.
 
 * **Type**: available options are `FileSystem`, `Azure` or `AwsS3`.
-* Depending on the type selected, more settings must be set. Please see BlobStorage Examples for details on each specific type.
-
+* Depending on the type selected, more settings must be set. Please see [BlobStorage Configuration](./blob-storage.md) for details on each specific type.
 
 ### Serilog Section
 
-Defines where application logs will be stored.
-
-* **Type**: available options are `FileSystem`, `Azure` or `AwsS3`.
-* Depending on the type selected, more settings must be set. Please see Serilog Examples for details on each specific type.
+Defines where application logs will be stored. Options are File, Azure Table Storage, Amazon S3 and New Relic. Please see [Serilog Configuration](./serilog.md) for details on each 
+specific option.
 
 ### Oidc Section
 
@@ -71,22 +68,13 @@ Required licenses for the PKI suite library:
 
 ### General Section
 
-* **SiteUrl**:
-* **SiteName**:
-* **SupportEmailAddress**:
+* **SiteUrl**: the URL where the application will be running from.
+* **SiteName**: the name of the application.
+* **SupportEmailAddress**: the support email which will be included at the bottom of every email sent by the application.
 
-
-### Email Section
-
-* **ServerHost**:
-* **Username**:
-* **Password**:
-* **SenderAddress**:
-* **SenderName**:
-
+[!include[Email config](../../../includes/email-config.md)]
 
 Additional settings can be found at the [Signer Settings page](../settings.md).
-
 
 ## Installation
 
@@ -112,7 +100,6 @@ General__ProcessBackgroundJobs=false
 General__AutoUpdateDatabase=false
 ```
 To execute the update simply pull and run the image with tag corresponding to the desired version.
-
 
 ## See also
 

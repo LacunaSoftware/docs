@@ -199,6 +199,8 @@
 #### [Troubleshooting](signer/on-premises/linux/troubleshoot/index.md)
 ##### [Checking logs](signer/on-premises/linux/troubleshoot/check-logs.md)
 ### [Setup on Docker](signer/on-premises/docker/index.md)
+#### [Blob Storage Configuration](signer/on-premises/docker/blob-storage.md)
+#### [Serilog Configuration](signer/on-premises/docker/serilog.md)
 #### [Docker Swarm](signer/on-premises/docker/docker-swarm/index.md)
 ##### [Enable SSL](signer/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Using an external database](signer/on-premises/docker/docker-swarm/external-db.md)

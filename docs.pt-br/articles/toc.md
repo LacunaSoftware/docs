@@ -198,6 +198,8 @@
 #### [Resolução de problemas](signer/on-premises/linux/troubleshoot/index.md)
 ##### [Verificando os logs](signer/on-premises/linux/troubleshoot/check-logs.md)
 ### [Setup em Docker](signer/on-premises/docker/index.md)
+#### [Configuração do Blob Storage](signer/on-premises/docker/blob-storage.md)
+#### [Configuração do Serilog](signer/on-premises/docker/serilog.md)
 #### [Docker Swarm](signer/on-premises/docker/docker-swarm/index.md)
 ##### [Habilitando SSL](signer/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Usando um banco de dados externo](signer/on-premises/docker/docker-swarm/external-db.md)
