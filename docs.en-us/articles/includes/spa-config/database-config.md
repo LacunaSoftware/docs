@@ -1,6 +1,8 @@
 ﻿### Database connection string
 
-Under section **ConnectionStrings**, on the setting **DefaultConnection**, set the connection string to the previously created database. A typical connection string looks like this:
+Under section **ConnectionStrings**:
+
+* **DefaultConnection**: set the connection string to the database. A typical connection string looks like this:
 
 ```
 Data Source=SERVER;Initial Catalog=DATABASE;User ID=USERNAME;Password=PASSWORD

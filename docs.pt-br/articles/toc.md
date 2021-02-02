@@ -297,6 +297,7 @@
 ##### [Dados persistentes](grant-id/on-premises/docker/docker-swarm/persistent-data.md)
 ### [Setup em Azure App Services](grant-id/on-premises/azure/index.md)
 ### [Configurar Aplicações SPA](grant-id/on-premises/configure-spa-app.md)
+### [Configurações](grant-id/on-premises/settings.md)
 ### [Integração com SAML 2](grant-id/on-premises/saml2.md)
 ## [Pós-instalação](grant-id/on-premises/post-install.md)
 ## [Histórico de versões](grant-id/changelog.md)

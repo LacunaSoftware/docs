@@ -1,0 +1,6 @@
+﻿Example:
+
+```
+PkiSuite__SdkLicense=AxAAzHeWJY9AK...
+PkiSuite__WebLicense=ApwBY29uZml1A...
+```

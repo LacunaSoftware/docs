@@ -23,17 +23,9 @@ configure the SupportEmailAddres you must set a variable with name: `General__Su
 
 The required settings are presented below.
 
-### ConnectionStrings section
+[!include[Database config](../../../includes/spa-config/database-config.md)]
 
-Configures the database connection:
-
-* **DefaultConnection**: an a SQL Server Connection String. 
-
-Example: 
-
-```
-ConnectionStrings__DefaultConnection=Server=tcp:mysqlserverendoint.com,1433;Initial Catalog=databasename;Persist Security Info=False;User ID=user;Password=userpassword;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;
-```
+[!include[Database config sample](../../../includes/spa-config/database-config-sample.md)]
 
 ### BlobStorage Section
 
@@ -47,61 +39,42 @@ Defines where application logs will be stored.
 
 Please see [Serilog Configuration](./serilog.md) for details and examples of supported services.
 
-### Oidc Section
+[!include[OIDC config](../../../includes/spa-config/oidc-config.md)]
 
-If you use GrantID on Cloud these settings will be provided for you. Otherwise see the [Configuring a SPA Application page](../../../grant-id/on-premises/configure-spa-app.md).
+[!include[OIDC config sample](../../../includes/spa-config/oidc-config-sample.md)]
 
-* **ApiEndpoint**: the GrantID API URL (IdentityService URL).
-* **ApiName**: the API connection name.
-* **AppId**: the backend application App-Id.
-* **AppSecret**: the backend application App secret.
-* **Authority**: the GrantID subscription URL.
-* **ClientAppId**: the frontend application App-Id.
-* **CpfClaim**: the name of the CPF claim (custom claim).
-* **CustomScopes**: the names of required custom scopes separated by space.
+[!include[PKI config](../../../includes/spa-config/pki-config.md)]
 
-Example:
+[!include[PKI config sample](../../../includes/spa-config/pki-config-sample.md)]
 
-```
-Oidc__ApiEndpoint https://api.grantid.com
-Oidc__ApiName myapp-api
-Oidc__AppId myapp-backend
-Oidc__AppSecret 8CqeGeur46kfX422ujStJGH/M/kqjiliJd37VduJcRw=
-Oidc__Authority https://mysub.grantid.com
-Oidc__ClientAppId myapp
-Oidc__CpfClaim cpf
-Oidc__CustomScopes mysub-cpf
-```
-
-### PkiSuite Section
-
-Required licenses for the PKI suite library:
-
-* **SdkLicense**: license of the PKI SDK.
-* **WebLicense**: license of the Web PKI.
-* **LappEnabled**: (recommended): prevents errors from LCR endpoint instabilities. Ask for this option when requesting your PKI Suite license.
-
-Example:
-
-```
-PkiSuite__SdkLicense AxAAzHeWJY9AK...
-PkiSuite__WebLicense ApwBY29uZml1A...
-PkiSuite__LappEnabled true
-```
-
-### General Section
+### General Configuration
 
 * **SiteUrl**: the URL where the application will be running from.
 * **SiteName**: the name of the application.
 * **SupportEmailAddress**: the support email which will be included at the bottom of every email sent by the application.
 
-### Bindings Section
+Example: 
 
-* **UseReverseProxy**: set as `true` if the application will be executed behind a reverse proxy or load balancer. It can be omitted otherwise.
+```
+General__SiteUrl=https://signer-aws.lacunasoftware.com
+General__SiteName=MyApp Signer
+General__SupportEmailAddress=support@email.com
+```
+
+### Bindings Configuration
+
+* **UseReverseProxy**: set as `true` if the container will be executed behind a reverse proxy or load balancer. It can be omitted otherwise.
+
+```
+Bindings__UseReverseProxy=true
+```
 
 [!include[Email config](../../../includes/spa-config/email-config.md)]
 
-Additional settings can be found at the [Signer Settings page](../settings.md).
+[!include[Email config sample](../../../includes/spa-config/email-config-sample.md)]
+
+> [!TIP]
+> Additional settings can be found at the [Signer Settings page](../settings.md).
 
 ## Installation
 

@@ -1,0 +1,12 @@
+﻿Example:
+
+```
+Oidc__ApiEndpoint=https://api.grantid.com
+Oidc__ApiName=myapp-api
+Oidc__AppId=myapp-backend
+Oidc__AppSecret=8CqeGeur46k...
+Oidc__Authority=https://mysubscription.grantid.com
+Oidc__ClientAppId=myapp
+Oidc__CpfClaim=cpf
+Oidc__CustomScopes=mysub-cpf
+```

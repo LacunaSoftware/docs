@@ -2,7 +2,7 @@
 
 ###  *General* Settings
 
-In **General** section:
+Under section **General**:
 
 * **SiteUrl**: publicly accessible URL of the website (e.g.: `https://signer.patorum.com/`). This address is used to compose emails with links back to the website.
 * **EncryptionKey**: encryption key.
@@ -92,11 +92,15 @@ be restricted.
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
+Under section **DocumentTypes**:
+
 * **Enabled**: if `true` shows a select to determine the type of a document when creating one. The available types are `Deed` and `Power of Attorney`.
 * **EnabledOptions**: comma separated list of types that will be enabled/displayed. The order of the types will be respected when displaying them. Example: `PowerOfAttorney,Deed`.
 If this setting is not provided and document types are enabled, all available options will be displayed.
 
 ###  *SupportChat* Settings (v1.6.0)
+
+Under section **SupportChat**:
 
 * **Type**: the support chat provider. Available options are `Movidesk` and `Jivo`.
 * **Enabled**: if `true`, enables the support chat for the selected type.
@@ -104,6 +108,8 @@ If this setting is not provided and document types are enabled, all available op
 
 <a name="electronic-settings" />
 ###  *ElectronicSignature* Settings
+
+Under section **ElectronicSignature**:
 
 * **Enabled**: if `true`, displays the option to accept electronic signatures when creating documents.
 * **EnableSmsAuthentication**: if `true`, enables the SMS verification option for electronic signatures.
@@ -119,6 +125,8 @@ If this setting is not provided and document types are enabled, all available op
 
 ###  *TrustServices* Settings (Cloud Certificates, v1.11.0)
 
+Under section **TrustServices**:
+
 * **Enabled**: if `true`, displays cloud certificate providers wherever a signature is required. Only the providers that have a certificate for the user's identifier
 will be shown. If a user does not have any certificate in the configured providers nothing will be displayed.
 * Service info options (`Services`): each service must be configured individually like shown bellow. Available services are: `BirdID`, `SafeID`, `NeoID` and `VIDaaS`:
@@ -131,6 +139,8 @@ will be shown. If a user does not have any certificate in the configured provide
 	* **&lt;provider>:ProtocolVariant** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the protocol variant.
 
 ###  *VisualRepresentation* Settings
+
+Under section **VisualRepresentation**:
 
 * **Enabled** (default: `true`, v1.7.0): if `true`, all PDF documents signed with PAdES will have a signature visual representation that can be automatically
 or manually positioned.
@@ -151,6 +161,8 @@ or manually positioned.
 manually selects a position while signing.
 
 ###  *ValidationStamp* Settings (v1.7.0)
+
+Under section **ValidationStamp**:
 
 * **Enabled**: if `true`, adds a stamp to all PDF documents after they are uploaded. The stamp contains information of where the document was
 created and where it's signatures can be validated. This is a recommended option if visual representation is disabled.
@@ -178,6 +190,8 @@ adding/removing observers and updating participant emails (if allowed by other s
 
 ###  *PrinterFriendly* Settings
 
+Under section **PrinterFriendly**:
+
 * **ShowSummaryBottom** (default: `true`): if `true`, shows the signature summary at the bottom of every page.
 * **ShowSummaryRight**: if `true`, shows the signature summary at the right of every page.
 * **SummaryHeightCentimeters**: the height of the summary in centimeters. The default value is `2`.
@@ -203,6 +217,8 @@ adding/removing observers and updating participant emails (if allowed by other s
 
 ###  *SigningTags* Settings
 
+Under section **SigningTags**:
+
 * **PageHeight**:
 * **PageWidth**:
 * **PageMarginTop**:
@@ -212,12 +228,16 @@ adding/removing observers and updating participant emails (if allowed by other s
 
 ###  *Amplia* Settings
 
+Under section **Amplia**:
+
 * **EndpointUrl**:
 * **ApiKey**:
 * **EnableAttributeCertificate**:
 * **KeyStore**: The default value is `Database`.
 
 ###  *Hsm* Settings
+
+Under section **Hsm**:
 
 * **Enabled**:
 * **EnableLocalCA**: if `true`, allows the users to issue test certificates using the local Amplia Service.
@@ -234,11 +254,15 @@ adding/removing observers and updating participant emails (if allowed by other s
 
 ###  *Timestamper* Settings
 
+Under section **Timestamper**:
+
 * **Enabled**:
 * **Url**:
 * **BearerToken**:
 
 ###  *Notarize* Settings
+
+Under section **Notarize**:
 
 * **Enabled**:
 * **Notaries**: list of subsections:
@@ -253,6 +277,8 @@ adding/removing observers and updating participant emails (if allowed by other s
 
 ###  *Authenticator* Settings
 
+Under section **Authenticator**:
+
 * **HashAlgorithm**:
 * **NumberOfDigits**:
 * **PeriodInSeconds**:
@@ -261,6 +287,8 @@ adding/removing observers and updating participant emails (if allowed by other s
 
 
 ###  *Scanner* Settings
+
+Under section **Scanner**:
 
 * **Disabled**: if `true`, disables Scanner integration.
 * **Endpoint**: the Scanner endpoint.
