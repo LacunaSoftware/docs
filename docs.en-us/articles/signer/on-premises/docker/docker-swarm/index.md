@@ -1,4 +1,4 @@
-﻿# Signer - Setup on Docker
+﻿# Signer - Docker Swarm
 
 To install an [on-premises](../../index.md) instance of [Signer](../../../index.md) on Docker, follow the steps below. For other platforms, [click here](../../index.md).
 

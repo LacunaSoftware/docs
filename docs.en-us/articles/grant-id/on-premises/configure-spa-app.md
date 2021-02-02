@@ -23,12 +23,13 @@ To test your settings, access: `https://<subscription_url>/.well-known/openid-co
 > [!TIP]
 > You may skip this step if your application does not require CPF information or the claim was already created.
 
-Create a custom Claim by providing: 
+Create a custom Claim in the Scopes tab by providing: 
 
-* **Type**: the name of your custom claim. Suggestion: `cpf`. This is referred in installation pages as the `OIDC CpfClaim` setting.
+* **Name** (type): the name of your custom claim. Suggestion: `cpf`. This is referred in installation pages as the `OIDC CpfClaim` setting.
 * **Display name**: the display name of your custom claim. Suggestion: `CPF`.
 * **Validation Options**: the type of validation to use when the value of this claim is provided by a user. Set it to `Cpf`.
-* **Unique**: you may select it as Unique or not according to your application configuration/requirements.
+* **Unique**: you may select it as Unique or not according to your application configuration/requirements. If it is not marked as unique it is recommended
+to select the `Visible in profile page?` and `Display in register page?` options.
 
 
 ## Create a Custom Identification Scope
@@ -36,7 +37,7 @@ Create a custom Claim by providing:
 > [!TIP]
 > You may skip this step if skipped the previous step.
 
-Create a Custom Identification Scope so that identity tokens contain the information of the the custom claim created. Do so by providing:
+Create a Custom Identification Scope so that identity tokens contain the information of the custom claim created. Do so in the Scopes tab by providing:
 
 * **Name**: the name of the identification scope. Suggestion: `<sub-namespace>-cpf`. This and other required identification scopes should be set in the `OIDC Custom Scopes` setting as described in installation pages.
 * **Display name**: the display name of the scope. Suggestion: `CPF`.
@@ -44,21 +45,21 @@ Create a Custom Identification Scope so that identity tokens contain the informa
 
 ## Create an API Connection
 
-Create an API connection for the application by providing:
+Create an API connection for the application in the Scopes tab by providing:
 
 * **Name**: the name of the API connection. Suggestion: `<my-app-name>-api`. This is referred in installation pages as the `OIDC ApiName`.
 * **Display name**: the display name of your API (shown on consent screens if enabled). Suggestion: `<My App Name> API`.
 
-After the connection is created expand it and edit the API Scope to include informations that you want to include in the access tokens issued for this API.
+After the connection is created expand it and edit the API Scope to add informations that you want to include in the access tokens issued for this API.
 Choose all informations including any custom identification scopes.
 
 ## Create the Applications
 
-Each SPA Application requires two applications registered on GrantID, one for frontend login and another to access GrantID User management APIs.
+Each SPA Application requires two applications registered on GrantID, one for frontend login and another to access GrantID User management APIs (backend).
 
 ### Frontend Application
 
-Create a new GrantID Application by providing:
+Create a new GrantID Application in the Applications tab by providing:
 
 * **Name**: name of this application on GrantID. Suggestion: `<My App Name>`
 * **App-id**: this is a unique name across GrantID for the application. This is referred in installation pages as the `OIDC ClientAppId`.
@@ -67,16 +68,16 @@ Create a new GrantID Application by providing:
 In the application details, choose the Settings tab to set:
 
 * **Application URL**: the URL of your application. Example: `https://myappname.com`
-* Select the Allow Access tokens via browser checkbox.
+* Select the `Allow Access tokens via browser?` checkbox.
 * Deselect the following checkboxes: `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
 * **Allowed URLs**: name of this application on GrantID. Suggestion: `<My App Name>`
-  * **Redirect**: you must add 4 redirect URLs that are based on your application URL (configured in Application URL setting):
-    * `<applicationURL>` without final slash.
+  * **Redirect**: you must add 4 redirect URLs that are based on your application URL:
+    * `<applicationURL>` without trailing slash.
     * `<applicationURL>/silent-refresh.html`
     * `<applicationURL>/private/profile/refresh`
     * `<applicationURL>/private`
-  * **CORS origins**: `<applicationURL>` without final slash.
-  * **Post Logout**: `<applicationURL>` without final slash.
+  * **CORS origins**: `<applicationURL>` without trailing slash.
+  * **Post Logout**: `<applicationURL>` without trailing slash.
 * **Allowed Identification Scopes**: select the information you want to include in Identity Tokens. Select at least: 
   * `User identifier (sub)`
   * `User profile (name, email, phone)`
@@ -95,7 +96,7 @@ In the application details, choose the Settings tab to set:
 
 ### Backend Application
 
-Create a new GrantID Application by providing:
+Create a new GrantID Application in the Applications tab by providing:
 
 * **Name**: name of this application on GrantID. Suggestion: `<My App Name> Backend`
 * **App-id**: this is a unique name across GrantID for the application. This is referred in installation pages as the `OIDC AppId` setting.
@@ -108,4 +109,4 @@ In the application details, choose the Settings tab to set:
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
 
-Back into the Basic Details tab, generate an App Secret. This is referred in installation pages as the `OIDC AppSecret` setting.
+After saving, return to the Basic Details tab and generate an App Secret. This is referred in installation pages as the `OIDC AppSecret` setting.
