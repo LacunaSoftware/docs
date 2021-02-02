@@ -250,11 +250,9 @@ As opções são:
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
-(Exemplos em produção)
-
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-503/dotnet/console/Console/Scenarios/DownloadDocumentVersionScenario.cs)
 	
-* Java: (Exemplos em produção)
+* [Java] (https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DownloadDocumentVersionScenario.java)
 
 ### Listar documentos
 
@@ -268,11 +266,9 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
-(Exemplos em produção)
-
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-504/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
 	
-* Java: (Exemplos em produção)
+* [Java] (https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/ListDocumentsScenario.java)
 	
 
 ### Validar assinaturas de um documento
