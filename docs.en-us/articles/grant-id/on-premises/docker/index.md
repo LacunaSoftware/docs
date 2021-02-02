@@ -55,15 +55,29 @@ Please see [Serilog Configuration](./serilog.md) for details and examples of sup
 
 ### Application Section
 
-* **ProductName**: the URL where the application will be running from.
-* **IdentityServiceUrl**: the name of the application.
-* **ConsoleUrl**:
-* **AuthServerUrl**:
-* **ProtectorKeyStorePath**:
-* **SigningCertificatePfxPath**:
-* **SigningCertificatePfxPassword**:
-* **TempTokenPassword**:
-* **UseReverseProxy**:
+* **ProductName**: the name of the application.
+* **IdentityServiceUrl**: the URL of the IdentityService service.
+* **ConsoleUrl**: the URL of the Console service.
+* **AuthServerUrl**: the URL of the AuthServer service.
+* **UseReverseProxy**: set as `true` if the container will be executed behind a reverse proxy or load balancer. It can be omitted otherwise.
+* **TempTokenPassword**: key to generate temporary tokens.
+* **ProtectorKeyStorePath**: filesystem path to save data protection keys.
+* **SigningCertificatePfxPath**: filesystem path to the certificate that will be used to issue tokens.
+* **SigningCertificatePfxPassword**: the password of the certificate that will be used to issue tokens.
+
+Example:
+
+```
+Application__ProductName=My App ID
+Application__IdentityServiceUrl=https://myappid-api.com
+Application__ConsoleUrl=https://myappid-console.com
+Application__AuthServerUrl=https://myappid.com
+Application__ProtectorKeyStorePath=/files/keys
+Application__SigningCertificatePfxPath=/files/issuer.pfx
+Application__SigningCertificatePfxPassword=123456
+Application__TempTokenPassword=CPPJ66jJqHQ8ykUFEvhNWpfQwrhiGbeCBFNJ2z07yD0=
+Application__UseReverseProxy=true
+```
 
 [!include[Email config](../../../includes/spa-config/email-config.md)]
 * **Support**: the support email which will be included at the bottom of every email sent by the application.
