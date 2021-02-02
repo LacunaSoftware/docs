@@ -11,8 +11,8 @@ Stores files in the file system. Available settings:
 Example:
 
 ```
-BlobStorage__Type FileSystem
-BlobStorage__Path /var/files/myapp
+BlobStorage__Type=FileSystem
+BlobStorage__Path=/var/files/myapp
 ```
 
 ## Azure Storage Account
@@ -25,9 +25,9 @@ Stores files in an Azure Storage Account Container. Available settings:
 Example:
 
 ```
-BlobStorage__Type Azure
-BlobStorage__ConnectionString DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net
-BlobStorage__ContainerName myapp-container
+BlobStorage__Type=Azure
+BlobStorage__ConnectionString=DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net
+BlobStorage__ContainerName=myapp-container
 ```
 
 ## AWS S3 (Simple Storage Service)
@@ -36,15 +36,15 @@ Stores files in an S3 Bucket. Available settings:
 
 * **BucketName**: the name of the Bucket where the files will be stored.
 * **Region**: the region of the bucket.
-* **AccessKey**: the access key ID of a IAM user that has access to the bucket. 
-* **SecretKey**: the secret access key of a IAM user that has access to the bucket. 
+* **AccessKey**: the access key ID of an IAM user that has access to the bucket. 
+* **SecretKey**: the secret access key of an IAM user that has access to the bucket. 
 
 Example:
 
 ```
-BlobStorage__Type AwsS3
-BlobStorage__BucketName myappbucket
-BlobStorage__Region us-east-1
-BlobStorage__AccessKey MYACCESSKEYID
-BlobStorage__SecretKey MYSECRETACCESSKEY
+BlobStorage__Type=AwsS3
+BlobStorage__BucketName=myappbucket
+BlobStorage__Region=us-east-1
+BlobStorage__AccessKey=MYACCESSKEYID
+BlobStorage__SecretKey=MYSECRETACCESSKEY
 ```
