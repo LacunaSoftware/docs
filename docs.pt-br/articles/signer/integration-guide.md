@@ -263,7 +263,6 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * Listar por pastas
 * Listar por organização
 
-
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-504/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
