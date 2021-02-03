@@ -4,6 +4,16 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-25-0" />
+### 3.25.0 (2021-02-03)
+
+* Melhorias
+  * [LI-355] - Atualizar Serilog/Sinks e Blob Storage
+  * [LI-354] - Suporte a ADFS com SAML
+  * [LI-353] - Corrigir comportamento do link de voltar ao site
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v3-24-0" />
 ### 3.24.0 (2020-12-29)
 

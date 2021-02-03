@@ -4,6 +4,25 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-25-0" />
+### 1.25.0 (2021-02-03)
+
+* Melhorias
+  * [SIG-602] - Melhoria no Suporte a AWS S3
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v1-24-3" />
+### 1.24.3 (2021-01-28)
+
+* Melhorias
+  * [SIG-599] - Não enviar email de convite se o documento for criado desativando as notificações
+
+* Correções de bugs
+  * [SIG-601] - Não é possível usar regras de assinatura e anexos privados
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-24-2" />
 ### 1.24.2 (2021-01-18)
 

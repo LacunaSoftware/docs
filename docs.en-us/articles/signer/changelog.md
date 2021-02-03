@@ -4,6 +4,25 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-25-0" />
+### 1.25.0 (2021-02-03)
+
+* Improvements
+  * [SIG-602] - Improve AWS S3 support
+
+Updates database model: yes
+
+<a name="v1-24-3" />
+### 1.24.3 (2021-01-28)
+
+* Improvements
+  * [SIG-599] - Do not send invite email if the document was created with the disable notifications option
+
+* Bug fixes
+  * [SIG-601] - Cannot use signature rules with private attachments
+
+Updates database model: no
+
 <a name="v1-24-2" />
 ### 1.24.2 (2021-01-18)
 

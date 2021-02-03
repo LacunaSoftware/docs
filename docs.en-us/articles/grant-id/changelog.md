@@ -4,6 +4,16 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-25-0" />
+### 3.25.0 (2021-02-03)
+
+* Improvements
+  * [LI-355] - Update Serilog/Sinks and Blob Storage
+  * [LI-354] - Add ADFS support with SAML
+  * [LI-353] - Fix back to site link behavior
+
+Updates database model: yes
+
 <a name="v3-24-0" />
 ### 3.24.0 (2020-12-29)
 
