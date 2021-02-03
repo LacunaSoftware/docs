@@ -12,6 +12,9 @@
   * [LI-354] - Add ADFS support with SAML
   * [LI-353] - Fix back to site link behavior
 
+> [!WARNING]
+> As of this version, the token issuer certificate needs to have Key Encipherment usage flag or no Key Usage restrictions.
+
 Updates database model: yes
 
 <a name="v3-24-0" />

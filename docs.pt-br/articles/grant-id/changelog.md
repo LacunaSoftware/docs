@@ -12,6 +12,9 @@
   * [LI-354] - Suporte a ADFS com SAML
   * [LI-353] - Corrigir comportamento do link de voltar ao site
 
+> [!WARNING]
+> À partir desta versão, o certificado para emissão de tokens deve ter a flag de uso `Key Encipherment` ou não ter restrições de Key Usage.
+
 Atualiza modelo do banco de dados: sim
 
 <a name="v3-24-0" />
