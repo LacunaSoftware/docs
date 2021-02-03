@@ -37,7 +37,7 @@ The required settings are presented below.
 
 Example:
 
-[!include[Database config sample](../../../../includes/spa-config/database-config-sample.md)]
+[!include[Database config sample](../../../../../includes/spa-config/database-config-sample.md)]
 
 ### BlobStorage Section
 
@@ -55,7 +55,7 @@ Please see [Serilog Configuration](../serilog.md) for details and examples of su
 
 Example:
 
-[!include[PKI config sample](../../../../includes/spa-config/pki-config-sample.md)]
+[!include[PKI config sample](../../../../../includes/spa-config/pki-config-sample.md)]
 
 ### Application Section
 
