@@ -15,9 +15,9 @@ Under section **Aplication**:
 * **X509StoreLocation**: for instances whose OS provide a Certificate Store (Windows) you may specify the Store location. Use `CurrentUser` for
 Azure Windows App Service or `LocalMachine` for Windows Server.
 * **SigningCertificateThumbprint**: if you've specified a store location, provide the thumbprint of the certificate that will be used to issue tokens.
-* **SigningCertificatePfxPath**: for instances whose OS does not provide a Certificate Store. Filesystem path to the certificate that will be used to issue tokens.
+* **SigningCertificatePfxPath**: for instances whose OS does not provide a Certificate Store. File system path to the certificate that will be used to issue tokens.
 * **SigningCertificatePfxPassword**: for instances whose OS does not provide a Certificate Store. The password of the certificate that will be used to issue tokens.
-* **ProtectorKeyStorePath**: filesystem path to save data protection keys.
+* **ProtectorKeyStorePath**: file system path to save data protection keys.
 
 * **DisableSignUp**: disables signup during application login of all subscriptions.
 * **DisableCertificateSignUp**: disables digital certificate signup during application login of all subscriptions.
@@ -50,4 +50,4 @@ Under section **Caching**:
 * **ApplicationContext**: duration in seconds of the caching of Application contexts.
 * **SubscriptionContext**: duration in seconds of the caching of Subscription contexts.
 * **Clients**: duration in seconds of the caching of Clients information.
-* **Saml2Settings**: duration in seconds of the caching of SAML2 settings.
+* **Saml2Settings** (default: `300`, v3.25.0): duration in seconds of the caching of SAML2 settings.

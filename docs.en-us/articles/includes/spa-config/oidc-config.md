@@ -12,4 +12,4 @@ You can either use a SaaS subscription on [grantid.com](https://grantid.com/) or
 * **AppSecret**: the *client secret* of the backend app
 * **RequireHttps** (optional): set to `false` if the OIDC server does not use HTTPS
 
-See [Configuring a SPA Application page](../../grant-id/on-premises/configure-spa-app.md) for instructions on how to obtain the correct values.
+See [Configuring a SPA Application page](../../grant-id/on-premises/configure-spa-app.md) for instructions on how to obtain these values.

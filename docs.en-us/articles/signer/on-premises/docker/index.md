@@ -18,8 +18,8 @@ This image requires:
 
 The container for this image is configured using Environment variables.
 
-Environment variable names must follow the pattern: `Section__Setting`, for instance: for the General section, if you want to
-configure the SupportEmailAddres you must set a variable with name: `General__SupportEmailAddress`.
+Environment variable names must follow the pattern: `Section__Setting`, for instance: for the General section, to
+configure the SupportEmailAddress you must set a variable with name: `General__SupportEmailAddress`.
 
 The required settings are presented below.
 

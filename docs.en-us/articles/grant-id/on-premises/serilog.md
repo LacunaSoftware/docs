@@ -1,0 +1,1 @@
+﻿[!include[Serilog config](../../includes/spa-config/serilog-config.md)]

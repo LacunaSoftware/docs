@@ -298,6 +298,8 @@
 ##### [Persistent data](grant-id/on-premises/docker/docker-swarm/persistent-data.md)
 ### [Setup on Azure App Services](grant-id/on-premises/azure/index.md)
 ### [Configure SPA Applications](grant-id/on-premises/configure-spa-app.md)
+### [Blob Storage Configuration](grant-id/on-premises/blob-storage.md)
+### [Serilog Configuration](grant-id/on-premises/serilog.md)
 ### [Settings](grant-id/on-premises/settings.md)
 ### [SAML 2 Integration](grant-id/on-premises/saml2.md)
 ## [Post-installation steps](grant-id/on-premises/post-install.md)

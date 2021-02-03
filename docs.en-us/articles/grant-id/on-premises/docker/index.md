@@ -28,8 +28,8 @@ If you need one image per service for fine-grained control of your containers co
 
 The container for this image is configured using Environment variables.
 
-Environment variable names must follow the pattern: `Section__Setting`, for instance: for the General section, if you want to
-configure the SupportEmailAddres you must set a variable with name: `General__SupportEmailAddress`.
+Environment variable names must follow the pattern: `Section__Setting`, for instance: for the General section, to
+configure the SupportEmailAddress you must set a variable with name: `General__SupportEmailAddress`.
 
 The required settings are presented below.
 
@@ -65,8 +65,8 @@ Example:
 * **AuthServerUrl**: the URL of the AuthServer service.
 * **UseReverseProxy**: set as `true` if the container will be executed behind a reverse proxy or load balancer. It can be omitted otherwise.
 * **TempTokenPassword**: key to generate temporary tokens.
-* **ProtectorKeyStorePath**: filesystem path to save data protection keys.
-* **SigningCertificatePfxPath**: filesystem path to the certificate that will be used to issue tokens.
+* **ProtectorKeyStorePath**: file system path to save data protection keys.
+* **SigningCertificatePfxPath**: file system path to the certificate that will be used to issue tokens.
 * **SigningCertificatePfxPassword**: the password of the certificate that will be used to issue tokens.
 
 Example:
