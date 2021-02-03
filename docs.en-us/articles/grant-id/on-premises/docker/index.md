@@ -35,23 +35,27 @@ The required settings are presented below.
 
 [!include[Database config](../../../includes/spa-config/database-config.md)]
 
-[!include[Database config sample](../../../includes/spa-config/database-config-sample.md)]
+Example:
+
+[!include[Database config sample](../../../../includes/spa-config/database-config-sample.md)]
 
 ### BlobStorage Section
 
 Defines how the application will store and retrieve files.
 
-See [BlobStorage Configuration](./blob-storage.md) for details and examples of supported services.
+See [BlobStorage Configuration](../blob-storage.md) for details and examples of supported services.
 
 ### Serilog Section
 
 Defines where application logs will be stored. 
 
-Please see [Serilog Configuration](./serilog.md) for details and examples of supported services.
+Please see [Serilog Configuration](../serilog.md) for details and examples of supported services.
 
 [!include[PKI config](../../../includes/spa-config/pki-config.md)]
 
-[!include[PKI config sample](../../../includes/spa-config/pki-config-sample.md)]
+Example:
+
+[!include[PKI config sample](../../../../includes/spa-config/pki-config-sample.md)]
 
 ### Application Section
 
@@ -67,7 +71,7 @@ Please see [Serilog Configuration](./serilog.md) for details and examples of sup
 
 Example:
 
-```
+```sh
 Application__ProductName=My App ID
 Application__IdentityServiceUrl=https://myappid-api.com
 Application__ConsoleUrl=https://myappid-console.com
@@ -84,7 +88,7 @@ Application__UseReverseProxy=true
 
 Example:
 
-```
+```sh
 Email__ServerHost=email-smtp.us-east-1.amazonaws.com
 Email__Username=USERNAME
 Email__Password=PASSWORD
@@ -92,6 +96,10 @@ Email__SenderAddress=no-reply@email.com
 Email__SenderName=MYAPPNAME
 Email__Support=support@email.com
 ```
+
+## Additional Configuration
+
+Additional settings can be found at the [GrantID Settings page](../settings.md).
 
 ## Installation
 
@@ -114,11 +122,12 @@ In this scenario, it is recommended to choose one of the following options:
 * Reduce the number of running containers to 1.
 * Allow only one container to update the database. This is done by adding the following settings to all but one container:
 
-```
+```sh
 Application__AutoUpdateDatabase=false
 ```
 
 Finally, to update simply pull the image with tag corresponding to the desired version and run the container.
 
-> [!TIP]
-> Additional settings can be found at the [GrantID Settings page](../settings.md).
+## See also
+
+* [Docker Swarm](./docker-swarm/index.md)

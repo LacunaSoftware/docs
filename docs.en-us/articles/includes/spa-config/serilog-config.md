@@ -8,7 +8,7 @@ Provided by the [Serilog File Sink](https://github.com/serilog/serilog-sinks-fil
 
 Example:
 
-```
+```sh
 Serilog__WriteTo__0__Name File
 Serilog__WriteTo__0__Args__path /var/logs/myapp.log
 Serilog__WriteTo__0__Args__outputTemplate {Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}
@@ -20,7 +20,7 @@ Provided by the [Serilog.Sinks.AzureTableStorage](https://github.com/serilog/ser
 
 Example:
 
-```
+```sh
 Serilog__WriteTo__0__Name AzureTableStorageWithProperties
 Serilog__WriteTo__0__Args__storageTableName MyAppLogTable
 Serilog__WriteTo__0__Args__connectionString DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net
@@ -35,7 +35,7 @@ Provided by the [Serilog.Sinks.AmazonS3](https://github.com/SeppPenner/Serilog.S
 
 Example:
 
-```
+```sh
 Serilog__WriteTo__0__Name AmazonS3
 Serilog__WriteTo__0__Args__path myapplog.txt
 Serilog__WriteTo__0__Args__bucketName myappbucket
@@ -52,7 +52,7 @@ Provided by the [serilog-sinks-newrelic-logs](https://github.com/ThiagoBarradas/
 
 Example:
 
-```
+```sh
 Serilog__Enrich__3 WithNewRelicLogsInContext
 Serilog__WriteTo__0__Name NewRelicLogs
 Serilog__WriteTo__0__Args__applicationName myappname

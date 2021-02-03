@@ -1,6 +1,4 @@
-﻿Example:
-
-```
+﻿```sh
 Oidc__ApiEndpoint=https://api.grantid.com
 Oidc__ApiName=myapp-api
 Oidc__AppId=myapp-backend

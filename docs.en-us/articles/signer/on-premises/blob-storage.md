@@ -1,0 +1,1 @@
+﻿[!include[Blob storage config](../../includes/spa-config/email-config.md)]
