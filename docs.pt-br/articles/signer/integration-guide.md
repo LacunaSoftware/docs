@@ -1,4 +1,4 @@
-﻿# Guia de Integração
+# Guia de Integração
 
 ## Introdução
 
@@ -243,7 +243,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 ### Download das versões de um documento
 
-A partir do momento que um documento foi criado, é possível fazer o download de diferentes tipos de versões deste mesmo documento (de acordo com o estágio no qual ele se encontra). Caso queira fazer o download do documento, utilize a [API de Download de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id__content)
+A partir do momento que um documento foi criado, é possível fazer o download de diferentes tipos de versões deste mesmo documento (de acordo com o estágio no qual ele se encontra). Caso queira fazer o download do documento, utilize a [API de Download de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id__content).
 
 As opções disponíveis para download são:
 
@@ -264,7 +264,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 ### Listar documentos
 
-É possível listar os documentos de acordo com padrões e necessidades diferentes. O parametros utilizados estão listados na [API de Listagem de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents):
+É possível listar os documentos de acordo com padrões e necessidades diferentes. O parametros utilizados estão listados na [API de Listagem de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents). Os tipos de listas que podem ser retornadas estão identificados abaixo:
 
 * Documentos pendentes para um determinado participante
 * Documentos concluídos
