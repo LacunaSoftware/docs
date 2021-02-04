@@ -39,17 +39,6 @@ Escolha um dos casos de uso abaixo:
 
 * [Validar assinaturas de um documento](#validate-signatures)
 
-> [!NOTE]
-> Caso decida por não realizar as requisições `GET`, `POST`, etc, através das biblitecas de integração do próprio Signer, escritas nas linguagens disponíveis, e decida utilizar outra biblioteca de serialização de dados como o "Jackson", no java. 
->Certifique-se de que sua requisição não está enviando parametros `null` de nossos modelos.
-
-```java
- 	ObjectMapper objectMapper = new ObjectMapper();
-	//Método responsável por gerar strings Json sem os parametros nulos dos modelos do Signer
-	objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
-	String Json = objectMapper.writeValueAsString(request);
-```
-
 ### Assinar um documento
 
 Para assinar um documento siga o passo a passo abaixo:
