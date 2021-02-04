@@ -45,7 +45,8 @@ Escolha um dos casos de uso abaixo:
 
 ```java
  	ObjectMapper objectMapper = new ObjectMapper();
-	objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); //Método responsável por gerar strings Json sem os parametros nulos dos modelos do Signer 
+	//Método responsável por gerar strings Json sem os parametros nulos dos modelos do Signer
+	objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
 	String Json = objectMapper.writeValueAsString(request);
 ```
 
