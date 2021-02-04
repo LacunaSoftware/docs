@@ -45,6 +45,7 @@ Escolha um dos casos de uso abaixo:
 
 ```java
  	ObjectMapper objectMapper = new ObjectMapper();
+
 	//Método responsável por gerar strings Json sem os parametros nulos dos modelos do Signer
 	objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
 	String Json = objectMapper.writeValueAsString(request);
@@ -250,6 +251,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/NotifyFlowParticipantsScenario.java)
 
+<a name="download-document" />
 
 ### Download das versões de um documento
 
@@ -272,6 +274,8 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 	
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DownloadDocumentVersionScenario.java)
 
+<a name="list-documents" />
+
 ### Listar documentos
 
 É possível listar os documentos de acordo com padrões e necessidades diferentes. O parametros utilizados estão listados na [API de Listagem de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents). Os tipos de listas que podem ser retornadas estão identificados abaixo:
@@ -281,8 +285,6 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * Listar por pastas
 * Listar por organização
 
-
-<a name="list-documents" />
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-504/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
