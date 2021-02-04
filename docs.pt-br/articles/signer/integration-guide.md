@@ -33,6 +33,10 @@ Escolha um dos casos de uso abaixo:
 
 * [Enviar lembretes de assinatura](#document-reminders)
 
+* [Download das versões de um documento](#download-document)
+
+* [Listar documentos](#list-documents)
+
 * [Validar assinaturas de um documento](#validate-signatures)
 
 
@@ -239,8 +243,9 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 ### Download das versões de um documento
 
-A partir do momento que um documento foi criado, é possível fazer o download de diferente tipos de versões deste mesmo documento (de acordo com o estágio no qual ele se encontra). 
-As opções são:
+A partir do momento que um documento foi criado, é possível fazer o download de diferentes tipos de versões deste mesmo documento (de acordo com o estágio no qual ele se encontra). Caso queira fazer o download do documento, utilize a [API de Download de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id__content)
+
+As opções disponíveis para download são:
 
 * Arquivo Assinado
 * Versão para impressão
@@ -248,6 +253,9 @@ As opções são:
 * Marcas de Assinatura
 * Arquivo Original
 
+Existem dois métodos com seus respectivos tipos de retorno de dados: O primeiro retornará uma `Stream` de dados referente ao documento e o segundo retornará o documento em um vetor de `bytes[]`.
+
+<a name="download-document" />
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-503/dotnet/console/Console/Scenarios/DownloadDocumentVersionScenario.cs)
@@ -256,13 +264,15 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 ### Listar documentos
 
-É possível listar os documentos de acordo com padrões e necessidades diferentes:
+É possível listar os documentos de acordo com padrões e necessidades diferentes. O parametros utilizados estão listados na [API de Listagem de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents):
 
 * Documentos pendentes para um determinado participante
 * Documentos concluídos
 * Listar por pastas
 * Listar por organização
 
+
+<a name="list-documents" />
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-504/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
