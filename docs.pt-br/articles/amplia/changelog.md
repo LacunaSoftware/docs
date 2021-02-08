@@ -1,5 +1,24 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-10-0" />
+### 3.10.0 (2021-02-08)
+
+Novas funcionalidades:
+
+* [AMP-195] - Remoção (opcional) de chaves no Azure Key Store
+
+Melhorias:
+
+* [AMP-196] - Permitir remover chaves de CAs revogadas
+
+Correções de bugs:
+
+* [AMP-198] - Durante a revogação de certificado de CA, a CA é removida ao invés de ser desativada
+* [AMP-197] - Erro nas mensagens no dialog de confirmação de ativação de CA
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-9-6" />
 ### 3.9.6 (2020-11-26)
 

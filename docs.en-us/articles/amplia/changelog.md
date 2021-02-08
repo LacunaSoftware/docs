@@ -1,5 +1,24 @@
 ﻿# Amplia changelog
 
+<a name="v3-10-0" />
+### 3.10.0 (2021-02-08)
+
+New Features:
+
+* [AMP-195] - Add support for optional hard deletion of keys on Azure Key Store
+
+Improvements:
+
+* [AMP-196] - Allowing deletion of keys of revoked CAs
+
+Bug fixes:
+
+* [AMP-198] - When revoking a CA certificate and choosing for the CA to also be deactivated, the CA was actually deleted
+* [AMP-197] - Broken messages on CA activation dialog
+
+Updates database model: no
+
+
 <a name="v3-9-6" />
 ### 3.9.6 (2020-11-26)
 
