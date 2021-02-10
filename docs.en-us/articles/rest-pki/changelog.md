@@ -1,5 +1,19 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-25-3" />
+### 1.25.3 (2020-02-10)
+
+Database model update: No
+
+- Disabled refresh transaction count and limits tasks at on-premises instances
+
+<a name="v1-25-2" />
+### 1.25.2 (2020-02-09)
+
+Database model update: No
+
+- Lengthened refresh transaction count task schedule to every 4 hours
+
 <a name="v1-25-1" />
 ### 1.25.1 (2020-12-15)
 

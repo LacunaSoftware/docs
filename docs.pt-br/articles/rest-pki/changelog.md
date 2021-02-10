@@ -1,5 +1,19 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-25-3" />
+### 1.25.3 (2020-02-10)
+
+Atualização do modelo do banco de dados: Não
+
+- Disabilitar tasks de atualização e limites de número de transações em instâncias on-premises
+
+<a name="v1-25-2" />
+### 1.25.2 (2020-02-09)
+
+Atualização do modelo do banco de dados: Não
+
+- Alongar cronograma de execução da task de atualização de número de transações para cada 4 horas
+
 <a name="v1-25-1" />
 ### 1.25.1 (2020-12-15)
 
