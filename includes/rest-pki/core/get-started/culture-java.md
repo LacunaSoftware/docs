@@ -1,6 +1,6 @@
 ```java
 RestPkiOptions options = new RestPkiOptions();
-options.setEndpiont("RestPkiEndpoint");
+options.setEndpoint("RestPkiEndpoint");
 options.setApiKey("RestPkiApiKey");
 options.setCulture("pt-BR");
 ```

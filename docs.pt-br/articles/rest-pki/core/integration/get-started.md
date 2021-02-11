@@ -159,9 +159,7 @@ Após isso, faça um `composer install` para download do pacote e e suas depend�
 
 O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiNgPhpClient). Sinta-se à vontade para fazer o *fork* do repositório se precisar de alguma personalização.
 
-#### Aplicações em PHP
-
-Para obter uma implementação da interface `RestPkiServiceInterface`, forneça uma instância da classe `RestPkiCoreClient`, tendo fornecido os parâmetros de **endpoint** e **chave de API** da classe `RestPkiOptions`, conforme código abaixo:
+Para obter uma implementação da interface `RestPkiServiceInterface` na sua aplicação, forneça uma instância da classe `RestPkiCoreClient`, tendo fornecido os parâmetros de **endpoint** e **chave de API** da classe `RestPkiOptions`, conforme código abaixo:
 
 [!include[index.php](../../../../../includes/rest-pki/core/get-started/service-php.md)] 
 
@@ -192,9 +190,7 @@ Caso seu projeto utiliza Maven, coloque a seguinte dependencia no seu arquivo `p
 
 O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiNGJavaClient). Sinta-se à vontade para fazer o *fork* do repositório se precisar de alguma personalização.
 
-#### Aplicações em Java
-
-Para obter uma implementação da interface `RestPkiService`, forneça uma instância da classe `RestPkiOptions` com os parâmetros de **endpoint** e **chave de API** preenchidos para o método `getService()` da classe `RestPkiServiceFactory`, conforme código abaixo:
+Para obter uma implementação da interface `RestPkiService` na sua aplicação, forneça uma instância da classe `RestPkiOptions` com os parâmetros de **endpoint** e **chave de API** preenchidos para o método `getService()` da classe `RestPkiServiceFactory`, conforme código abaixo:
 
 [!include[Main.java](../../../../../includes/rest-pki/core/get-started/service-java.md)] 
 
