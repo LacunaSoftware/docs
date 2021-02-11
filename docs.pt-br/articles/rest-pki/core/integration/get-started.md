@@ -180,6 +180,32 @@ todas as pastas terminadas em `-rest-core` contém exemplos referentes ao pacote
 
 ### Chamando a API em Java
 
+Comece adicionando o pacote do Bintray [restpki-core-client](https://bintray.com/beta/#/lacunasoftware/maven/restpki-core-client), disponível para Java 8+.
+
+Para adicionar no seu projeto, coloque isso no seu arquivo `build.gradle` caso seu projeto utilize Gradle:
+
+[!include[build.gradle](../../../../../includes/rest-pki/core/get-started/gradle.md)] 
+
+Caso seu projeto utiliza Maven, coloque a seguinte dependencia no seu arquivo `pom.xml`:
+
+[!include[pom.xml](../../../../../includes/rest-pki/core/get-started/maven.md)] 
+
+O pacote é de código aberto, hospedado no [GitHub](https://github.com/LacunaSoftware/RestPkiNGJavaClient). Sinta-se à vontade para fazer o *fork* do repositório se precisar de alguma personalização.
+
+#### Aplicações em Java
+
+Para obter uma implementação da interface `RestPkiService`, forneça uma instância da classe `RestPkiOptions` com os parâmetros de **endpoint** e **chave de API** preenchidos para o método `getService()` da classe `RestPkiServiceFactory`, conforme código abaixo:
+
+[!include[Main.java](../../../../../includes/rest-pki/core/get-started/service-java.md)] 
+
+#### Cultura / internacionalização (i18n)
+
+Caso queira, você pode alterar a cultura que a API deve observar. Para isso, forneça o parâmetro `culture` à sua instância do `RestPkiOptions` passado no método `getService()` do cliente `RestPkiServiceFactory`:
+
+[!include[Main.java](../../../../../includes/rest-pki/core/get-started/culture-java.md)] 
+
+#### Exemplos em Java
+
 Em nosso [repositório de exemplos](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/java/springmvc), 
 todos arquivos terminados em `RestCoreController` contém exemplos referentes ao pacote Java [com.lacunasoftware.restpkicore:restpki-core-client](https://bintray.com/lacunasoftware/maven/restpki-core-client).
 

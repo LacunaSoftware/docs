@@ -69,7 +69,7 @@ Em PHP, a implementação do tratamento de retorno seria algo como:
 
 Em Java, a implementação do tratamento de retorno seria algo como:
 
-[!include[Callback in java](../../../../../../includes/rest-pki/core/signature-sessions/callback-java.md)]
+[!include[Callback in Java](../../../../../../includes/rest-pki/core/signature-sessions/callback-java.md)]
 
 Note que verificamos o estado (`Status`) da sessão e enviamos o usuário para um local padrão caso o estado não seja `Completed`.
 

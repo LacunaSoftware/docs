@@ -11,6 +11,10 @@ Em PHP:
 
 [!include[Enable background processing in PHP](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-php.md)]
 
+Em Java:
+
+[!include[Enable background processing in Java](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-java.md)]
+
 Integração direta por API:
 
 [!include[Enable background processing API](../../../../../../includes/rest-pki/core/signature-sessions/enable-background-processing-api.md)]
@@ -59,7 +63,7 @@ Em PHP, alteraríamos o lado do cliente da seguinte maneira:
 
 [!include[Callback with background processing in PHP - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-php-view.md)]
 
-Em Java, alteraríamos a view de Spring da seguinte maneira: 
+Em Java, alteraríamos a view Thymeleaf do Spring da seguinte maneira: 
 
 [!include[Callback with background processing in java - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-background-processing-java-view.md)]
 
