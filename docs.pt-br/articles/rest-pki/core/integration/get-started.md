@@ -180,8 +180,8 @@ todas as pastas terminadas em `-rest-core` contém exemplos referentes ao pacote
 
 ### Chamando a API em Java
 
-Em breve estará disponível o pacote para Java **com.lacunasoftware.restpkicore:restpkicore-client** (previsão: 08/02/2021)
-
+Em nosso [repositório de exemplos](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/java/springmvc), 
+todos arquivos terminados em `RestCoreController` contém exemplos referentes ao pacote Java [com.lacunasoftware.restpkicore:restpki-core-client](https://bintray.com/lacunasoftware/maven/restpki-core-client).
 
 <a name="rest" />
 
