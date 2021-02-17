@@ -1,8 +1,5 @@
 ﻿# Signature sessions - Rest PKI Core
 
-> [!NOTE]
-> This article currently only covers integration on .NET or through direct API calls. We'll soon have integration with PHP (Jan 2021) and Java (Feb 2021)
-
 **Signature sessions** are a [Rest PKI Core](../../index.md) feature which enable your users to perform digital signatures without requiring you to implement a signature
 web page on your app.
 
