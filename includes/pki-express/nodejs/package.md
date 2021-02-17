@@ -1,7 +1,7 @@
 ```json
 {
     "dependencies": {
-        "pki-express": "1.8.0"
+        "pki-express": "1.10.2"
     }
 }
 ```

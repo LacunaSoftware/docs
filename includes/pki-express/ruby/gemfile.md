@@ -1,3 +1,3 @@
 ```gemspec
-gem 'pki_express', '~> 1.1.0'
+gem 'pki_express', '~> 1.2.0'
 ```

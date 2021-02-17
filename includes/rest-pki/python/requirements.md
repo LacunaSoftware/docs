@@ -1,3 +1,3 @@
 ```
-restpki-client==1.1.1
+restpki-client==1.2.0
 ```
