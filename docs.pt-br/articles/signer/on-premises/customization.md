@@ -148,7 +148,8 @@ Permite personalizar toda a home page, de maneira que a página passa a ser est�
 ![Custom Home page advanced](../images/advanced-home-page.png)
 
 Para isso, é preciso fornecer um arquivo HTML chamado `index.html` acompanhado de uma pasta denominada `theme-assets` com todos 
-recursos que o arquivo depender: imagens, CSS e JS:
+recursos que o arquivo depender: imagens, CSS e JS. **Subpastas não são suportadas**, isto é, os arquivos devem ser adicionados na
+raíz da pasta theme-assets:
 
 ![Folder Structure](../images/advanced-folder-structure.png)
 
