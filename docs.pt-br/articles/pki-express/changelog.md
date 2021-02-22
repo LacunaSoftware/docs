@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-23-0" />
+### 1.23.0 (2021-02-22)
+
+- Adiciona suporte para o retorno do conteúdo do certificado nos comandos `open-pades` e `open-cades`, com a opção `--fill-cert-content`
+- Adiciona opção `--trust-uncertified-signing-time` nos comandos `open-pades` e `open-cades`, para confiar em signing-time não certificado
+
 <a name="v1-22-0" />
 ### 1.22.0 (2021-01-21)
 

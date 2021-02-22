@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-23-0" />
+### 1.23.0 (2021-02-22)
+
+- Add support to return the certificate's content on commands `open-pades` and `open-cades` with the option `--fill-cert-content`
+- Add `--trust-uncertified-signing-time` option on commands `open-pades` and `open-cades`
+
 <a name="v1-22-0" />
 ### 1.22.0 (2021-01-21)
 
