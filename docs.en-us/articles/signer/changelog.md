@@ -4,6 +4,25 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-26-1" />
+### 1.26.1 (2021-02-18)
+
+* Bug fixes
+  * [SIG-616] File name is required when uploading with API
+  * [SIG-615] Error sending document to user with email that is a part of other emails
+  * [SIG-609] Fix translation of resource common.search (i18n)
+
+Updates database model: no
+
+<a name="v1-26-0" />
+### 1.26.0 (2021-02-11)
+
+* Improvements
+  * [SIG-605] Update New Relic Sink to improve exception log
+  * [SIG-604] Update Lacuna SPA
+
+Updates database model: no
+
 <a name="v1-25-0" />
 ### 1.25.0 (2021-02-03)
 

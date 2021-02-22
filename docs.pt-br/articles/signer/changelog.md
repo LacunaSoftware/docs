@@ -4,6 +4,25 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-26-1" />
+### 1.26.1 (2021-02-18)
+
+* Correções de bugs
+  * [SIG-616] Nome do arquivo é obrigatório ao fazer upload por API
+  * [SIG-615] Erro ao enviar documento para usuário com email que é parte de outros emails
+  * [SIG-609] Corrigir tradução do recurso common.search (i18n)
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-26-0" />
+### 1.26.0 (2021-02-11)
+
+* Melhorias
+  * [SIG-605] Atualizar Sink do New Relic para melhorar registro de exceções
+  * [SIG-604] Atualizar Lacuna SPA
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-25-0" />
 ### 1.25.0 (2021-02-03)
 
