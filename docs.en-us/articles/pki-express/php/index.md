@@ -6,7 +6,7 @@ This article describes how to use [PKI Express](../index.md) on PHP. To get star
 
 ## Composer Package
 
-> [NOTE!]
+> [!NOTE]
 > This package only supports PHP *5.5+*.
 
 To use PKI Express on PHP, you must include the composer package [lacuna/pki-express](https://packagist.org/packages/lacuna/pki-express), by adding the following line to your `composer.json` file:
