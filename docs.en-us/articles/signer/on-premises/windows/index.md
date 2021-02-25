@@ -118,7 +118,7 @@ Before updating your instance, it is recommended to check the [Changelog](../../
 current version to the latest one available.
 
 If any of the versions included in the update have database model changes ("Updates database model: yes") then you
-should procceed carefully as the container will attempt to update the database upon startup.
+should procceed carefully as the instance will attempt to update the database upon startup.
 
 In this scenario, it is recommended to choose one of the following options:
 
@@ -134,13 +134,17 @@ In this scenario, it is recommended to choose one of the following options:
 
 ### Update procedure
 
-1. Stop the web site in IIS Manager.
+1. Stop the site in IIS Manager.
 1. Create a backup of database and site folder.
 1. Download and extract the contents of the new binaries package to the site folder, overwriting all files.
-1. Make any necessary changes to the file `appsettings.iis.json` (see note above on how to know which changes will be required).
-1. Start the web site IIS Manager.
+1. Make any necessary changes to the file `appsettings.iis.json`.
+1. Start the site in IIS Manager.
 
 > [!NOTE]
 > The `appsettings.iis.json` file with your instance settings will be preserved, because in the package there is no file with that name.
 
 ## See also
+
+* [Settings](../settings.md)
+* [Access Control](../access-control.md)
+* [Customization](../customization.md)
