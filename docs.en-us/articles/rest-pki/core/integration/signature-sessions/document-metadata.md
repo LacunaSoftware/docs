@@ -16,3 +16,6 @@ In .NET:
   as `some-info`, `SomeInfo` or `some_info`, instead of human-readable labels)
 * Metadata names may have up to 50 characters
 * Each metadata value may have up to 500 characters
+
+> [!NOTE]
+> On APIs to search documents by metadata, name matching is **case insensitive**

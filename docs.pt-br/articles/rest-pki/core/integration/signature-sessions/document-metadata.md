@@ -12,6 +12,9 @@ Em .NET:
 
 ## Regras e limites
 
-* Nos nomes de metadados, são permitidos apenas por letras, dígitos, hífens e espaços (recomenda-se o uso de identificadores como `some-info`, `SomeInfo` ou `some_info` ao invés de textos legíveis)
+* Nomes de metadados podem conter apenas letras, dígitos, hífens e espaços (recomenda-se o uso de identificadores como `some-info`, `SomeInfo` ou `some_info` ao invés de textos legíveis)
 * Nomes de metadados podem ter no máximo 50 caracteres
 * Cada valor de metadado pode ter no máximo 500 caracteres
+
+> [!NOTE]
+> Nas APIs de busca de documentos por metadado o batimento de nomes é ***case insensitive*** (não há diferenciação entre maiúsculas e minúsculas)
