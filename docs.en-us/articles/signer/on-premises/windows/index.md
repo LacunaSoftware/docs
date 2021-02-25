@@ -20,6 +20,8 @@ To install an on-premises instance of Signer on Windows Server, first download b
 * Database with collation `Latin1_General_100_CI_AI` or `Latin1_General_CI_AI`.
 * Credentials corresponding to a user with `db_owner` role.
 
+If you need help preparing the database, [click here](../prepare-database.md).
+
 <a name="install-aspnet-core" />
 
 ## Installation
@@ -44,7 +46,20 @@ To install an on-premises instance of Signer on Windows Server, first download b
 On the installation folder, move the file **appsettings.iis.json** from the folder **config-templates** to the root folder of the site. Then, edit the file
 to configure your instance.
 
-[!include[Database config](../includes/database-config.md)]
+This file is organized in sections whose children nodes represent setting names. For instance: for the General section, to
+configure the SupportEmailAddress, add/edit a Section with name `General` and add/edit the child with name `SupportEmailAddress`:
+
+```json
+...
+"General": {
+	"SupportEmailAddress": "support@email.com"
+}
+...
+```
+
+The required settings are presented below.
+
+[!include[Database config](../../../includes/spa-config/database-config.md)]
 
 ### Logging
 
@@ -64,7 +79,7 @@ Under section **Serilog**, configure the application logging:
 				"outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}",
 			}
 		}
-	],
+	]
 }
 ...
 ```
@@ -82,6 +97,10 @@ Change the **path** setting to the log file path.
 
 [!include[General config](../includes/general-config.md)]
 
+### Bindings Configuration
+
+* **UseReverseProxy**: set as `true` if the instance will be executed behind a reverse proxy or load balancer. It can be omitted otherwise.
+
 [!include[Email config](../../../includes/spa-config/email-config.md)]
 
 ## Additional Configuration
@@ -90,13 +109,30 @@ Additional settings can be found at the [Signer Settings page](../settings.md).
 
 ## Starting up application
 
-1. Start site
-1. Access site
+1. Start IIS site
+1. Access the site URL
 
 ## Updating application
 
-> [!NOTE]
-> To see if an update will require changing any settings, look in the [Amplia changelog](../../changelog.md) for the configuration changes between the version you are installing and the version you are currently installing (to know how to check the installed version of the system, see [this article](../check-version.md) ).
+Before updating your instance, it is recommended to check the [Changelog](../../changelog.md) to see what has changed from your 
+current version to the latest one available.
+
+If any of the versions included in the update have database model changes ("Updates database model: yes") then you
+should procceed carefully as the container will attempt to update the database upon startup.
+
+In this scenario, it is recommended to choose one of the following options:
+
+* Reduce the number of instances to 1 (if you have multiple servers).
+* Allow only one instance to update the database. This is done by adding/editing the following settings to all but one instance:
+
+```json
+"General": {
+	"ProcessBackgroundJobs": "false",
+	"AutoUpdateDatabase": "false"
+}
+```
+
+### Update procedure
 
 1. Stop the web site in IIS Manager.
 1. Create a backup of database and site folder.

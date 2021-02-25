@@ -2,7 +2,7 @@
 
 To install a [instance *on premises*](index.md) from [Signer](../index.md), you will need a *connection string* for a **SQL Server database** with:
 
-* Collation: `Latin1_General_100_CI_AI`
+* Collation: `Latin1_General_100_CI_AI` or `Latin1_General_CI_AI`
 * Credentials corresponding to a user with role `db_owner`
 
 <!--
@@ -11,7 +11,7 @@ To install a [instance *on premises*](index.md) from [Signer](../index.md), you 
 -->
 
 > [!WARNING]
-> The *collation* of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different *collation* will likely cause the installation to fail!
+> The *collation* of the database **MUST BE** `Latin1_General_100_CI_AI` or `Latin1_General_CI_AI`. Creating the database with a different *collation* will likely cause the installation to fail!
 
 If you need help preparing your database, follow the steps in this article.
 
