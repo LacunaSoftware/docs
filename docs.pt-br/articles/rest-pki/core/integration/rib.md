@@ -7,7 +7,7 @@ A integração com o **Assinador Web** do **Registro de Imóveis do Brasil - RIB
 
 ## Metadados obrigatórios
 
-Ao criar [sessões de assinatura](signature-sessions/index.md), é necessário fornecer os seguintes metadados obrigatórios:
+Ao criar [sessões de assinatura](signature-sessions/index.md), é necessário fornecer os seguintes [metadados](signature-sessions/document-metadata.md) obrigatórios:
 
 * `cartorio`: Nome do cartório emitente (esse valor é exibido na página de validação do documento)
 * `cns`: CNS (Código Nacional de Serventia) do cartório emitente
