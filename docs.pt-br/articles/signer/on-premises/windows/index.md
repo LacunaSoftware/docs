@@ -1,3 +1,4 @@
 ﻿# Signer - Setup em Windows Server
 
-[!include[Under construction](../../../includes/under-construction.md)]
+<!-- link to version in English -->
+<div data-alt-locales="en-us"></div>
