@@ -62,7 +62,7 @@ Example:
 Example: 
 
 ```sh
-General__SiteUrl=https://signer-aws.lacunasoftware.com
+General__SiteUrl=https://signer.myapp.com
 General__SiteName=MyApp Signer
 General__SupportEmailAddress=support@email.com
 ```
