@@ -1,8 +1,5 @@
 ﻿# Sessões de assinatura - Rest PKI Core
 
-> [!NOTE]
-> Por ora, esse artigo só cobre integração com .NET ou direta por API. Em breve estará disponível integração usando PHP (Jan/2021) e Java (Fev/2021)
-
 **Sessões de assinatura** são uma funcionalidade do [Rest PKI Core](../../index.md) que permitem que seus usuários assinem documentos digitalmente sem que você
 precise implementar uma página de assinatura digital na sua aplicação.
 
