@@ -60,7 +60,7 @@ Erros de validação ocorrem durante assinaturas, autenticações ou inspeções
 | CertificateExpired                      | Na data de referência, o certificado está expirado                             |
 | CertificateRevoked                      | Na data de referência, o certificado estava revogado                           |
 | CertificateIssuerNotFound               | Emissor do certificado não foi encontrado                                      |
-| CertificateRevocationStatusUnknown      | Estado de revogação do certificado não pode ser verificado. Provavelmente, o REST PKI não conseguiu acessar os certificados CRLs |
+| CertificateRevocationStatusUnknown      | Estado de revogação do certificado não pode ser verificado. Provavelmente, o PKI Express não conseguiu acessar os certificados CRLs |
 | CertificateChainRootNotTrusted          | A raiz da cadeia de certificado não é confiável                                |
 | InvalidCertificateSignature             | Assinatura não é válida, baseado na chave pública fornecida para o certificado |
 | DecodeError                             | Não foi possível decodificar parte do objeto sendo validado                    |

@@ -6,7 +6,7 @@ Para utilizar certificados ou chaves armazenados em um key vault, você precisar
 
 - **azureAppId**: campo **Application ID** de uma aplicação registrada no *Azure Active Directory*
 - **azureAppSecret**: segredo da aplicação, gerado na área *Certificates &amp; secrets* da aplicação
-- **azureKeyVaultEndpoint**:campo `DnsName` do key vault, pode ser obtido na área *Overview* do vault
+- **azureKeyVaultEndpoint**: campo `DnsName` do key vault, pode ser obtido na área *Overview* do vault
 
 Para configurar o uso do Key Vault:
 

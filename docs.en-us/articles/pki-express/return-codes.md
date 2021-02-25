@@ -60,7 +60,7 @@ Validation errors occur during signatures or authentications or inspections with
 | CertificateExpired                      | At the date reference, the certificate has expired                                 |
 | CertificateRevoked                      | At the date reference, the certificate has been revoked                            |
 | CertificateIssuerNotFound               | The issuer of the certificate could not be found                                   |
-| CertificateRevocationStatusUnknown      | The revocation status of the certificate could not be verify. Mostly, REST PKI could not access the certificate's CRLs |
+| CertificateRevocationStatusUnknown      | The revocation status of the certificate could not be verify. Mostly, PKI Express could not access the certificate's CRLs |
 | CertificateChainRootNotTrusted          | The root of the certificate chain is not trusted                                   |
 | InvalidCertificateSignature             | The signature is not valid based on the provided certificate's public key          |
 | DecodeError                             | Could not decode a part of the object being validated                              |
