@@ -172,3 +172,4 @@ Você pode optar por alguns dos recursos abaixo para melhorar a experiência do 
 
 * [Validação de arquivos](file-validation.md)
 * [Processamento em background](background-processing.md)
+* [Metadados de documentos](document-metadata.md)

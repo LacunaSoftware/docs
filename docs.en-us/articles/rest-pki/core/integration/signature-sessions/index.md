@@ -166,3 +166,4 @@ You may use the following optional features to improve the user experience:
 
 * [File validation](file-validation.md)
 * [Background processing](background-processing.md)
+* [Document metadata](document-metadata.md)
