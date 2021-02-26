@@ -23,6 +23,8 @@ Em .NET, chame `IRestPkiService.CreateSignatureSessionAsync()` e use o `Redirect
 
 [!include[Create session in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/create-dotnet.md)]
 
+Disponibilizamos um código completo de [exemplo de criação de sessão de assinatura em .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
+
 Em PHP, chame `RestPkiServiceInterface.createSignatureSession()` e use o campo `$redirectUrl` retornado para redirecionar o usuário:
 
 [!include[Create session in php](../../../../../../includes/rest-pki/core/signature-sessions/create-php.md)]
@@ -32,6 +34,8 @@ Disponibilizamos um código completo de [exemplo de criação de sessão de assi
 Em Java, chame `RestPkiService.CreateSignatureSession()` e use o `RedirectUrl` retornado para redirecionar o usuário:
 
 [!include[Create session in java](../../../../../../includes/rest-pki/core/signature-sessions/create-java.md)]
+
+Disponibilizamos um código completo de [exemplo de criação de sessão de assinatura em Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
 
 Caso esteja chamando a API diretamente:
 
@@ -60,13 +64,19 @@ Em .NET, a implementação do tratamento de retorno seria algo como:
 
 [!include[Callback in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/callback-dotnet.md)]
 
+Disponibilizamos um código completo de [exemplo de criação de sessão de assinatura em .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
+
 Em PHP, a implementação do tratamento de retorno seria algo como:
 
 [!include[Callback in PHP](../../../../../../includes/rest-pki/core/signature-sessions/callback-php.md)]
 
+Disponibilizamos um código completo de [exemplo de tratamento de retorno em PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/complete.php).
+
 Em Java, a implementação do tratamento de retorno seria algo como:
 
 [!include[Callback in Java](../../../../../../includes/rest-pki/core/signature-sessions/callback-java.md)]
+
+Disponibilizamos um código completo de [exemplo de criação de sessão de assinatura em Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
 
 Note que verificamos o estado (`Status`) da sessão e enviamos o usuário para um local padrão caso o estado não seja `Completed`.
 
@@ -82,8 +92,6 @@ Em .NET, a view de Razor seria algo como:
 Em PHP, o lado do cliente seria algo como:
 
 [!include[Callback in PHP - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-php-view.md)]
-
-Disponibilizamos um código completo de [exemplo de tratamento de retorno em PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/complete.php).
 
 Em Java, a view de Spring seria algo como:
 
@@ -144,6 +152,8 @@ Além disso, é preciso omitir o parâmetro `returnUrl` ao criar a sessão.
 Em .NET:
 
 [!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]
+
+Disponibilizamos um código completo de [exemplo do início do fluxo com webhook em .NET](hhttps://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
 
 Em PHP:
 
