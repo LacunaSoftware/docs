@@ -23,19 +23,19 @@ On .NET, call `IRestPkiService.CreateSignatureSessionAsync()` and use the `Redir
 
 [!include[Create session in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/create-dotnet.md)]
 
-At our GitHub is avaliable the [sample of session creation in .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
+See [session creation sample in .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
 
 On PHP, call `RestPkiServiceInterface.createSignatureSession()` and use the `$redirectUrl` returned to redirect your user:
 
 [!include[Create session in php](../../../../../../includes/rest-pki/core/signature-sessions/create-php.md)]
 
-At our GitHub is avaliable the [sample of session creation in PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/index.php).
+See [session creation sample in PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/index.php).
 
 On Java, call `RestPkiService.CreateSignatureSession()` and use the `RedirectUrl` returned to redirect your user:
 
 [!include[Create session in java](../../../../../../includes/rest-pki/core/signature-sessions/create-java.md)]
 
-At our GitHub is avaliable the [sample of session creation in Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
+See [session creation sample in Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
 
 If calling the API directly, do:
 
@@ -62,19 +62,19 @@ On .NET, the implementation would look like this:
 
 [!include[Callback in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/callback-dotnet.md)]
 
-At our GitHub is avaliable the [sample of callback handler in .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
+See [callback handler sample in .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
 
 On PHP, the implementation would look like this:
 
 [!include[Callback in PHP](../../../../../../includes/rest-pki/core/signature-sessions/callback-php.md)]
 
-At our GitHub is avaliable the [sample of callback handler in PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/complete.php).
+See [callback handler sample in PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/complete.php).
 
 On Java, the implementation would look like this:
 
 [!include[Callback in Java](../../../../../../includes/rest-pki/core/signature-sessions/callback-java.md)]
 
-At our GitHub is avaliable the [sample of callback handler in Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
+See [callback handler sample in Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
 
 Notice that check the `Status` of the session and send the user away to some default location if the status is not `Completed`.
 
@@ -148,19 +148,19 @@ On .NET:
 
 [!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]
 
-At our GitHub is avaliable the [sample of session creation with webhook in .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
+See [session creation sample with webhook in .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
 
 On PHP:
 
 [!include[Create session with webhook in PHP](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-php.md)]
 
-At our GitHub is avaliable the [sample of session creation with webhook in PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/using-webhook.php).
+See [session creation sample with webhook in PHP](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/signature-session-rest-core/using-webhook.php).
 
 On Java:
 
 [!include[Create session with webhook in java](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-java.md)]
 
-At our GitHub is avaliable the [sample of session creation with webhook in Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
+See [session creation sample with webhook in Java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/SignatureSessionRestCoreController.java).
 
 Direct API integration:
 
