@@ -29,5 +29,9 @@ var response = await restPkiService.CreateSignatureSessionAsync(new CreateSignat
 });
 ```
 
+Além dos metadados mencionados acima, todo documento no Assinador Web tem também o metadado `validade`, no formato `aaaa-mm-dd`, por exemplo *2021-04-01*
+(1º de abril de 2021). Esse metadado é automaticamente atribuído aos documentos contando 30 dias a partir da data de assinatura e não pode ser especificado
+na criação da sessão.
+
 > [!NOTE]
 > Instruções para PHP e Java serão documentadas em breve
