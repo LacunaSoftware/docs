@@ -7,8 +7,12 @@ In .NET:
 
 [!include[Specifying document metadata in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/document-metadata-dotnet.md)]
 
+In PHP:
+
+[!include[Specifying document metadata in PHP](../../../../../../includes/rest-pki/core/signature-sessions/document-metadata-php.md)]
+
 > [!NOTE]
-> Instructions for PHP e Java are coming soon
+> Instructions for Java are coming soon
 
 ## Bounds and limits
 
