@@ -32,12 +32,12 @@ var response = await restPkiService.CreateSignatureSessionAsync(new CreateSignat
 Em PHP:
 
 ```PHP
-	$request = new CreateSignatureSessionRequest();
-	...
-	$request->documentMetadata = [
-		"cartorio" => ["XXº Oficial de Registro de Imóveis do Município - UF"],
-		"cns" => ["123456"]
-	];
+$request = new CreateSignatureSessionRequest();
+...
+$request->documentMetadata = [
+	"cartorio" => "XXº Oficial de Registro de Imóveis do Município - UF",
+	"cns" => "123456"
+];
 ```
 
 Além dos metadados mencionados acima, todo documento no Assinador Web tem também o metadado `validade`, no formato `aaaa-mm-dd`, por exemplo *2021-04-01*
@@ -45,4 +45,4 @@ Além dos metadados mencionados acima, todo documento no Assinador Web tem tamb�
 na criação da sessão.
 
 > [!NOTE]
-> Instruções para PHP e Java serão documentadas em breve
+> Instruções para Java serão documentadas em breve
