@@ -13,7 +13,7 @@ Em .PHP:
 
 Em JAVA:
 
-[!include[Specifying document metadata in PHP](../../../../../../includes/rest-pki/core/signature-sessions/document-metadata-java.md)]
+[!include[Specifying document metadata in Java](../../../../../../includes/rest-pki/core/signature-sessions/document-metadata-java.md)]
 
 
 ## Regras e limites
