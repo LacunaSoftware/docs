@@ -11,8 +11,10 @@ Em .PHP:
 
 [!include[Specifying document metadata in PHP](../../../../../../includes/rest-pki/core/signature-sessions/document-metadata-php.md)]
 
-> [!NOTE]
-> Instruções para Java serão documentadas em breve
+Em JAVA:
+
+[!include[Specifying document metadata in PHP](../../../../../../includes/rest-pki/core/signature-sessions/document-metadata-java.md)]
+
 
 ## Regras e limites
 
