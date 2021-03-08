@@ -43,16 +43,16 @@ Em JAVA:
 
 ```java
 HashMap<String, List<String>> mapMetaData = new HashMap<String, List<String>>();
-    List<String> firstElement = new ArrayList<>();
-    firstElement.add("XXº Oficial de Registro de Imóveis do Município - UF");		
-    mapMetaData.put("cartorio", firstElement);
+List<String> firstElement = new ArrayList<>();
+firstElement.add("XXº Oficial de Registro de Imóveis do Município - UF");		
+mapMetaData.put("cartorio", firstElement);
 
-    List<String> secondElement = new ArrayList<>();
-	secondElement.add("123456");
-    mapMetaData.put("cns", secondElement);
+List<String> secondElement = new ArrayList<>();
+secondElement.add("123456");
+mapMetaData.put("cns", secondElement);
 
 CreateSignatureSessionRequest request = new CreateSignatureSessionRequest();
-	request.setDocumentMetadata(mapMetaData);
+request.setDocumentMetadata(mapMetaData);
 	
 CreateSignatureSessionResponse sessionResponse = service.createSignatureSession(request);
 ```
