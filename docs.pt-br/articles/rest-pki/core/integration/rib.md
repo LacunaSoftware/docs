@@ -39,10 +39,24 @@ $request->documentMetadata = [
 	"cns" => "123456"
 ];
 ```
+Em JAVA:
+
+```java
+HashMap<String, List<String>> mapMetaData = new HashMap<String, List<String>>();
+    List<String> firstElement = new ArrayList<>();
+    firstElement.add("XXº Oficial de Registro de Imóveis do Município - UF");		
+    mapMetaData.put("cartorio", firstElement);
+
+    List<String> secondElement = new ArrayList<>();
+	secondElement.add("123456");
+    mapMetaData.put("cns", secondElement);
+
+CreateSignatureSessionRequest request = new CreateSignatureSessionRequest();
+	request.setDocumentMetadata(mapMetaData);
+	
+CreateSignatureSessionResponse sessionResponse = service.createSignatureSession(request);
+```
 
 Além dos metadados mencionados acima, todo documento no Assinador Web tem também o metadado `validade`, no formato `aaaa-mm-dd`, por exemplo *2021-04-01*
 (1º de abril de 2021). Esse metadado é automaticamente atribuído aos documentos contando 30 dias a partir da data de assinatura e não pode ser especificado
 na criação da sessão.
-
-> [!NOTE]
-> Instruções para Java serão documentadas em breve
