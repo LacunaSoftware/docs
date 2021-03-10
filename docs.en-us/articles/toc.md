@@ -168,6 +168,7 @@
 ### [Logging](pki-express/config/log.md)
 ### [Temporary directory](pki-express/config/temp-dir.md)
 ### [Proxy](pki-express/config/proxy.md)
+### [LAPP](pki-express/config/lapp.md)
 ## [Using on PHP](pki-express/php/index.md)
 ### [Plain](pki-express/php/plain.md)
 ### [Visual Representation](pki-express/php/visual-rep/index.md)
