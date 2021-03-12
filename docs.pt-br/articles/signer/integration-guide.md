@@ -1,4 +1,4 @@
-# Guia de Integração
+﻿# Guia de Integração
 
 ## Introdução
 
@@ -28,6 +28,8 @@ Escolha um dos casos de uso abaixo:
 <a name="sign-document" />
 
 * [Assinar um documento](#sign-document)
+
+* [Como posicionar uma assinatura](#document-marks)
 
 * [Verificar o status de um documento](#check-document)
 
@@ -161,6 +163,18 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/EmbeddedSignatureScenario.cs)
 
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/EmbeddedSignatureScenario.java)
+
+
+#### Como pré-posicionar uma assinatura no documento
+#document-marks
+Durante a criação de um documento, é possível posicionar as assinaturas de cada usuário em um determinado local deste mesmo documento. Todas as definições de atributos 
+são feitas durante a criação do  `flowAction`. Há opções para definir a localização da assinatura em uma página, bem como a pagina na qual deseja pré-posicionar uma assinatura.
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-516/dotnet/console/Console/Scenarios/CreateDocumentWithPositionedSignatures.cs)
+
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-516/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithPositionedSignatures.java)
 
 
 ### Verificar o status de um documento
