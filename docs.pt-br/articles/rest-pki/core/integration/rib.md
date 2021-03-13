@@ -42,19 +42,15 @@ $request->documentMetadata = [
 Em JAVA:
 
 ```java
-HashMap<String, List<String>> mapMetaData = new HashMap<String, List<String>>();
+CreateSignatureSessionRequest request = new CreateSignatureSessionRequest();
+...
 List<String> firstElement = new ArrayList<>();
-firstElement.add("XXº Oficial de Registro de Imóveis do Município - UF");		
-mapMetaData.put("cartorio", firstElement);
+firstElement.add("XXº Oficial de Registro de Imóveis do Município - UF");
+request.putDocumentMetadataItem("cartorio", firstElement);
 
 List<String> secondElement = new ArrayList<>();
 secondElement.add("123456");
-mapMetaData.put("cns", secondElement);
-
-CreateSignatureSessionRequest request = new CreateSignatureSessionRequest();
-request.setDocumentMetadata(mapMetaData);
-	
-CreateSignatureSessionResponse sessionResponse = service.createSignatureSession(request);
+request.putDocumentMetadataItem("cns", secondElement);
 ```
 
 Além dos metadados mencionados acima, todo documento no Assinador Web tem também o metadado `validade`, no formato `aaaa-mm-dd`, por exemplo *2021-04-01*
