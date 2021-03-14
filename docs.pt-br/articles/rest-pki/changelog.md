@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-26-0" />
+### 1.26.0 (2020-03-11)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar API para abertura e validação de um certificado
+
 <a name="v1-25-3" />
 ### 1.25.3 (2020-02-10)
 

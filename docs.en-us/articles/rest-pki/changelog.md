@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-26-0" />
+### 1.26.0 (2020-03-11)
+
+Database model update: No
+
+- Added API that opens and validates a certificate
+
 <a name="v1-25-3" />
 ### 1.25.3 (2020-02-10)
 
