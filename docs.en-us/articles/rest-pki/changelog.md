@@ -1,21 +1,21 @@
 ﻿# Rest PKI changelog
 
 <a name="v1-26-0" />
-### 1.26.0 (2020-03-11)
+### 1.26.0 (2021-03-11)
 
 Database model update: No
 
 - Added API that opens and validates a certificate
 
 <a name="v1-25-3" />
-### 1.25.3 (2020-02-10)
+### 1.25.3 (2021-02-10)
 
 Database model update: No
 
 - Disabled refresh transaction count and limits tasks at on-premises instances
 
 <a name="v1-25-2" />
-### 1.25.2 (2020-02-09)
+### 1.25.2 (2021-02-09)
 
 Database model update: No
 
