@@ -188,3 +188,30 @@ Em seguida gere a chave na opção "Chaves":
 ![Application create key](../images/application-keys-add.png)
 
 ![Create key submit](../images/create-key.png)
+
+### Operação via Gateway de pagamentos iugu
+
+Oferece meios de pagamentos automatizados diretamente no Signer com uma integração à [iugu](https://www.iugu.com/). Desta forma, depois que uma fatura é fechada os próprios usuários/organizações podem realizar o pagamento com cartão de crédito, boleto bancário ou Pix.
+
+#### Integração do Signer com a iugu
+
+A iugu possui (planos de assinatura)[https://www.iugu.com/planos/], cada plano traz funcionalidades, mudanças nas tarifas e custos por transação que devem ser avaliados pelo administrador da instância, mas o Signer é capaz de funcionar plenamente com o plano mais básico "Conheça a iugu".
+
+Para que a integração entre a instância do Signer e a iugu possam ser feitas, são necessários algumas etapas. O primeiro passo é realizar o [cadastro na IUGU](https://auth.iugu.com/new_user?service=https%3A%2F%2Falia.iugu.com%2F).
+
+O próximo passo, após o cadastro, será possível acessar o [painel de controle](https://alia.iugu.com/) da iugu e gerar um API Token. Acesse as configurações, depois Integração via API e clicar no botão Novo.
+
+![iugu config API](../images/iugu_config_api.png)
+
+Depois escolha o tipo "Produção" e escreva na descrição: "API Signer Prod".
+
+![iugu new API](../images/iugu_new_api.png)
+
+O próximo passo é necessário configurar o Webhook para notificar o Signer sobre os pagamentos, também na tela de configurações, acesse "Comunicação via Gatilhos" e depois clique no botão Novo.
+
+![iugu config Webhook](../images/iugu_config_webhook.png)
+
+![iugu new API](../images/iugu_new_webhook.png)
+
+Também é possível que os usuários/organizações salvem os dados de cartão de crédito para uma cobrança automática mensalmente após a fatura ser fechada.
+
