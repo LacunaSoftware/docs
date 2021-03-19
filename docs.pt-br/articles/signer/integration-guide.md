@@ -174,9 +174,9 @@ são feitas durante a criação do  `flowAction`. Há opções para definir a lo
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-516/dotnet/console/Console/Scenarios/CreateDocumentWithPositionedSignatures.cs)
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithPositionedSignaturesScenario.cs)
 
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-516/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithPositionedSignatures.java)
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithPositionedSignaturesScenario.java)
 
 
 ### Verificar o status de um documento
