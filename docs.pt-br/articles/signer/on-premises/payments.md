@@ -285,3 +285,18 @@ O pagamento de uma fatura com cartão de crédito pode ser negado por diversas c
 
 > [!WARNING]
 > Em alguns casos, é possível que o proprietário do cartão receba via SMS ou no APP do cartão, a informação de cobrança realizada com sucesso, porém, caso a fatura do usuário/organização não conste como PAGA, com retorno de código de erro, este lançamento de cobrança é automaticamente corrigido na fatura do cartão, dentro do prazo de 7 a 10 dias úteis.
+
+#### Cobrança automática
+
+O Signer possui um sistema de cobrança automática para cartão de crédito que é feito quando o usuário/organização salva um cartão de crédito como método de pagamento padrão.
+
+A cobrança automática é agendada para a data de vencimento da fatura, mas quando há muitos cartões na instância para ser feita a cobrança e caso uma parte não consiga ser feita em um único dia, no dia seguinte será feito a cobrança automática para os cartões restantes.
+
+Existem alguns casos que a cobrança automática não será feita:
+* O método de pagamento padrão do usuário/organização no momento de fechamento da fatura não ser cartão de crédito.
+* Caso uma fatura seja paga antes do dia de vencimento.
+* Caso o usuário/organização clique no botão para pagar fatura e escolha boleto, será exibido uma mensagem de confirmação, se o boleto for gerado a cobrança automática será cancelada somente para essa fatura. Mecanismo para evitar duplo pagamento.
+
+Uma forma de verificar se a cobrança automática está agendada é consultar nos detalhes da fatura se existe o card com as informações de cobrança automática como na imagem abaixo.
+
+![Invoice auto charge](../images/invoice-auto-charge.png)
