@@ -297,7 +297,7 @@ A cobrança automática é agendada para a data de vencimento da fatura, mas qua
 Existem alguns casos que a cobrança automática não será feita:
 * O método de pagamento padrão do usuário/organização no momento de fechamento da fatura não ser cartão de crédito.
 * Caso uma fatura seja paga antes do dia de vencimento.
-* Caso o usuário/organização clique no botão para pagar fatura e escolha boleto, será exibido uma mensagem de confirmação, se o boleto for gerado a cobrança automática será cancelada somente para essa fatura. Mecanismo para evitar duplo pagamento.
+* Caso o usuário/organização clique no botão para pagar fatura e escolha boleto bancário, será exibido uma mensagem de confirmação. Caso o boleto seja gerado, a cobrança automática será cancelada somente para essa fatura. Mecanismo para evitar duplo pagamento.
 
 Uma forma de verificar se a cobrança automática está agendada é consultar nos detalhes da fatura se existe o card com as informações de cobrança automática como na imagem abaixo.
 
