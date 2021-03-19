@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-2" />
+### 2.8.2 (2021-03-19)
+
+- Improve PDF signatures (without signed attributes) validation policy
+- Improve CMS signatures (without signed attributes) validation policy
+
+
 <a name="v2-8-0" />
 ### 2.8.0 (2021-01-11)
 
