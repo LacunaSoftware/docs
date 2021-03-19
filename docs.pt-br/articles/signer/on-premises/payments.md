@@ -215,21 +215,21 @@ O próximo passo é configurar o Webhook para notificar o Signer sobre os pagame
 
 ![iugu config Webhook](../images/iugu_config_webhook.png)
 
-> [!WARNING]
-> O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem acima.
-
 O campo url deve ser preenchido com o domínio ter a seguinte rota:
 
 ```
 https://seu-signer.com.br/api/webhooks/iugu/invoice/changed
 ```
+
 O campo autorização deve ser preenchido da seguinte forma:
+
 ```javascript
 Bearer WebhooksAuthKey
 ```
 `WebhooksAuthKey` deve ser substituído por uma chave de sua escolha, mas é recomendado a escolha de uma combinação de caracteres de pelo menos 10 dígitos.
 
 > [!WARNING]
+> O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem acima.
 > O campo de autorização deve obrigatoriamente iniciar com `Bearer ` como mostrado no exemplo.
 
 ![iugu new API](../images/iugu_new_webhook.png)
@@ -240,9 +240,48 @@ O último passo é desabilitar a cobrança automática diretamente pela iugu, po
 
 Deixe somente o fluxo "Expira a fatura" 5 dias após o vencimento.
 
-
-![iugu new API](../images/iugu_change_charge.png)
+![iugu change Charge](../images/iugu_change_charge.png)
 
 > [!NOTE]
 > A opção de expira a fatura é um mecanismo da iugu para marcar uma fatura como expirada após alguns dias depois do vencimento. É recomendado pelo menos 5 dias, pois pagamentos com boleto que tenham sido feito até o vencimento possam ter 5 dias para compensação.
 
+#### Fazer pagamentos diretamente no Signer
+
+Para a realização de pagamentos os dados de faturamento necessitam de uma nova validação, portanto todos os usuários e organizações precisarão preencher novamente o endereço. Uma mensagem na tela de Cobranças para usuários e Faturas para organizações será exibida, informando que o endereço precisa ser preenchido novamente.
+
+![Billing address error message](../images/invoices-billing-address-error-message.png)
+
+Após os dados de faturamento serem submetidos novamente, será exibido um card logo abaixo para que o usuário ou a organização possa definir um método de pagamento padrão. O método de pagamento padrão também pode ser escolhido no momento de pagamento de uma fatura.
+
+![Select payment method](../images/select-payment-method.png)
+
+Os meios de pagamentos disponíveis para o usuário/organização são Pix, boleto bancário e cartão de crédito. Para cartões de crédito é possível selecionar um que já tenha sido cadastrado ou cadastrar um novo.
+
+![Payment methods](../images/payment-methods.png)
+
+> [!NOTE]
+> As bandeiras aceitas para pagamentos com cartão de crédito são:
+> * American Express
+> * Diners
+> * Elo
+> * MasterCard
+> * Visa
+
+Quando uma fatura é fechada e o usuário/organização já regularizou as pendências nos dados de faturamento, o botão de pagar é exibido.
+
+![Invoice details pay](../images/invoice-details-pay.png)
+
+![Pay invoice](../images/pay-invoice.png)
+
+Após o pagamento o status da fatura é atualizada com o método de pagamento utilizado, dia e horário.
+
+![Paid invoice](../images/paid-invoice.png)
+
+##### Falhas de pagamento com cartão de crédito
+
+O pagamento de uma fatura com cartão de crédito pode ser negado por diversas causas. Um código de erro será exibido no momento do pagamento e pode ser consultado nessa [lista de erros](https://support.iugu.com/hc/pt-br/articles/206858953-Como-identificar-o-erro-da-tentativa-de-pagamento-).
+
+![Payment with creditcard failed](../images/payment-with-creditcard-failed.png)
+
+> [!WARNING]
+> Em alguns casos, é possível que o proprietário do cartão receba via SMS ou no APP do cartão, a informação de cobrança realizada com sucesso, porém, caso a fatura do usuário/organização não conste como PAGA, com retorno de código de erro, este lançamento de cobrança é automaticamente corrigido na fatura do cartão, dentro do prazo de 7 a 10 dias úteis.
