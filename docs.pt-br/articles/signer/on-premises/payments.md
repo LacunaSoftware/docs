@@ -215,7 +215,7 @@ O próximo passo é configurar o Webhook para notificar o Signer sobre os pagame
 
 ![iugu config Webhook](../images/iugu_config_webhook.png)
 
-O campo url deve ser preenchido com o domínio ter a seguinte rota:
+O campo url deve ser preenchido com o domínio e ter a seguinte rota:
 
 ```
 https://seu-signer.com.br/api/webhooks/iugu/invoice/changed
@@ -229,8 +229,8 @@ Bearer WebhooksAuthKey
 `WebhooksAuthKey` deve ser substituído por uma chave de sua escolha, mas é recomendado a escolha de uma combinação de caracteres de pelo menos 10 dígitos.
 
 > [!WARNING]
-> O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem acima.
-> O campo de autorização deve obrigatoriamente iniciar com `Bearer ` como mostrado no exemplo.
+> * O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem acima.
+> * O campo de autorização deve obrigatoriamente iniciar com `Bearer ` como mostrado no exemplo.
 
 ![iugu new API](../images/iugu_new_webhook.png)
 
@@ -247,11 +247,13 @@ Deixe somente o fluxo "Expira a fatura" 5 dias após o vencimento.
 
 #### Fazer pagamentos diretamente no Signer
 
-Para a realização de pagamentos os dados de faturamento necessitam de uma nova validação, portanto todos os usuários e organizações precisarão preencher novamente o endereço. Uma mensagem na tela de Cobranças para usuários e Faturas para organizações será exibida, informando que o endereço precisa ser preenchido novamente.
+Para a realização de pagamentos os dados de faturamento necessitam de uma nova validação, portanto todos os usuários e organizações que tenham os dados de faturamento já preenchido precisarão preencher novamente o endereço. Uma mensagem na tela de Cobranças para usuários e Faturas para organizações será exibida, informando que o endereço precisa ser preenchido novamente.
 
 ![Billing address error message](../images/invoices-billing-address-error-message.png)
 
-Após os dados de faturamento serem submetidos novamente, será exibido um card logo abaixo para que o usuário ou a organização possa definir um método de pagamento padrão. O método de pagamento padrão também pode ser escolhido no momento de pagamento de uma fatura.
+Após os dados de faturamento serem submetidos novamente, será exibido um card logo abaixo para que o usuário ou a organização possa definir um método de pagamento padrão. 
+> [!NOTE]
+> O método de pagamento padrão também pode ser escolhido no momento de pagamento de uma fatura.
 
 ![Select payment method](../images/select-payment-method.png)
 
@@ -273,11 +275,11 @@ Quando uma fatura é fechada e o usuário/organização já regularizou as pend�
 
 ![Pay invoice](../images/pay-invoice.png)
 
-Após o pagamento o status da fatura é atualizada com o método de pagamento utilizado, dia e horário.
+Após o pagamento, o status da fatura é atualizada com o método de pagamento utilizado, dia e horário.
 
 ![Paid invoice](../images/paid-invoice.png)
 
-##### Falhas de pagamento com cartão de crédito
+#### Falhas de pagamento com cartão de crédito
 
 O pagamento de uma fatura com cartão de crédito pode ser negado por diversas causas. Um código de erro será exibido no momento do pagamento e pode ser consultado nessa [lista de erros](https://support.iugu.com/hc/pt-br/articles/206858953-Como-identificar-o-erro-da-tentativa-de-pagamento-).
 
