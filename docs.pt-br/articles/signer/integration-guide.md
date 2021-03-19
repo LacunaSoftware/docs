@@ -41,6 +41,8 @@ Escolha um dos casos de uso abaixo:
 
 * [Validar assinaturas de um documento](#validate-signatures)
 
+* [Deletar um documento](#delete-document)
+
 ### Assinar um documento
 
 Para assinar um documento siga o passo a passo abaixo:
@@ -272,13 +274,14 @@ As opções disponíveis para download são:
 Existem dois métodos com seus respectivos tipos de retorno de dados: O primeiro retornará uma `Stream` de dados referente ao documento e o segundo retornará o documento em um vetor de `bytes[]`.
 
 <a name="download-document" />
+
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-503/dotnet/console/Console/Scenarios/DownloadDocumentVersionScenario.cs)
 	
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DownloadDocumentVersionScenario.java)
 
-<a name="list-documents" />
+<a name="list-documents">
 
 ### Listar documentos
 
@@ -381,6 +384,15 @@ Serão retornados os dados de cada uma das assinaturas encontradas no documento.
 	}
 ]
 ```
+### Deletar documento
+
+<a name="delete-document"></a>
+
+Para deletar um documento você precisa ter acesso ao ID deste mesmo decumento e fazer um chamada do tipo `DELETE`. Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-611/dotnet/console/Console/Scenarios/DeleteDocumentScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-611/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DeleteDocumentScenario.java)
 
 ## Links Úteis
 
