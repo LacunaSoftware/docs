@@ -195,7 +195,7 @@ Oferece meios de pagamentos automatizados diretamente no Signer com uma integra�
 
 #### Integração do Signer com a iugu
 
-A iugu possui (planos de assinatura)[https://www.iugu.com/planos/], cada plano traz funcionalidades, mudanças nas tarifas e custos por transação que devem ser avaliados pelo administrador da instância, mas o Signer é capaz de funcionar plenamente com o plano mais básico "Conheça a iugu".
+A iugu possui [planos de assinatura](https://www.iugu.com/planos/), cada plano traz funcionalidades, mudanças nas tarifas e custos por transação que devem ser avaliados pelo administrador da instância, mas o Signer é capaz de funcionar plenamente com o plano mais básico "Conheça a iugu".
 
 Para que a integração entre a instância do Signer e a iugu possam ser feitas, são necessários algumas etapas. O primeiro passo é realizar o [cadastro na IUGU](https://auth.iugu.com/new_user?service=https%3A%2F%2Falia.iugu.com%2F).
 
@@ -207,11 +207,39 @@ Depois escolha o tipo "Produção" e escreva na descrição: "API Signer Prod".
 
 ![iugu new API](../images/iugu_new_api.png)
 
-O próximo passo é necessário configurar o Webhook para notificar o Signer sobre os pagamentos, também na tela de configurações, acesse "Comunicação via Gatilhos" e depois clique no botão Novo.
+Em seguida será preciso obter o ID da conta na iugu. Acesse as configurações, depois Informações gerais. Logo abaixo de "Conta" será exibido o ID da sua conta na iugu.
+
+![iugu account id](../images/iugu_get_accountId.png)
+
+O próximo passo é configurar o Webhook para notificar o Signer sobre os pagamentos, também na tela de configurações, acesse "Comunicação via Gatilhos" e depois clique no botão Novo.
 
 ![iugu config Webhook](../images/iugu_config_webhook.png)
 
+O campo url deve ser preenchido com o domínio ter a seguinte rota:
+
+```javascript
+https://seu-signer.com.br/api/webhooks/iugu/invoice/changed
+```
+O campo autorização deve ser preenchido da seguinte:
+```javascript
+Bearer SUA_CHAVE
+```
+`SUA_CHAVE` deve ser substituído por uma chave de sua escolha, mas é recomendado a escolha de uma combinação de caracteres de pelo menos 10 dígitos.
+
+> [!WARNING]
+> O campo de autorização deve obrigatoriamente iniciar com `Bearer ` como mostrado no exemplo.
+
 ![iugu new API](../images/iugu_new_webhook.png)
 
-Também é possível que os usuários/organizações salvem os dados de cartão de crédito para uma cobrança automática mensalmente após a fatura ser fechada.
+O último passo é desabilitar a cobrança automática diretamente pela iugu, pois o Signer já possui um sistema de cobrança automática implementado com regras mais adequadas. Acesse a opção Recebimento, depois Régua de Cobrança e clique em Alterar fluxo de cobrança.
+
+![iugu config Charge](../images/iugu_config_charge.png)
+
+Depois deixe somente o fluxo "Expira a fatura" 5 dias após o vencimento.
+
+
+![iugu new API](../images/iugu_change_charge.png)
+
+> [!NOTE]
+> A opção de expira a fatura é um mecanismo da iugu para marcar uma fatura como expirada após alguns dias depois do vencimento. É recomendado pelo menos 5 dias, pois pagamentos com boleto que tenham sido feito até o vencimento possam ter 5 dias para compensação.
 
