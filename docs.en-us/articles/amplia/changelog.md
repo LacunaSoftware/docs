@@ -1,5 +1,29 @@
 ﻿# Amplia changelog
 
+<a name="v3-10-2" />
+### 3.10.2 (2021-03-21)
+
+Improvements
+
+* [AMP-201] - Add support for SMS providers Zenvia and SmsEmpresa
+
+Bug fixes
+
+* [AMP-203] - Error when generating issue QR Code
+
+Updates database model: no
+
+
+<a name="v3-10-1" />
+### 3.10.1 (2021-03-15)
+
+Bug fixes:
+
+* [AMP-200] - Error when issuing end-user certificate on cryptographic device
+
+Updates database model: no
+
+
 <a name="v3-10-0" />
 ### 3.10.0 (2021-02-08)
 

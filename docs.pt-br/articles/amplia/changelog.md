@@ -1,5 +1,29 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-10-2" />
+### 3.10.2 (2021-03-21)
+
+Melhorias:
+
+* [AMP-201] - Adicionado suporte a provedores de SMS Zenvia e SmsEmpresa
+
+Correções de bugs:
+
+* [AMP-203] - Erro ao gerar QR Code de emissão de certificado
+
+Atualiza modelo do banco de dados: não
+
+
+<a name="v3-10-1" />
+### 3.10.1 (2021-03-15)
+
+Correções de bugs:
+
+* [AMP-200] - Erro ao emitir certificado de usuário-final em dispositivo criptográfico
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-10-0" />
 ### 3.10.0 (2021-02-08)
 
