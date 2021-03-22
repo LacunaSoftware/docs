@@ -302,3 +302,53 @@ Existem alguns casos que a cobrança automática não será feita:
 Uma forma de verificar se a cobrança automática está agendada é consultar nos detalhes da fatura se existe o card com as informações de cobrança automática como na imagem abaixo.
 
 ![Invoice auto charge](../images/invoice-auto-charge.png)
+
+## Sistema de Nota Fiscal de Serviços Eletrônica (NFSe)
+
+Permite a emissão e cancelamento de NFSe para faturas pagas diretamente no Signer com uma integração ao [NFE.io](https://nfe.io/)
+
+### Integração do Signer com o NFE.io
+
+Atualmente as principais capitais do Brasil já possuem integração, porém a lista completa de prefeituras já integradas precisa ser solicitada à equipe comercial do NFE.io, juntamente com os preços. 
+
+#### Primeiros passos
+
+1. Faça o credenciamento na prefeitura para emissão de NFS-e, utilize o [documento da NFE.io](https://nfe.io/docs/documentacao/nota-fiscal-servico-eletronica/credenciamento-prefeitura/).
+2. Criar uma conta - https://nfe.io/docs/nossa-plataforma/criar-conta/
+3. Criar uma empresa - https://nfe.io/docs/nossa-plataforma/criar-empresa/ 
+4. Insira os dados fiscais - https://nfe.io/docs/nossa-plataforma/alterar-empresa/ 
+5. Upload do certificado digital - https://nfe.io/docs/nossa-plataforma/upload-certificado/ 
+6. [Entrar em contato com o NFE.io](https://nfe.io/contato/) para negociação de preços e ativação da conta para produção.
+7. Ainda em contato com o NFE.io, consulte se a preifeitura utilizada para emitir a nota exige o CNAE (Classificação Nacional de Atividades Econômicas). Caso seja necessário utilize a [busca online CNAE](https://concla.ibge.gov.br/busca-online-cnae.html) do IBGE.
+8. Caso existam dúvidas específicas sobre NFSe, a NFE.io disponibiliza um [documento](https://nfe.io/docs/documentacao/nota-fiscal-servico-eletronica/conceitos/) que resume explicações sobre a Nota Fiscal de Serviço.
+
+#### ApiKey e CompanyId
+
+Depois dos primeiros passos e a conta pronta para produção, é preciso obter a chave de acesso e o id da empresa. Acesse o menu Empresas, depois clique no nome da empresa que deseja emitir a NFSe.
+
+![Select company](../images/nfeio-companies.png)
+
+Depois, deslize pela página até encontrar o card Chaves de Acesso. Nesse card estão a chave de acesso (API KEY) e o empresa ID (CompanyId).
+
+![Api key and Company ID](../images/nfeio-company-and-api.png)
+
+#### Criação do Webhook
+
+O último passo é a criação do webhook, serviço responsável por notificar o Signer quando NFSe forem emitidas ou canceladas. Acesse a opção Conta, deslize a página e clique no card Webhooks.
+
+![Webhooks card](../images/nfeio-webhook-option.png)
+
+Depois clique no botão Criar Webhook
+
+![Create webhook](../images/nfeio-create-webhook.png)
+
+Selecione o tipo de webhook sendo NFS-e e configure os campos conforme a imagem abaixo:
+
+![Config webhook](../images/nfeio-config-webhook.png)
+
+O campo endereço (URL) deve ser preenchido com o domínio e ter a seguinte rota:
+```
+https://seu-signer.com.br/api/webhooks/nfeio/nfse/changed
+```
+
+Por fim, o campo senha para autenticação da mensagem (HMAC) pode ser uma senha qualquer, mas é recomendado que tenha pelo menos 8 dígitos.
