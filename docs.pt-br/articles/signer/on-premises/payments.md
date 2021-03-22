@@ -303,9 +303,9 @@ Uma forma de verificar se a cobrança automática está agendada é consultar no
 
 ![Invoice auto charge](../images/invoice-auto-charge.png)
 
-## Sistema de Nota Fiscal de Serviços Eletrônica (NFSe)
+## Sistema de Nota Fiscal de Serviços Eletrônica (NFS-e)
 
-Permite a emissão e cancelamento de NFSe para faturas pagas diretamente no Signer com uma integração ao [NFE.io](https://nfe.io/)
+Permite a emissão e cancelamento de NFS-e para faturas pagas diretamente no Signer com uma integração ao [NFE.io](https://nfe.io/)
 
 ### Integração do Signer com o NFE.io
 
@@ -319,22 +319,22 @@ Atualmente as principais capitais do Brasil já possuem integração, porém a l
 4. Insira os dados fiscais - https://nfe.io/docs/nossa-plataforma/alterar-empresa/ 
 5. Upload do certificado digital - https://nfe.io/docs/nossa-plataforma/upload-certificado/ 
 6. [Entrar em contato com o NFE.io](https://nfe.io/contato/) para negociação de preços e ativação da conta para produção.
-7. Ainda em contato com o NFE.io, consulte se a preifeitura utilizada para emitir a nota exige o CNAE (Classificação Nacional de Atividades Econômicas). Caso seja necessário utilize a [busca online CNAE](https://concla.ibge.gov.br/busca-online-cnae.html) do IBGE.
-8. Caso existam dúvidas específicas sobre NFSe, a NFE.io disponibiliza um [documento](https://nfe.io/docs/documentacao/nota-fiscal-servico-eletronica/conceitos/) que resume explicações sobre a Nota Fiscal de Serviço.
+7. Ainda em contato com o NFE.io, consulte se a prefeitura utilizada para emitir a nota exige o CNAE (Classificação Nacional de Atividades Econômicas). Caso seja necessário utilize a [busca online CNAE](https://concla.ibge.gov.br/busca-online-cnae.html) do IBGE.
+8. Caso existam dúvidas específicas sobre NFS-e, a NFE.io disponibiliza um [documento](https://nfe.io/docs/documentacao/nota-fiscal-servico-eletronica/conceitos/) que resume explicações sobre a Nota Fiscal de Serviço.
 
 #### ApiKey e CompanyId
 
-Depois dos primeiros passos e a conta pronta para produção, é preciso obter a chave de acesso e o id da empresa. Acesse o menu Empresas, depois clique no nome da empresa que deseja emitir a NFSe.
+Depois dos primeiros passos e a conta pronta para produção, é preciso obter a chave de acesso e o id da empresa. Acesse o menu Empresas, depois clique no nome da empresa que deseja emitir a NFS-e.
 
 ![Select company](../images/nfeio-companies.png)
 
-Depois, deslize pela página até encontrar o card Chaves de Acesso. Nesse card estão a chave de acesso (API KEY) e o empresa ID (CompanyId).
+Depois, deslize pela página até encontrar o card Chaves de Acesso. Nesse card estão a chave de acesso (Api Key) e a empresa ID (CompanyId).
 
 ![Api key and Company ID](../images/nfeio-company-and-api.png)
 
 #### Criação do Webhook
 
-O último passo é a criação do webhook, serviço responsável por notificar o Signer quando NFSe forem emitidas ou canceladas. Acesse a opção Conta, deslize a página e clique no card Webhooks.
+O próximo passo é a criação do webhook, serviço responsável por notificar o Signer quando NFS-e forem emitidas ou canceladas. Acesse a opção Conta, deslize a página e clique no card Webhooks.
 
 ![Webhooks card](../images/nfeio-webhook-option.png)
 
@@ -352,3 +352,17 @@ https://seu-signer.com.br/api/webhooks/nfeio/nfse/changed
 ```
 
 Por fim, o campo senha para autenticação da mensagem (HMAC) pode ser uma senha qualquer, mas é recomendado que tenha pelo menos 8 dígitos.
+
+#### Código de serviço
+
+O Código de Serviço é um número que define o tipo de serviço prestado para ser utilizado na NFS-e. Esse código é fornecido pela prefeitura que será emitido a nota, assim como a aliquota de imposto municipal.
+
+O NFE.io disponibiliza uma lista de serviços cadastrados para a cidade que será emitida a NFS-e. Acesse o menu Empresas, selecione a empresa que será emitida a NFS-e e clique no card Lista de serviços cadastrados.
+
+![Companies](../images/nfeio-companies.png)
+
+![Service codes](../images/nfeio-list-service-codes.png)
+
+Como mencionado anteriormente, cada prefeitura possui sua própria lista de códigos e sua descrição. Usando Brasília como exemplo, o Signer se enquadra no código ``0103`` , mas caso haja dúvidas sugerimos que consulte o contador de sua empresa.
+
+![Brasilia service codes](../images/nfeio-brasilia-service-codes.png)
