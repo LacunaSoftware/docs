@@ -365,4 +365,45 @@ O NFE.io disponibiliza uma lista de serviços cadastrados para a cidade que ser�
 
 Como mencionado anteriormente, cada prefeitura possui sua própria lista de códigos e sua descrição. Usando Brasília como exemplo, o Signer se enquadra no código ``0103`` , mas caso haja dúvidas sugerimos que consulte o contador de sua empresa.
 
-![Brasilia service codes](../images/nfeio-brasilia-service-codes.png)
+![Brasília service codes](../images/nfeio-brasilia-service-codes.png)
+
+### Emissão e cancelamento de NFS-e diretamente no Signer
+
+#### Emitir notas
+
+Depois que todos os parâmetros tenham sido configurados com o NFE.io e o Signer, será possível emitir notas diretamente pela página de Detalhes da fatura, para faturas pagas. 
+
+![Issue NFS-e](../images/issue-nfse.png)
+
+> [!NOTE]
+> * Para emitir ou cancelar notas é preciso de permissões de administrador da instância
+> * O sistema de notas fiscais não depende de integração com a iugu para funcionar 
+> * Caso a instância do Signer também possua integração com a iugu, ao realizar o pagamento da fatura, automaticamente será feito o pedido de emissão da NFS-e.
+
+> [!WARNING]
+> A emissão e o cancelamento de NFS-e depende do sistema da prefeitura. Se o sistema da prefeitura estiver instável, algumas notas podem demorar horas ou até dias para serem emitidas/canceladas.
+
+Também é possível emitir uma NFS-e para uma fatura com a requisição abaixo:
+
+```javascript
+POST /api/invoices/{id}/receipts
+```
+
+Quando a nota fiscal é emitida, um e-mail do próprio NFE.io é enviado ao usuário/organização responsável pela fatura com o PDF e o XML da NFS-e. Além disso é possível baixar ou visualizar a nota na página de Detalhes da fatura.
+
+![View or Download NFS-e](../images/view-or-download-nfse.png)
+
+#### Cancelar notas
+
+Depois que uma NFS-e é emitida, seu cancelamento pode ser feito na tela de Detalhes da fatura.
+
+![Cancel NFS-e](../images/cancel-nfse.png)
+
+Também é possível cancelar uma NFS-e para uma fatura com a requisição abaixo:
+
+```javascript
+DELETE /api/invoices/{id}/receipts
+```
+
+> [!WARNING]
+> O cancelamento de uma nota só pode ser feito depois de emitida, caso ainda esteja em processo de emissão deverá aguardar até que seja emitida. A mesma lógica se aplica para emitir uma nova nota que só pode ser feito após o cancelamento ser completado.
