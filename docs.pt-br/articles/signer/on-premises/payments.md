@@ -229,12 +229,12 @@ Bearer WebhooksAuthKey
 `WebhooksAuthKey` deve ser substituído por uma chave de sua escolha, mas é recomendado a escolha de uma combinação de caracteres de pelo menos 10 dígitos.
 
 > [!WARNING]
-> * O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem acima.
+> * O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem abaixo.
 > * O campo de autorização deve obrigatoriamente iniciar com `Bearer ` como mostrado no exemplo.
 
 ![iugu new API](../images/iugu_new_webhook.png)
 
-O último passo é desabilitar a cobrança automática diretamente pela iugu, pois o Signer já possui um sistema de cobrança automática implementado com regras mais adequadas. Acesse a opção Recebimento, depois Régua de Cobrança e clique em Alterar fluxo de cobrança.
+O próximo passo é desabilitar a cobrança automática diretamente pela iugu, pois o Signer já possui um sistema de cobrança automática implementado com regras mais adequadas. Acesse a opção Recebimento, depois Régua de Cobrança e clique em Alterar fluxo de cobrança.
 
 ![iugu config Charge](../images/iugu_config_charge.png)
 
@@ -245,6 +245,10 @@ Deixe somente o fluxo "Expira a fatura" 5 dias após o vencimento.
 > [!NOTE]
 > A opção de expira a fatura é um mecanismo da iugu para marcar uma fatura como expirada após alguns dias depois do vencimento. É recomendado pelo menos 5 dias, pois pagamentos com boleto que tenham sido feito até o vencimento possam ter 5 dias para compensação.
 
+O último passo é apenas conferir se todos os meios de pagamento, boleto bancário, cartão de crédito e Pix estão habilitados. Acesse as configurações, depois em recebimentos será lista os três métodos de pagamento, acesse cada um deles e verifique se a opção Ativo está marcado. Caso algum esteja desmarcado, marque-a e clique em Salvar.
+
+![iugu enable payment methods](../images/iugu-enable-payment-methods.png)
+
 #### Fazer pagamentos diretamente no Signer
 
 Para a realização de pagamentos os dados de faturamento necessitam de uma nova validação, portanto todos os usuários e organizações que tenham os dados de faturamento já preenchido precisarão preencher novamente o endereço. Uma mensagem na tela de Cobranças para usuários e Faturas para organizações será exibida, informando que o endereço precisa ser preenchido novamente.
@@ -252,10 +256,11 @@ Para a realização de pagamentos os dados de faturamento necessitam de uma nova
 ![Billing address error message](../images/invoices-billing-address-error-message.png)
 
 Após os dados de faturamento serem submetidos novamente, será exibido um card logo abaixo para que o usuário ou a organização possa definir um método de pagamento padrão. 
-> [!NOTE]
-> O método de pagamento padrão também pode ser escolhido no momento de pagamento de uma fatura.
 
 ![Select payment method](../images/select-payment-method.png)
+
+> [!NOTE]
+> O método de pagamento padrão para cartões de crédito também pode ser escolhido no momento de pagamento de uma fatura.
 
 Os meios de pagamentos disponíveis para o usuário/organização são Pix, boleto bancário e cartão de crédito. Para cartões de crédito é possível selecionar um que já tenha sido cadastrado ou cadastrar um novo.
 
@@ -334,7 +339,7 @@ Depois, deslize pela página até encontrar o card Chaves de Acesso. Nesse card 
 
 #### Criação do Webhook
 
-O próximo passo é a criação do webhook, serviço responsável por notificar o Signer quando NFS-e forem emitidas ou canceladas. Acesse a opção Conta, deslize a página e clique no card Webhooks.
+O próximo passo é a criação do webhook, serviço responsável por notificar o Signer quando as NFS-e forem emitidas ou canceladas. Acesse a opção Conta, deslize a página e clique no card Webhooks.
 
 ![Webhooks card](../images/nfeio-webhook-option.png)
 
@@ -406,4 +411,4 @@ DELETE /api/invoices/{id}/receipts
 ```
 
 > [!WARNING]
-> O cancelamento de uma nota só pode ser feito depois de emitida, caso ainda esteja em processo de emissão deverá aguardar até que seja emitida. A mesma lógica se aplica para emitir uma nova nota que só pode ser feito após o cancelamento ser completado.
+> O cancelamento só pode ser feito depois que a nota é emitida, caso ainda esteja em processo de emissão deverá aguardar até que seja emitida. A mesma lógica se aplica para emitir uma nova nota que só pode ser feito após o cancelamento ser completado.
