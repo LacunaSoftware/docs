@@ -37,6 +37,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.19 - [AC Mastermaq](http://ac.mastermaq.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.20 - [AC Grupo Nobre](http://ac.gruponobre.edu.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.21 - [AC Grupo Barcelos](http://ac.grupobarcelos.com.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.22 - [AC Vida Connect](http://ac.vidaconnect.com.br/certs/ac.txt)
 
 ## 2. Políticas de certificado A1
 
