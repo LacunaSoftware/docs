@@ -374,11 +374,12 @@ Depois, deslize pela página até encontrar a seção `Chaves de Acesso`. Nela s
 
 #### Criação do Webhook
 
-O próximo passo é a criação do webhook, serviço responsável por notificar o Signer quando as NFS-e forem emitidas ou canceladas. Acesse a opção Conta, deslize a página e seleciona a seção `Webhooks`.
+O próximo passo é a criação do webhook, serviço responsável por notificar o Signer quando as NFS-e forem emitidas ou canceladas. Acesse a opção Conta, deslize a página 
+e selecione a seção `Webhooks`:
 
 ![Webhooks card](../images/nfeio-webhook-option.png)
 
-Depois clique no botão Criar Webhook
+Depois clique no botão Criar Webhook:
 
 ![Create webhook](../images/nfeio-create-webhook.png)
 
@@ -433,7 +434,7 @@ Também é possível emitir uma NFS-e para uma fatura com a requisição abaixo:
 POST /api/invoices/{id}/receipts
 ```
 
-Quando a nota fiscal é emitida, um e-mail do próprio NFE.io é enviado ao usuário/organização responsável pela fatura com o PDF e o XML da NFS-e. Além disso é 
+Quando a nota fiscal é emitida, um e-mail do próprio NFE.io é enviado ao usuário/organização responsável pela fatura com o PDF e o XML da NFS-e. Além disso, é 
 possível baixar ou visualizar a nota na página de Detalhes da fatura:
 
 ![View or Download NFS-e](../images/view-or-download-nfse.png)
