@@ -191,16 +191,16 @@ Em seguida gere a chave na opção "Chaves":
 
 ### Operação via Gateway de pagamentos iugu
 
-À partir da versão [1.27.0](../changelog#1270-2021-03-25), integrar o Signer diretamente com o Gateway de Pagametnos da [iugu](https://www.iugu.com/). Desta forma, 
-depois que uma fatura é fechada os próprios usuários/organizações podem realizar o pagamento com cartão de crédito, boleto bancário ou Pix.
+À partir da versão [1.27.0](../changelog#1270-2021-03-25), é possível integrar o Signer diretamente com o Gateway de Pagametnos da [iugu](https://www.iugu.com/). Desta forma, 
+depois que uma fatura é fechada, os próprios usuários/organizações podem realizar o pagamento com cartão de crédito, boleto bancário ou Pix.
 
 #### Configuração no painel de controle da iugu
 
-Para contratar a iugu é preciso escolher um [plano de assinatura](https://www.iugu.com/planos/). Cada plano traz funcionalidades, mudanças nas tarifas e custos por transação que 
-devem ser avaliados pelo administrador da instância, mas o Signer é capaz de funcionar plenamente com o plano mais básico "Conheça a iugu".
+Para contratar a iugu, é preciso escolher um [plano de assinatura](https://www.iugu.com/planos/). Cada plano traz funcionalidades, mudanças nas tarifas e custos por transação que 
+devem ser avaliados pelo administrador da instância, mas o Signer é capaz de funcionar plenamente com o plano mais básico ("Conheça a iugu").
 
 Após realizar [cadastro na iugu](https://auth.iugu.com/new_user?service=https%3A%2F%2Falia.iugu.com%2F), é preciso acessar o [painel de controle](https://alia.iugu.com/) e gerar 
-um API Token. Para isso, acesse `Configurações`> `Integração via API` e clique no botão Novo.
+um API Token. Para isso, acesse `Configurações`> `Integração via API` e clique no botão Novo:
 
 ![iugu config API](../images/iugu_config_api.png)
 
@@ -208,7 +208,7 @@ O tipo do token deve ser `Produção`. Adicione também uma descrição, exemplo
 
 ![iugu new API](../images/iugu_new_api.png)
 
-Em seguida, obtenha o ID de sua conta acessando `Configurações`> `Informações gerais`. Abaixo de `Conta` será exibido o ID da sua conta na iugu.
+Em seguida, obtenha o ID de sua conta acessando `Configurações`> `Informações gerais`. Abaixo de `CONTA` será exibido o ID da sua conta na iugu.
 
 ![iugu account id](../images/iugu_get_accountId.png)
 
@@ -216,7 +216,7 @@ O próximo passo é configurar o Webhook para notificar o Signer sobre os pagame
 
 ![iugu config Webhook](../images/iugu_config_webhook.png)
 
-O campo URL deve ser preenchido com o endereço de sua instância do Signer seguido do caminho padrão de webhook conforme o exemplo abaixo:
+O campo URL deve ser preenchido com o endereço de sua instância do Signer seguido do caminho padrão de webhooks conforme o exemplo abaixo:
 
 ```
 https://seu-signer.com.br/api/webhooks/iugu/invoice/changed
@@ -231,13 +231,14 @@ Bearer WebhooksAuthKey
 gerar esse valor.
 
 > [!WARNING]
-> * O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem abaixo.
+> * O webhook deve ser gerado no ambiente de produção (o ambiente selecionado é exibido no topo da página).
 > * O campo de autorização deve obrigatoriamente iniciar com `Bearer ` como mostrado no exemplo.
+> * O evento selecionado deve ser `Mudança de estado de Fatura`.
 
 ![iugu new API](../images/iugu_new_webhook.png)
 
-Em seguida, desabilite a cobrança automática feita diretamente pela iugu, pois o Signer já possui seu próprio sistema de cobrança automática. Acesse a opção `Recebimento`, 
-depois `Régua de Cobrança` e clique em `Alterar fluxo de cobrança`.
+Em seguida, desabilite a cobrança automática feita diretamente pela iugu, pois o Signer já possui seu próprio sistema de cobrança. Acesse a opção `Recebimento`> 
+`Régua de Cobrança` e clique em `Alterar fluxo de cobrança`.
 
 ![iugu config Charge](../images/iugu_config_charge.png)
 
@@ -300,7 +301,7 @@ O pagamento de uma fatura com cartão de crédito pode ser negado por diversas c
 
 > [!WARNING]
 > Em alguns casos, é possível que o proprietário do cartão receba via SMS ou no APP do cartão, a informação de cobrança realizada com sucesso, porém, caso a fatura 
-> do usuário/organização não conste como PAGA, este lançamento de cobrança é automaticamente corrigido na fatura do cartão, dentro de 7 a 10 dias úteis.
+> do usuário/organização não conste como PAGA, este lançamento de cobrança é automaticamente estornado na fatura do cartão, dentro de 7 a 10 dias úteis.
 
 #### Cobrança automática
 
@@ -313,26 +314,28 @@ No entanto, existem alguns casos em que a cobrança automática não será feita
 * Se a fatura for paga antes do dia de vencimento.
 * Se o usuário/organização trocar o método de pagamento da fatura para boleto bancário. Caso o boleto seja gerado, a cobrança automática será cancelada somente para essa fatura.
 
-Uma forma de verificar se a cobrança automática está agendada, é consultar nos detalhes da fatura se existe são exibidas as informações de cobrança automática como abaixo:
+Uma forma de verificar se a cobrança automática está agendada, é consultar nos detalhes da fatura se são exibidas as informações de cobrança automática como abaixo:
 
 ![Invoice auto charge](../images/invoice-auto-charge.png)
 
 #### Modo de teste
 
-Sua instância pode ser configurada para o modo de teste a fim de testar a integração e as credenciais da Iugu. Para isso utilize as credenciais do ambiente de teste lembrando
+Sua instância pode ser configurada para o modo de teste a fim de testar a integração e as credenciais da iugu. Para isso utilize as credenciais do ambiente de teste lembrando
 de definir nas [configurações da instância](./settings#iugu-settings) a opção de teste também.
 
 No modo de teste, apenas cartões de créditos de teste podem ser utilizados conforme definido na página [Usar cartões em modo teste](https://support.iugu.com/hc/pt-br/articles/212456346-Usar-cart%C3%B5es-de-teste-em-modo-de-teste).
 
-Para testar o pagamento com Pix, basta copiar a URL de teste com o botão que aparece abaixo do QR code:
+Para testar o pagamento com Pix, basta utilizar o botão que aparece abaixo do QR code:
 
 ![Pix copy code](../images/pix-copy-code.png)
 
-Em seguida acesse a URL para simular o pagamento:
+Será copiada uma URL com estrutura semelhante à exibida abaixo:
 
 ```javascript
 http://faturas.iugu.com/iugu_pix/a32c46b6-ab85-469e-bafc-601c1a4e96ae/test/pay
 ```
+
+Acesse essa URL no navegador para simular a realização do pagamento.
 
 Para testar o pagamento com o boleto, obtenha a URL da mesma forma que no pix, mas troque `test` por `sample` e `iugu_pix` por `iugu_bank_slip` conforme abaixo:
 
