@@ -28,6 +28,9 @@ If you need help preparing the database, [click here](../prepare-database.md).
 
 1. Install IIS
 1. Install .NET Core Hosting Runtime https://aka.ms/dotnetcore-3-1-windowshosting
+> [!WARNING]
+> The .NET Core Hosting Runtime should be installed after IIS, otherwise when running the website you may receive the error `500.19 (0x8007000d)`. 
+> If this is your case, run the "Repair" option of the Hosting Runtime installer.
 1. Create folder for IIS site. Example: `C:\inetpub\Signer`
 1. Create folder for logs. Example: `C:\Logs`
 1. Create site on IIS
