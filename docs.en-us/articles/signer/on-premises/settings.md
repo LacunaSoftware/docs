@@ -89,6 +89,9 @@ with a certificate that has an identifier.
 * **DocumentAcceptedMimeTypes** (v1.22.0): defines the accepted mime types for document uploads. Values should be separated by comma. Set as null if types should not 
 be restricted.
 
+* **HideMultipleDocumentNotificationViewDocumentsButton** (v1.27.0): if `true`, the `View documents` button will not be included in the pending action emails for multiple 
+documents. This ensures that the email only contains links that do not require the user to log in.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
@@ -214,6 +217,46 @@ Under section **PrinterFriendly**:
 * **SmallFontSize**: size of the small font in the manifest page in points. The default value is `10`.
 * **LineHeight**: approximated height of a font with the normal font size. The default value is `0.74`.
 * **SmallLineHeight**: approximated height of a font with the small font size. The default value is `0.6`.
+
+
+###  *PaymentGateway* Settings (v1.27.0)
+
+Under section **PaymentGateway**:
+
+* **Enabled**: if `true`, enables Payment Gateway integration.
+* **Gateway** (default: `Iugu`): defines the Payment Gateway. The only available value is `Iugu` ([https://www.iugu.com/](https://www.iugu.com/)).
+* **DueDays** (default: `10`): the number of days a user will have to pay an invoice.
+* **InvoiceProductName**  (default: same value set on the `SiteName` setting): defines the name of the product that will appear in the invoice PDF.
+* **MinInvoiceValue** (default: `1`): the minimum value of an invoice. All invoices with value lower than this will be automatically marked as paid after being closed.
+
+<a name="iugu-settings" />
+###  *Iugu* Settings (v1.27.0)
+
+Under section **Iugu**:
+
+* **AccountId**: Iugu's Account ID.
+* **ApiToken**: Iugu's API token.
+* **WebhooksAuthKey**: Iugu's Webhook authentication key.
+* **TestMode**: defines if the credentials are Test environment credentials.
+
+###  *Invoice Receipt* Settings (v1.27.0)
+
+Under section **InvoiceReceipt**:
+
+* **Enabled**: if `true`, enables the issuing of receipts for invoices.
+* **Gateway** (default: `NFEio`): defines the Receipts Gateway. The only available value is `NFEio` ([https://nfe.io/](https://nfe.io/)).
+* **ReceiptType** (default: `NFSe`): defines the type of receipt issued. The only available value is `NFSe` (service receipt).
+* **CityServiceCode**: the code for the service in the city it will be provided. Navigate to "Companies> List of Registered Services" in your NFEio account to view available codes for your company.
+* **CnaeCode ** (optional): your company's [CNAE](https://receita.economia.gov.br/orientacao/tributaria/cadastros/cadastro-nacional-de-pessoas-juridicas-cnpj/classificacao-nacional-de-atividades-economicas-2013-cnae). 
+* **ReceiptDescription** (default: same value set on the `SiteName` setting): a description included in the "Service Description" of the receipt.
+
+###  *NFEio* Settings (v1.27.0)
+
+Under section **NFEio**:
+
+* **ApiKey**: NFEio's API key.
+* **CompanyId**: the NFEio company ID to be used.
+* **WebhookSecretKey**: secret key used when creating Webhooks on NFEio.
 
 ###  *SigningTags* Settings
 

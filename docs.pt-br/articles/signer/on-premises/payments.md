@@ -191,31 +191,32 @@ Em seguida gere a chave na opção "Chaves":
 
 ### Operação via Gateway de pagamentos iugu
 
-Oferece meios de pagamentos automatizados diretamente no Signer com uma integração à [iugu](https://www.iugu.com/). Desta forma, depois que uma fatura é fechada os próprios usuários/organizações podem realizar o pagamento com cartão de crédito, boleto bancário ou Pix.
+À partir da versão [1.27.0](../changelog#1270-2021-03-25), integrar o Signer diretamente com o Gateway de Pagametnos da [iugu](https://www.iugu.com/). Desta forma, 
+depois que uma fatura é fechada os próprios usuários/organizações podem realizar o pagamento com cartão de crédito, boleto bancário ou Pix.
 
-#### Integração do Signer com a iugu
+#### Configuração no painel de controle da iugu
 
-A iugu possui [planos de assinatura](https://www.iugu.com/planos/) e cada plano traz funcionalidades, mudanças nas tarifas e custos por transação que devem ser avaliados pelo administrador da instância, mas o Signer é capaz de funcionar plenamente com o plano mais básico "Conheça a iugu".
+Para contratar a iugu é preciso escolher um [plano de assinatura](https://www.iugu.com/planos/). Cada plano traz funcionalidades, mudanças nas tarifas e custos por transação que 
+devem ser avaliados pelo administrador da instância, mas o Signer é capaz de funcionar plenamente com o plano mais básico "Conheça a iugu".
 
-Para que a integração entre a instância do Signer e a iugu possam ser feitas, são necessários algumas etapas. O primeiro passo é realizar o [cadastro na iugu](https://auth.iugu.com/new_user?service=https%3A%2F%2Falia.iugu.com%2F).
-
-O próximo passo, após o cadastro, é acessar o [painel de controle](https://alia.iugu.com/) da iugu e gerar um API Token. Acesse as configurações, depois Integração via API e clicar no botão Novo.
+Após realizar [cadastro na iugu](https://auth.iugu.com/new_user?service=https%3A%2F%2Falia.iugu.com%2F), é preciso acessar o [painel de controle](https://alia.iugu.com/) e gerar 
+um API Token. Para isso, acesse `Configurações`> `Integração via API` e clique no botão Novo.
 
 ![iugu config API](../images/iugu_config_api.png)
 
-Depois escolha o tipo "Produção" e escreva na descrição: "API Signer Prod".
+O tipo do token deve ser `Produção`. Adicione também uma descrição, exemplo: "API Signer Prod".
 
 ![iugu new API](../images/iugu_new_api.png)
 
-Em seguida será preciso obter o ID da conta na iugu. Acesse as configurações, depois Informações gerais. Logo abaixo de "Conta" será exibido o ID da sua conta na iugu.
+Em seguida, obtenha o ID de sua conta acessando `Configurações`> `Informações gerais`. Abaixo de `Conta` será exibido o ID da sua conta na iugu.
 
 ![iugu account id](../images/iugu_get_accountId.png)
 
-O próximo passo é configurar o Webhook para notificar o Signer sobre os pagamentos, também na tela de configurações, acesse "Comunicação via Gatilhos" e depois clique no botão Novo.
+O próximo passo é configurar o Webhook para notificar o Signer sobre os pagamentos. Ainda na tela de configurações, acesse `Comunicação via Gatilhos` e depois clique no botão Novo:
 
 ![iugu config Webhook](../images/iugu_config_webhook.png)
 
-O campo url deve ser preenchido com o domínio e ter a seguinte rota:
+O campo URL deve ser preenchido com o endereço de sua instância do Signer seguido do caminho padrão de webhook conforme o exemplo abaixo:
 
 ```
 https://seu-signer.com.br/api/webhooks/iugu/invoice/changed
@@ -226,7 +227,8 @@ O campo autorização deve ser preenchido da seguinte forma:
 ```javascript
 Bearer WebhooksAuthKey
 ```
-`WebhooksAuthKey` deve ser substituído por uma chave de sua escolha, mas é recomendado a escolha de uma combinação de caracteres de pelo menos 10 dígitos.
+`WebhooksAuthKey` pode ser qualquer valor, mas recomendamos que seja gerada uma string aleatória de alta entropia. Entre em contato conosco para receber instruções de como
+gerar esse valor.
 
 > [!WARNING]
 > * O webhook deve ser gerado no ambiente de produção, como mostra no topo da imagem abaixo.
@@ -234,35 +236,40 @@ Bearer WebhooksAuthKey
 
 ![iugu new API](../images/iugu_new_webhook.png)
 
-O próximo passo é desabilitar a cobrança automática diretamente pela iugu, pois o Signer já possui um sistema de cobrança automática implementado com regras mais adequadas. Acesse a opção Recebimento, depois Régua de Cobrança e clique em Alterar fluxo de cobrança.
+Em seguida, desabilite a cobrança automática feita diretamente pela iugu, pois o Signer já possui seu próprio sistema de cobrança automática. Acesse a opção `Recebimento`, 
+depois `Régua de Cobrança` e clique em `Alterar fluxo de cobrança`.
 
 ![iugu config Charge](../images/iugu_config_charge.png)
 
-Deixe somente o fluxo "Expira a fatura" 5 dias após o vencimento.
+Deixe somente o fluxo "Expira a fatura" com 5 dias após o vencimento.
 
 ![iugu change Charge](../images/iugu_change_charge.png)
 
 > [!NOTE]
-> A opção de expira a fatura é um mecanismo da iugu para marcar uma fatura como expirada após alguns dias depois do vencimento. É recomendado pelo menos 5 dias, pois pagamentos com boleto que tenham sido feito até o vencimento possam ter 5 dias para compensação.
+> A opção "Expira a fatura" é um mecanismo da iugu para marcar uma fatura como expirada após alguns dias depois do vencimento. É recomendado pelo menos 5 dias, para que pagamentos 
+com boletos que tenham sido feitos até o vencimento possam ter 5 dias para compensação.
 
-O último passo é apenas conferir se todos os meios de pagamento, boleto bancário, cartão de crédito e Pix estão habilitados. Acesse as configurações, depois em recebimentos será lista os três métodos de pagamento, acesse cada um deles e verifique se a opção Ativo está marcado. Caso algum esteja desmarcado, marque-a e clique em Salvar.
+O último passo é conferir se todos os meios de pagamento: boleto bancário, cartão de crédito e Pix estão habilitados. Acesse `Configurações`> `Recebimentos` e selecione
+cada um dos métodos de pagamentos listados, marcando a opção "Ativo" e clicando no botão "Salvar":
 
 ![iugu enable payment methods](../images/iugu-enable-payment-methods.png)
 
-#### Fazer pagamentos diretamente no Signer
+#### Configuração no Signer
 
-Para a realização de pagamentos os dados de faturamento necessitam de uma nova validação, portanto todos os usuários e organizações que tenham os dados de faturamento já preenchido precisarão preencher novamente o endereço. Uma mensagem na tela de Cobranças para usuários e Faturas para organizações será exibida, informando que o endereço precisa ser preenchido novamente.
+Usuários e organizações que já tinham dados de faturamento cadastrados antes da versão [1.27.0](../changelog#1270-2021-03-25), precisarão informar os dados novamente para que 
+sejam realizadas novas validações das informações conforme necessidades da iugu.
 
 ![Billing address error message](../images/invoices-billing-address-error-message.png)
 
-Após os dados de faturamento serem submetidos novamente, será exibido um card logo abaixo para que o usuário ou a organização possa definir um método de pagamento padrão. 
+Após os dados de faturamento serem submetidos novamente, o usuário poderá definir um método de pagamento padrão para sua conta pessoal ou de organização: 
 
 ![Select payment method](../images/select-payment-method.png)
 
 > [!NOTE]
 > O método de pagamento padrão para cartões de crédito também pode ser escolhido no momento de pagamento de uma fatura.
 
-Os meios de pagamentos disponíveis para o usuário/organização são Pix, boleto bancário e cartão de crédito. Para cartões de crédito é possível selecionar um que já tenha sido cadastrado ou cadastrar um novo.
+Os meios de pagamentos disponíveis para o usuário/organização são Pix, boleto bancário e cartão de crédito. Para cartões de crédito, é possível selecionar um que já tenha sido 
+cadastrado ou cadastrar um novo:
 
 ![Payment methods](../images/payment-methods.png)
 
@@ -274,7 +281,7 @@ Os meios de pagamentos disponíveis para o usuário/organização são Pix, bole
 > * MasterCard
 > * Visa
 
-Quando uma fatura é fechada e o usuário/organização já regularizou as pendências nos dados de faturamento, o botão de pagar é exibido.
+Quando uma fatura é fechada e o usuário/organização poderá pagar aquela fatura na tela de detalhes conforme abaixo:
 
 ![Invoice details pay](../images/invoice-details-pay.png)
 
@@ -286,27 +293,52 @@ Após o pagamento, o status da fatura é atualizada com o método de pagamento u
 
 #### Falhas de pagamento com cartão de crédito
 
-O pagamento de uma fatura com cartão de crédito pode ser negado por diversas causas. Um código de erro será exibido no momento do pagamento e pode ser consultado nessa [lista de erros](https://support.iugu.com/hc/pt-br/articles/206858953-Como-identificar-o-erro-da-tentativa-de-pagamento-).
+O pagamento de uma fatura com cartão de crédito pode ser negado por diversas causas. Um código de erro será exibido no momento do pagamento e pode ser consultado nessa 
+[lista de erros](https://support.iugu.com/hc/pt-br/articles/206858953-Como-identificar-o-erro-da-tentativa-de-pagamento-).
 
 ![Payment with creditcard failed](../images/payment-with-creditcard-failed.png)
 
 > [!WARNING]
-> Em alguns casos, é possível que o proprietário do cartão receba via SMS ou no APP do cartão, a informação de cobrança realizada com sucesso, porém, caso a fatura do usuário/organização não conste como PAGA, com retorno de código de erro, este lançamento de cobrança é automaticamente corrigido na fatura do cartão, dentro do prazo de 7 a 10 dias úteis.
+> Em alguns casos, é possível que o proprietário do cartão receba via SMS ou no APP do cartão, a informação de cobrança realizada com sucesso, porém, caso a fatura 
+> do usuário/organização não conste como PAGA, este lançamento de cobrança é automaticamente corrigido na fatura do cartão, dentro de 7 a 10 dias úteis.
 
 #### Cobrança automática
 
 O Signer possui um sistema de cobrança automática para cartão de crédito que é feito quando o usuário/organização salva um cartão de crédito como método de pagamento padrão.
 
-A cobrança automática é agendada para a data de vencimento da fatura, mas quando há muitos cartões na instância para ser feita a cobrança e caso uma parte não consiga ser feita em um único dia, no dia seguinte será feito a cobrança automática para os cartões restantes.
+A cobrança automática é agendada para a data de vencimento da fatura, mas a cobrança pode demorar um ou dois dias adicionais.
 
-Existem alguns casos que a cobrança automática não será feita:
-* O método de pagamento padrão do usuário/organização no momento de fechamento da fatura não ser cartão de crédito.
-* Caso uma fatura seja paga antes do dia de vencimento.
-* Caso o usuário/organização clique no botão para pagar fatura e escolha boleto bancário, será exibido uma mensagem de confirmação. Caso o boleto seja gerado, a cobrança automática será cancelada somente para essa fatura. Mecanismo para evitar duplo pagamento.
+No entanto, existem alguns casos em que a cobrança automática não será feita:
+* Se o método de pagamento padrão do usuário/organização no momento de fechamento da fatura não for cartão de crédito.
+* Se a fatura for paga antes do dia de vencimento.
+* Se o usuário/organização trocar o método de pagamento da fatura para boleto bancário. Caso o boleto seja gerado, a cobrança automática será cancelada somente para essa fatura.
 
-Uma forma de verificar se a cobrança automática está agendada é consultar nos detalhes da fatura se existe o card com as informações de cobrança automática como na imagem abaixo.
+Uma forma de verificar se a cobrança automática está agendada, é consultar nos detalhes da fatura se existe são exibidas as informações de cobrança automática como abaixo:
 
 ![Invoice auto charge](../images/invoice-auto-charge.png)
+
+#### Modo de teste
+
+Sua instância pode ser configurada para o modo de teste a fim de testar a integração e as credenciais da Iugu. Para isso utilize as credenciais do ambiente de teste lembrando
+de definir nas [configurações da instância](./settings#iugu-settings) a opção de teste também.
+
+No modo de teste, apenas cartões de créditos de teste podem ser utilizados conforme definido na página [Usar cartões em modo teste](https://support.iugu.com/hc/pt-br/articles/212456346-Usar-cart%C3%B5es-de-teste-em-modo-de-teste).
+
+Para testar o pagamento com Pix, basta copiar a URL de teste com o botão que aparece abaixo do QR code:
+
+![Pix copy code](../images/pix-copy-code.png)
+
+Em seguida acesse a URL para simular o pagamento:
+
+```javascript
+http://faturas.iugu.com/iugu_pix/a32c46b6-ab85-469e-bafc-601c1a4e96ae/test/pay
+```
+
+Para testar o pagamento com o boleto, obtenha a URL da mesma forma que no pix, mas troque `test` por `sample` e `iugu_pix` por `iugu_bank_slip` conforme abaixo:
+
+```javascript
+http://faturas.iugu.com/iugu_bank_slip/a32c46b6-ab85-469e-bafc-601c1a4e96ae/sample/pay
+```
 
 ## Sistema de Nota Fiscal de Serviços Eletrônica (NFS-e)
 
