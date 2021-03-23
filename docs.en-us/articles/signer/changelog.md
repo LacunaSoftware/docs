@@ -4,6 +4,29 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-27-0" />
+### 1.27.0 (2021-03-25)
+
+* New Features
+  * [SIG-614] Service receipt generation (NFS-e)
+
+* [SIG-549] iugu payment gateway integration:
+  * [SIG-588] Create checkout page
+  * [SIG-593] Allow user to view and set his favorite payment method
+  * [SIG-592] Send emails to clients regarding invoices statuses
+  * [SIG-590] Display payment information in the invoice details screen
+
+* Improvements
+  * [SIG-625] Add new API for SECURITI integration
+  * [SIG-620] Fix tests that are failing in the development environment
+  * [SIG-606] Add setting to remove view documents button in multiple documents notifications
+
+* Bug fixes
+  * [SIG-626] Fix signature time displayed in the printer friendly version
+  * [SIG-617] Incorrect detection of Scanner integration
+
+Updates database model: yes
+
 <a name="v1-26-1" />
 ### 1.26.1 (2021-02-18)
 

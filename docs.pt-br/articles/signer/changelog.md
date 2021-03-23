@@ -4,6 +4,29 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-27-0" />
+### 1.27.0 (2021-03-25)
+
+* Novas funcionalidades
+  * [SIG-614] Geração de nota fiscal de serviço (NFS-e)
+
+* [SIG-549] Integração com Gateway de Pagamento iugu:
+  * [SIG-588] Criar página de checkout para pagamento
+  * [SIG-593] Opção para permitir o usuário ver e alterar seu método de pagamento padrão
+  * [SIG-592] Enviar emails aos clientes referentes às faturas
+  * [SIG-590] Apresentação das informações de pagamento na tela da fatura
+
+* Melhorias
+  * [SIG-625] Adicionar nova API para integração com a SECURITI
+  * [SIG-620] Corrigir testes que estão falhando em desenvolvimento
+  * [SIG-606] Adicionar configuração para remover botão ver documentos em notificações de mais de um documento
+
+* Correções de bugs
+  * [SIG-626] Corrigir horário exibido na versão para impressão
+  * [SIG-617] Detecção incorreta de habilitação do Scanner
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-26-1" />
 ### 1.26.1 (2021-02-18)
 
