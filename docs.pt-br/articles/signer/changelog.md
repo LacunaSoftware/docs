@@ -9,12 +9,11 @@
 
 * Novas funcionalidades
   * [SIG-614] Geração de nota fiscal de serviço (NFS-e)
-
-* [SIG-549] Integração com Gateway de Pagamento iugu:
-  * [SIG-588] Criar página de checkout para pagamento
-  * [SIG-593] Opção para permitir o usuário ver e alterar seu método de pagamento padrão
-  * [SIG-592] Enviar emails aos clientes referentes às faturas
-  * [SIG-590] Apresentação das informações de pagamento na tela da fatura
+  * [SIG-549] Integração com Gateway de Pagamento iugu:
+    * [SIG-588] Criar página de checkout para pagamento
+    * [SIG-593] Opção para permitir o usuário ver e alterar seu método de pagamento padrão
+    * [SIG-592] Enviar emails aos clientes referentes às faturas
+    * [SIG-590] Apresentação das informações de pagamento na tela da fatura
 
 * Melhorias
   * [SIG-625] Adicionar nova API para integração com a SECURITI
