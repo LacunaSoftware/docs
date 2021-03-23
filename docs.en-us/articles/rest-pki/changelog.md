@@ -1,5 +1,13 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-26-1" />
+### 1.26.1 (2021-03-22)
+
+Database model update: No
+
+- Improved permissive policies for validation
+- Fixed unhandled exception on the opening of a PAdES signature without a digest value
+
 <a name="v1-26-0" />
 ### 1.26.0 (2021-03-11)
 
