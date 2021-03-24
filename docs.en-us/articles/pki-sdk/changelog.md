@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-3" />
+### 2.8.3 (2021-03-24)
+
+- Improve PDF Marker flattening
+
+
 <a name="v2-8-2" />
 ### 2.8.2 (2021-03-19)
 
