@@ -1,5 +1,16 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-11-0" />
+### 3.11.0 (2021-03-25)
+
+Melhorias:
+
+* [AMP-204] - Configuração `Amplia__IssueProcedureConfirmationEnabled` para desabilitar verificação de telefone celular na emissão
+* [AMP-205] - Link de emissão direto para idioma correspondente à chamada de API
+
+Atualiza modelo do banco de dados: não
+
+
 <a name="v3-10-2" />
 ### 3.10.2 (2021-03-21)
 

@@ -1,5 +1,16 @@
 ﻿# Amplia changelog
 
+<a name="v3-11-0" />
+### 3.11.0 (2021-03-25)
+
+Improvements
+
+* [AMP-204] - Configuration `Amplia__IssueProcedureConfirmationEnabled` to disable SMS confirmation during issue procedure
+* [AMP-205] - Providing internationalized issue links according to the API request language
+
+Updates database model: no
+
+
 <a name="v3-10-2" />
 ### 3.10.2 (2021-03-21)
 

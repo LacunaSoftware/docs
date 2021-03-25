@@ -13,7 +13,7 @@ dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/amplia:3.10 -- hash-root-pass
+docker run -i lacunasoftware/amplia:3.11 -- hash-root-pass
 ```
 
 ## Description
