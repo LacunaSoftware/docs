@@ -5,7 +5,6 @@ Rest PKI pode ser usado em aplicações .NET (C#, VB.NET, C++.NET) usando uma am
 * [ASP.NET MVC](mvc.md)
 * [ASP.NET Web Forms](web-forms.md)
 * [ASP.NET Core](netcore.md)
-* [Visual Studio 2008](vs2008.md)
 
 ## Biblioteca do cliente
 

@@ -60,7 +60,6 @@
 ### [ASP.NET MVC](rest-pki/dotnet/mvc.md)
 ### [ASP.NET Web Forms](rest-pki/dotnet/web-forms.md)
 ### [ASP.NET Core](rest-pki/dotnet/netcore.md)
-### [Visual Studio 2008](rest-pki/dotnet/vs2008.md)
 ### [Generating alpha codes](rest-pki/dotnet/alpha-codes.md)
 ## [Using on Python](rest-pki/python/index.md)
 ### [Flask](rest-pki/python/flask.md)

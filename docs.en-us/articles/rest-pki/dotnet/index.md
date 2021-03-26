@@ -6,7 +6,6 @@ To get started, choose one of the available samples projects:
 * [ASP.NET MVC](mvc.md)
 * [ASP.NET Web Forms](web-forms.md)
 * [ASP.NET Core](netcore.md)
-* [Visual Studio 2008](vs2008.md)
  
 ## Client library
 

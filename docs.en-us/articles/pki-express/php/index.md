@@ -2,7 +2,7 @@
 
 This article describes how to use [PKI Express](../index.md) on PHP. To get started, choose one of the available samples' projects (organized by framework):
 
-- [Plain](/plain.md)
+- [Plain](plain.md)
 
 ## Composer Package
 
