@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-4" />
+### 2.8.4 (2021-03-26)
+
+- Fix Bad Data error on RSA key loading from PKCS#12. Affects .NET Frameworks 4.0, 4.5 and 4.6
+
+
 <a name="v2-8-3" />
 ### 2.8.3 (2021-03-24)
 
