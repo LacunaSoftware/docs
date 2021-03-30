@@ -116,7 +116,7 @@ Configurações de envio de email:
   * `Email__EnableSsl`: por padrão, a conversação SMTP é executada por SSL. Para desativar o SSL, defina essa configuração como `false`
   * `Email__ServerPort`: Por padrão, a conversação SMTP é realizada pela porta 587. Defina esta configuração para usar uma porta diferente
   * `Email__Username` e `Email__Password`: se o servidor SMTP exigir autenticação, defina essas configurações
-  * `Email__SenderAdress`: endereço de e-mail a ser usado como remetente (do campo)
+  * `Email__SenderAddress`: endereço de e-mail a ser usado como remetente (do campo)
   * `Email__SenderName`: nome a ser usado como o nome do remetente (opcional)
 
 ### Integração com provedor de OpenID Connect
