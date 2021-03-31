@@ -1,5 +1,12 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-26-2" />
+### 1.26.2 (2021-03-31)
+
+Database model update: No
+
+- Update PKI SDK to [2.8.4](../pki-sdk/changelog.md#v2-8-4)
+
 <a name="v1-26-1" />
 ### 1.26.1 (2021-03-22)
 
@@ -7,6 +14,7 @@ Database model update: No
 
 - Improved permissive policies for validation
 - Fixed unhandled exception on the opening of a PAdES signature without a digest value
+- Update PKI SDK to 2.8.1
 
 <a name="v1-26-0" />
 ### 1.26.0 (2021-03-11)
