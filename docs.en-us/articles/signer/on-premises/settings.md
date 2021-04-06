@@ -78,6 +78,10 @@ by their owners.
 but the email provided is different from what is registered for that user, the provided email will be the one considered in the notifications of the submitted document(s).
 This option has no effect if the username is email.
 
+* **AllowSetFlowActionPhoneNumber** (default: `true`, v1.28.0): if `true`, allows a participant to have a document specific phone number, that is, if a document is 
+submitted to a user but the phone number provided is different from what is registered for that user, the provided phone will be the one considered in the notifications 
+of the submitted document(s).
+
 * **CountryIdentifierMode** (default: `Unique`, v1.21.0): defines the behaviour of the country identifier. The available types are `Unique`, `NonUnique`, `Nullable` and
 `NullableUnique`. The country identifier claim must also be set accordingly in GrantID.
 * **FilterCertificatesByEmailIfNoIdentifier** (default: `true`, v1.21.0): if `true`, filters by email the digital certificates of a user who has no identifier.
@@ -162,6 +166,9 @@ or manually positioned.
 
 * **DisableAutomaticSignaturePositioning** (v1.18.0): if `true` a signature visual representation will not be addeed to the document if the user does not
 manually selects a position while signing.
+
+* **SignaturePositioningRequired** (v1.28.0): if `true` requires that the user positions the signature representation when signing a PDF file.
+
 
 ###  *ValidationStamp* Settings (v1.7.0)
 
@@ -250,6 +257,31 @@ Under section **InvoiceReceipt**:
 * **CnaeCode ** (optional): your company's [CNAE](https://receita.economia.gov.br/orientacao/tributaria/cadastros/cadastro-nacional-de-pessoas-juridicas-cnpj/classificacao-nacional-de-atividades-economicas-2013-cnae). 
 * **ReceiptDescription** (default: same value set on the `SiteName` setting): a description included in the "Service Description" of the receipt.
 
+###  *SMS* Settings
+
+Under section **SMS**:
+
+* **Type**: defines the provider of SMSs. Available options are `TotalVoice`, `Twilio`, `Zenvia` (v1.28.0) and `SmsEmpresa` (v1.28.0).
+
+For the `TotalVoice` provider, define the setting:
+
+* **AccessToken**: 
+
+For the `Twilio` provider, define the settings:
+
+* **MessageFrom**: the number used to send the message.
+* **AccountSid**: the account SID.
+* **AuthToken**:  the account AUTH Token.
+
+For the `Zenvia` provider, define the settings:
+
+* **Account** (v1.28.0): the API Account (legacy).
+* **Password** (v1.28.0): the API Password (legacy).
+
+For the `SmsEmpresa` provider, please define the setting:
+
+* **ChaveKey** (v1.28.0): the "Chave Key" displayed in your SMS Empresa account settings.
+
 ###  *NFEio* Settings (v1.27.0)
 
 Under section **NFEio**:
@@ -299,9 +331,12 @@ Under section **Hsm**:
 
 Under section **Timestamper**:
 
-* **Enabled**:
-* **Url**:
-* **BearerToken**:
+* **Enabled**: if `true`, timestamps will be added to signatures.
+* **Url**: the URL of the timestamper.
+* **Type** (default `BearerToken`, v1.28.0): defines the type of authentication used to connect to the timestamper. Available options are `BearerToken` and `BasicAuthentication`.
+* **BearerToken**: if type is `BearerToken`, defines the bearer token value for authentication.
+* **Username** (v1.28.0): if type is `BasicAuthentication`, defines the username value for authentication.
+* **Password** (v1.28.0): if type is `BasicAuthentication`, defines the password value for authentication.
 
 ###  *Notarize* Settings
 
