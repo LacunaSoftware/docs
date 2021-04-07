@@ -284,7 +284,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 	
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DownloadDocumentVersionScenario.java)
 
-<a name="list-documents">
+<a name="list-documents"/>
 
 ### Listar documentos
 
