@@ -4,6 +4,26 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-28-0" />
+### 1.28.0 (2021-04-06)
+
+* New Features
+  * [SIG-555] Require the selection of a signature representation position
+  * [SIG-476] Consent Removal
+
+* Improvements
+  * [SIG-634] Allow Timestamper authentication with Basic Authentication
+  * [SIG-621] Send welcome notification only after the document is concluded
+  * [SIG-613] Allow a user submitting a document to inform the cellphone number for SMS electronic signature signers
+  * [SIG-578] Add new SMS providers
+
+* Bug fixes
+  * [SIG-635] Invoice webhook does not included owner information
+  * [SIG-630] Edit flow button is displayed even for concluded flows
+  * [SIG-470] Error signing with custom visual representation that has .webp file
+
+Updates database model: yes
+
 <a name="v1-27-0" />
 ### 1.27.0 (2021-03-25)
 

@@ -4,6 +4,26 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-28-0" />
+### 1.28.0 (2021-04-06)
+
+* Novas funcionalidades
+  * [SIG-555] Tornar escolha da posição de assinatura obrigatória
+  * [SIG-476] Remoção de Consentimento
+
+* Melhorias
+  * [SIG-634] Permitir autenticação com carimbadora por basic authentication
+  * [SIG-621] Convidar usuários apenas após assinatura do documento
+  * [SIG-613] Permitir usuário informar número de celular para assinatura eletronica com SMS
+  * [SIG-578] Adicionar novos provedores de SMS
+
+* Correções de bugs
+  * [SIG-635] Webhook de invoice não inclui informação de Owner
+  * [SIG-630] Botão de editar fluxo aparece mesmo para fluxos concluídos
+  * [SIG-470] Erro ao assinar com representação visual personalizada com arquivo .webp
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-27-0" />
 ### 1.27.0 (2021-03-25)
 
