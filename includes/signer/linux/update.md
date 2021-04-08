@@ -1,5 +1,5 @@
 ﻿```sh
-curl -O https://cdn.lacunasoftware.com/signer/signer-1.1.1.tar.gz
+curl -O https://cdn.lacunasoftware.com/signer/signer-1.28.0.tar.gz
 systemctl stop lacuna-signer
 rm -fR /usr/share/lacuna-signer/*
 tar xzf signer-1.1.1.tar.gz -C /usr/share/lacuna-signer
