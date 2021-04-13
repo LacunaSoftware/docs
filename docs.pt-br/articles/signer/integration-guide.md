@@ -84,7 +84,7 @@ POST /api/documents
 		"identifier": "81976153069",//CPF do participante
 		"email": "john.wick@mailinator.com",//Email do participante
 		},
-		"allowelectronicsignature": true //Permite assinatura eletrônica
+		"allowElectronicSignature": true //Permite assinatura eletrônica
 	}
 	]
 }
