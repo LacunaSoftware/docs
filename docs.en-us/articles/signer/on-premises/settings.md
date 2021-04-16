@@ -290,6 +290,13 @@ Under section **NFEio**:
 * **CompanyId**: the NFEio company ID to be used.
 * **WebhookSecretKey**: secret key used when creating Webhooks on NFEio.
 
+###  *Zoom* Settings (v1.29.0)
+
+Under section **Zoom**:
+
+* **Enabled**: if `true`, enables the Zoom video conferences integration.
+* **JwtToken**: the Zoom's JWT authentication token.
+
 ###  *SigningTags* Settings
 
 Under section **SigningTags**:

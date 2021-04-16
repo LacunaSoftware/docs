@@ -213,6 +213,7 @@
 ### [Controle de acesso](signer/on-premises/access-control.md)
 ### [Personalização](signer/on-premises/customization.md)
 ### [Pagamentos](signer/on-premises/payments.md)
+### [Zoom](signer/on-premises/zoom.md)
 ## [Guia do usuário](signer/user-guide/index.md)
 ### [Geração de documentos](signer/user-guide/gen-docs.md)
 ### [Administração de sistema](signer/user-guide/sys-admin/index.md)
