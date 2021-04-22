@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-5" />
+### 2.8.5 (2021-04-22)
+
+- Fix PAdES visual representation auto positioning behavior when applied on multiple pages
+
+
 <a name="v2-8-4" />
 ### 2.8.4 (2021-03-26)
 
