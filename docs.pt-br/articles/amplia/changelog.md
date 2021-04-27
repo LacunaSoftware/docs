@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-12-0" />
+### 3.12.0 (2021-04-27)
+
+Novas funcionalidades:
+
+* [AMP-206] - Adicionado suporte a AWS S3 para armazenamento de arquivos
+
+Atualiza modelo do banco de dados: **sim**
+
+
 <a name="v3-11-0" />
 ### 3.11.0 (2021-03-25)
 

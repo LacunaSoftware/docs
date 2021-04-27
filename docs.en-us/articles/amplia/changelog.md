@@ -1,5 +1,15 @@
 ﻿# Amplia changelog
 
+<a name="v3-12-0" />
+### 3.12.0 (2021-04-27)
+
+New Features
+
+* [AMP-206] - Add support for AWS S3 blob storage
+
+Updates database model: **yes**
+
+
 <a name="v3-11-0" />
 ### 3.11.0 (2021-03-25)
 
