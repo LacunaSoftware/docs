@@ -1,6 +1,6 @@
 ﻿# Blob Storage Configuration
 
-The Blob Storage configuration defines how an application stores and retrieves files.
+The **BlobStorage** configuration section defines how an application stores and retrieves files.
 
 ## File System
 
@@ -8,11 +8,24 @@ Stores files in the file system. Available settings:
 
 * **Path**: the path to where the files will be stored.
 
-Example:
+Example (environment variables):
 
-```sh
+```bash
 BlobStorage__Type=FileSystem
 BlobStorage__Path=/var/files/myapp
+```
+
+Example (JSON configuration):
+
+```json
+{
+	...,
+	"BlobStorage": {
+		"Type": "FileSystem"
+		"Path": "/var/files/myapp"
+	},
+	...
+}
 ```
 
 ## Azure Storage Account
@@ -22,12 +35,26 @@ Stores files in an Azure Storage Account Container. Available settings:
 * **ConnectionString**: the connection string for the Storage account.
 * **ContainerName**: the name of the container where the files will be stored.
 
-Example:
+Example (environment variables):
 
-```sh
-BlobStorage__Type=Azure
-BlobStorage__ConnectionString=DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net
-BlobStorage__ContainerName=myapp-container
+```ini
+BlobStorage__Type = Azure
+BlobStorage__ConnectionString = DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net
+BlobStorage__ContainerName = myapp-container
+```
+
+Example (JSON configuration):
+
+```json
+{
+	...
+	"BlobStorage": {
+		"Type": "Azure",
+		"ConnectionString": "DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net",
+		"ContainerName": "myapp-container"
+	},
+	...
+}
 ```
 
 ## AWS S3 (Simple Storage Service)
@@ -39,7 +66,7 @@ Stores files in an S3 Bucket. Available settings:
 * **AccessKey**: the access key ID of an IAM user that has access to the bucket. 
 * **SecretKey**: the secret access key of an IAM user that has access to the bucket. 
 
-Example:
+Example (environment variables):
 
 ```sh
 BlobStorage__Type=AwsS3
@@ -47,4 +74,20 @@ BlobStorage__BucketName=myappbucket
 BlobStorage__Region=us-east-1
 BlobStorage__AccessKey=MYACCESSKEYID
 BlobStorage__SecretKey=MYSECRETACCESSKEY
+```
+
+Example (JSON configuration):
+
+```json
+{
+	...
+	"BlobStorage": {
+		"Type": "AwsS3",
+		"BucketName": "myappbucket",
+		"Region": "us-east-1",
+		"AccessKey": "MYACCESSKEYID",
+		"SecretKey": "MYSECRETACCESSKEY"
+	},
+	...
+}
 ```
