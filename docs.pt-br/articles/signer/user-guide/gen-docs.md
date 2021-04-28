@@ -60,16 +60,16 @@ Após as assinaturas, os documentos gerados e assinados estarão disponíveis pa
 
 ![Generation-7](../images/document-generation-7.png)
 
-## Gerando documentos com fluxos por documento (v1.29.0)
+## Gerando documentos com fluxos por documento
 
 À partir da versão 1.29.0, é possível gerar documentos definindo um fluxo específico para cada documento a ser gerado. Para isso, devem ser adicionadas novas colunas no arquivo
 CSV enviado ao Signer. 
 
-As seções abaixo descrevem os principais tipos de informações do fluxo que podem ser adicionadas.
+As seções abaixo descrevem os tipos de informações do fluxo que podem ser adicionadas.
 
 ### Signatários
 
-Para definir um ou mais signatários, utilize as colunas abaixo adicionando o prefixo `Signer_x.`, onde `x` é o número do signatário:
+Para definir um ou mais signatários, utilize as colunas abaixo adicionando-as ao prefixo `Signer_x.`, onde `x` é o número do signatário:
 
 * Name: o nome do signatário.
 * Identifier: o CPF do signatário.
@@ -155,7 +155,7 @@ de geração:
 ![Shared-participants](../images/shared-participants.png)
 
 Esses participantes serão combinados com os participantes específicos de cada documento. No entanto, não é possível definir que as ações dos participantes
-compartilhados ocorram após as ações dos participantes específicos do documento.
+compartilhados ocorram após as ações dos participantes específicos de cada documento.
 
 ## Veja também
 
