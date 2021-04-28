@@ -2,14 +2,14 @@
 
 In order to install a [on-premises installation](index.md) of [Amplia](../index.md), you will need a connection string for a **SQL Server database** having:
 
-* Collation: `Latin1_General_100_CI_AI`
+* Collation: `Latin1_General_100_CI_AI` or `Latin1_General_CI_AI`
 * Credentials corresponding to a user with `db_owner` role
 
 > [!NOTE]
 > If you prefer to run Amplia without granting `db_owner` to the application user, see [this article](unprivileged-db-user.md)
 
 > [!WARNING]
-> The collation of the database **MUST BE** `Latin1_General_100_CI_AI`. Creating the database with a different collation will likely cause the installation to fail!
+> The collation of the database **must** be one of the collations specified above. Creating the database with a different collation will likely cause the installation to fail!
 
 If you need help preparing the database, follow the steps in this article.
 
