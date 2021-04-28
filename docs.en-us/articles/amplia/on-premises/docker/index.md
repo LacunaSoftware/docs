@@ -13,6 +13,14 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
+Featured image tags:
+
+* Tag `stable` points to the latest stable image
+* Tag `3` points to the lastest 3.x image
+* Tag `3.12` points to the latest 3.12.x image **(recommended)**
+
+Thus, the current recommended image is `lacunasoftware/amplia:3.12`
+
 This image requires: 
 
 * **Blob storage** shared between all containers running the image -- see [Blob Storage configuration](../configure-blob-storage.md)
@@ -21,13 +29,13 @@ This image requires:
 
 ## Configuration
 
-The container for this image is configured using environment variables. Get the [sample environment file](https://cdn.lacunasoftware.com/amplia/docker/amplia.env) for a
+The container for this image is configured using environment variables. Get the [**sample environment file**](https://cdn.lacunasoftware.com/amplia/docker/amplia.env) for a
 template to fill in the image's settings.
 
 To fill the `General__EncryptionKey` setting, generate a 256-bit key to encrypt sentitive data stored on the database:
 
 [!include[Generate key](../../../../../includes/amplia/docker/gen-encryption-key-stdout.md)]
 
-To fill the `General__RootPasswordHash`, choose a strong password for root access to the dashboard and hash it with the [command-line tool](../tool/index.md):
+To fill the `General__RootPasswordHash` setting, choose a strong password for root access to the dashboard and hash it with the [command-line tool](../tool/index.md):
 
 [!include[Generate key](../../../../../includes/amplia/docker/hash-root-pass-stdout.md)]
