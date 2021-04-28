@@ -10,7 +10,7 @@ Stores files in the file system. Available settings:
 
 Example (environment variables):
 
-```
+```bash
 BlobStorage__Type=FileSystem
 BlobStorage__Path=/var/files/myapp
 ```
@@ -37,7 +37,7 @@ Stores files in an Azure Storage Account Container. Available settings:
 
 Example (environment variables):
 
-```
+```bash
 BlobStorage__Type=Azure
 BlobStorage__ConnectionString=DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net
 BlobStorage__ContainerName=myapp-container
@@ -68,7 +68,7 @@ Stores files in an S3 Bucket. Available settings:
 
 Example (environment variables):
 
-```
+```bash
 BlobStorage__Type=AwsS3
 BlobStorage__BucketName=myappbucket
 BlobStorage__Region=us-east-1
