@@ -1,8 +1,33 @@
 ﻿# Amplia - Setup on Docker
 
-To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on Docker, follow the steps below. If you prefer, see the
-[Docker Swarm-specific instructions](swarm/index.md). For other platforms, [click here](../index.md).
+To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on Docker, follow the steps below. If you prefer, see specific
+instructions for [Docker Swarm](swarm/index.md). For other platforms, [click here](../index.md).
 
 [!include[See planning](../includes/see-planning.md)]
 
-WORK IN PROGRESS ...
+For Docker-based setup the following image is provided on Docker Hub:
+
+<br />
+<center>
+**[Amplia Docker image](https://hub.docker.com/repository/docker/lacunasoftware/amplia)**
+</center>
+<br />
+
+This image requires: 
+
+* **Blob storage** shared between all containers running the image -- see [Blob Storage configuration](../configure-blob-storage.md)
+
+[!include[Common prerequisites](../includes/common-requisites.md)]
+
+## Configuration
+
+The container for this image is configured using environment variables. Get the [sample environment file](https://cdn.lacunasoftware.com/amplia/docker/amplia.env) for a
+template to fill in the image's settings.
+
+To fill the `General__EncryptionKey` setting, generate a 256-bit key to encrypt sentitive data stored on the database:
+
+[!include[Generate key](../../../../../includes/amplia/docker/gen-encryption-key-stdout.md)]
+
+To fill the `General__RootPasswordHash`, choose a strong password for root access to the dashboard and hash it with the [command-line tool](../tool/index.md):
+
+[!include[Generate key](../../../../../includes/amplia/docker/hash-root-pass-stdout.md)]

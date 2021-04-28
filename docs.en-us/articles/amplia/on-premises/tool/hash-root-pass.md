@@ -12,14 +12,12 @@ dotnet Lacuna.Amplia.Site.dll -- hash-root-pass
 
 Or, on Docker:
 
-```sh
-docker run -i lacunasoftware/amplia:3.12 -- hash-root-pass
-```
+[!include[Hash root password with Docker](../../../../../includes/amplia/docker/hash-root-pass-stdout.md)]
 
 ## Description
 
 The `hash-root-pass` command is meant to be used with *root authentication mode*. Use it to compute a salted hash of the desired
-root password, and then *set the hash on the configuration file*.
+root password, and then set the hash on the `General__RootPasswordHash` setting.
 
 The password is read from the `stdin`.
 

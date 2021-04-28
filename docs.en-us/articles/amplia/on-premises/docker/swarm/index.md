@@ -98,7 +98,7 @@ The expected output is similar to:
 
 [!include[Test dashboard](../../../../../../includes/amplia/linux/test-service-output.md)]
 
-If you have a valid SSL certificate for your [dashboard domain](../../index.md#dashboard-domain), follow the steps on [Enabling SSL on Docker](enable-ssl.md).
+If you have a valid SSL certificate for your [dashboard domain](../../index.md#dashboard-domain), follow the steps on [Enabling SSL](enable-ssl.md).
 
 ## See also
 

@@ -272,6 +272,7 @@
 #### [Azure Key Vault](amplia/on-premises/key-stores/azure.md)
 ### [Preparando o banco de dados](amplia/on-premises/prepare-database.md)
 ### [Operando sem db_owner](amplia/on-premises/unprivileged-db-user.md)
+### [Configuração de storage](amplia/on-premises/configure-blob-storage.md)
 ### [Configuração de OIDC](amplia/on-premises/configure-oidc.md)
 ### [Configuração de envio de email](amplia/on-premises/configure-email.md)
 ### [Configuração de envio de SMS](amplia/on-premises/configure-sms.md)

@@ -272,6 +272,7 @@
 #### [CNG](amplia/on-premises/key-stores/cng.md)
 #### [Azure Key Vault](amplia/on-premises/key-stores/azure.md)
 ### [Preparing the database](amplia/on-premises/prepare-database.md)
+### [Configure Blob Storage](amplia/on-premises/configure-blob-storage.md)
 ### [Configure OIDC](amplia/on-premises/configure-oidc.md)
 ### [Configure email sending](amplia/on-premises/configure-email.md)
 ### [Configure SMS sending](amplia/on-premises/configure-sms.md)
