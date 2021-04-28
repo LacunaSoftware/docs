@@ -1,4 +1,4 @@
-﻿# Amplia on Docker - Persistent data (backup considerations)
+﻿# Amplia on Docker Swarm - Persistent data (backup considerations)
 
 The [standard Docker compose file for Amplia](https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml) uses two volumes:
 
@@ -24,8 +24,8 @@ containers, and the stack may be recreated freely at any time.
 
 ## See also
 
-* [Installing Amplia on Docker](index.md)
-* [Using an external database on Docker](external-db.md)
-* [Enabling SSL on Docker](enable-ssl.md)
-* [Checking the system logs on Docker](check-logs.md)
+* [Installing Amplia on Docker Swarm](index.md)
+* [Using an external database](external-db.md)
+* [Enabling SSL](enable-ssl.md)
+* [Checking the system logs](check-logs.md)
 * [Using a stack with GrantID](internal-grantid.md)

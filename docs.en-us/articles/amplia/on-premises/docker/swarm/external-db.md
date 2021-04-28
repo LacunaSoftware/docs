@@ -1,6 +1,6 @@
-﻿# Using an external database on Docker - Amplia
+﻿# Using an external database on Docker Swarm - Amplia
 
-The [standard Docker compose file for Amplia](https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml) includes an internal service for the database
+The [standard Docker Swarm compose file for Amplia](https://cdn.lacunasoftware.com/amplia/docker/amplia-stack.yml) includes an internal service for the database
 (Microsoft SQL Server).
 
 For production environments, there may be [concerns about running the database on Docker](https://vsupalov.com/database-in-docker/). If you prefer,
@@ -8,11 +8,11 @@ follow the steps on this article to use an external database.
 
 Stop the stack:
 
-[!include[Remove stack](../../../../../includes/amplia/docker/remove-stack.md)]
+[!include[Remove stack](../../../../../../includes/amplia/docker/remove-stack.md)]
 
 Edit the Docker compose file:
 
-[!include[Edit docker compose file](../../../../../includes/amplia/docker/edit-compose.md)]
+[!include[Edit docker compose file](../../../../../../includes/amplia/docker/edit-compose.md)]
 
 Make the following changes:
 
@@ -29,11 +29,11 @@ Make the following changes:
 
 The password should be added as the secret *amplia_sql_password*:
 
-[!include[Create SQL password secret](../../../../../includes/amplia/docker/create-sql-password-secret.md)]
+[!include[Create SQL password secret](../../../../../../includes/amplia/docker/create-sql-password-secret.md)]
 
 Deploy the stack with the new configurations:
 
-[!include[Deploy stack](../../../../../includes/amplia/docker/deploy.md)]
+[!include[Deploy stack](../../../../../../includes/amplia/docker/deploy.md)]
 
 ## Custom connection string
 
@@ -48,7 +48,7 @@ the steps below to use a custom connection string.
 
 Edit the Docker compose file:
 
-[!include[Edit docker compose file](../../../../../includes/amplia/docker/edit-compose.md)]
+[!include[Edit docker compose file](../../../../../../includes/amplia/docker/edit-compose.md)]
 
 Make the following changes:
 
@@ -63,16 +63,16 @@ Make the following changes:
 
 Edit the Amplia configuration file:
 
-[!include[Edit docker compose file](../../../../../includes/amplia/docker/edit-amplia-config.md)]
+[!include[Edit docker compose file](../../../../../../includes/amplia/docker/edit-amplia-config.md)]
 
 Add the **ConnectionStrings** section to the file, with a single item named `DefaultConnection`:
 
-[!include[Edit docker compose file](../../../../../includes/amplia/docker/connection-string.md)]
+[!include[Edit docker compose file](../../../../../../includes/amplia/docker/connection-string.md)]
 
 ## See also
 
-* [Installing Amplia on Docker](index.md)
-* [Enabling SSL on Docker](enable-ssl.md)
-* [Checking the system logs on Docker](check-logs.md)
+* [Installing Amplia on Docker Swarm](index.md)
+* [Enabling SSL](enable-ssl.md)
+* [Checking the system logs](check-logs.md)
 * [Persistent data (backup considerations)](persistent-data.md)
 * [Using a stack with GrantID](internal-grantid.md)

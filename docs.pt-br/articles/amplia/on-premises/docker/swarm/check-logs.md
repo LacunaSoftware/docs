@@ -1,4 +1,4 @@
-﻿# Amplia em Docker - Usando com GrantID integrado
+﻿# Amplia em Docker Swarm - Verificando os logs
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>
