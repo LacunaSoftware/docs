@@ -60,6 +60,103 @@ Após as assinaturas, os documentos gerados e assinados estarão disponíveis pa
 
 ![Generation-7](../images/document-generation-7.png)
 
+## Gerando documentos com fluxos por documento (v1.29.0)
+
+À partir da versão 1.29.0, é possível gerar documentos definindo um fluxo específico para cada documento a ser gerado. Para isso, devem ser adicionadas novas colunas no arquivo
+CSV enviado ao Signer. 
+
+As seções abaixo descrevem os principais tipos de informações do fluxo que podem ser adicionadas.
+
+### Signatários
+
+Para definir um ou mais signatários, utilize as colunas abaixo adicionando o prefixo `Signer_x.`, onde `x` é o número do signatário:
+
+* Name: o nome do signatário.
+* Identifier: o CPF do signatário.
+* Email: o email do signatário.
+* Phone (opcional): o telefone celular do signatário.
+* Step (opcional): ordem do fluxo na qual deve ocorrer esta ação. 
+* Title (opcional): título do signatário.
+* AllowElectronicSignature (opcional): preencha com `true` para permitir que o signatário assine eletronicamente. Caso contrário, preencha com `false` ou deixe em branco.
+* ElectronicType (opcional): tipo de autenticação da assinatura eletrônica. Deve ser usada em conjunto com a opção `AllowElectronicSignature`. Os possíveis valores são:
+`SMS`, `AuthenticatorApp` e `Selfie`.
+* Signature (opcional): define a posição da imagem de assinatura, no formato `TOP_LEFT_X|TOP_LEFT_Y` ou `TOP_LEFT_X|TOP_LEFT_Y|PAGE_NUMBER`. Exemplo: `100.5|85|2`.
+
+Exemplo de assinatura digital:
+
+```
+Info1,Info2,Signer_1.Name,Signer_1.Identifier,Signer_1.Email
+Value1,Value2,Alice Venture,111.111.111-11,alice@email.com
+Value3,Value4,Bob Venture,222.222.222-22,bob@email.com
+```
+
+Exemplo de assinatura eletrônica:
+
+```
+Info1,Info2,Signer_1.Name,Signer_1.Identifier,Signer_1.Email,Signer_1.AllowElectronicSignature
+Value1,Value2,Alice Venture,111.111.111-11,alice@email.com,true
+Value3,Value4,Bob Venture,222.222.222-22,bob@email.com,true
+```
+
+### Aprovadores
+
+Para definir um ou mais aprovadores, utilize as colunas abaixo adicionando-as ao prefixo `Approver_x.`, onde `x` é o número do aprovador:
+
+* Name: o nome do aprovador.
+* Identifier: o CPF do aprovador.
+* Email: o email do aprovador.
+* Step (opcional): ordem do fluxo na qual deve ocorrer esta ação.
+
+Exemplo:
+
+```
+Info1,Info2,Approver_1.Name,Approver_1.Identifier,Approver_1.Email
+Value1,Value2,Alice Venture,111.111.111-11,alice@email.com
+Value3,Value4,Bob Venture,222.222.222-22,bob@email.com
+```
+
+### Observadores
+
+Para definir um ou mais observadores, utilize as colunas abaixo adicionando-as ao prefixo `Observer_x.`, onde `x` é o número do observador:
+
+* Name: o nome do observador.
+* Identifier: o CPF do observador.
+* Email: o email do observador.
+
+Exemplo:
+
+```
+Info1,Info2,Observer_1.Name,Observer_1.Identifier,Observer_1.Email
+Value1,Value2,Alice Venture,111.111.111-11,alice@email.com
+Value3,Value4,Bob Venture,222.222.222-22,bob@email.com
+```
+
+### Emails notificados
+
+Para enviar o documento para uma lista de emails após a conclusão do fluxo, adicione a coluna `NotifiedEmails` separando os emails pelo caractere `|`. 
+
+Exemplo:
+
+```
+Info1,Info2,NotifiedEmails
+Value1,Value2,alice@email.com
+Value3,Value4,alice@email.com|bob@email.com
+```
+
+> [!WARNING]
+> Ao contrário das outras opções, essa coluna só pode ser adicionada uma vez.
+
+
+### Fluxos combinados
+
+Ainda é possível definir participantes do fluxo que serão compartilhados para todos os documentos, bastando informá-los no campo de participantes da tela
+de geração:
+
+![Shared-participants](../images/shared-participants.png)
+
+Esses participantes serão combinados com os participantes específicos de cada documento. No entanto, não é possível definir que as ações dos participantes
+compartilhados ocorram após as ações dos participantes específicos do documento.
+
 ## Veja também
 
 * [Guia do usuário](index.md)
