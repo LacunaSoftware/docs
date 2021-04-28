@@ -32,10 +32,16 @@ This image requires:
 The container for this image is configured using environment variables. Get the [**sample environment file**](https://cdn.lacunasoftware.com/amplia/docker/amplia.env) for a
 template to fill in the image's settings.
 
-To fill the `General__EncryptionKey` setting, generate a 256-bit key to encrypt sentitive data stored on the database:
+To fill the `General__EncryptionKey` setting, generate a 256-bit key to encrypt sensitive data stored on the database:
 
 [!include[Generate key](../../../../../includes/amplia/docker/gen-encryption-key-stdout.md)]
 
-To fill the `General__RootPasswordHash` setting, choose a strong password for root access to the dashboard and hash it with the [command-line tool](../tool/index.md):
+To fill the `General__RootPasswordHash` setting, choose a strong password for root access to the dashboard and hash it:
 
-[!include[Generate key](../../../../../includes/amplia/docker/hash-root-pass-stdout.md)]
+[!include[Hash root password](../../../../../includes/amplia/docker/hash-root-pass-stdout.md)]
+
+## See also
+
+* [SMS configuration](../configure-sms.md)
+* [Key store configuration](../key-stores/index.md)
+* [User management configuration](../configure-oidc.md)
