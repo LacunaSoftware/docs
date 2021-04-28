@@ -5,7 +5,7 @@ To perform user management, Amplia requires an Open ID Connect (OIDC) server, mo
 You can either use a SaaS subscription on [grantid.com](https://grantid.com/) or [run your own instance of GrantID](../../grant-id/on-premises/index.md).
 
 > [!TIP]
-> On Docker, see [Using a stack with GrantID](docker/internal-grantid.md) to install both Amplia and GrantID on the same stack
+> On Docker Swarm, see [Using a stack with GrantID](docker/swarm/internal-grantid.md) to install both Amplia and GrantID on the same stack
 
 Once you have a GrantID subscription, fill the section **Oidc** of the JSON configuration file:
 
@@ -20,4 +20,4 @@ Once you have a GrantID subscription, fill the section **Oidc** of the JSON conf
 ## See also
 
 * [GrantID](../../grant-id/index.md)
-* [Amplia on Docker - Using a stack with GrantID](docker/internal-grantid.md)
+* [Amplia on Docker Swarm - Using a stack with GrantID](docker/swarm/internal-grantid.md)
