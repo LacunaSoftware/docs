@@ -1,4 +1,8 @@
-﻿Create a local user to run the Amplia server:
+﻿Install additional dependencies:
+
+[!include[Install dependencies](../../../../../../includes/amplia/linux/install-dependencies.md)]
+
+Create a local user to run the Amplia server:
 
 [!include[Create user](../../../../../../includes/amplia/linux/create-user.md)]
 

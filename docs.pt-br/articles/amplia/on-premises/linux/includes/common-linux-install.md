@@ -1,4 +1,8 @@
-﻿Crie um usuário local para executar o servidor de aplicação do Amplia:
+﻿Instale dependências adicionais:
+
+[!include[Install dependencies](../../../../../../includes/amplia/linux/install-dependencies.md)]
+
+Crie um usuário local para executar o servidor de aplicação do Amplia:
 
 [!include[Create user](../../../../../../includes/amplia/linux/create-user.md)]
 
