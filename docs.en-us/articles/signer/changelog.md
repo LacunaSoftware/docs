@@ -4,6 +4,23 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-29-0" />
+### 1.29.0 (2021-04-27)
+
+* New Features
+  * [SIG-638] Zoom meetings integration
+  * [SIG-624] Set notified emails to send documents as attachment after the flow is concluded
+  * [SIG-543] CSV with flow information to generate multiple documents with document specific flows
+
+* Improvements
+  * [SIG-460] Display pending signatures in the signature manifest
+
+* Bug fixes
+  * [SIG-643] Signature intials options is not displayed if document authentication option is not visible 
+  * [SIG-642] Wrong extensions added when downloading multiple documents at once
+
+Updates database model: yes
+
 <a name="v1-28-0" />
 ### 1.28.0 (2021-04-06)
 

@@ -4,6 +4,23 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-29-0" />
+### 1.29.0 (2021-04-27)
+
+* Novas funcionalidades
+  * [SIG-638] Integração para realização de videoconferências com Zoom
+  * [SIG-624] Envio de documentos ao final do fluxo
+  * [SIG-543] CSV com um fluxo para geração de documentos em lote
+
+* Melhorias
+  * [SIG-460] Exibir assinaturas pendentes no manifesto de assinaturas
+
+* Correções de bugs
+  * [SIG-643] Opção de configuração de Rubrica não é exibida se autenticação não estiver visível
+  * [SIG-642] Extensões equivocadas adicionadas no download em lote de documentos
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-28-0" />
 ### 1.28.0 (2021-04-06)
 
