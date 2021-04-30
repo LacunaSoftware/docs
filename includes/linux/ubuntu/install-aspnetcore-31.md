@@ -54,3 +54,17 @@ apt-get install apt-transport-https
 apt-get update
 apt-get install aspnetcore-runtime-3.1
 ```
+
+### Ubuntu 20.04
+
+```bash
+curl -O https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+dpkg -i packages-microsoft-prod.deb
+```
+
+```bash
+apt-get update
+apt-get install apt-transport-https
+apt-get update
+apt-get install aspnetcore-runtime-3.1
+```

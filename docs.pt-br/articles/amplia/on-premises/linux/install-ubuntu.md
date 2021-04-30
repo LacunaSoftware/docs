@@ -6,7 +6,7 @@ Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../inde
 
 ## Pré-requisitos
 
-* Ubuntu x64 versão 16.04, 18.04 ou 19.04
+* Ubuntu x64 versão 16.04, 18.04, 19.04 ou 20.04
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 

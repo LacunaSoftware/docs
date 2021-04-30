@@ -17,9 +17,9 @@ The current recommended image is `lacunasoftware/amplia:3.12`
 
 Featured image tags:
 
-* Tag `stable` points to the latest stable image
-* Tag `3` points to the lastest 3.x image
 * Tag `3.12` points to the latest 3.12.x image **(recommended)**
+* Tag `3` points to the lastest 3.x image
+* Tag `stable` points to the latest stable image
 
 This image requires: 
 

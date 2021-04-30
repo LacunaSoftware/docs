@@ -6,7 +6,7 @@ To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on
 
 ## Prerequisites
 
-* Ubuntu x64 version 16.04, 18.04 or 19.04
+* Ubuntu x64 version 16.04, 18.04, 19.04 or 20.04
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
