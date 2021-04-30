@@ -12,6 +12,8 @@ To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on
 
 [!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-31.md)]
 
+[!include[Install dependencies](../../../includes/linux/ubuntu/install-dependencies.md)]
+
 ## Install Amplia
 
 [!include[Common Linux installation](includes/common-linux-install.md)]

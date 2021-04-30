@@ -12,6 +12,8 @@ Para instalar uma instância [*on premises*](../index.md) do [Amplia](../../inde
 
 [!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-31.md)]
 
+[!include[Install dependencies](../../../includes/linux/ubuntu/install-dependencies.md)]
+
 ## Instalar o Amplia
 
 [!include[Common Linux installation](includes/common-linux-install.md)]
