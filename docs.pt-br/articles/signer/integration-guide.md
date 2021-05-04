@@ -128,7 +128,13 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.java)
 	* [Documento com anexo](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithAttachmentScenario.java)
 	* [Documento com descrição](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithDescriptionScenario.java)
-
+	
+	
+* PHP: 
+	* [Documento com um assinante](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithOneSignerScenario.php)
+	* [Documento com dois ou mais assinantes com ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithTwoOrMoreSignersWithOrderScenario.php)
+	* [Documento com dois ou mais assinantes sem ordenação](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithTwoOrMoreSignersWithoutOrderScenario.php)
+	
 #### Assinatura em sua própria aplicação
 
 Caso você queira realizar a assinatura do documento em sua própria aplicação, você pode usar a opção de **Assinatura Embutida**.
@@ -300,7 +306,8 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-504/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
 	
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/ListDocumentsScenario.java)
-	
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/ListDocumentsScenario.php)
 
 ### Validar assinaturas de um documento
 
@@ -396,6 +403,8 @@ Para deletar um documento você precisa ter acesso ao ID deste mesmo decumento e
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-611/dotnet/console/Console/Scenarios/DeleteDocumentScenario.cs)
 	
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-611/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DeleteDocumentScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DeleteDocumentScenario.php)
 
 ## Links Úteis
 
