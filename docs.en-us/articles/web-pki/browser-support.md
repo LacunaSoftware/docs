@@ -10,7 +10,9 @@ Currently, the following browsers are supported:
 
 Supported system versions:
 
-* Windows 7+
-	* There are no technology obstructions for also running on Windows Vista and XP, however, the Web PKI **official** support follows Microsoft's current systems support.
+* Windows 7 SP2 or superior\*
 * Linux (Debian, RedHat and Slackware based distributions)
 * Mac OS X 10.12+
+
+> [!NOTE]
+> \*Windows XP e Vista: **no official support, USE AT YOUR OWN RISK**, since the systems were discontinued by Microsoft. In order to run, the system must be in the latest possible version.
