@@ -1,5 +1,16 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-7" />
+### 2.8.7 (2021-05-07)
+
+- Add PDF signature visual representation position recover from PAdES signer info
+- Add signature validation level for obsolete algorithms
+- Add PDfContext with basic PDF and signature info
+- Add password protected PDF exception
+- Set Lapp feature as failover
+- Improve PDF marker permissions checking
+
+
 <a name="v2-8-5" />
 ### 2.8.5 (2021-04-22)
 
