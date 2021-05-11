@@ -40,6 +40,15 @@ To fill the `General__RootPasswordHash` setting, choose a strong password for ro
 
 [!include[Hash root password](../../../../../includes/amplia/docker/hash-root-pass-stdout.md)]
 
+## Exposed ports
+
+The Amplia image listens on **port 80**.
+
+You should set up a reverse proxy or load balancer listening on both default ports for HTTP (80) and HTTPS (443), redirecting
+traffic on both ports to Amplia's port 80. Additionaly, your setup should fill the request headers `X-Forwarded-Proto`, `X-Forwarded-For`
+and `X-Forwarded-Port`. The configuration `Bindings__UseReverseProxy=True` tells Amplia that the information on these headers should be
+trusted.
+
 ## See also
 
 * [SMS configuration](../configure-sms.md)
