@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-23-1" />
+### 1.23.1 (2021-05-14)
+
+- Fixed bug on open PAdES when there is missing required information
+
 <a name="v1-23-0" />
 ### 1.23.0 (2021-02-22)
 
