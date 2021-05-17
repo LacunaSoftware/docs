@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-26-3" />
+### 1.26.3 (2021-05-17)
+
+Atualização do modelo do banco de dados: Não
+
+- Atualização PKI SDK para [2.8.7](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-8-7)
+- Melhora o tratamento de erros relacionados a PDFs protegidos por senha para retornar o código de status 422 em vez de 500
+
 <a name="v1-26-2" />
 ### 1.26.2 (2021-03-31)
 

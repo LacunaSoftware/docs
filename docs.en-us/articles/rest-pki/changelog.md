@@ -1,5 +1,13 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-26-3" />
+### 1.26.3 (2021-05-17)
+
+Database model update: No
+
+- Updated PKI SDK to [2.8.7](../pki-sdk/changelog.md#v2-8-7)
+- Improved password protected PDF error handler to return status code 422 instead of 500
+
 <a name="v1-26-2" />
 ### 1.26.2 (2021-03-31)
 
