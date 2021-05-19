@@ -132,3 +132,77 @@ O parâmetro `provisionalMetadata` na alocação de chaves serve para informar q
 a uma determinada chave, permitindo ao sistema exibir essa informação caso a chave seja usada na consulta de documentos:
 
 ![Document key input](../../../../../images/rest-pki/core/rib/pending-document-key.png)
+
+## Geração de chave de API para uso do utilitário
+
+Os registros de imóveis terão à sua disposição um [utilitário de linha de comando](tool/index.md) para assinar documentos a partir de suas aplicações
+*desktop*. O uso desse utilitário requer uma **chave de API**.
+
+Deve ser possível aos registros de imóveis, através das centrais de serviços, gerar chaves de API para uso do utilitário. Para isso, a sua central
+deve implementar uma lógica semelhante à seguinte:
+
+1.	Verifique no banco de dados se já foi criada uma *application* no Assinador Web para o cartório em questão
+   * Caso não tenha sido, crie uma *application* especificando:
+     1. *roles*: `Worker`
+     1. *defaultDocumentMetadata*: CNS e nome do cartório (conforme regras descritas acima)
+1.	Armazene o `applicationId` resultante no banco de dados associado ao cartório
+1.	Crie uma *application key* passando o `applicationId` do cartório e informe o resultado ao usuário
+
+Exemplo em .NET:
+
+```cs
+var cartorio = ... // entidade de cartório no sistema da central
+if (cartorio.AssinadorWebAppId == null) {
+   var metadata = new NameValueCollection {
+      ["cns"] = cartorio.Cns,
+      ["cartorio"] = cartorio.Nome,
+   };
+   var app = await restPkiService.CreateApplicationAsync($"CENTRAL-{cartorio.Cns}", new[] { Roles.Worker }, metadata);
+   cartorio.AssinadorWebAppId = app.Id;
+   Save();
+}
+var appKey = await restPkiService.CreateApplicationKeyAsync(cartorio.AssinadorWebAppId.Value, description: $"Gerada por {User.Name}");
+return appKey.Key;
+```
+
+Alguns pontos importantes:
+
+* O parâmetro $"CENTRAL-{cartorio.Cns}" é o nome da aplicação. Esses nomes precisam ser únicos no Assinador Web, independentemente da central. Por
+  isso a sugestão de usar o CNS prefixado com um identificador que remeta ao nome da central (por exemplo, `OE-` para o caso do Ofício Eletrônico)
+* Por motivo de segurança, o Assinador Web não armazena a chave de API gerada (apenas o hash dela). As centrais devem fazer o mesmo, ou seja, a cada
+  vez que um cartório pede uma chave de API gera-se uma nova chave (mas não uma nova aplicação)
+* O campo `description` na chamada ao `CreateApplicationKeyAsync` é opcional e pode ser usado para registrar o usuário que disparou a geração da
+  chave
+
+Caso esteja chamando a API diretamente, as chamadas são:
+
+```plaintext
+// Criar aplicação (uma vez por cartório)
+POST {endpoint}/api/applications
+{
+	"name": "CENTRAL-123456",
+	"authorizationData": {
+		"roles": ["Worker"]
+	},
+	"rootAuthorizationData": {
+		"roles": []
+	}
+}
+
+// Envio dos metadados associados à aplicação do cartório
+POST {endpoint}/api/applications/default-document-metadata
+{
+	"cartorio": ["XXº Oficial de Registro de Imóveis do Município - UF"],
+	"cns": ["123456"]
+}
+```
+
+// Criação da chave de API
+POST {endpoint}/api/applications/{id}/api-keys
+{
+	"description": "Gerada por FULANO DE TAL"
+}
+```
+
+> [!NOTE]
+> Instruções para Java e PHP serão documentadas em breve
