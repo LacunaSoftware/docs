@@ -12,9 +12,9 @@ rpkitool sign <file> [--output-file <output file>|--overwrite] [--cert-cpf <cpf>
 
 The command takes a single argument, the path of the file to be signed.
 
-The signed file can be either written to a different path, specified with the `--outout-file` argument, or the file being signed can be overwritten
-by passing the `--overwrite` argument.
+The signed file can be either written to a different path, specified with the `--output-file` parameter, or the file being signed can be overwritten
+by passing the `--overwrite` parameter.
 
-The certificate to be used can either be specified by the user's CPF with the `--cert-cpf` argument or by the certificate's thumbprint. It the latter case,
+The certificate to be used can either be specified by the user's CPF with the `--cert-cpf` parameter or by the certificate's thumbprint. It the latter case,
 the application would first call the [list-certs](list-certs.md) command to get a list of the available certificates, show this list to the user and pass the
-thumbprint of the chosen certificate on the `--cert-thumb` argument.
+thumbprint of the chosen certificate on the `--cert-thumb` parameter.

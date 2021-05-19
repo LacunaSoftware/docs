@@ -7,24 +7,22 @@ The **Rest PKI client tool** is a command line application to perform signatures
 
 The client tool is a single executable file that can be downloaded below:
 
-<br />
-<center>
-**[Rest PKI Client Tool for Windows](https://cdn.lacunasoftware.com/restpkicore/client-tool/win-x86/rpkitool.exe)**
-</center>
-<br />
+[!include[Client tool download](../../../../../../includes/rest-pki/core/client-tool/download.md)]
 
 For other platforms, [click here](https://cdn.lacunasoftware.com/restpkicore/client-tool/).
 
+## API configuration
+
 To use the client tool, you must configure the **endpoint** of the Rest PKI Core instance and also the **API Key**. This can either be done with environment
-variables or with command arguments.
+variables or with command parameters.
 
 With the environment variables `RestPki__Endpoint` and `RestPki__ApiKey`:
 
 [!include[API configuration by environment variables](../../../../../../includes/rest-pki/core/client-tool/api-config-env.md)]
 
-With the command arguments `--endpoint` and `--api-key`:
+With the command parameters `--endpoint` and `--api-key`:
 
-[!include[API configuration by arguments](../../../../../../includes/rest-pki/core/client-tool/api-config-args.md)]
+[!include[API configuration by parameters](../../../../../../includes/rest-pki/core/client-tool/api-config-params.md)]
 
 > [!NOTE]
 > API keys for Rest PKI Core usually have a pipe character (`|`), for instance `yourapp|12345678` (but longer). If this creates problems
@@ -40,9 +38,9 @@ Each operation that can be performed with the client tool is a **command**. The 
 
 ## Output / exit codes
 
-If the command is executed successfully, the exit code will be `0` and any eventual output will be written to stdout.
+If the command is executed successfully, the exit code will be `0` and any eventual output will be written to `stdout`.
 
-If an error occurs, the exit code will be `>= 1` and information about the error will be written to stderr. See below the list of exit codes.
+If an error occurs, the exit code will be `>= 1` and information about the error will be written to `stderr`. See below the list of exit codes.
 
 [!include[Exit codes](../../../../../../includes/rest-pki/core/client-tool/exit-codes.md)]
 
@@ -54,3 +52,8 @@ By default, log files are written to:
 * On Linux: `~/.local/share/rpkitool/logs` (e.g. */home/USERNAME/.local/share/rpkitool/logs*)
 
 You can override this behavior by setting the log directory on the environment variable `Serilog__WriteToPath`.
+
+By default, only logs with severity `Warning` or higher are written. You can override this behavior by setting the environment variable
+`Serilog__MinimumLevel__Default`. The log levels, from least to most severe, are:
+
+[!include[Log levels](../../../../../../includes/rest-pki/core/client-tool/log-levels.md)]

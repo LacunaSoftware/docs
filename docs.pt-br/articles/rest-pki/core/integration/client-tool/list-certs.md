@@ -1,4 +1,11 @@
 ﻿# Comando do utilitário cliente: **list-certs**
 
-<!-- link to version in English -->
-<div data-alt-locales="en-us"></div>
+## Nome
+
+`list-certs` - Lista os certificados presentes no repositório de certificados do usuário
+
+## Sintaxe
+
+```sh
+rpkitool list-certs
+```
