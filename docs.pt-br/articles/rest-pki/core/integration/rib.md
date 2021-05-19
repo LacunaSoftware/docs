@@ -195,7 +195,6 @@ POST {endpoint}/api/applications/default-document-metadata
 	"cartorio": ["XXº Oficial de Registro de Imóveis do Município - UF"],
 	"cns": ["123456"]
 }
-```
 
 // Criação da chave de API
 POST {endpoint}/api/applications/{id}/api-keys
