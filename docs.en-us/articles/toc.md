@@ -103,6 +103,10 @@
 ##### [Document metadata](rest-pki/core/integration/signature-sessions/document-metadata.md)
 #### [Webhooks](rest-pki/core/integration/webhooks.md)
 #### [Error codes](rest-pki/core/integration/error-codes.md)
+#### [Client tool](rest-pki/core/integration/client-tool/index.md)
+##### [sign](rest-pki/core/integration/client-tool/sign.md)
+##### [list-certs](rest-pki/core/integration/client-tool/list-certs.md)
+##### [allocate-keys](rest-pki/core/integration/client-tool/allocate-keys.md)
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->

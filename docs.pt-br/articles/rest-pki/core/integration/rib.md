@@ -135,7 +135,7 @@ a uma determinada chave, permitindo ao sistema exibir essa informação caso a c
 
 ## Geração de chave de API para uso do utilitário
 
-Os registros de imóveis terão à sua disposição um [utilitário de linha de comando](tool/index.md) para assinar documentos a partir de suas aplicações
+Os registros de imóveis terão à sua disposição um [utilitário de linha de comando](client-tool/index.md) para assinar documentos a partir de suas aplicações
 *desktop*. O uso desse utilitário requer uma **chave de API**.
 
 Deve ser possível aos registros de imóveis, através das centrais de serviços, gerar chaves de API para uso do utilitário. Para isso, a sua central
