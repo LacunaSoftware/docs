@@ -8,6 +8,8 @@
 
 [!include[Sign syntax](../../../../../../includes/rest-pki/core/client-tool/sign-syntax.md)]
 
+O comando recebe um único argumento, o caminho do arquivo a ser assinado.
+
 Opções:
 
 * `--cert-cpf <cert-cpf>`: CPF do certificado a ser utilizado
@@ -15,8 +17,6 @@ Opções:
 * `--output-file <output-file>`: Caminho do arquivo de saída
 * `--document-key <document-key>`: Chave de validação do documento
 * `--overwrite`: Sobrescreve arquivo de entrada
-
-O comando recebe um único argumento, o caminho do arquivo a ser assinado.
 
 O arquivo assinado pode ser escrito em um outro caminho, especificado com o parâmetro `--output-file`, ou pode ser escrito sobre o arquivo de entrada
 especificando o parâmetro `--overwrite`.
@@ -27,7 +27,7 @@ escolhido pelo usuário deve então ser especificado com o parâmetro `--cert-th
 
 ## Exemplos
 
-Para assinar um arquivo `document.pdf` com qualquer certificado de CPF `11111111111` que seja encontrado, sobrescrevendo o arquivo de entrada com o arquivo assinado:
+Para assinar o arquivo `document.pdf` com qualquer certificado de CPF `11111111111` que seja encontrado, sobrescrevendo o arquivo de entrada com o arquivo assinado:
 
 [!include[Sign sample 1](../../../../../../includes/rest-pki/core/client-tool/sign-sample-cpf-overwrite.md)]
 

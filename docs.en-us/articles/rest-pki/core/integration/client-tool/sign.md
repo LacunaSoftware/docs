@@ -8,6 +8,8 @@
 
 [!include[Sign syntax](../../../../../../includes/rest-pki/core/client-tool/sign-syntax.md)]
 
+The command takes a single argument, the path of the file to be signed.
+
 Options:
 
 * `--cert-cpf <cert-cpf>`: CPF of the certificate to be used to sign the document
@@ -15,8 +17,6 @@ Options:
 * `--output-file <output-file>`: Output file
 * `--document-key <document-key>`: Document key
 * `--overwrite`: Overwrite input file
-
-The command takes a single argument, the path of the file to be signed.
 
 The signed file can be either written to a different path, specified with the `--output-file` parameter, or the file being signed can be overwritten
 by passing the `--overwrite` parameter.
