@@ -38,4 +38,4 @@ To sign the same file but now with a specific certificate, determined by its thu
 
 ## Output
 
-None.
+The `documentId` is outputted to `stdout`, which can be used to reference this document later.

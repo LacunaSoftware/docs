@@ -38,4 +38,4 @@ Para assinar o mesmo arquivo porém com um certificado específico, determinado 
 
 ## Saída
 
-Nenhuma.
+O `documentId` é escrito no `stdout`, que pode ser utilizado posteriormente para referenciar o documento.
