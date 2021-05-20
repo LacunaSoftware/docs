@@ -17,6 +17,7 @@ Options:
 * `--output-file <output-file>`: Output file
 * `--document-key <document-key>`: Document key
 * `--overwrite`: Overwrite input file
+* `--name <name>`: Specify the file name to be used when calling APIs (instead of using the actual file name from the input file)
 
 The signed file can be either written to a different path, specified with the `--output-file` parameter, or the file being signed can be overwritten
 by passing the `--overwrite` parameter.

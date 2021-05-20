@@ -17,6 +17,7 @@ Opções:
 * `--output-file <output-file>`: Caminho do arquivo de saída
 * `--document-key <document-key>`: Chave de validação do documento
 * `--overwrite`: Sobrescreve arquivo de entrada
+* `--name <name>`: Especifica um nome de arquivo diferente a ser usado nas chamadas à API
 
 O arquivo assinado pode ser escrito em um outro caminho, especificado com o parâmetro `--output-file`, ou pode ser escrito sobre o arquivo de entrada
 especificando o parâmetro `--overwrite`.
