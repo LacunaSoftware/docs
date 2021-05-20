@@ -24,10 +24,10 @@ Para listar todos os certificados com o CPF `11111111111`:
 
 ## Saída
 
-São escritas para o `stdout` as seguintes informações de cada certificado encontrado, separadas por ponto-e-vírgula (';'), um certificado por linha:
+São escritas para o `stdout` as seguintes informações de cada certificado encontrado, separadas por ponto-e-vírgula (`;`), um certificado por linha:
 
 1. *Thumbprint* do certificado (para ser usado como argumento para outros comandos, por exemplo [sign](sign.md))
-1. Descrição do certificado composta pelo nome do titular e nome da autoridade certificadora
+1. Descrição do certificado composta pelo nome do titular e nome da autoridade certificadora (AC)
 
 Exemplo:
 

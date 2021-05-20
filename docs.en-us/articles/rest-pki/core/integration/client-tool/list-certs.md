@@ -24,10 +24,10 @@ To list certificates having the CPF `11111111111`:
 
 ## Output
 
-The following information about each certificate found are written to `stdout`, separated by semicolons (';'), one certificate per line:
+The following information about each certificate found are written to `stdout`, separated by semicolons (`;`), one certificate per line:
 
 1. Certificate thumbprint (used to specify the certificate to be used on other commands, e.g. the [sign](sign.md) command)
-1. Description of the certificate incluing the subject name and name of the certification authority
+1. Description of the certificate incluing the subject name and name of the certification authority (CA)
 
 For instance:
 
