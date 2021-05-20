@@ -167,7 +167,7 @@ return appKey.Key;
 
 Alguns pontos importantes:
 
-* O parâmetro $"CENTRAL-{cartorio.Cns}" é o nome da aplicação. Esses nomes precisam ser únicos no Assinador Web, independentemente da central. Por
+* O parâmetro `$"CENTRAL-{cartorio.Cns}"` é o nome da aplicação. Esses nomes precisam ser únicos no Assinador Web, independentemente da central. Por
   isso a sugestão de usar o CNS prefixado com um identificador que remeta ao nome da central (por exemplo, `OE-` para o caso do Ofício Eletrônico)
 * Por motivo de segurança, o Assinador Web não armazena a chave de API gerada (apenas o hash dela). As centrais devem fazer o mesmo, ou seja, a cada
   vez que um cartório pede uma chave de API gera-se uma nova chave (mas não uma nova aplicação)

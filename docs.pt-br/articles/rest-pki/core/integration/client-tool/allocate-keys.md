@@ -6,14 +6,20 @@
 
 ## Sintaxe
 
+[!include[Allocate keys syntax](../../../../../../includes/rest-pki/core/client-tool/allocate-keys-syntax.md)]
+
+## Exemplos
+
 Para reservar uma única chave:
 
-```sh
-rpkitool allocate-keys
-```
+[!include[Allocate single key](../../../../../../includes/rest-pki/core/client-tool/allocate-keys-single.md)]
 
-Para reservar `N` chaves:
+Para reservar 10 chaves:
 
-```sh
-rpkitool allocate-keys N
-```
+[!include[Allocate key batch](../../../../../../includes/rest-pki/core/client-tool/allocate-keys-batch.md)]
+
+## Saída
+
+As chaves são escritas no `stdout`, uma por linha, com formatação, por exemplo:
+
+[!include[Allocate keys output](../../../../../../includes/rest-pki/core/client-tool/allocate-keys-output.md)]
