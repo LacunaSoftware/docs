@@ -80,6 +80,7 @@ positionContainer.setRight(3.0);
 positionContainer.setBottom(2.0);
 positionContainer.setTop(8.0);
 position.setContainer(positionContainer);
+vr.setPosition(position);
 
 // Texto da representação visual
 // Define o texto a ser inserido. Para ver a lista completa de tags suportadas, veja: 

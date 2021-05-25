@@ -38,12 +38,15 @@ positionContainer.setRight(3.0);                // Distância da margem direita 
 positionContainer.setBottom(2.0);               // Distância da margem inferior = 2.00cm
 positionContainer.setTop(8.0);                  // Distância da margem superior = 8.00cm
 position.setContainer(positionContainer);
+vr.setPosition(position);
 vr.setText(...);
 vr.setImage(...);
 
 signer.setVisualRepresentation(vr);
 ```
+
 [!include[Texto](../../../includes/visual-rep/text.md)]
+
 ```java
 // Texto da representação visual
 PadesVisualText text = new PadesVisualText("Signed by {{name}}"); // Inclui o nome do signatário
