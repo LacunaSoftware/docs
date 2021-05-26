@@ -7,7 +7,8 @@ signer = PkiExpress::PadesSigner.new
 ...
 vr = PkiExpress::PadesVisualRepresentation.new
 position = PkiExpress::PadesVisualManualPositioning.new
-position.page_number = -1               # Define inserção na última página do documento
+# Define inserção na última página do documento
+position.page_number = -1
 signature_rectangle = PkiExpress::PadesVisualRectangle.new
 signature_rectangle.width = 7           # Largura = 7cm
 signature_rectangle.height = 3          # Altura = 3cm
@@ -27,8 +28,10 @@ signer = PkiExpress::PadesSigner.new
 ...
 vr = PkiExpress::PadesVisualRepresentation.new
 position = PkiExpress::PadesVisualAutoPositioning.new
-position.page_number = -1                   # Define inserção na última página do documento
-position.row_spacing = 1.0                  # 1.00cm de espaçamento entre linhas
+# Define inserção na última página do documento
+position.page_number = -1
+# 1.00cm de espaçamento entre linhas
+position.row_spacing = 1.0
 size = PkiExpress::PadesSize.new(7.0, 3.0)  # Largura = 7cm e Altura = 3cm
 position.signature_rectangle_size = size
 position_container = PkiExpress::PadesVisualRectangle.new
@@ -46,10 +49,14 @@ signer.setVisualRepresentation(vr);
 
 ```ruby
 # Texto da representação visual
-text = PkiExpress::PadesVisualText.new('Signed by {{name}}')  # Inclui o nome do signatário
-text.font_size = 10.0                                         # Define tamanho da fonte do texto
-text.include_signing_time = true                              # Inclui a data da assinatura
-text.signing_time_format = "dd/MM/yy H:mm:ss zzz"             # Define a formatação da data
+# Inclui o nome do signatário
+text = PkiExpress::PadesVisualText.new('Signed by {{name}}')
+# Define tamanho da fonte do texto
+text.font_size = 10.0
+# Inclui a data da assinatura
+text.include_signing_time = true
+# Define a formatação da data
+text.signing_time_format = "dd/MM/yy H:mm:ss zzz"
 # Define container do texto
 container = PkiExpress::PadesVisualRectangle.new
 container.left = 0.0
@@ -68,8 +75,10 @@ text.container = container
 ```ruby
 image = PkiExpress::PadesVisualImage.new
 image.content = pdf_content
-image.horizontal_align = PadesHorizontalAlign::RIGHT  # Alinha a imagem horizontamente na direita
-image.vertical_align =PadesVerticalAlign::CENTER      # Alinha a imagem verticalmente no centro
+# Alinha a imagem horizontamente na direita
+image.horizontal_align = PadesHorizontalAlign::RIGHT
+# Alinha a imagem verticalmente no centro
+image.vertical_align =PadesVerticalAlign::CENTER
 ```
 
 ## Veja também

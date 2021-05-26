@@ -84,7 +84,7 @@ vr.setPosition(position);
 
 // Visual representation text.
 // Set text to be rendered. For a full list of the supported tags, see:
-// https://docs.lacunasoftware.com/articles/pki-express/nodejs/visual-rep/index.html#pades-tags
+// https://docs.lacunasoftware.com/articles/pki-express/java/visual-rep/index.html#pades-tags
 PadesVisualText text = new PadesVisualText("Signed by {{name}}");
 // Set text's font size.
 text.setFontSize(13.0);
