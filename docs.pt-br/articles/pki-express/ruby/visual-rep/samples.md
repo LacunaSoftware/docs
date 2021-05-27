@@ -45,9 +45,12 @@ container.bottom = 0.0
 
 # Definindo imagem de fundo
 image = PkiExpress::PadesVisualImage.new
-image.content = pdf_content                             # Bytes da imagem a ser inserida
-image.horizontal_align = PadesHorizontalAlign::RIGHT    # Alinha a imagem horizontamente na direita
-image.vertical_align =PadesVerticalAlign::CENTER        # Alinha a imagem verticalmente no centro
+# Bytes da imagem a ser inserida
+image.content = pdf_content 
+# Alinha a imagem horizontamente na direita
+image.horizontal_align = PadesHorizontalAlign::RIGHT
+# Alinha a imagem verticalmente no centro
+image.vertical_align =PadesVerticalAlign::CENTER
 ```
 
 À medida que as assinaturas forem sendo realizadas, o resultado esperado para as representações visuais incluídas
