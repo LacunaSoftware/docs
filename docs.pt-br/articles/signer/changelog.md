@@ -4,6 +4,23 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-30-0" />
+### 1.30.0 (2021-05-25)
+
+* Melhorias
+  * [SIG-659] Tentar obter carimbo automaticamente após falha ao contatar a carimbadora
+  * [SIG-646] Adicionar HTML dinâmico da home page como confiável
+  * [SIG-629] Assinatura de lotes documentos sem precisar selecioná-los página por página
+
+* Correções de bugs
+  * [SIG-661] Notificação de conclusão não está sendo enviada na assinatura única
+  * [SIG-658] Emails a serem notificados na conclusão não são enviados quando os documentos são assinados em lote
+  * [SIG-657] Na geração de documentos vários email são enviados aos participantes
+  * [SIG-654] Erro ao editar posicionamento do texto da marca de assinatura caso a imagem já tenha sido enviada
+  * [SIG-645] Exibição de signatários é diferente se o arquivo não é PDF
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-29-0" />
 ### 1.29.0 (2021-04-27)
 

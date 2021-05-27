@@ -297,6 +297,17 @@ Under section **Zoom**:
 * **Enabled**: if `true`, enables the Zoom video conferences integration.
 * **JwtToken**: the Zoom's JWT authentication token.
 
+###  *Batches* Settings (v1.30.0)
+
+Under section **Batches**:
+
+* **MaxDocumentsInBatch** (default: `50000`): the maximum number of documents processed in a batch.
+* **MaxItemsRetrievedFromDatabase** (default: `10000`): the maximum number of documents retrieved in a single query to the database when processing batches. For high 
+volume batches this is used to avoid timeouts when querying the database.
+* **NumberDocumentsPerSignatureRound** (default: `100`): number of documents processed in each round of a signature batch.
+* **NumberDocumentsPerGenerationRound** (default: `10`): number of documents processed in each round of a generation batch.
+* **NumberNotificationsCreatedPerRound** (default: `30`): number of notifications created per batch round.
+
 ###  *SigningTags* Settings
 
 Under section **SigningTags**:
@@ -344,6 +355,9 @@ Under section **Timestamper**:
 * **BearerToken**: if type is `BearerToken`, defines the bearer token value for authentication.
 * **Username** (v1.28.0): if type is `BasicAuthentication`, defines the username value for authentication.
 * **Password** (v1.28.0): if type is `BasicAuthentication`, defines the password value for authentication.
+* **MaxAutoRetryCount** (default: `3`, v1.30.0): the number of retries that will be made if a timestamp cannot be obtained in the first try.
+* **RetryDelayInMilliseconds** (default: `1500`): the delay in miliseconds to wait between timestamp retries.
+
 
 ###  *Notarize* Settings
 

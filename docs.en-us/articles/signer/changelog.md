@@ -4,6 +4,23 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-30-0" />
+### 1.30.0 (2021-05-25)
+
+* Improvements
+  * [SIG-659] Auto retry timestamp request after a failure
+  * [SIG-646] Add home page dynamic HTML as a trusted resource
+  * [SIG-629] Batch signature of documents without the need to select them page by page
+
+* Bug fixes
+  * [SIG-661] Conclusion notification not being sent in fast signature mode
+  * [SIG-658] Emails to be notified when document are concluded are not being notified when the documents are signed in batch
+  * [SIG-657] Too many emails sent to participants when generating documents
+  * [SIG-654] Cannot edit the text positioning of the signature visual representation after the images has been sent
+  * [SIG-645] Display of signers in the manifest is different if the file type is not PDF
+
+Updates database model: yes
+
 <a name="v1-29-0" />
 ### 1.29.0 (2021-04-27)
 
