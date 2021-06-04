@@ -1,5 +1,10 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-23-2" />
+### 1.23.2 (2021-06-04)
+
+- Corrige bug na validação de assinaturas PAdES quando não há algumas das informações requeridas 
+
 <a name="v1-23-1" />
 ### 1.23.1 (2021-05-14)
 
