@@ -4,6 +4,35 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-31-1" />
+### 1.31.1 (2021-06-08)
+
+* Correções de bugs
+  * [SIG-691] Botão de compartilhar link de aprovação deve levar à área privada
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-31-0" />
+### 1.31.0 (2021-06-08)
+
+* Novas funcionalidades
+  * [SIG-688] Criar temas international orange green e onyx carrot orange
+  * [SIG-664] Relatório de todos documentos da instância por mês
+  * [SIG-655] Permitir gerar link para assinatura do documento
+
+* Melhorias
+  * [SIG-685] Suportar tipos alternativos de autenticação com AWS S3
+  * [SIG-656] Suportar validação de assinaturas com algoritmos obsoletos
+  * [SIG-650] Permitir visualizar arquivos não PDF ao assinar documentos
+  * [SIG-648] Melhorar tratamento de erros de PDF com senhas
+  * [SIG-628] Adicionar observação que anexos não são assinados
+  * [SIG-560] Suportar arquivos com mais de 100 assinaturas
+
+* Correções de bugs
+  * [SIG-649] Não exibir opção para posicionamento de assinatura para documentos não PDF
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-30-0" />
 ### 1.30.0 (2021-05-25)
 

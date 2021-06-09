@@ -4,6 +4,35 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-31-1" />
+### 1.31.1 (2021-06-08)
+
+* Bug fixes
+  * [SIG-691] Share participant link button should direct approvers to private area
+
+Updates database model: no
+
+<a name="v1-31-0" />
+### 1.31.0 (2021-06-08)
+
+* New Features
+  * [SIG-688] Add international orange green and onyx carrot orange themes
+  * [SIG-664] Instance documents per month report
+  * [SIG-655] Generate share link for document participants
+
+* Improvements
+  * [SIG-685] Add support to alternative authentication methods with AWS S3
+  * [SIG-656] Support signature validation with obsolete algorithms
+  * [SIG-650] Display non PDF files while signing documents
+  * [SIG-648] Improve error handling of password protected PDFs
+  * [SIG-628] Add warning that attachments are not signed
+  * [SIG-560] Support validation of files with more than 100 signatures
+
+* Bug fixes
+  * [SIG-649] Do not display signature positioning option for non PDF documents
+
+Updates database model: no
+
 <a name="v1-30-0" />
 ### 1.30.0 (2021-05-25)
 

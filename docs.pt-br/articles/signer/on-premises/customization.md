@@ -99,6 +99,14 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/vgy.png)
 
+* international-orange-green (v1.31.0):
+
+![Color Scheme](../images/themes/iog.png)
+
+* onyx-carrot-orange (v1.31.0):
+
+![Color Scheme](../images/themes/oco.png)
+
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 

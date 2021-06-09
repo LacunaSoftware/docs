@@ -96,6 +96,13 @@ be restricted.
 * **HideMultipleDocumentNotificationViewDocumentsButton** (v1.27.0): if `true`, the `View documents` button will not be included in the pending action emails for multiple 
 documents. This ensures that the email only contains links that do not require the user to log in.
 
+* **AllowAlgorithmNotAllowed** (v1.31.0): if `true` accepts documents signed with algorithms that are deemed insecure shuch as SHA-1.
+
+* **MaxNumberSignaturesToValidateAtOnce** (default: `40`, v1.31.0): sets the maximum number of signatures a document can have in order to validate all signatures at once instead of
+doing it in rounds.
+* **NumberSignaturesPerValidationRound** (default: `10`, v1.31.0): sets the number of signatures validated in each validation round if the document has exceeded the number
+specified in the MaxNumberSignaturesToValidateAtOnce setting.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
