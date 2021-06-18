@@ -218,6 +218,7 @@
 ### [Configurações](signer/on-premises/settings.md)
 ### [Controle de acesso](signer/on-premises/access-control.md)
 ### [Personalização](signer/on-premises/customization.md)
+### [Emails Registrados](signer/on-premises/registered-emails.md)
 ### [Pagamentos](signer/on-premises/payments.md)
 ### [Zoom](signer/on-premises/zoom.md)
 ## [Guia do usuário](signer/user-guide/index.md)
