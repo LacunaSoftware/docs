@@ -172,6 +172,8 @@
 ### [Pasta temporária](pki-express/config/temp-dir.md)
 ### [Proxy](pki-express/config/proxy.md)
 ### [LAPP](pki-express/config/lapp.md)
+### [Azure](pki-express/config/azure.md)
+### [Serviços de Certificado em Nuvem](pki-express/config/trust-services.md)
 ## [Usando em PHP](pki-express/php/index.md)
 ### [Plain](pki-express/php/plain.md)
 ### [Representação Visual](pki-express/php/visual-rep/index.md)
@@ -190,7 +192,6 @@
 ## [Usando em Ruby](pki-express/ruby/index.md)
 ### [Representação Visual](pki-express/ruby/visual-rep/index.md)
 ### [Convertendo do REST PKI](pki-express/ruby/convert-from-restpki.md)
-## [Tags PAdES](pki-express/pades-tags.md)
 ## [Códigos de Retorno](pki-express/return-codes.md)
 ## [Histórico de versões](pki-express/changelog.md)
 <!-- End of PKI Express -->
