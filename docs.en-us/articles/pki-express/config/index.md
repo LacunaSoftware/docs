@@ -5,6 +5,9 @@ You can manage the following settings:
 * [Logging](log.md)
 * [Temporary directory](temp-dir.md)
 * [Proxy](proxy.md)
+* [LAPP Integration](lapp.md)
+* [Azure Integration](azure.md)
+* [Trust Services](trust-services.md)
 
 The configuration of PKI Express is managed with the command `pkie config`. To learn more about this command, read on.
 

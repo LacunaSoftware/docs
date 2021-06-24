@@ -5,6 +5,9 @@
 * [Logs](log.md)
 * [Pasta temporária](temp-dir.md)
 * [Proxy](proxy.md)
+* [Integração com o LAPP](lapp.md)
+* [Integração com o Azure](azure.md)
+* [Serviços de Certificado Digital em Nuvem](trust-services.md)
 
 A configuração do PKI Express é gerenciada através do comando `pkie config`. Veja as seções abaixo para saber mais sobre esse comando.
 
