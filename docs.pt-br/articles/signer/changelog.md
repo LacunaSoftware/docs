@@ -4,6 +4,22 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-32-0" />
+### 1.32.0 (2021-06-25)
+
+* Novas funcionalidades
+  * [SIG-670] Assinatura eletrônica com PIX
+  * [SIG-631] Assinatura eletrônica com biometria facial validada pelo SERPRO
+  * [SIG-538] Recusar assinatura de um documento
+
+* Melhorias
+  * [SIG-653] Assinatura embutida sem pré-visualização do documento
+
+* Correções de bugs
+  * [SIG-690] Erro ao assinar documento excluído caso a opção de permitir validação de documentos excluídos esteja habilitada
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-31-1" />
 ### 1.31.1 (2021-06-08)
 

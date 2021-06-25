@@ -4,6 +4,22 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-32-0" />
+### 1.32.0 (2021-06-25)
+
+* New Features
+  * [SIG-670] Electronic signature with PIX authentication
+  * [SIG-631] Electronic signature with facial biometric validated by SERPRO
+  * [SIG-538] Refuse to sign a document
+
+* Improvements
+  * [SIG-653] Embedded signature without document preview
+
+* Bug fixes
+  * [SIG-690] Error signing deleted document if the enabled deleted document validation is enabled
+
+Updates database model: yes
+
 <a name="v1-31-1" />
 ### 1.31.1 (2021-06-08)
 

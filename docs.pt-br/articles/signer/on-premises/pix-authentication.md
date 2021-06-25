@@ -1,4 +1,4 @@
-﻿# Integração com Zoom no Signer
+﻿# Autenticação com Pix no Signer
 
 O Signer permite a realização de assinaturas eletrônica autenticando o usuário através de um pagamento realizado com a tecnologia [Pix](https://www.bcb.gov.br/estabilidadefinanceira/pix).
 
