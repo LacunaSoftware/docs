@@ -9,11 +9,11 @@ A integração com Assinatura embutida permite assinar/aprovar documentos submet
 
 ## Instalação
 
-Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.4.0.min.js) mais recente:
+Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.5.0.min.js) mais recente:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.4.0.min.js"
-    integrity="sha256-6ML+DdbMkoKycQiKiJ/tDScsdlVt0oiRFqNMoKAntzQ="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.5.0.min.js"
+    integrity="sha256-AVAkc2mvhbaWVqyfqHomvdnzhPOLHDn0QLCifiD/Zpk="
     crossorigin="anonymous"></script>
 ```
 
@@ -95,3 +95,29 @@ Para este exemplo é utilizado o certificado de teste do BirdID (CPF 026.102.470
 Para executar o exemplo, clique na aba **Result**. Para usar o usuário de teste do ambiente de homologação do BirdID use o QR code abaixo no aplicativo:
 
 ![BirdID HML credentials](./images/birdidhml.png)
+
+## Configurações adicionais
+
+Na instanciação da classe `LacunaSignerWidget` você pode passar um objeto com uma ou mais das configurações listadas abaixo:
+
+Atributo                 | Tipo         |  Descrição  
+-----------------------  | ------------ | ----------
+`enableNotifications`    | boolean      | Notificações não são enviadas após a conclusão da assinatura/aprovação embutida. Defina como `true` para enviá-las. Pode ser definido após a instanciação com método `setEnableNotifications`.
+`disableDocumentPreview` | boolean      | Se `true`, esconde a pré-visualização do documento. Nesse caso, será exibido apenas o botão de assinatura e dados do assinante/aprovador. Pode ser definido após a instanciação com método `setDisableDocumentPreview`.
+`enableRefusal`          | boolean      | Se `true`, exibirá a opção para recusar uma assinatura. Pode ser definido após a instanciação com método `setEnableRefusal`.
+
+Exemplo:
+
+```javascript
+var widget = new LacunaSignerWidget({ disableDocumentPreview: true });
+```
+
+```javascript
+var widget = new LacunaSignerWidget();
+
+widget.setDisableDocumentPreview(true);
+```
+
+## Exemplo online de assinatura sem pré-visualização
+
+<iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/pfn3zct1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>

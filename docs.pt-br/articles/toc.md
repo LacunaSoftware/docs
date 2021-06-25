@@ -221,6 +221,7 @@
 ### [Personalização](signer/on-premises/customization.md)
 ### [Emails Registrados](signer/on-premises/registered-emails.md)
 ### [Pagamentos](signer/on-premises/payments.md)
+### [Autenticação Pix](signer/on-premises/pix-authentication.md)
 ### [Zoom](signer/on-premises/zoom.md)
 ## [Guia do usuário](signer/user-guide/index.md)
 ### [Geração de documentos](signer/user-guide/gen-docs.md)

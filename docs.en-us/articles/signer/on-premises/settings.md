@@ -129,6 +129,10 @@ Under section **ElectronicSignature**:
 * **EnableSmsAuthentication**: if `true`, enables the SMS verification option for electronic signatures.
 * **EnableOtpAuthentication**: if `true`, enables the OTP App verification option for electronic signatures.
 * **EnableSelfieAuthentication** (v1.23.0): if `true`, enables the selfie capture for electronic signatures.
+* **EnableDatavalidAuthentication** (v1.32.0): if `true`, enables the selfie capture with Datavalid validation for electronic signatures. If enabled, the setting in the section
+`Datavalid` must also be configured.
+* **EnablePixAuthentication** (v1.32.0): if `true`, enables the Pix authentication for electronic signatures. If enabled, the setting in the section
+`Gerencianet` must also be configured.
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
 * **IsGeolocationRequired** (v1.5.0): if `true`, the geolocation of an user must be sent in order to sign electronically.
@@ -303,6 +307,26 @@ Under section **Zoom**:
 
 * **Enabled**: if `true`, enables the Zoom video conferences integration.
 * **JwtToken**: the Zoom's JWT authentication token.
+
+###  *Datavalid* Settings (v1.32.0)
+
+Under section **Datavalid**:
+
+* **Disabled**: if `true`, disables the Datavalid service.
+* **ConsumerKey**: the SERPRO's consumer key for usage of the Datavalid service.
+* **ConsumerSecret**: the SERPRO's consumer secret for usage of the Datavalid service.
+
+###  *Gerencianet* Settings (v1.32.0)
+
+Under section **Gerencianet**:
+
+* **Disabled**: if `true`, disables the Gerencianet service.
+* **ClientId**: the API Client ID of the Gerencianet service.
+* **ClientSecret**: the API Client Secret of the Gerencianet service.
+* **PixKey**: the random Pix key registered in the Gerencianet account.
+* **CertificateBase64**: the authentication certificate (in Base 64 format) of the Gerencianet service. If you are hosting the application in Azure App Service,
+you must also include the setting `WEBSITE_LOAD_USER_PROFILE` with value `1`. If you are hosting in IIS (Windows Server), you must set the `Load User Profile` option 
+of the application pool identity to `True`.
 
 ###  *Batches* Settings (v1.30.0)
 

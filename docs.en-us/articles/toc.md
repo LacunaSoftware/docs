@@ -222,6 +222,7 @@
 ### [Customization](signer/on-premises/customization.md)
 ### [Registered Emails](signer/on-premises/registered-emails.md)
 ### [Payments](signer/on-premises/payments.md)
+### [Pix Authentication](signer/on-premises/pix-authentication.md)
 ### [Zoom](signer/on-premises/zoom.md)
 ## [User guide](signer/user-guide/index.md)
 ### [Generate documents](signer/user-guide/gen-docs.md)
