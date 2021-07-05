@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-26-4" />
+### 1.26.4 (2021-07-04)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar opção de alinhamento vertical nos elementos de texto da funcionalidade PDF marks
+- Adicioanr suporte a identidades de mais países (Argentina, Equador, Paraguai e Peru) na tag de representação visual PAdES [`{{national_id}}`](./pades-tags)
+- Adicioanr suporte a tag de dados de CPF e RG mascarados na representação visual PAdES: [`{{br_cpf_masked}} e {{br_rg_numero_masked}}`](./pades-tags)
+
 <a name="v1-26-3" />
 ### 1.26.3 (2021-05-17)
 

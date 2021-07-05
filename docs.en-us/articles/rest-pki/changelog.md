@@ -1,5 +1,14 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-26-4" />
+### 1.26.4 (2021-07-04)
+
+Database model update: No
+
+- Add vertical align option on PDF marks text elements
+- Add more countries IDs support (Argentina, Ecuador, Paraguay and Peru) on PAdES visual representation tag [`{{national_id}}`](./pades-tags)
+- Add PAdES visual representation masked CPF and RG tags [`{{br_cpf_masked}} and {{br_rg_numero_masked}}`](./pades-tags)
+
 <a name="v1-26-3" />
 ### 1.26.3 (2021-05-17)
 
