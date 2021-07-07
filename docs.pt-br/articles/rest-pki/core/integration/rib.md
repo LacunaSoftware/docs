@@ -102,6 +102,38 @@ var documentKeys = await restPkiService.AllocateDocumentKeysAsync(10, new NameVa
 });
 ```
 
+Em PHP:
+
+```PHP
+$defaultDocumentMetadata = [
+    "cartorio" => "XXº Oficial de Registro de Imóveis do Município - UF", 
+    "cns" => "123456"
+];
+// Alocar uma chave
+$documentKey = $service->allocateDocumentKey($defaultDocumentMetadata);
+// Alocar N chaves
+$documentKeys = $service->allocateDocumentKeys(10, $defaultDocumentMetadata);
+```
+
+Em Java:
+
+```java
+Map<String, List<String>> defaultDocumentMetadata = new HashMap();
+List<String> firstElement = new ArrayList<>();
+firstElement.add("XXº Oficial de Registro de Imóveis do Município - UF");
+defaultDocumentMetadata.put("cartorio", firstElement);
+List<String> secondElement = new ArrayList<>();
+secondElement.add("123456");
+defaultDocumentMetadata.put("cns", secondElement);
+
+// Alocar uma chave
+DocumentKeyModel service.allocateDocumentKey(defaultDocumentMetadata);
+
+// Alocar N chaves
+DocumentKeyModel service.allocateDocumentKeys(10, defaultDocumentMetadata);
+
+```
+
 Caso esteja chamando a API diretamente:
 
 ```plaintext
@@ -174,6 +206,47 @@ Alguns pontos importantes:
 * O campo `description` na chamada ao `CreateApplicationKeyAsync` é opcional e pode ser usado para registrar o usuário que disparou a geração da
   chave
 
+Em PHP:
+
+```PHP
+$cartorio = ... // entidade de cartório no sistema da central
+if($cartorio->assinadorWebAppId == null){
+	$name = "CENTRAL-" . $cartorio->cns;
+	$roles = [Roles::WORKER];
+	$metadata = [
+		"cartorio" => $cartorio->nome,
+		"cns" => $cartorio->cns
+	];
+	$app = $service->createApplication($name, $roles, $metadata);
+	$cartorio->assinadorWebAppId = $app->id;
+}
+$appKey = $service->createApplicationKey($appKey->id, null, "Gerada por " . $user->name);
+return $appKey->key;
+```
+
+Em Java:
+
+```java
+if(cartorio.getAssinadorWebAppId() == null){
+	String name = "CENTRAL-" + cartorio.getCns();
+	List<Roles> roles = new ArrayList<>();
+	roles.add(Roles.fromValue("Worker"));
+
+	Map<String, List<String>> metadata = new HashMap();
+	List<String> firstElement = new ArrayList<>();
+	firstElement.add(cartorio.getNome());
+	metadata.put("cartorio", firstElement);
+	List<String> secondElement = new ArrayList<>();
+	secondElement.add(cartorio.getCns());
+	metadata.put("cns", secondElement);
+
+	ApplicationModel app = service.createApplication(name, roles, metadata);
+	cartorio.setAssinadorWebAppId(app.getId());
+}
+CreateApplicationApiKeyResponse appKey = service.createApplicationKey(app.getId(), null, "Gerada por " + user.getName());
+return appKey.getKey();
+```
+
 Caso esteja chamando a API diretamente, as chamadas são:
 
 ```plaintext
@@ -202,6 +275,3 @@ POST {endpoint}/api/applications/{id}/api-keys
 	"description": "Gerada por FULANO DE TAL"
 }
 ```
-
-> [!NOTE]
-> Instruções para Java e PHP serão documentadas em breve
