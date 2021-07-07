@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-24-0" />
+### 1.24.0 (2021-07-07)
+
+- Adiciona opção `--session-lifetime` nos comandos `discover-services` e `pwd-auth`, para configurar a duração em segundos da sessão de assinaturas
+- Melhora as configurações de cultura
+
 <a name="v1-23-2" />
 ### 1.23.2 (2021-06-04)
 

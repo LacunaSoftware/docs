@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-24-0" />
+### 1.24.0 (2021-07-07)
+
+- Added `--session-lifetime` option to `discover-services` and `pwd-auth`, enabling the configuration of the signature session duration, in seconds
+- Improved culture settings
+
 <a name="v1-23-2" />
 ### 1.23.2 (2021-06-04)
 
