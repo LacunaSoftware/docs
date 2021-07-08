@@ -65,3 +65,15 @@ signatureStarter.setSecurityContext(new SecurityContext("803517ad-3bbc-4169-b085
 ```
 
 Todos os [projetos de exemplo](https://github.com/LacunaSoftware/PkiSuiteSamples) contém comentários indicando como habilitar a confiança na ICP de testes da Lacuna.
+
+## Certificados em nuvem
+
+Se você não tiver um certificado em nuvem para testar nossos produtos, você pode utilizar um dos certificados do VaultID ou BirdID abaixo.
+
+    Cliend Id: 20658903000171
+    Client Secret: ocBigveadOkidgavVulnumKet3
+    CPF: 02610247010
+
+| VaultID | BirdID |
+|:-------:|:------:|
+|![Certificado de teste - Vault ID](../../../images/pki-guide/qrcode-cert-vaultid.png) | ![Certificado de teste - BirdID](../../../images/pki-guide/qrcode-cert-birdid.png) |
