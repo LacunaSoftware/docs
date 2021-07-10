@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-8" />
+### 2.8.8 (2021-07-10)
+
+- Improve TSL (Trusted Service List) status validation
+- Fix PdfMark text vertical align limit
+
+
 <a name="v2-8-7" />
 ### 2.8.7 (2021-05-07)
 
