@@ -1,5 +1,11 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-24-1" />
+### 1.24.1 (2021-07-16)
+
+- Corrige bug na configuração do trustServicesDiscoveryTimeout
+- Adiciona opção `--guess-certificate` que quando múltiplos certificados são encontrados escolhe o mais recente
+
 <a name="v1-24-0" />
 ### 1.24.0 (2021-07-07)
 

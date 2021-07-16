@@ -1,5 +1,11 @@
 ﻿# PKI Express changelog
 
+<a name="v1-24-1" />
+### 1.24.1 (2021-07-16)
+
+- Fixed bug on trustServicesDiscoveryTimeout configuration
+- Added flag `--guess-certificate` that select the newest certificate when multiple are found
+
 <a name="v1-24-0" />
 ### 1.24.0 (2021-07-07)
 
