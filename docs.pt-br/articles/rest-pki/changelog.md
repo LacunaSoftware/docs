@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-26-6" />
+### 1.26.6 (2021-07-16)
+
+Atualização do modelo do banco de dados: Não
+
+- Atualização PKI SDK para [2.8.9](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-8-9)
+
 <a name="v1-26-4" />
 ### 1.26.4 (2021-07-04)
 

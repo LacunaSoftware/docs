@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-9" />
+### 2.8.9 (2021-07-16)
+
+- Improve PAdES default validation with DSS artifacts
+- Improve support to PDFs with minor inconsistencies
+
+
 <a name="v2-8-8" />
 ### 2.8.8 (2021-07-10)
 
