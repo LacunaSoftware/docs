@@ -103,13 +103,18 @@ doing it in rounds.
 * **NumberSignaturesPerValidationRound** (default: `10`, v1.31.0): sets the number of signatures validated in each validation round if the document has exceeded the number
 specified in the MaxNumberSignaturesToValidateAtOnce setting.
 
+* **CanceledDocumentWatermarkText** (v1.33.0): the text of the watermark that is added to canceled documents.
+* **ExpiredDocumentWatermarkText** (v1.33.0): the text of the watermark that is added to expired documents.
+
+* **EnableEmailTemplateCustomization** (v1.33.0): if `true`, allows default email templates to be overriden. The files must be HTML and follow the pattern `Email-<template-type>.html`.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
 Under section **DocumentTypes**:
 
-* **Enabled**: if `true` shows a select to determine the type of a document when creating one. The available types are `Deed` and `Power of Attorney`.
-* **EnabledOptions**: comma separated list of types that will be enabled/displayed. The order of the types will be respected when displaying them. Example: `PowerOfAttorney,Deed`.
+* **Enabled**: if `true` shows a select to determine the type of a document when creating one. The available types are `Deed` (deprecated as of v1.33.0), `Power of Attorney` (deprecated as of v1.33.0) and `Prescription`.
+* **EnabledOptions**: comma separated list of types that will be enabled/displayed. The order of the types will be respected when displaying them. Example: `PowerOfAttorney,Deed,Prescription`.
 If this setting is not provided and document types are enabled, all available options will be displayed.
 
 ###  *SupportChat* Settings (v1.6.0)
@@ -338,6 +343,13 @@ volume batches this is used to avoid timeouts when querying the database.
 * **NumberDocumentsPerSignatureRound** (default: `100`): number of documents processed in each round of a signature batch.
 * **NumberDocumentsPerGenerationRound** (default: `10`): number of documents processed in each round of a generation batch.
 * **NumberNotificationsCreatedPerRound** (default: `30`): number of notifications created per batch round.
+* **NumberDocumentsPerExpirationRound** (v1.33.0, default: `100`): number of documents processed per expiration round.
+
+###  *Envelopes* Settings (v1.33.0)
+
+Under section **Envelopes**:
+
+* **MaxNumberFiles** (default: `20`): the maximum number of files in the envelope.
 
 ###  *SigningTags* Settings
 

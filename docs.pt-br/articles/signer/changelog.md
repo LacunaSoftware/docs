@@ -4,6 +4,33 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-33-0" />
+### 1.33.0 (2021-07-22)
+
+* Novas funcionalidades
+  * [SIG-418] Exibir Histórico de alterações nos detalhes do documento
+  * [SIG-422] Submissão de Envelopes (assinatura/aprovação em lote externa)
+  * [SIG-480] Envio de lembretes em lote na tela de documentos
+  * [SIG-524] Relatório de documento por pasta
+  * [SIG-596] Criação de Fluxos de Documento
+  * [SIG-618] Recusa e Cancelamento de documentos
+  * [SIG-686] Adicionar informações do e-cnpj na representação visual da assinatura
+  * [SIG-696] Busca avançada de documentos
+  * [SIG-697] Prazo para assinatura de documentos
+  * [SIG-713] Personalização dos templates de email por instância
+
+* Melhorias
+  * [SIG-633] Simplificação do ticket de assinatura para ter URLs menores
+  * [SIG-703] Permitir esconder nome do provider do certificado em nuvem
+  * [SIG-712] Adicionar tema international orange apricot
+  * [SIG-720] Permitir alterar data de expiração de um documento
+  * [SIG-724] Adicionar tema generic viridian blue
+
+* Correções de bugs
+  * [SIG-701] Tirar Selfie não funciona no iOS
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-32-0" />
 ### 1.32.0 (2021-06-25)
 

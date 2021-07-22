@@ -107,6 +107,14 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/oco.png)
 
+* international-orange-apricot (v1.33.0):
+
+![Color Scheme](../images/themes/ioa.png)
+
+* generic-viridian-blue (v1.33.0):
+
+![Color Scheme](../images/themes/gvb.png)
+
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 

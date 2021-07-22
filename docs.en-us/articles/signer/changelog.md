@@ -4,6 +4,33 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-33-0" />
+### 1.33.0 (2021-07-22)
+
+* New Features
+  * [SIG-418] Display update history in document details
+  * [SIG-422] Envelope submission (public batch signature/approval)
+  * [SIG-480] Batch signature reminders in documents screen
+  * [SIG-524] Document report by folder
+  * [SIG-596] Document saved flows management
+  * [SIG-618] Document refusal and cancellation
+  * [SIG-686] Add e-CNPJ information in the signature mark
+  * [SIG-696] Advanced document search
+  * [SIG-697] Due date for signing documents
+  * [SIG-713] Email templates customization per instance
+
+* Improvements
+  * [SIG-633] Signature ticket simplification to have shorter URLs
+  * [SIG-703] Enable TSP provider names to be hidden for cloud certificates
+  * [SIG-712] Add international orange apricot theme
+  * [SIG-720] Update document due date
+  * [SIG-724] Add generic viridian blue theme
+
+* Bug fixes
+  * [SIG-701] Electronic signature with Selfie not working in iOS
+
+Updates database model: yes
+
 <a name="v1-32-0" />
 ### 1.32.0 (2021-06-25)
 
