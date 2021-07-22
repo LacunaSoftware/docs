@@ -11,7 +11,7 @@ The client tool is a single executable file that can be downloaded below:
 
 For other platforms, [click here](https://cdn.lacunasoftware.com/restpkicore/client-tool/).
 
-## API configuration
+## Configuration
 
 To use the client tool, you must configure the **endpoint** of the Rest PKI Core instance and also the **API Key**. This can either be done with environment
 variables or with command parameters.
@@ -27,6 +27,19 @@ With the command parameters `--endpoint` and `--api-key`:
 > [!NOTE]
 > API keys for Rest PKI Core usually have a pipe character (`|`), for instance `yourapp|12345678` (but longer). If this creates problems
 > for your environment, you can use only the part after the pipe character, for instance only `12345678` in the previous example.
+
+### Optional configurations
+
+By default, the timeout when making API calls to the Rest PKI Core instance is 5 minutes. It may be necessary to increase this value if you're signing
+very large files or under slow internet connection scenarios. You can customize this with the environment variable `RestPki__TimeoutSeconds`:
+
+[!include[Timeout configuration by environment variables](../../../../../../includes/rest-pki/core/client-tool/timeout-config-env.md)]
+
+Or with the command paramerer `--timeout`:
+
+[!include[Timeout configuration by parameter](../../../../../../includes/rest-pki/core/client-tool/timeout-config-param.md)]
+
+The above examples would set the timeout to 10 minutes (600 seconds).
 
 ## Commands
 

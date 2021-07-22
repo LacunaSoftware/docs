@@ -11,7 +11,7 @@ O utilitário consiste em um único arquivo executável que pode ser obtido em:
 
 Para outras plataformas, [clique aqui](https://cdn.lacunasoftware.com/restpkicore/client-tool/).
 
-## Configuração das credenciais de acesso à API
+## Configuração
 
 Para utilizar o utilitário, é preciso configurar o endereço da instância do Rest PKI Core (o *endpoint*) e a chave de API. Esses parâmetros podem ser configurados
 por variáveis de ambiente ou por parâmetros para o comando.
@@ -27,6 +27,19 @@ Configuração com parâmetros `--endpoint` e `--api-key`:
 > [!NOTE]
 > As chaves de API do Rest PKI Core geralmente contém um caractere de barra vertical (`|`), por exemplo `yourapp|12345678` (porém mais longo). Se isso constituir
 > um problema para o seu caso, você pode utilizar apenas a parte após a barra vertical (no exemplo anterior, apenas `12345678`).
+
+### Configurações opcionais
+
+O timeout padrão nas chamadas ao Rest PKI Core é de 5 minutos. Pode ser necessário aumentar esse tempo se você estiver tentando assinar arquivos muito grandes
+ou em situações de conexão lenta com a internet. Essa configuração pode ser alterada com a variável de ambiente `RestPki__TimeoutSeconds`:
+
+[!include[Timeout configuration by environment variables](../../../../../../includes/rest-pki/core/client-tool/timeout-config-env.md)]
+
+Ou com o parâmetro `--timeout`:
+
+[!include[Timeout configuration by parameter](../../../../../../includes/rest-pki/core/client-tool/timeout-config-param.md)]
+
+Os exemplos acima configurariam o timeout para 10 minutos (600 segundos).
 
 ## Comandos
 
