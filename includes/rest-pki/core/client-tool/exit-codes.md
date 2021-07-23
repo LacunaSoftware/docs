@@ -11,3 +11,4 @@
 8         | Certificate not found
 9         | Certificate rejected
 10        | Bad `--count` argument
+12        | Rest PKI API exception
