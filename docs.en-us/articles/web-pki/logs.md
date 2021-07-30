@@ -24,7 +24,7 @@ Note: `%LOCALAPPDATA%` is a shortcut for the current user app data directotry.
 
 On Mac, the log file is placed on:
 ```
-~/.lacuna-webpki/WebPKIForChrome.log
+~/.lacuna-webpki/WebPkiCore.log
 ```
 
 Note: `~` is a terminal shortcut for the current user home directory.
@@ -33,7 +33,7 @@ Note: `~` is a terminal shortcut for the current user home directory.
 
 On Linux, the log file is placed on:
 ```
-~/.lacuna-webpki/WebPKIForChrome.log
+~/.lacuna-webpki/WebPkiCore.log
 ```
 
 Note: `~` is a terminal shortcut for the current user home directory.

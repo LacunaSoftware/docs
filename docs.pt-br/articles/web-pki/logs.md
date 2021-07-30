@@ -24,7 +24,7 @@ Nota: `%LOCALAPPDATA%` é um atalho para o diretório de dados de aplicação do
 
 No Mac, os logs são registrados no arquivo:
 ```
-~/.lacuna-webpki/WebPKIForChrome.log
+~/.lacuna-webpki/WebPkiCore.log
 ```
 
 Nota: `~` é um atalho no terminal para o diretório `home` do usuário atual.
@@ -33,7 +33,7 @@ Nota: `~` é um atalho no terminal para o diretório `home` do usuário atual.
 
 No Linux, os logs são registrados no arquivo:
 ```
-~/.lacuna-webpki/WebPKIForChrome.log
+~/.lacuna-webpki/WebPkiCore.log
 ```
 
 Nota: `~` é um atalho no terminal para o diretório `home` do usuário atual.
