@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-10" />
+### 2.8.10 (2021-08-02)
+
+- Add LTV presence check to PAdES signer info
+
+
 <a name="v2-8-9" />
 ### 2.8.9 (2021-07-16)
 
