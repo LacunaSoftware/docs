@@ -5,7 +5,8 @@
 
 Atualização do modelo do banco de dados: Não
 
-- Adicionado verificação de presença de LTV no PadesSignerInfo
+- Adicionar verificação de presença de LTV no PadesSignerInfo
+- Adicionar aplicação de limitador em operação de marcas de PDF
 - Atualização PKI SDK para [2.8.10](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-8-10)
 
 <a name="v1-26-6" />
