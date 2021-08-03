@@ -1,5 +1,13 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-26-7" />
+### 1.26.7 (2021-08-02)
+
+Database model update: No
+
+- Add LTV presence check to PadesSignerInfo
+- Update PKI SDK to [2.8.10](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-8-10)
+
 <a name="v1-26-6" />
 ### 1.26.6 (2021-07-16)
 
