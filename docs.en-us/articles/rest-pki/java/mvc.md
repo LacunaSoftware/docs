@@ -3,13 +3,13 @@
 The **Java 7+ Spring MVC samples project** shows how to use [Rest PKI](../index.md) together with [Web PKI](../../web-pki/index.md)
 on a Java 7+ web application using the [Spring MVC](http://spring.io/) framework. It is hosted on GitHub at:
 
-https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Java/sample-spring-mvc
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/java/springmvc
 
 ## Running the project
 
-1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
+1. [Download the project](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [Java/sample-spring-mvc/src/main/resources/application.properties](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/application.properties#L27-L30)
+1. Paste your access token on the file [Java/sample-spring-mvc/src/main/resources/application.properties](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/application.yml#L41)
 1. In a command prompt, navigate to the folder `Java/sample-spring-mvc` and run the command
    `gradlew run` (on Linux `./gradlew run`). If you are using Windows, you can alternatively
    double-click the file `Run-Sample.bat`.
@@ -23,29 +23,29 @@ This section lists where to find the relevant parts in each feature sample on th
 <a name="auth" />
 ### Authentication with digital certificate
 
-* Controller: [AuthenticationController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/AuthenticationController.java)
+* Controller: [AuthenticationRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/AuthenticationRestController.java)
 * Views:
-  * [authentication.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/authentication.html)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/static/js/signature-form.js))
-  * [authentication-success.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/authentication-success.html)
-  * [authentication-failed.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/authentication-failed.html)
+  * [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/authentication-rest/index.html)
+    (JavaScript on [authentication-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/static/js/authentication-form.js))
+  * [authentication-success.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/authentication-rest/success.html)
+  * [authentication-failed.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/authentication-rest/failed.html)
 
 <a name="pades" />
 ### PAdES signature with file already on server
 
-* Controller: [PadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/PadesSignatureController.java)
+* Controller: [PadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/PadesSignatureRestController.java)
 * Views:
-  * [pades-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/pades-signature.html)
-    (Javascript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/static/js/signature-form.js))
-  * [pades-signature-info.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/pades-signature-info.html)
+  * [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/pades-signature-rest/index.html)
+    (Javascript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/static/js/signature-form.js))
+  * [signature-info.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/pades-signature-rest/signature-info.html)
 
 <a name="pades-upload" />
 ### PAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on the controller
-[UploadController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/UploadController.java)
+[UploadController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/UploadController.java)
 and view
-[upload.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/upload.html))
+[index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/upload/index.html))
 is done the control flow is the same as in the sample [PAdES signature with file already on server](#pades), but with the URL parameter `userfile` filled.
 
 <a name="pades-cosign" />
@@ -59,7 +59,7 @@ same control flow is repeated, but now with the URL parameter `userfile` filled.
 
 This feature is demonstrated as an optional configuration on the [PAdES signature with file already on server](#pades)
 sample which by default starts commented out. To enable it, uncomment the following line on
-[PadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/PadesSignatureController.java):
+[PadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/PadesSignatureRestController.java):
 
 ```java
 signatureStarter.addPdfMark(PadesVisualElements.getPdfMark(1));
@@ -68,7 +68,7 @@ signatureStarter.addPdfMark(PadesVisualElements.getPdfMark(1));
 > [!TIP]
 > Try changing the argument to the `getPdfMark(int)` method to see different PDF mark configurations
 
-The relevant code is on the class [PadesVisualElements](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/util/PadesVisualElements.java), method `getPdfMark(int)`.
+The relevant code is on the class [PadesVisualElements](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/util/restpki/PadesVisualElements.java), method `getPdfMark(int)`.
 
 <a name="pades-server" />
 ### PAdES signature using server key
@@ -76,39 +76,34 @@ The relevant code is on the class [PadesVisualElements](https://github.com/Lacun
 * Controller: [PadesSignatureServerKeyController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/PadesSignatureServerKeyController.java)
 * View: [pades-signature-server-key.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/pades-signature-server-key.html)
 
-<a name="pades-wo-client" />
-### PAdES signature without client communication
-
-Not yet available on this project.
-
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 
-* Controller: [OpenPadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/OpenPadesSignatureController.java)
-* View: [open-pades-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/open-pades-signature.html)
+* Controller: [OpenPadesRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/OpenPadesRestController.java)
+* View: [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/open-pades-rest/index.html)
 
 <a name="print" />
 ### Printer-friendly version
 
 After the control flow of the sample [PAdES signature with already on server](#pades) is completed and the link *Download a 
-printer-friendly version of the signed file* is clicked, the flow goes to the controller [PrinterFriendlyVersionController.java](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/PrinterFriendlyVersionController.java) with the URL parameter `fileId` filled.
+printer-friendly version of the signed file* is clicked, the flow goes to the controller [PrinterFriendlyPadesRestController.java](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/PrinterFriendlyPadesRestController.java) with the URL parameter `fileId` filled.
 
 <a name="cades" />
 ### CAdES signature with file already on server
 
-* Controller: [CadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/CadesSignatureController.java)
+* Controller: [CadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/CadesSignatureRestController.java)
 * Views:
-  * [cades-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/cades-signature.html)
-  (Javascript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/static/js/signature-form.js))
-  * [cades-signature-info.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/cades-signature-info.html)
+  * [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/cades-signature-rest/index.html)
+  (Javascript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/static/js/signature-form.js))
+  * [signature-info.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/cades-signature-rest/signature-info.html)
 
 <a name="cades-upload" />
 ### CAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on the controller
-[UploadController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/UploadController.java)
+[UploadController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/UploadController.java)
 and view
-[upload.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/upload.html))
+[index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/upload/index.html))
 is done the control flow is the same as in the sample [CAdES signature with file already on server](#cades), but with the URL parameter `userfile` filled.
 
 <a name="cades-cosign" />
@@ -161,9 +156,9 @@ Not yet available on this project.
 <a name="batch" />
 ### Batch of PAdES signatures
 
-* Controller: [BatchSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/BatchSignatureController.java)
-* View: [batch-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/batch-signature.html)
-  * Javascript: [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/static/js/batch-signature-form.js)
+* Controller: [BatchPadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/BatchPadesSignatureRestController.java)
+* View: [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/batch-signature-rest/index.html)
+  * Javascript: [batch-signature-rest-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/static/js/batch-signature-rest-form.js)
 
 <a name="batch-optimized" />
 ### Optimized batch of PAdES signatures
