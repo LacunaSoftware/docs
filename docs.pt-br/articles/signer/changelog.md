@@ -4,6 +4,17 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-33-1" />
+### 1.33.1 (2021-07-30)
+
+* Melhorias
+  * [SIG-736] Atualizar biblioteca de gerenciamento de blobs do Azure
+
+* Correções de bugs
+  * [SIG-735] Erro ao assinar PDF eletronicamente
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-33-0" />
 ### 1.33.0 (2021-07-22)
 

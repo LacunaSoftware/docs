@@ -4,6 +4,17 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-33-1" />
+### 1.33.1 (2021-07-30)
+
+* Improvements
+  * [SIG-736] Update Azure blob management library
+
+* Bug fixes
+  * [SIG-735] Error while signing PDF electronically
+
+Updates database model: no
+
 <a name="v1-33-0" />
 ### 1.33.0 (2021-07-22)
 
