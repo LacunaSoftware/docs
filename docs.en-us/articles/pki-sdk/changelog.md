@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-11" />
+### 2.8.11 (2021-08-07)
+
+- Improve not supported PDF encryption error handling
+
+
 <a name="v2-8-10" />
 ### 2.8.10 (2021-08-02)
 
