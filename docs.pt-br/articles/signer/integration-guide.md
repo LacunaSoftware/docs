@@ -414,11 +414,16 @@ Serão retornados os dados de cada uma das assinaturas encontradas no documento.
 
 <a name="delete-document"></a>
 
-Para deletar um documento você precisa ter acesso ao ID deste mesmo decumento e fazer um chamada do tipo `DELETE`. Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+Para deletar um documento você precisa ter acesso ao ID deste mesmo decumento e fazer um chamada do tipo `DELETE`. 
 
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-611/dotnet/console/Console/Scenarios/DeleteDocumentScenario.cs)
+```javascript
+DELETE api/documents/{id}
+```
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/DeleteDocumentScenario.cs)
 	
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-611/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DeleteDocumentScenario.java)
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DeleteDocumentScenario.java)
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DeleteDocumentScenario.php)
 
