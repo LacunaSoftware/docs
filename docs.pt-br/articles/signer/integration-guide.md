@@ -414,10 +414,10 @@ Serão retornados os dados de cada uma das assinaturas encontradas no documento.
 
 <a name="delete-document"></a>
 
-Para deletar um documento você precisa ter acesso ao ID deste mesmo decumento e fazer um chamada do tipo `DELETE`. 
+Para deletar um documento você precisa ter acesso ao ID deste mesmo documento e fazer um chamada do tipo `DELETE`. 
 
 ```javascript
-DELETE api/documents/{id}
+DELETE /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 ```
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
@@ -426,6 +426,45 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DeleteDocumentScenario.java)
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DeleteDocumentScenario.php)
+
+### Cancelar documento
+
+Caso queira cancelar um documento, é necessário enviar o ID do documento através de uma requisição do tipo `POST` junto ao campo `reason`, conforme o exemplo abaixo:
+
+```javascript
+POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/cancellation
+
+{
+    "reason": "This is a document cancellation"
+}
+```
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CancelDocumentScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CancelDocumentScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CancelDocumentScenario.php)
+
+### Recusar documento
+
+Para recusar um documento, é necessário enviar o ID do documento através de uma requisição do tipo `POST` junto ao campo `reason`, conforme o exemplo abaixo:
+
+```javascript
+POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/refusal
+
+{
+    "reason": "This is a document refusal"
+}
+```
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/RefuseDocumentScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/RefuseDocumentScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/RefuseDocumentScenario.php)
+
 
 ## Links Úteis
 
