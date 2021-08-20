@@ -1,5 +1,15 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-8-12" />
+### 2.8.12 (2021-08-19)
+
+- Add XAdES X509Name info element by default on PKI Brazil policies
+- Improve PDF handling thread safety
+- Improve PKI Brazil DateOfBirth certificate field decoding error handling
+- Fix XAdES X509Name order
+- Fix PDF mark font auto resizing
+
+
 <a name="v2-8-11" />
 ### 2.8.11 (2021-08-07)
 
