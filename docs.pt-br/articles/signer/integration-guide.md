@@ -465,6 +465,16 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/RefuseDocumentScenario.php)
 
+### Enviar nova versão documento
+
+É possível enviar uma nova versão do documento para um documento já criado. Portanto, é necessário enviar o ID do documento, através de uma requisição do tipo `POST`, junto ao arquivo relativo a nova versão. Vale ressaltar que o fluxo de assinaturas será reiniciado.
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/AddNewDocumentVersionScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/AddNewDocumentVersionScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
 
 ## Links Úteis
 
