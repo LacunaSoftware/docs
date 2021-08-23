@@ -115,6 +115,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/gvb.png)
 
+* space-cadet-yellow (v1.34.0):
+
+![Color Scheme](../images/themes/scy.png)
+
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 

@@ -108,6 +108,8 @@ specified in the MaxNumberSignaturesToValidateAtOnce setting.
 
 * **EnableEmailTemplateCustomization** (v1.33.0): if `true`, allows default email templates to be overriden. The files must be HTML and follow the pattern `Email-<template-type>.html`.
 
+* **HidePublicAreaMenuLinks** (v1.34.0): if `true`, hides menu links in the public area such as the document validate and login links.
+
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
 
@@ -344,6 +346,7 @@ volume batches this is used to avoid timeouts when querying the database.
 * **NumberDocumentsPerGenerationRound** (default: `10`): number of documents processed in each round of a generation batch.
 * **NumberNotificationsCreatedPerRound** (default: `30`): number of notifications created per batch round.
 * **NumberDocumentsPerExpirationRound** (v1.33.0, default: `100`): number of documents processed per expiration round.
+* **NotifyPendingActionsIndividually ** (v1.34.0): if `true`, will send pending action emails individually when performing batch actions.
 
 ###  *Envelopes* Settings (v1.33.0)
 

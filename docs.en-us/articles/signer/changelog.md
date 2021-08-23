@@ -4,6 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-34-0" />
+### 1.34.0 (2021-08-20)
+
+* New Features
+  * [SIG-740] Add setting that allows notification of pending actions in batch signature
+  * [SIG-737] Create space cadet yellow theme
+  * [SIG-181] Default signature image for both digital and electronic signatures
+
+* Improvements
+  * [SIG-719] Allow reduction of possible actions in the public area
+  * [SIG-689] Handle repeated headers in the document generation CSV
+  * [SIG-662] Cloud certificate signature does not display certificate validation errors in single signature
+
+* Bug fixes
+  * [SIG-742] Printer friendly version displays expiration watermark even if the document is concluded
+  * [SIG-734] Incorrect selfie orientation when taking picture in iOS
+  * [SIG-725] Error while removing participant from flow after sending SMS or creating Pix authentication
+  * [SIG-706] Organization is not unblocked after paying due invoices
+
+Updates database model: no
+
 <a name="v1-33-1" />
 ### 1.33.1 (2021-07-30)
 

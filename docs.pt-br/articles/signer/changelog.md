@@ -4,6 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-34-0" />
+### 1.34.0 (2021-08-20)
+
+* Novas funcionalidades
+  * [SIG-740] Adicionar configuração que permita notificar ações pendentes nas assinaturas em lote
+  * [SIG-737] Criar tema space cadet yellow
+  * [SIG-181] Permitir configurar imagem de assinatura padrão - assinatura digital e eletronica
+
+* Melhorias
+  * [SIG-719] Permitir reduzir ações que podem ser tomadas na área pública
+  * [SIG-689] Tratar cabeçalhos repetidos na geração de documentos
+  * [SIG-662] Assinatura com certificado em nuvem não exibe erros de falha de validação do certificado na assinatura única
+
+* Correções de bugs
+  * [SIG-742] Versão para impressão mostra marca d'água de documento expirado quando documento está concluído
+  * [SIG-734] Orientação incorreta da selfie ao tirar pelo iPhone
+  * [SIG-725] Erro ao tentar apagar fluxo do documento após o envio de SMS ou Pix
+  * [SIG-706] Organização não é desbloqueada após o pagamento de faturas pendentes
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-33-1" />
 ### 1.33.1 (2021-07-30)
 
