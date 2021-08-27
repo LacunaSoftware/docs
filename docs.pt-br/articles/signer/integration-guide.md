@@ -285,6 +285,9 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 A partir do momento que um documento foi criado, é possível fazer o download de diferentes tipos de versões deste mesmo documento (de acordo com o estágio no qual ele se encontra). Caso queira fazer o download do documento, utilize a [API de Download de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id__content).
 
+```javascript
+GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/content?type=Original
+```
 As opções disponíveis para download são:
 
 * Arquivo Assinado
