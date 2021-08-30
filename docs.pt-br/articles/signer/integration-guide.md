@@ -322,7 +322,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-504/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
 	
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/ListDocumentsScenario.java)
 
