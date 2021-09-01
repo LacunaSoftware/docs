@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-27-0" />
+### 1.27.0 (2021-08-31)
+
+Atualização do modelo do banco de dados: Não
+
+- Adicionar políticas de assinatura XAdES ICP-Brasil AD-RC e AD-RA
+- Atualização PKI SDK para [2.8.12](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-8-12)
+
 <a name="v1-26-7" />
 ### 1.26.7 (2021-08-02)
 

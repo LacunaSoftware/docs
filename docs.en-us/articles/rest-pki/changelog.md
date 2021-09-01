@@ -1,5 +1,13 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-27-0" />
+### 1.27.0 (2021-08-31)
+
+Database model update: No
+
+- Add XAdES PKI Brazil AD-RC and AD-RA signature policies
+- Update PKI SDK to [2.8.12](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-8-12)
+
 <a name="v1-26-7" />
 ### 1.26.7 (2021-08-02)
 
