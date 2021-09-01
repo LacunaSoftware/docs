@@ -157,9 +157,6 @@ POST {endpoint}/api/document-keys/batch
 }
 ```
 
-> [!NOTE]
-> Instruções para Java e PHP serão documentadas em breve
-
 O parâmetro `provisionalMetadata` na alocação de chaves serve para informar qual é o cartório responsável por submeter o documento correspondente
 a uma determinada chave, permitindo ao sistema exibir essa informação caso a chave seja usada na consulta de documentos:
 
