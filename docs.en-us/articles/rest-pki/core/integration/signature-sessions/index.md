@@ -17,7 +17,7 @@ call APIs to fetch the documents signed by the user:
 ## Creating a signature session
 
 > [!TIP]
-> From this point on we'll describe calls to Rest PKI Core. Make sure you've read the [Get Started](get-started.md) article to be able to keep up.
+> From this point on we'll describe calls to Rest PKI Core. Make sure you've read the [Get Started](../get-started.md) article to be able to keep up.
 
 On .NET, call `IRestPkiService.CreateSignatureSessionAsync()` and use the `RedirectUrl` returned to redirect your user:
 
