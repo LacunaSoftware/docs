@@ -4,6 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-26-0" />
+### 3.26.0 (2021-09-01)
+
+* Novas funcionalidades
+  * [LI-361] Permitir personalizar HTML dos emails enviados
+  * [LI-359] Login com certificados em nuvem
+
+* Correções de bugs
+  * [LI-360] Opção de desabilitar cadastro continuar permitindo cadastro com certificado digital
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-25-1" />
+### 3.25.1 (2021-07-01)
+
+* Melhorias
+  * [LI-358] Suportar tipos alternativos de autenticação com AWS S3
+  * [LI-356] Atualizar Sink do New Relic para melhorar registro de exceções
+
+Atualiza modelo do banco de dados: não
+
 <a name="v3-25-0" />
 ### 3.25.0 (2021-02-03)
 

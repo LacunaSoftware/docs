@@ -4,6 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-26-0" />
+### 3.26.0 (2021-09-01)
+
+* New Features
+  * [LI-361] HTML customization of notifications
+  * [LI-359] Login with cloud certificates
+
+* Bug fixes
+  * [LI-360] Disable signup option still allows users to register when using a digital certificate
+
+Updates database model: no
+
+<a name="v3-25-1" />
+### 3.25.1 (2021-07-01)
+
+* Improvements
+  * [LI-358] Support AWS S3 alternative authentication types
+  * [LI-356] Update New Relic Sink to improve exception logs
+
+Updates database model: no
+
 <a name="v3-25-0" />
 ### 3.25.0 (2021-02-03)
 
