@@ -11,14 +11,14 @@ Updating the Javascript library:
 > [!TIP]
 > All updates are guaranteed to be 100% backward compatible, so you can update the library without fear of breaking existing code
 
-The latest version of the Javascript library is **2.14.6**. You can get it on the link below:
+The latest version of the Javascript library is **2.14.8**. You can get it on the link below:
 
-https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.6.min.js
+https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.8.min.js
 
 Or include in your Web page as:
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.6.min.js"
-  integrity="sha256-P92LF1ePw0qwnmbefDpDiMcr8rmwFkcxVX+utanmlek="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.8.min.js"
+  integrity="sha256-Q1U+M9pC+SnXcpLrKZj9tKXp8UG6dD7qrNsBgaXK9ZA="
   crossorigin="anonymous"></script>
 ```
 
