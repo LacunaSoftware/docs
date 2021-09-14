@@ -51,6 +51,8 @@ or organization.
 * **EnableSignatureMarksDownload**: if `true`, enables user to download the signature marks version of a document.
 * **EnableSigningTagsDownload** (default: `true`, v1.5.0): if `true`, enables user to download the signing tags of a document.
 * **EnablePrinterFriendlyDownload** (default: `true`, v1.5.0): if `true`, enables user to download the printer friendly version of a document.
+* **DocumentConcludedNotificationAttachmentType** (default: `PrinterFriendlyVersion`, v1.35.0): defines the document version that is sent as an attachment when the 
+document is concluded. Available values are: `Original`, `PrinterFriendlyVersion`, `Signatures`, `OriginalWithMarks`, `SigningTags` and `SignatureMarks`.
 
 * **EmailAttachmentSizeLimit**: The maximum file size (in bytes) that can be attached to an email. The default value is `10485760` (10 MB).
 
@@ -109,6 +111,9 @@ specified in the MaxNumberSignaturesToValidateAtOnce setting.
 * **EnableEmailTemplateCustomization** (v1.33.0): if `true`, allows default email templates to be overriden. The files must be HTML and follow the pattern `Email-<template-type>.html`.
 
 * **HidePublicAreaMenuLinks** (v1.34.0): if `true`, hides menu links in the public area such as the document validate and login links.
+
+* **MaskUserIdentifier** (v1.35.0): if `true`, mask user identifiers in signature visual representations, signature manifest, public area and most screens that allow users to 
+view information from other users.
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)

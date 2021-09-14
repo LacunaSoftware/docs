@@ -4,6 +4,25 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-35-0" />
+### 1.35.0 (2021-09-15)
+
+* New Features
+  * [SIG-752] Instance setting to define which document version is sent in the document conclusion notification
+  * [SIG-576] Folder selector that allows to navigate in folder hierarchy
+
+* Improvements
+  * [SIG-745] Add signature type (electronic or digital) in document reports
+  * [SIG-699] Setting to mask CPFs
+  * [SIG-687] Document signature with certificate requirements
+
+* Bug fixes
+  * [SIG-753] Signature positioning not available in document generation
+  * [SIG-749] Instance with disabled printer friendly version is attaching it in document conclusion notifications
+  * [SIG-733] Document creator in organization cannot edit or delete documents he created
+
+Updates database model: yes
+
 <a name="v1-34-0" />
 ### 1.34.0 (2021-08-20)
 

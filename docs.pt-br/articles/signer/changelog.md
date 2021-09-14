@@ -4,6 +4,25 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-35-0" />
+### 1.35.0 (2021-09-15)
+
+* Novas funcionalidades
+  * [SIG-752] Permitir definir por instância qual o versão do documento é enviada na notificação de conclusão
+  * [SIG-576] Seletor de pastas que permita navegar na hierarquia de subpastas
+
+* Melhorias
+  * [SIG-745] Adicionar informação do tipo de assinatura (eletronica ou digital) nos relatórios de documentos
+  * [SIG-699] Configuração para mascarar CPFs
+  * [SIG-687] Assinatura de documento com requisitos de certificado
+
+* Correções de bugs
+  * [SIG-753] Posicionamento de assinatura não está funcionando na geração de documentos
+  * [SIG-749] Instância com versão para impressão desabilitada está enviando-a na conclusão do documento
+  * [SIG-733] Criador de documento da organização não consegue editar fluxo e excluir documentos que criou
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-34-0" />
 ### 1.34.0 (2021-08-20)
 
