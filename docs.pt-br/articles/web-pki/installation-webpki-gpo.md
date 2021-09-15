@@ -1,13 +1,13 @@
 ﻿# Instalação e distribuição de componentes do WEB PKI via GPO
 
 Para distribuição automática dos plugins, extraia os arquivos do ZIP 
-(webpki-ext.zip) em anexo para um diretório local ou de rede.
+([webpki-ext.zip](https://cdn.lacunasoftware.com/webpki/webpki-ext.zip)) para um **diretório compartilhado** entre os usuários.
 
-Como exemplo, vamos usar o diretório: "C:\temp\webpki-ext"
+Como exemplo, vamos usar o **diretório compartilhado**: `C:\shared\webpki-ext`
 
-**Distribuição automática do plugin no Chrome**
+## Distribuição automática do plugin no Chrome
 
-Criar uma chave com caminho: HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\dcngeagmmhegagicpcmpinaoklddcgon
+Criar uma chave com caminho: `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Google\Chrome\Extensions\dcngeagmmhegagicpcmpinaoklddcgon`
 
 Adicione as *Strings Value*:
 
@@ -18,7 +18,7 @@ Data: https://clients2.google.com/service/update2/crx
 
 ```
 Name: path
-Data: C:\temp\webpki-ext\webpki-chrome-ext.crx
+Data: C:\shared\webpki-ext\webpki-chrome-ext.crx
 ```
 
 ```
@@ -30,9 +30,9 @@ Como na imagem abaixo:
 
 ![String Value](../../../images/web-pki/string-values-gpo.png)
 
-Criar uma chave com caminho: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist
+Criar uma chave com caminho: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist`
 
-E adicionar uma String Value
+E adicionar uma *String Value*
 
 ```
 Name: 1 (ou o próximo inteiro sequencial se já houver)
@@ -43,28 +43,28 @@ Como na imagem abaixo:
 
 ![String Value](../../../images/web-pki/string-values-gpo2.png)
 
-**Distribuição automática do plugin no Firefox**
+## Distribuição automática do plugin no Firefox
 
-Criar uma chave com caminho: HKEY_LOCAL_MACHINE\Software\Policies\Mozilla\Firefox\Extensions\Install
+Criar uma chave com caminho: `HKEY_LOCAL_MACHINE\Software\Policies\Mozilla\Firefox\Extensions\Install`
 
 E adicionar uma String Value:
 
 ```
 Name: 1 (ou o próximo inteiro sequencial se já houver)
-Data: C:\temp\webpki-ext\webpki-firefox-ext.xpi
+Data: C:\shared\webpki-ext\webpki-firefox-ext.xpi
 ```
 
 Como na imagem abaixo:
 
 ![String Value](../../../images/web-pki/string-values-gpo3.png)
 
-**Distribuição automática da aplicação nativa**
+## Distribuição automática da aplicação nativa
 
 Baixar o instalador MSI do link e distribuir via GPO:
 
 https://get.webpkiplugin.com/downloads/latest/setup-win-pt
 
-## Próximos passos
+## Veja também
 
 * Veja os [browser suportados](browser-support.md)
 * Veja como funciona o [licenciamento](licensing.md)
