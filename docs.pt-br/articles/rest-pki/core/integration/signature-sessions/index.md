@@ -97,6 +97,27 @@ Em Java, a view de Spring seria algo como:
 
 [!include[Callback in java - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-java-view.md)]
 
+<a name="predefined-documents" />
+
+## Pré-definindo os documentos a serem assinados
+
+As sessões que criamos até aqui solicitam que o usuário faça upload dos documentos a serem assinados. Você pode alternativamente especificar os documentos
+que devem ser assinador no momento da criação da sessão. Nesse caso, o usuário não poderá fazer upload de documentos, podendo apenas assinar os documentos
+pré-definidos pela sua aplicação.
+
+Em .NET:
+
+[!include[Predefine documents in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/predefine-documents-dotnet.md)]
+
+> [!NOTE]
+> Em breve teremos as instruções para Java 
+
+Integração direta por API:
+
+[!include[Predefine documents API](../../../../../../includes/rest-pki/core/signature-sessions/predefine-documents-api.md)]
+
+Para mais informações veja [Referenciando arquivos](../file-referencing.md).
+
 ## Desabilitando downloads
 
 Caso tenha a impressão de que alguns de seus usuários, ao invés de concluirem a sessão e retornarem à sua aplicação, simplesmente fazem o download dos arquivos

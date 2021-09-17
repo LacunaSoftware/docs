@@ -94,6 +94,26 @@ On Java, the Thymeleaf view:
 
 [!include[Callback in java - view](../../../../../../includes/rest-pki/core/signature-sessions/callback-java-view.md)]
 
+<a name="predefined-documents" />
+
+## Predefining documents
+
+The sessions created so far require the user to upload the documents that will be signed. You can instead specify the documents that will be signed
+when creating the session. In this case, the user will not be able to upload additional documents to the session.
+
+On .NET:
+
+[!include[Predefine documents in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/predefine-documents-dotnet.md)]
+
+> [!NOTE]
+> Instructions for Java coming soon
+
+Direct API integration:
+
+[!include[Predefine documents API](../../../../../../includes/rest-pki/core/signature-sessions/predefine-documents-api.md)]
+
+For more information see [Referencing files](../file-referencing.md).
+
 ## Disabling downloads
 
 If you don't receive webhook notifications of documents signed, you might feel like the signature session process is not working reliably because some users simply
