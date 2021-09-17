@@ -152,7 +152,7 @@ Em .NET:
 
 [!include[Create session with webhook in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/webhook-flow-dotnet.md)]
 
-Veja [exemplo do início do fluxo com webhook em .NET](hhttps://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
+Veja [exemplo do início do fluxo com webhook em .NET](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/dotnet/mvc/PkiSuiteAspNetMvcSample/Controllers/SignatureSessionRestCoreController.cs).
 
 Em PHP:
 
