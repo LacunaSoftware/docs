@@ -101,6 +101,7 @@
 ##### [Validação de arquivos](rest-pki/core/integration/signature-sessions/file-validation.md)
 ##### [Processamento em background](rest-pki/core/integration/signature-sessions/background-processing.md)
 ##### [Metadados de documentos](rest-pki/core/integration/signature-sessions/document-metadata.md)
+#### [Referenciando arquivos](rest-pki/core/integration/file-referencing.md)
 #### [Webhooks](rest-pki/core/integration/webhooks.md)
 #### [Códigos de erro](rest-pki/core/integration/error-codes.md)
 #### [Utilitário cliente](rest-pki/core/integration/client-tool/index.md)
