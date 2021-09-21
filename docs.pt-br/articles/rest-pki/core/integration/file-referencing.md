@@ -28,8 +28,26 @@ acessível publicamente com método `GET`. Quaisquer argumentos de autorização
 
 ## Java
 
-> [!NOTE]
-> Em breve
+Você pode referenciar um arquivo por seu *path*:
+
+[!include[Reference by path in java](../../../../../includes/rest-pki/core/file-reference-path-java.md)]
+
+Por um objeto `FileInfo` contendo o *path* do arquivo:
+
+[!include[Reference by FileInfo in java](../../../../../includes/rest-pki/core/file-reference-file-java.md)]
+
+Pelo conteúdo do arquivo, passando um array de bytes, nesse caso é preciso também informar o nome do arquivo:
+
+[!include[Reference by content in java](../../../../../includes/rest-pki/core/file-reference-content-java.md)]
+
+Por uma `stream`. Assim como em referências pelo conteúdo do arquivo, é preciso fornecer o nome do arquivo:
+
+[!include[Reference by stream in java](../../../../../includes/rest-pki/core/file-reference-stream-java.md)]
+
+Por URL absoluta. Nesse caso, o servidor da API irá baixar o arquivo do servidor da sua aplicação. A URL precisa ser
+acessível publicamente com método `GET`. Quaisquer argumentos de autorização devem estar embutidos na própria URL:
+
+[!include[Reference by URL in java](../../../../../includes/rest-pki/core/file-reference-url-java.md)]
 
 ## Direct API integration
 

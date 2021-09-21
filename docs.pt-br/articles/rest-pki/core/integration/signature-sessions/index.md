@@ -109,8 +109,9 @@ Em .NET:
 
 [!include[Predefine documents in dotnet](../../../../../../includes/rest-pki/core/signature-sessions/predefine-documents-dotnet.md)]
 
-> [!NOTE]
-> Em breve teremos as instruções para Java 
+Em Java:
+
+[!include[Predefine documents in java](../../../../../../includes/rest-pki/core/signature-sessions/predefine-documents-java.md)]
 
 Integração direta por API:
 

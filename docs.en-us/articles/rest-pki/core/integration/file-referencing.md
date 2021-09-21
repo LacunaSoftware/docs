@@ -28,8 +28,26 @@ http method. Any authorization arguments must be embedded withing the URL itself
 
 ## Java
 
-> [!NOTE]
-> Coming soon
+You can reference a file by its path:
+
+[!include[Reference by path in java](../../../../../includes/rest-pki/core/file-reference-path-java.md)]
+
+By a `FileInfo` containing the file's path:
+
+[!include[Reference by FileInfo in java](../../../../../includes/rest-pki/core/file-reference-file-java.md)]
+
+By the file's bytes, in which case you must also give its filename:
+
+[!include[Reference by content in java](../../../../../includes/rest-pki/core/file-reference-content-java.md)]
+
+By a stream. Like when referencing by the file's bytes, the filename must also be given:
+
+[!include[Reference by bytes in java](../../../../../includes/rest-pki/core/file-reference-stream-java.md)]
+
+By absolute URL. In this case, the API backend will download the file from your application's backend. The URL must be publicly accessible with the `GET`
+http method. Any authorization arguments must be embedded withing the URL itself:
+
+[!include[Reference by URL in java](../../../../../includes/rest-pki/core/file-reference-url-java.md)]
 
 ## Direct API integration
 
