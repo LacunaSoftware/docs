@@ -43,3 +43,8 @@ you receive an error message stating that the .NET Framework is not installed, u
 
 > [!NOTE]
 > To install the .NET Framework 4.6.1 on Windows 7 or Windows Server 2008 R2 you must have the Service Pack 1 for the operating system installed.
+
+<a name="update" />
+## Update
+
+To update PKI Express, simply download the new version and run the installer.

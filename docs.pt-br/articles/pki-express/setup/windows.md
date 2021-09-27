@@ -48,3 +48,8 @@ um dos links abaixo:
 > [!NOTE]
 > A instalação do .NET Framework 4.6.1 no Windows 7 e no Windows Server 2008 R2 exige que o Service Pack 1
 > esteja instalado.
+
+<a name="update" />
+## Atualização
+
+Para atualizar o PKI Express, apenas baixe a nova versão e execute o instalador.
