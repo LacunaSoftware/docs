@@ -40,6 +40,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.22 - [AC Vida Connect](http://ac.vidaconnect.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.23 - [AC ESE](https://ac.ese.edu.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.24 - [AC CNSP](https://ac.usf.edu.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.25 - [AC FIEMS](https://ac.fiems.com.br/certs/ac.txt)
 
 ## 2. Políticas de certificado A1
 
