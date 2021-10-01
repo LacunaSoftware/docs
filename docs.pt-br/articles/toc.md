@@ -326,4 +326,11 @@
 ### [PHP](scanner/integration/php.md)
 ### [REST API](scanner/integration/other.md)
 ## [Simulador](scanner/simulator.md)
-<!-- End of GrantID -->
+<!-- End of Scanner -->
+
+<!-- Start of Digiploma -->
+# [Digiploma](digiploma/index.md)
+## [On premises](digiploma/on-premises/index.md)
+### [Configurações](digiploma/on-premises/settings.md)
+## [Histórico de versões](digiploma/changelog.md)
+<!-- End of Digiploma -->

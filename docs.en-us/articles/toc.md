@@ -328,3 +328,10 @@
 ### [REST API](scanner/integration/other.md)
 ## [Simulator](scanner/simulator.md)
 <!-- End of GrantID -->
+
+<!-- Start of Digiploma -->
+# [Digiploma](digiploma/index.md)
+## [On premises](digiploma/on-premises/index.md)
+### [Settings](digiploma/on-premises/settings.md)
+## [Changelog](digiploma/changelog.md)
+<!-- End of Digiploma -->
