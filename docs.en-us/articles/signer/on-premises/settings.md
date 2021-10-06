@@ -53,6 +53,7 @@ or organization.
 * **EnablePrinterFriendlyDownload** (default: `true`, v1.5.0): if `true`, enables user to download the printer friendly version of a document.
 * **DocumentConcludedNotificationAttachmentType** (default: `PrinterFriendlyVersion`, v1.35.0): defines the document version that is sent as an attachment when the 
 document is concluded. Available values are: `Original`, `PrinterFriendlyVersion`, `Signatures`, `OriginalWithMarks`, `SigningTags` and `SignatureMarks`.
+* **SendOriginalFileWithPendingActionEmail** (v1.36.0): if `true`, sends the original version of the document as an attachment in pending action notifications.
 
 * **EmailAttachmentSizeLimit**: The maximum file size (in bytes) that can be attached to an email. The default value is `10485760` (10 MB).
 
@@ -284,7 +285,7 @@ Under section **InvoiceReceipt**:
 
 Under section **SMS**:
 
-* **Type**: defines the provider of SMSs. Available options are `TotalVoice`, `Twilio`, `Zenvia` (v1.28.0) and `SmsEmpresa` (v1.28.0).
+* **Type**: defines the provider of SMSs. Available options are `TotalVoice`, `Twilio`, `Zenvia` (v1.28.0), `SmsEmpresa` (v1.28.0) and `Generic` (v1.36.0).
 
 For the `TotalVoice` provider, define the setting:
 
@@ -298,12 +299,21 @@ For the `Twilio` provider, define the settings:
 
 For the `Zenvia` provider, define the settings:
 
-* **Account** (v1.28.0): the API Account (legacy).
-* **Password** (v1.28.0): the API Password (legacy).
+* **Account** (v1.28.0): the API Account of Zenvia Connect.
+* **Password** (v1.28.0): the API Password of Zenvia Connect.
 
 For the `SmsEmpresa` provider, please define the setting:
 
 * **ChaveKey** (v1.28.0): the "Chave Key" displayed in your SMS Empresa account settings.
+
+For the `Generic` provider (v1.36.0), define the settings:
+
+* **Endpoint**: the endpoint to which the SMS information will be sent.
+* **AuthType** (default: `NoAuth`): defines the type of authorization provided in the request. Available options are `NoAuth`, `Basic`, `Bearer` and `ApiKey`.
+* **Username**: the username if the AuthType is `Basic`.
+* **Password**: the password if the AuthType is `Basic`.
+* **BearerToken**: the Bearer token if the AuthType is `Bearer`.
+* **ApiKey**: the API key if the AuthType is `ApiKey`.
 
 ###  *NFEio* Settings (v1.27.0)
 

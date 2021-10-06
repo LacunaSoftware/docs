@@ -19,105 +19,109 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/default.png)
 
-* amaranth-pacific-blue:
+* amaranth-pacific-blue - apb:
 
 ![Color Scheme](../images/themes/apb.png)
 
-* amazon-cornell-red:
+* amazon-cornell-red - acr:
 
 ![Color Scheme](../images/themes/acr.png)
 
-* azure-lime-green:
+* azure-lime-green - alg:
 
 ![Color Scheme](../images/themes/alg.png)
 
-* castleton-green-orange (v1.10.1):
+* castleton-green-orange - cgo (v1.10.1):
 
 ![Color Scheme](../images/themes/cgo.png)
 
-* cerulean-lime-green:
+* cerulean-lime-green - clg:
 
 ![Color Scheme](../images/themes/clg.png)
 
-* charcoal-amazonite:
+* charcoal-amazonite - cam:
 
 ![Color Scheme](../images/themes/cam.png)
 
-* cobalt-lemon-curry:
+* cobalt-lemon-curry - clc:
 
 ![Color Scheme](../images/themes/clc.png)
 
-* dark-cerulean-green:
+* dark-cerulean-green - dcg:
 
 ![Color Scheme](../images/themes/dcg.png)
 
-* dark-grey-yellow:
+* dark-grey-yellow - dgy:
 
 ![Color Scheme](../images/themes/dgy.png)
 
-* dark-indigo-red:
+* dark-indigo-red - dir:
 
 ![Color Scheme](../images/themes/dir.png)
 
-* english-vermillion-arsenic:
+* english-vermillion-arsenic - eva:
 
 ![Color Scheme](../images/themes/eva.png)
 
-* green-dark-coral:
+* green-dark-coral - gdc:
 
 ![Color Scheme](../images/themes/gdc.png)
 
-* independence-green:
+* independence-green - idg:
 
 ![Color Scheme](../images/themes/idg.png)
 
-* metallic-seaweed-emerald:
+* metallic-seaweed-emerald - mse:
 
 ![Color Scheme](../images/themes/mse.png)
 
-* onyx-satin-gold:
+* onyx-satin-gold - osg:
 
 ![Color Scheme](../images/themes/osg.png)
 
-* oxford-blue-green (v1.10.1):
+* oxford-blue-green - obg (v1.10.1):
 
 ![Color Scheme](../images/themes/obg.png)
 
-* persian-plum-sand (v1.10.4):
+* persian-plum-sand - pps (v1.10.4):
 
 ![Color Scheme](../images/themes/pps.png)
 
-* queen-blue-mint:
+* queen-blue-mint - qbm:
 
 ![Color Scheme](../images/themes/qbm.png)
 
-* teal-blue-gold:
+* teal-blue-gold - tbg:
 
 ![Color Scheme](../images/themes/tbg.png)
 
-* viridian-green-yellow (v1.10.2):
+* viridian-green-yellow - vgy (v1.10.2):
 
 ![Color Scheme](../images/themes/vgy.png)
 
-* international-orange-green (v1.31.0):
+* international-orange-green - iog (v1.31.0):
 
 ![Color Scheme](../images/themes/iog.png)
 
-* onyx-carrot-orange (v1.31.0):
+* onyx-carrot-orange - oco (v1.31.0):
 
 ![Color Scheme](../images/themes/oco.png)
 
-* international-orange-apricot (v1.33.0):
+* international-orange-apricot - ioa (v1.33.0):
 
 ![Color Scheme](../images/themes/ioa.png)
 
-* generic-viridian-blue (v1.33.0):
+* generic-viridian-blue - gvb (v1.33.0):
 
 ![Color Scheme](../images/themes/gvb.png)
 
-* space-cadet-yellow (v1.34.0):
+* space-cadet-yellow - scy (v1.34.0):
 
 ![Color Scheme](../images/themes/scy.png)
+
+* blue-venetian-red - bvr (v1.36.0):
+
+![Color Scheme](../images/themes/bvr.png)
 
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
