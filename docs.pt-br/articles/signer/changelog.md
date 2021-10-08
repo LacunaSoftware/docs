@@ -4,6 +4,31 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-36-0" />
+### 1.36.0 (2021-10-06)
+
+* Novas funcionalidades
+  * [SIG-769] Rota para redirecionar para o cadastro
+  * [SIG-751] Configuração para anexar o documento original no e-mail de assinatura pendente
+  * [SIG-641] Permitir subir nova versão de um documento
+
+* Melhorias
+  * [SIG-777] Correções no conteúdo dos emails
+  * [SIG-776] Criar tema blue venetian red
+  * [SIG-762] Adicionar suporte ao Provedor de SMS Genérico
+  * [SIG-757] Adicionar saudação e melhorias nos emails
+  * [SIG-450] Refatoração dos temas aproveitados do SPA pelo signer
+
+* Correções de bugs
+  * [SIG-775] Opção de download da versão assinada está aparecendo na validação de documentos cancelados
+  * [SIG-768] Marca na lateral direita da versão para impressão não aparece em documentos horizontais
+  * [SIG-767] Inclusão indevida do mixin lacuna-spa
+  * [SIG-763] Documento com assinatura eletronica de timestamp e certificado auto assinado não exibe todas assinaturas no manifesto
+  * [SIG-741] Tipo de assinatura eletrônica selfie não aparece corretamente na edição de fluxo
+  * [SIG-469] Corrigir fluxo de invite
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-35-0" />
 ### 1.35.0 (2021-09-15)
 

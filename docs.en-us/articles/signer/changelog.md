@@ -4,6 +4,31 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-36-0" />
+### 1.36.0 (2021-10-06)
+
+* New Features
+  * [SIG-769] Route to redirect user to register page
+  * [SIG-751] Setting to attach original document in the pending signature notification
+  * [SIG-641] Add document new version
+
+* Improvements
+  * [SIG-777] Fixes in e-mails content
+  * [SIG-776] Create blue venetian red theme
+  * [SIG-762] Add support to the Generic SMS provider
+  * [SIG-757] Add greetings and improvements to e-mails
+  * [SIG-450] Refactoring of SPA themes
+
+* Bug fixes
+  * [SIG-775] Signatures download options is displayed in the validation of cancelled documents
+  * [SIG-768] Printer friendly right side mark is not displayed in horizontal documents
+  * [SIG-767] Wrong SPA mixin include
+  * [SIG-763] Document with timestamp and self signed certificate electronic signatures do not display all signatures in manifest
+  * [SIG-741] Electronic signature with selfie is not displayed correctly when updating flow
+  * [SIG-469] Fix invite flow
+
+Updates database model: no
+
 <a name="v1-35-0" />
 ### 1.35.0 (2021-09-15)
 
