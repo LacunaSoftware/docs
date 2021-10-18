@@ -4,16 +4,8 @@
 	<dependency>
 		<groupId>com.lacunasoftware.restpki</groupId>
 		<artifactId>restpki-client</artifactId>
-		<version>1.14.0</version>
+		<version>1.15.6</version>
 	</dependency>
 	...
 </dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
 ```

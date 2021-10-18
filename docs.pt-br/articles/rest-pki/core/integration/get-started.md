@@ -178,8 +178,6 @@ todas as pastas terminadas em `-rest-core` contém exemplos referentes ao pacote
 
 ### Chamando a API em Java
 
-Comece adicionando o pacote do Bintray [restpki-core-client](https://bintray.com/beta/#/lacunasoftware/maven/restpki-core-client), disponível para Java 8+.
-
 Para adicionar no seu projeto, coloque isso no seu arquivo `build.gradle` caso seu projeto utilize Gradle:
 
 [!include[build.gradle](../../../../../includes/rest-pki/core/get-started/gradle.md)] 
@@ -203,7 +201,7 @@ Caso queira, você pode alterar a cultura que a API deve observar. Para isso, fo
 #### Exemplos em Java
 
 Em nosso [repositório de exemplos](https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/java/springmvc), 
-todos arquivos terminados em `RestCoreController` contém exemplos referentes ao pacote Java [com.lacunasoftware.restpkicore:restpki-core-client](https://bintray.com/lacunasoftware/maven/restpki-core-client).
+todos arquivos terminados em `RestCoreController` contém exemplos referentes ao pacote Java [com.lacunasoftware.restpkicore:restpkicore-client](https://search.maven.org/artifact/com.lacunasoftware.restpki/restpkicore-client).
 
 <a name="rest" />
 

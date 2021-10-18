@@ -45,10 +45,7 @@ necessary to have the Apache Maven installed.
 
 ## Maven package
 
-In order to use PKI Express on Java you must include the Maven package [pki-express](https://bintray.com/lacunasoftware/maven/pki-express)
-
-> [!NOTE]
-> The package is not currently on Maven Central but on a private Maven repository at Bintray, which needs to be added to the list of repositories of your build file. See instructions below.
+In order to use PKI Express on Java you must include the Maven package [pki-express](https://search.maven.org/artifact/com.lacunasoftware.pkiexpress/pki-express)
 
 If your project uses **Maven**, add this to your `pom.xml`:
 

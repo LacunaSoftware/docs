@@ -10,11 +10,8 @@ To get started, choose one of the available samples projects:
 
 The usage of Rest PKI on Java applications should be done using one of the following packages:
 
-* For Java 7+: [com.lacunasoftware.restpki:restpki-client](https://bintray.com/lacunasoftware/maven/restpki-client)
-* For Java 6: [com.lacunasoftware.restpki:restpki-client-java6](https://bintray.com/lacunasoftware/maven/restpki-client-java6)
-
-> [!NOTE]
-> The packages are not currently on Maven Central but on a private Maven repository at Bintray, which needs to be added to the list of repositories of your build file. See instructions below.
+* For Java 7+: [com.lacunasoftware.restpki:restpki-client](https://search.maven.org/artifact/com.lacunasoftware.restpki/restpki-client)
+* For Java 6: [com.lacunasoftware.restpki:restpki-client-java6](https://search.maven.org/artifact/com.lacunasoftware.restpki/restpki-client-java6)
 
 ### Referencing the package (Java 7+)
 

@@ -4,16 +4,8 @@
 	<dependency>
 		<groupId>com.lacunasoftware.pkiexpress</groupId>
 		<artifactId>pki-express</artifactId>
-		<version>1.17.0</version>
+		<version>1.17.1</version>
 	</dependency>
 	...
 </dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
 ```

@@ -8,12 +8,4 @@
 	</dependency>
 	...
 </dependencies>
-...
-<repositories>
-	<repository>
-		<id>lacuna.repository</id>
-		<name>lacuna repository</name>
-		<url>http://dl.bintray.com/lacunasoftware/maven</url>
-	</repository>
-</repositories>
 ```

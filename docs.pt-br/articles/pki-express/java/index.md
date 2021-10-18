@@ -44,7 +44,7 @@ ter o Apache Maven instalado.
 
 ## Pacote Maven
 
-O uso do PKI Express em Java deve ser feito com o pacote Maven [pki-express](https://bintray.com/lacunasoftware/maven/pki-express)
+O uso do PKI Express em Java deve ser feito com o pacote Maven [pki-express](https://search.maven.org/artifact/com.lacunasoftware.pkiexpress/pki-express)
 
 > [!NOTE]
 > O pacote não encontra-se no repositório *Maven Central* mas sim no repositório de pacotes Maven da Lacuna Software, que precisa
