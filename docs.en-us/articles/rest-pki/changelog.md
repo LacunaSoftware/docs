@@ -24,6 +24,13 @@ Database model update: No
 
 - Update PKI SDK to [2.8.9](../pki-sdk/changelog.md#v2-8-9)
 
+<a name="v1-26-5" />
+### 1.26.5 (2021-07-08)
+
+Database model update: No
+
+- Add configurable invoice creation database command timeout
+
 <a name="v1-26-4" />
 ### 1.26.4 (2021-07-04)
 
