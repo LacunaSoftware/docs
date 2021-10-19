@@ -11,3 +11,15 @@ pki.init({
 ```
 
 Se você não fizer isso, seus callbacks serão chamados fora dos "ciclos" do AngularJS, o que pode ocasionar que mudanças ao `$scope` não sejam refletidas na view.
+
+# Angular2+
+
+Se a sua página utilizar o framework Angular2+, você deve passar uma referência para o `NgZone` do seu componente ou serviço ao chamar o método `init()`:
+
+```javascript
+pki.init({
+    ready: onWebPkiReady,
+    ngZone: this.ngZone,
+    ...
+});
+```

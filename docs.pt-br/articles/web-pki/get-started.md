@@ -123,6 +123,6 @@ Agora que vimos as funções básicas do Web PKI ...
 * Veja os [browser suportados](browser-support.md)
 * Veja como funciona o [licenciamento](licensing.md)
 * Veja [como customizar o comportamento quando o componente não estiver instalado](customizing-not-installed.md)
-* Se a sua aplicação utiliza AngularJS, leia a seção [Callbacks e AngularJS](angularjs.md)
+* Se a sua aplicação utiliza AngularJS ou Angular2+, leia a seção [Callbacks e Angular](angularjs.md)
 * Veja os [exemplos completos](full-samples.md)
 * Veja o [Guia da API](api-reference/index.md)

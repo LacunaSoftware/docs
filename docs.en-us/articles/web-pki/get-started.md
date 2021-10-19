@@ -123,6 +123,6 @@ Now that we've covered the basics ...
 * Check the [supported browsers](browser-support.md)
 * See how [licensing](licensing.md) works
 * See how to [customize the behavior when the component is not installed](customizing-not-installed.md)
-* If your application uses AngularJS, read the section [Callbacks and AngularJS](angularjs.md)
+* If your application uses AngularJS or Angular2+, read the section [Callbacks and Angular](angularjs.md)
 * Check out the [full samples](full-samples.md)
 * See the [API Reference](api-reference/index.md) for detailed information on each method

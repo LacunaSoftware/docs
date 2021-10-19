@@ -27,7 +27,7 @@
 ## [Callback de erro padrão](web-pki/default-error-callback.md)
 ## [Customizando o comportamento quando o componente não estiver instalado](web-pki/customizing-not-installed.md)
 ## [Utilizando uma página de instalação personalizada](web-pki/brand.md)
-## [Callbacks e AngularJS](web-pki/angularjs.md)
+## [Callbacks, AngularJS and Angular2+](web-pki/angularjs.md)
 ## [Filtros de certificados](web-pki/filters.md)
 ## [Configurando RestPKI alternativo](web-pki/customizing-restpki-url.md)
 ## [Atualizações](web-pki/update.md)

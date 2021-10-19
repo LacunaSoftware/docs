@@ -1,4 +1,4 @@
-﻿# Web PKI Advanced topics
+# Web PKI Advanced topics
 
 This article covers key advanced topics of the Lacuna Web PKI component.
 
@@ -18,6 +18,6 @@ This topic has been moved to a [separate article](default-error-callback.md)
 This topic has been moved to a [separate article](customizing-not-installed.md)
 
 <a name="angularjs" />
-## Callbacks and AngularJS
+## Callbacks, AngularJS and Angular2+
 
 This topic has been moved to a [separate article](angularjs.md)
