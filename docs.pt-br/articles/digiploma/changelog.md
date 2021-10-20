@@ -4,6 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-9-0" />
+### 1.9.0 (2021-10-20)
+
+* Novas funcionalidades
+  * [AUT-111] Novos condicionais e flexões de gênero
+
+* Correções de bugs
+  * [AUT-110] Erro ao enviar diploma com enums sem acento
+  * [AUT-109] Erro ao gerar diploma sem Autorizacao, Reconhecimento e Renovação
+  * [AUT-108] Dados do reconhecimento estão sendo exibidos como sendo da renovação de reconhecimento
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-8-0" />
+### 1.8.0 (2021-10-13)
+
+* Novas funcionalidades
+  * [AUT-106] Adicionar upload de novo arquivo no modelo para impressão em papel timbrado
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-7-0" />
 ### 1.7.0 (2021-10-01)
 

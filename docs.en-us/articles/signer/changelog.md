@@ -4,6 +4,25 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-37-0" />
+### 1.37.0 (2021-10-21)
+
+* New Features
+  * [SIG-774] Allow configuration of payment methods in iugu integration
+  * [SIG-773] Add document name in the notification subject
+  * [SIG-772] Display pending signers in the document list screen
+  * [SIG-229] Resize signature visual representation during signature
+
+* Improvements
+  * [SIG-784] Allow user to upload file instead of scanning it on Scanner
+  * [SIG-764] Allow notification subjects to be customized
+  * [SIG-759] Refused documents tab
+
+* Bug fixes
+  * [SIG-778] Error saving billing information if the Zip Code is an "incomplete code"
+
+Updates database model: no
+
 <a name="v1-36-0" />
 ### 1.36.0 (2021-10-06)
 

@@ -4,6 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-9-0" />
+### 1.9.0 (2021-10-20)
+
+* New Features
+  * [AUT-111] New conditionals and gender transformations
+
+* Bug fixes
+  * [AUT-110] Error creating degree when enums are provided without accent
+  * [AUT-109] Error creating degre without Autorizacao, Reconhecimento and Renovação
+  * [AUT-108] Reconhecimento data is displayed as Renovação de reconhecimento data
+
+Updates database model: no
+
+<a name="v1-8-0" />
+### 1.8.0 (2021-10-13)
+
+* Bug fixes
+  * [AUT-106] Added new file upload for letterhead version of the visual representation
+
+Updates database model: yes
+
 <a name="v1-7-0" />
 ### 1.7.0 (2021-10-01)
 

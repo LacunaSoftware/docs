@@ -176,8 +176,8 @@ Under section **VisualRepresentation**:
 * **Enabled** (default: `true`, v1.7.0): if `true`, all PDF documents signed with PAdES will have a signature visual representation that can be automatically
 or manually positioned.
 
-* **SignatureWidthCentimetersOnA4**: width of the signature visual representation in centimeters (optimized for A4 paper size). The default value is `6`.
-* **SignatureHeightCentimetersOnA4**: height of the signature visual representation in centimeters (optimized for A4 paper size). The default value is `3.3`.
+* **SignatureWidthCentimetersOnA4**: width of the signature visual representation in centimeters (optimized for A4 paper size). The default value, as of v1.37.0, is `5.85` (previous value was `6`).
+* **SignatureHeightCentimetersOnA4**: height of the signature visual representation in centimeters (optimized for A4 paper size). The default value, as of v1.37.0, is `1.45` (previous value was `3.3`).
 
 * **SignatureInitialsWidthCentimetersOnA4**: width of the signature initials (used when approving a document) visual representation in centimeters (optimized for A4 paper size). The default value is `1.5`.
 * **SignatureInitialsHeightCentimetersOnA4**: height of the signature initials (used when approving a document) visual representation in centimeters (optimized for A4 paper size). The default value is `1.5`.
@@ -192,6 +192,9 @@ or manually positioned.
 manually selects a position while signing.
 
 * **SignaturePositioningRequired** (v1.28.0): if `true` requires that the user positions the signature representation when signing a PDF file.
+
+* **TextVerticalMarginMultiplier** (default: `1.0`, v1.37.0): defines the text's vertical margin by multiplying the provided number with 1% of the signature height.
+* **TextHorizontalMarginMultiplier** (default: `1.0`, v1.37.0): defines the text's horizontal margin by multiplying the provided number with 1% of the signature width.
 
 
 ###  *ValidationStamp* Settings (v1.7.0)
@@ -269,6 +272,8 @@ Under section **Iugu**:
 * **ApiToken**: Iugu's API token.
 * **WebhooksAuthKey**: Iugu's Webhook authentication key.
 * **TestMode**: defines if the credentials are Test environment credentials.
+* **PaymentMethods**(default: `credit_card,bank_slip,pix`, v1.37.0): list of allowed payment methods separated by comma.
+ 
 
 ###  *Invoice Receipt* Settings (v1.27.0)
 
@@ -369,6 +374,23 @@ Under section **Envelopes**:
 
 * **MaxNumberFiles** (default: `20`): the maximum number of files in the envelope.
 
+###  *Custom Resources* Settings (v1.37.0)
+
+Under section **CustomResources**:
+
+* **Localizers**: dictionary of custom localizers. Available keys are: `MailFormatter` and `NotificationRepository`.
+	* **Resources**: dictionary of resources to customize. The key of the dictionary is the key of the resource.
+		* **en**:  the english specific value of the resource.
+		* **pt**:  the portuguese specific value of the resource.
+		* **es**:  the spanish specific value of the resource.
+		* **Default**: the default value for the resource. used if the language specific value is not found.
+
+Example:
+
+```
+CustomResources__Localizers__MailFormatter__Resources__SignDocument__Default=Sign Document
+```
+
 ###  *SigningTags* Settings
 
 Under section **SigningTags**:
@@ -454,3 +476,8 @@ Under section **Scanner**:
 * **Endpoint**: the Scanner endpoint.
 * **ApiKey**: a Scanner API Key. To enable validation of documents from all subscriptions of Scanner, you must provide a key with Root Admin privileges and set the `SubscriptionId` parameter.
 * **SubscriptionId** (optional): should only be set if the `ApiKey` is a Root key. Defines the subscription to which scanned documents will be associated.
+* **InputType** (default: 'Scan', v1.37.0): defines allowed input options. Available options are `Scan`, `FileUpload` and `ScanOrFileUpload`.
+* **MetadataInputEnabled** (default: `true`, v1.37.0): if `true` the scanning user will need to provide metadata information.
+* **MetadataPresets** (optional, v1.37.0): subsection as defined below:
+	* **DocumentType**: defines the document type metada information so the scanning user does not have provide it while filling metadata.
+	* **DocumentTypeIsReadonly**: if `true` the scanning user won't be able to change the document type.

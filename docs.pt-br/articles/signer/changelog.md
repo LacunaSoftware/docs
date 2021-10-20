@@ -4,6 +4,25 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-37-0" />
+### 1.37.0 (2021-10-21)
+
+* Novas funcionalidades
+  * [SIG-774] Permitir configurar métodos de pagamento disponíveis na integração com a iugu
+  * [SIG-773] Adicionar o nome do documento no assunto do email de notificação
+  * [SIG-772] Exibir signatários pendentes na listagem de documentos
+  * [SIG-229] Redimensionar representação visual da assinatura ao posicionar
+
+* Melhorias
+  * [SIG-784] Permitir fazer upload do arquivo ao invés de digitalizar no Scanner
+  * [SIG-764] Permitir personalizar assuntos de emails por instância
+  * [SIG-759] Aba "Recusados" para documento
+
+* Correções de bugs
+  * [SIG-778] Erro ao salvar dados de faturamento se o CEP é incompleto
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-36-0" />
 ### 1.36.0 (2021-10-06)
 
