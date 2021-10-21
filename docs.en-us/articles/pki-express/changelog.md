@@ -1,5 +1,12 @@
 ﻿# PKI Express changelog
 
+<a name="v1-25-0" />
+### 1.25.0 (2021-10-21)
+
+- Added support for opening and validating XML signatures (command `open-xml`)
+- Added support to PKI-Brazil archiving policy on XML signatures (policy `adra`)
+- Fixed ValidationException output when `json` flag is set
+
 <a name="v1-24-1" />
 ### 1.24.1 (2021-07-16)
 

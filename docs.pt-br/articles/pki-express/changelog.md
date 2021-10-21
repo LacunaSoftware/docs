@@ -1,5 +1,12 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-25-0" />
+### 1.25.0 (2021-10-21)
+
+- Adiciona abertura e validação de assinaturas XML (comando `open-xml`)
+- Adiciona suporte a politica de arquivamento ICP-Brasil em assinaturas XML (política `adra`)
+- Corrige ValidationException quando a flag `json` está habilitada
+
 <a name="v1-24-1" />
 ### 1.24.1 (2021-07-16)
 
