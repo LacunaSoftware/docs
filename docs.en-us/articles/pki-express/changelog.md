@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-25-1" />
+### 1.25.1 (2021-10-22)
+
+- Fix command `open-xml` output when XML has full XML signature
+
 <a name="v1-25-0" />
 ### 1.25.0 (2021-10-21)
 

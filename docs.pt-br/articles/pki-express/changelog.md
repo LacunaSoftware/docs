@@ -1,5 +1,10 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-25-1" />
+### 1.25.1 (2021-10-22)
+
+- Corrige saída do comando `open-xml` quando o XML tem assinatura do tipo full XML
+
 <a name="v1-25-0" />
 ### 1.25.0 (2021-10-21)
 
