@@ -20,6 +20,7 @@
 
 * Correções de bugs
   * [SIG-778] Erro ao salvar dados de faturamento se o CEP é incompleto
+  * [SIG-761] PDF que foi assinado e protegido com senha não exibe mensagem adequada no momento da assinatura
 
 Atualiza modelo do banco de dados: não
 

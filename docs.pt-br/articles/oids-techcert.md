@@ -42,6 +42,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.24 - [AC CNSP](https://ac.usf.edu.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.25 - [AC FIEMS](https://ac.fiems.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.26 - [AC BBM](https://ac.bbmshoppings.com.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.27 - [AC Contama](https://ac.contama.com.br/certs/ac.txt)
 
 ## 2. Políticas de certificado A1
 

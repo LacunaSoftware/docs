@@ -20,6 +20,7 @@
 
 * Bug fixes
   * [SIG-778] Error saving billing information if the Zip Code is an "incomplete code"
+  * [SIG-761] PDF that was signed and protected by password does not show appropriate error when signing
 
 Updates database model: no
 
