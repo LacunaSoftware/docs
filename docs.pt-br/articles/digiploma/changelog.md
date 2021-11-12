@@ -4,6 +4,14 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-10-0" />
+### 1.10.0 (2021-11-11)
+
+* Melhorias
+  * [AUT-114] Anulação definitiva de diplomas
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-9-2" />
 ### 1.9.2 (2021-11-05)
 

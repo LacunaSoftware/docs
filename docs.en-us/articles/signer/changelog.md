@@ -4,6 +4,24 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-38-0" />
+### 1.38.0 (2021-11-11)
+
+* New Features
+  * [SIG-723] Request access to administrators in closed mode
+  * [SIG-665] Monthly limit for transaction type
+
+* Improvements
+  * [SIG-452] Display and search by CPF in users administration
+
+* Bug fixes
+  * [SIG-796] Error displaying signature page if prepositioned marks have 0 width/height
+  * [SIG-792] Generic SMS is sending wrong content-type
+  * [SIG-791] Default payment method cannot be changed in the system administration area
+  * [SIG-781] Signature with multiple documents fails in the first document on Unique Signature
+
+Updates database model: no
+
 <a name="v1-37-0" />
 ### 1.37.0 (2021-10-21)
 
