@@ -13,10 +13,10 @@ All API calls demand one API Key in order to communicate with Signer. This key m
 X-Api-Key: your-application|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Every API Key is associated with an Organazization previusly registered in Signer. Therefore, the scope of this key is **restricted to that organization**, that key will only allow you to access/create documents from that same organization.
+Every API Key is associated with an Organization previously registered in Signer. Therefore, the scope of this key is **restricted to that organization**, that key will only allow you to access/create documents from that same organization.
 
 > [!NOTE]
-> In order to obtain an API key contact your instance administrator.
+> In order to obtain an API key, contact your instance administrator.
 
 
 ## Integration Options
@@ -43,9 +43,9 @@ Choose one of the use cases below:
 
 ### Sign a document
 
-In order to sign a document follow the steps below:
+In order to sign a document, follow the steps below:
 
-1- Upload the file that will be signed usind the [upload API (POST /api/uploads)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads). 
+1- Upload the file that will be signed using the [upload API (POST /api/uploads)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads). 
 The file must be sent through a request [multipart/form-data](https://ec.haxx.se/http/http-multipart). 
 An upload ID that identifies that file will be returned:
 
@@ -59,7 +59,7 @@ An upload ID that identifies that file will be returned:
 Alternatively the [simplified upload API (POST /api/uploads/bytes)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads_bytes) can be used. Here, bytes can be sent in Base64 format.
 
 2- Create a document from the uploaded file using the [document creation API](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents). 
-In this call, you must assemble the document flow and define wich will be the document's participants and in what order they should take their actions:
+In this call, you must assemble the document flow and define which will be the document's participants and in what order they should take their actions:
 
 ```javascript
 POST /api/documents
@@ -110,7 +110,7 @@ Each participant will receive an email with a link that will allow them to sign/
 > [!TIP]
 > It is not necessary to authenticate (Log in) in order to sign or approve a document.
 
-For further details related to these scenarios see our examples on github:
+For further details related to these scenarios, see our examples on GitHub:
 
 * C#: 
 	* [Document with one signer](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithOneSignerScenario.cs)
@@ -143,7 +143,7 @@ For further details related to these scenarios see our examples on github:
 If you want to sign the document in your own application, you can use the **Embedded Signature** option.
 
 To do so, you must follow the same steps shown in the previous section, however, when sending the document, it is recommended to add the parameter
-`disablePendingActionNotifications` setted as `true`. Thus, notifications will not be considered for participants.
+`disablePendingActionNotifications` sett as `true`. Thus, notifications will not be considered for participants.
 
 After the creation of the document, send the document ID to get the Subscription URL using the [URL action API](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url):
 
@@ -172,7 +172,7 @@ Once you get the `embedUrl` URL, use the **Subscription Widget** to display the 
 The section [Embedded signature](embedded-signature.md) describes how to use the *Widget*.
 
 <a name="check-document" />
-For further details related to these scenarios see our examples on github:
+For further details related to these scenarios, see our examples on GitHub:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/EmbeddedSignatureScenario.cs)
 
@@ -185,10 +185,10 @@ For further details related to these scenarios see our examples on github:
 
 ### Pre-positioning a signature on the document
 
-During the creation of a document, it is possible to place the each user's signatures in a specific place in the same document. All attribute definitions
+During the creation of a document, it is possible to place each user's signatures in a specific place in the same document. All attribute definitions
 are done during the creation of the `flowAction`. There are options to define the location of the signature on a page, as well as the page where you want to pre-position a signature.
 
-For further details related to these scenarios see our examples on github:
+For further details related to these scenarios, see our examples on GitHub:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithPositionedSignaturesScenario.cs)
 
@@ -199,7 +199,7 @@ For further details related to these scenarios see our examples on github:
 
 ### Check the document status
 
-To check the status of a document you need to provide its ID. Then just call the [Documents Details API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
+To check the status of a document, you need to provide its ID. Then just call the [Documents Details API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
 
 ```javascript
 GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
@@ -243,7 +243,7 @@ access the Organization page and register the required URL in the ** Integration
 ![Webhook](./images/org-webhook.png)
 
 <a name="document-reminders" />
-For further details related to these scenarios see our examples on github:
+For further details related to these scenarios, see our examples on GitHub:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CheckDocumentStatusScenario.cs)
 
@@ -255,7 +255,7 @@ For further details related to these scenarios see our examples on github:
 ### Send signing reminders
 
 Once the status of a participant has been verified using the [Check the document status](#check-document),
-you can send periodic reminders to the flow particpants who have not yet completed an action. [Reminders Sending API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_).
+you can send periodic reminders to the flow participants who have not yet completed an action. [Reminders Sending API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_).
 To do this, provide the document ID and the participant's action ID(`flowActionId`):
 
 ```javascript
@@ -268,7 +268,7 @@ POST /api/notifications/flow-action-reminder
 ```
 
 <a name="validate-signatures" />
-For further details related to these scenarios see our examples on github:
+For further details related to these scenarios, see our examples on GitHub:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/NotifyFlowParticipantsScenario.cs)
 
@@ -280,5 +280,5 @@ For further details related to these scenarios see our examples on github:
 
 ## Useful links
 
-* [Referência da API](https://www.dropsigner.com/swagger)
-* [Exemplos no GitHub](https://github.com/LacunaSoftware/SignerSamples)
+* [API references](https://www.dropsigner.com/swagger)
+* [GitHub examples](https://github.com/LacunaSoftware/SignerSamples)
