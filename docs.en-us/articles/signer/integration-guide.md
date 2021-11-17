@@ -110,7 +110,7 @@ Each participant will receive an email with a link that will allow them to sign/
 > [!TIP]
 > It is not necessary to authenticate (Log in) in order to sign or approve a document.
 
-For more details related to these scenarios see our examples on github:
+For further details related to these scenarios see our examples on github:
 
 * C#: 
 	* [Document with one signer](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithOneSignerScenario.cs)
@@ -138,41 +138,41 @@ For more details related to these scenarios see our examples on github:
 	* [Document with description](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithDescriptionScenario.php)
 
 
-#### Assinatura em sua própria aplicação
+#### Signing in your own application
 
-Caso você queira realizar a assinatura do documento em sua própria aplicação, você pode usar a opção de **Assinatura Embutida**.
+If you want to sign the document in your own application, you can use the **Embedded Signature** option.
 
-Para isso, você deve seguir os mesmos passos exibidos na seção anterior, no entanto, ao enviar o documento, recomenda-se adicionar o parâmetro
-`disablePendingActionNotifications` com valor `true`. Dessa forma, não serão enviadas notificações para os participantes.
+To do so, you must follow the same steps shown in the previous section, however, when sending the document, it is recommended to add the parameter
+`disablePendingActionNotifications` setted as `true`. Thus, notifications will not be considered for participants.
 
-Após a criação do documento, utilize o ID do documento para obter a URL de Assinatura usando a [API de URL de Ação](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url):
+After the creation of the document, send the document ID to get the Subscription URL using the [URL action API](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents__id__action_url):
 
 ```javascript
 POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/action-url
 
 {
-	//devem ser enviadas informações que identifiquem o participante desejado
+	//The information must be sent to identify the participant
 	"identifier": "81976153069",
 	"emailAddress": "john.wick@mailinator.com"
 }
 ```
 
-A resposta irá apresentar duas URLs:
+The response will present two URLs:
 
 ```javascript
 {
-	//URL para redirecionar o usuário para a página de assinatura no Signer
+	//URL to redirect the user to the Signer subscription page
 	"url": "https://...",
-	//URL para usar com o Widget de assinatura
+	//URL to use the signing Widget
 	"embedUrl": "https://..."
 }
 ```
 
-Uma vez obtida a URL `embedUrl`, utilize o **Widget de assinatura** para exibir a página de assinatura do Signer na sua aplicação.
-A página [Assinatura embutida](embedded-signature.md) descreve como utilizar o *Widget*.
+Once you get the `embedUrl` URL, use the **Subscription Widget** to display the Signer's signing page in your application.
+The section [Embedded signature](embedded-signature.md) describes how to use the *Widget*.
 
 <a name="check-document" />
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+For further details related to these scenarios see our examples on github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/EmbeddedSignatureScenario.cs)
 
@@ -183,12 +183,12 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 <a name="document-marks" />
 
 
-### Como pré-posicionar uma assinatura no documento
+### Pre-positioning a signature on the document
 
-Durante a criação de um documento, é possível posicionar as assinaturas de cada usuário em um determinado local deste mesmo documento. Todas as definições de atributos 
-são feitas durante a criação do  `flowAction`. Há opções para definir a localização da assinatura em uma página, bem como a pagina na qual deseja pré-posicionar uma assinatura.
+During the creation of a document, it is possible to place the each user's signatures in a specific place in the same document. All attribute definitions
+are done during the creation of the `flowAction`. There are options to define the location of the signature on a page, as well as the page where you want to pre-position a signature.
 
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+For further details related to these scenarios see our examples on github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithPositionedSignaturesScenario.cs)
 
@@ -197,16 +197,16 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithPositionedSignaturesScenario.php)
 
 
-### Verificar o status de um documento
+### Check the document status
 
-Para verificar o status de um documento é preciso conhecer o seu ID. Em seguida, basta fazer uma chamada à [API de Detalhes do Documento](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
+To check the status of a document you need to provide its ID. Then just call the [Documents Details API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_):
 
 ```javascript
 GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 
 {
 	"id": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
-	"name": "Contrato Integração",
+	"name": "Integration Contract",
 	"isConcluded": true,
 	"creationDate": "2019-08-18T16:26:03.372Z",
 	"updateDate": "2019-08-18T16:26:03.372Z",
@@ -232,19 +232,18 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 }
 ```
 
-* Para saber se o documento está concluído, verifique a propriedade `isConcluded`.
-* Para saber se um participante assinou/aprovou, verifique se a propriedade `status` corresponde a `Completed` para o elemento da lista de 
-ações (`flowActions`) que corresponde a ele.
+* To find out if the document is completed, check the property `isConcluded`.
+* To find out if a participant has signed/approved the document, check if the property `status` corresponds to `Completed`.
 
 ***
 
-Adicionalmente, você pode configurar um **Webhook** que será disparado toda vez que um documento de sua organização for concluído, aprovado, recusado ou assinado. Para isso, 
-acesse a tela da Organização e registre a URL desejada na opção **Integração**:
+Additionally, you can set up a ** Webhook ** that will be triggered every time a document from your organization is completed, approved, declined or signed. For that,
+access the Organization page and register the required URL in the ** Integration ** option:
 
 ![Webhook](./images/org-webhook.png)
 
 <a name="document-reminders" />
-Para mais detalhes sobre esses casos de uso, veja nossos exemplos no github:
+For further details related to these scenarios see our examples on github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CheckDocumentStatusScenario.cs)
 
@@ -253,11 +252,11 @@ Para mais detalhes sobre esses casos de uso, veja nossos exemplos no github:
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CheckDocumentStatusScenario.php)
 
 
-### Enviar lembretes de assinatura
+### Send signing reminders
 
-Uma vez verificado o status de um participante, conforme mostrado no caso de uso de [Verificação de status](#check-document),
-você pode enviar lembretes periódicos para participantes do fluxo que ainda não completaram uma ação usando a [API de Envio de Lembretes](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_).
-Para isso, informe o ID do documento e o ID da ação do participante (`flowActionId`):
+Once the status of a participant has been verified using the [Check the document status](#check-document),
+you can send periodic reminders to the flow particpants who have not yet completed an action. [Reminders Sending API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_).
+To do this, provide the document ID and the participant's action ID(`flowActionId`):
 
 ```javascript
 POST /api/notifications/flow-action-reminder
@@ -269,7 +268,7 @@ POST /api/notifications/flow-action-reminder
 ```
 
 <a name="validate-signatures" />
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
+For further details related to these scenarios see our examples on github:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/NotifyFlowParticipantsScenario.cs)
 
@@ -279,205 +278,7 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 <a name="download-document" />
 
-### Download das versões de um documento
-
-A partir do momento que um documento foi criado, é possível fazer o download de diferentes tipos de versões deste mesmo documento (de acordo com o estágio no qual ele se encontra). Caso queira fazer o download do documento, utilize a [API de Download de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id__content).
-
-```javascript
-GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/content?type=Original
-```
-As opções disponíveis para download são:
-
-* Arquivo Assinado
-* Versão para impressão
-* Etiquetas de assinatura
-* Marcas de Assinatura
-* Arquivo Original
-
-Existem dois métodos com seus respectivos tipos de retorno de dados: O primeiro retornará uma `Stream` de dados referente ao documento e o segundo retornará o documento em um vetor de `bytes[]`.
-
-<a name="download-document" />
-
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
-
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-503/dotnet/console/Console/Scenarios/DownloadDocumentVersionScenario.cs)
-	
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DownloadDocumentVersionScenario.java)
-
-* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DownloadDocumentVersionScenario.php)
-
-
-<a name="list-documents"/>
-
-### Listar documentos
-
-É possível listar os documentos de acordo com padrões e necessidades diferentes. O parametros utilizados estão listados na [API de Listagem de Documentos](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents). Os tipos de listas que podem ser retornadas estão identificados abaixo:
-
-* Documentos pendentes para um determinado participante
-* Documentos concluídos
-* Listar por pastas
-* Listar por organização
-
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
-
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
-	
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/ListDocumentsScenario.java)
-
-* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/ListDocumentsScenario.php)
-
-### Validar assinaturas de um documento
-
-Você pode validar as assinaturas de um documento de duas formas: com a **chave de validação do documento** (caso ele tenha sido assinado nesta instância do Signer) ou com o **arquivo
-assinado**.
-
-#### Validação de documento com chave de validação
-
-Para validar um documento com chave de validação, use a [API de Validação de Chave](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents_keys__key__signatures) informando a chave correspondente.
-
-Serão retornados os dados básicos do documento e as informações de cada uma das assinaturas encontradas naquele documento:
-
-```javascript
-GET /api/documents/keys/AX4F8FV8NNAX25TENE2S/signatures
-
-{
-	"id": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
-	"name": "Contrato Integração",
-	"filename": "Contrato.pdf",
-	"mimeType": "application/pdf",
-	"isConcluded": true,
-	...
-	"creationDate": "2020-08-18T16:38:40.538Z",
-	"updateDate": "2020-08-18T16:38:40.538Z",
-	"signers": [
-		{
-			"subjectName": "John Wick",
-			"emailAddress": "john.wick@mailinator.com",
-			"issuerName": "Lacuna CA",
-			"identifier": "81976153069",
-			"companyName": null,
-			"companyIdentifier": null,
-			"isElectronic": false,
-			"signingTime": "2020-08-18T16:38:40.538Z",
-			"certificateThumbprint": "a0sRR9cWOc0PORMhTBg49ub/5BO3W5vWQ1w7+YquK5g=",
-			...
-			"validationResults":
-			{
-				...
-				"isValid": true
-			}
-		}
-	]
-}
-```
-
-#### Validação de documento com arquivo assinado
-
-Para validar um documento assinado é preciso fazer primeiro o upload do arquivo assinado usando a [API de Upload](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads)
-ou [API simplificada de Upload (POST /api/uploads/bytes)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads_bytes) 
-assim como informado na seção [Assinar um Documento](#sign-document).
-
-Em seguida, utilize a [API de validação de arquivo assinado](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents_validate_signatures).
-
-```javascript
-POST /api/documents/validate-signatures
-
-{
-  "fileId": "f5ea05d7-0a5f-4933-a6d6-9a8aa3955b14",
-  "mimeType": "application/pdf"
-}
-```
-
-Serão retornados os dados de cada uma das assinaturas encontradas no documento.
-
-```javascript
-[
-	{
-		"subjectName": "John Wick",
-		"emailAddress": "john.wick@mailinator.com",
-		"issuerName": "Lacuna CA",
-		"identifier": "81976153069",
-		"companyName": null,
-		"companyIdentifier": null,
-		"isElectronic": false,
-		"signingTime": "2020-08-18T16:38:40.538Z",
-		"certificateThumbprint": "a0sRR9cWOc0PORMhTBg49ub/5BO3W5vWQ1w7+YquK5g=",
-		...
-		"validationResults":
-		{
-			...
-			"isValid": true
-		}
-	}
-]
-```
-### Deletar documento
-
-<a name="delete-document"></a>
-
-Para deletar um documento você precisa ter acesso ao ID deste mesmo documento e fazer um chamada do tipo `DELETE`. 
-
-```javascript
-DELETE /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
-```
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
-
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/DeleteDocumentScenario.cs)
-	
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DeleteDocumentScenario.java)
-
-* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DeleteDocumentScenario.php)
-
-### Cancelar documento
-
-Caso queira cancelar um documento, é necessário enviar o ID do documento através de uma requisição do tipo `POST` junto ao campo `reason`, conforme o exemplo abaixo:
-
-```javascript
-POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/cancellation
-
-{
-    "reason": "This is a document cancellation"
-}
-```
-
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CancelDocumentScenario.cs)
-	
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CancelDocumentScenario.java)
-
-* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CancelDocumentScenario.php)
-
-### Recusar documento
-
-Para recusar um documento, é necessário enviar o ID do documento através de uma requisição do tipo `POST` junto ao campo `reason`, conforme o exemplo abaixo:
-
-```javascript
-POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/refusal
-
-{
-    "reason": "This is a document refusal"
-}
-```
-
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/RefuseDocumentScenario.cs)
-	
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/RefuseDocumentScenario.java)
-
-* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/RefuseDocumentScenario.php)
-
-### Enviar nova versão documento
-
-É possível enviar uma nova versão do documento para um documento já criado. Portanto, é necessário enviar o ID do documento, através de uma requisição do tipo `POST`, junto ao arquivo relativo a nova versão. Vale ressaltar que o fluxo de assinaturas será reiniciado.
-
-Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
-* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/AddNewDocumentVersionScenario.cs)
-	
-* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/AddNewDocumentVersionScenario.java)
-
-* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
-
-## Links Úteis
+## Useful links
 
 * [Referência da API](https://www.dropsigner.com/swagger)
 * [Exemplos no GitHub](https://github.com/LacunaSoftware/SignerSamples)
