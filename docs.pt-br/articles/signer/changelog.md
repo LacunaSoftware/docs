@@ -4,6 +4,24 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-38-0" />
+### 1.38.0 (2021-11-11)
+
+* Novas funcionalidades
+  * [SIG-723] Permitir solicitar acesso aos administradores no sistema fechado
+  * [SIG-665] Limite mensal por tipo de transação
+
+* Melhorias
+  * [SIG-452] Exibir CPF e permitir pesquisar por ele na consulta de Usuários
+
+* Correções de bugs
+  * [SIG-796] Erro ao exibir página de assinatura se as Marcas tiverem largura/altura 0
+  * [SIG-792] SMS Genérico está enviando content-type errado
+  * [SIG-791] Não é possível alterar método de pagamento padrão na Administração do sistema
+  * [SIG-781] Assinatura com diversos documentos falha no primeiro documento na Assinatura Única
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-37-0" />
 ### 1.37.0 (2021-10-21)
 

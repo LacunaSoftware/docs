@@ -4,6 +4,34 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-10-0" />
+### 1.10.0 (2021-11-11)
+
+* Improvements
+  * [AUT-114] Irreversible cancellation of degrees
+
+Updates database model: no
+
+<a name="v1-9-2" />
+### 1.9.2 (2021-11-05)
+
+* Bug fixes
+  * [AUT-118] NacionalidadeGenero key has gender transformation only if nationality is provided in masculine form
+  * [AUT-117] RG, Outro documento de identificação, naturalidade e Situação ENADE error messages do not display correct path
+  * [AUT-116] TermoResponsabilidade should not be required
+  * [AUT-115] Error generating degree without LivroRegistro
+  * [AUT-113] Fixed keys for RVDD generation
+
+Updates database model: no
+
+<a name="v1-9-1" />
+### 1.9.1 (2021-10-21)
+
+* Bug fixes
+  * [AUT-112] Recredenciamento is required in IES Emissora
+
+Updates database model: no
+
 <a name="v1-9-0" />
 ### 1.9.0 (2021-10-20)
 

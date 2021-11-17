@@ -80,7 +80,8 @@ Para definir um ou mais signatários, utilize as colunas abaixo adicionando-as a
 * AllowElectronicSignature (opcional): preencha com `true` para permitir que o signatário assine eletronicamente. Caso contrário, preencha com `false` ou deixe em branco.
 * ElectronicType (opcional): tipo de autenticação da assinatura eletrônica. Deve ser usada em conjunto com a opção `AllowElectronicSignature`. Os possíveis valores são:
 `SMS`, `AuthenticatorApp` e `Selfie`.
-* Signature (opcional): define a posição da imagem de assinatura, no formato `TOP_LEFT_X|TOP_LEFT_Y` ou `TOP_LEFT_X|TOP_LEFT_Y|PAGE_NUMBER`. Exemplo: `100.5|85|2`.
+* Signature (opcional): define a posição da imagem de assinatura, no formato `TOP_LEFT_X|TOP_LEFT_Y`, `TOP_LEFT_X|TOP_LEFT_Y|PAGE_NUMBER`, 
+`TOP_LEFT_X|TOP_LEFT_Y|WIDTH|HEIGHT` ou `TOP_LEFT_X|TOP_LEFT_Y|WIDTH|HEIGHT|PAGE_NUMBER`. Exemplo: `100.5|85|2`.
 
 Exemplo de assinatura digital:
 

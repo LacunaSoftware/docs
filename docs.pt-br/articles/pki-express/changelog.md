@@ -1,5 +1,10 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-25-3" />
+### 1.25.3 (2021-10-26)
+
+- Adiciona suporte a definição da direção do auto posicionamento de representações visuais PAdES
+
 <a name="v1-25-1" />
 ### 1.25.1 (2021-10-22)
 

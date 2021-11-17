@@ -20,6 +20,12 @@ O administrador deve acessar a Área de Administração para cadastrar os usuár
 
 ![Add user to Organization](../images/add-user-org.png)
 
+À partir da v1.38.0, é possível configurar um e-mail para solicitação de acessos. Dessa forma, quando o usuário acessar a tela de acesso restrito, aparecerá
+uma opção para solicitar acesso. Ao selecioná-la, o sistema enviará uma notificação para o endereço de e-mail configurado. O usuário, que deverá ser um administrador
+da instância, deverá adicionar o solicitante em uma organização caso a solicitação seja válida.
+
+![Restricted Access](../images/restricted-access-request.png)
+
 <!--  Caso você não tenha os dados completos do usuários, você pode cadastrá-lo em uma organização através de um **convite**. Nesse caso, somente é
 necessário selecionar a organização e informar o email e papel a ser concedido ao usuário: -->
 

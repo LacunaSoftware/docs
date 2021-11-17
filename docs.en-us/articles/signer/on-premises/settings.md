@@ -13,6 +13,9 @@ Under section **General**:
 
 * **PersonalAccountsEnabled**: if `true`, any user that logs/registers in the website may use the application and create documents in his personal account. If `false`, users will only be 
 able to use the logged user area if they are added previously in an organization.
+* **AccessRequestEmailAddress** (v1.38.0): the e-mail address to send access requests to (if personal accounts are not enabled). If set, when a user sees the "No access" 
+screen, there will be a button that allows him to request access to the system. The e-mail address configure will receive the name and email of the user who requested 
+the access.
 
 * **AllowCreateDocumentsByDefault** (default: `true`, v1.12.0): if `true` users will be able to create documents after registering. If `false`, the document creator role must be granted to
 each user individually by the system administrator.

@@ -1,5 +1,10 @@
 ﻿# PKI Express changelog
 
+<a name="v1-25-3" />
+### 1.25.3 (2021-10-26)
+
+- Added support to auto positioning direction of PAdES visual representation
+
 <a name="v1-25-1" />
 ### 1.25.1 (2021-10-22)
 
