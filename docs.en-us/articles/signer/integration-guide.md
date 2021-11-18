@@ -254,7 +254,7 @@ For further details related to these scenarios, see our examples on GitHub:
 
 ### Send signing reminders
 
-Once the status of a participant has been verified using the [Check the document status](#check-document),
+Once the status of a participant has been verified using [Check the Document Status](#check-document),
 you can send periodic reminders to the flow participants who have not yet completed an action. [Reminders Sending API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id_).
 To do this, provide the document ID and the participant's action ID(`flowActionId`):
 
@@ -277,6 +277,206 @@ For further details related to these scenarios, see our examples on GitHub:
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/NotifyFlowParticipantsScenario.php)
 
 <a name="download-document" />
+
+### Download documents versions
+
+Once a document has been created, it is possible to download different types of versions of the same document. If you want to download the document, use the [Document Download API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents__id__content).
+
+```javascript
+GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/content?type=Original
+```
+The options available for download are:
+
+* Signed file
+* Printer friendly version
+* Signing Tags
+* Original file
+
+There are two types of data returns: The first one will return the document as a `Stream` of data and the second one will return the document as a vector of `bytes[]`.
+
+<a name="download-document" />
+
+For further details related to these scenarios, see our examples on GitHub:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/SIG-503/dotnet/console/Console/Scenarios/DownloadDocumentVersionScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DownloadDocumentVersionScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DownloadDocumentVersionScenario.php)
+
+<a name="list-documents"/>
+
+### List documents
+
+It is possible to list documents according to different patterns and needs. The parameters used are available in the [Document Listing API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents). The types of lists that can be returned are identified below:
+
+* Pending documents for a particular participant
+* Concluded documents
+* List by folders
+* List by organizations
+
+For further details related to these scenarios, see our examples on GitHub:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/ListDocumentsScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/ListDocumentsScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/ListDocumentsScenario.php)
+
+### Validate document's signatures
+
+You can validate a document's signatures in two different ways: with the **document validation key** (if it was signed in this instance of Signer) or with the **file
+signed**.
+
+#### Document validation with validation key
+
+To validate a document with a validation key, use the [Validation Key API](https://www.dropsigner.com/swagger/index.html#operations-Documents-get_api_documents_keys__key__signatures) providing its corresponding key.
+
+The document's primary data and every signature information found in the document will be returned:
+
+```javascript
+GET /api/documents/keys/AX4F8FV8NNAX25TENE2S/signatures
+
+{
+	"id": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
+	"name": "Integration Contract",
+	"filename": "Contrato.pdf",
+	"mimeType": "application/pdf",
+	"isConcluded": true,
+	...
+	"creationDate": "2020-08-18T16:38:40.538Z",
+	"updateDate": "2020-08-18T16:38:40.538Z",
+	"signers": [
+		{
+			"subjectName": "John Wick",
+			"emailAddress": "john.wick@mailinator.com",
+			"issuerName": "Lacuna CA",
+			"identifier": "81976153069",
+			"companyName": null,
+			"companyIdentifier": null,
+			"isElectronic": false,
+			"signingTime": "2020-08-18T16:38:40.538Z",
+			"certificateThumbprint": "a0sRR9cWOc0PORMhTBg49ub/5BO3W5vWQ1w7+YquK5g=",
+			...
+			"validationResults":
+			{
+				...
+				"isValid": true
+			}
+		}
+	]
+}
+```
+
+#### Document validation with signed file
+
+To validate a signed document, you must upload the signed file using the [Upload API](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads)
+or the [Simplified Upload API (POST /api/uploads/bytes)](https://www.dropsigner.com/swagger/index.html#operations-Upload-post_api_uploads_bytes) 
+as shown in the section [Sign a Document](#sign-document).
+
+Then use the [Signed File Validation API](https://www.dropsigner.com/swagger/index.html#operations-Documents-post_api_documents_validate_signatures).
+
+```javascript
+POST /api/documents/validate-signatures
+
+{
+  "fileId": "f5ea05d7-0a5f-4933-a6d6-9a8aa3955b14",
+  "mimeType": "application/pdf"
+}
+```
+
+Each signature data found in the document will be returned.
+
+```javascript
+[
+	{
+		"subjectName": "John Wick",
+		"emailAddress": "john.wick@mailinator.com",
+		"issuerName": "Lacuna CA",
+		"identifier": "81976153069",
+		"companyName": null,
+		"companyIdentifier": null,
+		"isElectronic": false,
+		"signingTime": "2020-08-18T16:38:40.538Z",
+		"certificateThumbprint": "a0sRR9cWOc0PORMhTBg49ub/5BO3W5vWQ1w7+YquK5g=",
+		...
+		"validationResults":
+		{
+			...
+			"isValid": true
+		}
+	}
+]
+```
+### Delete document
+
+<a name="delete-document"></a>
+
+To delete a document you need to have it ID and make a `DELETE` request. 
+
+```javascript
+DELETE /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
+```
+For further details related to these scenarios, see our examples on GitHub:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/DeleteDocumentScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/DeleteDocumentScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DeleteDocumentScenario.php)
+
+### Cancel document
+
+If you want to cancel a document, it is necessary to send the document ID through a `POST` request filling the body field `reason` as we show in the example below:
+
+```javascript
+POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/cancellation
+
+{
+    "reason": "This is a document cancellation"
+}
+```
+
+For further details related to these scenarios, see our examples on GitHub:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CancelDocumentScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CancelDocumentScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CancelDocumentScenario.php)
+
+### Refuse a document
+
+If you want to refuse a document, it is necessary to send the document ID through a `POST` request filling the body field `reason` as we show in the example below:
+
+```javascript
+POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/refusal
+
+{
+    "reason": "This is a document refusal"
+}
+```
+
+For further details related to these scenarios, see our examples on GitHub:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/RefuseDocumentScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/RefuseDocumentScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/RefuseDocumentScenario.php)
+
+
+### Submit new document version
+
+It is possible to upload a new document version for an already created document. Therefore, it is necessary to send the document ID through a `POST` request followed by the new version corresponding file. It is necessary to emphasize that signing flow will reset.
+
+For further details related to these scenarios, see our examples on GitHub:
+
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/AddNewDocumentVersionScenario.cs)
+	
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/AddNewDocumentVersionScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
 
 ## Useful links
 
