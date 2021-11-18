@@ -237,8 +237,8 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 
 ***
 
-Additionally, you can set up a ** Webhook ** that will be triggered every time a document from your organization is completed, approved, declined or signed. For that,
-access the Organization page and register the required URL in the ** Integration ** option:
+Additionally, you can set up a **Webhook** that will be triggered every time a document from your organization is completed, approved, declined or signed. For that,
+access the Organization page and register the required URL in the **Integration** option:
 
 ![Webhook](./images/org-webhook.png)
 
