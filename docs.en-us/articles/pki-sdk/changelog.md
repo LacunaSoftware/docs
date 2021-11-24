@@ -1,5 +1,15 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-9-0" />
+### 2.9.0 (2021-11-24)
+
+- Add PDF marker page content scaling feature
+- Add XML signature editor with archive timestamp extending feature
+- Improve TimestampRequester with Basic authentication option through Authorization header
+- Improve OCSP generation and validation
+- Improve PDF/A compliance signature support
+
+
 <a name="v2-8-12" />
 ### 2.8.12 (2021-08-19)
 
