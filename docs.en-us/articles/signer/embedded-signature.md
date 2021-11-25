@@ -76,3 +76,50 @@ If you wish, the DOM element can be provided directly:
 
 ```javascript
 widget.renderElement(embedUrl, document.getElementById('embed-container'), page, scale);
+```
+
+## Online Example
+
+<iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/hgutm4fL/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+To run the example, click on the tab **Result**. If you haven't installed Web PKI, you will need to follow the instructions to do so. 
+When using this component in your own application, the user will be redirected to the installation page and will automatically return to your application at the end of the process.
+
+
+## Online example of cloud signing
+
+The BirdID test certificate will be used (CPF 026.102.470-10, see the instructions below for pairing).
+
+<iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/12zLfhgr/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+To run the example, click on the **Result** tab. In order to use the BirdID Approval Environment Test User, please use the QR code below in the BirdID app:
+
+![BirdID HML credentials](./images/birdidhml.png)
+
+## Additional settings
+
+When instantiating the `Lacuna Sign Widget` class you can pass an object with one or more settings listed below:
+
+Atributo                 | Tipo         |  Descrição  
+-----------------------  | ------------ | ----------
+`enableNotifications`    | boolean      | Notifications are not sent  after completing an embedded signature/approval. Set this parameter to `true` to send notifications.
+`disableDocumentPreview` | boolean      | If `true`, it will hide the document preview. In this case, only the signing button and signer/approver data will be displayed. You can set this parameter after instantiation using `setDisableDocumentPreview` method.
+
+`enableRefusal`          | boolean      | If `true`, it will display the option to decline to sign a document. You can set this parameter after instantiation using `setEnableRefusal` method.
+
+
+Example:
+
+```javascript
+var widget = new LacunaSignerWidget({ disableDocumentPreview: true });
+```
+
+```javascript
+var widget = new LacunaSignerWidget();
+
+widget.setDisableDocumentPreview(true);
+```
+
+## Online example of signature ​without preview
+
+<iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/pfn3zct1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
