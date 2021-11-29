@@ -1,5 +1,15 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-30-0" />
+### 1.30.0 (2021-11-28)
+
+Database model update: No
+
+- Add thumbprint SHA-256 property to certificate summary model
+- Improve CAdES PKI Brazil AD-RA signature policy
+- Update PKI SDK to [2.9.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-9-0)
+
+
 <a name="v1-27-0" />
 ### 1.27.0 (2021-08-31)
 

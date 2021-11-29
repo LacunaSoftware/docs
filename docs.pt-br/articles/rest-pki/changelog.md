@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-30-0" />
+### 1.30.0 (2021-11-28)
+
+Atualização do modelo do banco de dados: Não
+
+- Adiciona propriedade thumbprint SHA-256 no *certificate summary model*
+- Melhora política de assinatura CAdES ICP-Brasil AD-RA
+- Atualiza o PKI SDK para [2.9.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-9-0)
+
+
 <a name="v1-27-0" />
 ### 1.27.0 (2021-08-31)
 
