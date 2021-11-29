@@ -9,7 +9,7 @@ The minimum requirements for installing a [on premises](../index.md) instance of
 
 To start the installation procedure, you'll need:
 
-* Rest PKI binaries package: [restpki-1.27.0.zip](https://cdn.lacunasoftware.com/restpki/restpki-1.27.0.zip)
+* Rest PKI binaries package: [restpki-1.30.0.zip](https://cdn.lacunasoftware.com/restpki/restpki-1.30.0.zip)
 * Binary license for the Lacuna PKI SDK (file LacunaPkiLicense.txt)
 
 > [!NOTE]
