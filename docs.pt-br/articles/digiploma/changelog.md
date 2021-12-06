@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-11-0" />
+### 1.11.0 (2021-11-30)
+
+* Melhorias
+  * [AUT-120] Adequações para versão 1.03 do XSD
+  * [AUT-121] CPF do diplomado mascarado na tela de validação
+
+Atualiza modelo do banco de dados: não
+
+> [!WARNING]
+> Breaking changes da API:
+> TituloConferido: o valor "Psicólogo" não pode ser utilizado na propriedade "outroTitulo", já que foi adicionado à enum Titulo.
+> DisciplinaCursada: adicionada nova propriedade obrigatória "situacao" (SituacaoDisciplina).
+> "tipoAvaliacao" passa ser opcional e teve os valores "Aprovado" e "Reprovado" movidos para propriedade "situacao". Foram adicionados os valores "ConceitoRM" e "ConceitoEspecificoDoCurso".
+
 <a name="v1-10-0" />
 ### 1.10.0 (2021-11-11)
 
