@@ -5,14 +5,14 @@
 
 Novas funcionalidades:
 
-* [AMP-207] Adicionado suporte a Key Store com Google KMS
-* [AMP-222] Adicionado suporte a Key Store com Amazon KMS
-* [AMP-208] Adicionado suporte a OCSP
-* [AMP-210] Adicionado template de certificado Latinus (AC corporativa do Equador)
+* [AMP-207] - Adicionado suporte a Key Store com Google KMS
+* [AMP-222] - Adicionado suporte a Key Store com Amazon KMS
+* [AMP-208] - Adicionado suporte a OCSP
+* [AMP-210] - Adicionado template de certificado Latinus (AC corporativa do Equador)
 
 Melhorias:
 
-* [AMP-223] Adicionado margem segura de tempo no início de validade dos certificados de entidade final
+* [AMP-223] - Adicionado margem segura de tempo no início de validade dos certificados de entidade final
 
 Atualiza modelo do banco de dados: não
 

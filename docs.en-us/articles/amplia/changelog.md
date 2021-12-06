@@ -5,14 +5,14 @@
 
 New Feature
 
-* [AMP-207] Add support to Google KMS Key Store
-* [AMP-222] Add support to Amazon KMS Key Store
-* [AMP-208] Add supoort to OCSP responses
-* [AMP-210] Add Latinus (Ecuador coporate CA) certificate template
+* [AMP-207] - Add support to Google KMS Key Store
+* [AMP-222] - Add support to Amazon KMS Key Store
+* [AMP-208] - Add supoort to OCSP responses
+* [AMP-210] - Add Latinus (Ecuador coporate CA) certificate template
 
 Improvement
 
-* [AMP-223] Add safe timespan threshold on end-entity certificates validity start
+* [AMP-223] - Add safe timespan threshold on end-entity certificates validity start
 
 Updates database model: no
 
