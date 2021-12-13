@@ -44,4 +44,5 @@ the automatic database model update to avoid errors by setting `General__AutoUpd
 
 ## See also
 
+* [`update-db` command](tool/update-db.md)
 * [Preparing a database for installation of Rest PKI Core](prepare-database.md)

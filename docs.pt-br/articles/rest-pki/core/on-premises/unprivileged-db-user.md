@@ -45,4 +45,5 @@ Por isso, é preciso desabilitar a atualização automática do banco de dados d
 
 ## Veja também
 
+* [Comando `update-db`](tool/update-db.md)
 * [Preparando o banco de dados para instalação do Rest PKI Core](prepare-database.md)
