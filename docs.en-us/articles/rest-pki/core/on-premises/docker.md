@@ -46,6 +46,23 @@ traffic on both ports to Rest PKI Core's port 80. Additionaly, your setup should
 and `X-Forwarded-Port`. The configuration `Bindings__UseReverseProxy=True` tells Rest PKI Core that the information on these headers should be
 trusted.
 
+## Example
+
+In a production environment you would typically use a Docker orchestrator, but for testing purposes you can run Rest PKI Core with Docker alone.
+
+For testing purposes, let's use as blob storage a simple Docker volume named `restpkicore` mounted on `/var/app`. Start by creating it:
+
+[!include[Create volume](../../../../../includes/rest-pki/core/docker/create-volume.md)]
+
+Next, download the [sample environment file](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env) and save it with name *restpkicore.env*, then
+fill it out. On the blob storage section, leave the default (`BlobStorage__Type=FileSystem` and `BlobStorage__Path=/var/app`).
+
+Now, let's run the container with the configuration file, mounting the volume `restpkicore` on `/var/app` and exposing the app (which listens on port 80) on the host's port 8080:
+
+[!include[Docker run](../../../../../includes/rest-pki/core/docker/run.md)]
+
+Check the console for configuration errors. If everything is configured correctly, you should have a Rest PKI Core instance running on [localhost:8080](http://localhost:8080/)
+
 ## See also
 
 * [User management configuration](configure-oidc.md)
