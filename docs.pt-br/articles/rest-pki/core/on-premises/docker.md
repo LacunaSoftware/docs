@@ -72,7 +72,7 @@ Em seguida, baixe o [arquivo de configuração de exemplo](https://cdn.lacunasof
 * Em `ConnectionStrings__DefaultConnection` use `Data Source=HOST_IP_ADDRESS;Initial Catalog=RestPkiCore;User ID=sa;Password=SOME_PASS` (substitua `HOST_IP_ADDRESS` pelo endereço de IP da máquina *host* e `SOME_PASS` pela senha escolhida para o SQL Server)
 * Na seção de configuração de *blob storage*, deixe os parâmetros padrão (`BlobStorage__Type=FileSystem` e `BlobStorage__Path=/var/app`)
 
-Por fim, execute um container com a imagem usando o arquivo de configuração, montando o volume `restpkicore` em `/var/app` e expondo a aplicação (que escuta
+Por fim, execute um container com a imagem usando o arquivo de configuração, montando o volume `restpkicore_data` em `/var/app` e expondo a aplicação (que escuta
 na porta 80) na porta 8080 da máquina *host*:
 
 [!include[Docker run](../../../../../includes/rest-pki/core/docker/run.md)]
