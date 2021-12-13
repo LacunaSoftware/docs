@@ -47,34 +47,39 @@ e `X-Forwarded-Port`. A configuração `Bindings__UseReverseProxy=True` instrui 
 
 ## Exemplos
 
-Em um ambiente de produção, tipicamente se utilizaria um orquestrador de Docker e um servidor de SQL Server dedicado (ou um banco de dados em nuvem como serviço IaaS).
-Entretanto, para fins de teste, é possível rodar uma instância do Rest PKI Core com um banco de dados SQL Server Express (que não tem custo) utilizando apenas Docker.
+Em um ambiente de produção, tipicamente se utilizaria um orquestrador de Docker e um servidor de SQL Server dedicado ou em nuvem (IaaS).
+Entretanto, para fins de teste, é possível rodar uma instância do Rest PKI Core com um banco de dados SQL Server Express (que não tem custo) local utilizando apenas
+o Docker.
 
 Comece criando um volume para o banco de dados:
 
 [!include[Create SQL volume](../../../../../includes/rest-pki/core/docker/create-sql-volume.md)]
 
-Inicie o banco de dados com uma senha da sua preferência (substitua `SOMEPASS` abaixo):
+Inicie o banco de dados com uma senha da sua preferência (substitua `SOME_PASS` abaixo):
 
 [!include[Run SQL Server Express](../../../../../includes/rest-pki/core/docker/run-sql.md)]
 
-Em seguida, crie outro volume para utilizar como *blob storage*:
+Acompanhe a saída do console para eventuais erros. Esse processo pode levar alguns minutos.
+
+Uma vez que o SQL Server esteja executando, abra outro terminal para iniciar a instância do Rest PKI Core.
+
+Crie um volume para utilizar como *blob storage*:
 
 [!include[Create data volume](../../../../../includes/rest-pki/core/docker/create-data-volume.md)]
 
 Em seguida, baixe o [arquivo de configuração de exemplo](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env), salve-o com nome
 *restpkicore.env* e preencha-o.
 
-* Em `ConnectionStrings__DefaultConnection` use `Data Source=.;Initial Catalog=RestPkiCore;User ID=sa;Password=SOMEPASS` (substitua a senha)
+* Em `ConnectionStrings__DefaultConnection` use `Data Source=HOST_IP_ADDRESS;Initial Catalog=RestPkiCore;User ID=sa;Password=SOME_PASS` (substitua `HOST_IP_ADDRESS` pelo endereço de IP da máquina *host* e `SOME_PASS` pela senha escolhida para o SQL Server)
 * Na seção de configuração de *blob storage*, deixe os parâmetros padrão (`BlobStorage__Type=FileSystem` e `BlobStorage__Path=/var/app`)
 
-Por fim, vamos rodar a imagem num container com o arquivo de configuração, montando o volume `restpkicore` em `/var/app` e expondo a aplicação (que escuta
-na porta 80) na porta 8080 do *host*:
+Por fim, execute um container com a imagem usando o arquivo de configuração, montando o volume `restpkicore` em `/var/app` e expondo a aplicação (que escuta
+na porta 80) na porta 8080 da máquina *host*:
 
 [!include[Docker run](../../../../../includes/rest-pki/core/docker/run.md)]
 
 > [!TIP]
-> Caso tenha privilégios suficientes, o Rest PKI Core tentará criar o banco de dados no servidor caso ele não existe (é isso que acontecerá nesse caso)
+> Caso tenha privilégios suficientes, o Rest PKI Core tentará criar o banco de dados no servidor caso ele não exista (é isso que acontecerá nesse caso)
 
 Verifique a saída no console para eventuais erros de configuração. Se tudo estiver configurado corretamente, você deve ter uma instância do Rest PKI Core
 rodando em [localhost:8080](http://localhost:8080/)

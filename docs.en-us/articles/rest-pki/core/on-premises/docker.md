@@ -55,18 +55,22 @@ Start by creating a volume for the database server:
 
 [!include[Create SQL volume](../../../../../includes/rest-pki/core/docker/create-sql-volume.md)]
 
-Then, start it with a password of your choice (replace `SOMEPASS` below):
+Then, start it with a password of your choice (replace `SOME_PASS` below):
 
 [!include[Run SQL Server Express](../../../../../includes/rest-pki/core/docker/run-sql.md)]
 
-Next, let's create another volume to use as blob storage:
+Check the console for any errors. This can take a few minutes.
+
+Once SQL Server is up and running, open another terminal to start the Rest PKI Core instance.
+
+Create a volume to use as blob storage:
 
 [!include[Create data volume](../../../../../includes/rest-pki/core/docker/create-data-volume.md)]
 
 Then, download the [sample environment file](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env), save it with name *restpkicore.env*
 and fill it out.
 
-* On `ConnectionStrings__DefaultConnection` use `Data Source=.;Initial Catalog=RestPkiCore;User ID=sa;Password=SOMEPASS` (replace with the password you chose previously)
+* On `ConnectionStrings__DefaultConnection` use `Data Source=HOST_IP_ADDRESS;Initial Catalog=RestPkiCore;User ID=sa;Password=SOME_PASS` (replace `HOST_IP_ADDRESS` with the IP address of the host and `SOME_PASS` with the password you chose for the SQL Server)
 * On the blob storage section, leave the default settings (`BlobStorage__Type=FileSystem` and `BlobStorage__Path=/var/app`)
 
 Now, let's run the container with the configuration file, mounting the volume `restpkicore_data` on `/var/app` and exposing the app (which listens on port 80) on the host's port 8080:
