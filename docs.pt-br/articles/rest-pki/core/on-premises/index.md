@@ -3,6 +3,7 @@
 O [Rest PKI Core](../index.md) pode ser utilizado em nuvem (SaaS) no endereço [core.pki.rest](https://core.pki.rest/) ou você pode ter uma instância na sua própria
 infraestrutura ("on premises").
 
+<a name="platforms" />
 ## Ambientes suportados
 
 O Amplia é compatível com os seguintes ambientes:

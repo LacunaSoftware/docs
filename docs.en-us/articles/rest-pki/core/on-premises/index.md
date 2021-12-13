@@ -2,6 +2,7 @@
 
 [Rest PKI Core](../index.md) can be used as a service (SaaS) on [core.pki.rest](https://core.pki.rest/) or you can host your own instance.
 
+<a name="platforms" />
 ## Supported platforms
 
 Rest PKI Core is compatible with:

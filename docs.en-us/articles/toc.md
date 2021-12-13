@@ -109,6 +109,11 @@
 ##### [list-certs](rest-pki/core/integration/client-tool/list-certs.md)
 ##### [allocate-keys](rest-pki/core/integration/client-tool/allocate-keys.md)
 ### [On-premises](rest-pki/core/on-premises/index.md)
+#### [Setup on Docker](rest-pki/core/on-premises/docker.md)
+#### [Configure Blob Storage](rest-pki/core/on-premises/configure-blob-storage.md)
+#### [Configure OIDC](rest-pki/core/on-premises/configure-oidc.md)
+#### [Preparing the database](rest-pki/core/on-premises/prepare-database.md)
+#### [Run without db_owner](rest-pki/core/on-premises/unprivileged-db-user.md)
 #### [Checking the installed version](rest-pki/core/on-premises/check-version.md)
 ### [Changelog](rest-pki/core/changelog.md)
 <!-- End of Rest PKI -->
