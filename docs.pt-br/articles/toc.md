@@ -112,6 +112,7 @@
 #### [Setup em Docker](rest-pki/core/on-premises/docker.md)
 #### [Configuração de storage](rest-pki/core/on-premises/configure-blob-storage.md)
 #### [Configuração de OIDC](rest-pki/core/on-premises/configure-oidc.md)
+#### [Configuração de envio de email](rest-pki/core/on-premises/configure-email.md)
 #### [Preparando o banco de dados](rest-pki/core/on-premises/prepare-database.md)
 #### [Operando sem db_owner](rest-pki/core/on-premises/unprivileged-db-user.md)
 #### [Verificando a versão instalada](rest-pki/core/on-premises/check-version.md)
