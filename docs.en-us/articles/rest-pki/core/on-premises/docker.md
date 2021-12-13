@@ -78,7 +78,7 @@ Now, let's run the container with the configuration file, mounting the volume `r
 [!include[Run Rest PKI Core](../../../../../includes/rest-pki/core/docker/run.md)]
 
 > [!TIP]
-> If given a credential with enough privileges, Rest PKI Core will attempt to create the target database on the server, which is what will happen here
+> If given a credential with enough privileges, Rest PKI Core will attempt to create the target database on the server (which is what will happen in this case)
 
 Check the console for configuration errors. If everything is configured correctly, you should have a Rest PKI Core instance running on [localhost:8080](http://localhost:8080/)
 
