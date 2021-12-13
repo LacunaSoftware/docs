@@ -55,7 +55,7 @@ For testing purposes, let's use as blob storage a simple Docker volume named `re
 [!include[Create volume](../../../../../includes/rest-pki/core/docker/create-volume.md)]
 
 Next, download the [sample environment file](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env) and save it with name *restpkicore.env*, then
-fill it out. On the blob storage section, leave the default (`BlobStorage__Type=FileSystem` and `BlobStorage__Path=/var/app`).
+fill it out. On the blob storage section, leave the default settings (`BlobStorage__Type=FileSystem` and `BlobStorage__Path=/var/app`).
 
 Now, let's run the container with the configuration file, mounting the volume `restpkicore` on `/var/app` and exposing the app (which listens on port 80) on the host's port 8080:
 
