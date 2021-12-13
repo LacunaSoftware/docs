@@ -48,18 +48,33 @@ trusted.
 
 ## Example
 
-In a production environment you would typically use a Docker orchestrator, but for testing purposes you can run Rest PKI Core with Docker alone.
+In a production environment you would typically use a Docker orchestrator and a dedicated SQL Server (or a IaaS database offering), but for testing purposes you
+can run an instance of Rest PKI Core with an instance of SQL Server Express (which is free) with Docker alone.
 
-For testing purposes, let's use as blob storage a simple Docker volume named `restpkicore` mounted on `/var/app`. Start by creating it:
+Start by creating a volume for the database server:
 
-[!include[Create volume](../../../../../includes/rest-pki/core/docker/create-volume.md)]
+[!include[Create SQL volume](../../../../../includes/rest-pki/core/docker/create-sql-volume.md)]
 
-Next, download the [sample environment file](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env) and save it with name *restpkicore.env*, then
-fill it out. On the blob storage section, leave the default settings (`BlobStorage__Type=FileSystem` and `BlobStorage__Path=/var/app`).
+Then, start it with a password of your choice (replace `SOMEPASS` below):
 
-Now, let's run the container with the configuration file, mounting the volume `restpkicore` on `/var/app` and exposing the app (which listens on port 80) on the host's port 8080:
+[!include[Run SQL Server Express](../../../../../includes/rest-pki/core/docker/run-sql.md)]
 
-[!include[Docker run](../../../../../includes/rest-pki/core/docker/run.md)]
+Next, let's create another volume to use as blob storage:
+
+[!include[Create data volume](../../../../../includes/rest-pki/core/docker/create-data-volume.md)]
+
+Then, download the [sample environment file](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env), save it with name *restpkicore.env*
+and fill it out.
+
+* On `ConnectionStrings__DefaultConnection` use `Data Source=.;Initial Catalog=RestPkiCore;User ID=sa;Password=SOMEPASS` (replace with the password you chose previously)
+* On the blob storage section, leave the default settings (`BlobStorage__Type=FileSystem` and `BlobStorage__Path=/var/app`)
+
+Now, let's run the container with the configuration file, mounting the volume `restpkicore_data` on `/var/app` and exposing the app (which listens on port 80) on the host's port 8080:
+
+[!include[Run Rest PKI Core](../../../../../includes/rest-pki/core/docker/run.md)]
+
+> [!TIP]
+> If given a credential with enough privileges, Rest PKI Core will attempt to create the target database on the server, which is what will happen here
 
 Check the console for configuration errors. If everything is configured correctly, you should have a Rest PKI Core instance running on [localhost:8080](http://localhost:8080/)
 
