@@ -45,7 +45,7 @@ A imagem escuta na **porta 80**.
 ambas portas para a porta 80 do Rest PKI Core. Ademais, seu proxy deve preencher os *request headers* `X-Forwarded-Proto`, `X-Forwarded-For`
 e `X-Forwarded-Port`. A configuração `Bindings__UseReverseProxy=True` instrui o Rest PKI Core a confiar nas informações preenchidas nestes headers.
 
-## Exemplos
+## Exemplo
 
 Em um ambiente de produção, tipicamente se utilizaria um orquestrador de Docker e um servidor de SQL Server dedicado ou em nuvem (IaaS).
 Entretanto, para fins de teste, é possível rodar uma instância do Rest PKI Core com um banco de dados SQL Server Express (que não tem custo) local utilizando apenas
