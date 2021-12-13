@@ -108,6 +108,9 @@
 ##### [sign](rest-pki/core/integration/client-tool/sign.md)
 ##### [list-certs](rest-pki/core/integration/client-tool/list-certs.md)
 ##### [allocate-keys](rest-pki/core/integration/client-tool/allocate-keys.md)
+### [On-premises](rest-pki/core/on-premises/index.md)
+#### [Checking the installed version](rest-pki/core/on-premises/check-version.md)
+### [Changelog](rest-pki/core/changelog.md)
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->

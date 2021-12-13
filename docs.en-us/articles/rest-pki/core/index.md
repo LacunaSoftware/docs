@@ -7,7 +7,8 @@ and on **Docker**. As for database servers, in addition to SQL Server, **Postgre
 
 ## SaaS and on-premises
 
-Initial versions will support only on-premises installations. Rest PKI Core is expected to be available on cloud as a service (SaaS) mid 2021.
+Rest PKI Core can be used as a service (SaaS) on [core.pki.rest](https://core.pki.rest/) or you can host your own instance. See the article
+[Rest PKI Core on-premises](on-premises/index.md) for more information.
 
 ## Roadmap and Rest PKI compatibility
 
@@ -23,3 +24,7 @@ The expected relase date of the 2.0 version that will unify Rest PKI and Rest PK
 ## Integration
 
 See our [Integration Guide](integration/index.md) to get started with Rest PKI Core.
+
+## See also
+
+* [Rest PKI Core changelog](changelog.md)

@@ -7,8 +7,8 @@ e também com **Docker**. Com relação a SGBDs, além do SQL Server, também se
 
 ## SaaS e *on premises*
 
-As versões iniciais do Rest PKI Core estarão disponíveis apenas para instalações *on premises* (em ambiente computacional próprio). Espera-se que o
-Rest PKI Core esteja disponível em nuvem como serviço (SaaS) aproximadamente no meio de 2021.
+O Rest PKI Core pode ser utilizado em nuvem (SaaS) no endereço [core.pki.rest](https://core.pki.rest/) ou você pode ter uma instância na sua própria infraestrutura
+("on premises"). Veja o artigo [Rest PKI Core *on premises*](on-premises/index.md) para mais informações.
 
 ## Planos futuros e compatibilidade com Rest PKI
 
@@ -24,3 +24,7 @@ A previsão de lançamento da versão 2.0 que unificará Rest PKI e Rest PKI Cor
 ## Integração
 
 Veja nosso [Guia de Integração](integration/index.md) para começar a usar o Rest PKI Core nas suas aplicações.
+
+## Veja também
+
+* [Histórico de versões do Rest PKI Core](changelog.md)
