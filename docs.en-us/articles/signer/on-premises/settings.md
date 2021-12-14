@@ -369,7 +369,8 @@ volume batches this is used to avoid timeouts when querying the database.
 * **NumberDocumentsPerGenerationRound** (default: `10`): number of documents processed in each round of a generation batch.
 * **NumberNotificationsCreatedPerRound** (default: `30`): number of notifications created per batch round.
 * **NumberDocumentsPerExpirationRound** (v1.33.0, default: `100`): number of documents processed per expiration round.
-* **NotifyPendingActionsIndividually ** (v1.34.0): if `true`, will send pending action emails individually when performing batch actions.
+* **NotifyPendingActionsIndividually** (v1.34.0): if `true`, will send pending action emails individually when performing batch actions.
+* **NotifyParticipantsDefaultValue** (v1.39.0, default: `true`): sets the default value for the notify participants option that is displayed when a user signs documents in a batch.
 
 ###  *Envelopes* Settings (v1.33.0)
 

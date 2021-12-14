@@ -4,6 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-39-0" />
+### 1.39.0 (2021-12-13)
+
+* Novas funcionalidades
+  * [SIG-722] Permitir definir posicionamento das marcas da versão para impressão por organização
+  * [SIG-730] Permitir definir configurações do email por organização
+
+* Melhorias
+  * [SIG-729] Opção para deixar o "Notificar participantes" da assinatura em lote desmarcado por padrão
+  * [SIG-800] Melhorar nome do arquivo P7S assinado
+  * [SIG-802] Adicionar tema electric purple indigo
+  * [SIG-804] Alterar texto dos botões de notificações de assinatura/aprovação para "Ver documento"
+  * [SIG-810] Adicionar informações de exigências de certificado no flow action model
+
+* Correções de bugs
+  * [SIG-794] Corrigir informações no relatório da fatura da organização  
+  * [SIG-807] Botão de criar documentos continua aparecendo após desativar permissão de criação de documentos por padrão
+  * [SIG-808] Corrigir validação da cédula de identidade do Ecuador
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-38-0" />
 ### 1.38.0 (2021-11-11)
 

@@ -4,6 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-39-0" />
+### 1.39.0 (2021-12-13)
+
+* New Features
+  * [SIG-722] Define printer friendly options by organization
+  * [SIG-730] Define e-mail options by organization
+
+* Improvements
+  * [SIG-729] Option to set "Notify participants" unchecked by default
+  * [SIG-800] Improved signed P7S file name
+  * [SIG-802] Add electric purple indigo theme
+  * [SIG-804] Updated button text to "View document" in sign/approve notifications
+  * [SIG-810] Add certificate requirements information in FlowActionModel
+
+* Bug fixes
+  * [SIG-794] Fix informations in the organization billing report
+  * [SIG-807] Create documents button still being displayed after disabling create document permission as default
+  * [SIG-808] Fixed Ecuador personal identifier validation
+
+Updates database model: yes
+
 <a name="v1-38-0" />
 ### 1.38.0 (2021-11-11)
 
