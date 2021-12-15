@@ -42,9 +42,10 @@ To fill the `General__RootPasswordHash` setting, choose a strong password for ro
 The Rest PKI Core image listens on **port 80**.
 
 You should set up a reverse proxy or load balancer listening on both default ports for HTTP (80) and HTTPS (443), redirecting
-traffic on both ports to Rest PKI Core's port 80. Additionaly, your setup should fill the request headers `X-Forwarded-Proto`, `X-Forwarded-For`
-and `X-Forwarded-Port`. The configuration `Bindings__UseReverseProxy=True` tells Rest PKI Core that the information on these headers should be
-trusted.
+traffic on both ports to Rest PKI Core's port 80. Additionaly, your setup should fill the request headers
+[X-Forwarded-Proto](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-Proto),
+[X-Forwarded-For](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For) and, optionally, `X-Forwarded-Port`.
+The configuration `Bindings__UseReverseProxy=True` tells Rest PKI Core that the information on these headers should be trusted.
 
 ## Example
 
@@ -70,8 +71,14 @@ Create a volume to use as blob storage:
 Then, download the [sample environment file](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env), save it with name *restpkicore.env*
 and fill it out.
 
-* On `ConnectionStrings__DefaultConnection` use `Data Source=HOST_IP_ADDRESS;Initial Catalog=RestPkiCore;User ID=sa;Password=SOME_PASS` (replace `HOST_IP_ADDRESS` with the IP address of the host and `SOME_PASS` with the password you chose for the SQL Server)
-* On the blob storage section, leave the default settings (`BlobStorage__Type=FileSystem` and `BlobStorage__Path=/var/app`)
+On the connection string configuration, use the value below replacing `HOST_IP_ADDRESS` with the IP address of the host and `SOME_PASS` with the
+password you chose for the SQL Server:
+
+[!include[Connection string](../../../../../includes/rest-pki/core/docker/sample-config-connection-string.md)]
+
+On the blob storage configuration, leave the default settings, since we'll mount the volume `restpkicore_data` on `/var/app`:
+
+[!include[Blob storage configuration](../../../../../includes/rest-pki/core/docker/sample-config-blob-storage.md)]
 
 Now, let's run the container with the configuration file, mounting the volume `restpkicore_data` on `/var/app` and exposing the app (which listens on port 80) on the host's port 8080:
 
