@@ -71,12 +71,12 @@ Create a volume to use as blob storage:
 Then, download the [sample environment file](https://cdn.lacunasoftware.com/restpkicore/docker/restpkicore.env), save it with name *restpkicore.env*
 and fill it out.
 
-On the connection string configuration, use the value below replacing `HOST_IP_ADDRESS` with the IP address of the host and `SOME_PASS` with the
+On the connection string configuration, use the value below replacing `HOST_IP` with the IP address of the host and `SOME_PASS` with the
 password you chose for the SQL Server:
 
 [!include[Connection string](../../../../../includes/rest-pki/core/docker/sample-config-connection-string.md)]
 
-On the blob storage configuration, leave the default settings, since we'll mount the volume `restpkicore_data` on `/var/app`:
+On the blob storage configuration, leave the default settings, since we'll mount the created volume on `/var/app`:
 
 [!include[Blob storage configuration](../../../../../includes/rest-pki/core/docker/sample-config-blob-storage.md)]
 
