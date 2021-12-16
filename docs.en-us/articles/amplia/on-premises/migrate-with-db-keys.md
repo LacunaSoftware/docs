@@ -1,4 +1,4 @@
-﻿# Migrate Amplia instance having Database keys
+﻿# Migrate Amplia instance having database keys
 
 When migrating an [on-premises](index.md) instance of [Amplia](../index.md) to a different environment, if the instance has CA keys
 stored on the [Database Key Store](key-stores/database.md), additional care must be taken for such keys to be usable on the new environment.

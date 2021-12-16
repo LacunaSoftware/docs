@@ -305,7 +305,7 @@
 ### [Checking the installed version](amplia/on-premises/check-version.md)
 ### [Update to 3.0](amplia/on-premises/update-30.md)
 ### [Update to 3.5](amplia/on-premises/update-35.md)
-### [Migrate having Database keys](amplia/on-premises/migrate-with-db-keys.md)
+### [Migrate having database keys](amplia/on-premises/migrate-with-db-keys.md)
 ## [Changelog](amplia/changelog.md)
 <!-- End of Amplia -->
 
