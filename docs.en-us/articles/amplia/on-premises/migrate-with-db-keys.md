@@ -14,8 +14,8 @@ System.Security.Cryptography.CryptographicException: The payload was invalid.
 
 1. Make sure the Amplia instance on the origin environment is running at least version [3.13.2](../changelog.md), and that the version you are
    installing on the destination environment is the same as the version on the origin environemnt (or newer)
-1. Log on the management dashboard on the origin
+1. Log on the management dashboard **on the origin**
 1. Click on your name on the upper right corner of the screen, then click on **Administration**
 1. On the left menu, click on **About**
-1. Take note of the value of the `App Discriminator` property
-1. When installing the new instance, use that same value on setting `General__AppDiscriminator`
+1. Take note of the value of the **App Discriminator** property
+1. When installing the new instance, use that same value on setting `General__AppDiscriminator` (in case of JSON configuration, section *General* setting *AppDiscriminator*)
