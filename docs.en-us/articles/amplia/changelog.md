@@ -1,16 +1,26 @@
 ﻿# Amplia changelog
 
+<a name="v3-13-2" />
+### 3.13.2 (2021-12-16)
+
+Bug fixes
+
+* [AMP-224] - Keys stored on Database Key Store do not work after migration to a different environment
+
+Updates database model: no
+
+
 <a name="v3-13-1" />
 ### 3.13.1 (2021-12-05)
 
-New Feature
+New Features
 
 * [AMP-207] - Add support to Google KMS Key Store
 * [AMP-222] - Add support to Amazon KMS Key Store
 * [AMP-208] - Add supoort to OCSP responses
 * [AMP-210] - Add Latinus (Ecuador coporate CA) certificate template
 
-Improvement
+Improvements
 
 * [AMP-223] - Add safe timespan threshold on end-entity certificates validity start
 

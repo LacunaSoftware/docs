@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-13-2" />
+### 3.13.2 (2021-12-16)
+
+Correções de bugs:
+
+* [AMP-224] - Chaves armazenadas em banco de dados não funcionam após migração entre servidores
+
+Updates database model: no
+
+
 <a name="v3-13-1" />
 ### 3.13.1 (2021-12-05)
 
