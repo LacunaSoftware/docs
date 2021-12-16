@@ -4,7 +4,7 @@ When migrating an [on-premises](index.md) instance of [Amplia](../index.md) to a
 stored on the [Database Key Store](key-stores/database.md), additional care must be taken for such keys to be usable on the new environment.
 
 If you are experiencing errors when issuing certificates or with certificates being refused due to "unknown revocation status" after migrating
-your Amplia instance, check your application logs. If the message below is present, you likely need to perform the steps described in the next section.
+your Amplia instance, or if your application log contains the exception below, you likely need to perform the steps described in the next section.
 
 ```
 System.Security.Cryptography.CryptographicException: The payload was invalid.
