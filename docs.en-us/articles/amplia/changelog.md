@@ -17,7 +17,7 @@ New Features
 
 * [AMP-207] - Add support for Google KMS Key Store
 * [AMP-222] - Add support for Amazon KMS Key Store
-* [AMP-208] - Add supoort for OCSP responses
+* [AMP-208] - Add support for OCSP responses
 * [AMP-210] - Add Latinus (Ecuador corporate CA) certificate template
 
 Improvements
