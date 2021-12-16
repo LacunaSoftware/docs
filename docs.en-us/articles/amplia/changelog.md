@@ -15,10 +15,10 @@ Updates database model: no
 
 New Features
 
-* [AMP-207] - Add support to Google KMS Key Store
-* [AMP-222] - Add support to Amazon KMS Key Store
-* [AMP-208] - Add supoort to OCSP responses
-* [AMP-210] - Add Latinus (Ecuador coporate CA) certificate template
+* [AMP-207] - Add support for Google KMS Key Store
+* [AMP-222] - Add support for Amazon KMS Key Store
+* [AMP-208] - Add supoort for OCSP responses
+* [AMP-210] - Add Latinus (Ecuador corporate CA) certificate template
 
 Improvements
 
