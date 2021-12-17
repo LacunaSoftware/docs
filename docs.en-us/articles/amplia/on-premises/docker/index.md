@@ -49,6 +49,48 @@ traffic on both ports to Amplia's port 80. Additionaly, your setup should fill t
 and `X-Forwarded-Port`. The configuration `Bindings__UseReverseProxy=True` tells Amplia that the information on these headers should be
 trusted.
 
+## Example
+
+In a production environment you would typically use a Docker orchestrator and a dedicated SQL Server (or a IaaS database offering), but for testing purposes you
+can run an instance of Amplia with an instance of SQL Server Express (which is free) with Docker alone.
+
+Start by creating a volume for the database server:
+
+[!include[Create SQL volume](../../../../../includes/amplia/docker/create-sql-volume.md)]
+
+Then, start it with a password of your choice (replace `SOME_PASS` below):
+
+[!include[Run SQL Server Express](../../../../../includes/amplia/docker/run-sql.md)]
+
+Check the console for any errors. This can take a few minutes.
+
+Once SQL Server is up and running, open another terminal to start the Amplia instance.
+
+Create a volume to use as blob storage:
+
+[!include[Create data volume](../../../../../includes/amplia/docker/create-data-volume.md)]
+
+Then, download the [sample environment file](https://cdn.lacunasoftware.com/amplia/docker/amplia.env), save it with name *amplia.env*
+and fill it out.
+
+On the connection string configuration, use the value below replacing `HOST_IP` with the IP address of the host and `SOME_PASS` with the
+password you chose for the SQL Server:
+
+[!include[Connection string](../../../../../includes/amplia/docker/sample-config-connection-string.md)]
+
+On the blob storage configuration, leave the default settings, since we'll mount the created volume on `/var/app`:
+
+[!include[Blob storage configuration](../../../../../includes/amplia/docker/sample-config-blob-storage.md)]
+
+Now, let's run the container with the configuration file, mounting the volume `amplia_data` on `/var/app` and exposing the app (which listens on port 80) on the host's port 8080:
+
+[!include[Run Amplia](../../../../../includes/amplia/docker/run.md)]
+
+> [!TIP]
+> If given a credential with enough privileges, Amplia will attempt to create the target database on the server (which is what will happen in this case)
+
+Check the console for configuration errors. If everything is configured correctly, you should have a Amplia instance running on [localhost:8080](http://localhost:8080/)
+
 ## See also
 
 * [SMS configuration](../configure-sms.md)
