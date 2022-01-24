@@ -34,7 +34,7 @@ estão presentes:
 > [projetos de exemplo](https://github.com/LacunaSoftware/PkiSuiteSamples).
 > Veja as seções abaixo para obter instruções de como configurar sua aplicação para aceitar os certificados para testes.
 
-Se você precisar de um certificado diferente com dados específicos, [contate-nos](http://support.lacunasoftware.com/).
+Se você precisar de um certificado diferente com dados específicos, você mesmo pode [emitir um certificado de testes](https://demos.lacunasoftware.com/pt/demos/generate-certificate) com os dados que quiser.
 
 Lembre-se de sempre **remover a confiança na ICP de testes da Lacuna Software ao levar a sua aplicação para produção**. Ainda melhor,
 recomendamos o emprego de alguma técnica de compilação condicional de modo que a ICP de testes seja aceita apenas quando o código

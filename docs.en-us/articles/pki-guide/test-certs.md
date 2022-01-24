@@ -32,7 +32,7 @@ All files are PKCS #12 certificates with password **1234**. The following certif
 > The Lacuna Test PKI is not trusted by default on our [sample projects](https://github.com/LacunaSoftware/PkiSuiteSamples). See
 > sections below for instructions on how to configure your application to accept test certificates.
 
-If you need a certificate with a particular information, [contact us](http://support.lacunasoftware.com/).
+If you need a certificate with a particular information, [issue a test certificate](https://demos.lacunasoftware.com/en/demos/generate-certificate) yourself.
 
 Always remember to **remove the trust in the Lacuna Test PKI security context when you're moving to a production environment**. Better yet, use some sort of conditional compilation so that the test PKI is only trusted when running in debug mode.
 
