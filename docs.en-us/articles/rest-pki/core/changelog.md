@@ -1,5 +1,26 @@
 ﻿# Rest PKI Core changelog
 
+<a name="v1-7-0" />
+## 1.7.0 (2022-01-25)
+
+Updates database model: **yes**
+
+### New Features
+
+RPNG-135 Detached CAdES signatures
+
+RPNG-44 UI to monitor calls \(especially errors\) to webhooks and file validation API
+
+### Improvements
+
+RPNG-51 UI to configure the subscription theme and customizable assets
+
+### Bug fixes
+
+RPNG-144 Session signature images are broken after authentication flow with cloud certificate provider
+
+
+
 <a name="v1-6-0" />
 ## 1.6.0 (2021-12-08)
 

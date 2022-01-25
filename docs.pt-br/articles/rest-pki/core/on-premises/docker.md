@@ -10,11 +10,11 @@ A imagem de Docker do Rest PKI Core encontra-se disponível no Docker Hub:
 </center>
 <br />
 
-A imagem atualmente recomendada é a `lacunasoftware/restpkicore:1.6`
+A imagem atualmente recomendada é a `lacunasoftware/restpkicore:1.7`
 
 Tags móveis disponíveis:
 
-* A tag `1.6` aponta para a última imagem 1.6.x **(recomendada)**
+* A tag `1.7` aponta para a última imagem 1.7.x **(recomendada)**
 * A tag `1` aponta para a última imagem 1.x
 * A tag `stable` aponta para a última image estável
 

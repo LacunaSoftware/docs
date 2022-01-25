@@ -1,5 +1,26 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="v1-7-0" />
+## 1.7.0 (2022-01-25)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-135 Assinatura CAdES detached
+
+RPNG-44 Interface para acompanhar chamadas \(em especial falhas\) ao webhook e à API de validação de arquivos
+
+### Melhorias
+
+RPNG-51 Interface de configuração do tema e *assets* personalizáveis da conta
+
+### Correções de bugs
+
+RPNG-144 Imagens da sessão de assinatura ficam quebradas na volta do login com provedor de certificado em nuvem
+
+
+
 <a name="v1-6-0" />
 ## 1.6.0 (2021-12-08)
 
