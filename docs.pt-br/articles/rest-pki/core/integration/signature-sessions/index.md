@@ -198,6 +198,7 @@ Dessa forma, a aba será fechada pelo Rest PKI Core ao final do processo.
 
 Você pode optar por alguns dos recursos abaixo para melhorar a experiência do usuário durante suas sessões de assinatura:
 
+* [Requisitos de certificados](certificate-requirements.md) podem ser usados para restringir os certificados que o usuário poderá escolher
 * [Validação de arquivos](file-validation.md)
 * [Processamento em background](background-processing.md)
 * [Metadados de documentos](document-metadata.md)

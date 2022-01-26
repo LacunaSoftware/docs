@@ -193,6 +193,7 @@ Then, the tab will be closed by Rest PKI Core by the end of the session.
 
 You may use the following optional features to improve the user experience:
 
+* [Certificate requirements](certificate-requirements.md) may be used to restrict the certificates the user can choose
 * [File validation](file-validation.md)
 * [Background processing](background-processing.md)
 * [Document metadata](document-metadata.md)

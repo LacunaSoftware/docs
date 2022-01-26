@@ -98,6 +98,7 @@
 ### [Guia de Integração](rest-pki/core/integration/index.md)
 #### [Primeiros passos](rest-pki/core/integration/get-started.md)
 #### [Sessões de assinatura](rest-pki/core/integration/signature-sessions/index.md)
+##### [Requisitos de certificados](rest-pki/core/integration/signature-sessions/certificate-requirements.md)
 ##### [Validação de arquivos](rest-pki/core/integration/signature-sessions/file-validation.md)
 ##### [Processamento em background](rest-pki/core/integration/signature-sessions/background-processing.md)
 ##### [Metadados de documentos](rest-pki/core/integration/signature-sessions/document-metadata.md)
