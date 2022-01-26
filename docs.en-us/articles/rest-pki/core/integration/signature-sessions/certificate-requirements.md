@@ -1,7 +1,7 @@
 ﻿# Certificate requirements - Signature sessions
 
 In order to restrict the certificates that the user will be able to choose during a [signature session](index.md), specify a list of
-**certificate requirements** when creating the session. The user will only be able to select certificates that meet **ALL** of the specified
+**certificate requirements** when creating the session. The user will only be able to select certificates that meet **all** of the specified
 requirements.
 
 Each requirement is composed of a **type** and, depending on the type, an **argument**. For instance, let's say you need to restrict users to only
@@ -18,7 +18,7 @@ Direct API integration:
 
 See the different requirement types available on the next section.
 
-## Requirement types
+## Supported requirement
 
 The following requirement types are currently available:
 

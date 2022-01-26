@@ -1,7 +1,7 @@
 ﻿# Requisitos de certificados - Sessões de assinatura
 
 Para restringir os certificados que o usuário poderá escolher durante uma [sessão de assinatura](index.md), especifique uma lista de
-**requisitos de certificado** ao criar a sessão. O usuário somente poderá escolher certificados que atendam a **TODOS** os critérios
+**requisitos de certificado** ao criar a sessão. O usuário somente poderá escolher certificados que atendam a **todos** os critérios
 especificados.
 
 Cada requisito é composto por um **tipo** e, dependendo do tipo, um **argumento**. Por exemplo, digamos que a sua aplicação precisa que
@@ -18,11 +18,11 @@ Integração direta por API:
 
 Veja os requisitos suportados na próxima sessão.
 
-## Tipos de requisito
+## Requisitos suportados
 
 Os seguintes tipos de requisito são atualmente suportados:
 
-* [CryptoDevice](#crypt-device): requer que o certificado tenha a chave privada protegida por dispositivo criptográfico (certificado A3 ou A4)
+* [CryptoDevice](#crypto-device): requer que o certificado tenha a chave privada protegida por dispositivo criptográfico (certificado A3 ou A4)
 * [Cpf](#cpf): requer que o certificado tenha um determinado CPF
 
 > [!NOTE]
