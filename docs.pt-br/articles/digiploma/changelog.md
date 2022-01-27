@@ -4,6 +4,31 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-12-0" />
+### 1.12.0 (2022-01-26)
+
+* Correções de bugs
+  * [AUT-143] Versão do diploma errada ao enviar webhook
+  * [AUT-142] Erro de validação em regex do numero do ato
+
+* Melhorias
+  * [AUT-141] Permitir ter URLs com caminhos na URL base do modelo
+  * [AUT-140] Criar novas chaves para o RVDD
+  * [AUT-139] Melhorar mensagem de erro ao não preencher um campo uint como número processo da informacoesTramitacaoEmec
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-11-1" />
+### 1.11.1 (2022-01-18)
+
+* Correções de bugs
+  * [AUT-138] Erro ao recuperar informações da documentação de registro
+
+* Melhorias
+  * [AUT-137] Novas chaves para data no RVDD e nova coluna na Pré-Visualização do aluno
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-11-0" />
 ### 1.11.0 (2021-11-30)
 

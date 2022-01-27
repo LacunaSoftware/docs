@@ -4,6 +4,31 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-12-0" />
+### 1.12.0 (2022-01-26)
+
+* Bug fixes
+  * [AUT-143] Degree version is wrong in webhook request
+  * [AUT-142] Error in act number regex
+
+* Improvements
+  * [AUT-141] Allow URLs with path in the base URL
+  * [AUT-140] Create new RVDD keys
+  * [AUT-139] Improve error message when a uint filed is not filled as the process number of informacoesTramitacaoEmec
+
+Updates database model: no
+
+<a name="v1-11-1" />
+### 1.11.1 (2022-01-18)
+
+* Bug fixes
+  * [AUT-138] Error retrieving registration documentation information
+
+* Improvements
+  * [AUT-137] New keys for dates in RVDD and new column in degrees preview
+
+Updates database model: no
+
 <a name="v1-11-0" />
 ### 1.11.0 (2021-11-30)
 
