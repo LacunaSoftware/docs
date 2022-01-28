@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-9-1" />
+### 2.9.1 (2022-01-27)
+
+- Improve PDF support with encoded XMP
+- Improve PDF marker signature removal
+
+
 <a name="v2-9-0" />
 ### 2.9.0 (2021-11-24)
 
