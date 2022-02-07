@@ -16,7 +16,7 @@ PKCertificate cert = ...
 // Validando com árbitro ICP-Brasil
 var vr = cert.Validate(TrustArbitrators.PkiBrazil);
 
-if (vr.isValid) {
+if (vr.IsValid) {
     // Certificado é válido
 } else {
     // Certificado é inválido
