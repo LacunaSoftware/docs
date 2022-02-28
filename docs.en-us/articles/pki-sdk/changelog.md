@@ -1,5 +1,14 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-10-0" />
+### 2.10.0 (2022-02-25)
+
+- Improve certificate generation feature options
+	- User notices certificate policy
+	- Extended key usage extension critical option
+	- End entity basic constraints extension critical option
+
+
 <a name="v2-9-1" />
 ### 2.9.1 (2022-01-27)
 
