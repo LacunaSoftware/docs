@@ -47,6 +47,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.29 - [AC SENAI Bahia](https://ac.senaibahia.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.30 - [AC Guardsign](https://ac.guardsign.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.31 - [AC Amplo Engenharia](https://ac.amploengenharia.com.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.32 - [AC E-paper](https://ac.e-paper.io/certs/ac.txt)
 
 ## 2. Políticas de certificado A1
 
