@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-10-1" />
+### 2.10.1 (2022-03-06)
+
+- Fix unwanted warning logs from lazy loaded country PKI fields decoding
+
+
 <a name="v2-10-0" />
 ### 2.10.0 (2022-02-25)
 
