@@ -4,6 +4,41 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-41-0" />
+### 1.41.0 (2022-03-20)
+
+* Improvements
+  * [SIG-835] Improvements in upload restrictions
+  * [SIG-787] Added setting for ReplyTo email address of the instance and automatic ReplyTo to the document creator email address
+  * [SIG-509] Added setting for number of trial period days
+
+* Bug fixes
+  * [SIG-851] Cannot create documents with Sys Admin application
+  * [SIG-849] Electronic signature appears as digital signature in Signing Tags
+  * [SIG-847] Cannot download envelope documents if the Simplified Manifest is enabled
+
+Updates database model: yes
+
+<a name="v1-40-0" />
+### 1.40.0 (2022-03-20)
+
+* Improvements
+  * [SIG-308] Improve experience for the user that needs to sign the same document twice (with different titles) in the same step
+
+* Bug fixes
+  * [SIG-829] PDF/A file is no longer PDF/A after signature
+
+Updates database model: no
+
+<a name="v1-39-1" />
+### 1.39.1 (2022-03-20)
+
+* Improvements
+  * [SIG-822] Add eminence-cornflower-blue theme
+  * [SIG-821] Add "disable pending notifications" field to the create document version API
+
+Updates database model: no
+
 <a name="v1-39-0" />
 ### 1.39.0 (2021-12-13)
 

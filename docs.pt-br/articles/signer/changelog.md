@@ -4,6 +4,41 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-41-0" />
+### 1.41.0 (2022-03-20)
+
+* Melhorias
+  * [SIG-835] Melhorias nas restrições de uploads
+  * [SIG-787] Permitir configurar ReplyTo por instância e configuração para replyto automático para o criador do documento
+  * [SIG-509] Permitir definir que os primeiros sete dias de um plano será de trial (gratuito)
+
+* Correções de bugs
+  * [SIG-851] Não é possível enviar documento com aplicação Sys Admin
+  * [SIG-849] Assinatura eletrônica consta como digital na Etiqueta de Assinatura
+  * [SIG-847] Não é possível baixar documentos do envelope se Manifesto simplificado estiver habilitado
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v1-40-0" />
+### 1.40.0 (2022-03-20)
+
+* Melhorias
+  * [SIG-308] Melhorar caso de uso de usuário que precisa assinar documento duas (ou mais) vezes com papéis diferentes na mesma etapa
+
+* Correções de bugs
+  * [SIG-829] Arquivo PDF/A perde a atribuição após assinatura
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-39-1" />
+### 1.39.1 (2022-03-20)
+
+* Melhorias
+  * [SIG-822] Adicionar tema eminence-cornflower-blue
+  * [SIG-821] Adicionar campo "disable pending notifications" a API de nova versão de documento
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-39-0" />
 ### 1.39.0 (2021-12-13)
 

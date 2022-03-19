@@ -41,9 +41,9 @@ If `false` the suggestions will search all of the users in the database. This op
 * **EnableDocumentAuthentication**: if `true` shows the document authentication option in the fast signature screen. This allows an user to authenticate a document by inserting 
 a custom visual representation that has information about his lawyer or accountant registration number.
 
-* **EnableBilling**: if `true` enables the billing module.
-* **EnableBillingInformationCheck** (v1.19.0): if `true` enables the check that verifies if the billing information has been set whenever a paid transaction is created by a user 
-or organization.
+* **EnableBilling** (deprecated v1.40.0): if `true` enables the billing module. Please use the option in [Billing settings](#billing-settings) instead as this option is now deprecated.
+* **EnableBillingInformationCheck** (v1.19.0, deprecated v1.40.0): if `true` enables the check that verifies if the billing information has been set whenever a paid transaction is created by a user 
+or organization. Please use the option in [Billing settings](#billing-settings) instead as this option is now deprecated.
 
 * **UseCustomStaticHomePage**: if `true`, uses the static file index.html from the theme-assets as the home page. After the login, users will always be redirected to the 
 `<SiteUrl>/private` as the home page will be static. You may change the redirect URL using the `RedirectUri` setting in the OIDC Config section. 
@@ -118,6 +118,17 @@ specified in the MaxNumberSignaturesToValidateAtOnce setting.
 
 * **MaskUserIdentifier** (v1.35.0): if `true`, mask user identifiers in signature visual representations, signature manifest, public area and most screens that allow users to 
 view information from other users.
+
+<a name="billing-settings" />
+###  *Billing* Settings (v1.40.0)
+
+Under section **Billing**:
+
+* **Enabled**: if `true` enables the billing module.
+* **EnableBillingInformationCheck**: if `true` enables the check that verifies if the billing information has been set whenever a paid transaction is created by a user 
+or organization.
+* **TrialPeriodDays**: if greater than `0`, enables and defines the number of days that the billing trial period will last. During the trial period, all transactions in an
+organization will be free of charge (the creation date of the organization is considered as the start date).
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
