@@ -851,7 +851,7 @@ Updates database model: no
 Updates database model: **yes**
 
 <a name="v1-2-0" />
-### 1.2.0  (2020-04-29)
+### 1.2.0 (2020-04-29)
 
 * New Features
   * [SIG-284] - Document validation of an uploaded signed file

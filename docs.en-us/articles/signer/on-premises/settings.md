@@ -119,6 +119,8 @@ specified in the MaxNumberSignaturesToValidateAtOnce setting.
 * **MaskUserIdentifier** (v1.35.0): if `true`, mask user identifiers in signature visual representations, signature manifest, public area and most screens that allow users to 
 view information from other users.
 
+* **ReplyToDocumentCreator** (v1.41.0): if `true`, adds the document creator's e-mail address as the reply to address for all e-mails associated with that document.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
