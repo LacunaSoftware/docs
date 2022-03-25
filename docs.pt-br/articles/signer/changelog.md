@@ -9,7 +9,7 @@
 
 * Melhorias
   * [SIG-835] Melhorias nas restrições de uploads
-  * [SIG-787] Permitir configurar ReplyTo por instância e configuração para replyto automático para o criador do documento
+  * [SIG-787] Permitir configuração de replyto automático para o criador do documento
   * [SIG-509] Permitir definir que os primeiros sete dias de um plano será de trial (gratuito)
 
 * Correções de bugs

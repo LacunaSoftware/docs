@@ -9,7 +9,7 @@
 
 * Improvements
   * [SIG-835] Improvements in upload restrictions
-  * [SIG-787] Added setting for ReplyTo email address of the instance and automatic ReplyTo to the document creator email address
+  * [SIG-787] Added setting for automatic ReplyTo to the document creator's email address
   * [SIG-509] Added setting for number of trial period days
 
 * Bug fixes
