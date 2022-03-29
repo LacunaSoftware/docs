@@ -13,7 +13,7 @@ dotnet Lacuna.RestPki.Site.dll [settings] -- test-email <to-address>
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/restpkicore:1.6 [settings] -- test-email <to-address>
+docker run -i lacunasoftware/restpkicore:1.9 [settings] -- test-email <to-address>
 ```
 
 [!include[About settings](includes/about-settings.md)]

@@ -1,5 +1,29 @@
 ﻿# Rest PKI Core changelog
 
+<a name="v1-9-0" />
+## 1.9.0 (2022-03-29)
+
+Updates database model: no
+
+### New Features
+
+RPNG-41 Signature validation API
+
+RPNG-141 Security context management on the web interface
+
+
+
+<a name="v1-8-0" />
+## 1.8.0 (2022-02-25)
+
+Updates database model: **yes**
+
+### Improvements
+
+RPNG-10 Signature session [certificate requirements](integration/signature-sessions/certificate-requirements.md)
+
+
+
 <a name="v1-7-0" />
 ## 1.7.0 (2022-01-25)
 

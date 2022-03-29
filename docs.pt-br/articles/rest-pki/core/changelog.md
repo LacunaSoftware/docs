@@ -1,5 +1,29 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="v1-9-0" />
+## 1.9.0 (2022-03-29)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-41 API para validação de documentos fornecendo o arquivo
+
+RPNG-141 Gerenciamento de contextos de segurança da interface web
+
+
+
+<a name="v1-8-0" />
+## 1.8.0 (2022-02-25)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+RPNG-10 [Requisitos de certificados](integration/signature-sessions/certificate-requirements.md) em sessões de assinatura
+
+
+
 <a name="v1-7-0" />
 ## 1.7.0 (2022-01-25)
 
