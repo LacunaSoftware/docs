@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-11-0" />
+### 2.11.0 (2022-04-02)
+
+- Add line spacing configuration for PDF (PadesVisualText and PdfMarkText features)
+- Improve Pades signing and validation performance
+
+
 <a name="v2-10-1" />
 ### 2.10.1 (2022-03-06)
 
