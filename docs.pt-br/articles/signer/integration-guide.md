@@ -236,7 +236,6 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 ```
 
 * Para saber se o documento está concluído, verifique a propriedade `status` corresponde a `Concluded`.
-  * `status` possui 7 valores disponíveis: pendente ou recusado (`PendingOrRefused`), concluído (`Concluded`), cancelado ou expirado (`CanceledOrExpired`), pendente(`Pending`), recusado (`Refused`), cancelado(`Canceled`), expirado(`Expired`).
 * Para saber se um participante assinou/aprovou, verifique se a propriedade `status` corresponde a `Completed` para o elemento da lista de 
 ações (`flowActions`) que corresponde a ele.
 
