@@ -4,6 +4,41 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-14-0" />
+### 1.14.0 (2022-04-07)
+
+* Correções de bugs
+  * [AUT-166] Seção não é retornada quando a Pagina não possui informação
+
+* Melhorias
+  * [AUT-171] Criar tag para texto relacionado ao processo de tramitação
+
+* Novas funcionalidades
+  * [AUT-176] Permitir atualização de RVDD de vários diplomas
+  * [AUT-163] Tag de Segunda Via no RVDD
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-13-1" />
+### 1.13.1 (2022-02-23)
+
+* Melhorias
+  * [AUT-161] Caractere pipe como quebra de linha na tag de Informação Adicional
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-13-0" />
+### 1.13.0 (2022-02-14)
+
+* Correções de bugs
+  * [AUT-156] Obrigatoriedade indevida de campos na emissão de 2ª via
+  * [AUT-154] Habilitação não é retornada no RVDD ao enviar mais de um nome
+
+* Melhorias
+  * [AUT-155] Permitir o uso de outras tags no Caminho de Validação
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-12-0" />
 ### 1.12.0 (2022-01-26)
 

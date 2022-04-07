@@ -4,6 +4,41 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-14-0" />
+### 1.14.0 (2022-04-07)
+
+* Bug fixes
+  * [AUT-166] Section is not returned when there is no page information
+
+* Improvements
+  * [AUT-171] Create tag for the pending process text
+
+* New Features
+  * [AUT-176] Allow updated of multiple RVDDs
+  * [AUT-163] Tag for "Segunda Via" in the RVDD
+
+Updates database model: no
+
+<a name="v1-13-1" />
+### 1.13.1 (2022-02-23)
+
+* Improvements
+  * [AUT-161] Pipe character as line break in Additional information tag
+
+Updates database model: no
+
+<a name="v1-13-0" />
+### 1.13.0 (2022-02-14)
+
+* Bug fixes
+  * [AUT-156] Wrong requirements for "2ª via" fields
+  * [AUT-154] "Habilitação" is not returned in the RVDD when multiple names are sent
+
+* Improvements
+  * [AUT-155] Allow use of other tags in the validation path
+
+Updates database model: no
+
 <a name="v1-12-0" />
 ### 1.12.0 (2022-01-26)
 
