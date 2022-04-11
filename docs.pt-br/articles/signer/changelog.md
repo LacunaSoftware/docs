@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-42-0" />
+### 1.42.0 (2022-04-11)
+
+* Novas funcionalidades
+  * [SIG-859] Definir título do signatário na Assinatura Única
+
+* Melhorias
+  * [SIG-845] Especificar o tipo de assinatura na ordem das ações
+
+* Correções de bugs
+  * [SIG-864] Link de validação de documento com caracteres adicionais
+  * [SIG-844] Documento cancelado aparece como pendente na listagem de pastas
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-41-0" />
 ### 1.41.0 (2022-03-20)
 

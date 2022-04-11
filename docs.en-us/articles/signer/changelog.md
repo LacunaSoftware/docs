@@ -4,6 +4,21 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-42-0" />
+### 1.42.0 (2022-04-11)
+
+* New Features
+  * [SIG-859] Option to set the signer title in single signature
+
+* Improvements
+  * [SIG-845] Display signature type in the action order
+
+* Bug fixes
+  * [SIG-864] Document validation link has additional characters at the end
+  * [SIG-844] Cancelled document is displayed as pending in the folder list
+
+Updates database model: no
+
 <a name="v1-41-0" />
 ### 1.41.0 (2022-03-20)
 
