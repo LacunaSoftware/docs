@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-11-1" />
+### 2.11.1 (2022-04-13)
+
+- Improve Paraguay certificate fields decoding
+- Add Paraguay "Pasaporte" certificate field
+
+
 <a name="v2-11-0" />
 ### 2.11.0 (2022-04-02)
 
