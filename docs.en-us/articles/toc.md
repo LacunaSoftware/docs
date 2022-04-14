@@ -117,6 +117,7 @@
 ##### [update-db](rest-pki/core/on-premises/tool/update-db.md)
 ##### [test-email](rest-pki/core/on-premises/tool/test-email.md)
 #### [Configure Blob Storage](rest-pki/core/on-premises/configure-blob-storage.md)
+#### [Configure timestamping](rest-pki/core/on-premises/configure-timestamp.md)
 #### [Configure OIDC](rest-pki/core/on-premises/configure-oidc.md)
 #### [Configure email sending](rest-pki/core/on-premises/configure-email.md)
 #### [Preparing the database](rest-pki/core/on-premises/prepare-database.md)
