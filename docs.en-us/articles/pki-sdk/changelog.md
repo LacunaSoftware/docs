@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-11-2" />
+### 2.11.2 (2022-04-22)
+
+- Fix ValidationException on XML signing
+
+
 <a name="v2-11-1" />
 ### 2.11.1 (2022-04-13)
 
