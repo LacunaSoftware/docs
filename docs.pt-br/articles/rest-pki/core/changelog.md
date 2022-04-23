@@ -1,5 +1,22 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="v1-10-0" />
+## 1.10.0 (2022-04-23)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-2 API para autenticação com certificado digital
+
+### Melhorias
+
+RPNG-146 Parametrização de PDF marks
+
+RPNG-147 Permitir configurar se PDFs serão marcados
+
+
+
 <a name="v1-9-0" />
 ## 1.9.0 (2022-03-29)
 

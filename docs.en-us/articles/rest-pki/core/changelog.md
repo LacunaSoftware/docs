@@ -1,5 +1,22 @@
 ﻿# Rest PKI Core changelog
 
+<a name="v1-10-0" />
+## 1.10.0 (2022-04-23)
+
+Updates database model: **yes**
+
+### New Features
+
+RPNG-2 Add certificate authentication API
+
+### Improvements
+
+RPNG-146 Allow configuration of PDF marks
+
+RPNG-147 Allow configuration of PDF marking policy
+
+
+
 <a name="v1-9-0" />
 ## 1.9.0 (2022-03-29)
 
