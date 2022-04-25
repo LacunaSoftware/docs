@@ -1,5 +1,16 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="v1-10-1" />
+## 1.10.1 (2022-04-23)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-148 Erro ao utilizar contexto de segurança personalizado
+
+
+
 <a name="v1-10-0" />
 ## 1.10.0 (2022-04-23)
 

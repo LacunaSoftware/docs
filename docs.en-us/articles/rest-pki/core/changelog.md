@@ -1,5 +1,16 @@
 ﻿# Rest PKI Core changelog
 
+<a name="v1-10-1" />
+## 1.10.1 (2022-04-23)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-148 Error when using custom security contexts
+
+
+
 <a name="v1-10-0" />
 ## 1.10.0 (2022-04-23)
 
