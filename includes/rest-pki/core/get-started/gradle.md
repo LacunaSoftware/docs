@@ -4,7 +4,7 @@ repositories {
 }
 
 dependencies {
-    compile("com.lacunasoftware.restpki:restpkicore-client:1.0.0")
+    compile("com.lacunasoftware.restpki:restpkicore-client:1.1.0")
     ...
 }
 ```
