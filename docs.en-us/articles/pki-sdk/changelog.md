@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-11-3" />
+### 2.11.3 (2022-04-25)
+
+- Improve XML and PDF validation with external date reference
+
+
 <a name="v2-11-2" />
 ### 2.11.2 (2022-04-22)
 
