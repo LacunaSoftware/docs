@@ -310,6 +310,30 @@
 ## [Histórico de versões](amplia/changelog.md)
 <!-- End of Amplia -->
 
+<!-- Start of Amplia Reg -->
+# [Amplia Reg](amplia-reg/index.md)
+## [On premises](amplia-reg/on-premises/index.md)
+### [Setup em Linux](amplia-reg/on-premises/linux/index.md)
+#### [Instalação em Ubuntu Server](amplia-reg/on-premises/linux/install-ubuntu.md)
+#### [Atualização](amplia-reg/on-premises/linux/update.md)
+#### [Resolução de problemas](amplia-reg/on-premises/linux/troubleshoot/index.md)
+##### [Verificando os logs](amplia-reg/on-premises/linux/troubleshoot/check-logs.md)
+### [Utilitário de linha de comando](amplia-reg/on-premises/tool/index.md)
+#### [gen-enc-key](amplia-reg/on-premises/tool/gen-enc-key.md)
+#### [hash-root-pass](amplia-reg/on-premises/tool/hash-root-pass.md)
+#### [update-db](amplia-reg/on-premises/tool/update-db.md)
+#### [test-email](amplia-reg/on-premises/tool/test-email.md)
+### [Preparando o banco de dados](amplia-reg/on-premises/prepare-database.md)
+### [Operando sem db_owner](amplia-reg/on-premises/unprivileged-db-user.md)
+### [Configuração de storage](amplia-reg/on-premises/configure-blob-storage.md)
+### [Configuração de OIDC](amplia-reg/on-premises/configure-oidc.md)
+### [Configuração de envio de email](amplia-reg/on-premises/configure-email.md)
+### [Configuração de envio de SMS](amplia-reg/on-premises/configure-sms.md)
+### [Configuração de redirecionamento para HTTPS](amplia-reg/on-premises/configure-https-redirect.md)
+### [Verificando a versão instalada](amplia-reg/on-premises/check-version.md)
+## [Histórico de versões](amplia-reg/changelog.md)
+<!-- End of Amplia Reg -->
+
 <!-- Start of GrantID -->
 # [GrantID](grant-id/index.md)
 ## [On premises](grant-id/on-premises/index.md)

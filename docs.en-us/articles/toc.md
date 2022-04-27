@@ -311,6 +311,30 @@
 ## [Changelog](amplia/changelog.md)
 <!-- End of Amplia -->
 
+<!-- Start of Amplia Reg -->
+# [Amplia Reg](amplia-reg/index.md)
+## [On-premises](amplia-reg/on-premises/index.md)
+### [Setup on Linux](amplia-reg/on-premises/linux/index.md)
+#### [Install on Ubuntu Server](amplia-reg/on-premises/linux/install-ubuntu.md)
+#### [Update](amplia-reg/on-premises/linux/update.md)
+#### [Troubleshooting](amplia-reg/on-premises/linux/troubleshoot/index.md)
+##### [Checking logs](amplia-reg/on-premises/linux/troubleshoot/check-logs.md)
+### [Command-line tool](amplia-reg/on-premises/tool/index.md)
+#### [gen-enc-key](amplia-reg/on-premises/tool/gen-enc-key.md)
+#### [hash-root-pass](amplia-reg/on-premises/tool/hash-root-pass.md)
+#### [update-db](amplia-reg/on-premises/tool/update-db.md)
+#### [test-email](amplia-reg/on-premises/tool/test-email.md)
+### [Preparing the database](amplia-reg/on-premises/prepare-database.md)
+### [Configure Blob Storage](amplia-reg/on-premises/configure-blob-storage.md)
+### [Configure OIDC](amplia-reg/on-premises/configure-oidc.md)
+### [Configure email sending](amplia-reg/on-premises/configure-email.md)
+### [Configure SMS sending](amplia-reg/on-premises/configure-sms.md)
+### [Configure HTTPS redirection](amplia-reg/on-premises/configure-https-redirect.md)
+### [Run without db_owner](amplia-reg/on-premises/unprivileged-db-user.md)
+### [Checking the installed version](amplia-reg/on-premises/check-version.md)
+## [Changelog](amplia-reg/changelog.md)
+<!-- End of Amplia -->
+
 <!-- Start of GrantID -->
 # [GrantID](grant-id/index.md)
 ## [On-premises](grant-id/on-premises/index.md)
