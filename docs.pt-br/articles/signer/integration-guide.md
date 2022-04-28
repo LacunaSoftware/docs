@@ -209,7 +209,6 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 {
 	"id": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
 	"name": "Contrato Integração",
-	"isConcluded": true,
 	"status": "Concluded",
 	"creationDate": "2019-08-18T16:26:03.372Z",
 	"updateDate": "2019-08-18T16:26:03.372Z",
