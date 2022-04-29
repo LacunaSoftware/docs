@@ -1,3 +1,3 @@
 ﻿```json
-{"productName":"Lacuna Amplia Reg","productVersion":"1.x.x"}
+{"productName":"Lacuna Amplia Reg","productVersion":"...","spaVersion":"...","timestamp":"..."}
 ```

@@ -4,7 +4,7 @@ To install an [on-premises](../index.md) instance of [Amplia Reg](../../index.md
 
 ## Prerequisites
 
-* Ubuntu x64 version 22.04, 21.10, 20.04, 18.04 or 16.04
+* Ubuntu x64 version <!-- 22.04, --> 21.10, 20.04, 18.04 or 16.04
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 

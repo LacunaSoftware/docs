@@ -18,42 +18,22 @@ Create the configuration file from the given template:
 
 ## Configure Amplia Reg
 
-Edit the configuration file to configure your Amplia Reg instance:
+Edit the configuration file and follow the instructions on it to configure your Amplia Reg instance:
 
 [!include[Edit settings](../../../../../../includes/amplia-reg/linux/edit-settings.md)]
 
-[!include[Database config](../../includes/database-config.md)]
-
-<a name="encryption-key-generation" />
-
-### General settings
-
-Generate a 256-bit key to encrypt sensitive data stored on the database:
+To fill the `EncryptionKey` setting under the `[General]` section, generate a 256-bit key to encrypt sensitive data stored on the database:
 
 [!include[Generate key](../../../../../../includes/linux/gen-key.md)]
 
-Choose a strong password for root access to the dashboard and hash it with the [command-line tool](../../tool/index.md):
+To fill the `RootPasswordHash` setting under the `[General]` section, choose a strong password for root access to the dashboard and hash it:
 
 [!include[Hash root password](../../../../../../includes/amplia-reg/linux/hash-root-pass.md)]
 
-[!include[General config](../../includes/general-config.md)]
-
-(TODO)
-<!--
-[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
+To fill the `ApiKey` setting under the `[Amplia]` section, you must create an application on your existing [Amplia](../../../../amplia/index.md)
+instance (which is a prerequisite) and generate an API key for it:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
-
-[!include[PKI Suite config](../../includes/pki-config.md)]
-
-[!include[Email config](../../includes/email-config.md)]
-
-[!include[OIDC config](../../includes/oidc-config.md)]
-
-[!include[SMS config](../../includes/sms-config.md)]
-
-[!include[Key store config](../../includes/key-store-config.md)]
--->
 
 ## Set up a daemon
 

@@ -1,3 +1,3 @@
 ﻿```sh
-nano /etc/ampliareg/appsettings.linux.json
+nano /etc/ampliareg/appsettings.conf
 ```

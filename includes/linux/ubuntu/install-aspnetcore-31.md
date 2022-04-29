@@ -1,4 +1,12 @@
-﻿### Ubuntu 22.04 (LTS)
+﻿<!--
+
+There is no support for 22.04 as of Apr 27th, more info at:
+* https://github.com/dotnet/core/issues/7038
+* https://devblogs.microsoft.com/dotnet/april-2022-updates/
+
+The `.deb` file *does* exist but `apt-get install aspnetcore-runtime-3.1` fails.
+
+### Ubuntu 22.04 (LTS)
 
 ```bash
 curl -O https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
@@ -12,6 +20,8 @@ apt-get install apt-transport-https
 apt-get update
 apt-get install aspnetcore-runtime-3.1
 ```
+
+-->
 
 ### Ubuntu 21.10
 

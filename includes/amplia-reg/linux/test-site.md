@@ -1,3 +1,3 @@
 ﻿```
-curl -H "Host: ra.patorum.com" http://localhost/
+curl -H "Host: ra.patorum.com" http://localhost/api/system/info
 ```
