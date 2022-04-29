@@ -3,7 +3,7 @@
 The majority of Lacuna Software's web applications are SPA applications that require a specific setup on GrantID to enable user management, namely:
 
 * [Rest PKI Core](../../rest-pki/core/index.md)
-* [Signer](../../signer.md)
+* [Signer](../../signer/index.md)
 * [Amplia](../../amplia/index.md)
 * [Amplia Reg](../../amplia-reg/index.md)
 * [Scanner](../../scanner/index.md)

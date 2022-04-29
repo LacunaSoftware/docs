@@ -40,3 +40,8 @@ The output should be similar to the following, but with your [login domain](inde
    ...
 }
 ```
+
+## Next steps
+
+If you are installing GrantID to enable user management on one of Lacuna Software's web applications that require it,
+follow the steps on [Configure SPA Applications](configure-spa-app.md).
