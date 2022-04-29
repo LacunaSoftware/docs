@@ -6,4 +6,4 @@
 1. Click on **Keys**, then on *Add*
 1. Fill out some description and, on the *Expiration* field, choose "Never expires"
 1. Click on *Create*
-1. Copy the API key generated (this value cannot be retrieved later)
+1. Copy the **API key** generated (this value cannot be retrieved later)

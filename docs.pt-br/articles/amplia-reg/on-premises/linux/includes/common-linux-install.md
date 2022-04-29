@@ -24,16 +24,16 @@ Edite o arquivo de configuração e siga as instruções nele para configurar su
 
 [!include[Edit settings](../../../../../../includes/amplia-reg/linux/edit-settings.md)]
 
-Para preencher o parâmetro `EncryptionKey` da seção `[General]`, gere uma chave de 256 bits para cifrar dados sensíveis armazenados no banco de dados:
+Na seção `[General]`, para preencher o parâmetro `EncryptionKey` gere uma chave de 256 bits para cifrar dados sensíveis armazenados no banco de dados:
 
-[!include[Generate key](../../../../../../includes/amplia-reg/linux/gen-key.md)]
+[!include[Generate key](../../../../../../includes/linux/gen-key.md)]
 
-Para preencher o parâmetro `RootPasswordHash` da seção `[General]`, escolha uma senha forte para o acesso de root e compute o *hash* da senha:
+Ainda na seção `[General]`, para preencher o parâmetro `RootPasswordHash` escolha uma senha forte para o acesso de root e compute o *hash* da senha:
 
 [!include[Hash root password](../../../../../../includes/amplia-reg/linux/hash-root-pass.md)]
 
-Para preencher o parâmetro `ApiKey` da seção `[Amplia]` section, é preciso criar uma aplicação na sua instância do [Amplia](../../../../amplia/index.md)
-(a qual é um pré-requisito) e gerar uma chave de API para a aplicação:
+Na seção `[Amplia]`, para preencher o parâmetro `ApiKey` é preciso criar uma aplicação na sua instância do [Amplia](../../../../amplia/index.md)
+e gerar uma chave de API para a aplicação:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 

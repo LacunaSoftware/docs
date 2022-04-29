@@ -6,4 +6,4 @@
 1. Clique em **Chaves**, depois em *Adicionar*
 1. Preencha alguma descrição e, no campo *Expiração*, escolha "Nunca expira"
 1. Clique em *Criar*
-1. Copie a chave de API gerada (esse valor não pode ser recuperado posteriormente)
+1. Copie a **chave de API** gerada (esse valor não pode ser recuperado posteriormente)

@@ -22,16 +22,16 @@ Edit the configuration file and follow the instructions on it to configure your 
 
 [!include[Edit settings](../../../../../../includes/amplia-reg/linux/edit-settings.md)]
 
-To fill the `EncryptionKey` setting under the `[General]` section, generate a 256-bit key to encrypt sensitive data stored on the database:
+On the `[General]` section, to fill the `EncryptionKey` setting generate a 256-bit key to encrypt sensitive data stored on the database:
 
 [!include[Generate key](../../../../../../includes/linux/gen-key.md)]
 
-To fill the `RootPasswordHash` setting under the `[General]` section, choose a strong password for root access to the dashboard and hash it:
+Also on the `[General]` section, to fill the `RootPasswordHash` setting choose a strong password for root access to the dashboard and hash it:
 
 [!include[Hash root password](../../../../../../includes/amplia-reg/linux/hash-root-pass.md)]
 
-To fill the `ApiKey` setting under the `[Amplia]` section, you must create an application on your existing [Amplia](../../../../amplia/index.md)
-instance (which is a prerequisite) and generate an API key for it:
+On the `[Amplia]` section, to fill the `ApiKey` setting you must create an application on your existing [Amplia](../../../../amplia/index.md)
+instance and generate an API key for it:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 
