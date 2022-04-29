@@ -1,7 +1,7 @@
 ﻿```nginx
 server {
     listen        80;
-    server_name   localhost ra.patorum.com;
+    server_name   ampliareg.patorum.com;
     location / {
         proxy_pass         http://localhost:5002;
         proxy_http_version 1.1;
