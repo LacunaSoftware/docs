@@ -1,8 +1,17 @@
 ﻿# Configure SPA Applications
 
-To configure a SPA Application, log into the GrantID Console portal and follow the instructions below:
+The majority of Lacuna Software's web applications are SPA applications that require a specific setup on GrantID to enable user management, namely:
 
-##  Create a Subscription 
+* [Rest PKI Core](../../rest-pki/core/index.md)
+* [Signer](../../signer.md)
+* [Amplia](../../amplia/index.md)
+* [Amplia Reg](../../amplia-reg/index.md)
+* [Scanner](../../scanner/index.md)
+* [Digiploma](../../digiploma/index.md)
+
+To configure one of these applications, log into the GrantID Console portal and follow the instructions below:
+
+## Create a Subscription 
 
 > [!TIP]
 > You may skip this step if you already have a subscription created.
@@ -23,7 +32,7 @@ To test your settings, access: `https://<subscription_url>/.well-known/openid-co
 > [!TIP]
 > You may skip this step if your application does not require CPF information or the claim was already created.
 
-Create a custom Claim in the Scopes tab by providing: 
+On the **Scopes** tab, click on **New Claim** to create a custom Claim, providing: 
 
 * **Name** (type): the name of your custom claim. Suggestion: `cpf`. This is referred in installation pages as the `OIDC CpfClaim` setting.
 * **Display name**: the display name of your custom claim. Suggestion: `CPF`.
@@ -37,7 +46,7 @@ to select the `Visible in profile page?` and `Display in register page?` options
 > [!TIP]
 > You may skip this step if skipped the previous step.
 
-Create a Custom Identification Scope so that identity tokens contain the information of the custom claim created. Do so in the Scopes tab by providing:
+On the **Scopes** tab, click on **New Identification Scope** to create a Custom Identification Scope so that identity tokens contain the information of the custom claim created, providing:
 
 * **Name**: the name of the identification scope. Suggestion: `<sub-namespace>-cpf`. This and other required identification scopes should be set in the `OIDC Custom Scopes` setting as described in installation pages.
 * **Display name**: the display name of the scope. Suggestion: `CPF`.
@@ -45,7 +54,7 @@ Create a Custom Identification Scope so that identity tokens contain the informa
 
 ## Create an API Connection
 
-Create an API connection for the application in the Scopes tab by providing:
+On the **Scopes** tab, click on **New API Connection** to create an API connection for the application, providing:
 
 * **Name**: the name of the API connection. Suggestion: `<my-app-name>-api`. This is referred in installation pages as the `OIDC ApiName`.
 * **Display name**: the display name of your API (shown on consent screens if enabled). Suggestion: `<My App Name> API`.
@@ -59,7 +68,7 @@ Each SPA Application requires two applications registered on GrantID, one for fr
 
 ### Frontend Application
 
-Create a new GrantID Application in the Applications tab by providing:
+On the **Applications** tab, click on **New Application** and provide:
 
 * **Name**: name of this application on GrantID. Suggestion: `<My App Name>`
 * **App-id**: this is a unique name across GrantID for the application. This is referred in installation pages as the `OIDC ClientAppId`.
@@ -96,7 +105,7 @@ In the application details, choose the Settings tab to set:
 
 ### Backend Application
 
-Create a new GrantID Application in the Applications tab by providing:
+On the **Applications** tab, click on **New Application** again and provide:
 
 * **Name**: name of this application on GrantID. Suggestion: `<My App Name> Backend`
 * **App-id**: this is a unique name across GrantID for the application. This is referred in installation pages as the `OIDC AppId` setting.
@@ -109,4 +118,5 @@ In the application details, choose the Settings tab to set:
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
 
-After saving, return to the Basic Details tab and generate an App Secret. This is referred in installation pages as the `OIDC AppSecret` setting.
+After saving, return to the **Basic Details** tab and on the **App Secret** section click on **Generate**, then **Generate Secret**.
+This is referred in installation pages as the `OIDC AppSecret` setting.

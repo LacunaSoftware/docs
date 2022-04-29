@@ -1,8 +1,8 @@
 ﻿# GrantID Settings
 
-###  *Aplication* Settings
+###  *Application* Settings
 
-Under section **Aplication**:
+Under section **Application**:
 
 * **ProductName**: the name of the application.
 * **IdentityServiceUrl**: the URL of the IdentityService service.

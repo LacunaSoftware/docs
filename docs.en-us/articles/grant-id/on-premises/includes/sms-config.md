@@ -9,3 +9,7 @@
     * **AccessToken**: the access token, provided by TotalVoice (e.g.: *0123456789abcdef0123456789abcdef*)
   * Simulator (for debugging purposes only)
     * **Type**: set this setting to `Simulator` to simulate sending SMS messages (but instead only log the messages that would be sent)
+
+> [!NOTE]
+> If you don't intend to configure SMS sending at this time, disable phone verification for console users by editing the common configuration
+> file *common.json*, under the **Application** section set **RequirePhoneVerification** to `false`.

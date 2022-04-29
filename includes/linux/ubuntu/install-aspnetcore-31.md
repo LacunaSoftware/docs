@@ -1,6 +1,7 @@
 ﻿<!--
 
 There is no support for 22.04 as of Apr 27th, more info at:
+* https://docs.microsoft.com/en-us/dotnet/core/install/linux#ubuntu
 * https://github.com/dotnet/core/issues/7038
 * https://devblogs.microsoft.com/dotnet/april-2022-updates/
 
@@ -74,6 +75,7 @@ apt-get install aspnetcore-runtime-3.1
 ```bash
 curl -O https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 ```
 
 ```bash
