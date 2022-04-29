@@ -2,7 +2,7 @@
 
 Some operations on [Amplia Reg](../index.md) require sending SMS messages. SMS messages may be sent using different *providers*.
 
-The section **SMS** of the JSON configuration file configures the SMS sending. The setting **Type** defines which provider should be used, and the remaining settings depend on the provider chosen:
+The section **SMS** of the configuration file configures the SMS sending. The setting **Type** defines which provider should be used, and the remaining settings depend on the provider chosen:
 
 * [Twilio](https://www.twilio.com/)
   * **Type**: set this setting to `Twilio` to send SMS messages using Twilio
@@ -22,6 +22,27 @@ The section **SMS** of the JSON configuration file configures the SMS sending. T
   * **ChaveKey**: the *Chave Key* given on *Configuration* &gt; *My Account*
 * Simulator (for debugging purposes only)
   * **Type**: set this setting to `Simulator` to simulate sending SMS messages (messages that would be sent are only logged)
+
+Example (*.ini* or *.conf* file):
+
+```ini
+[SMS]
+Enabled=True
+Type=Twilio
+MessageFrom=+12125550000
+AccountSid=YOURACCOUNTSID
+AuthToken=YOURTOKEN
+```
+
+Example (environment variables):
+
+```bash
+SMS__Enabled=True
+SMS__Type=Twilio
+SMS__MessageFrom=+12125550000
+SMS__AccountSid=YOURACCOUNTSID
+SMS__AuthToken=YOURTOKEN
+```
 
 ## See also
 

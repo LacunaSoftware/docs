@@ -15,6 +15,14 @@ BlobStorage__Type=FileSystem
 BlobStorage__Path=/var/files/myapp
 ```
 
+Example (*.ini* or *.conf* file):
+
+```ini
+[BlobStorage]
+Type=FileSystem
+Path=/var/files/myapp
+```
+
 Example (JSON configuration):
 
 ```json
@@ -41,6 +49,15 @@ Example (environment variables):
 BlobStorage__Type=Azure
 BlobStorage__ConnectionString=DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net
 BlobStorage__ContainerName=myapp-container
+```
+
+Example (*.ini* or *.conf* file):
+
+```ini
+[BlobStorage]
+Type=Azure
+ConnectionString="DefaultEndpointsProtocol=https;AccountName=myaccountname;AccountKey=myaccountkey;EndpointSuffix=core.windows.net"
+ContainerName=myapp-container
 ```
 
 Example (JSON configuration):
@@ -74,6 +91,17 @@ BlobStorage__BucketName=myappbucket
 BlobStorage__Region=us-east-1
 BlobStorage__AccessKey=MYACCESSKEYID
 BlobStorage__SecretKey=MYSECRETACCESSKEY
+```
+
+Example (*.ini* or *.conf* file):
+
+```ini
+[BlobStorage]
+Type=AwsS3
+BucketName=myappbucket
+Region=us-east-1
+AccessKey=MYACCESSKEYID
+SecretKey=MYSECRETACCESSKEY
 ```
 
 Example (JSON configuration):
