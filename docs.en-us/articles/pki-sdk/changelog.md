@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-11-4" />
+### 2.11.4 (2022-04-27)
+
+- Add PDF/A standard property to PdfContext
+
+
 <a name="v2-11-3" />
 ### 2.11.3 (2022-04-25)
 

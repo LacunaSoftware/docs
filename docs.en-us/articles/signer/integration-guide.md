@@ -207,7 +207,7 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 {
 	"id": "b12cb1b2-5d6e-40b2-a050-097d068c4c11",
 	"name": "Integration Contract",
-	"isConcluded": true,
+	"status": "Concluded",
 	"creationDate": "2019-08-18T16:26:03.372Z",
 	"updateDate": "2019-08-18T16:26:03.372Z",
 	...
@@ -232,8 +232,8 @@ GET /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11
 }
 ```
 
-* To find out if the document is completed, check the property `isConcluded`.
-* To find out if a participant has signed/approved the document, check if the property `status` corresponds to `Completed`.
+* To find out if the document is completed, check the property `status` corresponds to `Concluded`.
+* To find out if a participant has signed/approved the document, check if the property `status` corresponds to `Completed` for the corresponding action in the flow actions list (`flowActions`).
 
 ***
 
