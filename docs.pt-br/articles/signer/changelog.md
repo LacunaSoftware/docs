@@ -4,6 +4,33 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-43-0" />
+### 1.43.0 (2022-04-29)
+
+* Novas funcionalidades
+  * [SIG-619] Permitir importação de documentos assinados em outros sistemas
+  * [SIG-138] Assinatura com rubrica na Assinatura normal e na Assinatura rápida
+  * [SIG-793] Permitir rubricar página em posição diferente das demais
+  * [SIG-783] Permitir definir modo de rubrica (desabilitada, opcional ou obrigatória) por participante
+
+* Melhorias
+  * [SIG-883] Nova forma de configurar carimbadora com Basic Authentication
+  * [SIG-877] Configuração para habilitar o "Pendente para mim" como padrão para todos os usuários
+  * [SIG-874] Possibilitar editar tipo de imagem de rubrica pré-posicionada
+  * [SIG-871] Configuração para definir número máximo de de Organizações e Pastas na filtragem de documentos
+  * [SIG-863] Adicionar rubrica padrão com iniciais do nome do usuário
+  * [SIG-857] Atualizar PKI SDK
+  * [SIG-850] Diminuir impacto da validação de documentos com muitas assinaturas
+  * [SIG-846] Mockar chamadas à iugu nos testes
+
+* Correções de bugs
+  * [SIG-878] Pagina em branco no manifesto de assinatura de documentos que não são PDF
+
+Atualiza modelo do banco de dados: sim
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas após 2022-04-29.
+
 <a name="v1-42-0" />
 ### 1.42.0 (2022-04-11)
 

@@ -108,6 +108,9 @@ documents. This ensures that the email only contains links that do not require t
 doing it in rounds.
 * **NumberSignaturesPerValidationRound** (default: `10`, v1.31.0): sets the number of signatures validated in each validation round if the document has exceeded the number
 specified in the MaxNumberSignaturesToValidateAtOnce setting.
+* **MaxTotalOfSignaturesForRoundsValidation** (default: `40`, v1.43.0): sets the maximum number of signatures that will be returned when performing validation rounds.
+* **MaxEllapsedSecondsForRoundsValidation** (default: `30`, v1.43.0): sets the maximum number of seconds that can be used for all validation rounds. If the amount is exceeded, 
+the application will return all signatures validated so far.
 
 * **CanceledDocumentWatermarkText** (v1.33.0): the text of the watermark that is added to canceled documents.
 * **ExpiredDocumentWatermarkText** (v1.33.0): the text of the watermark that is added to expired documents.
@@ -120,6 +123,11 @@ specified in the MaxNumberSignaturesToValidateAtOnce setting.
 view information from other users.
 
 * **ReplyToDocumentCreator** (v1.41.0): if `true`, adds the document creator's e-mail address as the reply to address for all e-mails associated with that document.
+
+* **FilterDocumentsByPendingForMe** (v1.43.0): if `true`, the "Show documents that are pending for me" filter is enabled by default in the documents page.
+
+* **MaxItemsRetrievedInOrganizationFilter** (default: `10`, v1.43.0): sets the maximum number of organizations displayed in the organization filter that is displayed in the documents page (and other pages).
+* **MaxItemsRetrievedInFolderFilter** (default: `20`, v1.43.0): sets the maximum number of folders displayed in the folder filter that is displayed in the documents page (and other pages).
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
@@ -451,10 +459,10 @@ Under section **Timestamper**:
 
 * **Enabled**: if `true`, timestamps will be added to signatures.
 * **Url**: the URL of the timestamper.
-* **Type** (default `BearerToken`, v1.28.0): defines the type of authentication used to connect to the timestamper. Available options are `BearerToken` and `BasicAuthentication`.
+* **Type** (default `BearerToken`, v1.28.0): defines the type of authentication used to connect to the timestamper. Available options are `BearerToken`, `BasicAuthentication` (deprecated as of v1.43.0) and `BasicAuthenticationV2` (v1.43.0).
 * **BearerToken**: if type is `BearerToken`, defines the bearer token value for authentication.
-* **Username** (v1.28.0): if type is `BasicAuthentication`, defines the username value for authentication.
-* **Password** (v1.28.0): if type is `BasicAuthentication`, defines the password value for authentication.
+* **Username** (v1.28.0): if type is `BasicAuthentication` or `BasicAuthenticationV2`, defines the username value for authentication.
+* **Password** (v1.28.0): if type is `BasicAuthentication` or `BasicAuthenticationV2`, defines the password value for authentication.
 * **MaxAutoRetryCount** (default: `3`, v1.30.0): the number of retries that will be made if a timestamp cannot be obtained in the first try.
 * **RetryDelayInMilliseconds** (default: `1500`): the delay in miliseconds to wait between timestamp retries.
 

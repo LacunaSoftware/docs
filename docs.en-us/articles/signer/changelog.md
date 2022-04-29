@@ -4,6 +4,33 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-43-0" />
+### 1.43.0 (2022-04-29)
+
+* New Features
+  * [SIG-619] Allow migration of signed documents from other applications
+  * [SIG-138] Signature with initials on "normal signature" and "unique signature"
+  * [SIG-793] Allow page specific positioning of initials
+  * [SIG-783] Signature initials requirement modes (disabled, optional or required) by participant
+
+* Improvements
+  * [SIG-883] New option for configuring timestamper with Basic Authentication
+  * [SIG-877] Setting to enable "Pending for me" option as default for all users
+  * [SIG-874] Edit signature initials image for pre-positioned initials
+  * [SIG-871] Settings to define maximum number of Organizations and Folders displayed in the document filters
+  * [SIG-863] Add initials with the participant's name as default
+  * [SIG-857] Updated PKI SDK
+  * [SIG-850] Reduce impact of validating documents with too many signatures
+  * [SIG-846] Mock calls to iugu in tests
+
+* Bug fixes
+  * [SIG-878] Blank page in the signature manifest for documents that are not PDF
+
+Updates database model: yes
+
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released after 2022-04-29.
+
 <a name="v1-42-0" />
 ### 1.42.0 (2022-04-11)
 
