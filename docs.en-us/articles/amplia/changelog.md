@@ -1,5 +1,28 @@
 ﻿# Amplia changelog
 
+<a name="v3-14-0" />
+### 3.14.0 (2022-04-29)
+
+New Features:
+
+* [AMP-112] - Add support for "generic" order creation and Paraguayan order creation
+* [AMP-216] - Add parameter `ValidityStart` on order creation API
+* [AMP-218] - Integration with Kryptus HSM through PKCS #11
+* [AMP-226] - UI for generating a CSR specifying a custom subject name
+* [AMP-227] - UI for registering and existing key
+* [AMP-225] - Allow creation of pending certificates \(having a future validity start\)
+* [AMP-228] - CRL and CA certificate propagation
+* [AMP-232] - Paraguayan certificate APIs
+* [AMP-233] - Allow specifying PKCS #11 keys by label
+
+Improvements:
+
+* [AMP-229] - Show validity start and end on certificate details
+* [AMP-231] - Localization \(l10n\) for Spanish \(en\)
+
+Updates database model: **yes**
+
+
 <a name="v3-13-2" />
 ### 3.13.2 (2021-12-16)
 
