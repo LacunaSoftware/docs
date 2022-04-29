@@ -37,6 +37,8 @@ e gerar uma chave de API para a aplicação:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 
+Preencha os demais parâmetros de acordo com as instruções presentes no arquivo de configuração.
+
 ## Configurar um *daemon*
 
 Crie o arquivo de definição do serviço:

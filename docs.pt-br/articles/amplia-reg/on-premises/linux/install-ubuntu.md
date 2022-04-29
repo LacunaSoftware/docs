@@ -4,7 +4,7 @@ Para instalar uma instância [*on premises*](../index.md) do [Amplia Reg](../../
 
 ## Pré-requisitos
 
-* Ubuntu x64 versão <!-- 22.04, --> 21.10, 20.04, 18.04 ou 16.04
+* Ubuntu x64 versão ~~22.04~~ (em breve), 21.10, 20.04, 18.04 ou 16.04
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
