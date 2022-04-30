@@ -4,10 +4,20 @@ To perform user management, Amplia Reg requires an Open ID Connect (OIDC) server
 
 You can either use a SaaS subscription on [grantid.com](https://grantid.com/) or [run your own instance of GrantID](../../grant-id/on-premises/index.md).
 
-Once you have a GrantID subscription, fill the section **Oidc** of the configuration file:
+## Configuring GrantID
 
-* **Authority**: the OIDC authority (e.g. *https://patorum.grantid.com*)
-* **ApiEndpoint**: the API endpoint of the OIDC server (e.g. *https://api.grantid.com*)
+Follow the steps on the [Configure SPA Applications](../../grant-id/on-premises/configure-spa-app.md) article to configure your GrantID instance, with
+the following particularities:
+
+* When creating the subscription, choose as the *username type* the option **CPF**
+* **Skip** the steps *Create a Custom Claim for CPF* and *Create a Custom Identification Scope*
+
+## Configuring Amplia Reg to use GrantID
+
+Once you have followed the steps above to configure GrantID, fill the section **Oidc** of the configuration file:
+
+* **Authority**: the OIDC authority (e.g. *https://login.id.patorum.com*)
+* **ApiEndpoint**: the API endpoint of the OIDC server (e.g. *https://api.id.patorum.com*)
 * **ApiName**: the API scope that will be required on access tokens
 * **ClientAppId**: the *client id* of the dashboard app
 * **AppId**: the *client id* of the backend app
@@ -19,8 +29,8 @@ Example (*.ini* or *.conf* file):
 ```ini
 [Oidc]
 Enabled=True
-Authority=https://patorum.grantid.com
-ApiEndpoint=https://api.grantid.com
+Authority=https://login.id.patorum.com
+ApiEndpoint=https://api.id.patorum.com
 ApiName=your-api-scope
 ClientAppId=YOURCLIENTAPPID
 AppId=YOURAPPID
@@ -31,8 +41,8 @@ Example (environment variables):
 
 ```bash
 Oidc__Enabled=True
-Oidc__Authority=https://patorum.grantid.com
-Oidc__ApiEndpoint=https://api.grantid.com
+Oidc__Authority=https://login.id.patorum.com
+Oidc__ApiEndpoint=https://api.id.patorum.com
 Oidc__ApiName=your-api-scope
 Oidc__ClientAppId=YOURCLIENTAPPID
 Oidc__AppId=YOURAPPID
