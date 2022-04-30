@@ -5,15 +5,14 @@
 
 New Features:
 
-* [AMP-112] - Add support for "generic" order creation and Paraguayan order creation
-* [AMP-216] - Add parameter `ValidityStart` on order creation API
+* [AMP-232] - PKI Paraguay certificates
+* [AMP-112] - Add support for "generic" order creation
 * [AMP-218] - Integration with Kryptus HSM through PKCS #11
+* [AMP-233] - Allow specifying PKCS #11 keys by label
 * [AMP-226] - UI for generating a CSR specifying a custom subject name
 * [AMP-227] - UI for registering and existing key
-* [AMP-225] - Allow creation of pending certificates \(having a future validity start\)
+* [AMP-225] / [AMP-216] - Allow creation of pending certificates \(having a future validity start\)
 * [AMP-228] - CRL and CA certificate propagation
-* [AMP-232] - Paraguayan certificate APIs
-* [AMP-233] - Allow specifying PKCS #11 keys by label
 
 Improvements:
 

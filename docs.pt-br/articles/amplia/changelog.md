@@ -5,15 +5,14 @@
 
 Novas funcionalidades:
 
-* [AMP-112] - Implementar criação "genérica" de pedidos e pedido de certificado Paraguaio
-* [AMP-216] - Adicionar opção `ValidityStart` na criação de pedido
+* [AMP-232] - Certificado PKI Paraguay
+* [AMP-112] - Implementar criação "genérica" de pedidos
 * [AMP-218] - Integração via PKCS #11 com HSM Kryptus
+* [AMP-233] - Permitir localização de chaves em key stores PKCS #11 pelo label
 * [AMP-226] - Interface para geração de CSR com especificação de Subject Name
 * [AMP-227] - Interface para registro de chave existente
-* [AMP-225] - Permitir criar certificados pendentes \(com data de validade futura\)
+* [AMP-225] / [AMP-216] - Permitir criar certificados pendentes \(com data de validade futura\)
 * [AMP-228] - Propagação de LCRs e certificados de AC
-* [AMP-232] - Criar APIs para certificado Paraguaio
-* [AMP-233] - Permitir localização de chaves em key stores PKCS #11 pelo label
 
 Melhorias:
 
