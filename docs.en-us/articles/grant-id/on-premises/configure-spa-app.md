@@ -12,7 +12,8 @@ The majority of Lacuna Software's web applications are SPA applications that req
 To configure one of these applications, log into the GrantID Console portal and follow the instructions below.
 
 > [!NOTE]
-> Please refer to each application's OIDC config documentation to check if there are any particularities for using GrantID with that application
+> Please refer to each application's OIDC config documentation to check if there are any particularities for using GrantID with that application,
+> for instance the supported username types when creating the subscription.
 
 ## Create a Subscription 
 
