@@ -18,6 +18,10 @@ After installing your [on premises](index.md) instance of [GrantID](../index.md)
    * **Username**: choose the information that be used as identifier of your users (usually email or CPF)
 1. Click on **Create Subscription**
 
+> [!NOTE]
+> Not all web applications are compatible with every username identifier. Please check the application(s) you intend to use with
+> GrantID to check if there are any requirements over the username identifier.
+
 To test the procedure, open the following URL (replace *login.id.patorum.com* with your [login domain](index.md#planning)):
 
 ```plaintext
