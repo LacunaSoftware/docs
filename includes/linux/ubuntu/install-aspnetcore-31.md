@@ -1,8 +1,8 @@
 ﻿<!--
 
-There is no support for 22.04 as of Apr 27th, more info at:
+There is no support planned for 22.04, more info at:
+* https://github.com/dotnet/core/issues/7038#issuecomment-1110377345
 * https://docs.microsoft.com/en-us/dotnet/core/install/linux#ubuntu
-* https://github.com/dotnet/core/issues/7038
 * https://devblogs.microsoft.com/dotnet/april-2022-updates/
 
 The `.deb` file *does* exist but `apt-get install aspnetcore-runtime-3.1` fails.
