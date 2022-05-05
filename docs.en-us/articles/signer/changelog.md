@@ -4,6 +4,20 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-43-1" />
+### 1.43.1 (2022-05-04)
+
+* New Features
+  * [SIG-887] Setting to force usage of ICP Brasil signing policies for PDFs
+
+* Improvements
+  * [SIG-882] Do not normalize PDFs if it is PDF/A
+
+* Bug fixes
+  * [SIG-886] Cannot download printer friendly version
+
+Updates database model: no
+
 <a name="v1-43-0" />
 ### 1.43.0 (2022-04-29)
 

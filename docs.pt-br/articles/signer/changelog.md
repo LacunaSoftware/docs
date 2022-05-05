@@ -4,6 +4,20 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-43-1" />
+### 1.43.1 (2022-05-04)
+
+* Novas funcionalidades
+  * [SIG-887] Permitir forçar política de assinatura de PDFs para padrão ICP Brasil
+
+* Melhorias
+  * [SIG-882] Não normalizar PDF se ele for PDF/A
+
+* Correções de bugs
+  * [SIG-886] Não é possível baixar versão para impressão de documento
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-43-0" />
 ### 1.43.0 (2022-04-29)
 
