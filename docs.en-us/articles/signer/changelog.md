@@ -4,6 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-43-3" />
+### 1.43.3 (2022-05-19)
+
+* Bug fixes
+  * [SIG-896] User redirected to login page after embedded signature
+  * [SIG-895] Incorrect count of documents in the organization details screen
+  * [SIG-892] Instance without visual representation displays signature initials setting when creating documents
+
+* Improvements
+  * [SIG-899] Allow special province for foreign users in the "cedula de identidade" and "RUC" for ecuador
+
+Updates database model: no
+
+<a name="v1-43-2" />
+### 1.43.2 (2022-05-09)
+
+* Bug fixes
+  * [SIG-893] Assinaturas ADRA e ADRC inválidas por conta de LCR com formatação errada publicada pelo ITI
+
+Updates database model: no
+
 <a name="v1-43-1" />
 ### 1.43.1 (2022-05-04)
 

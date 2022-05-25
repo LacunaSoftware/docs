@@ -4,6 +4,48 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-1-1" />
+### 2.1.1 (2022-04-28)
+
+* Bug fixes
+  * [AUT-178] Misspelling of state names
+
+* Improvements
+  * [AUT-180] Update "Naturalidade" conditional 
+  * [AUT-167] Improve JSON interpretation of empty fields
+
+Updates database model: no
+
+<a name="v2-0-0" />
+### 2.0.0 (2022-04-04)
+
+* Bug fixes
+  * [AUT-150] Send button disabled when trying to send documentation
+
+* Improvements
+  * [AUT-173] RVDD Tag for "data de colação"
+  * [AUT-164] Force date string conversions to portuguese
+  * [AUT-162] Update fields displayed in validation screen
+  * [AUT-152] Add column for "IES Emissora" in registration screen
+  * [AUT-151] Button to go to signer only displayed for administrator or manager
+  * [AUT-149] Improve option to delete uploaded document
+  * [AUT-146] "Do not generate" in the RVDD options list as last option
+  * [AUT-145] Clarify option to define company signature in the flow
+
+* New Features
+  * [AUT-147] Preview of uploaded document
+  * [AUT-134] Partnerhip creation in the subscription management
+  * [AUT-133] Separate batches by type
+  * [AUT-132] Registration request review
+  * [AUT-130] Registration request list
+  * [AUT-129] Registry company data
+  * [AUT-128] Settings for integrations between Issuer and Registry
+  * [AUT-127] Tela de listagem e criação de Emissões
+  * [AUT-126] Separate subscriptions by type
+  * [AUT-125] Separate flows by type
+
+Updates database model: yes
+
 <a name="v1-14-0" />
 ### 1.14.0 (2022-04-07)
 

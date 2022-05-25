@@ -4,6 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-43-3" />
+### 1.43.3 (2022-05-19)
+
+* Correções de bugs
+  * [SIG-896] Usuário redirecionado para página de login após assinatura embutida
+  * [SIG-895] Contagem incorreta de documentos na tela de detalhes da organização
+  * [SIG-892] Instância sem representação visual exibe configuração de Rubrica na criação de documentos
+
+* Melhorias
+  * [SIG-899] Permitir província especial para usuários estrangeiros na cedula de identidade e RUC do equador
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-43-2" />
+### 1.43.2 (2022-05-09)
+
+* Correções de bugs
+  * [SIG-893] Assinaturas ADRA e ADRC inválidas por conta de LCR com formatação errada publicada pelo ITI
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-43-1" />
 ### 1.43.1 (2022-05-04)
 

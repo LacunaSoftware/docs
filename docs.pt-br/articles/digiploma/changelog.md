@@ -4,6 +4,48 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-1-1" />
+### 2.1.1 (2022-04-28)
+
+* Correções de bugs
+  * [AUT-178] Erro na escrita por extenso de alguns estados
+
+* Melhorias
+  * [AUT-180] Atualizar a condicional do texto de Naturalidade
+  * [AUT-167] Melhorar a leitura de JSON com campos vazios
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-0-0" />
+### 2.0.0 (2022-04-04)
+
+* Correções de bugs
+  * [AUT-150] Botão de envio desabilitado ao tentar enviar documentação
+
+* Melhorias
+  * [AUT-173] Criação de tag para data de colação por extenso
+  * [AUT-164] Especificar CultureInfo em conversões de data para string
+  * [AUT-162] Atualizar os campos informados na tela de validação
+  * [AUT-152] Adicionar coluna de IES Emissora na tela da registradora
+  * [AUT-151] Botão "Ir para assinador" somente para Administrador e Gerente
+  * [AUT-149] Melhorar opção de deletar documento carregado
+  * [AUT-146] "Não gerar" na lista de RVDD como última opção
+  * [AUT-145] Esclarecer texto do campo para definir assinatura de PJ no fluxo
+
+* Novas funcionalidades
+  * [AUT-147] Pré-visualização dos documentos enviados
+  * [AUT-134] Criação de Parcerias na administração de subscription
+  * [AUT-133] Diferenciar lote por tipo
+  * [AUT-132] Revisão de registro
+  * [AUT-130] Listagem de Registros
+  * [AUT-129] Permitir configurar dados da registradora
+  * [AUT-128] Configurações de Integração de Emissora e Registradora
+  * [AUT-127] Tela de listagem e criação de Emissões
+  * [AUT-126] Permitir separar organizações por tipo
+  * [AUT-125] Permitir separar tipos de fluxo por tipo
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-14-0" />
 ### 1.14.0 (2022-04-07)
 
