@@ -25,6 +25,9 @@ Updates database model: no
 
 Updates database model: no
 
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released after 2022-05-09.
+
 <a name="v1-43-1" />
 ### 1.43.1 (2022-05-04)
 
