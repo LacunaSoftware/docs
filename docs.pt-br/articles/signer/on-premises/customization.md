@@ -123,6 +123,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/bvr.png)
 
+* vivid-sky-blue - vsb (v1.44.0):
+
+![Color Scheme](../images/themes/vsb.png)
+
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 
