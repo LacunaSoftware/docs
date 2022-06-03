@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-11-5" />
+### 2.11.5 (2022-05-07)
+
+- Improve decoding from bad formatted CRL Distribution Point URL
+
+
 <a name="v2-11-4" />
 ### 2.11.4 (2022-04-27)
 
