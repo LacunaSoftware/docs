@@ -46,7 +46,7 @@ Agora, basta preencher as informações necessárias e clicar em **Salvar**. O C
 Para configurar a integração no Digiploma, é necessário criar uma chave de API no Signer.
 
 ### Signer
-Para gerar a **chave de API**, crie uma aplicação selecionado a organização criada anteriormente: 
+Para gerar a **chave de API**, crie uma aplicação selecionando a organização criada anteriormente: 
 
 ![Applications](../images/applications.png)
 
@@ -78,7 +78,7 @@ Para configurar a integração no Signer, é necessário criar uma chave de API 
 
 ### Digiploma
 
-Para gerar a **chave de API**, crie uma aplicação selecionado a organização criada anteriormente: 
+Para gerar a **chave de API**, crie uma aplicação selecionando a organização criada anteriormente: 
 
 ![Applications](../images/digiploma-applications.png)
 
@@ -94,9 +94,9 @@ Vá até a página de **Administração**, selecione **Organização**, selecion
 
 1. O campo **URL** deve ser preenchido com o endereço de sua instância do Digiploma seguido do caminho padrão de webhooks conforme o exemplo abaixo:
 
-```
-https://seu-digiploma.com.br/api/degrees/webhook
-```
+    ```
+    https://seu-digiploma.com.br/api/degrees/webhook
+    ```
 
 2. No campo **Tipo de autenticação** deve ser selecionado o tipo **X-Api-Key**.
 3. No campo **Token de Autenticação** deve ser preenchido a **chave de API** copiada do Digiploma.
