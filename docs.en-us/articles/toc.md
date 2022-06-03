@@ -374,5 +374,6 @@
 # [Digiploma](digiploma/index.md)
 ## [On premises](digiploma/on-premises/index.md)
 ### [Settings](digiploma/on-premises/settings.md)
+### [Setup Signer Integration](digiploma/on-premises/signer-setup.md)
 ## [Changelog](digiploma/changelog.md)
 <!-- End of Digiploma -->
