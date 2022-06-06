@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-11-6" />
+### 2.11.6 (2022-06-06)
+
+- Fix T8 PDF opening exception `Unable to cast object of type 'Lacuna.T8.text.pdf.PdfNull'`
+
+
 <a name="v2-11-5" />
 ### 2.11.5 (2022-05-07)
 
