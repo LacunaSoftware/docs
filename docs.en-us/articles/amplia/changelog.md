@@ -11,6 +11,8 @@ Improvements:
 
 * [AMP-240] - Add options on brazilian certificate APIs to normalize the Common Name field (CN=) and add the CPF/CNPJ suffix to it
 
+Updates database model: no
+
 
 
 <a name="v3-14-0" />
