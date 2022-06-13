@@ -1,5 +1,18 @@
 ﻿# Amplia changelog
 
+<a name="v3-15-0" />
+### 3.15.0 (2022-06-13)
+
+New Features:
+
+* [AMP-239] - Brazilian Labor Relations Certificate
+
+Improvements:
+
+* [AMP-240] - Add options on brazilian certificate APIs to normalize the Common Name field (CN=) and add the CPF/CNPJ suffix to it
+
+
+
 <a name="v3-14-0" />
 ### 3.14.0 (2022-04-29)
 

@@ -1,5 +1,20 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-15-0" />
+### 3.15.0 (2022-06-13)
+
+Novas funcionalidades:
+
+* [AMP-239] - Certificado de Relações Trabalhistas (lei 14063/2020)
+
+Melhorias:
+
+* [AMP-240] - Opções nas APIs de certificado ICP-Brasil para normalizar o *Common Name* (CN=) e adicionar o sufixo com CPF/CNPJ
+
+Atualiza modelo do banco de dados: não
+
+
+
 <a name="v3-14-0" />
 ### 3.14.0 (2022-04-29)
 
