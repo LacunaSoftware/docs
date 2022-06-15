@@ -4,6 +4,39 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-44-1" />
+### 1.44.1 (2022-06-15)
+
+* Melhorias
+  * [SIG-917] Melhorias na assinatura embutida
+  * [SIG-912] Melhorar desempenho da consulta de usuários com GrantID
+  * [SIG-875] Criar tema chartreuse traditional violet
+
+* Correções de bugs
+  * [SIG-925] Erro ao carregar swagger no Linux
+  * [SIG-922] Assinatura embutida sem preview com rubrica pré-cadastrada exibe erro de rubrica não cadastrada
+  * [SIG-918] Erro ao gerar Manifesto
+  * [SIG-908] Erro ao baixar versão para impressão
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-44-0" />
+### 1.44.0 (2022-06-03)
+
+* Novas funcionalidades
+  * [SIG-898] Adequar o sistema para inserção de chat com script personalizado
+  * [SIG-875] Criar tema vivid sky blue
+
+* Melhorias
+  * [SIG-902] Adicionar um “tooltip” sobre a data na tela de Documentos
+
+* Correções de bugs
+  * [SIG-906] Erro ao buscar rubrica de signatário de regra de assinatura na assinatura externa
+  * [SIG-888] Alterar o tipo de assinatura na ordem das ações de acordo com a assinatura realizada
+  * [SIG-812] Não é possível mudar página do documento no iPhone
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-43-3" />
 ### 1.43.3 (2022-05-19)
 

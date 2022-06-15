@@ -4,6 +4,39 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-44-1" />
+### 1.44.1 (2022-06-15)
+
+* Improvements
+  * [SIG-917] Improvements in embedded signature
+  * [SIG-912] Improve performance of user queries with GrantID
+  * [SIG-875] Create chartreuse traditional violet theme
+
+* Bug fixes
+  * [SIG-925] Error displaying swagger (for Linux instances)
+  * [SIG-922] Embedded signature without preview and with pre-positioned initials shows initials not found error
+  * [SIG-918] Error generating manifest
+  * [SIG-908] Error downloading printer friendly version
+
+Updates database model: no
+
+<a name="v1-44-0" />
+### 1.44.0 (2022-06-03)
+
+* New Features
+  * [SIG-898] Allow setup of chat with customized script
+  * [SIG-875] Create vivid sky blue theme
+
+* Improvements
+  * [SIG-902] Add tooltip for the dates in the Documents screen
+
+* Bug fixes
+  * [SIG-906] Error retrieving initials for signer of rule in public signature page
+  * [SIG-888] Update signature type in order of actions according to the type of signature performed
+  * [SIG-812] Cannot change document page number in iPhone
+
+Updates database model: no
+
 <a name="v1-43-3" />
 ### 1.43.3 (2022-05-19)
 
