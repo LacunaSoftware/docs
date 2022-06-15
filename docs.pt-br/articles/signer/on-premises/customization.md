@@ -127,6 +127,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/vsb.png)
 
+* chartreuse-traditional-violet - ctv (v1.44.1):
+
+![Color Scheme](../images/themes/ctv.png)
+
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 

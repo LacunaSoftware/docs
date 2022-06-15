@@ -153,9 +153,10 @@ If this setting is not provided and document types are enabled, all available op
 
 Under section **SupportChat**:
 
-* **Type**: the support chat provider. Available options are `Movidesk` and `Jivo`.
+* **Type**: the support chat provider. Available options are `Movidesk`, `Jivo` or `Custom` (v1.44.0).
 * **Enabled**: if `true`, enables the support chat for the selected type.
 * **Key**: the key for the support chat account.
+* **ScriptUrl** (v1.44.0): if type is `Custom`, defines the URL to load the chat script.
 
 <a name="electronic-settings" />
 ###  *ElectronicSignature* Settings
