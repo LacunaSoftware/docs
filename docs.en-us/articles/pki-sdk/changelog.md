@@ -1,5 +1,14 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-12-0" />
+### 2.12.0 (2022-06-27)
+
+- Add Encryption interface
+- Add signer name and location optional fields to PDF signature
+- Improve signature CSP access to PublicKey
+- Improve PKCS#12 generation options
+
+
 <a name="v2-11-7" />
 ### 2.11.7 (2022-11-06)
 
