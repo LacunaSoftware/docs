@@ -3,6 +3,13 @@
 <a name="v2-12-0" />
 ### 2.12.0 (2022-06-27)
 
+#### Unexpected breaking change
+
+Am I affected?
+- If you make use of custom `IPrivateKey`, you may need to update your implementation
+- If you make use of any dependent packages, `Lacuna.Pki.*` family, you may need to update the packages to the latest minor version
+
+Changelog:
 - Add Encryption interface
 - Add signer name and location optional fields to PDF signature
 - Improve signature CSP access to PublicKey
