@@ -53,6 +53,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.35 - [AC CERTEDUC](https://ac.certeduc.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.36 - [AC UNIFTEC](https://ac.uniftec.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.37 - [AC UMC](https://ac.umc.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.38 - [AC UCSal](https://ac.ucsal.br/certs/ac.txt)
 
 
 ## 2. Políticas de certificado A1
