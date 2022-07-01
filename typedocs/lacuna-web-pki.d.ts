@@ -341,7 +341,9 @@ export declare class LacunaWebPKI {
 		/** The Array of Base64 encoded hashes to be signed. */
 		batch: string[],
 		/** The digest algorithm identifier of the hashes on `batch` parameter. It can be the algorithm name or OID (i.e. `'SHA-256'` or `'2.16.840.1.101.3.4.2.1'`). */
-		digestAlgorithm: string
+		digestAlgorithm: string,
+		/** Set to be able to call [[preauthorizeSignatures]] in order to call [[signHashBatch]] multiple times.*/
+		usePreauthorizedSignatures?: boolean
 	}): Promise<SignHashBatchResponse>;
 
 	/**************************************************************
@@ -501,7 +503,7 @@ export declare class LacunaWebPKI {
 	 */
 	signPdf(args: {
 		/** The selected PDF [[FileModel.id]], as returned by [[showFileBrowser]] method. */
-		fileId: string,
+		fileId?: string,
 
 		/** A PDF content (Base64 encoded bytes) to sign can be passed optionally to `filedId`. */
 		content?: string,
@@ -529,6 +531,9 @@ export declare class LacunaWebPKI {
 
 		/** The PDF signature policy. */
 		policy: LacunaWebPKI.PadesPolicies,
+
+		/** A timestamp requester for signature policies which require timestamping */
+		timestampRequester?: TimestampRequester,
 
 		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
 		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels
@@ -576,6 +581,9 @@ export declare class LacunaWebPKI {
 		/** The CAdES signature policy. */
 		policy: LacunaWebPKI.CadesPolicies,
 
+		/** A timestamp requester for signature policies which require timestamping */
+		timestampRequester?: TimestampRequester,
+
 		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
 		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels
 	}): Promise<CadesSignResult>;
@@ -606,6 +614,9 @@ export declare class LacunaWebPKI {
 
 		/** The XML signature policy. */
 		policy: LacunaWebPKI.XmlPolicies,
+
+		/** A timestamp requester parameters for signature policies which require timestamping */
+		timestampRequester?: TimestampRequester,
 
 		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
 		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels,
@@ -639,7 +650,7 @@ export declare class LacunaWebPKI {
 		idResolutionTable?: XmlIdResolutionTableModel
 
 		/** The selected XML [[FileModel.id]], as returned by [[showFileBrowser]] method. */
-		fileId: string,
+		fileId?: string,
 
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
 		certificateThumbprint: string,
@@ -658,6 +669,9 @@ export declare class LacunaWebPKI {
 
 		/** The XML signature policy. */
 		policy: LacunaWebPKI.XmlPolicies,
+
+		/** A timestamp requester for signature policies which require timestamping */
+		timestampRequester?: TimestampRequester,
 
 		/** An optional signer certificate validation level to execute. Default is a signer certificate full validation. */
 		certificateValidationLevel?: LacunaWebPKI.CertificateValidationLevels,
@@ -678,7 +692,10 @@ export declare class LacunaWebPKI {
 	 */
 	openPades(args: {
 		/** The signed PDF [[FileModel.id]], as returned by [[showFileBrowser]] method. */
-		signatureFileId: string,
+		signatureFileId?: string,
+
+		/** The signed PDF content (Base64 encoded bytes) to open. It can be passed optionally to `signatureFileId`. */
+		signatureContent?: string,
 
 		/** Whether or not to validate the PDF sinatures. */
 		validate: boolean,
@@ -702,7 +719,10 @@ export declare class LacunaWebPKI {
 	 */
 	openCades(args: {
 		/** The signed document (.p7s) [[FileModel.id]], as returned by [[showFileBrowser]] method. */
-		signatureFileId: string,
+		signatureFileId?: string,
+
+		/** The signed PDF content (Base64 encoded bytes) to open. It can be passed optionally to `signatureFileId`. */
+		signatureContent?: string,
 
 		/** The original file. Only applies if the passed `signatureFileId` does not have the encapsulated content. */
 		originalFileId?: string,
@@ -734,7 +754,7 @@ export declare class LacunaWebPKI {
 		/** The signed XML [[FileModel.id]], as returned by [[showFileBrowser]] method. */
 		signatureFileId?: string,
 
-		/** A signed XML content (UTF-8 string or Base64 encoded bytes) can be passed optionally to `signatureFileId`. */
+		/** The signed XML content (UTF-8 string or Base64 encoded bytes) to open. It can be passed optionally to `signatureFileId`. */
 		signatureContent?: string,
 
 		/** Whether or not to validate the CAdES sinatures. */
@@ -921,7 +941,8 @@ export namespace LacunaWebPKI {
 		v1_5_1 = '1.5.1',
 		v1_5_2 = '1.5.2',
 		v1_6 = '1.6.0',
-		v1_6_1 = '1.6.1'
+		v1_6_1 = '1.6.1',
+		v1_7_0 = '1.7.0'
 	}
 
 	/**************************************************************
@@ -1016,6 +1037,11 @@ export namespace LacunaWebPKI {
 		Unknown = 'Unknown'
 	}
 
+	export const enum CertificatePolicyQualifierTypes {
+		Cps = 'Cps',
+		UserNotice = 'UserNotice'
+	}
+
 	export const enum MobileIntegrationModes {
 		/** Redirects and continue execution inside Web PKI App. Direct integration without bouncing between Browser App and Web PKI App. */
 		AppIntegration = 'appIntegration',
@@ -1041,14 +1067,27 @@ export namespace LacunaWebPKI {
 		/** PAdES-BES policy */
 		Basic = 'basic',
 		/** ICP-Brasil AD-RB policy */
-		BrazilAdrBasica = 'brazilAdrBasica'
+		BrazilAdrBasica = 'brazilAdrBasica',
+		PadesT = 'padesT',
+		BrazilAdrTempo = 'brazilAdrTempo'
 	}
 
 	export const enum CadesPolicies {
+		Cms = 'cms',
 		/** CAdES-BES policy */
 		Bes = 'cadesBes',
+		/** CAdES-T policy */
+		CadesT = 'cadesT',
 		/** ICP-Brasil AD-RB policy */
-		BrazilAdrBasica = 'brazilAdrBasica'
+		BrazilAdrBasica = 'brazilAdrBasica',
+		/** ICP-Brasil AD-RT policy */
+		BrazilAdrTempo = 'brazilAdrTempo',
+		/** ICP-Brasil AD-RV policy */
+		BrazilAdrValidacao = 'brazilAdrValidacao',
+		/** ICP-Brasil AD-RC policy */
+		BrazilAdrCompleta = 'brazilAdrCompleta',
+		/** ICP-Brasil AD-RA policy */
+		BrazilAdrArquivamento = 'brazilAdrArquivamento',
 	}
 
 	export const enum XmlPolicies {
@@ -1057,9 +1096,11 @@ export namespace LacunaWebPKI {
 		/** XAdES-BES policy */
 		XadesBes = 'xadesBes',
 		/** Brazil national NFe policy */
+		XadesT = 'xadesT',
 		BrazilNFe = 'brazilNFe',
 		/** ICP-Brasil AD-RB policy */
 		BrazilAdrBasica = 'brazilAdrBasica',
+		BrazilAdrTempo = 'brazilAdrTempo',
 	}
 
 	export const enum XmlSignedEntityTypes {
@@ -1177,6 +1218,17 @@ export namespace LacunaWebPKI {
 		SpecialCharacters = 4
 	}
 
+	export const enum AuthenticationMethods {
+		/** No authentication */
+		None = 'none',
+		/** Basic authentication: a username and password parameters must be set */
+		Basic = 'basic',
+		/** OAuth Bearer token authentication: a bearerToken parameter must be set */
+		BearerToken = 'bearerToken',
+		/** Mutual TLS authentication: a client certificate thumbprint parameter must be set */
+		Mutual = 'mutual'
+	}
+
 
 
 }
@@ -1230,10 +1282,14 @@ export interface ExceptionModel {
  * Each property on the [[PkiBrazilModel]] and [[PkiItalyModel]] objects may be null, but the objects themselves (`cert.pkiBrazil` or `cert.pkiItaly`) are **never** null.
  */
 export interface CertificateModel {
-	/** The Common Name (CN) part of the certificate's subject name field. */
+	/** The Common Name (CN) part of the certificate's subject DN name field. */
 	subjectName: string,
+	/** The subject Distinguished Name (DN) formatted string */
+	subjectDN: string,
 	/** The Common Name (CN) part of the certificate's issuer name field. */
 	issuerName: string,
+	/** The issuer Distinguished Name (DN) formatted string */
+	issuerDN: string,
 	/** `true` if the certificate is stored on Web PKI mobile app. `null` or `false` otherwise. */
 	isRemote?: boolean,
 	/** The subject e-mail address. */
@@ -1242,10 +1298,20 @@ export interface CertificateModel {
 	thumbprint: string,
 	/** Object with boolean properties indicating wether each possible key usage is set on the certificate. */
 	keyUsage: KeyUsagesModel,
+	/** Array with certificate policies info */
+	certificatePolicies: CertificatePolicyModel[],
 	/** Object with Brazil-specific fields. */
 	pkiBrazil: PkiBrazilModel,
+	/** Object with Argentina-specific fields. */
+	pkiArgentina: PkiArgentinaModel,
+	/** Object with Ecuador-specific fields. */
+	pkiEcuador: PkiEcuadorModel,
 	/** Object with Italy-specific fields. */
 	pkiItaly: PkiItalyModel,
+	/** Object with Paraguay-specific fields. */
+	pkiParaguay: PkiParaguayModel,
+	/** Object with Peru-specific fields. */
+	pkiPeru: PkiPeruModel,
 	/** The not before field of the certificate. */
 	validityStart: Date,
 	/** The not after field of the certificate. */
@@ -1307,6 +1373,81 @@ export interface PkiBrazilModel {
 export interface PkiItalyModel {
 	/** Subject's codice fiscale. */
 	codiceFiscale: string
+}
+
+/**************************************************************
+ * Object with PKI Argentina specific fields.
+ */
+export interface PkiArgentinaModel {
+	/** Clave Única de Identificación Laboral */
+	cuil: string,
+	/** Clave Única de Identificación Tributaria */
+	cuit: string
+}
+
+/**************************************************************
+ * Object with PKI Ecuador specific fields.
+ */
+export interface PkiEcuadorModel {
+	/** */
+	certificateType: string,
+	cedulaDeIdentidad: string,
+	pasaporte: string,
+	/** Registro Único de Proveedores */
+	rup: string,
+	/** Registro Único de Contribuyentes */
+	ruc: string,
+	nombres: string,
+	apellidos: string,
+	razonSocial: string
+}
+
+/**************************************************************
+ * Object with PKI Paraguay specific fields.
+ */
+export interface PkiParaguayModel {
+	personCertificateType: string,
+	certificateType: string,
+	/** Cédula de identidad */
+	ci: string,
+	/** Cédula de identidad para extranjero */
+	cie: string,
+	/** Registro Único de Contribuyente. Número de Cédula Tributaria correspondiente al Titular */
+	ruc: string,
+	pasaporte: string,
+	/** Nombre y apellido del responsable del certificado */
+	responsable: string
+}
+
+/**************************************************************
+ * Object with PKI Peru specific fields.
+ */
+export interface PkiPeruModel {
+	/** Documento Nacional de Identidad */
+	dni: string,
+	/** Registro Único de Contribuyentes */
+	ruc: string
+}
+
+/**************************************************************
+ * Object with certificate policy info
+ */
+export interface CertificatePolicyModel {
+	/** Certificate Policy Identifier */
+	id: string,
+	/** Certificate Policy Qualifiers */
+	qualifiers: CertificatePolicyQualifierModel[]
+}
+
+/**************************************************************
+ * Object with certificate policy qualifier
+ */
+export interface CertificatePolicyQualifierModel {
+	type: LacunaWebPKI.CertificatePolicyQualifierTypes,
+	cpsUri: string,
+	unOrganization: string,
+	unExplicitText: string,
+	unNoticeNumbers: number[],
 }
 
 // Common Functions
@@ -1665,25 +1806,25 @@ export interface PadesSize {
 }
 
 export interface PdfMark {
-	measurementUnits: LacunaWebPKI.PadesMeasurementUnits, 
+	measurementUnits?: LacunaWebPKI.PadesMeasurementUnits, 
 	container: PadesVisualRectangle,
 	borderWidth?: number,
 	backgroundColor?: string,
 	borderColor?: string,
-	pageOptimization: PadesPageOptimization,
+	pageOptimization?: PadesPageOptimization,
 	elements: PdfMarkElement[]
 }
 
 export interface PdfMarkElement {
 	elementType: LacunaWebPKI.PdfElementTypes, 
-	relativeContainer: PadesVisualRectangle,
+	relativeContainer?: PadesVisualRectangle,
 	rotation?: number,
-	textSections?: PdfTextSection,
+	textSections?: PdfTextSection[],
 	image?: PdfMarkImage
 }
 
 export interface PdfTextSection {
-	style: LacunaWebPKI.PdfTextStyles,
+	style?: LacunaWebPKI.PdfTextStyles,
 	text: string,
 	color?: string,
 	fontSize?: number
@@ -1698,6 +1839,28 @@ export interface PadesPageOptimization {
 	paperSize: LacunaWebPKI.PadesPaperSizes,
 	customPaperSize: PadesSize,
 	pageOrientation: LacunaWebPKI.PadesPageOrientations
+}
+
+export interface AuthenticationParameters {
+	method: LacunaWebPKI.AuthenticationMethods,
+	username?: string,
+	password?: string
+	bearerToken?: string,
+	certificateThumbprint?: string,
+}
+
+export interface TimestampRequester {
+	/** The Timestamp Authority (TSA) endpoint */
+	url: string,
+	/** An authentication method and parameters, if required by the TSA */
+	authentication?: AuthenticationParameters
+}
+
+export interface GeolocationInfo {
+	accuracy: number,
+	latitude: number,
+	longitude: number,
+	timestamp: Date
 }
 
 
