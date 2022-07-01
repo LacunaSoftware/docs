@@ -16,6 +16,12 @@ Create the configuration file from the given template:
 > [!NOTE]
 > Configuration files can only be read by members of the *lacuna-psc* group and can only be changed by the root user. This is important to protect sensitive data stored on the configuration files from unauthorized access.
 
+## Generate a certificate to sign OAuth tokens
+
+Generate a self-signed certificate to sign OAuth tokens issued by the application:
+
+[!include[Generate certificate](../../../../../../includes/psc/linux/gen-cert.md)]
+
 ## Configure Lacuna PSC
 
 Edit the configuration file and follow the instructions on it to configure your Lacuna PSC instance:
@@ -25,10 +31,6 @@ Edit the configuration file and follow the instructions on it to configure your 
 On the `[General]` section, to fill the `EncryptionKey` setting generate a 256-bit key to encrypt sensitive data stored on the database:
 
 [!include[Generate key](../../../../../../includes/linux/gen-key.md)]
-
-Also on the `[General]` section, to fill the `RootPasswordHash` setting choose a strong password for root access to the dashboard and hash it:
-
-[!include[Hash root password](../../../../../../includes/psc/linux/hash-root-pass.md)]
 
 On the `[Amplia]` section, to fill the `ApiKey` setting you must create an application on your existing [Amplia](../../../../amplia/index.md)
 instance and generate an API key for it:

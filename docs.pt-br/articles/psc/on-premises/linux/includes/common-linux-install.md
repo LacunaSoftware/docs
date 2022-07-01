@@ -18,6 +18,12 @@ Crie o arquivo de configuração do Lacuna PSC a partir do template fornecido:
 > Arquivos de configuração só podem ser lidos por membros do grupo *lacuna-psc* e só podem ser alterados por usuários com permissões elevadas. Isso é importante para proteger informações
 > sigilosas armazenadas no arquivo de configuração dos demais usuários da máquina.
 
+## Gere um certificado para assinar tokens de OAuth
+
+Gere um certificado auto-assinado para assinar os tokens de OAuth emitidos pela aplicação:
+
+[!include[Generate certificate](../../../../../../includes/psc/linux/gen-cert.md)]
+
 ## Configure o Lacuna PSC
 
 Edite o arquivo de configuração e siga as instruções nele para configurar sua instância do Lacuna PSC:
@@ -27,10 +33,6 @@ Edite o arquivo de configuração e siga as instruções nele para configurar su
 Na seção `[General]`, para preencher o parâmetro `EncryptionKey` gere uma chave de 256 bits para cifrar dados sensíveis armazenados no banco de dados:
 
 [!include[Generate key](../../../../../../includes/linux/gen-key.md)]
-
-Ainda na seção `[General]`, para preencher o parâmetro `RootPasswordHash` escolha uma senha forte para o acesso de root e compute o *hash* da senha:
-
-[!include[Hash root password](../../../../../../includes/psc/linux/hash-root-pass.md)]
 
 Na seção `[Amplia]`, para preencher o parâmetro `ApiKey` é preciso criar uma aplicação na sua instância do [Amplia](../../../../amplia/index.md)
 e gerar uma chave de API para a aplicação:
