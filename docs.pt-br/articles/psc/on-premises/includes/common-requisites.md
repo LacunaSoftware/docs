@@ -1,6 +1,6 @@
 ﻿* Instância do **[Amplia](../../../amplia/index.md)**
 * Licença do **[PKI SDK](../../../pki-sdk/index.md)** (no formato Base64)
-* Licença do **[Web PKI](../../../web-pki/index.md)** (formato Base64/binário)
+<!-- Licença do **[Web PKI](../../../web-pki/index.md)** (formato Base64/binário) -->
 * **Entrada de DNS** criada anteriormente para o site
 * *Connection string* para um banco de dados em **SQL Server** (2016 ou mais recente) previamente criado com:
   * Collation: `Latin1_General_100_CI_AI`

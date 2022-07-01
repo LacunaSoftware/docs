@@ -1,6 +1,6 @@
 ﻿* **[Amplia](../../../amplia/index.md)** instance
 * **[PKI SDK](../../../pki-sdk/index.md)** license (in Base64 format)
-* **[Web PKI](../../../web-pki/index.md)** license (Base64/binary format)
+<!-- **[Web PKI](../../../web-pki/index.md)** license (Base64/binary format) -->
 * **DNS entry** previously created for the app
 * Connection string to a **SQL Server** (version 2016 or newer) database previously created having:
   * Collation: `Latin1_General_100_CI_AI` or `Latin1_General_CI_AI`
