@@ -22,6 +22,20 @@ Generate a self-signed certificate to sign OAuth tokens issued by the applicatio
 
 [!include[Generate certificate](../../../../../../includes/psc/linux/gen-cert.md)]
 
+## Configure the trusted roots
+
+Edit the certificate trust configuration file:
+
+[!include[Edit trust](../../../../../../includes/psc/linux/edit-trust.md)]
+
+Add the trusted root certificates as follows:
+
+[!include[Trust sample](../../../../../../includes/spa-config/trust-config-sample.md)]
+
+* The field `Version` must be kept as is above
+* The collection `StandardPkis` may contain `Brazil`, `Italy` or `Peru` denoting that the root certificates for each of these countries are to be trusted
+* The collection `TrustedRoots` may contain additional trusted CA root certificates encoded in Base64
+
 ## Configure Lacuna PSC
 
 Edit the configuration file and follow the instructions on it to configure your Lacuna PSC instance:

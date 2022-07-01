@@ -24,6 +24,20 @@ Gere um certificado auto-assinado para assinar os tokens de OAuth emitidos pela 
 
 [!include[Generate certificate](../../../../../../includes/psc/linux/gen-cert.md)]
 
+## Configure as raízes confiáveis
+
+Edite o arquivo de definição das raízes confiáveis:
+
+[!include[Edit trust](../../../../../../includes/psc/linux/edit-trust.md)]
+
+Insira as raízes confiáveis conforme abaixo:
+
+[!include[Trust sample](../../../../../../includes/spa-config/trust-config-sample.md)]
+
+* O campo `Version` deve ser mantido
+* A coleção `StandardPkis` pode conter `Brazil`, `Italy` ou `Peru` denotando que as raízes desses países devem ser consideradas confiáveis
+* A coleção `TrustedRoots` pode conter certificados confiáveis adicionais de AC raiz em formato Base64
+
 ## Configure o Lacuna PSC
 
 Edite o arquivo de configuração e siga as instruções nele para configurar sua instância do Lacuna PSC:
