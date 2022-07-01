@@ -4,6 +4,26 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-45-0" />
+### 1.45.0 (2022-06-30)
+
+* Novas funcionalidades
+  * [SIG-904] Permitir especificar que assinatura só pode ser realizada com certificado PF
+
+* Melhorias
+  * [SIG-933] Atualizar Swagger
+  * [SIG-920] Inserir informação de assinatura com certificado digital ICP-Brasil no Manifesto
+  * [SIG-905] Adicionar evento de edição de plano padrão da instância
+  * [SIG-885] Melhorar exibição de dados da assinatura de carimbadora
+
+* Correções de bugs
+  * [SIG-924] Botão de visualizar documentos não aparece na notificação de documentos concluídos
+  * [SIG-907] Chamadas repetidas ao assinar documento
+  * [SIG-818] Adicionar loading ao solicitar reenvio de notificação
+  * [SIG-817] Erro ao exibir informações de signatários sem CPF
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-44-1" />
 ### 1.44.1 (2022-06-15)
 

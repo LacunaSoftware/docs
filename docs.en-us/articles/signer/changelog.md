@@ -4,6 +4,26 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-45-0" />
+### 1.45.0 (2022-06-30)
+
+* New Features
+  * [SIG-904] Option to require a specific certificate holder type
+
+* Improvements
+  * [SIG-933] Update Swagger
+  * [SIG-920] Add message for signatures made with ICP Brasil certificates in the Manifest
+  * [SIG-905] Add event when the default billing plan is updated
+  * [SIG-885] Improve how a timestamper signature is displayed when validating a document
+
+* Bug fixes
+  * [SIG-924] View documents button is not displayed in the documents concluded notification
+  * [SIG-907] Repeated API calls when signing a document
+  * [SIG-818] Add loading when requesting new pending action notifications
+  * [SIG-817] Error displaying informations for users without identifier (CPF)
+
+Updates database model: yes
+
 <a name="v1-44-1" />
 ### 1.44.1 (2022-06-15)
 

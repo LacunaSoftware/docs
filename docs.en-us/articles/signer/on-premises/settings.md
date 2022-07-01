@@ -101,6 +101,8 @@ be restricted.
 
 * **HideMultipleDocumentNotificationViewDocumentsButton** (v1.27.0): if `true`, the `View documents` button will not be included in the pending action emails for multiple 
 documents. This ensures that the email only contains links that do not require the user to log in.
+* **HideMultipleConcludedDocumentNotificationViewDocumentsButton** (v1.45.0): if `true`, the `View documents` button will not be included in the concluded document email for multiple 
+documents. This ensures that the email only contains links that do not require the user to log in.
 
 * **AllowAlgorithmNotAllowed** (v1.31.0): if `true` accepts documents signed with algorithms that are deemed insecure shuch as SHA-1.
 
