@@ -9,6 +9,7 @@
 
 * New Features
   * [SIG-904] Option to require a specific certificate holder type
+  * [SIG-726] Option to delete certificates in the personal certificates screen
 
 * Improvements
   * [SIG-933] Update Swagger

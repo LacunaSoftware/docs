@@ -9,6 +9,7 @@
 
 * Novas funcionalidades
   * [SIG-904] Permitir especificar que assinatura só pode ser realizada com certificado PF
+  * [SIG-726] Permitir excluir certificados na tela de certificados pessoais
 
 * Melhorias
   * [SIG-933] Atualizar Swagger
