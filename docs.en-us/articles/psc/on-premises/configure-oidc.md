@@ -9,7 +9,7 @@ You can either use a SaaS subscription on [grantid.com](https://grantid.com/) or
 Follow the steps on the [Configure SPA Applications](../../grant-id/on-premises/configure-spa-app.md) article to configure your GrantID instance, with
 the following particularities:
 
-* When creating the subscription, choose as the *username type* the option **CPF**
+* When creating the subscription, choose as the *username type* the option **Email**
 * **Skip** the steps *Create a Custom Claim for CPF* and *Create a Custom Identification Scope*
 
 ## Configuring Lacuna PSC to use GrantID
