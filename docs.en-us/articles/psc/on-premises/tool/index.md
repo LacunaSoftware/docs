@@ -29,6 +29,7 @@ The `command-options` arguments depend on each command, see the command's specif
 
 Available commands:
 
+* [gen-cert](gen-cert.md)
 * [gen-enc-key](gen-enc-key.md)
 * [hash-root-pass](hash-root-pass.md)
 * [update-db](update-db.md)
