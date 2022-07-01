@@ -335,6 +335,30 @@
 ## [Changelog](amplia-reg/changelog.md)
 <!-- End of Amplia -->
 
+<!-- Start of PSC -->
+# [PSC](psc/index.md)
+## [On-premises](psc/on-premises/index.md)
+### [Setup on Linux](psc/on-premises/linux/index.md)
+#### [Install on Ubuntu Server](psc/on-premises/linux/install-ubuntu.md)
+#### [Update](psc/on-premises/linux/update.md)
+#### [Troubleshooting](psc/on-premises/linux/troubleshoot/index.md)
+##### [Checking logs](psc/on-premises/linux/troubleshoot/check-logs.md)
+### [Command-line tool](psc/on-premises/tool/index.md)
+#### [gen-enc-key](psc/on-premises/tool/gen-enc-key.md)
+#### [hash-root-pass](psc/on-premises/tool/hash-root-pass.md)
+#### [update-db](psc/on-premises/tool/update-db.md)
+#### [test-email](psc/on-premises/tool/test-email.md)
+### [Preparing the database](psc/on-premises/prepare-database.md)
+### [Configure Blob Storage](psc/on-premises/configure-blob-storage.md)
+### [Configure OIDC](psc/on-premises/configure-oidc.md)
+### [Configure email sending](psc/on-premises/configure-email.md)
+### [Configure SMS sending](psc/on-premises/configure-sms.md)
+### [Configure HTTPS redirection](psc/on-premises/configure-https-redirect.md)
+### [Run without db_owner](psc/on-premises/unprivileged-db-user.md)
+### [Checking the installed version](psc/on-premises/check-version.md)
+## [Changelog](psc/changelog.md)
+<!-- End of PSC -->
+
 <!-- Start of GrantID -->
 # [GrantID](grant-id/index.md)
 ## [On-premises](grant-id/on-premises/index.md)

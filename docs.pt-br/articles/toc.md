@@ -334,6 +334,30 @@
 ## [Histórico de versões](amplia-reg/changelog.md)
 <!-- End of Amplia Reg -->
 
+<!-- Start of PSC -->
+# [Amplia Reg](psc/index.md)
+## [On premises](psc/on-premises/index.md)
+### [Setup em Linux](psc/on-premises/linux/index.md)
+#### [Instalação em Ubuntu Server](psc/on-premises/linux/install-ubuntu.md)
+#### [Atualização](psc/on-premises/linux/update.md)
+#### [Resolução de problemas](psc/on-premises/linux/troubleshoot/index.md)
+##### [Verificando os logs](psc/on-premises/linux/troubleshoot/check-logs.md)
+### [Utilitário de linha de comando](psc/on-premises/tool/index.md)
+#### [gen-enc-key](psc/on-premises/tool/gen-enc-key.md)
+#### [hash-root-pass](psc/on-premises/tool/hash-root-pass.md)
+#### [update-db](psc/on-premises/tool/update-db.md)
+#### [test-email](psc/on-premises/tool/test-email.md)
+### [Preparando o banco de dados](psc/on-premises/prepare-database.md)
+### [Operando sem db_owner](psc/on-premises/unprivileged-db-user.md)
+### [Configuração de storage](psc/on-premises/configure-blob-storage.md)
+### [Configuração de OIDC](psc/on-premises/configure-oidc.md)
+### [Configuração de envio de email](psc/on-premises/configure-email.md)
+### [Configuração de envio de SMS](psc/on-premises/configure-sms.md)
+### [Configuração de redirecionamento para HTTPS](psc/on-premises/configure-https-redirect.md)
+### [Verificando a versão instalada](psc/on-premises/check-version.md)
+## [Histórico de versões](psc/changelog.md)
+<!-- End of PSC -->
+
 <!-- Start of GrantID -->
 # [GrantID](grant-id/index.md)
 ## [On premises](grant-id/on-premises/index.md)
