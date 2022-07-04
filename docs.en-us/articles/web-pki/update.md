@@ -13,12 +13,12 @@ Updating the Javascript library:
 
 The latest version of the Javascript library is **2.14.8**. You can get it on the link below:
 
-https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.8.min.js
+https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.15.2.min.js
 
 Or include in your Web page as:
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.8.min.js"
-  integrity="sha256-Q1U+M9pC+SnXcpLrKZj9tKXp8UG6dD7qrNsBgaXK9ZA="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.15.2.min.js"
+  integrity="sha256-1YBmFfdb8pfq/5ibjis2jYVr7IaEmPokuTH7Ejbx9OE="
   crossorigin="anonymous"></script>
 ```
 

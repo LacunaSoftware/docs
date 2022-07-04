@@ -18,6 +18,14 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 <a name="changelog" />
 ## API changelog
 
+<a name="v1-7-2" />
+### 1.7.2 (2022-07-03)
+
+- Add support to unrestricted size native responses
+- Add [CertificateModel](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.certificatemodel.html) international PKI fields: [`PkiArgentinaModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiargentinamodel.html), [`PkiEcuadorModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiecuadormodel.html), [`PkiParaguayModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiparaguaymodel.html), [`PkiPeruModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiperumodel.html)
+- Add [CertificateModel](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.certificatemodel.html) fields: `certificatePolicies`, `subjectDN`, `issuerDN`
+
+
 <a name="v1-6-1" />
 ### 1.6.1 (2020-05-23)
 

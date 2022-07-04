@@ -14,12 +14,12 @@ Atualizações à biblioteca de Javascript:
 
 A última versão da biblioteca de Javascript é a **2.14.8**. Você pode obtê-la no link abaixo:
 
-https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.8.min.js
+https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.15.2.min.js
 
 Ou incluir na sua página como:
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.8.min.js"
-  integrity="sha256-Q1U+M9pC+SnXcpLrKZj9tKXp8UG6dD7qrNsBgaXK9ZA="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.15.2.min.js"
+  integrity="sha256-1YBmFfdb8pfq/5ibjis2jYVr7IaEmPokuTH7Ejbx9OE="
   crossorigin="anonymous"></script>
 ```
 
