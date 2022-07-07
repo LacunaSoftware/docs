@@ -8,22 +8,9 @@ You can either use a SaaS subscription on [grantid.com](https://grantid.com/) or
 
 Log into the GrantID Console portal and follow the instructions below.
 
-### Create a Subscription 
+### Subscription creation
 
-> [!TIP]
-> You may skip this step if you already have a subscription created.
-
-Create a subscription by providing: 
-
-* **Name**: the name of the subscription.
-* **Namespace**: unique identifier for this subscription. It will be used to construct the Subscription URL.
-* **Username type**: choose `Email`
-
-The subscription URL is always a subdomain of the GrantID (AuthServer) URL: `https://<sub_namespace>.<auth_server_domain>`
-
-Add DNS records pointing the generated subscription URL to your GrantID instance (AuthServer).
-
-To test your settings, access: `https://<subscription_url>/.well-known/openid-configuration` and verify that a JSON is displayed.
+When creating the subscription as part of the [GrantID post-installation steps](../../grant-id/on-premises/post-install.md), make sure to select `Email` as the **Username type**.
 
 ### Create an API Connection
 
@@ -35,7 +22,7 @@ On the **Scopes** tab, click on **New API Connection** to create an API connecti
 After the API connection is created, click on the **Generate** button on the *API Secret* column, then **Generate Secret**.
 This is the `ApiSecret` setting (copy it and save it for later).
 
-Expand the API connection it and click on the ✎ button of the API Scope to edit it. Mark all claims and click **Edit API Scope**.
+Click the **▶** (▶) button to expand the API connection and click the **📝** (📝) button of the API Scope to edit it. Mark all claims and click **Edit API Scope**.
 
 ### Frontend Application
 
@@ -45,11 +32,11 @@ On the **Applications** tab, click on **New Application** and provide:
 * **App-id**: `psc`
 * **Type**: select `Implicit flow`.
 
-In the application details, choose the Settings tab to set:
+Click the **Settings** tab and set:
 
-* **Application URL**: the URL of your application. Example: `https://myappname.com`
 * Select the `Allow Access tokens via browser?` checkbox.
 * Deselect the following checkboxes: `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
+* **Application URL**: the URL of your application. Example: `https://myappname.com`
 * **Allowed URLs**: name of this application on GrantID. Suggestion: `<My App Name>`
   * **Redirect**: you must add 4 redirect URLs that are based on your application URL:
     * `<applicationURL>` without trailing slash.
@@ -59,8 +46,9 @@ In the application details, choose the Settings tab to set:
   * **CORS origins**: `<applicationURL>` without trailing slash.
   * **Post Logout**: `<applicationURL>` without trailing slash.
 * **Allowed Identification Scopes**: mark all scopes
-* **Allowed API scopes**: mark the `PSC` scope
-* It is recommended to select the option `Verify user's email` so only verified email users are allowed to complete the login process.
+* **Allowed API scopes**: mark the `PSC` API scope
+* Mark the `Is email required?` checkbox
+* It is recommended to mark the option `Verify user's email` so only verified email users are allowed to complete the login process.
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
@@ -73,7 +61,7 @@ On the **Applications** tab, click on **New Application** again and provide:
 * **App-id**: `psc-backend`
 * **Type**: select `Client credentials`.
 
-In the application details, choose the Settings tab to set:
+Click the **Settings** tab and set:
 
 * **Allowed API scopes**: select the `Manage subscription's users` scope.
 
