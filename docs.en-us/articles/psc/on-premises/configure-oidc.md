@@ -22,7 +22,7 @@ On the **Scopes** tab, click on **New API Connection** to create an API connecti
 After the API connection is created, click on the **Generate** button on the *API Secret* column, then **Generate Secret**.
 This is the `ApiSecret` setting (copy it and save it for later).
 
-Click the **▶** (▶) button to expand the API connection and click the **📝** (📝) button of the API Scope to edit it. Mark all claims and click **Edit API Scope**.
+Click the ▶ button to expand the API connection and click the 📝 button of the API Scope to edit it. Mark all claims and click **Edit API Scope**.
 
 ### Frontend Application
 
@@ -37,7 +37,7 @@ Click the **Settings** tab and set:
 * Select the `Allow Access tokens via browser?` checkbox.
 * Deselect the following checkboxes: `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
 * **Application URL**: the URL of your application. Example: `https://myappname.com`
-* **Allowed URLs**: name of this application on GrantID. Suggestion: `<My App Name>`
+* **Allowed URLs**:
   * **Redirect**: you must add 4 redirect URLs that are based on your application URL:
     * `<applicationURL>` without trailing slash.
     * `<applicationURL>/silent-refresh.html`

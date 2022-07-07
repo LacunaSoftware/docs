@@ -83,7 +83,7 @@ In the application details, choose the Settings tab to set:
 * **Application URL**: the URL of your application. Example: `https://myappname.com`
 * Select the `Allow Access tokens via browser?` checkbox.
 * Deselect the following checkboxes: `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
-* **Allowed URLs**: name of this application on GrantID. Suggestion: `<My App Name>`
+* **Allowed URLs**:
   * **Redirect**: you must add 4 redirect URLs that are based on your application URL:
     * `<applicationURL>` without trailing slash.
     * `<applicationURL>/silent-refresh.html`
