@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-12-1" />
+### 2.12.1 (2022-07-10)
+
+- Improve XML transfer data parameters
+
+
 <a name="v2-12-0" />
 ### 2.12.0 (2022-06-27)
 
