@@ -4,6 +4,68 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-30-1" />
+### 3.30.1 (2022-07-11)
+
+* Novas funcionalidades
+  * [LI-377] Adicionar claim com thumbprint do certificado ao fazer login com certificado digital
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-30-0" />
+### 3.30.0 (2022-07-07)
+
+* Melhorias
+  * [LI-375] Atualizar lista de provedores de SMS compatíveis
+  * [LI-374] Melhorias no uso de refresh tokens
+
+* Correções de bugs
+  * [LI-376] Link inválido caso seja utilizado redirecionador de links em página de definição de senha
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-29-0" />
+### 3.29.0 (2022-06-06)
+
+* Novas funcionalidades
+  * [LI-372] Adicionar APIs para validação de Email por código
+  * [LI-371] Login com certificado digital utilizando Serial number do Common Name
+
+* Melhorias
+  * [LI-373] Permitir busca exata por informações do usuário
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-28-0" />
+### 3.28.0 (2022-05-06)
+
+* Melhorias
+  * [LI-370] Corrigir textos de telas
+  * [LI-369] Permitir definir CNPJ na tela de acesso com certificado em nuvem
+  * [LI-366] Atualizações no Import Command
+  * [LI-363] Usar a cultura da thread atual para preencher o header AcceptLanguage das chamadas da client lib
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-27-1" />
+### 3.27.1 (2021-09-12)
+
+* Melhorias
+  * [LI-365] Melhorar uso do certificado em nuvem no mobile
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-27-0" />
+### 3.27.0 (2021-09-12)
+
+* Novas funcionalidades
+  * [LI-362] Permitir controlar duração da autenticação
+
+* Melhorias
+  * [LI-364] Correções no conteúdo dos emails
+
+Atualiza modelo do banco de dados: não
+
 <a name="v3-26-0" />
 ### 3.26.0 (2021-09-01)
 

@@ -4,6 +4,68 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-30-1" />
+### 3.30.1 (2022-07-11)
+
+* New Features
+  * [LI-377] Add claim with certificate thumbprint when logging with digital certificate
+
+Updates database model: no
+
+<a name="v3-30-0" />
+### 3.30.0 (2022-07-07)
+
+* Improvements
+  * [LI-375] Update list of supported SMS providers
+  * [LI-374] Improvoments in refresh token usage
+
+* Bug fixes
+  * [LI-376] Invalid link when a link redirector is used in the set password URL
+
+Updates database model: no
+
+<a name="v3-29-0" />
+### 3.29.0 (2022-06-06)
+
+* New Features
+  * [LI-372] Add APIs to validate e-mail by code
+  * [LI-371] Digital certificate login using Serial Number common name
+
+* Improvements
+  * [LI-373] Exact search by user informations
+
+Updates database model: no
+
+<a name="v3-28-0" />
+### 3.28.0 (2022-05-06)
+
+* Improvements
+  * [LI-370] Fix texts in screens
+  * [LI-369] Add option to define company identifier in the cloud certificate login
+  * [LI-366] Updates to import command
+  * [LI-363] Use thread default culture to fill AcceptLanguage header in client lib
+
+Updates database model: no
+
+<a name="v3-27-1" />
+### 3.27.1 (2021-09-12)
+
+* Improvements
+  * [LI-365] Melhorar uso do certificado em nuvem no mobile
+
+Updates database model: no
+
+<a name="v3-27-0" />
+### 3.27.0 (2021-09-12)
+
+* New Features
+  * [LI-362] Permitir controlar duração da autenticação
+
+* Improvements
+  * [LI-364] Correções no conteúdo dos emails
+
+Updates database model: no
+
 <a name="v3-26-0" />
 ### 3.26.0 (2021-09-01)
 
