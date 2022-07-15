@@ -1,5 +1,49 @@
 ﻿# Histórico de versões do PKI Express
 
+<a name="v1-27-1" />
+### 1.27.1 (2022-07-10)
+
+- Atualização PKI SDK [2.12.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-12-1)
+
+<a name="v1-27-0" />
+### 1.27.0 (2022-07-10)
+
+- Adiciona campo de assinatura de PDF: `signer-name` e `location`
+- Adiciona opção `classic-enveloped-transform` na assinatura de XML
+- Atualização PKI SDK [2.12.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-12-0)
+
+<a name="v1-26-3" />
+### 1.26.3 (2022-04-25)
+
+- Adiciona opção `trust-uncertified-signing-time` na validação de assinatura de XML
+- Adiciona política XAdES ICP-Brasil AD-RB com artefatos de revogação incluídos
+- Atualização PKI SDK [2.11.3](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-11-3)
+
+<a name="v1-26-2" />
+### 1.26.2 (2022-04-22)
+
+- Atualização PKI SDK [2.11.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-11-2)
+
+<a name="v1-26-1" />
+### 1.26.0 (2022-04-19)
+
+- Corrige propagação de *trust arbitrators* customizados
+
+<a name="v1-26-0" />
+### 1.26.0 (2022-04-19)
+
+- Adiciona campos de PKIs internacionais ao *certificate model*: Argentina, Ecuador, Paraguay, Peru
+- Adiciona campo *certificate policies* ao *certificate model*
+- Adiciona política de asinatura XAdES ICP-Brasil AD-RC (Completa)
+- Adiciona política de assinatura CAdES ICP-Brasil AD-RA (Arquivamento)
+- Adiciona opção de inserção do elemento de assinatura XML `sig-element-insertion`
+- Atualização PKI SDK [2.11.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-11-1)
+
+<a name="v1-25-4" />
+### 1.25.4 (2022-02-02)
+
+- Atualização PKI SDK [2.9.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-9-1)
+
 <a name="v1-25-3" />
 ### 1.25.3 (2021-10-26)
 

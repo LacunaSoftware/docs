@@ -18,6 +18,14 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-7-2" />
+### 1.7.2 (2022-07-03)
+
+- Adiciona suporte a respostas sem limite de tamanho do App
+- Adiciona campos de PKI internacionais no [CertificateModel](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.certificatemodel.html): [`PkiArgentinaModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiargentinamodel.html), [`PkiEcuadorModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiecuadormodel.html), [`PkiParaguayModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiparaguaymodel.html), [`PkiPeruModel`](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.pkiperumodel.html)
+- Adiciona campos no [CertificateModel](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.certificatemodel.html): `certificatePolicies`, `subjectDN`, `issuerDN`
+
+
 <a name="v1-6-1" />
 ### 1.6.1 (2020-05-23)
 

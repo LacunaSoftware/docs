@@ -23,7 +23,7 @@ Changelog:
 
 
 <a name="v2-11-7" />
-### 2.11.7 (2022-11-06)
+### 2.11.7 (2022-06-11)
 
 - Fix PdfMarker NullReferenceException when preserving signatures visual representation on some PDFs
 

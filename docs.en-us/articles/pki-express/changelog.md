@@ -1,9 +1,53 @@
 ﻿# PKI Express changelog
 
+<a name="v1-27-1" />
+### 1.27.1 (2022-07-10)
+
+- Update PKI SDK [2.12.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-12-1)
+
+<a name="v1-27-0" />
+### 1.27.0 (2022-07-10)
+
+- Add PDF signature fields: `signer-name` and `location`
+- Add XML signature `classic-enveloped-transform` option
+- Update PKI SDK [2.12.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-12-0)
+
+<a name="v1-26-3" />
+### 1.26.3 (2022-04-25)
+
+- Add `trust-uncertified-signing-time` option to XML signature validation
+- Add XAdES PKI-Brazil signature policy AD-RB with revocation values included
+- Update PKI SDK [2.11.3](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-11-3)
+
+<a name="v1-26-2" />
+### 1.26.2 (2022-04-22)
+
+- Update PKI SDK [2.11.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-11-2)
+
+<a name="v1-26-1" />
+### 1.26.0 (2022-04-19)
+
+- Fix custom trust arbitrators propagation
+
+<a name="v1-26-0" />
+### 1.26.0 (2022-04-19)
+
+- Add international PKI fields to certificate model: Argentina, Ecuador, Paraguay, Peru
+- Add certificate policies field to certificate model
+- Add XAdES PKI-Brazil signature policy AD-RC (Completa)
+- Add CAdES PKI-Brazil signature policy AD-RA (Arquivamento)
+- Add XML signature element insertion option: `sig-element-insertion`
+- Update PKI SDK [2.11.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-11-1)
+
+<a name="v1-25-4" />
+### 1.25.4 (2022-02-02)
+
+- Update PKI SDK [2.9.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-9-1)
+
 <a name="v1-25-3" />
 ### 1.25.3 (2021-10-26)
 
-- Added support to auto positioning direction of PAdES visual representation
+- Add support to auto positioning direction of PAdES visual representation
 
 <a name="v1-25-1" />
 ### 1.25.1 (2021-10-22)
@@ -13,20 +57,20 @@
 <a name="v1-25-0" />
 ### 1.25.0 (2021-10-21)
 
-- Added support for opening and validating XML signatures (command `open-xml`)
-- Added support to PKI-Brazil archiving policy on XML signatures (policy `adra`)
+- Add support for opening and validating XML signatures (command `open-xml`)
+- Add support to PKI-Brazil archiving policy on XML signatures (policy `adra`)
 - Fixed ValidationException output when `json` flag is set
 
 <a name="v1-24-1" />
 ### 1.24.1 (2021-07-16)
 
 - Fixed bug on trustServicesDiscoveryTimeout configuration
-- Added flag `--guess-certificate` that select the newest certificate when multiple are found
+- Add flag `--guess-certificate` that select the newest certificate when multiple are found
 
 <a name="v1-24-0" />
 ### 1.24.0 (2021-07-07)
 
-- Added `--session-lifetime` option to `discover-services` and `pwd-auth`, enabling the configuration of the signature session duration, in seconds
+- Add `--session-lifetime` option to `discover-services` and `pwd-auth`, enabling the configuration of the signature session duration, in seconds
 - Improved culture settings
 
 <a name="v1-23-2" />
