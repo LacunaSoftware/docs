@@ -94,6 +94,7 @@
 ### [Erro "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Política de Privacidade](rest-pki/privacy-policy.md)
 ## [Histórico de versões](rest-pki/changelog.md)
+<!-- Start of Rest PKI Core submenu -->
 ## [Rest PKI Core](rest-pki/core/index.md)
 ### [Guia de Integração](rest-pki/core/integration/index.md)
 #### [Primeiros passos](rest-pki/core/integration/get-started.md)
@@ -122,8 +123,10 @@
 #### [Configuração de envio de email](rest-pki/core/on-premises/configure-email.md)
 #### [Preparando o banco de dados](rest-pki/core/on-premises/prepare-database.md)
 #### [Operando sem db_owner](rest-pki/core/on-premises/unprivileged-db-user.md)
+#### [Criando uma organização](rest-pki/core/on-premises/create-sub.md)
 #### [Verificando a versão instalada](rest-pki/core/on-premises/check-version.md)
 ### [Histórico de versões](rest-pki/core/changelog.md)
+<!-- End of Rest PKI Core submenu -->
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->
@@ -335,7 +338,7 @@
 <!-- End of Amplia Reg -->
 
 <!-- Start of PSC -->
-# [Amplia Reg](psc/index.md)
+# [PSC](psc/index.md)
 ## [On premises](psc/on-premises/index.md)
 ### [Setup em Linux](psc/on-premises/linux/index.md)
 #### [Instalação em Ubuntu Server](psc/on-premises/linux/install-ubuntu.md)

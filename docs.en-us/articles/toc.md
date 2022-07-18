@@ -94,6 +94,7 @@
 ### [Error "Could not get pending signature"](rest-pki/troubleshoot/could-not-get-pending-sig.md)
 ## [Privacy Policy](rest-pki/privacy-policy.md)
 ## [Changelog](rest-pki/changelog.md)
+<!-- Start of Rest PKI Core submenu -->
 ## [Rest PKI Core](rest-pki/core/index.md)
 ### [Integration Guide](rest-pki/core/integration/index.md)
 #### [Get started](rest-pki/core/integration/get-started.md)
@@ -122,8 +123,10 @@
 #### [Configure email sending](rest-pki/core/on-premises/configure-email.md)
 #### [Preparing the database](rest-pki/core/on-premises/prepare-database.md)
 #### [Run without db_owner](rest-pki/core/on-premises/unprivileged-db-user.md)
+#### [Creating a subscription](rest-pki/core/on-premises/create-sub.md)
 #### [Checking the installed version](rest-pki/core/on-premises/check-version.md)
 ### [Changelog](rest-pki/core/changelog.md)
+<!-- End of Rest PKI Core submenu -->
 <!-- End of Rest PKI -->
 
 <!-- Start of PKI SDK -->

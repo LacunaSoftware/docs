@@ -10,7 +10,19 @@ Para começar, você precisará dos seguintes parâmetros:
 * **Endpoint**: endereço da instância do Rest PKI Core a ser utilizada
 * **Chave de API**: chave de autenticação com a API
 
-Solicite seus parâmetros ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com).
+Se estiver utilizando o Rest PKI Core como um serviço (SaaS), solicite seus parâmetros ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com).
+
+Caso esteja utilizando uma [instância própria](../on-premises/index.md), o *endpoint* é o próprio endereço do painel de controle do Rest PKI, por exemplo
+`https://assinatura.suaempresa.com.br/`. Crie você mesmo uma chave de API seguindo os passos abaixo:
+
+1. Autentique-se no painel de controle da sua instância
+1. No menu lateral, clique em **Aplicações**, em seguida em **Adicionar**
+1. Preencha um **nome** para a aplicação
+1. Marque o papel `Operador` (este papel é suficiente para realizar as operações de integração mais comuns, como criar sessões de assinatura)
+1. Clique em **Criar**
+1. Na página de detalhes da aplicação, clique em **Chaves**, em seguida em **Adicionar**
+1. Preencha uma descrição qualquer para a chave e escolha uma expiração (recomenda-se escolher **Nunca expira**) e clique em **Criar**
+1. **Tome nota da chave de API exibida** pois não será possível recuperá-la mais tarde
 
 
 ## Chamando a API
