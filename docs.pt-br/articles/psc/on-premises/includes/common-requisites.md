@@ -1,4 +1,5 @@
 ﻿* Instância do **[Amplia](../../../amplia/index.md)**
+* Instância do **[GrantID](../../../grant-id/index.md)**
 * Licença do **[PKI SDK](../../../pki-sdk/index.md)** (no formato Base64)
 <!-- Licença do **[Web PKI](../../../web-pki/index.md)** (formato Base64/binário) -->
 * **Entrada de DNS** criada anteriormente para o site

@@ -1,4 +1,5 @@
 ﻿* **[Amplia](../../../amplia/index.md)** instance
+* **[GrantID](../../../grant-id/index.md)** instance
 * **[PKI SDK](../../../pki-sdk/index.md)** license (in Base64 format)
 <!-- **[Web PKI](../../../web-pki/index.md)** license (Base64/binary format) -->
 * **DNS entry** previously created for the app
