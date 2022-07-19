@@ -51,6 +51,8 @@ instance and generate an API key for it:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 
+Follow the steps in [Configure OpenID Connect](../../configure-oidc.md) to fill out the `[Oidc]` section.
+
 Fill the remaining settings according to the instructions on the configuration file.
 
 ## Set up a daemon

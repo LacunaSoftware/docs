@@ -53,6 +53,8 @@ e gerar uma chave de API para a aplicação:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 
+Siga os passos em [Configuração de OpenID Connect](../../configure-oidc.md) para preencher a seção `[Oidc]`.
+
 Preencha os demais parâmetros de acordo com as instruções presentes no arquivo de configuração.
 
 ## Configurar um *daemon*
