@@ -93,6 +93,11 @@ visual = {
 signer.set_visual_representation(visual)
 ```
 
+* É possível remover a representação visual:
+```python
+signer.set_suppress_default_visual_representation(true)
+```
+
 ## Veja também
 
 * [Exemplos completos de representação visual](samples.md)

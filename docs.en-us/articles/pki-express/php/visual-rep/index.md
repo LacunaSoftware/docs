@@ -93,7 +93,10 @@ $visual = array(
 );
 $signer->setVisualRepresentation($visual);
 ```
-
+* It's possible to remove the visual representation:
+```php
+$signatureStarter->suppressDefaultVisualRepresentation = true;
+```
 ## See also
 
 * [Visual representation samples](samples.md)

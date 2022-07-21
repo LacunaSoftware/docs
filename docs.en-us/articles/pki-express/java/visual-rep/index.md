@@ -73,6 +73,10 @@ image.setHorizontalAlign(PadesHorizontalAlign.Right);
 // Vertically centralize the image inside the visual representation rectangle.
 image.setVerticalAlign(PadesVerticalAlign.Center);
 ```
+* It's possible to remove the visual representation:
+```java
+signatureStarter.setSuppressDefaultVisualRepresentation(true);
+```
 
 ## See also
 
