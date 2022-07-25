@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-12-2" />
+### 2.12.2 (2022-07-20)
+
+- Improve `PdfContext`with form fields information
+- Improve `PdfMarker` with form fields filling
+
+
 <a name="v2-12-1" />
 ### 2.12.1 (2022-07-10)
 

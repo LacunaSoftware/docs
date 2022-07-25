@@ -74,6 +74,10 @@ image.setContent(...);
 image.setHorizontalAlign(PadesHorizontalAlign.Right); // Alinha a imagem horizontamente na direita
 image.setVerticalAlign(PadesVerticalAlign.Center);    // Alinha a imagem verticalmente no centro
 ```
+* É possível remover a representação visual:
+```java
+signatureStarter.setSuppressDefaultVisualRepresentation(true);
+```
 
 ## Veja também
 

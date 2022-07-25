@@ -93,6 +93,11 @@ visual = {
 };
 signer.setVisualRepresentation(visual);
 ```
+* It's possible to remove the visual representation:
+
+```javascript
+signatureStarter.suppressDefaultVisualRep(true);
+```
 
 ## See also
 
