@@ -74,6 +74,7 @@ image.setHorizontalAlign(PadesHorizontalAlign.Right);
 image.setVerticalAlign(PadesVerticalAlign.Center);
 ```
 * It's possible to remove the visual representation:
+
 ```java
 signatureStarter.setSuppressDefaultVisualRepresentation(true);
 ```

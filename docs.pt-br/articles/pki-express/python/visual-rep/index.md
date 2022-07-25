@@ -76,7 +76,7 @@ visual = {
 ```python
 signer = PadesSigner()
 ...
-# Cria uma referencia para o arquivo stamp. E posteriormente esse arquivo pode ser 
+# Cria uma referencia para o arquivo stamp. E posteriormente esse arquivo pode ser
 # referenciado como "fref://{alias}" no campo "url" da representação visual
 signer.add_file_reference('stamp', get_pdf_stamp_path())
 visual = {
@@ -94,6 +94,7 @@ signer.set_visual_representation(visual)
 ```
 
 * É possível remover a representação visual:
+
 ```python
 signer.set_suppress_default_visual_representation(true)
 ```

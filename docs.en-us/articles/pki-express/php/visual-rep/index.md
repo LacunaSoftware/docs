@@ -2,7 +2,7 @@
 
 [!include[Positioning](../../../includes/visual-rep/positioning.md)]
 
-```php 
+```php
 $signer = new PadesSigner();
 ...
 $visual = array(
@@ -23,7 +23,7 @@ $signer->setVisualRepresentation($visual)
 
 [!include[Auto Positioning](../../../includes/visual-rep/auto-positioning.md)]
 
-```php 
+```php
 $signer = new PadesSigner();
 ...
 $visual = array(
@@ -51,7 +51,7 @@ $signer->setVisualRepresentation($visual);
 
 [!include[Text](../../../includes/visual-rep/text.md)]
 
-```php 
+```php
 $visual = array(
   'text' => array(                               // Visual representation text
     'text' => "Signed by {{name}}",                // Set signer name
@@ -94,6 +94,7 @@ $visual = array(
 $signer->setVisualRepresentation($visual);
 ```
 * It's possible to remove the visual representation:
+
 ```php
 $signatureStarter->suppressDefaultVisualRepresentation = true;
 ```
