@@ -357,7 +357,6 @@
 ### [Configuração de OIDC](psc/on-premises/configure-oidc.md)
 ### [Configuração de Firebase](psc/on-premises/configure-firebase.md)
 ### [Configuração de envio de email](psc/on-premises/configure-email.md)
-### [Configuração de envio de SMS](psc/on-premises/configure-sms.md)
 ### [Configuração de redirecionamento para HTTPS](psc/on-premises/configure-https-redirect.md)
 ### [Verificando a versão instalada](psc/on-premises/check-version.md)
 ## [Histórico de versões](psc/changelog.md)

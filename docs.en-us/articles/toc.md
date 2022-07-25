@@ -357,7 +357,6 @@
 ### [Configure OIDC](psc/on-premises/configure-oidc.md)
 ### [Configure Firebase](psc/on-premises/configure-firebase.md)
 ### [Configure email sending](psc/on-premises/configure-email.md)
-### [Configure SMS sending](psc/on-premises/configure-sms.md)
 ### [Configure HTTPS redirection](psc/on-premises/configure-https-redirect.md)
 ### [Run without db_owner](psc/on-premises/unprivileged-db-user.md)
 ### [Checking the installed version](psc/on-premises/check-version.md)

@@ -21,6 +21,11 @@ The section **SMS** of the JSON configuration file configures the SMS sending. T
 * [SmsEmpresa](https://www.smsempresa.com.br/)
   * **Type**: set this setting to `SmsEmpresa` to send SMS messages using SmsEmpresa
   * **ChaveKey**: the *Chave Key* given on *Configuration* &gt; *My Account*
+* [Amazon SNS](https://aws.amazon.com/sns/)
+  * **Type**: set this setting to `AmazonSNS` to send SMS messages using Amazon SNS
+  * **Region**: the AWS region code, for instance `sa-east-1` or `us-east-1` (see [AWS region codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html))
+  * **AccessKeyId**: the access key ID
+  * **SecretAccessKey**: the secret access key
 * Simulator (for debugging purposes only)
   * **Type**: set this setting to `Simulator` to simulate sending SMS messages (messages that would be sent are only logged)
 
