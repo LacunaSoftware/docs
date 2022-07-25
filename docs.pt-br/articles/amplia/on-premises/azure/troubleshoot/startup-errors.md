@@ -10,9 +10,9 @@ Em ambos casos, siga os passos abaixo para habilitar os logs de inicialização 
 
 ## Habilitando logs de inicialização
 
-Acesse os arquivos do App Service por FTP e copie o arquivo *web.config* para o seu computador.
+Acesse os arquivos do App Service por FTP, navegue até a pasta */site/wwwroot* e copie o arquivo *web.config* para o seu computador.
 
-Em seguida, edite o arquivo alterando o elemento `aspNetCore` element, setando o valor do atributo `stdoutLogEnabled` para `true`.
+Em seguida, edite o arquivo alterando o elemento `aspNetCore`, setando o valor do atributo `stdoutLogEnabled` para `true`.
 
 Por exemplo, suponha que o elemento `aspNetCore` está inicialmente conforme abaixo:
 
@@ -28,7 +28,7 @@ Após alterar o atributo `stdoutLogEnabled` para `true`, o elemento ficaria da s
 
 Além disso, confirme que o atributo `stdoutLogFile` está com o valor `.\logs\stdout`, conforme acima.
 
-Copie o arquivo *web.config* de volta para o App Service via FTP, substituindo o arquivo antigo.
+Copie o arquivo *web.config* de volta para a pasta */site/wwwroot* do App Service via FTP, substituindo o arquivo antigo.
 
 Aguarde alguns segundos e tente acessar o site novamente, em seguida recarregue os arquivos do App Service no seu acesso por FTP. Deve aparecer uma nova pasta chamada
 *logs*. Entre na nova pasta e inspecione os arquivos. Eles devem revelar a causa raiz do problema.

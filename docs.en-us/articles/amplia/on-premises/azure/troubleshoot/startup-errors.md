@@ -10,7 +10,7 @@ In either case, follow the steps below to enable the startup logs.
 
 ## Enabling startup logs
 
-Access the App Service's files through FTP and copy the *web.config* file over to your computer.
+Access the App Service's files through FTP, navigate to the folder */site/wwwroot* and and copy the *web.config* file over to your computer.
 
 Then, change the `aspNetCore` element, setting the `stdoutLogEnabled` attribute to `true`.
 
@@ -28,7 +28,7 @@ After changing the `stdoutLogEnabled` attribute to `true`, it would then look li
 
 Also confirm that the attribute `stdoutLogFile` has the value `.\logs\stdout` as above.
 
-Copy the *web.config* file back to the App Service's file, replacing the old file.
+Copy the *web.config* file back to the App Service's folder */site/wwwroot*, replacing the old file.
 
 Wait a few seconds and attempt to access the site again, then refresh the App Service's files on your FTP access. There should be a new folder called *logs*. Navigate
 into it and inspect the files. They should reveal the cause of the error.
