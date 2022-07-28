@@ -12,8 +12,8 @@ A integração com Assinatura embutida permite assinar/aprovar documentos submet
 Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.5.0.min.js) mais recente:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.5.0.min.js"
-    integrity="sha256-AVAkc2mvhbaWVqyfqHomvdnzhPOLHDn0QLCifiD/Zpk="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.6.0.min.js"
+    integrity="sha256-TM1zGyxt8+FQ3VcihnbovQlTP1pBRAVLSKKTOxRBIGw="
     crossorigin="anonymous"></script>
 ```
 
@@ -105,6 +105,8 @@ Atributo                 | Tipo         |  Descrição
 `enableNotifications`    | boolean      | Notificações não são enviadas após a conclusão da assinatura/aprovação embutida. Defina como `true` para enviá-las. Pode ser definido após a instanciação com método `setEnableNotifications`.
 `disableDocumentPreview` | boolean      | Se `true`, esconde a pré-visualização do documento. Nesse caso, será exibido apenas o botão de assinatura e dados do assinante/aprovador. Pode ser definido após a instanciação com método `setDisableDocumentPreview`.
 `enableRefusal`          | boolean      | Se `true`, exibirá a opção para recusar uma assinatura. Pode ser definido após a instanciação com método `setEnableRefusal`.
+`culture` | string | Define o idioma utilizado, as opções disponíveis são `"pt"`(português), `"en"`(inglês) e `"es"`(espanhol)
+`theme` | string | Define o tema do widget, use o código de 3 caracteres de cada tema (ex: amazon-cornell-red: `"acr"`), os temas disponíveis estão na [página de personalização](https://docs.lacunasoftware.com/pt-br/articles/signer/on-premises/customization.html)
 
 Exemplo:
 

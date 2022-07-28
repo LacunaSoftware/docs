@@ -9,11 +9,11 @@ Embedded Signature Integration allows you to sign/approve documents in Signer wi
 
 ## Installation
 
-First, include the latest [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.5.0.min.js) file on your page:
+First, include the latest [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.6.0.min.js) file on your page:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.5.0.min.js"
-    integrity="sha256-AVAkc2mvhbaWVqyfqHomvdnzhPOLHDn0QLCifiD/Zpk="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.6.0.min.js"
+    integrity="sha256-TM1zGyxt8+FQ3VcihnbovQlTP1pBRAVLSKKTOxRBIGw="
     crossorigin="anonymous"></script>
 ```
 
@@ -104,8 +104,10 @@ Atributo                 | Tipo         |  Descrição
 -----------------------  | ------------ | ----------
 `enableNotifications`    | boolean      | Notifications are not sent  after completing an embedded signature/approval. Set this parameter to `true` to send notifications.
 `disableDocumentPreview` | boolean      | If `true`, it will hide the document preview. In this case, only the signing button and signer/approver data will be displayed. You can set this parameter after instantiation using `setDisableDocumentPreview` method.
-
 `enableRefusal`          | boolean      | If `true`, it will display the option to decline to sign a document. You can set this parameter after instantiation using `setEnableRefusal` method.
+`culture` | string | Defines the widget language, the options available are `"pt"` (portuguese), `"en"`(english) and `"es"`(spanish).
+`theme` | string | Defines the widget theme with the 3-character string (e.g. Theme: amazon-cornell-red - Code:`"acr"`). The themes are available at [the customization page](https://docs.lacunasoftware.com/pt-br/articles/signer/on-premises/customization.html)
+
 
 
 Example:
