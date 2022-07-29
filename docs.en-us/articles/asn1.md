@@ -79,3 +79,7 @@ The subtree `1.3.6.1.4.1.46332.3.2` identifies the certificate policies adopted 
 * `1.3.6.1.4.1.46332.3.2.1`: certificates with a private key generated on the subject's personal computer
 * `1.3.6.1.4.1.46332.3.2.2`: certificates with a private key generated on the subject's mobile device
 * `1.3.6.1.4.1.46332.3.2.3`: certificates with a private key generated on the subject's cryptographic device
+
+### 3.3. Device authentication certificate policy
+
+The OID `1.3.6.1.4.1.46332.3.3` identifies the certificate policy added to certificates meant to be used in trusted devices authentication.
