@@ -131,6 +131,8 @@ view information from other users.
 * **MaxItemsRetrievedInOrganizationFilter** (default: `10`, v1.43.0): sets the maximum number of organizations displayed in the organization filter that is displayed in the documents page (and other pages).
 * **MaxItemsRetrievedInFolderFilter** (default: `20`, v1.43.0): sets the maximum number of folders displayed in the folder filter that is displayed in the documents page (and other pages).
 
+* **FlowActionTitleDisplayedByDefault** (v1.46.0): if `true` displays the participant title box by default.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -175,6 +177,7 @@ Under section **ElectronicSignature**:
 `Gerencianet` must also be configured.
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
+* **IsRequired** (v1.46.0): if `true`, the signer **won't** have the option to sign with digital certificate.
 * **IsGeolocationRequired** (v1.5.0): if `true`, the geolocation of an user must be sent in order to sign electronically.
 * **Mode** (default: `Timestamp` if there is a timestamper configured, `SelfSigned` otherwise, v1.8.0): the mode in which the electronic signatures will be performed. The available modes are `SelfSigned` and `Timestamp`: 
 	* `SelfSigned`: a self signed certificate is generated once and used for every electronic signagure in the application.

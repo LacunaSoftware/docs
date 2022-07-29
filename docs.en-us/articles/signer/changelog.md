@@ -4,6 +4,28 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-46-0" />
+### 1.46.0 (2022-07-29)
+
+* New Features
+  * [SIG-943] Creation and validation of health documents (prescription, certificate...)
+  * [SIG-939] Setting to not allow digital signature if electronic signature is enabled for a signer
+  * [SIG-932] Display number of actions and participants in signature page
+  * [SIG-738] Add approvers to signature manifest
+
+* Improvements
+  * [SIG-928] Add new columns for organization documents report
+  * [SIG-914] Setting to display participant title as default
+  * [SIG-913] Add bigger page size options in documents list page
+  * [SIG-779] Add document creator in invoice transactions report
+
+* Bug fixes
+  * [SIG-942] User can select multiple signature positions for the same document
+  * [SIG-940] Signature is not positioned correctly while loading flow from existing document
+  * [SIG-935] Cannot edit flow of document that has observers using the API
+
+Updates database model: no
+
 <a name="v1-45-0" />
 ### 1.45.0 (2022-06-30)
 

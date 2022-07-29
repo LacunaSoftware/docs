@@ -4,6 +4,28 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-46-0" />
+### 1.46.0 (2022-07-29)
+
+* Novas funcionalidades
+  * [SIG-943] Criação e validação de documentos de saúde (prescrição, atestado etc)
+  * [SIG-939] Configuração para não permitir assinar digitalmente se assinatura eletrônica for habilitada para um assinante
+  * [SIG-932] Exibir número de ações e participantes que já concluiram ações na tela de assinatura
+  * [SIG-738] Adicionar aprovadores no Manifesto de assinaturas
+
+* Melhorias
+  * [SIG-928] Adicionar novas colunas ao relatório de documentos da organização
+  * [SIG-914] Configuração para habilitar a visualização do campo Título como padrão
+  * [SIG-913] Inserir opões de tamanho de página maiores na listagem de documentos
+  * [SIG-779] Adicionar o criador do documento no relatório de transações de uma fatura
+
+* Correções de bugs
+  * [SIG-942] Está sendo possível colocar múltiplas marcas de assinatura para um mesmo documento
+  * [SIG-940] Assinatura não é posicionada corretamente ao carregar fluxo de documento existente
+  * [SIG-935] Erro ao editar fluxo de documento que possui observadores por API
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-45-0" />
 ### 1.45.0 (2022-06-30)
 
