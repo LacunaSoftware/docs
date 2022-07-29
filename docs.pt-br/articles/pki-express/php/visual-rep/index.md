@@ -77,7 +77,7 @@ $visual = array(
 ```php
 $signer = new PadesSigner();
 ...
-// Cria uma referencia para o arquivo stamp. E posteriormente esse arquivo pode ser 
+// Cria uma referencia para o arquivo stamp. E posteriormente esse arquivo pode ser
 // referenciado como "fref://{alias}" no campo "url" da representação visual
 $signer->addFileReference('stamp', getPdfStampPath());
 $visual = array(
@@ -94,6 +94,7 @@ $visual = array(
 $signer->setVisualRepresentation($visual);
 ```
 * É possível remover a representação visual:
+
 ```php
 $signatureStarter->suppressDefaultVisualRepresentation = true;
 ```

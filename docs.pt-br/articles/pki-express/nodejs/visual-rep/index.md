@@ -78,7 +78,7 @@ let visual = {
 ```javascript
 const signer = new PadesSigner();
 ...
-// Cria uma referencia para o arquivo stamp. E posteriormente esse arquivo pode ser 
+// Cria uma referencia para o arquivo stamp. E posteriormente esse arquivo pode ser
 // referenciado como "fref://{alias}" no campo "url" da representação visual
 signer.addFileReference('stamp', "imagem_de_fundo.png");
 visual = {
@@ -95,6 +95,7 @@ visual = {
 signer.setVisualRepresentation(visual);
 ```
 * É possível remover a representação visual:
+
 ```javascript
 signatureStarter.suppressDefaultVisualRep(true);
 ```
