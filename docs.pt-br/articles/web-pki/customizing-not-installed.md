@@ -17,7 +17,7 @@ de instalação do componente de uma forma específica tal que, quando a instala
 
 Entretanto, é possível customizar esse comportamento. Por exemplo, você pode querer primeiro exibir uma mensagem para o usuário explicando o problema e informando
 que ele será redirecionado para a página de instalação antes de efetivamente redirecionar o usuário. Para isso, você deve usar a forma extensa de chamar o método
-`init()` (consulte a [documentação do método](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init) para mais detalhes) e passar um callback
+`init()` (consulte a [documentação do método](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init) para mais detalhes) e passar um callback
 no argumento `notInstalled`.
 
 ```javascript
@@ -37,4 +37,4 @@ function onWebPkiNotInstalled (status, message) {
 
 Tipicamente você irá em algum momento redirecionar o usuário para a página de instalação. Para isso, chame o método `redirectToInstallPage()` como mostrado acima.
 Para mais informações sobre os argumentos passados para o callback `notInstalled`, consulte a
-[documentação do método](http://webpki.lacunasoftware.com/Help/classes/LacunaWebPKI.html#method_init).
+[documentação do método](https://docs.lacunasoftware.com/pt-br/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#init).
