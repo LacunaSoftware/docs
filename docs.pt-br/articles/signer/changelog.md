@@ -4,6 +4,14 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-46-1" />
+### 1.46.1 (2022-08-01)
+
+* Correções de bugs
+  * [SIG-946] Erro ao assinar com certificado em nuvem.
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-46-0" />
 ### 1.46.0 (2022-07-29)
 

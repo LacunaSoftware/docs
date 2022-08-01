@@ -4,6 +4,14 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-46-1" />
+### 1.46.1 (2022-08-01)
+
+* Bug fixes
+  * [SIG-946] Error signing with cloud certificate
+
+Updates database model: no
+
 <a name="v1-46-0" />
 ### 1.46.0 (2022-07-29)
 
