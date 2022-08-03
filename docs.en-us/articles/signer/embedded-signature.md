@@ -129,7 +129,8 @@ widget.setDisableDocumentPreview(true);
 
 # Example for mobile devices
 
-Alternatively, it is possible to use embedded signatures in mobile devices, an example app is available at our [GitHub repository](https://github.com/LacunaSoftware/signer-flutter). The example displays a web page containing the embedded signature widget for js. Its compatibility is 
+Alternatively, it is possible to use embedded signatures in mobile devices, an example app is available at our [GitHub repository](https://github.com/LacunaSoftware/signer-flutter). The example displays a web page containing the embedded signature widget in JavaScript inside your mobile phone. The application was designed with [Flutter](https://flutter.dev/).
 
+The following image displays a signature example without the document preview:
 
-![BirdID HML credentials](./images/signer/../../../../../images/signer/flutter/signer_without_preview_theme.png)
+![Mobile embedded example without preview](./images/signer/../../../../../images/signer/flutter/signer_without_preview_theme.png)

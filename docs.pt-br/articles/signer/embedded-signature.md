@@ -123,3 +123,11 @@ widget.setDisableDocumentPreview(true);
 ## Exemplo online de assinatura sem pré-visualização
 
 <iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/pfn3zct1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+# Exemplo para dispositivos móveis
+
+Também é possível utilizar o exemplo de assinaturas embutidas em dispositivos móveis, um _app_ de exemplo está disponível em nosso [repositório do GitHub](https://github.com/LacunaSoftware/signer-flutter). O exemplo contém uma página da web contendo o widget em JavaScript rodando em seu dispositivo. A aplicação foi desenvolvida com [Flutter](https://flutter.dev/).
+
+A imagem abaixo mostra o processo de assinatura sem preview de documento dentro do aplicativo:
+
+![Mobile embedded example without preview](./images/signer/../../../../../images/signer/flutter/signer_without_preview_theme.png)
