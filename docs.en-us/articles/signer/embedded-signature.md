@@ -125,3 +125,11 @@ widget.setDisableDocumentPreview(true);
 ## Online example of signature ​without preview
 
 <iframe width="100%" height="600" src="https://jsfiddle.net/LacunaSoftware/pfn3zct1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+
+# Example for mobile devices
+
+Alternatively, it is possible to use embedded signatures in mobile devices, an example app is available at our [GitHub repository](https://github.com/LacunaSoftware/signer-flutter). The example displays a web page containing the embedded signature widget for js. Its compatibility is 
+
+
+![BirdID HML credentials](./images/signer/../../../../../images/signer/flutter/signer_without_preview_theme.png)
