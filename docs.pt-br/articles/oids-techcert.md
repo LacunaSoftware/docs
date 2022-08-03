@@ -56,6 +56,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.38 - [AC UCSal](https://ac.ucsal.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.39 - [AC UNIVASSOURAS](https://ac.universidadedevassouras.edu.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.40 - [AC UNIESP](https://ac.uniesp.edu.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.41 - [AC FIEPA](https://ac.fiepa.org.br/certs/ac.txt)
 
 
 ## 2. Políticas de certificado A1
