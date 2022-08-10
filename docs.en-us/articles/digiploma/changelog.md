@@ -4,6 +4,21 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-1-2" />
+### 2.1.2 (2022-08-10)
+
+* Bug fixes
+  * [AUT-181] 01/01/0001 dates are considered valid
+
+* Improvements
+  * [AUT-184] Do not allow degrees signed only by e-CNPJ
+  * [AUT-177] Improve validation of texts that start with spaces
+
+* New Features
+  * [AUT-76] Customize validation page by organization
+
+Updates database model: no
+
 <a name="v2-1-1" />
 ### 2.1.1 (2022-04-28)
 

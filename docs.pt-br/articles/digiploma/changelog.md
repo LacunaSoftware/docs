@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-1-2" />
+### 2.1.2 (2022-08-10)
+
+* Correções de bugs
+  * [AUT-181] Datas 01/01/0001 estão sendo permitidas pelo sistema
+
+* Melhorias
+  * [AUT-184] Não permitir assinatura de diplomas sem assinatura de e-CPF
+  * [AUT-177] Melhorar a validação de textos que iniciam com espaço
+
+* Novas funcionalidades
+  * [AUT-76] Personalizar página de validação por organização
+
+Atualiza modelo do banco de dados: não
+
 <a name="v2-1-1" />
 ### 2.1.1 (2022-04-28)
 
