@@ -1,5 +1,31 @@
 ﻿# Amplia Reg changelog
 
+<a name="v1-0-2" />
+## 1.0.2 (2022-08-17)
+
+Updates database model: no
+
+### Bug fixes
+
+ARNG-206 BR certificates are not issued according to RFB regulations
+
+ARNG-160 Voter registration data should not be mandatory for BR certificates
+
+
+
+<a name="v1-0-1" />
+## 1.0.1 (2022-08-16)
+
+Updates database model: no
+
+### Bug fixes
+
+ARNG-205 Cannot view documents on order details
+
+ARNG-204 Document generation error for BR certificates
+
+
+
 <a name="v1-0-0" />
 ## 1.0.0 (2022-08-15)
 

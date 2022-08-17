@@ -1,5 +1,31 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<a name="v1-0-2" />
+## 1.0.2 (2022-08-17)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-206 Certificados BR não são emitidos conforme normas da RFB
+
+ARNG-160 Dados do título de eleitor não devem ser obrigatórios para certificados BR
+
+
+
+<a name="v1-0-1" />
+## 1.0.1 (2022-08-16)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-205 Tela de detalhes do pedido não está permitindo abrir documentos
+
+ARNG-204 Erro na geração de documentos para certificados Brasileiros sem CNPJ
+
+
+
 <a name="v1-0-0" />
 ## 1.0.0 (2022-08-15)
 
