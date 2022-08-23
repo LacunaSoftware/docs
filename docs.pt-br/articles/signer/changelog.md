@@ -4,6 +4,25 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-47-0" />
+### 1.47.0 (2022-08-18)
+
+* Novas funcionalidades
+  * [SIG-915] Configuração para nome do remetente do email vir de acordo com a organização
+  * [SIG-832] Integração com GOV BR para assinatura
+
+* Melhorias
+  * [SIG-953] Configuração para definir o tempo para enviar o email de boas vindas
+  * [SIG-941] Ao compartilhar link para assinar eletronicamente não exigir login
+  * [SIG-931] Permitir política AD-RC em assinatura no XML completo
+  * [SIG-758] Configuração para mascarar email
+
+* Correções de bugs
+  * [SIG-952] Assinar documento PDF com opção forceCadesSignature exibe tarja azul
+  * [SIG-951] Erro ao gerar versão para impressão de documento PDF CADeS
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-46-1" />
 ### 1.46.1 (2022-08-01)
 

@@ -4,6 +4,25 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-47-0" />
+### 1.47.0 (2022-08-18)
+
+* New Features
+  * [SIG-915] Setting to use organization name as notifications sender name
+  * [SIG-832] GOV BR integration for signing documents
+
+* Improvements
+  * [SIG-953] Setting to define the delay to send the welcome message notification
+  * [SIG-941] Do not require login when using share option to obtain a signature link
+  * [SIG-931] AD-RC signing policy for full XML signature
+  * [SIG-758] Setting to mask user e-mail address
+
+* Bug fixes
+  * [SIG-952] Blue stripe being displayed when signing PDF with forceCadesSignature option enabled
+  * [SIG-951] Error generating printer friendly version of CADeS PDF
+
+Updates database model: yes
+
 <a name="v1-46-1" />
 ### 1.46.1 (2022-08-01)
 
