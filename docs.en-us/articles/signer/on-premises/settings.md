@@ -123,6 +123,8 @@ the application will return all signatures validated so far.
 
 * **MaskUserIdentifier** (v1.35.0): if `true`, mask user identifiers in signature visual representations, signature manifest, public area and most screens that allow users to 
 view information from other users.
+* **MaskUserEmailAddress** (v1.47.0): if `true`, mask user e-mail addresses in signature manifest, public area and most screens that allow users to 
+view information from other users.
 
 * **ReplyToDocumentCreator** (v1.41.0): if `true`, adds the document creator's e-mail address as the reply to address for all e-mails associated with that document.
 
@@ -132,6 +134,11 @@ view information from other users.
 * **MaxItemsRetrievedInFolderFilter** (default: `20`, v1.43.0): sets the maximum number of folders displayed in the folder filter that is displayed in the documents page (and other pages).
 
 * **FlowActionTitleDisplayedByDefault** (v1.46.0): if `true` displays the participant title box by default.
+
+* **UseOrganizationNameAsNotificationsSenderName** (v1.47.0): if `true` notifications regarding documents are sent using the organization name as sender name.
+
+* **ParticipantWelcomeMessageIntervalInMinutes** (default: `0`, v1.47.0): if positive defines the amount of minutes that will be waited to send a participant welcome message notification
+after he signed a document for the first time (and has not set his password yet). Any negative value will disable this notification.
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
