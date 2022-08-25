@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "a51b540c-4b31-44bc-b1c3-cac82aa206cb",
+		"name": "Signer ADM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Organizations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/admin/organizations?limit=50&offset=0&personal=true",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"organizations"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "50"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "personal",
+							"value": "true",
+							"description": "Retrieve only personal subscriptions if true."
+						},
+						{
+							"key": "q",
+							"value": "Jon",
+							"description": "Filter by Organization or User (Owner) Name.",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Organization Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/organizations/4439656d-77e0-4fce-fe92-08d88fe03528/users?limit=50&offset=0",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"organizations",
+						"4439656d-77e0-4fce-fe92-08d88fe03528",
+						"users"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "50"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "q",
+							"value": null,
+							"description": "Filter by user name or email",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Organization Documents",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/admin/organizations/f42ccabb-9d16-4d47-7237-08d84f8cc539/documents?limit=50&offset=0",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"organizations",
+						"f42ccabb-9d16-4d47-7237-08d84f8cc539",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "50"
+						},
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "status",
+							"value": "",
+							"description": "Filters by document status",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Documents Report",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/reports/organizations/f42ccabb-9d16-4d47-7237-08d84f8cc539/documents",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"reports",
+						"organizations",
+						"f42ccabb-9d16-4d47-7237-08d84f8cc539",
+						"documents"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Jon",
+							"description": "Filter by Organization or User (Owner) Name.",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Organization Billing Details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/admin/billing/organizations/9f3aeb9c-fadf-49e2-895f-c7a1e22902c2/settings",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"billing",
+						"organizations",
+						"9f3aeb9c-fadf-49e2-895f-c7a1e22902c2",
+						"settings"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Jon",
+							"description": "Filter by Organization or User (Owner) Name.",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Organization Billing Details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isBillingDisabled\": false,\r\n    \"isBlocked\": false,\r\n    \"notifiedEmails\": [],\r\n    \"customPlan\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/admin/billing/organizations/4439656d-77e0-4fce-fe92-08d88fe03528/settings",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"billing",
+						"organizations",
+						"4439656d-77e0-4fce-fe92-08d88fe03528",
+						"settings"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Jon",
+							"description": "Filter by Organization or User (Owner) Name.",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Organization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{ROOT_APP_TOKEN}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Created from API\",\r\n  \"identifier\": \"85932577000194\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/admin/organizations",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create/Update User In Organization",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"accessProfile\": {\r\n    \"administrator\": true,\r\n    \"manager\": true\r\n  },\r\n  \"name\": \"Alana Rosa\",\r\n  \"identifier\": \"11096802449\",\r\n  \"email\": \"alana.rosa@mailinator.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/admin/organizations/4439656d-77e0-4fce-fe92-08d88fe03528/users",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"organizations",
+						"4439656d-77e0-4fce-fe92-08d88fe03528",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/users?q=camila",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "camila"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Infomation",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Camila Costa De Sousa\",\r\n  \"identifier\": \"46005573870\",\r\n  \"emailAddress\": \"camilac@grr.la\",\r\n  \"phone\": \"+55 (61) 99999-9999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/users/0a3d061c-75f2-4d6d-a9ab-5c65532dd581",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"0a3d061c-75f2-4d6d-a9ab-5c65532dd581"
+					]
+				},
+				"description": "Na URL é utilizado a informação \"subject\" para identificar o usuário"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User From Organization",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "{{ROOT_APP_TOKEN}}"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api/admin/organizations/4439656d-77e0-4fce-fe92-08d88fe03528/users/a4bbbe4f-f25f-45cb-9778-622691fdbdf9",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"admin",
+						"organizations",
+						"4439656d-77e0-4fce-fe92-08d88fe03528",
+						"users",
+						"a4bbbe4f-f25f-45cb-9778-622691fdbdf9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Welcome Notification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "Signer Dev Admin App|2f70370c2330344cbae46e2ba3f76aa70ea3d4c55f8a2fae2c5de7aa9ffb24d2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/organizations/2a5952ad-9c5e-41fa-bd8b-08d83266e329/users/F84B9B90-231D-4F40-B7C6-C4FCF6D189A3/welcome-notifications",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"organizations",
+						"2a5952ad-9c5e-41fa-bd8b-08d83266e329",
+						"users",
+						"F84B9B90-231D-4F40-B7C6-C4FCF6D189A3",
+						"welcome-notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": ""
+		},
+		{
+			"key": "ROOT_APP_TOKEN",
+			"value": ""
+		}
+	]
+}

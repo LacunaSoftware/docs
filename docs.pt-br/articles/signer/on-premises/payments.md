@@ -145,7 +145,9 @@ Para exemplos de código, veja os links abaixo:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/InvoiceWebhookHandlingScenario.cs)
 
-* [Java]() em construção.
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/InvoiceWebhookHandlingScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/InvoiceWebhookHandlingScenario.php)
 
 > [!NOTE]
 > O Webhook pode ser utilizado também na Operação Simplificada.
@@ -168,14 +170,17 @@ Para exemplos de código, veja os links abaixo:
 
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/InvoiceWebhookHandlingScenario.cs)
 
-* [Java]() em construção.
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/InvoiceWebhookHandlingScenario.java)
+
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/InvoiceWebhookHandlingScenario.php)
+
 
 > [!WARNING]
 > Para esta requisição será necessária uma chave de API com privilégios de administração de cobrança no sistema.
 
 #### Criação de chave de API de administração de cobrança
 
-Para gerá-la crie uma aplicação selecionado a organização Sys Admin: 
+Para gerá-la crie uma aplicação selecionado a organização Sys Admin:
 
 ![Applications](../images/applications.png)
 
