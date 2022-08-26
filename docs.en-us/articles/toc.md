@@ -244,6 +244,7 @@
 ### [Payments](signer/on-premises/payments.md)
 ### [Pix Authentication](signer/on-premises/pix-authentication.md)
 ### [Zoom](signer/on-premises/zoom.md)
+### [Administration Integration](signer/on-premises/administration.md)
 ## [User guide](signer/user-guide/index.md)
 ### [Generate documents](signer/user-guide/gen-docs.md)
 ### [System admin](signer/user-guide/sys-admin/index.md)
