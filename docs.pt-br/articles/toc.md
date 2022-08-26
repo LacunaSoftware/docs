@@ -229,7 +229,7 @@
 #### [Docker Swarm](signer/on-premises/docker/docker-swarm/index.md)
 ##### [Habilitando SSL](signer/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Usando um banco de dados externo](signer/on-premises/docker/docker-swarm/external-db.md)
-### [Integração para Administração](signer/on-premises/administration.md)
+### [Integração para administração](signer/on-premises/administration.md)
 ##### [Verificando os logs](signer/on-premises/docker/docker-swarm/check-logs.md)
 ##### [Dados persistentes](signer/on-premises/docker/docker-swarm/persistent-data.md)
 ##### [Usando com GrantID integrado](signer/on-premises/docker/docker-swarm/internal-grantid.md)
