@@ -37,7 +37,7 @@ Escolha um dos casos de uso abaixo:
 
 * [Remover usuário de uma organização](#remover-usuário-de-uma-organização)
 
-Arquivo postman com as definição das APIs: [Signer ADM APIs](../files/Signer_ADM-3.postman_collection.json)
+Arquivo postman com as definiçôes das APIs: [Signer ADM APIs](../files/Signer_ADM-3.postman_collection.json)
 ## Atualizar dados de usuário
 
 Liste os usuários passando o nome ou o CPF:
