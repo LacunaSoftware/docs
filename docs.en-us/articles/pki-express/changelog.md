@@ -1,4 +1,10 @@
-﻿# PKI Express changelog
+# PKI Express changelog
+
+<a name="v1-28-0" />
+### 1.28.0 (2022-08-25)
+
+- Add support to start an authorization process in trust service provider without discover operation (command `start-service-auth`)
+- Add support to retrieve the `customState` value before completing authorization in trust service provider(command `get-service-auth-custom-state`)
 
 <a name="v1-27-1" />
 ### 1.27.1 (2022-07-10)

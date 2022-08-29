@@ -1,4 +1,10 @@
-﻿# Histórico de versões do PKI Express
+# Histórico de versões do PKI Express
+
+<a name="v1-28-0" />
+### 1.28.0 (2022-08-25)
+
+- Adiciona suporte a iniciação do processo de autorização no provedor de certificado em nuvem sem a operação de discover (comando `start-service-auth`)
+- Adiciona suporte a recuperação do valor `customState` antes de completar a autorização no provedor de cerficado em nuvem (command `get-service-auth-custom-state`)
 
 <a name="v1-27-1" />
 ### 1.27.1 (2022-07-10)
