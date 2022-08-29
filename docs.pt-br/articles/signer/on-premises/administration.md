@@ -1,20 +1,19 @@
 # APIs de Administração
 
 ## Introdução
-As APIs de administração são utilizadas para criar, gerenciar e modificar usuários e organizações do Signer.
+As APIs de administração pode ser utilizadas para criar, gerenciar e modificar usuários e organizações do Signer.
 
-Para utilizar essas APIs é necessário criar uma chave de administração.
+Para utilizar essas APIs é necessário criar uma **chave de API de administração**.
 
-# Criação de chave de API de administração
+## Criação de chave de API de administração
 
-
-Para gerá-la crie uma aplicação selecionado a organização Sys Admin:
+Para gerá-la, crie uma aplicação selecionado a organização `Sys Admin`:
 
 ![Applications](../images/applications.png)
 
 ![Create application Sys Adm](../images/create-application-adm.png)
 
-Em seguida gere a chave na opção "Chaves":
+Em seguida, gere a chave selecionando o botão "Chaves":
 
 ![Application keys](../images/application-keys.png)
 
@@ -22,14 +21,15 @@ Em seguida gere a chave na opção "Chaves":
 
 ![Create key submit](../images/create-key.png)
 
-
-## Opções de operações com a chave de administração
+## Opções de operações de administração
 
 Escolha um dos casos de uso abaixo:
 
+* [Listar usuários](#listar-usuários)
+
 * [Atualizar dados de usuário](#atualizar-dados-de-usuário)
 
-*  [Listar organizações](#listar-organizações)
+* [Listar organizações](#listar-organizações)
 
 * [Listar usuários da organização](#listar-usuários-da-organização)
 
@@ -37,12 +37,14 @@ Escolha um dos casos de uso abaixo:
 
 * [Remover usuário de uma organização](#remover-usuário-de-uma-organização)
 
-Arquivo postman com as definiçôes das APIs: [Signer ADM APIs](../files/Signer_ADM-3.postman_collection.json)
-## Atualizar dados de usuário
+Essas e outras operações estão exemplificadas no arquivo [Postman](https://www.postman.com/) a seguir: [Signer ADM APIs](https://cdn.lacunasoftware.com/signer/docs/Signer%20ADM-4.postman_collection.json).
 
-Liste os usuários passando o nome ou o CPF:
+### Listar usuários
+
+Para listar os usuários cadastrados no sistema, obtendo assim seus dados e permissões, utilize a chamada `GET /api/users`:
+
 ```json
-GET /api/users?q=user
+GET /api/users?q=
 {
     "items": [
         {
@@ -97,12 +99,12 @@ GET /api/users?q=user
 }
 
 ```
-* q (query) : Filtra pelo nome do dono da organização (opcional).
 
-Quando encontrado, copie o valor de "subject" do usuário que deve ser atualizado.
+* q (query - `string`) : permite filtrar os usuários retornados por nome, CPF ou e-mail (opcional).
 
+### Atualizar dados de usuário
 
-O valor deve ser usado na chamada para `/api/users/{subject}`, como mostrado abaixo:
+Para atualizar os dados de um usuário, utilize a chamada `PUT /api/users/{subject}`:
 
 ```json
 PUT /api/users/{subject}
@@ -112,25 +114,17 @@ PUT /api/users/{subject}
   "emailAddress": "user@mailinator.com",
   "phone": "+55 (61) 99999-9999"
 }
-
 ```
 
-## Listar organizações
+* O parâmetro `{subject}` corresponde à informação de mesmo nome disponível quando recuperados os dados de um usuário conforme descrito em [Listar usuários](#listar-usuários).
 
-Filtre as organizações pelos parâmetros desejados:
+### Listar organizações
+
+Para listar as organizações cadastradas no sistema, utilize a chamada `GET /api/admin/organizations`:
 
 ```json
-
 GET /api/admin/organizations?limit=1&offset=1&personal=true&q=user
 
-```
-* limit : Quantidade de itens por página.
-
-* offset: Número da página.
-
-* q (query) : Filtra pelo nome do dono da organização (opcional).
-
-```json
 {
     "items": [
         {
@@ -148,8 +142,16 @@ GET /api/admin/organizations?limit=1&offset=1&personal=true&q=user
 }
 ```
 
-## Criar uma nova organização
-Crie uma organização passando as informações da nova organização:
+* limit (`int`) : quantidade de itens por página (opcional).
+
+* offset (`int`): número da página (opcional).
+
+* q (query - `string`) : permite filtrar pelo nome da organização (opcional).
+
+### Criar uma nova organização
+
+Para criar uma organização, utilize a chamada `POST /api/admin/organizations`:
+
 ```json
 POST /api/admin/organizations
 
@@ -159,21 +161,12 @@ POST /api/admin/organizations
 }
 ```
 
-## Listar usuários da organização
+### Listar usuários da organização
 
- Passe o ID da organização `/api/organizations/{id}`:
-
-
-```json
-GET /api/organizations/{id}/users?limit=1&offset=0&q={username}
-```
-* limit : Quantidade de itens por página.
-
-* offset: Número da página.
-
-* q (query) : Filtra pelo nome do usuário (opcional).
+Para listar os usuários de uma organização, utilize a chamada `GET /api/organizations/{id}/users`:
 
 ```json
+GET /api/organizations/{id}/users?limit=1&offset=0&q=
 {
     "items": [
         {
@@ -195,13 +188,19 @@ GET /api/organizations/{id}/users?limit=1&offset=0&q={username}
     "nextCursor": null
 }
 ```
+* `{id}`: ID da organização.
 
-## Criar ou atualizar usuários de uma organização
+* limit (`int`): quantidade de itens por página (opcional).
 
-Para criar ou atualizar usuários basta utilizar `/api/organizations/{id}/users` passando o Id da organização:
+* offset (`int`): número da página (opcional).
+
+* q (query - `string`): permite filtrar pelo nome do usuário (opcional).
+
+### Criar ou atualizar usuários de uma organização
+
+Para criar ou atualizar usuários, utilize a chamada `POST /api/organizations/{id}/users`:
 
 ```json
-
 POST /api/organizations/{id}/users
 {
   "accessProfile": {
@@ -214,10 +213,11 @@ POST /api/organizations/{id}/users
 }
 ```
 
-## Remover usuário de uma organização
+* `{id}`: ID da organização.
 
-Para deletar um usuário da organização basta passar o Id da organização e o id de usuário a ser removido pelo URL:
-```json
-DELETE /api/admin/organizations/{id}/users/{userID}
-```
+### Remover usuário de uma organização
 
+Para remover um usuário da organização, utilize a chamada `DELETE /api/admin/organizations/{id}/users/{userID}`:
+
+* `{id}`: ID da organização.
+* `{userID}`: ID do usuário a ser removido.
