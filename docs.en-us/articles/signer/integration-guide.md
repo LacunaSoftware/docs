@@ -157,6 +157,20 @@ POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/action-url
 }
 ```
 
+If the user has allowed electronic signature in the current document (by using the parameter `allowElectronicSignature = true` during document upload), it is possible to require an e-mail confirmation through a 6-digit code asked during the signature stage. To use this feature, one must enable the `requireEmailAuthentication` parameter as shown in the example below:
+
+```javascript
+POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/action-url
+
+{
+	//The information must be sent to identify the participant
+	"identifier": "81976153069",
+	"emailAddress": "john.wick@mailinator.com"
+	// If action is an electronic signature and this parameter is set to true, requires e-mail authentication with code in order to complete the signature.
+	"requireEmailAuthentication": true
+}
+```
+
 The response will present two URLs:
 
 ```javascript

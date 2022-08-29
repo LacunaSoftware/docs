@@ -159,6 +159,20 @@ POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/action-url
 }
 ```
 
+Caso o signatário tenha permitido assinatura eletrônica (usando o parâmetro `allowElectronicSignature = true` no upload do documento), é possível exigir que ocorra a confirmação do e-mail dele por meio de um código de acesso no momento da assinatura. Para isso, deve ser definido `requireEmailAuthentication` como mostrado abaixo:
+
+```javascript
+POST /api/documents/b12cb1b2-5d6e-40b2-a050-097d068c4c11/action-url
+
+{
+	//The information must be sent to identify the participant
+	"identifier": "81976153069",
+	"emailAddress": "john.wick@mailinator.com"
+	// Se a assinatura for eletrônica e esse parâmetro for true, requer confirmação de e-mail com código para completar a assinatura.
+	"requireEmailAuthentication": true
+}
+```
+
 A resposta irá apresentar duas URLs:
 
 ```javascript
