@@ -493,6 +493,16 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
 
+### Mesclar múltiplos documentos em uma única assinatura
+
+É possível fazer o upload de múltiplos documentos e mesclar suas assinaturas em uma só (envelope). Para fazer isso, é necessário a adição do parâmetro `isEnvelope=true` e um nome de envelope `EnvelopeName`.
+
+Para mais detalhes sobre esse caso de uso, veja nossos exemplos no GitHub:
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithEnvelopeScenario.cs)
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithEnvelopeScenario.java)
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithEnvelopeScenario.php)
+
+
 ## Links Úteis
 
 * [Referência da API](https://www.dropsigner.com/swagger)

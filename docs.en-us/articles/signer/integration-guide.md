@@ -492,6 +492,15 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
 
+### Merge multiple documents in a single signature
+
+It is possible to upload multiple documents and then merge their signatures in a single one (envelope). In order to achieve that, it is necessary to add `isEnvelope=true` parameter and a required `EnvelopeName` parameter to define the name of the envelope.
+
+For further details related to these scenarios, see our examples on GitHub:
+* [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithEnvelopeScenario.cs)
+* [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithEnvelopeScenario.java)
+* [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithEnvelopeScenario.php)
+
 ## Useful links
 
 * [API references](https://www.dropsigner.com/swagger)
