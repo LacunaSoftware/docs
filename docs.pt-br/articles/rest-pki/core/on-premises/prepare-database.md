@@ -17,7 +17,7 @@ Se você precisar de ajuda para preparar o banco de dados, siga os passos neste 
 > Você não precisa seguir estas instruções especifícas. Se você desejar preparar o banco de dados,
 > por exemplo usando recursos avançados como *log shipping* ou *mirroring*, você pode fazê-lo, desde que a *collation* e as permissões sejam observadas.
 
-## Criando o bando de dados
+## Criando o banco de dados
 
 Para criar o banco de dados, use a seguinte consulta T-SQL (opcionalmente alterando o nome do banco de dados):
 
