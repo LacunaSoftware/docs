@@ -30,6 +30,9 @@ Also on the `[General]` section, to fill the `RootPasswordHash` setting choose a
 
 [!include[Hash root password](../../../../../../includes/amplia-reg/linux/hash-root-pass.md)]
 
+To fill the `DeviceCertificateAmpliaCaId` and `DeviceCertificateAmpliaTemplateId` settings, follow the steps in
+[Create a CA for device certificates](../../../../amplia/create-device-ca.md).
+
 On the `[Amplia]` section, to fill the `ApiKey` setting you must create an application on your existing [Amplia](../../../../amplia/index.md)
 instance and generate an API key for it:
 

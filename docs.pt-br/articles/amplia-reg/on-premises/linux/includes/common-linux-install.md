@@ -32,6 +32,9 @@ Ainda na seção `[General]`, para preencher o parâmetro `RootPasswordHash` esc
 
 [!include[Hash root password](../../../../../../includes/amplia-reg/linux/hash-root-pass.md)]
 
+Para preencher os parâmetros `DeviceCertificateAmpliaCaId` e `DeviceCertificateAmpliaTemplateId`, siga as instruções em
+[Criação de AC para certificados de dispositivo](../../../../amplia/create-device-ca.md).
+
 Na seção `[Amplia]`, para preencher o parâmetro `ApiKey` é preciso criar uma aplicação na sua instância do [Amplia](../../../../amplia/index.md)
 e gerar uma chave de API para a aplicação:
 
