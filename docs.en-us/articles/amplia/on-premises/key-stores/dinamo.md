@@ -11,7 +11,7 @@ To store keys on a [Dinamo HSM](https://www.dinamonetworks.com/en/hardware-secur
 
 If you intend to use the HSM for storing CA keys, the credentials can be either for an Operator or a regular user.
 
-If you intend to use the HSM for storing PIN-protected keys, typically combined with [Lacuna's PSC module](../../../index.md), the credentials must be for an
+If you intend to use the HSM for storing PIN-protected keys, typically combined with [Lacuna's PSC module](../../../psc/index.md), the credentials must be for an
 **Operator** user.
 
 Sample configuration (*.json* file):

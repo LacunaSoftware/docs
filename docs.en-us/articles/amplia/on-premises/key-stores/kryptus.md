@@ -14,7 +14,7 @@ If you intend to use the HSM for storing CA keys, set credentials for a **regula
 * **RootUsername**
 * **RootPassword**
 
-If you intend to use the HSM for storing user PIN-protected keys (typically combined with [Lacuna's PSC module](../../../index.md)), set the
+If you intend to use the HSM for storing user PIN-protected keys (typically combined with [Lacuna's PSC module](../../../psc/index.md)), set the
 credentials for a **VCO user** (*not* a regular user) on the following settings:
 
 * **VcoUsername**
