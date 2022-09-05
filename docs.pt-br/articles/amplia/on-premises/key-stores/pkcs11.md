@@ -52,6 +52,10 @@ Token USB criptográfico Safenet eToken (múltiplos tokens presentes, especifica
 
 ## Using a Kryptus HSM throught PKCS #11
 
+> [!TIP]
+> To store keys on a Kryptus HSM, it is recommended to use the [Kryptus](kryptus.md) key store instead. If for some reason you prefer
+> to communicate with the HSM using PCKS #11, keep reading.
+
 You will the following parameters for a **VHSM** (Virtual HSM) and a **regular user** (*not* a VCO user) with password authentication:
 
 * **IP address** of the VHSM
