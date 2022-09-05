@@ -47,6 +47,8 @@ The supported key store types are:
 * [Windows CryptoAPI (CAPI)](capi.md)
 * [Windows Cryptography API - Next Generation (CNG)](cng.md)
 * [Azure Key Vault](azure.md)
+* [Dinamo HSM](dinamo.md)
+* [Kryptus HSM](kryptus.md)
 
 ## Key Store configuration
 

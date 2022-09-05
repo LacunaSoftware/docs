@@ -44,6 +44,8 @@ Os tipos de armazenamento de chaves suportados são:
 * [CAPI](capi.md)
 * [CNG](cng.md)
 * [Azure Key Vault](azure.md)
+* [HSM Dinamo](dinamo.md)
+* [HSM Kryptus](kryptus.md)
 
 ## Configuração do armazenamento de chaves
 
