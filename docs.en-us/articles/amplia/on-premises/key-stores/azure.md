@@ -1,4 +1,4 @@
-﻿# Amplia - Azure Key Vault key stores
+﻿# Azure Key Vault key stores - Amplia
 
 > [!NOTE]
 > Azure Key Vault stores are compatible with all supported platforms
@@ -98,10 +98,5 @@ Configuration name         | Value
 
 ## See also
 
-* [Amplia - Key Stores](index.md)
-* [Amplia - Database Key Store](database.md)
-* [Amplia - CAPI Key Stores](capi.md)
-* [Amplia - CNG Key Stores](cng.md)
-* [Amplia - PKCS #11 key stores](pkcs11.md)
+* [Key Stores](index.md)
 * [Amplia on premises](../index.md)
-

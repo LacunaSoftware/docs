@@ -1,8 +1,8 @@
 ﻿# Armazenamento de chaves via PKCS #11
 
 > [!NOTE]
-> PKCS #11 são compatíveis apenas com as instalações do Windows Server e Linux. Para armazenar chaves em um HSM em uma instância do Amplia hospedada no Azure App Services, use o armazenamento
-[Azure Key Vault key store](azure.md).
+> PKCS #11 são compatíveis apenas com as instalações do Windows Server e Linux. Para armazenar chaves em um HSM em uma instância do Amplia hospedada no Azure App Services,
+> use o armazenamento [Azure Key Vault key store](azure.md).
 
 Dispositivos como *Hardware Security Modules* (HSMs) e tokens USB criptográficos geralmente suportam a comunicação através do protocolo PKCS #11.
 
@@ -27,7 +27,7 @@ Configuração de amostra:
 }
 ```
 
-## Common PKCS #11 key stores
+## Configurações comuns de PKCS #11
 
 Token USB criptográfico Safenet eToken (apenas um token conectado):
 
@@ -50,19 +50,19 @@ Token USB criptográfico Safenet eToken (múltiplos tokens presentes, especifica
 }
 ```
 
-## Using a Kryptus HSM throught PKCS #11
+## Comunicação com HSM Kryptus via PKCS #11
 
 > [!TIP]
-> To store keys on a Kryptus HSM, it is recommended to use the [Kryptus](kryptus.md) key store instead. If for some reason you prefer
-> to communicate with the HSM using PCKS #11, keep reading.
+> Para armazenar chaves em um HSM Kryptus, é recomendado utilizar o key store [Kryptus](kryptus.md). Se por algum motivo você preferir
+> realizar a comunicação com o HSM via PKCS #11, veja o restante desta seção.
 
-You will the following parameters for a **VHSM** (Virtual HSM) and a **regular user** (*not* a VCO user) with password authentication:
+Você precisará dos parâmetros abaixo referentes a um **VHSM** (*Virtual HSM*) e um **usuário comum** (que *não seja* um VCO) com autenticação por senha:
 
-* **IP address** of the VHSM
-* HTTPS **port** of the VHSM (*not* the TTLV port)
-* **Username** and **Password** of the regular user
+* **Endereço de IP** do VHSM
+* **Porta HTTPS** do VHSM (*não* a porta TTLV)
+* **Username** e **Senha** do usuário
 
-First, acquire the latest file *kNET-PKCS11-Linux-X.Y.Z.tar* from Kryptus or Lacuna. Then do:
+Primeiramente, obtenha o arquivo mais recente *kNET-PKCS11-Linux-X.Y.Z.tar* da Kryptus ou da Lacuna. Em seguida, execute:
 
 ```sh
 sudo su -
@@ -76,7 +76,7 @@ chmod -R a=,u+rwX,g+rX /var/amplia/.config
 nano /var/amplia/.config/kryptus/knet/pkcs11/config.json
 ```
 
-Paste the following text, replacing the values with your own:
+Cole o texto abaixo, substituindo os valores necessários (escritos abaixo em `CAIXA_ALTA`):
 
 ```json
 {
@@ -96,19 +96,19 @@ Paste the following text, replacing the values with your own:
 }
 ```
 
-The **log_verbosity** entry can assume one of the following values:
+De acordo com a Kryptus, o campo **log_verbosity** pode ter um dos valores a seguir:
 
-* `none`: Nothing is logged
-* `key_only`: Only key operations and error are logged
-* `quiet`: key_only + operations using the HSM, errors and warnings
-* `info`: quiet + PCKS#11 operations (note: ignores the C_GetTokenInfo function)
-* `verbose`: info + brief arguments from PKCS#11 operations
-* `full`: Logs everything as verbosely as possible
+* `none`: Nada é logado
+* `key_only`: Apenas operações com chaves e erros são logados
+* `quiet`: *key_only* + operações com o HSM, erros e warnings
+* `info`: *quiet* + operações PCKS #11 (nota: ignora a função `C_GetTokenInfo`)
+* `verbose`: *info* + argumentos resumidos de operações PKCS #11
+* `full`: loga tudo da maneira mais detalhada o possível
 
 > [!NOTE]
-> If no verbosity was defined, i.e., no **log_verbosity** is found in the configuration file, the verbosity will default to `quiet`.
+> Se o nível de log não for definido a verbosidade padrão é `quiet`.
 
-Then, on the Amplia configuration file:
+Em seguida, adicione ao arquivo de configuração do Amplia:
 
 ```json
 "MyKryptusHsm": {
@@ -118,9 +118,10 @@ Then, on the Amplia configuration file:
 }
 ```
 
-### High Availability
+### Alta Disponibilidade
 
-To enable High Availability (HA) it is necessary to configure a vector of IP addresses and ports in the config file. The example below shows the necessary configuration:
+Para habilitar Alta Disponibilidade (HA - *High Availability*) é necessário configurar um array de endereços de IP e portas no arquivo de configuração do módulo PKCS #11,
+conforme abaixo:
 
 ```json
 {
@@ -137,10 +138,5 @@ To enable High Availability (HA) it is necessary to configure a vector of IP add
 
 ## Veja também
 
-* [Amplia - Configuração de Key Stores](index.md)
-* [Amplia - Armazenamento de chaves em banco de dados](database.md)
-<!-- [Amplia - Armazenamento de chaves no store nativo](native.md) -->
-* [Amplia - Armazenamento de chaves via CAPI](capi.md)
-* [Amplia - Armazenamento de chaves via CNG](cng.md)
-* [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)
+* [Configuração de Key Stores](index.md)
 * [Amplia on premises](../index.md)

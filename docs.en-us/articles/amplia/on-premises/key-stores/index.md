@@ -1,4 +1,4 @@
-﻿# Amplia - Key Stores
+﻿# Key Stores - Amplia
 
 The keys for your Certification Authorities (CAs) can be stored on a variety of locations, called *key stores*. The choice of where to store
 CA keys is one of the most important decisions when planning for a CA or a Public Key Infrastructure (PKI).
@@ -42,7 +42,6 @@ with key stores through such protocols. The communication protocols define the *
 The supported key store types are:
 
 * [Database](database.md)
-<!-- [Native](native.md) -->
 * [PKCS #11](pkcs11.md)
 * [Windows CryptoAPI (CAPI)](capi.md)
 * [Windows Cryptography API - Next Generation (CNG)](cng.md)

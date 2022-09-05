@@ -1,4 +1,4 @@
-﻿# Amplia - Configuração de Key Stores
+﻿# Configuração de Key Stores - Amplia
 
 As chaves da sua Autoridade Certificadora (AC) podem ser armazenados em vários locais, chamados *armazenamento de chaves*. A escolha de onde o armazenamento das
 chaves AC é umas das decisões mais importantes ao planejar uma autoridade de certificação ou uma Infraestrutura de Chave Pública (ICP).

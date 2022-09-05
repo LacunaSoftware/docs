@@ -1,4 +1,4 @@
-﻿# Amplia - Kryptus key stores
+﻿# Kryptus key stores - Amplia
 
 > [!NOTE]
 > Kryptus key stores are compatible with all supported platforms
@@ -57,5 +57,5 @@ KeyStores__MyKryptusHsm__VcoPassword=SOME_PASSWORD
 
 ## See also
 
-* [Amplia - Key Stores](index.md)
+* [Key Stores](index.md)
 * [Amplia on premises](../index.md)

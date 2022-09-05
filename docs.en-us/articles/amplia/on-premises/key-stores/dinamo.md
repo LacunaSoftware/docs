@@ -1,4 +1,4 @@
-﻿# Amplia - Dinamo key stores
+﻿# Dinamo key stores - Amplia
 
 > [!NOTE]
 > Dinamo key stores are compatible with all supported platforms
