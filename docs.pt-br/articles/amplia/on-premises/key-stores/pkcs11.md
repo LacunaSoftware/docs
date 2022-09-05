@@ -54,7 +54,7 @@ Token USB criptográfico Safenet eToken (múltiplos tokens presentes, especifica
 
 You will the following parameters for a **VHSM** (Virtual HSM) and a **regular user** (*not* a VCO user) with password authentication:
 
-* **Hostname** or IP address of the VHSM
+* **IP address** of the VHSM
 * HTTPS **port** of the VHSM (*not* the TTLV port)
 * **Username** and **Password** of the regular user
 
@@ -112,6 +112,23 @@ Then, on the Amplia configuration file:
 	"Module": "libkNETPKCS11.so",
 	"Pin": "SOME_PASSWORD"
 }
+```
+
+### High Availability
+
+To enable High Availability (HA) it is necessary to configure a vector of IP addresses and ports in the config file. The example below shows the necessary configuration:
+
+```json
+{
+  "connections": {
+    "hsm_1": {
+      "ip": ["IP_ADDRESS_A", "IP_ADDRESS_B"],
+      "port": ["HTTPS_PORT_ON_A", "HTTPS_PORT_ON_B"]
+    }
+  },
+  ...
+}
+
 ```
 
 ## Veja também
