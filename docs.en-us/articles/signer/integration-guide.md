@@ -492,9 +492,9 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
 
-### Merge multiple documents in a single signature
+### Merge multiple files in a single document
 
-It is possible to upload multiple documents and then merge their signatures in a single one (envelope). In order to achieve that, it is necessary to add `isEnvelope=true` parameter and a required `EnvelopeName` parameter to define the name of the envelope.
+It is possible to upload multiple files and then merge their signatures in a single document (envelope). In order to achieve that, it is necessary to add `isEnvelope=true` parameter and a required `EnvelopeName` parameter to define the name of the envelope. It is important to note that **the merging only works if all file types are PDF**.
 
 For further details related to these scenarios, see our examples on GitHub:
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithEnvelopeScenario.cs)
