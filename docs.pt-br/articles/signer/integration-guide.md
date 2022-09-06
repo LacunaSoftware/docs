@@ -493,9 +493,9 @@ Para mais detalhes sobre esse caso de uso, veja nossos exemplos no github:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
 
-### Mesclar múltiplos documentos em uma única assinatura
+### Mesclar múltiplos arquivos em um único documento
 
-É possível fazer o upload de múltiplos documentos e mesclar suas assinaturas em uma só (envelope). Para fazer isso, é necessário a adição do parâmetro `isEnvelope=true` e um nome de envelope `EnvelopeName`.
+É possível fazer o upload de múltiplos arquivos e mesclar todos em um só documento (envelope). Para fazer isso, é necessário a adição do parâmetro `isEnvelope=true` e um nome de envelope `EnvelopeName`. É importante ressaltar que **a mesclagem só funcionará se todos os arquivos enviados forem PDFs.**
 
 Para mais detalhes sobre esse caso de uso, veja nossos exemplos no GitHub:
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithEnvelopeScenario.cs)

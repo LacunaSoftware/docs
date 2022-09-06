@@ -20,3 +20,4 @@ Next steps:
 * [Using on Java](java/index.md)
 * [Using on Python](python/index.md)
 * [Using on Node.js](nodejs/index.md)
+* [Using on Ruby](ruby/index.md)
