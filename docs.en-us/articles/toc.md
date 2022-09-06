@@ -197,6 +197,7 @@
 ## [Using on PHP](pki-express/php/index.md)
 ### [Plain](pki-express/php/plain.md)
 ### [Visual Representation](pki-express/php/visual-rep/index.md)
+### [Trusting in custom certificates](pki-express/php/trust-in-custom-certificates.md)
 ### [Converting from REST PKI](pki-express/php/convert-from-restpki.md)
 ## [Using on Java](pki-express/java/index.md)
 ### [Signature process explained](pki-express/java/how-it-works.md)
