@@ -1,4 +1,4 @@
-﻿# Amplia - CNG Key Stores
+﻿# CNG Key Stores - Amplia
 
 > [!NOTE]
 > CNG Key Stores are only compatible with Windows Server installations
@@ -53,14 +53,7 @@ Safenet eToken cryptographic USB token:
 }
 ```
 
-<!-- TODO: add Thales nCipher configuration -->
-
 ## See also
 
-* [Amplia - Key Stores](index.md)
-* [Amplia - Database Key Store](database.md)
-<!-- [Amplia - Native Key Stores](native.md) -->
-* [Amplia - CAPI Key Stores](capi.md)
-* [Amplia - PKCS #11 key stores](pkcs11.md)
-* [Amplia - Azure Key Vault Key Stores](azure.md)
+* [Key Stores](index.md)
 * [Amplia on premises](../index.md)

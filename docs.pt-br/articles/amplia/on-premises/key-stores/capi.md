@@ -79,14 +79,7 @@ Safenet eToken criptográfico USB token:
 }
 ```
 
-<!-- TODO: add Thales nCipher configuration -->
-
 ## Veja também
 
-* [Amplia - Armazenamento de chaves](index.md)
-* [Amplia - Armazenamento de chaves do banco de dados](database.md)
-<!-- [Amplia - Armazenamento de chaves nativo](native.md) -->
-* [Amplia - Armazenamento de chaves via CNG](cng.md)
-* [Amplia - Armazenamento de chaves via PKCS #11](pkcs11.md)
-* [Amplia - Armazenamento de chaves em Azure Key Vault](azure.md)
+* [Armazenamento de chaves](index.md)
 * [Amplia on premises](../index.md)

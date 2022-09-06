@@ -95,9 +95,5 @@ Nome da configuração       | Valor
 
 ## Veja também
 
-* [Amplia - Armazenamento de chaves](index.md)
-* [Amplia - Armazenamento de chaves do banco de dados](database.md)
-* [Amplia - Armazenamento de chaves via CAPI](capi.md)
-* [Amplia - Armazenamento de chaves via CNG](cng.md)
-* [Amplia - Armazenamento de chaves via PKCS #11](pkcs11.md)
+* [Armazenamento de chaves](index.md)
 * [Amplia on premises](../index.md)

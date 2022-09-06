@@ -1,4 +1,4 @@
-﻿# Amplia - Native Key Stores
+﻿# Native Key Stores - Amplia
 
 > [!IMPORTANT]
 > **Native Key Stores are deprecated**. Please use the [Database Key Store](database.md) instead, which offer the same capabilities, are more widely compatible
@@ -134,10 +134,5 @@ you must add an entry to the **KeyStores** configuration section, like either of
 
 ## See also
 
-* [Amplia - Key Stores](index.md)
-* [Amplia - Database Key Store](database.md)
-* [Amplia - CAPI Key Stores](capi.md)
-* [Amplia - CNG Key Stores](cng.md)
-* [Amplia - PKCS #11 key stores](pkcs11.md)
-* [Amplia - Azure Key Vault Key Stores](azure.md)
+* [Key Stores](index.md)
 * [Amplia on premises](../index.md)

@@ -299,6 +299,8 @@
 #### [CAPI](amplia/on-premises/key-stores/capi.md)
 #### [CNG](amplia/on-premises/key-stores/cng.md)
 #### [Azure Key Vault](amplia/on-premises/key-stores/azure.md)
+#### [Dinamo](amplia/on-premises/key-stores/dinamo.md)
+#### [Kryptus](amplia/on-premises/key-stores/kryptus.md)
 ### [Preparando o banco de dados](amplia/on-premises/prepare-database.md)
 ### [Operando sem db_owner](amplia/on-premises/unprivileged-db-user.md)
 ### [Configuração de storage](amplia/on-premises/configure-blob-storage.md)
