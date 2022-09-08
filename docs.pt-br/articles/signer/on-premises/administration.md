@@ -31,6 +31,8 @@ Escolha um dos casos de uso abaixo:
 
 * [Listar organizações](#listar-organizações)
 
+* [Criar uma nova organização](#criar-uma-nova-organização)
+
 * [Listar usuários da organização](#listar-usuários-da-organização)
 
 * [Criar ou atualizar usuários de uma organização](#criar-ou-atualizar-usuários-de-uma-organização)
