@@ -4,6 +4,35 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-48-1" />
+### 1.48.1 (2022-09-15)
+
+* Melhorias
+  * [SIG-967] Criar configuração para não fazer discovery de certificado em nuvem
+
+* Correções de bugs
+  * [SIG-968] Busca na tela de usuários retorna múltiplas opções se tiver número no filtro
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-48-0" />
+### 1.48.0 (2022-09-06)
+
+* Novas funcionalidades
+  * [SIG-938] Envio automático de lembretes de assinatura para documentos pendentes
+
+* Melhorias
+  * [SIG-515] Permitir acessar tela de detalhes do documento ao clicar em evento relacionado a ele
+  * [SIG-65] Melhorar tratamento de erros da assinatura em lote
+
+* Correções de bugs
+  * [SIG-963] Resultado de validação não é definido ao validar arquivos XML
+  * [SIG-956] Opção Versão para impressão escrita errada no download em lote de documentos
+  * [SIG-923] Webhook de recusa não é enviado em regra de assinatura
+  * [SIG-811] Mensagem de erro ao tentar criar documento com fluxo composto apenas de observadores
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-47-0" />
 ### 1.47.0 (2022-08-18)
 

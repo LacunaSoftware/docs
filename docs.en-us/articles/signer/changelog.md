@@ -4,6 +4,35 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-48-1" />
+### 1.48.1 (2022-09-15)
+
+* Improvements
+  * [SIG-967] Add setting to not perform cloud certificate discovery
+
+* Bug fixes
+  * [SIG-968] Searches in users screen return multiple options if there is a number on the query
+
+Updates database model: no
+
+<a name="v1-48-0" />
+### 1.48.0 (2022-09-06)
+
+* New Features
+  * [SIG-938] Automatic pending signature reminders
+
+* Improvements
+  * [SIG-515] Permitir acessar tela de detalhes do documento ao clicar em evento relacionado a ele
+  * [SIG-65] Improve error handling in signature batch
+
+* Bug fixes
+  * [SIG-963] Validation result is undefined when validating XML files
+  * [SIG-956] Printer friendly version has a typo in download multiple documents dialog
+  * [SIG-923] Refusal webhook is not sent for sign rules
+  * [SIG-811] Error message displayed when creating document with flow that contains only observers
+
+Updates database model: yes
+
 <a name="v1-47-0" />
 ### 1.47.0 (2022-08-18)
 

@@ -4,6 +4,49 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-2-4" />
+### 2.2.4 (2022-09-12)
+
+* Bug fixes
+  * [AUT-208] Documentação comprobatória should not be required in "segunda via" degrees
+
+Updates database model: no
+
+<a name="v2-2-3" />
+### 2.2.3 (2022-09-06)
+
+* Improvements
+  * [AUT-197] Improve UX for Registry information update screen
+
+Updates database model: no
+
+<a name="v2-2-2" />
+### 2.2.2 (2022-08-30)
+
+* Bug fixes
+  * [AUT-206] Registration review screen does not load if there is no "Termo de Responsabilidade"
+
+Updates database model: no
+
+<a name="v2-2-1" />
+### 2.2.1 (2022-08-30)
+
+* Bug fixes
+  * [AUT-204] Publish date duplicated
+
+Updates database model: no
+
+<a name="v2-2-0" />
+### 2.2.0 (2022-08-25)
+
+* Bug fixes
+  * [AUT-201] Error when using "Psicólogo" in "OutroTitulo"
+
+* New Features
+  * [AUT-189] Degrees by period report
+
+Updates database model: no
+
 <a name="v2-1-2" />
 ### 2.1.2 (2022-08-10)
 

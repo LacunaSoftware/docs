@@ -4,6 +4,49 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-2-4" />
+### 2.2.4 (2022-09-12)
+
+* Correções de bugs
+  * [AUT-208] Remover obrigatoriedade da documentação comprobatória em diplomas de segunda via
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-2-3" />
+### 2.2.3 (2022-09-06)
+
+* Melhorias
+  * [AUT-197] Melhorar a usabilidade no preenchimento das informações da IES Registradora
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-2-2" />
+### 2.2.2 (2022-08-30)
+
+* Correções de bugs
+  * [AUT-206] Tela de revisão não carrega quando não existe Termo de Responsabilidade
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-2-1" />
+### 2.2.1 (2022-08-30)
+
+* Correções de bugs
+  * [AUT-204] Data de publicação duplicada
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-2-0" />
+### 2.2.0 (2022-08-25)
+
+* Correções de bugs
+  * [AUT-201] Mensagem de erro ao enviar "Psicólogo" em OutroTitulo
+
+* Novas funcionalidades
+  * [AUT-189] Relatório de diplomas por período
+
+Atualiza modelo do banco de dados: não
+
 <a name="v2-1-2" />
 ### 2.1.2 (2022-08-10)
 
