@@ -1,7 +1,7 @@
 # PKI Express changelog
 
 <a name="v1-28-1" />
-### 1.28.1 (2022-09-16)
+### 1.28.1 (2022-09-15)
 
 - Fix behavior when a cloud certificate provider return more than one certificate with the same identifier by choosing one of these certificates.
 

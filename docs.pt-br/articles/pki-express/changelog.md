@@ -1,7 +1,7 @@
 # Histórico de versões do PKI Express
 
 <a name="v1-28-1" />
-### 1.28.1 (2022-09-16)
+### 1.28.1 (2022-09-15)
 
 - Corrigi comportamento quando um provedor de certificado em nuvem retorna mais de um certificado com o mesmo identificador escolhendo um desses certificados.
 
