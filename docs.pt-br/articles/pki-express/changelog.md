@@ -1,5 +1,10 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-28-1" />
+### 1.28.1 (2022-09-16)
+
+- Corrigi comportamento quando um provedor de certificado em nuvem retorna mais de um certificado com o mesmo identificador escolhendo um desses certificados.
+
 <a name="v1-28-0" />
 ### 1.28.0 (2022-08-25)
 
@@ -33,13 +38,13 @@
 <a name="v1-26-1" />
 ### 1.26.0 (2022-04-19)
 
-- Corrige propagação de *trust arbitrators* customizados
+- Corrige propagação de _trust arbitrators_ customizados
 
 <a name="v1-26-0" />
 ### 1.26.0 (2022-04-19)
 
-- Adiciona campos de PKIs internacionais ao *certificate model*: Argentina, Ecuador, Paraguay, Peru
-- Adiciona campo *certificate policies* ao *certificate model*
+- Adiciona campos de PKIs internacionais ao _certificate model_: Argentina, Ecuador, Paraguay, Peru
+- Adiciona campo _certificate policies_ ao _certificate model_
 - Adiciona política de asinatura XAdES ICP-Brasil AD-RC (Completa)
 - Adiciona política de assinatura CAdES ICP-Brasil AD-RA (Arquivamento)
 - Adiciona opção de inserção do elemento de assinatura XML `sig-element-insertion`
@@ -82,12 +87,12 @@
 <a name="v1-23-2" />
 ### 1.23.2 (2021-06-04)
 
-- Corrige bug na validação de assinaturas PAdES quando não há algumas das informações requeridas 
+- Corrige bug na validação de assinaturas PAdES quando não há algumas das informações requeridas
 
 <a name="v1-23-1" />
 ### 1.23.1 (2021-05-14)
 
-- Corrige bug na abertura de assinaturas PAdES quando não há algumas das informações requeridas 
+- Corrige bug na abertura de assinaturas PAdES quando não há algumas das informações requeridas
 
 <a name="v1-23-0" />
 ### 1.23.0 (2021-02-22)
@@ -98,7 +103,7 @@
 <a name="v1-22-0" />
 ### 1.22.0 (2021-01-21)
 
-- Adiciona suporte para o retorno do *commitment type* de assinaturas CAdES (comando `open-cades`)
+- Adiciona suporte para o retorno do _commitment type_ de assinaturas CAdES (comando `open-cades`)
 - Adiciona suporte para o retorno do conteúdo do certificado no comando `open-cert` com a opção `--fill-content`
 - Adiciona suporte para o retorno dos certificados emissores no comando `open-cert` com a opção `--fill-issuer`
 
@@ -113,7 +118,7 @@
 ### 1.20.0 (2020-10-05)
 
 - Adiciona suporte a validação PAdES segundo diferentes políticas com a opção `--policy`
-- Adiciona suporte a configuração do *commitment type* nos comandos `sign-cades` and `start-cades` com a opção`--commitment-type`
+- Adiciona suporte a configuração do _commitment type_ nos comandos `sign-cades` and `start-cades` com a opção`--commitment-type`
 - Adiciona suporte a decodificação e validação de certificados (comando `open-cert`)
 
 <a name="v1-19-0" />
@@ -126,7 +131,7 @@
 <a name="v1-18-0" />
 ### 1.18.0 (2020-08-20)
 
-- Adiciona suporte a usar hashes do documento em assinaturas CAdES *detached*
+- Adiciona suporte a usar hashes do documento em assinaturas CAdES _detached_
 - Adiciona suporte a representação visual com `visual-rep` em carimbos de tempo
 - Melhora retorno do comando quando finaliza a autenticação com PSCs brasileiras
 - Corrigi parse do campo sessionType do comando `discover-services`
@@ -234,7 +239,7 @@
 <a name="v1-6-0" />
 ### 1.6.0 (2018-06-18)
 
-- Adiciona suporte para a política de assinatura *Certificación de Origen Digital* (COD) nas assinaturas XML.
+- Adiciona suporte para a política de assinatura _Certificación de Origen Digital_ (COD) nas assinaturas XML.
 
 <a name="v1-5-0" />
 ### 1.5.0 (2018-05-18)
@@ -262,12 +267,10 @@
 - Adiciona suporte à [utilização de web proxy](config/proxy.md)
 - Atualiza o PKI SDK para versão 2.0.13
 
-
 <a name="v1-2-1" />
 ### 1.2.1 (2018-01-18)
 
 - Atualiza o PKI SDK para versão 2.0.11, corrigindo bug que causava atrasos devido à falta de conectividade mesmo com `--offline` habilitado
-
 
 <a name="v1-2-0" />
 ### 1.2.0 (2018-01-17)
@@ -276,21 +279,18 @@
 - Corrige bug que fazia com que o comando `help` não pudesse ser utilizado antes da ativação
 - Atualiza o PKI PKI SDK para versão 2.0.10
 
-
 <a name="v1-1-0" />
 ### 1.1.0 (2017-12-06)
 
 - Adiciona mecanismo de ativação, evitando que as aplicações precisem passar o arquivo de licença em cada chamada
 - Melhora o registro de logs
 - Adiciona comando `config`
-- Atualiza o PKI SDK para versão 2.0.7, corrigindo bug no *cache* de LCRs em ambientes Linux
-
+- Atualiza o PKI SDK para versão 2.0.7, corrigindo bug no _cache_ de LCRs em ambientes Linux
 
 <a name="v1-0-3" />
 ### 1.0.3 (2017-11-15)
 
-- Atualiza o PKI SDK para versão 2.0.3, corrigindo bug *PlatformNotSupportedException bug* em algumas distribuições de Linux
-
+- Atualiza o PKI SDK para versão 2.0.3, corrigindo bug _PlatformNotSupportedException bug_ em algumas distribuições de Linux
 
 <a name="v1-0-2" />
 ### 1.0.2 (2017-11-07)
@@ -299,14 +299,12 @@
 - Atualiza o PKI SDK para versão 2.0.2
 - Adiciona informação da versão do programa no comando `help`
 
-
 <a name="v1-0-1" />
 ### 1.0.1 (2017-10-27)
 
 - Corrige bug na compilação que fazia com que arquivos desnecessários fossem incluidos no pacote
 
-*Versão disponível apenas para Linux*
-
+_Versão disponível apenas para Linux_
 
 <a name="v1-0-0" />
 ### 1.0.0 (2017-10-26)
@@ -327,4 +325,4 @@
   - `complete-sig`
   - `help`
 
-*Versão disponível apenas para Linux*
+_Versão disponível apenas para Linux_

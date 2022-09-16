@@ -1,5 +1,10 @@
 # PKI Express changelog
 
+<a name="v1-28-1" />
+### 1.28.1 (2022-09-16)
+
+- Fix behavior when a cloud certificate provider return more than one certificate with the same identifier by choosing one of these certificates.
+
 <a name="v1-28-0" />
 ### 1.28.0 (2022-08-25)
 
@@ -108,7 +113,6 @@
 - Fix ValidationItemType conversion
 - Improve certificate model to reaturn KeyUsage value
 - Add support to return the program's current version (command `version`)
-
 
 <a name="v1-20-0" />
 ### 1.20.0 (2020-10-05)
@@ -235,7 +239,7 @@
 <a name="v1-6-0" />
 ### 1.6.0 (2018-06-18)
 
-- Add support for *Certificación de Origen Digital* (COD) signature policy on XML signatures.
+- Add support for _Certificación de Origen Digital_ (COD) signature policy on XML signatures.
 
 <a name="v1-5-0" />
 ### 1.5.0 (2018-05-18)
@@ -263,12 +267,10 @@
 - Add support for [using a web proxy](config/proxy.md)
 - Update PKI SDK to 2.0.13
 
-
 <a name="v1-2-1" />
 ### 1.2.1 (2018-01-18)
 
 - Update PKI SDK to 2.0.11, thus fixing bug that caused network delays even with `--offline` enabled
-
 
 <a name="v1-2-0" />
 ### 1.2.0 (2018-01-17)
@@ -276,7 +278,6 @@
 - Add global flag `--offline` to allow offline operations
 - Fix bug that caused activation to be required for `help` command
 - Update PKI SDK to 2.0.10
-
 
 <a name="v1-1-0" />
 ### 1.1.0 (2017-12-06)
@@ -286,12 +287,10 @@
 - Add `config` command
 - Update PKI SDK to 2.0.7, fixing CRL cache bug on Linux
 
-
 <a name="v1-0-3" />
 ### 1.0.3 (2017-11-15)
 
-- Update PKI SDK to 2.0.3, fixing *PlatformNotSupportedException bug* on certain Linux distributions
-
+- Update PKI SDK to 2.0.3, fixing _PlatformNotSupportedException bug_ on certain Linux distributions
 
 <a name="v1-0-2" />
 ### 1.0.2 (2017-11-07)
@@ -300,14 +299,12 @@
 - Update PKI SDK to 2.0.2
 - Add version information on `help` command
 
-
 <a name="v1-0-1" />
 ### 1.0.1 (2017-10-27)
 
 - Fixed bug on compilation which caused unnecessary files to be included on the package
 
-*This version was only released for Linux*
-
+_This version was only released for Linux_
 
 <a name="v1-0-0" />
 ### 1.0.0 (2017-10-26)
@@ -328,4 +325,4 @@
   - `complete-sig`
   - `help`
 
-*This version was only released for Linux*
+_This version was only released for Linux_
