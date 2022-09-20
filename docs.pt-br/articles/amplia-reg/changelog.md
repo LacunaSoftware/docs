@@ -1,5 +1,50 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<a name="v1-1-0" />
+## 1.1.0 (2022-09-19)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-217 Reaproveitamento de dados de pedidos antigos
+
+ARNG-210 Geração de documentos personalizada para Code100
+
+ARNG-224 Envio de SMS com Amazon SNS
+
+ARNG-227 Provedor de envio de SMS "EmailDump"
+
+### Melhorias
+
+ARNG-223 Ocultar seleção de tipo de emissão na criação de pedido enquanto não há videoconferência
+
+ARNG-220 Pré-selecionar token caso só haja um conectado
+
+ARNG-213 Revisar motivos de pendência, recusa e revogação
+
+ARNG-211 Melhorar inicialização dos tipos de certificados paraguaios
+
+ARNG-209 Exibir informação de tamanho máximo por arquivo no upload de documentos
+
+ARNG-200 Permitir agentes de validação revogarem certificados
+
+ARNG-186 Refatoração do registro de eventos
+
+ARNG-225 Registrando events no log da aplicação
+
+### Correções de bugs
+
+ARNG-216 Erro ao tentar modificar um campo como data de nascimento com valor inválido
+
+ARNG-215 O uso de uma imagem de identificação muito grande faz com que a tela se sobreponha aos botões
+
+ARNG-207 Input de número do pedido para iniciar validação não aceita número de pedido formatado
+
+ARNG-202 Checkbox de iniciar validação está aparecendo na parte de gestão
+
+
+
 <a name="v1-0-2" />
 ## 1.0.2 (2022-08-17)
 

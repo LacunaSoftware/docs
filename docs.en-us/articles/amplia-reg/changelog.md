@@ -1,5 +1,50 @@
 ﻿# Amplia Reg changelog
 
+<a name="v1-1-0" />
+## 1.1.0 (2022-09-19)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-217 Pre-fill order data from previous orders
+
+ARNG-210 Document generation customizations for Code100
+
+ARNG-224 Add support for SMS provider Amazon SNS
+
+ARNG-227 Add support for "EmailDump" SMS provider
+
+### Improvements
+
+ARNG-223 Hide selection of validation kind while face-to-face is the only option actually implemented
+
+ARNG-220 Pre-select token if a single token is detected
+
+ARNG-213 Revise reasons for opening pending issues, refusal and revocation
+
+ARNG-211 Improve initialization of PY certificate types
+
+ARNG-209 Display maximum file on document upload page
+
+ARNG-200 Allow validation agents to revoke certificates
+
+ARNG-186 Refactor history recording
+
+ARNG-225 Registering events on application log
+
+### Bug fixes
+
+ARNG-216 Error 400 when attempting to change the birth date to an invalid date
+
+ARNG-215 Oversized images overlap buttons on confirmation page
+
+ARNG-207 Order number input does not accept pasting formatted numbers
+
+ARNG-202 "Start validation" checkbox is appearing when creating an order from management area
+
+
+
 <a name="v1-0-2" />
 ## 1.0.2 (2022-08-17)
 
