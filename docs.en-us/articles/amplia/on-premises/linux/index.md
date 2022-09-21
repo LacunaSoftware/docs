@@ -5,6 +5,7 @@
 * [Ubuntu Server](install-ubuntu.md)
 * [Red Hat Enterprise Linux](install-rhel.md)
 * [Oracle Linux](install-oracle.md)
+* [Rocky Linux](install-rocky.md)
 
 > [!NOTE]
 > Please contact us if you need support for a specific distribution.

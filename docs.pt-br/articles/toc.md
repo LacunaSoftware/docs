@@ -275,6 +275,7 @@
 #### [Instalação em Ubuntu Server](amplia/on-premises/linux/install-ubuntu.md)
 #### [Instalação em Red Hat Enterprise](amplia/on-premises/linux/install-rhel.md)
 #### [Instalação em Oracle Linux](amplia/on-premises/linux/install-oracle.md)
+#### [Instalação em Rocky Linux](amplia/on-premises/linux/install-rocky.md)
 #### [Atualização](amplia/on-premises/linux/update.md)
 #### [Resolução de problemas](amplia/on-premises/linux/troubleshoot/index.md)
 ##### [Verificando os logs](amplia/on-premises/linux/troubleshoot/check-logs.md)
