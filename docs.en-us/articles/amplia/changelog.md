@@ -1,5 +1,18 @@
 ﻿# Amplia changelog
 
+<a name="v3-15-1" />
+### 3.15.1 (2022-09-23)
+
+Improvements:
+
+* [AMP-254] - Optimized job queue monitoring
+* [AMP-255] - Optimized CRL and CA Issuers access routes
+* [AMP-257] - Add support for "EmailDump" SMS provider
+
+Updates database model: no
+
+
+
 <a name="v3-15-0" />
 ### 3.15.0 (2022-06-13)
 

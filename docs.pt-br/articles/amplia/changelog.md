@@ -1,5 +1,18 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v3-15-1" />
+### 3.15.1 (2022-09-23)
+
+Melhorias:
+
+* [AMP-254] - Otimizar gerenciamento de filas de jobs
+* [AMP-255] - Otimizar rotas de acesso a CRLs e CA Issuers
+* [AMP-257] - Provedor de envio de SMS "EmailDump"
+
+Atualiza modelo do banco de dados: não
+
+
+
 <a name="v3-15-0" />
 ### 3.15.0 (2022-06-13)
 
