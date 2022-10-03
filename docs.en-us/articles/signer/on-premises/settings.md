@@ -206,6 +206,8 @@ will be shown. If a user does not have any certificate in the configured provide
 	* **&lt;provider>:Provider** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the provider.
 	* **&lt;provider>:ProtocolVariant** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the protocol variant.
 
+* **DiscoveryEnabled** (v1.48.1): if `true`, disables discovery of cloud certificate providers (displays all configured providers for every user).
+
 ###  *VisualRepresentation* Settings
 
 Under section **VisualRepresentation**:
@@ -428,6 +430,15 @@ Example:
 ```
 CustomResources__Localizers__MailFormatter__Resources__SignDocument__Default=Sign Document
 ```
+
+###  *Reminder* Settings (v1.49.0)
+
+Under section **Reminder**:
+
+* **DefaultReminderPeriodInDays** (default: `3`): the number of days to wait before sending action reminder notifications for organization documents. If set to `0` won't send reminder notifications.
+* **MaxNumberOfNotificationsForReminder** (default: `10`): the maximum number of notifications sent for a reminder.
+* **MaxNumberOfRemindersPerScheduleJobRound** (default: `100`): the maximum number of reminders processed by one round of the schedule job.
+
 
 ###  *SigningTags* Settings
 
