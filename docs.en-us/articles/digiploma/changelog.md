@@ -4,6 +4,68 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-3-1" />
+### 2.3.1 (2022-10-06)
+
+* Correções de bugs
+  * [AUT-236] Review screen doesn't loading when Situacao is "Não habilitado" in Enade
+  * [AUT-234] It's not possible to generate RVHE if there is a Estagio without Concedente
+
+* Melhorias
+  * [AUT-101] Treat the case that the diploma has been excluded in the signer when cancel the degree
+
+* Novas funcionalidades
+  * [AUT-239] Create tag that dynamically returns the identification document along with the type
+  * [AUT-238] Create tag to return text type of regulatory act in process
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-3-0" />
+### 2.3.0 (2022-10-01)
+
+* Correções de bugs
+  * [AUT-210] Mantenedora minimum data conversion doesn't check if value is null
+
+* Melhorias
+  * [AUT-233] Check if Emission has has information about academic transcript
+  * [AUT-228] Only allow 1st copy degree to automatically generate academic transcript
+  * [AUT-222] Unify code that throws error regarding expected template type
+  * [AUT-221] Add validations referring to the academic transcript template
+  * [AUT-218] Add academic transcript route as child of degree details route
+
+* Novas funcionalidades
+  * [AUT-230] Generate XMLs without spaces and line breaks
+  * [AUT-229] Create API to create academic transcript in a unitary way
+  * [AUT-225] Validate the flow action sent when to create a degree via API
+  * [AUT-220] Add academic transcript documentation and new webhooks to Swagger
+  * [AUT-217] Create auto-cancel message constant for Registration
+  * [AUT-200] Allow degrees from Lyceum issuers to be registered by Integration
+  * [AUT-195] Implement the academic transcript XML
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v2-2-6" />
+### 2.2.6 (2022-09-20)
+
+* Novas funcionalidades
+  * [AUT-214] Create API to resend webhooks
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-2-5" />
+### 2.2.5 (2022-09-15)
+
+* Correções de bugs
+  * [AUT-213] Application is allowing the diploma creation with HoraAula equal 0
+  * [AUT-212] Error not displayed when Enade without Edicao is sent
+  * [AUT-211] Review page doesn't load if has Estagio without Concedente
+
+* Melhorias
+  * [AUT-209] Remove template reference when cancel Emission
+  * [AUT-198] Validate if academic documentation XML is signed
+
+Atualiza modelo do banco de dados: não
+
 <a name="v2-2-4" />
 ### 2.2.4 (2022-09-12)
 
