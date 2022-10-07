@@ -4,6 +4,68 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-3-1" />
+### 2.3.1 (2022-10-06)
+
+* Correções de bugs
+  * [AUT-236] Tela de revisão não carrega quando a situação é não habilitado no Enade
+  * [AUT-234] Não é possível gerar RVHE caso exista Estágio sem concedente
+
+* Melhorias
+  * [AUT-101] Tratar o caso do diploma ter sido excluido no signer ao anular diploma
+
+* Novas funcionalidades
+  * [AUT-239] Criar tag que retorne de forma dinâmica o documento de identificação juntamente com o tipo
+  * [AUT-238] Criar tag para retornar texto tipo de ato regulatório em tramitação
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-3-0" />
+### 2.3.0 (2022-10-01)
+
+* Correções de bugs
+  * [AUT-210] Conversão para dados mínimos da mantenedora não verifica se valor é nulo
+
+* Melhorias
+  * [AUT-233] Verificar se emissão possui informações sobre histórico escolar
+  * [AUT-228] Permitir apenas que diplomas de 1º via gerem histórico automaticamente
+  * [AUT-222] Unificar código que lança erro referente ao tipo esperado de template
+  * [AUT-221] Adicionar validações referentes ao template do histórico
+  * [AUT-218] Adicionar rota do histórico como filha da rota de detalhes do diploma
+
+* Novas funcionalidades
+  * [AUT-230] Gerar XMLs sem espaços e quebras de linha
+  * [AUT-229] Criar API para criar histórico de forma unitária
+  * [AUT-225] Validar o fluxo enviado quando criar um diploma pela API
+  * [AUT-220] Adicionar documentação do histórico e novos webhooks ao Swagger
+  * [AUT-217] Criar constante com mensagem de cancelamento automático para registro
+  * [AUT-200] Permitir que diplomas de Emissoras com Lyceum sejam registrados por Integração
+  * [AUT-195] Implementar o XML de Histórico Escolar
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v2-2-6" />
+### 2.2.6 (2022-09-20)
+
+* Novas funcionalidades
+  * [AUT-214] Criar API para reenviar webhooks
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-2-5" />
+### 2.2.5 (2022-09-15)
+
+* Correções de bugs
+  * [AUT-213] A aplicação está permitindo a criação de diploma com HoraAula com valor 0
+  * [AUT-212] Não é apresentado erro quando é enviado Enade sem Edição
+  * [AUT-211] Tela de revisão não carrega caso possua estágio sem concedente
+
+* Melhorias
+  * [AUT-209] Remover referência a template ao anular Emissão
+  * [AUT-198] Validar se XML da documentação acadêmica está assinado
+
+Atualiza modelo do banco de dados: não
+
 <a name="v2-2-4" />
 ### 2.2.4 (2022-09-12)
 
