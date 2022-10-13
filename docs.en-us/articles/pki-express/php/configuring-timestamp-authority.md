@@ -2,11 +2,11 @@
 
 When performing a signature with a policy that requires a timestamp integration, you must configure a timestamp authority for your [PkiExpressOperator](https://github.com/LacunaSoftware/PkiExpressPhp/blob/develop/src/PkiExpressOperator.php) class or **any class that inherits from it**.
 
-Use the class [TimestampAuthority.php](https://github.com/LacunaSoftware/PkiExpressPhp/blob/develop/src/TimestampAuthority.php) to configure the communication with the timestamp provider.
+Use the class [TimestampAuthority](https://github.com/LacunaSoftware/PkiExpressPhp/blob/develop/src/TimestampAuthority.php) to configure the communication with the timestamp provider.
 
 ## Using REST PKI's timestamp provider
 
-To use [REST PKI](../../rest-pki/index.md)'s timestamp provider, you need to have the credentials required by the communication between PKI Express and REST PKI. For simplicity, you can use your access token to perform this communication (see this [article](../../rest-pki/requesting-timestamps.md).
+To use [REST PKI](../../rest-pki/index.md)'s timestamp provider, you need to have the credentials required by the communication between PKI Express and REST PKI. For simplicity, you can use your access token to perform this communication (see this [article](../../rest-pki/requesting-timestamps.md)).
 
 First, create an account into REST PKI [website](https://pki.rest/) and **acquire an access token** in the REST PKI's dashboard. And, configure you application with the following parameters:
 
@@ -51,4 +51,5 @@ Use the method `setSSLAuthentication()` with the **certificate thumbprint** to c
 
 [!include[timestamp-authority-token.md](../../../../includes/pki-express/php/timestamp-authority-ssl.md)]
 
+> [!NOTE]
 > Here, the PKI Express will look into the certificate store of your application for the certificate. It will filter the existing certificates by their thumbprints.

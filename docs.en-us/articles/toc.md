@@ -198,6 +198,7 @@
 ### [Plain](pki-express/php/plain.md)
 ### [Visual Representation](pki-express/php/visual-rep/index.md)
 ### [Trusting in custom certificates](pki-express/php/trusting-in-custom-certificates.md)
+### [Configuring timestamp authority](pki-express/php//configuring-timestamp-authority.md)
 ### [Converting from REST PKI](pki-express/php/convert-from-restpki.md)
 ## [Using on Java](pki-express/java/index.md)
 ### [Signature process explained](pki-express/java/how-it-works.md)

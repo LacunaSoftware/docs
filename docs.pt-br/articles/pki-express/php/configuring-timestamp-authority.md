@@ -2,7 +2,7 @@
 
 Quando se realiza uma assinatura com um política que exija uma integração com o carimbo de tempo, é preciso configurar uma autoridade de carimbo de tempo para usa classe [PkiExpressOperator](https://github.com/LacunaSoftware/PkiExpressPhp/blob/develop/src/PkiExpressOperator.php) ou **qualquer classe que herda dela**.
 
-Use a classe [TimestampAuthority.php](https://github.com/LacunaSoftware/PkiExpressPhp/blob/develop/src/TimestampAuthority.php) para configurar a comunicação com o provedor de carimbo de tempo.
+Use a classe [TimestampAuthority](https://github.com/LacunaSoftware/PkiExpressPhp/blob/develop/src/TimestampAuthority.php) para configurar a comunicação com o provedor de carimbo de tempo.
 
 ## Usando o provedor de carimbo de tempo do REST PKI
 
@@ -52,4 +52,5 @@ Use o método `setSSLAuthentication()` com o **thumbprint do certificado** para 
 
 [!include[timestamp-authority-token.md](../../../../includes/pki-express/php/timestamp-authority-ssl.md)]
 
+> [!NOTE]
 > Aqui, o PKI Express irá olhar no _storage_ de certificado da aplicação para olhar o certificado deseja. Ele irá filtrar os certificados existentes por seus thumbprints.

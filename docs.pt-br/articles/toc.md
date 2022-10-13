@@ -198,6 +198,7 @@
 ### [Plain](pki-express/php/plain.md)
 ### [Representação Visual](pki-express/php/visual-rep/index.md)
 ### [Confiando em certificados que não sejam da ICP-Brasil](pki-express/php/trusting-in-custom-certificates.md)
+### [Configurando uma autoridade de carimbo de tempo](pki-express/php/configuring-timestamp-authority.md)
 ### [Convertendo do REST PKI](pki-express/php/convert-from-restpki.md)
 ## [Usando em Java](pki-express/java/index.md)
 ### [Como funciona a assinatura](pki-express/java/how-it-works.md)
