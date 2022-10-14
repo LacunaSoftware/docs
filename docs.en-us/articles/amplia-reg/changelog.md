@@ -1,5 +1,52 @@
 ﻿# Amplia Reg changelog
 
+<a name="v1-2-0" />
+## 1.2.0 (2022-10-14)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-230 Session idle timeout
+
+### Improvements
+
+ARNG-244 Refactor certificate types
+
+ARNG-242 Additional filters on order search
+
+ARNG-219 Allow confirmation agents to pick orders to confirm arbitrarily from a list
+
+### Bug fixes
+
+ARNG-241 Cannot type letters on the identifier filter of the order search \(PY identifiers are now alphanumeric\)
+
+ARNG-231 Overlapping fields on order confirmation
+
+
+
+<a name="v1-1-2" />
+## 1.1.2 (2022-09-26)
+
+Updates database model: no
+
+### Improvements
+
+ARNG-228 SMS provider Tigo
+
+
+
+<a name="v1-1-1" />
+## 1.1.1 (2022-09-26)
+
+Updates database model: no
+
+### Improvements
+
+ARNG-229 Display friendly message when agent certificate is not found
+
+
+
 <a name="v1-1-0" />
 ## 1.1.0 (2022-09-19)
 

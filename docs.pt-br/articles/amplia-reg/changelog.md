@@ -1,5 +1,51 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<a name="v1-2-0" />
+## 1.2.0 (2022-10-14)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-230 Timeout de sessão por inatividade
+
+### Melhorias
+
+ARNG-244 Refatorar tipos de certificado
+
+ARNG-242 Filtros adicionais na busca de pedidos
+
+ARNG-219 Permitir ao ACI escolher um pedido para fazer conferência a partir de uma lista
+
+### Correções de bugs
+
+ARNG-241 Busca por pedidos não permite digitar letras no campo de identificador \(que agora é alfanumérico para pedidos PY\)
+
+ARNG-231 Campos se sobrepõem na tela de verificação
+
+
+
+<a name="v1-1-2" />
+## 1.1.2 (2022-09-26)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-228 Envio de SMS com provedor Tigo
+
+
+<a name="v1-1-1" />
+## 1.1.1 (2022-09-26)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-229 Apresentar mensagem amigável quando o certificado do agente não for encontrado
+
+
+
 <a name="v1-1-0" />
 ## 1.1.0 (2022-09-19)
 
