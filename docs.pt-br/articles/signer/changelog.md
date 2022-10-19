@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-49-0" />
+### 1.49.0 (2022-10-18)
+
+* Melhorias
+  * [SIG-975] Não exibir botão para fazer login abaixo do ícone após assinar um documento se opção de esconder links na área pública estiver habilitada
+  * [SIG-969] Permitir que se um usuário de regra de assinatura recusar o documento os demais signatário ainda possam assinar
+  * [SIG-944] Otimizar uso de memória
+
+* Correções de bugs
+  * [SIG-991] Rate limiting da iugu ao tentar criar faturas na virada do mês
+  * [SIG-989] Múltiplas notificações enviadas para participante de organização que desabilitou envio de lembretes periódicos
+  * [SIG-970] Opção "Voltar para tela inicial" da tela de acesso restrito não respeita tela inicial personalizada
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-48-1" />
 ### 1.48.1 (2022-09-15)
 

@@ -4,6 +4,21 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-49-0" />
+### 1.49.0 (2022-10-18)
+
+* Improvements
+  * [SIG-975] Do not display login button after signing a document if hide public area links option is enabled
+  * [SIG-969] Allow sign rule users to sign document even if one of the users to refuses to sign
+  * [SIG-944] Optimize memory use
+
+* Bug fixes
+  * [SIG-991] iugu Rate limiting when closing invoices
+  * [SIG-989] Multiple notifications sent to organization that disabled the periodic reminder notifications
+  * [SIG-970] Option "Return to home screen" in the restricted access page does not respect the customized home page
+
+Updates database model: yes
+
 <a name="v1-48-1" />
 ### 1.48.1 (2022-09-15)
 
