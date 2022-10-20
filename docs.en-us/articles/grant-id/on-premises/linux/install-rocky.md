@@ -38,7 +38,7 @@ Enter the following, replacing the `server_name` entry with your [API domain](..
 
 [!include[Site definition](../../../../../includes/grant-id/linux/site-definition-identity-service.md)]
 
-Allow Nginx to access the Amplia service:
+Allow services to make network requests:
 
 [!include[Allow service access](../../../../../includes/linux/centos/allow-service-access.md)]
 
