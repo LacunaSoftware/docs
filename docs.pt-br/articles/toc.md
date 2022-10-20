@@ -352,6 +352,7 @@
 ## [On premises](psc/on-premises/index.md)
 ### [Setup em Linux](psc/on-premises/linux/index.md)
 #### [Instalação em Ubuntu Server](psc/on-premises/linux/install-ubuntu.md)
+#### [Instalação em Rocky Linux](psc/on-premises/linux/install-rocky.md)
 #### [Atualização](psc/on-premises/linux/update.md)
 #### [Resolução de problemas](psc/on-premises/linux/troubleshoot/index.md)
 ##### [Verificando os logs](psc/on-premises/linux/troubleshoot/check-logs.md)

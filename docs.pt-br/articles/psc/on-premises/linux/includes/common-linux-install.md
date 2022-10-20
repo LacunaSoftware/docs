@@ -38,6 +38,9 @@ Insira as raízes confiáveis conforme abaixo:
 * A coleção `StandardPkis` pode conter `Brazil`, `Italy` ou `Peru` denotando que as raízes desses países devem ser consideradas confiáveis
 * A coleção `TrustedRoots` pode conter certificados confiáveis adicionais de AC raiz em formato Base64
 
+> [!WARNING]
+> Este arquivo não suporta comentários
+
 ## Configure o Lacuna PSC
 
 Edite o arquivo de configuração e siga as instruções nele para configurar sua instância do Lacuna PSC:

@@ -36,6 +36,9 @@ Add the trusted root certificates as follows:
 * The collection `StandardPkis` may contain `Brazil`, `Italy` or `Peru` denoting that the root certificates for each of these countries are to be trusted
 * The collection `TrustedRoots` may contain additional trusted CA root certificates encoded in Base64
 
+> [!WARNING]
+> This file does not support comments
+
 ## Configure Lacuna PSC
 
 Edit the configuration file and follow the instructions on it to configure your Lacuna PSC instance:

@@ -18,11 +18,10 @@ On the **Scopes** tab, click on **New API Connection** to create an API connecti
 
 * **Name**: `psc`
 * **Display name**: `PSC`
+* **User Informations (claims)**: check all
 
 After the API connection is created, click on the **Generate** button on the *API Secret* column, then **Generate Secret**.
 This is the `ApiSecret` setting (copy it and save it for later).
-
-Click the ▶ button to expand the API connection and click the 📝 button of the API Scope to edit it. Mark all claims and click **Edit API Scope**.
 
 ### Frontend Application
 
@@ -35,7 +34,7 @@ On the **Applications** tab, click on **New Application** and provide:
 Click the **Settings** tab and set:
 
 * Select the `Allow Access tokens via browser?` checkbox.
-* Deselect the following checkboxes: `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
+* Deselect the following checkboxes: `Front-channel logout session required?` and `Back-channel logout session required?`
 * **Application URL**: the URL of your application. Example: `https://myappname.com`
 * **Allowed URLs**:
   * **Redirect**: you must add 4 redirect URLs that are based on your application URL:
