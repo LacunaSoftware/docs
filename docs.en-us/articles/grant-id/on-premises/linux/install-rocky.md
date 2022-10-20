@@ -1,23 +1,21 @@
-﻿# Installing GrantID on Ubuntu Server
+﻿# Installing GrantID on Rocky Linux
 
-<!-- https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-2.2 -->
-
-Follow these steps to install an [on-premises](../index.md) instance of [GrantID](../../index.md) on an Ubuntu Server.
+Follow these steps to install an [on-premises](../index.md) instance of [GrantID](../../index.md) on Rocky Linux.
 
 > [!TIP]
 > Before you start, make sure you have completed the steps outlined on [Planning before installation](../index.md#planning)
 
 ## Prerequisites
 
-* Ubuntu Server version 22.04, 20.04, 18.04 or 16.04
+* Rocky Linux 8.x
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime 6.0](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
+[!include[Install ASP.NET Core Runtime 6.0](../../../includes/linux/rocky/install-aspnetcore-60.md)]
 
 ## Install Nginx
 
-[!include[Install Nginx](../../../includes/linux/ubuntu/install-nginx.md)]
+[!include[Install Nginx](../../../includes/linux/rocky/install-nginx.md)]
 
 ## Install GrantID
 
@@ -34,15 +32,15 @@ Follow these steps to install an [on-premises](../index.md) instance of [GrantID
 
 Create a site configuration file for the component:
 
-[!include[Create site](../../../../../includes/grant-id/ubuntu/create-site-identity-service.md)]
+[!include[Create site](../../../../../includes/grant-id/rocky/create-site-identity-service.md)]
 
 Enter the following, replacing the `server_name` entry with your [API domain](../index.md#planning):
 
 [!include[Site definition](../../../../../includes/grant-id/linux/site-definition-identity-service.md)]
 
-Enable the site:
+Allow Nginx to access the Amplia service:
 
-[!include[Enable site](../../../../../includes/grant-id/ubuntu/enable-site-identity-service.md)]
+[!include[Allow service access](../../../../../includes/linux/centos/allow-service-access.md)]
 
 Test the Nginx configuration and reload it:
 
@@ -59,15 +57,11 @@ Test the site (replace *api.id.patorum.com* with your [API domain](../index.md#p
 
 Create a site configuration file for the component:
 
-[!include[Create site](../../../../../includes/grant-id/ubuntu/create-site-auth-server.md)]
+[!include[Create site](../../../../../includes/grant-id/rocky/create-site-auth-server.md)]
 
 Enter the following, replacing the `server_name` entry with your [base and login domains](../index.md#planning):
 
 [!include[Site definition](../../../../../includes/grant-id/linux/site-definition-auth-server.md)]
-
-Enable the site:
-
-[!include[Enable site](../../../../../includes/grant-id/ubuntu/enable-site-auth-server.md)]
 
 Test the Nginx configuration and reload it:
 
@@ -84,15 +78,11 @@ Test the site (replace *id.patorum.com* with your [base domain](../index.md#plan
 
 Create a site configuration file for the component:
 
-[!include[Create site](../../../../../includes/grant-id/ubuntu/create-site-console.md)]
+[!include[Create site](../../../../../includes/grant-id/rocky/create-site-console.md)]
 
 Enter the following, replacing the `server_name` entry with your [console domain](../index.md#planning):
 
 [!include[Site definition](../../../../../includes/grant-id/linux/site-definition-console.md)]
-
-Enable the site:
-
-[!include[Enable site](../../../../../includes/grant-id/ubuntu/enable-site-console.md)]
 
 Test the Nginx configuration and reload it:
 

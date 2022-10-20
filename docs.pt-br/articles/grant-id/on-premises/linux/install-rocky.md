@@ -1,0 +1,4 @@
+﻿# Instalação do GrantID em Rocky Linux
+
+<!-- link to version in English -->
+<div data-alt-locales="en-us"></div>

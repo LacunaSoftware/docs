@@ -3,6 +3,7 @@
 O [Amplia](../../index.md) pode ser instalado nas seguintes distribuições de Linux:
 
 * [Ubuntu Server](install-ubuntu.md)
+* [Rocky Linux](install-rocky.md)
 <!--
 [Red Hat Enterprise Linux](install-rhel.md)
 [Oracle Linux](install-oracle.md)
