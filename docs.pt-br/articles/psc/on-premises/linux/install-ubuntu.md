@@ -32,6 +32,8 @@ Ative o site:
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
+[!include[Production notes](../includes/production-notes.md)]
+
 ## Veja também
 
 * [Atualização do Lacuna PSC em Linux](update.md)

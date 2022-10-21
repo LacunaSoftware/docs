@@ -30,6 +30,8 @@ Create a site configuration file for Lacuna PSC:
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
+[!include[Production notes](../includes/production-notes.md)]
+
 ## See also
 
 * [Configure OpenID Connect](../configure-oidc.md)

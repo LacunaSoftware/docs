@@ -30,6 +30,8 @@ Crie um arquivo de configuração para o site do Lacuna PSC:
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
+[!include[Production notes](../includes/production-notes.md)]
+
 ## Veja também
 
 * [Atualização do Lacuna PSC em Linux](update.md)
