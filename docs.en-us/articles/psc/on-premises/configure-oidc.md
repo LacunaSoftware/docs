@@ -33,8 +33,8 @@ On the **Applications** tab, click on **New Application** and provide:
 
 Click the **Settings** tab and set:
 
-* Select the `Allow Access tokens via browser?` checkbox.
-* Deselect the following checkboxes: `Front-channel logout session required?` and `Back-channel logout session required?`
+* Check the `Allow Access tokens via browser?` checkbox.
+* Uncheck the following checkboxes (if checked): `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
 * **Application URL**: the URL of your application. Example: `https://myappname.com`
 * **Allowed URLs**:
   * **Redirect**: you must add 4 redirect URLs that are based on your application URL:
@@ -44,10 +44,10 @@ Click the **Settings** tab and set:
     * `<applicationURL>/private`
   * **CORS origins**: `<applicationURL>` without trailing slash.
   * **Post Logout**: `<applicationURL>` without trailing slash.
-* **Allowed Identification Scopes**: mark all scopes
-* **Allowed API scopes**: mark the `PSC` API scope
-* Mark the `Is email required?` checkbox
-* It is recommended to mark the option `Verify user's email` so only verified email users are allowed to complete the login process.
+* **Allowed Identification Scopes**: check all
+* **Allowed API scopes**: check the `PSC` API scope checkbox
+* Check the `Is email required?` checkbox
+* It is recommended to check the option `Verify user's email` so only verified email users are allowed to complete the login process.
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
@@ -62,7 +62,7 @@ On the **Applications** tab, click on **New Application** again and provide:
 
 Click the **Settings** tab and set:
 
-* **Allowed API scopes**: select the `Manage subscription's users` scope.
+* **Allowed API scopes**: check the `Manage subscription's users` checkbox.
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
@@ -80,11 +80,11 @@ On the **Applications** tab, click on **New Application** again and provide:
 
 In the application details, choose the Settings tab to set:
 
-* Select the `Allow offline access?` checkbox.
+* Check the `Allow offline access?` checkbox.
 * **Access Token Type**: select `Reference Token`
 * **Access Token Lifetime**: change to `36000000`
-* **Allowed Identification Scopes**: mark all scopes
-* **Allowed API scopes**: mark the `PSC` scope
+* **Allowed Identification Scopes**: check all scopes
+* **Allowed API scopes**: check the `PSC` scope
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
@@ -105,6 +105,7 @@ Once you have followed the steps above to configure GrantID, fill the section **
 * **ApiSecret**: the generated secret of the API connection
 * **AppSecret**: the generated secret of the backend application
 * **ResourceOwnerPasswordAppSecret**: the generated secret of the ROP application
+* **RequireHttps** (optional): set to `false` if the GrantID instance does not use HTTPS
 
 Example (*.ini* or *.conf* file):
 

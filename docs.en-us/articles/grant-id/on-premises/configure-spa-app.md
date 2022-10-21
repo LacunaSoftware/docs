@@ -42,7 +42,7 @@ On the **Scopes** tab, click on **New Claim** to create a custom Claim, providin
 * **Display name**: the display name of your custom claim. Suggestion: `CPF`.
 * **Validation Options**: the type of validation to use when the value of this claim is provided by a user. Set it to `Cpf`.
 * **Unique**: you may select it as Unique or not according to your application configuration/requirements. If it is not marked as unique it is recommended
-to select the `Visible in profile page?` and `Display in register page?` options.
+to check the `Visible in profile page?` and `Display in register page?` options.
 
 
 ## Create a Custom Identification Scope
@@ -54,7 +54,7 @@ On the **Scopes** tab, click on **New Identification Scope** to create a Custom 
 
 * **Name**: the name of the identification scope. Suggestion: `<sub-namespace>-cpf`. This and other required identification scopes should be set in the `OIDC Custom Scopes` setting as described in installation pages.
 * **Display name**: the display name of the scope. Suggestion: `CPF`.
-* **User Information**: Select the checkbox correspoding to the claim created in the previous step.
+* **User Information**: check the checkbox correspoding to the claim created in the previous step.
 
 ## Create an API Connection
 
@@ -62,9 +62,7 @@ On the **Scopes** tab, click on **New API Connection** to create an API connecti
 
 * **Name**: the name of the API connection. Suggestion: `<my-app-name>-api`. This is referred in installation pages as the `OIDC ApiName`.
 * **Display name**: the display name of your API (shown on consent screens if enabled). Suggestion: `<My App Name> API`.
-
-After the connection is created expand it and edit the API Scope to add informations that you want to include in the access tokens issued for this API.
-Choose all informations including any custom identification scopes.
+* **User Informations (claims)**: check all
 
 ## Create the Applications
 
@@ -81,8 +79,8 @@ On the **Applications** tab, click on **New Application** and provide:
 In the application details, choose the Settings tab to set:
 
 * **Application URL**: the URL of your application. Example: `https://myappname.com`
-* Select the `Allow Access tokens via browser?` checkbox.
-* Deselect the following checkboxes: `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
+* Check the `Allow Access tokens via browser?` checkbox.
+* Uncheck the following checkboxes (if checked): `Require consent?`, `Front-channel logout session required?` and `Back-channel logout session required?`
 * **Allowed URLs**:
   * **Redirect**: you must add 4 redirect URLs that are based on your application URL:
     * `<applicationURL>` without trailing slash.
@@ -91,18 +89,11 @@ In the application details, choose the Settings tab to set:
     * `<applicationURL>/private`
   * **CORS origins**: `<applicationURL>` without trailing slash.
   * **Post Logout**: `<applicationURL>` without trailing slash.
-* **Allowed Identification Scopes**: select the information you want to include in Identity Tokens. Select at least: 
-  * `User identifier (sub)`
-  * `User profile (name, email, phone)`
-  * `Name`
-  * `Email` 
-  * `Phone number` 
-  * `Username`
-  * `CPF` (if created as Custom Identification Scope)
-* **Allowed API scopes**: select the API connection created.
-* **Required Claims**: select the custom claim created (CPF) if it is required that all users in application have this information.
-* **Login Options**: you may enable digital certificate login by selecting the corresponding checkbox. 
-* It is recommended to select the option `Verify user's email` so only verified email users are allowed to complete the login process.
+* **Allowed Identification Scopes**: check all
+* **Allowed API scopes**: check the checkbox corresponding to the API connection created.
+* **Required Claims**: check the checkbox corresponding to the custom claim created (CPF) if it is required that all users in application have this information.
+* **Login Options**: you may enable digital certificate login by checking the corresponding checkbox. 
+* It is recommended to check the option `Verify user's email` so only verified email users are allowed to complete the login process.
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
@@ -117,7 +108,7 @@ On the **Applications** tab, click on **New Application** again and provide:
 
 In the application details, choose the Settings tab to set:
 
-* **Allowed API scopes**: select the `Manage subscription's users` scope.
+* **Allowed API scopes**: check the `Manage subscription's users` checkbox.
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.
