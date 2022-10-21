@@ -368,6 +368,7 @@
 ### [Configuração de storage](psc/on-premises/configure-blob-storage.md)
 ### [Configuração de OIDC](psc/on-premises/configure-oidc.md)
 ### [Configuração de Firebase](psc/on-premises/configure-firebase.md)
+### [Configuração de reCAPTCHA](psc/on-premises/configure-recaptcha.md)
 ### [Configuração de envio de email](psc/on-premises/configure-email.md)
 ### [Configuração de redirecionamento para HTTPS](psc/on-premises/configure-https-redirect.md)
 ### [Verificando a versão instalada](psc/on-premises/check-version.md)
