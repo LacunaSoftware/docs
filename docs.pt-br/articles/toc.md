@@ -344,6 +344,7 @@
 ### [Configuração de envio de email](amplia-reg/on-premises/configure-email.md)
 ### [Configuração de envio de SMS](amplia-reg/on-premises/configure-sms.md)
 ### [Configuração de redirecionamento para HTTPS](amplia-reg/on-premises/configure-https-redirect.md)
+### [Configuração de reCAPTCHA](amplia-reg/on-premises/configure-recaptcha.md)
 ### [Verificando a versão instalada](amplia-reg/on-premises/check-version.md)
 ## [Histórico de versões](amplia-reg/changelog.md)
 <!-- End of Amplia Reg -->

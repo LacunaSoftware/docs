@@ -32,6 +32,8 @@ Ative o site:
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
+[!include[Production notes](../includes/production-notes.md)]
+
 ## Veja também
 
 * [Atualização do Amplia Reg em Linux](update.md)

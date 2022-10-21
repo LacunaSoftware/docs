@@ -17,6 +17,8 @@ claiming to have come from the website were indeed originated by a human operato
 1. Click on **Submit**
 1. Copy the **site key** and the **secret key**
 
+## Configuring Lacuna PSC
+
 Having both keys, edit the Lacuna PSC configuration file and fill the section **Recaptcha**, settings **SiteKey** and **SecretKey**.
 
 Example (*.ini* or *.conf* file):
