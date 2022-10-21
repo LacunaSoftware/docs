@@ -7,7 +7,7 @@ Follow these steps to install an [on-premises](../index.md) instance of [GrantID
 
 ## Prerequisites
 
-* Rocky Linux 8.x
+* Rocky Linux 8.x or greater
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 

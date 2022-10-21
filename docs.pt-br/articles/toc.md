@@ -314,6 +314,7 @@
 ### [Configuração de OIDC](amplia/on-premises/configure-oidc.md)
 ### [Configuração de envio de email](amplia/on-premises/configure-email.md)
 ### [Configuração de envio de SMS](amplia/on-premises/configure-sms.md)
+### [Configuração de hospedagem de certificados em nuvem](amplia/on-premises/configure-cert-management.md)
 ### [Configuração de redirecionamento para HTTPS](amplia/on-premises/configure-https-redirect.md)
 ### [Verificando a versão instalada](amplia/on-premises/check-version.md)
 ### [Atualizando para 3.0](amplia/on-premises/update-30.md)

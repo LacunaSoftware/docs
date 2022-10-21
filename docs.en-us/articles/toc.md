@@ -314,6 +314,7 @@
 ### [Configure OIDC](amplia/on-premises/configure-oidc.md)
 ### [Configure email sending](amplia/on-premises/configure-email.md)
 ### [Configure SMS sending](amplia/on-premises/configure-sms.md)
+### [Configure cloud certificate management](amplia/on-premises/configure-cert-management.md)
 ### [Configure HTTPS redirection](amplia/on-premises/configure-https-redirect.md)
 ### [Run without db_owner](amplia/on-premises/unprivileged-db-user.md)
 ### [Checking the installed version](amplia/on-premises/check-version.md)
