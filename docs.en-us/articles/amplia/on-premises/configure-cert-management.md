@@ -5,28 +5,28 @@ This is typically done together with [Lacuna PSC](../../psc/index.md).
 
 This feature is configured through the **CertificateManagement** section, having the following settings:
 
-* **KeyStore**: name of the [key store](key-stores/index.md) that will be used to generate and store the certificate keys (no default, must be filled)
+* **KeyStore**: name of the [key store](key-stores/index.md) that will be used to generate and store the certificate keys
 * **IssuingService**: see [issuing service](#issuing-service) below
-* **PukGenerationLength**: length of auto-generated PUKs (defaults to `8`)
+* **PukGenerationLength**: length of auto-generated PUKs. Defaults to `8`
 * **IssueSessionTimeoutMinutes**: maximum duration in minutes of an issue session. Accepts decimals, defaults to `15`
 * **AuthenticationSessionTimeout**: maximum duration in minutes of an authentication session. Accepts decimals, defaults to `15`
 * **OperationSessionTimeoutMinutes**: maximum duration in minutes of an operation session. Accepts decimals, defaults to `15`
 * **PinAuth**: PIN authentication options
   * **MaxFailedAttempts**: maximum failed attempts before PIN authentication is locked out. Defaults to `5`
   * **LockPermanently**: whether the PIN lockout should be permanent. Defaults to `True`
-  * **InitialLockPeriodMinutes**: duration of the first PIN lockout period, in minutes (given that timeout is temporary). Each subsequent lockout lasts twice the duration of the last lockout. No default, must be set if **LockPermanently** is set to `False`.
+  * **InitialLockPeriodMinutes**: if the lockout is not permanent, defines the duration of the first lockout period, in minutes (each subsequent lockout lasts twice as long as the previous lockout). No default, must be set if **LockPermanently** is set to `False`.
 * **PukAuth**: PUK authentication options
   * **MaxFailedAttempts**: maximum failed attempts before PUK authentication is locked out. Defaults to `5`
   * **LockPermanently**: whether the PUK lockout should be permanent. Defaults to `True`
-  * **InitialLockPeriodMinutes**: duration of the first PUK lockout period, in minutes (given that timeout is temporary). Each subsequent lockout lasts twice the duration of the last lockout. No default, must be set if **LockPermanently** is set to `False`.
+  * **InitialLockPeriodMinutes**: if the lockout is not permanent, defines the duration of the first lockout period, in minutes (each subsequent lockout lasts twice as long as the previous lockout). No default, must be set if **LockPermanently** is set to `False`.
 * **OtpAuth**: OTP authentication options
   * **MaxFailedAttempts**: maximum failed attempts before OTP authentication is locked out. Defaults to `5`
   * **LockPermanently**: whether the OTP lockout should be permanent. Defaults to `False`
-  * **InitialLockPeriodMinutes**: duration of the first OTP lockout period, in minutes (given that timeout is temporary). Each subsequent lockout lasts twice the duration of the last lockout. Defaults to `1`
+  * **InitialLockPeriodMinutes**: if the lockout is not permanent, defines the duration of the first lockout period, in minutes (each subsequent lockout lasts twice as long as the previous lockout). Defaults to `1`
 * **SmsAuth**: SMS authentication options
   * **MaxFailedAttempts**: maximum failed attempts before SMS authentication is locked out. Defaults to `5`
   * **LockPermanently**: whether the SMS lockout should be permanent. Defaults to `False`
-  * **InitialLockPeriodMinutes**: duration of the first SMS lockout period, in minutes (given that timeout is temporary). Each subsequent lockout lasts twice the duration of the last lockout. Defaults to `1`
+  * **InitialLockPeriodMinutes**: if the lockout is not permanent, defines the duration of the first lockout period, in minutes (each subsequent lockout lasts twice as long as the previous lockout). Defaults to `1`
   * **CodeSize**: size of verification codes. Defaults to `6`
 * **PukPolicy**: minimum requirements for user-defined PUKs
   * **MinLength**: minimum length, defaults to `8`
@@ -34,6 +34,9 @@ This feature is configured through the **CertificateManagement** section, having
   * **MinLowercaseLetters**: minimum number of lowercase letters, defaults to `0`
   * **MinDigits**: minimum number of digits, defaults to `0`
   * **MinSpecialCaracters**: minimum number of special characters, defaults to `0`
+
+> [!NOTE]
+> Regardless of the value of the setting **LockPermanently** of the subsection **PinAuth**, a successful PUK authentication always unlocks the PIN authentication
 
 The PIN policy is not configured on the *CertificateManagement* section, but rather on the **PinPolicy** subsection of the key store configuration. If the key
 store is an HSM, the PIN policy must match the user password policy configured on the HSM.
@@ -96,6 +99,9 @@ The setting **IssuingService** controls what issuing service will be used to iss
 
 To use Amplia itself to issue the certificates, merely omit the **IssuingService** setting.
 
+> [!WARNING]
+> The local issuing service is experimental and is not suited for production environments.
+
 ### Amplia Reg issuing service
 
 To use an instance of [Amplia Reg](../../index.md) to issue the certificates, you must create an application on your existing Amplia Reg instance representing
@@ -119,7 +125,8 @@ Example (JSON configuration):
 ```json
 	...,
 	"CertificateManagement": {
-		"IssuingService": "AmpliaReg"
+		"IssuingService": "AmpliaReg",
+		...
 	},
 	"AmpliaReg": {
 		"Endpoint": "https://your-amplia-reg-instance.com/",
@@ -145,7 +152,8 @@ Example (JSON configuration):
 ```json
 	...,
 	"CertificateManagement": {
-		"IssuingService": "PMCert"
+		"IssuingService": "PMCert",
+		...
 	},
 	"PMCert": {
 		"Endpoint": "https://your-pm-cert-instance.com/"
