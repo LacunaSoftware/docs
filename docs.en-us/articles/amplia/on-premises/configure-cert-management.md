@@ -41,8 +41,9 @@ This feature is configured through the **CertificateManagement** section, having
 The PIN policy is not configured on the *CertificateManagement* section, but rather on the **PinPolicy** subsection of the key store configuration. If the key
 store is an HSM, the PIN policy must match the user password policy configured on the HSM.
 
-All settings have meaningful default values, except for the **KeyStore** setting, which must be filled. Otherwise, only fill the settings you have a good reason
-to change the default value of.
+> [!TIP]
+> All settings have meaningful default values, except for the **KeyStore** setting and the **PinPolicy** subsection of the key store configuration, which
+> must be filled. Otherwise, only fill the settings you have a good reason to change the default value of.
 
 Example (JSON configuration):
 
