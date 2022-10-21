@@ -368,6 +368,7 @@
 ### [Configure Blob Storage](psc/on-premises/configure-blob-storage.md)
 ### [Configure OIDC](psc/on-premises/configure-oidc.md)
 ### [Configure Firebase](psc/on-premises/configure-firebase.md)
+### [Configure reCAPTCHA](psc/on-premises/configure-recaptcha.md)
 ### [Configure email sending](psc/on-premises/configure-email.md)
 ### [Configure HTTPS redirection](psc/on-premises/configure-https-redirect.md)
 ### [Run without db_owner](psc/on-premises/unprivileged-db-user.md)
