@@ -345,6 +345,7 @@
 ### [Configure SMS sending](amplia-reg/on-premises/configure-sms.md)
 ### [Configure HTTPS redirection](amplia-reg/on-premises/configure-https-redirect.md)
 ### [Configure reCAPTCHA](amplia-reg/on-premises/configure-recaptcha.md)
+### [Configure maps](amplia-reg/on-premises/configure-maps.md)
 ### [Run without db_owner](amplia-reg/on-premises/unprivileged-db-user.md)
 ### [Checking the installed version](amplia-reg/on-premises/check-version.md)
 ## [Changelog](amplia-reg/changelog.md)

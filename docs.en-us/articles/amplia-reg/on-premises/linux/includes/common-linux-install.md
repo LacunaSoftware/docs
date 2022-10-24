@@ -38,6 +38,8 @@ instance and generate an API key for it:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 
+On the `[Maps]` section, fill the `GoogleApiKey` with your **Google Maps Embed API key** ([click here](../../configure-maps.md) if you don't have one).
+
 Fill the remaining settings according to the instructions on the configuration file.
 
 ## Set up a daemon
