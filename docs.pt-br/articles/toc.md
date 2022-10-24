@@ -400,6 +400,7 @@
 ### [Configurar Aplicações SPA](grant-id/on-premises/configure-spa-app.md)
 ### [Configuração do Blob Storage](signer/on-premises/blob-storage.md)
 ### [Configuração do Serilog](signer/on-premises/serilog.md)
+### [Uso dentro de iframe](grant-id/on-premises/allow-iframe.md)
 ### [Configurações](grant-id/on-premises/settings.md)
 ### [Integração com SAML 2](grant-id/on-premises/saml2.md)
 ## [Histórico de versões](grant-id/changelog.md)

@@ -401,6 +401,7 @@
 ### [Configure SPA Applications](grant-id/on-premises/configure-spa-app.md)
 ### [Blob Storage Configuration](grant-id/on-premises/blob-storage.md)
 ### [Serilog Configuration](grant-id/on-premises/serilog.md)
+### [Usage in iframes](grant-id/on-premises/allow-iframe.md)
 ### [Settings](grant-id/on-premises/settings.md)
 ### [SAML 2 Integration](grant-id/on-premises/saml2.md)
 ## [Changelog](grant-id/changelog.md)
