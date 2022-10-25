@@ -137,6 +137,14 @@ For further details related to these scenarios, see our examples on GitHub:
 	* [Document with attachment](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithAttachmentScenario.php)
 	* [Document with description](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithDescriptionScenario.php)
 
+* Node.js: 
+	* [Document with one signer](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithOneSignerScenario.ts)
+	* [Document with two or more signers with order](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithTwoOrMoreSignersWithOrderScenario.ts)
+	* [Document with two or more signers without order](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithTwoOrMoreSignersWithoutOrderScenario.ts)
+	* [Document with approver](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithApproversScenario.ts)
+	* [Document with attachment](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithAttachmentScenario.ts)
+	* [Document with description](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithDescriptionScenario.ts)
+
 
 #### Signing in your own application
 
@@ -194,6 +202,8 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/EmbeddedSignatureScenario.php)
 
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/embeddedSignatureScenario.ts)
+
 <a name="document-marks" />
 
 
@@ -210,6 +220,7 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithPositionedSignaturesScenario.php)
 
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithPositionedSignaturesScenario.ts)
 
 ### Check the document status
 
@@ -265,6 +276,7 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CheckDocumentStatusScenario.php)
 
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/checkDocumentStatusScenario.ts)
 
 ### Send signing reminders
 
@@ -289,6 +301,8 @@ For further details related to these scenarios, see our examples on GitHub:
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/NotifyFlowParticipantsScenario.java)
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/NotifyFlowParticipantsScenario.php)
+
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/notifyFlowParticipantsScenario.ts)
 
 <a name="download-document" />
 
@@ -318,6 +332,8 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DownloadDocumentVersionScenario.php)
 
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/downloadDocumentVersionScenario.ts)
+
 <a name="list-documents"/>
 
 ### List documents
@@ -336,6 +352,8 @@ For further details related to these scenarios, see our examples on GitHub:
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/ListDocumentsScenario.java)
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/ListDocumentsScenario.php)
+
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/listDocumentScenario.ts)
 
 ### Validate document's signatures
 
@@ -439,6 +457,8 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/DeleteDocumentScenario.php)
 
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/deleteDocumentScenario.ts)
+
 ### Cancel document
 
 If you want to cancel a document, it is necessary to send the document ID through a `POST` request filling the body field `reason` as we show in the example below:
@@ -458,6 +478,8 @@ For further details related to these scenarios, see our examples on GitHub:
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CancelDocumentScenario.java)
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CancelDocumentScenario.php)
+
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/cancelDocumentScenario.ts)
 
 ### Refuse a document
 
@@ -479,6 +501,8 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/RefuseDocumentScenario.php)
 
+[Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/refuseDocumentScenario.ts)
+
 
 ### Submit new document version
 
@@ -492,6 +516,8 @@ For further details related to these scenarios, see our examples on GitHub:
 
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/AddNewDocumentVersionScenario.php)
 
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/addNewDocumentVersionScenario.ts)
+
 ### Merge multiple files in a single document
 
 It is possible to upload multiple files and then merge their signatures in a single document (envelope). In order to achieve that, it is necessary to add `isEnvelope=true` parameter and a required `EnvelopeName` parameter to define the name of the envelope. It is important to note that **the merging only works if all file types are PDF**.
@@ -500,6 +526,7 @@ For further details related to these scenarios, see our examples on GitHub:
 * [C#](https://github.com/LacunaSoftware/SignerSamples/blob/master/dotnet/console/Console/Scenarios/CreateDocumentWithEnvelopeScenario.cs)
 * [Java](https://github.com/LacunaSoftware/SignerSamples/blob/master/java/console/src/main/java/com/lacunasoftware/signer/sample/scenarios/CreateDocumentWithEnvelopeScenario.java)
 * [PHP](https://github.com/LacunaSoftware/SignerSamples/blob/master/php/Scenarios/CreateDocumentWithEnvelopeScenario.php)
+* [Node.js](https://github.com/LacunaSoftware/SignerSamples/blob/master/nodejs/scenarios/createDocumentWithEnvelopeScenario.ts)
 
 ## Useful links
 
