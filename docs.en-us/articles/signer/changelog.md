@@ -4,6 +4,28 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-49-2" />
+### 1.49.2 (2022-11-01)
+
+* Improvements
+  * [SIG-998] Add setting to enable menu loading using iframe
+
+* Bug fixes
+  * [SIG-995] Error while signing documemnt whose flow has been updated
+
+Updates database model: no
+
+<a name="v1-49-1" />
+### 1.49.1 (2022-11-01)
+
+* Improvements
+  * [SIG-982] Allow migration of documents between instances
+
+* Bug fixes
+  * [SIG-965] Cannot add user to folder
+
+Updates database model: no
+
 <a name="v1-49-0" />
 ### 1.49.0 (2022-10-18)
 

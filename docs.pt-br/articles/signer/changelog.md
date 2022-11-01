@@ -4,6 +4,28 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-49-2" />
+### 1.49.2 (2022-11-01)
+
+* Melhorias
+  * [SIG-998] Adicionar configuração para carregamento de menu por meio de iframe
+
+* Correções de bugs
+  * [SIG-995] Erro ao assinar um documento que o fluxo foi alterado
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-49-1" />
+### 1.49.1 (2022-11-01)
+
+* Melhorias
+  * [SIG-982] Permitir importação de documentos concluídos entre instâncias
+
+* Correções de bugs
+  * [SIG-965] Não está sendo possivel adicionar usuario em pasta
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-49-0" />
 ### 1.49.0 (2022-10-18)
 
