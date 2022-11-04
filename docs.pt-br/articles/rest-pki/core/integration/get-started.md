@@ -48,7 +48,7 @@ Caso sua aplicação utilize outra linguagem de programação, [chame as APIs di
 
 Comece adicionando o pacote de Nuget [Lacuna.RestPkiCore.Client](https://www.nuget.org/packages/Lacuna.RestPkiCore.Client/), disponível para:
 
-* .NET Standard 2.0+ (para uso em .NET Core 2, .NET Core 3 ou .NET 5 ou ainda em plataformas como UWP)
+* .NET Standard 2.0+ (para uso em .NET Core 2, .NET Core 3, .NET 5 ou .NET 6 ou ainda em plataformas como UWP)
 * .NET Framework 4.5+
 
 #### Aplicações em ASP.NET Core
