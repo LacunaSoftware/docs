@@ -4,6 +4,33 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-4-0" />
+### 2.4.0 (2022-11-08)
+
+* Bug fixes
+  * [AUT-231] "Nova pasta" option cannot be used when register degrees
+  * [AUT-247] Type of the student's current situation is not filled in the XML of the History
+  * [AUT-250] RVHE footnote text is on top of the information in the history elements
+  * [AUT-255] Issuing time on the RVHE is in GMT
+  * [AUT-256] Registration is not completed if there is already an Academic Transcript of the same student at the Issuing
+  * [AUT-258] Nonce is not returned in Academic Documentation NSF
+
+* Improvements
+  * [AUT-226] Adding the academic transcript generation in the generator
+  * [AUT-237] Generate XMLs coded in UTF-8
+  * [AUT-240] Add in the tests the possibility of generating a RVDD tags list
+  * [AUT-241] Implement in the tests the possibility of generating RVDD using Academic Documentation
+  * [AUT-243] Add missing information to RVHE
+  * [AUT-248] Remove "Pendente" column from the Academic Transcript visual representation
+  * [AUT-249] Template details page forwarding to wrong page when clicking on "Gerar Diplomas"
+  * [AUT-257] Remove the text "Ministerial" for Portaria in the regulatory acts
+  * [AUT-260] Improving the list of models in the degrees or transcripts creation
+  * [AUT-262] Change Lyceum cancellation endpoint
+
+* New Features
+  * [AUT-252] Create API to regenerate RVHE
+  * [AUT-253] Error when generating school transcript with degree using degree batch by CSV
+
 <a name="v2-3-1" />
 ### 2.3.1 (2022-10-06)
 

@@ -4,6 +4,33 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-4-0" />
+### 2.4.0 (2022-11-08)
+
+* Correções de bugs
+  * [AUT-231] Não é possível utilizar a opção "Nova Pasta" ao registrar diplomas
+  * [AUT-247] Tipo da situação atual do discente não é preenchida no XML do Histórico
+  * [AUT-250] O texto de rodapé do RVHE está por cima das informações dos elementos históricos
+  * [AUT-255] Hora de emissão no RVHE está em GMT
+  * [AUT-256] Registro não é concluído caso já exista Histórico Escolar do mesmo aluno na IES Emissora
+  * [AUT-258] Não é retornado Nonce em Doc. Academica NSF
+
+* Melhorias
+  * [AUT-226] Adicionar geração de histórico escolar no gerador
+  * [AUT-237] Gerar XMLs codificados em UTF-8
+  * [AUT-240] Adicionar nos testes possibilidade de gerar lista de tags do RVDD
+  * [AUT-241] Implementar nos testes possibilidade de gerar RVDD de Documentação Acadêmica
+  * [AUT-243] Adicionar informações faltantes ao RVHE
+  * [AUT-248] Remover coluna Pendente da representação visual do Histórico Escolar
+  * [AUT-249] Página de detalhes do modelo encaminhando para página errada ao clicar em "Gerar Diplomas"
+  * [AUT-257] Retirar texto "Ministerial" para Portaria nos atos regulatórios
+  * [AUT-260] Melhorar a lista de modelos na criação de diplomas ou históricos
+  * [AUT-262] Alterar endpoint de cancelamento da Lyceum
+
+* Novas funcionalidades
+  * [AUT-252] Criar API para gerar RVHE novamente
+  * [AUT-253] Erro ao gerar histórico escolar com diploma utilizando lote de diplomas por CSV
+
 <a name="v2-3-1" />
 ### 2.3.1 (2022-10-06)
 
