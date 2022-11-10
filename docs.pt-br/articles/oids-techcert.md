@@ -63,6 +63,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.45 - [AC Sistematizo](https://ac.sistematizo.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.46 - [AC PMJM](https://ac.pmjm.mg.gov.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.47 - [AC Prefeitura Municipal de Dom Silvério](https://ac.domsilverio.mg.gov.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.48 - [AC Foco](https://ac.focomc.com.br/certs/ac.txt)
 
 
 ## 2. Políticas de certificado A1
