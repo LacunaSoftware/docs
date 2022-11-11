@@ -1,5 +1,30 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<a name="v1-3-0" />
+## 1.3.0 (2022-11-11)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-240 Consulta pública de certificados
+
+### Melhorias
+
+ARNG-245 Captura da geolocalização do agente no momento da captura da biometria
+
+ARNG-249 Adicionar cláusulas ao agreement da Code100
+
+ARNG-259 Incluir cláusula com URL de revogação no agreement da Code100
+
+ARNG-261 Adicionar opção de capturar documentos a partir da webcam
+
+ARNG-262 Geração e assinatura da solicitação de revogação quando esta é feita por um usuário do sistema \(e não pelo titular\)
+
+ARNG-264 Mover linha com campos de empresa para baixo da linha com campos de contato \(PY\)
+
+
+
 <a name="v1-2-0" />
 ## 1.2.0 (2022-10-14)
 

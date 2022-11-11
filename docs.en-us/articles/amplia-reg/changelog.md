@@ -1,5 +1,30 @@
 ﻿# Amplia Reg changelog
 
+<a name="v1-3-0" />
+## 1.3.0 (2022-11-11)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-240 Public certificate search page
+
+### Improvements
+
+ARNG-245 Register geolocation when capturing subject's biometry
+
+ARNG-249 Add clauses to Code100's agreement
+
+ARNG-259 Add clause with revocation URL to Code100's agreement
+
+ARNG-261 Allow capturing documents through webcam
+
+ARNG-262 Generate and sign revocation letter when revocation is performed by an agent \(and not by the subject\)
+
+ARNG-264 Move down form row with company fields \(PY\)
+
+
+
 <a name="v1-2-0" />
 ## 1.2.0 (2022-10-14)
 
