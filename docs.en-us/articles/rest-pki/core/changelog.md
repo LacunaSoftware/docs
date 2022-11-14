@@ -1,5 +1,27 @@
 ﻿# Rest PKI Core changelog
 
+<a name="v1-10-3" />
+## 1.10.3 (2022-11-14)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-154 Add setting to control PDF marks left and top margins
+
+
+
+<a name="v1-10-2" />
+## 1.10.2 (2022-05-03)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-149 Add setting to force brazilian pdf signing policies
+
+
+
 <a name="v1-10-1" />
 ## 1.10.1 (2022-04-23)
 

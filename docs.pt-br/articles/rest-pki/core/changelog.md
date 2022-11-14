@@ -1,5 +1,27 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="v1-10-3" />
+## 1.10.3 (2022-11-14)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-154 Criar configuração de margens esquerda e superior na marcação de PDF
+
+
+
+<a name="v1-10-2" />
+## 1.10.2 (2022-05-03)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-149 Permitir forçar política de assinatura de PDFs para padrão ICP Brasil
+
+
+
 <a name="v1-10-1" />
 ## 1.10.1 (2022-04-23)
 
