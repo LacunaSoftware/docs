@@ -1,9 +1,9 @@
 ﻿# Histórico de versões - Rest PKI Core
 
-<a name="v1-10-3" />
-## 1.10.3 (2022-11-14)
+<a name="v1-11-0" />
+## 1.11.0 (2022-11-14)
 
-Atualiza modelo do banco de dados: não
+Atualiza modelo do banco de dados: **sim**
 
 ### Melhorias
 

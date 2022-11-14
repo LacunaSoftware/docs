@@ -20,7 +20,7 @@ dotnet Lacuna.RestPki.Site.dll [settings] -- command [command-options]
 Or, on Docker, simply run the following on any directory:
 
 ```sh
-docker run -i lacunasoftware/restpkicore:1.10 [settings] -- command [command-options]
+docker run -i lacunasoftware/restpkicore:1.11 [settings] -- command [command-options]
 ```
 
 [!include[About settings](includes/about-settings.md)]

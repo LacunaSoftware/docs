@@ -1,9 +1,9 @@
 ﻿# Rest PKI Core changelog
 
-<a name="v1-10-3" />
-## 1.10.3 (2022-11-14)
+<a name="v1-11-0" />
+## 1.11.0 (2022-11-14)
 
-Updates database model: no
+Updates database model: **yes**
 
 ### Improvements
 
