@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-13-0" />
+### 2.13.0 (2022-10-19)
+
+- Add PadesSigner filling pre-positioned blank signature feature
+- Improve signature check for third parties `IPrivateKey` implementations
+- Improve PDF signatures listing on non-consistent PDFs
+
+
 <a name="v2-12-2" />
 ### 2.12.2 (2022-07-20)
 
