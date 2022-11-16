@@ -4,6 +4,23 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-50-0" />
+### 1.50.0 (2022-11-16)
+
+* New Features
+  * [SIG-445] Add tags to the document and allow them to be used while searching
+  * [SIG-1001] Google Tag Manager integration
+
+* Improvements
+  * [SIG-988] Setting to hide participants and action orders in document detials page for non Manager/Admin users.
+  * [SIG-992] Webhook for document creation
+
+* Bug fixes
+  * [SIG-964] Error sending file with too long name
+  * [SIG-1002] Batch signature of all documents does not work with HSM
+
+Updates database model: yes
+
 <a name="v1-49-2" />
 ### 1.49.2 (2022-11-01)
 

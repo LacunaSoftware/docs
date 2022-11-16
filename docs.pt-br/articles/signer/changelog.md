@@ -4,6 +4,23 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-50-0" />
+### 1.50.0 (2022-11-16)
+
+* Novas funcionalidades
+  * [SIG-445] Adicionar tags ao documento para consulta
+  * [SIG-1001] Integração com Google Tag Manager
+
+* Melhorias
+  * [SIG-988] Configuração para esconder cards de Participantes e Ordem das Ações na tela de detalhes de documento para usuários sem permissão de Admin ou Gerente.
+  * [SIG-992] Webhook para criação de documento
+
+* Correções de bugs
+  * [SIG-964] Erro ao enviar arquivo com nome grande demais
+  * [SIG-1002] Assinatura em lote de todos documentos não funciona com HSM
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-49-2" />
 ### 1.49.2 (2022-11-01)
 

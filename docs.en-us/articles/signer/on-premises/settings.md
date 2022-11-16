@@ -140,6 +140,11 @@ view information from other users.
 * **ParticipantWelcomeMessageIntervalInMinutes** (default: `0`, v1.47.0): if positive defines the amount of minutes that will be waited to send a participant welcome message notification
 after he signed a document for the first time (and has not set his password yet). Any negative value will disable this notification.
 
+* **HideParticipantsListAndOrderOfActionsForNonManagers** (v1.50.0): hides participant information from document details page for all users but document's organization managers or admins.
+
+* **DisablePendingFlowActionsApi** (v1.50.0): disables the API that retrieves information from pending participants for documents. This will prevent the pending participants 
+to be displayed in the documents page.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -405,6 +410,7 @@ volume batches this is used to avoid timeouts when querying the database.
 * **NumberDocumentsPerGenerationRound** (default: `10`): number of documents processed in each round of a generation batch.
 * **NumberNotificationsCreatedPerRound** (default: `30`): number of notifications created per batch round.
 * **NumberDocumentsPerExpirationRound** (v1.33.0, default: `100`): number of documents processed per expiration round.
+* **NumberDocumentsPerDocumentsCreatedWebhookRound** (v1.50.0, default: `100`): number of documents retrieved each round when generating the documents created webhook.
 * **NotifyPendingActionsIndividually** (v1.34.0): if `true`, will send pending action emails individually when performing batch actions.
 * **NotifyParticipantsDefaultValue** (v1.39.0, default: `true`): sets the default value for the notify participants option that is displayed when a user signs documents in a batch.
 
@@ -530,3 +536,13 @@ Under section **Scanner**:
 * **MetadataPresets** (optional, v1.37.0): subsection as defined below:
 	* **DocumentType**: defines the document type metada information so the scanning user does not have provide it while filling metadata.
 	* **DocumentTypeIsReadonly**: if `true` the scanning user won't be able to change the document type.
+
+###  *Google Tag Manager* Settings (v1.50.0)
+
+Under section **GoogleTagManager**:
+
+* **Id**: the tag manager ID. Must be provided in order to use tag manager.
+* **Auth**
+* **Preview**
+* **ResourcePath**
+* **CspNonce**
