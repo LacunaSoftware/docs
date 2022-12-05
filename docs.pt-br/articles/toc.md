@@ -326,6 +326,11 @@
 
 <!-- Start of Amplia Reg -->
 # [Amplia Reg](amplia-reg/index.md)
+## [Guia de Integração](amplia-reg/integration/index.md)
+### [Primeiros passos](amplia-reg/integration/get-started.md)
+### [Pedidos pré-aprovados](amplia-reg/integration/preapproved-orders.md)
+### [Referenciando arquivos](amplia-reg/integration/file-referencing.md)
+### [Códigos de erro](amplia-reg/integration/error-codes.md)
 ## [On premises](amplia-reg/on-premises/index.md)
 ### [Setup em Linux](amplia-reg/on-premises/linux/index.md)
 #### [Instalação em Ubuntu Server](amplia-reg/on-premises/linux/install-ubuntu.md)
