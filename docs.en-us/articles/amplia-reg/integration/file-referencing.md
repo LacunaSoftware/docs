@@ -30,6 +30,8 @@ http method. Any authorization arguments must be embedded withing the URL itself
 
 -->
 
+<!--
+
 ## Direct API integration
 
 > [!NOTE]
@@ -39,8 +41,6 @@ http method. Any authorization arguments must be embedded withing the URL itself
 You can reference a file by including its contents directly on the request, encoded in Base64, in which case you must also give its filename:
 
 [!include[Reference by content API](../../../../includes/amplia-reg/file-reference-content-api.md)]
-
-<!--
 
 Also by absolute URL. In this case, the API backend will download the file from your application's backend. The URL must be publicly accessible with the `GET`
 http method. Any authorization arguments must be embedded withing the URL itself:

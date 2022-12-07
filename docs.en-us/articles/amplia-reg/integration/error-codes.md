@@ -1,5 +1,8 @@
 ﻿# Error codes - Amplia Reg
 
+> [!NOTE]
+> This documentation is currently under construction. We apologise for the inconvenience.
+
 Some of the API error codes returned by Amplia Reg are listed below:
 
 Code                                     | Description

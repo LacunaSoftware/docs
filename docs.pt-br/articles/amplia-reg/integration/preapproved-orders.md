@@ -1,6 +1,7 @@
 ﻿# Criação de pedidos pré-aprovados - Amplia Reg
 
-TODO
+> [!NOTE]
+> Esta documentação encontra-se em processo de elaboração. Pedimos desculpas pelo inconveniente.
 
 ## Veja também
 

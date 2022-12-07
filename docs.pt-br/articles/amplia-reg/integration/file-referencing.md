@@ -30,6 +30,8 @@ acessível publicamente com método `GET`. Quaisquer argumentos de autorização
 
 -->
 
+<!--
+
 ## Direct API integration
 
 > [!NOTE]
@@ -39,8 +41,6 @@ acessível publicamente com método `GET`. Quaisquer argumentos de autorização
 Você pode referenciar um arquivo incluindo seu conteúdo diretamente no request, codificado em Base64, nesse caso é preciso também fornecer o nome do arquivo:
 
 [!include[Reference by content API](../../../../includes/amplia-reg/file-reference-content-api.md)]
-
-<!--
 
 Também por URL absoluta. Nesse caso, o servidor da API irá baixar o arquivo do servidor da sua aplicação. A URL precisa ser
 acessível publicamente com método `GET`. Quaisquer argumentos de autorização devem estar embutidos na própria URL:
