@@ -4,6 +4,17 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v4-0-3" />
+### 4.0.3 (2022-12-07)
+
+* Improvements
+  * [LI-377] .NET 6 support
+
+Updates database model: yes
+
+> [!WARNING]
+> Requires an updated PKI SDK license.
+
 <a name="v3-30-1" />
 ### 3.30.1 (2022-07-11)
 

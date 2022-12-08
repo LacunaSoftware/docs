@@ -4,6 +4,17 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v4-0-3" />
+### 4.0.3 (2022-12-07)
+
+* Improvements
+  * [LI-377] Suporte a .NET 6
+
+Atualiza modelo do banco de dados: sim
+
+> [!WARNING]
+> Requer uma licença atualizada do PKI SDK.
+
 <a name="v3-30-1" />
 ### 3.30.1 (2022-07-11)
 
