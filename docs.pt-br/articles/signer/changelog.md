@@ -4,6 +4,23 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-51-0" />
+### 1.51.0 (2022-12-08)
+
+* Novas funcionalidades
+  * [SIG-978] Criar tema yale blue yellow
+
+* Melhorias
+  * [SIG-999] Permitir administrador da pasta criar subpastas
+  * [SIG-1006] Otimizar geração de relatórios da organização
+
+* Correções de bugs
+  * [SIG-1005] Não é possível preencher dados de um PDF form pela API de criação de documento se não for definido um tipo para o documento
+  * [SIG-1002] Integração com HSM não funciona no linux
+  * [SIG-1009] Erro ao cancelar lote de assinatura
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-50-0" />
 ### 1.50.0 (2022-11-16)
 

@@ -4,6 +4,23 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-51-0" />
+### 1.51.0 (2022-12-08)
+
+* New Features
+  * [SIG-978] Create yale blue yellow theme
+
+* Improvements
+  * [SIG-999] Allow folder admin to create subfolders
+  * [SIG-1006] Optimize organization documents report
+
+* Bug fixes
+  * [SIG-1005] Cannot fill PDF form using document create API if a document type is not set
+  * [SIG-1002] HSM integration does not work on Linux
+  * [SIG-1009] Error canceling signature batch
+
+Updates database model: no
+
 <a name="v1-50-0" />
 ### 1.50.0 (2022-11-16)
 
