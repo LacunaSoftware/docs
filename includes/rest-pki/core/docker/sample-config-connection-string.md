@@ -1,3 +1,4 @@
 ﻿```sh
-ConnectionStrings__DefaultConnection=Data Source=HOST_IP;Initial Catalog=RestPkiCore;User ID=sa;Password=SOME_PASS
+ConnectionStrings__DefaultConnection=Host=HOST_IP;Database=restpkicore;Username=postgres;Password=SOME_PASS
+ConnectionStrings__DefaultConnection_ProviderName=Postgres
 ```

@@ -1,3 +1,3 @@
 ﻿```sh
-docker run -v restpkicore_sql:/var/opt/mssql -p 1433:1433 -e "MSSQL_PID=Express" -e "SA_PASSWORD=SOME_PASS" -e "ACCEPT_EULA=Y" mcr.microsoft.com/mssql/server:2019-latest
+docker run -v restpkicore_sql:/var/lib/postgresql/data -p 5432:5432 -e "POSTGRES_PASSWORD=SOME_PASS" postgres
 ```

@@ -49,8 +49,8 @@ The configuration `Bindings__UseReverseProxy=True` tells Rest PKI Core that the 
 
 ## Example
 
-In a production environment you would typically use a Docker orchestrator and a dedicated SQL Server (or a IaaS database offering), but for testing purposes you
-can run an instance of Rest PKI Core with an instance of SQL Server Express (which is free) with Docker alone.
+In a production environment you would typically use a Docker orchestrator and a dedicated database server (or a IaaS database offering), but for testing purposes you
+can run an instance of Rest PKI Core with an instance of PostgreSQL with Docker alone.
 
 Start by creating a volume for the database server:
 
@@ -62,7 +62,7 @@ Then, start it with a password of your choice (replace `SOME_PASS` below):
 
 Check the console for any errors. This can take a few minutes.
 
-Once SQL Server is up and running, open another terminal to start the Rest PKI Core instance.
+Once PostgreSQL is up and running, open another terminal to start the Rest PKI Core instance.
 
 Create a volume to use as blob storage:
 
@@ -72,7 +72,7 @@ Then, download the [sample environment file](https://cdn.lacunasoftware.com/rest
 and fill it out.
 
 On the connection string configuration, use the value below replacing `HOST_IP` with the IP address of the host and `SOME_PASS` with the
-password you chose for the SQL Server:
+password you chose for PostgreSQL:
 
 [!include[Connection string](../../../../../includes/rest-pki/core/docker/sample-config-connection-string.md)]
 
