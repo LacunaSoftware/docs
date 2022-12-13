@@ -9,6 +9,9 @@ Granting owner privileges to the application is simpler, which is why this mode 
 write privileges ensures you greater control over the database. If you prefer to run Rest PKI Core without owner privileges over the database, follow the
 steps on this article.
 
+> [!NOTE]
+> For now, using a limited user is only supported on SQL Server. Please contact us if you need to run Rest PKI Core with PostgreSQL using a user without full privileges.
+
 ## Create unprivileged credentials
 
 Create the database normally as specified on the [Preparing a database article](prepare-database.md).

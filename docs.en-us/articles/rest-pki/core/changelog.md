@@ -1,5 +1,24 @@
 ﻿# Rest PKI Core changelog
 
+<a name="v1-12-0" />
+## 1.12.0 (2022-12-13)
+
+Updates database model: **yes**
+
+### New Features
+
+RPNG-158 Add support for PostgreSQL
+
+### Improvements
+
+RPNG-156 Updated ASP.NET Core to version 6.0
+
+### Bug fixes
+
+RPNG-152 Cannot add trusted roots on security context creation page
+
+
+
 <a name="v1-11-0" />
 ## 1.11.0 (2022-11-14)
 

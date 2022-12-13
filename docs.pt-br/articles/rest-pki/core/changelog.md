@@ -1,5 +1,24 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="v1-12-0" />
+## 1.12.0 (2022-12-13)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-158 Adicionado suporte a PostgreSQL
+
+### Melhorias
+
+RPNG-156 Atualizado ASP.NET Core para versão 6.0
+
+### Correções de bugs
+
+RPNG-152 Não é possível adicionar raízes confiáveis na tela de criação do contexto de segurança
+
+
+
 <a name="v1-11-0" />
 ## 1.11.0 (2022-11-14)
 

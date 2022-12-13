@@ -13,7 +13,7 @@ dotnet Lacuna.RestPki.Site.dll [settings] -- update-db
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/restpkicore:1.11 [settings] -- update-db
+docker run -i lacunasoftware/restpkicore:1.12 [settings] -- update-db
 ```
 
 [!include[About settings](includes/about-settings.md)]
