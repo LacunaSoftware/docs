@@ -4,6 +4,36 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-5-0" />
+### 2.5.0 (2022-12-12)
+
+* Bug fixes
+  * [AUT-279] Error when no regulatory act is informed for an institution that does not belong to the federal system
+  * [AUT-281] Additional information element is added with empty value using CSV
+
+* Improvements
+  * [AUT-227] Improved verification code validation at registration time
+  * [AUT-275] Course recognition should not be compulsory for academic transcripts
+  * [AUT-278] Removed the requirement of the grade of the disciplines
+  * [AUT-280] Included the date of publication of the D.O.U. in the course recognition information in RVHE
+  * [AUT-282] Created checkbox to disable the signatures validation
+
+* New Features
+  * [AUT-264] Created "Aguardando aceitação" status for the Registration organization
+  * [AUT-286] Created tag to inform only the qualification date in the RVDD
+
+<a name="v2-4-1" />
+### 2.4.1 (2022-11-16)
+
+* Bug fixes
+  * [AUT-207] Add DataRegistro and Descricao to the Complementary Activity in CSV
+  * [AUT-263] Documentation files are not saved to NSF Academic Doc.
+  * [AUT-265] Error in the Assinantes element validation
+  * [AUT-268] Change the response type of the Lyceum's cancellation API
+
+* Improvements
+  * [AUT-261] Created API to list the academic transcript of a batch
+
 <a name="v2-4-0" />
 ### 2.4.0 (2022-11-08)
 

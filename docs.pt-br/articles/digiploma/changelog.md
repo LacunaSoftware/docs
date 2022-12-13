@@ -4,6 +4,36 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-5-0" />
+### 2.5.0 (2022-12-12)
+
+* Correções de bugs
+  * [AUT-279] Erro quando não é informado ato regulatório para instituição que não pertence ao sistema federal
+  * [AUT-281] Elemento de informações adicionais é adicionado com valor vazio utilizando CSV
+
+* Melhorias
+  * [AUT-227] Melhorar validação do código de verificação no momento de registro
+  * [AUT-275] Reconhecimento dos dados do Curso não deve ser obrigatório para histórico escolar
+  * [AUT-278] Remover obrigatoriedade da nota das disciplinas
+  * [AUT-280] Incluir a data de publicação do D.O.U nas informações de reconhecimento de curso no RVHE
+  * [AUT-282] Criar checkbox para desabilitar validação das assinaturas
+
+* Novas funcionalidades
+  * [AUT-264] Criar status "Aguardando aceitação" para organização Registradora
+  * [AUT-286] Criar tag para informar apenas a data da habilitação no RVDD
+
+<a name="v2-4-1" />
+### 2.4.1 (2022-11-16)
+
+* Correções de bugs
+  * [AUT-207] Adicionar DataRegistro e Descricao de Atividade complementar no CSV
+  * [AUT-263] Arquivos da documentação comprobatória não são salvos para Doc. Acadêmica NSF
+  * [AUT-265] Erro na validação do campo Assinantes
+  * [AUT-268] Alterar o tipo da resposta da API de cancelamento da Lyceum
+
+* Melhorias
+  * [AUT-261] Criar API para listar histórico escolares de um lote
+
 <a name="v2-4-0" />
 ### 2.4.0 (2022-11-08)
 
