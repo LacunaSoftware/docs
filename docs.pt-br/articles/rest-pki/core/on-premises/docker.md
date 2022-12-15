@@ -49,20 +49,20 @@ A configuração `Bindings__UseReverseProxy=True` instrui o Rest PKI Core a conf
 
 ## Exemplo
 
-Em um ambiente de produção, tipicamente se utilizaria um orquestrador de Docker e um servidor de SQL Server dedicado ou em nuvem (IaaS).
-Entretanto, para fins de teste, utilizando apenas o Docker é possível rodar uma instância do Rest PKI Core com um banco de dados SQL Server Express (que não tem custo) local.
+Em um ambiente de produção, tipicamente se utilizaria um orquestrador de Docker e um SGBD dedicado ou em nuvem (IaaS).
+Entretanto, para fins de teste, utilizando apenas o Docker é possível rodar uma instância do Rest PKI Core com um banco de dados PostgreSQL local.
 
 Comece criando um volume para o banco de dados:
 
 [!include[Create SQL volume](../../../../../includes/rest-pki/core/docker/create-sql-volume.md)]
 
-Inicie o banco de dados com uma senha da sua preferência (substitua `SOME_PASS` abaixo):
+Inicie o SGBD com uma senha da sua preferência (substitua `SOME_PASS` abaixo):
 
-[!include[Run SQL Server Express](../../../../../includes/rest-pki/core/docker/run-sql.md)]
+[!include[Run database server](../../../../../includes/rest-pki/core/docker/run-sql.md)]
 
 Acompanhe a saída do console para eventuais erros. Esse processo pode levar alguns minutos.
 
-Uma vez que o SQL Server esteja executando, abra outro terminal para iniciar a instância do Rest PKI Core.
+Uma vez que o SGBD esteja executando, abra outro terminal para iniciar a instância do Rest PKI Core.
 
 Crie um volume para utilizar como *blob storage*:
 
@@ -72,7 +72,7 @@ Em seguida, baixe o [arquivo de configuração de exemplo](https://cdn.lacunasof
 *restpkicore.env* e preencha-o.
 
 Na configuração da *connection string*, use o valor abaixo substituindo `HOST_IP` pelo endereço de IP da máquina *host* e `SOME_PASS`
-pela senha escolhida para o SQL Server:
+pela senha escolhida para o banco de dados:
 
 [!include[Connection string](../../../../../includes/rest-pki/core/docker/sample-config-connection-string.md)]
 

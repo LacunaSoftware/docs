@@ -8,6 +8,10 @@ O [Rest PKI Core](../index.md) pode operar de duas maneiras em relação ao aces
 Operar com o usuário da aplicação sendo *owner* do aplicativo é mais simples, por isso essa é a opção sugerida na instalação padrão. Entretanto, conceder somente privilégios de leitura e escrita
 garante ao administrador maior controle sobre o banco de dados. Se você preferir operar o Rest PKI Core sem privilégios de *owner* para o usuário da aplicação, siga os passos descritos nesse artigo.
 
+> [!NOTE]
+> Por ora só é possível utilizar um usuário com acesso limitado no SQL Server. Contate-nos se precisar executar o Rest PKI Core com PostgreSQL usando um usuário com
+> acesso limitado.
+
 ## Criando credenciais de leitura e escrita
 
 Crie o banco de dados normalmente conforme descrito na [preparação do banco de dados](prepare-database.md).

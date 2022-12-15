@@ -58,11 +58,11 @@ Start by creating a volume for the database server:
 
 Then, start it with a password of your choice (replace `SOME_PASS` below):
 
-[!include[Run SQL Server Express](../../../../../includes/rest-pki/core/docker/run-sql.md)]
+[!include[Run database server](../../../../../includes/rest-pki/core/docker/run-sql.md)]
 
 Check the console for any errors. This can take a few minutes.
 
-Once PostgreSQL is up and running, open another terminal to start the Rest PKI Core instance.
+Once the database server is up and running, open another terminal to start the Rest PKI Core instance.
 
 Create a volume to use as blob storage:
 

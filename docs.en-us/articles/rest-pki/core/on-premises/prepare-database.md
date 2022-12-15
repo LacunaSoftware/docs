@@ -62,7 +62,7 @@ Data Source=.;Initial Catalog=RestPkiCore;User ID=RestPkiCoreAdmin;Password=XXXX
 ## PostgreSQL
 
 Starting on [version 1.12.0](../changelog.md#v1-12-0) of Rest PKI Core, PostgreSQL is also supported. Any version currently supported of PostgreSQL
-is also supported (which at the moment means version 11 or greater).
+is also supported ([which at the moment means version 11 or greater](https://www.postgresql.org/support/versioning/)).
 
 > [!NOTE]
 > PostgreSQL has limited support for case and accent insensitive collations. For this reason, some operations might be case and accent sensitive if using PostgreSQL
