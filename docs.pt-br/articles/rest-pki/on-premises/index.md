@@ -6,7 +6,7 @@ instância do [Rest PKI](../index.md) na sua própria infraestrutura ("on premis
 
 ## Configuração do WebPKI
 Caso a sua aplicação que utilize o WebPKI é necessário configurar a URL do RestPKI e a licença do WebPKI.
-* [Configuração do WebPKI para urilização do RestPKI on premises](../../web-pki/customizing-restpki-url.md)
+* [Configuração do WebPKI para utilização do RestPKI on premises](../../web-pki/customizing-restpki-url.md)
 
 ## Ambientes suportados
 
