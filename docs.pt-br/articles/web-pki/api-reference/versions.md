@@ -18,6 +18,14 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-8-0" />
+### 1.8.0 (2022-12-15)
+
+- Adiciona métodos [encrypt](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#encrypt) e [decrypt](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#decrypt)
+- Adiciona Extended Key Usage info ao [CertificateModel](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.certificatemodel.html)
+- Adiciona o parâmetro  `nonExportableKey` ao método [generateSoftwareRsaKeyPair](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#generatesoftwarersakeypair)
+
+
 <a name="v1-7-2" />
 ### 1.7.2 (2022-07-03)
 

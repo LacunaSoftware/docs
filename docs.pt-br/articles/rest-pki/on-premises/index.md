@@ -5,8 +5,8 @@ instância do [Rest PKI](../index.md) na sua própria infraestrutura ("on premis
 [material comercial do produto](https://www.lacunasoftware.com/pt/home/certificate#/rest) para mais informações.
 
 ## Configuração do WebPKI
-Caso a sua applição que utilize o WebPKI é necessário configurar a URL do RestPKI e a linceça do WebPKI.
-* [Configuração do WebPKI para urilização do RestPKI on premises](../../web-pki/customizing-restpki-url.md)
+Caso a sua aplicação que utilize o WebPKI é necessário configurar a URL do RestPKI e a licença do WebPKI.
+* [Configuração do WebPKI para utilização do RestPKI on premises](../../web-pki/customizing-restpki-url.md)
 
 ## Ambientes suportados
 

@@ -8,14 +8,14 @@ Updating the Javascript library:
 * Fixes known issues that cannot be resolved with updates to the component installed on users' computers
 * Gives your application access to new features on Web PKI
 
-The latest version of the Javascript library is **2.15.2**. You can get it on the link below:
+The latest version of the Javascript library is **2.16.0**. You can get it on the link below:
 
-https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.15.2.min.js
+https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.16.0.min.js
 
 Or include in your Web page as:
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.15.2.min.js"
-  integrity="sha256-1YBmFfdb8pfq/5ibjis2jYVr7IaEmPokuTH7Ejbx9OE="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.16.0.min.js"
+  integrity="sha256-o8ytVZcRX28BBSW/dN2Qz30lAOf+DFM6vQTTOxzDJns="
   crossorigin="anonymous"></script>
 ```
 
