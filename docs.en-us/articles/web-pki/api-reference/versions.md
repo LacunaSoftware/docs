@@ -18,6 +18,14 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 <a name="changelog" />
 ## API changelog
 
+<a name="v1-8-0" />
+### 1.8.0 (2022-12-15)
+
+- Add methods [encrypt](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#encrypt) and [decrypt](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#decrypt)
+- Add Extended Key Usage info to [CertificateModel](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/interfaces/_lacuna_web_pki_d_.certificatemodel.html)
+- Add parameter `nonExportableKey` on method [generateSoftwareRsaKeyPair](https://docs.lacunasoftware.com/en-us/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#generatesoftwarersakeypair)
+
+
 <a name="v1-7-2" />
 ### 1.7.2 (2022-07-03)
 

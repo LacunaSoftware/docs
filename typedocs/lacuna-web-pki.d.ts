@@ -311,29 +311,7 @@ export declare class LacunaWebPKI {
 	}): Promise<string>;
 
 	/**************************************************************
-	 * Signs a batch of hashes with signer certificate private key.
-	 *
-	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives the (Base64 encoded) signature bytes array.
-	 *
-	 * Usage example (JavaScript)
-	 * ```javascript
-	 * var batch = [
-	 *     'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk=', // Base64 encoded SHA-256 of 'Hello World!'
-	 *     'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk=',
-	 *     'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk='
-	 * ];
-	 *
-	 * pki.signHashBatch({
-	 *     certificateThumbprint: $('#certificateSelect').val(),
-	 *     batch: batch,
-	 *     digestAlgorithm: 'SHA-256'
-	 * }).success(function (result) {
-	 *     // Use signatures array
-	 *     var signatures = result.signatures;
-	 * });
-	 * ```
-	 *
-	 * JSFiddle live example: [Sign Hash Batch](https://jsfiddle.net/LacunaSoftware/1car2yjz)
+	 * **OBSOLETE** Please use [[signHashes]]
 	 */
 	signHashBatch(args: {
 		/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
@@ -345,6 +323,38 @@ export declare class LacunaWebPKI {
 		/** Set to be able to call [[preauthorizeSignatures]] in order to call [[signHashBatch]] multiple times.*/
 		usePreauthorizedSignatures?: boolean
 	}): Promise<SignHashBatchResponse>;
+
+	// TODO: next version
+	// /**************************************************************
+	//  * Signs a batch of hashes with signer certificate private key.
+	//  *
+	//  * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives the (Base64 encoded) signature bytes array.
+	//  *
+	//  * Usage example (JavaScript)
+	//  * ```javascript
+	//  * var hashes = [
+	//  *     { algorithm: 'SHA-256', value: 'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk=' }, // Base64 encoded SHA-256 of 'Hello World!'
+	//  *     { algorithm: 'SHA-256', value: 'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk=' },
+	//  *     { algorithm: 'SHA-256', value: 'f4OxZX/x/FO5LcGBSKHWXfwtSx+j1ncoSt3SABJtkGk=' }
+	//  * ];
+	//  *
+	//  * pki.signHashes({
+	//  *     certificateThumbprint: $('#certificateSelect').val(),
+	//  *     hashes: hashes
+	//  * }).success(function (result) {
+	//  *     // Use signatures array
+	//  *     var signatures = result.signatures;
+	//  * });
+	//  * ```
+	//  *
+	//  * JSFiddle live example: [Sign Hashes](https://jsfiddle.net/LacunaSoftware/1car2yjz)
+	//  */
+	//  signHashes(args: {
+	// 	/** The signer certificate thumbprint. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
+	// 	certificateThumbprint: string,
+	// 	/** The Array of [[Hash]] with the hash algorithm and value to be signed. */
+	// 	hashes: Hash[],
+	// }): Promise<SignHashesResponse>;
 
 	/**************************************************************
 	 * Executes a document signature with Rest PKI (server-side) integration. See [Rest PKI documentation](https://docs.lacunasoftware.com/articles/rest-pki/) for more informations.
@@ -529,6 +539,22 @@ export declare class LacunaWebPKI {
 		/** If `true`, will not apply the `pdfMarks` in case PDF already has a signature. If `false`, any previous signature will be removed before the marks be applied. */
 		bypassMarksIfSigned?: boolean,
 
+		// TODO: next version
+		// /** A signing reason */
+		// reason?: string,
+
+		// /** The signing location or address */
+		// location?: string,
+
+		// /** The signer name */
+		// signerName?: string,
+
+		// /** A custom signature field name. Signature field name must be unique for the PDF */
+		// customSignatureFieldName?: string,
+
+		// /** Any metadata to be added to the PDF */
+		// metadata?: { [key: string]: string; },
+
 		/** The PDF signature policy. */
 		policy: LacunaWebPKI.PadesPolicies,
 
@@ -569,14 +595,22 @@ export declare class LacunaWebPKI {
 		/** Whether or not to remove the `policy` default trust arbitrator. If `true`, you must pass the `trustArbitrators` argument. */
 		clearPolicyTrustArbitrators?: boolean,
 
-		/** If you already have a CAdES file and a co-signature is intended, pass this argument instead of `fileId`. Optionally, you can use the `fileId` for CAdES signature file and enable the `autoDetectCosign`. */
+		/** If you already have a CAdES file and a co-signature is intended, pass this argument instead of `fileId` or `content`. Optionally, you can use the `fileId` for CAdES signature file and enable the `autoDetectCosign`. */
 		cmsToCosignFileId?: string,
+
+		// TODO: next version
+		// /** If you already have a CAdES file and a co-signature is intended, pass this argument instead of `fileId` or `content`. Optionally, you can use the `fileId` for CAdES signature file and enable the `autoDetectCosign`. */
+		// cmsToCosignContent?: string,
 
 		/** Whether or not to auto-detect a co-signature intention if the `fileId` passed is a CAdES signature file.  */
 		autoDetectCosign?: boolean,
 
 		/** Whether or not to include the encapsulated content (the original document) in the resulting CAdES signature file. */
 		includeEncapsulatedContent?: boolean,
+
+		// TODO: next version
+		// /** A signing description or reason */
+		// signingDescription?: string,
 
 		/** The CAdES signature policy. */
 		policy: LacunaWebPKI.CadesPolicies,
@@ -611,6 +645,10 @@ export declare class LacunaWebPKI {
 
 		/** A XML content (UTF-8 string or Base64 encoded bytes) to sign can be passed optionally to `filedId`. */
 		content?: string,
+
+		// TODO: next version
+		// /** A signing description or reason */
+		// signingDescription?: string,
 
 		/** The XML signature policy. */
 		policy: LacunaWebPKI.XmlPolicies,
@@ -666,6 +704,10 @@ export declare class LacunaWebPKI {
 
 		/** A XML content (UTF-8 string or Base64 encoded) to sign can be passed optionally to `filedId`.  */
 		content?: string,
+
+		// TODO: next version
+		// /** A signing description or reason */
+		// signingDescription?: string,
 
 		/** The XML signature policy. */
 		policy: LacunaWebPKI.XmlPolicies,
@@ -724,8 +766,14 @@ export declare class LacunaWebPKI {
 		/** The signed PDF content (Base64 encoded bytes) to open. It can be passed optionally to `signatureFileId`. */
 		signatureContent?: string,
 
-		/** The original file. Only applies if the passed `signatureFileId` does not have the encapsulated content. */
+		/** The original file. Only applies if the passed `signatureFileId` or `signatureContent` does not have the encapsulated content. */
 		originalFileId?: string,
+		
+		// TODO: next version
+		// /** The original file content (Base64 encoded bytes). Only applies if the passed `signatureFileId` or `signatureContent` does not have the encapsulated content. */
+		// originalContent?: string,
+		// /** Set to return the encapsulated content */
+		// returnEncapsulatedContent?: boolean,
 
 		/** Whether or not to validate the CAdES sinatures. */
 		validate: boolean,
@@ -819,7 +867,12 @@ export declare class LacunaWebPKI {
 		/** A label for the generated keys objects in the token. If not set, a random Id is used. */
 		keyLabel?: string,
 		/** The RSA keys size to be genarated. Be sure that the selected device supports the requested key size on [[TokenModel.mechanisms]]. */
-		keySize: number
+		keySize: number,
+		
+		// TODO: next version
+		// /** Whether or not to auto enable the used PKCS#11 module after command success. The **default** is `true` */
+		// enableUsedPkcs11Module?: boolean
+
 	}): Promise<GenerateTokenKeyPairResponse>;
 
 	/**************************************************************
@@ -833,7 +886,9 @@ export declare class LacunaWebPKI {
 		/** A subject name (DN) string for the generated CSR. E.g. `'CN=My Name, O=ACME Inc., C=BR'` */
 		subjectName?: string,
 		/** The RSA keys size to be genarated. */
-		keySize: number
+		keySize: number,
+		/** Generates a non exportable key. Software generated non exportable keys are **only supported on Windows platform**. */
+		nonExportableKey?: boolean
 	}): Promise<GenerateKeyPairResponse>;
 
 	/**************************************************************
@@ -855,7 +910,12 @@ export declare class LacunaWebPKI {
 		/** The digital certificate content (PEM or Base64 encoded DER bytes formats). */
 		certificateContent: string,
 		/** A label for the imported certificate object in the token. If not set, the same key Id is used. */
-		certificateLabel?: string
+		certificateLabel?: string,
+		
+		// TODO: next version
+		// /** Whether or not to auto enable the used PKCS#11 module after command success. The **default** is `true` */
+		// enableUsedPkcs11Module?: boolean
+
 	}): Promise<ImportTokenCertificateResponse>;
 
 	/**************************************************************
@@ -915,6 +975,54 @@ export declare class LacunaWebPKI {
 		timeout?: number
 	}): Promise<HttpResponseModel>;
 
+	/**********************************************************
+	 * Encrypts data with selected certificate public key or generated public key.
+	 *
+	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[EncryptResponse]] object.
+	 *
+	 * **Live Example**
+	 *
+	 * [Encrypt Sample](https://jsfiddle.net/LacunaSoftware/mo3p4g7x/): JSFiddle example for encrypting text with a selected certificate public key.
+	 */
+	 encrypt(args: {
+		/** A certificate thumbprint which public key will be used to encrypt data. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
+		certificateThumbprint?: string,
+		/** A public key content or PKCertificate content (PEM or DER base64 encoded) to encrypt data with */
+		publicKey?: string,
+		/** A private key Id returned in the generate key pair methods [[generateSoftwareRsaKeyPair]] or [[generateTokenRsaKeyPair]]. */
+		privateKeyId?: string,
+		/** The user crypto device returned from [[listTokens]]. This parameter ir mandatory if the privateKeyId is from a crypto device. */
+		token?: TokenModel
+		/** The encryption parameters and padding algorithm to be used */
+		parameters: LacunaWebPKI.EncryptionParamaters,
+		/** The Base64 encoded data to be encrypted. */
+		data: string,
+		
+	}): Promise<EncryptResponse>;
+
+	/**********************************************************
+	 * Decrypts data with selected certificate private key or generated private key.
+	 *
+	 * @returns A promise object that can register [[fail]] and [[success]] callbacks to be called when the operation completes. The [[success]] callback for this promise receives a [[DecryptResponse]] object.
+	 *
+	 * **Live Example**
+	 *
+	 * [Decrypt Sample](https://jsfiddle.net/LacunaSoftware/068gnLmw/): JSFiddle example for decrypting text with a selected certificate private key.
+	 */
+	 decrypt(args: {
+		/** A certificate thumbprint which private key will be used to decrypt data. Available in [[CertificateModel.thumbprint]] property returned by [[listCertificates]] method. */
+		certificateThumbprint?: string,
+		/** A private key Id returned in the generate key pair methods [[generateSoftwareRsaKeyPair]] or [[generateTokenRsaKeyPair]]. */
+		privateKeyId?: string,
+		/** The user crypto device returned from [[listTokens]]. This parameter ir mandatory if the privateKeyId is from a crypto device. */
+		token?: TokenModel
+		/** The encryption parameters and padding algorithm to be used */
+		parameters: LacunaWebPKI.EncryptionParamaters,
+		/** The Base64 encoded encrypted data to be decrypted. */
+		data: string,
+		
+	}): Promise<DecryptResponse>;
+
 
 
 }
@@ -943,7 +1051,8 @@ export namespace LacunaWebPKI {
 		v1_6 = '1.6.0',
 		v1_6_1 = '1.6.1',
 		v1_7_0 = '1.7.0',
-		v1_7_2 = '1.7.2'
+		v1_7_2 = '1.7.2',
+		v1_8_0 = '1.8.0'
 	}
 
 	/**************************************************************
@@ -974,6 +1083,8 @@ export namespace LacunaWebPKI {
 		COMMAND_PARAMETER_NOT_SET      = 'command_parameter_not_set',
 		/** A command parameter is not valid. */
 		COMMAND_INVALID_PARAMETER      = 'command_invalid_parameter',
+		/** A command parameter is not supported on this platform */
+		COMMAND_PARAMETER_NOT_SUPPORTED= 'command_parameter_not_supported',
 		/** The web extension failed to connect to native component. */
 		NATIVE_CONNECT_FAILURE         = 'native_connect_failure',
 		/** The native component disconnected from web extension. */
@@ -1021,7 +1132,8 @@ export namespace LacunaWebPKI {
 		MOBILE_NOT_AUTHORIZED          = 'mobile_not_authorized',
 		MOBILE_SEND_MESSAGE            = 'mobile_send_message',
 		COMMAND_DECRYPT_ERROR          = 'command_decrypt_error',
-		BLOCKED_DOMAIN                 = 'blocked_domain'
+		BLOCKED_DOMAIN                 = 'blocked_domain',
+		INVALID_OPERATION              = 'invalid_operation'
 	}
 
 	export const enum CertificateTypes {
@@ -1150,6 +1262,18 @@ export namespace LacunaWebPKI {
 		TstInfo           = 'TstInfo',
 	}
 
+	export const enum PdfAStandards {
+		Unknown = 'Unknown',
+		PdfA_1B = 'PdfA_1B',
+		PdfA_1A = 'PdfA_1A',
+		PdfA_2B = 'PdfA_2B',
+		PdfA_2A = 'PdfA_2A',
+		PdfA_2U = 'PdfA_2U',
+		PdfA_3B = 'PdfA_3B',
+		PdfA_3A = 'PdfA_3A',
+		PdfA_3U = 'PdfA_3U',
+	}
+
 	// visual representation
 	export const enum PadesPaperSizes {
 		Custom = 'custom',
@@ -1230,6 +1354,14 @@ export namespace LacunaWebPKI {
 		Mutual = 'mutual'
 	}
 
+	export const enum EncryptionParamaters {
+		RSAEncryptionPkcs1 = 'RSAEncryptionPkcs1',
+		RSAEncryptionOaepSHA1 = 'RSAEncryptionOaepSHA1',
+		RSAEncryptionOaepSHA256 = 'RSAEncryptionOaepSHA256',
+		RSAEncryptionOaepSHA384 = 'RSAEncryptionOaepSHA384',
+		RSAEncryptionOaepSHA512 = 'RSAEncryptionOaepSHA512'
+	}
+
 
 
 }
@@ -1299,6 +1431,8 @@ export interface CertificateModel {
 	thumbprint: string,
 	/** Object with boolean properties indicating wether each possible key usage is set on the certificate. */
 	keyUsage: KeyUsagesModel,
+	/** Object with boolean properties indicating wether each possible EXTENDED key usage is set on the certificate. */
+	extendedKeyUsage: ExtendedKeyUsagesModel,
 	/** Array with certificate policies info */
 	certificatePolicies: CertificatePolicyModel[],
 	/** Object with Brazil-specific fields. */
@@ -1329,6 +1463,19 @@ export interface KeyUsagesModel {
 	keyCertSign: boolean,
 	keyEncipherment: boolean,
 	nonRepudiation: boolean
+}
+
+export interface ExtendedKeyUsagesModel {
+	clientAuth: boolean,
+	serverAuth: boolean,
+	codeSigning: boolean,
+	emailProtection: boolean,
+	timeStamping: boolean,
+	ocspSigning: boolean,
+	ipsecEndSystem: boolean,
+	ipsecTunnel: boolean,
+	ipsecUser: boolean,
+	any: boolean
 }
 
 /**************************************************************
@@ -1599,28 +1746,47 @@ export interface SignerModel {
 
 export interface CadesSignerModel extends SignerModel {
 	messageDigest: DigestModel,
+	// TODO: next version
+	// signingDescription?: string,
 }
 
 export interface PadesSignerModel extends SignerModel {
 	messageDigest: DigestModel,
 	isDocumentTimestamp: boolean,
-	signatureFieldName: string
+	signatureFieldName: string,
+	// TODO: next version
+	// reason?: string,
+	// location?: string,
 }
 
 export interface XmlSignerModel extends SignerModel {
 	signatureElementId : string,
 	type : LacunaWebPKI.XmlSignedEntityTypes,
-	signedElement : XmlElementModel 
+	signedElement : XmlElementModel,
+	// TODO: next version
+	// dataObjectFormat?: DataObjectFormatModel,
 }
 
 export interface CadesSignatureModel {
 	encapsulatedContentType: LacunaWebPKI.CmsContentTypes,
 	hasEncapsulatedContent: boolean,
+	// TODO: next version
+	// encapsulatedContent?: string,
 	signers: CadesSignerModel[]
 }
 
 export interface PadesSignatureModel {
+	// TODO: next version
+	// pagesCount: number,
+	// pdfAStandard?: LacunaWebPKI.PdfAStandards,
+	// metadata?: { [key: string]: string; },
 	signers: PadesSignerModel[]
+}
+
+export interface DataObjectFormatModel {
+	description?: string,
+	oid?: string,
+	mimeType?: string,
 }
 
 export interface XmlSignatureModel {
@@ -1747,6 +1913,11 @@ export interface SignHashBatchResponse {
 	signatures: string[]
 }
 
+export interface SignHashesResponse {
+	/** A Base64 encoded signatures array. */
+	signatures: string[]
+}
+
 // Visual Representation Types
 
 export interface VisualRepresentation {
@@ -1862,6 +2033,23 @@ export interface GeolocationInfo {
 	latitude: number,
 	longitude: number,
 	timestamp: Date
+}
+
+export interface EncryptResponse {
+	/** The encrypted data Base64 encoded  */
+	encrypted: string
+}
+
+export interface DecryptResponse {
+	/** The decrypted data Base64 encoded  */
+	decrypted: string
+}
+
+export interface Hash {
+	/** The hash algorithm name or OID */
+	algorithm: string,
+	/** The hash value in Base64 */
+	value: string
 }
 
 

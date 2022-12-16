@@ -18,7 +18,7 @@ Basta seguir os passos:
     ...
 
     <!-- Adicionar as seguintes linhas -->
-    <script src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.14.8.min.js"></script>
+    <script src="https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.16.0.min.js"></script>
     <script src="https://cdn.lacunasoftware.com/libs/pibask/lacuna-pibask-1.0.1.js"></script>
     <script>
 	  window.lacunaWebPkiLicense = '>>> Insira aqui sua licença binária do Web PKI <<<';
