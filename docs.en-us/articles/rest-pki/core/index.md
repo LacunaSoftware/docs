@@ -3,7 +3,7 @@
 **Rest PKI Core** is the new version of [Rest PKI](../index.md) with extended compatibility with environments and databases.
 
 In addition to Windows Server (which is already supported by Rest PKI), Rest PKI Core also runs on **Linux** (Debian- and RedHat-based distributions)
-and on **Docker**. As for database servers, in addition to SQL Server, **PostgreSQL** will also be supported soon.
+and on **Docker**. As for database servers, both SQL Server and PostgreSQL are supported.
 
 ## SaaS and on-premises
 

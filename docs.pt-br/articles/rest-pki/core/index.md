@@ -3,7 +3,7 @@
 **Rest PKI Core** é a nova versão do [Rest PKI](../index.md) com compatibilidade estendida com ambientes e SGBDs.
 
 Além de Windows Server (já suportado pelo Rest PKI), o Rest PKI Core é compatível com **Linux** (distribuições baseadas em Debian e RedHat)
-e também com **Docker**. Com relação a SGBDs, além do SQL Server, em breve será suportado também o **PostgreSQL**.
+e também com **Docker**. Com relação a SGBDs, são suportados SQL Server e PostgreSQL.
 
 ## SaaS e *on premises*
 
