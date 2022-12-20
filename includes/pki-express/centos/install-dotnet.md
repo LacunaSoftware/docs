@@ -1,4 +1,4 @@
 ﻿```sh
 sudo yum update
-sudo yum install aspnetcore-runtime-2.1
+sudo yum install aspnetcore-runtime-6.0
 ```

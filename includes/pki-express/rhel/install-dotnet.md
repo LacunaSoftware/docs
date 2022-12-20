@@ -1,3 +1,3 @@
 ﻿```sh
-sudo yum install rh-dotnet21 -y
+sudo dnf install aspnetcore-runtime-6.0
 ```

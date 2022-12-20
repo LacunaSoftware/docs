@@ -1,5 +1,5 @@
 ﻿```sh
-sudo apt-get install apt-transport-https
+sudo apt-get install -y apt-transport-https
 sudo apt-get update
-sudo apt-get install aspnetcore-runtime-2.1
+sudo apt-get install -y aspnetcore-runtime-6.0
 ```

@@ -1,9 +1,14 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-29-0" />
+### 1.29.0 (2022-11-16)
+
+- Muda build de linux para .NET 6.0 para suportar novas versões do Ubuntu
+
 <a name="v1-28-1" />
 ### 1.28.1 (2022-09-15)
 
-- Corrigi comportamento quando um provedor de certificado em nuvem retorna mais de um certificado com o mesmo identificador escolhendo um desses certificados.
+- Corrigi comportamento quando um provedor de certificado em nuvem retorna mais de um certificado com o mesmo identificador escolhendo um desses certificados
 
 <a name="v1-28-0" />
 ### 1.28.0 (2022-08-25)

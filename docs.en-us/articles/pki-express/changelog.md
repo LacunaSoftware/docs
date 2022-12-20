@@ -1,9 +1,14 @@
 # PKI Express changelog
 
+<a name="v1-29-0" />
+### 1.29.0 (2022-11-16)
+
+- Change linux build to .NET 6.0 for support to newer Ubuntu versions
+
 <a name="v1-28-1" />
 ### 1.28.1 (2022-09-15)
 
-- Fix behavior when a cloud certificate provider return more than one certificate with the same identifier by choosing one of these certificates.
+- Fix behavior when a cloud certificate provider return more than one certificate with the same identifier by choosing one of these certificates
 
 <a name="v1-28-0" />
 ### 1.28.0 (2022-08-25)
