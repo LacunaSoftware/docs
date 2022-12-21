@@ -33,6 +33,7 @@
 ## [Atualizações](web-pki/update.md)
 ## [Requisição Autenticada](web-pki/auth-request.md)
 ## [Logs](web-pki/logs.md)
+## [Segurança](web-pki/security.md)
 ## [Substituição do ICPBravoAccess](web-pki/icpbravo-replacement.md)
 ## [FAQ](web-pki/faq/index.md)
 ### [signData vs. signHash](web-pki/faq/sign-data-vs-hash.md)
