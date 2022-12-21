@@ -4,6 +4,18 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-6-0" />
+### 2.6.0 (2022-12-21)
+
+* Correções de bugs
+  * [AUT-290] Erro ao gerar histórico escolar de emissão anterior a melhoria de informações faltantes
+
+* Melhorias
+  * [AUT-284] Relatório de documentos no SysAdmin
+  * [AUT-285] Emissões de histórico no relatório
+  * [AUT-288] Adicionar coluna Forma de Integralização da disciplina no RVHE
+  * [AUT-289] Refatorar a validação do elemento Assinantes
+
 <a name="v2-5-0" />
 ### 2.5.0 (2022-12-12)
 

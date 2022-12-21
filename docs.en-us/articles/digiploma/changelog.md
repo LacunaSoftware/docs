@@ -4,6 +4,18 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-6-0" />
+### 2.6.0 (2022-12-21)
+
+* Bug fixes
+  * [AUT-290] Error when generating academic transcripts from previous emissions with missing information improvement
+
+* Improvements
+  * [AUT-284] Documents report in SysAdmin
+  * [AUT-285] Academic transcript emissions in the report
+  * [AUT-288] Add column of Form of Integralization of the discipline in the RVHE
+  * [AUT-289] Refactor the validation of the Assinantes element
+
 <a name="v2-5-0" />
 ### 2.5.0 (2022-12-12)
 
