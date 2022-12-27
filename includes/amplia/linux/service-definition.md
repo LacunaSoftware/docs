@@ -12,8 +12,6 @@ SyslogIdentifier=amplia
 User=amplia
 Environment=ASPNETCORE_ENVIRONMENT=Linux
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
-# Uncomment the line below if you intend to use Elliptic Curve keys
-#Environment=CLR_OPENSSL_VERSION_OVERRIDE=1.1
 
 [Install]
 WantedBy=multi-user.target

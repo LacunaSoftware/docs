@@ -13,7 +13,7 @@ dotnet Lacuna.Amplia.Site.dll [settings] -- test-email <to-address>
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/amplia:3.15 [settings] -- test-email <to-address>
+docker run -i lacunasoftware/amplia:4.0 [settings] -- test-email <to-address>
 ```
 
 [!include[About settings](includes/about-settings.md)]

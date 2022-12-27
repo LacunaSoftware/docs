@@ -6,13 +6,11 @@ To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on
 
 ## Prerequisites
 
-* Ubuntu x64 version 16.04, 18.04, 19.04 or 20.04
+* Ubuntu Server version 22.04, 20.04, 18.04 or 16.04
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-31.md)]
-
-[!include[Install dependencies](../../../includes/linux/ubuntu/install-dependencies.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
 
 ## Install Amplia
 

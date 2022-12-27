@@ -1,5 +1,54 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v4-0-0" />
+### 4.0.0 (2022-12-27)
+
+> [!WARNING]
+> Esta atualização cria dois índices que estavam faltando, nas tabelas de pedidos e de certificados. Caso a sua base de dados tenha
+> um número elevado de pedidos e/ou certificados (muitos milhares ou mais), a atualização do banco de dados pode falhar. Nesse caso,
+> atualize o banco de dados manualmente com o comando [update-db](on-premises/tool/update-db.md) passando um `--timeout <seconds>` alto.
+
+Novas funcionalidades:
+
+* [AMP-220] - Novas APIs para suportar o [Lacuna PSC](../psc/index.md)
+* [AMP-268] - Certificados de Cabo Verde
+* [AMP-252] - Novos perfis de certificado do Paraguay
+* [AMP-249] - Integração com HSM Kryptus
+* [AMP-271] - Criar configuração de domínios de OCSP
+
+Melhorias:
+
+* [AMP-272] - Atualizar ASP.NET Core para versão 6.0
+* [AMP-258] - Suporte a arquivo de configuração .conf/.ini
+* [AMP-261] - Criar índices faltando sobre pedidos e certificados
+* [AMP-265] - Campo SerialNumber na emissão de CSR personalizada
+* [AMP-267] - Criação de pedido com número de série pré-determinado
+* [AMP-270] - Suporte a múltiplas políticas de certificação
+* [AMP-274] - Gerar GUIDs "semi sequenciais" para melhorar desempenho do banco de dados
+
+Correções de bugs:
+
+* [AMP-269] - Última CRL não é encontrada caso o nome da AC tenha letras em caixa alta
+
+Atualiza modelo do banco de dados: **sim** (veja aviso acima)
+
+
+
+<a name="v3-15-2" />
+### 3.15.2 (2022-10-10)
+
+Melhorias:
+
+* [AMP-262] - Melhorar desempenho da emissão de LCRs em situações com muitas ACs (1000+)
+
+Correções de bugs:
+
+* [AMP-263] - Comunicação com Azure Key Vault não reutiliza conexões
+
+Atualiza modelo do banco de dados: não
+
+
+
 <a name="v3-15-1" />
 ### 3.15.1 (2022-09-23)
 

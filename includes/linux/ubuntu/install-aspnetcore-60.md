@@ -1,6 +1,7 @@
 ﻿### Ubuntu 22.04 (LTS)
 
 ```bash
+apt-get update
 apt-get install aspnetcore-runtime-6.0
 ```
 

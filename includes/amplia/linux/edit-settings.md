@@ -1,3 +1,3 @@
 ﻿```sh
-nano /etc/amplia/appsettings.linux.json
+nano /etc/amplia/appsettings.conf
 ```

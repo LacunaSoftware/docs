@@ -13,12 +13,12 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The current recommended image is `lacunasoftware/amplia:3.15`
+The current recommended image is `lacunasoftware/amplia:4.0`
 
 Featured image tags:
 
-* Tag `3.15` points to the latest 3.15.x image **(recommended)**
-* Tag `3` points to the lastest 3.x image
+* Tag `4.0` points to the latest 4.0.x image **(recommended)**
+* Tag `4` points to the lastest 4.x image
 * Tag `stable` points to the latest stable image
 
 This image requires: 

@@ -22,35 +22,15 @@ Edit the configuration file to configure your Amplia instance:
 
 [!include[Edit settings](../../../../../../includes/amplia/linux/edit-settings.md)]
 
-[!include[Database config](../../includes/database-config.md)]
-
-<a name="encryption-key-generation" />
-
-### General settings
-
-Generate a 256-bit key to encrypt CA keys [stored on the database](../../key-stores/database.md):
+On the `[General]` section, to fill the `EncryptionKey` setting generate a 256-bit key to encrypt sensitive data stored on the database:
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 
-Choose a strong password for root access to the dashboard and hash it with the [command-line tool](../../tool/index.md):
+Also on the `[General]` section, to fill the `RootPasswordHash` setting choose a strong password for root access to the dashboard and hash it:
 
 [!include[Hash root password](../../../../../../includes/amplia/linux/hash-root-pass.md)]
 
-[!include[General config](../../includes/general-config.md)]
-
-[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
-
-[!include[Amplia config](../../includes/amplia-config.md)]
-
-[!include[PKI Suite config](../../includes/pki-config.md)]
-
-[!include[Email config](../../includes/email-config.md)]
-
-[!include[OIDC config](../../includes/oidc-config.md)]
-
-[!include[SMS config](../../includes/sms-config.md)]
-
-[!include[Key store config](../../includes/key-store-config.md)]
+Fill the remaining settings according to the instructions on the configuration file.
 
 ## Set up a daemon
 
@@ -61,9 +41,6 @@ Create the service definition file:
 Enter the following:
 
 [!include[Service definition](../../../../../../includes/amplia/linux/service-definition.md)]
-
-> [!NOTE]
-> If you intend to use Elliptic Curve (EC) keys, uncomment the line marked above. In that case, you also need to make sure your server has OpenSSL 1.1 installed.
 
 Save the file, then enable the service and start it:
 

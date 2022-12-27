@@ -1,19 +1,16 @@
 ﻿# Installing Amplia on Rocky Linux
 
-> [!NOTE]
-> Only Rocky Linux 8 is currently supported. Support for Rocky Linux 9 is coming soon (expected Dec/2022)
-
 To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on Rocky Linux, follow the steps below. For other platforms, [click here](../index.md).
 
 [!include[See planning](../includes/see-planning.md)]
 
 ## Prerequisites
 
-* Rocky Linux 8.x
+* Rocky Linux 8.x or greater
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime](../../../includes/linux/rocky/install-aspnetcore-31.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/rocky/install-aspnetcore-60.md)]
 
 ## Install Amplia
 

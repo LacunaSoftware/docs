@@ -1,5 +1,54 @@
 ﻿# Amplia changelog
 
+<a name="v4-0-0" />
+### 4.0.0 (2022-12-27)
+
+> [!WARNING]
+> This update creates two missing indexes, on the orders and certificates tables. If your database has a high number of orders and/or
+> certificates (several thousands or more), the database update may fail. In this case, update the database manually with the command
+> [update-db](on-premises/tool/update-db.md) passing a high `--timeout <seconds>` value.
+
+New Features:
+
+* [AMP-220] - New APIs to support [Lacuna PSC](../psc/index.md)
+* [AMP-268] - Cape Verde certificates
+* [AMP-252] - Updated Paraguay certificate profiles
+* [AMP-249] - Direct Kryptus HSM integration
+* [AMP-271] - OCSP domain configuration
+
+Improvements:
+
+* [AMP-272] - Update ASP.NET Core to version 6.0
+* [AMP-258] - Add support for .conf/.ini configuration file
+* [AMP-261] - Create missing indexes over orders and certificates
+* [AMP-265] - Add field SerialNumber on custom CSR issue page
+* [AMP-267] - Creation of order with predefined serial number for the certificate
+* [AMP-270] - Add support for multiple certificate policies on a single certificate
+* [AMP-274] - Generate "quasi-sequential" GUIDs to improve database performance
+
+Bug fixes:
+
+* [AMP-269] - Latest CRL is not found if the CA name contains uppercase letters
+
+Updates database model: **yes** (see warning above)
+
+
+
+<a name="v3-15-2" />
+### 3.15.2 (2022-10-10)
+
+Improvements:
+
+* [AMP-262] - Optimize CRL issuing in scenarios with several CAs (1000+)
+
+Bug fixes:
+
+* [AMP-263] - Azure Key vault communication does not reuse connections
+
+Updates database model: no
+
+
+
 <a name="v3-15-1" />
 ### 3.15.1 (2022-09-23)
 
