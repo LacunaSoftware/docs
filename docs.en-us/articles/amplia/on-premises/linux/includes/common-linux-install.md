@@ -22,6 +22,8 @@ Edit the configuration file to configure your Amplia instance:
 
 [!include[Edit settings](../../../../../../includes/amplia/linux/edit-settings.md)]
 
+<a name="encryption-key-generation" />
+
 On the `[General]` section, to fill the `EncryptionKey` setting generate a 256-bit key to encrypt sensitive data stored on the database:
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]

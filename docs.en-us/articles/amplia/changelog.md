@@ -4,7 +4,7 @@
 ### 4.0.0 (2022-12-27)
 
 > [!WARNING]
-> This update creates two missing indexes, on the orders and certificates tables. If your database has a high number of orders and/or
+> This update creates two missing indexes, on the `Orders` and `Certificates` tables. If your database has a high number of orders and/or
 > certificates (several thousands or more), the database update may fail. In this case, update the database manually with the command
 > [update-db](on-premises/tool/update-db.md) passing a high `--timeout <seconds>` value.
 
@@ -13,7 +13,7 @@ New Features:
 * [AMP-220] - New APIs to support [Lacuna PSC](../psc/index.md)
 * [AMP-268] - Cape Verde certificates
 * [AMP-252] - Updated Paraguay certificate profiles
-* [AMP-249] - Direct Kryptus HSM integration
+* [AMP-249] - Proprietary [Kryptus HSM](on-premises/key-stores/kryptus.md) integration
 * [AMP-271] - OCSP domain configuration
 
 Improvements:

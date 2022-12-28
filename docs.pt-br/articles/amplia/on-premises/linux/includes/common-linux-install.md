@@ -24,35 +24,17 @@ Edite o arquivo de configuração para configurar sua instância do Amplia:
 
 [!include[Edit settings](../../../../../../includes/amplia/linux/edit-settings.md)]
 
-[!include[Database config](../../includes/database-config.md)]
-
 <a name="encryption-key-generation" />
 
-### Configurações gerais
-
-Gere uma chave de 256 bits para cifrar chaves de AC [armazenadas em banco de dados](../../key-stores/database.md):
+Na seção `[General]`, para preencher o parâmetro `EncryptionKey` gere uma chave de 256 bits para cifrar dados sensíveis armazenados no banco de dados:
 
 [!include[Generate key](../../../../../../includes/amplia/linux/gen-key.md)]
 
-Escolha uma senha forte para o acesso de root e compute o *hash* da senha utilizando o [utilitário de comando de linha](../../tool/index.md):
+Ainda na seção `[General]`, para preencher o parâmetro `RootPasswordHash` escolha uma senha forte para o acesso de root e compute o *hash* da senha:
 
 [!include[Hash root password](../../../../../../includes/amplia/linux/hash-root-pass.md)]
 
-[!include[General config](../../includes/general-config.md)]
-
-[!include[Bindings config](../../../../includes/spa-config/bindings.md)]
-
-[!include[Amplia config](../../includes/amplia-config.md)]
-
-[!include[PKI Suite config](../../includes/pki-config.md)]
-
-[!include[Email config](../../includes/email-config.md)]
-
-[!include[OIDC config](../../includes/oidc-config.md)]
-
-[!include[SMS config](../../includes/sms-config.md)]
-
-[!include[Key store config](../../includes/key-store-config.md)]
+Preencha os demais parâmetros de acordo com as instruções presentes no arquivo de configuração.
 
 ## Configurar um *daemon*
 
@@ -63,9 +45,6 @@ Crie o arquivo de definição do serviço:
 Digite o seguinte:
 
 [!include[Service definition](../../../../../../includes/amplia/linux/service-definition.md)]
-
-> [!NOTE]
-> Se você pretende usar chaves de curvas elípticas (EC), descomente a linha marcada acima. Neste caso, você também precisa ter certeza do seu servido ter o OpenSSL 1.1 instalado.
 
 Salve o arquivo, habilite o serviço e inicie-o:
 

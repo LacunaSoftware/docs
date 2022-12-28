@@ -6,7 +6,7 @@
 
 Follow the instructions below depending on your Ubuntu version to:
 
-1. Register the Microsoft key and add the product repository (this only needs to be done on Ubuntu 20 or previous and once per machine)
+1. Register the Microsoft key and add the product repository (this only needs to be done on versions prior to 22 and once per machine)
 1. Install the package `aspnetcore-runtime-6.0`
 
 [!include[Install ASP.NET Core Runtime](../../../../../includes/linux/ubuntu/install-aspnetcore-60.md)]

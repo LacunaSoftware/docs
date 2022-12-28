@@ -3,7 +3,7 @@
 * Licença Web PKI (formato Base64/binário) -- necessário apenas se os usuários forem emitir certificados em seus computadores (procedimento de emissão na web)
 * Entradas de DNS criadas anteriormente para:
     * Acesso ao painel de controle (veja [Domínio de acesso ao painel de controle](../index.md#dashboard-domain))
-    * Publicação de LCRs (veja [Domínios de acesso](../index.md#access-domains))
+    * Publicação de LCRs e acesso a OCSP (veja [Domínios de acesso](../index.md#access-domains))
 * (recomendado) Certificado SSL válido para o domínio de acesso ao painel de controle
 
 Você vai precisar também de uma *connection string* para o **banco de dados** previamente criado tendo:

@@ -7,4 +7,4 @@ The expected output is similar to:
 [!include[Expected output](../../../../includes/linux/test-aspnetcore-output-60.md)]
 
 > [!TIP]
-> For alternative ways to install the ASP.NET Core Runtime, see [this page](https://docs.microsoft.com/en-us/dotnet/core/install/linux)
+> For other operating system versions and alternative ways to install the ASP.NET Core Runtime, see [this page](https://docs.microsoft.com/en-us/dotnet/core/install/linux)

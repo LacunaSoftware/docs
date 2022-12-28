@@ -4,7 +4,7 @@
 ### 4.0.0 (2022-12-27)
 
 > [!WARNING]
-> Esta atualização cria dois índices que estavam faltando, nas tabelas de pedidos e de certificados. Caso a sua base de dados tenha
+> Esta atualização cria dois índices que estavam faltando, nas tabelas `Orders` e `Certificates`. Caso a sua base de dados tenha
 > um número elevado de pedidos e/ou certificados (muitos milhares ou mais), a atualização do banco de dados pode falhar. Nesse caso,
 > atualize o banco de dados manualmente com o comando [update-db](on-premises/tool/update-db.md) passando um `--timeout <seconds>` alto.
 
@@ -13,7 +13,7 @@ Novas funcionalidades:
 * [AMP-220] - Novas APIs para suportar o [Lacuna PSC](../psc/index.md)
 * [AMP-268] - Certificados de Cabo Verde
 * [AMP-252] - Novos perfis de certificado do Paraguay
-* [AMP-249] - Integração com HSM Kryptus
+* [AMP-249] - Integração proprietária com [HSM Kryptus](on-premises/key-stores/kryptus.md)
 * [AMP-271] - Criar configuração de domínios de OCSP
 
 Melhorias:
