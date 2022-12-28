@@ -320,6 +320,7 @@
 ### [Verificando a versão instalada](amplia/on-premises/check-version.md)
 ### [Atualizando para 3.0](amplia/on-premises/update-30.md)
 ### [Atualizando para 3.5](amplia/on-premises/update-35.md)
+### [Atualizando para 4.0](amplia/on-premises/update-40.md)
 ### [Migrando com chaves em banco](amplia/on-premises/migrate-with-db-keys.md)
 ## [Criação de AC de dispositivos](amplia/create-device-ca.md)
 ## [Histórico de versões](amplia/changelog.md)

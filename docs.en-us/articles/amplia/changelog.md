@@ -3,10 +3,7 @@
 <a name="v4-0-0" />
 ### 4.0.0 (2022-12-27)
 
-> [!WARNING]
-> This update creates two missing indexes, on the `Orders` and `Certificates` tables. If your database has a high number of orders and/or
-> certificates (several thousands or more), the database update may fail. In this case, update the database manually with the command
-> [update-db](on-premises/tool/update-db.md) passing a high `--timeout <seconds>` value.
+**See [Update Amplia from 3.x to 4.0](on-premises/update-40.md)**
 
 New Features:
 

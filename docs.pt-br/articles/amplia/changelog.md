@@ -3,10 +3,7 @@
 <a name="v4-0-0" />
 ### 4.0.0 (2022-12-27)
 
-> [!WARNING]
-> Esta atualização cria dois índices que estavam faltando, nas tabelas `Orders` e `Certificates`. Caso a sua base de dados tenha
-> um número elevado de pedidos e/ou certificados (muitos milhares ou mais), a atualização do banco de dados pode falhar. Nesse caso,
-> atualize o banco de dados manualmente com o comando [update-db](on-premises/tool/update-db.md) passando um `--timeout <seconds>` alto.
+**Veja [Atualizando o Amplia da versão 3.x para 4.0](on-premises/update-40.md)**
 
 Novas funcionalidades:
 

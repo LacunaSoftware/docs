@@ -320,6 +320,7 @@
 ### [Checking the installed version](amplia/on-premises/check-version.md)
 ### [Update to 3.0](amplia/on-premises/update-30.md)
 ### [Update to 3.5](amplia/on-premises/update-35.md)
+### [Update to 4.0](amplia/on-premises/update-40.md)
 ### [Migrate having database keys](amplia/on-premises/migrate-with-db-keys.md)
 ## [Create a device CA](amplia/create-device-ca.md)
 ## [Changelog](amplia/changelog.md)
