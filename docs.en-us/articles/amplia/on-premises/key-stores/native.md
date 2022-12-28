@@ -88,7 +88,25 @@ they can be enabled on the section **Amplia** of the configuration file:
 * `NativeUserKeyStoreEnabled`: set this setting to `true` to enable the native user store, called *NativeUser*
 * `NativeMachineKeyStoreEnabled`: set this setting to `true` to enable the native machine store, called *NativeMachine* (not available on Linux)
 
-You can use the names of the stores mentioned above to configure the `DefaultKeyStore`. For instance:
+You can use the names of the stores mentioned above to configure the `DefaultKeyStore`.
+
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[Amplia]
+NativeUserKeyStoreEnabled=True
+DefaultKeyStore=NativeUser
+```
+
+Example (environment variables):
+
+```sh
+[Amplia]
+Amplia__NativeUserKeyStoreEnabled=True
+Amplia__DefaultKeyStore=NativeUser
+```
+
+Example (*.json* configuration file):
 
 ```json
 	...,
@@ -105,6 +123,26 @@ You can use the names of the stores mentioned above to configure the `DefaultKey
 
 If you want to generate non-exportable keys on a native key store, instead of using the simplified configuration method mentioned above,
 you must add an entry to the **KeyStores** configuration section, like either of the illustrated below:
+
+```ini
+[KeyStores:NativeUser]
+Type=Native
+ExportableKeys=true
+
+[KeyStores:NativeMachine]
+Type=Native
+UseMachineStore=true
+ExportableKeys=true
+```
+
+```sh
+KeyStores__NativeUser__Type=Native
+KeyStores__NativeUser__ExportableKeys=true
+
+KeyStores__NativeMachine__Type=Native
+KeyStores__NativeMachine__UseMachineStore=true
+KeyStores__NativeMachine__ExportableKeys=true
+```
 
 ```json
 	...,

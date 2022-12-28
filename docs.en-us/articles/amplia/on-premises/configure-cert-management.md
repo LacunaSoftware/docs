@@ -45,7 +45,38 @@ store is an HSM, the PIN policy must match the user password policy configured o
 > All settings have meaningful default values, except for the **KeyStore** setting and the **PinPolicy** subsection of the key store configuration, which
 > must be filled. Otherwise, only fill the settings you have a good reason to change the default value of.
 
-Example (JSON configuration):
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[CertificateManagement]
+KeyStore=MyHSM
+
+[CertificateManagement:SmsAuth]
+InitialLockPeriodMinutes=2.5
+CodeSize=7
+
+[CertificateManagement:PukPolicy]
+MinUppercaseLetters=1
+MinLowercaseLetters=1
+MinDigits=1
+
+[KeyStores:MyHSM:PinPolicy]
+MinDigits=6
+```
+
+Example (environment variables):
+
+```sh
+CertificateManagement__KeyStore=MyHSM
+CertificateManagement__SmsAuth__InitialLockPeriodMinutes=2.5
+CertificateManagement__SmsAuth__CodeSize=7
+CertificateManagement__PukPolicy__MinUppercaseLetters=1
+CertificateManagement__PukPolicy__MinLowercaseLetters=1
+CertificateManagement__PukPolicy__MinDigits=1
+KeyStores__MyHSM__PinPolicy__MinDigits=6
+```
+
+Example (*.json* configuration file):
 
 ```json
 {
@@ -72,18 +103,6 @@ Example (JSON configuration):
 	},
 	...
 }
-```
-
-Example (environment variables):
-
-```sh
-CertificateManagement__KeyStore=MyHSM
-CertificateManagement__SmsAuth__InitialLockPeriodMinutes=2.5
-CertificateManagement__SmsAuth__CodeSize=7
-CertificateManagement__PukPolicy__MinUppercaseLetters=1
-CertificateManagement__PukPolicy__MinLowercaseLetters=1
-CertificateManagement__PukPolicy__MinDigits=1
-KeyStores__MyHSM__PinPolicy__MinDigits=6
 ```
 
 <a name="issuing-service" />
@@ -121,6 +140,25 @@ the Amplia instance and generate an API key for it:
 
 Then, set the **IssuingService** to `AmpliaReg` and fill out the **AmpliaReg** section with the **Endpoint** and **ApiKey**.
 
+Example (*.ini* or *.conf* file):
+
+```ini
+[CertificateManagement]
+IssuingService=AmpliaReg
+
+[AmpliaReg]
+Endpoint=https://your-amplia-reg-instance.com/
+ApiKey=YOUR_API_KEY
+```
+
+Example (environment variables):
+
+```sh
+CertificateManagement__IssuingService=AmpliaReg
+AmpliaReg__Endpoint=https://your-amplia-reg-instance.com/
+AmpliaReg__ApiKey=YOUR_API_KEY
+```
+
 Example (JSON configuration):
 
 ```json
@@ -136,17 +174,26 @@ Example (JSON configuration):
 	...
 ```
 
-Example (environment variables):
-
-```sh
-CertificateManagement__IssuingService=AmpliaReg
-AmpliaReg__Endpoint=https://your-amplia-reg-instance.com/
-AmpliaReg__ApiKey=YOUR_API_KEY
-```
-
 ### PMCert issuing service
 
 To use an instance of **PMCert** to issue the certificates, set the **IssuingService** to `PMCert` and fill out the **PMCert** section with the **Endpoint**.
+
+Example (*.ini* or *.conf* file):
+
+```sh
+[CertificateManagement]
+IssuingService=PMCert
+
+[PMCert]
+Endpoint=https://your-pm-cert-instance.com/
+```
+
+Example (environment variables):
+
+```sh
+CertificateManagement__IssuingService=PMCert
+PMCert__Endpoint=https://your-pm-cert-instance.com/
+```
 
 Example (JSON configuration):
 
@@ -160,11 +207,4 @@ Example (JSON configuration):
 		"Endpoint": "https://your-pm-cert-instance.com/"
 	}
 	...
-```
-
-Example (environment variables):
-
-```sh
-CertificateManagement__IssuingService=PMCert
-PMCert__Endpoint=https://your-pm-cert-instance.com/
 ```

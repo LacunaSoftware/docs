@@ -24,6 +24,31 @@ credentials for a **VCO user** (*not* a regular user) on the following settings:
 > If you intend to use the same VHSM for both use cases, set all 4 settings. However, this would be very unusual, since it is
 > recommended to keep CA and user keys in separate VHSMs.
 
+Sample configuration (*.ini* or *.conf* file):
+
+```bash
+[KeyStores:MyKryptusHsm]
+Type=Kryptus
+Host=10.1.2.3
+Port=50000
+RootUsername=SOME_REGULAR_USER
+RootPassword=SOME_PASSWORD
+VcoUsername=SOME_VCO_USER
+VcoPassword=SOME_PASSWORD
+```
+
+Sample configuration (environment variables):
+
+```bash
+KeyStores__MyKryptusHsm__Type=Kryptus
+KeyStores__MyKryptusHsm__Host=10.1.2.3
+KeyStores__MyKryptusHsm__Port=50000
+KeyStores__MyKryptusHsm__RootUsername=SOME_REGULAR_USER
+KeyStores__MyKryptusHsm__RootPassword=SOME_PASSWORD
+KeyStores__MyKryptusHsm__VcoUsername=SOME_VCO_USER
+KeyStores__MyKryptusHsm__VcoPassword=SOME_PASSWORD
+```
+
 Sample configuration (*.json* file):
 
 ```json
@@ -38,18 +63,6 @@ Sample configuration (*.json* file):
 		"VcoPassword": "SOME_PASSWORD"
 	}
 }
-```
-
-Sample configuration (environment variables):
-
-```bash
-KeyStores__MyKryptusHsm__Type=Kryptus
-KeyStores__MyKryptusHsm__Host=10.1.2.3
-KeyStores__MyKryptusHsm__Port=50000
-KeyStores__MyKryptusHsm__RootUsername=SOME_REGULAR_USER
-KeyStores__MyKryptusHsm__RootPassword=SOME_PASSWORD
-KeyStores__MyKryptusHsm__VcoUsername=SOME_VCO_USER
-KeyStores__MyKryptusHsm__VcoPassword=SOME_PASSWORD
 ```
 
 > [!NOTE]

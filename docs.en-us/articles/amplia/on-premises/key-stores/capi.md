@@ -49,7 +49,24 @@ OverrideKeyPins: ?
 RememberKeyPins: ?
 -->
 
-Sample configuration:
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[KeyStores:MyCapiKeyStore]
+Type=Capi
+ProviderName=...
+ProviderType=PROV_RSA_FULL
+```
+
+Example (environment variables):
+
+```sh
+KeyStores__MyCapiKeyStore__Type=Capi
+KeyStores__MyCapiKeyStore__ProviderName=...
+KeyStores__MyCapiKeyStore__ProviderType=PROV_RSA_FULL
+```
+
+Example (*.json* configuration file):
 
 ```json
 "KeyStores": {

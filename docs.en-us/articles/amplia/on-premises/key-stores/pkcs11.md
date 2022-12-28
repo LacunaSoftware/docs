@@ -13,7 +13,24 @@ To configure a PKCS #11 key store on Amplia, use the following settings:
 * **Pin**: PIN of the token, if required
 * **TokenSerialNumber**: if multiple tokens will be present, you can specify the token to be used with this setting 
 
-Sample configuration:
+Sample configuration (*.ini* or *.conf* file):
+
+```bash
+[KeyStores:MyDevice]
+Type=Pkcs11
+Module=...
+Pin=...
+```
+
+Sample configuration (environment variables):
+
+```bash
+KeyStores__MyDevice__Type=Pkcs11
+KeyStores__MyDevice__Module=...
+KeyStores__MyDevice__Pin=...
+```
+
+Sample configuration (*.json* file):
 
 ```json
 "KeyStores": {
@@ -31,6 +48,19 @@ Sample configuration:
 
 Safenet eToken cryptographic USB token (one token plugged in only):
 
+```ini
+[KeyStores:eToken]
+Type=Pkcs11
+Module=eTPKCS11.dll
+Pin=XXXX
+```
+
+```sh
+KeyStores__eToken__Type=Pkcs11
+KeyStores__eToken__Module=eTPKCS11.dll
+KeyStores__eToken__Pin=XXXX
+```
+
 ```json
 "eToken": {
 	"Type": "Pkcs11",
@@ -40,6 +70,21 @@ Safenet eToken cryptographic USB token (one token plugged in only):
 ```
 
 Safenet eToken cryptographic USB token (multiple tokens present, specifying the token to be used):
+
+```ini
+[KeyStores:eTokenA]
+Type=Pkcs11
+Module=eTPKCS11.dll
+Pin=XXXX
+TokenSerialNumber=01f5cfe4
+```
+
+```sh
+KeyStores__eTokenA__Type=Pkcs11
+KeyStores__eTokenA__Module=eTPKCS11.dll
+KeyStores__eTokenA__Pin=XXXX
+KeyStores__eTokenA__TokenSerialNumber=01f5cfe4
+```
 
 ```json
 "eTokenA": {
@@ -109,6 +154,19 @@ According to Kryptus, the **log_verbosity** entry can assume one of the followin
 > If no verbosity was defined, i.e., no **log_verbosity** is found in the configuration file, the verbosity will default to `quiet`.
 
 Then, on the Amplia configuration file:
+
+```ini
+[KeyStores:MyKryptusHsm]
+Type=Pkcs11
+Module=libkNETPKCS11.so
+Pin=SOME_PASSWORD
+```
+
+```sh
+KeyStores__MyKryptusHsm__Type=Pkcs11
+KeyStores__MyKryptusHsm__Module=libkNETPKCS11.so
+KeyStores__MyKryptusHsm__Pin=SOME_PASSWORD
+```
 
 ```json
 "MyKryptusHsm": {

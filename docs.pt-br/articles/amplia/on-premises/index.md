@@ -66,6 +66,16 @@ Os domínios de acesso escolhidos devem ser criados nos servidores DNS (registro
 > Você não precisa de um certificado SSL para seus domínios de acesso. Uma vez que o padrão X.509 recomenda que LCRs sejam distribuídas por HTTP em vez de HTTPS, os certificados
 > são emitidos com links usando protocolo HTTP.
 
+De maneira análoga, certificados também incluem links para verificação do estado de revogação por OCSP, no formato `http://seu-dominio-ocsp/ocsp/sua-ac`
+
+A parte do link `seu-dominio-ocsp` é chamada na configuração do Amplia de um *domínio de OCSP*. Se nenhum domínio OCSP for configurado, os domínios de acesso
+são usados para compor os links de verificação de OCSP. Entretanto, se você pretende deixar a sua instância do Amplia em intranet, isto é, sem acesso público,
+é preciso configurar domínios de OCSP que apontem para proxies reversos acessíveis publicamente e que repassem as requisições OCSP para a sua instância do Amplia.
+Por exemplo:
+
+* *ocsp.patorum.com*
+* *ocsp.patorum.net*
+
 ## Veja também
 
 * [Preparando o banco de dados para instalação do Amplia](prepare-database.md)

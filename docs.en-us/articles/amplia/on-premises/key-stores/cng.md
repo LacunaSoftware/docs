@@ -29,7 +29,22 @@ OverrideKeyPins: ?
 RememberKeyPins: ?
 -->
 
-Sample configuration:
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[KeyStores:MyCngKeyStore]
+Type=Cng
+ProviderName=...
+```
+
+Example (environment variables):
+
+```sh
+KeyStores__MyCngKeyStore__Type=Cng
+KeyStores__MyCngKeyStore__ProviderName=...
+```
+
+Example (*.json* configuration file):
 
 ```json
 "KeyStores": {

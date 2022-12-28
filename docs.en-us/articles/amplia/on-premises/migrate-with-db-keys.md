@@ -18,4 +18,27 @@ System.Security.Cryptography.CryptographicException: The payload was invalid.
 1. Click on your name on the upper right corner of the screen, then click on **Administration**
 1. On the left menu, click on **About**
 1. Take note of the value of the **App Discriminator** property
-1. When installing the new instance, use that same value on setting `General__AppDiscriminator` (in case of JSON configuration, section *General* setting *AppDiscriminator*)
+1. When installing the new instance, use that same value on setting `AppDiscriminator` of the `General` section (see below)
+
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[General]
+AppDiscriminator=PASTE_VALUE_HERE
+```
+
+Example (environment variables):
+
+```sh
+General_AppDiscriminator=PASTE_VALUE_HERE
+```
+
+Example (*.json* configuration file):
+
+```json
+	...,
+	"General": {
+		"AppDiscriminator": "PASTE_VALUE_HERE"
+	},
+	...
+```

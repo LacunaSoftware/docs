@@ -14,6 +14,25 @@ If you intend to use the HSM for storing CA keys, the credentials can be either 
 If you intend to use the HSM for storing PIN-protected keys, typically combined with [Lacuna's PSC module](../../../psc/index.md), the credentials must be for an
 **Operator** user.
 
+Sample configuration (*.ini* or *.conf* file):
+
+```ini
+[KeyStores:MyDinamoHsm]
+Type=Dinamo
+Host=10.1.2.3
+User=SOME_USER
+Password=SOME_PASSWORD
+```
+
+Sample configuration (environment variables):
+
+```bash
+KeyStores__MyDinamoHsm__Type=Dinamo
+KeyStores__MyDinamoHsm__Host=10.1.2.3
+KeyStores__MyDinamoHsm__User=SOME_USER
+KeyStores__MyDinamoHsm__Password=SOME_PASSWORD
+```
+
 Sample configuration (*.json* file):
 
 ```json
@@ -25,15 +44,6 @@ Sample configuration (*.json* file):
 		"Password": "SOME_PASSWORD"
 	}
 }
-```
-
-Sample configuration (environment variables):
-
-```bash
-KeyStores__MyDinamoHsm__Type=Dinamo
-KeyStores__MyDinamoHsm__Host=10.1.2.3
-KeyStores__MyDinamoHsm__User=SOME_USER
-KeyStores__MyDinamoHsm__Password=SOME_PASSWORD
 ```
 
 ## See also

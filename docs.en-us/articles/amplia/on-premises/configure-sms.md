@@ -3,7 +3,7 @@
 If users will issue certificates (either web or mobile issuing procedure), a SMS confirmation is required to confirm the identity of the user during the
 certificate issue procedure. SMS messages may be sent using different *providers*.
 
-The section **SMS** of the JSON configuration file configures the SMS sending. The setting **Type** defines which provider should be used, and the remaining settings depend on the provider chosen:
+The section **SMS** of the configuration file configures the SMS sending. The setting **Type** defines which provider should be used, and the remaining settings depend on the provider chosen:
 
 * [Twilio](https://www.twilio.com/)
   * **Type**: set this setting to `Twilio` to send SMS messages using Twilio
@@ -28,6 +28,38 @@ The section **SMS** of the JSON configuration file configures the SMS sending. T
   * **SecretAccessKey**: the secret access key
 * Simulator (for debugging purposes only)
   * **Type**: set this setting to `Simulator` to simulate sending SMS messages (messages that would be sent are only logged)
+
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[SMS]
+Type=AmazonSNS
+Region=us-east-1
+AccessKeyId=...
+SecretAccessKey=...
+```
+
+Example (environment variables):
+
+```ini
+SMS__Type=AmazonSNS
+SMS__Region=us-east-1
+SMS__AccessKeyId=...
+SMS__SecretAccessKey=...
+```
+
+Example (*.json* configuration file):
+
+```json
+	...,
+	"SMS": {
+		"Type": "AmazonSNS",
+		"Region": "us-east-1",
+		"AccessKeyId": "...",
+		"SecretAccessKey": "..."
+	},
+	...
+```
 
 ## See also
 

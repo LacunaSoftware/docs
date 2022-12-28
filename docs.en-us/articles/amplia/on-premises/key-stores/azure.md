@@ -72,7 +72,26 @@ that identifies the Key Vault (see example below), and place the following setti
 * **UseHsm**: by default, [HSM-protected](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-hsm-protected-keys) keys are created. To use "software"
   keys, set this value to `false`
 
-Example configuration in JSON file:
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[KeyStores:MyKeyVault]
+Type=AzureKeyVault
+Endpoint=https://xxx.vault.azure.net/
+AppId=00000000-0000-0000-0000-000000000000
+AppKey=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+```
+
+Example (environment variables):
+
+```sh
+KeyStores__MyKeyVault__Type=AzureKeyVault
+KeyStores__MyKeyVault__Endpoint=https://xxx.vault.azure.net/
+KeyStores__MyKeyVault__AppId=00000000-0000-0000-0000-000000000000
+KeyStores__MyKeyVault__AppKey=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+```
+
+Example (*.json* configuration file):
 
 ```json
 "KeyStores": {
@@ -86,15 +105,6 @@ Example configuration in JSON file:
 	...
 }
 ```
-
-Or, in the case of an App Service configuration:
-
-Configuration name         | Value
--------------------------- | -------------
-`KeyStores:Azure:Type`     | `AzureKeyVault`
-`KeyStores:Azure:Endpoint` | `https://xxx.vault.azure.net/`
-`KeyStores:Azure:AppId`    | `00000000-0000-0000-0000-000000000000`
-`KeyStores:Azure:AppKey`   | `AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=`
 
 ## See also
 

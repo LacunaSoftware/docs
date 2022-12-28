@@ -11,7 +11,24 @@ it can be enabled on the section **Amplia** of the configuration file:
 
 * `DatabaseKeyStoreEnabled`: set this setting to `true` to enable the database key store, called *Database*
 
-You can use the name of the store (*Database*) to configure the `DefaultKeyStore`. For instance:
+You can use the name of the store (*Database*) to configure the `DefaultKeyStore`.
+
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[Amplia]
+DatabaseKeyStoreEnabled=True
+DefaultKeyStore=Database
+```
+
+Example (environment variables):
+
+```sh
+Amplia__DatabaseKeyStoreEnabled=True
+Amplia__DefaultKeyStore=Database
+```
+
+Example (*.json* configuration file):
 
 ```json
 	...,
