@@ -40,6 +40,9 @@ To fill the `General__RootPasswordHash` setting, choose a strong password for ro
 
 [!include[Hash root password](../../../../../includes/amplia/docker/hash-root-pass-stdout.md)]
 
+> [!NOTE]
+> If you wish to enable user management, leave the `General__RootPasswordHash` setting blank and follow the steps on [Configure OpenID Connect](../configure-oidc.md) instead
+
 ## Exposed ports
 
 The Amplia image listens on **port 80**.

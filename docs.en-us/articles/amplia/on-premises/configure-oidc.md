@@ -39,6 +39,7 @@ Click the **Settings** tab and set:
   * **Post Logout**: `<applicationURL>` without trailing slash.
 * **Allowed Identification Scopes**: check all
 * **Allowed API scopes**: check the `Amplia` API scope checkbox
+* Check the following checkboxes: `Enable digital certificate login?`, `Prioritize digital certificate login?` and `Require digital certificate login?`
 
 > [!WARNING]
 > Don't forget to save your changes by clicking the button at the end of the page.

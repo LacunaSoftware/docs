@@ -2,17 +2,17 @@
 
 Certificates issued by [Amplia](../index.md) can include links for OCSP verification in the format `http://your-ocsp-domain/ocsp/your-ca`
 
-The `your-ocsp-domain` part of the link is called on the Amplia configurationthe **OCSP domain**. This configuration is optional and is normally not filled,
+The `your-ocsp-domain` part of the link is called on the Amplia configuration an **OCSP domain**. This configuration is optional and is normally not filled,
 in which case certificates are issued without OCSP verification links.
 
-In order to include OCSP verification links on issued certificates, you must choose an OCSP domain, for instance `ocsp.yourcompany.com`.
-
-> [!TIP]
-> If your Amplia instance will be publicly-accessible, the OCSP domain may be the same domain on which the Amplia dashboard will be accessed.
-> If you are unsure whether your instance will be publicly-acessible or not, choose an OCSP domain that is different from the dashboard domain.
+In order to include OCSP verification links on certificates, you must choose an OCSP domain, for instance `ocsp.yourcompany.com`.
 
 This domain should be chosen keeping in mind that it **will have to be maintained for a long time** (for the entire lifetime of the certificates
 issued on your Amplia instance, which is typically several years).
+
+> [!NOTE]
+> If your Amplia instance will be publicly-accessible, the OCSP domain may be the same domain on which the Amplia dashboard will be accessed.
+> If you are unsure whether your instance will be publicly-acessible or not, choose an OCSP domain that is different from the dashboard domain.
 
 The chosen OCSP domain should be created on the DNS servers (either A or CNAME records) pointing to the server on which Amplia will be installed or,
 if your instance will not be publicly-accessible, to a public server with a reverse proxy that forwards OCSP requests to your Amplia instance.
