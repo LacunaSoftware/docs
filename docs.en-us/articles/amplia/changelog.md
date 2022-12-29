@@ -28,7 +28,7 @@ Bug fixes:
 
 * [AMP-269] - Latest CRL is not found if the CA name contains uppercase letters
 
-Updates database model: **yes** (see warning above)
+Updates database model: **yes** (see [warning](on-premises/update-40.md))
 
 
 

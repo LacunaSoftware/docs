@@ -28,7 +28,7 @@ Correções de bugs:
 
 * [AMP-269] - Última CRL não é encontrada caso o nome da AC tenha letras em caixa alta
 
-Atualiza modelo do banco de dados: **sim** (veja aviso acima)
+Atualiza modelo do banco de dados: **sim** (veja [aviso](on-premises/update-40.md))
 
 
 
