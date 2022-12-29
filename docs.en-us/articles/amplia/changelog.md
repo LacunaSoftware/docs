@@ -22,6 +22,7 @@ Improvements:
 * [AMP-267] - Creation of order with predefined serial number for the certificate
 * [AMP-270] - Add support for multiple certificate policies on a single certificate
 * [AMP-274] - Generate "quasi-sequential" GUIDs to improve database performance
+* [AMP-275] - Add specific configuration for OCSP domains
 
 Bug fixes:
 

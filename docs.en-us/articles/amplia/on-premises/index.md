@@ -40,7 +40,7 @@ Amplia will be installed.
 It is also recommended that you have a **valid SSL certificate** for the chosen domain.
 
 <a name="access-domains" />
-### CRL publishing and OCSP access (*access domains*)
+### CRL publishing (*access domains*)
 
 Certificates issued by Amplia include the X.509 *CRL Distribution Point* extension, which contains links to locations where a third party desiring to validate
 the certificate should obtain the latest Certificate Revocation List (CRL) of the CA, required to determine the revocation status of the certificate.
@@ -54,7 +54,8 @@ it is recommended to have two access domains, preferably independent of each oth
 * *ca.patorum.net*
 
 > [!TIP]
-> One of the access domains may be the same domain on which the Amplia dashboard will be accessed.
+> If your Amplia instance will be publicly-accessible, one of the access domains may be the same domain on which the Amplia dashboard will be accessed.
+> If you are unsure whether your instance will be publicly-acessible or not, choose access domains that are different from the dashboard domain.
 
 > [!NOTE]
 > Using a virtual directory (subfolder) on a domain hosting another web application is not supported
@@ -67,15 +68,6 @@ The chosen access domains should be created on the DNS servers (either A or CNAM
 > [!TIP]
 > You do not need an SSL certificate for your access domains. Since X.509 recommends that CRLs be distributed over HTTP instead of HTTPS, the
 > certificates are issued with links using the HTTP protocol.
-
-Similarly, certificates also include links for OCSP verification, in the format `http://your-ocsp-domain/ocsp/your-ca`
-
-The `your-ocsp-domain` part of the link is called on the Amplia configuration an *OCSP domain*. If no OCSP domains are configured, the access domains
-are used instead. If in intend to keep your Amplia instance on an intranet, it is important to choose differente OCSP domains that must point to publicly
-accessible reverse proxies that will forward the OCSP requests to your Amplia instance. For instance:
-
-* *ocsp.patorum.com*
-* *ocsp.patorum.net*
 
 ## See also
 

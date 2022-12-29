@@ -77,6 +77,7 @@ Example (*.ini* or *.conf* configuration file):
 
 ```ini
 [Oidc]
+Enabled=True
 Authority=https://login.id.patorum.com
 ApiEndpoint=https://api.id.patorum.com
 ApiName=amplia
@@ -88,6 +89,7 @@ AppSecret=YOUR_BACKEND_APP_SECRET
 Example (environment variables):
 
 ```bash
+Oidc__Enabled=True
 Oidc__Authority=https://login.id.patorum.com
 Oidc__ApiEndpoint=https://api.id.patorum.com
 Oidc__ApiName=amplia
@@ -101,6 +103,7 @@ Example (*.json* configuration file):
 ```json
     ...,
     "Oidc": {
+        "Enabled": true,
         "Authority": "https://login.id.patorum.com",
         "ApiEndpoint": "https://api.id.patorum.com",
         "ApiName": "amplia",

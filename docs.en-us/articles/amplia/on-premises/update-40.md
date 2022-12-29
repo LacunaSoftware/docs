@@ -36,3 +36,9 @@ If your Amplia instance is hosted on Azure App Services:
 
 > [!TIP]
 > The *Stack settings* section mentioned above is only shown if the App Service Plan is Windows-based. Otherwise, for Linux-based plans, no changes are needed.
+
+<!-- 
+## Breaking change on OCSP configuration
+
+TODO!
+-->

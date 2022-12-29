@@ -1,4 +1,4 @@
-﻿# Atualizando o Amplia da versão 3.x para 4.0
+﻿# Configuração de OCSP - Amplia
 
 <!-- link to version in English -->
 <div data-alt-locales="en-us"></div>

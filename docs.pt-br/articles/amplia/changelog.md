@@ -22,6 +22,7 @@ Melhorias:
 * [AMP-267] - Criação de pedido com número de série pré-determinado
 * [AMP-270] - Suporte a múltiplas políticas de certificação
 * [AMP-274] - Gerar GUIDs "semi sequenciais" para melhorar desempenho do banco de dados
+* [AMP-275] - Criar configuração própria para domínios de OCSP
 
 Correções de bugs:
 

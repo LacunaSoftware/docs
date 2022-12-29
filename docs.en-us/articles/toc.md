@@ -315,6 +315,8 @@
 ### [Configure email sending](amplia/on-premises/configure-email.md)
 ### [Configure SMS sending](amplia/on-premises/configure-sms.md)
 ### [Configure cloud certificate management](amplia/on-premises/configure-cert-management.md)
+### [Configure OCSP](amplia/on-premises/configure-ocsp.md)
+### [CRL propagation](amplia/on-premises/crl-propagation.md)
 ### [Configure HTTPS redirection](amplia/on-premises/configure-https-redirect.md)
 ### [Run without db_owner](amplia/on-premises/unprivileged-db-user.md)
 ### [Checking the installed version](amplia/on-premises/check-version.md)
