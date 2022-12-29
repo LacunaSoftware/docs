@@ -19,7 +19,7 @@ Sample configuration (*.ini* or *.conf* file):
 ```ini
 [KeyStores:MyDinamoHsm]
 Type=Dinamo
-Host=10.1.2.3
+Address=10.1.2.3
 User=SOME_USER
 Password=SOME_PASSWORD
 ```
@@ -28,7 +28,7 @@ Sample configuration (environment variables):
 
 ```bash
 KeyStores__MyDinamoHsm__Type=Dinamo
-KeyStores__MyDinamoHsm__Host=10.1.2.3
+KeyStores__MyDinamoHsm__Address=10.1.2.3
 KeyStores__MyDinamoHsm__User=SOME_USER
 KeyStores__MyDinamoHsm__Password=SOME_PASSWORD
 ```
