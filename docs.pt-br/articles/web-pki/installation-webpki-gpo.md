@@ -1,7 +1,7 @@
 ﻿# Instalação e distribuição de componentes do WEB PKI via GPO
 
 Para distribuição automática dos plugins, extraia os arquivos do ZIP 
-([webpki-ext.zip](https://cdn.lacunasoftware.com/webpki/webpki-ext.zip)) para um **diretório compartilhado** entre os usuários.
+([webpki-ext-2.16.0.zip](https://cdn.lacunasoftware.com/webpki/webpki-ext-2.16.0.zip)) para um **diretório compartilhado** entre os usuários.
 
 Como exemplo, vamos usar o **diretório compartilhado**: `C:\shared\webpki-ext`
 

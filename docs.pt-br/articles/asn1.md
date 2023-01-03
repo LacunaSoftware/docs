@@ -84,3 +84,11 @@ A subárvore `1.3.6.1.4.1.46332.3.2` identifica as políticas de certificados ad
 ### 3.3. Política de Certificado de autenticação de dispositivos
 
 O OID `1.3.6.1.4.1.46332.3.3` identifica a política de certificados conferida a certificados destinados a autenticação de dispositivos confiáveis.
+
+### 3.4. Políticas de Certificado da ICP Lacuna Software
+
+A subárvore `1.3.6.1.4.1.46332.3.4` identifica as políticas de certificados adotadas pela **ICP Lacuna Software**:
+
+* `1.3.6.1.4.1.46332.3.4.1`: certificados cuja chave privada é gerada no computador pessoal do titular
+* `1.3.6.1.4.1.46332.3.4.2`: certificados cuja chave privada é gerada em dispositivo móvel do titular
+* `1.3.6.1.4.1.46332.3.4.3`: certificados cuja chave privada é gerada em dispositivo criptográfico (token USB ou *smartcard*) do titular
