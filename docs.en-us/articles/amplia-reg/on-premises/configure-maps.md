@@ -1,5 +1,9 @@
 ﻿# Configure Maps - Amplia Reg
 
+> [!IMPORTANT]
+> As of version [1.4.0](../changelog.md#1-4-0), Amplia Reg **no longer requires a Google Maps Embed API key**. This documentation is kept here
+> merely for historic purposes.
+
 [Amplia Reg](../index.md) uses [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started) to display geolocations.
 
 <a name="gen-key" />
