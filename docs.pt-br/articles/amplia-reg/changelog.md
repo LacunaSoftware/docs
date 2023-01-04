@@ -37,6 +37,8 @@ ARNG-287 Adicionar suporte a provedor criptográfico IDGo 800
 
 ARNG-248 Controle de ordenação da lista de pedidos na home do ACI não deveria aparecer pois não faz nada
 
+ARNG-260 Campos alfanuméricos em certificados PY não estão admitindo letra `Ñ`
+
 ARNG-280 Signout automático por inatividade é interrompido por confirmações de descarte de mudanças
 
 ARNG-285 Ao voltar ao passo de documentos após tirar a foto, acontece um erro
