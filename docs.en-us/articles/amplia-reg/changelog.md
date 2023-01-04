@@ -39,6 +39,8 @@ ARNG-287 Add support for crypto provider IDGo 800
 
 ARNG-248 Order list on confirmation agent home page should not be sortable
 
+ARNG-260 Alphanumeric input fields for PY certificates are not accepting `Ñ` character
+
 ARNG-280 Automatic sign-out due to session timeout is interrupted by discard confirmations
 
 ARNG-285 An error occurrs if the order has a photo and the documents step is loaded
