@@ -1,5 +1,7 @@
 ﻿# Instalação do PKI Express em Red Hat Enterprise Linux
 
+[!include[Para instalar](includes/intro-prefix.md)] no Red Hat Enterprise Linux [!include[voce precisara](includes/intro-suffix.md)]
+
 [!include[De posse da licenca](includes/prereqs-reminder.md)]
 
 <a name="install" />

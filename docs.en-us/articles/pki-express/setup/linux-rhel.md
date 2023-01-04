@@ -2,8 +2,10 @@
 
 [!include[To install](includes/intro-prefix.md)] on Red Hat Enterprise Linux (RHEL) [!include[you will need](includes/intro-suffix.md)]
 
+[!include[With the license file](includes/prereqs-reminder.md)]
+
 <a name="install" />
-## 1. Install PKI Express
+## Installing PKI Express
 
 Download PKI Express and extract to the destination directory:
 

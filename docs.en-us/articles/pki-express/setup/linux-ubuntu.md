@@ -4,7 +4,7 @@
 
 [!include[With the license file](includes/prereqs-reminder.md)]
 
-## 1. Install PKI Express
+## Installing PKI Express
 
 Download PKI Express and extract to the destination directory:
 

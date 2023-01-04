@@ -13,7 +13,7 @@ Para começar a instalação, você precisará:
 * Licença binária de uso do Lacuna PKI SDK (arquivo LacunaPkiLicense.txt)
 
 > [!NOTE]
-> Caso ainda não tenha uma licença de uso, [solicite uma licença de trial](https://www.lacunasoftware.com/pt/home/purchase).
+> Caso ainda não tenha uma licença de uso, [solicite uma licença de teste](https://www.lacunasoftware.com/pt/home/purchase).
 
 De posse desses dois arquivos, prossiga a algum dos tópicos abaixo:
 
