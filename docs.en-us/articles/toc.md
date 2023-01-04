@@ -186,7 +186,6 @@
 ### [Linux CentOS/Oracle/Fedora](pki-express/setup/linux-centos.md)
 ### [Windows](pki-express/setup/windows.md)
 ### [Manual activation](pki-express/setup/manual-activation.md)
-### [Standalone setup of .NET Core](pki-express/setup/dotnet-standalone.md)
 ## [Configuration](pki-express/config/index.md)
 ### [Logging](pki-express/config/log.md)
 ### [Temporary directory](pki-express/config/temp-dir.md)

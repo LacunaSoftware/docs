@@ -3,19 +3,7 @@
 [!include[Para instalar](includes/intro-prefix.md)] no CentOS, Oracle Linux ou Fedora [!include[voce precisara](includes/intro-suffix.md)]
 
 [!include[De posse da licenca](includes/prereqs-reminder.md)]
-
-## 1. Adicione o *feed* de pacotes da Microsoft
-
-[!include[Add Microsoft feed](../../../../includes/pki-express/centos/add-feed.md)]
-
-[!include[Note on standalone dotnet setup](includes/dotnet-standalone-note.md)]
-
-## 2. Instale o .NET Core Runtime
-
-[!include[Install dotnet](../../../../includes/pki-express/centos/install-dotnet.md)]
-
-<a name="install" />
-## 3. Instale o PKI Express
+## 1. Instale o PKI Express
 
 Baixe o pacote do PKI Express e extraia para a pasta de destino:
 

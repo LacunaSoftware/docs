@@ -1,20 +1,9 @@
 ﻿# Instalação do PKI Express em Red Hat Enterprise Linux
 
-[!include[Para instalar](includes/intro-prefix.md)] no Red Hat Enterprise Linux (RHEL) [!include[voce precisara](includes/intro-suffix.md)]
-
 [!include[De posse da licenca](includes/prereqs-reminder.md)]
 
-## 1. Registre seu sistema no *Subscription Manager* do Red Hat e ative o canal do .NET
-
-Antes de começar, é preciso que o seu sistema esteja registrado no *Subscription Manager* do Red Hat e que o canal do .NET esteja ativo.
-Veja como fazer isso na [documentação da Red Hat](https://access.redhat.com/documentation/en-us/net_core/2.1/html/getting_started_guide/gs_install_dotnet#install_register_rehel).
-
-## 2. Instale e ative o .NET Core
-
-[!include[Install dotnet](../../../../includes/pki-express/rhel/install-dotnet.md)]
-
 <a name="install" />
-## 3. Instale o PKI Express
+## 1. Instalando o PKI Express
 
 Baixe o pacote do PKI Express e extraia para a pasta de destino:
 

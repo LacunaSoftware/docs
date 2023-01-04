@@ -1,5 +1,52 @@
 ﻿# Amplia Reg changelog
 
+<a name="v1-4-0" />
+## 1.4.0 (2023-01-04)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-222 Preapproved order creation API
+
+ARNG-269 Flavour `CaboVerde`
+
+ARNG-270 Cape Verde certificate format
+
+ARNG-271 SSL/TLS certificate format
+
+ARNG-279 Theme `djp` \(*deep jungle princeton*\)
+
+ARNG-281 Certificate issue by CSR
+
+### Improvements
+
+ARNG-282 Update ASP.NET Core to version 6.0
+
+ARNG-254 Make Azure Maps configuration optional
+
+ARNG-255 Deprecate Google Maps Embed configuration
+
+ARNG-274 Change "Distrito Capital" into simply "Capital" on PY addresses
+
+ARNG-277 Implemented check for certificate adequacy for signature and search for adequate similar certificate
+
+ARNG-278 Key size configuration per certificate type
+
+ARNG-287 Add support for crypto provider IDGo 800
+
+### Bug fixes
+
+ARNG-248 Order list on confirmation agent home page should not be sortable
+
+ARNG-280 Automatic sign-out due to session timeout is interrupted by discard confirmations
+
+ARNG-285 An error occurrs if the order has a photo and the documents step is loaded
+
+ARNG-286 Image cropping seems to be cropping more than what the user selected
+
+
+
 <a name="v1-3-0" />
 ## 1.3.0 (2022-11-11)
 
