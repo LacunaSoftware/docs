@@ -1,5 +1,50 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<a name="v1-4-0" />
+## 1.4.0 (2023-01-04)
+
+### Novas funcionalidades
+
+ARNG-222 Criação de pedido pré aprovado
+
+ARNG-269 Flavour `CaboVerde`
+
+ARNG-270 Formato\(s\) de certificado de Cabo Verde
+
+ARNG-271 Formato de certificado SSL/TLS
+
+ARNG-279 Tema `djp` \(*deep jungle princeton*\)
+
+ARNG-281 Emissão de certificado por CSR
+
+### Melhorias
+
+ARNG-282 Atualizar ASP.NET Core para versão 6.0
+
+ARNG-254 Tornar opcional configuração de Azure Maps
+
+ARNG-255 Remover configuração de Google Maps Embed
+
+ARNG-274 Alterar "Distrito Capital" para apenas "Capital" nos endereços PY
+
+ARNG-277 Verificação da adequação do certificado do agente para assinatura e busca automática por certificado adequado
+
+ARNG-278 Configuração no CertificateType do tamanho da chave
+
+ARNG-287 Adicionar suporte a provedor criptográfico IDGo 800
+
+### Correções de bugs
+
+ARNG-248 Controle de ordenação da lista de pedidos na home do ACI não deveria aparecer pois não faz nada
+
+ARNG-280 Signout automático por inatividade é interrompido por confirmações de descarte de mudanças
+
+ARNG-285 Ao voltar ao passo de documentos após tirar a foto, acontece um erro
+
+ARNG-286 Crop parece estar cropando mais do que deveria
+
+
+
 <a name="v1-3-0" />
 ## 1.3.0 (2022-11-11)
 
