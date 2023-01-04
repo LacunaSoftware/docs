@@ -38,7 +38,7 @@ After the CA is created, click on **Activate**, then **Yes**.
 
 <a name="ca-id" />
 
-Now take notice of the URL on your browser address field. The leftmost segment, after `cas/`, is your `DeviceCertificateAmpliaCaId` (you
+Now take notice of the URL on your browser address field. The leftmost segment, after `cas/`, is your `CAId` (you
 will need this value to configure the module that requires the CA).
 
 ### Create a template
@@ -76,10 +76,10 @@ Click on **Save**.
 
 <a name="template-id" />
 
-Now take notice of the URL on your browser address field. The leftmost segment, after `templates/`, is your `DeviceCertificateAmpliaTemplateId` (you
+Now take notice of the URL on your browser address field. The leftmost segment, after `templates/`, is your `TemplateId` (you
 will need this value to configure the module that requires the CA).
 
 ## Configure the dependent module
 
 Follow the instructions on the module that requires the CA for device certificates to set the
-[DeviceCertificateAmpliaCaId](#ca-id) and the [DeviceCertificateAmpliaTemplateId](#template-id) on the module's configuration file.
+[CAId](#ca-id) and the [TemplateId](#template-id) on the module's configuration file.
