@@ -51,6 +51,8 @@ ARNG-286 Crop parece estar cropando mais do que deveria
 
 ARNG-289 Coluna no banco de dados não utilizada `Subscription.LegalRepresentantId1`
 
+ARNG-290 Configuração `Order:CloudIssueUrl` deveria ser opcional
+
 
 
 <a name="v1-3-0" />

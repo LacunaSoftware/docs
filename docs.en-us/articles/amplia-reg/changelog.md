@@ -51,6 +51,8 @@ ARNG-286 Image cropping seems to be cropping more than what the user selected
 
 ARNG-289 Unused database column `Subscription.LegalRepresentantId1`
 
+ARNG-290 Configuration `Order:CloudIssueUrl` should be optional
+
 
 <a name="v1-3-0" />
 ## 1.3.0 (2022-11-11)
