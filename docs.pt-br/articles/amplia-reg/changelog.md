@@ -3,6 +3,8 @@
 <a name="v1-4-0" />
 ## 1.4.0 (2023-01-04)
 
+Atualiza modelo do banco de dados: **sim**
+
 ### Novas funcionalidades
 
 ARNG-222 Criação de pedido pré aprovado
