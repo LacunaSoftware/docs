@@ -5,7 +5,7 @@
 [!include[De posse da licenca](includes/prereqs-reminder.md)]
 
 <a name="install" />
-## 1. Instale o PKI Express
+## Instalando o PKI Express
 
 Baixe o pacote do PKI Express e extraia para a pasta de destino:
 

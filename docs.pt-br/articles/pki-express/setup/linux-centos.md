@@ -3,7 +3,7 @@
 [!include[Para instalar](includes/intro-prefix.md)] no CentOS, Oracle Linux ou Fedora [!include[voce precisara](includes/intro-suffix.md)]
 
 [!include[De posse da licenca](includes/prereqs-reminder.md)]
-## 1. Instale o PKI Express
+## Instalando o PKI Express
 
 Baixe o pacote do PKI Express e extraia para a pasta de destino:
 
