@@ -35,6 +35,8 @@ ARNG-278 Configuração no CertificateType do tamanho da chave
 
 ARNG-287 Adicionar suporte a provedor criptográfico IDGo 800
 
+ARNG-288 Melhorar forma de configurar CA de dispositivos
+
 ### Correções de bugs
 
 ARNG-248 Controle de ordenação da lista de pedidos na home do ACI não deveria aparecer pois não faz nada
@@ -46,6 +48,8 @@ ARNG-280 Signout automático por inatividade é interrompido por confirmações 
 ARNG-285 Ao voltar ao passo de documentos após tirar a foto, acontece um erro
 
 ARNG-286 Crop parece estar cropando mais do que deveria
+
+ARNG-289 Coluna no banco de dados não utilizada `Subscription.LegalRepresentantId1`
 
 
 

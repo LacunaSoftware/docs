@@ -35,6 +35,8 @@ ARNG-278 Key size configuration per certificate type
 
 ARNG-287 Add support for crypto provider IDGo 800
 
+ARNG-288 Improve device CA configuration method
+
 ### Bug fixes
 
 ARNG-248 Order list on confirmation agent home page should not be sortable
@@ -47,6 +49,7 @@ ARNG-285 An error occurrs if the order has a photo and the documents step is loa
 
 ARNG-286 Image cropping seems to be cropping more than what the user selected
 
+ARNG-289 Unused database column `Subscription.LegalRepresentantId1`
 
 
 <a name="v1-3-0" />
