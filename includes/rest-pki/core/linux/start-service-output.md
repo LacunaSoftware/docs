@@ -5,7 +5,7 @@
  Main PID: 10960 (dotnet)
     Tasks: 31 (limit: 2319)
    CGroup: /system.slice/restpkicore.service
-           └─10960 /usr/bin/dotnet Lacuna.Amplia.Site.dll
+           └─10960 /usr/bin/dotnet Lacuna.RestPki.Site.dll
 
 ...
 
