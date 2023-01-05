@@ -9,7 +9,7 @@ infraestrutura ("on premises").
 O Amplia é compatível com os seguintes ambientes:
 
 * Windows Server
-* Linux
+* [Linux](linux/index.md)
 * [Docker](docker.md)
 * Azure App Services
 

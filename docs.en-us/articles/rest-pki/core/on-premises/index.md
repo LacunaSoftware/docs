@@ -8,7 +8,7 @@
 Rest PKI Core is compatible with:
 
 * Windows Server
-* Linux
+* [Linux](linux/index.md)
 * [Docker](docker.md)
 * Azure App Services
 
