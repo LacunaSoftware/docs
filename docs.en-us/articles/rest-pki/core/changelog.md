@@ -1,5 +1,16 @@
 ﻿# Rest PKI Core changelog
 
+<a name="v1-12-1" />
+## 1.12.1 (2023-01-05)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-164 Improve configuration on Linux
+
+
+
 <a name="v1-12-0" />
 ## 1.12.0 (2022-12-13)
 

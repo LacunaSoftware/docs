@@ -1,5 +1,16 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="v1-12-1" />
+## 1.12.1 (2023-01-05)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-164 Melhorar configuração em Linux
+
+
+
 <a name="v1-12-0" />
 ## 1.12.0 (2022-12-13)
 
