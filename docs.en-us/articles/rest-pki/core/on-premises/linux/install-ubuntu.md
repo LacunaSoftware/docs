@@ -2,8 +2,6 @@
 
 To install an [on-premises](../index.md) instance of [Rest PKI Core](../../index.md) on Ubuntu Server, follow the steps below. For other platforms, [click here](../index.md).
 
-[!include[See planning](../includes/see-planning.md)]
-
 ## Prerequisites
 
 * Ubuntu Server (any version currently in support by vendor, latest LTS version recommended)

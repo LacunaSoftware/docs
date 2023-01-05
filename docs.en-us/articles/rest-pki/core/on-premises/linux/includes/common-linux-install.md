@@ -33,7 +33,7 @@ Also on the `[General]` section, to fill the `RootPasswordHash` setting choose a
 [!include[Hash root password](../../../../../../../includes/rest-pki/core/linux/hash-root-pass.md)]
 
 > [!NOTE]
-> If you wish to enable user management, leave the `RootPasswordHash` setting blank and follow the steps on [Configure OpenID Connect](../../../configure-oidc.md) instead
+> If you wish to enable user management, leave the `RootPasswordHash` setting blank and follow the steps on [Configure OpenID Connect](../../configure-oidc.md) instead
 
 Fill the remaining settings according to the instructions on the configuration file.
 
