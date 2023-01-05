@@ -18,6 +18,25 @@ Depending on the authentication mode required by the timestamp provider, additio
 * `BasicAuthentication`: fill **Username** and **Password**
 * `OAuthBearerToken`: fill **BearerToken**
 
+Example (*.ini* or *.conf* configuration file):
+
+```ini
+[Timestamp]
+MaxAutoRetryCount=2
+RetryDelayInMilliseconds=500
+
+[Timestamp:Timestampers:0]
+Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
+AuthenticationType=OAuthBearerToken
+OAuthBearerToken=YOURTOKEN
+
+[Timestamp:Timestampers:1]
+Url=https://tsp.patorum.com/timestamp
+AuthenticationType=BasicAuthentication
+Username=SOMEUSER
+Password=SOMEPASS
+```
+
 Example (environment variables):
 
 ```bash
@@ -30,30 +49,4 @@ Timestamp__Timestampers__1__Url=https://tsp.patorum.com/timestamp
 Timestamp__Timestampers__1__AuthenticationType=BasicAuthentication
 Timestamp__Timestampers__1__Username=SOMEUSER
 Timestamp__Timestampers__1__Password=SOMEPASS
-```
-
-Example (JSON configuration):
-
-```json
-{
-	...,
-	"Timestamp": {
-		"MaxAutoRetryCount": 2,
-		"RetryDelayInMilliseconds": 500,
-		"Timestampers": [
-			{
-				"Url": "https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310",
-				"AuthenticationType": "OAuthBearerToken",
-				"OAuthBearerToken": "YOURTOKEN"
-			},
-			{
-				"Url": "https://tsp.patorum.com/timestamp",
-				"AuthenticationType": "BasicAuthentication",
-				"Username": "SOMEUSER",
-				"Password": "SOMEPASS"
-			}
-		]
-	},
-	...
-}
 ```
