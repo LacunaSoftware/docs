@@ -24,4 +24,5 @@ AMPLIA é um [acrônimo recursivo](https://pt.wikipedia.org/wiki/Acr%C3%B4nimo_r
 
 ## Veja também
 
+* [Guia de Operação](operation/index.md)
 * [Histórico de versões](changelog.md)

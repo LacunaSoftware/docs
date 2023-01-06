@@ -329,7 +329,10 @@
 ### [Update to 3.5](amplia/on-premises/update-35.md)
 ### [Update to 4.0](amplia/on-premises/update-40.md)
 ### [Migrate having database keys](amplia/on-premises/migrate-with-db-keys.md)
-## [Create a device CA](amplia/create-device-ca.md)
+## [Operation guide](amplia/operation/index.md)
+### [Create a root CA](amplia/operation/create-root-ca.md)
+### [Create an intermediate CA](amplia/operation/create-intermediate-ca.md)
+### [Create a device CA](amplia/operation/create-device-ca.md)
 ## [Changelog](amplia/changelog.md)
 <!-- End of Amplia -->
 

@@ -37,7 +37,7 @@ e gerar uma chave de API para a aplicação:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 
-Para preencher os parâmetros da seção `[Amplia:DeviceCertificates]`, siga as instruções em [Criação de AC para certificados de dispositivo](../../../../amplia/create-device-ca.md).
+Para preencher os parâmetros da seção `[Amplia:DeviceCertificates]`, siga as instruções em [Criação de AC para certificados de dispositivo](../../../../amplia/operation/create-device-ca.md).
 
 Preencha os demais parâmetros de acordo com as instruções presentes no arquivo de configuração.
 

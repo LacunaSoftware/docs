@@ -23,4 +23,5 @@ AMPLIA is [recursive acronym](https://en.wikipedia.org/wiki/Recursive_acronym) f
 
 ## See also
 
+* [Operation Guide](operation/index.md)
 * [Changelog](changelog.md)

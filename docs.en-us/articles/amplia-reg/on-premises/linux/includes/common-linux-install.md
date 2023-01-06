@@ -35,7 +35,7 @@ instance and generate an API key for it:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
 
-To fill the `Amplia:DeviceCertificates` section, follow the steps in [Create a CA for device certificates](../../../../amplia/create-device-ca.md).
+To fill the `Amplia:DeviceCertificates` section, follow the steps in [Create a CA for device certificates](../../../../amplia/operation/create-device-ca.md).
 
 Fill the remaining settings according to the instructions on the configuration file.
 

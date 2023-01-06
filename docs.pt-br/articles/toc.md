@@ -329,7 +329,10 @@
 ### [Atualizando para 3.5](amplia/on-premises/update-35.md)
 ### [Atualizando para 4.0](amplia/on-premises/update-40.md)
 ### [Migrando com chaves em banco](amplia/on-premises/migrate-with-db-keys.md)
-## [Criação de AC de dispositivos](amplia/create-device-ca.md)
+## [Guia de Operação](amplia/operation/index.md)
+### [Criação de AC raiz](amplia/operation/create-root-ca.md)
+### [Criação de AC intermediária](amplia/operation/create-intermediate-ca.md)
+### [Criação de AC de dispositivos](amplia/operation/create-device-ca.md)
 ## [Histórico de versões](amplia/changelog.md)
 <!-- End of Amplia -->
 
