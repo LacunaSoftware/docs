@@ -60,9 +60,11 @@ Then, start it with a password of your choice (replace `SOME_PASS` below):
 
 [!include[Run database server](../../../../../includes/rest-pki/core/docker/run-sql.md)]
 
-Check the console for any errors. This can take a few minutes.
+Check the container logs for any errors:
 
-Once the database server is up and running, open another terminal to start the Rest PKI Core instance.
+[!include[Check database server logs](../../../../../includes/rest-pki/core/docker/check-sql-logs.md)]
+
+This can take a few minutes. Once the database server is up and running, hit CTRL+C to exit the logs.
 
 Create a volume to use as blob storage:
 
@@ -87,7 +89,11 @@ Now, let's run the container with the configuration file, mounting the volume `r
 > [!TIP]
 > If given a credential with enough privileges, Rest PKI Core will attempt to create the target database on the server (which is what will happen in this case)
 
-Check the console for configuration errors. If everything is configured correctly, you should have a Rest PKI Core instance running on [localhost:8080](http://localhost:8080/)
+Check the container logs for any configuration errors:
+
+[!include[Check logs](../../../../../includes/rest-pki/core/docker/check-logs.md)]
+
+If everything is configured correctly, you should have a Rest PKI Core instance running on [localhost:8080](http://localhost:8080/)
 
 ## See also
 

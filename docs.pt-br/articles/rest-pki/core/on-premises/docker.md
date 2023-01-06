@@ -60,9 +60,11 @@ Inicie o SGBD com uma senha da sua preferência (substitua `SOME_PASS` abaixo):
 
 [!include[Run database server](../../../../../includes/rest-pki/core/docker/run-sql.md)]
 
-Acompanhe a saída do console para eventuais erros. Esse processo pode levar alguns minutos.
+Verifique os logs do container para eventuais erros:
 
-Uma vez que o SGBD esteja executando, abra outro terminal para iniciar a instância do Rest PKI Core.
+[!include[Check database server logs](../../../../../includes/rest-pki/core/docker/check-sql-logs.md)]
+
+Esse processo pode levar alguns minutos. Uma vez que o SGBD esteja executando, pressione CTRL+C para sair dos logs.
 
 Crie um volume para utilizar como *blob storage*:
 
@@ -88,8 +90,11 @@ na porta 80) na porta 8080 da máquina *host*:
 > [!TIP]
 > Caso tenha privilégios suficientes, o Rest PKI Core tentará criar o banco de dados no servidor caso ele não exista (é isso que acontecerá nesse caso)
 
-Verifique a saída no console para eventuais erros de configuração. Se tudo estiver configurado corretamente, você deve ter uma instância do Rest PKI Core
-rodando em [localhost:8080](http://localhost:8080/)
+Verifique os logs do container para eventuais erros de configuração:
+
+[!include[Check logs](../../../../../includes/rest-pki/core/docker/check-logs.md)]
+
+Se tudo estiver configurado corretamente, você deve ter uma instância do Rest PKI Core rodando em [localhost:8080](http://localhost:8080/)
 
 ## Veja também
 
