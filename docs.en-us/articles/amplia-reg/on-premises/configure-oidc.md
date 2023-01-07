@@ -105,6 +105,8 @@ Oidc__AppId=amplia-reg-backend
 Oidc__AppSecret=YOUR_BACKEND_APP_SECRET
 ```
 
+<a name="disable-sign-up" />
+
 ## Disabling sign up
 
 After you have configured OIDC on Amplia Reg, go ahead and sign in to Amplia Reg. As part of this process, you will need to register, thus creating the very first user
