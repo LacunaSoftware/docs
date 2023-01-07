@@ -2,7 +2,10 @@
 
 After installing your [on premises](index.md) instance of [Amplia Reg](../index.md), follow the these steps to prepare the instance for usage.
 
-1. Sign-in to your instance
+Start by signing in to Amplia Reg. As part of this process, you will need to register, thus creating the very first user account.
+
+Then:
+
 1. Run the [command-line tool](tool/index.md) with the command `init-data` passing the `Id` of the CA on Amplia that will be used to issue end-user certificates
 1. Restart the service
 
