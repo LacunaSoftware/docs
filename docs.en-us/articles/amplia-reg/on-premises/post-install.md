@@ -4,11 +4,13 @@ After installing your [on premises](index.md) instance of [Amplia Reg](../index.
 
 1. Sign-in to your instance
 1. Run the [command-line tool](tool/index.md) with the command `init-data` passing the `Id` of the CA on Amplia that will be used to issue end-user certificates
+1. Restart the service
 
 On Linux:
 
 ```sh
 dotnet /usr/share/ampliareg/Lacuna.AmpliaRegNg.Site.dll -- init-data ID_OF_YOUR_AMPLIA_CA
+systemctl restart ampliareg
 ```
 
 > [!TIP]
