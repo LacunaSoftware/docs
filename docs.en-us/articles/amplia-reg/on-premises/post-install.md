@@ -8,7 +8,7 @@ After installing your [on premises](index.md) instance of [Amplia Reg](../index.
 On Linux:
 
 ```sh
-dotnet /usr/share/ampliareg/Lacuna.AmpliaRegNg.Site.dll -- init-test-data ID_OF_YOUR_AMPLIA_CA
+dotnet /usr/share/ampliareg/Lacuna.AmpliaRegNg.Site.dll -- init-data ID_OF_YOUR_AMPLIA_CA
 ```
 
 > [!TIP]

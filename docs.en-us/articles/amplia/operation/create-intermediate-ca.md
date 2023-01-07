@@ -115,7 +115,7 @@ You might control only the intermediate CA but not the parent CA, for instance i
 control only the parent CA but not the intermediate CA, that is, a third party is creating an intermediate CA under your own CA hosted on Amplia, for instance
 if you use Amplia to host a country's root CA.
 
-In both scenarios, the steps are similar to the [Distributed case](#distributed), with the difference that not all steps are your responsibility.
+In both scenarios, the steps are similar to the [distributed scenario](#distributed), with the difference that not all steps are your responsibility.
 
 If you are creating an intermediate CA under a third party's parent CA:
 
