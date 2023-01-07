@@ -32,7 +32,7 @@ Enable the site:
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
-[!include[Production notes](../includes/production-notes.md)]
+[!include[Common ending](../includes/common-ending.md)]
 
 ## See also
 

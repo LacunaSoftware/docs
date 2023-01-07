@@ -362,6 +362,7 @@
 ### [Configure HTTPS redirection](amplia-reg/on-premises/configure-https-redirect.md)
 ### [Configure reCAPTCHA](amplia-reg/on-premises/configure-recaptcha.md)
 ### [Run without db_owner](amplia-reg/on-premises/unprivileged-db-user.md)
+### [Post-installation steps](amplia-reg/on-premises/post-install.md)
 ### [Checking the installed version](amplia-reg/on-premises/check-version.md)
 ## [Changelog](amplia-reg/changelog.md)
 <!-- End of Amplia -->

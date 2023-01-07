@@ -1,23 +1,25 @@
 ﻿# Create an intermediate CA - Amplia
 
-To create an **intermediate certification authority** on [Amplia](../index.md), choose the scenario which best describes your case in regard to the parent CA
-under which your intermediate CA will be created:
+To create an **intermediate certification authority** on [Amplia](../index.md), choose the scenario which best describes your case:
 
-* I control both the parent CA and the intermediate CA and they are hosted on ...
-  * ... [the same Amplia instance](#centralized)
-  * ... [separate Amplia instances](#distributed)
-* [I control only the intermediate CA but not the parent CA](#external-parent)
-* [I control only the parent CA and want to enable a third party to operate an intermediate CA under it](#external-child)
+* If you control both the parent and intermediate CA ...
+  * ... and they are hosted on the same Amplia instance, see the [Centralized scenario](#centralized)
+  * ... and they are hosted on separate Amplia instances, see the [Distributed scenario](#distributed)
+* If you either only control the intermediate or the parent CA, see [Other scenarios](#other)
+
+> [!NOTE]
+> *Parent CA* is the CA under which the intermediate CA will be created. Unless your case involves multiple levels of
+> intermediate CAs, this simply means the root CA.
 
 
 
 <a name="centralized" />
 
-## Parent and intermediate CAs on a single Amplia instance
+## Centralized scenario
 
 To create an intermediate CA on the same Amplia instance as the parent CA, follow the steps below.
 
-### Create the CA key
+### 1. Create the CA key
 
 On the left menu, click on **Keys**, then on **Generate** and fill out:
 
@@ -28,7 +30,7 @@ On the left menu, click on **Keys**, then on **Generate** and fill out:
 
 Click on **Create**.
 
-### Issue the CA certificate
+### 2. Issue the CA certificate
 
 On the left menu, click on **CA Certificates**, then on **Issue CA Certificate** and fill out:
 
@@ -38,7 +40,7 @@ On the left menu, click on **CA Certificates**, then on **Issue CA Certificate**
 
 Fill out the remaining fields according to your case and click **Issue**.
 
-### Create the CA
+### 3. Create the CA
 
 On the left menu, click on **CAs**, then on **Create CA** and fill out:
 
@@ -56,13 +58,13 @@ After the CA is created, click on **Activate**, then **Yes**.
 
 <a name="distributed" />
 
-## Parent and intermediate CAs on separate Amplia instances
+## Distributed scenario
 
 To create an intermediate CA while having the parent CA hosted on a different Amplia instance, follow the steps below.
 
 <a name="distributed-create-key" />
 
-### Create the CA key and generate a CSR (intermediate CA instance)
+### 1. Create the CA key and generate a CSR (intermediate CA instance)
 
 On the intermediate CA instance, on the left menu, click on **Keys**, then on **Generate** and fill out:
 
@@ -77,7 +79,7 @@ On the key details page, click on **Show CSR** and copy the CSR contents to your
 
 <a name="distributed-issue-ca-cert" />
 
-### Issue the CA certificate (parent CA instance)
+### 2. Issue the CA certificate (parent CA instance)
 
 On the parent CA instance, on the left menu, click on **CA Certificates**, then on **Issue CA Certificate** and fill out:
 
@@ -89,7 +91,7 @@ Fill out the remaining fields according to your case and click **Issue**, then c
 
 <a name="distributed-create-ca" />
 
-### Create the CA (intermediate CA instance)
+### 3. Create the CA (intermediate CA instance)
 
 Back on the intermediate CA instance, on the left menu, click on **CAs**, then on **Create CA** and fill out:
 
@@ -105,27 +107,27 @@ After the CA is created, click on **Activate**, then **Yes**.
 
 
 
-<a name="external-parent" />
+<a name="other" />
 
-## External parent CA
+## Other scenarios
 
-To create an intermediate CA under a parent CA which you do not control, for instance under a country's root CA, follow the steps below:
+You might control only the intermediate CA but not the parent CA, for instance if you are creating an intermediate CA under a country's root CA. Or you might
+control only the parent CA but not the intermediate CA, that is, a third party is creating an intermediate CA under your own CA hosted on Amplia, for instance
+if you use Amplia to host a country's root CA.
 
-1. [Create the CA key and generate a CSR](#distributed-create-key)
-1. Request your CA certificate to the parent CA, providing the CSR
-1. Once the parent CA issues your CA certificate, [Create the CA](#distributed-create-ca)
+In both scenarios, the steps are similar to the [Distributed case](#distributed), with the difference that not all steps are your responsibility.
 
+If you are creating an intermediate CA under a third party's parent CA:
 
+1. [Create the CA key and generate a CSR](#distributed-create-key) and send the CSR to the third party
+1. The third party is then responsible for issuing the CA certificate with your CSR and handing you the CA certificate file
+1. With the CA certificate file, [create the CA](#distributed-create-ca)
 
-<a name="external-child" />
+If a third party is creating an intermediate CA under your parent CA:
 
-## External intermediate CA
-
-If you want to allow a third party to create an intermediate CA under your own CA hosted on Amplia, for instance if you use Amplia to host a country's root CA,
-follow the steps below:
-
-1. Instruct the third party to generate the intermediate CA key and send you the corresponding CSR
-1. [Issue the CA certificate](#distributed-issue-ca-cert) with the given CSR and send the CA certificate file back to the third party
+1. The third party is responsible for generating the CA key and the corresponding CSR
+1. You then [issue the CA certificate](#distributed-issue-ca-cert) with the given CSR and send the CA certificate file back to the third party
+1. The third party uses the CA certificate file to create the CA
 
 
 

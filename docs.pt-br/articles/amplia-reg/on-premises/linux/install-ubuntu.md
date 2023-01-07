@@ -32,7 +32,7 @@ Ative o site:
 
 [!include[Reload nginx and test site](includes/reload-and-test.md)]
 
-[!include[Production notes](../includes/production-notes.md)]
+[!include[Common ending](../includes/common-ending.md)]
 
 ## Veja também
 
