@@ -1,6 +1,6 @@
 ﻿# Create a CA for device certificates - Amplia
 
-Some Lacuna modules -- notably [Amplia Reg](../amplia-reg/index.md) -- depend on a Certification Authority on Amplia to issue certificates
+Some Lacuna modules -- notably [Amplia Reg](../../amplia-reg/index.md) -- depend on a Certification Authority on Amplia to issue certificates
 for devices that have been authorized by a supervisor.
 
 ## Configure Amplia
