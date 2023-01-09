@@ -111,19 +111,22 @@ After the CA is created, click on **Activate**, then **Yes**.
 
 ## Other scenarios
 
-You might control only the intermediate CA but not the parent CA, for instance if you are creating an intermediate CA under a country's root CA. Or you might
-control only the parent CA but not the intermediate CA, that is, a third party is creating an intermediate CA under your own CA hosted on Amplia, for instance
-if you use Amplia to host a country's root CA.
+There are also scenarios in which you either control only the intermediate CA or the parent CA, while the other CA is controlled by some third party. In such cases,
+the procedure is similar to the [distributed scenario](#distributed), with the difference that some steps are performed by the third party.
 
-In both scenarios, the steps are similar to the [distributed scenario](#distributed), with the difference that not all steps are your responsibility.
+### Intermediate CA under a third party's parent CA
 
-If you are creating an intermediate CA under a third party's parent CA:
+If you control only the intermediate CA but not the parent CA, for instance if you are creating an intermediate CA under a country's root CA, then
+steps 1 and 3 are your responsibility, while step 2 is performed by the third party:
 
 1. [Create the CA key and generate a CSR](#distributed-create-key) and send the CSR to the third party
 1. The third party is then responsible for issuing the CA certificate with your CSR and handing you the CA certificate file
 1. With the CA certificate file, [create the CA](#distributed-create-ca)
 
-If a third party is creating an intermediate CA under your parent CA:
+### Third party intermediate CA under your parent CA
+
+If you control only the parent CA but not the intermediate CA, that is, a third party is creating an intermediate CA under your own CA hosted on Amplia, for instance
+if you use Amplia to host a country's root CA, then only step 2 is your responsibility, while steps 1 and 3 are performed by the third party:
 
 1. The third party is responsible for generating the CA key and the corresponding CSR
 1. You then [issue the CA certificate](#distributed-issue-ca-cert) with the given CSR and send the CA certificate file back to the third party
