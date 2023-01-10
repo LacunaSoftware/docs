@@ -1,5 +1,27 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v4-0-2" />
+### 4.0.2 (2023-01-09)
+
+Melhorias:
+
+* [AMP-277] - Mostrar ID nos detalhes da CA e do template
+
+Atualiza modelo do banco de dados: não
+
+
+
+<a name="v4-0-1" />
+### 4.0.1 (2022-12-30)
+
+Melhorias:
+
+* [AMP-276] - Melhorar integração com HSM Dinamo
+
+Atualiza modelo do banco de dados: não
+
+
+
 <a name="v4-0-0" />
 ### 4.0.0 (2022-12-27)
 

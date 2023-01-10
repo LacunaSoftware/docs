@@ -1,5 +1,27 @@
 ﻿# Amplia changelog
 
+<a name="v4-0-2" />
+### 4.0.2 (2023-01-09)
+
+Improvements:
+
+* [AMP-277] - Show ID on CA and Template details page
+
+Updates database model: no
+
+
+
+<a name="v4-0-1" />
+### 4.0.1 (2022-12-30)
+
+Improvements:
+
+* [AMP-276] - Improve Dinamo HSM integration
+
+Updates database model: no
+
+
+
 <a name="v4-0-0" />
 ### 4.0.0 (2022-12-27)
 
