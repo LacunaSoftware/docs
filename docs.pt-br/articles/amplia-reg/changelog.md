@@ -1,7 +1,7 @@
 ﻿# Histórico de versões do Amplia Reg
 
 <a name="v1-4-0" />
-## 1.4.0 (2023-01-04)
+## 1.4.0 (2023-01-09)
 
 Atualiza modelo do banco de dados: **sim**
 
