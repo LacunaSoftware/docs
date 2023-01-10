@@ -17,7 +17,11 @@ To create an **intermediate certification authority** on [Amplia](../index.md), 
 
 ## Centralized scenario
 
-To create an intermediate CA on the same Amplia instance as the parent CA, follow the steps below.
+You may host your intermediate CA on the same Amplia instance as the parent CA:
+
+![Centralized scenario](../../../../images/amplia/intermediate-ca-centralized.png)
+
+In this case, follow the steps below.
 
 ### 1. Create the CA key
 
@@ -60,7 +64,11 @@ After the CA is created, click on **Activate**, then **Yes**.
 
 ## Distributed scenario
 
-To create an intermediate CA while having the parent CA hosted on a different Amplia instance, follow the steps below.
+You may also host your intermediate CA while having the parent CA hosted on a different Amplia instance:
+
+![Distributed scenario](../../../../images/amplia/intermediate-ca-distributed.png)
+
+In this case, follow the steps below.
 
 <a name="distributed-create-key" />
 
@@ -116,8 +124,11 @@ the procedure is similar to the [distributed scenario](#distributed), with the d
 
 ### Intermediate CA under a third party's parent CA
 
-If you control only the intermediate CA but not the parent CA, for instance if you are creating an intermediate CA under a country's root CA, then
-steps 1 and 3 are your responsibility, while step 2 is performed by the third party:
+In this scenario, you control only the intermediate CA but not the parent CA, for instance if you are creating an intermediate CA under a country's root CA:
+
+![Third party parent CA](../../../../images/amplia/third-party-parent-ca.png)
+
+In this case, steps 1 and 3 are your responsibility, while step 2 is performed by the third party:
 
 1. [Create the CA key and generate a CSR](#distributed-create-key) and send the CSR to the third party
 1. The third party is then responsible for issuing the CA certificate with your CSR and handing you the CA certificate file
@@ -125,8 +136,12 @@ steps 1 and 3 are your responsibility, while step 2 is performed by the third pa
 
 ### Third party intermediate CA under your parent CA
 
-If you control only the parent CA but not the intermediate CA, that is, a third party is creating an intermediate CA under your own CA hosted on Amplia, for instance
-if you use Amplia to host a country's root CA, then only step 2 is your responsibility, while steps 1 and 3 are performed by the third party:
+In this scenario, you control only the parent CA but not the intermediate CA, that is, a third party is creating an intermediate CA under your own CA hosted on
+Amplia, for instance if you use Amplia to host a country's root CA:
+
+![Third party intermediate CA](../../../../images/amplia/third-party-intermediate-ca.png)
+
+Then only step 2 is your responsibility, while steps 1 and 3 are performed by the third party:
 
 1. The third party is responsible for generating the CA key and the corresponding CSR
 1. You then [issue the CA certificate](#distributed-issue-ca-cert) with the given CSR and send the CA certificate file back to the third party
