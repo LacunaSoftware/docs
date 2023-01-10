@@ -19,7 +19,11 @@ ARNG-279 Tema `djp` \(*deep jungle princeton*\)
 
 ARNG-281 Emissão de certificado por CSR
 
+ARNG-293 Adicionar comando `init-data` para auxiliar na instalação do sistema
+
 ### Melhorias
+
+ARNG-232 Revisar permissionamento e adicionar perfil de auditor
 
 ARNG-282 Atualizar ASP.NET Core para versão 6.0
 
@@ -36,6 +40,8 @@ ARNG-278 Configuração no CertificateType do tamanho da chave
 ARNG-287 Adicionar suporte a provedor criptográfico IDGo 800
 
 ARNG-288 Melhorar forma de configurar CA de dispositivos
+
+ARNG-292 Colocar versão do sistema visível nas telas
 
 ### Correções de bugs
 

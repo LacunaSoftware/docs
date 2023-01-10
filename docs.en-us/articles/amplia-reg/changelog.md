@@ -1,7 +1,7 @@
 ﻿# Amplia Reg changelog
 
 <a name="v1-4-0" />
-## 1.4.0 (2023-01-04)
+## 1.4.0 (2023-01-09)
 
 Updates database model: **yes**
 
@@ -19,7 +19,11 @@ ARNG-279 Theme `djp` \(*deep jungle princeton*\)
 
 ARNG-281 Certificate issue by CSR
 
+ARNG-293 Add command `init-data` to simplify setup procedure
+
 ### Improvements
+
+ARNG-232 Review authorization and add auditor role
 
 ARNG-282 Update ASP.NET Core to version 6.0
 
@@ -36,6 +40,8 @@ ARNG-278 Key size configuration per certificate type
 ARNG-287 Add support for crypto provider IDGo 800
 
 ARNG-288 Improve device CA configuration method
+
+ARNG-292 Add system version visible on pages
 
 ### Bug fixes
 
