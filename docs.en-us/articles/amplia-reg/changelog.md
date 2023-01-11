@@ -1,5 +1,16 @@
 ﻿# Amplia Reg changelog
 
+<a name="v1-4-1" />
+## 1.4.1 (2023-01-11)
+
+Updates database model: no
+
+### Bug fixes
+
+ARNG-299 Requests made by Amplia during cloud certificate issue procedure are forbidden
+
+
+
 <a name="v1-4-0" />
 ## 1.4.0 (2023-01-09)
 

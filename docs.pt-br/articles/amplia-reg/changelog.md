@@ -1,5 +1,16 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<a name="v1-4-1" />
+## 1.4.1 (2023-01-11)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-299 Amplia tem sua permissão negada ao realizar chamadas do procedimento de emissão de certificados em nuvem
+
+
+
 <a name="v1-4-0" />
 ## 1.4.0 (2023-01-09)
 
