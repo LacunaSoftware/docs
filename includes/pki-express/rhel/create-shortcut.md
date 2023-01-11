@@ -1,4 +1,4 @@
 ﻿```sh
-echo -e '#!/bin/bash\nscl enable rh-dotnet21 -- dotnet /usr/share/pkie/pkie.dll "$@"' | sudo tee /usr/bin/pkie
+echo -e '#!/bin/bash\n/usr/share/pkie/pkie "$@"' | sudo tee /usr/local/bin/pkie
 sudo chmod +x /usr/bin/pkie
 ```
