@@ -4,6 +4,20 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-52-0" />
+### 1.52.0 (2022-01-10)
+
+* Novas funcionalidades
+  * [SIG-743] Adicionar configuração deixar pré-posicionamento das assinaturas do signatário como padrão na criação de documentos
+  * [SIG-1021] Relatório de documentos PDF e CSV
+  * [SIG-1025] Assinatura eletrônica com certificado PFX
+
+* Melhorias
+  * [SIG-994] Atualização de framework para .NET 6
+  * [SIG-1023] Adicionar papéis padrão ao definir papel de signatário
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-51-0" />
 ### 1.51.0 (2022-12-08)
 

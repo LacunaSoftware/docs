@@ -4,6 +4,20 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-52-0" />
+### 1.52.0 (2022-01-10)
+
+* New Features
+  * [SIG-743] Add configuration for forcing pre-position signatures option enabled by default in document creation screen
+  * [SIG-1021] Document reports in PDF and CSV formats
+  * [SIG-1025] Electronic signature with PFX certificate
+
+* Improvements
+  * [SIG-994] Framework update to .NET 6
+  * [SIG-1023] Add default titles for signers
+
+Updates database model: yes
+
 <a name="v1-51-0" />
 ### 1.51.0 (2022-12-08)
 

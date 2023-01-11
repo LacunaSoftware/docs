@@ -195,6 +195,16 @@ Under section **ElectronicSignature**:
 	* `SelfSigned`: a self signed certificate is generated once and used for every electronic signagure in the application.
 	* `Timestamp`: the electronic signature is added to the document as a timestamp signature. Requires that a Timestamper is configured.
 * **AdditionalInfoUrl** (v1.9.0): URL to redirect the user when he clicks the electronic signature info icon in the document creation screen.
+* **UseSignatureCertificateAsSelfSignedCertificate** (v1.52.0): if a [Signature Certificate](#signature-certificate) is enabled, use it instead of the auto generated self signed certificate.
+
+<a name="signature-certificate" />
+###  *Signature Certificate* Settings (v1.52.0)
+
+Under section **SignatureCertificate**:
+
+* **BlobName**: the name of the PFX certificate stored in the configured Blob Storage.
+* **BlobFolder** (default: `certificates`): the folder where the certificate is stored in the configured Blob Storage.
+* **Password**: the PFX certificate password. It is recommended that the certificate has a password.
 
 ###  *TrustServices* Settings (Cloud Certificates, v1.11.0)
 
@@ -236,6 +246,7 @@ or manually positioned.
 manually selects a position while signing.
 
 * **SignaturePositioningRequired** (v1.28.0): if `true` requires that the user positions the signature representation when signing a PDF file.
+* **SignaturePositioningEnabledByDefault** (v1.52.0): if `true` the pre-position signature option is set by default in the create document screen.
 
 * **TextVerticalMarginMultiplier** (default: `1.0`, v1.37.0): defines the text's vertical margin by multiplying the provided number with 1% of the signature height.
 * **TextHorizontalMarginMultiplier** (default: `1.0`, v1.37.0): defines the text's horizontal margin by multiplying the provided number with 1% of the signature width.

@@ -4,7 +4,7 @@ To install an on-premises instance of Signer on Windows Server, first download b
 
 <br />
 <center>
-**[Signer binaries package](https://cdn.lacunasoftware.com/signer/signer-1.51.0.zip)**
+**[Signer binaries package](https://cdn.lacunasoftware.com/signer/signer-1.52.0.zip)**
 </center>
 <br />
 
