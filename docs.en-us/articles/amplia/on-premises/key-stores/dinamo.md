@@ -46,6 +46,24 @@ Sample configuration (*.json* file):
 }
 ```
 
+If you intend to use the HSM combined with Lacuna's PSC module, you must also set the environment variable `HSM_DISABLE_SESSION_CACHE` to `1`. This cannot be done on the
+Amplia configuration file, it *must* be an environment variable. On Linux, this means adding the following to the `/etc/systemd/system/amplia.service` file:
+
+```
+[Service]
+...
+Environment=HSM_DISABLE_SESSION_CACHE=1
+```
+
+If the HSM is in operation modes **RM1** or **RM2**, you must also set the environment variable `HSM_DISABLE_LEGACY_OPERATIONS` to `1`. This cannot be done on the
+Amplia configuration file, it *must* be an environment variable. On Linux, this means adding the following to the `/etc/systemd/system/amplia.service` file:
+
+```
+[Service]
+...
+Environment=HSM_DISABLE_LEGACY_OPERATIONS=1
+```
+
 ## See also
 
 * [Amplia - Key Stores](index.md)
