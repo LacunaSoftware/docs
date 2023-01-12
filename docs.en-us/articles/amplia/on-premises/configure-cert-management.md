@@ -131,7 +131,7 @@ the Amplia instance and generate an API key for it:
 1. Click on your name on the top right corner, then on **Sys Admin**
 1. Click on **Applications** on the left menu, then on *Add*
 1. Fill out a name
-1. Mark the **Contributor** role
+1. Mark the **Trusted certificate issuing application** role
 1. Click on *Create*
 1. Click on **Keys**, then on *Add*
 1. Fill out some description and, on the *Expiration* field, choose "Never expires"
