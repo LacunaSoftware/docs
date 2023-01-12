@@ -68,6 +68,63 @@ Sample configuration (*.json* file):
 > [!NOTE]
 > Please note that the `Port` value shown above is merely a sample. There is no default value for this setting. It depends entirely on your VHSM configuration.
 
+## Troubleshooting
+
+You might encounter the following error when using a Kryptus key store on Ubuntu:
+
+```
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+---> System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+---> Interop+Crypto+OpenSslCryptographicException: error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+    --- End of inner exception stack trace ---
+    at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+    at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBptions sslAuthenticationOptions)
+    --- End of inner exception stack trace ---
+    at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+    at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream streamllationToken)
+    --- End of inner exception stack trace ---
+    at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream streamllationToken)
+    at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+	...
+```
+
+In this case, edit the OpenSSL configuration file:
+
+```sh
+nano /etc/ssl/openssl.cnf
+```
+
+Add the following to the top of the file:
+
+```ini
+#
+# This is part 1/2 of a workaround for SSL handshake issues with Kryptus HSMs, for more info
+# see https://docs.lacunasoftware.com/articles/amplia/on-premises/key-stores/kryptus
+#
+openssl_conf = default_conf
+```
+
+Then, add the following to the bottom of the file:
+
+```ini
+#
+# This is part 2/2 of a workaround for SSL handshake issues with Kryptus HSMs, for more info
+# see https://docs.lacunasoftware.com/articles/amplia/on-premises/key-stores/kryptus
+#
+[default_conf]
+ssl_conf = ssl_sect
+
+[ssl_sect]
+system_default = system_default_sect
+
+[system_default_sect]
+MinProtocol = TLSv1.2
+CipherString = DEFAULT:@SECLEVEL=1
+```
+
+For more information, please refer to the related [.NET runtime issue](https://github.com/dotnet/runtime/issues/46271#issuecomment-749118036).
+
 ## See also
 
 * [Key Stores](index.md)
