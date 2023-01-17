@@ -2,6 +2,7 @@
 server {
     listen        80;
     server_name   localhost signer.patorum.com;
+    client_max_body_size 11000000;
     location / {
         proxy_pass         http://localhost:5001;
         proxy_http_version 1.1;

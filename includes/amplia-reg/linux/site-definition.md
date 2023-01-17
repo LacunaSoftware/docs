@@ -2,6 +2,7 @@
 server {
     listen        80;
     server_name   ampliareg.patorum.com;
+    client_max_body_size 11000000;
     location / {
         proxy_pass         http://localhost:5002;
         proxy_http_version 1.1;

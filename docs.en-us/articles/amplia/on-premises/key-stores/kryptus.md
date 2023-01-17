@@ -70,7 +70,7 @@ Sample configuration (*.json* file):
 
 ## Troubleshooting
 
-You might encounter the following error when using a Kryptus key store on Ubuntu:
+You might encounter the following error when using a Kryptus key store on Ubuntu 20.04:
 
 ```
 System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
