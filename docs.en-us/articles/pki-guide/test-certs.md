@@ -62,15 +62,3 @@ signatureStarter.setSecurityContext(new SecurityContext("803517ad-3bbc-4169-b085
 Whatever operation or language you're using, it should be fairly clear from the code comments on the sample project where to put the security context ID.
 
 From then on, the certificates in our test PKI will be trusted.
-
-## Cloud certificates
-
-If you need cloud certificates to use in a development or staging environment, you can use one of the bellow.
-
-    Cliend Id: 20658903000171
-    Client Secret: ocBigveadOkidgavVulnumKet3
-    CPF: 02610247010
-
-| VaultID | BirdID |
-|:-------:|:------:|
-|![Certificado de teste - Vault ID](../../../images/pki-guide/qrcode-cert-vaultid.png) | ![Certificado de teste - BirdID](../../../images/pki-guide/qrcode-cert-birdid.png) |
