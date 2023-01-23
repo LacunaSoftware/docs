@@ -11,9 +11,6 @@ Baixe o pacote do PKI Express e extraia para a pasta de destino:
 
 [!include[Install](../../../../includes/pki-express/linux/install-wget.md)]
 
-Crie um atalho para executar o PKI Express:
-
-[!include[Create shortcut](../../../../includes/pki-express/ubuntu/create-shortcut.md)]
 
 Crie uma pasta para os logs e configure o PKI Express para utilizá-la:
 

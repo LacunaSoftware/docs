@@ -11,10 +11,6 @@ Baixe o pacote do PKI Express e extraia para a pasta de destino:
 
 [!include[Install](../../../../includes/pki-express/linux/install-curl.md)]
 
-Crie um atalho para executar o PKI Express:
-
-[!include[Create shortcut](../../../../includes/pki-express/rhel/create-shortcut.md)]
-
 Crie uma pasta para os logs e configure o PKI Express para utilizá-la:
 
 [!include[Configure log](../../../../includes/pki-express/linux/config-log.md)]
