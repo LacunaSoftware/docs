@@ -10,10 +10,6 @@ Download PKI Express and extract to the destination directory:
 
 [!include[Install](../../../../includes/pki-express/linux/install-wget.md)]
 
-Create a shortcut to run PKI Express:
-
-[!include[Create shortcut](../../../../includes/pki-express/ubuntu/create-shortcut.md)]
-
 Create a folder to write log files and configure it on PKI Express:
 
 [!include[Configure log](../../../../includes/pki-express/linux/config-log.md)]
