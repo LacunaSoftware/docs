@@ -6,6 +6,17 @@ To update your [on-premises installation](../index.md) of [Amplia Reg](../../ind
 
 [!include[Update steps](../../../../../includes/amplia-reg/linux/update.md)]
 
+<a name="vnext" />
+
+## Testing the next version of Amplia Reg
+
+To test the upcoming version of Amplia Reg, currently in Release Candidate state:
+
+[!include[Update to vNext](../../../../../includes/amplia-reg/linux/update-vnext.md)]
+
+> [!WARNING]
+> Release Candidate versions are not production-ready. Proceed at your own risk.
+
 ## See also
 
 * [Setup on Linux](index.md)
