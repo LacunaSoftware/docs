@@ -15,7 +15,8 @@ Para testar a próxima versão do Amplia Reg, atualmente em estado de *Release C
 [!include[Update to vNext](../../../../../includes/amplia-reg/linux/update-vnext.md)]
 
 > [!WARNING]
-> Versões em *Release Candidate* não são adequadas a ambientes de produção. Prossiga por sua conta e risco.
+> Versões em *Release Candidate* não são adequadas para produção e, portanto, devem ser instaladas
+> apenas em ambientes de homologação/testes.
 
 ## Veja também
 

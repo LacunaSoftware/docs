@@ -15,7 +15,8 @@ To test the upcoming version of Amplia Reg, currently in Release Candidate state
 [!include[Update to vNext](../../../../../includes/amplia-reg/linux/update-vnext.md)]
 
 > [!WARNING]
-> Release Candidate versions are not production-ready. Proceed at your own risk.
+> Release Candidate versions are not production-ready and thus should only be installed on
+> staging or test environments.
 
 ## See also
 
