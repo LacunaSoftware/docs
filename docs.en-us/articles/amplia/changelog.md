@@ -1,5 +1,16 @@
 ﻿# Amplia changelog
 
+<a name="v4-0-3" />
+### 4.0.3 (2023-01-31)
+
+Bug fixes:
+
+* [AMP-280] - Error while generating issue QR Code when running on Docker
+
+Updates database model: no
+
+
+
 <a name="v4-0-2" />
 ### 4.0.2 (2023-01-09)
 

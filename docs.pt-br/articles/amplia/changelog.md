@@ -1,5 +1,16 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v4-0-3" />
+### 4.0.3 (2023-01-09)
+
+Correções de bugs:
+
+* [AMP-280] - Erro ao gerar QR Code para emissão em Docker
+
+Atualiza modelo do banco de dados: não
+
+
+
 <a name="v4-0-2" />
 ### 4.0.2 (2023-01-09)
 
