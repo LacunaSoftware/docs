@@ -3,7 +3,7 @@
 The Docker image for [GrantID](../index.md) sends its logs to the standard output, which in turn gets registered
 by Docker as service logs. To check the *grantid* service logs:
 
-[!include[Check GrantID logs](../../../../../includes/grant-id/docker/check-logs-grantid.md)]
+[!include[Check GrantID logs](../../../../../../includes/grant-id/docker/check-logs-grantid.md)]
 
 > [!NOTE]
 > On the commands shown on this article, the leftmost `grantid` is the name of the stack, while the rightmost part is the name
@@ -12,11 +12,11 @@ by Docker as service logs. To check the *grantid* service logs:
 
 You can also check the SQL Server logs:
 
-[!include[Check SQL logs](../../../../../includes/grant-id/docker/check-logs-sql.md)]
+[!include[Check SQL logs](../../../../../../includes/grant-id/docker/check-logs-sql.md)]
 
 And also the Nginx logs:
 
-[!include[Check Nginx logs](../../../../../includes/grant-id/docker/check-logs-nginx.md)]
+[!include[Check Nginx logs](../../../../../../includes/grant-id/docker/check-logs-nginx.md)]
 
 ## See also
 
