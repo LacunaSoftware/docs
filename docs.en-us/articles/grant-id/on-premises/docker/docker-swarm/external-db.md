@@ -8,11 +8,11 @@ follow the steps on this article to use an external database.
 
 Stop the stack:
 
-[!include[Remove stack](../../../../../includes/grant-id/docker/remove-stack.md)]
+[!include[Remove stack](../../../../../../includes/grant-id/docker/remove-stack.md)]
 
 Edit the Docker compose file:
 
-[!include[Edit docker compose file](../../../../../includes/grant-id/docker/edit-compose.md)]
+[!include[Edit docker compose file](../../../../../../includes/grant-id/docker/edit-compose.md)]
 
 Make the following changes:
 
@@ -29,11 +29,11 @@ Make the following changes:
 
 The password should be added as the secret *grantid_sql_password*:
 
-[!include[Create SQL password secret](../../../../../includes/grant-id/docker/create-sql-password-secret.md)]
+[!include[Create SQL password secret](../../../../../../includes/grant-id/docker/create-sql-password-secret.md)]
 
 Deploy the stack with the new configurations:
 
-[!include[Deploy stack](../../../../../includes/grant-id/docker/deploy.md)]
+[!include[Deploy stack](../../../../../../includes/grant-id/docker/deploy.md)]
 
 ## Custom connection string
 
@@ -48,7 +48,7 @@ the steps below to use a custom connection string.
 
 Edit the Docker compose file:
 
-[!include[Edit docker compose file](../../../../../includes/grant-id/docker/edit-compose.md)]
+[!include[Edit docker compose file](../../../../../../includes/grant-id/docker/edit-compose.md)]
 
 Make the following changes:
 
@@ -63,11 +63,11 @@ Make the following changes:
 
 Edit the GrantID configuration file:
 
-[!include[Edit docker compose file](../../../../../includes/grant-id/docker/edit-grantid-config.md)]
+[!include[Edit docker compose file](../../../../../../includes/grant-id/docker/edit-grantid-config.md)]
 
 Add the **ConnectionStrings** section to the file, with a single item named `DefaultConnection`:
 
-[!include[Edit docker compose file](../../../../../includes/grant-id/docker/connection-string.md)]
+[!include[Edit docker compose file](../../../../../../includes/grant-id/docker/connection-string.md)]
 
 ## See also
 
