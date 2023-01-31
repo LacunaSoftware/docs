@@ -2,31 +2,31 @@
 
 Stop the stack (if already running):
 
-[!include[Remove stack](../../../../../includes/grant-id/docker/remove-stack.md)]
+[!include[Remove stack](../../../../../../includes/grant-id/docker/remove-stack.md)]
 
 Store the certificate and key files as secrets (replace *grantid.pem* and *grantid.key* below with your certificate and key files):
 
-[!include[Create SSL certificate secrets](../../../../../includes/grant-id/docker/create-ssl-cert-secret.md)]
+[!include[Create SSL certificate secrets](../../../../../../includes/grant-id/docker/create-ssl-cert-secret.md)]
 
 Edit the Docker compose file:
 
-[!include[Edit docker compose file](../../../../../includes/grant-id/docker/edit-compose.md)]
+[!include[Edit docker compose file](../../../../../../includes/grant-id/docker/edit-compose.md)]
 
 Uncomment the following entries:
 
-[!include[Enable SSL on compose file](../../../../../includes/grant-id/docker/enable-ssl-docker-compose.md)]
+[!include[Enable SSL on compose file](../../../../../../includes/grant-id/docker/enable-ssl-docker-compose.md)]
 
 Edit the Nginx configuration file:
 
-[!include[Edit Nginx config](../../../../../includes/grant-id/docker/edit-nginx-config.md)]
+[!include[Edit Nginx config](../../../../../../includes/grant-id/docker/edit-nginx-config.md)]
 
 Uncomment the following entries:
 
-[!include[Enable SSL on Nginx config file](../../../../../includes/grant-id/docker/enable-ssl-nginx-config.md)]
+[!include[Enable SSL on Nginx config file](../../../../../../includes/grant-id/docker/enable-ssl-nginx-config.md)]
 
 Edit the GrantID configuration file:
 
-[!include[Edit docker compose file](../../../../../includes/grant-id/docker/edit-grantid-config.md)]
+[!include[Edit docker compose file](../../../../../../includes/grant-id/docker/edit-grantid-config.md)]
 
 Make the following changes:
 
@@ -37,7 +37,7 @@ Make the following changes:
 
 Deploy the stack with the new configurations:
 
-[!include[Deploy stack](../../../../../includes/grant-id/docker/deploy.md)]
+[!include[Deploy stack](../../../../../../includes/grant-id/docker/deploy.md)]
 
 ## See also
 
