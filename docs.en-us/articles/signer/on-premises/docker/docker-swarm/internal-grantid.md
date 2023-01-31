@@ -18,12 +18,12 @@ curl -O https://cdn.lacunasoftware.com/grantid/docker/grantid-proxy.conf
 
 Edit the stack file:
 
-[!include[Edit compose file](../../../../../includes/signer/docker/edit-compose-grantid.md)]
+[!include[Edit compose file](../../../../../../includes/signer/docker/edit-compose-grantid.md)]
 
 Under **services** &gt; **nginx** &gt; **networks** &gt; **default** &gt; **aliases**, add your
-[base domain, login domain and API domain for GrantID](../../../grant-id/on-premises/index.md#planning).
+[base domain, login domain and API domain for GrantID](../../../../grant-id/on-premises/index.md#planning).
 
-Then, follow setup instructions for both [Signer](index.md) and [GrantID](../../../grant-id/on-premises/docker/index.md), skipping
+Then, follow setup instructions for both [Signer](../index.md) and [GrantID](../../../../grant-id/on-premises/docker/index.md), skipping
 the initial download steps since we've already downloaded the appropriate files.
 
 > [!NOTE]
