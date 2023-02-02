@@ -155,6 +155,8 @@ Under section **Billing**:
 or organization.
 * **TrialPeriodDays**: if greater than `0`, enables and defines the number of days that the billing trial period will last. During the trial period, all transactions in an
 organization will be free of charge (the creation date of the organization is considered as the start date).
+* **EnableBillingPlanHiring** (v1.53.0): if `true` users will be able to choose and hire billing plans. If enabled a payment gateway must be configured. 
+* **MaxNumberOfAvailablePlansDisplayed ** (default: `20`, v1.53.0): the maximum number of billing plans displayed in the hire billing plans page.
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
@@ -317,6 +319,9 @@ Under section **PaymentGateway**:
 * **DueDays** (default: `10`): the number of days a user will have to pay an invoice.
 * **InvoiceProductName**  (default: same value set on the `SiteName` setting): defines the name of the product that will appear in the invoice PDF.
 * **MinInvoiceValue** (default: `1`): the minimum value of an invoice. All invoices with value lower than this will be automatically marked as paid after being closed.
+* **InvoiceDueDays** (default: `1`, v1.53.0): the number of days after the invoice closes that will be used to define the due date of the invoice. This controls when credit card
+automatic charges will be made.
+* **BillingPlanDueDays** (default: `2`, v1.53.0): the number of days the user will have to make the payment for a billing plan hire.
 
 <a name="iugu-settings" />
 ###  *Iugu* Settings (v1.27.0)
