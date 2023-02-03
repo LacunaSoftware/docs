@@ -4,8 +4,38 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-53-0" />
+### 1.53.0 (2023-02-02)
+
+* New Features
+  * [SIG-819 New billing system
+  * [SIG-1007] Setting to define organization signature image
+  * [SIG-1033] Direct link to hire billing plan
+
+* Improvements
+  * [SIG-947] Add option to define required type of digital certificate when creating documents
+  * [SIG-1000] Add basic instance settings in administration page
+  * [SIG-1036] Web PKI brand support
+
+* Bug fixes
+  * [SIG-834] Folder settings allows users to list all organizations
+  * [SIG-958] Unique (fast) signature with cloud certificate does not create Validation Stamp marks
+
+Updates database model: yes
+
+<a name="v1-52-1" />
+### 1.52.1 (2023-01-18)
+
+* New Features
+  * [SIG-978] Create Silver Eerie Black theme
+
+* Improvements
+  * [SIG-43] Refactor folder and documents access updates
+
+Updates database model: no
+
 <a name="v1-52-0" />
-### 1.52.0 (2022-01-10)
+### 1.52.0 (2023-01-10)
 
 * New Features
   * [SIG-743] Add configuration for forcing pre-position signatures option enabled by default in document creation screen

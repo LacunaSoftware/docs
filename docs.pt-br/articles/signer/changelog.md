@@ -4,8 +4,38 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-53-0" />
+### 1.53.0 (2023-02-02)
+
+* Novas funcionalidades
+  * [SIG-819 Novo sistema de cobrança
+  * [SIG-1007] Configuração para definir representação visual por organização
+  * [SIG-1033] Link direto para contratação de plano
+
+* Melhorias
+  * [SIG-947] Permitir especificar em tela que a assinatura só pode ser realizada com certificado PF/PJ
+  * [SIG-1000] Adicionar configurações básicas da instância na administração
+  * [SIG-1036] Suporte a brand do Web PKI
+
+* Correções de bugs
+  * [SIG-834] Visualização de lista de todas organização nas configurações da pasta
+  * [SIG-958] Assinatura única (rápida) com certificado em nuvem não gera marcas de ValidationStamp nem manifesto simplificado
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v1-52-1" />
+### 1.52.1 (2023-01-18)
+
+* Novas funcionalidades
+  * [SIG-978] Criar tema Silver Eerie Black
+
+* Melhorias
+  * [SIG-43] Refatorar a atualização dos acessos aos documentos e pastas
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-52-0" />
-### 1.52.0 (2022-01-10)
+### 1.52.0 (2023-01-10)
 
 * Novas funcionalidades
   * [SIG-743] Adicionar configuração deixar pré-posicionamento das assinaturas do signatário como padrão na criação de documentos
