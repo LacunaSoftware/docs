@@ -1,5 +1,16 @@
 ﻿# Histórico de versões do Amplia
 
+<a name="v4-0-4" />
+### 4.0.4 (2023-02-03)
+
+Correções de bugs:
+
+* [AMP-286] - Extensão ExtendedKeyUsage em certificados PY não está marcada como crítica
+
+Atualiza modelo do banco de dados: não
+
+
+
 <a name="v4-0-3" />
 ### 4.0.3 (2023-01-09)
 

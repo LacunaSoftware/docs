@@ -1,5 +1,43 @@
 ﻿# Amplia Reg changelog
 
+<a name="v1-6-0" />
+## 1.6.0 (next version)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-172 Certificate type management
+
+ARNG-250 Holder type management
+
+### Improvements
+
+ARNG-283 Add support for PostgreSQL
+
+ARNG-303 Improved SSL certificate to support *Autenticação Web* certificates (Cape Verde)
+
+### Bug fixes
+
+ARNG-310 Paged query over registration agents does not have a order by clause
+
+
+
+<a name="v1-5-0" />
+## 1.5.0 (2023-02-07)
+
+Updates database model: **yes**
+
+### Improvements
+
+ARNG-263 Add certificate serial number and crypto device information to agreements
+
+ARNG-307 Allow applications with Electronic RA role to issue certificates without CAPTCHA
+
+ARNG-309 Replace term "suscriptor" by "titular" on ES localization
+
+
+
 <a name="v1-4-1" />
 ## 1.4.1 (2023-01-11)
 

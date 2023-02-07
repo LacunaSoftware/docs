@@ -1,5 +1,16 @@
 ﻿# Amplia changelog
 
+<a name="v4-0-4" />
+### 4.0.4 (2023-02-03)
+
+Bug fixes:
+
+* [AMP-286] - Extension ExtendedKeyUsage on PY certificates is not marked as critical
+
+Updates database model: no
+
+
+
 <a name="v4-0-3" />
 ### 4.0.3 (2023-01-31)
 

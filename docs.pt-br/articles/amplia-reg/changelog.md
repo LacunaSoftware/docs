@@ -1,5 +1,43 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<a name="v1-6-0" />
+## 1.6.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-172 Gerenciamento de tipos de certificados
+
+ARNG-250 Gerenciamento de tipos de titular
+
+### Melhorias
+
+ARNG-283 Adicionado suporte a PostgreSQL
+
+ARNG-303 Adaptações ao certificado SSL para suportar perfil de Autenticação Web de Cabo Verde
+
+### Correções de bugs
+
+ARNG-310 Query paginada sobre agentes de registro está sem ordenação
+
+
+
+<a name="v1-5-0" />
+## 1.5.0 (2023-02-07)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-263 Adicionar ao termo o número de série do certificado e informação de modelo e número de série do dispositivo
+
+ARNG-307 Permitir que aplicações com perfil de AR Eletrônica realizem emissão de certificado sem CAPTCHA
+
+ARNG-309 Substituir termo "suscriptor" por "titular" na localização ES
+
+
+
 <a name="v1-4-1" />
 ## 1.4.1 (2023-01-11)
 
