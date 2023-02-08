@@ -1,83 +1,111 @@
 ﻿# Amplia changelog
 
+<a name="vnext" />
+## 4.1.0 (next version)
+
+Updates database model: **yes**
+
+### New features
+
+AMP-283 Issue certificate returning PKCS #12 (PFX) file
+
+### Improvements
+
+AMP-273 Add support for PostgreSQL
+
+AMP-281 Allow using "S3 clones" as blob storage
+
+
+
 <a name="v4-0-4" />
-### 4.0.4 (2023-02-03)
-
-Bug fixes:
-
-* [AMP-286] - Extension ExtendedKeyUsage on PY certificates is not marked as critical
+## 4.0.4 (2023-02-03)
 
 Updates database model: no
+
+### Bug fixes
+
+AMP-286 Extension ExtendedKeyUsage on PY certificates is not marked as critical
 
 
 
 <a name="v4-0-3" />
-### 4.0.3 (2023-01-31)
-
-Bug fixes:
-
-* [AMP-280] - Error while generating issue QR Code when running on Docker
+## 4.0.3 (2023-01-31)
 
 Updates database model: no
+
+### Bug fixes
+
+AMP-280 Error while generating issue QR Code when running on Docker
 
 
 
 <a name="v4-0-2" />
-### 4.0.2 (2023-01-09)
-
-Improvements:
-
-* [AMP-277] - Show ID on CA and Template details page
+## 4.0.2 (2023-01-09)
 
 Updates database model: no
+
+### Improvements
+
+AMP-277 Show ID on CA and Template details page
 
 
 
 <a name="v4-0-1" />
-### 4.0.1 (2022-12-30)
-
-Improvements:
-
-* [AMP-276] - Improve Dinamo HSM integration
+## 4.0.1 (2022-12-30)
 
 Updates database model: no
+
+### Improvements
+
+AMP-276 Improve Dinamo HSM integration
 
 
 
 <a name="v4-0-0" />
-### 4.0.0 (2022-12-27)
+## 4.0.0 (2022-12-27)
 
 **See [Update Amplia from 3.x to 4.0](on-premises/update-40.md)**
 
-New Features:
-
-* [AMP-220] - New APIs to support [Lacuna PSC](../psc/index.md)
-* [AMP-268] - Cape Verde certificates
-* [AMP-252] - Updated Paraguay certificate profiles
-* [AMP-249] - Proprietary [Kryptus HSM](on-premises/key-stores/kryptus.md) integration
-* [AMP-271] - OCSP domain configuration
-
-Improvements:
-
-* [AMP-272] - Update ASP.NET Core to version 6.0
-* [AMP-258] - Add support for .conf/.ini configuration file
-* [AMP-261] - Create missing indexes over orders and certificates
-* [AMP-265] - Add field SerialNumber on custom CSR issue page
-* [AMP-267] - Creation of order with predefined serial number for the certificate
-* [AMP-270] - Add support for multiple certificate policies on a single certificate
-* [AMP-274] - Generate "quasi-sequential" GUIDs to improve database performance
-* [AMP-275] - Add specific configuration for OCSP domains
-
-Bug fixes:
-
-* [AMP-269] - Latest CRL is not found if the CA name contains uppercase letters
-
 Updates database model: **yes** (see [warning](on-premises/update-40.md))
+
+### New features
+
+AMP-220 New APIs to support [Lacuna PSC](../psc/index.md)
+
+AMP-268 Cape Verde certificates
+
+AMP-252 Updated Paraguay certificate profiles
+
+AMP-249 Proprietary [Kryptus HSM](on-premises/key-stores/kryptus.md) integration
+
+AMP-271 OCSP domain configuration
+
+### Improvements
+
+AMP-272 Update ASP.NET Core to version 6.0
+
+AMP-258 Add support for .conf/.ini configuration file
+
+AMP-261 Create missing indexes over orders and certificates
+
+AMP-265 Add field SerialNumber on custom CSR issue page
+
+AMP-267 Creation of order with predefined serial number for the certificate
+
+AMP-270 Add support for multiple certificate policies on a single certificate
+
+AMP-274 Generate "quasi-sequential" GUIDs to improve database performance
+
+AMP-275 Add specific configuration for OCSP domains
+
+### Bug fixes
+
+AMP-269 Latest CRL is not found if the CA name contains uppercase letters
 
 
 
 <a name="v3-15-2" />
-### 3.15.2 (2022-10-10)
+## 3.15.2 (2022-10-10)
 
 Improvements:
 
@@ -92,7 +120,7 @@ Updates database model: no
 
 
 <a name="v3-15-1" />
-### 3.15.1 (2022-09-23)
+## 3.15.1 (2022-09-23)
 
 Improvements:
 
@@ -105,7 +133,7 @@ Updates database model: no
 
 
 <a name="v3-15-0" />
-### 3.15.0 (2022-06-13)
+## 3.15.0 (2022-06-13)
 
 New Features:
 
@@ -120,7 +148,7 @@ Updates database model: no
 
 
 <a name="v3-14-0" />
-### 3.14.0 (2022-04-29)
+## 3.14.0 (2022-04-29)
 
 New Features:
 
@@ -142,7 +170,7 @@ Updates database model: **yes**
 
 
 <a name="v3-13-2" />
-### 3.13.2 (2021-12-16)
+## 3.13.2 (2021-12-16)
 
 Bug fixes
 
@@ -152,7 +180,7 @@ Updates database model: no
 
 
 <a name="v3-13-1" />
-### 3.13.1 (2021-12-05)
+## 3.13.1 (2021-12-05)
 
 New Features
 
@@ -169,7 +197,7 @@ Updates database model: no
 
 
 <a name="v3-12-0" />
-### 3.12.0 (2021-04-27)
+## 3.12.0 (2021-04-27)
 
 New Features
 
@@ -179,7 +207,7 @@ Updates database model: **yes**
 
 
 <a name="v3-11-0" />
-### 3.11.0 (2021-03-25)
+## 3.11.0 (2021-03-25)
 
 Improvements
 
@@ -190,7 +218,7 @@ Updates database model: no
 
 
 <a name="v3-10-2" />
-### 3.10.2 (2021-03-21)
+## 3.10.2 (2021-03-21)
 
 Improvements
 
@@ -204,7 +232,7 @@ Updates database model: no
 
 
 <a name="v3-10-1" />
-### 3.10.1 (2021-03-15)
+## 3.10.1 (2021-03-15)
 
 Bug fixes:
 
@@ -214,7 +242,7 @@ Updates database model: no
 
 
 <a name="v3-10-0" />
-### 3.10.0 (2021-02-08)
+## 3.10.0 (2021-02-08)
 
 New Features:
 
@@ -233,7 +261,7 @@ Updates database model: no
 
 
 <a name="v3-9-6" />
-### 3.9.6 (2020-11-26)
+## 3.9.6 (2020-11-26)
 
 Improvements:
 
@@ -252,7 +280,7 @@ Updates database model: no
 
 
 <a name="v3-9-5" />
-### 3.9.5 (2020-10-20)
+## 3.9.5 (2020-10-20)
 
 Bug fixes:
 
@@ -262,7 +290,7 @@ Updates database model: no
 
 
 <a name="v3-9-4" />
-### 3.9.4 (2020-10-08)
+## 3.9.4 (2020-10-08)
 
 Bug fixes:
 
@@ -272,7 +300,7 @@ Updates database model: no
 
 
 <a name="v3-9-3" />
-### 3.9.3 (2020-09-30)
+## 3.9.3 (2020-09-30)
 
 Bug fixes:
 
@@ -282,7 +310,7 @@ Updates database model: no
 
 
 <a name="v3-9-2" />
-### 3.9.2 (2020-09-03)
+## 3.9.2 (2020-09-03)
 
 Improvements:
 
@@ -302,7 +330,7 @@ Updates database model: no
 
 
 <a name="v3-9-1" />
-### 3.9.1 (2020-08-05)
+## 3.9.1 (2020-08-05)
 
 * Bug fix: [AMP-178] - Blank page when returning from login on Internet Explorer
 
@@ -310,7 +338,7 @@ Updates database model: no
 
 
 <a name="v3-9-0" />
-### 3.9.0 (2020-08-04)
+## 3.9.0 (2020-08-04)
 
 New features:
 
@@ -325,7 +353,7 @@ Updates database model: **yes**
 
 
 <a name="v3-8-4" />
-### 3.8.4 (2020-07-22)
+## 3.8.4 (2020-07-22)
 
 * [AMP-177] - Add *Dark cerulean & Green* (`dcg`) theme
 
@@ -333,7 +361,7 @@ Updates database model: no
 
 
 <a name="v3-8-3" />
-### 3.8.3 (2020-07-21)
+## 3.8.3 (2020-07-21)
 
 * [AMP-173] - Don't generate preemptively certificate agreement file when providing access link on API
 * Bug fix: [AMP-174] - Issue certificate page stays loading indefinitely
@@ -342,7 +370,7 @@ Updates database model: no
 
 
 <a name="v3-8-2" />
-### 3.8.2 (2020-07-10)
+## 3.8.2 (2020-07-10)
 
 * Bug fixes
   * [AMP-175] - Information application logs are being logged by default on Linux and Docker
@@ -352,7 +380,7 @@ Updates database model: no
 
 
 <a name="v3-8-1" />
-### 3.8.1 (2020-06-24)
+## 3.8.1 (2020-06-24)
 
 * Bug fix: upon accepting suggestion to issue certificate on mobile, QR Code is not shown
 
@@ -360,7 +388,7 @@ Updates database model: no
 
 
 <a name="v3-8-0" />
-### 3.8.0 (2020-06-24)
+## 3.8.0 (2020-06-24)
 
 * Implement soft deletion of certificate ortders
 * Add API to update certificate orders
@@ -371,7 +399,7 @@ Updates database model: **yes**
 
 
 <a name="v3-7-5" />
-### 3.7.5 (2020-06-23)
+## 3.7.5 (2020-06-23)
 
 * Optimize job history storage
 * Add argument `--heavy` to command [update-db](on-premises/tool/update-db.md)
@@ -380,7 +408,7 @@ Updates database model: no
 
 
 <a name="v3-7-4" />
-### 3.7.4 (2020-06-19)
+## 3.7.4 (2020-06-19)
 
 * Bug fixes
   * EventLog log provider causing errors on Azure App Service
@@ -390,7 +418,7 @@ Updates database model: no
 
 
 <a name="v3-7-3" />
-### 3.7.3 (2020-06-05)
+## 3.7.3 (2020-06-05)
 
 * Add *Green & Dark coral* (`gdc`) theme
 * Bug fix
@@ -400,7 +428,7 @@ Updates database model: no
 
 
 <a name="v3-7-2" />
-### 3.7.2 (2020-06-03)
+## 3.7.2 (2020-06-03)
 
 * Remove diacritics from SMS messages
 
@@ -408,7 +436,7 @@ Updates database model: no
 
 
 <a name="v3-7-1" />
-### 3.7.1 (2020-05-21)
+## 3.7.1 (2020-05-21)
 
 * Improve phone and user order labels
 
@@ -416,7 +444,7 @@ Updates database model: no
 
 
 <a name="v3-7-0" />
-### 3.7.0 (2020-05-06)
+## 3.7.0 (2020-05-06)
 
 * Add support for PIN-protecting keys on Dinamo HSMs
 * Add filter by `keyMedia` on list pending certificates for user API
@@ -426,7 +454,7 @@ Updates database model: no
 
 
 <a name="v3-6-0" />
-### 3.6.0 (2020-05-01)
+## 3.6.0 (2020-05-01)
 
 * Add Dinamo HSM integration via proprietary API
 
@@ -434,7 +462,7 @@ Updates database model: no
 
 
 <a name="v3-5-0" />
-### 3.5.0 (2020-04-14)
+## 3.5.0 (2020-04-14)
 
 * Migrated to ASP.NET Core 3.1 (LTS release, supported until December 2022)
 
@@ -444,7 +472,7 @@ Updates database model: no
 
 
 <a name="v3-4-0" />
-### 3.4.0 (2020-03-27)
+## 3.4.0 (2020-03-27)
 
 * Add support for digitally signing the Certificate Agreement containing the subject's public key during the issue procedure
 * Add birth date to PKI Brazil (ICP-Brasil) order creation page
@@ -460,7 +488,7 @@ Updates database model: **yes**
 
 
 <a name="v3-3-0" />
-### 3.3.0 (2019-03-17)
+## 3.3.0 (2019-03-17)
 
 * Add support for configuring a custom *certification policies* extension on templates
 * Add new user role: *Registration Agent* (can only create certificate orders and revoke certificates)
@@ -476,7 +504,7 @@ Updates database model: **yes**
 
 
 <a name="v3-2-0" />
-### 3.2.0 (2019-03-10)
+## 3.2.0 (2019-03-10)
 
 * Dashboard internationalized (English and Portuguese)
 * Add support for storing end-user keys with PIN protection ("cloud HSM")
@@ -493,7 +521,7 @@ Updates database model: **yes**
 
 
 <a name="v3-1-0" />
-### 3.1.0 (2019-02-22)
+## 3.1.0 (2019-02-22)
 
 * OpenID Connect integration is now optional
 * Add [command-line tool](on-premises/tool/index.md) with:
@@ -506,7 +534,7 @@ Updates database model: no
 
 
 <a name="v3-0-0" />
-### 3.0.0 (2019-02-06)
+## 3.0.0 (2019-02-06)
 
 * Dashboard entirely redesigned
 * Add support for performing operations on the dashboard that before had to be done via API:
@@ -522,7 +550,7 @@ Configuration changes: see [Update Amplia from 2.16 to 3.0](on-premises/update-3
 
 
 <a name="v2-16-1" />
-### 2.16.1 (2019-12-12)
+## 2.16.1 (2019-12-12)
 
 * Add option to configure an alias for the identity type on the *PrivateID* certificate template
 
@@ -530,7 +558,7 @@ Updates database model: no
 
 
 <a name="v2-16-0" />
-### 2.16.0 (2019-12-10)
+## 2.16.0 (2019-12-10)
 
 * Add attribute certificate type *PrivateID*
 
@@ -538,7 +566,7 @@ Updates database model: no
 
 
 <a name="v2-15-2" />
-### 2.15.2 (2019-12-04)
+## 2.15.2 (2019-12-04)
 
 * Changed Linux configuration template to log to */var/log/amplia* directory
 
@@ -546,7 +574,7 @@ Updates database model: no
 
 
 <a name="v2-15-1" />
-### 2.15.1 (2019-09-12)
+## 2.15.1 (2019-09-12)
 
 * Improve PK certificate type *Cnb* (customer-specific)
 
@@ -554,7 +582,7 @@ Updates database model: no
 
 
 <a name="v2-15-0" />
-### 2.15.0 (2019-08-10)
+## 2.15.0 (2019-08-10)
 
 * Add [support for Linux](on-premises/linux/index.md)
 * Add database key store
@@ -578,7 +606,7 @@ Configuration changes:
 
 
 <a name="v2-14-1" />
-### 2.14.1 (2019-06-13)
+## 2.14.1 (2019-06-13)
 
 * Bug fixes
     * Textual search in certificates and orders was not working with partial terms.
@@ -589,7 +617,7 @@ Updates database model: no
 Configuration changes: none
 
 <a name="v2-14-0" />
-### 2.14.0 (2019-06-11)
+## 2.14.0 (2019-06-11)
 
 * Interface to view and unlock blocked orders
 * Order creation screen tailored to order CA, Template and mobile phone.
@@ -600,7 +628,7 @@ Updates database model: no
 Configuration changes: none
 
 <a name="v2-13-0" />
-### 2.13.0 (2019-05-09)
+## 2.13.0 (2019-05-09)
 
 * Added possibility to configure emails sent by system (theme and pictures)
 * Created API for sending SMS with link for issuing certificate 
@@ -613,7 +641,7 @@ Configuration changes:
     * Valid values: empty (standard) or `Teal`
 
 <a name="v2-12-1" />
-### 2.12.1 (2019-04-18)
+## 2.12.1 (2019-04-18)
 
 * PKI SDK updated to version [2.4.0]
 (https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-4-0)
@@ -626,7 +654,7 @@ Updates database model: no
 Configuration changes: none
 
 <a name="v2-12-0" />
-### 2.12.0 (2019-03-21)
+## 2.12.0 (2019-03-21)
 
 * Certificate issue on mobile
 
@@ -643,7 +671,7 @@ Configuration changes:
     * `PkiSuite:MobileAndroidStoreUri`
 
 <a name="v2-11-1" />
-### 2.11.1 (2019-02-26)
+## 2.11.1 (2019-02-26)
 
 * Added validation of email address in the creation of ICP-Brasil type certificate requests (PKIBrazil)
 * PKI SDK updated to version [2.3.0]
@@ -654,7 +682,7 @@ Updates database model: no
 Configuration changes: none
 
 <a name="v2-11-0" />
-### 2.11.0 (2019-02-15)
+## 2.11.0 (2019-02-15)
 
 * Added certificate support for blockchain [IBMHyperledger]
 (https://www.ibm.com/blockchain/hyperledger)
@@ -673,7 +701,7 @@ Updates database model: no
 Configuration changes: none
 
 <a name="v2-10-3" />
-### 2.10.3 (2019-01-21)
+## 2.10.3 (2019-01-21)
 
 * Improvements to SMS sending configuration
 * PKI SDK updated to version [2.2.6]
@@ -691,7 +719,7 @@ Configuration changes:
     * The old configuration `SMS:TwilioBasicCredential` is still supported for backward compatibility
 
 <a name="v2-10-2" />
-### 2.10.2 (2019-01-17)
+## 2.10.2 (2019-01-17)
 
 * ASP.NET Core updated to 2.2
 * New setting file for IIS (appsettings.iss.json)
@@ -702,7 +730,7 @@ Updates database model: no
 Configuration changes: none
 
 <a name="v2-10-1" />
-### 2.10.1 (2019-01-14)
+## 2.10.1 (2019-01-14)
 
 * Fixed bug that caused certificate issue error when Web PKI was not installed
 
@@ -711,7 +739,7 @@ Updates database model: no
 Configuration changes: none
 
 <a name="v2-10-0" />
-### 2.10.0 (2019-01-10)
+## 2.10.0 (2019-01-10)
 
 * First version available to install *on-premises* 
 
