@@ -7,7 +7,7 @@ Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
 
-AMP-283 Emissão retornando arquivo PFX / PKCS #12
+AMP-283 Emissão de certificado sem CSR, retornando arquivo PFX / PKCS #12
 
 ### Melhorias
 

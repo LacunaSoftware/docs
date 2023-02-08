@@ -8,9 +8,9 @@ Para atualizar sua [instância *on premises*](../index.md) do [Amplia](../../ind
 
 <a name="vnext" />
 
-## Testando a nova versão do Amplia
+## Testando a próxima versão do Amplia
 
-Para testar a próxima versão do Amplia, atualmente em estado de *Release Candidate*:
+Para testar a próxima versão do Amplia, atualmente em estágio de *Release Candidate*:
 
 [!include[Update to vNext](../../../../../includes/amplia/linux/update-vnext.md)]
 

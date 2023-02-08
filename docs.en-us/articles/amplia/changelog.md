@@ -7,7 +7,7 @@ Updates database model: **yes**
 
 ### New features
 
-AMP-283 Issue certificate returning PKCS #12 (PFX) file
+AMP-283 Issue certificate without a CSR, returning a PKCS #12 (PFX) file
 
 ### Improvements
 
