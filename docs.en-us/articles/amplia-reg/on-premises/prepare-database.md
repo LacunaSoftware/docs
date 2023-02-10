@@ -61,7 +61,7 @@ Data Source=.;Initial Catalog=AmpliaReg;User ID=AmpliaRegAdm;Password=XXXXX
 
 ## PostgreSQL
 
-Starting on [version 1.6.0](../changelog.md#1-6-0) of Amplia Reg, PostgreSQL is also supported. Any version currently supported of PostgreSQL
+Starting on [version 1.6.0](../changelog.md#v1-6-0) of Amplia Reg, PostgreSQL is also supported. Any version currently supported of PostgreSQL
 is also supported ([which at the moment means version 11 or greater](https://www.postgresql.org/support/versioning/)).
 
 Start by creating the database and a user for the application (optionally changing the names of the database and user):
