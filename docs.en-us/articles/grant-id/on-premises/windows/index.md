@@ -140,6 +140,13 @@ Always start by publishing IdentityService, then AuthServer and finally Console:
 
 After all components are installed, you should configure SSL bindings for each IIS app (if necessary).
 
+After AuthServer is installed and bindings configured, it may be necessary to give AuthServer application pool full access to the GrantID certificate:
+
+1. Go to Manage computer certificates.
+1. Select the certificate and with a right-click select All tasks - Manage private key.
+1. Enter IIS AppPool\AuthServer_App and select OK.
+1. Make sure `Full control` is selected and press Apply then OK.
+
 <a name="update-instructions" />
 ## Update instructions
 
