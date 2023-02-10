@@ -156,7 +156,7 @@ or organization.
 * **TrialPeriodDays**: if greater than `0`, enables and defines the number of days that the billing trial period will last. During the trial period, all transactions in an
 organization will be free of charge (the creation date of the organization is considered as the start date).
 * **EnableBillingPlanHiring** (v1.53.0): if `true` users will be able to choose and hire billing plans. If enabled a payment gateway must be configured. 
-* **MaxNumberOfAvailablePlansDisplayed ** (default: `20`, v1.53.0): the maximum number of billing plans displayed in the hire billing plans page.
+* **MaxNumberOfAvailablePlansDisplayed** (default: `20`, v1.53.0): the maximum number of billing plans displayed in the hire billing plans page.
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
