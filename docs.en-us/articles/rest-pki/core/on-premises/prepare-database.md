@@ -64,23 +64,30 @@ Data Source=.;Initial Catalog=RestPkiCore;User ID=RestPkiCoreAdmin;Password=XXXX
 Starting on [version 1.12.0](../changelog.md#v1-12-0) of Rest PKI Core, PostgreSQL is also supported. Any version currently supported of PostgreSQL
 is also supported ([which at the moment means version 11 or greater](https://www.postgresql.org/support/versioning/)).
 
-> [!NOTE]
-> PostgreSQL has limited support for case and accent insensitive collations. For this reason, some operations might be case and accent sensitive if using PostgreSQL
-> even though they should not be. Please let us know if you encounter any such issues.
+Start by creating the database and a user for the application (optionally changing the names of the database and user):
 
-To use PostgreSQL, you will need a database and a user with full access to the database.
+```
+postgres=# CREATE DATABASE restpkicore;
+CREATE DATABASE
+postgres=# CREATE USER restpkicore WITH PASSWORD 'XXXXX';
+CREATE ROLE
+```
 
-Once you have created the database, create a user and grant it full access (change the database name `restpkicore` if you chose another name):
+Next, connect to the newly created database and set the permissions for the `public` schema:
 
-```sql
-CREATE USER restpkicore WITH ENCRYPTED PASSWORD 'XXXXX';
-GRANT ALL PRIVILEGES ON DATABASE restpkicore to restpkicore;
+```
+postgres=# \connect restpkicore
+You are now connected to database "restpkicore" as user "postgres".
+restpkicore=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE
+restpkicore=# GRANT ALL ON SCHEMA public TO restpkicore;
+GRANT
 ```
 
 > [!NOTE]
-> For now, only using a user with full access is supported. Please contact us if you need to run Rest PKI Core using a user without full privileges.
+> For now, only using a user with full schema access is supported. Please contact us if you need to run Rest PKI Core with less privileges.
 
-The connection string would then be (assuming the database name is `restpkicore`):
+The connection string would then be (assuming you didn't change the database and user names):
 
 ```
 Host=localhost;Database=restpkicore;Username=restpkicore;Password=XXXXX

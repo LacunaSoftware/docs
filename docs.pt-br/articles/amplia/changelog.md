@@ -1,6 +1,7 @@
 ﻿# Histórico de versões do Amplia
 
 <a name="vnext" />
+<a name="4-1-0" />
 ## 4.1.0 (próxima versão)
 
 Atualiza modelo do banco de dados: **sim**

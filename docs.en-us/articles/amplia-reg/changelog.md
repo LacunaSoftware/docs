@@ -1,6 +1,7 @@
 ﻿# Amplia Reg changelog
 
 <a name="vnext" />
+<a name="v1-6-0" />
 ## 1.6.0 (next version)
 
 Updates database model: **yes**

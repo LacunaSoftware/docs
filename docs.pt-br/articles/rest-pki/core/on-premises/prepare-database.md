@@ -1,7 +1,6 @@
 ﻿# Preparando o banco de dados para instalação do Rest PKI Core
 
-Para instalar uma [instância *on premises*](index.md) do [Rest PKI Core](../index.md), você vai precisar de uma *connection string* para um dos seguintes
-SGBDs:
+Para instalar uma [instância *on premises*](index.md) do [Rest PKI Core](../index.md), você vai precisar de uma *connection string* para um dos seguintes SGBDs:
 
 * [SQL Server](#sql-server)
 * [PostgreSQL](#postgres)
@@ -63,26 +62,32 @@ Data Source=.;Initial Catalog=RestPkiCore;User ID=RestPkiCoreAdmin;Password=XXXX
 ## PostgreSQL
 
 A partir da [versão 1.12.0](../changelog.md#v1-12-0) do Rest PKI Core, também é suportado o uso de PostgreSQL. Qualquer uma das versões do PostgreSQL dentro do período
-de suporte oficial também é suportada pelo Rest PKI Core ([o que, no momento, significa versão 11 ou superior](https://www.postgresql.org/support/versioning/)).
+de suporte oficial também é suportada ([o que, no momento, significa versão 11 ou superior](https://www.postgresql.org/support/versioning/)).
 
-> [!NOTE]
-> O PostgreSQL tem suporte limitado a operações *case insensitive* e *accent insensitive*. Por esse motivo, pode acontecer de letras maiúsculas serem
-> diferenciadas de minúsculas ou letras acentuadas serem diferencadas de letras sem acento em situações em que isso não deveria acontecer. Por favor, contate-nos
-> caso você encontre esse tipo de situação.
+Comece criando o banco de dados e um usuário para a aplicação (altere os nomes caso deseje):
 
-Para usar PostgreSQL, você precisará de um banco de dados e um usuário com acesso pleno ao banco.
+```
+postgres=# CREATE DATABASE restpkicore;
+CREATE DATABASE
+postgres=# CREATE USER restpkicore WITH PASSWORD 'XXXXX';
+CREATE ROLE
+```
 
-Uma vez criado o banco, crie um usuário e conceda acesso pleno a ele (altere o nome do banco `restpkicore` abaixo se você tiver escolhido outro nome para o banco):
+Em seguida, conecte-se ao banco de dados recém-criado e configure as permissões ao *schema* `public`:
 
-```sql
-CREATE USER restpkicore WITH ENCRYPTED PASSWORD 'XXXXX';
-GRANT ALL PRIVILEGES ON DATABASE restpkicore to restpkicore;
+```
+postgres=# \connect restpkicore
+You are now connected to database "restpkicore" as user "postgres".
+restpkicore=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE
+restpkicore=# GRANT ALL ON SCHEMA public TO restpkicore;
+GRANT
 ```
 
 > [!NOTE]
 > Por ora, é necessário utilizar um usuário com acesso pleno. Contate-nos se você precisar executar o Rest PKI Core usando um usuário com acesso limitado.
 
-A *connection string* seria, então, a seguinte (assumindo que o nome do banco é `restpkicore`):
+A *connection string* seria, então, a seguinte (assumindo que você não alterou os nomes do banco de dados e do usuário):
 
 ```
 Host=localhost;Database=restpkicore;Username=restpkicore;Password=XXXXX

@@ -1,6 +1,7 @@
 ﻿# Histórico de versões do Amplia Reg
 
 <a name="vnext" />
+<a name="v1-6-0" />
 ## 1.6.0 (próxima versão)
 
 Atualiza modelo do banco de dados: **sim**
