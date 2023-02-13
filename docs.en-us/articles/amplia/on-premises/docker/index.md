@@ -24,7 +24,7 @@ Featured image tags:
 <a name="vnext" />
 
 > [!NOTE]
-> To test the upcoming version of Amplia, currently in Release Candidate state, use the image `lacunasoftware/amplia:4.1.0-rc07` instead.
+> To test the upcoming version of Amplia, currently in Release Candidate state, use the image `lacunasoftware/amplia:4.1.0-rc08` instead.
 > **Beware:** Release Candidate versions are not production-ready and thus should only be installed on staging or test environments.
 
 This image requires: 
