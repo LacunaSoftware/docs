@@ -10,7 +10,7 @@ For Docker-based setup the following image is provided on DockerHub:
 
 This image requires: 
 
-* A SQL Server Database connection: the database collation must be Latin1_General_100_CI_AI or Latin1_General_CI_AI. 
+* Connection string to a [previously created SQL Server or PostgreSQL database](../prepare-database.md)
 * Storage (shared between all instances of the image): see BlobStorage settings bellow for further information.
 * A certificate to issue tokens. See [GrantID Linux Installation](../linux/index.md) for instructions to generate this certificate using openssl.
 * A key to generate temporary tokens sent on emails. See [GrantID Linux Installation](../linux/index.md) for instructions to generate this key using openssl.
