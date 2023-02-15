@@ -21,6 +21,8 @@ Available moving tags:
 This image requires: 
 
 * **Blob storage** shared between all containers running the image -- see [Blob Storage configuration](../blob-storage.md)
+* **Volume** shared between all containers running the image mounted on `/var/keys`, used to store data protection keys. Files on this volume are few, seldom written to and read only during container
+  startup, therefore this can be any low-performing shared volume provided by whatever orchestrator you use.
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
@@ -71,95 +73,40 @@ MIIE...
 Copy the entire contents of the **PFX** section (all as a single line) over to the `Application__SigningCertificatePfxContent` setting (in the example above, `MIIPwQ...AAA=`, in reality this would be
 close to 5000 characters) and fill the `Application__SigningCertificatePfxPassword` setting with the same password you used on the generation command.
 
+Additional settings can be found at the [GrantID Settings page](../settings.md).
+
 ## Exposed ports
 
-GrantID is composed of three services (see [GrantID Overview](../index.md)) which the image exposes in a single container. Different ports that can be configured using environment
+GrantID is composed of three services (see [GrantID Overview](../index.md#planning)) which the image exposes in a single container, listening on the following ports:
+
+* The *identity service* listens on port **5010**
+* The *auth server* listens on port **5011**
+* The *console* listens on port **5012**
+
+These ports can be customized by setting the environment variables `GRANTID_IDENTITY_SERVICE_PORT`, `GRANTID_AUTH_SERVER_PORT` and `GRANTID_CONSOLE_PORT`.
+
+Your environment configuration should direct traffic from the [application domains](../index.md#planning) to these ports in the following way:
+
+Domain type | Container port
+----------- | --------------
+Base domain | Auth server (5012)
+Login       | Auth server (5012)
+Console     | Console (5011)
+API         | Identity service (5010)
+
+
+Different ports that can be configured using environment
 variables:
 
 * **GRANTID_IDENTITY_SERVICE_PORT**: default `5010`.
 * **GRANTID_AUTH_SERVER_PORT**: default `5011`.
 * **GRANTID_CONSOLE_PORT**: default `5012`.
 
-If you need one image per service for fine-grained control of your containers contact us.
+> [!NOTE]
+> If you need one image per service for fine-grained control of your containers contact us.
 
 
 
-## Basic Configuration
-
-The container for this image is configured using Environment variables.
-
-Environment variable names must follow the pattern: `Section__Setting`, for instance: for the General section, to
-configure the SupportEmailAddress you must set a variable with name: `General__SupportEmailAddress`.
-
-The required settings are presented below.
-
-[!include[Database config](../../../includes/spa-config/database-config.md)]
-
-Example:
-
-[!include[Database config sample](../../../../../includes/spa-config/database-config-sample.md)]
-
-### BlobStorage Section
-
-Defines how the application will store and retrieve files.
-
-See [BlobStorage Configuration](../blob-storage.md) for details and examples of supported services.
-
-### Serilog Section
-
-Defines where application logs will be stored. 
-
-Please see [Serilog Configuration](../serilog.md) for details and examples of supported services.
-
-[!include[PKI config](../../../includes/spa-config/pki-config.md)]
-
-Example:
-
-[!include[PKI config sample](../../../../../includes/spa-config/pki-config-sample.md)]
-
-### Application Section
-
-* **ProductName**: the name of the application.
-* **IdentityServiceUrl**: the URL of the IdentityService service.
-* **ConsoleUrl**: the URL of the Console service.
-* **AuthServerUrl**: the URL of the AuthServer service.
-* **UseReverseProxy**: set as `true` if the container will be executed behind a reverse proxy or load balancer. It can be omitted otherwise.
-* **TempTokenPassword**: key to generate temporary tokens.
-* **ProtectorKeyStorePath**: file system path to save data protection keys.
-* **SigningCertificatePfxPath**: file system path to the certificate that will be used to issue tokens.
-* **SigningCertificatePfxPassword**: the password of the certificate that will be used to issue tokens.
-
-Example:
-
-```sh
-Application__ProductName=My App ID
-Application__IdentityServiceUrl=https://myappid-api.com
-Application__ConsoleUrl=https://myappid-console.com
-Application__AuthServerUrl=https://myappid.com
-Application__ProtectorKeyStorePath=/files/keys
-Application__SigningCertificatePfxPath=/files/issuer.pfx
-Application__SigningCertificatePfxPassword=123456
-Application__TempTokenPassword=CPPJ66jJqHQ8ykUFEvhNWpfQwrhiGbeCBFNJ2z07yD0=
-Application__UseReverseProxy=true
-```
-
-[!include[Email config](../../../includes/spa-config/email-config.md)]
-* **Support**: the support email which will be included at the bottom of every email sent by the application.
-
-Example:
-
-```sh
-Email__ServerHost=email-smtp.us-east-1.amazonaws.com
-Email__Username=USERNAME
-Email__Password=PASSWORD
-Email__SenderAddress=no-reply@email.com
-Email__SenderName=MYAPPNAME
-Email__Support=support@email.com
-```
-
-## Additional Configuration
-
-Additional settings can be found at the [GrantID Settings page](../settings.md).
 
 ## Installation
 
