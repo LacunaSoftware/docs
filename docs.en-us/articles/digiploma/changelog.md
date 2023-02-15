@@ -4,6 +4,33 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-8-0" />
+### 2.8.0 (2023-02-14)
+
+* Bug fixes
+  * [AUT-298] Fix bugs identified in 1.05 in Homologation
+
+* Improvements
+  * [AUT-297] Update framework for .NET 6
+
+* New Features
+  * [AUT-270] Updating the Digital Degree to 1.05 version
+  * [AUT-271] Updating Academic Documentation to 1.05 version
+  * [AUT-272] Updating Academic Transcript to 1.05 version
+
+<a name="v2-7-0" />
+### 2.7.0 (2023-01-19)
+
+* Bug fixes
+  * [AUT-293] Error when generating RVHE for discipline with null approval
+  * [AUT-295] Incorrect RVHE publication date
+
+* Improvements
+  * [AUT-294] Add validation if the dispatch date is in the validity period of the current version
+
+* New Features
+  * [AUT-291] Implement the temporary cancellation for academic transcripts
+
 <a name="v2-6-0" />
 ### 2.6.0 (2022-12-21)
 

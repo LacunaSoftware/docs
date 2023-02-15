@@ -4,6 +4,33 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-8-0" />
+### 2.8.0 (2023-02-14)
+
+* Correções de bugs
+  * [AUT-298] Corrigir erros identificados na versão 1.05 em homologação
+
+* Melhorias
+  * [AUT-297] Atualizar framework para .NET 6
+
+* Novas funcionalidades
+  * [AUT-270] Atualizar Diploma Digital para a versão 1.05
+  * [AUT-271] Atualizar Documentação Acadêmica para a versão 1.05
+  * [AUT-272] Atualizar Histórico Escolar para a versão 1.05
+
+<a name="v2-7-0" />
+### 2.7.0 (2023-01-19)
+
+* Correções de bugs
+  * [AUT-293] Erro ao gerar RVHE para Disciplina com Aprovação nula
+  * [AUT-295] Data de publicação no RVHE incorreta
+
+* Melhorias
+  * [AUT-294] Adicionar validação se data de expedição está na vigência da versão atual
+
+* Novas funcionalidades
+  * [AUT-291] Implementar a anulação temporária para histórico escolar
+
 <a name="v2-6-0" />
 ### 2.6.0 (2022-12-21)
 
