@@ -6,7 +6,7 @@ A imagem de Docker do Rest PKI Core encontra-se disponível no Docker Hub:
 
 <br />
 <center>
-**[Rest PKI Core Docker image](https://hub.docker.com/repository/docker/lacunasoftware/restpkicore)**
+**[Rest PKI Core Docker image](https://hub.docker.com/r/lacunasoftware/restpkicore)**
 </center>
 <br />
 

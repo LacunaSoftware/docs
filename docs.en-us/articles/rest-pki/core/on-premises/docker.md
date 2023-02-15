@@ -6,7 +6,7 @@ For Docker-based setup the following image is provided on Docker Hub:
 
 <br />
 <center>
-**[Rest PKI Core Docker image](https://hub.docker.com/repository/docker/lacunasoftware/restpkicore)**
+**[Rest PKI Core Docker image](https://hub.docker.com/r/lacunasoftware/restpkicore)**
 </center>
 <br />
 

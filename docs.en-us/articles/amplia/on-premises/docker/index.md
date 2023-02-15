@@ -9,7 +9,7 @@ For Docker-based setup the following image is provided on Docker Hub:
 
 <br />
 <center>
-**[Amplia Docker image](https://hub.docker.com/repository/docker/lacunasoftware/amplia)**
+**[Amplia Docker image](https://hub.docker.com/r/lacunasoftware/amplia)**
 </center>
 <br />
 
