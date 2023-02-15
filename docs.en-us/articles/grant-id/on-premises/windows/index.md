@@ -64,19 +64,19 @@ When installing to a production environment for the first time, you need to gene
 The `GrantID.pfx` certificate will be used to sign application tokens issued by GrantID. To generate a new certificate :
 
 ```ps
-$cert = New-SelfSignedCertificate -Type Custom -Subject "CN=<certificate_name>" -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2,1.3.6.1.5.5.7.3.1") -KeyUsage DigitalSignature, KeyEncipherment -KeyAlgorithm RSA -KeyLength 4096 -CertStoreLocation "Cert:\LocalMachine\My" -NotAfter (Get-Date).AddYears(100).AddHours(-5)
+$cert = New-SelfSignedCertificate -Type Custom -Subject "CN=<certificate_name>" -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2,1.3.6.1.5.5.7.3.1") -KeyUsage DigitalSignature, KeyEncipherment -KeyAlgorithm RSA -KeyLength 4096 -CertStoreLocation "Cert:\CurrentUser\My" -NotAfter (Get-Date).AddYears(100).AddHours(-5)
 $pass = ConvertTo-SecureString -String "pass" -Force -AsPlainText
-Export-PfxCertificate -Cert ("cert:\LocalMachine\My\" + $cert.Thumbprint) -Password $pass -FilePath .\GrantId.pfx
-Get-ChildItem ("cert:\LocalMachine\My\" + $cert.Thumbprint) | Remove-Item
+Export-PfxCertificate -Cert ("Cert:\CurrentUser\My\" + $cert.Thumbprint) -Password $pass -FilePath .\GrantId.pfx
+Get-ChildItem ("Cert:\CurrentUser\My\" + $cert.Thumbprint) | Remove-Item
 ```
 
    Example:
 
 ```ps
-$cert = New-SelfSignedCertificate -Type Custom -Subject "CN=GrantID" -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2,1.3.6.1.5.5.7.3.1") -KeyUsage DigitalSignature, KeyEncipherment -KeyAlgorithm RSA -KeyLength 4096 -CertStoreLocation "Cert:\LocalMachine\My" -NotAfter (Get-Date).AddYears(100).AddHours(-5)
+$cert = New-SelfSignedCertificate -Type Custom -Subject "CN=GrantID" -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.2,1.3.6.1.5.5.7.3.1") -KeyUsage DigitalSignature, KeyEncipherment -KeyAlgorithm RSA -KeyLength 4096 -CertStoreLocation "Cert:\CurrentUser\My" -NotAfter (Get-Date).AddYears(100).AddHours(-5)
 $pass = ConvertTo-SecureString -String "pass" -Force -AsPlainText
-Export-PfxCertificate -Cert ("cert:\LocalMachine\My\" + $cert.Thumbprint) -Password $pass -FilePath .\GrantId.pfx
-Get-ChildItem ("cert:\LocalMachine\My\" + $cert.Thumbprint) | Remove-Item
+Export-PfxCertificate -Cert ("Cert:\CurrentUser\My\" + $cert.Thumbprint) -Password $pass -FilePath .\GrantId.pfx
+Get-ChildItem ("Cert:\CurrentUser\My\" + $cert.Thumbprint) | Remove-Item
 ```
 
 Move the generated file to the Keys directory.
