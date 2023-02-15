@@ -417,6 +417,7 @@
 ### [Configurar Aplicações SPA](grant-id/on-premises/configure-spa-app.md)
 ### [Configuração do Blob Storage](grant-id/on-premises/blob-storage.md)
 ### [Configuração de envio de email](grant-id/on-premises/configure-email.md)
+### [Configuração de envio de SMS](grant-id/on-premises/configure-sms.md)
 ### [Configuração do Serilog](grant-id/on-premises/serilog.md)
 ### [Uso dentro de iframe](grant-id/on-premises/allow-iframe.md)
 ### [Configurações](grant-id/on-premises/settings.md)
