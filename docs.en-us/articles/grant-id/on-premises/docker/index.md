@@ -1,6 +1,8 @@
 ﻿# GrantID - Setup on Docker
 
-For Docker-based setup the following image is provided on DockerHub:
+To install an [on-premises](../index.md) instance of [GrantID](../../index.md) on Docker, follow the steps below. For other platforms, [click here](../index.md#platforms).
+
+For Docker-based setup the following image is provided on Docker Hub:
 
 <br />
 <center>
@@ -8,12 +10,68 @@ For Docker-based setup the following image is provided on DockerHub:
 </center>
 <br />
 
+The currently recommended image is `lacunasoftware/grantid:4.2`
+
+Available moving tags:
+
+* Tag `4.2` points to the latest 4.2.x image **(currently recommended)**
+* Tag `4` points to the lastest 4.x image
+* Tag `stable` points to the latest stable image
+
 This image requires: 
 
-* Connection string to a [previously created SQL Server or PostgreSQL database](../prepare-database.md)
-* Storage (shared between all instances of the image): see BlobStorage settings bellow for further information.
-* A certificate to issue tokens. See [GrantID Linux Installation](../linux/index.md) for instructions to generate this certificate using openssl.
-* A key to generate temporary tokens sent on emails. See [GrantID Linux Installation](../linux/index.md) for instructions to generate this key using openssl.
+* **Blob storage** shared between all containers running the image -- see [Blob Storage configuration](../blob-storage.md)
+
+[!include[Common prerequisites](../includes/common-requisites.md)]
+
+## Configuration
+
+The container for this image is configured using environment variables. Get the [**sample environment file**](https://cdn.lacunasoftware.com/grantid/docker/grantid.env) for a
+template to fill in the image's settings.
+
+To fill the `Application__TempTokenPassword` setting, generate a 256-bit key to encrypt sensitive data:
+
+```sh
+docker run lacunasoftware/psc:1 -- gen-enc-key
+```
+
+To fill the `Application__SigningCertificatePfxContent` and `Application__SigningCertificatePfxPassword` settings, generate a PFX file containing a self-signed certificate to sign OAuth tokens:
+
+```sh
+docker run lacunasoftware/psc:1 -- gen-cert "Your GrantID Name" SOME_PASSWORD
+```
+
+The output will be similar to:
+
+```plaintext
+$ docker run lacunasoftware/psc:1 -- gen-cert "Patorum ID" "1234"
+PSC entrypoint invoked
+Starting application
+
+#
+# PFX
+#
+MIIPwQ...AAA=
+
+#
+# Certificate
+#
+-----BEGIN CERTIFICATE-----
+MIIE...
+.......
+...AAA=
+-----END CERTIFICATE-----
+
+#
+# Thumbprint
+#
+0123...CDEF
+```
+
+Copy the entire contents of the **PFX** section (all as a single line) over to the `Application__SigningCertificatePfxContent` setting (in the example above, `MIIPwQ...AAA=`, in reality this would be
+close to 5000 characters) and fill the `Application__SigningCertificatePfxPassword` setting with the same password you used on the generation command.
+
+## Exposed ports
 
 GrantID is composed of three services (see [GrantID Overview](../index.md)) which the image exposes in a single container. Different ports that can be configured using environment
 variables:
@@ -23,6 +81,8 @@ variables:
 * **GRANTID_CONSOLE_PORT**: default `5012`.
 
 If you need one image per service for fine-grained control of your containers contact us.
+
+
 
 ## Basic Configuration
 

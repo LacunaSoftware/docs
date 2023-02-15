@@ -2,6 +2,7 @@
 
 [GrantID](../index.md) can be used as a service (SaaS) at [grantid.com](https://grantid.com) or you can host your own instance.
 
+<a name="platforms" />
 ## Supported platforms
 
 GrantID is compatible with:

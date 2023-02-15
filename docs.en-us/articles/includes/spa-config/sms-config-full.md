@@ -22,6 +22,14 @@ provider should be used, and the remaining settings depend on the provider chose
   * **Region**: the AWS region code, for instance `sa-east-1` or `us-east-1` (see [AWS region codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html))
   * **AccessKeyId**: the access key ID
   * **SecretAccessKey**: the secret access key
+* Generic
+  * **Type**: `Generic`
+  * **Endpoint**: the endpoint to which the SMS information will be sent.
+  * **AuthType** (default: `NoAuth`): defines the type of authorization provided in the request. Available options are `NoAuth`, `Basic`, `Bearer` and `ApiKey`.
+  * **Username**: the username if the AuthType is `Basic`.
+  * **Password**: the password if the AuthType is `Basic`.
+  * **BearerToken**: the Bearer token if the AuthType is `Bearer`.
+  * **ApiKey**: the API key if the AuthType is `ApiKey`.
 * Simulator (for debugging purposes only): this provider simulates the sending of SMS messages by outputting the messages that would be sent on the system log
   * **Type**: `Simulator`
 
