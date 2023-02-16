@@ -77,63 +77,94 @@ Additional settings can be found at the [GrantID Settings page](../settings.md).
 
 ## Exposed ports
 
-GrantID is composed of three services (see [GrantID Overview](../index.md#planning)) which the image exposes in a single container, listening on the following ports:
+GrantID is composed of three services which the image exposes in a single container, listening on the following ports:
 
-* The *identity service* listens on port **5010**
-* The *auth server* listens on port **5011**
-* The *console* listens on port **5012**
-
-These ports can be customized by setting the environment variables `GRANTID_IDENTITY_SERVICE_PORT`, `GRANTID_AUTH_SERVER_PORT` and `GRANTID_CONSOLE_PORT`.
+Service          | Default Port | Environment variable to customize
+---------------- | ------------ | ---------------------------------
+Identity Service | 5010         | GRANTID_IDENTITY_SERVICE_PORT
+Auth Server      | 5011         | GRANTID_AUTH_SERVER_PORT
+Console          | 5012         | GRANTID_CONSOLE_PORT
 
 Your environment configuration should direct traffic from the [application domains](../index.md#planning) to these ports in the following way:
 
-Domain type | Container port
------------ | --------------
-Base domain | Auth server (5012)
-Login       | Auth server (5012)
-Console     | Console (5011)
-API         | Identity service (5010)
-
-
-Different ports that can be configured using environment
-variables:
-
-* **GRANTID_IDENTITY_SERVICE_PORT**: default `5010`.
-* **GRANTID_AUTH_SERVER_PORT**: default `5011`.
-* **GRANTID_CONSOLE_PORT**: default `5012`.
+Domain type | Example                    | Destination container port
+----------- | -------------------------- | --------------------------
+Base domain | id.yourcompany.com         | 5011 (Auth Server)
+Login       | login.id.yourcompany.com   | 5011 (Auth Server)
+Console     | console.id.yourcompany.com | 5012 (Console)
+API         | api.id.yourcompany.com     | 5010 (Identity Service)
 
 > [!NOTE]
 > If you need one image per service for fine-grained control of your containers contact us.
 
-
-
-
 ## Installation
 
-Pull the latest stable image, configure the required environment variables and run the container. 
+Pull the latest stable image, get the sample configuration file, the required environment variables and run the container. 
 
 > [!WARNING]
 > Start with **only one container** as in the first startup, the database tables will be created (more containers could create a race condition). 
 > Once the initial startup is complete, you may run as many containers as you want.
 
-## Updating Guidelines
+## Example
 
-Before updating your container, it is recommended to check the [Changelog](../../changelog.md) to see what has changed from your 
-current version to the latest one available.
+In a production environment you would typically use a Docker orchestrator and a dedicated database server (or a IaaS database offering), but for testing purposes you
+can run an instance of GrantID with an instance of PostgreSQL with Docker alone.
 
-If any of the versions included in the update have database model changes ("Updates database model: yes") then you
-should procceed carefully as the container will attempt to update the database upon startup.
-
-In this scenario, it is recommended to choose one of the following options:
-
-* Reduce the number of running containers to 1.
-* Allow only one container to update the database. This is done by adding the following settings to all but one container:
+Start by creating a volume for the database server:
 
 ```sh
-Application__AutoUpdateDatabase=false
+docker volume create grantid_sql
 ```
 
-Finally, to update simply pull the image with tag corresponding to the desired version and run the container.
+Then, start it with a password of your choice (replace `SOME_PASS` below):
+
+```sh
+docker run --name grantid_sql -v grantid_sql:/var/lib/postgresql/data -p 5432:5432 -e "POSTGRES_PASSWORD=SOME_PASS" -d postgres
+```
+
+Check the container logs for any errors:
+
+```sh
+docker logs -f grantid_sql
+```
+
+This can take a few minutes. Once the database server is up and running, hit CTRL+C to exit the logs.
+
+Create a volume to use as blob storage and another one to store data protection keys:
+
+```sh
+docker volume create grantid_data
+docker volume create grantid_keys
+```
+
+Then, download the [sample environment file](https://cdn.lacunasoftware.com/grantid/docker/grantid.env), save it with name *grantid.env*
+and fill it out.
+
+On the connection string configuration, use the value below replacing `HOST_IP` with the IP address of the host and `SOME_PASS` with the
+password you chose for PostgreSQL:
+
+```sh
+ConnectionStrings__DefaultConnection=Host=HOST_IP;Database=grantid;Username=postgres;Password=SOME_PASS
+ConnectionStrings__DefaultConnection_ProviderName=Postgres
+```
+
+Now, let's run the container with the configuration file, mounting the volumes `grantid_data` on `/var/app` and `grantid_keys` on `/var/keys` and exposing the
+auth server port (5011) on the host's port 80 and the console port (5012) on the host's port 8080:
+
+```sh
+docker run --name grantid --env-file grantid.env -v grantid_data:/var/app -v grantid_keys:/var/keys -p 80:5011 8080:5012 -d lacunasoftware/grantid:4.2
+```
+
+> [!TIP]
+> If given a credential with enough privileges, GrantID will attempt to create the target database on the server (which is what will happen in this case)
+
+Check the container logs for any configuration errors:
+
+```sh
+docker logs -f grantid
+```
+
+If everything is configured correctly, you should be able to access the GrantID console on [localhost:8080](http://localhost:8080/)
 
 ## See also
 

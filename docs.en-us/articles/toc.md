@@ -406,6 +406,7 @@
 ##### [Checking logs](grant-id/on-premises/linux/troubleshoot/check-logs.md)
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](grant-id/on-premises/linux/troubleshoot/502-5.md)
 ### [Setup on Docker](grant-id/on-premises/docker/index.md)
+#### [Update](grant-id/on-premises/docker/update.md)
 #### [Docker Swarm](grant-id/on-premises/docker/docker-swarm/index.md)
 ##### [Enable SSL](grant-id/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Using an external database](grant-id/on-premises/docker/docker-swarm/external-db.md)
