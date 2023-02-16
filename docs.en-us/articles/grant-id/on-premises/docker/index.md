@@ -159,10 +159,10 @@ ConnectionStrings__DefaultConnection=Host=HOST_IP;Database=grantid;Username=post
 ConnectionStrings__DefaultConnection_ProviderName=Postgres
 ```
 
-Set the URL settings as follows (replace the auth server URL with the domain of your choice):
+Set the URL settings as follows (replace the auth server URL with your *base* domain):
 
 ```sh
-Application__AuthServerUrl=http://id.yourcomany.com/
+Application__AuthServerUrl=http://id.yourcompany.com/
 Application__ConsoleUrl=http://localhost:8080/
 Application__UseSsl=False
 ```
@@ -171,7 +171,7 @@ Now, let's run the container with the configuration file, mounting the volumes `
 container's auth server port (5011) on the host's port 80 and the container's console port (5012) on the host's port 8080:
 
 ```sh
-docker run --name grantid --env-file grantid.env -v grantid_data:/var/app -v grantid_keys:/var/keys -p 80:5011 8080:5012 -d lacunasoftware/grantid:4.2
+docker run --name grantid --env-file grantid.env -v grantid_data:/var/app -v grantid_keys:/var/keys -p 80:5011 -p 8080:5012 -d lacunasoftware/grantid:4.2
 ```
 
 > [!TIP]
