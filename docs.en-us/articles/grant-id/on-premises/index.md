@@ -25,29 +25,19 @@ that will host your GrantID instance:
 * **Console domain**: hosts the dashboard that system administrators will use to configure GrantID itself.
 * **API domain** (optional): hosts the GrantID API. The API does not need to be publicly accessible, so this is optional.
 
+For instance, suppose you choose **id.yourcompany.com** as the base domain:
+
+Domain type | Chosen domain name
+----------- | ------------------
+Base domain | *id.yourcompany.com*
+Login       | **login**.*id.yourcompany.com*
+Console     | **console**.*id.yourcompany.com*
+API         | **api**.*id.yourcompany.com*
+
 > [!NOTE]
 > Although only the login domain needs to be a subdomain of the base domain, we recommend choosing a base domain and defining the remaining
-> domains as subdomains of it.
+> domains as subdomains of it, as shown above.
 
-For instance, suppose you choose as a base domain **easyid.net**:
-
-Domain type | Chosen domain name
------------ | ------------------
-Base domain | *easyid.net*
-Login       | **login**.*easyid.net*
-Console     | **console**.*easyid.net*
-API         | **api**.*easyid.net*
-
-Instead suppose you have an existing organizational domain, say *patorum.com*, and prefer to use a subdomain as the GrantID base
-domain, for instance **id.patorum.com**:
-
-Domain type | Chosen domain name
------------ | ------------------
-Base domain | *id.patorum.com*
-Login       | **login**.*id.patorum.com*
-Console     | **console**.*id.patorum.com*
-API         | **api**.*id.patorum.com*
-
-> [!NOTE]
+> [!TIP]
 > Ideally, you should also have a valid SSL certificate that encompasses the four domains before starting the installation.
 > However, you can install GrantID without HTTPS and configure it later.
