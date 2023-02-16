@@ -4,6 +4,41 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v4-2-2" />
+### 4.2.2 (2023-02-14)
+
+* Improvements
+  * [LI-389] Allow configuration of signing certificate directly through PFX content (useful for Docker scenarios)
+
+* Bug fixes
+  * [LI-390] Changing the identity service port on Docker causes issues with inter-service communication
+
+Updates database model: no
+
+<a name="v4-2-1" />
+### 4.2.1 (2023-02-07)
+
+* Improvements
+  * [LI-391] Add PostgreSQL configuration example to identity service sample configuration file
+
+Updates database model: no
+
+<a name="v4-2-0" />
+### 4.2.0 (2023-01-26)
+
+* Improvements
+  * [LI-388] PostgreSQL support
+
+Updates database model: yes
+
+<a name="v4-1-0" />
+### 4.1.0 (2022-12-28)
+
+* Improvements
+  * [LI-387] Add configuration to show only certificates having the `DigitalSignature` key usage
+
+Updates database model: no
+
 <a name="v4-0-3" />
 ### 4.0.3 (2022-12-07)
 

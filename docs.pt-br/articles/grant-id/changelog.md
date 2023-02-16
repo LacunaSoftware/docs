@@ -4,10 +4,45 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v4-2-2" />
+### 4.2.2 (2023-02-14)
+
+* Melhorias
+  * [LI-389] Permitir configuração do *signing certificate* diretamente por conteúdo do PFX (útil em Docker)
+
+* Correções de bugs
+  * [LI-390] Personalização da porta do identity service em ambiente Docker causa problemas de comunicação entre os componentes
+
+Atualiza modelo do banco de dados: não
+
+<a name="v4-2-1" />
+### 4.2.1 (2023-02-07)
+
+* Melhorias
+  * [LI-391] Adicionar exemplo de configuração de PostgreSQL ao modelo de arquivo de configuração do Identity Service
+
+Atualiza modelo do banco de dados: não
+
+<a name="v4-2-0" />
+### 4.2.0 (2023-01-26)
+
+* Melhorias
+  * [LI-388] Suporte a PostgreSQL
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v4-1-0" />
+### 4.1.0 (2022-12-28)
+
+* Melhorias
+  * [LI-387] Adicionada configuração para exibir apenas certificados tendo o *key usage* `DigitalSignature`
+
+Atualiza modelo do banco de dados: não
+
 <a name="v4-0-3" />
 ### 4.0.3 (2022-12-07)
 
-* Improvements
+* Melhorias
   * [LI-377] Suporte a .NET 6
 
 Atualiza modelo do banco de dados: sim
