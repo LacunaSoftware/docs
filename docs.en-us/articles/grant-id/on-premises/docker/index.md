@@ -88,6 +88,8 @@ Pull the latest stable image, get the sample configuration file, the required en
 > Start with **only one container** as in the first startup, the database tables will be created (more containers could create a race condition). 
 > Once the initial startup is complete, you may run as many containers as you want.
 
+Then, follow the steps on [GrantID post-installation](../post-install.md) to complete the installation procedure.
+
 ## Exposed ports
 
 GrantID is composed of three services which the image exposes in a single container, listening on the following ports:
@@ -188,6 +190,9 @@ docker logs -f grantid
 ```
 
 If everything is configured correctly, you should be able to access the GrantID console on [localhost:8080](http://localhost:8080/)
+
+> [!NOTE]
+> Remember to follow the steps on [GrantID post-installation](../post-install.md) to complete the installation procedure.
 
 ## See also
 
