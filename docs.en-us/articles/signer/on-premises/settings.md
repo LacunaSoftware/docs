@@ -145,6 +145,9 @@ after he signed a document for the first time (and has not set his password yet)
 * **DisablePendingFlowActionsApi** (v1.50.0): disables the API that retrieves information from pending participants for documents. This will prevent the pending participants 
 to be displayed in the documents page.
 
+* **DocumentExpirationTime** (v1.54.0): defines the document expiration time in timespan format (`HH:mm:ss`). By the default (if not set) it considers the expiration time as the 
+end of the day in the configured default timezone. This option should only be used if the default timezone is Brasilia Standard Time (GMT-3).
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -461,6 +464,13 @@ Under section **Reminder**:
 * **MaxNumberOfNotificationsForReminder** (default: `10`): the maximum number of notifications sent for a reminder.
 * **MaxNumberOfRemindersPerScheduleJobRound** (default: `100`): the maximum number of reminders processed by one round of the schedule job.
 
+<a name="push-notification" />
+###  *Push Notification* Settings (v1.54.0)
+
+Under section **PushNotification**:
+
+* **Disabled**: if `true` disables push notification sending.
+* **ApiKey**: an API Key for subscription in Lacuna Customer portal that is allowed to send push notifications to the Web PKI App.
 
 ###  *SigningTags* Settings
 
