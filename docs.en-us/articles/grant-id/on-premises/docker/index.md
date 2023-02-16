@@ -75,6 +75,14 @@ close to 5000 characters) and fill the `Application__SigningCertificatePfxPasswo
 
 Additional settings can be found at the [GrantID Settings page](../settings.md).
 
+## Installation
+
+Pull the latest stable image, get the sample configuration file, the required environment variables and run the container. 
+
+> [!WARNING]
+> Start with **only one container** as in the first startup, the database tables will be created (more containers could create a race condition). 
+> Once the initial startup is complete, you may run as many containers as you want.
+
 ## Exposed ports
 
 GrantID is composed of three services which the image exposes in a single container, listening on the following ports:
@@ -85,7 +93,13 @@ Identity Service | 5010         | GRANTID_IDENTITY_SERVICE_PORT
 Auth Server      | 5011         | GRANTID_AUTH_SERVER_PORT
 Console          | 5012         | GRANTID_CONSOLE_PORT
 
-Your environment configuration should direct traffic from the [application domains](../index.md#planning) to these ports in the following way:
+> [!NOTE]
+> If you need one image per service for fine-grained control of your containers contact us.
+
+<a name="routing" />
+## Routing
+
+Your environment configuration must direct traffic from the [application domains](../index.md#planning) to the container ports in the following way:
 
 Domain type | Example                    | Destination container port
 ----------- | -------------------------- | --------------------------
@@ -94,29 +108,28 @@ Login       | login.id.yourcompany.com   | 5011 (Auth Server)
 Console     | console.id.yourcompany.com | 5012 (Console)
 API         | api.id.yourcompany.com     | 5010 (Identity Service)
 
-> [!NOTE]
-> If you need one image per service for fine-grained control of your containers contact us.
-
-## Installation
-
-Pull the latest stable image, get the sample configuration file, the required environment variables and run the container. 
-
-> [!WARNING]
-> Start with **only one container** as in the first startup, the database tables will be created (more containers could create a race condition). 
-> Once the initial startup is complete, you may run as many containers as you want.
-
 ## Example
 
-In a production environment you would typically use a Docker orchestrator and a dedicated database server (or a IaaS database offering), but for testing purposes you
-can run an instance of GrantID with an instance of PostgreSQL with Docker alone.
+In a production environment you would typically use a Docker orchestrator to handle issues such as routing and a dedicated database server (or a IaaS database offering), but for testing
+purposes you can run an instance of GrantID with an instance of PostgreSQL with Docker alone and emulate the routing by setting the DNS resolution of app domains to the loopback interface.
 
-Start by creating a volume for the database server:
+Start by appending the entries below to your OS's hosts file (on Windows *C:\Windows\System32\drivers\etc\hosts*, on Linux */etc/hosts*) to map the app domains back to the loopback interface
+(replace the domains with domains of your choice):
+
+```plaintext
+127.0.0.1 id.yourcompany.com
+127.0.0.1 login.id.yourcompany.com
+127.0.0.1 console.id.yourcompany.com
+127.0.0.1 api.id.yourcompany.com
+```
+
+Create a volume for the database server:
 
 ```sh
 docker volume create grantid_sql
 ```
 
-Then, start it with a password of your choice (replace `SOME_PASS` below):
+Start it with a password of your choice (replace `SOME_PASS` below):
 
 ```sh
 docker run --name grantid_sql -v grantid_sql:/var/lib/postgresql/data -p 5432:5432 -e "POSTGRES_PASSWORD=SOME_PASS" -d postgres
@@ -148,8 +161,16 @@ ConnectionStrings__DefaultConnection=Host=HOST_IP;Database=grantid;Username=post
 ConnectionStrings__DefaultConnection_ProviderName=Postgres
 ```
 
+Set the URL settings as follows (replace the auth server URL with the domain of your choice):
+
+```sh
+Application__AuthServerUrl=http://id.yourcomany.com/
+Application__ConsoleUrl=http://localhost:8080/
+Application__UseSsl=False
+```
+
 Now, let's run the container with the configuration file, mounting the volumes `grantid_data` on `/var/app` and `grantid_keys` on `/var/keys` and exposing the
-auth server port (5011) on the host's port 80 and the console port (5012) on the host's port 8080:
+container's auth server port (5011) on the host's port 80 and the container's console port (5012) on the host's port 8080:
 
 ```sh
 docker run --name grantid --env-file grantid.env -v grantid_data:/var/app -v grantid_keys:/var/keys -p 80:5011 8080:5012 -d lacunasoftware/grantid:4.2
