@@ -113,14 +113,12 @@ API         | api.id.yourcompany.com     | 5010 (Identity Service)
 In a production environment you would typically use a Docker orchestrator to handle issues such as routing and a dedicated database server (or a IaaS database offering), but for testing
 purposes you can run an instance of GrantID with an instance of PostgreSQL with Docker alone and emulate the routing by setting the DNS resolution of app domains to the loopback interface.
 
-Start by appending the entries below to your OS's hosts file (on Windows *C:\Windows\System32\drivers\etc\hosts*, on Linux */etc/hosts*) to map the app domains back to the loopback interface
-(replace the domains with domains of your choice):
+Start by appending the entries below to your OS's hosts file (on Windows *C:\Windows\System32\drivers\etc\hosts*, on Linux */etc/hosts*) to map the auth server domains back to the loopback interface
+(replace the domains with your *base* and *login* domains):
 
 ```plaintext
 127.0.0.1 id.yourcompany.com
 127.0.0.1 login.id.yourcompany.com
-127.0.0.1 console.id.yourcompany.com
-127.0.0.1 api.id.yourcompany.com
 ```
 
 Create a volume for the database server:
