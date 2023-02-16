@@ -61,17 +61,22 @@ MIIPwQ...AAA=
 -----BEGIN CERTIFICATE-----
 MIIE...
 .......
-...AAA=
+.......
 -----END CERTIFICATE-----
 
 #
 # Thumbprint
 #
-0123...CDEF
+0123...
 ```
 
 Copy the entire contents of the **PFX** section (all as a single line) over to the `Application__SigningCertificatePfxContent` setting (in the example above, `MIIPwQ...AAA=`, in reality this would be
-close to 5000 characters) and fill the `Application__SigningCertificatePfxPassword` setting with the same password you used on the generation command.
+a single line with ~5000 characters) and fill the `Application__SigningCertificatePfxPassword` setting with the same password you used on the generation command.
+
+```sh
+Application__SigningCertificatePfxContent=MIIPwQ...AAA=
+Application__SigningCertificatePfxPassword=SOME_PASS
+```
 
 Additional settings can be found at the [GrantID Settings page](../settings.md).
 
@@ -96,7 +101,6 @@ Console          | 5012         | GRANTID_CONSOLE_PORT
 > [!NOTE]
 > If you need one image per service for fine-grained control of your containers contact us.
 
-<a name="routing" />
 ## Routing
 
 Your environment configuration must direct traffic from the [application domains](../index.md#planning) to the container ports in the following way:
