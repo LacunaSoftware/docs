@@ -196,4 +196,4 @@ If everything is configured correctly, you should be able to access the GrantID 
 
 ## See also
 
-* [Docker Swarm](./docker-swarm/index.md)
+* [GrantID on-premises](../index.md)

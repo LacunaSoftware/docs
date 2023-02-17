@@ -115,4 +115,4 @@ Finally, to update simply pull the image with tag corresponding to the desired v
 
 ## See also
 
-* [Docker Swarm](./docker-swarm/index.md)
+* [Signer on-premises](../index.md)

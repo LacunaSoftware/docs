@@ -118,4 +118,3 @@ Example (*.json* configuration file):
 ## See also
 
 * [GrantID](../../grant-id/index.md)
-* [Amplia on Docker Swarm - Using a stack with GrantID](docker/swarm/internal-grantid.md)

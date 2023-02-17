@@ -238,12 +238,14 @@
 #### [Resolução de problemas](signer/on-premises/linux/troubleshoot/index.md)
 ##### [Verificando os logs](signer/on-premises/linux/troubleshoot/check-logs.md)
 ### [Setup em Docker](signer/on-premises/docker/index.md)
+<!--
 #### [Docker Swarm](signer/on-premises/docker/docker-swarm/index.md)
 ##### [Habilitando SSL](signer/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Usando um banco de dados externo](signer/on-premises/docker/docker-swarm/external-db.md)
 ##### [Verificando os logs](signer/on-premises/docker/docker-swarm/check-logs.md)
 ##### [Dados persistentes](signer/on-premises/docker/docker-swarm/persistent-data.md)
 ##### [Usando com GrantID integrado](signer/on-premises/docker/docker-swarm/internal-grantid.md)
+-->
 ### [Setup em Azure App Services](signer/on-premises/azure/index.md)
 ### [Preparando o banco de dados](signer/on-premises/prepare-database.md)
 ### [Configuração do Blob Storage](signer/on-premises/blob-storage.md)
@@ -288,12 +290,14 @@
 ##### [Verificando os logs](amplia/on-premises/linux/troubleshoot/check-logs.md)
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](amplia/on-premises/linux/troubleshoot/502-5.md)
 ### [Setup em Docker](amplia/on-premises/docker/index.md)
+<!--
 #### [Docker Swarm](amplia/on-premises/docker/swarm/index.md)
 ##### [Habilitando SSL](amplia/on-premises/docker/swarm/enable-ssl.md)
 ##### [Usando um banco de dados externo](amplia/on-premises/docker/swarm/external-db.md)
 ##### [Verificando os logs](amplia/on-premises/docker/swarm/check-logs.md)
 ##### [Dados persistentes](amplia/on-premises/docker/swarm/persistent-data.md)
 ##### [Usando com GrantID integrado](amplia/on-premises/docker/swarm/internal-grantid.md)
+-->
 ### [Setup em Azure App Services](amplia/on-premises/azure/index.md)
 #### [Instalação](amplia/on-premises/azure/install.md)
 #### [Atualização](amplia/on-premises/azure/update.md)
@@ -407,11 +411,13 @@
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](grant-id/on-premises/linux/troubleshoot/502-5.md)
 ### [Setup em Docker](grant-id/on-premises/docker/index.md)
 #### [Atualização](grant-id/on-premises/docker/update.md)
+<!--
 #### [Docker Swarm](grant-id/on-premises/docker/docker-swarm/index.md)
 ##### [Habilitando SSL](grant-id/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Usando um banco de dados externo](grant-id/on-premises/docker/docker-swarm/external-db.md)
 ##### [Verificando os logs](grant-id/on-premises/docker/docker-swarm/check-logs.md)
 ##### [Dados persistentes](grant-id/on-premises/docker/docker-swarm/persistent-data.md)
+-->
 ### [Setup em Azure App Services](grant-id/on-premises/azure/index.md)
 ### [Preparando o banco de dados](grant-id/on-premises/prepare-database.md)
 ### [Pós-instalação](grant-id/on-premises/post-install.md)

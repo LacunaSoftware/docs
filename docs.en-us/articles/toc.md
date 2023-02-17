@@ -238,12 +238,14 @@
 #### [Troubleshooting](signer/on-premises/linux/troubleshoot/index.md)
 ##### [Checking logs](signer/on-premises/linux/troubleshoot/check-logs.md)
 ### [Setup on Docker](signer/on-premises/docker/index.md)
+<!--
 #### [Docker Swarm](signer/on-premises/docker/docker-swarm/index.md)
 ##### [Enable SSL](signer/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Using an external database](signer/on-premises/docker/docker-swarm/external-db.md)
 ##### [Checking the system logs](signer/on-premises/docker/docker-swarm/check-logs.md)
 ##### [Persistent data](signer/on-premises/docker/docker-swarm/persistent-data.md)
 ##### [Using a stack with GrantID](signer/on-premises/docker/docker-swarm/internal-grantid.md)
+-->
 ### [Setup on Azure App Services](signer/on-premises/azure/index.md)
 ### [Preparing the database](signer/on-premises/prepare-database.md)
 ### [Blob Storage Configuration](signer/on-premises/blob-storage.md)
@@ -288,12 +290,14 @@
 ##### [Checking logs](amplia/on-premises/linux/troubleshoot/check-logs.md)
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](amplia/on-premises/linux/troubleshoot/502-5.md)
 ### [Setup on Docker](amplia/on-premises/docker/index.md)
+<!--
 #### [Docker Swarm](amplia/on-premises/docker/swarm/index.md)
 ##### [Enable SSL](amplia/on-premises/docker/swarm/enable-ssl.md)
 ##### [Using an external database](amplia/on-premises/docker/swarm/external-db.md)
 ##### [Checking the system logs](amplia/on-premises/docker/swarm/check-logs.md)
 ##### [Persistent data](amplia/on-premises/docker/swarm/persistent-data.md)
 ##### [Using a stack with GrantID](amplia/on-premises/docker/swarm/internal-grantid.md)
+-->
 ### [Setup on Azure App Services](amplia/on-premises/azure/index.md)
 #### [Install](amplia/on-premises/azure/install.md)
 #### [Update](amplia/on-premises/azure/update.md)
@@ -407,11 +411,13 @@
 ##### [HTTP Error 502.5 - ANCM Out-Of-Process Startup Failure](grant-id/on-premises/linux/troubleshoot/502-5.md)
 ### [Setup on Docker](grant-id/on-premises/docker/index.md)
 #### [Update](grant-id/on-premises/docker/update.md)
+<!--
 #### [Docker Swarm](grant-id/on-premises/docker/docker-swarm/index.md)
 ##### [Enable SSL](grant-id/on-premises/docker/docker-swarm/enable-ssl.md)
 ##### [Using an external database](grant-id/on-premises/docker/docker-swarm/external-db.md)
 ##### [Checking the system logs](grant-id/on-premises/docker/docker-swarm/check-logs.md)
 ##### [Persistent data](grant-id/on-premises/docker/docker-swarm/persistent-data.md)
+-->
 ### [Setup on Azure App Services](grant-id/on-premises/azure/index.md)
 ### [Preparing the database](grant-id/on-premises/prepare-database.md)
 ### [Post-installation steps](grant-id/on-premises/post-install.md)
