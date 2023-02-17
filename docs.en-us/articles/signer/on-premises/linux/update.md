@@ -1,6 +1,6 @@
 ﻿# Updating Signer on Linux
 
-To update your [instance *on premises*](../index.md) of [Signer] (../../ index.md), follow the steps below:
+To update your [on-premises instance](../index.md) of [Signer](../../index.md), follow the steps below:
 
 [!include[Proceed as root](../../../includes/linux/su.md)]
 
