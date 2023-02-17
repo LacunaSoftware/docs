@@ -4,11 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-54-0" />
+### 1.54.0 (2023-02-17)
+
+* Novas funcionalidades
+  * [SIG-1032] Push notification para assinatura/aprovação pendente no app Web PKI
+  * [SIG-1040] Configuração para habilitar/desabilitar representação visual por organização
+
+* Melhorias
+  * [SIG-1022] Permitir definição do padrão de assinatura (CAdES, XAdES ou PAdES) em tela
+  * [SIG-1034] Configuração para definir hora limite para assinatura do documento
+
+* Correções de bugs
+  * [SIG-1043] Não é possível assinar com certificado em nuvem se já existir um certificado expirado
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-53-0" />
 ### 1.53.0 (2023-02-02)
 
 * Novas funcionalidades
-  * [SIG-819 Novo sistema de cobrança
+  * [SIG-819] Novo sistema de cobrança
   * [SIG-1007] Configuração para definir representação visual por organização
   * [SIG-1033] Link direto para contratação de plano
 

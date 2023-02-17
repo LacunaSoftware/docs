@@ -4,11 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-54-0" />
+### 1.54.0 (2023-02-17)
+
+* New Features
+  * [SIG-1032] Push notification for pending signature/approval in Web PKI app
+  * [SIG-1040] Organization setting to enable/disable signature visual representation
+
+* Improvements
+  * [SIG-1022] Define signature format (CAdES, XAdES ou PAdES) in document create page
+  * [SIG-1034] Setting to define the default document expiration time
+
+* Bug fixes
+  * [SIG-1043] Cannot sign with cloud certificate if user has a valid and an expired certificate
+
+Updates database model: yes
+
 <a name="v1-53-0" />
 ### 1.53.0 (2023-02-02)
 
 * New Features
-  * [SIG-819 New billing system
+  * [SIG-819] New billing system
   * [SIG-1007] Setting to define organization signature image
   * [SIG-1033] Direct link to hire billing plan
 
