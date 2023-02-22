@@ -107,12 +107,12 @@ Console          | 5012         | GRANTID_CONSOLE_PORT
 
 Your environment configuration must direct traffic from the [application domains](../index.md#planning) to the container ports in the following way:
 
-Domain type | Example                    | Destination container port
------------ | -------------------------- | --------------------------
-Base domain | id.yourcompany.com         | 5011 (Auth Server)
-Login       | login.id.yourcompany.com   | 5011 (Auth Server)
-Console     | console.id.yourcompany.com | 5012 (Console)
-API         | api.id.yourcompany.com     | 5010 (Identity Service)
+Domain type | Example                          | Destination container port
+----------- | -------------------------------- | --------------------------
+Base domain | *id.yourcompany.com*             | 5011 (Auth Server)
+Login       | **login**.*id.yourcompany.com*   | 5011 (Auth Server)
+Console     | **console**.*id.yourcompany.com* | 5012 (Console)
+API         | **api**.*id.yourcompany.com*     | 5010 (Identity Service)
 
 ## Example
 
