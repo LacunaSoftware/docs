@@ -115,6 +115,39 @@ Example (*.json* configuration file):
     ...
 ```
 
+## Transitioning from root access
+
+If your Amplia instance was initially configured to use root access, once you configure user management and attempt to access the application with your GrantID user,
+you will most likely encounter a "no access" page.
+
+This happens because full privileges are given to the first user that logs into the application, which in your case was *not* this user with which your are signing in now,
+but rather the root user.
+
+In this case, you must manually grant yourself privileges through the database. Start by locating your own user `Id`:
+
+```sql
+SELECT "Id", "Name", "EmailAddress"
+FROM "Agents"
+WHERE "Subject" IS NOT NULL
+```
+
+Then, grant the *Owner* sys admin role to yourself (copy your user `Id` to the query below):
+
+<!--
+
+NOTE TO DOCUMENTERS
+
+When copying the query below over to some other application, refer to the app's source code to check if, like Amplia, it has `RootRoles.Owner = 0`. Some applications
+actually have `RootRoles.Owner = 1`. In such cases, the correct `RootRoleFlags` value on the query is actually **2** !
+
+-->
+
+```sql
+UPDATE "Agents"
+SET "RootRoleFlags" = 1
+WHERE "Id" = 'YOUR-USER-ID'
+```
+
 ## See also
 
 * [GrantID](../../grant-id/index.md)
