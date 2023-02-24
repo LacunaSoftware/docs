@@ -30,7 +30,7 @@ AppDiscriminator=PASTE_VALUE_HERE
 Example (environment variables):
 
 ```sh
-General_AppDiscriminator=PASTE_VALUE_HERE
+General__AppDiscriminator=PASTE_VALUE_HERE
 ```
 
 Example (*.json* configuration file):
