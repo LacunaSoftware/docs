@@ -163,4 +163,5 @@ Example (JSON configuration):
 ```
 
 By default, path-style addressing is used when an S3-compatible storage is configured, instead of the default virtual-hosted–style addressing used when a standard
-AWS S3 bucket is configured. This can be changed with the **ForcePathStyle** setting. For more information on S3 addressing, see [Virtual hosting of buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html).
+AWS S3 bucket is configured. This can be changed with the **ForcePathStyle** setting (`true` or `false`). For more information on S3 addressing, see
+[Virtual hosting of buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html).
