@@ -4,14 +4,24 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-8-1" />
+### 2.8.1 (2023-02-27)
+
+* Bug fixes
+  * [AUT-303] Emission JSON without comprobatory documentation is not validated correctly
+
+* Improvements
+  * [AUT-301] Make optional the ProcessoDoDiploma field in the LivroRegistro
+  * [AUT-302] Regulatory act information is not apperiang in the RVHE
+
+* New Features
+  * [AUT-299] Create Ênfase tag on RVDD
+
 <a name="v2-8-0" />
 ### 2.8.0 (2023-02-14)
 
 * Bug fixes
   * [AUT-298] Fix bugs identified in 1.05 in Homologation
-
-* Improvements
-  * [AUT-297] Update framework for .NET 6
 
 * New Features
   * [AUT-270] Updating the Digital Degree to 1.05 version
@@ -27,6 +37,7 @@
 
 * Improvements
   * [AUT-294] Add validation if the dispatch date is in the validity period of the current version
+  * [AUT-297] Update framework for .NET 6
 
 * New Features
   * [AUT-291] Implement the temporary cancellation for academic transcripts

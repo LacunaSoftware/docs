@@ -4,14 +4,24 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-8-1" />
+### 2.8.1 (2023-02-27)
+
+* Correções de bugs
+  * [AUT-303] JSON de emissão sem documentação comprobatória não é validado corretamente
+
+* Melhorias
+  * [AUT-301] Tornar opcional o campo ProcessoDoDiploma em LivroRegistro
+  * [AUT-302] Informações do ato regulatório não está aparecendo no RVHE
+
+* Novas funcionalidades
+  * [AUT-299] Criar tag de Ênfase no RVDD
+
 <a name="v2-8-0" />
 ### 2.8.0 (2023-02-14)
 
 * Correções de bugs
   * [AUT-298] Corrigir erros identificados na versão 1.05 em homologação
-
-* Melhorias
-  * [AUT-297] Atualizar framework para .NET 6
 
 * Novas funcionalidades
   * [AUT-270] Atualizar Diploma Digital para a versão 1.05
@@ -27,6 +37,7 @@
 
 * Melhorias
   * [AUT-294] Adicionar validação se data de expedição está na vigência da versão atual
+  * [AUT-297] Atualizar framework para .NET 6
 
 * Novas funcionalidades
   * [AUT-291] Implementar a anulação temporária para histórico escolar
