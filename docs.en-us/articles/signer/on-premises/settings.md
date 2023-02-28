@@ -353,7 +353,7 @@ Under section **InvoiceReceipt**:
 
 Under section **SMS**:
 
-* **Type**: defines the provider of SMSs. Available options are `TotalVoice`, `Twilio`, `Zenvia` (v1.28.0), `SmsEmpresa` (v1.28.0) and `Generic` (v1.36.0).
+* **Type**: defines the provider of SMSs. Available options are `TotalVoice`, `Twilio`, `Zenvia` (v1.28.0), `SmsEmpresa` (v1.28.0), `Generic` (v1.36.0), `AmazonSNS` (v1.55.0) and `Tigo` (v1.55.0).
 
 For the `TotalVoice` provider, define the setting:
 
@@ -382,6 +382,12 @@ For the `Generic` provider (v1.36.0), define the settings:
 * **Password**: the password if the AuthType is `Basic`.
 * **BearerToken**: the Bearer token if the AuthType is `Bearer`.
 * **ApiKey**: the API key if the AuthType is `ApiKey`.
+
+For the `AmazonSNS` provider (v1.55.0), define the settings:
+* **Region**: he AWS region code, for instance `sa-east-1` or `us-east-1` (see [AWS region codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)).
+* **AccessKeyId**: the access key ID.
+* **SecretAccessKey**: the secret access key.
+
 
 ###  *NFEio* Settings (v1.27.0)
 
