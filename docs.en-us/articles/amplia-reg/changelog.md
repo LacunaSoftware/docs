@@ -1,8 +1,11 @@
 ﻿# Amplia Reg changelog
 
+<!--
 <a name="vnext" />
+-->
+
 <a name="v1-6-0" />
-## 1.6.0 (next version)
+## 1.6.0 (2023-03-02)
 
 Updates database model: **yes**
 
@@ -17,6 +20,8 @@ ARNG-250 Holder type management
 ARNG-283 Add support for PostgreSQL
 
 ARNG-303 Improved SSL certificate to support *Autenticação Web* certificates (Cape Verde)
+
+ARNG-312 Field `CustomTypeDenominator` on CV certificate types
 
 ### Bug fixes
 

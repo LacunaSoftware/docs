@@ -1,8 +1,11 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<!--
 <a name="vnext" />
+-->
+
 <a name="v1-6-0" />
-## 1.6.0 (próxima versão)
+## 1.6.0 (2023-03-02)
 
 Atualiza modelo do banco de dados: **sim**
 
@@ -17,6 +20,8 @@ ARNG-250 Gerenciamento de tipos de titular
 ARNG-283 Adicionado suporte a PostgreSQL
 
 ARNG-303 Adaptações ao certificado SSL para suportar perfil de Autenticação Web de Cabo Verde
+
+ARNG-312 Campo CustomTypeDenominator no CaboVerdeCertificateType
 
 ### Correções de bugs
 

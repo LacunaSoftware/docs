@@ -1,8 +1,11 @@
 ﻿# Amplia changelog
 
+<!--
 <a name="vnext" />
+-->
+
 <a name="4-1-0" />
-## 4.1.0 (next version)
+## 4.1.0 (2023-03-02)
 
 Updates database model: **yes**
 
@@ -15,6 +18,12 @@ AMP-283 Issue certificate without a CSR, returning a PKCS #12 (PFX) file
 AMP-273 Add support for PostgreSQL
 
 AMP-281 Allow using "S3 clones" as blob storage
+
+AMP-284 Add fields `RetentionPeriodYears` and `LegislationCountries` to SSL certificates
+
+AMP-287 Refactor *fatura electrónica* certificates (CV)
+
+AMP-288 Encoding identification number as Unique Identifier X.520 field on CV signature certificates
 
 
 

@@ -1,8 +1,11 @@
 ﻿# Histórico de versões do Amplia
 
+<!--
 <a name="vnext" />
+-->
+
 <a name="4-1-0" />
-## 4.1.0 (próxima versão)
+## 4.1.0 (2023-03-02)
 
 Atualiza modelo do banco de dados: **sim**
 
@@ -15,6 +18,12 @@ AMP-283 Emissão de certificado sem CSR, retornando arquivo PFX / PKCS #12
 AMP-273 Adicionado suporte a PostgreSQL
 
 AMP-281 Permitir blob storage em "S3 clones"
+
+AMP-284 Campos RetentionPeriodYears e LegislationCountries no certificado SSL
+
+AMP-287 Refatorar como certificados de fatura eletrônica são emitidos (CV)
+
+AMP-288 Codificar cédula de identidade no campo Unique Identifier para certificados de assinatura digital de CV
 
 
 
