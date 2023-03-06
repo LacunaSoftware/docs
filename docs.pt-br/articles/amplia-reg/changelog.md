@@ -1,8 +1,18 @@
 ﻿# Histórico de versões do Amplia Reg
 
-<!--
 <a name="vnext" />
--->
+<a name="v1-7-0" />
+## 1.7.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-257 Campo de cliente/campanha no pedido
+
+ARNG-316 Relatório acumulado de certificados por tipo
+
+
 
 <a name="v1-6-0" />
 ## 1.6.0 (2023-03-02)

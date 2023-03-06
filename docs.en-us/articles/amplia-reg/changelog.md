@@ -1,8 +1,17 @@
 ﻿# Amplia Reg changelog
 
-<!--
 <a name="vnext" />
--->
+<a name="v1-7-0" />
+## 1.7.0 (next version)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-257 Client/campaign field on orders
+
+ARNG-316 Cumnulative certificates by type report
+
 
 <a name="v1-6-0" />
 ## 1.6.0 (2023-03-02)
