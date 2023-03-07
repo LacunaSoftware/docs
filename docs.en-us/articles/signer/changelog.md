@@ -4,6 +4,21 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-55-0" />
+### 1.55.0 (2023-03-03)
+
+* Improvements
+  * [SIG-798] Send multiple documents with document specific flows
+  * [SIG-1044] Add new SMS providers (Amazon SNS and Tigo)
+
+* Bug fixes
+  * [SIG-870] Option to position text in the middle does not work for signature image set in the user profile
+  * [SIG-1015] Error signing multiple documents with certificate
+  * [SIG-1039] Cannot set the default billing plan for organization/user that has a custom plan
+  * [SIG-1047] Even if signature visual representation is disabled in a organization, it is still used in electronic and cloud signatures
+
+Updates database model: no
+
 <a name="v1-54-0" />
 ### 1.54.0 (2023-02-17)
 

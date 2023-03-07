@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-55-0" />
+### 1.55.0 (2023-03-03)
+
+* Melhorias
+  * [SIG-798] Enviar múltiplos documentos com fluxo específico por documento
+  * [SIG-1044] Adicionar novos provedores de SMS (Amazon SNS e Tigo)
+
+* Correções de bugs
+  * [SIG-870] Opção posicionar texto no meio da imagem não funciona para configuração de imagem de assinatura no perfil do usuário
+  * [SIG-1015] Erro ao assinar documentos em lote com certificado
+  * [SIG-1039] Não está sendo possível definir o plano padrão para organização/usuário que tenha um plano personalizado
+  * [SIG-1047] Quando desativado a representação visual na organização, ela ainda aparece na assinatura eletrônica e em nuvem
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-54-0" />
 ### 1.54.0 (2023-02-17)
 
