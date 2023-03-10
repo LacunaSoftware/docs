@@ -429,6 +429,7 @@
 ### [Uso dentro de iframe](grant-id/on-premises/allow-iframe.md)
 ### [Configurações](grant-id/on-premises/settings.md)
 ### [Integração com SAML 2](grant-id/on-premises/saml2.md)
+### [Integração com LDAP](grant-id/on-premises/ldap.md)
 ## [Histórico de versões](grant-id/changelog.md)
 <!-- End of GrantID -->
 
