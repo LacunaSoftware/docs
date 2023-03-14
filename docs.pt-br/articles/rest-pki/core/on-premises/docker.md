@@ -16,7 +16,13 @@ Tags móveis disponíveis:
 
 * A tag `1.12` aponta para a última imagem 1.12.x **(atualmente recomendada)**
 * A tag `1` aponta para a última imagem 1.x
-* A tag `stable` aponta para a última image estável
+* A tag `stable` aponta para a última imagem estável
+
+<a name="vnext" />
+
+> [!NOTE]
+> Para testar a próxima versão do Rest PKI Core, atualmente em estágio *Release Candidate*, use a imagem `lacunasoftware/restpkicore:2.0.0-rc02`.
+> **Cuidado**: versões *Release Candidate* não são adequadas para produção e, portanto, devem ser instaladas apenas em ambientes de homologação/testes!
 
 Esta imagem requer:
 

@@ -1,5 +1,25 @@
 ﻿# Rest PKI Core changelog
 
+<a name="vnext" />
+<a name="v2.0.0" />
+## 2.0.0 (upcoming version)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-155 Add support for legacy certificate authentication APIs
+
+RPNG-159 Add support for legacy PDF signature APIs
+
+RPNG-161 Add support for legacy XML signature APIs
+
+RPNG-162 Add support for legacy PDF marking APIs
+
+RPNG-177 Add support for signature policies
+
+
+
 <a name="v1-12-1" />
 ## 1.12.1 (2023-01-05)
 

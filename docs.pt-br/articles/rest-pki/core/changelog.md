@@ -1,5 +1,25 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<a name="vnext" />
+<a name="v2.0.0" />
+## 2.0.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-155 Adicionar suporte às APIs de autenticação antigas
+
+RPNG-159 Adicionar suporte às APIs de assinatura de PDF antigas
+
+RPNG-161 Adicionar suporte às APIs de assinatura de XML antigas
+
+RPNG-162 Adicionar suporte às APIs de PdfMarking antigas
+
+RPNG-177 Adicionar suporte a políticas de assinatura
+
+
+
 <a name="v1-12-1" />
 ## 1.12.1 (2023-01-05)
 
