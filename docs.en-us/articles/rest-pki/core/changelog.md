@@ -20,6 +20,21 @@ RPNG-177 Add support for signature policies
 
 
 
+<a name="v1-13-0" />
+## 1.13.0 (2023-03-14)
+
+Updates database model: **yes**
+
+### Improvements
+
+RPNG-153 Add PDF visual representation to signature API
+
+RPNG-172 Allow using "S3 clones" as blob storage
+
+RPNG-169 Complete update to SPA 2.6
+
+
+
 <a name="v1-12-1" />
 ## 1.12.1 (2023-01-05)
 

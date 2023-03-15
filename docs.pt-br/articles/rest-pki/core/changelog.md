@@ -8,15 +8,30 @@ Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
 
-RPNG-155 Adicionar suporte às APIs de autenticação antigas
+RPNG-155 Adicionar suporte às APIs de autenticação legadas
 
-RPNG-159 Adicionar suporte às APIs de assinatura de PDF antigas
+RPNG-159 Adicionar suporte às APIs de assinatura de PDF legadas
 
-RPNG-161 Adicionar suporte às APIs de assinatura de XML antigas
+RPNG-161 Adicionar suporte às APIs de assinatura de XML legadas
 
-RPNG-162 Adicionar suporte às APIs de PdfMarking antigas
+RPNG-162 Adicionar suporte às APIs de *PDF marking* legadas
 
 RPNG-177 Adicionar suporte a políticas de assinatura
+
+
+
+<a name="v1-13-0" />
+## 1.13.0 (2023-03-14)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+RPNG-153 Adicionar representação visual à API de assinatura
+
+RPNG-172 Permitir blob storage em "S3 clones"
+
+RPNG-169 Completar atualização para SPA 2.6
 
 
 

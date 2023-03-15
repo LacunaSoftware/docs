@@ -10,11 +10,11 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The currently recommended image is `lacunasoftware/restpkicore:1.12`
+The currently recommended image is `lacunasoftware/restpkicore:1.13`
 
 Available moving tags:
 
-* Tag `1.12` points to the latest 1.12.x image **(currently recommended)**
+* Tag `1.13` points to the latest 1.13.x image **(currently recommended)**
 * Tag `1` points to the lastest 1.x image
 * Tag `stable` points to the latest stable image
 
