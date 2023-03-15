@@ -12,7 +12,7 @@ To update your [on-premises installation](../index.md) of [Rest PKI Core](../../
 
 To test the upcoming version of Rest PKI Core, currently in Release Candidate state:
 
-[!include[Update to vNext](../../../../../includes/rest-pki/core/linux/update-vnext.md)]
+[!include[Update to vNext](../../../../../../includes/rest-pki/core/linux/update-vnext.md)]
 
 > [!WARNING]
 > Release Candidate versions are not production-ready and thus should only be installed on
