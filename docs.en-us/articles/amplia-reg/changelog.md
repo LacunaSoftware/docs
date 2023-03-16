@@ -1,8 +1,31 @@
 ﻿# Amplia Reg changelog
 
 <a name="vnext" />
+<a name="v1-8-0" />
+## 1.8.0 (next version)
+
+Updates database model: no
+
+### New Features
+
+ARNG-306 Integration with SISP SMS gateway
+
+### Improvements
+
+ARNG-313 Holder type management improvements
+
+ARNG-319 Additional CV holder file types
+
+### Bug fixes
+
+ARNG-308 RA users cannot use search components after clicking the *Clear* button
+
+ARNG-318 Client/campaign autocomplete stops working on validation page if order is autofilled
+
+
+
 <a name="v1-7-0" />
-## 1.7.0 (next version)
+## 1.7.0 (2023-03-06)
 
 Updates database model: **yes**
 
@@ -11,6 +34,7 @@ Updates database model: **yes**
 ARNG-257 Client/campaign field on orders
 
 ARNG-316 Cumnulative certificates by type report
+
 
 
 <a name="v1-6-0" />

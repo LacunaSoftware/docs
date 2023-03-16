@@ -1,8 +1,31 @@
 ﻿# Histórico de versões do Amplia Reg
 
 <a name="vnext" />
+<a name="v1-8-0" />
+## 1.8.0 (próxima versão)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-306 Integração com gateway SMS da SISP
+
+### Melhorias
+
+ARNG-313 Melhorias ao gerenciamento de tipos de titular
+
+ARNG-319 Novos tipos de HolderFileTypes para CaboVerde
+
+### Correções de bugs
+
+ARNG-308 Usuários de AR não conseguem operar as buscas após clicar no botão "Limpar"
+
+ARNG-318 Auto complete de campanha para de funcionar depois do auto preenchimento
+
+
+
 <a name="v1-7-0" />
-## 1.7.0 (próxima versão)
+## 1.7.0 (2023-03-06)
 
 Atualiza modelo do banco de dados: **sim**
 
