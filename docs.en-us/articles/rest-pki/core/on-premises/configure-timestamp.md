@@ -20,7 +20,17 @@ Depending on the authentication mode required by the timestamp provider, additio
 * `BasicAuthentication`: fill **Username** and **Password**
 * `OAuthBearerToken`: fill **BearerToken**
 
-Example (*.ini* or *.conf* configuration file):
+Typical example (*.ini* or *.conf* configuration file):
+
+```ini
+[Timestamp:Timestampers:0]
+Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
+AuthenticationType=OAuthBearerToken
+BearerToken=YOURTOKEN
+Tiers=PkiBrazil
+```
+
+More advanced example:
 
 ```ini
 [Timestamp]
@@ -30,7 +40,7 @@ RetryDelayInMilliseconds=500
 [Timestamp:Timestampers:0]
 Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
 AuthenticationType=OAuthBearerToken
-OAuthBearerToken=YOURTOKEN
+BearerToken=YOURTOKEN
 Tiers=PkiBrazil
 
 [Timestamp:Timestampers:1]
@@ -40,14 +50,23 @@ Username=SOMEUSER
 Password=SOMEPASS
 ```
 
-Example (environment variables):
+Typical example (environment variables):
+
+```bash
+Timestamp__Timestampers__0__Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
+Timestamp__Timestampers__0__AuthenticationType=OAuthBearerToken
+Timestamp__Timestampers__0__BearerToken=YOURTOKEN
+Timestamp__Timestampers__0__Tiers=PkiBrazil
+```
+
+More advanced example:
 
 ```bash
 Timestamp__MaxAutoRetryCount=2
 Timestamp__RetryDelayInMilliseconds=500
 Timestamp__Timestampers__0__Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
 Timestamp__Timestampers__0__AuthenticationType=OAuthBearerToken
-Timestamp__Timestampers__0__OAuthBearerToken=YOURTOKEN
+Timestamp__Timestampers__0__BearerToken=YOURTOKEN
 Timestamp__Timestampers__0__Tiers=PkiBrazil
 Timestamp__Timestampers__1__Url=https://tsp.patorum.com/timestamp
 Timestamp__Timestampers__1__AuthenticationType=BasicAuthentication
