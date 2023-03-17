@@ -135,9 +135,9 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/dmg.png)
 
-* yale-blue-yellow - dmg (v1.51.0):
+* yale-blue-yellow - yby (v1.51.0):
 
-![Color Scheme](../images/themes/dmg.png)
+![Color Scheme](../images/themes/yby.png)
 
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
