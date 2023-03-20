@@ -4,11 +4,11 @@ To install an [on-premises](../index.md) instance of [Lacuna PSC](../../index.md
 
 ## Prerequisites
 
-* Rocky Linux 8.x
+* Rocky Linux 8.x or greater
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime](../../../includes/linux/rocky/install-aspnetcore-31.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/rocky/install-aspnetcore-60.md)]
 
 <!--
 [!include[Install dependencies](../../../includes/linux/ubuntu/install-dependencies.md)]

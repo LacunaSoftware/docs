@@ -4,11 +4,11 @@ To install an [on-premises](../index.md) instance of [Lacuna PSC](../../index.md
 
 ## Prerequisites
 
-* Ubuntu x64 version 21.10, 20.04, 18.04 or 16.04
+* Ubuntu Server (any version currently in support by vendor, latest LTS version recommended)
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-31.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
 
 [!include[Install dependencies](../../../includes/linux/ubuntu/install-dependencies.md)]
 

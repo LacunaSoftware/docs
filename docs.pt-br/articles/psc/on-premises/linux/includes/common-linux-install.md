@@ -4,6 +4,11 @@
 
 Crie a pasta do site, baixe e extraia os binários:
 
+> [!NOTE]
+> Para testar a [próxima versão](../../../changelog.md#vnext) do Lacuna PSC, atualmente em estágio *Release Candidate*, substitua `psc-x.y.z.tar.gz` nos comandos abaixo
+> por `psc-1.1.0-rc01.tar.gz`. **Cuidado**: versões *Release Candidate* não são adequadas para produção e, portanto, devem ser instaladas apenas em ambientes de
+> homologação/testes!
+
 [!include[Copy files](../../../../../../includes/psc/linux/copy-files.md)]
 
 > [!NOTE]
