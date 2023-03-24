@@ -71,6 +71,9 @@ document is concluded. Available values are: `Original`, `PrinterFriendlyVersion
 * **MaximumItemsInBatchNotifications** (default: `10`, v1.10.4): defines a maximum number of items included in notifications that list a 
 batch of items (for example all documents a user was added as observer).
 
+* **UngroupedNotificationsDelayInSeconds** (default: `180`, v1.56.0): When multiple notifications need to be sent to a user regarding one or more 
+documents (if the recipient type is not e-mail) each notification will be sent with an increasing interval in seconds defined by this setting.
+
 * **NormalizePdfs** (default: `true`, v1.13.0): if `true`, the system automatically attempts to normalize PDFs when they are submitted to create a document to 
 prevent protected file and append mode errors.
 
@@ -148,6 +151,9 @@ to be displayed in the documents page.
 * **DocumentExpirationTime** (v1.54.0): defines the document expiration time in timespan format (`HH:mm:ss`). By the default (if not set) it considers the expiration time as the 
 end of the day in the configured default timezone. This option should only be used if the default timezone is Brasilia Standard Time (GMT-3).
 
+* **ShortSiteName** (v1.56.0): a short name to reference the application in messages that have a small amount of allowed characters (such as SMS messages). Should be a shorter
+version of the `SiteName` setting.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -185,7 +191,8 @@ Under section **SupportChat**:
 Under section **ElectronicSignature**:
 
 * **Enabled**: if `true`, displays the option to accept electronic signatures when creating documents.
-* **EnableSmsAuthentication**: if `true`, enables the SMS verification option for electronic signatures.
+* **EnableSmsAuthentication**: if `true`, enables the SMS verification option for electronic signatures. In order to function properly, a SMS provider must be configured (see [SMS](#sms-settings)).
+* **EnableWhatsappAuthentication** (v1.56.0): if `true`, enables the Whatsapp verification option for electronic signatures.  In order to function properly, the [Whatsapp settings](#whatsapp-settings) must be configured.
 * **EnableOtpAuthentication**: if `true`, enables the OTP App verification option for electronic signatures.
 * **EnableSelfieAuthentication** (v1.23.0): if `true`, enables the selfie capture for electronic signatures.
 * **EnableDatavalidAuthentication** (v1.32.0): if `true`, enables the selfie capture with Datavalid validation for electronic signatures. If enabled, the setting in the section
@@ -349,6 +356,7 @@ Under section **InvoiceReceipt**:
 * **CnaeCode ** (optional): your company's [CNAE](https://receita.economia.gov.br/orientacao/tributaria/cadastros/cadastro-nacional-de-pessoas-juridicas-cnpj/classificacao-nacional-de-atividades-economicas-2013-cnae). 
 * **ReceiptDescription** (default: same value set on the `SiteName` setting): a description included in the "Service Description" of the receipt.
 
+<a name="sms-settings" />
 ###  *SMS* Settings
 
 Under section **SMS**:
@@ -388,6 +396,22 @@ For the `AmazonSNS` provider (v1.55.0), define the settings:
 * **AccessKeyId**: the access key ID.
 * **SecretAccessKey**: the secret access key.
 
+<a name="whatsapp-settings" />
+###  *Whatsapp* Settings (v1.56.0)
+
+Under section **Whatsapp**:
+
+* **Endpoint** (default: `https://graph.facebook.com`): the endpoint to which the Whatsapp messages will be sent. Should only be set if you have a Whatsapp Business 
+on premises instance.
+* **AccessToken**: a Whatsapp Business API access token.
+* **PhoneNumberId**: the phone number ID that will be used to send messages.
+
+* **TemplateMapping** (optional): dictionary of template names. This should only be used if you do not want to register the template in Meta Business Management 
+with the name which we recommend. Example:
+
+```
+Whatsapp__TemplateMapping__pendingsignature=signer_pendingsignature
+```
 
 ###  *NFEio* Settings (v1.27.0)
 
