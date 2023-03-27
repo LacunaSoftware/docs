@@ -10,9 +10,9 @@ Abaixo são listados os pré-requisitos desse tipo de integração:
 
 * Ter uma Whatsapp Business Account associada à Meta Business Account.
 
-* Ter um business app, associada à Meta Business Account.
+* Ter um business app, associado à Meta Business Account.
 
-* Ter um número de telefone (celular ou fixo) verificado associado à sua Whatsapp Business Account.
+* Ter um número de telefone (celular ou fixo) verificado e associado à sua Whatsapp Business Account.
 
 ## Criação do aplicativo
 
@@ -45,7 +45,7 @@ Por exigência da Meta, todas mensagens iniciadas pela aplicação devem ser reg
 enviadas caso o usuário entre em contato previamente com seu número de whatsapp (iniciando assim uma [Conversa](https://developers.facebook.com/docs/whatsapp/conversation-types)).
 
 Uma vez verificado seu número de Whatsapp, acesse a [Gestão de Modelos](https://business.facebook.com/wa/manage/message-templates/) para registrar os modelos
-de mensagens que serão enviados pela aplicação.
+das mensagens que serão enviados pela aplicação.
 
 Como a aplicação suporta 3 idiomas (Português, Inglês e Espanhol), cada modelo deve ter três versões: Portuguese (BR), English e Spanish.
 
@@ -65,18 +65,17 @@ conteúdo dos modelos desde que não altere a quantidade nem a ordem dos parâme
 
 * Para gerá-lo, é preciso criar um usuário do tipo `System User`, conforme descrito na página de [Primeiros passos da Business Management API](https://developers.facebook.com/docs/whatsapp/business-management-api/get-started).
 
-* Durante a geração do token, verifique que os escopos `whatsapp_business_messaging` e `whatsapp_business_management` estão selecionados.
+* Durante a geração do token, marque os escopos `whatsapp_business_messaging` e `whatsapp_business_management` (caso já não estejam selecionados).
 
 * Por fim, garanta que o usuário criado, possui acesso à conta de Whatsapp desejada. Isso deve ser feito em [Configurações de Negócio](https://business.facebook.com/settings) na seção 
-Contas do Whatsapp. Selecione a conta desejada e verifique se o usuário consta na aba `Pessoas`.
+`Contas do Whatsapp`. Selecione a conta desejada e verifique se o usuário consta na aba `Pessoas`.
 
 
 ## Habilitando a Integração
 
 Para habilitar a integração, você deverá fornecer à nossa equipe de suporte os itens abaixo:
 
-1- Identificação do número de telefone (obtido nas configurações de Whatsapp do aplicativo criado).
+1. Identificação do número de telefone (obtido nas configurações de Whatsapp do aplicativo criado).
+1. Token de acesso à API.
 
-1- Token de acesso à API.
-
-Se você tem uma instância On-Premises, veja a seção de [Configurações de Whatsapp](../settings.md#whatsapp-settings).
+Se você tem uma instância On-Premises, veja a seção de [Configurações de Whatsapp](https://docs.lacunasoftware.com/en-us/articles/signer/on-premises/settings.html#whatsapp-settings).
