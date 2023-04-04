@@ -18,6 +18,13 @@ RPNG-162 Add support for legacy PDF marking APIs
 
 RPNG-177 Add support for signature policies
 
+RPNG-179 Automatically add attribute certificates to signatures
+
+
+### Bug fixes
+
+RPNG-180 Cloud certificate integration was broken after updating to SPA 2.6 (v1.13.0)
+
 
 
 <a name="v1-13-0" />
@@ -33,6 +40,16 @@ RPNG-172 Allow using "S3 clones" as blob storage
 
 RPNG-169 Complete update to SPA 2.6
 
+
+
+<a name="v1-12-2" />
+## 1.12.2 (2023-02-28)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-173 Document details API does not allow inter-subscription access when instance is configured as on-premises
 
 
 <a name="v1-12-1" />

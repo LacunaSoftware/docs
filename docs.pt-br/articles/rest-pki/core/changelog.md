@@ -18,6 +18,12 @@ RPNG-162 Adicionar suporte às APIs de *PDF marking* legadas
 
 RPNG-177 Adicionar suporte a políticas de assinatura
 
+RPNG-179 Agregar certificado de atributo automaticamente a assinaturas
+
+### Correções de bugs
+
+RPNG-180 Assinatura com certificado em nuvem parou de funcionar após atualização para SPA 2.6 (v1.13.0)
+
 
 
 <a name="v1-13-0" />
@@ -32,6 +38,17 @@ RPNG-153 Adicionar representação visual à API de assinatura
 RPNG-172 Permitir blob storage em "S3 clones"
 
 RPNG-169 Completar atualização para SPA 2.6
+
+
+
+<a name="v1-12-2" />
+## 1.12.2 (2023-02-28)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-173 API de obter detalhes de um documento pelo ID não está permitindo acesso inter-contas em instâncias on-premises
 
 
 
