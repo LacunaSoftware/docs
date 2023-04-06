@@ -1,8 +1,27 @@
 ﻿# Histórico de versões do Amplia Reg
 
 <a name="vnext" />
+<a name="v2-0-0" />
+## 2.0.0 (próxima versão)
+
+> [!WARNING]
+> **Breaking change**: para permitir números de pedido definidos externamente, o campo `OrderSummary.Number` tornou-se `string`
+> (era `long`) e passou a ter o número de pedido *formatado*.
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-321 Permitir números de pedido definidos externamente
+
+ARNG-322 Termo de titularidade SISP
+
+ARNG-323 Substituir na l10n de português o termo "protocolo" por "pedido" quando este for usado como sinônimo de "pedido" e não de "número do pedido"
+
+
+
 <a name="v1-8-0" />
-## 1.8.0 (próxima versão)
+## 1.8.0 (2023-04-06)
 
 Atualiza modelo do banco de dados: não
 

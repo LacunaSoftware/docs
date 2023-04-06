@@ -1,8 +1,27 @@
 ﻿# Amplia Reg changelog
 
 <a name="vnext" />
+<a name="v2-0-0" />
+## 2.0.0 (next version)
+
+> [!WARNING]
+> **Breaking change:** in order to allow externally defined order numbers, `OrderSummary.Number` is now `string` (used to be `long`) and
+> contains the *formatted* order number.
+
+Updates database model: **yes**
+
+### Improvements
+
+ARNG-321 Allow externally defined order numbers
+
+ARNG-322 SISP agreement generation
+
+ARNG-323 Replace *protocolo* by *pedido* on PT l10n whenever it is used to refer to order and not order number
+
+
+
 <a name="v1-8-0" />
-## 1.8.0 (next version)
+## 1.8.0 (2023-04-06)
 
 Updates database model: no
 
