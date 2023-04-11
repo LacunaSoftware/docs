@@ -4,6 +4,21 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-56-0" />
+### 1.56.0 (2023-03-27)
+
+* New Features
+  * [SIG-350] Signature notifications via Whatsapp
+  * [SIG-1062] Create Zomp Ut Orange theme
+
+* Improvements
+  * [SIG-1065] Display SMS and Whatsapp notifications in the same page that displays e-mail notifications
+
+* Bug fixes
+  * [SIG-1064] Correct order of required authentication methods when signing electronically
+
+Updates database model: yes
+
 <a name="v1-55-0" />
 ### 1.55.0 (2023-03-03)
 

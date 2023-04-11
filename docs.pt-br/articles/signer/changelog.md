@@ -4,6 +4,21 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-56-0" />
+### 1.56.0 (2023-03-27)
+
+* Novas funcionalidades
+  * [SIG-350] Notificação de assinaturas para Whatsapp
+  * [SIG-1062]  Criar tema Zomp Ut Orange
+
+* Melhorias
+  * [SIG-1065] Exibir notificações de SMS e Whatsapp junto com notificações de e-mail
+
+* Correções de bugs
+  * [SIG-1064] Corrigir ordem em que métodos de autenticação são solicitados na tela de assinatura eletrônica
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-55-0" />
 ### 1.55.0 (2023-03-03)
 
