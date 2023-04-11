@@ -13,7 +13,7 @@ dotnet Lacuna.Psc.Site.dll [settings] -- update-db
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/psc:1.0 [settings] -- update-db
+docker run -i lacunasoftware/psc:1.1 [settings] -- update-db
 ```
 
 [!include[About settings](includes/about-settings.md)]

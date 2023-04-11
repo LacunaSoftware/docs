@@ -13,7 +13,7 @@ dotnet Lacuna.Psc.Site.dll [settings] -- gen-cert <subject common name> <PFX fil
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/psc:1.0 [settings] -- gen-cert <subject common name> <PFX file password> [<output PFX file path>] [<output CER file path>]
+docker run -i lacunasoftware/psc:1.1 [settings] -- gen-cert <subject common name> <PFX file password> [<output PFX file path>] [<output CER file path>]
 ```
 
 [!include[About settings](includes/about-settings.md)]

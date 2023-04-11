@@ -1,8 +1,31 @@
 ﻿# Histórico de versões do Lacuna PSC
 
 <a name="vnext" />
+<a name="v1-1-1" />
+## 1.1.1 (próxima versão)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+PSC-174 Simplificar configuração do AppId nas app stores
+
+PSC-175 Criar configuração `General:AppDiscriminator`
+
+### Correções de bugs
+
+PSC-141 Problemas na ativação de certificados no app
+
+PSC-169 Erro de código de diagnóstico em português está em espanhol
+
+PSC-171 Tela de emissão via web não permite digitação de nenhuma das duas senhas usando flavour `DigitalSign`
+
+
+
 <a name="v1-1-0" />
-## 1.1.0 (próxima versão)
+## 1.1.0 (2023-03-10)
+
+Versão idêntica a: 1.1.0 RC 2
 
 Atualiza modelo do banco de dados: **sim**
 
@@ -27,11 +50,6 @@ PSC-159 Configuração de opções disponíveis para salvar lembrete de PIN/PUK 
 <a name="v1-0-0" />
 ## 1.0.0 (2023-03-20)
 
-Versão idêntica à [1.0.0 RC 9](#v1-0-0-rc09), porém agora considerada RTM (*Release To Manufacturing*).
-
-
-
-<a name="v1-0-0-rc09" />
-## 1.0.0 RC 9 (2022-10-14)
+Versão idêntica a: 1.1.0 RC 9
 
 Primeira versão disponível publicamente.

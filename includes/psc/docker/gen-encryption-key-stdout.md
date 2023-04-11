@@ -1,3 +1,3 @@
 ﻿```sh
-docker run lacunasoftware/psc:1.0 -- gen-enc-key
+docker run lacunasoftware/psc:1.1 -- gen-enc-key
 ```

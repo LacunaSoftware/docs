@@ -13,7 +13,7 @@ dotnet Lacuna.Psc.Site.dll [settings] -- test-email <to-address>
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/psc:1.0 [settings] -- test-email <to-address>
+docker run -i lacunasoftware/psc:1.1 [settings] -- test-email <to-address>
 ```
 
 [!include[About settings](includes/about-settings.md)]

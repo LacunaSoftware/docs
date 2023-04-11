@@ -1,8 +1,31 @@
 ﻿# Lacuna PSC changelog
 
 <a name="vnext" />
+<a name="v1-1-1" />
+## 1.1.1 (next version)
+
+Updates database model: no
+
+### Improvements
+
+PSC-174 Simplify configuration of "app ID" on Android and Apple app stores
+
+PSC-175 Add setting `General:AppDiscriminator` to avoid data protection issues
+
+### Bug fixes
+
+PSC-141 Issues on certification activation on the mobile app
+
+PSC-169 "Wrong diagnostic code" message in Portuguese is displayed in Spanish
+
+PSC-171 Web issue page does not allow typing either of the secrets with flavour `DigitalSign`
+
+
+
 <a name="v1-1-0" />
-## 1.1.0 (next version)
+## 1.1.0 (2023-04-10)
+
+Identical to: 1.1.0 RC 2
 
 Updates database model: **yes**
 
@@ -27,11 +50,6 @@ PSC-159 Customizable PIN/PUK reminder save options on web issue page
 <a name="v1-0-0" />
 ## 1.0.0 (2023-03-20)
 
-Version identical to [1.0.0 RC 9](#v1-0-0-rc09), but now considered RTM (Release To Manufacturing).
+Identical to: 1.1.0 RC 9
 
-
-
-<a name="v1-0-0-rc09" />
-## 1.0.0 RC 9 (2022-10-14)
-
-First publicly available version
+First publicly available version.
