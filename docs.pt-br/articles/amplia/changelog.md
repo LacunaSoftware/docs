@@ -1,8 +1,26 @@
 ﻿# Histórico de versões do Amplia
 
-<!--
 <a name="vnext" />
--->
+<a name="4-2-0" />
+## 4.2.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+AMP-290 Criar comando para propagar CA Certs
+
+### Melhorias
+
+AMP-278 Melhorar tratamento de erro ao tentar copiar ID de CA/Template
+
+AMP-292 Pemitir forçar algoritmo de assinatura de certificados por AC
+
+### Correções de bugs
+
+AMP-291 APIs de emissão de certificado em nuvem não permitem que o Amplia fique em rede privada
+
+
 
 <a name="4-1-0" />
 ## 4.1.0 (2023-03-02)
@@ -20,6 +38,8 @@ AMP-273 Adicionado suporte a PostgreSQL
 AMP-281 Permitir blob storage em "S3 clones"
 
 AMP-284 Campos RetentionPeriodYears e LegislationCountries no certificado SSL
+
+AMP-285 Aceitar IPv4 e IPv6 no `DnsNames` do certificado SSL
 
 AMP-287 Refatorar como certificados de fatura eletrônica são emitidos (CV)
 

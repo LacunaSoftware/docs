@@ -1,8 +1,26 @@
 ﻿# Amplia changelog
 
-<!--
 <a name="vnext" />
--->
+<a name="4-2-0" />
+## 4.2.0 (next version)
+
+Updates database model: **yes**
+
+### New Features
+
+AMP-290 Criar comando para propagar CA Certs
+
+### Improvements
+
+AMP-278 Melhorar tratamento de erro ao tentar copiar ID de CA/Template
+
+AMP-292 Pemitir forçar algoritmo de assinatura de certificados por AC
+
+### Bug fixes
+
+AMP-291 APIs de emissão de certificado em nuvem não permitem que o Amplia fique em rede privada
+
+
 
 <a name="4-1-0" />
 ## 4.1.0 (2023-03-02)
@@ -20,6 +38,8 @@ AMP-273 Add support for PostgreSQL
 AMP-281 Allow using "S3 clones" as blob storage
 
 AMP-284 Add fields `RetentionPeriodYears` and `LegislationCountries` to SSL certificates
+
+AMP-285 Accept IPv4 and IPv6 on SSL certificate `DnsNames` field
 
 AMP-287 Refactor *fatura electrónica* certificates (CV)
 
