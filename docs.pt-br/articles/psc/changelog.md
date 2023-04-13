@@ -6,6 +6,8 @@
 
 Atualiza modelo do banco de dados: não
 
+Versão mínima do Amplia: 4.2.0
+
 ### Melhorias
 
 PSC-174 Simplificar configuração do AppId nas app stores
@@ -19,6 +21,8 @@ PSC-141 Problemas na ativação de certificados no app
 PSC-169 Erro de código de diagnóstico em português está em espanhol
 
 PSC-171 Tela de emissão via web não permite digitação de nenhuma das duas senhas usando flavour `DigitalSign`
+
+PSC-176 URL do termo de titularidade deve apontar para o próprio sistema, não para o Amplia
 
 
 

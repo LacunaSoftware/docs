@@ -6,6 +6,8 @@
 
 Updates database model: no
 
+Minimum Amplia version: 4.2.0
+
 ### Improvements
 
 PSC-174 Simplify configuration of "app ID" on Android and Apple app stores
@@ -19,6 +21,8 @@ PSC-141 Issues on certification activation on the mobile app
 PSC-169 "Wrong diagnostic code" message in Portuguese is displayed in Spanish
 
 PSC-171 Web issue page does not allow typing either of the secrets with flavour `DigitalSign`
+
+PSC-176 Agreement URL should point back to PSC, not to Amplia
 
 
 
