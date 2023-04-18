@@ -91,3 +91,17 @@ The subtree `1.3.6.1.4.1.46332.3.4` identifies the certificate policies adopted 
 * `1.3.6.1.4.1.46332.3.4.1`: certificates with a private key generated on the subject's personal computer
 * `1.3.6.1.4.1.46332.3.4.2`: certificates with a private key generated on the subject's mobile device
 * `1.3.6.1.4.1.46332.3.4.3`: certificates with a private key generated on the subject's cryptographic device
+
+<a name="tsa-policies" />
+## 4. TSA (Time Stamping Authority) Policies
+
+The subtree `1.3.6.1.4.1.46332.4` is reserved for **TSA (Time Stamping Authority) Policies**.
+
+```
+id-lacuna-tsa-policies OBJECT IDENTIFIER ::= { id-lacuna 4 }
+```
+
+### 4.1. Standard Lacuna Software TSA policy
+
+The OID `1.3.6.1.4.1.46332.4.1` identifies the standard Lacuna Software TSA policy adopted by the Lacuna Software TSA, available at [tsa2.lacunasoftware.com](https://tsa2.lacunasoftware.com/)
+

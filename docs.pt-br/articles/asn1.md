@@ -92,3 +92,16 @@ A subárvore `1.3.6.1.4.1.46332.3.4` identifica as políticas de certificados ad
 * `1.3.6.1.4.1.46332.3.4.1`: certificados cuja chave privada é gerada no computador pessoal do titular
 * `1.3.6.1.4.1.46332.3.4.2`: certificados cuja chave privada é gerada em dispositivo móvel do titular
 * `1.3.6.1.4.1.46332.3.4.3`: certificados cuja chave privada é gerada em dispositivo criptográfico (token USB ou *smartcard*) do titular
+
+<a name="tsa-policies" />
+## 4. Políticas de TSA (Time Stamping Authority)
+
+A subárvore `1.3.6.1.4.1.46332.4` é reservada para **Políticas de TSA** (*Time Stamping Authority*).
+
+```
+id-lacuna-tsa-policies OBJECT IDENTIFIER ::= { id-lacuna 4 }
+```
+
+### 4.1. Política de TSA padrão da Lacuna Software
+
+O OID `1.3.6.1.4.1.46332.4.1` identifica a política de TSA padrão praticada pela Lacuna Software TSA, disponível em [tsa2.lacunasoftware.com](https://tsa2.lacunasoftware.com/)
