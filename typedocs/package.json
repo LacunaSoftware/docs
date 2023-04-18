@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typedoc": "^0.10.0"
+    "typedoc": "^0.24.4"
   }
 }
