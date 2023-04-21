@@ -6,7 +6,7 @@ Create the site folder, download and extract the binaries:
 
 > [!NOTE]
 > To test the [next version](../../../changelog.md#vnext) of Lacuna PSC, currently in Release Candidate stage, replace `psc-x.y.z.tar.gz` on the following commands
-> with `psc-1.1.1-rc03.tar.gz`. **Beware**: Release Candidate versions are not production-ready and thus should only be installed on staging or test environments!
+> with `psc-1.2.0-rc01.tar.gz`. **Beware**: Release Candidate versions are not production-ready and thus should only be installed on staging or test environments!
 
 [!include[Copy files](../../../../../../includes/psc/linux/copy-files.md)]
 
