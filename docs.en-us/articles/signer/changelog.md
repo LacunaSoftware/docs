@@ -4,6 +4,24 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-57-0" />
+### 1.57.0 (2023-04-24)
+
+* New Features
+  * [SIG-1028] Disable/enable timestamp in organization settings
+  * [SIG-1056] Enable removal of CAdES signatures via API
+
+* Improvements
+  * [SIG-1031] Improve message when electronic signature is not enabled for a signer and he attempts to sign electronically
+  * [SIG-1063] Provide document validation key via API
+  * [SIG-1086] Allow download of the unmarked original file when Validation Stamp is enabled
+
+* Bug fixes
+  * [SIG-197] HSM signature does not apply signature visual representation correctly
+  * [SIG-1081] Signature pre-positioning not working for flow actions that will be added to all documents in Generate Documents page
+
+Updates database model: yes
+
 <a name="v1-56-0" />
 ### 1.56.0 (2023-03-27)
 

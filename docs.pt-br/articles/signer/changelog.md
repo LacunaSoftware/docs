@@ -4,6 +4,24 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-57-0" />
+### 1.57.0 (2023-04-24)
+
+* Novas funcionalidades
+  * [SIG-1028] Desativar/ativar carimbo de tempo por organização
+  * [SIG-1056] Permitir exclusão de assinatura na plataforma via API para CADES
+
+* Melhorias
+  * [SIG-1031] Melhorar mensagem quando assinatura eletrônica não está habilitada e usuário tenta assinar
+  * [SIG-1063] Código de validação do documento via API
+  * [SIG-1086] Permitir recuperação do arquivo original enviado quando estiver configurado Validation Stamp
+
+* Correções de bugs
+  * [SIG-197] Assinatura utilizando certificados HSM não aplica a imagem do carimbo nem o texto correto na representação visual
+  * [SIG-1081] Posicionamento de assinaturas não está sendo salvo no Gerar Documentos
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-56-0" />
 ### 1.56.0 (2023-03-27)
 
