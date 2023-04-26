@@ -10,7 +10,7 @@ claiming to have come from the mobile app were indeed originated by the official
 
 1. Create a project on the [Firebase console](https://console.firebase.google.com/)
 2. Go to [Project users and permissions](https://console.firebase.google.com/project/_/settings/iam)
-3. Add `dev.lacunasoftware@gmail.com` as a member with **Owner** role
+3. Add `dev-admins@lacunasoftware.com` as a member with **Owner** role
 
 > [!NOTE]
 > This enables our development team to acquire the various parameters associated with your project that need to be embedded in the compilation of your PSC mobile app
