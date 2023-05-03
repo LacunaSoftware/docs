@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-13-1" />
+### 2.13.1 (2023-05-03)
+
+- Improve PDF DocTimeStamp message-imprint validation
+
+
 <a name="v2-13-0" />
 ### 2.13.0 (2022-10-19)
 
