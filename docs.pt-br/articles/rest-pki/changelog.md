@@ -1,5 +1,45 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-33-0" />
+### 1.33.0 (2023-05-06)
+
+Atualização do modelo do banco de dados: Não
+
+- Adiciona política de assinatura Cades: ICP-Brasil Ref. Tempo (CAdES AD-RT) without CRLs
+
+
+<a name="v1-32-2" />
+### 1.32.2 (2022-10-01)
+
+Atualização do modelo do banco de dados: Não
+
+- Melhora no suporte de autenticação via "basic authentication" com carimbadoras de tempo
+
+
+<a name="v1-32-1" />
+### 1.32.1 (2022-09-18)
+
+Atualização do modelo do banco de dados: Não
+
+- Adiciona suporte ao protocolo proprietário da carimbadora de tempo Serpro
+
+
+<a name="v1-32-0" />
+### 1.32.0 (2022-09-12)
+
+Atualização do modelo do banco de dados: Não
+
+- Adiciona política de assinatura XML (NFe) com hash SHA-256
+
+
+<a name="v1-31-0" />
+### 1.31.0 (2022-09-04)
+
+Atualização do modelo do banco de dados: Não
+
+- Adiciona hash do "access token" do usuário às informações de transação da API
+
+
 <a name="v1-30-1" />
 ### 1.30.1 (2022-05-09)
 

@@ -1,5 +1,45 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-33-0" />
+### 1.33.0 (2023-05-06)
+
+Database model update: No
+
+- Add Cades signature policy: ICP-Brasil Ref. Tempo (CAdES AD-RT) without CRLs
+
+
+<a name="v1-32-2" />
+### 1.32.2 (2022-10-01)
+
+Database model update: No
+
+- Improve timestamp requester basic authentication support
+
+
+<a name="v1-32-1" />
+### 1.32.1 (2022-09-18)
+
+Database model update: No
+
+- Add support to Serpro timestmamp requester proprietary API protocol
+
+
+<a name="v1-32-0" />
+### 1.32.0 (2022-09-12)
+
+- Add XML signature policy (NFe) with SHA-256 digest
+
+Database model update: No
+
+
+<a name="v1-31-0" />
+### 1.31.0 (2022-09-04)
+
+- Add user access token digest to API transaction info
+
+Database model update: No
+
+
 <a name="v1-30-1" />
 ### 1.30.1 (2022-05-09)
 
