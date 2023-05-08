@@ -233,7 +233,7 @@ will be shown. If a user does not have any certificate in the configured provide
 	* **&lt;provider>:Provider** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the provider.
 	* **&lt;provider>:ProtocolVariant** (optional): should only be set for non standard providers such as staging environments. Specificies the name of the protocol variant.
 
-* **DiscoveryEnabled** (v1.48.1): if `true`, disables discovery of cloud certificate providers (displays all configured providers for every user).
+* **DiscoveryEnabled** (default: `true`, v1.48.1): if `false`, disables discovery of cloud certificate providers (displays all configured providers for every user).
 
 ###  *VisualRepresentation* Settings
 
