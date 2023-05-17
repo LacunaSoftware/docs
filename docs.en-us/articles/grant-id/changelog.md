@@ -4,6 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v4-4-0" />
+### 4.4.0 (2023-05-16)
+
+* Improvements
+  * [LI-398] Add support to new SMS providers (Amazon and Tigo)
+
+Updates database model: no
+
+<a name="v4-3-0" />
+### 4.3.0 (2023-04-25)
+
+* New features
+  * [LI-392] Login with LDAP integration
+  * [LI-394] Suggest common e-mail domains when spelling errors are identified
+  * [LI-396] Add support to database Blob Storage
+
+* Improvements
+  * [LI-397] Create setting to allow use of protection keys stored in fileysystem without automatic generation
+
+Updates database model: yes
+
 <a name="v4-2-2" />
 ### 4.2.2 (2023-02-14)
 

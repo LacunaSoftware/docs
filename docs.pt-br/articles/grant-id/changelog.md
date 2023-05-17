@@ -4,6 +4,27 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v4-4-0" />
+### 4.4.0 (2023-05-16)
+
+* Melhorias
+  * [LI-398] Adicionar suporte a novos provedores de SMS (Amazon e Tigo)
+
+Atualiza modelo do banco de dados: não
+
+<a name="v4-3-0" />
+### 4.3.0 (2023-04-25)
+
+* Novas funcionalidades
+  * [LI-392] Login com LDAP
+  * [LI-394] Identificar quando usuário digita domínio do endereço de e-mail errado e sugerir correção
+  * [LI-396] Adicionar suporte a armazenamento de blobs em banco de dados
+
+* Melhorias
+  * [LI-397] Criar configuração que permita uso de protection keys armazenadas em filesystem porém sem geração automática
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v4-2-2" />
 ### 4.2.2 (2023-02-14)
 
