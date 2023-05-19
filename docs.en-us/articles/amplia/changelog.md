@@ -1,8 +1,46 @@
 ﻿# Amplia changelog
 
 <a name="vnext" />
+<a name="4-4-0" />
+## 4.4.0 (next version)
+
+Updates database model: **yes**
+
+### New Features
+
+AMP-295 Add support for multiple policies on templates
+
+AMP-299 Add NTP synchonization
+
+### Improvements
+
+AMP-303 CA certificate template configuration
+
+
+
+<a name="4-3-0" />
+## 4.3.0 (2023-05-19)
+
+Updates database model: **yes**
+
+### New Features
+
+AMP-293 Add button on order details to issue order with a CSR
+
+AMP-294 Add field `CustomCertificateParameters.IncludeSubjectKeyId`
+
+AMP-297 Allow customization of home page
+
+AMP-301 Add support for configuring a webhook to get notifications when a certificate is issued
+
+### Improvements
+
+AMP-296 Add support for storing blobs in a database
+
+
+
 <a name="4-2-0" />
-## 4.2.0 (next version)
+## 4.2.0 (2023-04-17)
 
 Updates database model: **yes**
 

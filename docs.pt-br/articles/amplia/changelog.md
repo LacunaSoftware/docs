@@ -1,8 +1,46 @@
 ﻿# Histórico de versões do Amplia
 
 <a name="vnext" />
+<a name="4-4-0" />
+## 4.4.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+AMP-295 Suporte a múltiplas políticas nos modelos de certificado
+
+AMP-299 Configuração de servidores NTP com sincronização periódica e monitoramento do offset
+
+### Melhorias
+
+AMP-303 Configuração de modelo de certificado de AC
+
+
+
+<a name="4-3-0" />
+## 4.3.0 (2023-05-19)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+AMP-293 Criar botão nos detalhes do pedido para emitir com uma CSR
+
+AMP-294 Incluir campo CustomCertificateParameters.IncludeSubjectKeyId
+
+AMP-297 Permitir personalização da página inicial
+
+AMP-301 Suporte a configuração de webhook para notificação quanto um certificado é emitido
+
+### Melhorias
+
+AMP-296 Suporte a armazenamento de blobs em banco de dados
+
+
+
 <a name="4-2-0" />
-## 4.2.0 (próxima versão)
+## 4.2.0 (2023-05-19)
 
 Atualiza modelo do banco de dados: **sim**
 
