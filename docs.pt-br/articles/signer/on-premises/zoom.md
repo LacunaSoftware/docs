@@ -27,17 +27,32 @@ isso, caso deseje realizar conferências simultâneas, é importante ter mais de
 Para habilitar a integração no assinador é preciso obter uma credencial JWT que permite que o Assinador chame as APIs do Zoom.
 Para isso siga o procedimento abaixo:
 
-1. Após fazer o login na sua conta, acesse [https://marketplace.zoom.us/](https://marketplace.zoom.us/)
-1. Selecione a opção `Develop an App` no canto superior direito da tela
-1. Selecione a opção `JWT App`:
-![Zoom JWT App](../images/zoom-jwt.png)
-1. Dê um nome para seu aplicativo (pode ser o mesmo nome de sua instância do Assinador)
-![Zoom JWT App](../images/zoom-appname.png)
-1. Preencha as informações básicas e as de contato do desenvolvedor
-1. Selecione o painel `App Credentials`
-1. Por fim, defina o tempo de expiração para um longo período e copie o token JWT:
-![Zoom JWT App](../images/zoom-credentials.png)
-
+1. Após fazer o login na sua conta, acesse [https://marketplace.zoom.us/](https://marketplace.zoom.us/);
+1. Abra o menu `Develop` no canto superior direito da tela;
+1. Selecione a opção `Build App` dentro do seletor que se abriu;
+1. Selecione a opção `Server-to-Server OAuth`:
+![Zoom S2S App S2S](../images/zoom-s2s.png)
+1. Dê um nome para seu aplicativo (pode ser o mesmo nome de sua instância do Assinador);
+![Zoom S2S App Name](../images/zoom-appname.png)
+1. Selecione o painel `Information`;
+1. Preencha as informações básicas e as de contato do desenvolvedor;
+1. Selecione o painel `Scopes`;
+1. Selecione os seguintes:
+    - Meeting:
+        - View all user meetings (meeting:read:admin)
+        - View and manage all user meetings (meeting:write:admin)
+    - Recording:
+        - View all user recordings (recording:read:admin)
+        - View and manage all user recordings (recording:write:admin)
+    - User:
+        - View all user information (user:read:admin)
+        - View users information and manage users (user:write:admin)
+    - Room:
+        - View all user's Zoom Rooms information (room:read:admin)
+        - View and manage all user's Zoom Rooms information (room:write:admin)
+1. Selecione o painel `App Credentials`;
+1. Copie as informações necessárias para a integração: `AccountId`, `ClientId`, e `ClientSecret`.
+![Zoom S2S App Name](../images/zoom-credentials.png)
 <a name="operation" />
 ## Funcionamento
 
