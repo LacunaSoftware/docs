@@ -52,7 +52,7 @@ Para isso siga o procedimento abaixo:
         - View and manage all user's Zoom Rooms information (room:write:admin)
 1. Selecione o painel `App Credentials`;
 1. Copie as informações necessárias para a integração: `AccountId`, `ClientId`, e `ClientSecret`.
-![Zoom S2S App Name](../images/zoom-credentials.png)
+![Zoom S2S App Credentials](../images/zoom-credentials.png)
 <a name="operation" />
 ## Funcionamento
 
