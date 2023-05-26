@@ -4,6 +4,31 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-58-1" />
+### 1.58.1 (2023-05-25)
+
+* Melhorias
+  * [SIG-1094] Adição do tema dim palatinate blue
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-58-0" />
+### 1.58.0 (2023-05-25)
+
+* Novas funcionalidades
+  * [SIG-1073] Suporte à Cédula de Identidad do Paraguai
+  * [SIG-1090] Permitir adição de marca personalizada no Validation Stamp
+
+* Melhorias
+  * [SIG-986] Criação de relatórios de Organizações e Cobrança na administração
+  * [SIG-1045] Incluir relatório por período nas pastas
+
+* Correções de bugs
+  * [SIG-1088] Documento editado com assinatura eletrônica não exibe erros na assinatura
+  * [SIG-1095] Ao selecionar todos documentos na assinatura em lote com HSM somente os primeiros 10 são assinados
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-57-0" />
 ### 1.57.0 (2023-04-24)
 

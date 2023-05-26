@@ -4,6 +4,17 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v4-5-0" />
+### 4.5.0 (2023-05-25)
+
+* Novas funcionalidades
+  * [LI-399] API para exclusão de usuários
+
+* Melhorias
+  * [LI-400] Permitir que o telefone não seja alterado no login com SAML
+
+Atualiza modelo do banco de dados: não
+
 <a name="v4-4-0" />
 ### 4.4.0 (2023-05-16)
 

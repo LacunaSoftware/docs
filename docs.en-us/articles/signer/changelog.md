@@ -4,6 +4,31 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-58-1" />
+### 1.58.1 (2023-05-25)
+
+* Improvements
+  * [SIG-1094] Add dim palatinate blue theme
+
+Updates database model: no
+
+<a name="v1-58-0" />
+### 1.58.0 (2023-05-25)
+
+* New Features
+  * [SIG-1073] Support to Paraguay's Cédula de Identidad
+  * [SIG-1090] Setting to add custom mark in Validation Stamp
+
+* Improvements
+  * [SIG-986] Add Organization and Billing reports in administration
+  * [SIG-1045] Add folder reports by period
+
+* Bug fixes
+  * [SIG-1088] Document updated after signature does not diplay signature errors
+  * [SIG-1095] When batch signing with HSM and selecting all documents, only the first 10 are signed
+
+Updates database model: no
+
 <a name="v1-57-0" />
 ### 1.57.0 (2023-04-24)
 

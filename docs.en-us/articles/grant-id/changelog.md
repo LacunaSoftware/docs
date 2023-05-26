@@ -4,6 +4,17 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v4-5-0" />
+### 4.5.0 (2023-05-25)
+
+* Novas funcionalidades
+  * [LI-399] API to delete user
+
+* Improvements
+  * [LI-400] Add option to not updated phone number when logging in with SAML
+
+Updates database model: no
+
 <a name="v4-4-0" />
 ### 4.4.0 (2023-05-16)
 
