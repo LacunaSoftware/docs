@@ -1,3 +1,3 @@
 ﻿```sh
-docker run -i lacunasoftware/ampliareg:1.8 -- hash-root-pass
+docker run -i lacunasoftware/ampliareg:2.0 -- hash-root-pass
 ```

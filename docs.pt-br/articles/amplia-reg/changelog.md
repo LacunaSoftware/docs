@@ -1,14 +1,22 @@
 ﻿# Histórico de versões do Amplia Reg
 
-<a name="vnext" />
+<!--<a name="vnext" />-->
 <a name="v2-0-0" />
-## 2.0.0 (próxima versão)
+## 2.0.0 (2023-06-02)
 
 > [!WARNING]
 > **Breaking change**: para permitir números de pedido definidos externamente, o campo `OrderSummary.Number` tornou-se `string`
-> (era `long`) e passou a ter o número de pedido *formatado*.
+> (era `long`) e passou a ter o número de pedido *formatado*. Essa alteração só deve lhe afetar caso você chame as APIs do Amplia Reg programaticamente.
 
 Atualiza modelo do banco de dados: **sim**
+
+Versão mínima do Amplia: 4.4.0
+
+Versão mínima do PSC: 1.1.2
+
+### Novas funcionalidades
+
+ARNG-334 Permitir personalização do algoritmo de hash no tipo de certificado
 
 ### Melhorias
 
@@ -17,6 +25,18 @@ ARNG-321 Permitir números de pedido definidos externamente
 ARNG-322 Termo de titularidade SISP
 
 ARNG-323 Substituir na l10n de português o termo "protocolo" por "pedido" quando este for usado como sinônimo de "pedido" e não de "número do pedido"
+
+ARNG-324 Melhorias para a campanha Code 100
+
+ARNG-326 Alterar labels da tela de emissão no flavour CaboVerde
+
+ARNG-327 Revisar gerações de documento da SISP
+
+### Correções de bugs
+
+ARNG-325 Corrigir preenchimento dos campos Nome (do titular) e Nome da organização nos certificados CV
+
+ARNG-333 Colunas `NormalizedOrganizationIdentifier` e `NormalizedOrganizationName` estão sendo preenchidas incorretamente, afetando a busca de pedidos
 
 
 

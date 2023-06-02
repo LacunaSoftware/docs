@@ -1,14 +1,22 @@
 ﻿# Amplia Reg changelog
 
-<a name="vnext" />
+<!--<a name="vnext" />-->
 <a name="v2-0-0" />
-## 2.0.0 (next version)
+## 2.0.0 (2023-06-02)
 
 > [!WARNING]
 > **Breaking change:** in order to allow externally defined order numbers, `OrderSummary.Number` is now `string` (used to be `long`) and
-> contains the *formatted* order number.
+> contains the *formatted* order number. This should only affect you if you have call Amplia Reg's APIs programmatically.
 
 Updates database model: **yes**
+
+Minimum Amplia version: 4.4.0
+
+Minimum PSC version: 1.1.2
+
+### New features
+
+ARNG-334 Allow customization of the digest algorithm on certificate types
 
 ### Improvements
 
@@ -17,6 +25,18 @@ ARNG-321 Allow externally defined order numbers
 ARNG-322 SISP agreement generation
 
 ARNG-323 Replace *protocolo* by *pedido* on PT l10n whenever it is used to refer to order and not order number
+
+ARNG-324 Improved "customer accounts" feature
+
+ARNG-326 Change issue page labels for `CaboVerde`
+
+ARNG-327 Revise SISP document generation
+
+### Bug fixes
+
+ARNG-325 Fix filling of holder and organization fields on CV certificates
+
+ARNG-333 Columns `NormalizedOrganizationIdentifier` and `NormalizedOrganizationName` are being filled incorrectly, affecting order searching
 
 
 
