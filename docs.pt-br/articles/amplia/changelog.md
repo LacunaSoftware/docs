@@ -1,12 +1,15 @@
 ﻿# Histórico de versões do Amplia
 
-<a name="vnext" />
+<!--<a name="vnext" />-->
+
 <a name="4-4-0" />
-## 4.4.0 (próxima versão)
+## 4.4.0 (2023-06-02)
 
 Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
+
+AMP-279 Listagem e detalhes de managed certificates
 
 AMP-295 Suporte a múltiplas políticas nos modelos de certificado
 
@@ -14,7 +17,13 @@ AMP-299 Configuração de servidores NTP com sincronização periódica e monito
 
 ### Melhorias
 
+AMP-253 Configuração de AC para emitir certificados com link no AIA para arquivo .p7b ao invés de .cer
+
 AMP-303 Configuração de modelo de certificado de AC
+
+AMP-304 Permitir especificar o algoritmo de hash a ser utilizado para emitir o certificado no momento da criação do pedido
+
+AMP-305 Adicionar traduções para o metadado de número do RG vindo do PMCert
 
 
 

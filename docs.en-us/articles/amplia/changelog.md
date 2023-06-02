@@ -1,20 +1,30 @@
 ﻿# Amplia changelog
 
-<a name="vnext" />
+<!--<a name="vnext" />-->
+
 <a name="4-4-0" />
-## 4.4.0 (next version)
+## 4.4.0 (2023-06-02)
 
 Updates database model: **yes**
 
 ### New Features
 
+AMP-279 Managed certificates listing and details
+
 AMP-295 Add support for multiple policies on templates
 
 AMP-299 Add NTP synchonization
 
+
 ### Improvements
 
+AMP-253 CA configuration to issue certificates with link to .p7b file ("certs-only" CMS with entire chain)
+
 AMP-303 CA certificate template configuration
+
+AMP-304 Allow customization of the digest algorithm when creating an order
+
+AMP-305 Add translations of the identification number informed by PMCert
 
 
 
