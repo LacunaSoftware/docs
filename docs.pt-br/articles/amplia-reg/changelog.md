@@ -1,6 +1,22 @@
 ﻿# Histórico de versões do Amplia Reg
 
 <!--<a name="vnext" />-->
+
+<a name="v2-0-1" />
+## 2.0.1 (2023-06-07)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-335 Remover todas as ocorrências do termo "protocolo", substituindo por "número do pedido"
+
+### Correções de bugs
+
+ARNG-336 Emails não estão respeitando tema `djp`
+
+
+
 <a name="v2-0-0" />
 ## 2.0.0 (2023-06-02)
 

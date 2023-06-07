@@ -1,6 +1,22 @@
 ﻿# Amplia Reg changelog
 
 <!--<a name="vnext" />-->
+
+<a name="v2-0-1" />
+## 2.0.1 (2023-06-07)
+
+Updates database model: no
+
+### Improvements
+
+ARNG-335 Remove all occurrences of term "protocolo", replacing with "número do pedido"
+
+### Bug fixes
+
+ARNG-336 Theme `djp` is not affecting emails
+
+
+
 <a name="v2-0-0" />
 ## 2.0.0 (2023-06-02)
 
