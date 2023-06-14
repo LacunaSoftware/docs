@@ -1,4 +1,4 @@
-﻿# Amplia - Setup on Docker
+# Amplia - Setup on Docker
 
 To install an [on-premises](../index.md) instance of [Amplia](../../index.md) on Docker, follow the steps below. For other platforms, [click here](../index.md).
 
@@ -12,7 +12,7 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The current recommended image is `lacunasoftware/amplia:4.4`
+The current recommended image is `lacunasoftware/amplia:4.5`
 
 Featured image tags:
 

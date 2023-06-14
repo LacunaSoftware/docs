@@ -2,6 +2,17 @@
 
 <!--<a name="vnext" />-->
 
+<a name="4-5-0" />
+## 4.5.0 (2023-06-14)
+
+Updates database model: no
+
+### Improvements
+
+AMP-306 Add property `ExtendedKeyUsageCritical` to custom certificates
+
+
+
 <a name="4-4-0" />
 ## 4.4.0 (2023-06-02)
 

@@ -2,6 +2,17 @@
 
 <!--<a name="vnext" />-->
 
+<a name="4-5-0" />
+## 4.5.0 (2023-06-14)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-306 Campo `ExtendedKeyUsageCritical` em certificados personalizados
+
+
+
 <a name="4-4-0" />
 ## 4.4.0 (2023-06-02)
 
