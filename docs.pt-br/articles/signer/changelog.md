@@ -4,6 +4,14 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-58-2" />
+### 1.58.2 (2023-05-30)
+
+* Correções de bugs
+  * [SIG-1097] Não é possível assinar na assinatura única
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-58-1" />
 ### 1.58.1 (2023-05-25)
 
@@ -28,6 +36,9 @@ Atualiza modelo do banco de dados: não
   * [SIG-1095] Ao selecionar todos documentos na assinatura em lote com HSM somente os primeiros 10 são assinados
 
 Atualiza modelo do banco de dados: não
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2023-05-25.
 
 <a name="v1-57-0" />
 ### 1.57.0 (2023-04-24)

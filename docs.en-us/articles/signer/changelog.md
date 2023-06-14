@@ -4,6 +4,14 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-58-2" />
+### 1.58.2 (2023-05-30)
+
+* Bug fixes
+  * [SIG-1097] Cannot sign document in single signature page
+
+Updates database model: no
+
 <a name="v1-58-1" />
 ### 1.58.1 (2023-05-25)
 
