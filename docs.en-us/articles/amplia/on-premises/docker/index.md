@@ -16,7 +16,7 @@ The current recommended image is `lacunasoftware/amplia:4.5`
 
 Featured image tags:
 
-* Tag `4.1` points to the latest 4.1.x image **(recommended)**
+* Tag `4.5` points to the latest 4.5.x image **(recommended)**
 * Tag `4` points to the lastest 4.x image
 * Tag `stable` points to the latest stable image
 
