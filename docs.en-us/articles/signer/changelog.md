@@ -4,6 +4,18 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v1-58-3" />
+### 1.58.3 (2023-06-19)
+
+* Improvements
+  * [SIG-1102] Support new Whatsapp message policies
+  * [SIG-1108] Send neighborhood information when creating receipts with NFE.io
+
+* Bug fixes
+  * [SIG-1104] Welcome notification to set password is sent even if instance has AD exclusive login
+
+Updates database model: no
+
 <a name="v1-58-2" />
 ### 1.58.2 (2023-05-30)
 

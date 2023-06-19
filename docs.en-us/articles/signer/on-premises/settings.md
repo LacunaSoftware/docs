@@ -142,6 +142,7 @@ view information from other users.
 
 * **ParticipantWelcomeMessageIntervalInMinutes** (default: `0`, v1.47.0): if positive defines the amount of minutes that will be waited to send a participant welcome message notification
 after he signed a document for the first time (and has not set his password yet). Any negative value will disable this notification.
+* **OrganizationUserWelcomeMessageDisabled** (v1.58.3): if `true` won't send a welcome message notification after a user is added to an organization.
 
 * **HideParticipantsListAndOrderOfActionsForNonManagers** (v1.50.0): hides participant information from document details page for all users but document's organization managers or admins.
 

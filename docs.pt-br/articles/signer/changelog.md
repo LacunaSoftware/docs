@@ -4,6 +4,18 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v1-58-3" />
+### 1.58.3 (2023-06-19)
+
+* Melhorias
+  * [SIG-1102] Aderir a novas políticas de mensagens do Whatsapp
+  * [SIG-1108] Enviar informação de bairro na criação de notas fiscais com NFE.io
+
+* Correções de bugs
+  * [SIG-1104] Notificação para configurar senha é enviada mesmo se a instância possui login apenas com AD
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-58-2" />
 ### 1.58.2 (2023-05-30)
 
