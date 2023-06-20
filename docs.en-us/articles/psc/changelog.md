@@ -1,6 +1,20 @@
 ﻿# Lacuna PSC changelog
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="v1-2-0" />
+## 1.2.0 (next version)
+
+### New Features
+
+PSC-135 Management UI with accounts and certificates
+
+PSC-182 Account deletion
+
+### Improvements
+
+PSC-180 Add support for storing blobs on a database
+
+
 
 <a name="v1-1-2" />
 ## 1.1.2 (2023-06-02)

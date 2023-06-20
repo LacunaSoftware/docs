@@ -1,6 +1,20 @@
 ﻿# Histórico de versões do Lacuna PSC
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="v1-2-0" />
+## 1.2.0 (próxima versão)
+
+### Novas funcionalidades
+
+PSC-135 Interface administrativa com listagem de contas e certificados
+
+PSC-182 Remoção de conta
+
+### Melhorias
+
+PSC-180 Suporte a armazenamento de blobs em banco de dados
+
+
 
 <a name="v1-1-2" />
 ## 1.1.2 (2023-06-02)
