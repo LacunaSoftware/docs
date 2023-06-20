@@ -4,6 +4,114 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-11-0" />
+### 2.11.0 (2023-06-20)
+
+* Correções de bugs
+  * [AUT-336] Erro ao gerar relatório por seleção
+
+* Melhorias
+  * [AUT-304] Atualizar a lista de dados necessários
+  * [AUT-333] Remover validação da data de expedição para Histórico Escolar destacado
+
+<a name="v2-10-5" />
+### 2.10.5 (2023-05-17)
+
+* Melhorias
+  * [AUT-332] Criar tag referente aos campos de decisão judicial
+
+<a name="v2-10-4" />
+### 2.10.4 (2023-05-12)
+
+* Correções de bugs
+  * [AUT-320] Remover o Id do template do histórico de Emissões e Diplomas que forem cancelados
+  * [AUT-334] Carga horária incorreta no RVHE
+
+<a name="v2-10-3" />
+### 2.10.3 (2023-05-10)
+
+* Correções de bugs
+  * [AUT-331] Erro de apresentação da avaliação em disciplina no formulário
+
+* Melhorias
+  * [AUT-330] Adicionar aviso de "Descartar mudanças" ao sair da página do formulário
+
+<a name="v2-10-2" />
+### 2.10.2 (2023-05-08)
+
+* Correções de bugs
+  * [AUT-328] Emissão manual não é enviado para registradora ao utilizar a opção de Registradora Credenciada
+  * [AUT-329] Método para criar emissão unitária não salva o fluxo de assinaturas
+
+<a name="v2-10-1" />
+### 2.10.1 (2023-05-05)
+
+* Correções de bugs
+  * [AUT-325] Ausência de campos no formulário na etapa Elementos do histórico
+  * [AUT-326] Remover obrigatoriedade do template na Emissão manual
+  * [AUT-327] Erro habilitar ou desabilitar ato regulatório 
+
+<a name="v2-10-0" />
+### 2.10.0 (2023-05-03)
+
+* Correções de bugs
+  * [AUT-321] Exibição incorreta da naturalidade quando informada através do elemento <NomeMunicipioEstrangeiro>
+
+* Novas funcionalidades
+  * [AUT-174] Criação de tela para preenchimento dos dados dos alunos
+  * [AUT-300] Permitir envio de XML após mudança de versão
+
+<a name="v2-9-5" />
+### 2.9.5 (2023-04-18)
+
+* Correções de bugs
+  * [AUT-318] Corrigir validação do campo de selecionar a versão na criação da emissão
+
+<a name="v2-9-4" />
+### 2.9.4 (2023-04-17)
+
+* Melhorias
+  * [AUT-317] Atualizar versão do pacote da API do Signer
+
+<a name="v2-9-3" />
+### 2.9.3 (2023-04-03)
+
+* Melhorias
+  * [AUT-314] Validar a data de expedição de acordo com a versão
+
+<a name="v2-9-2" />
+### 2.9.2 (2023-03-21)
+
+* Correções de bugs
+  * [AUT-313] Versão errada do diploma ao criar diploma na versão anterior
+
+<a name="v2-9-1" />
+### 2.9.1 (2023-03-20)
+
+* Correções de bugs
+  * [AUT-312] Erro ao enviar documentação de forma manual para a instância da versão anterior
+
+<a name="v2-9-0" />
+### 2.9.0 (2023-03-17)
+
+* Novas funcionalidades
+  * [AUT-305] Permitir que a aplicação aceite a versão do diploma a ser emitido
+
+<a name="v2-8-2" />
+### 2.8.2 (2023-03-13)
+
+* Correções de bugs
+  * [AUT-308] Corrigir ordem das informações da Concedente do Estágio
+  * [AUT-310] Não é enviado e-mail quando o XML de dados públicos é enviado para o Assinador
+
+* Melhorias
+  * [AUT-306] Corrigir data do início da vigência da versão do diploma
+  * [AUT-307] Corrigir JSON de template do histórico escolar
+  * [AUT-311] Implementar o reenvio de Webhook para Histórico Escolar
+
+* Novas funcionalidades
+  * [AUT-309] Criar tag preposição com gênero na naturalidade dos estados no RVDD
+
 <a name="v2-8-1" />
 ### 2.8.1 (2023-02-27)
 

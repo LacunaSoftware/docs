@@ -4,6 +4,114 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-11-0" />
+### 2.11.0 (2023-06-20)
+
+* Bug fixes
+  * [AUT-336] Error when generating report by selection
+
+* Improvements
+  * [AUT-304] Update the list of required data
+  * [AUT-333] Remove dispatch date validation for detached academic transcripts
+
+<a name="v2-10-5" />
+### 2.10.5 (2023-05-17)
+
+* Improvements
+  * [AUT-332] Create tag referring to the judicial decision fields
+
+<a name="v2-10-4" />
+### 2.10.4 (2023-05-12)
+
+* Bug fixes
+  * [AUT-320] Remove the template Id from the history of Issues and Degrees that are cancelled
+  * [AUT-334] Fixed incorrect workload in RVHE
+
+<a name="v2-10-3" />
+### 2.10.3 (2023-05-10)
+
+* Bug fixes
+  * [AUT-331] Error when submitting the evaluation in discipline in the form
+
+* Improvements
+  * [AUT-330] Add "Discard changes" warning when leaving the form page
+
+<a name="v2-10-2" />
+### 2.10.2 (2023-05-08)
+
+* Bug fixes
+  * [AUT-328] Manual issue is not sent to the registry when using the Credentialed Registry option
+  * [AUT-329] Method for creating unit issue does not save signature flow
+
+<a name="v2-10-1" />
+### 2.10.1 (2023-05-05)
+
+* Bug fixes
+  * [AUT-325] Missing fields in the form in the step academic transcript elements
+  * [AUT-326] Remove template requirement in Manual Issue
+  * [AUT-327] Error enable or disable regulatory act 
+
+<a name="v2-10-0" />
+### 2.10.0 (2023-05-03)
+
+* Bug fixes
+  * [AUT-321] Incorrect display of naturalness when use the element <NomeMunicipioEstrangeiro>
+
+* New Features
+  * [AUT-174] Create a screen to fill in students' data
+  * [AUT-300] Allow XML sending after version change
+
+<a name="v2-9-5" />
+### 2.9.5 (2023-04-18)
+
+* Bug fixes
+  * [AUT-318] Fix validation of the select version field on issue creation
+
+<a name="v2-9-4" />
+### 2.9.4 (2023-04-17)
+
+* Improvements
+  * [AUT-317] Update Signer API package version
+
+<a name="v2-9-3" />
+### 2.9.3 (2023-04-03)
+
+* Improvements
+  * [AUT-314] Validate the dispatch date according to the version
+
+<a name="v2-9-2" />
+### 2.9.2 (2023-03-21)
+
+* Bug fixes
+  * [AUT-313] Wrong version of the degree by creating degree in the previous version
+
+<a name="v2-9-1" />
+### 2.9.1 (2023-03-20)
+
+* Bug fixes
+  * [AUT-312] Error sending documentation manually to the instance of the previous version
+
+<a name="v2-9-0" />
+### 2.9.0 (2023-03-17)
+
+* New Features
+  * [AUT-305] Allow the application to accept the version of the degree to be issued
+
+<a name="v2-8-2" />
+### 2.8.2 (2023-03-13)
+
+* Bug fixes
+  * [AUT-308] Fix order of the Internship Grantor information
+  * [AUT-310] No email is sent when the XML of public data is sent to the Signer
+
+* Improvements
+  * [AUT-306] Fix start date of degree version
+  * [AUT-307] Fix JSON template of academic transcript
+  * [AUT-311] Implement Webhook resend for academic transcript
+
+* New Features
+  * [AUT-309] Create preposition tag with gender in the naturalness of the states in RVDD
+
 <a name="v2-8-1" />
 ### 2.8.1 (2023-02-27)
 
