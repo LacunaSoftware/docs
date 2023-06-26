@@ -259,6 +259,7 @@
 ### [Autenticação Pix](signer/on-premises/pix-authentication.md)
 ### [Zoom](signer/on-premises/zoom.md)
 ### [Integração para administração](signer/on-premises/administration.md)
+### [Monitoramento de consumo](signer/on-premises/consumption-monitoring.md)
 ## [Guia do usuário](signer/user-guide/index.md)
 ### [Geração de documentos](signer/user-guide/gen-docs.md)
 ### [Administração de sistema](signer/user-guide/sys-admin/index.md)
