@@ -132,6 +132,7 @@
 #### [Operando sem db_owner](rest-pki/core/on-premises/unprivileged-db-user.md)
 #### [Criando uma organização](rest-pki/core/on-premises/create-sub.md)
 #### [Verificando a versão instalada](rest-pki/core/on-premises/check-version.md)
+#### [Logs](rest-pki/core/on-premises/logging.md)
 ### [Histórico de versões](rest-pki/core/changelog.md)
 <!-- End of Rest PKI Core submenu -->
 <!-- End of Rest PKI -->

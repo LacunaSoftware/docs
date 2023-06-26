@@ -131,6 +131,7 @@
 #### [Run without db_owner](rest-pki/core/on-premises/unprivileged-db-user.md)
 #### [Creating a subscription](rest-pki/core/on-premises/create-sub.md)
 #### [Checking the installed version](rest-pki/core/on-premises/check-version.md)
+#### [Logging](rest-pki/core/on-premises/logging.md)
 ### [Changelog](rest-pki/core/changelog.md)
 <!-- End of Rest PKI Core submenu -->
 <!-- End of Rest PKI -->
