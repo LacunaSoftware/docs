@@ -2,8 +2,8 @@
 
 As versões do aplicativo móvel têm o formato `MINOR.PATCH(.BUILD)`
 
-* Um incremento no primeiro número significa que há novas funcionalidades
-* Um incremento no segundo número significa que há correções de bugs
+* Um incremento no primeiro número significa que há novas funcionalidades (e, talvez, correções de bugs)
+* Um incremento no segundo número significa que há apenas correções de bugs, mas não novas funcionalidades
 
 O terceiro número significa o número do build e não é documentado neste histórico, embora seja visível nas lojas de aplicativo (geralmente com valor `1000`, que denota o build final).
 
