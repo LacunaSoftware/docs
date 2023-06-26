@@ -1,16 +1,18 @@
 ﻿# Logging - Rest PKI Core
 
-[Rest PKI Core](../index.md) can write logs to several destinations:
+[Rest PKI Core](../index.md) can write logs to the following destinations:
 
 * Standard output (*stdout*)
 * File
 * [Azure Table storage](https://azure.microsoft.com/en-us/products/storage/tables/)
 
-The default destination depends on the platform being used:
+The default destination depends on the platform being used.
 
-* On Docker, logs are written by default to the standard output, which generally means they end up in the orchestrator's logs
-* On Linux, logs are written by the app daemon to the standard output, which are automatically registered in the system log
-* On Azure, logs are written by default to an Azure Table
+Platform | Default log destination
+-------- | -----------------------
+Linux    | Standard output, which are automatically registered in the system log (since the application runs as a daemon)
+Docker   | Standard output, which generally means they end up in the orchestrator's logs
+Azure    | Azure Table
 
 ## Levels
 
@@ -45,7 +47,7 @@ Logging__LogLevel__Default=Information
 ## Categories
 
 Logs are also classified into categories, which may be used to enable logs with a different minimum severity by their category. For instance, to enable logs with severity
-Debug or higher from categories starting with the prefix `Lacuna.RestPki` (see below the revelance of this prefix):
+Debug or higher only from categories starting with the prefix `Lacuna.RestPki` (see below the relevance of this prefix):
 
 ```ini
 [Logging:LogLevel]
@@ -103,6 +105,8 @@ Logging__Console__FormatterName=json
 
 ## Logging to file
 
+To write logs to a file, configure the application as follows:
+
 ```ini
 [Serilog:WriteTo:0]
 Name=File
@@ -139,6 +143,6 @@ Serilog__MinimumLevel__Override__Lacuna.RestPki=Information
 Serilog__MinimumLevel__Override__Microsoft.EntityFrameworkCore.Database=Debug
 ```
 
-Also, the levels `Trace` and `Critical` are named `Verbose` and `Fatal`, respectively.
+Also, the levels `Trace` and `Critical` are named `Verbose` and `Fatal` on this configuration syntax, respectively.
 
 <!-- TODO: document rolling file -->
