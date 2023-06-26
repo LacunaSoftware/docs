@@ -396,6 +396,7 @@
 ### [Run without db_owner](psc/on-premises/unprivileged-db-user.md)
 ### [Checking the installed version](psc/on-premises/check-version.md)
 ## [Changelog](psc/changelog.md)
+## [Mobile App changelog](psc/app-changelog.md)
 <!-- End of PSC -->
 
 <!-- Start of GrantID -->

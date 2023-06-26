@@ -80,6 +80,8 @@ PSC-157 Customizable certificate authorization page
 
 ### Improvements
 
+PSC-104 Error logging and debugging for mobile apps
+
 PSC-149 Update ASP.NET Core to 6.0
 
 PSC-159 Customizable PIN/PUK reminder save options on web issue page

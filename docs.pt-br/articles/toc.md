@@ -396,6 +396,7 @@
 ### [Configuração de redirecionamento para HTTPS](psc/on-premises/configure-https-redirect.md)
 ### [Verificando a versão instalada](psc/on-premises/check-version.md)
 ## [Histórico de versões](psc/changelog.md)
+## [Histórico de versões do app](psc/app-changelog.md)
 <!-- End of PSC -->
 
 <!-- Start of GrantID -->
