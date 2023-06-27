@@ -85,6 +85,8 @@ PSC-157 Personalização da tela de autorização de uso de certificado
 
 PSC-104 Log de erros e depuração do mobile
 
+PSC-117 Arrumar suíte de testes e atualização do OpenIddict
+
 PSC-149 Atualizar ASP.NET Core para 6.0
 
 PSC-159 Configuração de opções disponíveis para salvar lembrete de PIN/PUK na emissão sem app
