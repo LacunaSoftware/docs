@@ -35,7 +35,7 @@ Select one of the use cases below
 
 * [Remove user from organization](#remove-user-from-organization)
 
-Those and other operations are specified in the [Postman](https://www.postman.com/) file [available here](https://cdn.lacunasoftware.com/signer/docs/Signer%20ADM-4.postman_collection.json).
+Those and other operations are specified in the [Postman](https://www.postman.com/) file [available here](https://cdn.lacunasoftware.com/signer/docs/Signer%20ADM-5.postman_collection.json).
 
 ### List users
 

@@ -39,7 +39,7 @@ Escolha um dos casos de uso abaixo:
 
 * [Remover usuário de uma organização](#remover-usuário-de-uma-organização)
 
-Essas e outras operações estão exemplificadas no arquivo [Postman](https://www.postman.com/) a seguir: [Signer ADM APIs](https://cdn.lacunasoftware.com/signer/docs/Signer%20ADM-4.postman_collection.json).
+Essas e outras operações estão exemplificadas no arquivo [Postman](https://www.postman.com/) a seguir: [Signer ADM APIs](https://cdn.lacunasoftware.com/signer/docs/Signer%20ADM-5.postman_collection.json).
 
 ### Listar usuários
 
