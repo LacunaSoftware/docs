@@ -1,8 +1,37 @@
 ﻿# Rest PKI Core changelog
 
 <a name="vnext" />
-<a name="v2.0.0" />
-## 2.0.0 (upcoming version)
+<a name="v2.0.0-rc08" />
+## 2.0.0 RC 8 (2023-06-30)
+
+> [!WARNING]
+> Before updating to this version make sure your PKI SDK license supports versions released up to 2023-06-27.
+
+Updates database model: no
+
+### Improvements
+
+RPNG-192 Add setting `General:ReturnExceptionsToApplications` to return exceptions on error responses when the API is being called by an application
+
+### Bug fixes
+
+RPNG-191 Property `Detail` is not filled on 422 responses
+
+RPNG-193 PDFs signed with legacy signature standard \(non-PAdES\) cause error on signature exploration API
+
+RPNG-194 Password-protected PDFs cause error 500 \(should cause 422 with code `ProtectedPdfError`\)
+
+RPNG-195 Corrupt PDFs cause error 500 \(should cause 422 with code `InvalidPdf`\)
+
+RPNG-196 Error *Wrong last certificate on Pades signature*
+
+
+
+<a name="v2.0.0-rc07" />
+## 2.0.0 RC 7 (2023-05-30)
+
+> [!WARNING]
+> Before updating to this version make sure your PKI SDK license supports versions released up to 2022-10-19.
 
 Updates database model: **yes**
 
@@ -20,6 +49,7 @@ RPNG-177 Add support for signature policies
 
 RPNG-179 Automatically add attribute certificates to signatures
 
+RPNG-183 Add suport for legacy certificate validation API
 
 ### Bug fixes
 

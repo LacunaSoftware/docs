@@ -1,28 +1,59 @@
 ﻿# Histórico de versões - Rest PKI Core
 
 <a name="vnext" />
-<a name="v2.0.0" />
-## 2.0.0 (próxima versão)
+<a name="v2.0.0-rc08" />
+## 2.0.0 RC 8 (2023-06-30)
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença do PKI SDK suporta versões lançadas até 2023-06-27.
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-192 Criar configuração para retornar exceções nas respostas de erro quando a API tiver sido chamada por uma aplicação
+
+### Correções de bugs
+
+RPNG-191 Respostas 422 não preenchem propriedade Detail
+
+RPNG-193 PDFs assinados com padrão antigo \(não-PAdES\) causam erro nas APIs de abertura de assinatura
+
+RPNG-194 PDFs protegidos por senha causam erro 500 \(deveriam causar 422 com código ProtectedPdfError\)
+
+RPNG-195 PDFs corrompidos causam erro 500 \(deveriam causar 422 com código InvalidPdf\)
+
+RPNG-196 Erro "Wrong last certificate on Pades signature"
+
+
+
+<a name="v2.0.0-rc07" />
+## 2.0.0 RC 7 (2023-05-30)
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença do PKI SDK suporta versões lançadas até 2022-10-19.
 
 Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
 
-RPNG-155 Adicionar suporte às APIs de autenticação legadas
+RPNG-155 Adicionar suporte às APIs de autenticação antigas
 
-RPNG-159 Adicionar suporte às APIs de assinatura de PDF legadas
+RPNG-159 Adicionar suporte às APIs de assinatura de PDF antigas
 
-RPNG-161 Adicionar suporte às APIs de assinatura de XML legadas
+RPNG-161 Adicionar suporte às APIs de assinatura de XML antigas
 
-RPNG-162 Adicionar suporte às APIs de *PDF marking* legadas
+RPNG-162 Adicionar suporte às APIs de PdfMarking antigas
 
 RPNG-177 Adicionar suporte a políticas de assinatura
 
 RPNG-179 Agregar certificado de atributo automaticamente a assinaturas
 
+RPNG-183 Adicionar suporte à API de validação de certificados legada
+
 ### Correções de bugs
 
-RPNG-180 Assinatura com certificado em nuvem parou de funcionar após atualização para SPA 2.6 (v1.13.0)
+RPNG-180 Assinatura com certificado em nuvem parou de funcionar após atualização para SPA 2.6 \(v1.13.0\)
 
 
 

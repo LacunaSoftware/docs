@@ -6,7 +6,7 @@ Create the site folder, download and extract the binaries:
 
 > [!NOTE]
 > To test the [next version](../../../changelog.md#vnext) of Rest PKI Core, currently in Release Candidate stage, replace `restpkicore-x.y.z.tar.gz` on the following commands
-> with `restpkicore-2.0.0-rc05.tar.gz`. **Beware**: Release Candidate versions are not production-ready and thus should only be installed on staging or test environments!
+> with `restpkicore-2.0.0-rc08.tar.gz`. **Beware**: Release Candidate versions are not production-ready and thus should only be installed on staging or test environments!
 
 [!include[Copy files](../../../../../../../includes/rest-pki/core/linux/copy-files.md)]
 
