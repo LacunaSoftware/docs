@@ -24,7 +24,7 @@ isso, caso deseje realizar conferências simultâneas, é importante ter mais de
 <a name="credentials" />
 ## Obtenção de credenciais
 
-Para habilitar a integração no assinador é preciso obter uma credencial JWT que permite que o Assinador chame as APIs do Zoom.
+Para habilitar a integração no assinador é preciso obter uma credencial que permite que o Assinador chame as APIs do Zoom.
 Para isso siga o procedimento abaixo:
 
 1. Após fazer o login na sua conta, acesse [https://marketplace.zoom.us/](https://marketplace.zoom.us/);
@@ -53,6 +53,7 @@ Para isso siga o procedimento abaixo:
 1. Selecione o painel `App Credentials`;
 1. Copie as informações necessárias para a integração: `AccountId`, `ClientId`, e `ClientSecret`.
 ![Zoom S2S App Credentials](../images/zoom-credentials.png)
+
 <a name="operation" />
 ## Funcionamento
 
