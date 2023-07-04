@@ -427,7 +427,11 @@ Under section **NFEio**:
 Under section **Zoom**:
 
 * **Enabled**: if `true`, enables the Zoom video conferences integration.
-* **JwtToken**: the Zoom's JWT authentication token.
+* **JwtToken** (deprecated as of v1.59.0): the Zoom's JWT authentication token. Use Server to Server authentication by setting `AccountId`, `ClientId` and `ClientSecret` instead.
+* **AccountId** (v1.59.0): your Zoom account ID. Required for Server To Server authentication.
+* **ClientId** (v1.59.0): your Zoom client ID. Required for Server To Server authentication.
+* **ClientSecret** (v1.59.0): your Zoom client Secret. Required for Server To Server authentication.
+
 
 ###  *Datavalid* Settings (v1.32.0)
 
