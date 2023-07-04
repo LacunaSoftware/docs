@@ -1,8 +1,23 @@
 ﻿# Histórico de versões do Signer
 
-> [!NOTE]
-> Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
-> trabalhando para documentar as versões mais antigas.
+<a name="v1-59-0" />
+### 1.59.0 (2023-07-03)
+
+* Melhorias
+  * [SIG-1092] Adicionar tema djp (deep-jungle-princeton)
+  * [SIG-1096] Trocar autenticação com Zoom para Server to Server ao invés de JWT
+
+* Correções de bugs
+  * [SIG-1067] Edição de fluxo não exibe telefone do participante
+  * [SIG-1103] Adicionar a possibilidade de usar um fuso horário diferente do IdentifierHandler
+  * [SIG-1105] No Dashboard a visualização da quantidade de documentos pendentes está incluindo os recusados
+  * [SIG-1110] PDF assinado com Validation Stamp apresenta erros na validação do Adobe Reader
+
+Atualiza modelo do banco de dados: não
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2023-06-28.
+> Se você utiliza a integração com o Zoom, configure as credenciais Server to Server antes de atualizar.
 
 <a name="v1-58-3" />
 ### 1.58.3 (2023-06-19)

@@ -1,8 +1,23 @@
 ﻿# Signer changelog
 
-> [!NOTE]
-> This version history currently contains only the most recent changes to the application. We are working on
-> documenting older versions.
+<a name="v1-59-0" />
+### 1.59.0 (2023-07-03)
+
+* Improvements
+  * [SIG-1092] Add djp (deep-jungle-princeton) theme
+  * [SIG-1096] Update Zoom authentication to Server to Server instead of JWT
+
+* Bug fixes
+  * [SIG-1067] Participant phone number is not displayed when editing document flow
+  * [SIG-1103] Add settings to allow use of time zone that is different from the defined by the IdentifierHandler
+  * [SIG-1105] Number of pending documents is including refused documents in the dashboard
+  * [SIG-1110] Signed PDF with Validation Stamp displays errors in Adobe Reader validation
+
+Updates database model: no
+
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released until 2023-06-28.
+> If you use Zoom integration, configure Server to Server credentials before updating.
 
 <a name="v1-58-3" />
 ### 1.58.3 (2023-06-19)
