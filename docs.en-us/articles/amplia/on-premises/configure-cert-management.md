@@ -23,6 +23,8 @@ This feature is configured through the **CertificateManagement** section, having
   * **MaxFailedAttempts**: maximum failed attempts before OTP authentication is locked out. Defaults to `5`
   * **LockPermanently**: whether the OTP lockout should be permanent. Defaults to `False`
   * **InitialLockPeriodMinutes**: if the lockout is not permanent, defines the duration of the first lockout period, in minutes (each subsequent lockout lasts twice as long as the previous lockout). Defaults to `1`
+  * **NewClientsStepSeconds**: step in seconds for newly generated clients. Defaults to `15`
+  * **VerificationWindow**: verification window size (in both directions). Defaults to `1`
 * **SmsAuth**: SMS authentication options
   * **MaxFailedAttempts**: maximum failed attempts before SMS authentication is locked out. Defaults to `5`
   * **LockPermanently**: whether the SMS lockout should be permanent. Defaults to `False`
