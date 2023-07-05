@@ -2,6 +2,28 @@
 
 <!--<a name="vnext" />-->
 
+<a name="4-5-2" />
+## 4.5.2 (2023-07-05)
+
+Updates database model: no
+
+### Bug fixes
+
+AMP-310 OTP authentication date queries are not forwarded to Dinamo key stores (introduced on [v4.4.0](#4-4-0))
+
+
+
+<a name="4-5-1" />
+## 4.5.1 (2023-06-29)
+
+Updates database model: no
+
+### Bug fixes
+
+AMP-309 Empty strings on SubjectName cause error when issuing the certificate \(SSL and Custom certificates\)
+
+
+
 <a name="4-5-0" />
 ## 4.5.0 (2023-06-14)
 

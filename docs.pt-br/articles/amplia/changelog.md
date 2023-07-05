@@ -2,6 +2,29 @@
 
 <!--<a name="vnext" />-->
 
+
+<a name="4-5-2" />
+## 4.5.2 (2023-07-05)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+AMP-310 Consulta de horário OTP não está sendo repassada a key stores Dinamo (introduzido na [v4.4.0](#4-4-0))
+
+
+
+<a name="4-5-1" />
+## 4.5.1 (2023-06-29)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+AMP-309 Campos com string vazia no SubjectName causam erro na emissão do certificado \(certificados SSL e Custom\)
+
+
+
 <a name="4-5-0" />
 ## 4.5.0 (2023-06-14)
 
