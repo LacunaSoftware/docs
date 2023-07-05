@@ -16,7 +16,7 @@ Antes de começar, obtenha o pacote de binários:
 
 <br />
 <center>
-**[Pacote de binários do Amplia 4.5.0](https://cdn.lacunasoftware.com/amplia/amplia-4.5.0.zip)**
+**[Pacote de binários do Amplia 4.5.2](https://cdn.lacunasoftware.com/amplia/amplia-4.5.2.zip)**
 </center>
 <br />
 
