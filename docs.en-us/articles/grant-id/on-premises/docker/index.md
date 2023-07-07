@@ -10,11 +10,11 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The currently recommended image is `lacunasoftware/grantid:4.2`
+The currently recommended image is `lacunasoftware/grantid:4.5`
 
 Available moving tags:
 
-* Tag `4.2` points to the latest 4.2.x image **(currently recommended)**
+* Tag `4.5` points to the latest 4.5.x image **(currently recommended)**
 * Tag `4` points to the lastest 4.x image
 * Tag `stable` points to the latest stable image
 
