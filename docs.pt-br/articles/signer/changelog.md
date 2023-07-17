@@ -1,5 +1,23 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-60-0" />
+### 1.60.0 (2023-07-17)
+
+* Novas funcionalidades
+  * [SIG-1112] Exibir versão original no documento para a assinatura quando o Manifesto Simplificado estiver ativado
+
+* Melhorias
+  * [SIG-1051] Adicionar informação sobre envelope no relatório gerado da organização
+  * [SIG-1117] Diminuir impacto ao sistema quando um usuário é adicionado em organização com muitos documentos
+  * [SIG-1119] Alterar o tamanho máximo do identifier dos usuários
+
+* Correções de bugs
+  * [SIG-1113] Erro ao assinar em uma assinatura embutida com rubrica pré posicionada
+  * [SIG-1115] Ao utilizar NotifyParticipantsDefaultValue em assinatura eletrônica, o checkbox está vindo selecionado
+  * [SIG-1118] Quando um documento é excluído, os lembretes cadastrados não são removidos.
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-59-0" />
 ### 1.59.0 (2023-07-03)
 

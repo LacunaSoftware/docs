@@ -155,6 +155,9 @@ end of the day in the configured default timezone. This option should only be us
 * **ShortSiteName** (v1.56.0): a short name to reference the application in messages that have a small amount of allowed characters (such as SMS messages). Should be a shorter
 version of the `SiteName` setting.
 
+* **UpdateSubscriptionAccessTimeoutDelayInSeconds** (v1.60.0, default: `60`): timeout to reschedule update subscription access jobs if there is already one job of same type running.
+If set to `0` disables this behavior.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -292,6 +295,10 @@ beeing edited since the manifest will only contain the participants added when t
 
 * **EnableEditFlow** (v1.17.0): if `true` allows small changes to document flow after submission even if **AddSimplifiedManifest** is also `true`. The changes allowed are:
 adding/removing observers and updating participant emails (if allowed by other settings).
+
+* **AllowOriginalFileDownload** (v1.60.0, default: `true`): if `true` downloads the original version of a document without any of the validation stamp marks.
+* **DisplayOriginalFileWhileDocumentNotConcluded** (v1.60.0): if `true` displays the original document when viewing document preview or signing documents (as long as they 
+are not concluded). For this option to work properly, `AllowOriginalFileDownload` needs to be enabled as well.
 
 ###  *PrinterFriendly* Settings
 

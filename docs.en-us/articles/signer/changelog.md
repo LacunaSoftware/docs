@@ -1,5 +1,23 @@
 ﻿# Signer changelog
 
+<a name="v1-60-0" />
+### 1.60.0 (2023-07-17)
+
+* New Features
+  * [SIG-1112] Display document original version when signing documents if Simplified Manifest is enabled
+
+* Improvements
+  * [SIG-1051] Add envelope information in the organization documents report
+  * [SIG-1117] Decrease performance impact of adding user into organization with large number of documents
+  * [SIG-1119] Update the maximum length of user identifiers
+
+* Bug fixes
+  * [SIG-1113] Error signing with embedded signature when there are pre-positioned signature initials
+  * [SIG-1115] Checkbox always comes selected even when setting the NotifyParticipantsDefaultValue options
+  * [SIG-1118] Reminders are not being removed when a document is deleted
+
+Updates database model: yes
+
 <a name="v1-59-0" />
 ### 1.59.0 (2023-07-03)
 
