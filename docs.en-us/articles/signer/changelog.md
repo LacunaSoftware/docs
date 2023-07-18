@@ -10,6 +10,7 @@
   * [SIG-1051] Add envelope information in the organization documents report
   * [SIG-1117] Decrease performance impact of adding user into organization with large number of documents
   * [SIG-1119] Update the maximum length of user identifiers
+  * [SIG-1068] Permission description in the folder user profiles
 
 * Bug fixes
   * [SIG-1113] Error signing with embedded signature when there are pre-positioned signature initials

@@ -10,6 +10,7 @@
   * [SIG-1051] Adicionar informação sobre envelope no relatório gerado da organização
   * [SIG-1117] Diminuir impacto ao sistema quando um usuário é adicionado em organização com muitos documentos
   * [SIG-1119] Alterar o tamanho máximo do identifier dos usuários
+  * [SIG-1068] Descritivo das permissões dos perfis nas pastas
 
 * Correções de bugs
   * [SIG-1113] Erro ao assinar em uma assinatura embutida com rubrica pré posicionada
