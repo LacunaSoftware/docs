@@ -9,7 +9,7 @@ Follow these steps to install an [on-premises](../index.md) instance of [GrantID
 
 ## Prerequisites
 
-* Ubuntu Server version 22.04, 20.04, 18.04 or 16.04
+* Ubuntu Server (any version currently in support by vendor, latest LTS version recommended)
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 

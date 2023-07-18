@@ -8,11 +8,11 @@ To install an instance [*on premises*](../index.md) from [Signer](../../index.md
 
 ## Prerequisites
 
-* Ubuntu x64 version 16.04, 18.04 ou 19.04
+* Ubuntu Server (any version currently in support by vendor, latest LTS version recommended)
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-31.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
 
 ## Install Signer
 
@@ -22,7 +22,7 @@ To install an instance [*on premises*](../index.md) from [Signer](../../index.md
 
 [!include[Install Nginx](../../../includes/linux/ubuntu/install-nginx.md)]
 
-Create a configuration file for the Amplia website:
+Create a configuration file for the Signer website:
 
 [!include[Create site](../../../../../includes/signer/ubuntu/create-site.md)]
 

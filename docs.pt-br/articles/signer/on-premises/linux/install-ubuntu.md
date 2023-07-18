@@ -8,7 +8,7 @@ Para instalar uma instância [*on premises*](../index.md) do [Signer](../../inde
 
 ## Pré-requisitos
 
-* Ubuntu x64 versão 16.04, 18.04 ou 19.04
+* Ubuntu Server (qualquer versão ainda suportada pelo fabricante, recomendamos a versão LTS mais recente)
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
@@ -22,7 +22,7 @@ Para instalar uma instância [*on premises*](../index.md) do [Signer](../../inde
 
 [!include[Install Nginx](../../../includes/linux/ubuntu/install-nginx.md)]
 
-Crie um arquivo de configuração para o site do Amplia:
+Crie um arquivo de configuração para o site do Signer:
 
 [!include[Create site](../../../../../includes/signer/ubuntu/create-site.md)]
 

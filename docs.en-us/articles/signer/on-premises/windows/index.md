@@ -27,7 +27,7 @@ If you need help preparing the database, [click here](../prepare-database.md).
 ## Installation
 
 1. Install IIS
-1. Install .NET Core Hosting Runtime https://aka.ms/dotnetcore-3-1-windowshosting
+1. Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.20-windows-hosting-bundle-installer" target="_blank">NET 6.0 Hosting Bundle</a>
 1. Create folder for IIS site. Example: `C:\inetpub\Signer`
 1. Create folder for logs. Example: `C:\Logs`
 1. Create site on IIS

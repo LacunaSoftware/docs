@@ -20,7 +20,7 @@
 ## .NET Core Setup
 
 1. Download and install the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145" target="_blank">Microsoft Visual C++ 2015 Redistributable package</a>
-1. Download and install the <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.13-windows-hosting-bundle-installer" target="_blank">NET 6.0 Hosting Bundle</a>.
+1. Download and install the <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.20-windows-hosting-bundle-installer" target="_blank">NET 6.0 Hosting Bundle</a>.
 If a install option is not displayed, choose the repair option instead.
 1. (Only for Windows Server 2012 or lower) Download and install the <a href="https://go.microsoft.com/fwlink/?linkid=839516" target="_blank">Windows Management Framework (WMF) 5.1</a>
 
