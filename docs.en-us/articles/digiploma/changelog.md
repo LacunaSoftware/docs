@@ -4,6 +4,37 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-12-1" />
+### 2.12.1 (2023-07-17)
+
+* Melhorias
+    * [AUT-343] Inform user that institute with that code already exists when registering new institute
+    * [AUT-345] Improve the way to get the issue date and registration for issuer inspection file
+
+* Correções de bugs
+    * [AUT-341] Institute information does not appear on the screen when editing it
+    * [AUT-342] Institute form with conditional fields does not load when changing the type of institute
+    * [AUT-344] Type of the Institute is not displayed correctly when listing them
+
+<a name="v2-12-0" />
+### 2.12.0 (2023-07-13)
+
+* Novas funcionalidades
+    * [AUT-273] Implement cancellation list
+    * [AUT-274] Implement inspection file
+
+<a name="v2-11-2" />
+### 2.11.2 (2023-07-05)
+
+* Correções de bugs
+    * [AUT-340] Degree concluded webhook is not sent
+
+<a name="v2-11-1" />
+### 2.11.1 (2023-07-05)
+
+* Correções de bugs
+    * [AUT-339] It is not possible to cancel the registration after they have canceled the degree on the side of the Issuer
+
 <a name="v2-11-0" />
 ### 2.11.0 (2023-06-20)
 

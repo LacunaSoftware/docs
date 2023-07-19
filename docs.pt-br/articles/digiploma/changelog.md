@@ -4,6 +4,37 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-12-1" />
+### 2.12.1 (2023-07-17)
+
+* Melhorias
+    * [AUT-343] Informar ao usuário que já existe instituição com aquele código ao cadastrar nova instituição
+    * [AUT-345] Melhorar a forma de pegar a data de emissão e registro para fiscalização do tipo emissora
+
+* Correções de bugs
+    * [AUT-341] Informações da instituição não aparecem na tela ao editar as informações
+    * [AUT-342] Formulário com campos condicionais não carrega ao alterar o tipo de instituição
+    * [AUT-344] Tipo da instituição não é apresentado corretamente ao listá-las
+
+<a name="v2-12-0" />
+### 2.12.0 (2023-07-13)
+
+* Novas funcionalidades
+    * [AUT-273] Implementar diplomas anulados
+    * [AUT-274] Implementar arquivos de fiscalização
+
+<a name="v2-11-2" />
+### 2.11.2 (2023-07-05)
+
+* Correções de bugs
+    * [AUT-340] Não é enviado webhook de conclusão de diploma
+
+<a name="v2-11-1" />
+### 2.11.1 (2023-07-05)
+
+* Correções de bugs
+    * [AUT-339] Não é possível anular registro após anularem o diploma no lado da Emissora
+
 <a name="v2-11-0" />
 ### 2.11.0 (2023-06-20)
 
