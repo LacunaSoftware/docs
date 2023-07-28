@@ -1,9 +1,34 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-15-0" />
+### 2.15.0 (2023-07-28)
+
+- \[PKI-102\] Add X509Extension option on CSR generation 
+- \[PKI-102\] Add IssuingDistributionPoint option to X509Extension generation
+- \[PKI-107\] Add global TimeZoneInfo configuration for DateTimeOffset strings
+- \[PKI-101\] Improve CRLs and Certificates Set decoding performance
+- \[PKI-101\] Improve CAdES co-signatures performance
+- \[PKI-108\] Improve PAdES RangeBytes value validation
+
+
+<a name="v2-14-0-rc01" />
+### 2.14.0-rc01 (2023-07-28)
+
+- \[PKI-100\] Add Qualified Certificate Statements extension decoding and generation
+- \[PKI-100\] Add X509 Name OrganizationIdentifier element
+- \[PKI-100\] Improve Name generation from OIDs and Values list
+
+
+<a name="v2-13-2" />
+### 2.13.2 (2023-06-29)
+
+- \[PKI-104\] Fix PdfMarks (Adobe wrongly checking signature when PdfMarked post signed with LTV enabled)
+
+
 <a name="v2-13-1" />
 ### 2.13.1 (2023-05-03)
 
-- Improve PDF DocTimeStamp message-imprint validation
+- \[PKI-103\] Improve PDF DocTimeStamp message-imprint validation
 
 
 <a name="v2-13-0" />
