@@ -1,7 +1,7 @@
 ```json
 {
 	"require": {
-		"lacuna/pki-express": "^1.13.1"
+		"lacuna/pki-express": "^1.15.1"
 	}
 }
 ```
