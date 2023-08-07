@@ -1,5 +1,28 @@
 ﻿# Signer changelog
 
+<a name="v1-61-1" />
+### 1.61.1 (2023-08-04)
+
+* Bug fixes
+  * [SIG-1130] Cannot edit participant e-mail while updating document flow
+
+Updates database model: no
+
+<a name="v1-61-0" />
+### 1.61.0 (2023-08-02)
+
+* Improvements
+  * [SIG-974] Allow adding participants after document flow is concluded
+  * [SIG-1037] Consider envelope as document for billing purposes (if there is no specific price defined for envelope in the plan)
+  * [SIG-1120] Save notification content in Storage instead of database
+  * [SIG-1127] Make NotifyPendingActionsIndividually work for approvers
+
+* Bug fixes
+  * [SIG-996] Signature reminder does not work for actions added when editing document flow
+  * [SIG-1126] Error displaying details of document that has attachment sent by user that is not a flow participant
+
+Updates database model: no
+
 <a name="v1-60-0" />
 ### 1.60.0 (2023-07-17)
 

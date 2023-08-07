@@ -1,5 +1,28 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-61-1" />
+### 1.61.1 (2023-08-04)
+
+* Correções de bugs
+  * [SIG-1130] Não está sendo possível editar o email de um participante no fluxo.
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-61-0" />
+### 1.61.0 (2023-08-02)
+
+* Melhorias
+  * [SIG-974] Permitir adicionar participantes no fluxo após o documento concluído
+  * [SIG-1037] Considerar envelope como documento para fins de cobrança se não existir um valor definido para envelopes
+  * [SIG-1120] Salvar conteúdo das notificações no Storage ao invés do banco de dados
+  * [SIG-1127] Fazer com que configuração NotifyPendingActionsIndividually funcione também para aprovadores
+
+* Correções de bugs
+  * [SIG-996] Lembrete de assinatura não funciona para ações adicionadas na edição de fluxo
+  * [SIG-1126] Erro ao exibir detalhes de documento que tem anexo enviado por usuário que não participa do fluxo do documento
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-60-0" />
 ### 1.60.0 (2023-07-17)
 
