@@ -23,6 +23,10 @@ Updates database model: no
 
 Updates database model: no
 
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released until 2023-08-01.
+> This versions marks the start of the notifications content migration from the database to the configured Blob Storage.
+
 <a name="v1-60-0" />
 ### 1.60.0 (2023-07-17)
 

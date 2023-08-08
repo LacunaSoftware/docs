@@ -23,6 +23,10 @@ Atualiza modelo do banco de dados: não
 
 Atualiza modelo do banco de dados: não
 
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2023-08-01.
+> Esta versão marca o início da migração do conteúdo das notificações do banco de dados para o Blob Storage configurado.
+
 <a name="v1-60-0" />
 ### 1.60.0 (2023-07-17)
 
