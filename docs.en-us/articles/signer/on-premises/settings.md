@@ -170,6 +170,7 @@ or organization.
 organization will be free of charge (the creation date of the organization is considered as the start date).
 * **EnableBillingPlanHiring** (v1.53.0): if `true` users will be able to choose and hire billing plans. If enabled a payment gateway must be configured. 
 * **MaxNumberOfAvailablePlansDisplayed** (default: `20`, v1.53.0): the maximum number of billing plans displayed in the hire billing plans page.
+* **AllowBasicUsersToViewOrganizationBillingInformation** (v1.62.0): if `true` basic users will be able to view invoices and billing information of an organization. 
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
@@ -266,7 +267,7 @@ manually selects a position while signing.
 
 * **TextVerticalMarginMultiplier** (default: `1.0`, v1.37.0): defines the text's vertical margin by multiplying the provided number with 1% of the signature height.
 * **TextHorizontalMarginMultiplier** (default: `1.0`, v1.37.0): defines the text's horizontal margin by multiplying the provided number with 1% of the signature width.
-
+* **EnableSignaturePositionConfirmation** (v1.62.0): if `true` displays a dialog asking for confirmation when a user positions a signature.
 
 ###  *ValidationStamp* Settings (v1.7.0)
 
