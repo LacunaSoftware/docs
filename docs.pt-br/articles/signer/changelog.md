@@ -1,5 +1,23 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-62-0" />
+### 1.62.0 (2023-08-10)
+
+* Novas funcionalidades
+  * [SIG-1085] Adição de campo para pesquisar por documentos em Eventos e tela de eventos da Organização
+  * [SIG-1121] Ao posicionar assinatura confirmar o posicionamento por meio de um pop-up
+
+* Melhorias
+  * [SIG-747] Perfil intermediário entre Básico e Gerente na Organização
+  * [SIG-872] Usuários básico não deve visualizar faturas ou informações administrativas da organização
+  * [SIG-1091] Enviar anexos no Gerar Documentos
+  * [SIG-1125] Melhorar busca de políticas de assinatura ICP Brasil na validação de documentos
+
+* Correções de bugs
+  * [SIG-1133] Rubrica dos usuários aparece com string "undefined"
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-61-1" />
 ### 1.61.1 (2023-08-04)
 

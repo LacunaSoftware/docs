@@ -1,5 +1,23 @@
 ﻿# Signer changelog
 
+<a name="v1-62-0" />
+### 1.62.0 (2023-08-10)
+
+* New Features
+  * [SIG-1085] Add input to search for documents in Events page and create organization events page
+  * [SIG-1121] Confirm signature positioning with a dialog
+
+* Improvements
+  * [SIG-747] Intermediate profile between basic and manager in organization
+  * [SIG-872] Basic users should not view organization invoices and billing information
+  * [SIG-1091] Send attachments in Generate Documents page
+  * [SIG-1125] Improve search of ICP Brasil signature policies when validating documents
+
+* Bug fixes
+  * [SIG-1133] Signature initials displays a "undefined" string
+
+Updates database model: no
+
 <a name="v1-61-1" />
 ### 1.61.1 (2023-08-04)
 
