@@ -1,8 +1,22 @@
 ﻿# Histórico de versões do Lacuna PSC
 
-<a name="vnext" />
+<!--<a name="vnext" />-->
+
+<a name="v1-2-1" />
+## 1.2.1 (2023-07-11)
+
+### Melhorias
+
+PSC-192 Política de privacidade em formato HTML
+
+
+
 <a name="v1-2-0" />
-## 1.2.0 (próxima versão)
+## 1.2.0 (2023-07-11)
+
+Versão idêntica a: 1.2.0 RC 3
+
+Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
 

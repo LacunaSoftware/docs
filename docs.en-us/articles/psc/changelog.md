@@ -1,8 +1,24 @@
 ﻿# Lacuna PSC changelog
 
-<a name="vnext" />
+<!--<a name="vnext" />-->
+
+<a name="v1-2-1" />
+## 1.2.1 (2023-07-11)
+
+Updates database model: no
+
+### Improvements
+
+PSC-192 Privacy policy in HTML format
+
+
+
 <a name="v1-2-0" />
-## 1.2.0 (next version)
+## 1.2.0 (2023-07-11)
+
+Identical to: 1.2.0 RC 3
+
+Updates database model: **yes**
 
 ### New Features
 
@@ -21,6 +37,8 @@ PSC-180 Add support for storing blobs on a database
 
 Identical to: 1.1.2 RC 1
 
+Updates database model: no
+
 ### New Features
 
 PSC-181 Mechanism to force old apps to update
@@ -32,6 +50,7 @@ PSC-176 Agreement URL should point back to PSC, not to Amplia
 PSC-185 Metadata conversion from Amplia without the wanted locale results in error
 
 PSC-186 Issues on issue page when link is generated with formatted order number (occurs since Amplia Reg 2.0.0)
+
 
 
 <a name="v1-1-1" />
