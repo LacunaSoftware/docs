@@ -11,8 +11,8 @@ Under section **General**:
 * **AutoUpdateDatabase**: by default, the application tries to perform model changes to the database after an update (when needed). Set to `false` if the application does not have owner permissions over the database.
 * **SupportEmailAddress**: the support email address (used on the footer of outgoing emails).
 
-* **PersonalAccountsEnabled**: if `true`, any user that logs/registers in the website may use the application and create documents in his personal account. If `false`, users will only be 
-able to use the logged user area if they are added previously in an organization.
+* **PersonalAccountsEnabled** (deprecated v1.63.0): if `true`, any user that logs/registers in the website may use the application and create documents in his personal account. If `false`, users will only be 
+able to use the logged user area if they are added previously in an organization. Please use the [Access Control settings](#access-control-settings) instead as this option is now deprecated.
 * **AccessRequestEmailAddress** (v1.38.0): the e-mail address to send access requests to (if personal accounts are not enabled). If set, when a user sees the "No access" 
 screen, there will be a button that allows him to request access to the system. The e-mail address configure will receive the name and email of the user who requested 
 the access.
@@ -158,6 +158,12 @@ version of the `SiteName` setting.
 * **UpdateSubscriptionAccessTimeoutDelayInSeconds** (v1.60.0, default: `60`): timeout to reschedule update subscription access jobs if there is already one job of same type running.
 If set to `0` disables this behavior.
 
+* **DisableOrganizationRenameByNonInstanceAdmin** (v1.63.0): if `true` organization administrators will not be able to update organization info such as name and identifier. 
+Only instance administrators will be able to perform such actions.
+
+* **EnableSignatureValidationWhenGeneratingManifest** (v1.63.0): if `true`, whenever a signature manifest is generated, the associated signed document will have its signatures
+validated. This is disabled by default because of performance implications.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -279,6 +285,8 @@ created and where it's signatures can be validated. This is a recommended option
 * **AddSimplifiedManifest** (v1.10.1): if `true`, adds a simplified manifest as the last page of a document. It will also prevent document flows from 
 beeing edited since the manifest will only contain the participants added when the document is created.
 
+* **AllowCustomization** (v1.63.0): if `true`, enables organizations to customize the validation stamp.
+
 * **ShowOnBottom**: if `true`, shows the validation stamp at the bottom of every page.
 * **ShowOnRight** (default: `true`): if `true`, shows the validation stamp at the right of every page.
 
@@ -327,6 +335,8 @@ Under section **PrinterFriendly**:
 * **SmallFontSize**: size of the small font in the manifest page in points. The default value is `10`.
 * **LineHeight**: approximated height of a font with the normal font size. The default value is `0.74`.
 * **SmallLineHeight**: approximated height of a font with the small font size. The default value is `0.6`.
+
+* **AllowCustomization** (v1.63.0, default: `true`): if `true`, enables organizations to customize the printer friendly version.
 
 
 ###  *PaymentGateway* Settings (v1.27.0)
@@ -514,6 +524,15 @@ Under section **PushNotification**:
 
 * **Disabled**: if `true` disables push notification sending.
 * **ApiKey**: an API Key for subscription in Lacuna Customer portal that is allowed to send push notifications to the Web PKI App.
+
+<a name="access-control-settings" />
+###  *Access Control* Settings (v1.7.0)
+
+Under section **AccessControl**:
+
+* **IsOpen**: if `true`, any user that logs/registers in the website may use the application and create documents in his personal account. If `false`, users will only be 
+able to use the logged user area if they are added previously in an organization. See [Access Control](access-control.md) for more details.
+* **BlockPersonalAccounts**: if `true` and the access control is open, users may use the application normally but must create or use an organization to perform actions.
 
 ###  *SigningTags* Settings
 
