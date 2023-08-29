@@ -6,29 +6,23 @@ siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
 [!include[Veja o planejamento](../includes/see-planning.md)]
 
 > [!TIP]
-> Para permitir o uso do recurso de certificados SSL gratuitos pelo *App Service Managed Certificates (Preview)*,
+> Para permitir o uso do recurso de certificados SSL gratuitos pelo *App Service Managed Certificates*,
 > sugerimos não escolher "naked domains", ou seja, domínios sem porção de subdomínio, por exemplo ~~patorum.com~~.
 > Prefira, por exemplo, `ac.patorum.com`.
 
 ## Preparação
 
-Antes de começar, obtenha o pacote de binários:
-
-<br />
-<center>
-**[Pacote de binários do Amplia 4.5.3](https://cdn.lacunasoftware.com/amplia/amplia-4.5.3.zip)**
-</center>
-<br />
-
-As instruções a seguir assumem que você já tem os seguintes *resources* criados na sua conta do Azure:
+As instruções a seguir assumem que você já tem instalado localmente o [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) e já possui
+os seguintes *resources* criados na sua conta do Azure:
 
 * Um *SQL Server* (a criação do *SQL database* é coberta por este artigo)
-* Um *App Service Plan* (a criação do App Service é coberta por este artigo)
+* Um *App Service Plan* com sistema operacional **Linux** (a criação do App Service é coberta por este artigo)
 * Zonas de DNS referentes ao [domínio de acesso ao painel de controle](../index.md#dashboard-domain)
   e aos [domínios de acesso](../index.md#access-domains)
 
 Durante a instalação, serão criados alguns *resources*:
 
+* Um *Container Registry*
 * Um banco de dados (*SQL database*)
 * Uma *storage account*
 * Um App Service
@@ -37,11 +31,21 @@ Durante a instalação, serão criados alguns *resources*:
 Sugerimos criar um **resource group** para agrupar os *resources* criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
 realmente é importante é que **todos os resources sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
 
+[!include[Criação do Container registry](../../../includes/azure/create-acr.md)]
+
+Uma vez concluida a criação do *container registry*, replique a imagem de Docker do sistema para ele (substitua `MY_ACR_NAME` pelo nome escolhido
+no passo anterior):
+
+```sh
+az login
+az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.6.0-rc01 --image amplia:4.6.0-rc01
+```
+
 [!include[Criação do banco de dados](../../../includes/azure/create-database.md)]
 
 [!include[Criação de uma storage account](../../../includes/azure/create-storage.md)]
 
-[!include[Criação do App Service](../../../includes/azure/create-webapp-31.md)]
+[!include[Criação do App Service](../../../includes/azure/create-webapp-docker.md)]
 
 ## Configuração de domínios
 
@@ -69,23 +73,12 @@ Após criar os certificados SSL para cada domínio, associe-os aos domínios (re
 
 [!include[Associe o certificado](../../../includes/azure/bind-certificate.md)]
 
-[!include[Cópia dos binários](../../../includes/azure/deploy.md)]
-
 ## Configuração do Amplia
 
-No menu lateral do App Service, na seção *Development Tools*, clique em **Console** ou em **SSH** (apenas uma dessas opções estará disponível, dependendo se o
-*App Service Plan* é em Windows ou em Linux). Você será levado a um terminal. Execute os comandos abaixo, dependendo do tipo do seu *App Service Plan*:
-
-No caso de **Windows**:
-
-```cmd
-cd \home\site\wwwroot
-```
-
-No caso de **Linux**:
+No menu lateral do App Service, na seção *Development Tools*, clique em **SSH**, em seguida em **Go →**. Você será levado a um terminal. Execute:
 
 ```bash
-cd ~/site/wwwroot
+cd /app
 ```
 
 Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados:
@@ -93,9 +86,6 @@ Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar
 ```cmd
 dotnet Lacuna.Amplia.Site.dll -- gen-enc-key
 ```
-
-> [!NOTE]
-> Por ser a primeira execução, o comando pode levar cerca de 1-2 minutos para completar
 
 Tome nota do valor gerado.
 
@@ -110,11 +100,11 @@ Novamente, tome nota do valor gerado.
 Feche o terminal, voltando ao portal do Azure. No App Service, vá em **Configuration** e adicione as seguintes configurações:
 
 * `ASPNETCORE_ENVIRONMENT`: `Azure`
-* `General:EncryptionKey`: chave criptográfica gerada acima
-* `General:RootPasswordHash`: hash da senha de *root* calculado acima
-* `General:SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
-* `General:SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
-* `Oidc:Enabled`: `false` (desabilita a [integração com OpenID Connect](../configure-oidc.md), por ora)
+* `General__EncryptionKey`: chave criptográfica gerada acima
+* `General__RootPasswordHash`: hash da senha de *root* calculado acima
+* `General__SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
+* `General__SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
+* `Oidc__Enabled`: `False` (desabilita a [integração com OpenID Connect](../configure-oidc.md), por ora)
 
 Adicione, também, as configurações descritas nas seções a seguir.
 
@@ -122,30 +112,28 @@ Adicione, também, as configurações descritas nas seções a seguir.
 
 Configure os [domínios de acesso](../index.md#access-domains):
 
-* `Amplia:DefaultAccessDomains:N`: n-ésimo domínio de acesso, ex:
-  * `Amplia:DefaultAccessDomains:0`: `ca.patorum.com`
-  * `Amplia:DefaultAccessDomains:1`: `ca.patorum.org`
+* `Amplia__AccessDomains`: domínios de acesso separados por vírgula, ex: `ca.patorum.com,ca.patorum.org`
 
 ### PKI Suite
 
 Configurações do PKI Suite:
 
-* `PkiSuite:SdkLicense`: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
-* `PkiSuite:WebLicense`: sua licença para o componente Web PKI no formato binário (Base64). Somente obrigatório se usuário vai emitir certificados em seus computadores (procedimento de emissão web)
+* `PkiSuite__SdkLicense`: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
+* `PkiSuite__WebLicense`: sua licença para o componente Web PKI no formato binário (Base64). Somente obrigatório se usuário vai emitir certificados em seus computadores (procedimento de emissão web)
 
 ### Blob Storage
 
 Configuração da *storage account*:
 
-* `BlobStorage:ConnectionString`: *connection string* da *storage account* criada anteriormente
-* `BlobStorage:ContainerName` (opcional): nome do *container* a ser utilizado para armazenar arquivos. Caso omitido, um container denominado *amplia* é utilizado.
+* `BlobStorage__ConnectionString`: *connection string* da *storage account* criada anteriormente
+* `BlobStorage__ContainerName` (opcional): nome do *container* a ser utilizado para armazenar arquivos. Caso omitido, um container denominado *amplia* é utilizado.
 
 ### Logging
 
 Configuração de log:
 
-* `Serilog:WriteTo:0:Args:connectionString`: *connection string* da *storage account* criada anteriormente
-* `Serilog:WriteTo:0:Args:storageTableName` (opcional): nome da tabela a ser utilizada para armazenar os logs. Caso omitido, uma tabela denomiada *AmpliaLog* é utilizada.
+* `Serilog__WriteTo__0__Args__connectionString`: *connection string* da *storage account* criada anteriormente
+* `Serilog__WriteTo__0__Args__storageTableName` (opcional): nome da tabela a ser utilizada para armazenar os logs. Caso omitido, uma tabela denomiada *AmpliaLog* é utilizada.
 
 ### Connection string
 
@@ -153,7 +141,7 @@ Na seção *Connection strings* (final da página de configurações), clique em
 
 * **Name**: `DefaultConnection`
 * **Value**: valor da connection string obtido durante a criação do banco de dados
-* **Type**: escolha **SQLAzure**
+* **Type**: escolha **SQLAzure** ou **PostgreSQL** de acordo com o tipo de banco de dados criado
 
 Salve as configurações feitas até o momento clicando em **Save**.
 
@@ -163,12 +151,12 @@ Conforme explicado na seção [Armazenamento de chaves](../index.md#key-storage)
 armazenar chaves. No Azure, recomendamos armazenar chaves no **Azure Key Vault**. Para tanto, siga as [instruções de configuração](../key-stores/azure.md) usando
 como nome do key store o valor `Azure`. Em seguida, adicione a configuração:
 
-* `Amplia:DefaultKeyStore`: `Azure`
+* `Amplia__DefaultKeyStore`: `Azure`
 
 Outra opção é utilizar o [Armazenamento em banco de dados](../key-stores/database.md). Nesse caso, adicione as seguintes configurações:
 
-* `Amplia:DatabaseKeyStoreEnabled`: `true`
-* `Amplia:DefaultKeyStore`: `Database`
+* `Amplia__DatabaseKeyStoreEnabled`: `True`
+* `Amplia__DefaultKeyStore`: `Database`
 
 [!include[Optional settings](../includes/optional-settings.md)]
 
