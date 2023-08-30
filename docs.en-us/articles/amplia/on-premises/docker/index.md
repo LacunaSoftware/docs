@@ -12,7 +12,7 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The current recommended image is `lacunasoftware/amplia:4.5`
+The current recommended image is `lacunasoftware/amplia:4.6`
 
 Featured image tags:
 
