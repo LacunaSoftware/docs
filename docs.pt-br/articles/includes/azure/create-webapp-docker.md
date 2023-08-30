@@ -26,3 +26,5 @@ Vá em **Configuration** do App Service e adicione as seguintes configurações:
 * `STANDBY`: `True`
 
 Salve as configurações.
+
+Em seguida, vá em **Custom domains** e copie o **Custom Domain Verification ID** (esse valor será necessário mais à frente).

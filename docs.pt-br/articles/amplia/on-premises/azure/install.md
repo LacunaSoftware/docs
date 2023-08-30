@@ -42,7 +42,7 @@ no passo anterior):
 
 ```sh
 az login
-az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.6.0-rc01 --image amplia:4.6.0-rc01
+az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.6.0 --image amplia:4.6.0
 ```
 
 [!include[Criação do banco de dados](../../../includes/azure/create-database.md)]
@@ -67,15 +67,6 @@ Após criar os apontamentos para todos os domínios (de 1 a 3 domínios dependen
 adicione os domínios ao *App Service* (repita o procedimento abaixo para cada domínio):
 
 [!include[Adicione o domínio](../../../includes/azure/add-custom-domain.md)]
-
-Uma vez adicionados os domínios ao App Service, crie um *App Service Managed Certificate* (certificado SSL gratuito ofertado pelo Azure)
-para cada domínio (repita o procedimento abaixo para cada domínio):
-
-[!include[Crie um Managed Certificate](../../../includes/azure/create-managed-certificate.md)]
-
-Após criar os certificados SSL para cada domínio, associe-os aos domínios (repita o procedimento abaixo para cada domínio):
-
-[!include[Associe o certificado](../../../includes/azure/bind-certificate.md)]
 
 ## Configuração do Amplia
 
