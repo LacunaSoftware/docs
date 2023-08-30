@@ -6,6 +6,8 @@ Siga os procedimentos abaixo para criar um *App Service* (você precisa ter um *
 1. Na primeira aba (*Basics*), preencha os dados conforme a sua infraestrutura (seguindo a região escolhida para o sistema)
    * Em *Publish*, escolha **Docker Container**
    * Em *Operating System*, escolha **Linux**
+   * Em *Region*, escolha a região onde está o seu *app service plan*
+   * Em *Linux Plan* , escolha o seu *app service plan*
    * Clique em **Next : Docker &gt;**
 1. Na aba seguinte (*Docker*), preencha:
    * Em *Options*, deixe a opção **Single Container**
@@ -17,3 +19,10 @@ Siga os procedimentos abaixo para criar um *App Service* (você precisa ter um *
 1. Clique em **Create**
 
 Uma vez concluída a criação do App Service, clique em **Go to resource**. Em seguida, tome nota de seu domínio, por exemplo `meu-app-service.azurewebsites.net`.
+
+Vá em **Configuration** do App Service e adicione as seguintes configurações:
+
+* `ASPNETCORE_ENVIRONMENT`: `Azure`
+* `STANDBY`: `True`
+
+Salve as configurações.

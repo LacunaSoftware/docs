@@ -2,15 +2,9 @@
 
 Siga os procedimentos abaixo para criar um banco de dados para o sistema (você precisa ter um *SQL Server* previamente criado):
 
-1. Na opção **SQL databases**, clique em **+ Add**
+1. Na opção **SQL databases**, clique em **+ Create**
 1. Na primeira aba (*Basics*), preencha os dados conforme a sua infraestrutura (seguindo a região escolhida para o sistema)
-1. Clique em **Next: Networking** (***não clique*** no botão padrão *Review + create*)
-1. Na aba *Networking* não é necessário alterar nada
-
-   > [!NOTE]
-   > Dependendo da sua infraestrutura você pode querer restringir o acesso de rede ao banco de dados na aba *Networking*
-
-1. Clique em **Next: Additional settings** (novamente, ***não clique*** no botão padrão *Review + create*)
+1. Clique na aba **Additional settings**
 1. Em **Collation** preencha `Latin1_General_100_CI_AI`
 1. Clique em **Review + create**
 1. Clique em **Create**

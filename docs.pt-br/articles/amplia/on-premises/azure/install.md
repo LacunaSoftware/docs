@@ -13,14 +13,14 @@ siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
 ## Preparação
 
 As instruções a seguir assumem que você já tem instalado localmente o [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) e já possui
-os seguintes *resources* criados na sua conta do Azure:
+os seguintes recursos criados na sua conta do Azure:
 
 * Um *SQL Server* (a criação do *SQL database* é coberta por este artigo)
 * Um *App Service Plan* com sistema operacional **Linux** (a criação do App Service é coberta por este artigo)
 * Zonas de DNS referentes ao [domínio de acesso ao painel de controle](../index.md#dashboard-domain)
   e aos [domínios de acesso](../index.md#access-domains)
 
-Durante a instalação, serão criados alguns *resources*:
+Durante a instalação, serão criados alguns recursos:
 
 * Um *Container Registry*
 * Um banco de dados (*SQL database*)
@@ -28,8 +28,12 @@ Durante a instalação, serão criados alguns *resources*:
 * Um App Service
 * Um Azure Key Vault (opcional)
 
-Sugerimos criar um **resource group** para agrupar os *resources* criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
-realmente é importante é que **todos os resources sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
+Sugerimos criar um **resource group** para agrupar os recursos criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
+realmente é importante é que **todos os recursos sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
+
+> [!NOTE]
+> Os passos abaixo descrevem a criação mais básica de cada recurso. Dependendo da sua infraestrutura você pode querer tomar cuidados
+> adicionais de segurança ou resiliência, como por exemplo restringir o acesso a uma rede privada.
 
 [!include[Criação do Container registry](../../../includes/azure/create-acr.md)]
 
@@ -75,11 +79,15 @@ Após criar os certificados SSL para cada domínio, associe-os aos domínios (re
 
 ## Configuração do Amplia
 
-No menu lateral do App Service, na seção *Development Tools*, clique em **SSH**, em seguida em **Go →**. Você será levado a um terminal. Execute:
+No menu lateral do App Service, na seção *Development Tools*, clique em **SSH**, em seguida em **Go →**. Você será levado a um terminal. Navegue
+para a pasta `/app`:
 
 ```bash
 cd /app
 ```
+
+> [!TIP]
+> Embora o terminal pareça iniciar na pasta `/app`, o comando acima **é necessário** devido a um bug do Azure
 
 Execute o comando abaixo para gerar a chave criptográfica utilizada para cifrar valores sensíveis no banco de dados:
 
@@ -99,12 +107,13 @@ Novamente, tome nota do valor gerado.
 
 Feche o terminal, voltando ao portal do Azure. No App Service, vá em **Configuration** e adicione as seguintes configurações:
 
-* `ASPNETCORE_ENVIRONMENT`: `Azure`
+* `General__AppDiscriminator`: `Amplia`
 * `General__EncryptionKey`: chave criptográfica gerada acima
 * `General__RootPasswordHash`: hash da senha de *root* calculado acima
 * `General__SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General__SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
 * `Oidc__Enabled`: `False` (desabilita a [integração com OpenID Connect](../configure-oidc.md), por ora)
+* `Bindings__HttpsMode`: `Strict`
 
 Adicione, também, as configurações descritas nas seções a seguir.
 
@@ -141,7 +150,7 @@ Na seção *Connection strings* (final da página de configurações), clique em
 
 * **Name**: `DefaultConnection`
 * **Value**: valor da connection string obtido durante a criação do banco de dados
-* **Type**: escolha **SQLAzure** ou **PostgreSQL** de acordo com o tipo de banco de dados criado
+* **Type**: escolha **SQLAzure**
 
 Salve as configurações feitas até o momento clicando em **Save**.
 
@@ -162,11 +171,11 @@ Outra opção é utilizar o [Armazenamento em banco de dados](../key-stores/data
 
 > [!NOTE]
 > Nos links acima, sempre que for mencionado algo como "na seção **Sec**, atribua a configuração **Conf** ao valor ...", no Azure App Services você deve
-> compor o nome da configuração com os nomes da seção e da configuração separados por `:`, ou seja, no exemplo acima: `Sec:Conf`
+> compor o nome da configuração com os nomes da seção e da configuração separados por `__` (**dois** *underscores*), ou seja, no exemplo acima: `Sec__Conf`
 
 ## Iniciando o App Service
 
-Por fim, em **Overview** do App Service, clique em **Start**. Em seguida, acesse a URL do painel de controle (o primeiro acesso pode demorar alguns instantes).
+Por fim, remova a configuração `STANDBY` do App Service e salve as configurações. Em seguida, acesse a URL do painel de controle (o primeiro acesso pode demorar alguns instantes).
 
 Autentique-se com a senha de *root* escolhida durante a configuração. Você então terá acesso ao painel de controle, e a instalação estará concluída.
 
