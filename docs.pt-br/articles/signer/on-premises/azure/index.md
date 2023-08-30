@@ -34,8 +34,7 @@ Durante a instalação, serão criados alguns *resources*:
 * Uma *storage account*
 * Um App Service
 
-Sugerimos criar um **resource group** para agrupar os *resources* criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
-realmente é importante é que **todos os resources sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
+[!include[Recomendações](../../../includes/azure/prep-recommendations.md)]
 
 [!include[Criação do banco de dados](../../../includes/azure/create-database.md)]
 
@@ -52,14 +51,6 @@ Crie o apontamento de DNS para o domínio do site:
 Após criar o apontamento, adicione o domínio ao *App Service*:
 
 [!include[Adicione o domínio](../../../includes/azure/add-custom-domain.md)]
-
-Uma vez adicionado o domínio ao App Service, crie um *App Service Managed Certificate* para ele (certificado SSL gratuito ofertado pelo Azure):
-
-[!include[Crie um Managed Certificate](../../../includes/azure/create-managed-certificate.md)]
-
-Após criar o certificado SSL, associe-o ao domínio:
-
-[!include[Associe o certificado](../../../includes/azure/bind-certificate.md)]
 
 [!include[Cópia dos binários](../../../includes/azure/deploy.md)]
 

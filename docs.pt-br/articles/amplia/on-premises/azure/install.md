@@ -28,12 +28,7 @@ Durante a instalação, serão criados alguns recursos:
 * Um App Service
 * Um Azure Key Vault (opcional)
 
-Sugerimos criar um **resource group** para agrupar os recursos criados. Entretanto, essa é uma medida com propósito meramente de organização. O que
-realmente é importante é que **todos os recursos sejam criados na mesma região**. Isso é fundamental para o funcionamento adequado do sistema.
-
-> [!NOTE]
-> Os passos abaixo descrevem a criação mais básica de cada recurso. Dependendo da sua infraestrutura você pode querer tomar cuidados
-> adicionais de segurança ou resiliência, como por exemplo restringir o acesso a uma rede privada.
+[!include[Recomendações](../../../includes/azure/prep-recommendations.md)]
 
 [!include[Criação do Container registry](../../../includes/azure/create-acr.md)]
 
@@ -103,8 +98,8 @@ Feche o terminal, voltando ao portal do Azure. No App Service, vá em **Configur
 * `General__RootPasswordHash`: hash da senha de *root* calculado acima
 * `General__SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General__SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
+* `Bindings__HttpsMode`: `Strict` (redireciona acessos via HTTP para HTTPS)
 * `Oidc__Enabled`: `False` (desabilita a [integração com OpenID Connect](../configure-oidc.md), por ora)
-* `Bindings__HttpsMode`: `Strict`
 
 Adicione, também, as configurações descritas nas seções a seguir.
 

@@ -27,4 +27,6 @@ Vá em **Configuration** do App Service e adicione as seguintes configurações:
 
 Salve as configurações.
 
+Ainda na configuração do App Service, vá na aba **General settings** e, na opção **HTTPS Only**, marque **Off**.
+
 Em seguida, vá em **Custom domains** e copie o **Custom Domain Verification ID** (esse valor será necessário mais à frente).

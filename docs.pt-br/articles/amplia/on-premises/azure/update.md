@@ -1,8 +1,12 @@
 ﻿# Atualização do Amplia em Azure App Services
 
-> [!NOTE]
-> A documentação deste sistema encontra-se em construção. Pedimos desculpas pela inconveniência. Por favor contate-nos caso
-> precise de alguma informação que ainda não está documentada.
+Replique a última imagem de Docker do sistema para seu *container registry* (substitua `MY_ACR_NAME` pelo nome escolhido no passo anterior):
+
+```sh
+az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.6.0 --image amplia:4.6.0
+```
+
+Em seguida, no App Service do sistema, vá em **Deployment Center** e, no campo **Tag**, selecione a nova versão e clique em **Save**.
 
 ## Veja também
 
