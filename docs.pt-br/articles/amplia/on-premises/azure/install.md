@@ -98,7 +98,6 @@ Feche o terminal, voltando ao portal do Azure. No App Service, vá em **Configur
 * `General__RootPasswordHash`: hash da senha de *root* calculado acima
 * `General__SiteUrl`: URL pública do site, localizada no [domínio de acesso ao painel de controle](../index.md#dashboard-domain) (ex: `https://ca.patorum.com/`)
 * `General__SiteName`: nome da sua instância do Amplia, ex: *Patorum CA*
-* `Bindings__HttpsMode`: `Strict` (redireciona acessos via HTTP para HTTPS)
 * `Oidc__Enabled`: `False` (desabilita a [integração com OpenID Connect](../configure-oidc.md), por ora)
 
 Adicione, também, as configurações descritas nas seções a seguir.

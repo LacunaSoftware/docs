@@ -23,10 +23,11 @@ Uma vez concluída a criação do App Service, clique em **Go to resource**. Em 
 Vá em **Configuration** do App Service e adicione as seguintes configurações:
 
 * `ASPNETCORE_ENVIRONMENT`: `Azure`
+* `Bindings__HttpsMode`: `Strict`
 * `STANDBY`: `True`
 
 Salve as configurações.
 
-Ainda na configuração do App Service, vá na aba **General settings** e, na opção **HTTPS Only**, marque **Off**.
+Ainda na configuração do App Service, vá na aba **General settings** e, na opção **HTTPS Only**, marque **Off** (a própria aplicação se encarregará de exigir acesso via HTTPS da maneira mais adequada).
 
 Em seguida, vá em **Custom domains** e copie o **Custom Domain Verification ID** (esse valor será necessário mais à frente).
