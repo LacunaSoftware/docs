@@ -1,5 +1,30 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-63-0" />
+### 1.63.0 (2023-08-28)
+
+* Novas funcionalidades
+  * [SIG-948] Permitir baixar/exibir o arquivo na validação de documentos externos P7S 
+
+* Melhorias
+  * [SIG-514 Melhorar descrição da permissão de Enviar Documento na tela de adicionar usuário em organização
+  * [SIG-532] Adicionar eventos de visualização/download de documentos
+  * [SIG-830] Incluir o tipo de autenticação realizada da assinatura eletrônica no relatório gerado na Organização
+  * [SIG-983] Indicar as iniciais do usuário no posicionamento da rubrica
+  * [SIG-984] Configuração para alterar nome e CNPJ da organização somente para o sys admin
+  * [SIG-1042] Permitir bloquear o uso da conta pessoal
+  * [SIG-1093] Definir por organização a posição das marcas na versão assinada
+  * [SIG-1128] Alterar a opção de autenticação "e-mail e selfie (Datavalid)" para "e-mail e biometria facial"
+
+* Correções de bugs
+  * [SIG-911] Permitir cadastrar aprovador sem a opção de rubricar
+  * [SIG-966] Manifesto exibe assinaturas inválidas como válidas
+  * [SIG-1060] Ao editar um fluxo e posicionar a rubrica obrigatória não está sendo salva a alteração
+  * [SIG-1116] Usuário com faturamento desabilitado ainda gerou fatura
+  * [SIG-1132] Não é possível receber código de autenticação se e-mail do participante estiver errado e for trocado após solicitação de envio
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-62-0" />
 ### 1.62.0 (2023-08-10)
 

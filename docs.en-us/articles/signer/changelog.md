@@ -1,5 +1,30 @@
 ﻿# Signer changelog
 
+<a name="v1-63-0" />
+### 1.63.0 (2023-08-28)
+
+* New Features
+  * [SIG-948] Download/display file when validating uploaded P7S (PKCS7) files
+
+* Improvements
+  * [SIG-514] Improve description of Send Document permission in add user to organization screen
+  * [SIG-532] Add document view/download events
+  * [SIG-830] Include the electronic signature authentication type in the organization document report
+  * [SIG-983] Display user initials when pre-positioning signature initials
+  * [SIG-984] Setting to allow name/company identifier update only for sys admin users
+  * [SIG-1042] Block usage of personal accounts (while using open mode)
+  * [SIG-1093] Customize the position of marks of the signed version in organization settings page
+  * [SIG-1128] Rename "e-mail and selfie (Datavalid)" authentication option to "e-mail and facial biometrics"
+
+* Bug fixes
+  * [SIG-911] Add approver without option to add signature initials
+  * [SIG-966] Signature manifest displays invalid signatures as valid
+  * [SIG-1060] Required signature initials are not being saved when editing a document flow
+  * [SIG-1116] Account with billing disabled still generates invoices
+  * [SIG-1132] Cannot receive authentication code if participant e-mail is wrong and is updated after first code is requested
+
+Updates database model: no
+
 <a name="v1-62-0" />
 ### 1.62.0 (2023-08-10)
 
