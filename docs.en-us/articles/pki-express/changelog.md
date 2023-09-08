@@ -1,5 +1,17 @@
 # PKI Express changelog
 
+<a name="v1-31-1" />
+### 1.31.1 (2023-06-29)
+
+- Update BrazilTrustServices package with proxy support
+
+<a name="v1-31-0" />
+### 1.31.0 (2023-01-04)
+
+- Updata PKI SDK [2.13.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-13-0)
+- Add support to P7B as Trust Arbitrator
+- Linux single-file self-contained version
+
 <a name="v1-29-0" />
 ### 1.29.0 (2022-11-16)
 
