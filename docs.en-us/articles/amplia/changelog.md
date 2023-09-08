@@ -2,6 +2,66 @@
 
 <!--<a name="vnext" />-->
 
+<a name="4-6-1" />
+## 4.6.1 (2023-09-06)
+
+Updates database model: no
+
+### Improvements
+
+AMP-326 Improved integration with Dinamo HSMs
+
+### Bug fixes
+
+AMP-322 Forbidden characters are not automatically removed on BR certificates
+
+AMP-324 Error *JsonReaderException: Bad JSON escape sequence*
+
+
+
+<a name="4-6-0" />
+## 4.6.0 (2023-08-30)
+
+Updates database model: no
+
+### New features
+
+AMP-315 SSH access on Docker image
+
+AMP-320 API to decrypt with key
+
+AMP-321 PKCS #8 key import  \(currently only supported on database key stores\)
+
+### Improvement
+
+AMP-327 Add support for environment variable `STANDBY` \(for Azure App Service setup\)
+
+
+
+<a name="4-5-4" />
+## 4.5.4 (2023-08-04)
+
+Updates database model: no
+
+### Improvements
+
+AMP-311 Update SMS package to allow configuring a `MessagingServiceSid` for Twilio provider
+
+
+
+<a name="4-5-3" />
+## 4.5.3 (2023-08-04)
+
+Updates database model: no†
+
+*† This update does not introduce new changes to the database but does change the way previous changes are applied*
+
+### Bug fixes
+
+AMP-319 Some past migrations cannot be applied to SQL Server older than 2017 due to the usage of `TRIM()`
+
+
+
 <a name="4-5-2" />
 ## 4.5.2 (2023-07-05)
 

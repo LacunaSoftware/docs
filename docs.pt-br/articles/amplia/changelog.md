@@ -2,6 +2,65 @@
 
 <!--<a name="vnext" />-->
 
+<a name="4-6-1" />
+## 4.6.1 (2023-09-06)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-326 Melhorias na integração com HSMs Dinamo
+
+### Correções de bugs
+
+AMP-322 Caracteres proibidos pela ICP-Brasil não são automaticamente removidos de certificados BR
+
+AMP-324 Erro *JsonReaderException: Bad JSON escape sequence*
+
+
+
+<a name="4-6-0" />
+## 4.6.0 (2023-08-30)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+AMP-315 Habilitar acesso via SSH na imagem de Docker
+
+AMP-320 API para decriptar com chave
+
+AMP-321 Importação de chave PKCS #8 \(por ora suportado apenas em keystore em banco de dados\)
+
+### Improvement
+
+AMP-327 Suporte a variável de ambiente STANDBY \(para instalação em Azure App Service\)
+
+
+
+<a name="4-5-4" />
+## 4.5.4 (2023-08-04)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-311 Atualizar pacote de envio de SMS para permitir configurar um `MessagingServiceSid` para provedor Twilio
+
+
+
+<a name="4-5-3" />
+## 4.5.3 (2023-08-04)
+
+Atualiza modelo do banco de dados: não†
+
+*† Esta atualização não introduz novas mudanças ao banco de dados mas muda, sim, a forma como alterações antigas são aplicadas*
+
+### Correções de bugs
+
+AMP-319 Algumas migrations passadas não podem ser aplicadas em SQL Server pré-2017 devido ao uso do `TRIM()`
+
+
 
 <a name="4-5-2" />
 ## 4.5.2 (2023-07-05)
