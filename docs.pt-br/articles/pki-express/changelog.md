@@ -1,5 +1,17 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-31-1" />
+### 1.31.1 (2023-06-29)
+
+- Atualização do pacote BrazilTrustServices com suporte a proxy
+
+<a name="v1-31-0" />
+### 1.31.0 (2023-01-04)
+
+- Atualização PKI SDK [2.13.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-13-0)
+- Adiciona suporte a arquivo P7B como Trust Arbitrator
+- Linux versão single-file self-contained
+
 <a name="v1-29-0" />
 ### 1.29.0 (2022-11-16)
 
