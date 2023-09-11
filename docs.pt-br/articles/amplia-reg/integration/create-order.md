@@ -74,6 +74,7 @@ POST /api/brazil/orders
 	},
 	"saleNumber": "ampliaregng-0000001" // Número da venda do pedido
 }
+```
 
 ## Veja também
 
