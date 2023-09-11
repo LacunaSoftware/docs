@@ -4,6 +4,7 @@ To integrate your app to [Amplia Reg](../index.md), first follow the steps on th
 
 Then, check out the integration guide for a specific feature:
 
+* [Create an order](create-order.md)
 * [Creating preapproved orders](preapproved-orders.md)
 
 ## See also

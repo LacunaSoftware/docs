@@ -4,6 +4,7 @@ Para integrar a sua aplicação ao [Amplia Reg](../index.md), comece pelo artigo
 
 Em seguida, veja o guia de integração de uma funcionalidade específica:
 
+* [Criação de pedido](create-order.md)
 * [Criação de pedido pré-aprovado](preapproved-orders.md)
 
 ## Veja também

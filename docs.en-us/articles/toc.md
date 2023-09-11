@@ -346,6 +346,7 @@
 # [Amplia Reg](amplia-reg/index.md)
 ## [Integration Guide](amplia-reg/integration/index.md)
 ### [Get started](amplia-reg/integration/get-started.md)
+### [Create an order](amplia-reg/integration/create-order.md)
 ### [Preapproved orders](amplia-reg/integration/preapproved-orders.md)
 ### [Referencing files](amplia-reg/integration/file-referencing.md)
 ### [Error codes](amplia-reg/integration/error-codes.md)
