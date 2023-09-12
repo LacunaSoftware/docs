@@ -12,6 +12,8 @@ O terceiro número significa o número do build e não é documentado neste hist
 <a name="v2-0" />
 ## 2.0 (2023-06-26)
 
+Versão mínima do backend: 1.2.0
+
 ### Novas funcionalidades
 
 PSC-181 Versao mínima do app
