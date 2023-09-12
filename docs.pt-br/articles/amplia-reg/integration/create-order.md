@@ -13,7 +13,7 @@ Em .NET:
 ```cs
 var rfbResponse = ampliaRegService.RfbCheckAsync(new RfbCheckRequest() {
 	Cpf = "11111111111", // CPF do titular somente números
-	BirthDate = "15/10/1995", // Data de nascimento do titular no formato YYYY/MM/DD
+	BirthDate = "1995/10/15", // Data de nascimento do titular no formato YYYY/MM/DD
 	Cnpj = null, // ou "11111111111111" CNPJ da empresa somente números
 });
 ```
@@ -25,7 +25,7 @@ POST /api/orders/rfb-check
 
 {
 	"cpf": "11111111111", // CPF do titular somente números
-	"birthDate": "15/10/1995", // Data de nascimento do titular no formato YYYY/MM/DD
+	"birthDate": "1995/10/15", // Data de nascimento do titular no formato YYYY/MM/DD
 	"cnpj": null, // ou "11111111111111" CNPJ da empresa somente números
 }
 ```
@@ -40,7 +40,7 @@ var orderCreateResponse = ampliaRegService.CreateBrazilOrderAsync(new OrderCreat
 	Parameters = new BrazilOrderCreateParameters() {
 		Cpf = "11111111111", // CPF do titular somente números
 		Name = "Nome do Titular", // Nome completo do titular
-		BirthDate = "15/10/1995", // Data de nascimento do titular no formato YYYY/MM/DD
+		BirthDate = "1995/10/15", // Data de nascimento do titular no formato YYYY/MM/DD
 		Cnpj = null, // ou "11111111111111" CNPJ da empresa somente números
 		OrganizationName = null, // ou "Nome da Organização" nome completo da organização
 	},
@@ -65,7 +65,7 @@ POST /api/brazil/orders
 	"parameters": {
 		"cpf": "11111111111", // CPF do titular somente números
 		"name": "Nome do Titular", // Nome completo do titular
-		"birthDate": "15/10/1995", // Data de nascimento do titular no formato YYYY/MM/DD
+		"birthDate": "1995/10/15", // Data de nascimento do titular no formato YYYY/MM/DD
 		"cnpj": null, // ou "11111111111111" CNPJ da empresa somente números
 		"organizationName": null, // ou "Nome da Organização" nome completo da organização
 	},
