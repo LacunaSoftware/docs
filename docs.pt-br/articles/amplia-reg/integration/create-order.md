@@ -60,18 +60,11 @@ Em seguida, chame uma das APIs de criação de pedido dependendo do formato de c
 
 * [Padrão ICP-Brasil](#brazil)
 
-> [!NOTE]
-> Consulte-nos caso precise de documentação para criação de outros formatos de certificado.
+Consulte-nos caso precise de documentação para criação de outros formatos de certificado.
 
 <a name="brazil" />
 
 ## Criação de pedido de certificado padrão ICP-Brasil
-
-> [!NOTE]
-> Em todas as chamadas, CPF e CNPJ devem ser fornecidos sem pontuações (somente dígitos) e com zeros à esquerda, se houver.
-
-> [!TIP]
-> No caso de certificado de pessoa jurídica, os campos de CPF, nome completo e data de nascimento referem-se ao responsável pelo certificado.
 
 Criação de pedido de certificado padrão ICP-Brasil em .NET:
 
@@ -87,10 +80,16 @@ var orderCreateResponse = ampliaRegService.CreateOrderAsync(new OrderCreateReque
 		Cnpj = "08271696000100", // CNPJ (omita em caso de e-CPF)
 		OrganizationName = "Patorum Sistemas LTDA", // Razão social (omita em caso de e-CPF)
 	},
-	Validity = PeriodModel.FromYears(1), // Validade do certificado (o tipo de certificado deve permitir essa validade)
-	SaleNumber = "1000-1234", // Número do pedido no sistema de venda (máximo 50 caracteres, pode conter pontuações)
+	Validity = PeriodModel.FromYears(1), // Validade do certificado (o tipo de certificado deve permitir)
+	SaleNumber = "1000-1234", // Número do pedido no sistema de venda (máx. 50 caracteres, pode conter pontuações)
 });
 ```
+
+> [!NOTE]
+> Em todas as chamadas, CPF e CNPJ devem ser fornecidos sem pontuações (somente dígitos) e com zeros à esquerda, se houver.
+
+> [!TIP]
+> No caso de certificado de pessoa jurídica, os campos de CPF, nome completo e data de nascimento referem-se ao responsável pelo certificado.
 
 ou via API:
 
@@ -114,14 +113,14 @@ POST /api/brazil/orders
 	"validity": {
 		"years": 1 // Validade do certificado (o tipo de certificado deve permitir essa validade)
 	},
-	"saleNumber": "1000-1234" // Número do pedido no sistema de venda (máximo 50 caracteres, pode conter pontuações)
+	"saleNumber": "1000-1234" // Número do pedido no sistema de venda (máx. 50 caracteres, pode conter pontuações)
 }
 ```
 
 ### Consulta prévia RFB
 
 Para criar um pedido em uma autoridade de registro (AR) subordinada a uma autoridade certificadora (AC) de 2º nível subordinada à AC da Receita Federal do Brasil (RFB),
-deve-se primeiramente chamar a API de consulta prévia para obter o nome completo do titular (e a razão social, no caso de certificado
+deve-se primeiramente chamar a API de consulta prévia da RFB.
 
 
 Em .NET:
@@ -149,13 +148,27 @@ A resposta contém a informação de se o certificado pode ou não ser emitido c
 e a razão social da empresa (se for o caso) que devem constar no certificado. Em caso negativo, o campo `failure` contém uma mensagem em português que pode ser
 exibida ao usuário final detalhando o motivo da reprovação.
 
+Exemplo de resposta com aprovação:
+
 ```js
 {
-	"approved": true, // denota se o certificado pode ser emitido com os dados fornecidos na consulta
-	"returnCode": 0, // código retornado pela API de consulta prévia da RFB
-	"failure": null, // motivo da reprovação
+	"approved": true, // o certificado PODE ser emitido com os dados fornecidos na consulta
+	"returnCode": 0,
+	"failure": null,
 	"name": "Fulano de Tal", // nome completo do titular que deve constar no certificado
 	"organizationName": "Patorum Sistemas LTDA" // razão social da empresa que deve constar no certificado
+}
+```
+
+Exemplo de resposta com reprovação:
+
+```js
+{
+	"approved": false, // o certificado NÃO PODE ser emitido com os dados fornecidos na consulta
+	"returnCode": 2, // código retornado pela API de consulta prévia da RFB
+	"failure": "CPF informado inexistente nas bases de dados da SRF. Emissão do certificadonão permitida.",
+	"name": null,
+	"organizationName": null
 }
 ```
 
@@ -167,9 +180,11 @@ seguinte API para verificar se o titular possui cadastro biométrico. Caso negat
 Em .NET:
 
 ```cs
-var checkBioEnrollmentResponse = await ampliaRegService.CheckBioEnrollmentAsync("07917307000" /* CPF do titular */);
+var checkBioEnrollmentResponse = await ampliaRegService.CheckBioEnrollmentAsync(
+	"07917307000" // CPF do titular
+);
 if (!checkBioEnrollmentResponse.IsEnrolled) {
-	throw new Exception("A emissão por videoconferência não pode ser realizada sem CNH e sem um cadastro biométrico prévio!");
+	throw new Exception("A emissão por videoconferência não pode ser realizada!");
 }
 ```
 
