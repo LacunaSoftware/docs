@@ -9,13 +9,15 @@ API de listagem de tipos de certificado.
 Em .NET:
 
 ```cs
-var certTypes = await ampliaRegService.ListCertificateTypesAsync();
+var certTypes = await ampliaRegService.ListCertificateTypesAsync(new CertificateTypeListParameters {
+	IsDisabled = false,
+});
 ```
 
 Via API:
 
 ```
-GET /api/certificate-types
+GET /api/certificate-types?isDisabled=false
 ```
 
 Exemplo de resposta:
