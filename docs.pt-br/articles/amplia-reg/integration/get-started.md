@@ -44,10 +44,10 @@ Caso sua aplicação utilize outra linguagem de programação, [chame as APIs di
 
 ### Chamando a API em .NET
 
-Comece adicionando o pacote de Nuget [Lacuna.AmpliaRegNg.Client](https://www.nuget.org/packages/Lacuna.AmpliaRegNg.Client/), disponível para:
+Comece adicionando o pacote de Nuget [Lacuna.AmpliaRegNg.Client](https://www.nuget.org/packages/Lacuna.AmpliaRegNg.Client/).
 
-* .NET Standard 2.0+ (para uso em .NET 5+, .NET Core 2+, ou ainda em plataformas como UWP)
-* .NET Framework 4.5+
+> [!NOTE]
+> O *target* do pacote é .NET Standard 2.0, o que significa que ele é compatível com .NET Framework >= 4.6.1 e .NET Core >= 2.0.
 
 #### Aplicações em ASP.NET Core
 
