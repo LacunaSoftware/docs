@@ -1,11 +1,65 @@
 ﻿# Criação de pedido - Amplia Reg
 
-O [Amplia Reg](../index.md) suporta diversos tipos de certificado:
+> [!TIP]
+> Certifique-se de que já realizou os [Primeiros passos](get-started.md)
+
+As APIs de criação de pedido exigem que o tipo de certificado seja especificado. Para listar os tipos de certificado disponíveis, chame a
+API de listagem de tipos de certificado.
+
+Em .NET:
+
+```cs
+var certTypes = await ampliaRegService.ListCertificateTypesAsync();
+```
+
+Via API:
+
+```
+GET /api/certificate-types
+```
+
+Exemplo de resposta:
+
+```js
+[
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "e-CPF A1",
+    "format": "PkiBrazil",
+    "code": "ECPFA1",
+    "keyMediaType": "PC",
+    "canIssueByAgentBeforeApproval": false,
+    "isDisabled": false,
+    "creationDate": "2023-09-12T20:31:53.856Z",
+    "photoStepEnabled": true,
+    "documentsStepEnabled": true,
+    "nonExportableKey": false,
+    "paraguayParameters": null,
+    "brazilParameters": {
+      "brazilType": "PessoaFisica",
+      "appendIdentifierToCommonName": true
+    },
+    "caboVerdeParameters": null,
+    "sslParameters": null,
+    "keySize": 2048,
+    "issueByCsr": false,
+    "canFillFromCsr": false,
+    "certificationAuthorityId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "allowVideoConference": true,
+    "validityOptions": [
+      { "years": 1, "months": 0, "days": 0 },
+      { "years": 2, "months": 0, "days": 0 }
+    ]
+  }
+]
+```
+
+Em seguida, chame uma das APIs de criação de pedido dependendo do formato de certificado:
 
 * [Padrão ICP-Brasil](#brazil)
 
 > [!NOTE]
-> Consulte-nos caso precise de documentação para criação de outros tipos de certificado.
+> Consulte-nos caso precise de documentação para criação de outros formatos de certificado.
 
 <a name="brazil" />
 
