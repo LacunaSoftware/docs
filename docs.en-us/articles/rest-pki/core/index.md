@@ -16,7 +16,7 @@ Versions 1.x of Rest PKI Core will have some, but not all, of the features curre
 As the development of Rest PKI Core progresses, more and more features avaliable on Rest PKI will be supported. When Rest PKI Core reaches full compatibility
 with Rest PKI, version 2.0 will be released, unifiying both modules and being simply called *Rest PKI 2*.
 
-The expected relase date of the 2.0 version that will unify Rest PKI and Rest PKI Core is around 2022.
+The expected relase date of the 2.0 version that will unify Rest PKI and Rest PKI Core is around 2023.
 
 > [!NOTE]
 > Some deprecated APIs might be dropped on Rest PKI 2. Try to use the latest versions of each API.
