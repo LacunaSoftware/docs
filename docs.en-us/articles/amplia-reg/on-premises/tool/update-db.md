@@ -13,7 +13,7 @@ dotnet Lacuna.AmpliaRegNg.Site.dll [settings] -- update-db
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/ampliareg:2.0 [settings] -- update-db
+docker run -i lacunasoftware/ampliareg:2.2 [settings] -- update-db
 ```
 
 [!include[About settings](includes/about-settings.md)]

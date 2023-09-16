@@ -1,6 +1,86 @@
 ﻿# Amplia Reg changelog
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="v2-3-0" />
+## 2.3.0 (next version)
+
+Updates database model: **yes**
+
+### New features
+
+ARNG-201 Brazilian organizational certificate
+
+ARNG-330 Integration with SERPRO's organization query service (BR only)
+
+ARNG-352 Orders without confirmation
+
+### Improvements
+
+ARNG-347 Add support for NTP synchronization
+
+ARNG-355 Postpone and allow changing the definition of holder type
+
+ARNG-356 Facial validation also on presential orders (configurable)
+
+### Bug fixes
+
+ARNG-148 Camera remains active after leaving photo capture component
+
+ARNG-344 Error when agent attempts to issue certificate before approval
+
+ARNG-345 Issue type selector gets duplicate "Videoconference" items when changing between certificate types
+
+ARNG-353 Certificate type details page does not show whether the type allows videoconference
+
+
+
+<a name="v2-2-0" />
+## 2.2.0 (2023-08-08)
+
+Updates database model: **yes**
+
+### New features
+
+ARNG-362 Validation by videoconference
+
+### Improvements
+
+ARNG-342 Add configuration to certificate types to issue software certificates with non-exportable key
+
+
+
+<a name="v2-1-0" />
+## 2.1.0 (2023-07-26)
+
+Updates database model: **yes**
+
+### New features
+
+ARNG-341 Automatic signature of documentation in pre-approved orders
+
+
+
+<a name="v2-0-3" />
+## 2.0.3 (2023-07-11)
+
+Updates database model: no
+
+### Bug fixes
+
+ARNG-340 Videoconference recordings cause error when generating order documentation (introduced on [v2.0.2](#v2-0-2))
+
+
+
+<a name="v2-0-2" />
+## 2.0.2 (2023-07-11)
+
+Updates database model: no
+
+### Improvements
+
+ARNG-338 Add holder file type `VideoConferenceRecording`
+
+
 
 <a name="v2-0-1" />
 ## 2.0.1 (2023-06-07)

@@ -1,6 +1,86 @@
 ﻿# Histórico de versões do Amplia Reg
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="v2-3-0" />
+## 2.3.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-201 Certificado de pessoa jurídica brasileiro
+
+ARNG-330 Integração com API de consulta de CNPJ do SERPRO
+
+ARNG-352 Pedidos sem conferência
+
+### Melhorias
+
+ARNG-347 Adicionar suporte a sincronização com servidores NTP
+
+ARNG-355 Definição tardia da natureza jurídica \(Holder Type\)
+
+ARNG-356 Validação da foto também na validação presencial (configurável)
+
+### Correções de bugs
+
+ARNG-148 Camera continua ativa após sair da tela de captura
+
+ARNG-344 Erro na emissão pelo agente antes da aprovação
+
+ARNG-345 Seletor de tipo de emissão duplica "Video conferência" quando muda entre 2 tipos que possuem video conferencia ativa
+
+ARNG-353 Tipo de certificado não informa se permite ou não video conferencia na tela de detalhes
+
+
+
+<a name="v2-2-0" />
+## 2.2.0 (2023-08-08)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-362 Emissão por videoconferência
+
+### Melhorias
+
+ARNG-342 Permitir configuração de tipo de certificado para emitir certificado em software (A1) não-exportável
+
+
+
+<a name="v2-1-0" />
+## 2.1.0 (2023-07-26)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-341 Auto-assinatura de documentos na criação de pedido pré-aprovado
+
+
+
+<a name="v2-0-3" />
+## 2.0.3 (2023-07-11)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-340 Vídeos anexados à documentação do pedido causam erro na geração do dossiê (introduzido na [v2.0.2](#v2-0-2))
+
+
+
+<a name="v2-0-2" />
+## 2.0.2 (2023-07-11)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-338 Criar tipo de documento VideoConferenceRecording
+
+
 
 <a name="v2-0-1" />
 ## 2.0.1 (2023-06-07)
