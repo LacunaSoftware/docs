@@ -25,6 +25,9 @@
 <a name="v2-15-0" />
 ### 2.15.0 (2023-07-17)
 
+* Improvements
+    * [AUT-186] Move entry and completion date to database for new degrees
+
 * New Features
     * [AUT-316] Implement the academic curriculum
 

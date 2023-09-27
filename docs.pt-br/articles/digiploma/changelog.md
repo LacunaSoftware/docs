@@ -25,6 +25,9 @@
 <a name="v2-15-0" />
 ### 2.15.0 (2023-07-17)
 
+* Melhorias
+    * [AUT-186] Mover data ingresso e conclusão para o banco de dados para novos diplomas
+
 * Novas funcionalidades
     * [AUT-316] Implementar o curriculo digital
 
