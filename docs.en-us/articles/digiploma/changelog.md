@@ -4,14 +4,72 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-16-0" />
+### 2.16.0 (2023-07-17)
+
+* Bug fixes
+    * [AUT-296] Duplicated documents in the Signer when an error occurs when persisting the academic transcript
+    * [AUT-365] Incorrect text in the IES's reaccreditation on the validation screen when it is in processing
+    * [AUT-367] It's not possible to create a Curriculum using API
+    * [AUT-368] Areas is an optional element, but is always used in the visual representation of the Curriculum
+
+* Improvements
+    * [AUT-364] Allow Registrations to skip the signature validation stage
+    * [AUT-369] Add cancellation reason to webhooks
+
+* New Features
+    * [AUT-357] Allow the Registration to be sent on issue after a version change
+    * [AUT-362] API to change the visual representation of the degree and academic transcript
+    * [AUT-366] Validate the CNPJ of the certificate belongs to the Issuing IES at the time of Registration
+
+<a name="v2-15-0" />
+### 2.15.0 (2023-07-17)
+
+* New Features
+    * [AUT-316] Implement the academic curriculum
+
+<a name="v2-14-0" />
+### 2.14.0 (2023-07-17)
+
+* Bug fixes
+    * [AUT-358] When searching for the document by pressing Enter, the Only Signed button is pressed
+
+* Improvements
+    * [AUT-359] Remove requirement for RegistrationBookCode property
+
+<a name="v2-13-1" />
+### 2.13.1 (2023-07-17)
+
+* Bug fixes
+    * [AUT-355] Cancellation reason not displayed correctly on screen
+
+* Improvements
+    * [AUT-354] Hide NSF configuration for Issuer organization
+    * [AUT-360] Improve conditions related to the signed diploma
+
+<a name="v2-13-0" />
+### 2.13.0 (2023-07-17)
+
+* Bug fixes
+    * [AUT-352] Academic transcript template Id is not removed from copy issues once they have been finalized
+
+* Improvements
+    * [AUT-160] Define whether HEI is part of the federal system separately
+    * [AUT-338] Remove date of graduation, dispatch and completion fields from the RVHE when not graduated
+    * [AUT-347] Add reason for registration cancellation field
+    * [AUT-348] Allow the use of an e-CPF certificate for testing in the Institution's homologation environment
+    * [AUT-349] Improve Xades signature policy search for validation
+    * [AUT-350] Improve the gender nationality tag for cases where the nationality is capitalized
+    * [AUT-351] List signed degrees without active or canceled status restriction
+
 <a name="v2-12-1" />
 ### 2.12.1 (2023-07-17)
 
-* Melhorias
+* Improvements
     * [AUT-343] Inform user that institute with that code already exists when registering new institute
     * [AUT-345] Improve the way to get the issue date and registration for issuer inspection file
 
-* Correções de bugs
+* Bug fixes
     * [AUT-341] Institute information does not appear on the screen when editing it
     * [AUT-342] Institute form with conditional fields does not load when changing the type of institute
     * [AUT-344] Type of the Institute is not displayed correctly when listing them
@@ -19,20 +77,20 @@
 <a name="v2-12-0" />
 ### 2.12.0 (2023-07-13)
 
-* Novas funcionalidades
+* New Features
     * [AUT-273] Implement cancellation list
     * [AUT-274] Implement inspection file
 
 <a name="v2-11-2" />
 ### 2.11.2 (2023-07-05)
 
-* Correções de bugs
+* Bug fixes
     * [AUT-340] Degree concluded webhook is not sent
 
 <a name="v2-11-1" />
 ### 2.11.1 (2023-07-05)
 
-* Correções de bugs
+* Bug fixes
     * [AUT-339] It is not possible to cancel the registration after they have canceled the degree on the side of the Issuer
 
 <a name="v2-11-0" />

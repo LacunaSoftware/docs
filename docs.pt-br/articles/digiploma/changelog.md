@@ -4,6 +4,64 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-16-0" />
+### 2.16.0 (2023-07-17)
+
+* Correções de bugs
+    * [AUT-296] Documentos duplicados no Assinador quando ocorre erro ao persistir o histórico escolar
+    * [AUT-365] Texto incorreto no Recredencimanto da IES na tela de validação quando está em tramitação
+    * [AUT-367] Não é possível criar currículo por API
+    * [AUT-368] Areas é um elemento opcional, mas é sempre utilizado na representação visual do Currículo
+
+* Melhorias
+    * [AUT-364] Permitir que registros pulem a etapa de validação das assinaturas
+    * [AUT-369] Adicionar novos motivos de anulação nos webhooks
+
+* Novas funcionalidades
+    * [AUT-357] Permitir o envio do registro na emissão após mudança de versão
+    * [AUT-362] API para alterar a representação visual do diploma e histórico escolar
+    * [AUT-366] Validar CNPJ do certificado pertence a IES Emissora no momento do Registro
+
+<a name="v2-15-0" />
+### 2.15.0 (2023-07-17)
+
+* Novas funcionalidades
+    * [AUT-316] Implementar o curriculo digital
+
+<a name="v2-14-0" />
+### 2.14.0 (2023-07-17)
+
+* Correções de bugs
+    * [AUT-358] Ao pesquisar pelo documento pressionando Enter, o botão de Apenas assinados é pressionado
+
+* Melhorias
+    * [AUT-359] Remover obrigatoriedade da propriedade RegistrationBookCode
+
+<a name="v2-13-1" />
+### 2.13.1 (2023-07-17)
+
+* Correções de bugs
+    * [AUT-355] Razão da anulação não é apresentado corretamente em tela
+
+* Melhorias
+    * [AUT-354] Ocultar configuração de NSF para organização Emissora
+    * [AUT-360] Melhorar condições relacionadas ao diploma assinado
+
+<a name="v2-13-0" />
+### 2.13.0 (2023-07-17)
+
+* Correções de bugs
+    * [AUT-352] O Id do modelo do histórico escolar não é removido de emissões de segunda vida após finalizadas
+
+* Melhorias
+    * [AUT-160] Definir se IES segue o sistema federal separadamente
+    * [AUT-338] Remover campos de data de colação, expedição e conclusão do RVHE quando não estiver formado
+    * [AUT-347] Adicionar campo do motivo da anulação do registro
+    * [AUT-348] Permitir o uso de certificado e-CPF para testes na Instituição em ambiente de homologação
+    * [AUT-349] Melhorar busca da política de assinatura Xades para validação
+    * [AUT-350] Melhorar a tag nacionalidade gênero para casos em que a nacionalidade esteja com caracteres maiúsculos
+    * [AUT-351] Listar os diplomas assinados sem restrição de status ativo ou cancelado
+
 <a name="v2-12-1" />
 ### 2.12.1 (2023-07-17)
 
