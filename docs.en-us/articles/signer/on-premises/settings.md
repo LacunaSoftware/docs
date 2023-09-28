@@ -93,6 +93,8 @@ of the submitted document(s).
 
 * **CountryIdentifierMode** (default: `Unique`, v1.21.0): defines the behaviour of the country identifier. The available types are `Unique`, `NonUnique`, `Nullable` and
 `NullableUnique`. The country identifier claim must also be set accordingly in GrantID.
+* **SearchByIdentifierOnlyForUniqueIdentifierMode** (v1.64.0): as of v1.64.0 when searching for a new user, checks the country identifier first if the identifier mode is `Unique` or 
+`NullableUnique`. In previous versions this was only done for mode `Unique` (set to `true` to revert to that behavior).
 * **FilterCertificatesByEmailIfNoIdentifier** (default: `true`, v1.21.0): if `true`, filters by email the digital certificates of a user who has no identifier.
 * **UpdatedUserWithoutIdentifierAfterSignature** (default: `true`, v1.21.0): if `true`, attemps to add an identifier to a user after he has successfully signed a document
 with a certificate that has an identifier.
@@ -163,6 +165,9 @@ Only instance administrators will be able to perform such actions.
 
 * **EnableSignatureValidationWhenGeneratingManifest** (v1.63.0): if `true`, whenever a signature manifest is generated, the associated signed document will have its signatures
 validated. This is disabled by default because of performance implications.
+
+* **AllowUserInfoUpdateBySubscription** (v.1.64.0): if `true`, users created when you create a document or when adding a user to a subscription will be able to have their information
+updated by administrators of that subscription.
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)

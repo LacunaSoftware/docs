@@ -1,5 +1,28 @@
 ﻿# Signer changelog
 
+<a name="v1-64-0" />
+### 1.64.0 (2023-09-28)
+
+* New Features
+  * [SIG-700] New types of signature visual representation
+
+* Improvements
+  * [SIG-451] Allow adding/removing organization users with API
+  * [SIG-652] Allow organization administrator to update user information
+  * [SIG-750] Allow creation of documents in folders shared by organizations
+  * [SIG-868] Show reload certificates button when no certificate is found for the user
+  * [SIG-987] List deleted documents with API
+  * [SIG-1137] Error when a space is sent in the start/end of the participant name
+  * [SIG-1141] Allow usage of any e-mail for existing participants when creating documents (for instances with e-mail as key and unique Country identifier)
+
+* Bug fixes
+  * [SIG-1140] Notarized document is registered with watermark
+
+Updates database model: yes
+
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released until 2023-09-27.
+
 <a name="v1-63-0" />
 ### 1.63.0 (2023-08-28)
 

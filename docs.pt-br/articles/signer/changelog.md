@@ -1,5 +1,28 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-64-0" />
+### 1.64.0 (2023-09-28)
+
+* Novas funcionalidades
+  * [SIG-700] Adicionar novos tipos de representação visual de assinatura
+
+* Melhorias
+  * [SIG-451] Permitir adicionar/remover usuários da organização via Integração
+  * [SIG-652] Permitir que administrador da Organização altere os dados de usuários
+  * [SIG-750] Permitir a criação de documentos em pastas compartilhadas de organizações
+  * [SIG-868] Exibir botão de recarregar certificados quando nenhum certificado é encontrado para o assinante
+  * [SIG-987] Listagem de documentos excluídos por API
+  * [SIG-1137] Erro ao enviar espaço no começo/fim do nome de participante por API
+  * [SIG-1141] Permitir utilizar qualquer e-mail para participantes existentes ao criar documentos (instâncias com chave e-mail e CPF único)
+
+* Correções de bugs
+  * [SIG-1140] Documento notarizado é registrado com marca d'agua
+
+Atualiza modelo do banco de dados: sim
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2023-09-27.
+
 <a name="v1-63-0" />
 ### 1.63.0 (2023-08-28)
 
