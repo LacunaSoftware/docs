@@ -1,5 +1,13 @@
 ﻿# Signer changelog
 
+<a name="v1-64-1" />
+### 1.64.1 (2023-10-02)
+
+* Bug fixes
+  * [SIG-1140] Welcome email being sent more than once to users after signing documents
+
+Updates database model: no
+
 <a name="v1-64-0" />
 ### 1.64.0 (2023-09-28)
 

@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-64-1" />
+### 1.64.1 (2023-10-02)
+
+* Correções de bugs
+  * [SIG-1140] Email de boas-vindas enviado mais de uma vez aos usuário após assinatura de documentos
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-64-0" />
 ### 1.64.0 (2023-09-28)
 
