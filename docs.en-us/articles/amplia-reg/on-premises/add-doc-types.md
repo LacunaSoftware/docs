@@ -18,4 +18,4 @@ HolderFileTypes__MY_DOC_2=My second custom document name
 ```
 
 > [!NOTE]
-> Codes are case-insensitive and must have **at most 16 characters**
+> Codes are case-insensitive and must have **at most 16 characters**. Codes starting with `_` are reserved.
