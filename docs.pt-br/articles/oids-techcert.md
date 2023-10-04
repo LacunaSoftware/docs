@@ -71,6 +71,8 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.53 - [AC AMEPI](https://ac.amepi.org.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.54 - [AC VITRU](https://ac.vitru.com.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.55 - [AC Vólus](https://ac.volus.com/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.56 - [AC CNSP 2](https://ac2.usf.edu.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.57 - [AC BOM JESUS 2](https://ac2.bomjesus.br/certs/ac.txt)
 
 
 ## 2. Políticas de certificado A1
