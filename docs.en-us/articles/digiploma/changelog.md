@@ -5,7 +5,7 @@
 > documenting older versions.
 
 <a name="v2-16-0" />
-### 2.16.0 (2023-07-17)
+### 2.16.0 (2023-09-27)
 
 * Bug fixes
     * [AUT-296] Duplicated documents in the Signer when an error occurs when persisting the academic transcript
@@ -23,7 +23,7 @@
     * [AUT-366] Validate the CNPJ of the certificate belongs to the Issuing IES at the time of Registration
 
 <a name="v2-15-0" />
-### 2.15.0 (2023-07-17)
+### 2.15.0 (2023-09-04)
 
 * Improvements
     * [AUT-186] Move entry and completion date to database for new degrees
@@ -32,7 +32,7 @@
     * [AUT-316] Implement the academic curriculum
 
 <a name="v2-14-0" />
-### 2.14.0 (2023-07-17)
+### 2.14.0 (2023-08-28)
 
 * Bug fixes
     * [AUT-358] When searching for the document by pressing Enter, the Only Signed button is pressed
@@ -41,7 +41,7 @@
     * [AUT-359] Remove requirement for RegistrationBookCode property
 
 <a name="v2-13-1" />
-### 2.13.1 (2023-07-17)
+### 2.13.1 (2023-08-08)
 
 * Bug fixes
     * [AUT-355] Cancellation reason not displayed correctly on screen
@@ -51,7 +51,7 @@
     * [AUT-360] Improve conditions related to the signed diploma
 
 <a name="v2-13-0" />
-### 2.13.0 (2023-07-17)
+### 2.13.0 (2023-08-08)
 
 * Bug fixes
     * [AUT-352] Academic transcript template Id is not removed from copy issues once they have been finalized

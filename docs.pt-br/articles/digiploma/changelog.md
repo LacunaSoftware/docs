@@ -5,7 +5,7 @@
 > trabalhando para documentar as versões mais antigas.
 
 <a name="v2-16-0" />
-### 2.16.0 (2023-07-17)
+### 2.16.0 (2023-09-27)
 
 * Correções de bugs
     * [AUT-296] Documentos duplicados no Assinador quando ocorre erro ao persistir o histórico escolar
@@ -23,7 +23,7 @@
     * [AUT-366] Validar CNPJ do certificado pertence a IES Emissora no momento do Registro
 
 <a name="v2-15-0" />
-### 2.15.0 (2023-07-17)
+### 2.15.0 (2023-09-0417)
 
 * Melhorias
     * [AUT-186] Mover data ingresso e conclusão para o banco de dados para novos diplomas
@@ -32,7 +32,7 @@
     * [AUT-316] Implementar o curriculo digital
 
 <a name="v2-14-0" />
-### 2.14.0 (2023-07-17)
+### 2.14.0 (2023-08-28)
 
 * Correções de bugs
     * [AUT-358] Ao pesquisar pelo documento pressionando Enter, o botão de Apenas assinados é pressionado
@@ -41,7 +41,7 @@
     * [AUT-359] Remover obrigatoriedade da propriedade RegistrationBookCode
 
 <a name="v2-13-1" />
-### 2.13.1 (2023-07-17)
+### 2.13.1 (2023-08-08)
 
 * Correções de bugs
     * [AUT-355] Razão da anulação não é apresentado corretamente em tela
@@ -51,7 +51,7 @@
     * [AUT-360] Melhorar condições relacionadas ao diploma assinado
 
 <a name="v2-13-0" />
-### 2.13.0 (2023-07-17)
+### 2.13.0 (2023-08-08)
 
 * Correções de bugs
     * [AUT-352] O Id do modelo do histórico escolar não é removido de emissões de segunda vida após finalizadas
