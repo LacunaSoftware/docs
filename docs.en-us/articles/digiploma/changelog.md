@@ -4,6 +4,21 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-17-0" />
+### 2.17.0 (2023-10-09)
+
+* Bug fixes
+    * [AUT-371] Duplicated complementary activity name and code in RVCE
+    * [AUT-372] Error when trying to convert certificate password when it has special characters
+
+* Improvements
+    * [AUT-219] Add possibility of generating academic transcript from degree already created/issued
+
+* New Features
+    * [AUT-370] Add validation when changing pages in the manual form  
+    * [AUT-373] Create API to change visual representation of academic curriculum
+
+
 <a name="v2-16-0" />
 ### 2.16.0 (2023-09-27)
 

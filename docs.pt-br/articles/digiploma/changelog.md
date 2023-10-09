@@ -4,6 +4,20 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-17-0" />
+### 2.17.0 (2023-10-09)
+
+* Correções de bugs
+    * [AUT-371] Nome e código de atividade complementar duplicado no RVCE
+    * [AUT-372] Erro ao tentar converter senha do certificado quando possui caracteres especiais
+
+* Melhorias
+    * [AUT-219] Adicionar possibilidade de gerar histórico de diplomas já criados/emitidos
+
+* Novas funcionalidades
+    * [AUT-370] Adicionar validação ao trocar de página no formulário 
+    * [AUT-373] Criar API para alterar representação visual do currículo escolar
+
 <a name="v2-16-0" />
 ### 2.16.0 (2023-09-27)
 
@@ -23,7 +37,7 @@
     * [AUT-366] Validar CNPJ do certificado pertence a IES Emissora no momento do Registro
 
 <a name="v2-15-0" />
-### 2.15.0 (2023-09-0417)
+### 2.15.0 (2023-09-04)
 
 * Melhorias
     * [AUT-186] Mover data ingresso e conclusão para o banco de dados para novos diplomas
