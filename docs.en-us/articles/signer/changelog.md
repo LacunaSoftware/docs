@@ -1,5 +1,20 @@
 ﻿# Signer changelog
 
+<a name="v1-65-0" />
+### 1.65.0 (2023-10-11)
+
+* New Features
+  * [SIG-1106] Setting to require user to select a folder when creating a document
+  * [SIG-1139] Allow creation of multiple webhooks in an organization
+
+* Improvements
+  * [SIG-1143] Use Datavalid v3 API and the endpoint that validates facial images only
+
+* Bug fixes
+  * [SIG-1144] Expired link screen generates pending action e-mail even if document is already concluded
+
+Updates database model: no
+
 <a name="v1-64-1" />
 ### 1.64.1 (2023-10-02)
 

@@ -169,6 +169,10 @@ validated. This is disabled by default because of performance implications.
 * **AllowUserInfoUpdateBySubscription** (v.1.64.0): if `true`, users created when you create a document or when adding a user to a subscription will be able to have their information
 updated by administrators of that subscription.
 
+* **RequireFolderSelectionWhenCreatingDocuments** (v.1.65.0): if `true`, users are required to select a folder when creating documents.
+
+* **MaxWebhooksPerOrganization** (v1.65.0, default: `5`): maximum number of webhooks that can be added to an organization.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -223,7 +227,7 @@ Under section **ElectronicSignature**:
 	* `SelfSigned`: a self signed certificate is generated once and used for every electronic signagure in the application.
 	* `Timestamp`: the electronic signature is added to the document as a timestamp signature. Requires that a Timestamper is configured.
 * **AdditionalInfoUrl** (v1.9.0): URL to redirect the user when he clicks the electronic signature info icon in the document creation screen.
-* **UseSignatureCertificateAsSelfSignedCertificate** (v1.52.0): if a [Signature Certificate](#signature-certificate) is enabled, use it instead of the auto generated self signed certificate.
+* **UseSignatureCertificateAsSelfSignedCertificate** (v1.52.0): if `true` and a [Signature Certificate](#signature-certificate) is enabled, use it instead of the auto generated self signed certificate.
 
 <a name="signature-certificate" />
 ###  *Signature Certificate* Settings (v1.52.0)
@@ -463,6 +467,8 @@ Under section **Datavalid**:
 * **Disabled**: if `true`, disables the Datavalid service.
 * **ConsumerKey**: the SERPRO's consumer key for usage of the Datavalid service.
 * **ConsumerSecret**: the SERPRO's consumer secret for usage of the Datavalid service.
+* **ApiVersion** (v1.65.0, default: `v3`): API version to use. Available values are `v3` and `v2`.
+* **UseFacialOnlyValidation** (v1.65.0, default: `true`): if `true` uses the API that validates facial images only.
 
 ###  *Gerencianet* Settings (v1.32.0)
 

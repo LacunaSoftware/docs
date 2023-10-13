@@ -1,5 +1,20 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-65-0" />
+### 1.65.0 (2023-10-11)
+
+* Novas funcionalidades
+  * [SIG-1106] Configuração para definir como obrigatória a seleção de pastas na criação do documento
+  * [SIG-1139] Permitir adicionar múltiplos webhooks por organização
+
+* Melhorias
+  * [SIG-1143] Permitir integração com Datavalid usar API v3 e endpoint de biometria apenas facial
+
+* Correções de bugs
+  * [SIG-1144] Tela de link expirado gera e-mail de ação pendente indepentemente se o documento já está concluído
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-64-1" />
 ### 1.64.1 (2023-10-02)
 
