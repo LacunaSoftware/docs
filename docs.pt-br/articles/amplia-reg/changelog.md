@@ -1,8 +1,13 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<!--
 <a name="vnext" />
+-->
+
 <a name="v2-3-0" />
-## 2.3.0 (próxima versão)
+## 2.3.0 (2023-10-20)
+
+Idêntica a: 2.3.0 RC 3 (2023-09-22)
 
 Atualiza modelo do banco de dados: **sim**
 
@@ -10,17 +15,25 @@ Atualiza modelo do banco de dados: **sim**
 
 ARNG-201 Certificado de pessoa jurídica brasileiro
 
+ARNG-258 Integração com API de consulta prévia RFB
+
 ARNG-330 Integração com API de consulta de CNPJ do SERPRO
 
 ARNG-352 Pedidos sem conferência
 
 ### Melhorias
 
+ARNG-266 Melhorar tela inicial do agente de validação
+
 ARNG-347 Adicionar suporte a sincronização com servidores NTP
 
 ARNG-355 Definição tardia da natureza jurídica \(Holder Type\)
 
 ARNG-356 Validação da foto também na validação presencial (configurável)
+
+ARNG-365 Exibir seletor de naturezas jurídicas na ordem em que aparecem no tipo de certificado
+
+ARNG-366 Melhorias ao BrazilCertificateType para adicionar campos O= e OU= requeridos pela RFB
 
 ### Correções de bugs
 

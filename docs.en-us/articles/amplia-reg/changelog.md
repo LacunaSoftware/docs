@@ -1,8 +1,12 @@
 ﻿# Amplia Reg changelog
 
+<!--
 <a name="vnext" />
+-->
 <a name="v2-3-0" />
-## 2.3.0 (next version)
+## 2.3.0 (2023-10-20)
+
+Identical to: 2.3.0 RC 3 (2023-09-22)
 
 Updates database model: **yes**
 
@@ -10,17 +14,25 @@ Updates database model: **yes**
 
 ARNG-201 Brazilian organizational certificate
 
+ARNG-258 Integration with RFB's prior validation API (BR only)
+
 ARNG-330 Integration with SERPRO's organization query service (BR only)
 
 ARNG-352 Orders without confirmation
 
 ### Improvements
 
+ARNG-266 Improvements to validation agent's home page
+
 ARNG-347 Add support for NTP synchronization
 
 ARNG-355 Postpone and allow changing the definition of holder type
 
 ARNG-356 Facial validation also on presential orders (configurable)
+
+ARNG-365 Show holder type options in the orderer in which they appear on the certificate type
+
+ARNG-366 Improvements to BrazilCertificateType to add DN fields O= and OU= required by RFB
 
 ### Bug fixes
 
@@ -31,6 +43,12 @@ ARNG-344 Error when agent attempts to issue certificate before approval
 ARNG-345 Issue type selector gets duplicate "Videoconference" items when changing between certificate types
 
 ARNG-353 Certificate type details page does not show whether the type allows videoconference
+
+ARNG-359 Error when creating a Brazilian certificate type
+
+ARNG-364 Error when creating a holder type
+
+ARNG-370 DN field C= of Brazilian certificates is being encoded with the wrong value
 
 
 
