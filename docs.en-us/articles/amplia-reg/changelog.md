@@ -32,6 +32,17 @@ ARNG-377 When the agent that revokes a certificate is not the original validatio
 
 
 
+<a name="v2-3-1" />
+## 2.3.1 (2023-10-23)
+
+Updates database model: no
+
+### Bug fixes
+
+ARNG-381 Error *System.ArgumentNullException: Path cannot be null. (Parameter 'path')* (introduced on [v2.3.0](#v2-3-0))
+
+
+
 <a name="v2-3-0" />
 ## 2.3.0 (2023-10-20)
 

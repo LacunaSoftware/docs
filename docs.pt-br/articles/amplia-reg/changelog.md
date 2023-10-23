@@ -29,6 +29,16 @@ ARNG-375 Botões para revogar pedido e reenviar notificação de emissão não e
 ARNG-377 Documento de revogação consta o AVP do pedido mesmo que outro agente realize a revogação
 
 
+<a name="v2-3-1" />
+## 2.3.1 (2023-10-23)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-381 Erro *System.ArgumentNullException: Path cannot be null. (Parameter 'path')* (introduzido na [v2.3.0](#v2-3-0))
+
+
 
 <a name="v2-3-0" />
 ## 2.3.0 (2023-10-20)
