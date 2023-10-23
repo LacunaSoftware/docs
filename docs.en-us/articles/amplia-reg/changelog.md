@@ -1,8 +1,37 @@
 ﻿# Amplia Reg changelog
 
-<!--
 <a name="vnext" />
--->
+<a name="v2-4-0" />
+## 2.4.0 (next version)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-294 Mechanisms to unlink an order's validation agent
+
+ARNG-329 Accept sale number on order creation API \(externally defined\)
+
+ARNG-357 Custom holder file types
+
+### Improvements
+
+ARNG-332 Support for reusing another order's documents
+
+ARNG-372 Send revocation request as attachment on revocation notification emails
+
+ARNG-376 Version 2 of prepare certificate issue API (`POST /api/orders/v2/issue`)
+
+### Bug fixes
+
+ARNG-373 Documents of type `CaboVerdeTechnicalManagerDesignation` are persisted as `CaboVerdeLegalRepresentantDesignation`
+
+ARNG-375 Order details page is not displaying buttons to revoke certificate nor resend issue notifications
+
+ARNG-377 When the agent that revokes a certificate is not the original validation agent, the wrong agent name appears on the request document
+
+
+
 <a name="v2-3-0" />
 ## 2.3.0 (2023-10-20)
 

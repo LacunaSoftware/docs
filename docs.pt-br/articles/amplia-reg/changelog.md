@@ -1,8 +1,34 @@
 ﻿# Histórico de versões do Amplia Reg
 
-<!--
 <a name="vnext" />
--->
+<a name="v2-4-0" />
+## 2.4.0 (próxima versão)
+
+### Novas funcionalidades
+
+ARNG-294 Mecanismo para desvincular o agente de validação de um pedido
+
+ARNG-329 Permitir informar número da venda na criação por API \(definido externamente\)
+
+ARNG-357 Tipos de documento personalizados
+
+### Melhorias
+
+ARNG-332 Permitir reaproveitar documentação no pré-preenchimento de pedido
+
+ARNG-372 Enviar documento de solicitação de revogação como anexo do email de notificação de revogação
+
+ARNG-376 API v2 de preparo para emissão de certificado (`POST /api/orders/v2/issue`)
+
+### Correções de bugs
+
+ARNG-373 Documentos de tipo CaboVerdeTechnicalManagerDesignation são salvos como CaboVerdeLegalRepresentantDesignation
+
+ARNG-375 Botões para revogar pedido e reenviar notificação de emissão não estão aparecendo na tela de detalhe de pedido
+
+ARNG-377 Documento de revogação consta o AVP do pedido mesmo que outro agente realize a revogação
+
+
 
 <a name="v2-3-0" />
 ## 2.3.0 (2023-10-20)
@@ -44,6 +70,12 @@ ARNG-344 Erro na emissão pelo agente antes da aprovação
 ARNG-345 Seletor de tipo de emissão duplica "Video conferência" quando muda entre 2 tipos que possuem video conferencia ativa
 
 ARNG-353 Tipo de certificado não informa se permite ou não video conferencia na tela de detalhes
+
+ARNG-359 Erro na criação de tipo de certificado BR
+
+ARNG-364 Erro ao criar natureza jurídica
+
+ARNG-370 Campo C= de certificados brasileiros está saindo com valor errado
 
 
 
