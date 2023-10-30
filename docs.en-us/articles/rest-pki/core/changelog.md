@@ -1,6 +1,66 @@
 ﻿# Rest PKI Core changelog
 
+<!--
 <a name="vnext" />
+-->
+
+<a name="v2.0.0" />
+## 2.0.0 (2023-10-30)
+
+Updates database model: **yes**
+
+### Improvements
+
+RPNG-178 Permitir definição opcional de timestamp tier no contexto de segurança
+
+RPNG-204 Anonimização de dados na tela de validação
+
+RPNG-207 Melhorias ao gerenciamento de provimento de carimbos de tempo
+
+RPNG-212 Alterar texto da marca de validação da ONR
+
+### Bug fixes
+
+RPNG-198 API de validação de assinaturas não respeita configuração `General:DefaultTimeZone`
+
+
+
+<a name="v1-13-1" />
+## 1.13.1 (2023-10-17)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-212 Alterar texto da marca de validação da ONR
+
+
+
+<a name="v2.0.0-rc16" />
+## 2.0.0 RC 16 (2023-09-12)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-160 Adicionar suporte às APIs de assinatura CADES antigas
+
+RPNG-182 Histórico de timestamp tiers e providers
+
+RPNG-206 Habilitar acesso via SSH na imagem de Docker
+
+### Bug fixes
+
+RPNG-185 Arquivos de certificado não são aceitos no upload de raízes do gerenciamento de contexto de segurança
+
+RPNG-200 Propriedade MessageDigest dos assinantes PDF/CMS não é preenchida em situações em que apenas o algoritmo é conhecido
+
+RPNG-201 APIs de exploração de assinatura estão ignorando o parâmetro `SignaturePolicyId`
+
+RPNG-209 Multipart upload não está funcionando
+
+
+
 <a name="v2.0.0-rc08" />
 ## 2.0.0 RC 8 (2023-06-30)
 

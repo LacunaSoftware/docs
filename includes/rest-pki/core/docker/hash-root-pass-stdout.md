@@ -1,3 +1,3 @@
 ﻿```sh
-docker run -i lacunasoftware/restpkicore:1.13 -- hash-root-pass
+docker run -i lacunasoftware/restpkicore:2.0 -- hash-root-pass
 ```
