@@ -1,8 +1,36 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<!--
 <a name="vnext" />
+-->
+
+<a name="v2-4-1" />
+## 2.4.1 (2023-10-30)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-384 Aumentar tamanho máximo do DNOrganization em tipos de certificado BR para 200 caracteres
+
+### Correções de bugs
+
+ARNG-382 Erro ao salvar tipo de certificado sem documentos
+
+ARNG-383 Listagens de pedidos na home do AVP não filtram pela AR selecionada
+
+ARNG-385 Não é possível filtrar pedidos por RUC \(PY\) 
+
+ARNG-386 Documentos como CI e foto aparecem duas vezes na tela de detalhes do pedido
+
+
+
 <a name="v2-4-0" />
-## 2.4.0 (próxima versão)
+## 2.4.0 (2023-10-23)
+
+Idêntica a: 2.4.0 RC 2 (2023-10-23)
+
+Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
 
@@ -27,6 +55,7 @@ ARNG-373 Documentos de tipo CaboVerdeTechnicalManagerDesignation são salvos com
 ARNG-375 Botões para revogar pedido e reenviar notificação de emissão não estão aparecendo na tela de detalhe de pedido
 
 ARNG-377 Documento de revogação consta o AVP do pedido mesmo que outro agente realize a revogação
+
 
 
 <a name="v2-3-1" />

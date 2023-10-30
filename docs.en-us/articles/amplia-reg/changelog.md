@@ -1,8 +1,34 @@
 ﻿# Amplia Reg changelog
 
+<!--
 <a name="vnext" />
+-->
+
+<a name="v2-4-1" />
+## 2.4.1 (2023-10-30)
+
+Updates database model: **yes**
+
+### Improvements
+
+ARNG-384 Increase maximum DNOrganization size on BR certificate types to 200 characters
+
+### Bug fixes
+
+ARNG-382 Error saving certificate type without documents
+
+ARNG-383 Order listings on the AVP home page do not filter by the selected AR
+
+ARNG-385 Unable to filter orders by RUC \(PY\) 
+
+ARNG-386 Documents such as ID and photo appear twice on the order details screen
+
+
+
 <a name="v2-4-0" />
-## 2.4.0 (next version)
+## 2.4.0 (2023-10-23)
+
+Identical to: 2.4.0 RC 2 (2023-10-23)
 
 Updates database model: **yes**
 

@@ -20,7 +20,7 @@ dotnet Lacuna.AmpliaRegNg.Site.dll [settings] -- command [command-options]
 Or, on Docker, simply run the following on any directory:
 
 ```sh
-docker run -i lacunasoftware/ampliareg:2.3 [settings] -- command [command-options]
+docker run -i lacunasoftware/ampliareg:2.4 [settings] -- command [command-options]
 ```
 
 [!include[About settings](includes/about-settings.md)]
