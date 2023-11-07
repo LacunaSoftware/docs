@@ -4,10 +4,27 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v4-6-0" />
+### 4.6.0 (2023-11-06)
+
+* New features
+  * [LI-401] Gov BR integration
+
+* Improvements
+  * [LI-403] Add option to disable client secret requirement for Code Flow + PKCE
+  * [LI-404] Updated phone number validation library
+  * [LI-405] Improve filtering of digital certificates
+  * [LI-406] Improve name validation
+  * [LI-407] Update valid characters list for username
+  * [LI-408] Add Paraguay's cédula de identidad validation
+  * [LI-409] Add protection against HTML injection for e-mail sending
+
+Updates database model: no
+
 <a name="v4-5-0" />
 ### 4.5.0 (2023-05-25)
 
-* Novas funcionalidades
+* New features
   * [LI-399] API to delete user
 
 * Improvements

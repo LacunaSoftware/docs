@@ -4,6 +4,23 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v4-6-0" />
+### 4.6.0 (2023-11-06)
+
+* Novas funcionalidades
+  * [LI-401] Integração com Gov BR
+
+* Melhorias
+  * [LI-403] Adicionar opção para desabilitar a necessidade de envio de client secret com Code Flow + PKCE
+  * [LI-404] Atualizar biblioteca de validação de telefone
+  * [LI-405] Melhorar filtragem de certificados
+  * [LI-406] Melhorar validação de nomes
+  * [LI-407] Atualizar lista de caracteres válidos para username
+  * [LI-408] Adicionar validação de cédula de identidad do Paraguai
+  * [LI-409] Proteção contra HTML injection no envio de e-mails
+
+Atualiza modelo do banco de dados: não
+
 <a name="v4-5-0" />
 ### 4.5.0 (2023-05-25)
 
