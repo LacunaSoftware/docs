@@ -1,5 +1,26 @@
 ﻿# Signer changelog
 
+<a name="v1-66-0" />
+### 1.66.0 (2023-11-13)
+
+* New Features
+  * [SIG-1157] Option to add unsubscribe link in notifications sent by e-mail
+  * [SIG-1158] Opening and click tracking in sent e-mails
+
+* Improvements
+  * [SIG-1151] Improve validation of PDFs that have annotations
+  * [SIG-1153] Setting to notify participants when document attachments are added or deleted
+  * [SIG-1154] Setting to notify participants when document information is updated
+  * [SIG-1155] Setting to notify participants when a new version of a document is added
+
+* Bug fixes
+  * [SIG-1145] Cannot update payment preferences through Billing menu
+  * [SIG-1150] Document concluded Webhook is being received after the document signed webhook
+  * [SIG-1156] Cannot sign with cloud certificate in public area if there is a logged user that is not the signer
+  * [SIG-1160] Organization credits are not displayed when organization has custom plan
+
+Updates database model: yes
+
 <a name="v1-65-0" />
 ### 1.65.0 (2023-10-11)
 

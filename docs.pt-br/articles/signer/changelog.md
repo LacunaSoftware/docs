@@ -1,5 +1,26 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-66-0" />
+### 1.66.0 (2023-11-13)
+
+* Novas funcionalidades
+  * [SIG-1157] Permitir adicionar link de cancelar recebimento nas notificações enviadas por e-mail
+  * [SIG-1158] Rastreamento de abertura e cliques em e-mails
+
+* Melhorias
+  * [SIG-1151] Melhorar validação de PDFs com anotações
+  * [SIG-1153] Configuração para notificar participantes quando anexos são adicionados ou excluídos
+  * [SIG-1154] Configuração para notificar participantes quando dados do documento são atualizados
+  * [SIG-1155] Configuração para notificar participantes quando nova versão é adicionada
+
+* Correções de bugs
+  * [SIG-1145] Não é possível atualizar preferências de pagamento à partir do menu Cobranças
+  * [SIG-1150] Webhook de documento concluído sendo disparado antes do webhook de documento assinado
+  * [SIG-1156] Não é possível assinar com certificado em nuvem na área pública se usuário estiver logado com usuário diferente do signatário
+  * [SIG-1160] Créditos da organização não são exibidos quando ela tem plano personalizado
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-65-0" />
 ### 1.65.0 (2023-10-11)
 

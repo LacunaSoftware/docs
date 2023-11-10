@@ -30,6 +30,13 @@ Please use the [Document Types settings](#document-types-settings) instead as th
 instead as this option is now deprecated.
 
 * **NotifyConclusion** (v1.5.0): if `true` sends an email to all participants of a document when it is concluded.
+* **NotifyParticipantsOnAddedVersion** (v1.66.0): if `true` sends an email to all active participants of a document when a new document version is added. If not enabled, only observers will
+be notified.
+* **NotifyParticipantsOnAttachmentUpdates** (v1.66.0): if `true` sends an email to all active participants of a document when attachments are added or deleted. If not enabled, only observers will
+be notified.
+* **NotifyParticipantsOnDocumentInformationUpdates** (v1.66.0): if `true` sends an email to all active participants of a document when document information is updated. If not enabled, only observers will
+be notified.
+
 * **AreActionsOrderedByDefault** (v1.6.0): if `true`, actions of the document flow will be ordered by default unless overriden by the user during the document creation.
 * **FlowActionTicketValidityMinutes**: defines the validity in minutes of the ticket that is sent in the signature reminder email which allows an user to sign without logging in. 
 The default value is `1440` (24 hours).
@@ -172,6 +179,8 @@ updated by administrators of that subscription.
 * **RequireFolderSelectionWhenCreatingDocuments** (v.1.65.0): if `true`, users are required to select a folder when creating documents.
 
 * **MaxWebhooksPerOrganization** (v1.65.0, default: `5`): maximum number of webhooks that can be added to an organization.
+
+* **DocumentConcludedWebhookDelayInSeconds** (v1.66.0, default: `60`): delay in seconds to wait until the document concluded webhook is triggered.
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
@@ -381,7 +390,7 @@ Under section **InvoiceReceipt**:
 * **Gateway** (default: `NFEio`): defines the Receipts Gateway. The only available value is `NFEio` ([https://nfe.io/](https://nfe.io/)).
 * **ReceiptType** (default: `NFSe`): defines the type of receipt issued. The only available value is `NFSe` (service receipt).
 * **CityServiceCode**: the code for the service in the city it will be provided. Navigate to "Companies> List of Registered Services" in your NFEio account to view available codes for your company.
-* **CnaeCode ** (optional): your company's [CNAE](https://receita.economia.gov.br/orientacao/tributaria/cadastros/cadastro-nacional-de-pessoas-juridicas-cnpj/classificacao-nacional-de-atividades-economicas-2013-cnae). 
+* **CnaeCode** (optional): your company's [CNAE](https://receita.economia.gov.br/orientacao/tributaria/cadastros/cadastro-nacional-de-pessoas-juridicas-cnpj/classificacao-nacional-de-atividades-economicas-2013-cnae). 
 * **ReceiptDescription** (default: same value set on the `SiteName` setting): a description included in the "Service Description" of the receipt.
 
 <a name="sms-settings" />
@@ -537,13 +546,22 @@ Under section **PushNotification**:
 * **ApiKey**: an API Key for subscription in Lacuna Customer portal that is allowed to send push notifications to the Web PKI App.
 
 <a name="access-control-settings" />
-###  *Access Control* Settings (v1.7.0)
+###  *Access Control* Settings (v1.63.0)
 
 Under section **AccessControl**:
 
 * **IsOpen**: if `true`, any user that logs/registers in the website may use the application and create documents in his personal account. If `false`, users will only be 
 able to use the logged user area if they are added previously in an organization. See [Access Control](access-control.md) for more details.
 * **BlockPersonalAccounts**: if `true` and the access control is open, users may use the application normally but must create or use an organization to perform actions.
+
+<a name="app-email-settings" />
+###  *Email* Settings (v1.66.0)
+
+Under section **Email**:
+
+* **EnableTracking** (default: `true`): if `true`, e-mails will be tracked and evidences of opening and clicked links will be registered.
+* **EnableUnsubscribe**: if `true` adds an unsubscribe link to e-mails. E-mails that have unsubscribed will only receive new notifications if they are excluded from the 
+blocked list by the instance administrator.
 
 ###  *SigningTags* Settings
 
