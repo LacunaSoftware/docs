@@ -6,6 +6,7 @@
 * New Features
   * [SIG-1157] Option to add unsubscribe link in notifications sent by e-mail
   * [SIG-1158] Opening and click tracking in sent e-mails
+  * [SIG-1161] Support ITI QR code validation
 
 * Improvements
   * [SIG-1151] Improve validation of PDFs that have annotations

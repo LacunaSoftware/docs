@@ -6,6 +6,7 @@
 * Novas funcionalidades
   * [SIG-1157] Permitir adicionar link de cancelar recebimento nas notificações enviadas por e-mail
   * [SIG-1158] Rastreamento de abertura e cliques em e-mails
+  * [SIG-1161] Suporte a validação por QR Code do validador do ITI
 
 * Melhorias
   * [SIG-1151] Melhorar validação de PDFs com anotações
