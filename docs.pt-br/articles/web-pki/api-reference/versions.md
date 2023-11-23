@@ -18,6 +18,14 @@ Se o parâmetro não for passado, o padrão é exigir a [API 1.3](#v1-3).
 <a name="changelog" />
 ## Histórico de versões da API
 
+<a name="v1-8-2" />
+### 1.8.2 (2023-11-23)
+
+Desde lib [2.16.3](../update.md)
+
+- Melhoria no método [`importCertificate`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#importcertificate) suportando múltiplas chamadas
+
+
 <a name="v1-8-1" />
 ### 1.8.1 (2022-12-17)
 

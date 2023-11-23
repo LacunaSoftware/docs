@@ -18,6 +18,14 @@ If the parameter is not set, the dafault requested version is [API 1.3](#v1-3).
 <a name="changelog" />
 ## API changelog
 
+<a name="v1-8-2" />
+### 1.8.2 (2023-11-23)
+
+Since lib [2.16.3](../update.md)
+
+- Improve method [`importCertificate`](https://docs.lacunasoftware.com/content/typedocs/web-pki/classes/_lacuna_web_pki_d_.lacunawebpki.html#importcertificate) supporting multiple calls
+
+
 <a name="v1-8-1" />
 ### 1.8.1 (2022-12-17)
 
