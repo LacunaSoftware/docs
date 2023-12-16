@@ -74,6 +74,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.56 - [AC CNSP 2](https://ac2.usf.edu.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.57 - [AC BOM JESUS 2](https://ac2.bomjesus.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.58 - [AC LIVE](https://ac.livemedsaude.com/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.59 - [AC FIERGS](https://ac.fiergs.org.br/certs/ac.txt)
 
 ## 2. Políticas de certificado A1
 
