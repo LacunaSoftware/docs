@@ -1,5 +1,22 @@
 ﻿# Signer changelog
 
+<a name="v1-67-0" />
+### 1.67.0 (2023-12-19)
+
+* New Features
+  * [SIG-1087] Display attachment preview by clicking the icon
+  * [SIG-1152] Setting to generate signatures manifest when validating documents
+
+* Improvements
+  * [SIG-1084] Add information about organization creation permission in instance information
+  * [SIG-1170] Low PDF resolution when viewed on mobile devices
+
+* Bug fixes
+  * [SIG-1166] Term of Use cannot be signed with cloud certificate
+  * [SIG-1167] Document expired after being concluded
+
+Updates database model: no
+
 <a name="v1-66-0" />
 ### 1.66.0 (2023-11-13)
 

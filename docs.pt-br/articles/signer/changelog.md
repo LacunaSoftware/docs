@@ -1,5 +1,22 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-67-0" />
+### 1.67.0 (2023-12-19)
+
+* Novas funcionalidades
+  * [SIG-1087] Permitir visualização do anexo ao clicar sobre o ícone
+  * [SIG-1152] Configuração para gerar manifesto de assinaturas ao validar um documento
+
+* Melhorias
+  * [SIG-1084] Adicionar nas configurações gerais da instância sobre config para criar organizações
+  * [SIG-1170] Baixa Resolução de PDFs quando são visualizados em dispositivos mobile
+
+* Correções de bugs
+  * [SIG-1166] Assinatura de termo de uso com certificado em nuvem não funciona
+  * [SIG-1167] Documento expirado após exclusão
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-66-0" />
 ### 1.66.0 (2023-11-13)
 
