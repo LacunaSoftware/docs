@@ -22,18 +22,20 @@ if your instance will not be publicly-accessible, to a public server with a reve
 
 ## Configuring Amplia to use the chosen OCSP domain
 
-Once you have followed the steps above to setup an OCSP domain, fill it on the `OcspDomains` setting of the `Amplia` section of configuration file:
+Once you have followed the steps above to setup an OCSP domain, fill `Amplia` section of configuration file as follows:
 
 Example (*.ini* or *.conf* configuration file):
 
 ```ini
 [Amplia]
+OcspEnabled=True
 OcspDomains=ocsp.yourcompany.com
 ```
 
 Example (environment variables):
 
 ```bash
+Amplia__OcspEnabled=True
 Amplia__OcspDomains=ocsp.yourcompany.com
 ```
 
@@ -42,10 +44,11 @@ Example (*.json* configuration file):
 ```json
     ...,
     "Amplia": {
+        "OcspEnabled": true,
         "OcspDomains": "ocsp.yourcompany.com",
         ...
     },
     ...
 ```
 
-The setting is a comma-separated list, so you can have multiple OCSP domains.
+The setting `OcspDomains` is a comma-separated list, so you can have multiple OCSP domains.
