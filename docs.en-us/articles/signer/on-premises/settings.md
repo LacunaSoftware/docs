@@ -173,6 +173,8 @@ Only instance administrators will be able to perform such actions.
 * **EnableSignatureValidationWhenGeneratingManifest** (v1.63.0): if `true`, whenever a signature manifest is generated, the associated signed document will have its signatures
 validated. This is disabled by default because of performance implications.
 
+* **EnableSignaturesManifestDownloadInDocumentValidation** (v1.67.0): if `true`, a Signatures Manifest download option will be displayed when validating documents.
+
 * **AllowUserInfoUpdateBySubscription** (v.1.64.0): if `true`, users created when you create a document or when adding a user to a subscription will be able to have their information
 updated by administrators of that subscription.
 

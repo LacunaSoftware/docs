@@ -11,7 +11,7 @@ To configure a PKCS #11 key store on Amplia, use the following settings:
 * **Type**: `Pkcs11`
 * **Module**: name of the PKCS #11 library (e.g.: `eTPKCS11.dll`)
 * **Pin**: PIN of the token, if required
-* **TokenSerialNumber**: if multiple tokens will be present, you can specify the token to be used with this setting 
+* **TokenSerialNumber** / **TokenLabel** (since v4.8.0): if multiple tokens are present, you can specify the token to be used with either setting
 
 Sample configuration (*.ini* or *.conf* file):
 
@@ -175,6 +175,9 @@ KeyStores__MyKryptusHsm__Pin=SOME_PASSWORD
 	"Pin": "SOME_PASSWORD"
 }
 ```
+
+To have multiple users on the HSM with each mapped to a different key store on Amplia, add the users to the *config.json* file and fill the `TokenLabel` setting
+on each key store on Amplia with the corresponding user name.
 
 ### High Availability
 
