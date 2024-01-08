@@ -403,6 +403,21 @@
 ## [Histórico de versões do app](psc/app-changelog.md)
 <!-- End of PSC -->
 
+<!-- Start of TSA -->
+# [TSA](tsa/index.md)
+## [On premises](tsa/on-premises/index.md)
+### [Setup em Linux](tsa/on-premises/linux/index.md)
+#### [Instalação em Ubuntu Server](tsa/on-premises/linux/install-ubuntu.md)
+#### [Instalação em Rocky Linux](tsa/on-premises/linux/install-rocky.md)
+#### [Atualização](tsa/on-premises/linux/update.md)
+#### [Resolução de problemas](tsa/on-premises/linux/troubleshoot/index.md)
+##### [Verificando os logs](tsa/on-premises/linux/troubleshoot/check-logs.md)
+### [Configuração de NTP](tsa/on-premises/configure-ntp.md)
+### [Configuração de autenticação](tsa/on-premises/configure-auth.md)
+### [Verificando a versão instalada](tsa/on-premises/check-version.md)
+## [Histórico de versões](tsa/on-premises/check-version.md)
+<!-- End of TSA -->
+
 <!-- Start of GrantID -->
 # [GrantID](grant-id/index.md)
 ## [On premises](grant-id/on-premises/index.md)

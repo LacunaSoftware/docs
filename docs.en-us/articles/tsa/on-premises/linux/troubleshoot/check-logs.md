@@ -1,4 +1,4 @@
-﻿# Lacuna TSA - Checking the system logs (Linux)
+﻿# Checking the system logs (Linux) - Lacuna TSA
 
 When installed on Linux, [Lacuna TSA](../../../index.md) sends its logs to the systemd journal, a centralized management solution for logging
 all kernel and userland processes. To view the logs, use the `journalctl` utility.
@@ -18,4 +18,4 @@ Use the `--since` parameter to view only recent logs:
 ## See also
 
 * [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs) (DigitalOcean post)
-* [Troubleshooting issues on your Lacuna TSA instance (Linux)](index.md)
+* [Troubleshooting (Linux)](index.md)

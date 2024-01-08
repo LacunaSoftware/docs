@@ -11,7 +11,7 @@ KillSignal=SIGINT
 SyslogIdentifier=lacuna-tsa
 User=lacuna-tsa
 Environment=ASPNETCORE_ENVIRONMENT=Linux
-Environment=ASPNETCORE_URLS=http://+:5004
+Environment=ASPNETCORE_URLS=http://+:5005
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 
 [Install]

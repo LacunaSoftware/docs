@@ -1,6 +1,6 @@
-﻿# Lacuna TSA *on premises*
+﻿# Lacuna TSA on-premises
 
-O [Lacuna TSA](../index.md) can be used as a service (SaaS) or you can host your own instance.
+[Lacuna TSA](../index.md) can be used as a service (SaaS) or you can host your own instance.
 
 ## Supported platforms
 

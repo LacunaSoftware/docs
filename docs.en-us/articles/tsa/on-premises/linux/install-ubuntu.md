@@ -37,4 +37,4 @@ Enable the site:
 ## See also
 
 * [Updating Lacuna TSA on Linux](update.md)
-* [Troubleshooting](troubleshoot/index.md)
+* [Troubleshooting (Linux)](troubleshoot/index.md)

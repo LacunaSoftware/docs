@@ -1,4 +1,4 @@
-﻿# Setup do Lacuna TSA em Linux
+﻿# Setup em Linux - Lacuna TSA
 
 O [Lacuna TSA](../../index.md) pode ser instalado nas seguintes distribuições de Linux:
 

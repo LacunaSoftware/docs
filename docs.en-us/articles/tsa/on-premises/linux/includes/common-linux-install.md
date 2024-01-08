@@ -28,10 +28,11 @@ Edit the configuration file and follow the instructions on it to configure your 
 
 [!include[Edit settings](../../../../../../includes/tsa/linux/edit-settings.md)]
 
-On the `[Amplia]` section, to fill the `ApiKey` setting you must create an application on your existing [Amplia](../../../../amplia/index.md)
-instance and generate an API key for it:
+If your TSA key is hosted on an Amplia instance, you will need to fill the `[Amplia]` section. To fill the `ApiKey` setting you must create an application on your existing
+Amplia instance and generate an API key for it:
 
 [!include[Amplia config](../../includes/amplia-config.md)] 
+
 Fill the remaining settings according to the instructions on the configuration file.
 
 ## Set up a daemon

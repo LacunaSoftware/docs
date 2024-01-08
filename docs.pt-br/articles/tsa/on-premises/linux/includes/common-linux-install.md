@@ -27,10 +27,11 @@ Edite o arquivo de configuração e siga as instruções nele para configurar su
 
 [!include[Edit settings](../../../../../../includes/tsa/linux/edit-settings.md)]
 
-Na seção `[Amplia]`, para preencher o parâmetro `ApiKey` é preciso criar uma aplicação na sua instância do [Amplia](../../../../amplia/index.md)
-e gerar uma chave de API para a aplicação:
+Se a chave do seu certificado de TSA estiver hospedada em uma instância do Amplia, será necessário preencher a seção `[Amplia]`. Para preencher o parâmetro `ApiKey` é preciso criar uma
+aplicação na sua instância do Amplia e gerar uma chave de API para a aplicação:
 
 [!include[Amplia config](../../includes/amplia-config.md)]
+
 Preencha os demais parâmetros de acordo com as instruções presentes no arquivo de configuração.
 
 ## Configurar um *daemon*

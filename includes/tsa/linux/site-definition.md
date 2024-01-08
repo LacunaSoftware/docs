@@ -3,7 +3,7 @@ server {
     listen        80;
     server_name   tsa.patorum.com;
     location / {
-        proxy_pass         http://localhost:5004;
+        proxy_pass         http://localhost:5005;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;

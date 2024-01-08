@@ -1,3 +1,3 @@
-﻿# Troubleshooting issues on your Lacuna TSA instance (Linux)
+﻿# Troubleshooting (Linux) - Lacuna TSA 
 
-The first step in throubleshooting issues on your Lacuna TSA instance is [checking the system logs](check-logs.md).
+The first step in throubleshooting issues on your [on-premises instance](../../index.md) of [Lacuna TSA](../../../index.md) is [checking the system logs](check-logs.md).

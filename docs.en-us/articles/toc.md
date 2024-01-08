@@ -403,6 +403,21 @@
 ## [Mobile App changelog](psc/app-changelog.md)
 <!-- End of PSC -->
 
+<!-- Start of TSA -->
+# [TSA](tsa/index.md)
+## [On-premises](tsa/on-premises/index.md)
+### [Setup on Linux](tsa/on-premises/linux/index.md)
+#### [Install on Ubuntu Server](tsa/on-premises/linux/install-ubuntu.md)
+#### [Install on Rocky Linux](tsa/on-premises/linux/install-rocky.md)
+#### [Update](tsa/on-premises/linux/update.md)
+#### [Troubleshooting](tsa/on-premises/linux/troubleshoot/index.md)
+##### [Checking logs](tsa/on-premises/linux/troubleshoot/check-logs.md)
+### [Configure NTP](tsa/on-premises/configure-ntp.md)
+### [Configure authentication](tsa/on-premises/configure-auth.md)
+### [Checking the installed version](tsa/on-premises/check-version.md)
+## [Changelog](tsa/on-premises/check-version.md)
+<!-- End of TSA -->
+
 <!-- Start of GrantID -->
 # [GrantID](grant-id/index.md)
 ## [On-premises](grant-id/on-premises/index.md)

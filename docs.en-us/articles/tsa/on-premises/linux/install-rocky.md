@@ -35,4 +35,4 @@ Create a site configuration file for Lacuna TSA:
 ## See also
 
 * [Updating Lacuna TSA on Linux](update.md)
-* [Troubleshooting](troubleshoot/index.md)
+* [Troubleshooting (Linux)](troubleshoot/index.md)

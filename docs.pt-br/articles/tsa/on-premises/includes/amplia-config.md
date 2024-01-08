@@ -1,7 +1,7 @@
 ﻿1. Autentique-se na sua instância do Amplia
 1. Clique em **Aplicações** no menu lateral, em seguida em *Adicionar*
 1. Preencha um nome e selecione a conta na qual os certificados devem ser emitidos (**não escolha** o *Sys Admin*)
-1. Marque o papel **Worker**
+1. Marque o papel **Gerente** (ou *Manager*)
 1. Clique em *Criar*
 1. Clique em **Chaves**, depois em *Adicionar*
 1. Preencha alguma descrição e, no campo *Expiração*, escolha "Nunca expira"
