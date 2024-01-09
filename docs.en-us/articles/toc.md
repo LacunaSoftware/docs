@@ -415,7 +415,7 @@
 ### [Configure NTP](tsa/on-premises/configure-ntp.md)
 ### [Configure authentication](tsa/on-premises/configure-auth.md)
 ### [Checking the installed version](tsa/on-premises/check-version.md)
-## [Changelog](tsa/on-premises/check-version.md)
+## [Changelog](tsa/changelog.md)
 <!-- End of TSA -->
 
 <!-- Start of GrantID -->
