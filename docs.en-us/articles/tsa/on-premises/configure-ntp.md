@@ -43,7 +43,8 @@ Port=123
 Priority=0
 TimeoutMS=1000
 
-Logging__LogLevel__Lacuna.Commons.NtpSync=Information
+[Logging:LogLevel]
+Lacuna.Commons.NtpSync=Information
 ```
 
 Example (environment variables):
