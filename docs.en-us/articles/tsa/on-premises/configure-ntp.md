@@ -19,10 +19,8 @@ This feature is configured through the **Ntp** section, having the following set
 * **EnforceMaxOffset**: set to True to consider a NTP server as out-of-sync due to an unacceptable offset. Defaults to `False`
 * **Disabled**: set to True to disable NTP synchronization. Defaults to `False`
 
-* **Logging__LogLevel__Lacuna.Commons.NtpSync**: To monitor NTP synchronization, set as `Information`
-
-> [!NOTE]
-> **Logging__LogLevel__Lacuna.Commons.NtpSync** is part of the logging section, so it is not necessary to use the Ntp prefix
+To monitor NTP synchronization, add the following to the **Logging** section, subsection **LogLevel**:
+* **Lacuna.Commons.NtpSync**: Set to `Information`
 
 Example (.ini or .conf configuration file):
 ```ini
@@ -37,7 +35,7 @@ MaxOffsetSeconds=
 EnforceMaxOffset=False
 Disabled=False
 
-[Ntp:Servers:<ServerName>]
+[Ntp:Servers:FillServerNameHere]
 Host=127.0.0.1
 Port=123
 Priority=0
@@ -60,10 +58,10 @@ Ntp__MaxOffsetSeconds=
 Ntp__EnforceMaxOffset=False
 Ntp__Disabled=False
 
-Ntp__Servers__ServerName__Host=127.0.0.1
-Ntp__Servers__ServerName__Port=123
-Ntp__Servers__ServerName__Priority=0
-Ntp__Servers__ServerName__TimeoutMS=1000
+Ntp__Servers__FillServerNameHere__Host=127.0.0.1
+Ntp__Servers__FillServerNameHere__Port=123
+Ntp__Servers__FillServerNameHere__Priority=0
+Ntp__Servers__FillServerNameHere__TimeoutMS=1000
 
 Logging__LogLevel__Lacuna.Commons.NtpSync=Information
 ```
