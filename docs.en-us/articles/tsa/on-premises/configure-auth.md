@@ -14,20 +14,20 @@ This feature is configured through the **Authentication** section, having the fo
 
 Example (.ini or .conf configuration file):
 ```ini
-[Authentication:Users:<Username>]
+[Authentication:Users:FillUsernameHere]
 Type=Basic
 Password=YOUR_PASSWORD
 
-[Authentication:Users:<Username>]
+[Authentication:Users:FillUsernameHere]
 Type=BearerToken
 BearerToken=YOUR_BEARERTOKEN
 ```
 
 Example (environment variables):
 ```sh
-Authentication__Users__<Username>__Type=Basic
-Authentication__Users__<Username>__Password=YOUR_PASSWORD
+Authentication__Users__FillUsernameHere__Type=Basic
+Authentication__Users__FillUsernameHere__Password=YOUR_PASSWORD
 
-Authentication__Users__<Username>__Type=BearerToken
-Authentication__Users__<Username>__BearerToken=YOUR_BEARERTOKEN
+Authentication__Users__FillUsernameHere__Type=BearerToken
+Authentication__Users__FillUsernameHere__BearerToken=YOUR_BEARERTOKEN
 ```
