@@ -77,7 +77,7 @@ Example
         <h2>Hello, {{HolderFirstName}}</h2>
     </div>
     <div>
-        <span>{{ExpirationNotice}}</span>
+        <span>{{ExpirationNotice}} <b>{{ExpirationDate}}</b> at <b>{{ExpirationTime}}</b></span>
     </div>
     <div>
         <span>We would like to invite you to renew your certificate in <a target="_blank"
