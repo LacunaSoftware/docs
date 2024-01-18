@@ -30,7 +30,7 @@ Renovation__ExpirationNearNotice=We inform you that your digital certificate wil
 
 # Configuring the email template
 
-Create the HTML template of the email and store it inside the `assets` folder of the configured Blob Storage with the name `RenovationAlertTemplate.html` em `UTF8`. The template can have tags for replacement, use `{{tagName}}` inside the template for it's replacement.
+Create the HTML template of the email and store it inside the `assets` folder of the configured Blob Storage with the name `RenovationAlertTemplate.html` in `UTF8`. The template can have tags for replacement, use `{{tagName}}` inside the template for it's replacement.
 
 Tag names that will be replaced:
 
