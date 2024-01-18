@@ -1,9 +1,9 @@
 # Configure renovation email - Amplia Reg
 
-To enable email sending, fill the section **Renovation** of the configuration file:
+To enable renovation email sending, fill the section **Renovation** of the configuration file:
 
 * **Enabled**: set to `True`
-* **DefaultUrl**: renovation url with protocol. If order registration authority or order certification authority did not set a renovation url it will use this configuration. :warning: Enabled without a DefaultUrl will cause error if both certification authority and registration does not configured a renovation url
+* **DefaultUrl**: renovation url with protocol. If order registration authority or order certification authority did not set a renovation url it will use this configuration. :warning: Enabled without a DefaultUrl will cause error if both certification authority and registration does not have configured a renovation url
 * **EmailScheduleDays**: Time remaining in days to send a renovation notification separated by comma. Default: "30,15,5". If negative will send a notification about certificate been expired
 * **MaxExpirationDays**: Max expiration date to send a notification. Default: 30. This is a save guard is case job fails
 * **NotificationBatchSize**: Max ammount of notification fired simultaneously. Default: 100
