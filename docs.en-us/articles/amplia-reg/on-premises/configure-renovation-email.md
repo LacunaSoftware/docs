@@ -3,11 +3,11 @@
 To enable renovation email sending, fill the section **Renovation** of the configuration file:
 
 * **Enabled**: set to `True`
-* **DefaultUrl**: renovation url with protocol. If order registration authority or order certification authority did not set a renovation url it will use this configuration. :warning: Enabled without a DefaultUrl will cause error if both certification authority and registration does not have configured a renovation url
-* **EmailScheduleDays**: Time remaining in days to send a renovation notification separated by comma. Default: "30,15,5". If negative will send a notification about certificate been expired
-* **MaxExpirationDays**: Max expiration date to send a notification. Default: 30. This is a save guard is case job fails
-* **NotificationBatchSize**: Max ammount of notification fired simultaneously. Default: 100
-* **MinNotificationPeriodHours**: Min hours between same order been notified about it's renovation. Default: 12. This is a save guard is case job fails
+* **DefaultUrl**: renovation url with protocol. If order registration authority or order certification authority did not set a renovation url it will use this configuration. :warning: Enabled without a DefaultUrl will cause error if both certification authority and registration authority does not have configured a renovation url
+* **EmailScheduleDays**: Time remaining in days before certificate expires to send a renovation notification separated by comma. Default: "30,15,5". If negative will send a notification about certificate been expired
+* **MaxExpirationDays**: Maximum days after certificate expires to send a notification. Default: 30. This is a save guard is case job fails
+* **NotificationBatchSize**: Maximum ammount of notification fired simultaneously between different orders. Default: 100
+* **MinNotificationPeriodHours**: Minimum hours between same order before been notified about it's renovation again. Default: 12. This is a save guard is case job fails
 * **ExpiredSubject**: Email subject about a expired certificate. Will be formatted with days been expired replacing {0}
 * **ExpiredNotice**: Email notice about a expired certificate
 * **ExpirationNearSubject**: Email subject about a near expiration certificate. Will be formatted with days to expire replacing {0}
