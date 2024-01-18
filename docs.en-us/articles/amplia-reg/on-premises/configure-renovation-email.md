@@ -61,12 +61,6 @@ Example
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .certificate-content {
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
 </head>
 
 <body>
@@ -85,13 +79,13 @@ Example
     </div>
     <div>
         <h2>Certificate data</h2>
-        <div class="certificate-content">
-            <span>Holder: {{SubjectName}}</span>
-            <span>{{SubjectIdentifierLabel}}: {{SubjectIdentifier}}</span>
-            <span>Type: {{CertificateType}}</span>
-            <span>Order: {{SubjectIOrderNumberdentifier}}</span>
-            <span>Validity starts: {{OperationStartDate}}</span>
-            <span>Validity ends: {{ExpirationDate}}</span>
+        <div>
+            <p>Holder: {{SubjectName}}</p>
+            <p>{{SubjectIdentifierLabel}}: {{SubjectIdentifier}}</p>
+            <p>Type: {{CertificateType}}</p>
+            <p>Order: {{SubjectIOrderNumberdentifier}}</p>
+            <p>Validity starts: {{OperationStartDate}}</p>
+            <p>Validity ends: {{ExpirationDate}}</p>
         </div>
     </div>
 </body>
