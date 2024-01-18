@@ -169,13 +169,13 @@ Once this is done, requests will already be logged with a default configuration.
 | Option                           |Type | Description |
 |----------------------------------|-----|-------------|
 | Enabled               |bool| Set to `true` to enable HTTP logging; otherwise, set to `false`. |
-| LoggingFields       |string| Specify the fields to log for the Request and Response. Defaults to logging request and response properties and headers. Default fields will be replaced. Supported values can be found [here](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.httplogging.httploggingfields?view=aspnetcore-6.0). |
+| LoggingFields       |string| Specify the fields to log for the Request and Response. Defaults to logging request and response properties and headers. Supported values can be found [here](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.httplogging.httploggingfields?view=aspnetcore-6.0). Obs: override default LoggingFields. |
 | AdditionalLoggingFields |string| Provide additional logging fields to be included in the log. |
-| RequestHeaders      |string| Specify the HTTP request headers that are allowed to be logged. If a header is not allowed, it will be logged with the value `[Redacted]`. Default request headers will be replaced. |
+| RequestHeaders      |string| Specify the HTTP request headers that are allowed to be logged. If a header is not allowed, it will be logged with the value `[Redacted]`. Obs: override default request headers. |
 | AdditionalRequestHeaders |string| Provide additional HTTP request headers to be included in the log. |
-| ResponseHeaders     |string| Specify the HTTP response headers that are allowed to be logged. If a header is not allowed, it will be logged with the value `[Redacted]`. Default response headers will be replaced. |
+| ResponseHeaders     |string| Specify the HTTP response headers that are allowed to be logged. If a header is not allowed, it will be logged with the value `[Redacted]`. Obs: override default response headers. |
 | AdditionalResponseHeaders |string| Provide additional HTTP response headers to be included in the log. |
-| MediaTypeOptions    |string| Configure encodings for a specific media type. Default media type options will be replaced. |
+| MediaTypeOptions    |string| Configure encodings for a specific media type. Obs: override default media type options. |
 | AdditionalMediaTypeOptions |string| Provide additional media type options. |
 | RequestBodyLogLimit    |int| Limit the maximum request body size to log (in bytes). Defaults to `32 KB`. |
 | ResponseBodyLogLimit   |int| Limit the maximum response body size to log (in bytes). Defaults to `32 KB`. |
@@ -185,7 +185,7 @@ By default, request body not is logged. To enable it, use one of the following m
 
 ```ini
 [HttpLogging]
-LoggingFields=RequestBody           # replace default logging fields
+LoggingFields=RequestBody           # Override default logging fields
 AdditionalLoggingFields=RequestBody # RequestBody will be appended to default logging fields
 ```
 
