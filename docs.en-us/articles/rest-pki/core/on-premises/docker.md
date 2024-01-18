@@ -10,7 +10,7 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The currently recommended image is `lacunasoftware/restpkicore:2.0`
+The currently recommended image is `lacunasoftware/restpkicore:2.1`
 
 Available moving tags:
 
