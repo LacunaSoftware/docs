@@ -50,9 +50,9 @@ Create the HTML template of the email and store it inside the `assets` folder of
 
 Tag names that will be replaced:
 
-* ThemeColor: application primary theme color
-* AccentColorKey: application accent theme color
-* ButtonTextColor: white
+* ThemeColor: application primary theme color in hex without '#'
+* AccentColor: application accent theme color in hex without '#'
+* ButtonTextColor: white in hex without '#'
 * LogoUrl: application logo url
 * SupportEmail: application configured SupportEmailAddress
 * HolderFirstName: certificate holder's first name
@@ -95,7 +95,7 @@ Example
     </div>
     <div>
         <h2>Certificate data</h2>
-        <div>
+        <div style="background-color: #{{AccentColor}}">
             <p>Holder: {{SubjectName}}</p>
             <p>{{SubjectIdentifierLabel}}: {{SubjectIdentifier}}</p>
             <p>Type: {{CertificateType}}</p>
