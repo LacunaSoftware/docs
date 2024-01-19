@@ -13,6 +13,22 @@ To enable renovation email sending, fill the section **Renovation** of the confi
 * **ExpirationNearSubject**: Email subject about a near expiration certificate. Will be formatted with days to expire replacing {0}
 * **ExpirationNearNotice**: Email notice about a near expiration certificate
 
+Example (*.ini* or *.conf* file):
+
+```ini
+[Renovation]
+Enabled=True
+DefaultUrl=https://lacunasoftware.com
+EmailScheduleDays=30,15,-5
+MaxExpirationDays=60
+NotificationBatchSize=200
+MinNotificationPeriodHours=48
+ExpiredSubject=Your certificate expired {0} or more days ago
+ExpiredNotice=We inform you that your digital certificate expired on the day
+ExpirationNearSubject={0} or less days left for your certificate to expire
+ExpirationNearNotice=We inform you that your digital certificate will expire on the day
+```
+
 Example (environment variables):
 
 ```sh
