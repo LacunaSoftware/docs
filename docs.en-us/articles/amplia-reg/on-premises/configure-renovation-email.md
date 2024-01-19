@@ -33,7 +33,7 @@ occurr:
 There are two settings that work as safeguards against these conditions:
 
 * **MinNotificationPeriodHours**: Minimum period in hours between notifications sent for the same certificate. Defaults to `12`.
-* **MaxExpirationDays**: Maximum days after certificate expires to send notifications. Defaults to `30`.
+* **MaxExpirationDays**: Maximum days after certificate expires to send notifications. Defaults to `90`.
 
 ## Customizing email subjects
 
@@ -104,15 +104,6 @@ OrderNumber            | Order number
 ValidityStartDate      | Certificate validity start date
 ValidityStartTime      | Certificate validity start time
 
-The following tags can be used to compose dynamic templates, that vary according to the application's theme and assets:
-
-Tag name               | Description
----------------------- | -----------
-ThemeColor             | Application primary theme color in hex (without '#')
-AccentColor            | Application accent theme color in hex (without '#')
-LogoUrl                | Application logo url
-SupportEmail           | Application configured SupportEmailAddress
-
 Example:
 
 ```html
@@ -146,6 +137,15 @@ Example:
 </body>
 </html>
 ```
+
+The following tags can be used to compose dynamic templates, that vary according to the application's theme and assets:
+
+Tag name               | Description
+---------------------- | -----------
+ThemeColor             | Application primary theme color in hex (without '#')
+AccentColor            | Application accent theme color in hex (without '#')
+LogoUrl                | Application logo url
+SupportEmail           | Application configured SupportEmailAddress
 
 ## Advanced settings
 
