@@ -104,6 +104,15 @@ OrderNumber            | Order number
 ValidityStartDate      | Certificate validity start date
 ValidityStartTime      | Certificate validity start time
 
+The following tags can be used to compose dynamic templates, that vary according to the application's theme and assets:
+
+Tag name               | Description
+---------------------- | -----------
+ThemeColor             | Application primary theme color in hex (without '#')
+AccentColor            | Application accent theme color in hex (without '#')
+LogoUrl                | Application logo url
+SupportEmail           | Application configured SupportEmailAddress
+
 Example:
 
 ```html
@@ -137,15 +146,6 @@ Example:
 </body>
 </html>
 ```
-
-The following tags can be used to compose dynamic templates, that vary according to the application's theme and assets:
-
-Tag name               | Description
----------------------- | -----------
-ThemeColor             | Application primary theme color in hex (without '#')
-AccentColor            | Application accent theme color in hex (without '#')
-LogoUrl                | Application logo url
-SupportEmail           | Application configured SupportEmailAddress
 
 ## Advanced settings
 
