@@ -5,8 +5,6 @@ To enable renovation email sending, fill the section **Renovation** of the confi
 * **Enabled**: set to `True` to enable renovation email sending. If omitted, renovation email sending will only take place if **DefaultUrl** is set
 * **DefaultUrl**: default renovation url, with protocol. Used if no renovation URL is set on either the order's registration or certification authorities. :warning: It is recommended to fill this settting since and error will occurr if renovation email sending is enabled without a DefaultUrl and no renovation URL is configured on the order's authorities
 * **EmailScheduleDays**: Comma-separated list of remaining days before each certificate expires to send a renovation notification. Defaults to `30,15,5`. Use negative values to notify users after the certificate has expired
-* **MaxExpirationDays**: Maximum days after certificate expires to send notifications. Default to `30`. This is a safeguard against sending notifications too long after a certificate has expired
-* **MinNotificationPeriodHours**: Minimum period in hours between notifications sent for the same order. Defaults to `12`. This is a safeguard against sending too many notifications about the same order in a short period of time
 
 Example (*.ini* or *.conf* file):
 
@@ -15,8 +13,6 @@ Example (*.ini* or *.conf* file):
 Enabled=True
 DefaultUrl=https://lacunasoftware.com
 EmailScheduleDays=30,15,-5
-MaxExpirationDays=60
-MinNotificationPeriodHours=48
 ```
 
 Example (environment variables):
@@ -25,9 +21,19 @@ Example (environment variables):
 Renovation__Enabled=True
 Renovation__DefaultUrl=https://lacunasoftware.com
 Renovation__EmailScheduleDays=30,15,-5
-Renovation__MaxExpirationDays=60
-Renovation__MinNotificationPeriodHours=48
 ```
+
+It is important to notice that the value of the **EmailScheduleDays** setting is merely a goal. Whether it is met or not depends on a number of factors. Most notably, if for some reason the
+notifications recurring job fail to run for several consecutive days (for instance if you set `General:ProcessBackgroundJobs` to `False`), when it eventually runs the following conditions may
+occurr:
+
+* Multiple notifications may be due to be sent for the same certificate
+* Notifications may be due to be sent for certificates that have expired too long ago for the notification to be of any use
+
+There are two settings that work as safeguards against these conditions:
+
+* **MinNotificationPeriodHours**: Minimum period in hours between notifications sent for the same certificate. Defaults to `12`.
+* **MaxExpirationDays**: Maximum days after certificate expires to send notifications. Defaults to `30`.
 
 ## Customizing email subjects
 
