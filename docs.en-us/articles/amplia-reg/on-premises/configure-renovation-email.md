@@ -103,6 +103,7 @@ CertificateType        | Certificate type
 OrderNumber            | Order number
 ValidityStartDate      | Certificate validity start date
 ValidityStartTime      | Certificate validity start time
+UnsubscribeLinkUrl     | Link to unsubscribe from renovation emails
 
 The following tags can be used to compose dynamic templates, that vary according to the application's theme and assets:
 
