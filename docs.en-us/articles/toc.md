@@ -368,7 +368,7 @@
 ### [Configure SMS sending](amplia-reg/on-premises/configure-sms.md)
 ### [Configure HTTPS redirection](amplia-reg/on-premises/configure-https-redirect.md)
 ### [Configure reCAPTCHA](amplia-reg/on-premises/configure-recaptcha.md)
-### [Configure renovation email](amplia-reg/on-premises/configure-renovation-email.md)
+### [Configure certificate renewal allert](amplia-reg/on-premises/configure-certificate-renewal-alert.md)
 ### [Run without db_owner](amplia-reg/on-premises/unprivileged-db-user.md)
 ### [Add document types](amplia-reg/on-premises/add-doc-types.md)
 ### [Post-installation steps](amplia-reg/on-premises/post-install.md)
