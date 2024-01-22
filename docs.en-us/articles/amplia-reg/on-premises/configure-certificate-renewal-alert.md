@@ -2,9 +2,9 @@
 
 To enable certificate renewal email sending, fill the section **CertificateRenewalAlert** of the configuration file:
 
-* **Enabled**: set to `True` to enable certificate renewal email sending. If omitted, certificate renewal email sending will only take place if **DefaultUrl** is set
-* **DefaultUrl**: default certificate renewal url, with protocol. Used if no certificate renewal URL is set on either the order's registration or certification authorities. :warning: It is recommended to fill this settting since and error will occurr if certificate renewal email sending is enabled without a DefaultUrl and no certificate renewal URL is configured on the order's authorities
+* **Enabled**: set to `True` to enable certificate renewal email sending.
 * **EmailScheduleDays**: Comma-separated list of remaining days before each certificate expires to send a certificate renewal notification. Defaults to `30,15,5`. Use negative values to notify users after the certificate has expired
+* **DefaultUrl**: default certificate renewal url, with protocol. Used for substitution on the default email templates if no certificate renewal URL is set on either the order's registration or certification authorities. If using the default templates, fill this value unless you have per-authority renewal URLs configured.
 
 Example (*.ini* or *.conf* file):
 
@@ -89,8 +89,8 @@ Create the HTML template of the email and store it encoded in UTF-8 inside the `
 
 The templates can use any of the following tags in the form of `{{TagName}}`, which will be replaced according to the table below:
 
-Tag name               | Description
----------------------- | -----------
+Tag name                       | Description
+------------------------------ | -----------
 HolderFirstName                | Certificate holder's first name, well suited for an initial greeting. In case of organizational certificates, this contains the responsible person's first name, not the company's name
 SubjectName                    | Certificate subject name
 ExpirationDate                 | Certificate expiration date
