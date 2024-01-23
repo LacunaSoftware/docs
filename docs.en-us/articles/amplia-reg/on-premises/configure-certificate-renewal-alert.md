@@ -32,7 +32,7 @@ occurr:
 
 There are two settings that work as safeguards against these conditions:
 
-* **MinNotificationPeriodHours**: Minimum period in hours between notifications sent for the same certificate. Defaults to `12`.
+* **MinNotificationPeriodHours**: Minimum period in hours between notifications sent for the same certificate. Defaults to `24`.
 * **MaxExpirationDays**: Maximum days after certificate expires to send notifications. Defaults to `90`.
 
 ## Customizing email subjects
