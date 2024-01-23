@@ -154,6 +154,13 @@ The following settings on the **CertificateRenewalAlert** section may be used to
 
 * **NotificationBatchSize**: Controls how many orders will be fetched from the database for processing at a time. Defaults to `100`
 
+By default, due notifications are scheduled to be sent daily at 12:00 UTC. To customize this, fill on the **JobSchedules** section:
+
+* **CertificateRenewalAlert**: desired cron schedule expression. Defaults to `0 12 * * *` (every day at 12:00 UTC)
+
+> [!TIP]
+> If you need help defining a cron schedule expression, visit [crontab guru](https://crontab.guru/)
+
 ## See also
 
 * [Configure email sending](configure-email.md)
