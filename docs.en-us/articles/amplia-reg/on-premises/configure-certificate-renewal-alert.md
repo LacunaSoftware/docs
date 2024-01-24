@@ -73,11 +73,11 @@ To customize this text, set the **ExpiredYesterdaySubject**.
 ```ini
 [CertificateRenewalAlert]
 ...
-ExpirationNearSubject=Your certificate has reached its expiration date yesterday!
+ExpiredYesterdaySubject=Your certificate has reached its expiration date yesterday!
 ```
 
 ```sh
-CertificateRenewalAlert__ExpirationNearSubject=Your certificate has reached its expiration date yesterday!
+CertificateRenewalAlert__ExpiredYesterdaySubject=Your certificate has reached its expiration date yesterday!
 ```
 
 <!-- ExpiredSubject -->
