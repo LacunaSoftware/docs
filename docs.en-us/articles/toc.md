@@ -361,6 +361,7 @@
 #### [hash-root-pass](amplia-reg/on-premises/tool/hash-root-pass.md)
 #### [update-db](amplia-reg/on-premises/tool/update-db.md)
 #### [test-email](amplia-reg/on-premises/tool/test-email.md)
+#### [test-cert-renewal-alert](amplia-reg/on-premises/tool/test-certificate-renewal-alert.md)
 ### [Preparing the database](amplia-reg/on-premises/prepare-database.md)
 ### [Configure Blob Storage](amplia-reg/on-premises/configure-blob-storage.md)
 ### [Configure OIDC](amplia-reg/on-premises/configure-oidc.md)

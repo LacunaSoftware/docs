@@ -33,6 +33,7 @@ Available commands:
 * [hash-root-pass](hash-root-pass.md)
 * [update-db](update-db.md)
 * [test-email](test-email.md)
+* [test-cert-renewal-alert](test-certificate-renewal-alert.md)
 
 ## See also
 
