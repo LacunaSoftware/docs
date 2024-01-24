@@ -161,3 +161,4 @@ To customize this, fill on the **JobSchedules** section:
 ## See also
 
 * [Configure email sending](configure-email.md)
+* [test-certificate-renewal-alert](tool/test-certificate-renewal-alert.md)
