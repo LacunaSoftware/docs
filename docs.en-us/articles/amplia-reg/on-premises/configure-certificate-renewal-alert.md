@@ -62,7 +62,7 @@ CertificateRenewalAlert__ExpiredTodaySubject=Your certificate has reached its ex
 
 <!-- ExpiredYesterdaySubject -->
 
-By default, the subject of emails sent when a certificate is expired a a day before the notification is similar to:
+By default, the subject of emails sent when a certificate is expired a day before the notification is similar to:
 
 ```
 Your certificate expired yesterday
@@ -93,11 +93,71 @@ To customize this text, set the **ExpiredSubject** setting using `{0}` as a plac
 ```ini
 [CertificateRenewalAlert]
 ...
-ExpiredSubject=Your certificate will reach its expiration date in {0} days!
+ExpiredSubject=Your certificate will expire in {0} days from today!
 ```
 
 ```sh
-CertificateRenewalAlert__ExpiredSubject=Your certificate will reach its expiration date in {0} days!
+CertificateRenewalAlert__ExpiredSubject=Your certificate will expire in {0} days from today!
+```
+
+<!-- ExpiresTodaySubject -->
+
+By default, the subject of emails sent when a certificate will expire in the day of the notificationis similar to:
+
+```
+Your certificate expires today
+```
+
+To customize this text, set the **ExpiresTodaySubject** setting.
+
+```ini
+[CertificateRenewalAlert]
+...
+ExpiresTodaySubject=Your certificate will reach its expiration date today!
+```
+
+```sh
+CertificateRenewalAlert__ExpiresTodaySubject=Your certificate will reach its expiration date today!
+```
+
+<!-- ExpiresTommorowSubject -->
+
+By default, the subject of emails sent when a certificate will expire a day after the notification is similar to:
+
+```
+Your certificate expires tomorrow
+```
+
+To customize this text, set the **ExpiresTommorowSubject**.
+
+```ini
+[CertificateRenewalAlert]
+...
+ExpiresTommorowSubject=Your certificate will reach its expiration date tomorrow!
+```
+
+```sh
+CertificateRenewalAlert__ExpiresTommorowSubject=Your certificate will reach its expiration date tomorrow!
+```
+
+<!-- ExpiresSubject -->
+
+By default, the subject of emails sent when a certificate is near its expiration is similar to:
+
+```
+N days left for your certificate to expire
+```
+
+To customize this text, set the **ExpiresSubject** setting using `{0}` as a placeholder for the number of days until expiration.
+
+```ini
+[CertificateRenewalAlert]
+...
+ExpiresSubject=Your certificate will reach its expiration date in {0} days!
+```
+
+```sh
+CertificateRenewalAlert__ExpiresSubject=Your certificate will reach its expiration date in {0} days!
 ```
 
 ## Customizing the email templates
