@@ -4,6 +4,76 @@
 <a name="vnext" />
 -->
 
+<a name="v2.1.1" />
+## 2.1.1 (2024-01-24)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-234 Criar rota `/api/system/manifest`
+
+### Melhorias
+
+RPNG-228 Adicionar configuração para logar requisições HTTP
+
+### Correções de bugs
+
+RPNG-208 Propriedade `signatureResult.getFile().url` retorna uma URL absoluta (era relativa no Rest PKI clássico)
+
+
+
+<a name="v2.1.0" />
+## 2.1.0 (2024-01-15)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-215 Configuração de proxy
+
+### Melhorias
+
+RPNG-216 Adicionar suporte a modo Standby para instalação em Azure App Service
+
+RPNG-219 Exibir informações de certificado de atributo agregado às assinaturas
+
+RPNG-224 Revisar swagger
+
+### Correções de bugs
+
+RPNG-222 Erro ao salvar contexto de segurança referenciando plano de carimbo de tempo
+
+RPNG-226 Informações necessárias à finalização da assinatura são perdidas em caso de erro na finalização
+
+RPNG-227 Erro "NotSupportedException" nas APIs de start Cades V1 e V2
+
+RPNG-232 Aplicação está exigindo claim de CPF desnecessariamente
+
+
+
+<a name="v2.0.2" />
+## 2.0.2 (2023-11-09)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-220 Ignorar erros de comunicação com o Amplia caso `AttributeCertificateInclusion` seja `Recommended`
+
+
+
+<a name="v2.0.1" />
+## 2.0.1 (2023-11-08)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-217 Erro "CryptographicException: The payload was invalid" ao consultar sessões de assinatura antigas
+
+
+
 <a name="v2.0.0" />
 ## 2.0.0 (2023-10-30)
 

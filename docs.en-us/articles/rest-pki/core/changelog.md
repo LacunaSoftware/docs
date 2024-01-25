@@ -4,6 +4,76 @@
 <a name="vnext" />
 -->
 
+<a name="v2.1.1" />
+## 2.1.1 (2024-01-24)
+
+Updates database model: no
+
+### New features
+
+RPNG-234 Add route `/api/system/manifest`
+
+### Improvents
+
+RPNG-228 Add settings to log HTTP messages
+
+### Bug fixes
+
+RPNG-208 Property `signatureResult.getFile().url` returns an absolute URL (was relative on legacy Rest PKI)
+
+
+
+<a name="v2.1.0" />
+## 2.1.0 (2024-01-15)
+
+Updates database model: no
+
+### New features
+
+RPNG-215 Proxy configuration
+
+### Improvements
+
+RPNG-216 Add support for Standby mode to simplify setup on Azure App Service
+
+RPNG-219 Show attribute certificate information on signature information page
+
+RPNG-224 Review swagger
+
+### Bug fixes
+
+RPNG-222 Error when saving security context referencing timestamp tier
+
+RPNG-226 Necessary data for completing signatures is lost if an error occurs during completion in background
+
+RPNG-227 "NotSupportedException" error on Cades start APIs versions 1 and 2
+
+RPNG-232 CPF claim is unnecessarily required
+
+
+
+<a name="v2.0.2" />
+## 2.0.2 (2023-11-09)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-220 Ignore communication errors with Amplia when `AttributeCertificateInclusion` is set to `Recommended`
+
+
+
+<a name="v2.0.1" />
+## 2.0.1 (2023-11-08)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-217 Error "CryptographicException: The payload was invalid" when fetching old signature sessions
+
+
+
 <a name="v2.0.0" />
 ## 2.0.0 (2023-10-30)
 
