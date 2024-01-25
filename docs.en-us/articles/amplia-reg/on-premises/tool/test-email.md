@@ -13,7 +13,7 @@ dotnet Lacuna.AmpliaRegNg.Site.dll [settings] -- test-email <to-address>
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/ampliareg:2.4 [settings] -- test-email <to-address>
+docker run -i lacunasoftware/ampliareg:2.5 [settings] -- test-email <to-address>
 ```
 
 [!include[About settings](includes/about-settings.md)]

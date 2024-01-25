@@ -4,6 +4,19 @@
 <a name="vnext" />
 -->
 
+<a name="v2-5-0" />
+## 2.5.0 (2024-01-25)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-226 Envio automático de lembrete de renovação
+
+ARNG-317 Possibilidade de exportar para CSV as consultas de pedidos
+
+
+
 <a name="v2-4-1" />
 ## 2.4.1 (2023-10-30)
 

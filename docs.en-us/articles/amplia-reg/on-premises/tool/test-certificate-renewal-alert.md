@@ -13,7 +13,7 @@ dotnet Lacuna.AmpliaRegNg.Site.dll [settings] -- test-cert-renewal-alert <order 
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/ampliareg:2.4 [settings] -- test-cert-renewal-alert <order number> <simulated days before expiration>
+docker run -i lacunasoftware/ampliareg:2.5 [settings] -- test-cert-renewal-alert <order number> <simulated days before expiration>
 ```
 
 [!include[About settings](includes/about-settings.md)]

@@ -4,6 +4,19 @@
 <a name="vnext" />
 -->
 
+<a name="v2-5-0" />
+## 2.5.0 (2024-01-25)
+
+Updates database model: **yes**
+
+### New Features
+
+ARNG-226 Automatic certificate renewal alert sending
+
+ARNG-317 Support for exporting order lists to CSV
+
+
+
 <a name="v2-4-1" />
 ## 2.4.1 (2023-10-30)
 

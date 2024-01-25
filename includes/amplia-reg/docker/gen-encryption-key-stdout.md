@@ -1,3 +1,3 @@
 ﻿```sh
-docker run lacunasoftware/ampliareg:2.4 -- gen-enc-key
+docker run lacunasoftware/ampliareg:2.5 -- gen-enc-key
 ```
