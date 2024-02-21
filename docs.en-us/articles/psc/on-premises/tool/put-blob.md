@@ -6,7 +6,7 @@
 
 ## Syntax
 
-This command can be used for moving a single file or multiple files.
+This command can be used for copying a single file or multiple files.
 
 > [!WARNING]
 > If there are existing files in the Blob Storage with the same name as the files copied they will be overwritten.
@@ -28,13 +28,13 @@ The blob name parameter is optional and, if not specified, will preserve the ori
 ### Multiple files
 
 ```sh
-dotnet Lacuna.Psc.Site.dll [settings] -- put-blob -t <blob storage folder> <local file 1 path> <local file 2 path>
+dotnet Lacuna.Psc.Site.dll [settings] -- put-blob -t <blob storage folder> <local file 1 path> <local file 2 path> ...
 ```
 
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/psc:1.2 [settings] -- put-blob -t <blob storage folder> <local file 1 path> <local file 2 path>
+docker run -i lacunasoftware/psc:1.2 [settings] -- put-blob -t <blob storage folder> <local file 1 path> <local file 2 path> ...
 ```
 
 Usage of wildcards when specifying local file paths is supported. Example:

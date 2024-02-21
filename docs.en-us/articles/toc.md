@@ -390,6 +390,7 @@
 #### [gen-cert](psc/on-premises/tool/gen-cert.md)
 #### [gen-enc-key](psc/on-premises/tool/gen-enc-key.md)
 #### [hash-root-pass](psc/on-premises/tool/hash-root-pass.md)
+#### [put-blob](psc/on-premises/tool/put-blob.md)
 #### [update-db](psc/on-premises/tool/update-db.md)
 #### [test-email](psc/on-premises/tool/test-email.md)
 ### [Preparing the database](psc/on-premises/prepare-database.md)
