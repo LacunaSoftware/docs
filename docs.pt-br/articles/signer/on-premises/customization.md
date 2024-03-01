@@ -139,6 +139,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/yby.png)
 
+* folly-russian-violet - frv (v1.68.0):
+
+![Color Scheme](../images/themes/frv.png)
+
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
 

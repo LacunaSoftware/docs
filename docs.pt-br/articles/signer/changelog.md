@@ -1,5 +1,22 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-68-0" />
+### 1.68.0 (2023-03-05)
+
+* Novas funcionalidades
+  * [SIG-949] Documento simples - documento composto por assinaturas eletrônicas e que seja validado no ITI
+  * [SIG-1061] Definir o tipo de assinatura (simples, avançada e qualificada) para o signatário na criação do documento
+  * [SIG-1176] Configuração para carregamento prévio de certificados com objetivo de carregar LCRs grandes
+
+* Melhorias
+  * [SIG-1171] Ao remover usuário básico de organização remover também seus acessos em pastas
+  * [SIG-1174] Relatório de documentos concluídos na Administração
+  * [SIG-1179] Atualizar método de listagem de pastas no Signer Client
+  * [SIG-1180] Adicionar tema folly russian violet
+  * [SIG-1052] Permitir assinar com e-CNPJ em nuvem
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-67-0" />
 ### 1.67.0 (2023-12-19)
 

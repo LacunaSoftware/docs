@@ -1,5 +1,22 @@
 ﻿# Signer changelog
 
+<a name="v1-68-0" />
+### 1.68.0 (2023-03-05)
+
+* New Features
+  * [SIG-949] Simple document - document with electronic signatures that is validated by ITI
+  * [SIG-1061] Selection of signature types (simple, advanced and qualified) by document creator
+  * [SIG-1176] Setting to initiate loading of big LCR files
+
+* Improvements
+  * [SIG-1171] Remove all of user's folder accesses for subscription folders when he is removed from subscription
+  * [SIG-1174] Concluded document report in Administration
+  * [SIG-1179] Update list folder method in Signer Client
+  * [SIG-1180] Add folly russian violet theme
+  * [SIG-1052] Allow cloud signature with e-CNPJ certificates
+
+Updates database model: yes
+
 <a name="v1-67-0" />
 ### 1.67.0 (2023-12-19)
 

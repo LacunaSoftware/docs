@@ -358,6 +358,10 @@ Under section **PrinterFriendly**:
 
 * **AllowCustomization** (v1.63.0, default: `true`): if `true`, enables organizations to customize the printer friendly version.
 
+* **IgnorePreExistingSignatures** (v1.68.0, default: `true`): if `true`, does not include (in the printer friendly version) signatures that were made before the document was created.
+This is specially important if signature types are enabled, as existing signatures may not correspond to the signature type selected when a document is sent to Signer. If signature
+types are enabled and you wish to disable this setting, consider also enabling `EnableSignatureValidationWhenGeneratingManifest`.
+
 
 ###  *PaymentGateway* Settings (v1.27.0)
 
@@ -564,6 +568,62 @@ Under section **Email**:
 * **EnableTracking** (default: `true`): if `true`, e-mails will be tracked and evidences of opening and clicked links will be registered.
 * **EnableUnsubscribe**: if `true` adds an unsubscribe link to e-mails. E-mails that have unsubscribed will only receive new notifications if they are excluded from the 
 blocked list by the instance administrator.
+
+
+<a name="app-signature-types" />
+###  *Signature Types* Settings (v1.68.0)
+
+Under section **SignatureTypes**:
+
+* **Enabled**: if `true`, enables selection of a signature type when creating and validating documents.
+* **DefaultType** (default: `Advanced`): defines the default signature type option when creating and validating documents. Available options are: `Simple`, `Advanced` or `Qualified`.
+* **Simple**: this is a subsection that defines settings relative to the `Simple` signature type:
+	* **Disabled**: if `true` disables the Simple signature type.
+	* **AllowAdvancedElectronicSignatures**: if `true` advanced electronic signatures will be validated successfully when validating a document with the `Simple` signature type.
+	* **TrustArbitrator** (default: arbitrator that accepts Brazilian PKI): specific trust arbitrator settings for the `Simple` signature type. Can be defined as explained in the
+	[Trust Arbitrator Settings](#app-trust-arbitrator).
+	* **Authentication**: this is a subsection that defines avaialble authentication types for the `Simple` signature type. When not set, the available types will be defined by the
+	[Electronic Signature settings](#electronic-settings).
+		* **EnableSmsAuthentication**
+		* **EnableWhatsappAuthentication**
+		* **EnableOtpAuthentication**
+		* **EnableSelfieAuthentication**
+		* **EnableDatavalidAuthentication**
+		* **EnablePixAuthentication**
+* **Advanced**: this is a subsection that defines settings relative to the `Advanced` signature type:
+	* **DisplaySecurityContextNames**: if `true` adds the Advanced signature security context name when displaying the signature type. Should only be set if you have more than one
+	security context.
+	* **AllowSimpleElectronicSignatures**: if `true` simple electronic signatures will be validated successfully when validating a document with the `Advanced` signature type.
+* **Qualified**: this is a subsection that defines settings relative to the `Qualified` signature type:
+	* **TrustArbitrator** (default: arbitrator that accepts Brazilian PKI): specific trust arbitrator settings for the `Qualified` signature type. Can be defined as explained in the 
+	[Trust Arbitrator Settings](#app-trust-arbitrator).
+
+<a name="app-trust-arbitrator" />
+###  *Trust Arbitrator* Settings
+
+Trust arbitrator settings allows configuration of which digital certificates are accepted by the application. This is done by defining a JSON with the following format:
+
+```
+{
+  "Version": "2019-05-09",
+  "TrustedRoots": [],
+  "StandardPkis": []
+}
+```
+
+* **StandardPkis**: list of standard PKIs. Available options are `Brazil`, `Italy`, `Peru`, `Enotariado` and `System`.
+* **TrustedRoots**: list of root certificates in Base64 format.
+
+Under section **TrustArbitrator**:
+
+* **Type**: defines from where the system will retrieve the Trust arbitrator JSON. Available options are `AppSetting` or `BlobStorage`.
+* **Content**: must be set if `AppSetting` is selected. The Trust arbitrator JSON content. If this setting is being set in a JSON configuration file, keep in mind that the double quotes
+need to be escaped. Example:
+	```
+	"Content": "{ \"Version\": \"2019-05-09\", \"StandardPkis\": [ \"Brazil\" ] }"
+	```
+* **BlobFolderName** (default: `trustarbitrators`): The blob folder of the file containing the Trust arbitrator JSON content stored in the Blob Storage. Only relevant if `BlobStorage` is selected.
+
 
 ###  *SigningTags* Settings
 
