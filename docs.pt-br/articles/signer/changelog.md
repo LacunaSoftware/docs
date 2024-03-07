@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-68-1" />
+### 1.68.1 (2023-03-06)
+
+* Correções de bugs
+  * [SIG-1186] Versão para impressão de documento assinado com assinatura única aparece sem signatários
+  * [SIG-1187] Não está sendo possível assinar o documento com a rubrica preposicionada
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-68-0" />
 ### 1.68.0 (2023-03-05)
 

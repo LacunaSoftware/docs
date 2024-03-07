@@ -358,9 +358,12 @@ Under section **PrinterFriendly**:
 
 * **AllowCustomization** (v1.63.0, default: `true`): if `true`, enables organizations to customize the printer friendly version.
 
-* **IgnorePreExistingSignatures** (v1.68.0, default: `true`): if `true`, does not include (in the printer friendly version) signatures that were made before the document was created.
+* **IgnorePreExistingSignatures** (v1.68.0, default: `true`): if `true`, does not include (in the printer friendly version) signatures that were made before the document was created
+(see also the `PreExistingSignaturesDocumentCreationTresholdInSeconds` setting).
 This is specially important if signature types are enabled, as existing signatures may not correspond to the signature type selected when a document is sent to Signer. If signature
 types are enabled and you wish to disable this setting, consider also enabling `EnableSignatureValidationWhenGeneratingManifest`.
+* **PreExistingSignaturesDocumentCreationTresholdInSeconds** (v1.68.1, default: `60`): defines a treshold of how old can signatures be in order to still be considered as made 
+after the document creation (defined in seconds from the document's creation date).
 
 
 ###  *PaymentGateway* Settings (v1.27.0)

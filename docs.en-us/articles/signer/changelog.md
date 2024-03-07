@@ -1,5 +1,14 @@
 ﻿# Signer changelog
 
+<a name="v1-68-1" />
+### 1.68.1 (2023-03-06)
+
+* Bug fixes
+  * [SIG-1186] Printer friendly version of single signature document displays no signers
+  * [SIG-1187] Cannot sign document that has prepositioned signature initials
+
+Updates database model: no
+
 <a name="v1-68-0" />
 ### 1.68.0 (2023-03-05)
 
