@@ -4,54 +4,58 @@
 [POST]
 '/dinamo/sign'
 
-Request {
-	// CAdES signature type: ATTACHED or DETACHED
-	signatureType: string,
-	// Signature policy (CAdES AD-RB only supported) 
-	signaturePolicy: string,
-	// CPF do assinante
-	cpf: string,
-	// Senha do assinante no HSM
-	password: string,
-	// Lote de documentos para serem assinados
-	documents: DocumentModel[]
+Request:
+{
+  // CAdES signature type: ATTACHED or DETACHED
+  signatureType: string,
+  // Signature policy (CAdES AD-RB only supported) 
+  signaturePolicy: string,
+  // CPF do assinante
+  cpf: string,
+  // Senha do assinante no HSM
+  password: string,
+  // Lote de documentos para serem assinados
+  documents: DocumentModel[]
 }
 
-DocumentModel {
-	// Nome do documento
-	name: string,
-	// Bytes do documento em Base64
-	content: string
+DocumentModel:
+{
+  // Nome do documento
+  name: string,
+  // Bytes do documento em Base64
+  content: string
 }
 
-///
+//////
 
 Response: SignatureResponseModel[]
 
-SignatureResponseModel {
-	// Status do resultado da assinatura
-	status: StatusModel,
-	// Campo Subject do certificado do assinante
-	subject: string,
-	// Campo Issuer do certificado do assinante
-	issuer: string,
-	// Nome do documento (vindo do request)
-	name: string,
-	// Bytes do documento em Base64 (vindo do request)
-	content: string,
-	// Bytes do documento assinado em Base64
-	signature: string,
-	// CAdES signature type (vindo do request)
-	signatureType: string
+SignatureResponseModel:
+{
+  // Status do resultado da assinatura
+  status: StatusModel,
+  // Campo Subject do certificado do assinante
+  subject: string,
+  // Campo Issuer do certificado do assinante
+  issuer: string,
+  // Nome do documento original (vindo do request)
+  name: string,
+  // Bytes do documento original em Base64 (vindo do request)
+  content: string,
+  // Bytes do documento assinado em Base64
+  signature: string,
+  // CAdES signature type (vindo do request)
+  signatureType: string
 }
 
-StatusModel {
-	// Ver documentação de Códigos de Retorno abaixo
-	id: number,
-	// OK ou ERRO
-	status: string,
-	// Descrição do status
-	message: string,
+StatusModel:
+{
+  // Ver documentação de Códigos de Retorno abaixo
+  id: number,
+  // OK ou ERRO
+  status: string,
+  // Descrição do status
+  message: string,
 }
 ```
 
