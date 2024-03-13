@@ -82,6 +82,10 @@ ampliareg=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
 REVOKE
 ampliareg=# GRANT ALL ON SCHEMA public TO ampliareg;
 GRANT
+ampliareg=# CREATE SCHEMA hangfire;
+CREATE
+ampliareg=# GRANT ALL ON SCHEMA hangfire TO ampliareg;
+GRANT
 ```
 
 > [!NOTE]

@@ -82,6 +82,10 @@ grantid=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
 REVOKE
 grantid=# GRANT ALL ON SCHEMA public TO grantid;
 GRANT
+grantid=# CREATE SCHEMA hangfire;
+CREATE
+grantid=# GRANT ALL ON SCHEMA hangfire TO grantid;
+GRANT
 ```
 
 > [!NOTE]

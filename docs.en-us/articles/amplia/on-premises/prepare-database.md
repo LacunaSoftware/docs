@@ -82,6 +82,10 @@ amplia=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
 REVOKE
 amplia=# GRANT ALL ON SCHEMA public TO amplia;
 GRANT
+amplia=# CREATE SCHEMA hangfire;
+CREATE
+amplia=# GRANT ALL ON SCHEMA hangfire TO amplia;
+GRANT
 ```
 
 > [!NOTE]

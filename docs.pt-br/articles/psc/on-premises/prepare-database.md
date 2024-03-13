@@ -82,6 +82,10 @@ psc=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
 REVOKE
 psc=# GRANT ALL ON SCHEMA public TO psc;
 GRANT
+psc=# CREATE SCHEMA hangfire;
+CREATE
+psc=# GRANT ALL ON SCHEMA hangfire TO psc;
+GRANT
 ```
 
 > [!NOTE]

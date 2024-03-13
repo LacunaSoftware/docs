@@ -82,6 +82,10 @@ restpkicore=# REVOKE ALL ON SCHEMA public FROM PUBLIC;
 REVOKE
 restpkicore=# GRANT ALL ON SCHEMA public TO restpkicore;
 GRANT
+restpkicore=# CREATE SCHEMA hangfire;
+CREATE
+restpkicore=# GRANT ALL ON SCHEMA hangfire TO restpkicore;
+GRANT
 ```
 
 > [!NOTE]
