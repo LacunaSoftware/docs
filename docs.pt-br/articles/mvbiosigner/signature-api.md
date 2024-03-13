@@ -47,7 +47,7 @@ SignatureResponseModel {
 
 StatusModel {
 	// Ver documentação de Códigos de Retorno abaixo
-	id: number, { get; set; }
+	id: number,
 	// OK ou ERRO
 	status: string,
 	// Descrição do status
@@ -55,7 +55,9 @@ StatusModel {
 }
 ```
 
+
 ## Códigos de Retorno
+
 
 | Id | ShortName | Message
 |--|--|--|

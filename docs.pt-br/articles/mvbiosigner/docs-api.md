@@ -61,6 +61,6 @@ DocumentNotFound     // Documento não encontrado no banco
 DocumentBlobNotFound // Arquivo do documento não encontrado no storage
 BlobStorageOpenError // Erro no storage ao tentar ler o arquivo do documento
 DocumentCancelled    // Retorna este erro caso o documento esteja cancelado e esteja
-                       //   habilitada a opção de ocultar documentos cancelados
+                     //   habilitada a opção de ocultar documentos cancelados
 ```
 
