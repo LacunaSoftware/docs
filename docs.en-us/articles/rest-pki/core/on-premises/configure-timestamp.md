@@ -60,7 +60,7 @@ Timestamp__Providers__Lacuna__AuthenticationMethod=OAuthBearerToken
 Timestamp__Providers__Lacuna__BearerToken=YOURTOKEN
 ```
 
-Example with 2 tiers (*.ini* or *.conf* configuration file):
+Example with 2 providers and advanced settings (*.ini* or *.conf* configuration file):
 
 ```ini
 [Timestamp]
@@ -71,21 +71,15 @@ RetryDelayMilliseconds=500
 Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
 AuthenticationMethod=OAuthBearerToken
 BearerToken=YOURTOKEN
-Tiers=PkiBrazil
 
-[Timestamp:Providers:Test]
+[Timestamp:Providers:Alternative]
 Url=https://tsp.patorum.com/timestamp
 AuthenticationMethod=BasicAuthentication
 Username=SOMEUSER
 Password=SOMEPASS
-Tiers=Test
-
-[Timestamp:Tiers:Test]
-DisplayName=Tests (development use only)
-Aliases=TestTier,Tests
 ```
 
-Example with 2 tiers (environment variables):
+Example with 2 providers and advanced settings (environment variables):
 
 ```bash
 Timestamp__MaxAutoRetryCount=2
@@ -94,16 +88,50 @@ Timestamp__RetryDelayMilliseconds=500
 Timestamp__Providers__Lacuna__Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
 Timestamp__Providers__Lacuna__AuthenticationMethod=OAuthBearerToken
 Timestamp__Providers__Lacuna__BearerToken=YOURTOKEN
-Timestamp__Providers__Lacuna__Tiers=PkiBrazil
 
-Timestamp__Providers__Test__Url=https://tsp.patorum.com/timestamp
-Timestamp__Providers__Test__AuthenticationMethod=BasicAuthentication
-Timestamp__Providers__Test__Username=SOMEUSER
-Timestamp__Providers__Test__Password=SOMEPASS
-Timestamp__Providers__Test__Tiers=Test
+Timestamp__Providers__Alternative__Url=https://tsp.patorum.com/timestamp
+Timestamp__Providers__Alternative__AuthenticationMethod=BasicAuthentication
+Timestamp__Providers__Alternative__Username=SOMEUSER
+Timestamp__Providers__Alternative__Password=SOMEPASS
+```
 
-Timestamp__Tiers__Test__DisplayName=Tests (development use only)
-Timestamp__Tiers__Test__Aliases=TestTier,Tests
+## Timestamp tiers
+
+It is possible to restrict the usage of each provider to a list of timestamp tiers. To do this, fill the `Tiers` section of each provider, for instance:
+
+```bash
+[Timestamp:Providers:Lacuna]
+Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
+AuthenticationMethod=OAuthBearerToken
+BearerToken=YOURTOKEN
+Tiers=PkiBrazil
+```
+
+Additionaly, in the **Timestamp** section you may fill the **Tiers** dictionary to define display names for timestamp tiers, as well as aliases (useful for renaming tiers without
+breaking apart the request history). The available settings for each item are:
+
+* **DisplayName**: display name for the tier
+* **Aliases**: comma-separated list of past tier identifiers
+
+Example:
+
+```ini
+[Timestamp:Tiers:PkiBrazil]
+DisplayName=ICP-Brasil (production only!)
+
+[Timestamp:Tiers:Test]
+DisplayName=Tests (development only!)
+Aliases=TestTier,Tests
+
+[Timestamp:Providers:Lacuna]
+Url=https://pki.rest/tsp/a402df41-8559-47b2-a05c-be555bf66310
+AuthenticationMethod=OAuthBearerToken
+BearerToken=YOURTOKEN
+Tiers=PkiBrazil
+
+[Timestamp:Providers:Free]
+Url=https://somefreeprovider.com/tsp
+Tiers=Test
 ```
 
 <a name="legacy-config" />
