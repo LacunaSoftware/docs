@@ -132,6 +132,8 @@
 #### [Creating a subscription](rest-pki/core/on-premises/create-sub.md)
 #### [Checking the installed version](rest-pki/core/on-premises/check-version.md)
 #### [Logging](rest-pki/core/on-premises/logging.md)
+### [Operation guide](rest-pki/core/operation/index.md)
+#### [Monitoring timestamping](rest-pki/core/operation/monitor-timestamping.md)
 ### [Changelog](rest-pki/core/changelog.md)
 <!-- End of Rest PKI Core submenu -->
 <!-- End of Rest PKI -->

@@ -133,6 +133,8 @@
 #### [Criando uma organização](rest-pki/core/on-premises/create-sub.md)
 #### [Verificando a versão instalada](rest-pki/core/on-premises/check-version.md)
 #### [Logs](rest-pki/core/on-premises/logging.md)
+### [Guia de Operação](rest-pki/core/operation/index.md)
+#### [Monitoramento de timestamping](rest-pki/core/operation/monitor-timestamping.md)
 ### [Histórico de versões](rest-pki/core/changelog.md)
 <!-- End of Rest PKI Core submenu -->
 <!-- End of Rest PKI -->
