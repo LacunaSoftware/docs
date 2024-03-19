@@ -20,7 +20,7 @@ Caso não esteja, verificar com o pessoal responsável pela infraestrutura do ho
 
 ##### 2. Confirmar o hostname da máquina do usuário
 
-Para o início da captura biométrica funcioar é necessário que o hospital informe qual hostname da máquina que o usuário está logado.
+Para o início da captura biométrica funcionar é necessário que o hospital informe qual hostname da máquina que o usuário está logado.
 O problema mais comum neste caso é o de o **hospital estar retornando um hostname de uma máquina diferente da que o usuário está logado no momento**.
 
 Para confirmar o problema:
