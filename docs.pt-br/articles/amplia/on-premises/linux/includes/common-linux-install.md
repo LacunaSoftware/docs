@@ -4,12 +4,10 @@
 
 Crie a pasta do site, baixe e extraia os binários:
 
-<!--
 > [!NOTE]
 > Para testar a [próxima versão](../../../changelog.md#vnext) do Amplia, atualmente em estágio *Release Candidate*, substitua `amplia-x.y.z.tar.gz` nos comandos abaixo
-> por `amplia-4.4.0-rc07.tar.gz`. **Cuidado**: versões *Release Candidate* não são adequadas para produção e, portanto, devem ser instaladas apenas em ambientes de
+> por `amplia-4.9.0-rc04.tar.gz`. **Cuidado**: versões *Release Candidate* não são adequadas para produção e, portanto, devem ser instaladas apenas em ambientes de
 > homologação/testes!
--->
 
 [!include[Copy files](../../../../../../includes/amplia/linux/copy-files.md)]
 

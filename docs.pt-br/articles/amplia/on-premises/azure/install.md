@@ -37,7 +37,7 @@ no passo anterior):
 
 ```sh
 az login
-az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.6.1 --image amplia:4.6.1
+az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.8.0 --image amplia:4.8.0
 ```
 
 [!include[Criação do banco de dados](../../../includes/azure/create-database.md)]

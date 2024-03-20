@@ -1,6 +1,70 @@
 ﻿# Histórico de versões do Amplia
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="4-9-0" />
+## 4.9.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+AMP-340 Health check com verificação de disponibilidade uma chave
+
+AMP-342 Auto-verificação de LCRs
+
+### Melhorias
+
+AMP-335 Atualizar framework SPA para 2.8
+
+### Correções de bugs
+
+AMP-237 Erro relacionado a fuso horário na geração de termo de titularidade em Linux
+
+AMP-343 Erros ao utilizar key store PKCS #11 em paralelo
+
+
+
+<a name="4-8-0" />
+## 4.8.0 (2024-02-27)
+
+Idêntica a: 4.8.0 RC 5 (2024-02-27)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+AMP-332 API para cálculo de IDN (protocolo brasileiro de provimento de serviços biométricos)
+
+AMP-333 Suporte a chaves AES (apenas em keystores PKCS #11 e database)
+
+### Melhorias
+
+AMP-245 Melhorar tratamento da validade de sessões de uso de managed certificates
+
+AMP-337 Permitir configuração do label do token em key stores tipo PKCS #11
+
+### Correções de bugs
+
+AMP-341 Integer overflow ao setar um `CertificateManagement:OperationSessionTimeout` alto \(25+ dias\)
+
+
+
+<a name="4-7-0" />
+## 4.7.0 (2023-12-20)
+
+Idêntica a: 4.7.0 RC 2 (2023-11-01)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+AMP-334 Nova API para emissão de certificado em software que retorna chave em múltiplos formatos
+
+### Melhorias
+
+AMP-331 Melhorar integração com Amplia Reg para casos de certificados organizacionais
+
+
 
 <a name="4-6-1" />
 ## 4.6.1 (2023-09-06)
@@ -32,7 +96,7 @@ AMP-320 API para decriptar com chave
 
 AMP-321 Importação de chave PKCS #8 \(por ora suportado apenas em keystore em banco de dados\)
 
-### Improvement
+### Melhorias
 
 AMP-327 Suporte a variável de ambiente STANDBY \(para instalação em Azure App Service\)
 

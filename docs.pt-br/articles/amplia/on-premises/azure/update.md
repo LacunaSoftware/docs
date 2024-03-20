@@ -3,7 +3,7 @@
 Replique a última imagem de Docker do sistema para seu *container registry* (substitua `MY_ACR_NAME` pelo nome escolhido no passo anterior):
 
 ```sh
-az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.6.1 --image amplia:4.6.1
+az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.8.0 --image amplia:4.8.0
 ```
 
 Em seguida, no App Service do sistema, vá em **Deployment Center** e, no campo **Tag**, selecione a nova versão e clique em **Save**.

@@ -1,6 +1,70 @@
 ﻿# Amplia changelog
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="4-9-0" />
+## 4.9.0 (upcoming version)
+
+Updates database model: **yes**
+
+### New features
+
+AMP-340 Health check with optional key availability check
+
+AMP-342 CRL consistency checks
+
+### Improvements
+
+AMP-335 Update SPA framework to version 2.8
+
+### Bug fixes
+
+AMP-237 A timezone-related error may occur on Linux and Docker when generating an agreement
+
+AMP-343 Errors when using PKCS #11 key stores in parallel
+
+
+
+<a name="4-8-0" />
+## 4.8.0 (2024-02-27)
+
+Identical to: 4.8.0 RC 5 (2024-02-27)
+
+Updates database model: **yes**
+
+### New features
+
+AMP-332 IDN computation API (Brazilian biometric service provider protocol)
+
+AMP-333 Add support for AES keys (for now only on PKCS #11 and database key stores)
+
+### Improvements
+
+AMP-245 Improve handling of managed certificates operation session expiration
+
+AMP-337 Allow configuration of token label on PKCS #11 key stores
+
+### Bug fixes
+
+AMP-341 Integer overflow when a high `CertificateManagement:OperationSessionTimeout` is set \(25+ days\)
+
+
+
+<a name="4-7-0" />
+## 4.7.0 (2023-12-20)
+
+Identical to: 4.7.0 RC 2 (2023-11-01)
+
+Updates database model: no
+
+### New features
+
+AMP-334 New API to issue software certificates returning private key in multiple formats
+
+### Improvements
+
+AMP-331 Improve Amplia Reg integration for organizational certificates
+
+
 
 <a name="4-6-1" />
 ## 4.6.1 (2023-09-06)
