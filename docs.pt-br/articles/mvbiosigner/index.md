@@ -6,4 +6,5 @@ O MV Bio Signer é uma plataforma de assinatura de documentos para Instituções
 - [API de Consulta de Documentos](docs-api.md)
 - [Manual de Infraestrutura](setup.md)
 - [Manual de Importação de Usuários](user-batch-import)
+- [Troubleshooting](troubleshooting.md)
 - [Changelog](changelog.md)
