@@ -6,7 +6,7 @@ Create the site folder, download and extract the binaries:
 
 > [!NOTE]
 > To test the [next version](../../../changelog.md#vnext) of Amplia, currently in Release Candidate stage, replace `amplia-x.y.z.tar.gz` on the following commands
-> with `amplia-4.9.0-rc04.tar.gz`. **Beware**: Release Candidate versions are not production-ready and thus should only be installed on staging or test environments!
+> with `amplia-4.9.0-rc05.tar.gz`. **Beware**: Release Candidate versions are not production-ready and thus should only be installed on staging or test environments!
 
 [!include[Copy files](../../../../../../includes/amplia/linux/copy-files.md)]
 

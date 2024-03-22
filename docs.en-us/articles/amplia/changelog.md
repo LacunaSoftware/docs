@@ -16,6 +16,10 @@ AMP-342 CRL consistency checks
 
 AMP-335 Update SPA framework to version 2.8
 
+AMP-345 Allow uploading chain certificates to CAs regardless of their *CertificateChainType*
+
+AMP-346 Improve client lib to allow downloading the CA's certificate and chain file
+
 ### Bug fixes
 
 AMP-237 A timezone-related error may occur on Linux and Docker when generating an agreement

@@ -16,6 +16,10 @@ AMP-342 Auto-verificação de LCRs
 
 AMP-335 Atualizar framework SPA para 2.8
 
+AMP-345 Permitir cadastro de cadeias em ACs independentemente do *CertificateChainType*
+
+AMP-346 Evoluir client lib para permitir download do certificado da AC e da cadeia de certificação
+
 ### Correções de bugs
 
 AMP-237 Erro relacionado a fuso horário na geração de termo de titularidade em Linux
