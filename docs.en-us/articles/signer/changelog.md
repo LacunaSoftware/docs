@@ -1,5 +1,22 @@
 ﻿# Signer changelog
 
+<a name="v1-69-1" />
+### 1.69.1 (2023-04-02)
+
+* New Features
+  * [SIG-1183] Multiple signature marks in simple signature
+  * [SIG-1185] Allow customization of backend and frontend resources
+
+* Improvements
+  * [SIG-1189] Allow Basic and Operator profiles to refuse/cancel documents
+
+* Bug fixes
+  * [SIG-1190] Electronic signature is not saving timestamp transactions
+  * [SIG-1191] Simple signature type document can be signed digitally in batch signature
+  * [SIG-1192] Send button is disabled when participants are added before uploading files
+
+Updates database model: no
+
 <a name="v1-68-1" />
 ### 1.68.1 (2023-03-06)
 

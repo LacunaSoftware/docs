@@ -184,6 +184,9 @@ updated by administrators of that subscription.
 
 * **DocumentConcludedWebhookDelayInSeconds** (v1.66.0, default: `60`): delay in seconds to wait until the document concluded webhook is triggered.
 
+* **EnableCustomizableTranslationFiles** (v1.69.0): if `true`, enables customization of frontend translation files.
+* **EnableCustomizableLocalizationResourceFiles** (v1.69.0): if `true`, enables customization of backend localization resource files.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 

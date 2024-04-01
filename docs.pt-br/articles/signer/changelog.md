@@ -1,5 +1,22 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-69-1" />
+### 1.69.1 (2023-04-02)
+
+* Novas funcionalidades
+  * [SIG-1183] Múltiplas marcas de assinatura na assinatura simples
+  * [SIG-1185] Permitir personalização de recursos de texto do backend e do frontend
+
+* Melhorias
+  * [SIG-1189] Permitir que os perfis Básico e Operador possam recusar e/ou cancelar um documento
+
+* Correções de bugs
+  * [SIG-1190] Assinatura eletrônica não está registrando transação de carimbo de tempo
+  * [SIG-1191] Documento com tipo de assinatura simples pode ser assinado digitalmente na assinatura em lote
+  * [SIG-1192] Botão enviar está ficando desabilitado ao adicionar participantes antes de enviar arquivo
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-68-1" />
 ### 1.68.1 (2023-03-06)
 
