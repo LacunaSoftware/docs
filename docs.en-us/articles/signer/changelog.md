@@ -1,7 +1,7 @@
 ﻿# Signer changelog
 
 <a name="v1-69-1" />
-### 1.69.1 (2023-04-02)
+### 1.69.1 (2024-04-02)
 
 * New Features
   * [SIG-1183] Multiple signature marks in simple signature
@@ -18,7 +18,7 @@
 Updates database model: no
 
 <a name="v1-68-1" />
-### 1.68.1 (2023-03-06)
+### 1.68.1 (2024-03-06)
 
 * Bug fixes
   * [SIG-1186] Printer friendly version of single signature document displays no signers
@@ -27,7 +27,7 @@ Updates database model: no
 Updates database model: no
 
 <a name="v1-68-0" />
-### 1.68.0 (2023-03-05)
+### 1.68.0 (2024-03-05)
 
 * New Features
   * [SIG-949] Simple document - document with electronic signatures that is validated by ITI

@@ -1,7 +1,7 @@
 ﻿# Histórico de versões do Signer
 
 <a name="v1-69-1" />
-### 1.69.1 (2023-04-02)
+### 1.69.1 (2024-04-02)
 
 * Novas funcionalidades
   * [SIG-1183] Múltiplas marcas de assinatura na assinatura simples
@@ -18,7 +18,7 @@
 Atualiza modelo do banco de dados: não
 
 <a name="v1-68-1" />
-### 1.68.1 (2023-03-06)
+### 1.68.1 (2024-03-06)
 
 * Correções de bugs
   * [SIG-1186] Versão para impressão de documento assinado com assinatura única aparece sem signatários
@@ -27,7 +27,7 @@ Atualiza modelo do banco de dados: não
 Atualiza modelo do banco de dados: não
 
 <a name="v1-68-0" />
-### 1.68.0 (2023-03-05)
+### 1.68.0 (2024-03-05)
 
 * Novas funcionalidades
   * [SIG-949] Documento simples - documento composto por assinaturas eletrônicas e que seja validado no ITI
