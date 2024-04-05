@@ -4,6 +4,101 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-21-2" />
+### 2.21.2 (2024-04-01)
+
+* Bug fixes
+    * [AUT-403] Incorrect title in RVDD when another title has been filled
+    * [AUT-404] Properties of type enum accept values not present in enum
+
+* Improvements
+    * [AUT-400] Add possibility to generate academic transcript of degree already created/issued
+    
+
+<a name="v2-21-1" />
+### 2.21.1 (2024-03-18)
+
+* Improvements
+    * [AUT-402] Add decimal places to RVHE
+
+* New Features
+    * [AUT-401] Add additional information field to the academic transcript during degree creation
+
+<a name="v2-21-0" />
+### 2.21.0 (2024-03-06)
+
+* Improvements
+    * [AUT-394] Improve Events screen
+    * [AUT-399] Improve degree classes conversion
+
+<a name="v2-20-2" />
+### 2.20.2 (2024-03-05)
+
+* Improvements
+    * [AUT-397] Set value for academic trascript issue date and time when null
+    * [AUT-398] Allow line breaks in additional information using pipe in RVHE and RVCE
+
+<a name="v2-20-1" />
+### 2.20.1 (2024-03-04)
+
+* Bug fixes
+    * [AUT-396] Incorrect value of decimal numbers  
+
+<a name="v2-20-0" />
+### 2.20.0 (2024-02-26)
+
+* Bug fixes
+    * [AUT-242] Allow the academic transcript template to use TAGs 
+    * [AUT-387] Add validations for registration book fields
+    * [AUT-388] Validate XML according to XSD before it's created
+    * [AUT-392] Add additional information to the end of the RVHE
+
+* Improvements
+    * [AUT-389] Historical elements code not being validated on the form
+    * [AUT-390] Discipline notes with more than two decimal places
+    * [AUT-391] Validation of structure via XSD returning blank fields
+    * [AUT-393] Text on top of text on the degree review screen
+
+<a name="v2-19-1" />
+### 2.19.1 (2023-12-23)
+
+* Bug fixes
+    * [AUT-254] Add page count validation for Degrees RVDDs
+    * [AUT-383] Delete saved form files after only 24 hours
+    * [AUT-384] Improve search field
+
+* Improvements
+    * [AUT-385] The address is not filled in the Issuing and Maintaining Institute the academic transcript
+    * [AUT-386] Authorization and Recognition fields do not appear on the form
+
+<a name="v2-19-0" />
+### 2.19.0 (2023-12-12)
+
+* Bug fixes
+    * [AUT-378] It's not possible to edit the institute's information
+
+* Improvements
+    * [AUT-188] Term of responsibility viewer when reviewing the registration request
+    * [AUT-379] Improve query that searches for institutes to generate a list of annulled degrees
+    * [AUT-380] Creation of new tags for the degree visual representation 
+
+* New Features
+    * [AUT-324] Save form progress
+    * [AUT-381] Add yby theme
+    * [AUT-382] Add validation to the code of historical elements
+
+<a name="v2-18-0" />
+### 2.18.0 (2023-12-12)
+
+* Bug fixes
+    * [AUT-377] It's not possible to create a record by court decision with XML without comprobatory documentation
+
+* Improvements
+    * [AUT-376] Improve string conversion in requests to remove tabs and line breaks
+
+* New features
+    * [AUT-169] Validate XML according to XSD
+
 <a name="v2-17-0" />
 ### 2.17.0 (2023-10-09)
 

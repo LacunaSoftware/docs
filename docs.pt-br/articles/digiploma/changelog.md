@@ -4,6 +4,101 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-21-2" />
+### 2.21.2 (2024-04-01)
+
+* Correções de bugs
+    * [AUT-403] Título conferido incorreto no RVDD quando outro título foi preenchido
+    * [AUT-404] Propriedades do tipo enum aceitam valores não presentes na enum
+
+* Melhorias
+    * [AUT-400] Adicionar possibilidade de gerar histórico de diplomas já criados/emitidos
+    
+
+<a name="v2-21-1" />
+### 2.21.1 (2024-03-18)
+
+* Melhorias
+    * [AUT-402] Adicionar casas decimais ao RVHE
+
+* Novas funcionalidades
+    * [AUT-401] Adicionar campo de informações adicionais ao histórico durante a criação de diploma
+
+<a name="v2-21-0" />
+### 2.21.0 (2024-03-06)
+
+* Melhorias
+    * [AUT-394] Melhorar tela de Eventos
+    * [AUT-399] Melhorar a conversão das classes do diploma
+
+<a name="v2-20-2" />
+### 2.20.2 (2024-03-05)
+
+* Melhorias
+    * [AUT-397] Definir valor para data e hora de emissão do histórico quando nulos
+    * [AUT-398] Permitir quebra de linha nas informações adicionais  utilizando pipe no no RVHE e RVCE
+
+<a name="v2-20-1" />
+### 2.20.1 (2024-03-04)
+
+* Correções de bugs
+    * [AUT-396] Valor incorreto dos números decimais 
+
+<a name="v2-20-0" />
+### 2.20.0 (2024-02-26)
+
+* Correções de bugs
+    * [AUT-242] Permitir que o template do histórico escolar utilize TAGs 
+    * [AUT-387] Adicionar validações para os campos do livro de registro
+    * [AUT-388] Validar o XML de acordo com o XSD antes da sua criação
+    * [AUT-392] Adicionar informações adicionais ao final do RVHE
+
+* Melhorias
+    * [AUT-389] Código dos elementos históricos não estão sendo validados no formulário
+    * [AUT-390] Notas com mais de duas casas decimais
+    * [AUT-391] Validação da estrutura através do XSD retornando campos em branco
+    * [AUT-393] Texto por cima do outro na tela de revisão de diploma
+
+<a name="v2-19-1" />
+### 2.19.1 (2023-12-23)
+
+* Correções de bugs
+    * [AUT-254] Adicionar validação de quantidade de páginas para RVDD de Diplomas
+    * [AUT-383] Apagar os arquivos salvos do formulário após 24h apenas
+    * [AUT-384] Melhorar campo de pesquisar
+
+* Melhorias
+    * [AUT-385] O endereço da IES não é preenchido na IES Emissora e Mantenedora do Histórico Escolar
+    * [AUT-386] Não aparece os campos de Autorização e Reconhecimento no formulário
+
+<a name="v2-19-0" />
+### 2.19.0 (2023-12-12)
+
+* Correções de bugs
+    * [AUT-378] Não é possível editar as informações da instituição
+
+* Melhorias
+    * [AUT-188] Visualização do termo de responsabilidade na revisão de requisição de registro
+    * [AUT-379] Melhorar query que busca instituições para gerar lista de diplomas anulados
+    * [AUT-380] Criação de novas tag para a representação visual do diploma
+
+* Novas funcionalidades
+    * [AUT-324] Salvar o progresso do formulário
+    * [AUT-381] Adicionar o tema yby
+    * [AUT-382] Adicionar validação no código dos elementos históricos
+
+<a name="v2-18-0" />
+### 2.18.0 (2023-12-12)
+
+* Correções de bugs
+    * [AUT-377] Não é possível criar registro por decisão judicial com XML sem documentação comprobatória
+
+* Melhorias
+    * [AUT-376] Melhorar a conversão de string nas requisições para remover tab e quebra de linha
+
+* Novas funcionalidades
+    * [AUT-169] Validar XML de acordo com o XSD
+
 <a name="v2-17-0" />
 ### 2.17.0 (2023-10-09)
 
