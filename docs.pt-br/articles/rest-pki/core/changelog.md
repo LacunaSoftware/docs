@@ -4,6 +4,28 @@
 <a name="vnext" />
 -->
 
+<a name="v2.1.3" />
+## 2.1.3 (2024-04-10)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-240 Usar timestamp tier padrão no caso de uma política com carimbo ser usada em conjunto com um contexto de segurança personalizado sem tier de timestamp definido
+
+
+
+<a name="v2.1.2" />
+## 2.1.2 (2024-03-14)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-231 Inconformidades nos códigos de retorno declarados no Swagger
+
+
+
 <a name="v2.1.1" />
 ## 2.1.1 (2024-01-24)
 

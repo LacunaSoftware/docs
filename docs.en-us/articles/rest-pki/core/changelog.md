@@ -4,6 +4,28 @@
 <a name="vnext" />
 -->
 
+<a name="v2.1.3" />
+## 2.1.3 (2024-04-10)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-240 Use default timestamp tier when a policy requiring timestamp is used combined with a custom security context without a timestamp tier
+
+
+
+<a name="v2.1.2" />
+## 2.1.2 (2024-03-14)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-231 API return codes documented on Swagger do not match actual return codes returned by app
+
+
+
 <a name="v2.1.1" />
 ## 2.1.1 (2024-01-24)
 
