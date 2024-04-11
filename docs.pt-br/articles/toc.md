@@ -135,6 +135,7 @@
 #### [Logs](rest-pki/core/on-premises/logging.md)
 ### [Guia de Operação](rest-pki/core/operation/index.md)
 #### [Monitoramento de timestamping](rest-pki/core/operation/monitor-timestamping.md)
+### [Solicitando carimbos de tempo](rest-pki/core/requesting-timestamps.md)
 ### [Histórico de versões](rest-pki/core/changelog.md)
 <!-- End of Rest PKI Core submenu -->
 <!-- End of Rest PKI -->
