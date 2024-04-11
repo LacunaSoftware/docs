@@ -26,13 +26,14 @@ Utilize seguintes parâmetros para comunicação com o Rest PKI Core via TSP:
 
 * Protocolo: HTTPS
 * Method: POST
-* Url: `https://restpkicore.suaempresa.com/api/tsp` (ou `https://restpkicore.suaempresa.com/api/tsp/<PLANO>` para solicitar um carimbo de tempo de um plano específico)
+* Url: `https://restpkicore.suaempresa.com/tsp`
 * Autenticação: por header HTTP conforme abaixo:
   * `Authorization` : `ApiKey <chave de api do Rest PKI Core>`
 
-O argumento `<PLANO>` é opcional, sendo utilizado o plano padrão caso seja omitido. Consulte o administrador da instância para saber quais são os planos disponíveis.
+> [!NOTE]
+> Caso seja necessário especificar um identificador de plano, a URL é `https://restpkicore.suaempresa.com/tsp/PLANO`.
 
-Caso esteja solicitando carimbos à instância SaaS do Rest PKI Core, os planos disponíveis são:
+Caso esteja solicitando carimbos à instância SaaS do Rest PKI Core, é preciso especificar um dos seguintes planos:
 
 * Carimbo de tempo ICP-Brasil: `PkiBrazil` (ou `a402df41-8559-47b2-a05c-be555bf66310`)
 * Carimbo de tempo para testes: `LacunaTest`
@@ -41,7 +42,7 @@ Caso esteja solicitando carimbos à instância SaaS do Rest PKI Core, os planos 
 
 Utilize os seguintes parâmetros para comunicação com o Rest PKI Core via API REST:
 
-* Url: `https://restpkicore.suaempresa.com/api/tsp` (ou `https://restpkicore.suaempresa.com/api/tsp/<PLANO>` para solicitar um carimbo de tempo de um plano específico)
+* Url: `https://restpkicore.suaempresa.com/api/tsp` (opcionalmente com sufixo `/PLANO`)
 * Method: POST
 * Request headers
   * `Authorization` : `ApiKey <chave de api do Rest PKI Core>`
