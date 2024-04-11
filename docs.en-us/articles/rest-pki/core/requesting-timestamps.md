@@ -1,5 +1,9 @@
 ﻿# Requesting timestamps to Rest PKI Core
 
+<!-- link to version in Portuguese -->
+<div data-alt-locales="pt-br"></div>
+
+<!--
 You can use [Rest PKI Core](index.md) as an ICP-Brasil timestamp provider through the TSP protocol (*Timestamp Protocol* - RFC 3161) or API REST.
 
 To do this, follow the steps below to get access credentials:
@@ -69,3 +73,6 @@ Currently, the following algorithms are supported:
 * SHA-256
   * TSP: 2.16.840.1.101.3.4.2.1
   * API: "SHA256"
+
+ -->
+ 
