@@ -1,41 +1,48 @@
 ﻿# Requesting timestamps to Rest PKI Core
 
-<!-- link to version in Portuguese -->
-<div data-alt-locales="pt-br"></div>
+You can use an instance of [Rest PKI Core](index.md) as a timestamp provider for requesting timestamps through the TSP protocol (*Timestamp Protocol* - RFC 3161)
+or through a REST API.
 
-<!--
-You can use [Rest PKI Core](index.md) as an ICP-Brasil timestamp provider through the TSP protocol (*Timestamp Protocol* - RFC 3161) or API REST.
+1. Sign in to your Rest PKI Core dashboard (e.g.: *https://restpkicore.yourcompany.com*)
+1. Click on **Applications** on the left menu, then on *Add*
+1. Fill out a name and select a subscription (you most likely have a single subscription, so select it)
+1. Mark the **Worker** role
+1. Click on **Create**
+1. Click on **Keys**, then on **Add**
+1. Fill out some description and, on the *Expiration* field, choose **Never expires**
+1. Click on **Create**
+1. Copy the **API key** generated (this value cannot be retrieved later)
 
-To do this, follow the steps below to get access credentials:
+> [!NOTE]
+> When requesting timestamps to the SaaS instance of Rest PKI Core, the dashboard URL is [https://core.pki.rest/](https://core.pki.rest/)
 
-1. Login to Rest PKI website (https://pki.rest/)
-1. In Control Panel, click the **Generate new access token** button
-1. Copy the generated value
+Then, use on of the following methods to request a timestamp.
 
-Then use one of the ways below to communicate with Rest PKI.
+## Timestamp Protocol
 
-## Communication by *Timestamp Protocol*
-
-Use the settings to communicate with Rest PKI by TSP:
+Use these parameters to request a timestamp through TSP protocol:
 
 * Protocol: HTTPS
 * Method: POST
-* Url: `https://core.pki.rest/tsp/<token_identifier?>`
-* Authentication: by HTTP header as below:
-    * `Authorization` : `Bearer <Rest PKI Core access token>`
-    * `Authorization` : `ApiKey <Rest PKI Core api key>`
+* Url: `https://restpkicore.yourcompany.com/tsp`
+* Authentication: HTTP header `Authorization: ApiKey YOUR_API_KEY`
 
-> Obs: `token_identifier` could be `name` or `id` of tier. If not provided, `Default` tier is used.
+> [!NOTE]
+> If you need to specify a tier, the URL would then be `https://restpkicore.yourcompany.com/tsp/TIER`
 
-## Communcation API REST
+When requesting timestamps to the SaaS instance of Rest PKI Core, it is necessary to specify one of the following tiers:
 
-Use the settings to communicate with Rest PKI by TSP:
+* PKI Brazil timestamp: `PkiBrazil` (or `a402df41-8559-47b2-a05c-be555bf66310`)
+* Test timestamp: `LacunaTest`
 
-* Url: `https://core.pki.rest/tsp/<token_identifier>`
+## REST API
+
+Use these parameters to request a timestamp through a REST API:
+
+* Url: `https://restpkicore.yourcompany.com/api/tsp`
 * Method: POST
 * Request headers
-  * `Authorization` : `Bearer <token de acesso ao Rest PKI>`
-    * `Authorization` : `ApiKey <Rest PKI Core api key>`
+  * `Authorization` : `ApiKey YOUR_API_KEY`
   * `Content-Type` : `application/json`
 * Request
   * `algorithm` : algorithm name (see suported algoritm below)
@@ -44,6 +51,9 @@ Use the settings to communicate with Rest PKI by TSP:
 * Response
   * `encodedValue` : timestamp, Base64 encoded
   * `info` : informations about the timestamp
+
+> [!NOTE]
+> The REST API URL is very similar to the TSP URL, with the difference being the `/api/` segment
 
 Example request with SHA-256 algorithm and Base64 hash:
 
@@ -73,6 +83,3 @@ Currently, the following algorithms are supported:
 * SHA-256
   * TSP: 2.16.840.1.101.3.4.2.1
   * API: "SHA256"
-
- -->
- 

@@ -6,17 +6,17 @@ fornecidos através do protocolo TSP (*Timestamp Protocol* - RFC 3161) ou API RE
 Para isso, siga os passos abaixo para obter as credenciais de acesso:
 
 1. Autentique-se na interface de gerenciamento da sua instância (ex: *https://restpkicore.suaempresa.com*)
-1. Opcionalmente, clique no seu nome no canto superior direito, em seguida em **Organização** e selecione uma organização (caso não veja essa opção, significa que você só tem acesso a uma organização, então apenas ignore esse passo)
-1. No menu lateral, clique em **Aplicações**, em seguida em **Adicionar**
-1. Preencha um **nome** para a aplicação
-1. Marque o papel `Operador`
+1. Clique em **Aplicações** no menu lateral, em seguida em **Adicionar**
+1. Preencha um nome e selecione uma organização (a sua instância provavelmente tem uma única subscription, então selecione-a)
+1. Marque o papel **Worker**
 1. Clique em **Criar**
-1. Na página de detalhes da aplicação, clique em **Chaves**, em seguida em **Adicionar**
-1. Preencha uma descrição qualquer para a chave e escolha uma expiração (recomenda-se escolher **Nunca expira**) e clique em **Criar**
-1. **Tome nota da chave de API exibida** pois não será possível recuperá-la mais tarde
+1. Clique em **Chaves**, depois em **Adicionar**
+1. Preencha alguma descrição e, no campo *Expiração*, escolha **Nunca expira**
+1. Clique em **Criar**
+1. Copie a **chave de API** gerada (esse valor não pode ser recuperado posteriormente)
 
 > [!NOTE]
-> Para solicitar carimbos à instância SaaS do Rest PKI Core, o primeiro passo é feito acessando [https://core.pki.rest/](https://core.pki.rest/)
+> Para solicitar carimbos à instância SaaS do Rest PKI Core, o endereço da interface de gerenciamento é [https://core.pki.rest/](https://core.pki.rest/)
 
 Em seguida, utilize uma das formas abaixo para comunicação com o Rest PKI Core.
 
@@ -27,11 +27,10 @@ Utilize seguintes parâmetros para comunicação com o Rest PKI Core via TSP:
 * Protocolo: HTTPS
 * Method: POST
 * Url: `https://restpkicore.suaempresa.com/tsp`
-* Autenticação: por header HTTP conforme abaixo:
-  * `Authorization` : `ApiKey <chave de api do Rest PKI Core>`
+* Autenticação: header HTTP `Authorization: ApiKey SUA_CHAVE_DE_API`
 
 > [!NOTE]
-> Caso seja necessário especificar um identificador de plano, a URL é `https://restpkicore.suaempresa.com/tsp/PLANO`.
+> Caso seja necessário especificar um identificador de plano, a URL é `https://restpkicore.suaempresa.com/tsp/PLANO`
 
 Caso esteja solicitando carimbos à instância SaaS do Rest PKI Core, é preciso especificar um dos seguintes planos:
 
@@ -45,7 +44,7 @@ Utilize os seguintes parâmetros para comunicação com o Rest PKI Core via API 
 * Url: `https://restpkicore.suaempresa.com/api/tsp` (opcionalmente com sufixo `/PLANO`)
 * Method: POST
 * Request headers
-  * `Authorization` : `ApiKey <chave de api do Rest PKI Core>`
+  * `Authorization` : `ApiKey SUA_CHAVE_DE_API`
   * `Content-Type` : `application/json`
 * Request
   * `algorithm` : nome do algoritmo (veja algoritmos suportados abaixo)
@@ -54,6 +53,9 @@ Utilize os seguintes parâmetros para comunicação com o Rest PKI Core via API 
 * Response
   * `encodedValue` : carimbo de tempo, codificado em Base64
   * `info` : informações sobre o carimbo de tempo
+
+> [!NOTE]
+> A URL da API REST é muito similar à URL para requisições via TSP, a diferença sendo o segmento `/api/`
 
 Exemplo de request com algoritmo SHA-256 e hash em Base64:
 
