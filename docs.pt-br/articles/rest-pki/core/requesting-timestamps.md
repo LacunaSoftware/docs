@@ -18,11 +18,11 @@ Para isso, siga os passos abaixo para obter as credenciais de acesso:
 > [!NOTE]
 > Para solicitar carimbos à instância SaaS do Rest PKI Core, o endereço da interface de gerenciamento é [https://core.pki.rest/](https://core.pki.rest/)
 
-Em seguida, utilize uma das formas abaixo para comunicação com o Rest PKI Core.
+Em seguida, utilize uma das formas abaixo para solicitar um carimbo de tempo.
 
 ## Comunicação via *Timestamp Protocol*
 
-Utilize seguintes parâmetros para comunicação com o Rest PKI Core via TSP:
+Utilize os parâmetros abaixo para solicitar um carimbo via TSP:
 
 * Protocolo: HTTPS
 * Method: POST
@@ -30,16 +30,19 @@ Utilize seguintes parâmetros para comunicação com o Rest PKI Core via TSP:
 * Autenticação: header HTTP `Authorization: ApiKey SUA_CHAVE_DE_API`
 
 > [!NOTE]
-> Caso seja necessário especificar um identificador de plano, a URL é `https://restpkicore.suaempresa.com/tsp/PLANO`
+> Caso seja necessário especificar um identificador de plano, adicione um sufixo `/PLANO` à URL, o seja `https://restpkicore.suaempresa.com/tsp/PLANO`
 
-Caso esteja solicitando carimbos à instância SaaS do Rest PKI Core, é preciso especificar um dos seguintes planos:
+Para solicitar carimbos à instância SaaS do Rest PKI Core, é preciso especificar um dos seguintes planos:
 
 * Carimbo de tempo ICP-Brasil: `PkiBrazil` (ou `a402df41-8559-47b2-a05c-be555bf66310`)
 * Carimbo de tempo para testes: `LacunaTest`
 
+> [!NOTE]
+> O custo por carimbo de tempo varia de acordo com o plano escolhido
+
 ## Comunicação via API REST
 
-Utilize os seguintes parâmetros para comunicação com o Rest PKI Core via API REST:
+Utilize os parâmetros abaixo para solicitar um carimbo via API REST:
 
 * Url: `https://restpkicore.suaempresa.com/api/tsp` (opcionalmente com sufixo `/PLANO`)
 * Method: POST
@@ -55,7 +58,7 @@ Utilize os seguintes parâmetros para comunicação com o Rest PKI Core via API 
   * `info` : informações sobre o carimbo de tempo
 
 > [!NOTE]
-> A URL da API REST é muito similar à URL para requisições via TSP, a diferença sendo o segmento `/api/`
+> A URL da API REST é muito similar à URL para requisições via TSP, a diferença sendo a presença do segmento `/api/`
 
 Exemplo de request com algoritmo SHA-256 e hash em Base64:
 

@@ -28,18 +28,21 @@ Use these parameters to request a timestamp through TSP protocol:
 * Authentication: HTTP header `Authorization: ApiKey YOUR_API_KEY`
 
 > [!NOTE]
-> If you need to specify a tier, the URL would then be `https://restpkicore.yourcompany.com/tsp/TIER`
+> If you need to specify a tier, add the suffix `/TIER` to the URL, i.e. `https://restpkicore.yourcompany.com/tsp/TIER`
 
 When requesting timestamps to the SaaS instance of Rest PKI Core, it is necessary to specify one of the following tiers:
 
 * PKI Brazil timestamp: `PkiBrazil` (or `a402df41-8559-47b2-a05c-be555bf66310`)
 * Test timestamp: `LacunaTest`
 
+> [!NOTE]
+> Different rates apply according to the tier chosen
+
 ## REST API
 
 Use these parameters to request a timestamp through a REST API:
 
-* Url: `https://restpkicore.yourcompany.com/api/tsp`
+* Url: `https://restpkicore.yourcompany.com/api/tsp` (optionally with a suffix `/TIER`)
 * Method: POST
 * Request headers
   * `Authorization` : `ApiKey YOUR_API_KEY`
@@ -53,7 +56,7 @@ Use these parameters to request a timestamp through a REST API:
   * `info` : informations about the timestamp
 
 > [!NOTE]
-> The REST API URL is very similar to the TSP URL, with the difference being the `/api/` segment
+> The REST API URL is very similar to the TSP URL, with the difference being the extra `/api/` segment
 
 Example request with SHA-256 algorithm and Base64 hash:
 
