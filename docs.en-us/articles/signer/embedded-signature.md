@@ -9,11 +9,11 @@ Embedded Signature Integration allows you to sign/approve documents in Signer wi
 
 ## Installation
 
-First, include the latest [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.6.0.min.js) file on your page:
+First, include the latest [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js) file on your page:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.6.0.min.js"
-    integrity="sha256-TM1zGyxt8+FQ3VcihnbovQlTP1pBRAVLSKKTOxRBIGw="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js"
+    integrity="sha256-PngSJQymFtozof1WoCBZQ6Fg9BqfquaTVR+5BnCik0o="
     crossorigin="anonymous"></script>
 ```
 
@@ -134,3 +134,63 @@ Alternatively, it is possible to use embedded signatures in mobile devices, an e
 The following image displays a signature example without the document preview:
 
 ![Mobile embedded example without preview](./images/signer/../../../../../images/signer/flutter/signer_without_preview_theme.png)
+
+
+## Signature marks positioning
+
+From Signer version 1.70.0 and version 0.7.0 of this library, it is possible to embed the signature marks positioning page in other applications as it was already done
+for the signature page. Once the marks are positioned, the position information will be retrievable through the Widget as well as Signer API in order to create one or
+more documents with the selected positions.
+
+The first step is to create a marks positioning session using the session creation API. There are two variants of the API:
+
+* [Basic session creation API](https://www.dropsigner.com/swagger/index.html#operations-MarksSessions-post_api_marks_sessions): creates a session by requiring only necessary information. 
+Signer personal information such as e-mail and country identifier for instance are optional. Use this API if, after obtaining the session result, you still intend to modify the request data
+before sending a create document request to Signer.
+
+* [Session creation with document create request API](https://www.dropsigner.com/swagger/index.html#operations-MarksSessions-post_api_marks_sessions_documents): 
+creates a session by using the same request that is sent to create documents. Use this API if you prefer to use the session result without any modifications when using the create documents 
+API.
+
+The result of both APIs will be the return of a session ID and a URL to embed the positioning page:
+
+```javascript
+{
+	//Session ID
+	"id": "4cdcfa93-8f38-46f9-8634-246d5589fe5f",
+	//URL to use with the Widget
+	"embedUrl": "https://www.dropsigner.com/position-marks/4cdcfa93-8f38-46f9-8634-246d5589fe5f?v=1"
+}
+```
+
+Once the session URL is obtained, initialize the Widget the same way it was done for the signature page mode:
+
+```javascript
+var widget = new LacunaSignerWidget();
+```
+
+Call the `on()` method passing the marks positioned event type and a callback function that will be called when the user finishes positioning marks:
+
+```javascript
+//assinatura
+widget.on(widget.events.marksPositioned, function (e) {
+	// The data attribute will contain the request with the marks positions defined
+	//console.log(e.data);
+	//alert('Marks positioned');
+});
+```
+
+Finally, load the iFrame using the `render()` method:
+
+```javascript
+widget.render(embedUrl, 'embed-container');
+```
+
+Once the positioning session is concluded, each entry of the `flowActions` attribute from the request provided when creating the session will be updated with the selected positions 
+(more specifically - the `prePositionedMarks` attribute will be filled accordingly).
+
+The updated request can be obtained by the `data` attribute of the marks positioned event or by the attribute of same name in the 
+[get session data API](https://www.dropsigner.com/swagger/index.html#operations-MarksSessions-get_api_marks_sessions__id_).
+
+> [!NOTE]
+> The positioning session has a duration of 1 hour after its creation. After that interval, it won't be posible to retrieve nor update session data.

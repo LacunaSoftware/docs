@@ -9,11 +9,11 @@ A integração com Assinatura embutida permite assinar/aprovar documentos submet
 
 ## Instalação
 
-Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.5.0.min.js) mais recente:
+Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js) mais recente:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.6.0.min.js"
-    integrity="sha256-TM1zGyxt8+FQ3VcihnbovQlTP1pBRAVLSKKTOxRBIGw="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js"
+    integrity="sha256-PngSJQymFtozof1WoCBZQ6Fg9BqfquaTVR+5BnCik0o="
     crossorigin="anonymous"></script>
 ```
 
@@ -131,3 +131,63 @@ Também é possível utilizar o exemplo de assinaturas embutidas em dispositivos
 A imagem abaixo mostra o processo de assinatura sem preview de documento dentro do aplicativo:
 
 ![Mobile embedded example without preview](./images/signer/../../../../../images/signer/flutter/signer_without_preview_theme.png)
+
+
+## Posicionamento de marcas de assinatura
+
+À partir da versão 1.70.0 do Signer e 0.7.0 desta biblioteca, é possível embutir a tela de posicionamento de marcas de assinatura em outras aplicações tal como já era 
+feito para a tela de assinatura. Uma vez posicionadas, será possível obter os dados de posicionamento correspondente tanto pela biblioteca quando pela API do Signer
+para que sejam criados um ou mais documentos com as posições selecionadas.
+
+O primeiro passo é criar uma sessão de posicionamento utilizando a API de criação de sessão. Existem duas variações dessa API:
+
+* [API de criação de sessão básica](https://www.dropsigner.com/swagger/index.html#operations-MarksSessions-post_api_marks_sessions): permite criar a sessão de posicionamento
+fornecendo apenas os dados necessários para criação da sessão de posicionamento. Dados pessoais de signatários como e-mail e CPF, por exemplo, são opcionais. Use esta API, caso, após obter o resultado da 
+sessão, você ainda pretenda atualizar os dados da requisição de criação de documentos que será enviada posteriormente ao Signer.
+
+* [API de criação de sessão com requisição de criação de documento](https://www.dropsigner.com/swagger/index.html#operations-MarksSessions-post_api_marks_sessions_documents): 
+permite criar a sessão de posicionamento fornecendo o mesmo request que é utilizado para criar documentos. Use esta API, caso prefira encaminhar o resultado da sessão diretamente 
+para a API de criação de documentos sem fazer nenhuma alteração adicional.
+
+O resultado de ambas APIs será o retorno de um ID de sessão e uma URL para embutir a tela de posicionamento:
+
+```javascript
+{
+	//ID da sessão
+	"id": "4cdcfa93-8f38-46f9-8634-246d5589fe5f",
+	//URL para usar com o Widget
+	"embedUrl": "https://www.dropsigner.com/position-marks/4cdcfa93-8f38-46f9-8634-246d5589fe5f?v=1"
+}
+```
+
+Uma vez obtida a URL de sessão, basta inicializar o Widget assim como é feito para a funcionalidade de assinatura:
+
+```javascript
+var widget = new LacunaSignerWidget();
+```
+
+Chame o método `on()` passando o evento de posicionamento de marcas e uma função de callback que será chamada quando o usuário concluir o posicionamento:
+
+```javascript
+//assinatura
+widget.on(widget.events.marksPositioned, function (e) {
+	// O atributo data conterá a requisição preenchida com as posições das marcas
+	//console.log(e.data);
+	//alert('Marcas posicionadas');
+});
+```
+
+Por fim, carregue o iFrame utilizando o método `render()`:
+
+```javascript
+widget.render(embedUrl, 'embed-container');
+```
+
+Uma vez concluída a sessão de posicionamento, cada entrada do atributo `flowActions` da requisição fornecida na criação da sessão será atualizada com as posições selecionadas na
+tela de posicionamento (mais especificamente, será preenchido o atributo `prePositionedMarks`). 
+
+Essa requisição atualizada pode ser obtida pelo atributo `data` do evento de posicionamento ou pelo atributo de mesmo nome da
+[API de obtenção de dados da sessão](https://www.dropsigner.com/swagger/index.html#operations-MarksSessions-get_api_marks_sessions__id_).
+
+> [!NOTE]
+> A sessão de posicionamento tem duração de 1 hora após sua criação. Após esse período, não será possível obter nem atualizar os dados da sessão.
