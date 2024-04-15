@@ -135,8 +135,8 @@ A imagem abaixo mostra o processo de assinatura sem preview de documento dentro 
 
 ## Posicionamento de marcas de assinatura
 
-À partir da versão 1.70.0 do Signer e 0.7.0 desta biblioteca, é possível embutir a tela de posicionamento de marcas de assinatura em outras aplicações tal como já era 
-feito para a tela de assinatura. Uma vez posicionadas, será possível obter os dados de posicionamento correspondente tanto pela biblioteca quando pela API do Signer
+À partir da versão 1.70.0 do Signer e 0.7.0 do Widget, é possível embutir a tela de posicionamento de marcas de assinatura em outras aplicações tal como já era 
+feito para a tela de assinatura. Uma vez posicionadas, é possível obter os dados de posicionamento correspondente tanto pela biblioteca quando pela API do Signer
 para que sejam criados um ou mais documentos com as posições selecionadas.
 
 O primeiro passo é criar uma sessão de posicionamento utilizando a API de criação de sessão. Existem duas variações dessa API:

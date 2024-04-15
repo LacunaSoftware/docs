@@ -138,7 +138,7 @@ The following image displays a signature example without the document preview:
 
 ## Signature marks positioning
 
-From Signer version 1.70.0 and version 0.7.0 of this library, it is possible to embed the signature marks positioning page in other applications as it was already done
+From Signer version 1.70.0 and version 0.7.0 of the Widget, it is possible to embed the signature marks positioning page in other applications as it was already done
 for the signature page. Once the marks are positioned, the position information will be retrievable through the Widget as well as Signer API in order to create one or
 more documents with the selected positions.
 
