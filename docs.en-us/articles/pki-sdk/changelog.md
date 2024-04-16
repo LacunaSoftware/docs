@@ -3,13 +3,13 @@
 <a name="v2-16-0" />
 ### 2.16.0 (2024-04-16)
 
-- \[PKI-112\] Add Nonce and Nonce rawy bytes properties to TstInfo
+- \[PKI-112\] Add Nonce and Nonce raw bytes properties to TstInfo
 - \[PKI-117\] Add support to Encrypted Private Keys decoding
 - \[PKI-113\] Improve PDF 'Append Mode' generic error to InvalidPdfException
 - \[PKI-116\] Improve PDF annotation change validation
-- \[PKI-118\] Improve pt-BR messages on Validation Results messages
+- \[PKI-118\] Improve pt-BR messages on Validation Results
 - \[PKI-114\] Improve legacy XAdES ArchiveTimeStamp namespace support
-- \[PKI-115\] Improve DateTimeOffsets os validation messages with PkiConfig.TimeZoneInfo custom time zone
+- \[PKI-115\] Improve DateTimeOffsets on validation messages with custom time zone PkiConfig.TimeZoneInfo
 - \[PKI-109\] Fix PAdES signatures custom SignatureFieldName being set to default on some scenarios
 
 
