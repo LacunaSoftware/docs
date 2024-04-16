@@ -1,5 +1,19 @@
 ﻿# Signer changelog
 
+<a name="v1-70-0" />
+### 1.70.0 (2024-04-16)
+
+* New Features
+  * [SIG-1194] Setting to add organization ID to Request Tag when using Datavalid
+  * [SIG-1195] Embed signature marks positioning page
+  * [SIG-1177] Users report with profile information
+  * [SIG-1182] Setting to allow action refusals to not update document status
+
+* Bug fixes
+  * [SIG-1134] Events from personal accounts display special character in organization name
+
+Updates database model: no
+
 <a name="v1-69-1" />
 ### 1.69.1 (2024-04-02)
 

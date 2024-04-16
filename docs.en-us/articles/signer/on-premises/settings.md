@@ -187,6 +187,11 @@ updated by administrators of that subscription.
 * **EnableCustomizableTranslationFiles** (v1.69.0): if `true`, enables customization of frontend translation files.
 * **EnableCustomizableLocalizationResourceFiles** (v1.69.0): if `true`, enables customization of backend localization resource files.
 
+* **AllowFlowActionRefusalToNotRefuseDocument** (v1.70.0): if `true`, when an action is refused, the document won't have its status changed to refused as well (as long as there can still be 
+at least one successfully completed action).
+* **MarksSessionExpirationInMinutes** (v1.70.0, default: `60`): the default expiration of a marks positioning session in minutes.
+
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 

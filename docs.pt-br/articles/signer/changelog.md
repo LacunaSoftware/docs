@@ -1,5 +1,19 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-70-0" />
+### 1.70.0 (2024-04-16)
+
+* Novas funcionalidades
+  * [SIG-1194] Permitir adicionar ID da organização como Request Tag de chamadas à Datavalid
+  * [SIG-1195] Permitir embutir tela de posicionamento de assinaturas
+  * [SIG-1177] Relatório de perfil dos usuários
+  * [SIG-1182] Permitir que a recusa da assinatura não afete o status do documento
+
+* Correções de bugs
+  * [SIG-1134] Eventos da conta pessoal aparecem com caractere especial no lugar do nome da organização
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-69-1" />
 ### 1.69.1 (2024-04-02)
 
