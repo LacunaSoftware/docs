@@ -1,5 +1,6 @@
 # Changelog MV Bio Signer
 
+
 ### 0.8.2 (2023-03-28)
 
 - Adiciona informação sobre proteção de senha nos detalhes do usuário
