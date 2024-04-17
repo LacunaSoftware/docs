@@ -1,5 +1,11 @@
 # PKI Express changelog
 
+<a name="v1-31-2" />
+### 1.31.2 (2024-04-17)
+
+- Updata PKI SDK [2.16.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-16-0)
+- Improve activation call
+
 <a name="v1-31-1" />
 ### 1.31.1 (2023-06-29)
 
