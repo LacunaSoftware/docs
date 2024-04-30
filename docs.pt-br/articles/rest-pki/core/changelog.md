@@ -4,6 +4,54 @@
 <a name="vnext" />
 -->
 
+<a name="v2.2.0" />
+## 2.2.0 (2024-04-30)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-241 Registro de transações de API
+
+RPNG-225 API para adicionar carimbo em arquivos PDF
+
+RPNG-214 Configurações por subscription de cultura, fuso horário e formato de data/hora (usadas na representação visual de assinaturas PDF)
+
+### Melhorias
+
+RPNG-236 Alternância (*round-robin*) de provedores de carimbo com definição opcional de prioridades
+
+<!--
+RPNG-238 Permitir visualização e edição de metadados das aplicações
+-->
+
+RPNG-239 Atualizar Angular para versão 17
+
+RPNG-248 Aceitar URLs relativas de upload em chamadas à API
+
+RPNG-255 Exibir na home page da subscription eventos, solicitações de carimbo de tempo e transações
+
+RPNG-256 Melhorar e separar em item de menu específico as demonstrações de uso das APIs
+
+RPNG-257 Apagar mensagens antigas de TSP apenas caso explicitamente configurado
+
+### Correções de bugs
+
+RPNG-235 Sistema não está tentando obter carimbo de tempo novamente em caso de erro
+
+RPNG-237 Job para completar assinatura CMS está dando erro
+
+RPNG-245 Parâmetros inválidos de representação visual estão gerando resposta 500 ao invés de 422
+
+RPNG-250 Exceções transformadas em ApiException não são logadas corretamente
+
+RPNG-252 Filtro por data não funcionando na tela de "Detalhes do provedor de carimbo de tempo"
+
+RPNG-253 Pedido de carimbo de tempo não registra duração em caso de erro no provedor
+
+RPNG-254 Consulta a chamadas de provedor de carimbo de tempo não utiliza o índice adequado
+
+
 <a name="v2.1.3" />
 ## 2.1.3 (2024-04-10)
 
@@ -108,6 +156,8 @@ RPNG-178 Permitir definição opcional de timestamp tier no contexto de seguran�
 RPNG-204 Anonimização de dados na tela de validação
 
 RPNG-207 Melhorias ao gerenciamento de provimento de carimbos de tempo
+
+RPNG-246 Filtro por data de início e fim na lista de chamadas ao provedor de carimbo de tempo
 
 RPNG-212 Alterar texto da marca de validação da ONR
 

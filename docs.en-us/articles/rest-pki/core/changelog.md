@@ -4,6 +4,55 @@
 <a name="vnext" />
 -->
 
+<a name="v2.2.0" />
+## 2.2.0 (2024-04-30)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-241 API transaction registering
+
+RPNG-225 PDF stamping API
+
+RPNG-214 Per-subscription settings for culture, time zone and date/hour format (used on PDF signature visual representation)
+
+### Improvements
+
+RPNG-236 Round-robin strategy among timestamp providers with optional priority setting
+
+<!--
+RPNG-238 Permitir visualização e edição de metadados das aplicações
+-->
+
+RPNG-239 Update Angular to version 17
+
+RPNG-248 Accept relative URLs returned by the upload API on `FileModel.Location` passed on `FileReferenceModel.Url`
+
+RPNG-255 Show latest events, timestamp requests and API transactions on signed-in home page
+
+RPNG-256 Improve demonstrations and move to a separate menu item
+
+RPNG-257 Delete old TSP messages only if explicitly configured
+
+### Bug fixes
+
+RPNG-235 Application does not try again to fetch a timestamp in case of error on initial try
+
+RPNG-237 Error on complete signature job for CMS signatures
+
+RPNG-245 Bad visual representation parameters cause return code 500 instead of 422
+
+RPNG-250 Exceptions transformed into ApiException are not logged properly
+
+RPNG-252 Date filter is not working on "Timestamp provider details" page
+
+RPNG-253 Duration of fimestamp request is not registered in case of error
+
+RPNG-254 Query on timestamp provider calls is not using the appropriate database index
+
+
+
 <a name="v2.1.3" />
 ## 2.1.3 (2024-04-10)
 
@@ -108,6 +157,8 @@ RPNG-178 Permitir definição opcional de timestamp tier no contexto de seguran�
 RPNG-204 Anonimização de dados na tela de validação
 
 RPNG-207 Melhorias ao gerenciamento de provimento de carimbos de tempo
+
+RPNG-246 Filtro por data de início e fim na lista de chamadas ao provedor de carimbo de tempo
 
 RPNG-212 Alterar texto da marca de validação da ONR
 
