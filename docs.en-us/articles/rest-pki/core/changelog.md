@@ -4,6 +4,17 @@
 <a name="vnext" />
 -->
 
+<a name="v2.2.1" />
+## 2.2.1 (2024-05-01)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-260 Relative URLs returned by the upload API on `FileModel.Location` passed on `FileReferenceModel.Url` are still not accepted on Linux/Docker
+
+
+
 <a name="v2.2.0" />
 ## 2.2.0 (2024-04-30)
 

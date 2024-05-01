@@ -4,6 +4,17 @@
 <a name="vnext" />
 -->
 
+<a name="v2.2.1" />
+## 2.2.1 (2024-05-01)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-260 URLs relativas de upload em chamadas à API ainda não são aceitas em Linux/Docker
+
+
+
 <a name="v2.2.0" />
 ## 2.2.0 (2024-04-30)
 
