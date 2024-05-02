@@ -22,7 +22,7 @@ By a stream. Like when referencing by the file's bytes, the filename must also b
 [!include[Reference by bytes in dotnet](../../../../../includes/rest-pki/core/file-reference-stream-dotnet.md)]
 
 By absolute URL. In this case, the API backend will download the file from your application's backend. The URL must be publicly accessible with the `GET`
-http method. Any authorization arguments must be embedded withing the URL itself:
+http method. Any authorization arguments must be embedded within the URL itself:
 
 [!include[Reference by URL in dotnet](../../../../../includes/rest-pki/core/file-reference-url-dotnet.md)]
 
