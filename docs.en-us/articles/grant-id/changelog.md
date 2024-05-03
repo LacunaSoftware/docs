@@ -4,6 +4,26 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v4-8-0" />
+### 4.8.0 (2024-05-03)
+
+* Improvements
+  * [LI-414] Improve safety against HTML Injection in URL parameters
+  * [LI-415] Add lockout settings for console login
+  * [LI-416] Increase max URL and max query string limits
+
+Updates database model: no
+
+<a name="v4-7-0" />
+### 4.7.0 (2024-04-18)
+
+* Improvements
+  * [LI-410] Update javascript libraries
+  * [LI-412] Add requirement options for digital certificates
+  * [LI-413] Option to disable use of ProviderUser for external identity providers
+
+Updates database model: no
+
 <a name="v4-6-0" />
 ### 4.6.0 (2023-11-06)
 

@@ -4,6 +4,26 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v4-8-0" />
+### 4.8.0 (2024-05-03)
+
+* Melhorias
+  * [LI-414] Aumentar segurança de parâmetros contra HTML Injection
+  * [LI-415] Permitir configurar o lockout para login no console
+  * [LI-416] Aumentar limite de max URL e max query string
+
+Atualiza modelo do banco de dados: não
+
+<a name="v4-7-0" />
+### 4.7.0 (2024-04-18)
+
+* Melhorias
+  * [LI-410] Atualizar bibliotecas javascript
+  * [LI-412] Adicionar opções de restrição de certificados digitais
+  * [LI-413] Permitir desabilitar o uso do ProviderUser para provedores de identidade externos
+
+Atualiza modelo do banco de dados: não
+
 <a name="v4-6-0" />
 ### 4.6.0 (2023-11-06)
 
