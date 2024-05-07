@@ -37,6 +37,13 @@ no passo anterior):
 
 ```sh
 az login
+```
+
+> [!NOTE]
+> Caso você tenha acesso a mais de uma conta no Azure, pode ser necessário passar argumento `--tenant YOUR_TENANT`
+
+```sh
+az acr login --name MY_ACR_NAME 
 az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.8.0 --image amplia:4.8.0
 ```
 
