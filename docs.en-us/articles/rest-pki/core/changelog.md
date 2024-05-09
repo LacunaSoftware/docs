@@ -4,6 +4,17 @@
 <a name="vnext" />
 -->
 
+<a name="v2.2.2" />
+## 2.2.2 (2024-05-04)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-261 NullReferenceException error when requesting timestamps through TSP (introduced on 2.2.0)
+
+
+
 <a name="v2.2.1" />
 ## 2.2.1 (2024-05-01)
 

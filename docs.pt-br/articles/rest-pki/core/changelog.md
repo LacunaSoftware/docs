@@ -4,6 +4,17 @@
 <a name="vnext" />
 -->
 
+<a name="v2.2.2" />
+## 2.2.2 (2024-05-04)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-261 Erro NullReferenceException ao solicitar carimbo via TSP
+
+
+
 <a name="v2.2.1" />
 ## 2.2.1 (2024-05-01)
 
