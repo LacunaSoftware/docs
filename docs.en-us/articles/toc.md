@@ -456,6 +456,7 @@
 ### [Settings](grant-id/on-premises/settings.md)
 ### [SAML 2 Integration](grant-id/on-premises/saml2.md)
 ### [LDAP Integration](grant-id/on-premises/ldap.md)
+### [Troubleshooting](grant-id/on-premises/troubleshoot.md)
 ## [Changelog](grant-id/changelog.md)
 <!-- End of GrantID -->
 
