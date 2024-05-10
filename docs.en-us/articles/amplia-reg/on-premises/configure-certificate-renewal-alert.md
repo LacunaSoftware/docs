@@ -25,7 +25,7 @@ CertificateRenewalAlert__EmailScheduleDays=30,15,-5
 
 It is important to notice that the value of the **EmailScheduleDays** setting is merely a goal. Whether it is met or not depends on a number of factors. Most notably, if for some reason the
 notifications recurring job fail to run for several consecutive days (for instance if you set `General:ProcessBackgroundJobs` to `False`), when it eventually runs the following conditions may
-occurr:
+occur:
 
 * Multiple notifications may be due to be sent for the same certificate
 * Notifications may be due to be sent for certificates that have expired too long ago for the notification to be of any use

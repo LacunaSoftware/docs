@@ -1,6 +1,6 @@
 ﻿# Trobleshooting issues with Rest PKI
 
-Here you'll find articles that can help you diagnose problems that might occurr when using [Rest PKI](../index.md).
+Here you'll find articles that can help you diagnose problems that might occur when using [Rest PKI](../index.md).
 
 > [!TIP]
 > The troubleshooting articles are targeted for **software developers**. If you are an end-user having trouble using

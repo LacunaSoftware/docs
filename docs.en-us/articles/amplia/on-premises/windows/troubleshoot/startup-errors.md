@@ -1,6 +1,6 @@
 ﻿# Troubleshooting startup errors (Windows Server)
 
-Some errors that occurr during application startup prevent Amplia's logging framework from working. In such cases, attempt one of the
+Some errors that occur during application startup prevent Amplia's logging framework from working. In such cases, attempt one of the
 solutions below to diagnose the problem.
 
 ## 1. Application Event Log
