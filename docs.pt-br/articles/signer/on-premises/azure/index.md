@@ -7,11 +7,6 @@ siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
 [!include[Veja o planejamento](../includes/see-planning.md)]
 -->
 
-> [!TIP]
-> Para permitir o uso do recurso de certificados SSL gratuitos pelo *App Service Managed Certificates (Preview)*,
-> sugerimos não escolher "naked domains", ou seja, domínios sem porção de subdomínio, por exemplo ~~patorum.com~~.
-> Prefira, por exemplo, `assinador.patorum.com`.
-
 ## Preparação
 
 Antes de começar, obtenha o pacote de binários:
