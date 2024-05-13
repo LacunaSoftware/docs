@@ -35,7 +35,7 @@ Durante a instalação, serão criados alguns *resources*:
 
 [!include[Criação de uma storage account](../../../includes/azure/create-storage.md)]
 
-[!include[Criação do App Service](../../../includes/azure/create-webapp-31.md)]
+[!include[Criação do App Service](../../../includes/azure/create-webapp.md)]
 
 ## Configuração do domínio
 

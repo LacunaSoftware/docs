@@ -5,7 +5,7 @@ Siga os procedimentos abaixo para criar um *App Service* (você precisa ter um *
 1. Em **App Services**, clique em **+ Add**
 1. Na primeira aba (*Basics*), preencha os dados conforme a sua infraestrutura (seguindo a região escolhida para o sistema)
    * Em *Publish*, escolha **Code**
-   * Em *Runtime stack*, escolha **.NET Core 3.1 (LTS)**
+   * Em *Runtime stack*, escolha **.NET 6.0 (LTS)**
    * Em *Operating System*, escolha o que preferir (o sistema é compatível com Windows e Linux)
 1. Clique em **Review + create**
 1. Clique em **Create**
