@@ -63,7 +63,7 @@ No App Service, vá em **Configuration** e adicione as seguintes configurações
 * `General__EncryptionKey`: chave criptográfica gerada acima
 * `General__SiteUrl`: URL pública do site, no domínio configurado anteriormente, ex: `https://assinador.patorum.com/`
 * `General__SiteName`: nome da sua instância do Amplia, ex: *Assinador Patorum*
-* `General__SupportEmailAdress`: o endereço de e-mail de suporte (usado no rodapé dos e-mails enviados)
+* `General__SupportEmailAddress`: o endereço de e-mail de suporte (usado no rodapé dos e-mails enviados)
 * `General__Theme` (opcional): esquema de cores do site -- esquemas disponíveis:
   * `acr`: amazon + cornell-red
   * `alg`: azure-lime + green
