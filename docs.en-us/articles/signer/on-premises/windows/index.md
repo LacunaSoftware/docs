@@ -73,14 +73,14 @@ Under section **Serilog**, configure the application logging:
 ...
 "Serilog": {
 	"MinimumLevel": {
-		"Default": "Warning",
+		"Default": "Warning"
 	},
 	"WriteTo": [
 		{
 			"Name": "File",
 			"Args": {
 				"path": "C:\\Logs\\Signer.log",
-				"outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}",
+				"outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}"
 			}
 		}
 	]
