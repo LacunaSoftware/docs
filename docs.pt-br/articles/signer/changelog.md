@@ -1,5 +1,28 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-71-0" />
+### 1.71.0 (2024-05-24)
+
+* Novas funcionalidades
+  * [SIG-1230] Integração para assinatura com certificado em nuvem via protocolo CSC
+  * [SIG-1232] Procedimento para regerar fatura da iugu após falha no fechamento da fatura
+
+* Melhorias
+  * [SIG-1038] Permitir acessar pastas no ambiente da Administração
+  * [SIG-1193] Atualizar pacotes com vulnerabilidades
+  * [SIG-1205] Mensagem de aviso de alteração de dados do signatário exibida antes da criação do documento
+  * [SIG-1207] Permitir adicionar ID da Flow Action no request tag do Datavalid
+  * [SIG-1221] Adicionar limite de signatários personalizável por instância
+
+* Correções de bugs
+  * [SIG-1206] Schema do Swagger com nome errado
+  * [SIG-1241] Assinatura eletrônica com Whatsapp não está bloqueando criação de documento se o telefone celular não for informado
+  * [SIG-1258] Aplicação perdeu acesso à API de detalhes do documento
+  * [SIG-1259] Assinatura com certificado em nuvem não registra evento de assinatura
+  * [SIG-1269] Validação incorreta de telefone ao trocar de método de autenticação
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-70-0" />
 ### 1.70.0 (2024-04-16)
 

@@ -191,6 +191,8 @@ updated by administrators of that subscription.
 at least one successfully completed action).
 * **MarksSessionExpirationInMinutes** (v1.70.0, default: `60`): the default expiration of a marks positioning session in minutes.
 
+* **MaxSignersPerDocument** (v1.71.0, default: `30`): the maximum number of signers allowed per document.
+
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)

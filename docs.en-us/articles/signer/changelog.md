@@ -1,5 +1,28 @@
 ﻿# Signer changelog
 
+<a name="v1-71-0" />
+### 1.71.0 (2024-05-24)
+
+* New Features
+  * [SIG-1230] Cloud signature with CSC protocol
+  * [SIG-1232] Procedure to generate iugu invoice again after failure during automated procedure
+
+* Improvements
+  * [SIG-1038] Allow folders to be viewed in system administration
+  * [SIG-1193] Update packages with vulnerabilities
+  * [SIG-1205] Participant data update warning shown before creating a document
+  * [SIG-1207] Allow flow action ID to be added to Datavalid request tag
+  * [SIG-1221] Add customizable signer limit
+
+* Bug fixes
+  * [SIG-1206] Swagger schema with wrong namespace
+  * [SIG-1241] Electronic signature with Whatsapp authentication is not requiring phone number to be filled in order to create a document
+  * [SIG-1258] Application lost access to document details API
+  * [SIG-1259] Cloud signature does not create signature events
+  * [SIG-1269] Incorret phone validation when switching authentication methods
+
+Updates database model: no
+
 <a name="v1-70-0" />
 ### 1.70.0 (2024-04-16)
 
