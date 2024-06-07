@@ -4,6 +4,51 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v2-23-1" />
+### 2.23.0 (2024-05-27)
+
+* Correções de bugs
+    * [AUT-420] Formulário de filiação não aparece para diplomas de segunda via
+
+* Novas funcionalidades
+    * [AUT-419] API de representação visual em Base64
+
+<a name="v2-23-1" />
+### 2.23.0 (2024-05-13)
+
+* Correções de bugs
+    * [AUT-415] Mensagem de validação do histórico/currículo não está aparecendo
+
+<a name="v2-23-0" />
+### 2.23.0 (2024-04-30)
+
+* Correções de bugs
+    * [AUT-409] Não é possível gerar o diploma devido a validação de aprovação de disciplina
+
+* Melhorias
+    * [AUT-410] Adicionar propagação de valores na criação do histórico escolar
+    * [AUT-413] Adicionar o nome social do aluno nas APIs necessárias
+
+* Novas funcionalidades
+    * [AUT-411] Adicionar envio de webhook em emissões por integração ou com registradora credenciada
+    * [AUT-412] Criar tag para utilizar CPF ou RG ou outro documento de acordo com a nacionalidade
+
+<a name="v2-22-0" />
+### 2.22.0 (2024-04-12)
+
+* Correções de bugs
+    * [AUT-408] Corrigir valor incorreto dos valores de Conceito
+
+* Novas funcionalidades
+    * [AUT-374] API para restaurar status da Emissão
+    * [AUT-406] Utilizar o nome social na representação visual do histórico escolar
+
+<a name="v2-21-3" />
+### 2.21.3 (2024-04-04)
+
+* Correções de bugs
+    * [AUT-407] Documentação comprobatória gerando erro de má requisição
+
 <a name="v2-21-2" />
 ### 2.21.2 (2024-04-01)
 

@@ -4,6 +4,51 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v2-23-1" />
+### 2.23.0 (2024-05-27)
+
+* Bug fixes
+    * [AUT-420] Affiliation form does not appear for copy degrees
+
+* New Features
+    * [AUT-419] API to get visual representation in Base64
+
+<a name="v2-23-1" />
+### 2.23.0 (2024-05-13)
+
+* Bug fixes
+    * [AUT-415] Academic transcript / Curriculum validation message is not appearing
+
+<a name="v2-23-0" />
+### 2.23.0 (2024-04-30)
+
+* Bug fixes
+    * [AUT-409] Unable to generate the degree due to subject approval validation
+
+* Improvements
+    * [AUT-410] Add value propagation when creating the academic transcript
+    * [AUT-413] Add the student's social name in the required APIs
+
+* New Features
+    * [AUT-411] Add sending of webhook in issuances by integration or with accredited registry
+    * [AUT-412] Create tag to use CPF or RG or other document according to nationality
+
+<a name="v2-22-0" />
+### 2.22.0 (2024-04-12)
+
+* Bug fixes
+    * [AUT-408] Fix incorrect value of Concept values
+
+* New Features
+    * [AUT-374] API to restore Issuance status
+    * [AUT-406] Use the social name in the visual representation of the academic transcript
+
+<a name="v2-21-3" />
+### 2.21.3 (2024-04-04)
+
+* Bug fixes
+    * [AUT-407] Supporting documentation generating a bad request error
+
 <a name="v2-21-2" />
 ### 2.21.2 (2024-04-01)
 
