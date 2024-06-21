@@ -14,6 +14,12 @@ To install an instance [*on premises*](../index.md) from [Signer](../../index.md
 
 [!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
 
+## Install additional required packages
+
+```bash
+apt-get install -y libc6-dev libgdiplus
+```
+
 ## Install Signer
 
 [!include[Common Linux installation](includes/common-linux-install.md)]
