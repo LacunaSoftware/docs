@@ -14,6 +14,10 @@ Para instalar uma instância [*on premises*](../index.md) do [Signer](../../inde
 
 [!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
 
+## Instalar pacotes obrigatórios adicionais
+
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-dependencies.md)]
+
 ## Instalar o Signer
 
 [!include[Common Linux installation](includes/common-linux-install.md)]
