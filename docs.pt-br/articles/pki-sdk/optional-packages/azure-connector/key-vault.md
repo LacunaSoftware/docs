@@ -6,7 +6,7 @@ O pacote [Lacuna PKI Azure Connector](https://www.nuget.org/packages/Lacuna.Pki.
 Para utilizar certificados ou chaves armazenados em um key vault, você precisará dos seguintes parâmetros:
 
 * **Endpoint**: campo `DnsName` do key vault, pode ser obtido na área *Overview* do vault
-* **AppId**: campo **Application ID** de uma aplicação registrada no *Azure Active Directory*
+* **AppId**: campo **Application ID** de uma aplicação registrada no *Microsoft Entra ID*
 * **AppSecret**: segredo da aplicação, gerado na área *Certificates &amp; secrets* da aplicação
 
 Além disso, para cada certificado ou chave que se pretende utilizar é necessário saber seu ***name***.

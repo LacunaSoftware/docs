@@ -6,7 +6,7 @@ The package [Lacuna PKI Azure Connector](https://www.nuget.org/packages/Lacuna.P
 To use certificates or keys stored on a key vault, you will need the following parameters:
 
 * **Endpoint**: the `DnsName` of the key vault, as shown on the *Overview* menu on Azure Portal
-* **AppId**: the **Application ID** of an application registered on *Azure Active Directory*
+* **AppId**: the **Application ID** of an application registered on *Microsoft Entra ID*
 * **AppSecret**: an authentication secret for the application, generated on *Certificates &amp; secrets*
 
 You will also need to know the **name** of the certificate or key you intend to use.

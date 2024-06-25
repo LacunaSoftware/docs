@@ -19,7 +19,7 @@ To configure an Azure Key Vault key store on Amplia, log in <a href="https://por
 
 Create an application corresponding to your Amplia instance:
 
-1. In the option **Azure Active Directory**, go to **App registrations** and click in **New registration**
+1. In the option **Microsoft Entra ID**, go to **App registrations** and click in **New registration**
 1. Enter a name for the application
 1. Leave the rest of the fields in the default options
 1. Click on **Register**

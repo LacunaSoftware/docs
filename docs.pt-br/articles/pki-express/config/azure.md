@@ -4,7 +4,7 @@ O PKI Express possibilita utilizar certificados e chaves armazenadas em Azure Ke
 
 Para utilizar certificados ou chaves armazenados em um key vault, você precisará dos seguintes parâmetros:
 
-- **azureAppId**: campo **Application ID** de uma aplicação registrada no *Azure Active Directory*
+- **azureAppId**: campo **Application ID** de uma aplicação registrada no *Microsoft Entra ID*
 - **azureAppSecret**: segredo da aplicação, gerado na área *Certificates &amp; secrets* da aplicação
 - **azureKeyVaultEndpoint**: campo `DnsName` do key vault, pode ser obtido na área *Overview* do vault
 
