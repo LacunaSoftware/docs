@@ -1,5 +1,35 @@
 ﻿# Signer changelog
 
+<a name="v1-72-0" />
+### 1.72.0 (2024-07-03)
+
+* Improvements
+  * [SIG-1049] Update flow action order by using step numbers
+  * [SIG-1300] Fix timezone for close invoice job
+
+Updates database model: no
+
+<a name="v1-72-0" />
+### 1.72.0 (2024-07-03)
+
+* Improvements
+  * [SIG-1213] New email customization options for organizations
+  * [SIG-1276] Save user name and identifier when signing eletronically
+  * [SIG-1295] Hide pagination total in screens with tables with too many results
+
+* Bug fixes
+  * [SIG-1169] Default plan cannot be selected in billing organization administration
+  * [SIG-1283] Whatsapp share link is incomplete
+  * [SIG-1285] Error generating printer friendly version if there are initials placed in pages that do not exist in the document
+  * [SIG-1286] Error generating QR code
+  * [SIG-1294] Error validating documents with expired certificates
+  * [SIG-1297] Error saving document flow with Whatsapp authentication only
+
+Updates database model: no
+
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released until 2024-07-03.
+
 <a name="v1-71-0" />
 ### 1.71.0 (2024-05-24)
 

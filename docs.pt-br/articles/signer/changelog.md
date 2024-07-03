@@ -1,5 +1,36 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-72-1" />
+### 1.72.1 (2024-07-03)
+
+* Melhorias
+  * [SIG-1049] Definir ordem de assinatura pelos números da etapa
+  * [SIG-1300] Ajustar fuso do job de fechamento de faturas
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-72-0" />
+### 1.72.0 (2024-07-03)
+
+* Melhorias
+  * [SIG-1213] Novas opções de personalização de emails por organização
+  * [SIG-1276] Salvar nome e CPF de usuários no momento da assinatura eletrônica
+  * [SIG-1295] Esconder total de paginação de telas com tabelas com quantidade muito grande de itens
+
+* Correções de bugs
+  * [SIG-1169] Plano padrão não está sendo listado na tela de Gestão de Organização
+  * [SIG-1283] Link de compartilhamento do Whatsapp sendo enviado de forma incompleta
+  * [SIG-1285] Erro ao gerar versão para impressão se existirem rubricas em páginas que não existem no documento
+  * [SIG-1286] Erro ao gerar QR code
+  * [SIG-1294] Erro na validação de documentos com certificados expirados
+  * [SIG-1297] Erro ao salvar fluxo de documentos com signatário com autenticação apenas por Whatsapp
+
+Atualiza modelo do banco de dados: não
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2024-07-03.
+
+
 <a name="v1-71-0" />
 ### 1.71.0 (2024-05-24)
 
