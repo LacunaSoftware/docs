@@ -617,16 +617,16 @@ Under section **SignatureTypes**:
 Under section **Totals**:
 
 * **HideDocumentPaginationTotalTreshold** (default: `10000`): threshold to hide documents list count.
-* **HideDocumentPaginationTotal** (default `true`): if `true` hides total when listing documents if the total exceeds the `HideDocumentPaginationTotalTreshold`.
+* **HideDocumentPaginationTotal** (default `true`): if `true`, hides total when listing documents if the total exceeds the `HideDocumentPaginationTotalTreshold`.
 
 * **HideOrganizationDocumentTotalsTreshold** (default: `10000`): threshold to hide documents total in organization details.
-* **HideOrganizationDocumentTotals**: if `true` hides total document total in organization details if the total exceeds the `HideOrganizationDocumentTotalsTreshold`.
+* **HideOrganizationDocumentTotals**: if `true`, hides total document total in organization details if the total exceeds the `HideOrganizationDocumentTotalsTreshold`.
 
 * **HideOrganizationDocumentPaginationTotalsTreshold** (default: `10000`): threshold to hide documents list count in organization administration.
-* **HideOrganizationDocumentPaginationTotals**: if `true` hides total when listing documents in organization administration if the total exceeds the `HideOrganizationDocumentPaginationTotalsTreshold`.
+* **HideOrganizationDocumentPaginationTotals**: if `true`, hides total when listing documents in organization administration if the total exceeds the `HideOrganizationDocumentPaginationTotalsTreshold`.
 
 * **HideEventPaginationTotalTreshold** (default: `10000`): threshold to hide events list count.
-* **HideEventPaginationTotal** (default `true`): if `true` hides total when listing events if the total exceeds the `HideEventPaginationTotalTreshold`.
+* **HideEventPaginationTotal** (default `true`): if `true`, hides total when listing events if the total exceeds the `HideEventPaginationTotalTreshold`.
 
 <a name="app-trust-arbitrator" />
 ###  *Trust Arbitrator* Settings
