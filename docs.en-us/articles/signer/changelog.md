@@ -1,7 +1,7 @@
 ﻿# Signer changelog
 
-<a name="v1-72-0" />
-### 1.72.0 (2024-07-03)
+<a name="v1-72-1" />
+### 1.72.1 (2024-07-03)
 
 * Improvements
   * [SIG-1049] Update flow action order by using step numbers
