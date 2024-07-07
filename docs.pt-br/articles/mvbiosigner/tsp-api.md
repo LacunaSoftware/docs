@@ -24,9 +24,7 @@ Response:
 
 SlotModel:
 {
-  // Status do resultado da assinatura
   slot_alias: string,
-  // Campo Subject do certificado do assinante
   label: string
 }
 ```
