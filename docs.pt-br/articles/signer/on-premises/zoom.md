@@ -39,17 +39,16 @@ Para isso siga o procedimento abaixo:
 1. Selecione o painel `Scopes`;
 1. Selecione os seguintes:
     - Meeting:
-        - View all user meetings (meeting:read:admin)
-        - View and manage all user meetings (meeting:write:admin)
+        - View a meeting (meeting:read:meeting:admin)
+        - Create a meeting for a user (meeting:write:meeting:admin)
+        - View a user's meetings (meeting:read:list_meetings:admin)
     - Recording:
-        - View all user recordings (recording:read:admin)
-        - View and manage all user recordings (recording:write:admin)
+        - Returns all of a meetings's recordings (cloud_recording:read:list_recording_files:admin)
+        - View a recording (cloud_recording:read:recording:admin)
     - User:
-        - View all user information (user:read:admin)
-        - View users information and manage users (user:write:admin)
-    - Room:
-        - View all user's Zoom Rooms information (room:read:admin)
-        - View and manage all user's Zoom Rooms information (room:write:admin)
+        - View a user (user:read:user:admin)
+    - Dashboard:
+        - View meeting participants' metrics (dashboard:read:list_meeting_participants:admin)
 1. Selecione o painel `App Credentials`;
 1. Copie as informações necessárias para a integração: `AccountId`, `ClientId`, e `ClientSecret`.
 ![Zoom S2S App Credentials](../images/zoom-credentials.png)
