@@ -1,8 +1,100 @@
 ﻿# Histórico de versões do Amplia Reg
 
-<!--
 <a name="vnext" />
--->
+
+<a name="v2-6-0" />
+## 2.6.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-291 Criar função para "baixar documentação completa" do pedido
+
+ARNG-331 Integração com PSBio
+
+ARNG-391 Criar conceito de "meus pedidos" para agentes de conferência
+
+ARNG-399 Health check com verificação do Amplia
+
+ARNG-400 Exportação do histórico do pedido em PDF \("trilha de auditoria"\)
+
+ARNG-401 Lista Negativa \("Sistema anti-fraude" / SAF\)
+
+ARNG-409 Emissão com chave no Ascertia ADSS Server
+
+ARNG-413 Adicionar security headers
+
+ARNG-420 Frontend para emissão com chave no Ascertia ADSS Server
+
+ARNG-425 Webhook por aplicação para notificação de mudança de status de pedidos
+
+### Melhorias
+
+ARNG-1 Integração com Gestao AR
+
+ARNG-395 Criar as ilustrações que compõem a tela inicial da videoconferência
+
+ARNG-396 Adicionar campos à exportação da listagem de pedidos para CSV
+
+ARNG-397 Permitir inclusão de campos Locality e StateName no certificado BR
+
+ARNG-402 Revisão de permissões / bloqueios de comportamentos ilegais
+
+ARNG-404 Exigir justificativa para retirar marca de suspeito de um pedido
+
+ARNG-405 Exigir conferência caso ConfirmationRequirementModes seja OnlyIfRequired e ocorra Enroll no PSBio  
+
+ARNG-407 Melhorias à lista negativa
+
+ARNG-410 Atualizar Angular para a versão 17
+
+ARNG-414 Melhorias à trilha de auditoria
+
+### Correções de bugs
+
+ARNG-398 Uso em paralelo do blob storage causando erro ao enviar mais de um arquivo na documentação do pedido
+
+ARNG-406 Erro na espera pelo PSBio quando o usuário é apenas agente
+
+ARNG-408 Testes de email unsubscribe estão falhando
+
+ARNG-417 Tela de detalhes de pedido está alertando problema pra qualquer pedido que não seja BraziOrder
+
+
+
+<a name="v2-5-3" />
+## 2.5.3 (2024-06-17)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-423 Números de telefones celular paraguaios com prefixo "09x7" não são aceitos
+
+
+
+<a name="v2-5-2" />
+## 2.5.2 (2024-06-17)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-423 Números de telefones celular paraguaios com prefixo "09x7" não são aceitos (somente completamente corrigido na versão [2.5.3](#v2-5-3))
+
+
+
+<a name="v2-5-1" />
+## 2.5.1 (2024-02-21)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-430 Erro relacionado a data/timezone na criação de agente de validação quando usando banco de dados PostgreSQL
+
+
 
 <a name="v2-5-0" />
 ## 2.5.0 (2024-01-25)
