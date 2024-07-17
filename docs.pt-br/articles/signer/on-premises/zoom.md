@@ -46,6 +46,7 @@ Para isso siga o procedimento abaixo:
         - Returns all of a meetings's recordings (cloud_recording:read:list_recording_files:admin)
         - View a recording (cloud_recording:read:recording:admin)
     - User:
+        - View users (user:read:list_users:admin)
         - View a user (user:read:user:admin)
     - Dashboard:
         - View meeting participants' metrics (dashboard:read:list_meeting_participants:admin)
