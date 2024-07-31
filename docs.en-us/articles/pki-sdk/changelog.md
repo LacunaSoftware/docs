@@ -52,6 +52,14 @@
 - Improve PDF signatures listing on non-consistent PDFs
 
 
+<a name="v2-12-3" />
+### 2.12.3 (2022-08-16)
+
+- Add GovBR Trust Arbitrator option
+- Add X.520 Description name parameter
+- Increase PKI Brazil pre-loaded static CAs
+
+
 <a name="v2-12-2" />
 ### 2.12.2 (2022-07-20)
 
