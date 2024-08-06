@@ -1,5 +1,17 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-73-0" />
+### 1.73.0 (2024-07-30)
+
+* Melhorias
+  * [SIG-1316] Permitir que o observador visualize anexos na página de observação externa
+
+* Correções de bugs
+  * [SIG-1306] Erro ao reiniciar lote de assinaturas para instâncias não permitem assinatura eletrônica
+  * [SIG-1321] Cobrança não está gerando boleto
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-72-1" />
 ### 1.72.1 (2024-07-03)
 

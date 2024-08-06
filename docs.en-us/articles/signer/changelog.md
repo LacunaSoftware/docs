@@ -1,5 +1,17 @@
 ﻿# Signer changelog
 
+<a name="v1-73-0" />
+### 1.73.0 (2024-07-30)
+
+* Improvements
+  * [SIG-1316] Allow observer to view attachments in external observation page
+
+* Bug fixes
+  * [SIG-1306] Error restarting signature batch for instances that do not allow electronic signature
+  * [SIG-1321] Bank billets cannot be generated
+
+Updates database model: no
+
 <a name="v1-72-1" />
 ### 1.72.1 (2024-07-03)
 
