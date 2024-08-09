@@ -1,5 +1,17 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-74-1" />
+### 1.74.1 (2024-08-08)
+
+* Melhorias
+  * [SIG-1331] Otimizar desempenho da listagem de documentos da organização
+  * [SIG-1341] Impedir utilização de funções eval() em PDFs abertos com PDF.JS
+
+* Correções de bugs
+  * [SIG-1342] O Webhook 'DocumentExpired' não consta na documentação do Swagger
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-73-0" />
 ### 1.73.0 (2024-07-30)
 

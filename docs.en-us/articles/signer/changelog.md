@@ -1,5 +1,17 @@
 ﻿# Signer changelog
 
+<a name="v1-74-1" />
+### 1.74.1 (2024-08-08)
+
+* Improvements
+  * [SIG-1331] Optimize organization document list performance
+  * [SIG-1341] Prevent usage of eval() functions in PDFs opened with PDF.JS
+
+* Bug fixes
+  * [SIG-1342] 'DocumentExpired' webhook is not present in the swagger documentation
+
+Updates database model: yes
+
 <a name="v1-73-0" />
 ### 1.73.0 (2024-07-30)
 
