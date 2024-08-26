@@ -6,7 +6,7 @@ infraestrutura ("on premises").
 <a name="platforms" />
 ## Ambientes suportados
 
-O Amplia é compatível com os seguintes ambientes:
+O Rest PKI Core é compatível com os seguintes ambientes:
 
 * Windows Server
 * [Linux](linux/index.md)
