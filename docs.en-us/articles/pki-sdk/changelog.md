@@ -1,5 +1,15 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-17-1" />
+### 2.17.1 (2024-08-27)
+
+- \[PKI-119\] Improve validation for PDF signature with invalid ByteRange parameter.
+- \[PKI-124\] Improve CRL local cache validation (For CRL distribution points returning inconsistent CRLs).
+- \[PKI-125\] Improve PAdES validation for mandatory DSS archiving policies.
+- \[PKI-123\] Fix PAdES not using DSS revocation artifacts on first signer when `ValidateAll` method call.
+- \[PKI-126\] Fix PAdES visual positioning for PDFs with cropbox on the page media size.
+
+
 <a name="v2-16-0" />
 ### 2.16.0 (2024-04-16)
 
