@@ -66,6 +66,11 @@ API para assinar digitalmente um hash com a chave privada correspondente ao cert
 [POST]
 '/v0/oauth/signature'
 
+Headers:
+// Necessário header com accessToken para autenticação
+- Authorization: Bearer {accessToken}
+
+
 Request:
 {
   // Nome do certificado (obtido pela API 'certificate-discovery')
@@ -102,6 +107,61 @@ SignatureModel:
   id: string,
   // Resultado da assinatura digital em Base64
   raw_signature: string
+}
+```
+
+### Assinar Documento com chave do usuário
+
+API para assinar digitalmente um **Documento** com a chave privada correspondente ao certificado do usuário.
+Por ora é suportado apenas documentos PDFs com a assinatura retornada no formato PAdES.
+
+```js
+[POST]
+'/v0/oauth/sign-document'
+
+Headers:
+// Necessário header com accessToken para autenticação
+- Authorization: Bearer {accessToken}
+
+
+Request:
+{
+  // Nome do certificado (obtido pela API 'certificate-discovery')
+  certificate_alias: string,
+  // Documentos a serem assinados
+  documents: SignDocumentModel[]
+}
+
+SignDocumentModel:
+{
+  // Bytes do documento a ser assiando em string Base64. (Por ora suportado apenas documentos PDF)
+  content: string,
+  // (Opcional) identificador do documento a ser assinado
+  id?: string,
+  // (Opcional) forma legível do identificador do documento
+  alias?: string,
+  // (Opcional) campo Reason customizado na assinatura do PDF
+  signingReason?: string,
+  // (Opcional) Metadados customizados a serem adicionados ao PDF assinado. (ex: { "meta1": "some value 1", "meta2": "some value 2" } )
+  metadata?: Map<string, string>
+}
+
+//////
+
+Response:
+{
+  // Nome do certificado, conforme recebido no request
+  certificate_alias: string,
+  // Documentos assinados
+  signatures: DocumentSignatureModel[]
+}
+
+DocumentSignatureModel:
+{
+  // identificador do documento a ser assinado (conforme recebido no SignDocumentModel do request)
+  id: string,
+  // Bytes do documento assinado em string Base64
+  signature: string
 }
 ```
 

@@ -10,6 +10,12 @@
 - \[PKI-126\] Fix PAdES visual positioning for PDFs with cropbox on the page media size.
 
 
+<a name="v2-16-1-beta01" />
+### 2.16.1-beta01 (2024-06-13)
+
+- \[PKI-99\]  Fix PAdES DSS usage for signature-timestamp validation when `ValidateAll` method call.
+
+
 <a name="v2-16-0" />
 ### 2.16.0 (2024-04-16)
 
