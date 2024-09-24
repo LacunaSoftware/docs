@@ -64,6 +64,8 @@ or organization. Please use the option in [Billing settings](#billing-settings) 
 * **DocumentConcludedNotificationAttachmentType** (default: `PrinterFriendlyVersion`, v1.35.0): defines the document version that is sent as an attachment when the 
 document is concluded. Available values are: `Original`, `PrinterFriendlyVersion`, `Signatures`, `OriginalWithMarks`, `SigningTags` and `SignatureMarks`.
 * **SendOriginalFileWithPendingActionEmail** (v1.36.0): if `true`, sends the original version of the document as an attachment in pending action notifications.
+* **SendPublicAttachmentFilesWithPendingActionEmail** (v1.75.0): if `true` and `SendOriginalFileWithPendingActionEmail` is also `true`, adds document attachments to pending action notifications.
+* **SendPublicAttachmentFilesWithDocumentConcludedEmail** (v1.75.0): if `true`, adds document attachments to the document concluded notification.
 
 * **EmailAttachmentSizeLimit**: The maximum file size (in bytes) that can be attached to an email. The default value is `10485760` (10 MB).
 
@@ -249,6 +251,10 @@ Under section **ElectronicSignature**:
 	* `Timestamp`: the electronic signature is added to the document as a timestamp signature. Requires that a Timestamper is configured.
 * **AdditionalInfoUrl** (v1.9.0): URL to redirect the user when he clicks the electronic signature info icon in the document creation screen.
 * **UseSignatureCertificateAsSelfSignedCertificate** (v1.52.0): if `true` and a [Signature Certificate](#signature-certificate) is enabled, use it instead of the auto generated self signed certificate.
+* **EnableLivenessAuthentication** (v1.75.0 - *internal testing only*): if `true`, enables liveness validation in selfie and datavalid authentications.
+* **RequireLivenessOnSelfieAuthentication** (v1.75.0): if `true`, requires that selfie authentications have liveness validation.
+* **RequireLivenessOnDatavalidAuthentication** (v1.75.0): if `true`, requires that datavalid authentications have liveness validation.
+* **HideEvidencesInPublicValidation** (v1.75.1): if `true`, hide electronic signer evidences in the public document validation page.
 
 <a name="signature-certificate" />
 ###  *Signature Certificate* Settings (v1.52.0)
@@ -603,6 +609,9 @@ Under section **SignatureTypes**:
 		* **EnableSelfieAuthentication**
 		* **EnableDatavalidAuthentication**
 		* **EnablePixAuthentication**
+		* **EnableLivenessAuthentication** (v1.75.0)
+		* **RequireLivenessOnSelfieAuthentication** (v1.75.0)
+		* **RequireLivenessOnDatavalidAuthentication** (v1.75.0)
 * **Advanced**: this is a subsection that defines settings relative to the `Advanced` signature type:
 	* **DisplaySecurityContextNames**: if `true` adds the Advanced signature security context name when displaying the signature type. Should only be set if you have more than one
 	security context.

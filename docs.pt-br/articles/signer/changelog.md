@@ -1,5 +1,39 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-75-2" />
+### 1.75.2 (2024-09-17)
+
+* Correções de bugs
+  * [SIG-1364] Não está sendo possível assinar o termo de uso com assinatura eletrônica 
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-75-1" />
+### 1.75.1 (2024-09-12)
+
+* Melhorias
+  * [SIG-1358] Configuração para desabilitar a exibição evidências de assinatura na tela de validação pública
+
+Atualiza modelo do banco de dados: não
+
+<a name="v1-75-0" />
+### 1.75.0 (2024-09-12)
+
+* Novas funcionalidades
+  * [SIG-1330] Integração com FaceTec 3d-liveness (apenas para testes internos)
+
+* Melhorias
+  * [SIG-1035] Configuração para permitir enviar anexos nos emails de documentos pendentes e concluídos
+  * [SIG-1071] Disponibilizar o link para validação do documento na tela de detalhes do documento
+  * [SIG-1196] Permitir autenticação unicamente por whatsapp nos fluxos montados pelo CSV
+  * [SIG-1328] Bloquear uso de câmeras virtuais para tirar a selfie
+
+* Correções de bugs
+  * [SIG-1340] A revogação de acesso na administração de usuários não está removendo os acessos das pastas dos usuários
+  * [SIG-1348] Erro ao baixar documentos com caracteres especiais na tela de listagem de documentos
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-74-1" />
 ### 1.74.1 (2024-08-08)
 

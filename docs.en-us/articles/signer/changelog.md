@@ -1,5 +1,39 @@
 ﻿# Signer changelog
 
+<a name="v1-75-2" />
+### 1.75.2 (2024-09-17)
+
+* Bug fixes
+  * [SIG-1364] Cannot sign terms of use with electronic signature
+
+Updates database model: no
+
+<a name="v1-75-1" />
+### 1.75.1 (2024-09-12)
+
+* Improvements
+  * [SIG-1358] Setting to disable display of signature evidences in public document validation page
+
+Updates database model: no
+
+<a name="v1-75-0" />
+### 1.75.0 (2024-09-12)
+
+* New Features
+  * [SIG-1330] FaceTec 3d-liveness integration (only for internal testing)
+
+* Improvements
+  * [SIG-1035] Setting to allow sending of attachments in pending and concluded document notifications
+  * [SIG-1071] Generation of document validation link in document details page
+  * [SIG-1196] Allow whatsapp only authentication in CSV flows
+  * [SIG-1328] Block usage of virtual cameras for authentication methods that require selfie
+
+* Bug fixes
+  * [SIG-1340] Access removal in user administration is not removing folder accesses
+  * [SIG-1348] Error while downloading batch of documents that have names with special characters
+
+Updates database model: yes
+
 <a name="v1-74-1" />
 ### 1.74.1 (2024-08-08)
 
