@@ -2,6 +2,69 @@
 
 <!--<a name="vnext" />-->
 
+<a name="v1-4-2" />
+## 1.4.2 (2024-05-07)
+
+Atualiza modelo do banco de dados: não
+
+### Correção de bug
+
+PSC-215 Conserta janelas de diálogo introduzidas na atualização anterior
+
+
+
+<a name="v1-4-1" />
+## 1.4.1 (2024-04-25)
+
+Atualiza modelo do banco de dados: sim
+
+### Nova funcionalidade
+
+PSC-205 Páginas documentação da API para aplicações clientes do PSC
+
+### Melhoria
+
+PSC-204 Atualização da Lacuna SPA para versão 3.0
+
+
+
+<a name="v1-3-1" />
+## 1.3.1 (2024-03-11)
+
+Atualiza modelo do banco de dados: não
+
+### Nova funcionalidade
+
+PSC-206 Funcionalidades para integração com KSPs
+
+### Melhoria
+
+PSC-107 Melhoria no tratamento da validade das sessões de uso de certificados
+
+
+
+<a name="v1-2-5" />
+## 1.2.5 (2023-12-21)
+
+Atualiza modelo do banco de dados: não
+
+### Nova funcionalidade
+
+PSC-208 Página com instruções para exclusão de conta
+
+
+
+<a name="v1-2-4" />
+## 1.2.4 (2023-12-13)
+
+Atualiza modelo do banco de dados: não
+
+### Correção de bug
+
+PSC-207 API de descoberta de certificado não retornava certificados no formato PEM
+
+
+
 <a name="v1-2-1" />
 ## 1.2.1 (2023-07-11)
 
