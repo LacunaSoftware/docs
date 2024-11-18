@@ -2,6 +2,69 @@
 
 <!--<a name="vnext" />-->
 
+<a name="v1-4-2" />
+## 1.4.2 (2024-05-07)
+
+Updates database model: no
+
+### Bug
+
+PSC-215 Fixed broken dialog windows introduced in the previous update
+
+
+
+<a name="v1-4-1" />
+## 1.4.1 (2024-04-25)
+
+Updates database model: yes
+
+### New Feature
+
+PSC-205 Added API documentation pages aimed at PSC client applications
+
+### Improvement
+
+PSC-204 Updated Lacuna SPA to version 3.0
+
+
+
+<a name="v1-3-1" />
+## 1.3.1 (2024-03-11)
+
+Updates database model: no
+
+### New Feature
+
+PSC-206 Added functionalities to integrate with KSPs
+
+### Improvement
+
+PSC-107 Improved handling of the validity of certificate usage sessions
+
+
+
+<a name="v1-2-5" />
+## 1.2.5 (2023-12-21)
+
+Updates database model: no
+
+### New Feature
+
+PSC-208 Added page with account deletion instructions
+
+
+
+<a name="v1-2-4" />
+## 1.2.4 (2023-12-13)
+
+Updates database model: no
+
+### Bug
+
+PSC-207 Fixed certificate discovery API not returning certificates in PEM format
+
+
+
 <a name="v1-2-1" />
 ## 1.2.1 (2023-07-11)
 
