@@ -9,11 +9,11 @@ Embedded Signature Integration allows you to sign/approve documents in Signer wi
 
 ## Installation
 
-First, include the latest [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js) file on your page:
+First, include the latest [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.8.0.min.js) file on your page:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js"
-    integrity="sha256-PngSJQymFtozof1WoCBZQ6Fg9BqfquaTVR+5BnCik0o="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.8.0.min.js"
+    integrity="sha256-kS96fv3kyz1iJOP3crrI/2dvBzAgEHu4dZF9ecS/f0I="
     crossorigin="anonymous"></script>
 ```
 

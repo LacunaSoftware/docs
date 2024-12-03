@@ -9,11 +9,11 @@ A integração com Assinatura embutida permite assinar/aprovar documentos submet
 
 ## Instalação
 
-Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js) mais recente:
+Primeiro, inclua na sua página o arquivo [lacuna-signer-widget.js](https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.8.0.min.js) mais recente:
 
 ```html
-<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.7.0.min.js"
-    integrity="sha256-PngSJQymFtozof1WoCBZQ6Fg9BqfquaTVR+5BnCik0o="
+<script type="text/javascript" src="https://cdn.lacunasoftware.com/libs/signer/lacuna-signer-widget-0.8.0.min.js"
+    integrity="sha256-kS96fv3kyz1iJOP3crrI/2dvBzAgEHu4dZF9ecS/f0I="
     crossorigin="anonymous"></script>
 ```
 
