@@ -1,5 +1,37 @@
 ﻿# Signer changelog
 
+<a name="v1-76-0" />
+### 1.76.0 (2024-12-04)
+
+* New Features
+  * [SIG-1357] Send authentication tokens with SMSToken
+  * [SIG-1400] Enable liveness to work in embedded signature (iFrame)
+  * [SIG-1402] Add setting to hide SubjectName Xades signatures
+
+* Improvements
+  * [SIG-1347] Setting to block the download of pending documents
+  * [SIG-1360] Add button to generate events report
+  * [SIG-1362] Generate expiring certificates report
+  * [SIG-1411] Add setting to define database command timeout
+  * [SIG-1370] [Templates] Create tag when clicking the plus button for "Multiple options", single choice
+  * [SIG-1371] [Templates] Reorganization of cards in template creation
+  * [SIG-1372] [Templates] Use the same order widget from recipients in the template fields
+  * [SIG-1373] [Templates] Improvements to the template selection dialog
+  * [SIG-1375] [Templates] Increase tag padding for pre-defined fields
+  * [SIG-1376] [Templates] Create simplified dropdown for signature types
+  * [SIG-1377] [Templates] Replace toggles with checkboxes and update texts
+  * [SIG-1378] [Templates] Implement suggestions for the share link
+  * [SIG-1379] [Templates] Replace "Name" with "Field label"
+  * [SIG-1380] [Templates] Add "Checked" and "Unchecked" labels to checkboxes
+
+* Bug fixes
+  * [SIG-1308] Save button is always active when editing a recipient that has phone number in template update screen
+  * [SIG-1366] [Templates] Bug when replacing template values
+  * [SIG-1399] Error generating invoices for PIX fields that exceed the default limit
+  * [SIG-1410] Document with simple signature type does not display signature marks
+
+Updates database model: yes
+
 <a name="v1-75-2" />
 ### 1.75.2 (2024-09-17)
 

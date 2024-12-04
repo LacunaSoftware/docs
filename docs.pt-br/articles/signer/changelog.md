@@ -1,5 +1,37 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-76-0" />
+### 1.76.0 (2024-12-04)
+
+* Novas funcionalidades
+  * [SIG-1357] Envio de tokens de autenticação via SMSToken
+  * [SIG-1400] Habilitar funcionamento de Liveness em assinatura embutida (iFrame)
+  * [SIG-1402] Adicionar configuração de instância para ocultar SubjectName em assinaturas Xades
+
+* Melhorias
+  * [SIG-1347] Permitir bloqueio de downloads de documentos pendentes
+  * [SIG-1360] Adicionar botão para gerar relatórios de eventos
+  * [SIG-1362] Permitir a emissão de relatório de aviso de vencimento dos certificados
+  * [SIG-1411] Adicionar configuração para definir tempo de timeout de banco de dados
+  * [SIG-1370] [Modelos] Criar a tag ao clicar no botão "mais" nas opções de "Múltiplas opções", escolha única
+  * [SIG-1371] [Modelos] Reorganização dos cards na tela de criação de modelo
+  * [SIG-1372] [Modelos] Trazer o seletor de ordem dos Destinatários para os campos do modelo
+  * [SIG-1373] [Modelos] Melhorias para a dialog na tela de seleção de modelos
+  * [SIG-1375] [Modelos] Aumentar o padding nas tags de campos identificados
+  * [SIG-1376] [Modelos] Criar um dropdown simplificado para seleção dos tipos de assinatura
+  * [SIG-1377] [Modelos] Substituir os toggles por checkboxes e utilizar os textos sugeridos
+  * [SIG-1378] [Modelos] Incorporar sugestões do link de compartilhamento
+  * [SIG-1379] [Modelos] Trocar "Nome" do campo por "Rótulo do campo"
+  * [SIG-1380] [Modelos] Adicionar as labels "Marcado" e "Desmarcado" aos checkboxes
+
+* Correções de bugs
+  * [SIG-1308] Ao adicionar telefone a um destinatário o botão de salvar está sempre ativo na tela de edição de modelo
+  * [SIG-1366] [Modelos] Bug ao substituir valores do template
+  * [SIG-1399] Erro ao gerar faturas porque o campo do PIX excede os limites
+  * [SIG-1410] Documento assinado com assinatura simples não possui marcas de assinatura
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-75-2" />
 ### 1.75.2 (2024-09-17)
 

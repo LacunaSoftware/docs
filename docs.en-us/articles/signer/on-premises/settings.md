@@ -255,6 +255,9 @@ Under section **ElectronicSignature**:
 * **RequireLivenessOnSelfieAuthentication** (v1.75.0): if `true`, requires that selfie authentications have liveness validation.
 * **RequireLivenessOnDatavalidAuthentication** (v1.75.0): if `true`, requires that datavalid authentications have liveness validation.
 * **HideEvidencesInPublicValidation** (v1.75.1): if `true`, hide electronic signer evidences in the public document validation page.
+* **HideSubjectNameInXadesSignatures** (v1.76.0): if `true`, does not add subject name in XAdES sigantures.
+* **DatabaseCommandTimeout** (v1.76.0): defines the database command timeout in seconds.
+* **HideDownloadOptionForPendingDocuments** (v1.76.0): if `true`, does not display the download option for pending documents. This setting can be overriden by organization settings.
 
 <a name="signature-certificate" />
 ###  *Signature Certificate* Settings (v1.52.0)
