@@ -227,6 +227,8 @@ O campo URL deve ser preenchido com o endereço de sua instância do Signer segu
 https://seu-signer.com.br/api/webhooks/iugu/invoice/changed
 ```
 
+Caso ocorra erro ao tentar registrar o webhook, adicione `?noecho` ao final da URL.
+
 O campo autorização deve ser preenchido da seguinte forma:
 
 ```javascript
