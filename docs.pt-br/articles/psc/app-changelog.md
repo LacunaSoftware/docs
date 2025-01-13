@@ -8,6 +8,21 @@ As versões do aplicativo móvel têm o formato `MINOR.PATCH(.BUILD)`
 O terceiro número significa o número do build e não é documentado neste histórico, embora seja visível nas lojas de aplicativo (geralmente com valor `1000`, que denota o build final).
 
 
+<a name="v7-0" />
+## 7.0 (2024-07-03)
+
+Versão mínima do backend: 1.2.0
+
+### Melhorias
+
+PSC-218 Melhoria no tratamento da nullability de parâmetro de escopo
+
+### Correções de bugs
+
+PSC-219 Corrige configuração padrão mal ajustada
+
+
+
 <a name="v5-0" />
 ## 5.0 (2024-06-13)
 
