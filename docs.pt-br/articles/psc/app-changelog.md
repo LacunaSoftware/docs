@@ -8,6 +8,21 @@ As versões do aplicativo móvel têm o formato `MINOR.PATCH(.BUILD)`
 O terceiro número significa o número do build e não é documentado neste histórico, embora seja visível nas lojas de aplicativo (geralmente com valor `1000`, que denota o build final).
 
 
+<a name="v8-0" />
+## 8.0 (2025-01-13)
+
+Versão mínima do backend: 1.2.0
+
+### Melhorias
+
+PSC-107 Melhoria no tratamento da validade de sessões de uso de certificados
+
+PSC-221 Remoção de uso de permissões de acesso de mídia no Android
+
+PSC-222 Melhoria na comunicação de certificados que deixaram de ser válidos
+
+
+
 <a name="v7-0" />
 ## 7.0 (2024-07-03)
 
@@ -15,7 +30,7 @@ Versão mínima do backend: 1.2.0
 
 ### Melhorias
 
-PSC-218 Melhoria no tratamento da nullability de parâmetro de escopo
+PSC-218 Melhoria no tratamento de parâmetros da API
 
 ### Correções de bugs
 
