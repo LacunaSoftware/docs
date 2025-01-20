@@ -4,8 +4,113 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
-<a name="v2-23-1" />
-### 2.23.0 (2024-05-27)
+<a name="v2-27-3" />
+### 2.27.3 (2024-12-26)
+
+* Improvements
+    * [AUT-444] Add Habilitacao and Enfase fields in degree details API.
+
+<a name="v2-27-2" />
+### 2.27.2 (2024-12-12)
+
+* Improvements
+    * [AUT-450] Allow the validation code to be filled by the registry institute in Emissions
+    * [AUT-451] Fix TConceito enum values
+
+<a name="v2-27-1" />
+### 2.27.1 (2024-12-11)
+
+* Bug fixes
+    * [AUT-447] Empty return in institute tags when Renewal is in process
+    * [AUT-449] Error when creating academic transcript with existing model
+
+<a name="v2-27-0" />
+### 2.27.0 (2024-11-21)
+
+* Bug fixes
+    * [AUT-292] Empty complement generates empty tag in XML
+    * [AUT-437] Ordering of phases in curriculum
+    * [AUT-439] Academic transcript and curriculum fetched from Signer after restamp
+
+* Improvements
+    * [AUT-435] Academic transcript visual representation setting for the new identity card format
+    * [AUT-445] Add the Id subscription when sending a webhook
+    * [AUT-446] Send document creation webhook
+
+* New Features
+    * [AUT-442] Add a preview button for the visual representation in the Emission details
+
+<a name="v2-26-2" />
+### 2.26.2 (2024-10-20)
+
+* New Features
+    * [AUT-440] Instance configuration to disable restamp webhooks
+
+
+<a name="v2-26-1" />
+### 2.26.1 (2024-10-17)
+
+* Bug fixes
+    * [AUT-438] Error when download degree after restamp
+
+<a name="v2-26-0" />
+### 2.26.0 (2024-10-16)
+
+* New Features
+    * [AUT-72] Implement document restamp
+
+<a name="v2-25-2" />
+### 2.25.2 (2024-08-14)
+
+* Bug fixes
+    * [AUT-430] Student name is not displayed on all academic transcript visual representation pages
+
+* Improvements
+    * [AUT-431] Allow A1 certificates in the signatures of partial academic transcripts
+    * [AUT-432] Remove spaces in the validation code
+
+<a name="v2-25-1" />
+### 2.25.1 (2024-08-09)
+
+* Bug fixes
+    * [AUT-429] Unable to upload academic transcript or curriculum template
+
+
+<a name="v2-25-0" />
+### 2.25.0 (2024-08-06)
+
+* Bug fixes
+    * [AUT-422] Document validation API allows access without captcha
+
+* Improvements
+    * [AUT-423] Academic transcript and degree visual representation preview when issuing the degree
+    * [AUT-425] Send registry action webhook to issuer
+
+* New Features
+    * [AUT-428] API for sending texts for the degree visual representation
+
+<a name="v2-24-1" />
+### 2.24.1 (2024-07-08)
+
+* Bug fixes
+    * [AUT-424] Unable to add a professor to a copy degree
+    * [AUT-427] Unable to cancel a degree issued by an accredited registry
+
+* Improvements
+    * [AUT-426] Show course recognition in academic transcript visual representation when Renewed
+
+<a name="v2-24-0" />
+### 2.24.0 (2024-06-17)
+
+* Improvements
+    * [AUT-421] Allow changing the titles of each table academic transcript and curriculum visual representation
+
+* New Features
+    * [AUT-416] Export the degree to a JSON file
+    * [AUT-418] Allow pre-positioning of the QR Code in degree visual representation
+
+<a name="v2-23-2" />
+### 2.23.2 (2024-05-27)
 
 * Bug fixes
     * [AUT-420] Affiliation form does not appear for copy degrees
@@ -14,7 +119,7 @@
     * [AUT-419] API to get visual representation in Base64
 
 <a name="v2-23-1" />
-### 2.23.0 (2024-05-13)
+### 2.23.1 (2024-05-13)
 
 * Bug fixes
     * [AUT-415] Academic transcript / Curriculum validation message is not appearing

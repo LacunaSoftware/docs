@@ -4,8 +4,112 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
-<a name="v2-23-1" />
-### 2.23.0 (2024-05-27)
+<a name="v2-27-3" />
+### 2.27.3 (2024-12-26)
+
+* Melhorias
+    * [AUT-444] Adicionar campos de nome da habilitação e ênfase nas APIs de detalhes do diploma
+
+<a name="v2-27-2" />
+### 2.27.2 (2024-12-12)
+
+* Melhorias
+    * [AUT-450] Permitir que o código de validação seja preenchido pela IES Registradora nas Emissões
+    * [AUT-451] Corrigir valores nas enums de TConceito
+
+<a name="v2-27-1" />
+### 2.27.1 (2024-12-11)
+
+* Correções de bugs
+    * [AUT-447] Retorno vazio nas tags da IES quando a Renovação de Recredenciamento está em tramitação
+    * [AUT-449] Erro ao criar histórico escolar com modelo já existente
+
+<a name="v2-27-0" />
+### 2.27.0 (2024-11-21)
+
+* Correções de bugs
+    * [AUT-292] Complemento não preenchido gera tag vazia no XML
+    * [AUT-437] Ordenação das fases do currículo
+    * [AUT-439] Histórico escolar e currículos ainda sendo buscados no Signer após renotarização
+
+* Melhorias
+    * [AUT-435] Configuração no RVHE para o novo formato da carteira de identidade
+    * [AUT-445] Adicionar o ID da organização no envio de webhook
+    * [AUT-446] Enviar webhook de documento criado
+* Novas funcionalidades
+    * [AUT-442] Adicionar botão de pré-visualização da representação visual nos detalhes da emissão
+
+<a name="v2-26-2" />
+### 2.26.2 (2024-10-20)
+
+* Novas funcionalidades
+    * [AUT-440] Configuração de instância para desabilitar os webhooks das renotarizações
+
+
+<a name="v2-26-1" />
+### 2.26.1 (2024-10-17)
+
+* Correções de bugs
+    * [AUT-438] Erro ao baixar o diploma após renotarização
+
+<a name="v2-26-0" />
+### 2.26.0 (2024-10-16)
+
+* Novas funcionalidades
+    * [AUT-72] Implementar a recarimbação dos documentos para longa duração
+
+<a name="v2-25-2" />
+### 2.25.2 (2024-08-14)
+
+* Correções de bugs
+    * [AUT-430] Não é exibido o nome do aluno em todas as páginas do RVHE
+
+* Melhorias
+    * [AUT-431] Permitir certificados A1 nas assinaturas dos históricos escolares parciais
+    * [AUT-432] Remover espaços presente no código de validação 
+
+<a name="v2-25-1" />
+### 2.25.1 (2024-08-09)
+
+* Correções de bugs
+    * [AUT-429] Não é possível enviar modelo de Histórico Escolar ou Currículo
+
+
+<a name="v2-25-0" />
+### 2.25.0 (2024-08-06)
+
+* Correções de bugs
+    * [AUT-422] A API de validação de documentos permite acesso sem captcha
+
+* Melhorias
+    * [AUT-423] Pré-visualização do RVDD e RVHE no momento de emissão do Diploma
+    * [AUT-425] Disparo de WebHook das ações da registradora para emissora
+
+* Novas funcionalidades
+    * [AUT-428] API para envio de textos para a representação visual do diploma
+
+<a name="v2-24-1" />
+### 2.24.1 (2024-07-08)
+
+* Correções de bugs
+    * [AUT-424] Não é possível adicionar docente em diploma de segunda via
+    * [AUT-427] Não é possível anular diploma emitido com registradora credenciada
+
+* Melhorias
+    * [AUT-426] Mostrar Reconhecimento do curso no RVHE quando tiver Renovação
+
+<a name="v2-24-0" />
+### 2.24.0 (2024-06-17)
+
+* Melhorias
+    * [AUT-421] Permitir a alteração dos títulos de cada tabela do RVHE e RVCE
+
+* Novas funcionalidades
+    * [AUT-416] Exportar o diploma para arquivo JSON
+    * [AUT-418] Permitir o pre-posicionamento do QR Code no RVDD
+
+<a name="v2-23-2" />
+### 2.23.2 (2024-05-27)
 
 * Correções de bugs
     * [AUT-420] Formulário de filiação não aparece para diplomas de segunda via
@@ -14,7 +118,7 @@
     * [AUT-419] API de representação visual em Base64
 
 <a name="v2-23-1" />
-### 2.23.0 (2024-05-13)
+### 2.23.1 (2024-05-13)
 
 * Correções de bugs
     * [AUT-415] Mensagem de validação do histórico/currículo não está aparecendo
