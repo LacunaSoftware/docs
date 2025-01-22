@@ -1,8 +1,52 @@
 ﻿# Amplia changelog
 
 <a name="vnext" />
+
+<a name="4-12-0" />
+## 4.12.0 (next version)
+
+Updates database model: no
+
+### Improvements
+
+AMP-360 Adjustments to PY certificates with type Sello
+
+
+
+<a name="4-11-0" />
+## 4.11.0 (2025-01-22)
+
+Identical to: 4.11.0 RC 2 (2024-11-06)
+
+Updates database model: no
+
+### Improvements
+
+AMP-359 Add url argument `absoluteUrl` on get signed agreement API
+
+AMP-361 Improvements to SMS provider integration
+
+
+
+<a name="4-10-0" />
+## 4.10.0 (2024-10-24)
+
+Identical to: 4.10.0 RC 4 (2024-09-13)
+
+Updates database model: no
+
+### Improvements
+
+AMP-318 Allow creation of organizational certificates through web page
+
+AMP-356 Adjustments on Unique Identifier and Organization Identifier fields of CV certificates
+
+
+
 <a name="4-9-0" />
-## 4.9.0 (upcoming version)
+## 4.9.0 (2024-08-13)
+
+Identical to: 4.9.0 RC 11 (2024-05-10)
 
 Updates database model: **yes**
 
@@ -11,6 +55,10 @@ Updates database model: **yes**
 AMP-340 Health check with optional key availability check
 
 AMP-342 CRL consistency checks
+
+AMP-347 Docker image with Kryptus PKCS #11 driver
+
+AMP-352 Key store clusters
 
 ### Improvements
 
@@ -25,6 +73,19 @@ AMP-346 Improve client lib to allow downloading the CA's certificate and chain f
 AMP-237 A timezone-related error may occur on Linux and Docker when generating an agreement
 
 AMP-343 Errors when using PKCS #11 key stores in parallel
+
+AMP-351 Error "Could not place a lock on the resource 'hangfire:lock:recurring-job:CleanupUsedOtps'" when starting up app using PostgreSQL
+
+
+
+<a name="4-8-1" />
+## 4.8.1 (2024-04-30)
+
+Updates database model: no
+
+### Bug fixes
+
+AMP-350 Error "Cannot write DateTime with Kind=UTC..." when creating certificate order using PostgreSQL
 
 
 

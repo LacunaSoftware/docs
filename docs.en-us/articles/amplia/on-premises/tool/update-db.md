@@ -13,7 +13,7 @@ dotnet Lacuna.Amplia.Site.dll [settings] -- update-db
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/amplia:4.8 [settings] -- update-db
+docker run -i lacunasoftware/amplia:4.11 [settings] -- update-db
 ```
 
 [!include[About settings](includes/about-settings.md)]

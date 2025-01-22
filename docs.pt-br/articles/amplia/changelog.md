@@ -1,8 +1,52 @@
 ﻿# Histórico de versões do Amplia
 
 <a name="vnext" />
+
+<a name="4-12-0" />
+## 4.12.0 (próxima versão)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-360 Adequações para o certificado de sello electronico do certificado PY
+
+
+
+<a name="4-11-0" />
+## 4.11.0 (2025-01-22)
+
+Idêntica a: 4.11.0 RC 2 (2024-11-06)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-359 Criar url argument `absoluteUrl` na API de obter link do termo assinado
+
+AMP-361 Melhorias à integração com provedores de envio de SMS
+
+
+
+<a name="4-10-0" />
+## 4.10.0 (2024-10-24)
+
+Idêntica a: 4.10.0 RC 4 (2024-09-13)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-318 Permitir criação de pedido de certificado de PJ por tela
+
+AMP-356 Ajustes nos campos Unique Identifier e Organization Identifier de certificados CV
+
+
+
 <a name="4-9-0" />
-## 4.9.0 (próxima versão)
+## 4.9.0 (2024-08-13)
+
+Idêntica a: 4.9.0 RC 11 (2024-05-10)
 
 Atualiza modelo do banco de dados: **sim**
 
@@ -11,6 +55,10 @@ Atualiza modelo do banco de dados: **sim**
 AMP-340 Health check com verificação de disponibilidade uma chave
 
 AMP-342 Auto-verificação de LCRs
+
+AMP-347 Imagem de Docker com driver PKCS #11 Kryptus
+
+AMP-352 Key store clusters
 
 ### Melhorias
 
@@ -25,6 +73,19 @@ AMP-346 Evoluir client lib para permitir download do certificado da AC e da cade
 AMP-237 Erro relacionado a fuso horário na geração de termo de titularidade em Linux
 
 AMP-343 Erros ao utilizar key store PKCS #11 em paralelo
+
+AMP-351 Erro "Could not place a lock on the resource 'hangfire:lock:recurring-job:CleanupUsedOtps'" ao iniciar o sistema usando PostgreSQL
+
+
+
+<a name="4-8-1" />
+## 4.8.1 (2024-04-30)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+AMP-350 Erro "Cannot write DateTime with Kind=UTC..." ao criar pedido de certificado para usuário usando PostgreSQL
 
 
 

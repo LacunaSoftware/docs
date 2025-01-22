@@ -12,7 +12,7 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The current recommended image is `lacunasoftware/amplia:4.8`
+The current recommended image is `lacunasoftware/amplia:4.11`
 
 Featured image tags:
 
@@ -23,7 +23,7 @@ Featured image tags:
 <a name="vnext" />
 
 > [!NOTE]
-> To test the upcoming version of Amplia, currently in Release Candidate state, use the image `lacunasoftware/amplia:4.9.0-rc05` instead.
+> To test the upcoming version of Amplia, currently in Release Candidate state, use the image `lacunasoftware/amplia:4.12.0-rc01` instead.
 > **Beware:** Release Candidate versions are not production-ready and thus should only be installed on staging or test environments.
 
 This image requires: 
