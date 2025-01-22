@@ -7,14 +7,16 @@ Because of that, to update your [on-premises](index.md) instance, you must insta
 
 Please refer to the *Install the ASP.NET Core Runtime 8.0* section of the installation procedure corresponding to your platform:
 
-* [Windows Server](windows/install.md#install-aspnet-core)
+<!-- [Windows Server](windows/install.md#install-aspnet-core) -->
 * Linux
   * [Ubuntu Server](linux/install-ubuntu.md#install-aspnet-core)
-  * [Red Hat Enterprise Linux](linux/install-rhel.md#install-aspnet-core)
-  * [Oracle Linux](linux/install-oracle.md#install-aspnet-core)
+  <!-- [Red Hat Enterprise Linux](linux/install-rhel.md#install-aspnet-core) -->
+  <!-- [Oracle Linux](linux/install-oracle.md#install-aspnet-core) -->
 
 > [!NOTE]
-> On Docker, there's nothing to do, the new 3.0 image already ships based on the ASP.NET Core 8.0 image
+> On Docker, there's nothing to do, since the new 3.0 image already ships based on the ASP.NET Core 8.0 image
+
+After following these steps, proceed with the update instructions.
 
 ## Azure App Services
 
