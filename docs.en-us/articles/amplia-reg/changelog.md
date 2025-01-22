@@ -1,13 +1,13 @@
 ﻿# Amplia Reg changelog
 
 <!--
-<a name="vnext" />
+TODO: this has not been updated since 2.5.1. For now, linking to pt-br.
 -->
+
+<!-- link to version in Portuguese -->
+<div data-alt-locales="pt-br"></div>
 
 <!--
-TODO: versions 2.5.1, 2.5.2, 2.5.3 and 2.6.0
--->
-
 <a name="v2-5-0" />
 ## 2.5.0 (2024-01-25)
 
@@ -578,3 +578,4 @@ ARNG-194 Order number series is not taken into account when computing order numb
 ## 1.0.0 RC12 (2022-07-05)
 
 First publicly available version
+-->

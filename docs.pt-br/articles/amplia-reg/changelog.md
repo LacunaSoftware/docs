@@ -2,10 +2,104 @@
 
 <a name="vnext" />
 
-<a name="v2-6-0" />
-## 2.6.0 (próxima versão)
+<a name="v3-1-0" />
+## 3.1.0 (próxima versão)
 
 Atualiza modelo do banco de dados: **sim**
+
+Versão mínima do Amplia: 4.12.0 RC 1
+
+## Melhorias
+
+ARNG-461 Adequações para o certificado de sello electronico do certificado PY
+
+
+
+<a name="v3-0-0" />
+## 3.0.0 (2025-01-25)
+
+**Veja [Atualizando o Amplia Reg da versão 2.x para 3.0](on-premises/update-30.md)**
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 2.9.0 RC 1 (2025-01-10)
+
+### Melhorias
+
+ARNG-449 Melhorias à videoconferência
+
+ARNG-450 Melhorias ao passo de coleta biométrica
+
+ARNG-455 Melhorar entrega da chave 1
+
+ARNG-458 Dividir o passo de coleta biométrica e consulta à lista negativa na videoconferência
+
+ARNG-443 Atualizar ASP.NET Core para versão 8.0
+
+ARNG-454 Integração com provedor de SMS Eyou
+
+### Correções de bugs
+
+ARNG-434 Problema com componente de pdf preview
+
+ARNG-447 Após clicar no botão de iniciar validação a videoconferência não é iniciada
+
+ARNG-448 Corrigir variações incorretas do termo "videoconferência"
+
+ARNG-453 Texto do botão "Assinar documentos e enviar para fila de conferência" é inadequado para pedidos que não vão para a fila
+
+
+
+<a name="v2-8-0" />
+## 2.8.0 (2025-01-22)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 2.8.0 RC 7 (2024-10-11) <!-- na verdade seria RC 8 -->
+
+### Novas funcionalidades
+
+ARNG-438 Campo "Annotation" em pedidos BR
+
+### Melhorias
+
+ARNG-437 Método na client library para consultar detalhes do pedido
+
+ARNG-439 Acesso via SSH em Azure App Services
+
+ARNG-463 Melhorias à integração com provedores de envio de SMS
+
+ARNG-464 Configuração de descrição do método de envio das chaves 1 e 2
+
+ARNG-465 Exibir confirmação durante emissão de certificados não-exportáveis
+
+### Correções de bugs
+
+ARNG-435 Erro 400 ao salvar agente de validação
+
+ARNG-466 Usuários e aplicações não possuem permissão de leitura sobre os pedidos que criam
+
+
+
+<a name="v2-7-0" />
+## 2.7.0 (2024-09-28)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 2.7.0 RC 1 (2024-08-13)
+
+### Novas funcionalidades
+
+ARNG-431 Campo IsFaturaEletronica no tipo de certificado de CV
+
+
+
+<a name="v2-6-0" />
+## 2.6.0 (2024-08-13)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 2.6.0 RC 15 (2024-07-08)
 
 ### Novas funcionalidades
 

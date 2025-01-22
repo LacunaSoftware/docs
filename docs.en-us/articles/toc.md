@@ -377,6 +377,7 @@
 ### [Add document types](amplia-reg/on-premises/add-doc-types.md)
 ### [Post-installation steps](amplia-reg/on-premises/post-install.md)
 ### [Checking the installed version](amplia-reg/on-premises/check-version.md)
+### [Update to 3.0](amplia-reg/on-premises/update-30.md)
 ## [Changelog](amplia-reg/changelog.md)
 <!-- End of Amplia -->
 

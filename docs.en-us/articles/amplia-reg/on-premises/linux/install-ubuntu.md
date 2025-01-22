@@ -8,7 +8,7 @@ To install an [on-premises](../index.md) instance of [Amplia Reg](../../index.md
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-80.md)]
 
 [!include[Install dependencies](../../../includes/linux/ubuntu/install-dependencies.md)]
 
