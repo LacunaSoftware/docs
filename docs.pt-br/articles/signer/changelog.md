@@ -1,5 +1,28 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-77-0" />
+### 1.77.0 (2025-01-23)
+
+* Novas funcionalidades
+  * [SIG-1365] Configuração por documento para desabilitar envio de notificações
+  * [SIG-1383] Opção de modelo restrito
+
+* Melhorias
+  * [SIG-1368] Melhorar visibilidade de erros de envio de notificações
+  * [SIG-1392] Adicionar fila de prioridade no Hangfire
+  * [SIG-1407] Atualizar SPA
+  * [SIG-1421] Atualizar FaceTec engine
+  * [SIG-1423] Melhorias na criação de documentos a partir de templates por API
+
+* Correções de bugs
+  * [SIG-1248] Criação de documento com o e-mail invalido
+  * [SIG-1386] Assinatura eletrônica simples está utilizando o fuso horário GMT 0
+  * [SIG-1393] Assinatura única não está adicionando o titulo no manifesto
+  * [SIG-1416] Não está validando número de telefone do Paraguai
+  * [SIG-1420] Não é possível baixar a versão original de documentos concluídos
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-76-0" />
 ### 1.76.0 (2024-12-04)
 

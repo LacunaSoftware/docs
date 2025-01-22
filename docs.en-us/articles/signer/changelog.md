@@ -1,5 +1,28 @@
 ﻿# Signer changelog
 
+<a name="v1-77-0" />
+### 1.77.0 (2025-01-23)
+
+* New Features
+  * [SIG-1365] Document option to disable notifications
+  * [SIG-1383] Restricted templates
+
+* Improvements
+  * [SIG-1368] Improve notification error visibility
+  * [SIG-1392] Added priority queue in Hangfire
+  * [SIG-1407] SPA update
+  * [SIG-1421] FaceTec engine update
+  * [SIG-1423] Improvments in the create document API when using templates
+
+* Bug fixes
+  * [SIG-1248] Document created with invalid e-mail
+  * [SIG-1386] Simple electronic signature is using GMT timezone
+  * [SIG-1393] Unique signature does not add title to manifest
+  * [SIG-1416] Cannot validate Paraguay phone number
+  * [SIG-1420] Cannot donwload original version of concluded documents
+
+Updates database model: yes
+
 <a name="v1-76-0" />
 ### 1.76.0 (2024-12-04)
 

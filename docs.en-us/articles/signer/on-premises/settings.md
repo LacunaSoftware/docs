@@ -242,6 +242,8 @@ Under section **ElectronicSignature**:
 `Datavalid` must also be configured.
 * **EnablePixAuthentication** (v1.32.0): if `true`, enables the Pix authentication for electronic signatures. If enabled, the setting in the section
 `Gerencianet` must also be configured.
+* **EnableIdScanAuthentication** (v1.77.0): if `true`, enables the ID scan authentication for electronic signatures. If enabled, the setting in the section
+`FaceTec` must also be configured.
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
 * **IsRequired** (v1.46.0): if `true`, the signer **won't** have the option to sign with digital certificate.
@@ -383,6 +385,10 @@ This is specially important if signature types are enabled, as existing signatur
 types are enabled and you wish to disable this setting, consider also enabling `EnableSignatureValidationWhenGeneratingManifest`.
 * **PreExistingSignaturesDocumentCreationTresholdInSeconds** (v1.68.1, default: `60`): defines a treshold of how old can signatures be in order to still be considered as made 
 after the document creation (defined in seconds from the document's creation date).
+
+* **EvidenceImagesWatermarkText** (v1.77.0): if `true`, adds watermark to evidence images displayed in the printer friendly version.
+* **ShowIdScanOnPrinterFriendlyVersion** (v1.77.0): if `true`, displays the ID scan in the printer friendly version of an electronic signature that has requested that authentication.
+* **AddWatermarkToSelfies** (v1.77.0): if `true`, adds watermark to selfies displayed in the printer friendly version.
 
 
 ###  *PaymentGateway* Settings (v1.27.0)
@@ -613,6 +619,7 @@ Under section **SignatureTypes**:
 		* **EnableDatavalidAuthentication**
 		* **EnablePixAuthentication**
 		* **EnableLivenessAuthentication** (v1.75.0)
+		* **EnableIdScanAuthentication** (v1.77.0)
 		* **RequireLivenessOnSelfieAuthentication** (v1.75.0)
 		* **RequireLivenessOnDatavalidAuthentication** (v1.75.0)
 * **Advanced**: this is a subsection that defines settings relative to the `Advanced` signature type:
