@@ -23,6 +23,10 @@
 
 Updates database model: yes
 
+> [!WARNING]
+> Starting this version, the logs are partitioned by date when hosting the application on Azure. If you are hosting the application in this environment, check
+> if the setting `ASPNETCORE_ENVIRONMENT` is defined with the value `Azure` and that the setting `Serilog__WriteTo__0__Args__keyGenerator` is **not defined**.
+
 <a name="v1-76-0" />
 ### 1.76.0 (2024-12-04)
 
