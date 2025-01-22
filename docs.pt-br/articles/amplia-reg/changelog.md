@@ -16,7 +16,7 @@ ARNG-461 Adequações para o certificado de sello electronico do certificado PY
 
 
 <a name="v3-0-0" />
-## 3.0.0 (2025-01-25)
+## 3.0.0 (2025-01-22)
 
 **Veja [Atualizando o Amplia Reg da versão 2.x para 3.0](on-premises/update-30.md)**
 
