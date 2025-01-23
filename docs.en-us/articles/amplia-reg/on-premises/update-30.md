@@ -14,9 +14,18 @@ Please refer to the *Install the ASP.NET Core Runtime 8.0* section of the instal
   <!-- [Oracle Linux](linux/install-oracle.md#install-aspnet-core) -->
 
 > [!NOTE]
-> On Docker, there's nothing to do, since the new 3.0 image already ships based on the ASP.NET Core 8.0 image
+> On Docker this step is not necessary since the new 3.x image already ships with the ASP.NET Core Runtime 8.0 embedded
 
 After following these steps, proceed with the update instructions.
+
+## Troubleshooting certificate errors on SQL Server
+
+Unlike on .NET 6, the new standard on .NET 8 is for the SQL server certificate to be validated. This might cause your instance to crash
+when starting, with the following error appearing on the logs:
+
+> Microsoft.Data.SqlClient.SqlException: 'A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)'
+
+In that case, append `;TrustServerCertificate=True` to the database connection string on the configuration file.
 
 ## Azure App Services
 
