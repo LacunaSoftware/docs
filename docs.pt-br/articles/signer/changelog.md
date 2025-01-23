@@ -23,6 +23,10 @@
 
 Atualiza modelo do banco de dados: sim
 
+> [!WARNING]
+> A partir desta versão, os logs são registrados particionados por data no caso de hospedagem no Azure. Se estiver hospendando a aplicação nesse ambiente, verifique 
+> se possui a configuração `ASPNETCORE_ENVIRONMENT` definida com valor `Azure` e que a configuração `Serilog__WriteTo__0__Args__keyGenerator` **não está definida**.
+
 <a name="v1-76-0" />
 ### 1.76.0 (2024-12-04)
 
