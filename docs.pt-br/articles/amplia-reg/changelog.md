@@ -9,9 +9,21 @@ Atualiza modelo do banco de dados: **sim**
 
 Versão mínima do Amplia: 4.12.0 RC 1
 
-## Melhorias
+### Melhorias
 
 ARNG-461 Adequações para o certificado de sello electronico do certificado PY
+
+ARNG-467 Melhorias visuais à dialog de consulta à lista negativa
+
+### Correções de bugs
+
+ARNG-456 Uniformizar dialogs e melhorar campos de input de data e data/hora
+
+ARNG-468 Tela de emissão pelo agente antes da aprovação dando erro
+
+ARNG-469 Erro na consulta pública de certificado
+
+ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server
 
 
 
