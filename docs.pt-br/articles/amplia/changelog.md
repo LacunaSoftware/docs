@@ -9,6 +9,8 @@ Atualiza modelo do banco de dados: não
 
 ### Melhorias
 
+AMP-325 Melhorar e uniformizar formulários de Distinguished Name
+
 AMP-360 Adequações para o certificado de sello electronico do certificado PY
 
 

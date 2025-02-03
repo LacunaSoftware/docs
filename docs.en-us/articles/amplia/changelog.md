@@ -9,6 +9,8 @@ Updates database model: no
 
 ### Improvements
 
+AMP-325 Improve and unify Distinguished Name forms
+
 AMP-360 Adjustments to PY certificates with type Sello
 
 
