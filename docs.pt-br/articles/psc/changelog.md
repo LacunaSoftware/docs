@@ -1,13 +1,27 @@
 ﻿# Histórico de versões do Lacuna PSC
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="v1-5-0" />
+## 1.5.0 (próxima versão)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+PSC-224 Limite configurável do tempo de sessão de uso de certificado
+
+### Correções de bugs
+
+PSC-226 Autorização de uso via web não respeita lifetime solicitado
+
+
 
 <a name="v1-4-2" />
 ## 1.4.2 (2024-05-07)
 
 Atualiza modelo do banco de dados: não
 
-### Correção de bug
+### Correções de bugs
 
 PSC-215 Conserta janelas de diálogo introduzidas na atualização anterior
 
@@ -18,7 +32,7 @@ PSC-215 Conserta janelas de diálogo introduzidas na atualização anterior
 
 Atualiza modelo do banco de dados: sim
 
-### Nova funcionalidade
+### Novas funcionalidades
 
 PSC-205 Páginas documentação da API para aplicações clientes do PSC
 
@@ -33,7 +47,7 @@ PSC-204 Atualização da Lacuna SPA para versão 3.0
 
 Atualiza modelo do banco de dados: não
 
-### Nova funcionalidade
+### Novas funcionalidades
 
 PSC-206 Funcionalidades para integração com KSPs
 
@@ -48,7 +62,7 @@ PSC-107 Melhoria no tratamento da validade das sessões de uso de certificados
 
 Atualiza modelo do banco de dados: não
 
-### Nova funcionalidade
+### Novas funcionalidades
 
 PSC-208 Página com instruções para exclusão de conta
 
@@ -59,7 +73,7 @@ PSC-208 Página com instruções para exclusão de conta
 
 Atualiza modelo do banco de dados: não
 
-### Correção de bug
+### Correções de bugs
 
 PSC-207 API de descoberta de certificado não retornava certificados no formato PEM
 

@@ -1,13 +1,27 @@
 ﻿# Lacuna PSC changelog
 
-<!--<a name="vnext" />-->
+<a name="vnext" />
+<a name="v1-5-0" />
+## 1.5.0 (next version)
+
+Updates database model: no
+
+### New Features
+
+PSC-224 Configurable limits for certificate usage sessions
+
+### Bug fixes
+
+PSC-226 Requested access token lifetime is not honored when authorization of usage is performed through web page
+
+
 
 <a name="v1-4-2" />
 ## 1.4.2 (2024-05-07)
 
 Updates database model: no
 
-### Bug
+### Bug fixes
 
 PSC-215 Fixed broken dialog windows introduced in the previous update
 
@@ -18,11 +32,11 @@ PSC-215 Fixed broken dialog windows introduced in the previous update
 
 Updates database model: yes
 
-### New Feature
+### New Features
 
 PSC-205 Added API documentation pages aimed at PSC client applications
 
-### Improvement
+### Improvements
 
 PSC-204 Updated Lacuna SPA to version 3.0
 
@@ -33,11 +47,11 @@ PSC-204 Updated Lacuna SPA to version 3.0
 
 Updates database model: no
 
-### New Feature
+### New Features
 
 PSC-206 Added functionalities to integrate with KSPs
 
-### Improvement
+### Improvements
 
 PSC-107 Improved handling of the validity of certificate usage sessions
 
@@ -48,7 +62,7 @@ PSC-107 Improved handling of the validity of certificate usage sessions
 
 Updates database model: no
 
-### New Feature
+### New Features
 
 PSC-208 Added page with account deletion instructions
 
