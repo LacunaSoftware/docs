@@ -1,5 +1,30 @@
 ﻿# Signer changelog
 
+<a name="v1-78-0" />
+### 1.78.0 (2025-02-25)
+
+* New Features
+  * [SIG-1403] Add document deleted webhook
+  * [SIG-1346] Allow organizations to define default participant titles
+  * [SIG-1422] Report of all documents in organization folders
+
+* Improvements
+  * [SIG-831] Users mistake the time for requesting a resend with the SMS expiration time
+  * [SIG-1148] Add more details in document events
+  * [SIG-1289] Do not allow deletion of organizations with outstanding debts
+  * [SIG-1425] Disable document canceled notification for participants that are not yet active
+  * [SIG-1435] Add control of number of document verification key queries
+  * [SIG-1438] Send Whatsapp messages using Zenvia
+
+* Bug fixes
+  * [SIG-1344] Cannot copy share link or share directly to Whatsapp on iOS
+  * [SIG-1384] IPv6 address is stretching beyond the bounds of the evidence box
+  * [SIG-1387] Organization user report is including old organization members
+  * [SIG-1430] Error creating document in a shared folder
+  * [SIG-1427] Valid e-mail is being considered as invalid
+
+Updates database model: no
+
 <a name="v1-77-0" />
 ### 1.77.0 (2025-01-23)
 

@@ -194,6 +194,7 @@ at least one successfully completed action).
 * **MarksSessionExpirationInMinutes** (v1.70.0, default: `60`): the default expiration of a marks positioning session in minutes.
 
 * **MaxSignersPerDocument** (v1.71.0, default: `30`): the maximum number of signers allowed per document.
+* **HideDownloadOptionForPendingDocuments** (v1.76.0): if `true`, does not display the download option for pending documents. This setting can be overriden by organization settings.
 
 
 <a name="billing-settings" />
@@ -209,6 +210,8 @@ organization will be free of charge (the creation date of the organization is co
 * **EnableBillingPlanHiring** (v1.53.0): if `true` users will be able to choose and hire billing plans. If enabled a payment gateway must be configured. 
 * **MaxNumberOfAvailablePlansDisplayed** (default: `20`, v1.53.0): the maximum number of billing plans displayed in the hire billing plans page.
 * **AllowBasicUsersToViewOrganizationBillingInformation** (v1.62.0): if `true` basic users will be able to view invoices and billing information of an organization. 
+* **BlockSubscriptionDeletionIfHasPaymentDebt** (default: `true`, v1.78.0): if `true` organization administrators cannot delete a subscription if it has payment debts. The 
+instance administrator will be able to delete it if necessary though.
 
 <a name="document-types-settings" />
 ###  *DocumentTypes* Settings (v1.7.0)
@@ -259,7 +262,6 @@ Under section **ElectronicSignature**:
 * **HideEvidencesInPublicValidation** (v1.75.1): if `true`, hide electronic signer evidences in the public document validation page.
 * **HideSubjectNameInXadesSignatures** (v1.76.0): if `true`, does not add subject name in XAdES sigantures.
 * **DatabaseCommandTimeout** (v1.76.0): defines the database command timeout in seconds.
-* **HideDownloadOptionForPendingDocuments** (v1.76.0): if `true`, does not display the download option for pending documents. This setting can be overriden by organization settings.
 
 <a name="signature-certificate" />
 ###  *Signature Certificate* Settings (v1.52.0)
@@ -472,16 +474,32 @@ For the `AmazonSNS` provider (v1.55.0), define the settings:
 
 Under section **Whatsapp**:
 
-* **Endpoint** (default: `https://graph.facebook.com`): the endpoint to which the Whatsapp messages will be sent. Should only be set if you have a Whatsapp Business 
-on premises instance.
-* **AccessToken**: a Whatsapp Business API access token.
-* **PhoneNumberId**: the phone number ID that will be used to send messages.
-
+* **Type** (default: `Meta`, 1.78.0): defines the service used to send Whatsapp messages. Available options are `Meta` and `Zenvia` (v1.78.0).
 * **TemplateMapping** (optional): dictionary of template names. This should only be used if you do not want to register the template in Meta Business Management 
 with the name which we recommend. Example:
 
 ```
 Whatsapp__TemplateMapping__pendingsignature=signer_pendingsignature
+```
+
+For the `Meta` service, define the settings:
+
+* **Endpoint** (default: `https://graph.facebook.com`): the endpoint to which the Whatsapp messages will be sent. Should only be set if you have a Whatsapp Business 
+on premises instance.
+* **AccessToken**: a Whatsapp Business API access token.
+* **PhoneNumberId**: the phone number ID that will be used to send messages.
+
+For the `Zenvia` service (1.78.0), define the settings:
+
+* **Endpoint** (default: `https://api.zenvia.com`): the Zenvia endpoint to which the Whatsapp messages will be sent. 
+* **ApiToken**: the Zenvia API token.
+* **PhoneNumber**: the phone number that will be used to send messages.
+* **LanguageTemplateMap** (optional): dictionary of template/language names. Since Zenvia uses GUIDs for template names and each template has a fixed language, use this setting to 
+map templates/languages to Zenvia GUIDs. Example:
+
+```
+Whatsapp__LanguageTemplateMap__pendingsignature-pt_BR=c5d3904f-3e22-49bc-a92b-37eeb6522c90
+Whatsapp__LanguageTemplateMap__authenticationcode-pt_BR=8bc863e9-e661-43dc-ab29-016b0b990b86
 ```
 
 ###  *NFEio* Settings (v1.27.0)
@@ -646,6 +664,21 @@ Under section **Totals**:
 
 * **HideEventPaginationTotalTreshold** (default: `10000`): threshold to hide events list count.
 * **HideEventPaginationTotal** (default `true`): if `true`, hides total when listing events if the total exceeds the `HideEventPaginationTotalTreshold`.
+
+###  *Throttling* Settings
+
+Under section **Throttling**:
+
+* **EnableSensitiveDataLogging**: if `true`, logs sensitive information about throttled requests such as IP address.
+* **DocumentKeyThrottling**: defines the parameters for document key query throttling. See `Throttling Parameters` below. It is enabled by default with limit `10` and interval `1`.
+
+###  *Throttling Parameters* Settings
+
+Defines the following properties:
+
+* **Enabled**: if `true`, enables this type of throttling.
+* **IntervalInSeconds**: the interval in seconds during which throttlable operations will be assessed.
+* **Limit**: the maximum number of operations that can be executed before throttling is applied.
 
 <a name="app-trust-arbitrator" />
 ###  *Trust Arbitrator* Settings

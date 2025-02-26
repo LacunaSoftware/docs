@@ -1,5 +1,30 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-78-0" />
+### 1.78.0 (2025-02-25)
+
+* Novas funcionalidades
+  * [SIG-1403] Adicionar webhook de exclusão de documentos
+  * [SIG-1346] Definir títulos pré-estabelecidos por organização
+  * [SIG-1422] Extração de relatórios em lote de pastas
+
+* Melhorias
+  * [SIG-831] Usuários confundem tempo de reenvio de mensagem SMS com validade do código SMS
+  * [SIG-1148] Adicionar os detalhes da ação nos Eventos do documento
+  * [SIG-1289] Não permitir exclusão de organizações com débito em aberto
+  * [SIG-1425] Desativar notificação de cancelamento de documento em ordem de assinaturas habilitada
+  * [SIG-1435] Adicionar controle de número de requisições de consulta de chave de documento
+  * [SIG-1438] Envio de mensagens de Whatsapp com Zenvia
+
+* Correções de bugs
+  * [SIG-1344] Falha ao copiar link de compartilhamento e compartilhar diretamente via WhatsApp no iOS
+  * [SIG-1384] Endereço IPv6 está extrapolando os limites da caixa de evidências
+  * [SIG-1387] Relatório de usuário de organização está incluído membros antigos 
+  * [SIG-1430] Erro ao criar documento em pasta compartilhada com usuário
+  * [SIG-1427] E-mail válido está sendo considerado como inválido
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-77-0" />
 ### 1.77.0 (2025-01-23)
 
