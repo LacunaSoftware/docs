@@ -1,5 +1,13 @@
 ﻿# Signer changelog
 
+<a name="v1-78-1" />
+### 1.78.1 (2025-02-27)
+
+* Bug fixes
+  * [SIG-1443] Incompatibility with SQL Server older than 2017
+
+Updates database model: no
+
 <a name="v1-78-0" />
 ### 1.78.0 (2025-02-25)
 
@@ -25,6 +33,10 @@
 
 Updates database model: no
 
+> [!CAUTION]
+> This version is only compatible with SQL Server 2017 or newer. If you are using an older version of SQL Server, please skip this version and update
+> to version 1.78.1 or newer.
+
 <a name="v1-77-0" />
 ### 1.77.0 (2025-01-23)
 
@@ -47,6 +59,10 @@ Updates database model: no
   * [SIG-1420] Cannot donwload original version of concluded documents
 
 Updates database model: yes
+
+> [!CAUTION]
+> This version is only compatible with SQL Server 2017 or newer. If you are using an older version of SQL Server, please skip this version and update
+> to version 1.78.1 or newer.
 
 > [!WARNING]
 > Starting this version, the logs are partitioned by date when hosting the application on Azure. If you are hosting the application in this environment, check

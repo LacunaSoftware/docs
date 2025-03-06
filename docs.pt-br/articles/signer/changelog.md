@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-78-1" />
+### 1.78.1 (2025-02-27)
+
+* Correções de bugs
+  * [SIG-1443] Incompatibilidade com SQL Server mais antigo que o 2017
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-78-0" />
 ### 1.78.0 (2025-02-25)
 
@@ -25,6 +33,10 @@
 
 Atualiza modelo do banco de dados: não
 
+> [!CAUTION]
+> Esta versão é compatível apenas com o SQL Server 2017 ou mais novo. Se você estiver utilizando uma versão mais antiga do SQL Server, por favor pule esta versão
+> e atualize para a versão 1.78.1 ou mais nova.
+
 <a name="v1-77-0" />
 ### 1.77.0 (2025-01-23)
 
@@ -47,6 +59,10 @@ Atualiza modelo do banco de dados: não
   * [SIG-1420] Não é possível baixar a versão original de documentos concluídos
 
 Atualiza modelo do banco de dados: sim
+
+> [!CAUTION]
+> Esta versão é compatível apenas com o SQL Server 2017 ou mais novo. Se você estiver utilizando uma versão mais antiga do SQL Server, por favor pule esta versão
+> e atualize para a versão 1.78.1 ou mais nova.
 
 > [!WARNING]
 > A partir desta versão, os logs são registrados particionados por data no caso de hospedagem no Azure. Se estiver hospendando a aplicação nesse ambiente, verifique 
