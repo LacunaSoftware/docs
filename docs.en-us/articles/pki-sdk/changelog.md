@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-17-2" />
+### 2.17.2 (2024-09-09)
+
+- \[PKI-127\] Improve DocMDP inclusion and validation.
+- \[PKI-128\] Fix SigningCertificate certificate decoding exception for not supported RSA signature scheme PSS.
+
+
 <a name="v2-17-1" />
 ### 2.17.1 (2024-08-27)
 
