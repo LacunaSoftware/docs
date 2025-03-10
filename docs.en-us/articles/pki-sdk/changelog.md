@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-18-0" />
+### 2.18.0 (2025-03-10)
+
+- \[PKI-130\] Add async methods for `PKCertificateAuthentication`
+- \[PKI-132\] Add public ICP-Brasil PAdES AD-RA and AD-RC policies for generation.
+- \[PKI-129\] Improve PDF signature listing for duplicated or inconsistent `signatureFieldName`. Update Lacuna.T8 package.
+
+
 <a name="v2-17-2" />
 ### 2.17.2 (2024-09-09)
 
