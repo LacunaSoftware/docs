@@ -1,5 +1,25 @@
 ﻿# Signer changelog
 
+<a name="v1-79-0" />
+### 1.79.0 (2025-03-13)
+
+* Improvements
+  * [SIG-1162] Organizations/personal accounts invoice report
+  * [SIG-1432] Reduce the ammount of steps required to sign a document after submitting a template form
+  * [SIG-1433] Display document being generated message while submitting a template form
+  * [SIG-1436] Skip initial screen when signing a document
+  * [SIG-1439] Allow basic users to create templates
+  * [SIG-1441] Include qualified signature information in the printer friendly version of a unique signature document
+
+* Bug fixes
+  * [SIG-1351] Add deselect button to a "Multiple choice" field when creating a pre-filled form
+  * [SIG-1355] Field description is not spaced correctly for a Selection box field
+  * [SIG-1356] Allow description removal of a template field
+  * [SIG-1385] Incorrect error message in the create organization API
+  * [SIG-1444] Error when using import participant data option and filling the "Send signed document to" field
+
+Updates database model: yes
+
 <a name="v1-78-1" />
 ### 1.78.1 (2025-02-27)
 

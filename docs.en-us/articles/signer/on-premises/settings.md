@@ -196,6 +196,9 @@ at least one successfully completed action).
 * **MaxSignersPerDocument** (v1.71.0, default: `30`): the maximum number of signers allowed per document.
 * **HideDownloadOptionForPendingDocuments** (v1.76.0): if `true`, does not display the download option for pending documents. This setting can be overriden by organization settings.
 
+* **EnableInitialStepForActionInPublicArea** (v1.79.0): starting v1.79.0 public signature and approval pages will display the document directly to the user without the 
+initial page showing document details. If `true` reverts to the old behavior of previous versions.
+
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)

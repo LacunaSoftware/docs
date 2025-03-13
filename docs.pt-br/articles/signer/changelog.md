@@ -1,5 +1,25 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-79-0" />
+### 1.79.0 (2025-03-13)
+
+* Melhorias
+  * [SIG-1162] Relatório de faturas por organizações/contas pessoais
+  * [SIG-1432] Reduzir o número de etapas para assinar um docmento após uma submissão de formulário de modelo
+  * [SIG-1433] Exibir uma mensagem informando que o documento está sendo gerado na submissão de formulário de modelo
+  * [SIG-1436] Pular a tela inicial do processo de assinatura
+  * [SIG-1439] Criação de Modelos pelo Perfil Básico
+  * [SIG-1441] Incluir informação de assinatura qualificada na versão para impressão da assinatura única
+
+* Correções de bugs
+  * [SIG-1351] Permitir que a opção no campo "Múltipla escolha" possa ser desmarcada na tela de "Criar formulário pré-preenchido"
+  * [SIG-1355] Descrição de campo com tipo Caixa de Seleção não está espaçada corretamente
+  * [SIG-1356] Permitir remover descrição de um campo de modelo 
+  * [SIG-1385] Mensagem de erro incorreta na API de criar organização
+  * [SIG-1444] Erro ao usar importação de dados dos participantes e preencher o campo "Enviar documento assinado para"
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v1-78-1" />
 ### 1.78.1 (2025-02-27)
 
