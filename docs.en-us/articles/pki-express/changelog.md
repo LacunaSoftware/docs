@@ -1,5 +1,32 @@
 # PKI Express changelog
 
+<a name="v1-34-0" />
+### 1.34.0 (2025-03-17)
+
+- Update target framework build
+- Update dependency packages
+- Add PAdES PKI-Brazil AD-RC and AD-RA signature policies support
+
+<a name="v1-33-0" />
+### 1.33.0 (2025-02-20)
+
+- Add direct timestamping features: stamp-data and stamp-hash
+- Add auto-retry timestamp requester configuration
+- Improve PDF signatures listing when duplicated signature field name present
+- Fix signature policy model conversion when policy ID only
+
+<a name="v1-32-1" />
+### 1.32.1 (2024-09-26)
+
+- Updata PKI SDK [2.17.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-17-2)
+
+<a name="v1-32-0" />
+### 1.32.0 (2024-09-06)
+
+- Updata PKI Trust Services package 1.7.0
+- Improve error logging
+- Add XMLDSig basic signature policy with SHA1 digest algorithm (for legacy signatures support ONLY)
+
 <a name="v1-31-2" />
 ### 1.31.2 (2024-04-17)
 

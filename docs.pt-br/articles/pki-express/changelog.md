@@ -1,5 +1,32 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-34-0" />
+### 1.34.0 (2025-03-17)
+
+- Atualização do target framework
+- Atualização de pacotes de dependências
+- Adiciona suporte às políticas de assinatura PAdES ICP-Brasil AD-RC e AD-RA
+
+<a name="v1-33-0" />
+### 1.33.0 (2025-02-20)
+
+- Adiciona funcionalidades de requisição direta de carimbo de tempo para uma dado ou hash: stamp-data e stamp-hash
+- Adiciona configuração de auto-retry para o requisitor de carimbos de tempo
+- Melhoria na listagem de assinaturas de PDF quando há duplicidade de "signature field name" presente
+- Corrige serialização do modelo do objeto SignaturePolicyIdentifier quando há somente policyID
+
+<a name="v1-32-1" />
+### 1.32.1 (2024-09-26)
+
+- Atualização PKI SDK [2.17.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-17-2)
+
+<a name="v1-32-0" />
+### 1.32.0 (2024-09-06)
+
+- Atualização do pacote PKI Trust Services 1.7.0
+- Melhoria no log de erros
+- Adiciona política de assinatura XMLDSig básica com algoritmo de hash SHA1 (para suporte a assinaturas de sistema legados APENAS)
+
 <a name="v1-31-2" />
 ### 1.31.2 (2024-04-17)
 
