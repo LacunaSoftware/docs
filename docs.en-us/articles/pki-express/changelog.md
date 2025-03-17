@@ -3,6 +3,7 @@
 <a name="v1-34-0" />
 ### 1.34.0 (2025-03-17)
 
+- Updata PKI SDK [2.18.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-18-0)
 - Update target framework build
 - Update dependency packages
 - Add PAdES PKI-Brazil AD-RC and AD-RA signature policies support

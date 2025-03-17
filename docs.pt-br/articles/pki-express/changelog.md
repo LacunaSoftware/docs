@@ -3,6 +3,7 @@
 <a name="v1-34-0" />
 ### 1.34.0 (2025-03-17)
 
+- Atualização PKI SDK [2.18.0](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-18-0)
 - Atualização do target framework
 - Atualização de pacotes de dependências
 - Adiciona suporte às políticas de assinatura PAdES ICP-Brasil AD-RC e AD-RA
