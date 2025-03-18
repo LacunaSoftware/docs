@@ -352,6 +352,7 @@
 ### [Create an order](amplia-reg/integration/create-order.md)
 ### [Preapproved orders](amplia-reg/integration/preapproved-orders.md)
 ### [Referencing files](amplia-reg/integration/file-referencing.md)
+### [Webhooks](amplia-reg/integration/webhooks.md)
 ### [Error codes](amplia-reg/integration/error-codes.md)
 ## [On-premises](amplia-reg/on-premises/index.md)
 ### [Setup on Linux](amplia-reg/on-premises/linux/index.md)
