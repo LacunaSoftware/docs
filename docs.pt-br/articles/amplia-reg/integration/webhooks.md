@@ -5,7 +5,7 @@ Você pode cadastrar uma URL para ser chamada (método `POST`) a cada transiçã
 ## Exemplos de payloads
 
 > [!NOTE]
-> Os exemplos abaixo estão com JSON apenas para melhor entendimento, o JSON é enviado sem formatação.
+> Os exemplo abaixo estão formatados apenas para melhor entendimento, o JSON é enviado sem formatação.
 
 ### Pedido criado
 
@@ -122,6 +122,62 @@ Você pode cadastrar uma URL para ser chamada (método `POST`) a cada transiçã
       "name": "Fulano de Tal",
       "identifier": "16545693050",
       "birthDate": "1988-04-01T00:00:00"
+    }
+  }
+}
+```
+
+### Certificado emitido
+
+```json
+{
+  "type": "OrderStatusChanged",
+  "orderStatusTransitionModel": {
+    "orderId": "0195aa59-f1b8-4154-b709-7149fcf37c70",
+    "orderNumber": "800-005-546",
+    "orderSaleNumber": null,
+    "previousStatus": "WaitingIssue",
+    "status": "Issued",
+    "date": "2025-03-18T17:44:36.301203+00:00",
+    "validationAgent": {
+      "id": "0bcc8325-7122-4e5d-80b4-720beec03ede",
+      "name": "Fulano de Tal",
+      "identifier": "16545693050",
+      "birthDate": "1986-02-15T00:00:00"
+    },
+    "confirmationAgent": {
+      "id": "0bcc8325-7122-4e5d-80b4-720beec03ede",
+      "name": "Fulano de Tal",
+      "identifier": "16545693050",
+      "birthDate": "1986-02-15T00:00:00"
+    }
+  }
+}
+```
+
+### Certificado revogado
+
+```json
+{
+  "type": "OrderStatusChanged",
+  "orderStatusTransitionModel": {
+    "orderId": "0195aa59-f1b8-4154-b709-7149fcf37c70",
+    "orderNumber": "800-005-546",
+    "orderSaleNumber": null,
+    "previousStatus": "Issued",
+    "status": "Revoked",
+    "date": "2025-03-18T17:45:44.817709+00:00",
+    "validationAgent": {
+      "id": "0bcc8325-7122-4e5d-80b4-720beec03ede",
+      "name": "Fulano de Tal",
+      "identifier": "16545693050",
+      "birthDate": "1986-02-15T00:00:00"
+    },
+    "confirmationAgent": {
+      "id": "0bcc8325-7122-4e5d-80b4-720beec03ede",
+      "name": "Fulano de Tal",
+      "identifier": "16545693050",
+      "birthDate": "1986-02-15T00:00:00"
     }
   }
 }
