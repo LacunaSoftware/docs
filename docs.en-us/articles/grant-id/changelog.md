@@ -1,8 +1,55 @@
 ﻿# GrantID changelog
 
-> [!NOTE]
-> This version history currently contains only the most recent changes to the application. We are working on
-> documenting older versions.
+<a name="v4-11-0" />
+### 4.11.0 (2025-03-19)
+
+* New features
+  * [LI-420] Enable reCAPTCHA by subscription
+  * [LI-426] Add setting to disable logins with A1 digital certificates
+
+* Improvements
+  * [LI-422] Setting to hide number of login attempts left
+  * [LI-427] Fix behavior of OTP setup
+  * [LI-428] Add endpoint for Prometheus metrics
+  * [LI-429] Avoid uses of Task.Run() in IdentityService
+  * [LI-431] Allow creation of subscriptions only by instance administrator
+  * [LI-432] Force lockout in second factor authentication
+  * [LI-433] Remove Contact and Pricing pages
+  * [LI-434] Added User Manager profile
+
+Updates database model: yes
+
+> [!WARNING]
+> If you use digital certificate login, before updating to this version make sure your license supports PKI SDK versions released until 2025-03-19.
+
+<a name="v4-10-0" />
+### 4.10.0 (2024-11-04)
+
+* New features
+  * [LI-424] Add claims with the digital certificate issuer information used during login
+  * [LI-425] Save data from digital certificate used during login
+
+* Bug fixes
+  * [LI-423] Fix version of phone component used in profile edit page on AuthServer
+
+Updates database model: no
+
+<a name="v4-9-0" />
+### 4.9.0 (2024-06-25)
+
+* New features
+  * [LI-419] Setting to block user and password login
+  * [LI-417] Add setting to block usage of temporary e-mail domains
+
+* Improvements
+  * [LI-367] Allow filtering of users without selecting applications
+  * [LI-418] Option to define minimal level required for Gov BR authentication
+
+* Bug fixes
+  * [LI-319] Some events are being registered with AuthServer IP address
+  * [LI-342] Error in users page when too many applications are selected
+
+Updates database model: yes
 
 <a name="v4-8-0" />
 ### 4.8.0 (2024-05-03)

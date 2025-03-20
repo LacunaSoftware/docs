@@ -1,8 +1,55 @@
 ﻿# Histórico de versões do GrantID
 
-> [!NOTE]
-> Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
-> trabalhando para documentar as versões mais antigas.
+<a name="v4-11-0" />
+### 4.11.0 (2025-03-19)
+
+* Novas funcionalidades
+  * [LI-420] Permitir habilitar Recaptcha por subscription
+  * [LI-426] Adicionar configuração para desabilitar logins com certificado A1
+
+* Melhorias
+  * [LI-422] Configuração para esconder número de tentativas de login
+  * [LI-427] Corrigir comportamento de configuração de OTP
+  * [LI-428] Adicionar endpoint de métricas do prometheus
+  * [LI-429] Evitar usos de Task.Run() no IdentityService
+  * [LI-431] Criação de subscription apenas pelo administrador da instância
+  * [LI-432] Forçar bloqueio por tentativas no segundo fator de autenticação
+  * [LI-433] Remover tela de Contato e Preços
+  * [LI-434] Adicionar perfil de Gerente de Usuários
+
+Atualiza modelo do banco de dados: sim
+
+> [!WARNING]
+> Se você utiliza login com certificado digital, antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2025-03-19.
+
+<a name="v4-10-0" />
+### 4.10.0 (2024-11-04)
+
+* Novas funcionalidades
+  * [LI-424] Adicionar Claims com informações do emissor do certificado utilizado para login
+  * [LI-425] Registrar dados do certificado que foi utilizado para fazer login
+
+* Correções de bugs
+  * [LI-423] Corrigir versão do componente de telefone na edição de perfil do AuthServer
+
+Atualiza modelo do banco de dados: não
+
+<a name="v4-9-0" />
+### 4.9.0 (2024-06-25)
+
+* Novas funcionalidades
+  * [LI-419] Permitir bloquear login com usuário e senha
+  * [LI-417] Adicionar configuração bloqueio de domínios de e-mails temporários 
+
+* Melhorias
+  * [LI-367] Permitir filtrar por usuários sem filtrar por Application
+  * [LI-418] Permitir definir nível mínimo exigido pela autenticação com Gov BR
+
+* Correções de bugs
+  * [LI-319] Alguns eventos são registrados com IP do Auth Server
+  * [LI-342] Erro na tela de consultas de usuários de subscription quando muitas aplicações estão selecionadas
+
+Atualiza modelo do banco de dados: sim
 
 <a name="v4-8-0" />
 ### 4.8.0 (2024-05-03)
