@@ -1,5 +1,10 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-34-1" />
+### 1.34.1 (2025-03-20)
+
+- Adiciona novo certificado raiz de teste da Lacuna
+
 <a name="v1-34-0" />
 ### 1.34.0 (2025-03-17)
 
