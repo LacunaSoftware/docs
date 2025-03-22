@@ -1,5 +1,10 @@
 # PKI Express changelog
 
+<a name="v1-34-2" />
+### 1.34.2 (2025-03-22)
+
+- Update Lacuna.Pki.BrazilTrustServices package 1.7.1
+
 <a name="v1-34-1" />
 ### 1.34.1 (2025-03-20)
 

@@ -1,5 +1,10 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-34-2" />
+### 1.34.2 (2025-03-22)
+
+- Atualização do pacote Lacuna.Pki.BrazilTrustServices 1.7.1
+
 <a name="v1-34-1" />
 ### 1.34.1 (2025-03-20)
 
