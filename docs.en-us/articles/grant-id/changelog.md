@@ -1,5 +1,21 @@
 ﻿# GrantID changelog
 
+<a name="v5-0-0" />
+### 5.0.0 (2025-03-27)
+
+* Improvements
+  * [LI-435] Update to NET 8
+
+* **Important changes**:
+  * Serilog usage:
+	* If you used `RollingFile` replace it with `File` and the property `pathFormat` with `path`. In order to maintain *rolling* behavior add `"rollingInterval": "Day"`.
+	* If you used `AzureTableStorageWithProperties` replace it with `AzureTableStorage`.
+	* Standard settings were added for the Azure *environment* so now it's only required to configure the `connectionString` property in order to direct logs to a table of a Storage Acount.
+
+> [!CAUTION]
+> Starting this version the SQL Server minimum version was updated to SQL Server 2016 (13.x). To revert the compatibility to SQL Server 2014, 
+> add the setting `Application__SqlServerCompatibilityLevel` with value `120`.
+
 <a name="v4-11-0" />
 ### 4.11.0 (2025-03-19)
 
