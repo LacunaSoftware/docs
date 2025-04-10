@@ -3,7 +3,9 @@
 Now that ASP.NET Core 6.0 is deprecated, version [3.0](../changelog.md#v3-0-0) of [Amplia Reg](../index.md) has been migrated to use ASP.NET Core 8.0, which is
 the newest LTS release of ASP.NET Core, [to be supported by Microsoft until November 2026](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#lifecycle).
 
-Because of that, to update your [on-premises](index.md) instance, you must install the ASP.NET Core Runtime 8.0.
+Because of that, before updating your [on-premises](index.md) instance, you must follow a few extra steps.
+
+## 1. Install the ASP.NET Core Runtime 8.0
 
 Please refer to the *Install the ASP.NET Core Runtime 8.0* section of the installation procedure corresponding to your platform:
 
@@ -16,7 +18,39 @@ Please refer to the *Install the ASP.NET Core Runtime 8.0* section of the instal
 > [!NOTE]
 > On Docker this step is not necessary since the new 3.x image already ships with the ASP.NET Core Runtime 8.0 embedded
 
-After following these steps, proceed with the update instructions.
+## 2. Set an explicit AppDiscriminator
+
+Check if your configuration file contains a setting named `AppDiscriminator` on the `General` section (or `General__AppDiscriminator` if using environment variables).
+If there is such a setting and it is filled, skip to the next step. If there is no such setting (or if it has an empty value), proceed with the steps on this section.
+
+Open the application log and look for the following entry:
+
+```
+Application starting: Lacuna Amplia Reg (version: a.b.c, spaVersion: x.y.z, appDiscriminator: 'YOUR_APP_DISCRIMINATOR')
+                                                                                               ^^^^^^^^^^^^^^^^^^^^^^
+```
+
+Copy the `appDiscriminator` field **without the surrounding single quotes** (on the example above the correct value would be `YOUR_APP_DISCRIMINATOR`,
+not `'YOUR_APP_DISCRIMINATOR'`) and add the `AppDiscriminator` setting on the `General` section of your configuration file with that value.
+
+Example (*.ini* or *.conf* file):
+
+```ini
+[General]
+AppDiscriminator=YOUR_APP_DISCRIMINATOR
+```
+
+Example (environment variables):
+
+```sh
+General__AppDiscriminator=YOUR_APP_DISCRIMINATOR
+```
+
+Next, restart the application and check the logs again. A new "application starting" log should be registered, with no change to the *appDiscriminator* field.
+
+## 3. Update Amplia Reg
+
+After following the steps above, proceed with the update instructions.
 
 ## Troubleshooting certificate errors on SQL Server
 
