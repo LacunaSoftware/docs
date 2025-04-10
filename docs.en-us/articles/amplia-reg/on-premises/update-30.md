@@ -59,7 +59,9 @@ when starting, with the following error appearing on the logs:
 
 > Microsoft.Data.SqlClient.SqlException: 'A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)'
 
-In that case, append `;TrustServerCertificate=True` to the database connection string on the configuration file.
+In that case, ensure that your SQL Server is configured with a trusted TLS certificate and that it has not expired.
+
+If you prefer to bypass the SQL Server certificate validation, append `;TrustServerCertificate=True` to the database connection string on the configuration file.
 
 ## Azure App Services
 
