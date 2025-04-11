@@ -15,6 +15,9 @@ Please refer to the *Install the ASP.NET Core Runtime 8.0* section of the instal
   <!-- [Red Hat Enterprise Linux](linux/install-rhel.md#install-aspnet-core) -->
   <!-- [Oracle Linux](linux/install-oracle.md#install-aspnet-core) -->
 
+> [!TIP]
+> It is not necessary to uninstall previous versions of ASP.NET Core Runtime, multiple versions can co-exist in the same system without issues
+
 > [!NOTE]
 > On Docker this step is not necessary since the new 3.x image already ships with the ASP.NET Core Runtime 8.0 embedded
 
