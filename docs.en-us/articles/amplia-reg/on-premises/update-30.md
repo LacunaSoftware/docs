@@ -21,16 +21,16 @@ Please refer to the *Install the ASP.NET Core Runtime 8.0* section of the instal
 ## 2. Set an explicit AppDiscriminator
 
 Check if your configuration file contains a setting named `AppDiscriminator` on the `General` section (or `General__AppDiscriminator` if using environment variables).
-If there is such a setting and it is filled, skip to the next step. If there is no such setting (or if it has an empty value), proceed with the steps on this section.
+If there is such a setting and it is filled, skip to the next step. If there is no such setting (or if it has an empty value), proceed with the following instructions.
 
 Open the application log and look for the following entry:
 
 ```
-Application starting: Lacuna Amplia Reg (version: a.b.c, spaVersion: x.y.z, appDiscriminator: 'YOUR_APP_DISCRIMINATOR')
-                                                                                               ^^^^^^^^^^^^^^^^^^^^^^
+Application starting: Lacuna Amplia Reg (version: *, spaVersion: *, appDiscriminator: 'YOUR_APP_DISCRIMINATOR')
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^
 ```
 
-Copy the `appDiscriminator` field **without the surrounding single quotes** (on the example above the correct value would be `YOUR_APP_DISCRIMINATOR`,
+Copy the value of the *appDiscriminator* field **without the surrounding single quotes** (on the example above the correct value would be `YOUR_APP_DISCRIMINATOR`,
 not `'YOUR_APP_DISCRIMINATOR'`) and add the `AppDiscriminator` setting on the `General` section of your configuration file with that value.
 
 Example (*.ini* or *.conf* file):
