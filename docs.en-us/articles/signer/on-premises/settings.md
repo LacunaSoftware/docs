@@ -199,6 +199,8 @@ at least one successfully completed action).
 * **EnableInitialStepForActionInPublicArea** (v1.79.0): starting v1.79.0 public signature and approval pages will display the document directly to the user without the 
 initial page showing document details. If `true` reverts to the old behavior of previous versions.
 
+* **DisableSwagger** (v1.80.0): if `true`, disables Swagger.
+
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)

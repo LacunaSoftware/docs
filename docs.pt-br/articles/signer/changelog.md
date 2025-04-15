@@ -1,5 +1,21 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-80-0" />
+### 1.80.0 (2025-04-15)
+
+* Novas funcionalidades
+  * [SIG-1382] Assinatura com autenticação por selfie e documento de identificação
+
+* Melhorias
+  * [SIG-1428] Integração da FaceTec com Rest PKI
+  * [SIG-1454] Permitir desabilitar Swagger
+  * [SIG-1456] Permitir consultar disponibilidade de usuário no Datavalid por API
+
+* Correções de bugs
+  * [SIG-1453] Criador do documento não é notificado quando documento é concluído após assinatura em lote
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-79-0" />
 ### 1.79.0 (2025-03-13)
 

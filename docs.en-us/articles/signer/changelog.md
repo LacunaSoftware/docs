@@ -1,5 +1,21 @@
 ﻿# Signer changelog
 
+<a name="v1-80-0" />
+### 1.80.0 (2025-04-15)
+
+* New Features
+  * [SIG-1382] Electronic signature with selfie and ID document
+
+* Improvements
+  * [SIG-1428] FaceTec integration with Rest PKI
+  * [SIG-1454] Setting to disable Swagger
+  * [SIG-1456] Allow API users to query Datavalid user availability
+
+* Bug fixes
+  * [SIG-1453] Document creator is not notified when document is concluded by signing a batch
+
+Updates database model: no
+
 <a name="v1-79-0" />
 ### 1.79.0 (2025-03-13)
 
