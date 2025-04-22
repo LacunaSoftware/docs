@@ -4,6 +4,128 @@
 <a name="vnext" />
 -->
 
+<a name="v2.5.0" />
+## 2.5.0 (2025-04-11)
+
+Identical to: 2.5.0 RC 7 (2025-04-11)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-276 FaceTec liveness APIs
+
+RPNG-279 FaceTec IdScan APIs
+
+RPNG-280 FaceTec liveness demo
+
+### Improvements
+
+RPNG-287 Support for using custom database schemes
+
+RPNG-289 Support for ARM64 platform on Docker
+
+### Bug fixes
+
+RPNG-288 Error *An error has occurred while processing your authentication \(blank email address\). Please try again.*
+
+### Flavour-specific changes
+
+RPNG-286 Landscape-specific validation marks (flavour *onr*)
+
+
+
+<a name="v2.4.5" />
+## 2.4.5 (2025-12-03)
+
+Updates database model: no
+
+### Bug
+
+RPNG-277 Column `DateCompleted` is not filled when a signature session is completed
+
+
+
+<a name="v2.4.4" />
+## 2.4.4 (2024-10-02)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-271 Improve performance on simple requests repeated several times by clients
+
+
+
+<a name="v2.4.3" />
+## 2.4.3 (2024-09-25)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-291 Backward-compatibility issues on PDF marking API
+
+
+
+<a name="v2.4.2" />
+## 2.4.2 (2024-07-26)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-269 Error 500 when signing PDFs with policy `PkiBrazil.AdrTempo`
+
+
+
+<a name="v2.4.1" />
+## 2.4.1 (2024-07-25)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-290 Compatibility issue with SQL Server 2012 \(usage of `TRIM()` function\)
+
+
+
+<a name="v2.4.0" />
+## 2.4.0 (2024-07-25)
+
+Identical to: 2.4.0 RC 1 (2024-06-15)
+
+Updates database model: no
+
+### New features
+
+RPNG-262 Setting `Oidc:AuthorityBackchannelUrl` for scenarios on which GrantID has a URL specific for backend-to-backend communication
+
+### Improvements
+
+RPNG-265 Improve specification of client-side signature algorithm parameters on APIs
+
+RPNG-266 Policies for accepting signatures performed on Gov.BR platform
+
+### Flavour-specific changes
+
+RPNG-264 Document metadata are not shown on validation page \(flavour *onr*\)
+
+
+
+<a name="v2.3.0" />
+## 2.3.0 (2024-06-06)
+
+Identical to: 2.3.0 RC 1 (2024-05-17)
+
+Updates database model: **yes**
+
+### Flavour-specific changes
+
+RPNG-259 Metadata `CNS` and `Cartório` on a per-subscription basis \(flavour `Onr`\)
+
+
+
 <a name="v2.2.2" />
 ## 2.2.2 (2024-05-04)
 
@@ -174,19 +296,17 @@ Updates database model: **yes**
 
 ### Improvements
 
-RPNG-178 Permitir definição opcional de timestamp tier no contexto de segurança
+RPNG-178 Allow optional definition of timestamp tier on security context
 
-RPNG-204 Anonimização de dados na tela de validação
+RPNG-204 Anonymization of signers' personal data on validation page
 
-RPNG-207 Melhorias ao gerenciamento de provimento de carimbos de tempo
+RPNG-207 Improvements to timestamping management
 
-RPNG-246 Filtro por data de início e fim na lista de chamadas ao provedor de carimbo de tempo
-
-RPNG-212 Alterar texto da marca de validação da ONR
+RPNG-246 Date filters on timestamp provider call history
 
 ### Bug fixes
 
-RPNG-198 API de validação de assinaturas não respeita configuração `General:DefaultTimeZone`
+RPNG-198 Signature validaiton API does not honor setting `General:DefaultTimeZone`
 
 
 
@@ -195,9 +315,9 @@ RPNG-198 API de validação de assinaturas não respeita configuração `General
 
 Updates database model: no
 
-### Improvements
+### Flavour-specific changes
 
-RPNG-212 Alterar texto da marca de validação da ONR
+RPNG-212 Change validation marks text \(flavour *onr*\)
 
 
 
@@ -208,21 +328,21 @@ Updates database model: **yes**
 
 ### New features
 
-RPNG-160 Adicionar suporte às APIs de assinatura CADES antigas
+RPNG-160 Add support for legacy CAdES signature APIs
 
-RPNG-182 Histórico de timestamp tiers e providers
+RPNG-182 Timestamp tier and provider history
 
-RPNG-206 Habilitar acesso via SSH na imagem de Docker
+RPNG-206 Enable SSH access on Docker image
 
 ### Bug fixes
 
-RPNG-185 Arquivos de certificado não são aceitos no upload de raízes do gerenciamento de contexto de segurança
+RPNG-185 Certificate files are not accepted on security context management's root CA upload
 
-RPNG-200 Propriedade MessageDigest dos assinantes PDF/CMS não é preenchida em situações em que apenas o algoritmo é conhecido
+RPNG-200 `MessageDigest` property of PDF/CMS signers is not filled when only the algorithm is known
 
-RPNG-201 APIs de exploração de assinatura estão ignorando o parâmetro `SignaturePolicyId`
+RPNG-201 Signature exploring APIs are ignoring parameter `SignaturePolicyId`
 
-RPNG-209 Multipart upload não está funcionando
+RPNG-209 Multipart upload not working
 
 
 

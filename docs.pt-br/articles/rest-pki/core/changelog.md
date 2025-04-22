@@ -13,11 +13,11 @@ Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
 
-RPNG-276 Integração e APIs de Liveness da FaceTec
+RPNG-276 APIs para realização de prova de vida (*liveness*) com FaceTec
 
-RPNG-279 FaceTec - Adicionar processamento proxy de IdScan
+RPNG-279 APIs para realização de digitalização de documento de identificação (*Id Scan*) com FaceTec
 
-RPNG-280 FaceTec - Demonstração de Liveness 3d/2d
+RPNG-280 Demonstração de prova de vida com FaceTec
 
 ### Melhorias
 
@@ -27,7 +27,7 @@ RPNG-289 Suporte a plataforma ARM64 em Docker
 
 ### Correções de bugs
 
-RPNG-288 Erro "An error has occurred while processing your authentication \(blank email address\). Please try again."
+RPNG-288 Erro *An error has occurred while processing your authentication \(blank email address\). Please try again.*
 
 ### Alterações para variantes específicas
 
@@ -42,7 +42,7 @@ Atualiza modelo do banco de dados: não
 
 ### Bug
 
-RPNG-277 Sessão de assinatura completada não preenche a coluna DateCompleted
+RPNG-277 Coluna `DateCompleted` não é preenchida quando uma sessão de assinatura é completada
 
 
 
@@ -53,7 +53,7 @@ Atualiza modelo do banco de dados: não
 
 ### Melhorias
 
-RPNG-271 Melhorar desempenho de chamadas simples
+RPNG-271 Melhorar desempenho de chamadas simples repetidas muitas vezes por clientes
 
 
 
@@ -75,7 +75,7 @@ Atualiza modelo do banco de dados: não
 
 ### Correções de bugs
 
-RPNG-269 Erro 500 ao realizar assinar de PDF com política PkiBrazil.AdrTempo
+RPNG-269 Erro 500 ao realizar assinar de PDF com política `PkiBrazil.AdrTempo`
 
 
 
@@ -99,7 +99,7 @@ Atualiza modelo do banco de dados: não
 
 ### Novas funcionalidades
 
-RPNG-262 Configuração `Oidc:AuthorityBackchannelUrl`
+RPNG-262 Configuração `Oidc:AuthorityBackchannelUrl` para situações em que o GrantID tem uma URL específica para comunicação de backend para backend
 
 ### Melhorias
 
