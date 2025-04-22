@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v1-80-1" />
+### 1.80.1 (2025-04-22)
+
+* Correções de bugs
+  * [SIG-1458] Uso elevado do BlobStorage em assinaturas em lote
+
+Atualiza modelo do banco de dados: não
+
 <a name="v1-80-0" />
 ### 1.80.0 (2025-04-15)
 

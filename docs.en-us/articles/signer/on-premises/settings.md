@@ -562,6 +562,8 @@ volume batches this is used to avoid timeouts when querying the database.
 * **NumberDocumentsPerDocumentsCreatedWebhookRound** (v1.50.0, default: `100`): number of documents retrieved each round when generating the documents created webhook.
 * **NotifyPendingActionsIndividually** (v1.34.0): if `true`, will send pending action emails individually when performing batch actions.
 * **NotifyParticipantsDefaultValue** (v1.39.0, default: `true`): sets the default value for the notify participants option that is displayed when a user signs documents in a batch.
+* **MaxAgeForOnGoingDocumentBatchesInDays** (v1.80.1, default: `5`): the maximum age for on going document batches to be retrieved on the documents page.
+* **MaxOnGoingDocumentBatchesItemsRetrievedFromDatabase** (v1.80.1, default: `10`): the maximum number of document batches retrieved on the documents page.
 
 ###  *Envelopes* Settings (v1.33.0)
 
