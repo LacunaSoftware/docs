@@ -4,6 +4,128 @@
 <a name="vnext" />
 -->
 
+<a name="v2.5.0" />
+## 2.5.0 (2025-04-11)
+
+Idêntica a: 2.5.0 RC 7 (2025-04-11)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-276 Integração e APIs de Liveness da FaceTec
+
+RPNG-279 FaceTec - Adicionar processamento proxy de IdScan
+
+RPNG-280 FaceTec - Demonstração de Liveness 3d/2d
+
+### Melhorias
+
+RPNG-287 Suporte a uso de schemas de banco de dados personalizados
+
+RPNG-289 Suporte a plataforma ARM64 em Docker
+
+### Correções de bugs
+
+RPNG-288 Erro "An error has occurred while processing your authentication \(blank email address\). Please try again."
+
+### Mudanças específicas para variantes (flavours)
+
+RPNG-286 Marcas de validação específicas para caso paisagem no flavour ONR
+
+
+
+<a name="v2.4.5" />
+## 2.4.5 (2025-12-03)
+
+Atualiza modelo do banco de dados: não
+
+### Bug
+
+RPNG-277 Sessão de assinatura completada não preenche a coluna DateCompleted
+
+
+
+<a name="v2.4.4" />
+## 2.4.4 (2024-10-02)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-271 Melhorar desempenho de chamadas simples
+
+
+
+<a name="v2.4.3" />
+## 2.4.3 (2024-09-25)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-291 Problemas de retrocompatibilidade na API de adicionar marcas a PDFs
+
+
+
+<a name="v2.4.2" />
+## 2.4.2 (2024-07-26)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-269 Erro 500 ao realizar assinar de PDF com política PkiBrazil.AdrTempo
+
+
+
+<a name="v2.4.1" />
+## 2.4.1 (2024-07-25)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-290 Erro de compatibilidade com SQL Server 2012 \(uso de função `TRIM()`\)
+
+
+
+<a name="v2.4.0" />
+## 2.4.0 (2024-07-25)
+
+Idêntica a: 2.4.0 RC 1 (2024-06-15)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-262 Configuração `Oidc:AuthorityBackchannelUrl`
+
+### Melhorias
+
+RPNG-265 Melhorar especificação da assinatura a ser executada com a chave privada do assinante nas APIs
+
+RPNG-266 Políticas para validar assinaturas feitas no Gov.BR
+
+### Correções de bugs
+
+RPNG-264 Metadados do documento não aparecem e campos de filtro de transações faltando
+
+
+
+<a name="v2.3.0" />
+## 2.3.0 (2024-06-06)
+
+Idêntica a: 2.3.0 RC 1 (2024-05-17)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Mudanças específicas para variantes (flavours)
+
+RPNG-259 CNS e Cartório por subscription \(variante `Onr`\)
+
+
+
 <a name="v2.2.2" />
 ## 2.2.2 (2024-05-04)
 
