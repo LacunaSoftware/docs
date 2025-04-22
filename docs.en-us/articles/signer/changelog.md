@@ -1,5 +1,13 @@
 ﻿# Signer changelog
 
+<a name="v1-80-1" />
+### 1.80.1 (2025-04-22)
+
+* Bug fixes
+  * [SIG-1458] Increased usage of BlobStorage in batch signatures
+
+Updates database model: no
+
 <a name="v1-80-0" />
 ### 1.80.0 (2025-04-15)
 
