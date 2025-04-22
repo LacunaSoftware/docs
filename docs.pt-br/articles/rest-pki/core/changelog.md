@@ -29,9 +29,9 @@ RPNG-289 Suporte a plataforma ARM64 em Docker
 
 RPNG-288 Erro "An error has occurred while processing your authentication \(blank email address\). Please try again."
 
-### Mudanças específicas para variantes (flavours)
+### Alterações para variantes específicas
 
-RPNG-286 Marcas de validação específicas para caso paisagem no flavour ONR
+RPNG-286 Marcas de validação específicas para caso paisagem \(variante *onr*\)
 
 
 
@@ -107,9 +107,9 @@ RPNG-265 Melhorar especificação da assinatura a ser executada com a chave priv
 
 RPNG-266 Políticas para validar assinaturas feitas no Gov.BR
 
-### Correções de bugs
+### Alterações para variantes específicas
 
-RPNG-264 Metadados do documento não aparecem e campos de filtro de transações faltando
+RPNG-264 Metadados do documento não aparecem na página de validação \(variante *onr*\)
 
 
 
@@ -120,9 +120,9 @@ Idêntica a: 2.3.0 RC 1 (2024-05-17)
 
 Atualiza modelo do banco de dados: **sim**
 
-### Mudanças específicas para variantes (flavours)
+### Alterações para variantes específicas
 
-RPNG-259 CNS e Cartório por subscription \(variante `Onr`\)
+RPNG-259 CNS e Cartório por subscription \(variante *onr*\)
 
 
 
@@ -303,8 +303,6 @@ RPNG-207 Melhorias ao gerenciamento de provimento de carimbos de tempo
 
 RPNG-246 Filtro por data de início e fim na lista de chamadas ao provedor de carimbo de tempo
 
-RPNG-212 Alterar texto da marca de validação da ONR
-
 ### Correções de bugs
 
 RPNG-198 API de validação de assinaturas não respeita configuração `General:DefaultTimeZone`
@@ -316,9 +314,9 @@ RPNG-198 API de validação de assinaturas não respeita configuração `General
 
 Atualiza modelo do banco de dados: não
 
-### Melhorias
+### Alterações para variantes específicas
 
-RPNG-212 Alterar texto da marca de validação da ONR
+RPNG-212 Alterar texto da marca de validação \(variante *onr*\)
 
 
 
@@ -605,9 +603,9 @@ RPNG-120 Tratar exceção de PDF inválido/corrompido
 
 RPNG-119 Padrões de nomes aceitos estão vindo do subscription cache
 
-### Alterações para clientes específicos
+### Alterações para variantes específicas
 
-RPNG-130 Flavour ONR
+RPNG-130 Adicionada variante *onr*
 
 
 
