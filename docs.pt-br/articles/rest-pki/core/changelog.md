@@ -1,8 +1,21 @@
 ﻿# Histórico de versões - Rest PKI Core
 
-<!--
 <a name="vnext" />
--->
+<a name="v3.0.0" />
+## 3.0.0 (próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+RPNG-275 Atualizar ASP.NET Core para versão 8.0
+RPNG-292 Resolver vulnerabilidades conhecidas (para mais informações veja a [Verificação de vulnerabilidade 2025-04](https://docs.lacunasoftware.com/en-us/articles/rest-pki/core/on-premises/vulnerabilities#check-2025-04))
+
+### Correções de bugs
+
+RPNG-293 Marcas do tipo `QRCode` causam erro 500 na API de adicionar marcas se executando em Linux/Docker
+
+
 
 <a name="v2.5.0" />
 ## 2.5.0 (2025-04-11)

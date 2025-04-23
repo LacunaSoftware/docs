@@ -132,6 +132,7 @@
 #### [Creating a subscription](rest-pki/core/on-premises/create-sub.md)
 #### [Checking the installed version](rest-pki/core/on-premises/check-version.md)
 #### [Logging](rest-pki/core/on-premises/logging.md)
+#### [Vulnerability checks](rest-pki/core/on-premises/vulnerabilities.md)
 ### [Operation guide](rest-pki/core/operation/index.md)
 #### [Monitoring timestamping](rest-pki/core/operation/monitor-timestamping.md)
 ### [Requesting timestamps](rest-pki/core/requesting-timestamps.md)

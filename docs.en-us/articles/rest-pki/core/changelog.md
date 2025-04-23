@@ -1,8 +1,21 @@
 ﻿# Rest PKI Core changelog
 
-<!--
 <a name="vnext" />
--->
+<a name="v3.0.0" />
+## 3.0.0 (next version)
+
+Updates database model: **yes**
+
+### Improvements
+
+RPNG-275 Update ASP.NET Core to version 8.0
+RPNG-292 Fix known vulnerabilities (for more information see [2025-04 vulnerability check](on-premises/vulnerabilities.md#check-2025-04))
+
+### Bug fixes
+
+RPNG-293 Marks of type `QRCode` cause error 500 on PDF marking API when running on Linux/Docker
+
+
 
 <a name="v2.5.0" />
 ## 2.5.0 (2025-04-11)

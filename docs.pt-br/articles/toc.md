@@ -133,6 +133,7 @@
 #### [Criando uma organização](rest-pki/core/on-premises/create-sub.md)
 #### [Verificando a versão instalada](rest-pki/core/on-premises/check-version.md)
 #### [Logs](rest-pki/core/on-premises/logging.md)
+#### [Verificações de vulnerabilidades](rest-pki/core/on-premises/vulnerabilities.md)
 ### [Guia de Operação](rest-pki/core/operation/index.md)
 #### [Monitoramento de timestamping](rest-pki/core/operation/monitor-timestamping.md)
 ### [Solicitando carimbos de tempo](rest-pki/core/requesting-timestamps.md)
