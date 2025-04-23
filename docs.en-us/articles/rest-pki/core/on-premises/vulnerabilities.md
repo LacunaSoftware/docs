@@ -4,8 +4,8 @@ The [Rest PKI Core](../index.md) Docker image is checked periodically for known 
 the vulnerabilities found with medium or higher severity and the actions performed to mitigate.
 
 > [!NOTE]
-> A vulnerability detection does not necessarily mean the application is vulnerable, only that it *might* be. Further investigation is required to determine
-> whether a given vulnerability actually poses a threat to the application.
+> A vulnerability detection does not necessarily mean the application is vulnerable. Further investigation is required to determine whether a given vulnerability
+> actually poses a threat to the application.
 
 Our policy is to keep the application free of critical and high severity vulnerabilities and keep medium severities at a minimum. If a critical or high vulnerability
 cannot be fixed, further investigation must be performed and documented here to ensure it does not pose an actual threat to the application.
