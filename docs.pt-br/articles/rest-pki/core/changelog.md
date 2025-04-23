@@ -20,7 +20,7 @@ RPNG-293 Marcas do tipo `QRCode` causam erro 500 na API de adicionar marcas se e
 
 
 
-<a name="v2.5.0" />
+<a name="v2-5-0" />
 ## 2.5.0 (2025-04-11)
 
 Idêntica a: 2.5.0 RC 7 (2025-04-11)
@@ -51,7 +51,7 @@ RPNG-286 Marcas de validação específicas para caso paisagem \(variante *onr*\
 
 
 
-<a name="v2.4.5" />
+<a name="v2-4-5" />
 ## 2.4.5 (2025-12-03)
 
 Atualiza modelo do banco de dados: não
@@ -62,7 +62,7 @@ RPNG-277 Coluna `DateCompleted` não é preenchida quando uma sessão de assinat
 
 
 
-<a name="v2.4.4" />
+<a name="v2-4-4" />
 ## 2.4.4 (2024-10-02)
 
 Atualiza modelo do banco de dados: não
@@ -73,7 +73,7 @@ RPNG-271 Melhorar desempenho de chamadas simples repetidas muitas vezes por clie
 
 
 
-<a name="v2.4.3" />
+<a name="v2-4-3" />
 ## 2.4.3 (2024-09-25)
 
 Atualiza modelo do banco de dados: não
@@ -84,7 +84,7 @@ RPNG-291 Problemas de retrocompatibilidade na API de adicionar marcas a PDFs
 
 
 
-<a name="v2.4.2" />
+<a name="v2-4-2" />
 ## 2.4.2 (2024-07-26)
 
 Atualiza modelo do banco de dados: não
@@ -95,7 +95,7 @@ RPNG-269 Erro 500 ao realizar assinar de PDF com política `PkiBrazil.AdrTempo`
 
 
 
-<a name="v2.4.1" />
+<a name="v2-4-1" />
 ## 2.4.1 (2024-07-25)
 
 Atualiza modelo do banco de dados: não
@@ -106,7 +106,7 @@ RPNG-290 Erro de compatibilidade com SQL Server 2012 \(uso de função `TRIM()`\
 
 
 
-<a name="v2.4.0" />
+<a name="v2-4-0" />
 ## 2.4.0 (2024-07-25)
 
 Idêntica a: 2.4.0 RC 1 (2024-06-15)
@@ -129,7 +129,7 @@ RPNG-264 Metadados do documento não aparecem na página de validação \(varian
 
 
 
-<a name="v2.3.0" />
+<a name="v2-3-0" />
 ## 2.3.0 (2024-06-06)
 
 Idêntica a: 2.3.0 RC 1 (2024-05-17)
@@ -142,7 +142,7 @@ RPNG-259 CNS e Cartório por subscription \(variante *onr*\)
 
 
 
-<a name="v2.2.2" />
+<a name="v2-2-2" />
 ## 2.2.2 (2024-05-04)
 
 Atualiza modelo do banco de dados: não
@@ -153,7 +153,7 @@ RPNG-261 Erro NullReferenceException ao solicitar carimbo via TSP
 
 
 
-<a name="v2.2.1" />
+<a name="v2-2-1" />
 ## 2.2.1 (2024-05-01)
 
 Atualiza modelo do banco de dados: não
@@ -164,7 +164,7 @@ RPNG-260 URLs relativas de upload em chamadas à API ainda não são aceitas em 
 
 
 
-<a name="v2.2.0" />
+<a name="v2-2-0" />
 ## 2.2.0 (2024-04-30)
 
 Atualiza modelo do banco de dados: **sim**
@@ -212,7 +212,7 @@ RPNG-253 Pedido de carimbo de tempo não registra duração em caso de erro no p
 RPNG-254 Consulta a chamadas de provedor de carimbo de tempo não utiliza o índice adequado
 
 
-<a name="v2.1.3" />
+<a name="v2-1-3" />
 ## 2.1.3 (2024-04-10)
 
 Atualiza modelo do banco de dados: não
@@ -223,7 +223,7 @@ RPNG-240 Usar timestamp tier padrão no caso de uma política com carimbo ser us
 
 
 
-<a name="v2.1.2" />
+<a name="v2-1-2" />
 ## 2.1.2 (2024-03-14)
 
 Atualiza modelo do banco de dados: não
@@ -234,7 +234,7 @@ RPNG-231 Inconformidades nos códigos de retorno declarados no Swagger
 
 
 
-<a name="v2.1.1" />
+<a name="v2-1-1" />
 ## 2.1.1 (2024-01-24)
 
 Atualiza modelo do banco de dados: não
@@ -253,7 +253,7 @@ RPNG-208 Propriedade `signatureResult.getFile().url` retorna uma URL absoluta (e
 
 
 
-<a name="v2.1.0" />
+<a name="v2-1-0" />
 ## 2.1.0 (2024-01-15)
 
 Atualiza modelo do banco de dados: não
@@ -282,7 +282,7 @@ RPNG-232 Aplicação está exigindo claim de CPF desnecessariamente
 
 
 
-<a name="v2.0.2" />
+<a name="v2-0-2" />
 ## 2.0.2 (2023-11-09)
 
 Atualiza modelo do banco de dados: não
@@ -293,7 +293,7 @@ RPNG-220 Ignorar erros de comunicação com o Amplia caso `AttributeCertificateI
 
 
 
-<a name="v2.0.1" />
+<a name="v2-0-1" />
 ## 2.0.1 (2023-11-08)
 
 Atualiza modelo do banco de dados: não
@@ -304,7 +304,7 @@ RPNG-217 Erro "CryptographicException: The payload was invalid" ao consultar ses
 
 
 
-<a name="v2.0.0" />
+<a name="v2-0-0" />
 ## 2.0.0 (2023-10-30)
 
 Atualiza modelo do banco de dados: **sim**

@@ -20,7 +20,7 @@ RPNG-293 Marks of type `QRCode` cause error 500 on PDF marking API when running 
 
 
 
-<a name="v2.5.0" />
+<a name="v2-5-0" />
 ## 2.5.0 (2025-04-11)
 
 Identical to: 2.5.0 RC 7 (2025-04-11)
@@ -51,7 +51,7 @@ RPNG-286 Landscape-specific validation marks (flavour *onr*)
 
 
 
-<a name="v2.4.5" />
+<a name="v2-4-5" />
 ## 2.4.5 (2025-12-03)
 
 Updates database model: no
@@ -62,7 +62,7 @@ RPNG-277 Column `DateCompleted` is not filled when a signature session is comple
 
 
 
-<a name="v2.4.4" />
+<a name="v2-4-4" />
 ## 2.4.4 (2024-10-02)
 
 Updates database model: no
@@ -73,7 +73,7 @@ RPNG-271 Improve performance on simple requests repeated several times by client
 
 
 
-<a name="v2.4.3" />
+<a name="v2-4-3" />
 ## 2.4.3 (2024-09-25)
 
 Updates database model: no
@@ -84,7 +84,7 @@ RPNG-291 Backward-compatibility issues on PDF marking API
 
 
 
-<a name="v2.4.2" />
+<a name="v2-4-2" />
 ## 2.4.2 (2024-07-26)
 
 Updates database model: no
@@ -95,7 +95,7 @@ RPNG-269 Error 500 when signing PDFs with policy `PkiBrazil.AdrTempo`
 
 
 
-<a name="v2.4.1" />
+<a name="v2-4-1" />
 ## 2.4.1 (2024-07-25)
 
 Updates database model: no
@@ -106,7 +106,7 @@ RPNG-290 Compatibility issue with SQL Server 2012 \(usage of `TRIM()` function\)
 
 
 
-<a name="v2.4.0" />
+<a name="v2-4-0" />
 ## 2.4.0 (2024-07-25)
 
 Identical to: 2.4.0 RC 1 (2024-06-15)
@@ -129,7 +129,7 @@ RPNG-264 Document metadata are not shown on validation page \(flavour *onr*\)
 
 
 
-<a name="v2.3.0" />
+<a name="v2-3-0" />
 ## 2.3.0 (2024-06-06)
 
 Identical to: 2.3.0 RC 1 (2024-05-17)
@@ -142,7 +142,7 @@ RPNG-259 Metadata `CNS` and `Cartório` on a per-subscription basis \(flavour `O
 
 
 
-<a name="v2.2.2" />
+<a name="v2-2-2" />
 ## 2.2.2 (2024-05-04)
 
 Updates database model: no
@@ -153,7 +153,7 @@ RPNG-261 NullReferenceException error when requesting timestamps through TSP (in
 
 
 
-<a name="v2.2.1" />
+<a name="v2-2-1" />
 ## 2.2.1 (2024-05-01)
 
 Updates database model: no
@@ -164,7 +164,7 @@ RPNG-260 Relative URLs returned by the upload API on `FileModel.Location` passed
 
 
 
-<a name="v2.2.0" />
+<a name="v2-2-0" />
 ## 2.2.0 (2024-04-30)
 
 Updates database model: **yes**
@@ -213,7 +213,7 @@ RPNG-254 Query on timestamp provider calls is not using the appropriate database
 
 
 
-<a name="v2.1.3" />
+<a name="v2-1-3" />
 ## 2.1.3 (2024-04-10)
 
 Updates database model: no
@@ -224,7 +224,7 @@ RPNG-240 Use default timestamp tier when a policy requiring timestamp is used co
 
 
 
-<a name="v2.1.2" />
+<a name="v2-1-2" />
 ## 2.1.2 (2024-03-14)
 
 Updates database model: no
@@ -235,7 +235,7 @@ RPNG-231 API return codes documented on Swagger do not match actual return codes
 
 
 
-<a name="v2.1.1" />
+<a name="v2-1-1" />
 ## 2.1.1 (2024-01-24)
 
 Updates database model: no
@@ -254,7 +254,7 @@ RPNG-208 Property `signatureResult.getFile().url` returns an absolute URL (was r
 
 
 
-<a name="v2.1.0" />
+<a name="v2-1-0" />
 ## 2.1.0 (2024-01-15)
 
 Updates database model: no
@@ -283,7 +283,7 @@ RPNG-232 CPF claim is unnecessarily required
 
 
 
-<a name="v2.0.2" />
+<a name="v2-0-2" />
 ## 2.0.2 (2023-11-09)
 
 Updates database model: no
@@ -294,7 +294,7 @@ RPNG-220 Ignore communication errors with Amplia when `AttributeCertificateInclu
 
 
 
-<a name="v2.0.1" />
+<a name="v2-0-1" />
 ## 2.0.1 (2023-11-08)
 
 Updates database model: no
@@ -305,7 +305,7 @@ RPNG-217 Error "CryptographicException: The payload was invalid" when fetching o
 
 
 
-<a name="v2.0.0" />
+<a name="v2-0-0" />
 ## 2.0.0 (2023-10-30)
 
 Updates database model: **yes**
