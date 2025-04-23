@@ -13,7 +13,7 @@ Updates database model: **yes**
 
 RPNG-275 Update ASP.NET Core to version 8.0
 
-RPNG-292 Fix known vulnerabilities (for more information see [Vulnerability check 2025-04](on-premises/vulnerabilities.md#check-2025-04))
+RPNG-292 Fix known vulnerabilities (for more information see [Vulnerability check 25.04](on-premises/vulnerabilities.md#c2504))
 
 ### Bug fixes
 
