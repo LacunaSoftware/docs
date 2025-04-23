@@ -4,6 +4,9 @@
 <a name="v3-0-0" />
 ## 3.0.0 (next version)
 
+> [!WARNING]
+> See [Update Rest PKI Core from 2.x to 3.0](on-premises/update-30.md)
+
 Updates database model: **yes**
 
 ### Improvements

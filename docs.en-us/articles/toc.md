@@ -131,6 +131,7 @@
 #### [Run without db_owner](rest-pki/core/on-premises/unprivileged-db-user.md)
 #### [Creating a subscription](rest-pki/core/on-premises/create-sub.md)
 #### [Checking the installed version](rest-pki/core/on-premises/check-version.md)
+#### [Update to 3.0](rest-pki/core/on-premises/update-30.md)
 #### [Logging](rest-pki/core/on-premises/logging.md)
 #### [Vulnerability checks](rest-pki/core/on-premises/vulnerabilities.md)
 ### [Operation guide](rest-pki/core/operation/index.md)
