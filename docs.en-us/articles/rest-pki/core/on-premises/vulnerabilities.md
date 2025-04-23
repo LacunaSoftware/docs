@@ -7,11 +7,10 @@ the vulnerabilities found with medium or higher severity and the actions perform
 > A vulnerability detection does not necessarily mean the application is vulnerable, only that it *might* be. Further investigation is required to determine
 > whether a given vulnerability actually poses a threat to the application.
 
-> [!NOTE]
-> Our policy is to keep the application free of critical and high severity vulnerabilities and keep medium severities at a minimum. If a critical or high vulnerability
-> cannot be fixed, further investigation must be performed and documented here to ensure it does not pose an actual threat to the application.
+Our policy is to keep the application free of critical and high severity vulnerabilities and keep medium severities at a minimum. If a critical or high vulnerability
+cannot be fixed, further investigation must be performed and documented here to ensure it does not pose an actual threat to the application.
 
-<a name="check-2025-04">
+<a name="check-2025-04" />
 
 ## 2025-04 vulnerability check
 
