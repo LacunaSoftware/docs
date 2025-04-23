@@ -14,7 +14,7 @@ cannot be fixed, further investigation must be performed and documented here to 
 
 <a name="c2504" />
 
-## Vulnerability check 25.04 
+## Vulnerability check 25.04
 
 Period: between 2025-04-22 and 2025-04-23
 
