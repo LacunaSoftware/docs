@@ -12,6 +12,7 @@ Atualiza modelo do banco de dados: **sim**
 ### Melhorias
 
 RPNG-275 Atualizar ASP.NET Core para versão 8.0
+
 RPNG-292 Resolver vulnerabilidades conhecidas (para mais informações veja a [Verificação de vulnerabilidade 2025-04](https://docs.lacunasoftware.com/en-us/articles/rest-pki/core/on-premises/vulnerabilities#check-2025-04))
 
 ### Correções de bugs
