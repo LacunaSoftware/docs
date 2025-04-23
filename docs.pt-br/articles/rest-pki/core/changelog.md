@@ -1,7 +1,7 @@
 ﻿# Histórico de versões - Rest PKI Core
 
 <a name="vnext" />
-<a name="v3.0.0" />
+<a name="v3-0-0" />
 ## 3.0.0 (próxima versão)
 
 Atualiza modelo do banco de dados: **sim**

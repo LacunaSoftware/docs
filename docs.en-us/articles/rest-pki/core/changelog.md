@@ -1,7 +1,7 @@
 ﻿# Rest PKI Core changelog
 
 <a name="vnext" />
-<a name="v3.0.0" />
+<a name="v3-0-0" />
 ## 3.0.0 (next version)
 
 Updates database model: **yes**

@@ -4,10 +4,12 @@ The [Rest PKI Core](../index.md) Docker image is checked periodically for known 
 the vulnerabilities found with medium or higher severity and the actions performed to mitigate.
 
 > [!NOTE]
-> A vulnerability detection does not necessarily mean the application is vulnerable, only that it *might* be.
+> A vulnerability detection does not necessarily mean the application is vulnerable, only that it *might* be. Further investigation is required to determine
+> whether a given vulnerability actually poses a threat to the application.
 
 > [!NOTE]
-> Our policy is to keep the application free of critical and high severity vulnerabilities and keep medium severities at a minimum.
+> Our policy is to keep the application free of critical and high severity vulnerabilities and keep medium severities at a minimum. If a critical or high vulnerability
+> cannot be fixed, further investigation must be performed and documented here to ensure it does not pose an actual threat to the application.
 
 <a name="check-2025-04">
 
@@ -15,7 +17,7 @@ the vulnerabilities found with medium or higher severity and the actions perform
 
 Period: between 2025-04-22 and 2025-04-23
 
-Version checked: 2.5.0
+Version checked: [2.5.0](../changelog.md#v2-5-0)
 
 Vulnerabilities found:
 
@@ -33,7 +35,7 @@ Vulnerabilities found:
   * [CVE-2024-12133](https://scout.docker.com/v/CVE-2024-12133?s=debian&n=libtasn1-6&ns=debian&t=deb&osn=debian&osv=11&vr=%3C4.16.0-2%2Bdeb11u2&utm_source=hub&utm_medium=ExternalLink)
   * [CVE-2023-4641](https://scout.docker.com/v/CVE-2023-4641?s=debian&n=shadow&ns=debian&t=deb&osn=debian&osv=11&vr=%3C1%3A4.8.1-1%2Bdeb11u1&utm_source=hub&utm_medium=ExternalLink)
 
-Steps to mitigate:
+Steps taken to mitigate:
 
 * Updated to ASP.NET Core 8.0
 * Updated several dependencies
@@ -45,6 +47,8 @@ Vulnerabilities after mitigation:
 * High severity: 0
 * Medium severity: 1
   * [CVE-2025-3576](https://scout.docker.com/v/CVE-2025-3576?s=debian&n=krb5&ns=debian&t=deb&osn=debian&osv=12&vr=%3E%3D1.20.1-2%2Bdeb12u2&utm_source=hub&utm_medium=ExternalLink) (recently discovered, no fix available at the time)
+
+Mitigated version: [3.0.0](../changelog.md#v3-0-0)
 
 ## See also
 
