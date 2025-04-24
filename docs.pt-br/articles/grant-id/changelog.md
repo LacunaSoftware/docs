@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do GrantID
 
+<a name="v5-0-1" />
+### 5.0.1 (2025-04-24)
+
+* Correções de bugs
+  * [LI-436] Erro na configuração padrão de Serilog para ambiente Azure
+  * [LI-437] Colunas faltando no banco de dados quando utilizado Postgres
+
+Atualiza modelo do banco de dados: não
+
 <a name="v5-0-0" />
 ### 5.0.0 (2025-03-27)
 
@@ -11,6 +20,8 @@
 	* Se você utilizava `RollingFile` substitua por `File` e a propriedade `pathFormat` por `path`. Para manter o comportamento de *rolling* adicione `"rollingInterval": "Day"`.
 	* Se você utilizava `AzureTableStorageWithProperties` substitua por `AzureTableStorage`.
 	* Configurações padrões foram adicionadas para o *environment* Azure, de maneira que agora é necessário apenas configurar a propriedade `connectionString` para direcionar os logs a uma table de Storage Account.
+
+Atualiza modelo do banco de dados: não
 
 > [!CAUTION]
 > A partir desta versão foi alterada a versão mínima exigida do SQL Server para o SQL Server 2016 (13.x). Para reverter a compatibilidade para o SQL Server 2014, 

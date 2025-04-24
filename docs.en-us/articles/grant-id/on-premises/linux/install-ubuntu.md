@@ -13,7 +13,7 @@ Follow these steps to install an [on-premises](../index.md) instance of [GrantID
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime 6.0](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
+[!include[Install ASP.NET Core Runtime 8.0](../../../includes/linux/ubuntu/install-aspnetcore-80.md)]
 
 ## Install Nginx
 
