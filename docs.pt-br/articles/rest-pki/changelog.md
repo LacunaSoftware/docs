@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-33-3" />
+### 1.33.3 (2025-05-02)
+
+Atualização do modelo do banco de dados: Não
+
+- Adiciona decodificação de algoritmos de assinatura ECDsa
+- Adiciona formatação em string do DN (Distinguished Name) do certificado no "Name model"
+- Atualização do contexto de segurança Lacuna Test (para teste e desenvolvimento apenas)
+
+
 <a name="v1-33-2" />
 ### 1.33.2 (2023-05-22)
 

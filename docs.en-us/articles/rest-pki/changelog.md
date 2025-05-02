@@ -1,5 +1,14 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-33-3" />
+### 1.33.3 (2025-05-02)
+
+Database model update: No
+
+- Add ECDsa signature algorithms decode
+- Add DN (Distinguished Name) formatted string to certificate Name model
+- Update Lacuna Test sucurity context for development purposes
+
 <a name="v1-33-2" />
 ### 1.33.2 (2023-05-22)
 
