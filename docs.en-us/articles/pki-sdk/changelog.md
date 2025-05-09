@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-18-1" />
+### 2.18.1 (2025-05-09)
+
+- \[PKI-133\] Replace the usega of legacy CAPI RSA by Cng on public-key based `GetSignatureCsp` method
+- \[PKI-134\] i18n validation success strings
+- \[PKI-135\] Enforce LTV on PAdES PkiBrazil AD-RB and AD-RT policies when DSS entry is already present on PDF
+
+
 <a name="v2-18-0" />
 ### 2.18.0 (2025-03-10)
 
