@@ -99,6 +99,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/vgy.png)
 
+* charcoal-orange-flame - cof (v1.26.1):
+
+![Color Scheme](../images/themes/cof.png)
+
 * international-orange-green - iog (v1.31.0):
 
 ![Color Scheme](../images/themes/iog.png)
@@ -123,6 +127,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/bvr.png)
 
+* eminence-cornflower-blue - ecb (v1.39.1):
+
+![Color Scheme](../images/themes/ecb.png)
+
 * vivid-sky-blue - vsb (v1.44.0):
 
 ![Color Scheme](../images/themes/vsb.png)
@@ -139,9 +147,34 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/yby.png)
 
+* silver-eerie-black - seb (v1.54.0):
+
+![Color Scheme](../images/themes/seb.png)
+
+* zomp-ut-orange - zuo (v1.56.0):
+
+![Color Scheme](../images/themes/zuo.png)
+
+* dim palatinate blue - dpb (v1.58.1):
+
+![Color Scheme](../images/themes/dpb.png)
+
+* deep-jungle-princeton - djp (v1.59.0):
+
+![Color Scheme](../images/themes/djp.png)
+
 * folly-russian-violet - frv (v1.68.0):
 
 ![Color Scheme](../images/themes/frv.png)
+
+* sea-green-yellow - sgy (v2.0.0):
+
+![Color Scheme](../images/themes/sgy.png)
+
+* cyan-process-green - cpg (v2.0.0):
+
+![Color Scheme](../images/themes/cpg.png)
+
 
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.
