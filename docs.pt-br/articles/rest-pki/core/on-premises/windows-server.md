@@ -4,7 +4,7 @@ Para instalar uma instância *on premises* do Rest PKI Core no Windows Server, p
 
 <br />
 <center>
-**[Pacote de binários do Rest PKI Core](https://cdn.lacunasoftware.com/restpkicore/restpkicore-2.5.0.zip)**
+**[Pacote de binários do Rest PKI Core](https://cdn.lacunasoftware.com/restpkicore/restpkicore-3.0.0-rc03.zip)**
 </center>
 <br />
 
@@ -28,7 +28,7 @@ Se precisar de ajuda para preparar o banco de dados, [clique aqui](../prepare-da
 
 1. Instale o IIS
 1. Instale o <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.15-windows-hosting-bundle-installer" target="_blank">.NET 8.0 Hosting Bundle</a>
-1. Crie uma pasta para o site do IIS. Exemplo: `C:\inetpub\Signer`
+1. Crie uma pasta para o site do IIS. Exemplo: `C:\inetpub\Rest PKI Core`
 1. Crie uma pasta para logs. Exemplo: `C:\Logs`
 1. Crie o site no IIS
 1. No pool de aplicativos correspondente:
@@ -51,11 +51,21 @@ Se precisar de ajuda para preparar o banco de dados, [clique aqui](../prepare-da
 1. Dentro da pasta anteriormente extraída, navegue para `config-templates/linux` e renomeie o arquivo `appsettings.conf` para `appsettings.ini` [como mostra a imagem](../../../../../images/windows/appsettings-rename.png)
 1. Criar pasta `C:\Program Data\Lacuna Software\Rest PKI Core`,
 1. Copiar arquivo `config-templates\linux\appsettings.ini` para a pasta recém-criada
-1. Adicionar o seguinte blob storage dentro do `appsettings.ini` (Altere o path )
+1. Adicionar o blob storage dentro do `appsettings.ini`
 ```
 [BlobStorage]
 Type=FileSystem
 Path=C:\Path\Do\Storage
 ```
+### Geração de encryption key e password hash
+Para preencher o parâmetro `General__EncryptionKey`, gere uma chave de 256 bits para encriptar dados sensíveis armazenados no banco de dados:
+Execute o seguinte comando na pasta `inetpub/Rest PKI Core`: 
+```
+dotnet Lacuna.RestPki.Site.dll -- gen-enc-key
+```
+Para preencher o parâmetro `General__RootPasswordHash`, escolha uma senha forte para acesso à interface de gerenciamento como *root* e calcule o hash dela:
+```
+dotnet Lacuna.RestPki.Site.dll -- hash-root-pass
+```
 
-1. Gere
+No IIS, inicie o servidor através do botão Start na barra lateral direita.

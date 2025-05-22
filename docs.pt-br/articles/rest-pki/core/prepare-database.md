@@ -54,7 +54,7 @@ Data Source=.;Initial Catalog=RestPkiCore;User ID=RestPkiCoreAdmin;Password=XXXX
 ```
 
 > [!NOTE]
-> Esta string de conexão assume que o servidor de banco de dados está instalado no mesmo servidor da aplicação web. Se este não for o caso,
+> Esta string de conexão supõe que o servidor de banco de dados está instalado no mesmo servidor da aplicação web. Se este não for o caso,
 > o valor após `Data Source=` precisará ser alterado.
 
 <a name="postgres" />
@@ -91,14 +91,14 @@ GRANT
 > [!NOTE]
 > Por enquanto, apenas o uso de um usuário com acesso total ao schema é suportado. Entre em contato conosco se precisar executar o Rest PKI Core com menos privilégios.
 
-A string de conexão seria então (assumindo que você não alterou os nomes do banco de dados e do usuário):
+A string de conexão seria então (supondo que você não alterou os nomes do banco de dados e do usuário):
 
 ```
 Host=localhost;Database=restpkicore;Username=restpkicore;Password=XXXXX
 ```
 
 > [!NOTE]
-> Esta string de conexão assume que o servidor de banco de dados está instalado no mesmo servidor da aplicação web. Se este não for o caso,
+> Esta string de conexão supõe que o servidor de banco de dados está instalado no mesmo servidor da aplicação web. Se este não for o caso,
 > o valor após `Host=` precisará ser alterado.
 
 ## Veja também
