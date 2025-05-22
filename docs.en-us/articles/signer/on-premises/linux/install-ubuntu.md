@@ -12,7 +12,7 @@ To install an instance [*on premises*](../index.md) from [Signer](../../index.md
 
 [!include[Common prerequisites](../includes/common-requisites.md)]
 
-[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-60.md)]
+[!include[Install ASP.NET Core Runtime](../../../includes/linux/ubuntu/install-aspnetcore-80.md)]
 
 ## Install additional required packages
 

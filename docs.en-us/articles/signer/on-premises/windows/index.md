@@ -4,7 +4,7 @@ To install an on-premises instance of Signer on Windows Server, first download b
 
 <br />
 <center>
-**[Signer binaries package](https://cdn.lacunasoftware.com/signer/signer-1.80.1.zip)**
+**[Signer binaries package](https://cdn.lacunasoftware.com/signer/signer-2.0.0.zip)**
 </center>
 <br />
 
@@ -27,7 +27,7 @@ If you need help preparing the database, [click here](../prepare-database.md).
 ## Installation
 
 1. Install IIS
-1. Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.20-windows-hosting-bundle-installer" target="_blank">NET 6.0 Hosting Bundle</a>
+1. Install <a href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.15-windows-hosting-bundle-installer" target="_blank">NET 8.0 Hosting Bundle</a>
 1. Create folder for IIS site. Example: `C:\inetpub\Signer`
 1. Create folder for logs. Example: `C:\Logs`
 1. Create site on IIS

@@ -1,5 +1,33 @@
 ﻿# Signer changelog
 
+<a name="v2-0-0" />
+### 2.0.0 (2025-05-21)
+
+* Improvements
+  * [SIG-1429] Update SPA version
+  * [SIG-1459] Add signature font size parameter in pre-positioning API
+  * [SIG-1460] Create oregon blue cadet theme
+  * [SIG-1462] Translate signature validation messages
+
+* Bug fixes
+  * [SIG-1461] Unfilled electronic signature steps are not preveting the request to be sent
+  * [SIG-1463] Attachments with special characters in the name are being sent with the name attachment
+
+* **Important changes**:
+  * Serilog usage:
+	* If you used `RollingFile` replace it with `File` and the property `pathFormat` with `path`. In order to maintain *rolling* behavior add `"rollingInterval": "Day"`.
+	* If you used `AzureTableStorageWithProperties` replace it with `AzureTableStorage`.
+	* Standard settings were added for the Azure *environment* so now it's only required to configure the `connectionString` property in order to direct logs to a table of a Storage Acount.
+
+Updates database model: yes
+
+> [!CAUTION]
+> Starting this version the SQL Server minimum version was updated to SQL Server 2016 (13.x). To revert the compatibility to SQL Server 2014, 
+> add the setting `SqlServer__CompatibilityLevel` with value `120`.
+
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released until 2025-05-20.
+
 <a name="v1-80-1" />
 ### 1.80.1 (2025-04-22)
 

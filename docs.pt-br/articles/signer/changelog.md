@@ -1,5 +1,33 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v2-0-0" />
+### 2.0.0 (2025-05-21)
+
+* Melhorias
+  * [SIG-1429] Atualizar versão do SPA
+  * [SIG-1459] Permitir a definição do tamanho da fonte por signatário, no pré-posicionamento via API
+  * [SIG-1460] Criar tema oregon blue cadet
+  * [SIG-1462] Traduzir mensagens de validação de assinaturas
+
+* Correções de bugs
+  * [SIG-1461] Passos não preenchidos de Assinatura eletrônica não estão bloqueando o envio da requisição
+  * [SIG-1463] Documentos com caracteres especiais estão sendo enviado com nome attachment no e-mail
+
+* **Mudanças importantes**:
+  * Registro de logs com Serilog:
+	* Se você utilizava `RollingFile` substitua por `File` e a propriedade `pathFormat` por `path`. Para manter o comportamento de *rolling* adicione `"rollingInterval": "Day"`.
+	* Se você utilizava `AzureTableStorageWithProperties` substitua por `AzureTableStorage`.
+	* Configurações padrões foram adicionadas para o *environment* Azure, de maneira que agora é necessário apenas configurar a propriedade `connectionString` para direcionar os logs a uma table de Storage Account.
+
+Atualiza modelo do banco de dados: sim
+
+> [!CAUTION]
+> A partir desta versão foi alterada a versão mínima exigida do SQL Server para o SQL Server 2016 (13.x). Para reverter a compatibilidade para o SQL Server 2014, 
+> adicione a configuração `SqlServer__CompatibilityLevel` com valor `120`.
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2025-05-20.
+
 <a name="v1-80-1" />
 ### 1.80.1 (2025-04-22)
 
