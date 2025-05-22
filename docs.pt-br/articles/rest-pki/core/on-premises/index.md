@@ -8,7 +8,7 @@ infraestrutura ("on premises").
 
 O Rest PKI Core é compatível com os seguintes ambientes:
 
-* Windows Server
+* [Windows Server](windows-server.md)
 * [Linux](linux/index.md)
 * [Docker](docker.md)
 * Azure App Services
