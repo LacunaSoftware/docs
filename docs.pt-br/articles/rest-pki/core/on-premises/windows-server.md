@@ -52,12 +52,15 @@ Se precisar de ajuda para preparar o banco de dados, [clique aqui](../prepare-da
 1. Criar pasta `C:\Program Data\Lacuna Software\Rest PKI Core`,
 1. Copiar arquivo `config-templates\linux\appsettings.ini` para a pasta recém-criada
 1. Adicionar o blob storage dentro do `appsettings.ini`
-```
+```sh
 [BlobStorage]
 Type=FileSystem
 Path=C:\Path\Do\Storage
 ```
+5. Salve e feche o arquivo
+
 ## Geração de encryption key e password hash
+
 Para preencher o parâmetro `General__EncryptionKey`, gere uma chave de 256 bits para encriptar dados sensíveis armazenados no banco de dados:
 Execute o seguinte comando na pasta `inetpub/Rest PKI Core`: 
 
@@ -65,7 +68,7 @@ Execute o seguinte comando na pasta `inetpub/Rest PKI Core`:
 dotnet Lacuna.RestPki.Site.dll -- gen-enc-key
 ```
 
-Para preencher o parâmetro `General__RootPasswordHash`, escolha uma senha forte para acesso à interface de gerenciamento como *root* e calcule o hash dela:
+. Para preencher o parâmetro `General__RootPasswordHash`, escolha uma senha forte para acesso à interface de gerenciamento como *root* e calcule o hash dela:
 
 ```sh
 dotnet Lacuna.RestPki.Site.dll -- hash-root-pass
