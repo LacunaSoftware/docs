@@ -713,6 +713,12 @@ need to be escaped. Example:
 	```
 * **BlobFolderName** (default: `trustarbitrators`): The blob folder of the file containing the Trust arbitrator JSON content stored in the Blob Storage. Only relevant if `BlobStorage` is selected.
 
+* ###  *Security Headers* Settings (v2.1.0)
+
+Under section **SecurityHeaders**:
+
+* **Default__Enabled**: if `true`, enables the use of security headers.
+
 
 ###  *SigningTags* Settings
 

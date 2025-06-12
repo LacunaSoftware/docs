@@ -1,5 +1,29 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v2-1-0" />
+### 2.1.0 (2025-06-12)
+
+* Melhorias
+  * [SIG-405] Permitir posicionar assinaturas ao fazer upload de nova versão do documento
+  * [SIG-1374] Trocar o ícone do botão de "mais" por um ícone de "troca" na tela de criação de modelo
+  * [SIG-1434] Bloqueio de usuário em instância aberta
+  * [SIG-1457] Remover o e-mail da tela de assinatura quando a autenticação estiver configurada somente com SMS e WhatsApp (sem e-mail)
+  * [SIG-1468] Permitir configurar security headers
+  * [SIG-1469] Otimizar consulta de documentos por participante
+
+* Correções de bugs
+  * [SIG-1164] Arquivos do envelope recebem marca com chave relativa ao próprio arquivo ao invés do envelope
+
+Atualiza modelo do banco de dados: sim
+
+<a name="v2-0-1" />
+### 2.0.1 (2025-05-26)
+
+* Correções de bugs
+  * [SIG-1465] Corrigir botão da home page padrão
+
+Atualiza modelo do banco de dados: não
+
 <a name="v2-0-0" />
 ### 2.0.0 (2025-05-21)
 

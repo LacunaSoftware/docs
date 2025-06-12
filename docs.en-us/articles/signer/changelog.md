@@ -1,5 +1,29 @@
 ﻿# Signer changelog
 
+<a name="v2-1-0" />
+### 2.1.0 (2025-06-12)
+
+* Improvements
+  * [SIG-405] Allow signatures to be positioned when uploading a new version of a document
+  * [SIG-1374] Replace plus icon with switch icon for the template file when creating templates
+  * [SIG-1434] Option to block users for open instances
+  * [SIG-1457] Remove the e-mail displayed in the signature page when the required authentication does not include e-mail
+  * [SIG-1468] Option to use security headers
+  * [SIG-1469] Optimize document advanced search by participants
+
+* Bug fixes
+  * [SIG-1164] Envelope files are marked with key associated with the file itself instead of the envelope file
+
+Updates database model: yes
+
+<a name="v2-0-1" />
+### 2.0.1 (2025-05-26)
+
+* Bug fixes
+  * [SIG-1465] Fix default home page button
+
+Updates database model: no
+
 <a name="v2-0-0" />
 ### 2.0.0 (2025-05-21)
 
