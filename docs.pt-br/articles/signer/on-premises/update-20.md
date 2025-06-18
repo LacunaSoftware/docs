@@ -27,7 +27,7 @@ Se não existir a configuração ou se o valor estiver vazio, verifique os logs 
 
 ```
 Application starting: Lacuna Signer (version: *, spaVersion: *, appDiscriminator: 'YOUR_APP_DISCRIMINATOR')
-                                                                                       ^^^^^^^^^^^^^^^^^^^^^^
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^
 ```
 
 Copie o valor do campo *appDiscriminator* **sem as aspas simples que o cercam** (no exemplo acima o valor correto seria `YOUR_APP_DISCRIMINATOR`,
@@ -83,13 +83,13 @@ Se você preferir contornar a verificação do certificado do servidor SQL Serve
 Se você enfrentar erros durante o primeiro início da aplicação após a atualização e o log indicar que ocorreu um timeout ao aplicar as migrações de banco de dados, você deverá 
 executar o utilitário de linha de comando para iniciar as migrações de maneira manual usando um parâmetro de timeout com valor maior que o padrão:
 
-1- Pare a aplicação.
-1- Navegue até a pasta aonde se encontram os binários da aplicação.
-1- Execute o comando abaixo:
+1. Pare a aplicação.
+1. Navegue até a pasta aonde se encontram os binários da aplicação.
+1. Execute o comando abaixo:
 ```
 dotnet Lacuna.Signer.Site.dll -- update-db AddFontSize --timeout 6000
 ```
-1- Reinicie a aplicação.
+1. Reinicie a aplicação.
 
 ## Azure App Services
 

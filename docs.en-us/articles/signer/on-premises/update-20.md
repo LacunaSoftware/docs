@@ -27,7 +27,7 @@ Open the application log and look for the following entry:
 
 ```
 Application starting: Lacuna Signer (version: *, spaVersion: *, appDiscriminator: 'YOUR_APP_DISCRIMINATOR')
-                                                                                       ^^^^^^^^^^^^^^^^^^^^^^
+                                                                                   ^^^^^^^^^^^^^^^^^^^^^^
 ```
 
 Copy the value of the *appDiscriminator* field **without the surrounding single quotes** (on the example above the correct value would be `YOUR_APP_DISCRIMINATOR`,
@@ -55,7 +55,7 @@ Some Serilog parameters have changed because the library was updated. Check the 
 * Windows:
   * If you have `RollingFile` specified, replace it with `File` and the property `pathFormat` with `path`. In order to maintain *rolling* behavior add `"rollingInterval": "Day"`.
 * Azure:
-  * If you are hosting Signer on Azure (and have the `ASPNETCORE_ENVIRONMENT` setting set to `Azure`), default Serilog settings so now it's only required to define the `Serilog__WriteTo__0__Args__connectionString` property in order to direct logs to a table of a Storage Account.
+  * If you are hosting Signer on Azure (and have the `ASPNETCORE_ENVIRONMENT` setting set to `Azure`), default Serilog settings have been added so now it's only required to define the `Serilog__WriteTo__0__Args__connectionString` property in order to direct logs to a table of a Storage Account.
   * If you have `Serilog__WriteTo__0__Name` set to `AzureTableStorageWithProperties`, remove it or replace it with `AzureTableStorage`.
 
 ## 4. Database Changes
@@ -82,13 +82,13 @@ If you prefer to bypass the SQL Server certificate validation, append `;TrustSer
 If you experience an application error after updating and the log indicates that there was a timeout applying database migrations, you should run the command line utility 
 to manually trigger migrations with an increased timeout parameter:
 
-1- Stop the application.
-1- Navigate to the application binaries folder.
-1- Execute the command below:
+1. Stop the application.
+1. Navigate to the application binaries folder.
+1. Execute the command below:
 ```
 dotnet Lacuna.Signer.Site.dll -- update-db AddFontSize --timeout 6000
 ```
-1- Restart the application.
+1. Restart the application.
 
 ## Azure App Services
 
