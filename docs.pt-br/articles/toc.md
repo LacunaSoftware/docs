@@ -267,6 +267,7 @@
 ### [Zoom](signer/on-premises/zoom.md)
 ### [Integração para administração](signer/on-premises/administration.md)
 ### [Monitoramento de consumo](signer/on-premises/consumption-monitoring.md)
+### [Atualizando para 2.x](signer/on-premises/update-20.md)
 ## [Guia do usuário](signer/user-guide/index.md)
 ### [Geração de documentos](signer/user-guide/gen-docs.md)
 ### [Administração de sistema](signer/user-guide/sys-admin/index.md)

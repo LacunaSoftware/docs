@@ -37,11 +37,7 @@ Updates database model: no
   * [SIG-1461] Unfilled electronic signature steps are not preveting the request to be sent
   * [SIG-1463] Attachments with special characters in the name are being sent with the name attachment
 
-* **Important changes**:
-  * Serilog usage:
-	* If you used `RollingFile` replace it with `File` and the property `pathFormat` with `path`. In order to maintain *rolling* behavior add `"rollingInterval": "Day"`.
-	* If you used `AzureTableStorageWithProperties` replace it with `AzureTableStorage`.
-	* Standard settings were added for the Azure *environment* so now it's only required to configure the `connectionString` property in order to direct logs to a table of a Storage Acount.
+* **Important changes**: before updating follow the steps shown in the [Updating to version 2.x](on-premises/update-20.md) page.
 
 Updates database model: yes
 

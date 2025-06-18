@@ -37,11 +37,7 @@ Atualiza modelo do banco de dados: não
   * [SIG-1461] Passos não preenchidos de Assinatura eletrônica não estão bloqueando o envio da requisição
   * [SIG-1463] Documentos com caracteres especiais estão sendo enviado com nome attachment no e-mail
 
-* **Mudanças importantes**:
-  * Registro de logs com Serilog:
-	* Se você utilizava `RollingFile` substitua por `File` e a propriedade `pathFormat` por `path`. Para manter o comportamento de *rolling* adicione `"rollingInterval": "Day"`.
-	* Se você utilizava `AzureTableStorageWithProperties` substitua por `AzureTableStorage`.
-	* Configurações padrões foram adicionadas para o *environment* Azure, de maneira que agora é necessário apenas configurar a propriedade `connectionString` para direcionar os logs a uma table de Storage Account.
+* **Mudanças importantes**: antes de atualizar execute os passos descritos na página de [Atualização para versão 2.x](on-premises/update-20.md).
 
 Atualiza modelo do banco de dados: sim
 
