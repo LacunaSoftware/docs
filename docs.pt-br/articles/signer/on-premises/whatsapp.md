@@ -65,7 +65,7 @@ conteúdo dos modelos desde que não altere a quantidade nem a ordem dos parâme
 
 * Para gerá-lo, é preciso criar um usuário do tipo `System User`, conforme descrito na página de [Primeiros passos da Business Management API](https://developers.facebook.com/docs/whatsapp/business-management-api/get-started).
 
-* Durante a geração do token, marque os escopos `whatsapp_business_messaging` e `whatsapp_business_management` (caso já não estejam selecionados).
+* Durante a geração do token, marque o escopo `whatsapp_business_messaging` (caso já não esteja selecionado).
 
 * Por fim, garanta que o usuário criado, possui acesso à conta de Whatsapp desejada. Isso deve ser feito em [Configurações de Negócio](https://business.facebook.com/settings) na seção 
 `Contas do Whatsapp`. Selecione a conta desejada e verifique se o usuário consta na aba `Pessoas`.
