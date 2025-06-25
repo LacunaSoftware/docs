@@ -76,6 +76,7 @@ O subarco `1.3.6.1.4.1.55432.1` é reservado para identificadores de políticas 
 * 1.3.6.1.4.1.55432.1.58 - [AC LIVE](https://ac.livemedsaude.com/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.59 - [AC FIERGS](https://ac.fiergs.org.br/certs/ac.txt)
 * 1.3.6.1.4.1.55432.1.60 - [AC INFOACTION](https://ac.infoaction.com.br/certs/ac.txt)
+* 1.3.6.1.4.1.55432.1.61 - [AC UNIVESP](https://ac.univesp.br/certs/ac.txt)
 
 ## 2. Políticas de certificado A1
 

@@ -85,7 +85,7 @@ executar o utilitário de linha de comando para iniciar as migrações de maneir
 
 1. Pare a aplicação.
 1. Navegue até a pasta aonde se encontram os binários da aplicação.
-1. Execute o comando abaixo:
+1. Execute o comando:
 ```
 dotnet Lacuna.Signer.Site.dll -- update-db AddFontSize --timeout 6000
 ```

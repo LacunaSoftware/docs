@@ -84,7 +84,7 @@ to manually trigger migrations with an increased timeout parameter:
 
 1. Stop the application.
 1. Navigate to the application binaries folder.
-1. Execute the command below:
+1. Execute the command:
 ```
 dotnet Lacuna.Signer.Site.dll -- update-db AddFontSize --timeout 6000
 ```
