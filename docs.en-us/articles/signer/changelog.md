@@ -1,5 +1,15 @@
 ﻿# Signer changelog
 
+<a name="v2-1-1" />
+### 2.1.1 (2025-06-30)
+
+* Bug fixes
+  * [SIG-1470] Code authentication notification is not using the organization's custom e-mail settings
+  * [SIG-1472] Scrollbar is not visible in file upload
+  * [SIG-1476] Signature mark is not being added to simple signature documents
+
+Updates database model: no
+
 <a name="v2-1-0" />
 ### 2.1.0 (2025-06-12)
 

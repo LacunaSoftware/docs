@@ -1,5 +1,15 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v2-1-1" />
+### 2.1.1 (2025-06-30)
+
+* Correções de bugs
+  * [SIG-1470] Notificação de código de verificação não está utilizando personalização de e-mail da organização
+  * [SIG-1472] Barra de rolagem não está visível no upload de documentos
+  * [SIG-1476] Marca de assinatura não aparece no tipo de assinatura simples
+
+Atualiza modelo do banco de dados: não
+
 <a name="v2-1-0" />
 ### 2.1.0 (2025-06-12)
 
