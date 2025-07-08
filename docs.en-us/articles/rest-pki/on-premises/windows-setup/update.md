@@ -4,10 +4,11 @@ For atualizate your instance from [Rest PKI](../../index.md), follow the instruc
 
 > [!TIP]
 > Before to start, verify the [configuration of atualizations from the database](../database-update.md) from the system.
+> Also [check the minimum .NET version required on Windows](netframework-version.md).
 
 1. Create a backup of the database and of the site folder
 1. Delete all files on the site folder **EXCEPT THE FILES** `AppSettings.config` and `Connections.config`
-1. Extract the contests of the new Rest PKI package ([restpki-1.33.2.zip](https://cdn.lacunasoftware.com/restpki/restpki-1.33.2.zip)) to the site folder
+1. Extract the contests of the new Rest PKI package ([restpki-1.33.3.zip](https://cdn.lacunasoftware.com/restpki/restpki-1.33.3-rtm.zip)) to the site folder
 1. Access the website
 
 > [!NOTE]

@@ -4,10 +4,11 @@ Para atualizar a sua instância do [Rest PKI](../../index.md), siga as instruç�
 
 > [!TIP]
 > Antes de começar, verifique a [configuração de atualizações do banco de dados](../database-update.md) do sistema.
+> Também [verifique a versão mínima do .NET exigida no Windows](netframework-version.md).
 
 1. Crie um backup do banco de dados e da pasta do site
 1. Apague todos os arquivos da pasta do site **EXCETO OS ARQUIVOS** `AppSettings.config` e `Connections.config`
-1. Extraia o conteúdo do novo pacote do Rest PKI ([restpki-1.33.2.zip](https://cdn.lacunasoftware.com/restpki/restpki-1.33.2.zip)) para a pasta do site
+1. Extraia o conteúdo do novo pacote do Rest PKI ([restpki-1.33.3.zip](https://cdn.lacunasoftware.com/restpki/restpki-1.33.3-rtm.zip)) para a pasta do site
 1. Acesse o site
 
 > [!NOTE]
