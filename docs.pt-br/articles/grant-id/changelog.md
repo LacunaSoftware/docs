@@ -1,5 +1,18 @@
 ﻿# Histórico de versões do GrantID
 
+<a name="v5-1-0" />
+### 5.1.0 (2025-07-11)
+
+* Melhorias
+  * [LI-438] Permitir configurar o tempo de expiração do Identity Token
+  * [LI-439] Suporte a novas configurações de envio de e-mail
+  * [LI-441] Permitir desabilitar Swagger
+
+* Correções de bugs
+  * [LI-442] Corrigir vulnerabilidades de OpenRedirect
+
+Atualiza modelo do banco de dados: não
+
 <a name="v5-0-1" />
 ### 5.0.1 (2025-04-24)
 

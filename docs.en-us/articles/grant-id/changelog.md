@@ -1,5 +1,18 @@
 ﻿# GrantID changelog
 
+<a name="v5-1-0" />
+### 5.1.0 (2025-07-11)
+
+* Improvements
+  * [LI-438] Allow configuration of Identity Token expiration
+  * [LI-439] Add support to new e-mail sending settings
+  * [LI-441] Setting to disable Swagger
+
+* Bug fixes
+  * [LI-442] Fix OpenRedirect vulnerabilities
+
+Updates database model: no
+
 <a name="v5-0-1" />
 ### 5.0.1 (2025-04-24)
 
