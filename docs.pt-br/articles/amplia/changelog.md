@@ -2,6 +2,23 @@
 
 <a name="vnext" />
 
+<a name="4-13-0" />
+## 4.13.0 (2025-07-23)
+
+Idêntica a: 4.13.0 RC 4 (2025-05-30)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-363 Permitir envio de código de verificação por WhatsApp
+
+AMP-364 Tornar validação de telefones mais flexível
+
+AMP-367 Suporte \(experimental\) a integração com Prometheus
+
+
+
 <a name="4-12-0" />
 ## 4.12.0 (2025-07-23)
 

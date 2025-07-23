@@ -2,6 +2,23 @@
 
 <a name="vnext" />
 
+<a name="4-13-0" />
+## 4.13.0 (2025-07-23)
+
+Identical to: 4.13.0 RC 4 (2025-05-30)
+
+Updates database model: no
+
+### Improvements
+
+AMP-363 Allow sending issue procedure verification codes through WhatsApp
+
+AMP-364 More flexible phone number validation
+
+AMP-367 Add \(experimental\) support to Prometheus integration
+
+
+
 <a name="4-12-0" />
 ## 4.12.0 (2025-07-23)
 
