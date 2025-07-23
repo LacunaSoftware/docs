@@ -3,7 +3,9 @@
 <a name="vnext" />
 
 <a name="4-12-0" />
-## 4.12.0 (next version)
+## 4.12.0 (2025-07-23)
+
+Identical to: 4.12.0 RC 2 (2025-02-03)
 
 Updates database model: no
 
