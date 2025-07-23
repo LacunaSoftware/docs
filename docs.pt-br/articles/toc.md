@@ -371,6 +371,7 @@
 #### [update-db](amplia-reg/on-premises/tool/update-db.md)
 #### [test-email](amplia-reg/on-premises/tool/test-email.md)
 #### [test-cert-renewal-alert](amplia-reg/on-premises/tool/test-certificate-renewal-alert.md)
+#### [migrate-data](amplia-reg/on-premises/tool/migrate-data.md)
 ### [Preparando o banco de dados](amplia-reg/on-premises/prepare-database.md)
 ### [Operando sem db_owner](amplia-reg/on-premises/unprivileged-db-user.md)
 ### [Configuração de storage](amplia-reg/on-premises/configure-blob-storage.md)
@@ -384,6 +385,7 @@
 ### [Pós-instalação](amplia-reg/on-premises/post-install.md)
 ### [Verificando a versão instalada](amplia-reg/on-premises/check-version.md)
 ### [Atualizando para 3.0](amplia-reg/on-premises/update-30.md)
+### [Atualizando para 4.0](amplia-reg/on-premises/update-40.md)
 ## [Histórico de versões](amplia-reg/changelog.md)
 <!-- End of Amplia Reg -->
 

@@ -369,6 +369,7 @@
 #### [update-db](amplia-reg/on-premises/tool/update-db.md)
 #### [test-email](amplia-reg/on-premises/tool/test-email.md)
 #### [test-cert-renewal-alert](amplia-reg/on-premises/tool/test-certificate-renewal-alert.md)
+#### [migrate-data](amplia-reg/on-premises/tool/migrate-data.md)
 ### [Preparing the database](amplia-reg/on-premises/prepare-database.md)
 ### [Configure Blob Storage](amplia-reg/on-premises/configure-blob-storage.md)
 ### [Configure OIDC](amplia-reg/on-premises/configure-oidc.md)
@@ -382,6 +383,7 @@
 ### [Post-installation steps](amplia-reg/on-premises/post-install.md)
 ### [Checking the installed version](amplia-reg/on-premises/check-version.md)
 ### [Update to 3.0](amplia-reg/on-premises/update-30.md)
+### [Update to 4.0](amplia-reg/on-premises/update-40.md)
 ## [Changelog](amplia-reg/changelog.md)
 <!-- End of Amplia -->
 
