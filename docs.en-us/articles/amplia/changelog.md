@@ -2,6 +2,21 @@
 
 <a name="vnext" />
 
+<a name="4-14-0" />
+## 4.14.0 (next version)
+
+Updates database model: no
+
+### New features
+
+AMP-365 Pending signature after managed certificate is issued
+
+### Improvements
+
+AMP-366 Changes to SSL/TLS certificates to comply with CA/B Forum guidelines
+
+
+
 <a name="4-13-0" />
 ## 4.13.0 (2025-07-23)
 

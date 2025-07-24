@@ -2,6 +2,21 @@
 
 <a name="vnext" />
 
+<a name="4-14-0" />
+## 4.14.0 (próxima versão)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+AMP-365 Assinatura pendente após emissão de Managed Certificate
+
+### Melhorias
+
+AMP-366 Alterações ao certificado SSL/TLS para adequação às regras do CA/B Forum
+
+
+
 <a name="4-13-0" />
 ## 4.13.0 (2025-07-23)
 
