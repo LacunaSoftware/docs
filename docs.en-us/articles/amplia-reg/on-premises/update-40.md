@@ -10,4 +10,18 @@ Update AmpliaRegNg to version `4.0.7`. Previous versions should **not** be used.
 
 ## 3. Migrate data
 
-Follow steps from [migrate-data](tool/migrate-data.md) with options `--to 2` (`-- migrate-data --to 2`)
+Follow steps from [migrate-data](tool/migrate-data.md) with version `4.0.7` and options `--to 2`.
+
+On Linux:
+
+```sh
+dotnet Lacuna.AmpliaRegNg.Site.dll -- migrate-data --to 2
+```
+
+On Docker:
+
+```sh
+docker run -i lacunasoftware/ampliareg:4.0.7 -- migrate-data --to 2
+```
+
+Make sure you follow the steps described on the aforementioned article to ensure no errors occurred during the data migration.

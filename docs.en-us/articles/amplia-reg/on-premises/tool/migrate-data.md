@@ -13,8 +13,11 @@ dotnet Lacuna.AmpliaRegNg.Site.dll [settings] -- migrate-data --to <to-version>
 Or, on Docker:
 
 ```sh
-docker run -i lacunasoftware/ampliareg:4.0 [settings] -- migrate-data --to <to-version>
+docker run -i lacunasoftware/ampliareg:x.y.z [settings] -- migrate-data --to <to-version>
 ```
+
+> [!IMPORTANT]
+> Replace `x.y.z` above with the version indicated on the update procedure
 
 [!include[About settings](includes/about-settings.md)]
 
