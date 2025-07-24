@@ -24,7 +24,16 @@ Options:
 
 ## Description
 
-The `migrate-data` command updates data to conform to a target schema version.
+The `migrate-data` command schedules a background job to update data to conform to the given target schema version.
+
+After running the command, follow the steps below to monitor the update job:
+
+1. Sign-in to your Amplia Reg instance
+1. Click on your name on the top right corner, then on **Hangfire**
+1. Click on **Jobs** on the top menu
+1. Look for the job named `IDataMigrationJob.RunAsync` on the **Processing** job list
+1. Wait until the job transitions to the **Succeeded** job list
+1. Check the application logs to see if any error occurred
 
 ## See also
 
