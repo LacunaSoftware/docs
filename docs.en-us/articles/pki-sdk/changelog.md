@@ -1,5 +1,13 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-19-0" />
+### 2.19.0 (2025-07-25)
+
+- \[PKI-141\] Add public PAdES DSS/VRI validation items policy configuration
+- \[PKI-140\] Improve ByteRange validation with offset start
+- \[PKI-142\] Fix PDF visual positioning for pages with cropbox and rotation
+
+
 <a name="v2-18-1" />
 ### 2.18.1 (2025-05-09)
 
