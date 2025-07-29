@@ -20,7 +20,37 @@ Please refer to the *Install the ASP.NET Core Runtime 8.0* section of the instal
 > [!NOTE]
 > On Docker this step is not necessary since the new 3.x image already ships with the ASP.NET Core Runtime 8.0 embedded
 
-## 2. Update Rest PKI Core
+## 2. Set an explicit AppDiscriminator
+
+Check if your configuration file contains a setting named `AppDiscriminator` on the `General` section (or `General__AppDiscriminator` if using environment variables).
+If there is such a setting and it is filled, skip to the next step. If there is no such setting (or if it has an empty value), proceed with the following instructions.
+
+Open the application log and look for the following entry:
+
+```
+Application starting: Lacuna Rest PKI Core (version: *, spaVersion: *, appDiscriminator: 'YOUR_APP_DISCRIMINATOR')
+                                                                                          ^^^^^^^^^^^^^^^^^^^^^^
+```
+
+Copy the value of the *appDiscriminator* field **without the surrounding single quotes** (on the example above the correct value would be `YOUR_APP_DISCRIMINATOR`,
+not `'YOUR_APP_DISCRIMINATOR'`) and add the `AppDiscriminator` setting on the `General` section of your configuration file with that value.
+
+Example (*.ini* or *.conf* file):
+
+```ini
+[General]
+AppDiscriminator=YOUR_APP_DISCRIMINATOR
+```
+
+Example (environment variables):
+
+```sh
+General__AppDiscriminator=YOUR_APP_DISCRIMINATOR
+```
+
+Next, restart the application and check the logs again. A new "application starting" log should be registered, with no change to the *appDiscriminator* field.
+
+## 3. Update Rest PKI Core
 
 After following the steps above, proceed with the update instructions.
 

@@ -1,8 +1,52 @@
 ﻿# Rest PKI Core changelog
 
+<!--
 <a name="vnext" />
+-->
+
+<a name="v3-1-1" />
+## 3.1.1 (2025-07-24)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-340 Add FaceTec browser SDK v9.7.72 resources
+
+
+
+<a name="v3-1-0" />
+## 3.1.0 (2025-07-24)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-297 Biometric sessions
+
+
+
+<a name="v3-0-1" />
+## 3.0.1 (2025-06-25)
+
+Updates database model: no
+
+### New features
+
+RPNG-316 Command/Job to check integrity of documents
+
+### Improvements
+
+RPNG-284 Add FaceTec browser SDK v9.7.63 e v9.7.66 resources
+
+### Bug fixes
+
+RPNG-315 `BlobNotFoundException` error on certain blobs on `signedfiles` folder
+
+
+
 <a name="v3-0-0" />
-## 3.0.0 (next version)
+## 3.0.0 (2025-06-16)
 
 > [!WARNING]
 > See [Update Rest PKI Core from 2.x to 3.0](on-premises/update-30.md)
@@ -14,6 +58,10 @@ Updates database model: **yes**
 RPNG-275 Update ASP.NET Core to version 8.0
 
 RPNG-292 Fix known vulnerabilities (for more information see [Vulnerability check 25.04](on-premises/vulnerabilities.md#c2504))
+
+RPNG-299 Improve timestamp display on validation page
+
+RPNG-301 Create "distroless" image with reduced attack surface
 
 ### Bug fixes
 

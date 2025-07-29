@@ -1,8 +1,52 @@
 ﻿# Histórico de versões - Rest PKI Core
 
+<!--
 <a name="vnext" />
+-->
+
+<a name="v3-1-1" />
+## 3.1.1 (2025-07-24)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-340 Adicionar resources do FaceTec browser SDK v9.7.72
+
+
+
+<a name="v3-1-0" />
+## 3.1.0 (2025-07-24)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-297 Sessões de biometria
+
+
+
+<a name="v3-0-1" />
+## 3.0.1 (2025-06-25)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-316 Comando/Job para realizar teste de integridade de documentos
+
+### Melhorias
+
+RPNG-284 Adicionar resources do FaceTec browser SDK v9.7.63 e v9.7.66
+
+### Correções de bugs
+
+RPNG-315 Erro `BlobNotFoundException` em certos blobs da pasta `signedfiles`
+
+
+
 <a name="v3-0-0" />
-## 3.0.0 (próxima versão)
+## 3.0.0 (2025-06-16)
 
 > [!WARNING]
 > Veja [Atualizando o Rest PKI Core da versão 2.x para 3.0](on-premises/update-30.md)
@@ -11,13 +55,17 @@ Atualiza modelo do banco de dados: **sim**
 
 ### Melhorias
 
-RPNG-275 Atualizar ASP.NET Core para versão 8.0
+RPNG-275 Atualizado ASP.NET Core para versão 8.0
 
 RPNG-292 Resolver vulnerabilidades conhecidas (para mais informações veja a [Verificação de vulnerabilidade 25.04](https://docs.lacunasoftware.com/en-us/articles/rest-pki/core/on-premises/vulnerabilities#c2504))
 
+RPNG-299 Melhorar exibição do carimbo de tempo na tela de validação
+
+RPNG-301 Criar imagem "distroless" com superfície de ataque reduzida
+
 ### Correções de bugs
 
-RPNG-293 Marcas do tipo `QRCode` causam erro 500 na API de adicionar marcas se executando em Linux/Docker
+RPNG-293 Marcas do tipo QRCode causam erro 500 na API de adicionar marcas se executando em Linux
 
 
 
