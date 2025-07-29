@@ -13,6 +13,10 @@ Atualiza modelo do banco de dados: não
 
 RPNG-340 Adicionar resources do FaceTec browser SDK v9.7.72
 
+### Correções de bugs
+
+RPNG-341 Imagem para ARM64 não está escutando na porta 80 após atualização para .NET 8
+
 
 
 <a name="v3-1-0" />
