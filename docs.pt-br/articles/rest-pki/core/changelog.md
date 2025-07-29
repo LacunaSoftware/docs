@@ -63,6 +63,8 @@ RPNG-275 Atualizado ASP.NET Core para versão 8.0
 
 RPNG-292 Resolver vulnerabilidades conhecidas (para mais informações veja a [Verificação de vulnerabilidade 25.04](https://docs.lacunasoftware.com/en-us/articles/rest-pki/core/on-premises/vulnerabilities#c2504))
 
+RPNG-295 Sinalizar para mecanismos de busca que páginas de validação de documentos não devem ser indexadas
+
 RPNG-299 Melhorar exibição do carimbo de tempo na tela de validação
 
 RPNG-301 Criar imagem "distroless" com superfície de ataque reduzida
@@ -70,6 +72,8 @@ RPNG-301 Criar imagem "distroless" com superfície de ataque reduzida
 ### Correções de bugs
 
 RPNG-293 Marcas do tipo QRCode causam erro 500 na API de adicionar marcas se executando em Linux
+
+RPNG-296 Detalhes da validação do certificado na página de validação de documentos ficam em inglês mesmo selecionando português
 
 
 
@@ -255,6 +259,8 @@ RPNG-235 Sistema não está tentando obter carimbo de tempo novamente em caso de
 RPNG-237 Job para completar assinatura CMS está dando erro
 
 RPNG-245 Parâmetros inválidos de representação visual estão gerando resposta 500 ao invés de 422
+
+RPNG-247 URLs inválidas no `ResourceContentOrReference.Url` causam erro 500
 
 RPNG-250 Exceções transformadas em ApiException não são logadas corretamente
 
@@ -467,6 +473,8 @@ RPNG-183 Adicionar suporte à API de validação de certificados legada
 ### Correções de bugs
 
 RPNG-180 Assinatura com certificado em nuvem parou de funcionar após atualização para SPA 2.6 \(v1.13.0\)
+
+RPNG-190 Erro "cannot access a closed file" usando blob storage tipo AwsS3
 
 
 

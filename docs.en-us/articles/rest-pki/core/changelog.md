@@ -63,6 +63,8 @@ RPNG-275 Update ASP.NET Core to version 8.0
 
 RPNG-292 Fix known vulnerabilities (for more information see [Vulnerability check 25.04](on-premises/vulnerabilities.md#c2504))
 
+RPNG-295 Signal search engines that document validation pages should not be indexed
+
 RPNG-299 Improve timestamp display on validation page
 
 RPNG-301 Create "distroless" image with reduced attack surface
@@ -70,6 +72,8 @@ RPNG-301 Create "distroless" image with reduced attack surface
 ### Bug fixes
 
 RPNG-293 Marks of type `QRCode` cause error 500 on PDF marking API when running on Linux/Docker
+
+RPNG-296 Certificate validation details on document validation page appear in English with Portuguese selected
 
 
 
@@ -255,6 +259,8 @@ RPNG-235 Application does not try again to fetch a timestamp in case of error on
 RPNG-237 Error on complete signature job for CMS signatures
 
 RPNG-245 Bad visual representation parameters cause return code 500 instead of 422
+
+RPNG-247 Invalid URLs on `ResourceContentOrReference.Url` cause 500 error
 
 RPNG-250 Exceptions transformed into ApiException are not logged properly
 
@@ -468,6 +474,8 @@ RPNG-183 Add suport for legacy certificate validation API
 ### Bug fixes
 
 RPNG-180 Cloud certificate integration was broken after updating to SPA 2.6 (v1.13.0)
+
+RPNG-190 Error "cannot access a closed file" when using AwsS3 blob storage
 
 
 
