@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-20-1" />
+### 2.20.1 (2025-07-31)
+
+- \[PKI-139\] Revert ICP-Brasil default signature policies for generation versions. Using latest signature policy versions is an opt-in feature.
+
+
 <a name="v2-20-0" />
 ### 2.20.0 (2025-07-31)
 
