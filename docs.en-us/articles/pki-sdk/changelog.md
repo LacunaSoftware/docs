@@ -73,7 +73,7 @@
 - \[PKI-118\] Improve pt-BR messages on Validation Results
 - \[PKI-114\] Improve legacy XAdES ArchiveTimeStamp namespace support
 - \[PKI-115\] Improve DateTimeOffsets on validation messages with custom time zone PkiConfig.TimeZoneInfo
-- \[PKI-109\] Fix PAdES signatures custom SignatureFieldName being set to default on some scenarios.
+- \[PKI-109\] Fix PAdES signatures custom SignatureFieldName being set to default on some scenarios
 
 
 <a name="v2-15-0" />
