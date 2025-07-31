@@ -1,25 +1,35 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-20-0" />
+### 2.20.0 (2025-07-31)
+
+- \[PKI-139\] Add ICP-Brasil new signature policies for validation and generation compliant. Fix PDF signature with unintended incremental revision changes detection.
+- \[PKI-144\] Improve listing for PDFs with corrupted signature dictionaries.
+- \[PKI-139\] Improve PDF signature.
+- \[PKI-143\] Fix PDF visual positioning for pages with cropbox and off-center rotation.
+- \[PKI-143\] Fix new-page PDF mark for pages with parent cropbox.
+
+
 <a name="v2-19-0" />
 ### 2.19.0 (2025-07-25)
 
-- \[PKI-141\] Add public PAdES DSS/VRI validation items policy configuration
-- \[PKI-140\] Improve ByteRange validation with offset start
-- \[PKI-142\] Fix PDF visual positioning for pages with cropbox and rotation
+- \[PKI-141\] Add public PAdES DSS/VRI validation items policy configuration.
+- \[PKI-140\] Improve ByteRange validation with offset start.
+- \[PKI-142\] Fix PDF visual positioning for pages with cropbox and rotation.
 
 
 <a name="v2-18-1" />
 ### 2.18.1 (2025-05-09)
 
-- \[PKI-133\] Replace the usage of legacy CAPI RSA by Cng on public-key based `GetSignatureCsp` method
-- \[PKI-134\] i18n validation success strings
-- \[PKI-135\] Enforce LTV on PAdES PkiBrazil AD-RB and AD-RT policies when DSS entry is already present on PDF
+- \[PKI-133\] Replace the usage of legacy CAPI RSA by Cng on public-key based `GetSignatureCsp` method.
+- \[PKI-134\] i18n validation success strings.
+- \[PKI-135\] Enforce LTV on PAdES PkiBrazil AD-RB and AD-RT policies when DSS entry is already present on PDF.
 
 
 <a name="v2-18-0" />
 ### 2.18.0 (2025-03-10)
 
-- \[PKI-130\] Add async methods for `PKCertificateAuthentication`
+- \[PKI-130\] Add async methods for `PKCertificateAuthentication`.
 - \[PKI-132\] Add public ICP-Brasil PAdES AD-RA and AD-RC policies for generation.
 - \[PKI-129\] Improve PDF signature listing for duplicated or inconsistent `signatureFieldName`. Update Lacuna.T8 package.
 
