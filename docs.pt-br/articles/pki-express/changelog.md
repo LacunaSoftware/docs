@@ -1,5 +1,16 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-35-1" />
+### 1.35.1 (2025-08-01)
+
+- Atualização Lacuna.Pki SDK [2.20.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-20-1)
+
+<a name="v1-35-0" />
+### 1.35.0 (2025-06-10)
+
+- [PKIE-85] Adiciona comando de estender carimbos em assinatura de arquivamento XML (e.g.: ICP-Brasil AD-RA)
+- [PKIE-85] Melhoria no retorno de informações dos carimbos de tempo no model de assinaturas XML
+
 <a name="v1-34-2" />
 ### 1.34.2 (2025-03-22)
 

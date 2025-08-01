@@ -1,5 +1,16 @@
 # PKI Express changelog
 
+<a name="v1-35-1" />
+### 1.35.1 (2025-08-01)
+
+- Update Lacuna.Pki SDK [2.20.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-20-1)
+
+<a name="v1-35-0" />
+### 1.35.0 (2025-06-10)
+
+- [PKIE-85] Add extend XML archiving timestamp feature
+- [PKIE-85] Improve open XML command with archive timestamp model return
+
 <a name="v1-34-2" />
 ### 1.34.2 (2025-03-22)
 
