@@ -50,3 +50,39 @@ that you install the latest version.
 
 This package is open source, hosted on [BitBucket](https://bitbucket.org/Lacunas/pkinlogconnector). Feel free to fork
 it if you need to make any customizations.
+
+Within the [main class](https://bitbucket.org/Lacunas/pkinlogconnector/src/master/PkiNLogConnector/NLogLogger.cs), 
+it is possible to customize operations for different log levels, as well as perform specific operations when the log is cleared.
+
+```csharp
+public void Log(LogLevels level, string message, string source) {
+
+		var logger = loggers.GetOrAdd(source, s => LogManager.GetLogger(s));
+
+		LogLevel logLevel;
+
+		switch (level) {
+			case LogLevels.Trace:
+				logLevel = LogLevel.Trace;
+				break;
+			case LogLevels.Info:
+				logLevel = LogLevel.Info;
+				break;
+			case LogLevels.Warning:
+				logLevel = LogLevel.Warn;
+				break;
+			case LogLevels.Error:
+				logLevel = LogLevel.Error;
+				break;
+			default:
+				logLevel = LogLevel.Info;
+				break;
+		}
+		
+		logger.Log(logLevel, message);
+	}		
+
+		public void Flush() {
+			NLog.LogManager.Flush();
+		}
+```
