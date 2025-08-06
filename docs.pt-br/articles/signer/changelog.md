@@ -1,5 +1,35 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v2-2-0" />
+### 2.2.0 (2025-08-06)
+
+* Melhorias
+  * [SIG-580] Permitir habilitar/desabilitar ou trocar tipo da assinatura eletrônica na edição de fluxo
+  * [SIG-1464] Atualização da FaceTec
+  * [SIG-1466] Página para revisão e assinatura individual de um lote de documentos
+  * [SIG-1467] Desativação da opção "Recusar-se a assinar"
+  * [SIG-1475] Permitir desabilitar LTV
+  * [SIG-1486] Suporte a validação de documentos com novas políticas da ICP Brasil
+
+* Correções de bugs
+  * [SIG-705] Corrigir permissionamento da API de Eventos
+  * [SIG-825] Erro de má requisição ao tentar alterar o fluxo
+  * [SIG-1352] Erro ao editar email de participante de regra de assinatura (SignRule)
+  * [SIG-1471] Posicionamento de assinatura está obrigatório mesmo quando representação visual está desabilitada 
+  * [SIG-1480] Assinaturas "somem" após posicioná-las em mais de um documento com número de páginas diferentes
+  * [SIG-1481] Manifesto de Assinaturas desconfigurado ao assinar documento no formato Paisagem
+  * [SIG-1483] Evidências de assinatura eletrônica aparecem sobrepostas no manifesto
+  * [SIG-1484] Corrigir violação de CSP ao abrir Hangfire via clique no menu
+
+Atualiza modelo do banco de dados: não
+
+> [!CAUTION]
+> A partir desta versão, a licença do PKI SDK passa a ser validada na inicialização da aplicação e, caso não esteja válida, a inicialização
+> será interrompida.
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2025-08-01.
+
 <a name="v2-1-1" />
 ### 2.1.1 (2025-06-30)
 

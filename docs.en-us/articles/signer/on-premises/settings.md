@@ -201,6 +201,10 @@ initial page showing document details. If `true` reverts to the old behavior of 
 
 * **DisableSwagger** (v1.80.0): if `true`, disables Swagger.
 
+* **DisableLTV** (v2.2.0): if `true`, disables LTV for PAdES signatures.
+
+* **DisableRefuseSignature** (v2.2.0): if `true`, disables the option of refusing signatures in the signature page.
+
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)

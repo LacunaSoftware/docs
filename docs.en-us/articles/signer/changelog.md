@@ -1,5 +1,28 @@
 ﻿# Signer changelog
 
+<a name="v2-2-0" />
+### 2.2.0 (2025-08-06)
+
+* Improvements
+  * [SIG-580] Enable/disable or change the type of electronic signature when editing flow
+  * [SIG-1464] FaceTec update
+  * [SIG-1466] Page to review and sign individually multiple documents
+  * [SIG-1467] Setting to disable "Refuse to sign" option
+  * [SIG-1475] Setting to disable LTV
+  * [SIG-1486] Validation support for new ICP Brasil policies
+
+* Bug fixes
+  * [SIG-705] Fix permission rules for Events API
+  * [SIG-825] Bad request error when editing flow
+  * [SIG-1352] Error editing participant email in a sign rule
+  * [SIG-1471] Signature positioning is required even if it is disabled on organization settings
+  * [SIG-1480] Signatures disappear after positioning them in multiple documents with different pages
+  * [SIG-1481] Signature manifest is wrong in landscape documents
+  * [SIG-1483] Electronic signature evidences are overlayed in signature manifest
+  * [SIG-1484] Fix CSP violation when opening Hangfire with menu click
+
+Updates database model: no
+
 <a name="v2-1-1" />
 ### 2.1.1 (2025-06-30)
 
