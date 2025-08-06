@@ -23,6 +23,12 @@
 
 Updates database model: no
 
+> [!CAUTION]
+> Starting this version, the PKI SDK license is validated at application startup and, if it is not valid, the startup will be aborted.
+
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released until 2025-08-01.
+
 <a name="v2-1-1" />
 ### 2.1.1 (2025-06-30)
 
