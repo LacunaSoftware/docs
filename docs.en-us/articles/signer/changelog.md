@@ -1,5 +1,13 @@
 ﻿# Signer changelog
 
+<a name="v2-2-1" />
+### 2.2.1 (2025-08-07)
+
+* Bug fixes
+  * [SIG-1488] Error selecting template to create/generate documents
+
+Updates database model: no
+
 <a name="v2-2-0" />
 ### 2.2.0 (2025-08-06)
 

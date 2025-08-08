@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do Signer
 
+<a name="v2-2-1" />
+### 2.2.1 (2025-08-07)
+
+* Correções de bugs
+  * [SIG-1488] Erro ao selecionar o modelo para criar/gerar documentos
+
+Atualiza modelo do banco de dados: não
+
 <a name="v2-2-0" />
 ### 2.2.0 (2025-08-06)
 
