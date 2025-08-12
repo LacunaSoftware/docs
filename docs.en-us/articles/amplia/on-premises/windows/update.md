@@ -7,7 +7,7 @@ To update your instance of [Amplia](../../index.md), follow the instructions on 
 
 1. Stop the web site in IIS Manager.
 1. Create a backup of database and site folder.
-1. Extract the contents of the new package ([amplia-4.13.0.zip] (https://cdn.lacunasoftware.com/amplia/amplia-4.13.0.zip)) to the site folder, overwriting all files.
+1. Extract the contents of the new package ([amplia-4.14.0.zip] (https://cdn.lacunasoftware.com/amplia/amplia-4.14.0.zip)) to the site folder, overwriting all files.
 1. Make any necessary changes to the file `appsettings.iis.json` (see note above on how to know which changes will be required).
 1. Start the web site IIS Manager.
 

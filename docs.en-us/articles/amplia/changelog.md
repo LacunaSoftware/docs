@@ -1,9 +1,13 @@
 ﻿# Amplia changelog
 
+<!--
 <a name="vnext" />
+-->
 
 <a name="4-14-0" />
-## 4.14.0 (next version)
+## 4.14.0 (2025-08-12)
+
+Identical to: 4.14.0 RC 2 (2025-08-12)
 
 Updates database model: no
 
@@ -14,6 +18,12 @@ AMP-365 Pending signature after managed certificate is issued
 ### Improvements
 
 AMP-366 Changes to SSL/TLS certificates to comply with CA/B Forum guidelines
+
+AMP-369 Phone number validation configuration
+
+### Bug fixes
+
+AMP-368 Phone numbers starting with `+1 (305)` are rejected as not being mobile phone numbers
 
 
 

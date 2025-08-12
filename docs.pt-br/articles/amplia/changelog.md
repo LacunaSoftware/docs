@@ -1,9 +1,13 @@
 ﻿# Histórico de versões do Amplia
 
+<!--
 <a name="vnext" />
+-->
 
 <a name="4-14-0" />
-## 4.14.0 (próxima versão)
+## 4.14.0 (2025-08-12)
+
+Idêntica a: 4.14.0 RC 2 (2025-08-12)
 
 Atualiza modelo do banco de dados: não
 
@@ -14,6 +18,12 @@ AMP-365 Assinatura pendente após emissão de Managed Certificate
 ### Melhorias
 
 AMP-366 Alterações ao certificado SSL/TLS para adequação às regras do CA/B Forum
+
+AMP-369 Configuração da validação de telefones
+
+### Correções de bugs
+
+AMP-368 Telefones com prefixo `+1 (305)` são recusados como não sendo de celular
 
 
 
