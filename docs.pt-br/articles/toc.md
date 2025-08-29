@@ -414,6 +414,7 @@
 ### [Configuração de envio de email](psc/on-premises/configure-email.md)
 ### [Configuração de redirecionamento para HTTPS](psc/on-premises/configure-https-redirect.md)
 ### [Verificando a versão instalada](psc/on-premises/check-version.md)
+### [Atualizando para 2.0](psc/on-premises/update-20.md)
 ## [Histórico de versões](psc/changelog.md)
 ## [Histórico de versões do app](psc/app-changelog.md)
 <!-- End of PSC -->

@@ -412,6 +412,7 @@
 ### [Configure HTTPS redirection](psc/on-premises/configure-https-redirect.md)
 ### [Run without db_owner](psc/on-premises/unprivileged-db-user.md)
 ### [Checking the installed version](psc/on-premises/check-version.md)
+### [Update to 2.0](psc/on-premises/update-20.md)
 ## [Changelog](psc/changelog.md)
 ## [Mobile App changelog](psc/app-changelog.md)
 <!-- End of PSC -->
