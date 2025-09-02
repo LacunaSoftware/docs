@@ -157,3 +157,19 @@ Your settings will remain unchanged because the new installation package won't c
 Check the configuration files for all components by going to the `Config` folder. You may check the files with the `-Sample` suffix for newly added or removed settings.
 
 Execute each component installation script as shown in the Publishing components section.
+
+
+## Troubleshooting
+
+If you encounter a registry key denied access error like shown below:
+
+```
+System.UnauthorizedAccessException: Access to the registry key 'HKEY_LOCAL_MACHINE\SOFTWARE\GrantID\Keys' is denied.
+``` 
+
+Check if the IIS App Pool identities for all modules have received the `Full control` permissions on the key registry:
+
+1. Open the Registry Editor.
+1. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\GrantID\Keys` folder and click the `Permissions...` option.
+1. Check that all IIS App Pool identities (`IIS AppPool\AuthServer_App`, `IIS AppPool\IdentityService_App` and `IIS AppPool\Console_App`) have Full Control permission. If anyone is missing add it.
+1. Restart the corresponding IIS websites if any identity was missing.
