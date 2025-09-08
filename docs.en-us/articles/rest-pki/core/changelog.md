@@ -4,6 +4,33 @@
 <a name="vnext" />
 -->
 
+<a name="v3-2-0" />
+## 3.2.0 (2025-08-22)
+
+Atualiza modelo do banco de dados: **sim**
+
+### New features
+
+RPNG-319 QR Code for biometric sessions
+
+RPNG-329 Face occlusion detection on FortFace liveness sessions
+
+### Improvements
+
+RPNG-325 Apply theming to biometric sessions
+
+RPNG-331 Create implicit biometric session for FaceTec API calls
+
+RPNG-332 Crop FortFace liveness result image
+
+RPNG-354 Add FaceTec browser SDK v9.7.75 resources
+
+### Bug fixes
+
+RPNG-355 `BadRequest` error when using AWS S3 in some scenarios
+
+
+
 <a name="v3-1-1" />
 ## 3.1.1 (2025-07-24)
 
