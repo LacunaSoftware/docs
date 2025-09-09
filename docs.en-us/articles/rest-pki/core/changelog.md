@@ -7,7 +7,7 @@
 <a name="v3-2-0" />
 ## 3.2.0 (2025-08-22)
 
-Atualiza modelo do banco de dados: **sim**
+Updates database model: **sim**
 
 ### New features
 
