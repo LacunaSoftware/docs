@@ -62,6 +62,10 @@ Atualiza modelo do banco de dados: não
 
 Versão pré-release equivalente: 4.10.0 RC 9 (2025-09-10)
 
+### Novas funcionalidades
+
+ARNG-587 Adicionar suporte ao LongmaiCryptoIDE
+
 ### Melhorias
 
 ARNG-547 Definição das regras de similaridade aplicadas ao Datavalid
