@@ -54,6 +54,7 @@ ARNG-594 Erro na lógica da validação de documentos
 ARNG-603 Videoconferências com motivo de conferencia não estão indo pra fila de conferencia
 
 
+
 <a name="v4-10-0" />
 ## 4.10.0 (2025-09-19)
 
@@ -82,6 +83,8 @@ ARNG-585 Erro ao pegar biometrias do PSBio
 ARNG-588 Erro na comparação de nomes entre RFB e SERPRO
 
 ARNG-589 Consulta CNPJ não traz quadro societario
+
+
 
 <a name="v4-9-0" />
 ## 4.9.0 (2025-09-18)
@@ -134,7 +137,7 @@ Atualiza modelo do banco de dados: **sim**
 
 ### Novas funcionalidades
 
-ARNG-462 Suporte pro ambiente Jitsi da Lacuna
+ARNG-462 Suporte ao ambiente Jitsi selfhosted
 
 ARNG-506 Documentoscopia - Integração com a Acertpix e match com documento coletado
 
@@ -237,9 +240,9 @@ Versão pré-release equivalente: 4.2.0 RC 2 (2025-07-30)
 
 ### Novas funcionalidades
 
-ARNG-507 Importação de dados do sistema gestão AR
+ARNG-507 Permitir preenchimento de dados via clientlib antes do pedido cair no agente
 
-ARNG-520 Todas as emissões presenciais devem passar pelo ACI
+ARNG-520 Adicionar configuração para que todas as emissões presenciais devem passar pelo ACI
 
 ### Melhorias
 
@@ -374,11 +377,11 @@ Versão pré-release equivalente: 3.3.0 RC 10 (2025-05-06)
 
 ### Novas funcionalidades
 
-ARNG-459 Liveness
+ARNG-459 Adicionar prova de vida à emissão do pedido
 
 ARNG-484 Adicionar tema orange-federal-blue (ofb)
 
-ARNG-488 Integração RFB SAF
+ARNG-488 Integração RFB SAF (Sistema Anti Fraude)
 
 ### Melhorias
 
