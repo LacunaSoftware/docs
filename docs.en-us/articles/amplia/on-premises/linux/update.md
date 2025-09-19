@@ -6,7 +6,6 @@ To update your [on-premises installation](../index.md) of [Amplia](../../index.m
 
 [!include[Update steps](../../../../../includes/amplia/linux/update.md)]
 
-<!--
 <a name="vnext" />
 
 ## Testing the next version of Amplia
@@ -18,7 +17,6 @@ To test the upcoming version of Amplia, currently in Release Candidate state:
 > [!WARNING]
 > Release Candidate versions are not production-ready and thus should only be installed on
 > staging or test environments.
--->
 
 ## See also
 

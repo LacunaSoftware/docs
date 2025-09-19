@@ -20,13 +20,11 @@ Featured image tags:
 * Tag `4` points to the lastest 4.x image
 * Tag `stable` points to the latest stable image
 
-<!--
 <a name="vnext" />
 
 > [!NOTE]
-> To test the upcoming version of Amplia, currently in Release Candidate state, use the image `lacunasoftware/amplia:4.14.0-rc01` instead.
+> To test the upcoming version of Amplia, currently in Release Candidate state, use the image `lacunasoftware/amplia:4.17.0-rc03` instead.
 > **Beware:** Release Candidate versions are not production-ready and thus should only be installed on staging or test environments.
--->
 
 This image requires: 
 
