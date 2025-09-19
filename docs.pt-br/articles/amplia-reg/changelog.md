@@ -26,7 +26,64 @@ ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server -->
 
 <!-- 4.11 -->
 
-<!-- 4.10 -->
+<a name="v4-11-0" />
+## 4.11.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-568 Remover espaços vazios nos campos do certificado
+
+ARNG-590 Guardar videoconferencias no Azure com segredo local
+
+ARNG-591 Não permitir usuário prosseguir com emissão do certificado em caso de KeyMediaTypes == PC quando usuário estiver no celular
+
+ARNG-592 Na consulta prévia CNPJ consultar apenas se o titular é sócio e remover demais comparações
+
+### Correções de bugs
+
+ARNG-561 Melhorar mensagens de erro quando falhar chamada a Acertpix
+
+ARNG-572 Erro durante retorno do PSBio
+
+ARNG-577 Corrigir retorno da resposta do DataValid
+
+ARNG-593 Erro ao gerar relatório da validação de documento
+
+ARNG-594 Erro na lógica da validação de documentos
+
+ARNG-603 Videoconferências com motivo de conferencia não estão indo pra fila de conferencia
+
+
+<a name="v4-10-0" />
+## 4.10.0 (2025-09-19)
+
+Atualiza modelo do banco de dados: não
+
+Versão pré-release equivalente: 4.10.0 RC 9 (2025-09-10)
+
+### Melhorias
+
+ARNG-547 Definição das regras de similaridade aplicadas ao Datavalid
+
+ARNG-571 Mostrar laudo da validação de documentos
+
+ARNG-581 Converter PDF pra imagem antes de enviar para acertpix facematch
+
+ARNG-583 Remover mobile app promo do Jitsi
+
+### Correções de bugs
+
+ARNG-578 Melhorar uso de memória durante geração do zip
+
+ARNG-584 Erro ao gerar documento de consulta CNPJ quando não existe CNAE secundarias
+
+ARNG-585 Erro ao pegar biometrias do PSBio
+
+ARNG-588 Erro na comparação de nomes entre RFB e SERPRO
+
+ARNG-589 Consulta CNPJ não traz quadro societario
 
 <a name="v4-9-0" />
 ## 4.9.0 (2025-09-18)
