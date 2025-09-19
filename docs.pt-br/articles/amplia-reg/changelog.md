@@ -24,8 +24,6 @@ ARNG-469 Erro na consulta pública de certificado
 
 ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server -->
 
-<!-- 4.11 -->
-
 <a name="v4-11-0" />
 ## 4.11.0 (2025-09-18)
 
