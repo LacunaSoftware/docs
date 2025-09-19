@@ -223,6 +223,8 @@ ARNG-524 Atualizar SPA pra versão 6.0
 
 ARNG-539 Adequações às guidelines do CA/B Forum
 
+ARNG-544 Auditor de AC não está com permissão para ver o relatório diário
+
 ### Correções de bugs
 
 ARNG-525 Dados buscados pelo SAF não aparecem mais na trilha de auditoria
@@ -259,8 +261,6 @@ ARNG-527 Melhorar evento do liveness para trazer as tentativas
 ARNG-508 Emissão para clientes sem CNH – Utilização do PSBio para validação biométrica
 
 ARNG-526 Traduções faltantes
-
-ARNG-544 Auditor de AC não está com permissão para ver o relatório diário
 
 
 
@@ -344,6 +344,8 @@ ARNG-429 Adicionar visualização de notificações para webhooks
 
 ARNG-442 Criar marca de necessidade de conferência para pedidos feitos na AR, ponto de atendimento e AGR
 
+ARNG-441 Permitir envio de documentos via client lib
+
 ### Melhorias
 
 ARNG-483 Dupla verificação biométrica (redundância de verificação)
@@ -369,6 +371,8 @@ ARNG-495 Falha no envio do SMS pelo provedor Eyou
 ARNG-498 Remover uso do FaceTec.Api do projeto Api
 
 ARNG-499 Related TCN não está sendo salvo no banco
+
+ARNG-238 Erro ao salvar fomulário de alteração de local de atendimento
 
 
 
