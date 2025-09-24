@@ -1,4 +1,24 @@
-﻿# Signer changelog
+# Signer changelog
+
+<a name="v2-3-0" />
+### 2.3.0 (2025-09-23)
+
+* Improvements
+  * [SIG-1482] Send direct notification when sharing link via WhatsApp
+  * [SIG-381] Allow Rules to also be defined for Approval
+  * [SIG-816] Improve document selection on the documents screen
+
+* Bug fixes
+  * [SIG-1485] Update packages with vulnerabilities
+  * [SIG-1487] Segment Terms of Use notification sending
+  * [SIG-1490] Unable to edit a user's access in SysAdmin
+  * [SIG-1492] Error when switching from advanced to simple signature
+  * [SIG-1493] Unable to generate formatted reports on Linux
+  * [SIG-1498] Tests failing due to emails
+  * [SIG-1499] Submitting a file with single signature using Firefox changes theme colors
+
+Updates database model: yes
+
 
 <a name="v2-2-1" />
 ### 2.2.1 (2025-08-07)
