@@ -92,6 +92,7 @@ Configurações do PKI Suite:
 
   * `PKiSuite__SdkLicense`: sua licença para PKI SDK, no formato Base64 (**obrigatório**)
   * `PKiSuite__WebLicense`: sua licença para o componente Web PKI no formato binário (Base64) (**obrigatório**)
+  * `PKiSuite__LappEnabled`: `true` ou `false`. Indica se a opção de Lapp deve ser habilitada (**opcional**)
 
 ### Envio de email
 
