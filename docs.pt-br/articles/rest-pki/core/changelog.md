@@ -1,8 +1,45 @@
 ﻿# Histórico de versões - Rest PKI Core
 
-<!--
 <a name="vnext" />
--->
+<a name="v3-3-0" />
+## 3.3.0 (Próxima versão)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-184 Cadastro de ACs (Autoiridades Certificadoras) intermediárias
+
+RPNG-324 Registro de thumbprint de chave pública das sessões FaceTec
+
+RPNG-346 Sessões biométricas de cadastro e autenticação por foto
+
+RPNG-358 Sessão de correspondência entre documento de identificação com face
+
+### Melhorias
+
+RPNG-312, RPNG-314, RPNG-372, RPNG-375 Melhorias na modelagem de entidades relacionadas a biometria
+
+RPNG-371 Melhorar layout das demonstrações de sessões biométricas
+
+### Correções de bugs
+
+RPNG-376 Inconsistência na configuração do limite de tentativas de liveness nas sessões biométricas com FaceTec
+
+<!-- RPNG-378 Correção interna de comando de migração SQL -->
+
+<a name="v3-2-1" />
+## 3.2.1 (2025-08-27)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-367 Atualizar certificados da cadeia de testes v3
+
+### Correções de bugs
+
+RPNG-365 Garantir build com última imagem do AspNet
 
 <a name="v3-2-0" />
 ## 3.2.0 (2025-08-22)

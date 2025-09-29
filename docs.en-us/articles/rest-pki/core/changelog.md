@@ -1,8 +1,45 @@
 ﻿# Rest PKI Core changelog
 
-<!--
 <a name="vnext" />
--->
+<a name="v3-2-0" />
+## 3.3.0 (Next version)
+
+Updates database model: **sim**
+
+### New features
+
+RPNG-184 Support for custom Intermediate CAs (Certificate Authorities).
+
+RPNG-324 Store public key thumbprint for FaceTec sessions
+
+RPNG-346 Enrollment and authentication sessions using face pictures
+
+RPNG-358 Identification document face matching session
+
+### Improvements
+
+RPNG-312, RPNG-314, RPNG-372, RPNG-375 Improvements on database modeling for biometric related entities
+
+RPNG-371 Improve biometric sessions demo layout
+
+### Bug fixes
+
+RPNG-376 Inconsistencies on attempt limit configuration for biometric sessions using FaceTec liveness
+
+<!-- RPNG-378 Fix on internal SQL migration -->
+
+<a name="v3-2-1" />
+## 3.2.1 (2025-08-27)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-367 Update test certificates root v3
+
+### Bug fixes
+
+RPNG-365 Docker build using latest AspNet image
 
 <a name="v3-2-0" />
 ## 3.2.0 (2025-08-22)
