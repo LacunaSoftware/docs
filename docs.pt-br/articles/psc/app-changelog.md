@@ -8,6 +8,58 @@ As versões do aplicativo móvel têm o formato `MINOR.PATCH(.BUILD)`
 O terceiro número significa o número do build e não é documentado neste histórico, embora seja visível nas lojas de aplicativo (geralmente com valor `1000`, que denota o build final).
 
 
+<a name="v11-0" />
+## 11.0 (2025-09-16)
+
+Versão mínima do backend: 1.2.0
+
+### Nova função
+
+PSC-214 Notificações de assinaturas pendentes
+
+PSC-228 Notificações de certificado e pedidos de assinatura
+
+PSC-231 Implementação de Push notifications
+
+
+
+<a name="v10-2" />
+## 10.2 (2025-09-11)
+
+Versão mínima do backend: 1.2.0
+
+### Correções de bugs
+
+PSC-233 Arrumar cache do token de validação de dispositivos
+
+PSC-234 Arrumar aba de contas associadas
+
+
+
+<a name="v10-1" />
+## 10.1 (2025-09-01)
+
+Versão mínima do backend: 1.2.0
+
+### Correções de bugs
+
+PSC-222 Melhorar comunicação de certificados não mais válidos
+
+PSC-229 Atualização de SDKs
+
+
+
+<a name="v10-0" />
+## 10.0 (2025-07-25)
+
+Versão mínima do backend: 1.2.0
+
+### Melhoria
+
+PSC-229 Atualização de SDKs
+
+
+
 <a name="v8-0" />
 ## 8.0 (2025-01-13)
 

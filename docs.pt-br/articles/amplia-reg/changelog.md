@@ -1,9 +1,431 @@
 ﻿# Histórico de versões do Amplia Reg
 
 <a name="vnext" />
+<!-- 
+<a name="v3-1-0" />
+## 3.1.0 (2025-04-04) (próxima versão)
+-->
+
+<!-- Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-461 Adequações para o certificado de sello electronico do certificado PY
+
+ARNG-467 Melhorias visuais à dialog de consulta à lista negativa
+
+### Correções de bugs
+
+ARNG-456 Uniformizar dialogs e melhorar campos de input de data e data/hora
+
+ARNG-468 Tela de emissão pelo agente antes da aprovação dando erro
+
+ARNG-469 Erro na consulta pública de certificado
+
+ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server -->
+
+<a name="v4-11-0" />
+## 4.11.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-568 Remover espaços vazios nos campos do certificado
+
+ARNG-590 Guardar videoconferencias no Azure com segredo local
+
+ARNG-591 Não permitir usuário prosseguir com emissão do certificado em caso de KeyMediaTypes == PC quando usuário estiver no celular
+
+ARNG-592 Na consulta prévia CNPJ consultar apenas se o titular é sócio e remover demais comparações
+
+### Correções de bugs
+
+ARNG-561 Melhorar mensagens de erro quando falhar chamada a Acertpix
+
+ARNG-572 Erro durante retorno do PSBio
+
+ARNG-577 Corrigir retorno da resposta do DataValid
+
+ARNG-593 Erro ao gerar relatório da validação de documento
+
+ARNG-594 Erro na lógica da validação de documentos
+
+ARNG-603 Videoconferências com motivo de conferencia não estão indo pra fila de conferencia
+
+
+
+<a name="v4-10-0" />
+## 4.10.0 (2025-09-19)
+
+Atualiza modelo do banco de dados: não
+
+Versão pré-release equivalente: 4.10.0 RC 9 (2025-09-10)
+
+### Novas funcionalidades
+
+ARNG-587 Adicionar suporte ao LongmaiCryptoIDE
+
+### Melhorias
+
+ARNG-547 Definição das regras de similaridade aplicadas ao Datavalid
+
+ARNG-571 Mostrar laudo da validação de documentos
+
+ARNG-581 Converter PDF pra imagem antes de enviar para acertpix facematch
+
+ARNG-583 Remover mobile app promo do Jitsi
+
+### Correções de bugs
+
+ARNG-578 Melhorar uso de memória durante geração do zip
+
+ARNG-584 Erro ao gerar documento de consulta CNPJ quando não existe CNAE secundarias
+
+ARNG-585 Erro ao pegar biometrias do PSBio
+
+ARNG-588 Erro na comparação de nomes entre RFB e SERPRO
+
+ARNG-589 Consulta CNPJ não traz quadro societario
+
+
+
+<a name="v4-9-0" />
+## 4.9.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: não
+
+Versão pré-release equivalente: 4.9.0 RC 2 (2025-09-02)
+
+### Melhorias
+
+ARNG-558 Comunicação de tratativas de pendências via e-mail transacional entre ACI - AVP - ACI
+
+### Correções de bugs
+
+ARNG-579 Melhorar comparação de nomes na consulta CNPJ
+
+
+
+<a name="v4-8-0" />
+## 4.8.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 4.8.0 RC 2 (2025-08-26)
+
+### Novas funcionalidades
+
+ARNG-27 Ambiente do ACI deve possibilitar fazer todas ações que um AGR pode
+
+### Melhorias
+
+ARNG-252 Justificativa obrigatória para desvincular pedido do ACI
+
+ARNG-556 Ativar strictTemplates no angularCompilerOptions
+
+### Correções de bugs
+
+ARNG-388 Está sendo possível emitir um certificado sem enviar assinatura válida do termo de titularidade
+
+ARNG-564 Erro na migration de document validation para SQL Server
+
+ARNG-565 Corrigir testes quebrados
+
+
+
+<a name="v4-7-0" />
+## 4.7.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-462 Suporte ao ambiente Jitsi selfhosted
+
+ARNG-506 Documentoscopia - Integração com a Acertpix e match com documento coletado
+
+### Melhorias
+
+ARNG-198 Filtros por validade na busca de pedidos
+
+### Correções de bugs
+
+ARNG-553 Pedidos com certificado revogado estão dando erro nos detalhes do pedido
+
+
+
+<a name="v4-6-0" />
+## 4.6.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: não
+
+Versão pré-release equivalente: 4.6.0 RC 1 (2025-08-08)
+
+### Melhorias
+
+ARNG-165 Exibir dados do titular para conferência na tela pública de emissão
+
+ARNG-251 Opção na tela de conferência para ver o documento em tela cheia, tanto imagem quanto PDF
+
+### Correções de bugs
+
+ARNG-247 Erro ao editar usuario de agente de registro
+
+ARNG-545 Algumas dialog confirm não estão respeitando o desejo do usuário de cancelar caso seja clicado fora
+
+
+
+<a name="v4-5-0" />
+## 4.5.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 4.5.2 RC 2 (2025-08-04)
+
+### Melhorias
+
+ARNG-284 Gerar chaves de dispositivo de maneira não-exportável (quando possível)
+
+ARNG-528 Exibir as respostas do questionário durante a videoconferência
+
+ARNG-542 Bloqueio da máquina se não houver emissão do relatório de ativos no primeiro dia útil do mês
+
+
+
+<a name="v4-4-0" />
+## 4.4.0 (2025-07-31)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-452 Verificação de Datavalid v4 e QR code CNH
+
+### Melhorias
+
+ARNG-546 Atualizar bioac
+
+
+
+<a name="v4-3-0" />
+## 4.3.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 4.3.0 RC 5 (2025-07-31)
+
+### Melhorias
+
+ARNG-518 Não permitir mais o envio de outra foto pro envio ao PSBio (usar a do liveness)
+
+ARNG-524 Atualizar SPA pra versão 6.0
+
+ARNG-539 Adequações às guidelines do CA/B Forum
+
+ARNG-544 Auditor de AC não está com permissão para ver o relatório diário
+
+### Correções de bugs
+
+ARNG-525 Dados buscados pelo SAF não aparecem mais na trilha de auditoria
+
+ARNG-531 Ao dar zoom no termo de titularidade durante a videoconferência pelo celular o usuário sai da videoconferência
+
+ARNG-541 Ao gerar chave em ADSS, erro RasClientException para novos usuários
+
+ARNG-543 Termo de titularidade em iOS abre em nova guia invés de realizar o download
+
+
+
+<a name="v4-2-0" />
+## 4.2.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 4.2.0 RC 2 (2025-07-30)
+
+### Novas funcionalidades
+
+ARNG-507 Permitir preenchimento de dados via clientlib antes do pedido cair no agente
+
+ARNG-520 Adicionar configuração para que todas as emissões presenciais devem passar pelo ACI
+
+### Melhorias
+
+ARNG-519 Atualizar SPA pra versão 5.0
+
+ARNG-527 Melhorar evento do liveness para trazer as tentativas
+
+### Correções de bugs
+
+ARNG-508 Emissão para clientes sem CNH – Utilização do PSBio para validação biométrica
+
+ARNG-526 Traduções faltantes
+
+
+
+<a name="v4-1-0" />
+## 4.1.0 (2025-09-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 4.1.0 RC 1 (2025-07-08)
+
+### Melhorias
+
+ARNG-497 Nova integração de Liveness com o RestPki (Widget RestBio)
+
+
+
+<a name="v4-0-7" />
+## 4.0.7 (2025-06-29)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-599 Atualizar SPA pra versão 4.4.0
+
+ARNG-600 Adicionar videoconferência ao arquivo zip
+
+### Correções de bugs
+
+ARNG-601 Correções da geração de relatório diário
+
+ARNG-602 Desabilitar passo de biometria enquanto a videoconferencia não for concluida
+
+
+
+<a name="v4-0-0" />
+## 4.0.0 (2025-06-25)
+
+**Veja [Atualizando o Amplia Reg da versão 3.x para 4.0](on-premises/update-40.md)**
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-500 Instrução Normativa ITI no. 31/2025 
+
+
+
+<a name="v3-5-1" />
+## 3.5.1 (2025-06-09)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-598 Remover instruções desnecessárias antes da videoconferência
+
+
+
+<a name="v3-5-0" />
+## 3.5.0 (2025-06-09)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-501 Tornar configurável obrigatoriedade do campo de identificação do titular, remover campo título de eleitor, alterar lista de perguntas da videoconferência, permitir ao agente visualizar respostas
+das perguntas de videoconferência, remover captura de imagens de documento da videoconferência, corrigir zoom do termo de titularidade durante videoconferência, melhorias de relatório, inclusão da
+videoconferência no arquivo zip do pedido
+
+
+
+<a name="v3-4-0" />
+## 3.4.0 (2025-06-05)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-429 Adicionar visualização de notificações para webhooks
+
+ARNG-442 Criar marca de necessidade de conferência para pedidos feitos na AR, ponto de atendimento e AGR
+
+ARNG-441 Permitir envio de documentos via client lib
+
+### Melhorias
+
+ARNG-483 Dupla verificação biométrica (redundância de verificação)
+
+ARNG-493 Melhorar troca de mensagens entre o AVP e o ACI
+
+ARNG-496 Revisar campos do pedido (Brasil)
+
+### Correções de bugs
+
+ARNG-479 Gerador de OrderNumbers está com buracos
+
+ARNG-487 Recoleta da biometria não está buscando alterações no PSBio
+
+ARNG-491 A3 em videoconferência está sendo possível ser emitido pela tela do agente
+
+ARNG-492 Melhoria nas etapas de emissão pelo agente
+
+ARNG-494 Resolver TCN "duplicado" da resposta do PSBio
+
+ARNG-495 Falha no envio do SMS pelo provedor Eyou
+
+ARNG-498 Remover uso do FaceTec.Api do projeto Api
+
+ARNG-499 Related TCN não está sendo salvo no banco
+
+ARNG-238 Erro ao salvar fomulário de alteração de local de atendimento
+
+
+
+<a name="v3-3-0" />
+## 3.3.0 (2025-04-04)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 3.3.0 RC 10 (2025-05-06)
+
+### Novas funcionalidades
+
+ARNG-459 Adicionar prova de vida à emissão do pedido
+
+ARNG-484 Adicionar tema orange-federal-blue (ofb)
+
+ARNG-488 Integração RFB SAF (Sistema Anti Fraude)
+
+### Melhorias
+
+ARNG-485 Refatorar coerce booleans
+
+ARNG-486 Atualizar versão do FaceTecClient
+
+
+
+<a name="v3-2-0" />
+## 3.2.0 (2025-04-04)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-478 Permitir cancelamento de pedidos
+
+### Melhorias
+
+ARNG-471 Criar novo estado entre Em Validação e Aguardando Conferência
+
+ARNG-476 Mostrar tipo de emissão nos detalhes do pedido
+
+### Correções de bugs
+
+ARNG-460 Sistema aceita telefones fixos e posteriormente acontece erro na emissão
+
+ARNG-474 Consulta à RFB é disparada antes que a data de nascimento tenha sido completamente preenchida
+
+ARNG-477 Inputs sem label
+
+
 
 <a name="v3-1-0" />
-## 3.1.0 (próxima versão)
+## 3.1.0 (2025-04-04)
 
 Atualiza modelo do banco de dados: **sim**
 
