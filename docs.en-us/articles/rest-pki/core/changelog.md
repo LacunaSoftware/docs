@@ -4,7 +4,7 @@
 <a name="v3-2-0" />
 ## 3.3.0 (Next version)
 
-Updates database model: **sim**
+Updates database model: **yes**
 
 ### New features
 
@@ -44,7 +44,7 @@ RPNG-365 Docker build using latest AspNet image
 <a name="v3-2-0" />
 ## 3.2.0 (2025-08-22)
 
-Updates database model: **sim**
+Updates database model: **yes**
 
 ### New features
 
