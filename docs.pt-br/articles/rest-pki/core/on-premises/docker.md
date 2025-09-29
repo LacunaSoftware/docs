@@ -21,7 +21,7 @@ Tags móveis disponíveis:
 <a name="vnext" />
 
 > [!NOTE]
-> Para testar a próxima versão do Rest PKI Core, atualmente em estágio *Release Candidate*, use a imagem `lacunasoftware/restpkicore:3.0.0-rc01`.
+> Para testar a próxima versão do Rest PKI Core, atualmente em estágio *Release Candidate*, use a imagem `lacunasoftware/restpkicore:3.3.0-rc05`.
 > **Cuidado**: versões *Release Candidate* não são adequadas para produção e, portanto, devem ser instaladas apenas em ambientes de homologação/testes!
 
 Esta imagem requer:
