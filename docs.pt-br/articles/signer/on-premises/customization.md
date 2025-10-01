@@ -175,6 +175,10 @@ Os temas disponíveis são:
 
 ![Color Scheme](../images/themes/cpg.png)
 
+* prussian-blue-green - pbg (v2.3.0):
+
+![Color Scheme](../images/themes/pbg.png)
+
 
 > [!NOTE]
 > Caso seja necessário, um novo tema pode ser criado de acordo com sua necessidade, bastando informar qual são as cores theme e accent.

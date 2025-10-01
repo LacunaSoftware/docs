@@ -205,6 +205,8 @@ initial page showing document details. If `true` reverts to the old behavior of 
 
 * **DisableRefuseSignature** (v2.2.0): if `true`, disables the option of refusing signatures in the signature page.
 
+* **MaxItemsRetrievedInBillingPlanFilter** (v2.3.0, default: `10`): defines the maximum number of items that will be retrieved in the billing plan filter.
+
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
@@ -401,6 +403,10 @@ after the document creation (defined in seconds from the document's creation dat
 * **ShowIdScanOnPrinterFriendlyVersion** (v1.77.0): if `true`, displays the ID scan in the printer friendly version of an electronic signature that has requested that authentication.
 * **AddWatermarkToSelfies** (v1.77.0): if `true`, adds watermark to selfies displayed in the printer friendly version.
 
+* **EnableSingleSignerSummary** (v2.3.0): if `true` and the document has only one signer, the summary will display more information regarding the signer.
+* **EnableSingleSignerSummaryForMultipleSigners** (v2.3.0): if `true`, ignores the number of signers and single signer summary is displayed even if there is more than one signer.
+* **SingleSignerDateFormat** (v2.3.0): defines the format used to display the signature in the single signer summary.
+
 
 ###  *PaymentGateway* Settings (v1.27.0)
 
@@ -510,6 +516,9 @@ map templates/languages to Zenvia GUIDs. Example:
 Whatsapp__LanguageTemplateMap__pendingsignature-pt_BR=c5d3904f-3e22-49bc-a92b-37eeb6522c90
 Whatsapp__LanguageTemplateMap__authenticationcode-pt_BR=8bc863e9-e661-43dc-ab29-016b0b990b86
 ```
+
+* **EnableSendingRemindersViaLinkSharingOption** (v2.3.0): if `true`, enables sending reminders directly through the WhatsApp API.
+* **MinimumWaitTimeBetweenRemindersInSeconds** (v2.3.0, default: `300`): minimum time in seconds that must be awaited between reminder notifications, used to prevent spamming.
 
 ###  *NFEio* Settings (v1.27.0)
 
@@ -717,12 +726,19 @@ need to be escaped. Example:
 	```
 * **BlobFolderName** (default: `trustarbitrators`): The blob folder of the file containing the Trust arbitrator JSON content stored in the Blob Storage. Only relevant if `BlobStorage` is selected.
 
-* ###  *Security Headers* Settings (v2.1.0)
+###  *Security Headers* Settings (v2.1.0)
 
 Under section **SecurityHeaders**:
 
 * **Default__Enabled**: if `true`, enables the use of security headers.
 
+###  *Terms Of Use* Settings (v2.3.0)
+
+Under section **TermsOfUse**:
+
+* **SendTermsOfUseUpdateOnlyToSubscriptionUsers**: if `true`, restricts the sending of updates to terms of use to subscription users.
+* **ProcessingDelayInMinutes** (default: `20`): defines the interval minutes that will be awaited between terms of use notifications.
+* **MaxItemsRetrievedFromDatabase** (default: `10000`): defines the maximum number of users retrieved from the database in order to notify about changes to terms of use.
 
 ###  *SigningTags* Settings
 
