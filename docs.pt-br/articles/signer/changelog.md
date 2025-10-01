@@ -1,21 +1,26 @@
 # Histórico de versões do Signer
 
 <a name="v2-3-0" />
-### 2.3.0 (2025-09-23)
+### 2.3.0 (2025-09-25)
 
 * Melhorias
   * [SIG-1482] Enviar notificação direta ao compartilhar link via WhatsApp
-  * [SIG-381] Permitir que Regras sejam definidas também para Aprovação
-  * [SIG-816] Melhorar seleção de documentos na tela de documentos
+  * [SIG-1508] Adição do tema Prussian Blue Green
+  * [SIG-1509] Permitir exibir rodapé com informações de um único signatário
+  * [SIG-381] Permitir definição de regras para aprovador na ordem das ações
+  * [SIG-816] Melhoria na seleção de documentos na tela de documentos
+  * [SIG-1501] Adicionar opção para buscar um plano na tela de gestão de organização
+  * [SIG-1505] Revisar mensagem de validação em casos de expiração de certificado digital
 
 * Correções de bugs
   * [SIG-1485] Atualizar pacotes com vulnerabilidades
   * [SIG-1487] Segmentar envio de notificação de Termo de Uso
-  * [SIG-1490] Não está sendo possível editar o acesso de um usuário no SysAdmin
-  * [SIG-1492] Erro ao trocar de assinatura avançada para simples
-  * [SIG-1493] Não está sendo possível gerar relatórios formatados no Linux
+  * [SIG-1490] Problema na edição do acesso de usuário no SysAdmin
+  * [SIG-1492] Erro na troca de assinatura avançada para simples
+  * [SIG-1493] Erro na geração de relatórios formatados no Linux
   * [SIG-1498] Testes estão falhando por causa dos e-mails
-  * [SIG-1499] Ao submeter um arquivo na assinatura única usando Firefox está trocando as cores do tema
+  * [SIG-1499] Troca de cores de tema na submissão de arquivo na assinatura única utilizando Firefox
+  * [SIG-1510] Assinatura única não está validando certificado no momento da assinatura
 
 Atualiza modelo de banco de dados: sim
 

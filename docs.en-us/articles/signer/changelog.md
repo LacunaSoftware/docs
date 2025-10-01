@@ -1,21 +1,26 @@
 # Signer changelog
 
 <a name="v2-3-0" />
-### 2.3.0 (2025-09-23)
+### 2.3.0 (2025-09-25)
 
 * Improvements
   * [SIG-1482] Send direct notification when sharing link via WhatsApp
-  * [SIG-381] Allow Rules to also be defined for Approval
-  * [SIG-816] Improve document selection on the documents screen
+  * [SIG-1508] Add Prussian Blue Green theme
+  * [SIG-1509] Allow displaying footer with information of a single signer
+  * [SIG-381] Allow definition of rules for approvers in the order of actions
+  * [SIG-816] Improve document selection in the documents screen
+  * [SIG-1501] Add option to search for a plan in the organization management screen
+  * [SIG-1505] Review validation message in cases of digital certificate expiration
 
 * Bug fixes
   * [SIG-1485] Update packages with vulnerabilities
-  * [SIG-1487] Segment Terms of Use notification sending
-  * [SIG-1490] Unable to edit a user's access in SysAdmin
+  * [SIG-1487] Segment sending of Terms of Use notification
+  * [SIG-1490] Issue editing user access in SysAdmin
   * [SIG-1492] Error when switching from advanced to simple signature
-  * [SIG-1493] Unable to generate formatted reports on Linux
+  * [SIG-1493] Error generating formatted reports on Linux
   * [SIG-1498] Tests failing due to emails
-  * [SIG-1499] Submitting a file with single signature using Firefox changes theme colors
+  * [SIG-1499] Theme colors changing when submitting a file in single signature using Firefox
+  * [SIG-1510] Single signature not validating certificate at the time of signing
 
 Updates database model: yes
 
