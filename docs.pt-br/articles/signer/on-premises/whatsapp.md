@@ -10,21 +10,7 @@ Abaixo são listados os pré-requisitos desse tipo de integração:
 
 * Ter uma Whatsapp Business Account associada à Meta Business Account.
 
-* Ter um business app, associado à Meta Business Account.
-
 * Ter um número de telefone (celular ou fixo) verificado e associado à sua Whatsapp Business Account.
-
-## Criação do aplicativo
-
-* Acesse o [Dashboard de Desenvolvedores](https://developers.facebook.com/apps/).
-
-* Crie um aplicativo e selecione o tipo `Business`. 
-
-* Associe o aplicativo à sua Business Account.
-
-* Após a criação do aplicativo, selecione a opção Whatsapp.
-
-* Será gerado um número de teste do Whatsapp. Nesse momento sua business account já estará configurada para adicionar e verificar um número real.
 
 
 ## Configuração da conta de Whatsapp
@@ -59,23 +45,16 @@ Os modelos serão revisados pela equipe Meta. Esse processo demora em média doi
 Entre em contato com nosso suporte para obter a lista de modelos que devem ser cadastrados, bem como o nome e conteúdo dos templates. Você terá liberdade para mudar o
 conteúdo dos modelos desde que não altere a quantidade nem a ordem dos parâmetros.
 
-## Obtenção de credenciais
+## Configuração do Parceiro de tecnologia
 
-* Após configurada a conta e os modelos, é preciso gerar um token permanente que será utilizado para acessar API.
+* Após configurada a conta e os modelos, é preciso definir a Lacuna Software como parceiro de tecnologia para que o Signer possa acessar a API da Meta.
 
-* Para gerá-lo, é preciso criar um usuário do tipo `System User`, conforme descrito na página de [Primeiros passos da Business Management API](https://developers.facebook.com/docs/whatsapp/business-management-api/get-started).
+1. Acesse o [painel de contas de Whatsapp](https://business.facebook.com/latest/settings/whatsapp_account) de sua Business Account.
+1. Escolha a conta desejada e clique no botão "Associar parceiro (Assign partner)":
+![Whatsapp Partner 1](../images/whatsapp-partner1.png)
+1. Na janela que se abre, informe o código de parceiro da Lacuna Software (solicite ao suporte) e marque a opção "Controle total (Full Control)":
+![Whatsapp Partner 2](../images/whatsapp-partner2.png)
+1. Por fim, entre em contato com nossa equipe de suporte informando que a associação já foi realizada, para que possamos habilitar a integração.
 
-* Durante a geração do token, marque o escopo `whatsapp_business_messaging` (caso já não esteja selecionado).
-
-* Por fim, garanta que o usuário criado, possui acesso à conta de Whatsapp desejada. Isso deve ser feito em [Configurações de Negócio](https://business.facebook.com/settings) na seção 
-`Contas do Whatsapp`. Selecione a conta desejada e verifique se o usuário consta na aba `Pessoas`.
-
-
-## Habilitando a Integração
-
-Para habilitar a integração, você deverá fornecer à nossa equipe de suporte os itens abaixo:
-
-1. Identificação do número de telefone (obtido nas configurações de Whatsapp do aplicativo criado).
-1. Token de acesso à API.
-
-Se você tem uma instância On-Premises, veja a seção de [Configurações de Whatsapp](https://docs.lacunasoftware.com/en-us/articles/signer/on-premises/settings.html#whatsapp-settings).
+Se você tem uma instância On-Premises, veja a seção de [Configurações de Whatsapp](https://docs.lacunasoftware.com/en-us/articles/signer/on-premises/settings.html#whatsapp-settings)
+para saber como definir as configurações que habilitam a integração.
