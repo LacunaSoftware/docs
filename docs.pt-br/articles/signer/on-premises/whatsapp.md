@@ -47,7 +47,7 @@ conteúdo dos modelos desde que não altere a quantidade nem a ordem dos parâme
 
 ## Configuração do Parceiro de tecnologia
 
-* Após configurada a conta e os modelos, é preciso definir a Lacuna Software como parceiro de tecnologia para que o Signer possa acessar a API da Meta.
+Após configurada a conta e os modelos, é preciso definir a Lacuna Software como parceiro de tecnologia para que o Signer possa acessar a API da Meta.
 
 1. Acesse o [painel de contas de Whatsapp](https://business.facebook.com/latest/settings/whatsapp_account) de sua Business Account.
 1. Escolha a conta desejada e clique no botão "Associar parceiro (Assign partner)":
