@@ -16,11 +16,19 @@ RPNG-346 Sessões biométricas de cadastro e autenticação por foto
 
 RPNG-358 Sessão de correspondência entre documento de identificação com face
 
+RPNG-374 Verificação de identidade facial com provedores externos (FortFace/Datavalid)
+
+RPNG-377 Sessões biométricas de cadastro e autenticação utilizando captura de face com prova de vida FortFace
+
+RPNG-383, RPNG-382 Adicionar tela de configurações de biometria da subscription
+
 ### Melhorias
 
-RPNG-312, RPNG-314, RPNG-372, RPNG-375 Melhorias na modelagem de entidades relacionadas a biometria
+RPNG-312, RPNG-314, RPNG-372, RPNG-375, RPNG-384, RPNG-343 Melhorias na modelagem de entidades relacionadas a biometria
 
 RPNG-371 Melhorar layout das demonstrações de sessões biométricas
+
+RPNG-373 Melhorar layout das sessões biométricas em dispositivos móveis
 
 ### Correções de bugs
 

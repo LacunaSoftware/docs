@@ -16,11 +16,19 @@ RPNG-346 Enrollment and authentication sessions using face pictures
 
 RPNG-358 Identification document face matching session
 
+RPNG-374 Face identity verification with external providers (FortFace/Datavalid)
+
+RPNG-377 Enrollment and authentication sessions using FortFace Liveness face capture
+
+RPNG-383, RPNG-382 Add subscription biometric settings page
+
 ### Improvements
 
-RPNG-312, RPNG-314, RPNG-372, RPNG-375 Improvements on database modeling for biometric related entities
+RPNG-312, RPNG-314, RPNG-372, RPNG-375,RPNG-384, RPNG-343 Improvements on database modeling for biometric related entities
 
 RPNG-371 Improve biometric sessions demo layout
+
+RPNG-373 Improve biometric sessions layout on mobile devices
 
 ### Bug fixes
 
