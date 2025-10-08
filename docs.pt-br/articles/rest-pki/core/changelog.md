@@ -22,6 +22,8 @@ RPNG-377 Sessões biométricas de cadastro e autenticação utilizando captura d
 
 RPNG-383, RPNG-382 Adicionar tela de configurações de biometria da subscription
 
+RPNG-385 Tela de listagem resumida de sessões biométricas com visualização de imagens
+
 ### Melhorias
 
 RPNG-312, RPNG-314, RPNG-372, RPNG-375, RPNG-384, RPNG-343 Melhorias na modelagem de entidades relacionadas a biometria
