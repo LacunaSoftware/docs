@@ -21,7 +21,7 @@ Available moving tags:
 <a name="vnext" />
 
 > [!NOTE]
-> To test the upcoming version of Rest PKI Core, currently in Release Candidate state, use the image `lacunasoftware/restpkicore:3.3.0-rc09` instead.
+> To test the upcoming version of Rest PKI Core, currently in Release Candidate state, use the image `lacunasoftware/restpkicore:3.3.0-rc11` instead.
 > **Beware:** Release Candidate versions are not production-ready and thus should only be installed on staging or test environments.
 
 This image requires: 

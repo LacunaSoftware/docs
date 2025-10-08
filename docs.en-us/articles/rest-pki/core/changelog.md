@@ -22,6 +22,8 @@ RPNG-377 Enrollment and authentication sessions using FortFace Liveness face cap
 
 RPNG-383, RPNG-382 Add subscription biometric settings page
 
+RPNG-385 Biometric sessions summary list page with images preview
+
 ### Improvements
 
 RPNG-312, RPNG-314, RPNG-372, RPNG-375,RPNG-384, RPNG-343 Improvements on database modeling for biometric related entities
