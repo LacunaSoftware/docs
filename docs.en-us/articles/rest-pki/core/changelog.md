@@ -1,8 +1,9 @@
 ﻿# Rest PKI Core changelog
 
-<a name="vnext" />
-<a name="v3-2-0" />
-## 3.3.0 (Next version)
+<!--<a name="vnext" />-->
+
+<a name="v3-3-0" />
+## 3.3.0 (2025-10-16)
 
 Updates database model: **yes**
 
@@ -24,6 +25,8 @@ RPNG-383, RPNG-382 Add subscription biometric settings page
 
 RPNG-385 Biometric sessions summary list page with images preview
 
+RPNG-404 Add config to enable support for low quality images on face authentication API
+
 ### Improvements
 
 RPNG-312, RPNG-314, RPNG-372, RPNG-375,RPNG-384, RPNG-343 Improvements on database modeling for biometric related entities
@@ -31,6 +34,8 @@ RPNG-312, RPNG-314, RPNG-372, RPNG-375,RPNG-384, RPNG-343 Improvements on databa
 RPNG-371 Improve biometric sessions demo layout
 
 RPNG-373 Improve biometric sessions layout on mobile devices
+
+RPNG-399 Add FaceTec browser SDK v9.7.83 resources
 
 ### Bug fixes
 

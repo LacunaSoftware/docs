@@ -10,19 +10,20 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The currently recommended image is `lacunasoftware/restpkicore:3.1`
+The currently recommended image is `lacunasoftware/restpkicore:3.3`
 
 Available moving tags:
 
-* Tag `3.1` points to the latest 3.1.x image **(recommended)**
+* Tag `3.3` points to the latest 3.3.x image **(recommended)**
 * Tag `3` points to the lastest 3.x image
 * Tag `stable` points to the latest stable image
 
+<!--
 <a name="vnext" />
-
-> [!NOTE]
+>> [!NOTE]
 > To test the upcoming version of Rest PKI Core, currently in Release Candidate state, use the image `lacunasoftware/restpkicore:3.3.0-rc12` instead.
 > **Beware:** Release Candidate versions are not production-ready and thus should only be installed on staging or test environments.
+-->
 
 This image requires: 
 
