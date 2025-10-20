@@ -1,7 +1,7 @@
 ﻿# Rest PKI changelog
 
 <a name="v1-33-5" />
-### 1.33.5 (2023-10-20)
+### 1.33.5 (2025-10-20)
 
 Database model update: No
 

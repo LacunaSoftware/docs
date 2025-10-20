@@ -1,7 +1,7 @@
 ﻿# Histórico de versões do Rest PKI
 
 <a name="v1-33-5" />
-### 1.33.5 (2023-10-20)
+### 1.33.5 (2025-10-20)
 
 Atualização do modelo do banco de dados: Não
 
