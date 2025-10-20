@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do Rest PKI
 
+<a name="v1-33-5" />
+### 1.33.5 (2023-10-20)
+
+Atualização do modelo do banco de dados: Não
+
+- Adiciona suporte à carimbadora SERPRO com novo protocolo oauth
+- Adiciona parâmetro `ArchiveTimestamps` no model dos detalhes das assinaturas
+
+
 <a name="v1-33-3" />
 ### 1.33.3 (2025-05-02)
 

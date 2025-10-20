@@ -1,5 +1,14 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-33-5" />
+### 1.33.5 (2023-10-20)
+
+Database model update: No
+
+- Add support to new SERPRO's timestamper oauth protocol
+- Add `ArchiveTimestamps` parameter to signature details model
+
+
 <a name="v1-33-3" />
 ### 1.33.3 (2025-05-02)
 
