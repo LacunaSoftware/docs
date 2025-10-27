@@ -1,5 +1,15 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-21-0" />
+### 2.21.0 (2025-10-27)
+
+- \[PKI-146\] Add custom headers dictionary option to default `TimestampRequester`.
+- \[PKI-145\] Add custom DateTimeOffset provider for PKI operations: `IPkiTimeProvider`.
+- \[PKI-138\] Fix PAdES visual representation text when PDF claims PDF/A compliance but does not have an ICC profile.
+- \[PKI-147\] Fix PDF marker text and stroke for PDF/A without OutputIntents.
+- Improve `XmlSignatureEditor.ExtendArchiving`. Now throws `InvalidArchiveOperationException` only for known archiving validation/operation issues.
+
+
 <a name="v2-20-1" />
 ### 2.20.1 (2025-07-31)
 
