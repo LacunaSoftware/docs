@@ -8,7 +8,7 @@ Atualizações à biblioteca de Javascript:
 * Corrigem problemas que não podem ser resolvidos apenas através de atualizações ao componente instalado nos computadores dos usuários
 * Permitem que a sua aplicação utilize novas funcionalidades do Web PKI
 
-A última versão da biblioteca de Javascript é a **2.16.3**. Você pode obtê-la no link abaixo:
+A última versão da biblioteca de Javascript é a **2.16.4**. Você pode obtê-la no link abaixo:
 
 https://cdn.lacunasoftware.com/libs/web-pki/lacuna-web-pki-2.16.4.min.js
 
