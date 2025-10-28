@@ -207,6 +207,8 @@ initial page showing document details. If `true` reverts to the old behavior of 
 
 * **MaxItemsRetrievedInBillingPlanFilter** (v2.3.0, default: `10`): defines the maximum number of items that will be retrieved in the billing plan filter.
 
+* **EnableDocumentValidationInThePublicArea** (v2.4.0, default: `true`): enables the document validation page and endpoints.
+
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)

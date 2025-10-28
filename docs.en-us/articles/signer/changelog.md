@@ -1,5 +1,26 @@
 # Signer changelog
 
+<a name="v2-4-0" />
+### 2.4.0 (2025-10-28)
+
+* Improvements
+  * [SIG-858] Define signature rules for more participants
+  * [SIG-1494] Support sending notifications in a specific language
+  * [SIG-1497] Add event when generating sharing link
+  * [SIG-1504] Update Datavalid library to version 1.4.0
+  * [SIG-1512] Register source port for registered events
+  * [SIG-1525] Allow complete deactivation of document validator
+  * [SIG-1513] Update FaceTecClient to version 2.2.2
+
+* Bug fixes
+  * [SIG-873] Title not appearing when positioning signature
+  * [SIG-1124] Font size of visual representation not decreasing in Firefox
+  * [SIG-1502] Position replicated across multiple PDFs and error when adding initials in Single Signature
+  * [SIG-1523] Edited signature positions not saving correctly after creation
+  * [SIG-1524] “Allow electronic signature” toggle not working correctly when editing or retrieving flow from another document
+
+Updates database model: yes
+
 <a name="v2-3-0" />
 ### 2.3.0 (2025-09-25)
 

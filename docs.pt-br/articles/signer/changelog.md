@@ -1,5 +1,26 @@
 # Histórico de versões do Signer
 
+<a name="v2-4-0" />
+### 2.4.0 (2025-10-28)
+
+* Melhorias
+  * [SIG-858] Definir Regras de assinatura para mais participantes
+  * [SIG-1494] Suporte a envio de notificação em idioma específico
+  * [SIG-1497] Adicionar evento ao gerar link de compartilhamento
+  * [SIG-1504] Atualizar biblioteca do Datavalid para 1.4.0
+  * [SIG-1512] Registrar Porta de Origem para eventos registrados
+  * [SIG-1525] Permitir desativação completa do validador de documentos
+  * [SIG-1513] Atualizar FaceTecClient para 2.2.2
+
+* Correções de bugs
+  * [SIG-873] Título não aparece ao posicionar assinatura
+  * [SIG-1124] Não está diminuindo a fonte da representação visual no Firefox
+  * [SIG-1502] Posição replicada em múltiplos PDFs e erro ao adicionar rúbrica na Assinatura Única
+  * [SIG-1523] Ao editar as posições das assinaturas depois de criado não está sendo salvo corretamente
+  * [SIG-1524] Toggle de permitir assinatura eletrônica não está funcionando corretamente na edição e na recuperação de fluxo de outro documento
+
+Atualiza modelo de banco de dados: sim
+
 <a name="v2-3-0" />
 ### 2.3.0 (2025-09-25)
 
