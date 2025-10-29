@@ -2,6 +2,35 @@
 
 <!--<a name="vnext" />-->
 
+<a name="v3-4-0" />
+## 3.4.0 (2025-10-28)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-351, RPNG-352, RPNG-359, RPNG-353, RPNG-364, RPNG-391, RPNG-407, RPNG-422, RPNG-426 Adicionar sessão de vídeo identificação
+
+RPNG-360 Permitir customização estática da Home Page (por instância)
+
+RPNG-379 Implementar gerenciamento de configurações de PDF e Contexto de Segurança por Subscription
+
+RPNG-381 Adicionar API para renotarização de diplomas
+
+RPNG-393 Dashboard de Biometria - Adicionar tela de listagem de cadastros
+
+### Melhorias
+
+RPNG-151 Adicionar traduções para espanhol
+
+RPNG-414 Atualização de bibliotecas de assinatura
+
+### Correções de bugs
+
+RPNG-285 Ajustes de permissões
+
+RPNG-388 Erro de constraint duplicada ao salvar certificados
+
 <a name="v3-3-0" />
 ## 3.3.0 (2025-10-16)
 

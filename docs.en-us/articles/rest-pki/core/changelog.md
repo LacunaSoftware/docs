@@ -2,6 +2,35 @@
 
 <!--<a name="vnext" />-->
 
+<a name="v3-4-0" />
+## 3.4.0 (2025-10-28)
+
+Updates database model: **yes**
+
+## New features
+
+RPNG-351, RPNG-352, RPNG-359, RPNG-353, RPNG-364, RPNG-391, RPNG-407, RPNG-422, RPNG-426 Add video identification session
+
+RPNG-360 Allow static customization of the Home Page (per instance)
+
+RPNG-379 Implement management of PDF settings and Security Context per Subscription
+
+RPNG-381 Add API for diploma renotarization
+
+RPNG-393 Biometrics Dashboard – Add subjects listing screen
+
+## Improvements
+
+RPNG-151 Add spanish language
+
+RPNG-414 Update signing libraries
+
+## Bug fixes
+
+RPNG-285 Permission fixes
+
+RPNG-388 Duplicate constraint error when saving certificates
+
 <a name="v3-3-0" />
 ## 3.3.0 (2025-10-16)
 
