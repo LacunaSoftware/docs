@@ -1,8 +1,9 @@
 ﻿# Histórico de versões - Rest PKI Core
 
-<a name="vnext" />
+<!--<a name="vnext" />-->
+
 <a name="v3-3-0" />
-## 3.3.0 (Próxima versão)
+## 3.3.0 (2025-10-16)
 
 Atualiza modelo do banco de dados: **sim**
 
@@ -24,6 +25,8 @@ RPNG-383, RPNG-382 Adicionar tela de configurações de biometria da subscriptio
 
 RPNG-385 Tela de listagem resumida de sessões biométricas com visualização de imagens
 
+RPNG-404 Adicionar configuração para aceitar imagens de baixa resolução na API de autenticação facial
+
 ### Melhorias
 
 RPNG-312, RPNG-314, RPNG-372, RPNG-375, RPNG-384, RPNG-343 Melhorias na modelagem de entidades relacionadas a biometria
@@ -31,6 +34,8 @@ RPNG-312, RPNG-314, RPNG-372, RPNG-375, RPNG-384, RPNG-343 Melhorias na modelage
 RPNG-371 Melhorar layout das demonstrações de sessões biométricas
 
 RPNG-373 Melhorar layout das sessões biométricas em dispositivos móveis
+
+RPNG-399 Adicionar resources do FaceTec browser SDK v9.7.83
 
 ### Correções de bugs
 
