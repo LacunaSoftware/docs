@@ -1,5 +1,10 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-36-0" />
+### 1.36.0 (2025-10-31)
+
+- Adiciona política de assinatura XML para "Certificación de Origen Digital" (COD) usando SHA-256 e Transform extra `xml-exc-c14n#`
+
 <a name="v1-35-1" />
 ### 1.35.1 (2025-08-01)
 

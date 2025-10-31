@@ -1,5 +1,10 @@
 # PKI Express changelog
 
+<a name="v1-36-0" />
+### 1.36.0 (2025-10-31)
+
+- Add XML signature policy for Certificación de Origen Digital (COD) using SHA-256 and extra `xml-exc-c14n#` Transform
+
 <a name="v1-35-1" />
 ### 1.35.1 (2025-08-01)
 
