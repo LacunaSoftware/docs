@@ -313,6 +313,7 @@
 ##### [Checking logs](amplia/on-premises/azure/troubleshoot/check-logs.md)
 ##### [Enabling ASP.NET Core stdout log](amplia/on-premises/azure/troubleshoot/startup-errors.md)
 ### [Command-line tool](amplia/on-premises/tool/index.md)
+#### [check-key-store-partitions-lock](amplia/on-premises/tool/check-key-store-partitions-lock.md)
 #### [gen-enc-key](amplia/on-premises/tool/gen-enc-key.md)
 #### [hash-root-pass](amplia/on-premises/tool/hash-root-pass.md)
 #### [update-db](amplia/on-premises/tool/update-db.md)
