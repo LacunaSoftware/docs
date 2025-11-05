@@ -4,7 +4,7 @@ Para instalar uma instância *on premises* do Rest PKI Core no Windows Server, p
 
 <br />
 <center>
-**[Pacote de binários do Rest PKI Core](https://cdn.lacunasoftware.com/restpkicore/restpkicore-3.3.0.zip)**
+**[Pacote de binários do Rest PKI Core](https://cdn.lacunasoftware.com/restpkicore/restpkicore-3.4.0.zip)**
 </center>
 <br />
 
