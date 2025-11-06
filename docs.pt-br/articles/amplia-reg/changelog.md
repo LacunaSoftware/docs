@@ -24,6 +24,179 @@ ARNG-469 Erro na consulta pública de certificado
 
 ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server -->
 
+<a name="4-19" />
+## 4.19.0 (2025-11-05)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-640 Na configuração Paraguay, fazer com que o titular assine o mesmo termo que os agentes
+
+ARNG-624 Adicionar data no PDF da consulta de CNPJ
+
+ARNG-643 Adicionar seção de videoconferência na trilha de auditoria
+
+
+
+<a name="4-18-2" />
+## 4.18.2 (2025-11-04)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-641 Alteração da logo SISP na geração de documentos
+
+
+
+<a name="4-18-1" />
+## 4.18.1 (2025-11-03)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-644 Corrigir permissões das telas públicas da vídeo identificação
+
+
+
+<a name="4-18-0" />
+## 4.18.0 (2025-10-30)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-551 Emissão de certificados por Vídeo Identificação
+
+ARNG-549 Fila de AVP para pedidos de Vídeo Identificação
+
+### Melhorias
+
+ARNG-639 Corrigir o Termo de titularidade para pedidos SSL Cabo Verde
+
+
+
+<a name="4-17-0" />
+## 4.17.0 (2025-10-27)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-637 Permitir ao ACI com acesso à AC listar todos os pedidos de todas as ARs
+
+### Correções de bugs
+
+ARNG-636 Correção do envio de SMS via Eyou
+
+
+
+<a name="4-16-0" />
+## 4.16.0 (2025-10-24)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-634 Sempre enviar pedido para o ACI em caso de resolução de pendencias
+
+### Melhorias
+
+ARNG-645 Refatorar acesso do ACI a pedidos de outra AR
+
+### Correções de bugs
+
+ARNG-635 Reuso de documentos não traz documentos completos
+
+ARNG-633 Agente de conferência não consegue ver eventos do pedido durante conferência
+
+
+
+<a name="4-15-0" />
+## 4.15.0 (2025-10-22)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-626 Sempre exigir consulta Serpro
+
+### Correções de bugs
+
+ARNG-632 ACI não consegue confirmar pedidos de outra AR
+
+ARNG-627 Erro ao gerar o zip quando o pedido possui validação de documentos
+
+ARNG-623 Documento CIN não é utilizado pra validação de documentos
+
+ARNG-622 Reuso de documentos/pedido pode trazer pedido de outra AR, causando erro de permissão
+
+
+
+<a name="4-14-1" />
+## 4.14.1 (2025-10-21)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-621 Erro na tela de detalhes do pedido quando não existe termo de titularidade
+
+ARNG-615 Importação de equipamento recupera agente desabilitado quando há mais de um cadastro com o mesmo CPF
+
+ARNG-614 Certificado de equipamento de agente não habilitado permite autorização
+
+
+
+<a name="4-14-0" />
+## 4.14.0 (2025-10-20)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-617 Autorização de agente de registro por certificado digital
+
+### Melhorias
+
+ARNG-618 Chamar Facematch via Acertpix Lite quando hablitado
+
+
+
+<a name="v4-13-0" />
+## 4.13.0 (2025-10-14)
+
+Atualiza modelo do banco de dados: **sim**
+
+Versão pré-release equivalente: 4.13.0 RC 3 (2025-10-14)
+
+### Novas funcionalidades
+
+ARNG-616 Permitir coleta de biometria do agente de registro de forma remota
+
+ARNG-475 Exigir biometria após login para utilização do sistema
+
+ARNG-609 Integração documentoscopia Lite Acertpix
+
+
+
+<a name="v4-12-0" />
+## 4.12.0 (2025-09-30)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-560 Implementar suporte à Documentoscopia PRO da Acertpix com todos os tipos de documentos aceitos
+
+### Melhorias
+
+ARNG-597 Adicionar aviso de sigilo da chave 2
+
+
+
 <a name="v4-11-0" />
 ## 4.11.0 (2025-09-18)
 
@@ -51,7 +224,7 @@ ARNG-593 Erro ao gerar relatório da validação de documento
 
 ARNG-594 Erro na lógica da validação de documentos
 
-ARNG-603 Videoconferências com motivo de conferencia não estão indo pra fila de conferencia
+ARNG-603 Videoconferências com motivo de conferência não estão indo pra fila de conferência
 
 
 
@@ -739,9 +912,9 @@ ARNG-148 Camera continua ativa após sair da tela de captura
 
 ARNG-344 Erro na emissão pelo agente antes da aprovação
 
-ARNG-345 Seletor de tipo de emissão duplica "Video conferência" quando muda entre 2 tipos que possuem video conferencia ativa
+ARNG-345 Seletor de tipo de emissão duplica "Vídeo conferência" quando muda entre 2 tipos que possuem vídeo conferência ativa
 
-ARNG-353 Tipo de certificado não informa se permite ou não video conferencia na tela de detalhes
+ARNG-353 Tipo de certificado não informa se permite ou não vídeo conferência na tela de detalhes
 
 ARNG-359 Erro na criação de tipo de certificado BR
 
