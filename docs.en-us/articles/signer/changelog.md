@@ -1,5 +1,13 @@
 # Signer changelog
 
+<a name="v2-4-1" />
+### 2.4.1 (2025-10-28)
+
+* Bug fixes
+  * [SIG-1535] Visual representation font is too small on the front-end
+
+Updates database model: no
+
 <a name="v2-4-0" />
 ### 2.4.0 (2025-10-28)
 

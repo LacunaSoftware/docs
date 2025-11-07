@@ -1,5 +1,13 @@
 # Histórico de versões do Signer
 
+<a name="v2-4-1" />
+### 2.4.1 (2025-10-28)
+
+* Correções de bugs
+  * [SIG-1535] Fonte da representação visual está ficando muito pequena no front-end
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-0" />
 ### 2.4.0 (2025-10-28)
 
