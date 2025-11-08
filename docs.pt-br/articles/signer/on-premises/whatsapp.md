@@ -12,6 +12,8 @@ Abaixo são listados os pré-requisitos desse tipo de integração:
 
 * Ter um número de telefone (celular ou fixo) verificado e associado à sua Whatsapp Business Account.
 
+* O número de telefone [não pode ter sido cadastrado nos Apps de Whatsapp e Whatsapp Business](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started/migrate-existing-whatsapp-number-to-a-business-account).
+
 
 ## Configuração da conta de Whatsapp
 
