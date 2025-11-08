@@ -1,5 +1,14 @@
 # Histórico de versões do Signer
 
+<a name="v2-4-2" />
+### 2.4.2 (2025-10-28)
+
+* Melhorias
+  * [SIG-1529] Atualizar lacuna-facetec-client para a versão 2.1.0
+  * [SIG-1527] Desativar autocomplete para usuários bloqueados
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-1" />
 ### 2.4.1 (2025-10-28)
 

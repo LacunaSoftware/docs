@@ -1,5 +1,14 @@
 # Signer changelog
 
+<a name="v2-4-2" />
+### 2.4.2 (2025-10-28)
+
+* Improvements
+  * [SIG-1529] Update lacuna-facetec-client to version 2.1.0
+  * [SIG-1527] Disable autocomplete for blocked users
+
+Updates database model: no
+
 <a name="v2-4-1" />
 ### 2.4.1 (2025-10-28)
 
