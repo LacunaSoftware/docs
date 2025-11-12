@@ -1,7 +1,7 @@
 # Histórico de versões do Signer
 
 <a name="v2-4-2" />
-### 2.4.2 (2025-10-28)
+### 2.4.2 (2025-11-08)
 
 * Melhorias
   * [SIG-1529] Atualizar lacuna-facetec-client para a versão 2.1.0
@@ -10,7 +10,7 @@
 Atualiza modelo de banco de dados: não
 
 <a name="v2-4-1" />
-### 2.4.1 (2025-10-28)
+### 2.4.1 (2025-11-07)
 
 * Correções de bugs
   * [SIG-1535] Fonte da representação visual está ficando muito pequena no front-end

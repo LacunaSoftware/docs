@@ -1,7 +1,7 @@
 # Signer changelog
 
 <a name="v2-4-2" />
-### 2.4.2 (2025-10-28)
+### 2.4.2 (2025-11-08)
 
 * Improvements
   * [SIG-1529] Update lacuna-facetec-client to version 2.1.0
@@ -10,7 +10,7 @@
 Updates database model: no
 
 <a name="v2-4-1" />
-### 2.4.1 (2025-10-28)
+### 2.4.1 (2025-11-07)
 
 * Bug fixes
   * [SIG-1535] Visual representation font is too small on the front-end
