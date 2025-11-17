@@ -2,6 +2,47 @@
 
 <!--<a name="vnext" />-->
 
+<a name="v3-5-0" />
+## 3.5.0 (2025-11-17)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-336, RPNG-397 Ferramentas para importação de dados FaceTec
+
+RPNG-392 Dashboard de Biometria - Tela de detalhamento da sessão de biometria
+
+RPNG-395 Dashboard de Biometria - Filtros na listagem de sessões
+
+RPNG-427 Carimbo de tempo para vídeo identificação
+
+<!-- RPNG-432 Adicionar suporte a OpenTelemetry -->
+
+### Melhorias
+
+RPNG-157 Adicionar campo para inserir Api-Key no swagger
+
+RPNG-274 Melhorar tratamento de PDFs protegidos por senha
+
+RPNG-390 Logar eventos de frontend dos SDKs FortFace e FaceTec
+
+RPNG-406 Refatoração de PolicyWrappers com base no PKI Express
+
+RPNG-423 Ativar descrição de campos no Swagger
+
+RPNG-429 Persistência de informaçõe sadicionais das sessões FaceTec no banco de dados
+
+RPNG-431, RPNG-436 Vídeo Identificação - Melhoria no PDF de result report
+
+RPNG-444 Opção de gerar result-data para sessões biométricas de cadastro e autenticação
+
+### Correções de bugs
+
+RPNG-357 Não existe mensagem de erro amigável quando outro app está usando a câmera (FortFace)
+
+RPNG-409 Problemas na customização de cores FaceTec IdScan
+
 <a name="v3-4-0" />
 ## 3.4.0 (2025-10-28)
 

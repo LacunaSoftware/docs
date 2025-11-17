@@ -2,12 +2,53 @@
 
 <!--<a name="vnext" />-->
 
+<a name="v3-5-0" />
+## 3.5.0 (2025-11-17)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-336, RPNG-397 Tools for importing FaceTec data
+
+RPNG-392 Biometrics Dashboard – Biometric session details page
+
+RPNG-395 Biometrics Dashboard – Session listing filters
+
+RPNG-427 Timestamp for video identification
+
+<!-- RPNG-432 Add support for OpenTelemetry -->
+
+### Improvements
+
+RPNG-157 Add Swagger API-Key field
+
+RPNG-274 Improve handling of password-protected PDFs
+
+RPNG-390 Log frontend events from the FortFace and FaceTec SDKs
+
+RPNG-406 Refactor PolicyWrappers based on PKI Express
+
+RPNG-423 Enable field descriptions in Swagger
+
+RPNG-429 Persistence of additional FaceTec session information in the database
+
+RPNG-431, RPNG-436 Video Identification – Improvements to result report PDF
+
+RPNG-444 Option to generate result-data for biometric enrollment and authentication sessions
+
+### Bug fixes
+
+RPNG-357 No friendly error message when another app is using the camera (FortFace)
+
+RPNG-409 Issues with FaceTec IdScan color customization
+
 <a name="v3-4-0" />
 ## 3.4.0 (2025-10-28)
 
 Updates database model: **yes**
 
-## New features
+### New features
 
 RPNG-351, RPNG-352, RPNG-359, RPNG-353, RPNG-364, RPNG-391, RPNG-407, RPNG-422, RPNG-426 Add video identification session
 
@@ -19,13 +60,13 @@ RPNG-381 Add API for diploma renotarization
 
 RPNG-393 Biometrics Dashboard – Add subjects listing screen
 
-## Improvements
+### Improvements
 
 RPNG-151 Add spanish language
 
 RPNG-414 Update signing libraries
 
-## Bug fixes
+### Bug fixes
 
 RPNG-285 Permission fixes
 
