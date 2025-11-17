@@ -1,5 +1,16 @@
 # Histórico de versões do Signer
 
+<a name="v2-4-3" />
+### 2.4.3 (2025-10-28)
+
+* Correções de bugs
+  * [SIG-1537] Não está sendo possível assinar na Assinatura Única sem posicionar a representação visual
+
+* Melhorias
+  * [SIG-1531] Melhorar visibilidade do "x" para fechar a mensagem de pré-visualização quando assinatura está pré-posicionada
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-2" />
 ### 2.4.2 (2025-11-08)
 

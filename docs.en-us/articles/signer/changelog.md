@@ -1,5 +1,16 @@
 # Signer changelog
 
+<a name="v2-4-3" />
+### 2.4.3 (2025-10-28)
+
+* Bug fixes
+  * [SIG-1537] Unable to sign in Single Signature without placing the visual representation
+
+* Improvements
+  * [SIG-1531] Improve visibility of the “x” to close the preview message for pre-positioned signatures
+
+Updates database model: no
+
 <a name="v2-4-2" />
 ### 2.4.2 (2025-11-08)
 
