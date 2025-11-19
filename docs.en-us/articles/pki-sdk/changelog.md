@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-21-1" />
+### 2.21.1 (2025-11-07)
+
+- \[PKI-149\] Turn Certificate SignatureAlgorithm property lazy loaded.
+
+
 <a name="v2-21-0" />
 ### 2.21.0 (2025-10-27)
 
