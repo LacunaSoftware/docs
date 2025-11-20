@@ -2,6 +2,32 @@
 
 <!--<a name="vnext" />-->
 
+<a name="v3-6-0" />
+## 3.6.0 (2025-11-20)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-387 Adicionar tags para transações
+
+RPNG-445 Dashboard - Adicionar sessões de datavalid nos detalhes da sessão de biometria
+
+RPNG-460 Adicionar ferramentas para extração de fotos das sessões de liveness FaceTec
+
+### Melhorias
+
+RPNG-446 Dashboard - Adicionar campos faltantes de FaceTecSession
+
+<a name="v3-5-2" />
+## 3.5.2 (2025-11-20)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-457 Problemas com configuração de provedor de identidade externa da Subscription
+
 <a name="v3-5-0" />
 ## 3.5.0 (2025-11-17)
 
