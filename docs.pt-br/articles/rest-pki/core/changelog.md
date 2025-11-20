@@ -1,6 +1,14 @@
 ﻿# Histórico de versões - Rest PKI Core
 
 <!--<a name="vnext" />-->
+<a name="v3-6-1" />
+## 3.6.1 (2025-11-20)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-320 Carregamento de dados de sessões FaceTec legadas
 
 <a name="v3-6-0" />
 ## 3.6.0 (2025-11-20)

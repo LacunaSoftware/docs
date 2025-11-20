@@ -1,6 +1,14 @@
 ﻿# Rest PKI Core changelog
 
 <!--<a name="vnext" />-->
+<a name="v3-6-1" />
+## 3.6.1 (2025-11-20)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-320 Load data from legacy FaceTec sessions
 
 <a name="v3-6-0" />
 ## 3.6.0 (2025-11-20)
