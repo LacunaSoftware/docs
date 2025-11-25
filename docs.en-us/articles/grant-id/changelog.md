@@ -1,5 +1,18 @@
 ﻿# GrantID changelog
 
+<a name="v5-2-0" />
+### 5.2.0 (2025-11-25)
+
+* Improvements
+  * [LI-443] Remove unnecessary and broken links from documentation
+  * [LI-445] Improve validation of textual fields
+
+* Bug fixes
+  * [LI-444] SAML2 login button is not being displayed in console login
+  * [LI-446] Error displaying certificate validation results when the login fails
+
+Updates database model: no
+
 <a name="v5-1-0" />
 ### 5.1.0 (2025-07-11)
 

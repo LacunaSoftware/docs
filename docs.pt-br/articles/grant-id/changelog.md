@@ -1,5 +1,18 @@
 ﻿# Histórico de versões do GrantID
 
+<a name="v5-2-0" />
+### 5.2.0 (2025-11-25)
+
+* Melhorias
+  * [LI-443] Remover links quebrados e desnecessários da documentação
+  * [LI-445] Melhorias nas validações de tamanho de campos textuais
+
+* Correções de bugs
+  * [LI-444] Botão de login com SAML2 não é exibido no login do console
+  * [LI-446] Erro ao exibir detalhes de validação de certificados em caso de falha no login
+
+Atualiza modelo do banco de dados: não
+
 <a name="v5-1-0" />
 ### 5.1.0 (2025-07-11)
 
