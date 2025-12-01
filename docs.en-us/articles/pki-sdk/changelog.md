@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-21-2" />
+### 2.21.2 (2025-11-28)
+
+- \[PKI-150\] Timestamp request without `Expect: 100-continue` header on .NetFramework targets.
+- Add spanish (es-ES) resources localization.
+
+
 <a name="v2-21-1" />
 ### 2.21.1 (2025-11-07)
 
