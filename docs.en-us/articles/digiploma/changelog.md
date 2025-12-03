@@ -4,6 +4,70 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-1-2" />
+### 3.1.2 (2025-11-10)
+
+* Bug fixes
+    * [AUT-480] Error generating reports on Linux environments
+
+Updates database model: no
+
+<a name="v3-1-1" />
+### 3.1.1 (2025-11-10)
+
+* Bug fixes
+    * [AUT-478] Fix restricted access page
+    * [AUT-479] User not found message shown when adding users
+
+Updates database model: no
+
+<a name="v3-1-0" />
+### 3.1.0 (2025-11-06)
+
+* Improvements
+    * [AUT-477] Mask CPF in public validation of Degrees and Academic Transcripts
+
+Updates database model: no
+
+<a name="v3-0-0" />
+### 3.0.0 (2025-10-17)
+
+* Improvements
+    * [AUT-467] Filter by EntityTypes when searching events by EntityId
+    * [AUT-474] SPA 4 update
+    * [AUT-476] NET 8 and SPA 6 update
+
+* Bug fixes
+    * [AUT-475] Calls to cancellation list API fail
+
+Updates database model: yes
+
+> [!WARNING]
+> Before updating to this version make sure your license supports PKI SDK versions released until 2025-08-03.
+
+<a name="v2-29-0" />
+### 2.29.0 (2025-07-31)
+
+* Improvements
+    * [AUT-473] Suporter to new ICP Brasil signing policies
+
+Updates database model: no
+
+<a name="v2-28-0" />
+### 2.28.0 (2025-03-13)
+
+* Improvements
+    * [AUT-452] Added option to sign auxiliary documents on Signer
+    * [AUT-453] Generate reports for inspection files and cancelled degrees
+    * [AUT-454] Academic Transcript report
+    * [AUT-455] Retrieve JSON dates in degree preview
+
+* Bug fixes
+    * [AUT-456] Student name is displayed instead of social name in other pages of the visual representation of the degree and academic transcript
+    * [AUT-457] Incorrect order of elements for the LivroRegistro when the instituion is NSF
+
+Updates database model: yes
+
 <a name="v2-27-3" />
 ### 2.27.3 (2024-12-26)
 

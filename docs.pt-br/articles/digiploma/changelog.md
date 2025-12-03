@@ -4,6 +4,70 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-1-2" />
+### 3.1.2 (2025-11-10)
+
+* Correções de bugs
+    * [AUT-480] Erro ao gerar relatório em ambientes linux
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-1-1" />
+### 3.1.1 (2025-11-10)
+
+* Correções de bugs
+    * [AUT-478] Corrigir tela de acesso restrito
+    * [AUT-479] Ao adicionar usuário aparece mensagem de usuário não encontrado
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-1-0" />
+### 3.1.0 (2025-11-06)
+
+* Melhorias
+    * [AUT-477] Mascarar CPF na validação pública de Diplomas e Históricos
+
+Atualiza modelo do banco de dados: não
+
+<a name="v3-0-0" />
+### 3.0.0 (2025-10-17)
+
+* Melhorias
+    * [AUT-467] Adicionar filtro por EntityTypes ao buscar a lista de eventos por EntityId
+    * [AUT-474] Atualização para SPA 4
+    * [AUT-476] Atualização para NET 8 e SPA 6
+
+* Correções de bugs
+    * [AUT-475] Não é possível chamar API de lista de cancelamento
+
+Atualiza modelo do banco de dados: sim
+
+> [!WARNING]
+> Antes de atualizar para esta versão, garanta que sua licença suporta versões do PKI SDK lançadas até 2025-08-03.
+
+<a name="v2-29-0" />
+### 2.29.0 (2025-07-31)
+
+* Melhorias
+    * [AUT-473] Suporte a novas políticas da ICP Brasil
+
+Atualiza modelo do banco de dados: não
+
+<a name="v2-28-0" />
+### 2.28.0 (2025-03-13)
+
+* Melhorias
+    * [AUT-452] Permitir assinatura dos documentos auxiliares no Assinador
+    * [AUT-453] Gerar relatórios dos arquivos de Fiscalização e Diplomas Anulados
+    * [AUT-454] Relatório do histórico
+    * [AUT-455] Obter datas do JSON na pré-visualização do diploma
+
+* Correções de bugs
+    * [AUT-456] É apresentado o nome do aluno invés do nome social nas demais páginas da representação visual do histórico escolar
+    * [AUT-457] Ordem incorreta dos elementos em LivroRegistro quando instituição é NSF
+
+Atualiza modelo do banco de dados: sim
+
 <a name="v2-27-3" />
 ### 2.27.3 (2024-12-26)
 
