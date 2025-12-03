@@ -1,5 +1,53 @@
 # Changelog MV Bio Signer
 
+### 0.12.5 (2025-10-06)
+
+- Melhoria de logs no processo de finalização e validação da captura biométrica.
+
+### 0.12.4 (2025-08-12)
+
+- Melhoria na exibição de dados de usuários. CPFs aparecem mascarados nas views dos agentes.
+- Melhoria no build do Docker.
+
+### 0.12.3 (2025-03-20)
+
+- Adiciona configurações de tempo de *timeout* da captura biométrica.
+- Adiciona configurações de número de capturas e framerate para validação.
+
+### 0.12.2 (2024-12-11)
+
+- \[MVBIOS-16\] Adiciona API PSC de assinatura de documentos.
+- Melhoria da validação biométrica com múltiplas capturas.
+- Altera assinatura padrão de documento para PAdES-BES sem LTV.
+
+### 0.10.5 (2024-08-19)
+
+- \[MVBIOS-13\] Adiciona APIs de PSC.
+- \[MVBIOS-15\] Passa a usar GUID incremental para Ids das entidades.
+
+### 0.9.1 (2024-06-21)
+
+- \[MVBIOS-12\] Retorna campo SubjectName customizado (este campo é inserido no rodapé do PDF gerado pelo sistema da MV).
+
+### 0.8.7 (2024-05-27)
+
+- Adiciona dados do conselho do usuário via query quando não presente no certificado digital.
+
+### 0.8.6 (2024-05-27)
+
+- Remove abordagem de tail hashing dos documentos.
+
+### 0.8.4 (2024-05-08)
+
+- Adiciona configuração para habilitar/desabilitar job de documentos cancelados.
+- Melhoria nos logs de query no banco de dados externo.
+
+
+### 0.8.3 (2024-05-06)
+
+- Adiciona no `appsettings` configuração e template da query no banco de dados externo para obter informações do usuário assinante.
+- Melhoria na API de informação do login de usuário.
+
 
 ### 0.8.2 (2023-03-28)
 
