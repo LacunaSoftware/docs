@@ -3,13 +3,11 @@
 The **Node.js MVC samples project** shows how to use [Rest PKI](../index.md) together with [Web PKI](../../web-pki/index.md)
 on a Node.js project following the Model-View-Controller pattern. It is hosted on GitHub at:
 
-https://github.com/LacunaSoftware/RestPkiSamples/tree/master/NodeJS/mvc
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/nodejs/expressmvc
 
 ## Running the project
 
-1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
-1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [util.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/util.js#L14)
+1. [Download the project](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 1. Install dependencies: `npm install`
 1. Run application: `npm start`
 1. Access the URL [http://localhost:3000](http://localhost:3000)
@@ -21,28 +19,28 @@ This section lists where to find the relevant parts in each feature sample on th
 <a name="auth" />
 ### Authentication with digital certificate
 
-* Route: [authentication.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/authentication.js)
+* Route: [authentication-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/authentication-restpki.js)
 * Views:
-  * [authentication.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/authentication.pug)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/public/javascripts/signature-form.js))
-  * [authentication-fail.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/authentication-fail.pug)
+  * [authentication-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/authentication-rest/index.pug)
+    (JavaScript on [authentication-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/public/javascripts/authentication-form.js))
+  * [authentication-rest/failed.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/authentication-rest/failed.pug)
 
 <a name="pades" />
 ### PAdES signature with file already on server
 
-* Route: [pades-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/pades-signature.js)
+* Route: [pades-signature-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/pades-signature-restpki.js)
 * Views: 
-  * [pades-signature.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/pades-signature.pug)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/public/javascripts/signature-form.js))
-  * [pades-signature-complete.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/pades-signature-complete.pug)
+  * [pades-signature-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/pades-signature-rest/index.pug)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/public/javascripts/signature-form.js))
+  * [pades-signature-rest/complete.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/pades-signature-rest/complete.pug)
 
 <a name="pades-upload" />
 ### PAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on the route
-[upload.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/upload.js)
+[server-files.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/server-files.js)
 and view
-[upload.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/upload.pug))
+[server-files/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/server-files/index.pug))
 is done the control flow is the same as in the sample [PAdES signature with file already on server](#pades), but with the URL parameter `userfile` filled.
 
 <a name="pades-cosign" />
@@ -59,8 +57,8 @@ Not yet available on this project.
 <a name="pades-server" />
 ### PAdES signature using server key
 
-* Route: [pades-signature-server-key.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/pades-signature-server-key.js)
-* View: [pades-signature-complete.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/pades-signature-complete.pug)
+* Route: [pades-server-key-express.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/pades-server-key-express.js)
+* View: [pades-server-key-express/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/pades-server-key-express/index.pug)
 
 <a name="pades-wo-client" />
 ### PAdES signature without client communication
@@ -70,33 +68,33 @@ Not yet available on this project.
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 
-* Route: [open-pades-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/open-pades-signature.js)
-* View: [open-pades-signature.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/open-pades-signature.pug)
+* Route: [open-pades-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/open-pades-restpki.js)
+* View: [open-pades-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/open-pades-rest/index.pug)
 
 <a name="print" />
 ### Printer-friendly version
 
 After the control flow of the sample [PAdES signature with file already on server](#pades) is completed and the link *Download a printer-friendly version of the signed file* is clicked,
-the flow goes to the file
-[printer-friendly-version.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/printer-friendly-version.js)
+the flow goes to the route
+[printer-version-pades-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/printer-version-pades-restpki.js)
 with the URL parameter `file` filled.
 
 <a name="cades" />
 ### CAdES signature with file already on server
 
-* Route: [cades-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/cades-signature.js)
+* Route: [cades-signature-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/cades-signature-restpki.js)
 * Views:  
-  * [cades-signature.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/cades-signature.pug)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/public/javascripts/signature-form.js))
-  * [cades-signature-complete.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/cades-signature-complete.pug)
+  * [cades-signature-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/cades-signature-rest/index.pug)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/public/javascripts/signature-form.js))
+  * [cades-signature-rest/complete.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/cades-signature-rest/complete.pug)
 
 <a name="cades-upload" />
 ### CAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on the route
-[upload.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/upload.js)
+[server-files.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/server-files.js)
 and view
-[upload.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/upload.pug))
+[server-files/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/server-files/index.pug))
 is done the control flow is the same as in the sample [CAdES signature with file already on server](#cades), but with the URL parameter `userfile` filled.
 
 <a name="cades-cosign" />
@@ -108,32 +106,32 @@ same control flow is repeated, but now with the URL parameter `cmsfile` filled.
 <a name="cades-server" />
 ### CAdES signature using server key
 
-* Route: [cades-signature-server-key.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/cades-signature-server-key.js)
-* View: [cades-signature-complete.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/cades-signature-complete.pug)
+* Route: [cades-server-key-express.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/cades-server-key-express.js)
+* View: [cades-server-key-express/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/cades-server-key-express/index.pug)
 
 <a name="open-cades" />
 ### Open/validate an existing CAdES signature
 
-* Route: [open-cades-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/open-cades-signature.js)
-* View: [open-cades-signature.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/open-cades-signature.pug)
+* Route: [open-cades-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/open-cades-restpki.js)
+* View: [open-cades-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/open-cades-rest/index.pug)
 
 <a name="xml-full" />
 ### XML signature of the entire document
 
-* Route: [xml-full-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/xml-full-signature.js)
+* Route: [xml-signature-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/xml-signature-restpki.js)
 * Views:
-  * [xml-full-signature.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/xml-full-signature.pug)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/public/javascripts/signature-form.js))
-  * [xml-signature-complete.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/xml-signature-complete.pug)
+  * [xml-signature-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/xml-signature-rest/index.pug)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/public/javascripts/signature-form.js))
+  * [xml-signature-rest/complete.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/xml-signature-rest/complete.pug)
 
 <a name="xml-element" />
 ### XML signature of an element
 
-* Route: [xml-element-signature.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/xml-element-signature.js)
+* Route: [xml-nfe-signature-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/xml-nfe-signature-restpki.js)
 * Views:
-  * [xml-element-signature.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/xml-element-signature.pug)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/public/javascripts/signature-form.js))
-  * [xml-signature-complete.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/xml-signature-complete.pug)
+  * [xml-nfe-signature-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/xml-nfe-signature-rest/index.pug)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/public/javascripts/signature-form.js))
+  * [xml-nfe-signature-rest/complete.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/xml-nfe-signature-rest/complete.pug)
 
 <a name="xades-element" />
 ### XAdES signature of an element

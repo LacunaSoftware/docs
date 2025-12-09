@@ -10,8 +10,6 @@ https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/dotnet/mvc
 1. [Download the project](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 1. Open the project folder (`dotnet\mvc`)
 1. Open the solution file (.sln) on Visual Studio
-1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file `web.config`
 1. Run the solution. Make sure your system allows automatic Nuget package restore (if it doesn't, manually restore the packages).
 
 ## Project map
@@ -71,6 +69,7 @@ The relevant code is on the class [PadesVisualElements](https://github.com/Lacun
 <a name="pades-wo-client" />
 ### PAdES signature without client communication
 
+* Not yet available on this project, but you may refer to this old implementation in [Rest PKI Samples](https://github.com/LacunaSoftware/RestPkiSamples):
 * Controller: [PadesSignatureWithoutDirectCommunicationControlller](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Controllers/PadesSignatureWithoutDirectCommunicationController.cs)
 * Views:
   * [PadesSignatureWithoutDirectCommunication/Index.cshtml](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/CSharp/MVC/SampleSite/Views/PadesSignatureWithoutDirectCommunication/Index.cshtml)

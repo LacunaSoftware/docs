@@ -3,13 +3,11 @@
 The **Ruby on Rails samples project** shows how to use [Rest PKI](../index.md) together with [Web PKI](../../web-pki/index.md)
 on a Ruby project using the [Ruby on Rails](http://rubyonrails.org/) framework. It is hosted on GitHub at:
 
-https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Ruby
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/ruby/rails
 
 ## Running the project
 
-1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
-1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the initializer file [restpki.rb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/config/initializers/restpki.rb)
+1. [Download the project](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 1. Install dependencies: `bundle install`
 1. Run application: `rails server`
 1. Access the URL [http://localhost:3000](http://localhost:3000)
@@ -21,28 +19,28 @@ This section lists where to find the relevant parts in each feature sample on th
 <a name="auth" />
 ### Authentication with digital certificate
 
-* Controller: [AuthenticationController.rb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/authentication_controller.rb)
+* Controller: [AuthenticationRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/authentication_rest_controller.rb)
 * Views:
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/authentication/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/authentication/action.html.erb)
+  * [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/authentication_rest/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/authentication_rest/action.html.erb)
 
 <a name="pades" />
 ### PAdES signature with file already on server
 
-* Controller: [PadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/pades_signature_controller.rb)
+* Controller: [PadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/pades_signature_rest_controller.rb)
 * Views:
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/pades_signature/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/pades_signature/action.html.erb)
+  * [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/pades_signature_rest/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/pades_signature_rest/action.html.erb)
 
 <a name="pades-upload" />
 ### PAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on the controller
-[UploadController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/upload_controller.rb)
+[ServerFilesController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/server_files_controller.rb)
 and view
-[index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/upload/index.html.erb))
+[index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/server_files/index.html.erb))
 is done the control flow is the same as in the sample [PAdES signature with file already on server](#pades), but with the URL parameter `userfile` filled.
 
 <a name="pades-cosign" />
@@ -82,19 +80,19 @@ Not yet available on this project.
 <a name="cades" />
 ### CAdES signature with file already on server
 
-* Controller: [CadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/cades_signature_controller.rb)
+* Controller: [CadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/cades_signature_rest_controller.rb)
 * Views:
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/cades_signature/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/cades_signature/action.html.erb)
+  * [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/cades_signature_rest/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/cades_signature_rest/action.html.erb)
 
 <a name="cades-upload" />
 ### CAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on the controller
-[UploadController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/upload_controller.rb)
+[ServerFilesController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/server_files_controller.rb)
 and view
-[index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/upload/index.html.erb)
+[index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/server_files/index.html.erb)
 is done the control flow is the same as in the sample [CAdES signature with file already on server](#pades), but with the URL parameter `userfile` filled.
 
 <a name="cades-cosign" />
@@ -116,19 +114,19 @@ Not yet available on this project.
 <a name="xml-full" />
 ### XML signature of the entire document
 
-* Controller: [FullXmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/full_xml_signature_controller.rb)
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/full_xml_signature/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/full_xml_signature/action.html.erb)
+* Controller: [XmlSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/xml_signature_rest_controller.rb)
+  * [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/xml_signature_rest/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/xml_signature_rest/action.html.erb)
 
 <a name="xml-element" />
 ### XML signature of an element
 
-* Controller: [XmlElementSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/xml_element_signature_controller.rb)
+* Controller: [XmlNfeSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/xml_nfe_signature_rest_controller.rb)
 * Views:
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/xml_element_signature/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/xml_element_signature/action.html.erb)
+  * [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/xml_nfe_signature_rest/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/xml_nfe_signature_rest/action.html.erb)
 
 <a name="xades-element" />
 ### XAdES signature of an element
@@ -143,9 +141,9 @@ Not yet available on this project.
 <a name="batch" />
 ### Batch of PAdES signatures
 
-* Controller: [BatchSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/batch_signature_controller.rb)
-* View: [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/batch_signature/index.html.erb)
-  (JavaScript on [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/batch-signature-form.js))
+* Controller: [BatchPadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/batch_pades_signature_rest_controller.rb)
+* View: [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/batch_pades_signature_rest/index.html.erb)
+  (JavaScript on [batch-signature-rest-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/batch-signature-rest-form.js))
 
 <a name="batch-optimized" />
 ### Optimized batch of PAdES signatures
@@ -155,9 +153,9 @@ Not yet available on this project.
 <a name="batch-cades" />
 ### Batch of CAdES signatures
 
-* Controller: [CadesBatchSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/cades_batch_signature_controller.rb)
-* View: [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/cades_batch_signature/index.html.erb)
-  (JavaScript on [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/batch-signature-form.js))
+* Controller: [BatchCadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/batch_cades_signature_rest_controller.rb)
+* View: [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/batch_cades_signature_rest/index.html.erb)
+  (JavaScript on [batch-signature-rest-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/batch-signature-rest-form.js))
 
 <a name="batch-xml-element" />
 ### Batch of XML signatures of elements on the same document

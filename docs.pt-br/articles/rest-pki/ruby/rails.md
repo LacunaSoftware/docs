@@ -2,13 +2,11 @@
 
 O **Projeto de exemplos em Ruby on Rails** mostra como usar o [Rest PKI](../index.md) junto com [Web PKI](../../web-pki/index.md) em um projeto de Ruby usando o framework [Ruby on Rails](http://rubyonrails.org/). Isto está hospedado no GitHub em:
 
-https://github.com/LacunaSoftware/RestPkiSamples/tree/master/Ruby
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/ruby/rails
 
 ## Executando o projeto
 
-1. [Download do projeto](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) ou clone o [repositório](https://github.com/LacunaSoftware/RestPkiSamples.git)
-1. Gere um token API de acesso no [site do REST PKI](https://pki.rest/)
-1. Cole seu token de acesso no inicializador [restpki.rb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/config/initializers/restpki.rb)
+1. [Download do projeto](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) ou clone o [repositório](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 1. Instale as dependências: `bundle install`
 1. Execute a aplicação: `rails server`
 1. Accesse a URL [http://localhost:3000](http://localhost:3000)
@@ -20,26 +18,26 @@ Esta seção lista onde você vai encontrar partes relevantes nas amostras do pr
 <a name="auth" />
 ### Autentificação com certificado digital
 
-* Controller: [AuthenticationController.rb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/authentication_controller.rb)
+* Controller: [AuthenticationRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/authentication_rest_controller.rb)
 * Views:
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/authentication/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/authentication/action.html.erb)
+  * [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/authentication_rest/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/authentication_rest/action.html.erb)
 
 <a name="pades" />
 ### Assinatura PAdES com arquivo já no servidor
 
-* Controller: [PadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/pades_signature_controller.rb)
+* Controller: [PadesSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/pades_signature_rest_controller.rb)
 * Views:
-  * [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/pades_signature/index.html.erb)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-form.js))
-  * [action.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/pades_signature/action.html.erb)
+  * [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/pades_signature_rest/index.html.erb)
+    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-form.js))
+  * [action.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/pades_signature_rest/action.html.erb)
 
 <a name="pades-upload" />
 ### Assinatura PAdES com arquivo enviado pelo usuário
 
-Após o upload do arquivo (que é implementado de maneira grosseira apenas para fins de demonstração no controlador [UploadController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/upload_controller.rb) e 
-visualização [index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/upload/index.html.erb)) feito o fluxo de controle é o mesmo que na amostra [Assinatura PAdES com arquivo existente já no servidor](#pades), mas com o parâmetro URL `userfile` preenchido.
+Após o upload do arquivo (apenas para demonstração no controlador [ServerFilesController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/server_files_controller.rb) e 
+visualização [index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/server_files/index.html.erb)) o fluxo de controle é o mesmo que na amostra [Assinatura PAdES com arquivo existente já no servidor](#pades), mas com o parâmetro URL `userfile` preenchido.
 
 <a name="pades-cosign" />
 ### Co-assinatura PAdES
@@ -60,10 +58,10 @@ Não avaliado para este projeto ainda.
 <a name="pades-wo-client" />
 ### Assinatura PAdES sem comunicação do cliente
 
-* Controller: [PadesSignatureWithoutIntegrationController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/controllers/pades_signature_without_integration_controller.rb)
+* Controller: [PadesSignatureExpressController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/controllers/pades_signature_express_controller.rb)
 * Views:
-  *	[index.html.erb](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/views/pades_signature_without_integration/index.html.erb)
-	(JavaScript on [signature-without-integration-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Ruby/app/assets/javascripts/signature-without-integration-form.js))
+  *	[index.html.erb](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/views/pades_signature_express/index.html.erb)
+	(JavaScript on [signature-start-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/ruby/rails/app/assets/javascripts/signature-start-form.js))
 
 <a name="open-pades" />
 ### Abrir/validar uma assinatura PAdES existente

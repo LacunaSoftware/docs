@@ -10,8 +10,6 @@ https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/dotnet/mvc
 1.  [Download do projeto](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) ou clonar o [repositório](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 1. Abra a pasta do projeto (`dotnet\mvc`)
 1. Abra o arquivo de solução (.sln) no Visual Studio
-1. Gere um token de acesso à API no [REST PKI website](https://pki.rest/)
-1. Cole seu token de acesso no arquivo `web.config`
 1. Execute a solução. Certifique-se de que seu sistema permita a restauração automática do pacote Nuget (se isso não ocorrer, restaure manualmente os pacotes).
 
 ## Mapa do projeto

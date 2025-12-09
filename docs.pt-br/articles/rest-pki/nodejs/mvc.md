@@ -1,15 +1,13 @@
 ﻿# Projeto de exemplos em Node.js MVC
 
 O **Projeto de exemplos em Node.js MVC** mostra como usar o [Rest PKI](../index.md) junto com [Web PKI](../../web-pki/index.md)
-em projeto Node.js seguindo o padrão Model-View-Controller. É hospedado no GiHub em:
+em projeto Node.js seguindo o padrão Model-View-Controller. É hospedado no GitHub em:
 
-https://github.com/LacunaSoftware/RestPkiSamples/tree/master/NodeJS/mvc
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/nodejs/expressmvc
 
 ## Executando o projeto
 
-1. [Download do projeto](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) ou clonar o [repositório](https://github.com/LacunaSoftware/RestPkiSamples.git)
-1. Gere um token de acesso à API no [REST PKI website](https://pki.rest/)
-1. Cole seu token de acesso no arquivo `util.js`
+1. [Download do projeto](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) ou clonar o [repositório](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
 1. Instale as dependências: `npm install`
 1. Execute a aplicação: `npm start`
 1. Acesse o URL [http://localhost:3000](http://localhost:3000)
@@ -21,11 +19,11 @@ Esta seção lista tem onde encontrar as partes relevantes em cada amostra de re
 <a name="auth" />
 ### Autentificação com certificado digital
 
-* Route: [authentication.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/routes/authentication.js)
+* Route: [authentication-restpki.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/routes/authentication-restpki.js)
 * Views:
-  * [authentication.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/authentication.pug)
-    (JavaScript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/public/javascripts/signature-form.js))
-  * [authentication-fail.pug](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/NodeJS/mvc/views/authentication-fail.pug)
+  * [authentication-rest/index.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/authentication-rest/index.pug)
+    (JavaScript on [authentication-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/public/javascripts/authentication-form.js))
+  * [authentication-rest/failed.pug](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/nodejs/expressmvc/views/authentication-rest/failed.pug)
 
 <a name="pades" />
 ### Assinatura PAdES com arquivo já no servidor

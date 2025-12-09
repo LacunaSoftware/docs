@@ -11,8 +11,6 @@ https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP/legacy
 ## Executando o projeto
 
 1. [Download do projeto](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) ou clonar o [repositório](https://github.com/LacunaSoftware/RestPkiSamples.git)
-1. Gere um token de acesso à API no [REST PKI website](https://pki.rest/)
-1. Cole seu token de acesso no arquivo [PHP/legacy/config.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/legacy/config.php#L21-L24)
 1. No prompt de comando, navegue até a pasta `PHP/legacy` e execute o comando `composer install` e faça o download das dependências (se você não tiver Composer instalado, pegue [aqui](https://getcomposer.org/))
 1. Configurar um site no seu servidor HTTP local apontando para à pasta `PHP/legacy`
 1. Abrir o arquivo index.php no browser a URL correspondente (dependendo do passo anterior)

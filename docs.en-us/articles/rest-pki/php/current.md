@@ -3,19 +3,17 @@
 The **PHP 5.5+ samples project** shows how to use [Rest PKI](../index.md) together with [Web PKI](../../web-pki/index.md)
 on a project using **PHP 5.5+** (including 7.x). It is hosted on GitHub at:
 
-https://github.com/LacunaSoftware/RestPkiSamples/tree/master/PHP/standard
+https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/php/plain
 
 > [!NOTE]
 > For projects targeting earlier PHP versions, [click here](index.md).
 
 ## Running the project
 
-1. [Download the project](https://github.com/LacunaSoftware/RestPkiSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/RestPkiSamples.git)
-1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [PHP/standard/config.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/config.php#L21-L24)
-1. In a command prompt, navigate to the folder `PHP/standard` and run the command `composer install` to download the dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/))
-1. Setup a website on your local HTTP server pointing to the `PHP/standard` folder
-1. Open the index.php file on the browser on the corresponding URL (depending on the previous step)
+1. [Download the project](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
+1. In a command prompt, navigate to the folder `php/plain` and run `composer install` to download the dependencies (if you don't have Composer installed, get it [here](https://getcomposer.org/))
+1. Still on the `php/plain` folder, run `composer start` to launch PHP's built-in web server
+1. Open http://localhost:8000 on the browser
 
 ## Project map
 
@@ -24,22 +22,22 @@ This section lists where to find the relevant parts in each feature sample on th
 <a name="auth" />
 ### Authentication with digital certificate
 
-* [authentication.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/authentication.php)
-  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
-* [authentication-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/authentication-action.php)
+* [authentication-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/authentication-rest/index.php)
+  * JavaScript: [authentication-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/scripts/authentication-form.js)
+* [authentication-rest/complete.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/authentication-rest/complete.php)
 
 <a name="pades" />
 ### PAdES signature with file already on server
 
-* [pades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/pades-signature.php)
-  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
-* [pades-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/pades-signature-action.php)
+* [pades-signature-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/pades-signature-rest/index.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/scripts/signature-form.js)
+* [pades-signature-rest/complete.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/pades-signature-rest/complete.php)
 
 <a name="pades-upload" />
 ### PAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on
-[upload.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/upload.php))
+[upload.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/upload.php)))
 is done the control flow is the same as in the sample [PAdES signature with file already on server](#pades), but with the URL parameter `userfile` filled.
 
 <a name="pades-cosign" />
@@ -53,7 +51,7 @@ same control flow is repeated, but now with the URL parameter `userfile` filled.
 
 This feature is demonstrated as an optional configuration on the [PAdES signature with file already on server](#pades)
 sample which by default starts commented out. To enable it, uncomment the following line on
-[pades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/pades-signature.php):
+[pades-signature-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/pades-signature-rest/index.php):
 
 ```php
 array_push($signatureStarter->pdfMarks, getPdfMark(1));
@@ -62,7 +60,7 @@ array_push($signatureStarter->pdfMarks, getPdfMark(1));
 > [!TIP]
 > Try changing the argument to the `getPdfMark()` function to see different PDF mark configurations
 
-The relevant code is on the file [util-pades.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/util-pades.php), function `getPdfMark()`.
+The relevant code is on the file [PadesVisualElementsRest.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/PadesVisualElementsRest.php), function `getPdfMark()`.
 
 <a name="pades-server" />
 ### PAdES signature using server key
@@ -77,30 +75,30 @@ Not yet available on this project.
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
 
-* [open-pades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/open-pades-signature.php)
+* [open-pades-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/open-pades-rest/index.php)
 
 <a name="print" />
 ### Printer-friendly version
 
 After the control flow of the sample [PAdES signature with file already on server](#pades) is completed and the link *Download a printer-friendly version of the signed file* is clicked,
 the flow goes to the file
-[printer-friendly-version.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/printer-friendly-version.php)
+[printer-friendly-pades-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/printer-friendly-pades-rest/index.php)
 with the URL parameter `file` filled.
 
-The generated PDF contains links to the file [check.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/check.php), which shows details of the signatures.
+The generated PDF contains links to the file [check.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/check.php), which shows details of the signatures.
 
 <a name="cades" />
 ### CAdES signature with file already on server
 
-* [cades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/cades-signature.php)
-  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
-* [cades-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/cades-signature-action.php)
+* [cades-signature-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/cades-signature-rest/index.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/scripts/signature-form.js)
+* [cades-signature-rest/complete.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/cades-signature-rest/complete.php)
 
 <a name="cades-upload" />
 ### CAdES signature with file uploaded by user
 
 After the file upload (which is crudely implemented merely for demonstration purposes on
-[upload.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/upload.php))
+[upload.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/upload.php)))
 is done the control flow is the same as in the sample [CAdES signature with file already on server](#cades), but with the URL parameter `userfile` filled.
 
 <a name="cades-cosign" />
@@ -117,21 +115,21 @@ same control flow is repeated, but now with the URL parameter `cmsfile` filled.
 <a name="open-cades" />
 ### Open/validate an existing CAdES signature
 
-* [open-cades-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/open-cades-signature.php)
+* [open-cades-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/open-cades-rest/index.php)
 
 <a name="xml-full" />
 ### XML signature of the entire document
 
-* [xml-full-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-full-signature.php)
-  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
-* [xml-full-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-full-signature-action.php)
+* [xml-signature-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/xml-signature-rest/index.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/scripts/signature-form.js)
+* [xml-signature-rest/complete.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/xml-signature-rest/complete.php)
 
 <a name="xml-element" />
 ### XML signature of an element
 
-* [xml-element-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-element-signature.php)
-  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/signature-form.js)
-* [xml-element-signature-action.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/xml-element-signature-action.php)
+* [xml-nfe-signature-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/xml-nfe-signature-rest/index.php)
+  * JavaScript: [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/scripts/signature-form.js)
+* [xml-nfe-signature-rest/complete.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/xml-nfe-signature-rest/complete.php)
 
 <a name="xades-element" />
 ### XAdES signature of an element
@@ -141,15 +139,15 @@ Not yet available on this project.
 <a name="open-xml" />
 ### Open/validate signatures on an existing XML file
 
-* [open-xml-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/open-xml-signature.php)
+* [open-xml-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/open-xml-rest/index.php)
 
 <a name="batch" />
 ### Batch of PAdES signatures
 
-* [batch-signature.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-signature.php)
-  * JavaScript: [batch-signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/content/js/batch-signature-form.js)
-  * AJAX handlers: [batch-signature-start.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-signature-start.php)
-    and [batch-signature-complete.php](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/PHP/standard/batch-signature-complete.php)
+* [batch-pades-signature-rest/index.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/batch-pades-signature-rest/index.php)
+  * JavaScript: [batch-signature-rest-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/scripts/batch-signature-rest-form.js)
+  * AJAX handlers: [batch-pades-signature-rest/start.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/batch-pades-signature-rest/start.php)
+    and [batch-pades-signature-rest/complete.php](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/php/plain/public/batch-pades-signature-rest/complete.php)
 
 <a name="batch-optimized" />
 ### Optimized batch of PAdES signatures

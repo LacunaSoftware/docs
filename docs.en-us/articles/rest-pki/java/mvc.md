@@ -8,8 +8,6 @@ https://github.com/LacunaSoftware/PkiSuiteSamples/tree/master/java/springmvc
 ## Running the project
 
 1. [Download the project](https://github.com/LacunaSoftware/PkiSuiteSamples/archive/master.zip) or clone the [repository](https://github.com/LacunaSoftware/PkiSuiteSamples.git)
-1. Generate an API access token on the [REST PKI website](https://pki.rest/)
-1. Paste your access token on the file [Java/sample-spring-mvc/src/main/resources/application.properties](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/application.yml#L41)
 1. In a command prompt, navigate to the folder `Java/sample-spring-mvc` and run the command
    `gradlew run` (on Linux `./gradlew run`). If you are using Windows, you can alternatively
    double-click the file `Run-Sample.bat`.
@@ -73,8 +71,8 @@ The relevant code is on the class [PadesVisualElements](https://github.com/Lacun
 <a name="pades-server" />
 ### PAdES signature using server key
 
-* Controller: [PadesSignatureServerKeyController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/PadesSignatureServerKeyController.java)
-* View: [pades-signature-server-key.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/pades-signature-server-key.html)
+* Controller: [PadesServerKeyExpressController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/PadesServerKeyExpressController.java)
+* View: [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/pades-server-key-express/index.html)
 
 <a name="open-pades" />
 ### Open/validate an existing PAdES signature
@@ -121,26 +119,26 @@ same control flow is repeated, but now with the URL parameter `cmsfile` filled.
 <a name="open-cades" />
 ### Open/validate an existing CAdES signature
 
-* Controller: [OpenCadesSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/OpenCadesSignatureController.java)
-* View: [open-cades-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/open-cades-signature.html)
+* Controller: [OpenCadesExpressController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/OpenCadesExpressController.java)
+* View: [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/open-cades-express/index.html)
 
 <a name="xml-full" />
 ### XML signature of the entire document
 
-* Controller: [XmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/XmlSignatureController.java)
+* Controller: [XmlSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/XmlSignatureRestController.java)
 * Views:
-  * [xml-full-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/xml-full-signature.html)
-  (Javascript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/static/js/signature-form.js))
-  * [xml-signature-info.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/xml-signature-info.html)
+  * [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/xml-signature-rest/index.html)
+  (Javascript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/static/js/signature-form.js))
+  * [signature-info.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/xml-signature-rest/signature-info.html)
 
 <a name="xml-element" />
 ### XML signature of an element
 
-* Controller: [XmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/XmlSignatureController.java)
+* Controller: [XmlNFeSignatureRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/XmlNFeSignatureRestController.java)
 * Views:
-  * [xml-element-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/xml-element-signature.html)
-  (Javascript on [signature-form.js](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/static/js/signature-form.js))
-  * [xml-signature-info.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/xml-signature-info.html)
+  * [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/xml-nfe-signature-rest/index.html)
+  (Javascript on [signature-form.js](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/static/js/signature-form.js))
+  * [signature-info.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/xml-nfe-signature-rest/signature-info.html)
 
 <a name="xades-element" />
 ### XAdES signature of an element
@@ -150,8 +148,8 @@ Not yet available on this project.
 <a name="open-xml" />
 ### Open/validate signatures on an existing XML file
 
-* Controller: [OpenXmlSignatureController](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/java/sample/controller/OpenXmlSignatureController.java)
-* View: [open-xml-signature.html](https://github.com/LacunaSoftware/RestPkiSamples/blob/master/Java/sample-spring-mvc/src/main/resources/templates/open-xml-signature.html)
+* Controller: [OpenXmlRestController](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/java/com/lacunasoftware/pkisuite/controller/OpenXmlRestController.java)
+* View: [index.html](https://github.com/LacunaSoftware/PkiSuiteSamples/blob/master/java/springmvc/src/main/resources/templates/open-xml-rest/index.html)
 
 <a name="batch" />
 ### Batch of PAdES signatures
