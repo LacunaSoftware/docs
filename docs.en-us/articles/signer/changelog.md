@@ -1,7 +1,37 @@
 # Signer changelog
 
+<a name="v2-4-7" />
+### 2.4.7 (2025-12-18)
+
+* Bug fixes
+  * [SIG-1547] Call stack overflow error when submitting certain DOCX templates
+
+Updates database model: no
+
+<a name="v2-4-6" />
+### 2.4.6 (2025-12-17)
+
+* Bug fixes
+  * [SIG-1075] Removes any Javascript from PDFs submitted for document creation
+
+Updates database model: no
+
+<a name="v2-4-5" />
+### 2.4.5 (2025-12-17)
+
+* Bug fixes
+  * [SIG-1542] Custom organization titles do not load when the organization is already selected when document creation page is opened
+  * [SIG-1543] Unable to delete an organization that has templates with folders assigned
+  * [SIG-1544] Unable to place signature in a flow with an approval rule
+  * [SIG-1545] PKI Brasil certificates are not listed during signing when the user does not have a CPF
+
+* Improvements
+  * [SIG-1546] Reduce watermarks opacity
+
+Updates database model: no
+
 <a name="v2-4-3" />
-### 2.4.3 (2025-10-28)
+### 2.4.3 (2025-11-17)
 
 * Bug fixes
   * [SIG-1537] Unable to sign in Single Signature without placing the visual representation

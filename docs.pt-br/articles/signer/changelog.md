@@ -1,7 +1,37 @@
 # Histórico de versões do Signer
 
+<a name="v2-4-7" />
+### 2.4.7 (2025-12-18)
+
+* Correções de bugs
+  * [SIG-1547] Erro de *call stack overflow* ao submeter determinados modelos DOCX
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-4-6" />
+### 2.4.6 (2025-12-17)
+
+* Correções de bugs
+  * [SIG-1075] Remove Javascript dos PDFs submetidos para criação de documento
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-4-5" />
+### 2.4.5 (2025-12-17)
+
+* Correções de bugs
+  * [SIG-1542] Títulos personalizados da organização não carregam quando a organização já está selecionada quando a página de criar documento abre
+  * [SIG-1543] Não está sendo possível excluir uma organização que tenha um modelo associado a uma pasta
+  * [SIG-1544] Não está sendo possível posicionar assinatura em fluxo com regra de aprovação
+  * [SIG-1545] Certificados PKI Brasil não são listados na assinatura quando o usuário não possui CPF
+
+* Melhorias
+  * [SIG-1546] Diminuir opacidade das marcas d'água
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-3" />
-### 2.4.3 (2025-10-28)
+### 2.4.3 (2025-11-17)
 
 * Correções de bugs
   * [SIG-1537] Não está sendo possível assinar na Assinatura Única sem posicionar a representação visual
