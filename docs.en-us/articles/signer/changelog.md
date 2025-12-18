@@ -30,6 +30,14 @@ Updates database model: no
 
 Updates database model: no
 
+<a name="v2-4-4" />
+### 2.4.4 (2025-12-05)
+
+* Improvements
+  * [SIG-1532] Send emails via SMTP using MailKit
+
+Updates database model: no
+
 <a name="v2-4-3" />
 ### 2.4.3 (2025-11-17)
 

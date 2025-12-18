@@ -30,6 +30,14 @@ Atualiza modelo de banco de dados: não
 
 Atualiza modelo de banco de dados: não
 
+<a name="v2-4-4" />
+### 2.4.4 (2025-12-05)
+
+* Melhorias
+  * [SIG-1532] Enviar e-mails por SMTP utilizando MailKit
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-3" />
 ### 2.4.3 (2025-11-17)
 
