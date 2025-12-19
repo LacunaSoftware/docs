@@ -4,6 +4,14 @@
 > This version history currently contains only the most recent changes to the application. We are working on
 > documenting older versions.
 
+<a name="v3-1-3" />
+### 3.1.3 (2025-12-19)
+
+* Bug fixes
+    * [AUT-481] Date filter not wokring on degrees list page
+
+Updates database model: no
+
 <a name="v3-1-2" />
 ### 3.1.2 (2025-11-10)
 

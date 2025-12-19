@@ -4,6 +4,14 @@
 > Este histórico por ora contém informações apenas sobre as atualizações mais recentes ao sistema. Estamos
 > trabalhando para documentar as versões mais antigas.
 
+<a name="v3-1-3" />
+### 3.1.3 (2025-12-19)
+
+* Correções de bugs
+    * [AUT-481] Filtro de data não funciona na listagem de diplomas
+
+Atualiza modelo do banco de dados: não
+
 <a name="v3-1-2" />
 ### 3.1.2 (2025-11-10)
 
