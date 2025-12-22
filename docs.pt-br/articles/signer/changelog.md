@@ -12,7 +12,7 @@ Atualiza modelo de banco de dados: não
 ### 2.4.6 (2025-12-17)
 
 * Correções de bugs
-  * [SIG-1075] Remove Javascript dos PDFs submetidos para criação de documento
+  * [SIG-1075] Ativar remoção de Javascript dos PDFs submetidos para criação de documento
 
 Atualiza modelo de banco de dados: não
 
@@ -20,9 +20,9 @@ Atualiza modelo de banco de dados: não
 ### 2.4.5 (2025-12-17)
 
 * Correções de bugs
-  * [SIG-1542] Títulos personalizados da organização não carregam quando a organização já está selecionada quando a página de criar documento abre
-  * [SIG-1543] Não está sendo possível excluir uma organização que tenha um modelo associado a uma pasta
-  * [SIG-1544] Não está sendo possível posicionar assinatura em fluxo com regra de aprovação
+  * [SIG-1542] Títulos personalizados da organização não carregam quando a organização já está selecionada no momento de abertura da página de criação do documento
+  * [SIG-1543] Correção na exclusão de organizações com modelo associado a pasta
+  * [SIG-1544] Correção no posicionamento de assinatura em fluxos com regra de aprovação
   * [SIG-1545] Certificados PKI Brasil não são listados na assinatura quando o usuário não possui CPF
 
 * Melhorias
@@ -42,7 +42,7 @@ Atualiza modelo de banco de dados: não
 ### 2.4.3 (2025-11-17)
 
 * Correções de bugs
-  * [SIG-1537] Não está sendo possível assinar na Assinatura Única sem posicionar a representação visual
+  * [SIG-1537] Ajuste na Assinatura Única para assinatura sem posicionamento da representação visual
 
 * Melhorias
   * [SIG-1531] Melhorar visibilidade do "x" para fechar a mensagem de pré-visualização quando assinatura está pré-posicionada
@@ -62,7 +62,7 @@ Atualiza modelo de banco de dados: não
 ### 2.4.1 (2025-11-07)
 
 * Correções de bugs
-  * [SIG-1535] Fonte da representação visual está ficando muito pequena no front-end
+  * [SIG-1535] Ajuste de tamanho da fonte da representação visual no front-end
 
 Atualiza modelo de banco de dados: não
 

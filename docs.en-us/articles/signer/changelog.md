@@ -12,7 +12,7 @@ Updates database model: no
 ### 2.4.6 (2025-12-17)
 
 * Bug fixes
-  * [SIG-1075] Removes any Javascript from PDFs submitted for document creation
+  * [SIG-1075] Enable removal of Javascript from PDFs submitted for document creation
 
 Updates database model: no
 
@@ -20,9 +20,9 @@ Updates database model: no
 ### 2.4.5 (2025-12-17)
 
 * Bug fixes
-  * [SIG-1542] Custom organization titles do not load when the organization is already selected when document creation page is opened
-  * [SIG-1543] Unable to delete an organization that has templates with folders assigned
-  * [SIG-1544] Unable to place signature in a flow with an approval rule
+  * [SIG-1542] Custom organization titles do not load when the organization is already selected at the time the document creation page opens
+  * [SIG-1543] Fix in deletion of organizations with templates associated to folders
+  * [SIG-1544] Fix in signature positioning in flows with approval rules
   * [SIG-1545] PKI Brasil certificates are not listed during signing when the user does not have a CPF
 
 * Improvements
@@ -42,7 +42,7 @@ Updates database model: no
 ### 2.4.3 (2025-11-17)
 
 * Bug fixes
-  * [SIG-1537] Unable to sign in Single Signature without placing the visual representation
+  * [SIG-1537] Fix in Single Signature for signing without positioning the visual representation
 
 * Improvements
   * [SIG-1531] Improve visibility of the “x” to close the preview message for pre-positioned signatures
@@ -62,7 +62,7 @@ Updates database model: no
 ### 2.4.1 (2025-11-07)
 
 * Bug fixes
-  * [SIG-1535] Visual representation font is too small on the front-end
+  * [SIG-1535] Adjust font size of visual representation on the front-end
 
 Updates database model: no
 
