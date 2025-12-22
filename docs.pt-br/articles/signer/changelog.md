@@ -36,6 +36,16 @@ Atualiza modelo de banco de dados: não
 * Melhorias
   * [SIG-1532] Enviar e-mails por SMTP utilizando MailKit
 
+> [!CAUTION]
+> Para atualizar para essa versão sem alterar comportamento no envio de e-mail, adicione a seguinte configuração.
+
+```json
+"Email": { 
+  "Type": "Legacy" 
+}
+```
+
+
 Atualiza modelo de banco de dados: não
 
 <a name="v2-4-3" />
