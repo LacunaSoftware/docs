@@ -24,7 +24,291 @@ ARNG-469 Erro na consulta pública de certificado
 
 ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server -->
 
-<a name="4-19" />
+
+
+<a name="5.9.3" />
+## 5.9.3 (2025-12-23)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-692 Configuração de timeout de geolocation
+
+
+
+<a name="5.9.2" />
+## 5.9.2 (2025-12-22)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-715 Permitir telefone fixo Brazil no cadastro de Locais de Atendimento e Agentes de Registro
+
+ARNG-717 Adicionar eventos de SubscriptionAccessUpdated sempre que tiver alteração
+
+### Correções de bugs
+
+ARNG-716 Corrigir estado das telas onde pode haver erro de geolocalização
+
+ARNG-718 Criação de agentes de registro remove demais papéis do usuário
+
+
+
+<a name="5.9.1" />
+## 5.9.1 (2025-12-22)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-606 Botão de reenvio de email de emissão não verifica permissões
+
+
+
+<a name="5.9.0" />
+## 5.9.0 (2025-12-19)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-705 Disponibilizar download do Termo de Titularidade apenas após a conclusão da Videoconferência
+
+ARNG-712 Exibir resumo dos indicadores Facetech diretamente na tela de Verificação do agente da Vídeoidentificação
+
+### Correções de bugs
+
+ARNG-706 Pedido não OK no PSBio dão erro ao completar conferência do pedido
+
+ARNG-713 Chaves de API do webhook de aplicações estão expostas por tela
+
+
+
+<a name="5.8.1" />
+## 5.8.1 (2025-12-18)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-707 Corrigir erro ao tentar acessar detalhes do usuário
+
+
+
+<a name="5.8.0" />
+## 5.8.0 (2025-12-17)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-686 Reutilizar imagens do documento de identidade da Facetech na Videoidentificação
+
+ARNG-702 Revisar dialogs de auxílio do agente de registro durante videoconferência
+
+ARNG-703 Adicionar nome da AR nos detalhes do pedido
+
+### Correções de bugs
+
+ARNG-708 Filtrar apenas usuários que possuem certificados dentro do command para corrigir dados de certificado
+
+ARNG-709 Melhorar erro quando falhar geolocalização
+
+ARNG-710 Corrigir violações de CSP e Permission Policy na integração com Jitsi
+
+
+
+<a name="5.7.0" />
+## 5.7.0 (2025-12-16)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-661 Implementar geração do Relatório semanal CAR (Cadastro de Agente de Registro) para o ITI
+
+### Melhorias
+
+ARNG-625 Não reaproveitar consulta CNPJ
+
+
+
+<a name="5.6.0" />
+## 5.6.0 (2025-12-12)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-693 Adicionar configuração para permitir desabilitar as verificações de conflito de interesse
+
+ARNG-694 Criar papel de usuário de suporte
+
+ARNG-696 Desabilitar cadastro de pedidos para usuários
+
+ARNG-700 Disponibilizar validação de telefone para o ClientApp
+
+### Melhorias
+
+ARNG-697 Melhorar visualização de dados durante videoconferencia
+
+ARNG-698 Adicionar descrição das permissões dos usuários
+
+### Correções de bugs
+
+ARNG-689 Corrigir campos CNPJ e Razão social da listagem de Autoridades de Registro
+
+### Tarefa
+
+ARNG-691 Migração de dados da Consulti
+
+
+
+<a name="5.4.0" />
+## 5.4.0 (2025-12-05)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-687 Remover permissões de Subscriptions não habilitadas
+
+### Melhorias
+
+ARNG-680 Melhorias de OTP
+
+
+
+<a name="5.3.0" />
+## 5.3.0 (2025-12-03)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-682 Adicionar suporte ao MailKit
+
+
+
+<a name="5.2.1" />
+## 5.2.1 (2025-12-2)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-678 Exigir OTP de Video Conferência
+
+
+
+<a name="5.1.2" />
+## 5.1.2 (2025-11-28)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-675 Erro ao visualizar detalhes do titular no pedido
+
+
+
+<a name="5.1.1" />
+## 5.1.1 (2025-11-26)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-642 Permitir exigir auditoria de equipamentos em toda a AC
+
+### Melhorias
+
+ARNG-646 Criar eventos para envios de notificação
+
+ARNG-648 Pré-preencher campos de Nome e Sobrenome  no formulário, com dados do OCR do RestPKI
+
+### Correções de bugs
+
+ARNG-612 Passo de videoconferência fica como concluido sem ter o passo de termo de titularidade concluido
+
+ARNG-674 Problema pra selecionar Natureza Juridica ao editar documentos do pedido
+
+
+
+<a name="5.1.0" />
+## 5.1.0 (2025-11-24)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-516 Geração de recibo SAF para o dossiê
+
+
+
+<a name="5.0.0" />
+## 5.0.0 (2025-11-21)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-489 Angular 19
+
+ARNG-649 Substituir o texto de instrução da Videoidentificação pelos Termos de Consentimento
+
+ARNG-650 Renomear a configuração "Permitir video identificación"
+
+ARNG-669 Disponibilizar endpoint para consulta de Pedidos Pré-Aprovados
+
+### Correções de bugs
+
+ARNG-672 Erro ao recuperar certificado de assinatura
+
+
+
+<a name="4.21.1" />
+## 4.21.1 (2025-11-12)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-671 Error ao criar pedido de video identificação via API
+
+
+
+<a name="4.21.0" />
+## 4.21.0 (2025-11-12)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-610 Comando pra migrar videos para o external blob storage
+
+
+
+<a name="4.20.0" />
+## 4.20.0 (2025-11-11)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-659 Adicionar Número de Série do HSM ao Termo de Titularidade - Certificado em Nuvem F3 (Code 100)
+
+### Correções de bugs
+
+ARNG-647 Erro na pesquisa de AGR com filtro de status
+
+ARNG-670 Erro ao enviar email com termo de titularidade após emissão do certificado
+
+
+
+<a name="4-19-0" />
 ## 4.19.0 (2025-11-05)
 
 Atualiza modelo do banco de dados: não
