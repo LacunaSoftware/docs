@@ -26,6 +26,23 @@ ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server -->
 
 
 
+<a name="5.9.4" />
+## 5.9.4 (2025-12-23)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-721 Erro ao enviar SMS quando telefone principal é fixo e secundário não está preenchido
+
+ARNG-722 Corrigir erro de permissão ao tentar realizar ações na CA enquanto autenticado como operador 
+
+ARNG-723 Corrigir error nas permissões do coordenador sendo alteradas quando sua AR é editada
+
+ARNG-724 Corrigir captura do nome da cidade ao realizar requisições por latitude e longitude
+
+
+
 <a name="5.9.3" />
 ## 5.9.3 (2025-12-23)
 
