@@ -92,8 +92,8 @@ Under section **Order**:
 * **SubjectAuth**: Under section **SubjectAuth**:
 
     > controls holder authentication on the subject authentication form.
-    * **MaxFailedAttempts**: Maximum failed attempts before locking the order. Defaults to `1`.
-    * **InitialLockPeriodMinutes**: Initial lock period in minutes. Defaults to `1`.
+    * **MaxFailedAttempts**: maximum failed attempts before locking the order. Defaults to `1`.
+    * **InitialLockPeriodMinutes**: initial lock period in minutes. Defaults to `1`.
 
 ### *CertificateRenewalAlert* Settings
 
@@ -103,10 +103,10 @@ See [Configure certificate renewal alert](configure-certificate-renewal-alert.md
 
 Under section **Maps**:
 
-> Used to get service place location if configured.
-* **AzureEndpointUrl**: azure endpoint url. Defaults to `https://atlas.microsoft.com/`.
-* **AzureClientId**: azure client id. Defaults to `null`.
-* **AzurePrimaryKey**: azure primary key. Defaults to `null`.
+> Used to retrieve the service place location when configured.
+* **AzureEndpointUrl**: Azure endpoint URL. Defaults to `https://atlas.microsoft.com/`.
+* **AzureClientId**: Azure client ID. Defaults to `null`.
+* **AzurePrimaryKey**: Azure primary key. Defaults to `null`.
 
 ### *CertificateType* Settings
 
@@ -127,13 +127,13 @@ Under section **SealCertificate**:
 Under section **Jitsi**:
 
 * **Domain**: domain. Defaults to `8x8.vc`.
-* **Issuer**: issuer used on jwt `iss` field. Defaults to `chat`.
+* **Issuer**: issuer used on JWT `iss` field. Defaults to `chat`.
 * **AppId**: application id. Defaults to `null`.
 * **ApiKey**: API key. Defaults to `null`.
 * **PrivateKeyPath**: private key path. Defaults to `null`.
 * **PrivateKeyContent**: private key content. Defaults to `null`.
 * **PrivateKeyType**: private key type. Defaults to `PKCS1`.
-* **IsSharedService**: by defaults the application throws an expcetion if receives any payload and it cannot finds related order, if same configured Jitsi is used by others applications and can send webhook for outside application purpose set to `true`. Defaults to `false`.
+* **IsSharedService**: by default the application throws an exception if it receives any payload and it cannot find a related order. If same configured Jitsi is used by other applications and can send webhooks for outside application purposes set to `true`. Defaults to `false`.
 
 ### *Serpro* Settings
 
@@ -158,7 +158,7 @@ Under section **RfbQuery**:
 
 Under section **HolderFileTypes**:
 
-> Key value will be used to save value on database and have maximum value of 15.
+> Key value will be used to save the value in the database and must have a maximum length of 15 characters.
 * **`Key`**: displayed name.
 
 ### *BryPSBio* Settings
@@ -218,7 +218,7 @@ Under section **PkiBrazilDailyReport**:
 
 Under section **GoogleMaps**:
 
-> Used to get validation IBGE code if `EnableValidationReverseGeolocation`.
+> Used to retrieve the validation IBGE code when `EnableValidationReverseGeolocation` is enabled.
 * **ApiKey**: API key. Defaults to `null`.
 
 ### *Amplia* Settings
