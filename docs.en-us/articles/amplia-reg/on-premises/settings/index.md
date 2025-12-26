@@ -33,6 +33,7 @@ Under section **General**:
 Under section **JobSchedules**:
 
 > controls job schedules.
+
 * **CleanupUsedNonces**: desired cron schedule expression that defines when the system cleans up used or expired nonces. Defaults to `*/11 * * * *` (at every 11th minute)
 * **CertificateRenewalAlert**: desired cron schedule expression that defines when the system checks for certificates close to expiration and triggers renewal alerts. Defaults to `0 10 * * *` (at 10:00).
 * **CertificateRenewalAlertTimeZone**: time zone used to evaluate the CertificateRenewalAlert cron schedule expression. Defaults to the system time zone.
@@ -92,6 +93,7 @@ Under section **Order**:
 * **SubjectAuth**: Under section **SubjectAuth**:
 
     > controls holder authentication on the subject authentication form.
+
     * **MaxFailedAttempts**: maximum failed attempts before locking the order. Defaults to `1`.
     * **InitialLockPeriodMinutes**: initial lock period in minutes. Defaults to `1`.
 
@@ -104,6 +106,7 @@ See [Configure certificate renewal alert](configure-certificate-renewal-alert.md
 Under section **Maps**:
 
 > Used to retrieve the service place location when configured.
+
 * **AzureEndpointUrl**: Azure endpoint URL. Defaults to `https://atlas.microsoft.com/`.
 * **AzureClientId**: Azure client ID. Defaults to `null`.
 * **AzurePrimaryKey**: Azure primary key. Defaults to `null`.
@@ -119,6 +122,7 @@ Under section **CertificateType**:
 Under section **SealCertificate**:
 
 > Used for agreement and dossier signature for pre approved orders.
+
 * **Certificate**: Certificate base 64. Defaults to `null`.
 * **ProtectedKey**: Protected key base 64. Defaults to `null`.
 
@@ -159,6 +163,7 @@ Under section **RfbQuery**:
 Under section **HolderFileTypes**:
 
 > Key value will be used to save the value in the database and must have a maximum length of 15 characters.
+
 * **`Key`**: displayed name.
 
 ### *BryPSBio* Settings
@@ -219,6 +224,7 @@ Under section **PkiBrazilDailyReport**:
 Under section **GoogleMaps**:
 
 > Used to retrieve the validation IBGE code when `EnableValidationReverseGeolocation` is enabled.
+
 * **ApiKey**: API key. Defaults to `null`.
 
 ### *Amplia* Settings
