@@ -1,28 +1,13 @@
 ﻿# Histórico de versões do Amplia Reg
 
-<a name="vnext" />
-<!-- 
-<a name="v3-1-0" />
-## 3.1.0 (2025-04-04) (próxima versão)
--->
+<a name="5.9.5" />
+## 5.9.5 (2025-12-24)
 
-<!-- Atualiza modelo do banco de dados: **sim**
-
-### Melhorias
-
-ARNG-461 Adequações para o certificado de sello electronico do certificado PY
-
-ARNG-467 Melhorias visuais à dialog de consulta à lista negativa
+Atualiza modelo do banco de dados: não
 
 ### Correções de bugs
 
-ARNG-456 Uniformizar dialogs e melhorar campos de input de data e data/hora
-
-ARNG-468 Tela de emissão pelo agente antes da aprovação dando erro
-
-ARNG-469 Erro na consulta pública de certificado
-
-ARNG-470 Erro no tratamento de respostas não-JSON vindas do ADSS server -->
+ARNG-727 Erro ao confirmar pedidos com Agentes de Conferência com permissão em toda a AC
 
 
 
