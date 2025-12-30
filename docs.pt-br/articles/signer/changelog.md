@@ -1,5 +1,18 @@
 # Histórico de versões do Signer
 
+<a name="v2-4-8" />
+### 2.4.8 (2025-12-30)
+
+* Melhorias
+  * [SIG-1548] Mostrar prévia de assinatura na assinatura digital e na Assinatura Única
+  * [SIG-1550] Adicionar tema *French Blue Pink*
+  * [SIG-1549] Remover CPF e nome do titular ao utilizar certificado e-CNPJ
+
+* Correções de bugs
+  * [SIG-1551] FaceTec: endereço IP do usuário não está sendo enviado ao REST PKI
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-7" />
 ### 2.4.7 (2025-12-18)
 

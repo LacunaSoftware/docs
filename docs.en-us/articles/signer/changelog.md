@@ -1,5 +1,18 @@
 # Signer changelog
 
+<a name="v2-4-8" />
+### 2.4.8 (2025-12-30)
+
+* Improvements
+  * [SIG-1548] Display signature preview in digital signature and Single Signature
+  * [SIG-1550] Add French Blue Pink theme
+  * [SIG-1549] Remove holder’s CPF and name when using e-CNPJ certificates
+
+* Bug fixes
+  * [SIG-1551] FaceTec: user IP address is not being sent to REST PKI
+
+Updates database model: no
+
 <a name="v2-4-7" />
 ### 2.4.7 (2025-12-18)
 
