@@ -5,6 +5,8 @@ certificate issue procedure.
 
 [!include[SMS configuration](../../includes/spa-config/sms-config-full.md)]
 
+## Using multiple SMS sending services
+
 To configure multiple SMS sending services, define named subsections of the **SMS** section and define a **Priority** for each service. Lower values mean higher priority.
 
 Example (*.ini* or *.conf* configuration file):
