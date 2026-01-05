@@ -1,6 +1,11 @@
 ﻿The section **SMS** of the configuration file configures the SMS sending. SMS messages may be sent using different *providers*. The setting **Type** defines which
 provider should be used, and the remaining settings depend on the provider chosen:
 
+* [Amazon SNS](https://aws.amazon.com/sns/)
+  * **Type**: `AmazonSNS`
+  * **Region**: the AWS region code, for instance `sa-east-1` or `us-east-1` (see [AWS region codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html))
+  * **AccessKeyId**: the access key ID
+  * **SecretAccessKey**: the secret access key
 * [Comtele](https://comtele.com.br/)
   * **Type**: `Comtele`
   * **AuthToken** (required): API authentication token
@@ -14,21 +19,6 @@ provider should be used, and the remaining settings depend on the provider chose
   * **UserAgent** (optional): user agent header value to be passed on the API. Be default, a string containing the name and version of the application is sent.
   * **CostCenter** (optional): *CostCenter* field to be passed on the API
   * **Endpoint** (default: `https://sendsms.eyou.com.br/api/sendSms`): fill to use a custom API endpoint.
-* [Total Voice](https://totalvoice.com.br/)
-  * **Type**: `TotalVoice`
-  * **AccessToken**: the access token, provided by TotalVoice (e.g.: `0123456789abcdef0123456789abcdef`)
-* [SMS Empresa](https://www.smsempresa.com.br/)
-  * **Type**: `SmsEmpresa`
-  * **ChaveKey**: the *Chave Key* given on *Configuration* &gt; *My Account*
-* [SMS Token](https://www.smstoken.com.br/)
-  * **Type**: `SmsToken`
-  * **Key** (required): API key acquired from service dashboard
-  * **Endpoint** (default: `https://api.smstoken.com.br/`): fill to use a custom API endpoint (the actual route is not configurable).
-* [Amazon SNS](https://aws.amazon.com/sns/)
-  * **Type**: `AmazonSNS`
-  * **Region**: the AWS region code, for instance `sa-east-1` or `us-east-1` (see [AWS region codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html))
-  * **AccessKeyId**: the access key ID
-  * **SecretAccessKey**: the secret access key
 * Generic
   * **Type**: `Generic`
   * **Endpoint**: the endpoint to which the SMS information will be sent.
@@ -42,6 +32,16 @@ provider should be used, and the remaining settings depend on the provider chose
   * **User** (required): *user* field acquired from service dashboard
   * **Password** (required): *password* field acquired from service dashboard
   * **Endpoint** (default: `sms-api-pointer.pontaltech.com.br`): hostname to be used when calling the API (the actual route is not configurable).
+* [SMS Empresa](https://www.smsempresa.com.br/)
+  * **Type**: `SmsEmpresa`
+  * **ChaveKey**: the *Chave Key* given on *Configuration* &gt; *My Account*
+* [SMS Token](https://www.smstoken.com.br/)
+  * **Type**: `SmsToken`
+  * **Key** (required): API key acquired from service dashboard
+  * **Endpoint** (default: `https://api.smstoken.com.br/`): fill to use a custom API endpoint (the actual route is not configurable).
+* [Total Voice](https://totalvoice.com.br/)
+  * **Type**: `TotalVoice`
+  * **AccessToken**: the access token, provided by TotalVoice (e.g.: `0123456789abcdef0123456789abcdef`)
 * [Twilio](https://www.twilio.com/)
   * **Type**: `Twilio`
   * **MessageFrom**: the sender phone number provided by Twilio (e.g.: `+12125550000`)
