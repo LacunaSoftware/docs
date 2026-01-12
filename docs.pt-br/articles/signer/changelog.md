@@ -1,5 +1,21 @@
 # Histórico de versões do Signer
 
+<a name="v2-4-10" />
+### 2.4.10 (2026-01-06)
+
+* Correções de bugs
+  * [SIG-1574] Continuação do ajuste na submissão de documentos para assinatura, corrigindo cenários adicionais não cobertos na versão 2.4.9
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-4-9" />
+### 2.4.9 (2026-01-05)
+
+* Correções de bugs
+  * [SIG-1574] Submissão de documentos para assinatura não funciona corretamente em alguns casos
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-8" />
 ### 2.4.8 (2025-12-30)
 

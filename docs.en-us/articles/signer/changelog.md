@@ -1,5 +1,21 @@
 # Signer changelog
 
+<a name="v2-4-10" />
+### 2.4.10 (2026-01-06)
+
+* Bug fixes
+  * [SIG-1574] Continuation of fixes for document submission for signing, addressing additional scenarios not covered in version 2.4.9
+
+Updates database model: no
+
+<a name="v2-4-9" />
+### 2.4.9 (2026-01-05)
+
+* Bug fixes
+  * [SIG-1574] Document submission for signing does not work correctly in some cases
+
+Updates database model: no
+
 <a name="v2-4-8" />
 ### 2.4.8 (2025-12-30)
 
