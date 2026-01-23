@@ -1,5 +1,30 @@
 # Signer changelog
 
+<a name="v2-5-1" />
+### 2.5.1 (2026-01-22)
+
+* Improvements
+  * [SIG-1580] New dashboard buttons redirect to the documents page with the selected filter applied
+
+Updates database model: no
+
+<a name="v2-5-0" />
+### 2.5.0 (2026-01-22)
+
+* Improvements
+  * [SIG-1580] New document visualization on the dashboard
+  * [SIG-1530] Review the design of the geolocation access permission dialog – Rede D'Or
+
+Updates database model: no
+
+<a name="v2-4-11" />
+### 2.4.11 (2026-01-19)
+
+* Bug fixes
+  * [SIG-1541] Unable to retrieve a document after moving it to another folder
+
+Updates database model: no
+
 <a name="v2-4-10" />
 ### 2.4.10 (2026-01-06)
 

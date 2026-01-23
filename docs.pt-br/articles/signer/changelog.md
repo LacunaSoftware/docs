@@ -1,5 +1,30 @@
 # Histórico de versões do Signer
 
+<a name="v2-5-1" />
+### 2.5.1 (2026-01-22)
+
+* Melhorias
+  * [SIG-1580] Novos botões no dashboard redirecionam para a página de documentos com o filtro selecionado
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-5-0" />
+### 2.5.0 (2026-01-22)
+
+* Melhorias
+  * [SIG-1580] Nova visualização de documentos no dashboard
+  * [SIG-1530] Revisar design do diálogo de solicitação de permissão de acesso à geolocalização – Rede D'Or
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-4-11" />
+### 2.4.11 (2026-01-19)
+
+* Correções de bugs
+  * [SIG-1541] Não está sendo possível consultar um documento após movê-lo de pasta
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-4-10" />
 ### 2.4.10 (2026-01-06)
 
