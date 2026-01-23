@@ -90,15 +90,6 @@ Updates database model: no
 * Improvements
   * [SIG-1532] Send emails via SMTP using MailKit
 
-> [!CAUTION]
-> To upgrade to this version without changing e-mail sending behavior you need to add the following property to your configuration
-
-```json
-"Email": { 
-  "Type": "Legacy" 
-}
-```
-
 Updates database model: no
 
 <a name="v2-4-3" />
