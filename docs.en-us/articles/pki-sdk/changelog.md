@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-22-0" />
+### 2.22.0 (2026-01-26)
+
+- \[PKI-152\] Improve ICP-Brasil CNPJ field encoding to support new alphanumeric CNPJ codes.
+- Add remove unsigned-attributes feature to CAdES signature editor.
+
 
 <a name="v2-21-2" />
 ### 2.21.2 (2025-11-28)
