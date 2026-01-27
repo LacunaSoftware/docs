@@ -1,10 +1,128 @@
 ﻿# Histórico de versões do Amplia
 
-<!--
 <a name="vnext" />
--->
+<a name="v4-21-0" />
+## 4.21.0 (próxima versão)
 
-<a name="4-14-0" />
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+AMP-386 Implementar encriptação e decriptação AES no key store Kryptus
+
+### Melhorias
+
+AMP-387 Permitir inclusão de dados de CEI INSS e número PIS/PASEP em certificados ICP-Brasil
+
+### Correções de bugs
+
+AMP-388 Erro "Cannot issue certificate with a start date prior to the CA certificate validity period" ao emitir certificado com AC recém-criada
+
+AMP-389 API de geração de chaves no processo de emissão de *managed certificate* resulta em erro caso o nome do titular contenha vírgulas
+
+
+
+<a name="v4-20-0" />
+## 4.20.0 (2026-01-14)
+
+Idêntica a: 4.20.0 RC 1 (2026-01-07)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+AMP-384 Melhorias no key store PKCS #11 relevantes para ambientes com alta concorrência e melhorias na API de cálculo de IDN
+
+
+
+<a name="v4-19-0" />
+## 4.19.0 (2026-01-07)
+
+Idêntica a: 4.19.0 RC 2 (2025-11-17)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+AMP-355 Certificados podem ser emitidos com início da validade anterior à do emissor
+
+
+
+<a name="v4-18-0" />
+## 4.18.0 (2025-11-12)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-378 Tratar key store partitions bloqueadas antes da hora
+
+
+
+<a name="v4-17-1" />
+## 4.17.1 (2025-11-05)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-377 Comando `check-key-store-partitions-lock` para verificar estado de bloqueio das partições
+
+
+
+<a name="v4-17-0" />
+## 4.17.0 (2025-11-05)
+
+Idêntica a: 4.17.0 RC 4 (2025-09-29)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+AMP-243 Apagar chaves de processos incompletos de emissão de *managed certificate*
+
+AMP-376 Adicionar número do pedido na confirmação de remoção das partições
+
+
+
+<a name="v4-16-0" />
+## 4.16.0 (2025-09-19)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+AMP-374 Comando `repair-blobs` para corrigir blobs corrompidos
+
+
+
+<a name="v4-15-1" />
+## 4.15.1 (2025-09-08)
+
+Idêntica a: 4.15.1 RC 4 (2025-09-03)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+AMP-373 Erros no comando `check-blobs`
+
+
+
+<a name="v4-15-0" />
+## 4.15.0 (2025-09-01)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+AMP-328 Tela de criação de pedido de Carteira de Identificação Estudantil \(CIE\)
+
+AMP-372 Comando `check-blobs` para verificar integridade dos blobs
+
+
+
+<a name="v4-14-0" />
 ## 4.14.0 (2025-08-12)
 
 Idêntica a: 4.14.0 RC 2 (2025-08-12)
@@ -27,7 +145,7 @@ AMP-368 Telefones com prefixo `+1 (305)` são recusados como não sendo de celul
 
 
 
-<a name="4-13-0" />
+<a name="v4-13-0" />
 ## 4.13.0 (2025-07-23)
 
 Idêntica a: 4.13.0 RC 4 (2025-05-30)
@@ -44,7 +162,7 @@ AMP-367 Suporte \(experimental\) a integração com Prometheus
 
 
 
-<a name="4-12-0" />
+<a name="v4-12-0" />
 ## 4.12.0 (2025-07-23)
 
 Idêntica a: 4.12.0 RC 2 (2025-02-03)
@@ -59,7 +177,7 @@ AMP-360 Adequações para o certificado de sello electronico do certificado PY
 
 
 
-<a name="4-11-0" />
+<a name="v4-11-0" />
 ## 4.11.0 (2025-01-22)
 
 Idêntica a: 4.11.0 RC 2 (2024-11-06)
@@ -74,7 +192,7 @@ AMP-361 Melhorias à integração com provedores de envio de SMS
 
 
 
-<a name="4-10-0" />
+<a name="v4-10-0" />
 ## 4.10.0 (2024-10-24)
 
 Idêntica a: 4.10.0 RC 4 (2024-09-13)
@@ -89,7 +207,7 @@ AMP-356 Ajustes nos campos Unique Identifier e Organization Identifier de certif
 
 
 
-<a name="4-9-0" />
+<a name="v4-9-0" />
 ## 4.9.0 (2024-08-13)
 
 Idêntica a: 4.9.0 RC 11 (2024-05-10)
@@ -124,7 +242,7 @@ AMP-351 Erro "Could not place a lock on the resource 'hangfire:lock:recurring-jo
 
 
 
-<a name="4-8-1" />
+<a name="v4-8-1" />
 ## 4.8.1 (2024-04-30)
 
 Atualiza modelo do banco de dados: não
@@ -135,7 +253,7 @@ AMP-350 Erro "Cannot write DateTime with Kind=UTC..." ao criar pedido de certifi
 
 
 
-<a name="4-8-0" />
+<a name="v4-8-0" />
 ## 4.8.0 (2024-02-27)
 
 Idêntica a: 4.8.0 RC 5 (2024-02-27)
@@ -160,7 +278,7 @@ AMP-341 Integer overflow ao setar um `CertificateManagement:OperationSessionTime
 
 
 
-<a name="4-7-0" />
+<a name="v4-7-0" />
 ## 4.7.0 (2023-12-20)
 
 Idêntica a: 4.7.0 RC 2 (2023-11-01)
@@ -177,7 +295,7 @@ AMP-331 Melhorar integração com Amplia Reg para casos de certificados organiza
 
 
 
-<a name="4-6-1" />
+<a name="v4-6-1" />
 ## 4.6.1 (2023-09-06)
 
 Atualiza modelo do banco de dados: não
@@ -194,7 +312,7 @@ AMP-324 Erro *JsonReaderException: Bad JSON escape sequence*
 
 
 
-<a name="4-6-0" />
+<a name="v4-6-0" />
 ## 4.6.0 (2023-08-30)
 
 Atualiza modelo do banco de dados: não
@@ -213,7 +331,7 @@ AMP-327 Suporte a variável de ambiente STANDBY \(para instalação em Azure App
 
 
 
-<a name="4-5-4" />
+<a name="v4-5-4" />
 ## 4.5.4 (2023-08-04)
 
 Atualiza modelo do banco de dados: não
@@ -224,7 +342,7 @@ AMP-311 Atualizar pacote de envio de SMS para permitir configurar um `MessagingS
 
 
 
-<a name="4-5-3" />
+<a name="v4-5-3" />
 ## 4.5.3 (2023-08-04)
 
 Atualiza modelo do banco de dados: não†
@@ -237,7 +355,7 @@ AMP-319 Algumas migrations passadas não podem ser aplicadas em SQL Server pré-
 
 
 
-<a name="4-5-2" />
+<a name="v4-5-2" />
 ## 4.5.2 (2023-07-05)
 
 Atualiza modelo do banco de dados: não
@@ -248,7 +366,7 @@ AMP-310 Consulta de horário OTP não está sendo repassada a key stores Dinamo 
 
 
 
-<a name="4-5-1" />
+<a name="v4-5-1" />
 ## 4.5.1 (2023-06-29)
 
 Atualiza modelo do banco de dados: não
@@ -259,7 +377,7 @@ AMP-309 Campos com string vazia no SubjectName causam erro na emissão do certif
 
 
 
-<a name="4-5-0" />
+<a name="v4-5-0" />
 ## 4.5.0 (2023-06-14)
 
 Atualiza modelo do banco de dados: não
@@ -270,7 +388,7 @@ AMP-306 Campo `ExtendedKeyUsageCritical` em certificados personalizados
 
 
 
-<a name="4-4-0" />
+<a name="v4-4-0" />
 ## 4.4.0 (2023-06-02)
 
 Atualiza modelo do banco de dados: **sim**
@@ -295,7 +413,7 @@ AMP-305 Adicionar traduções para o metadado de número do RG vindo do PMCert
 
 
 
-<a name="4-3-0" />
+<a name="v4-3-0" />
 ## 4.3.0 (2023-05-19)
 
 Atualiza modelo do banco de dados: **sim**
@@ -316,7 +434,7 @@ AMP-296 Suporte a armazenamento de blobs em banco de dados
 
 
 
-<a name="4-2-0" />
+<a name="v4-2-0" />
 ## 4.2.0 (2023-05-19)
 
 Atualiza modelo do banco de dados: **sim**
@@ -337,7 +455,7 @@ AMP-291 APIs de emissão de certificado em nuvem não permitem que o Amplia fiqu
 
 
 
-<a name="4-1-0" />
+<a name="v4-1-0" />
 ## 4.1.0 (2023-03-02)
 
 Atualiza modelo do banco de dados: **sim**

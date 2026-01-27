@@ -1,8 +1,127 @@
 ﻿# Amplia changelog
 
-<!--
+
 <a name="vnext" />
--->
+<a name="v4-21-0" />
+## 4.21.0 (next version)
+
+Updates database model: no
+
+### New features
+
+AMP-386 Implement AES encryption and decryption on the Kryptus key store
+
+### Improvements
+
+AMP-387 Allow inclusion of CEI INSS and PIS/PASEP number data in ICP-Brasil certificates
+
+### Bug fixes
+
+AMP-388 Error "Cannot issue certificate with a start date prior to the CA certificate validity period" when issuing a certificate with a newly created CA
+
+AMP-389 The key generation API in the managed certificate issue process results in an error if the certificate holder's name contains commas
+
+
+
+<a name="v4-20-0" />
+## 4.20.0 (2026-01-14)
+
+Identical to: 4.20.0 RC 1 (2026-01-07)
+
+Updates database model: **yes**
+
+### Improvements
+
+AMP-384 Improvements to the PKCS #11 key store relevant to highly concurrent environments and improvements to the IDN computation API
+
+
+
+<a name="v4-19-0" />
+## 4.19.0 (2026-01-07)
+
+Identical to: 4.19.0 RC 2 (2025-11-17)
+
+Updates database model: no
+
+### Bug fixes
+
+AMP-355 Certificates can be issued with a start date prior to that of the issuer
+
+
+
+<a name="v4-18-0" />
+## 4.18.0 (2025-11-12)
+
+Updates database model: no
+
+### Improvements
+
+AMP-378 Handle key store partitions that are locked prematurely
+
+
+
+<a name="v4-17-1" />
+## 4.17.1 (2025-11-05)
+
+Updates database model: no
+
+### Improvements
+
+AMP-377 Command `check-key-store-partitions-lock` to check partitions' lock status
+
+
+
+<a name="v4-17-0" />
+## 4.17.0 (2025-11-05)
+
+Identical to: 4.17.0 RC 4 (2025-09-29)
+
+Updates database model: **yes**
+
+### Improvements
+
+AMP-243 Delete keys from incomplete managed certificate issue processes
+
+AMP-376 Add order numbers to the partition purge confirmation
+
+
+
+<a name="v4-16-0" />
+## 4.16.0 (2025-09-19)
+
+Updates database model: no
+
+### New features
+
+AMP-374 Command `repair-blobs` to repair corrupted blobs
+
+
+
+<a name="v4-15-1" />
+## 4.15.1 (2025-09-08)
+
+Identical to: 4.15.1 RC 4 (2025-09-03)
+
+Updates database model: no
+
+### Bug fixes
+
+AMP-373 Errors on command `check-blobs`
+
+
+
+<a name="v4-15-0" />
+## 4.15.0 (2025-09-01)
+
+Updates database model: no
+
+### New features
+
+AMP-328 Form for creating a Brazilian Student ID Card \(CIE\) order
+
+AMP-372 Command `check-blobs` to check blob integrity
+
+
 
 <a name="4-14-0" />
 ## 4.14.0 (2025-08-12)

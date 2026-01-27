@@ -44,7 +44,7 @@ az login
 
 ```sh
 az acr login --name MY_ACR_NAME 
-az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.14.0 --image amplia:4.14.0
+az acr import --name MY_ACR_NAME --source docker.io/lacunasoftware/amplia:4.20.0 --image amplia:4.20.0
 ```
 
 [!include[Criação do banco de dados](../../../includes/azure/create-database.md)]

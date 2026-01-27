@@ -15,7 +15,7 @@ dotnet Lacuna.Amplia.Site.dll -- check-key-store-partitions-lock --scan --output
 Or, on Docker:
 
 ```sh
-docker run -v /path/on/host:/out lacunasoftware/amplia:4.17 -- check-key-store-partitions-lock --scan --output-path /out/results.csv
+docker run -v /path/on/host:/out lacunasoftware/amplia:4.20 -- check-key-store-partitions-lock --scan --output-path /out/results.csv
 ```
 
 ## Description
