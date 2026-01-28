@@ -1,10 +1,22 @@
 # Histórico de versões do Signer
 
+<a name="v2-5-2" />
+### 2.5.2 (2026-01-27)
+
+* Melhorias
+  * [SIG-1604] Remoção de assinaturas existentes na geração de envelopes, com aviso prévio na criação do documento
+  * [SIG-1608] Ocultar CPF ao utilizar certificado e-CNPJ, conforme configuração de sistema
+
+* Correções de bugs
+  * [SIG-1609] Ajustes na remoção de JavaScript de PDFs para evitar alterações não intencionais nos PDFs
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-5-1" />
 ### 2.5.1 (2026-01-22)
 
 * Melhorias
-  * [SIG-1580] Novos botões no dashboard redirecionam para a página de documentos com o filtro selecionado
+  * [SIG-1580] Botões no dashboard redirecionam para a página de documentos com o filtro selecionado
 
 Atualiza modelo de banco de dados: não
 
@@ -13,7 +25,7 @@ Atualiza modelo de banco de dados: não
 
 * Melhorias
   * [SIG-1580] Nova visualização de documentos no dashboard
-  * [SIG-1530] Revisar design do diálogo de solicitação de permissão de acesso à geolocalização – Rede D'Or
+  * [SIG-1530] Revisão do design da janela de solicitação de permissão de acesso à geolocalização
 
 Atualiza modelo de banco de dados: não
 
@@ -21,7 +33,7 @@ Atualiza modelo de banco de dados: não
 ### 2.4.11 (2026-01-19)
 
 * Correções de bugs
-  * [SIG-1541] Não está sendo possível consultar um documento após movê-lo de pasta
+  * [SIG-1541] Erro ao consultar documento em pasta via integração por API
 
 Atualiza modelo de banco de dados: não
 

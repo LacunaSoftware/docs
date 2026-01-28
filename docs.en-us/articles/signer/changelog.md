@@ -1,10 +1,22 @@
 # Signer changelog
 
+<a name="v2-5-2" />
+### 2.5.2 (2026-01-27)
+
+* Improvements
+  * [SIG-1604] Removal of existing signatures when generating envelopes, with a prior warning during document creation
+  * [SIG-1608] Hide CPF when using e-CNPJ certificates, based on system configuration
+
+* Bug fixes
+  * [SIG-1609] Improvements to PDF JavaScript removal to prevent unintended changes to PDFs
+
+Updates database model: no
+
 <a name="v2-5-1" />
 ### 2.5.1 (2026-01-22)
 
 * Improvements
-  * [SIG-1580] New dashboard buttons redirect to the documents page with the selected filter applied
+  * [SIG-1580] Dashboard buttons redirect to the documents page with the selected filter applied
 
 Updates database model: no
 
@@ -13,7 +25,7 @@ Updates database model: no
 
 * Improvements
   * [SIG-1580] New document visualization on the dashboard
-  * [SIG-1530] Review the design of the geolocation access permission dialog – Rede D'Or
+  * [SIG-1530] Review the design of the geolocation access permission dialog
 
 Updates database model: no
 
@@ -21,7 +33,7 @@ Updates database model: no
 ### 2.4.11 (2026-01-19)
 
 * Bug fixes
-  * [SIG-1541] Unable to retrieve a document after moving it to another folder
+  * [SIG-1541] Error when retrieving a document in a folder via API integration
 
 Updates database model: no
 
