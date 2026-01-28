@@ -1,5 +1,11 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-22-1" />
+### 2.22.1 (2026-01-27)
+
+- \[PKI-153\] Fix `NameGenerator.GenerateWithCommonNameOnly` method not escaping formating characters.
+
+
 <a name="v2-22-0" />
 ### 2.22.0 (2026-01-26)
 
