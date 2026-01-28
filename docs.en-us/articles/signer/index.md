@@ -1,6 +1,6 @@
 ﻿# Lacuna Signer
 
-Lacuna Signer is an intelligent subscription manager. With it, you can collect different types of subscriptions with a fast, intuitive and customizable system.
+Lacuna Signer is an intelligent document and signatures manager. With it, you can collect different types of signatures with a fast, intuitive and customizable system.
 
 ## Characteristics
 
