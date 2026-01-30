@@ -10,7 +10,7 @@ For Docker-based setup the following image is provided on Docker Hub:
 </center>
 <br />
 
-The currently recommended image is `lacunasoftware/grantid:5.2.0`
+The currently recommended image is `lacunasoftware/grantid:5.3.0`
 
 Available moving tags:
 
@@ -176,7 +176,7 @@ Now, let's run the container with the configuration file, mounting the volumes `
 container's auth server port (5011) on the host's port 80 and the container's console port (5012) on the host's port 8080:
 
 ```sh
-docker run --name grantid --env-file grantid.env -v grantid_data:/var/app -v grantid_keys:/var/keys -p 80:5011 -p 8080:5012 -d lacunasoftware/grantid:5.2.0
+docker run --name grantid --env-file grantid.env -v grantid_data:/var/app -v grantid_keys:/var/keys -p 80:5011 -p 8080:5012 -d lacunasoftware/grantid:5.3.0
 ```
 
 > [!TIP]

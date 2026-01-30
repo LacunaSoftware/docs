@@ -1,5 +1,13 @@
 ﻿# Histórico de versões do GrantID
 
+<a name="v5-3-0" />
+### 5.3.0 (2026-01-30)
+
+* Melhorias
+  * [LI-447] Permitir integração com Gov BR com endpoint personalizado
+
+Atualiza modelo do banco de dados: não
+
 <a name="v5-2-0" />
 ### 5.2.0 (2025-11-25)
 

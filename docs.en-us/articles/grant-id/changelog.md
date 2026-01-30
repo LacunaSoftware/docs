@@ -1,5 +1,13 @@
 ﻿# GrantID changelog
 
+<a name="v5-3-0" />
+### 5.3.0 (2026-01-30)
+
+* Improvements
+  * [LI-447] Allow Gov BR integration with custom endpoint
+
+Updates database model: no
+
 <a name="v5-2-0" />
 ### 5.2.0 (2025-11-25)
 
