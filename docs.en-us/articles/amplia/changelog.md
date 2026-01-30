@@ -34,6 +34,10 @@ Updates database model: **yes**
 
 AMP-384 Improvements to the PKCS #11 key store relevant to highly concurrent environments and improvements to the IDN computation API
 
+### Bug fixes
+
+AMP-385 Raw IDN is recorded on IdnComputed event details
+
 
 
 <a name="v4-19-0" />

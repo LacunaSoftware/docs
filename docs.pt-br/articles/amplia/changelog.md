@@ -33,6 +33,10 @@ Atualiza modelo do banco de dados: **sim**
 
 AMP-384 Melhorias no key store PKCS #11 relevantes para ambientes com alta concorrência e melhorias na API de cálculo de IDN
 
+### Correções de bugs
+
+AMP-385 Evento de IdnComputed está salvando IDN raw
+
 
 
 <a name="v4-19-0" />
