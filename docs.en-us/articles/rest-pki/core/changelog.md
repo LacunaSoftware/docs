@@ -1,6 +1,41 @@
 ﻿# Rest PKI Core changelog
 
 <!--<a name="vnext" />-->
+<a name="v4-0-0" />
+## 4.0.0 (2026-02-XX)
+
+> [!WARNING]
+> See [Update Rest PKI Core from 3.x to 4.0](on-premises/update-40.md)
+
+Updates database model: **yes**
+
+<!-- TODO -->
+<a name="v3-7-0" />
+## 3.7.0 (2025-11-26)
+
+Updates database model: **yes**
+
+### Improvements
+
+RPNG-453 Improved FortFace liveness enrollment images
+
+
+<a name="v3-6-2" />
+## 3.6.2 (2025-11-24)
+
+Updates database model: no
+
+### New features
+
+RPNG-394 Biometrics dashboard - Bio subject details page
+
+### Improvements
+
+RPNG-428 Updated FortFace SDKs
+
+RPNG-454 Add InteractionMethod to BioSessionModel on BioDashBoard
+
+
 <a name="v3-6-1" />
 ## 3.6.1 (2025-11-20)
 

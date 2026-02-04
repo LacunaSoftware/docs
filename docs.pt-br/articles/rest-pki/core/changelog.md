@@ -1,6 +1,41 @@
 ﻿# Histórico de versões - Rest PKI Core
 
 <!--<a name="vnext" />-->
+<a name="v4-0-0" />
+## 4.0.0 (2026-02-XX)
+
+> [!WARNING]
+> Veja [Atualizando o Rest PKI Core da versão 3.x para 4.0](on-premises/update-40.md)
+
+Atualiza modelo do banco de dados: **sim**
+
+<!-- TODO -->
+<a name="v3-7-0" />
+## 3.7.0 (2025-11-26)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+RPNG-453 Melhorar fotos de enrollment com liveness FortFace
+
+
+<a name="v3-6-2" />
+## 3.6.2 (2025-11-24)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-394 Dashboard de Biometria - Tela de detalhamento de BioSubjects
+
+### Melhorias
+
+RPNG-428 Atualizar SDKs da FortFace
+
+RPNG-454 Adicionar InteractionMethod no BioSessionModel para BioDashBoard
+
+
 <a name="v3-6-1" />
 ## 3.6.1 (2025-11-20)
 

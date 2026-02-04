@@ -135,6 +135,7 @@
 #### [Criando uma organização](rest-pki/core/on-premises/create-sub.md)
 #### [Verificando a versão instalada](rest-pki/core/on-premises/check-version.md)
 #### [Atualizando para 3.0](rest-pki/core/on-premises/update-30.md)
+#### [Atualizando para 4.0](rest-pki/core/on-premises/update-40.md)
 #### [Logs](rest-pki/core/on-premises/logging.md)
 #### [Verificações de vulnerabilidades](rest-pki/core/on-premises/vulnerabilities.md)
 ### [Guia de Operação](rest-pki/core/operation/index.md)
