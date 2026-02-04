@@ -9,6 +9,64 @@
 
 Atualiza modelo do banco de dados: **sim**
 
+### Novas funcionalidades
+
+RPNG-273 Criar fluxo de faturamento para uma subscription
+
+RPNG-347, RPNG-497 Melhorias nas transações FaceTec
+
+RPNG-484 Opção de utilizar sessões de biometria com retorno de URL assim como nas de assinatura
+
+RPNG-488 Adicionar configuração de Timeout para sessão de biometria
+
+RPNG-505 Lista de ReturnUrl aceitas para BioSession
+
+RPNG-511 Vídeo Identificação - Receber valores esperados do documento (tipo/número)
+
+### Melhorias
+
+RPNG-270 Interface com listagem das sessões de assinatura
+
+RPNG-405 Melhorias na tela inicial das sessões de biometria e customizações
+
+RPNG-430 Marcas de carimbo de tempo em espanhol
+
+RPNG-435 Dashboard de Biometria - Adicionar visualização de imagens das sessões biométricas
+
+RPNG-443, RPNG-448, RPNG-450 Atualizações do Angular para versão 19
+
+RPNG-472 Adicionar AgentId que criou a BioSession
+
+RPNG-474 Campos Swagger para sessões de biometria
+
+RPNG-481 Adicionar botão de copiar chave de API gerada
+
+RPNG-486 Apresentar mensagem de erro amigável nas sessões de biometria
+
+RPNG-490 Customização das cores e logo da sessão de biometria por subscription
+
+RPNG-507 Informações da vídeo identificação via API
+
+RPNG-509 Melhorias nos templates OCR para passaporte
+
+RPNG-515 Atualizações dos SDKs da FaceTec
+
+RPNG-508 Adicionar campo de sucesso na seção FaceTec no dashboard
+
+### Correções de bugs
+
+RPNG-258 Campos do PadesSignaturePostRequestBase sendo ignorados
+
+RPNG-487 Sessão de biometria começa como "Falha" no dashboard
+
+RPNG-512 Vídeo Identificação - Correção da condição de sucesso na vídeo identificação
+
+RPNG-525 Vídeo Identificação - Problema ao gravar/enviar vídeo
+
+RPNG-527 Sessões ficam presas em "loading" em dispositivos IOS 26.2
+
+
+
 <!-- TODO -->
 <a name="v3-7-0" />
 ## 3.7.0 (2025-11-26)
