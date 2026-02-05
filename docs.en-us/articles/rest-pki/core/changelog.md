@@ -1,6 +1,98 @@
 ﻿# Rest PKI Core changelog
 
 <!--<a name="vnext" />-->
+<a name="v4-0-0" />
+## 4.0.0 (2026-02-XX)
+
+> [!WARNING]
+> See [Update Rest PKI Core from 3.x to 4.0](on-premises/update-40.md)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-273 Create a billing flow for a subscription
+
+RPNG-347, RPNG-497 Improvements to FaceTec transactions
+
+RPNG-484 Option to use biometric sessions with URL return, similar to signature sessions
+
+RPNG-488 Add timeout configuration for biometric sessions
+
+RPNG-505 List of accepted ReturnUrls for BioSession
+
+RPNG-511 Video Identification – Receive expected document values (type/number)
+
+### Improvements
+
+RPNG-270 Added signature session list page
+
+RPNG-405 Improvements to the biometric sessions home screen and customizations
+
+RPNG-430 Add timestamp marks in Spanish
+
+RPNG-435 Biometrics Dashboard – Add visualization of biometric session images
+
+RPNG-443, RPNG-448, RPNG-450 Updated Angular to version 19
+
+RPNG-472 Add AgentId that created the BioSession
+
+RPNG-474 Add Swagger fields for biometric sessions
+
+RPNG-481 Add button to copy generated API key
+
+RPNG-486 Display user-friendly error messages in biometric sessions
+
+RPNG-490 Customization of colors and logo of biometric sessions per subscription
+
+RPNG-507 Video identification information via API
+
+RPNG-509 Improvements to OCR templates for passports
+
+RPNG-515 FaceTec SDK updates
+
+RPNG-508 Add success field in the FaceTec section of the dashboard
+
+### Bug fixes
+
+RPNG-258 Fields from PadesSignaturePostRequestBase being ignored
+
+RPNG-487 Biometric session starts as "Failed" on the dashboard
+
+RPNG-512 Video Identification – Fix success condition in video identification
+
+RPNG-525 Video Identification – Issue when recording/sending video
+
+RPNG-527 Sessions stuck in "loading" on iOS 26.2 devices
+
+
+
+<a name="v3-7-0" />
+## 3.7.0 (2025-11-26)
+
+Updates database model: **yes**
+
+### Improvements
+
+RPNG-453 Improved FortFace liveness enrollment images
+
+
+<a name="v3-6-2" />
+## 3.6.2 (2025-11-24)
+
+Updates database model: no
+
+### New features
+
+RPNG-394 Biometrics dashboard - Bio subject details page
+
+### Improvements
+
+RPNG-428 Updated FortFace SDKs
+
+RPNG-454 Add InteractionMethod to BioSessionModel on BioDashBoard
+
+
 <a name="v3-6-1" />
 ## 3.6.1 (2025-11-20)
 
