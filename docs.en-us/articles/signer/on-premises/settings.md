@@ -207,8 +207,13 @@ initial page showing document details. If `true` reverts to the old behavior of 
 
 * **MaxItemsRetrievedInBillingPlanFilter** (v2.3.0, default: `10`): defines the maximum number of items that will be retrieved in the billing plan filter.
 
+* **RemoveJsFromPdfs** (v2.4.6, default: `true`): enables the automatic removal of Javascript objects from PDFs, in order to improve security.
+
 * **EnableDocumentValidationInThePublicArea** (v2.4.0, default: `true`): enables the document validation page and endpoints.
 
+* **DisableNotifyParticipantsOnDocumentDeleted** (v2.6.0, default: `false`): prevents document deleted notifications from being generated in the instance.
+
+* **PublicUploadEnabled** (v2.6.0, default: `true`): requires users to be authenticated in order to make uploads in the platform.
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
