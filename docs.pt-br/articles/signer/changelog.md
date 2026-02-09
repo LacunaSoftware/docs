@@ -1,5 +1,17 @@
 # Histórico de versões do Signer
 
+<a name="v2-6-0" />
+### 2.6.0 (2026-02-09)
+
+* Melhorias
+  * [SIG-636] Permitir adicionar número de celular na edição de fluxo
+  * [SIG-702] Enviar e-mail aos participantes após a exclusão do documento
+  * [SIG-1582] Adicionar ação “Assinar todos os pendentes para mim”
+  * [SIG-1613] Bloqueio de uploads públicos
+  * [SIG-1620] Criação de usuário externo no Signer via API
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-5-2" />
 ### 2.5.2 (2026-01-27)
 

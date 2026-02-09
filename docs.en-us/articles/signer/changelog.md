@@ -1,5 +1,17 @@
 # Signer changelog
 
+<a name="v2-6-0" />
+### 2.6.0 (2026-02-09)
+
+* Improvements
+  * [SIG-636] Allow adding a mobile phone number when editing a flow
+  * [SIG-702] Send email notifications to participants after document deletion
+  * [SIG-1582] Add “Sign all pending for me” action
+  * [SIG-1613] Block public uploads
+  * [SIG-1620] Create external users in Signer via API
+
+Updates database model: no
+
 <a name="v2-5-2" />
 ### 2.5.2 (2026-01-27)
 
