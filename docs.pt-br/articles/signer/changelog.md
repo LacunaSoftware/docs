@@ -1,5 +1,18 @@
 # Histórico de versões do Signer
 
+<a name="v2-6-1" />
+### 2.6.1
+
+* Melhorias
+  * [SIG-1622] Modificar layout da navegação das pastas
+
+* Correções de bugs
+  * [SIG-1637] Pastas e organizações aparecendo em branco no dashboard
+  * [SIG-1638] Barra indesejada na janela de posicionamento de assinatura
+  * [SIG-1639] Documento do tipo escritura ativando fluxo externo sem configurações, impedindo a conclusão do documento
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-6-0" />
 ### 2.6.0 (2026-02-09)
 

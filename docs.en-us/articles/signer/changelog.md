@@ -1,5 +1,18 @@
 # Signer changelog
 
+<a name="v2-6-1" />
+### 2.6.1
+
+* Improvements
+  * [SIG-1622] Modify folder navigation layout
+
+* Bug fixes
+  * [SIG-1637] Fixes folders and organizations appearing blank on the dashboard
+  * [SIG-1638] Unwanted scrollbar in the signature positioning dialog
+  * [SIG-1639] Deed type document triggering external flow without configuration, causing it to never conclude
+
+Updates database model: no
+
 <a name="v2-6-0" />
 ### 2.6.0 (2026-02-09)
 
