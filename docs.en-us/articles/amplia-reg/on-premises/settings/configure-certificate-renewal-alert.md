@@ -112,9 +112,9 @@ Additional contact information:
 
 Tag name               | Description
 ---------------------- | -----------
-Email             	   | Application configured contact email
-WhatsappPhone          | Application configured whatsapp phone
-Phone                  | Application configured phone
+SupportEmail           | Application configured contact email
+SupportWhatsappPhone   | Application configured whatsapp phone
+SupportPhone           | Application configured phone
 
 Example:
 
