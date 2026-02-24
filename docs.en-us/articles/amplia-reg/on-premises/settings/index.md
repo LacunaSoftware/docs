@@ -325,6 +325,6 @@ Under section **Geolocation**:
 
 Under section **PublicContact**:
 
-* **SupportEmail**: configures the email address that will be used on public screens and in emails sent by the system. Defaults to `null`.
-* **SupportWhatsappPhone**: configures the whatsapp phone that will be used on public screens and in emails sent by the system. Defaults to `null`.
-* **SupportPhone**: configures the phone that will be used on public screens and in emails sent by the system. Defaults to `null`.
+* **Email**: configures the email address that will be used on public screens and in emails sent by the system. Defaults to `null`.
+* **WhatsappPhone**: configures the whatsapp phone that will be used on public screens and in emails sent by the system. Defaults to `null`.
+* **Phone**: configures the phone that will be used on public screens and in emails sent by the system. Defaults to `null`.
