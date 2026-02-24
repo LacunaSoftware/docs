@@ -107,7 +107,14 @@ Tag name               | Description
 ThemeColor             | Application primary theme color in hex (without '#')
 AccentColor            | Application accent theme color in hex (without '#')
 LogoUrl                | Application logo url
-SupportEmail           | Application configured SupportEmailAddress
+
+Additional contact information:
+
+Tag name               | Description
+---------------------- | -----------
+SupportEmail           | Application configured contact email
+SupportWhatsappPhone   | Application configured whatsapp phone
+SupportPhone           | Application configured phone
 
 Example:
 
