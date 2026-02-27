@@ -1,7 +1,15 @@
 # Signer changelog
 
+<a name="v2-6-2" />
+### 2.6.2 (2026-02-27)
+
+* Bug fixes
+  * [SIG-1641] Loss of access to documents inside of folders for authorized users
+
+Updates database model: no
+
 <a name="v2-6-1" />
-### 2.6.1
+### 2.6.1 (2026-02-24)
 
 * Improvements
   * [SIG-1622] Modify folder navigation layout

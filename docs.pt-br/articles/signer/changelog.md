@@ -1,7 +1,15 @@
 # Histórico de versões do Signer
 
+<a name="v2-6-2" />
+### 2.6.2 (2026-02-27)
+
+* Correções de bugs
+  * [SIG-1641] Perda de acesso a documentos dentro de pastas para usuários autorizados
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-6-1" />
-### 2.6.1
+### 2.6.1 (2026-02-24)
 
 * Melhorias
   * [SIG-1622] Modificar layout da navegação das pastas
