@@ -1,5 +1,10 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-22-2" />
+### 2.22.2 (2026-03-05)
+
+- Update Lacuna.T8 package removing T8 version tag from pages dictionary.
+
 <a name="v2-22-1" />
 ### 2.22.1 (2026-01-27)
 
