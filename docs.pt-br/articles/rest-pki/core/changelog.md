@@ -1,6 +1,129 @@
 ﻿# Histórico de versões - Rest PKI Core
 
 <!--<a name="vnext" />-->
+<a name="v4-0-0" />
+## 4.0.0 (2026-03-09)
+
+> [!WARNING]
+> Veja [Atualizando o Rest PKI Core da versão 3.x para 4.0](on-premises/update-40.md)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-273, RPNG-519 Fluxo de faturas para uma subscription
+
+RPNG-347, RPNG-497 Melhorias nas transações FaceTec
+
+RPNG-458 Dashboard de biometria - Listagem de sessões do cadastro biométrico
+
+RPNG-461 Serviço de limite de transações por tipo/mês
+
+RPNG-478 Adicionar transações para sessões FortFace
+
+RPNG-484 Opção de utilizar sessões de biometria com retorno de URL assim como nas de assinatura
+
+RPNG-488 Adicionar configuração de Timeout para sessão de biometria
+
+RPNG-505 Lista de ReturnUrl aceitas para BioSession
+
+RPNG-511 Vídeo Identificação - Receber valores esperados do documento \(tipo/número\)
+
+RPNG-517 Permissionamento por subscription para TimestampTiers
+
+### Melhorias
+
+RPNG-270 Interface com listagem das sessões de assinatura
+
+RPNG-405 Melhorias na tela inicial das sessões de biometria e customizações
+
+RPNG-430 Marcas de carimbo de tempo em espanhol
+
+RPNG-435 Dashboard de Biometria - Adicionar visualização de imagens das sessões biométricas
+
+RPNG-443, RPNG-447, RPNG-448, RPNG-450 Atualizações do Angular para versão 19
+
+RPNG-471 Botão para carregar todas as imagens nos detalhes da sessão de biometria
+
+RPNG-472 Salvar informação sobre Agent que criou a BioSession
+
+RPNG-474 Campos Swagger para sessões de biometria
+
+RPNG-477 Adicionar link da sessão FaceTec no detalhe da transação
+
+RPNG-481 Adicionar botão de copiar chave de API gerada
+
+RPNG-486 Apresentar mensagem de erro amigável nas sessões de biometria
+
+RPNG-490 Customização das cores e logo da sessão de biometria por subscription
+
+RPNG-507 Informações da vídeo identificação via API
+
+RPNG-508, RPNG-521, RPNG-531, RPNG-541, RPNG-548 Melhorias de layout das telas de administração
+
+RPNG-509 Melhorias nos templates OCR para passaportes
+
+RPNG-513 Dashboard - Assistir ao vídeo gravado na vídeo identificação
+
+RPNG-468, RPNG-515, RPNG-560 Atualizações dos SDKs da FaceTec
+
+RPNG-536 Melhorias de traduções dos botões de "Encerrar sessão"
+
+RPNG-537 Melhoria na coleta de logs de erro para o SDK da FortFace
+
+RPNG-540 Configuração de sistema para usar apenas a língua padrão
+
+### Correções de bugs
+
+RPNG-258 Campos do PadesSignaturePostRequestBase sendo ignorados
+
+RPNG-487 Sessão de biometria começa como "Falha" no dashboard
+
+RPNG-512 Vídeo Identificação - Correção da condição de sucesso na vídeo identificação
+
+RPNG-518 Corrigir coleta do Agent para as transações de BioSession
+
+RPNG-523 Vídeo Identificação - Problemas na finalização do FaceTec IdScan
+
+RPNG-525 Vídeo Identificação - Problema ao gravar/enviar vídeo
+
+RPNG-527 Sessões ficam presas em "loading" em dispositivos IOS 26.2
+
+RPNG-533 TypeError durante a listagem de certificados do Web PKI
+
+RPNG-534 Erro 500 em requisições utilizando métodos inválidos (POST) em rotas do ClientApp
+
+RPNG-539 Formulário de configuração da Subscription marcado com unsaved changes mesmo depois de reset
+
+RPNG-542 Telas não atualizam ao trocar de subscription
+
+
+<a name="v3-7-0" />
+## 3.7.0 (2025-11-26)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+RPNG-453 Melhorar fotos de enrollment com liveness FortFace
+
+
+<a name="v3-6-2" />
+## 3.6.2 (2025-11-24)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-394 Dashboard de Biometria - Tela de detalhamento de BioSubjects
+
+### Melhorias
+
+RPNG-428 Atualizar SDKs da FortFace
+
+RPNG-454 Adicionar InteractionMethod no BioSessionModel para BioDashBoard
+
+
 <a name="v3-6-1" />
 ## 3.6.1 (2025-11-20)
 
