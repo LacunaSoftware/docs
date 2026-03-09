@@ -1,5 +1,38 @@
 # Signer changelog
 
+<a name="v2-6-2" />
+### 2.6.2 (2026-02-27)
+
+* Bug fixes
+  * [SIG-1641] Loss of access to documents inside of folders for authorized users
+
+Updates database model: no
+
+<a name="v2-6-1" />
+### 2.6.1 (2026-02-24)
+
+* Improvements
+  * [SIG-1622] Modify folder navigation layout
+
+* Bug fixes
+  * [SIG-1637] Fixes folders and organizations appearing blank on the dashboard
+  * [SIG-1638] Unwanted scrollbar in the signature positioning dialog
+  * [SIG-1639] Deed type document triggering external flow without configuration, causing it to never conclude
+
+Updates database model: no
+
+<a name="v2-6-0" />
+### 2.6.0 (2026-02-09)
+
+* Improvements
+  * [SIG-636] Allow adding a mobile phone number when editing a flow
+  * [SIG-702] Send email notifications to participants after document deletion
+  * [SIG-1582] Add “Sign all pending for me” action
+  * [SIG-1613] Block public uploads
+  * [SIG-1620] Create external users in Signer via API
+
+Updates database model: no
+
 <a name="v2-5-2" />
 ### 2.5.2 (2026-01-27)
 

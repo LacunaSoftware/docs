@@ -1,5 +1,10 @@
 # Histórico de versões do PKI Express
 
+<a name="v1-36-1" />
+### 1.36.1 (2026-02-07)
+
+- Atualização Lacuna.Pki SDK [2.22.1](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-22-1)
+
 <a name="v1-36-0" />
 ### 1.36.0 (2025-10-31)
 
