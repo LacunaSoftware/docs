@@ -1,3 +1,3 @@
 ﻿```sh
-docker run lacunasoftware/restpkicore:3.5 -- gen-enc-key
+docker run lacunasoftware/restpkicore:4.0 -- gen-enc-key
 ```
