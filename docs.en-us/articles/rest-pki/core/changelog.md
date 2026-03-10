@@ -1,6 +1,16 @@
 ﻿# Rest PKI Core changelog
 
 <!--<a name="vnext" />-->
+<a name="v4-0-1" />
+## 4.0.1 (2026-03-10)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-563 Dependency injection issue on BusinessService
+
+
 <a name="v4-0-0" />
 ## 4.0.0 (2026-03-09)
 
