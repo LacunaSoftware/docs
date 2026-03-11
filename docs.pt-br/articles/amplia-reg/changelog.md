@@ -1,5 +1,364 @@
 ﻿# Histórico de versões do Amplia Reg
 
+<!-- <a name="5.19.0" /> //
+## 5.19.0 (2026-03-11) //
+
+Atualiza modelo do banco de dados: nao //
+
+### Novas funcionalidades
+
+//
+
+### Melhorias
+
+//
+
+### Correções de bugs
+
+// -->
+
+<a name="5.19.0" />
+## 5.19.0 (2026-03-11)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-827 Integração com consulta cadastro simples DataValid
+
+### Melhorias
+
+ARNG-554 Melhorias do PSBio - Relatórios
+
+ARNG-841 Reorganizar exibição de Logos de AC e AR no Termo de Titularidade
+
+ARNG-842 Detalhar motivo e sub-status para pedidos em "Aguardando Recursos"
+
+### Correções de bugs
+
+ARNG-566 Retorno de erro do PSBio permite validar pedido
+
+ARNG-791 Pesquisa na fila do ACI não está conseguindo buscar os pedidos
+
+ARNG-846 Corrigir testes de integração quebrados
+
+
+
+<a name="5.18.0" />
+## 5.18.0 (2026-02-25)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-559 Permitir ao ACI enviar documentos para mesa de pericia acertpix
+
+ARNG-699 Habilitar consulta prévia ao gerenciar agentes de registro
+
+### Melhorias
+
+ARNG-548 Revisar (e alterar caso necessário) permissões de todas as rotas
+
+ARNG-820 Exigir desbloqueio manual obrigatório para pedidos com alerta do SAF automático (dados do titular)
+
+### Correções de bugs
+
+ARNG-839 Reverter alteração indesejadas nos templates de email com alteração da config SupportEmail
+
+
+
+<a name="5.17.4" />
+## 5.17.4 (2026-02-19)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-834 Erro na verificação de status documental com configuração "FilterSelfOrders" ativa
+
+ARNG-836 Questionário de Validação não foi exibido na interface da Videoconferência
+
+
+
+<a name="5.17.2" />
+## 5.17.2 (2026-02-18)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-796 Exibir contatos de suporte (e-mail e telefone) da AC nos e-mails e telas públicas
+
+### Correções de bugs
+
+ARNG-833 Erro ao iniciar Videoconferência quando o fluxo é iniciado pela busca do "Número do Pedido"
+
+
+
+<a name="5.17.0" />
+## 5.17.0 (2026-02-13)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-776 Subir versão do restpki widget para 1.4.1
+
+### Melhorias
+
+ARNG-749 Adicionar traduções para os avisos de pendência de validação de documento
+
+ARNG-758 Adicionar botão "Próximo" para navegação entre as etapas da Validação de Pedido
+
+ARNG-760 Limitar a visualização do AVP apenas aos pedidos a ele vinculados
+
+ARNG-762 Adicionar tratamento de erro (i18n) em caso de tentativa de iniciar validação de um pedido que não está em validação
+
+ARNG-830 Alterar partes do documento aceitas no Brasil
+
+### Correções de bugs
+
+ARNG-824 Alterar a permissão do método CheckAndUpdateValidationStepCompletion do OrdersController
+
+ARNG-825 Exportação de pedidos não respeita filtro selecionado
+
+
+
+<a name="5.16.1" />
+## 5.16.1 (2026-02-06)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-813 Reacrescentar a apresentação da chave 1 na videochamada
+
+
+
+<a name="5.16.0" />
+## 5.16.0 (2026-02-05)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-748 Remover dialog de confirmação de custo na "Consulta Empresa"
+
+ARNG-755 Remover SAF e Termo de titularidade da videoconferencia
+
+ARNG-794 Exibir telefone e e-mail do titular nos detalhes do questionário da videoconferência
+
+ARNG-811 Adicionar imagens que indicam o formato esperado da parte do documento
+
+
+
+<a name="5.15.2" />
+## 5.15.2 (2026-02-02)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-767 Adicionar cancelamento de pedido via Client
+
+
+
+<a name="5.15.0" />
+## 5.15.0 (2026-01-28)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-772 Criar relatório completo de pedidos emitidos
+
+
+
+<a name="5.14.1" />
+## 5.14.1 (2026-01-26)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-773 Atualizar Amplia e passar campos de CEI, PIS, CAEPF pra emissão do certificado
+
+### Melhorias
+
+ARNG-783 Adicionar suporte a instalação da cadeia de certificado da AC durante instalação do certificado
+
+
+
+<a name="5.13.4" />
+## 5.13.4 (2026-01-23)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-681 Erro ao ativar audit de equipamentos na AC
+
+
+
+<a name="5.13.2" />
+## 5.13.2 (2026-01-21)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-768 Alterar o atributo de validação de email para o EmailAttribute do Lacuna.DataAnnotations
+
+
+
+<a name="5.13.1" />
+## 5.13.1 (2026-01-20)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-771 Corrigir i18n biométria
+
+ARNG-774 Permitir envio de cadastro biométrico sem digitais
+
+### Correções de bugs
+
+ARNG-775 Corrigir erro na criação de blob de consulta SAF
+
+
+
+<a name="5.13.0" />
+## 5.13.0 (2026-01-18)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-731 Criar configuração booleano pra dizer se mostra ou não dialog de justificativa para ICAO Warnings vindas a partir da captura de Liveness com PSBio ativo
+
+ARNG-765 Corrigir tratamento dos resultados excepcionais do PSBio
+
+### Correções de bugs
+
+ARNG-742 Tela de emissão de certificado engole erro da etapa inicial
+
+ARNG-769 Erro de geolocalização mesmo com geolocalização desativada
+
+ARNG-770 BiometricCollectionStatus.Duplicate Não está sendo traduzido corretamente nos relatórios
+
+
+
+<a name="5.12.3" />
+## 5.12.3 (2026-01-13)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-763 O botão de 'Force transaction status update' deve checar o estado PSBio e a completude da validação
+
+### Correções de bugs
+
+ARNG-764 Erro ao mostrar eventos quando Pki Brazil Daily Report está habilitado
+
+ARNG-766 Erro ao receber Webhook do Jitsi
+
+
+
+<a name="5.12.0" />
+## 5.12.0 (2026-01-09)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Correções de bugs
+
+ARNG-746 Parar de exigir geolocalização durante o processo do pedido
+
+
+
+<a name="5.11.2" />
+## 5.11.2 (2026-01-08)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-753 Tratar o webhook do PSBio para o caso de status deletado e impedir progresso pedido caso ainda não tenha resposta da rede PSBio
+
+
+<a name="5.11.1" />
+## 5.11.1 (2026-01-05)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-743 Durante a video identificação aceitar apenas o tipo de documento que foi utilizado pro cadastro do pedido
+
+### Correções de bugs
+
+ARNG-745 Corrigir caractere delimitador dos arquivos CSV exportados
+
+
+
+<a name="5.11.0" />
+## 5.11.0 (2026-01-02)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-658 Transferir tratamento de exceção PSBio (Fraude) do AVP para o ACI
+
+ARNG-732 Melhorar tratamento do Webhook Acertpix para aceitar 'Documentoscopia Lite' no campo produto
+
+ARNG-734 Permitir que documentos reprovados na validação de documentos possam ir para a conferência do pedido
+
+ARNG-744 Permitir que apenas usuários de AC possam aprovar agentes de registro
+
+
+
+<a name="5.10.0" />
+## 5.10.0 (2025-12-30)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-730 Criar comando para habilitar todos os agentes de registro
+
+ARNG-738 Comando para alterar CNPJ de AR/AC existente
+
+### Melhorias
+
+ARNG-733 Corrigir texto do evento de resultado da validação de documento
+
+ARNG-740 Utilizar a private key id durante a importação de certificados e salvar o private key id
+
+### Correções de bugs
+
+ARNG-741 Reverter alterações de prioridades entre FaceMatch e Documentoscopia Lite
+
+
+
+<a name="5.9.6" />
+## 5.9.6 (2025-12-29)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-728 Dar preferencia ao uso de Facematch ao invés de Documentoscopia Lite nos casos onde há validação Serpro
+
+ARNG-729 Melhorar tratamento de erros de geolocalização
+
+### Correções de bugs
+
+ARNG-726 Falha ao iniciar gravação deixa videoconferência seguir
+
+
+
 <a name="5.9.5" />
 ## 5.9.5 (2025-12-24)
 
