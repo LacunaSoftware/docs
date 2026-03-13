@@ -215,3 +215,70 @@ Example (JSON configuration):
 	...
 }
 ```
+
+### Obtaining the Google Cloud Storage settings
+
+First we'll need a Google Cloud Storage bucket to store the files. A new bucket can be created using the **Create** button on the Google Cloud Storage console.
+
+![Step-1](../../../../images/spa-config/gcp-blob-storage-config-step-01.png)
+
+Pick a name for the new bucket and click on continue.
+
+![Step-2](../../../../images/spa-config/gcp-blob-storage-config-step-02.png)
+
+Choose the new bucket region.
+
+![Step-3](../../../../images/spa-config/gcp-blob-storage-config-step-03.png)
+
+Make sure to enforce public access prevention and uniform access control for the new bucket.
+
+![Step-4](../../../../images/spa-config/gcp-blob-storage-config-step-04.png)
+
+Choose the object retention policy and create the bucket.
+
+![Step-5](../../../../images/spa-config/gcp-blob-storage-config-step-05.png)
+
+A dialog might appear to confirm that public access will be prevented. Click on confirm to continue.
+
+![Step-6](../../../../images/spa-config/gcp-blob-storage-config-step-06.png)
+
+Next we need to create a Google Cloud service account to access the bucket. This can be done using the **Create service account** button on the *Service Accounts* page under *IAM & Admin*.
+
+![Step-7](../../../../images/spa-config/gcp-blob-storage-config-step-07.png)
+
+We'll also need a name for the new service account. Choose it and click on **Create and continue**
+
+![Step-8](../../../../images/spa-config/gcp-blob-storage-config-step-08.png)
+
+Ensure the new service account is given the Storage Object Admin role.
+
+![Step-9](../../../../images/spa-config/gcp-blob-storage-config-step-09.png)
+
+Grant access to principals if needed and click on done to finish the new service account creation process.
+
+![Step-10](../../../../images/spa-config/gcp-blob-storage-config-step-10.png)
+
+Now that the service account is created we need a key to authenticate it. Click on new service account to open its details page.
+
+![Step-11](../../../../images/spa-config/gcp-blob-storage-config-step-11.png)
+
+Inside the service account details, go to the keys section.
+
+![Step-12](../../../../images/spa-config/gcp-blob-storage-config-step-12.png)
+
+Under the **Add key** option, choose **Create new key**.
+
+![Step-13](../../../../images/spa-config/gcp-blob-storage-config-step-13.png)
+
+Choose the JSON format and click on the **Create** button.
+
+![Step-14](../../../../images/spa-config/gcp-blob-storage-config-step-14.png)
+
+A JSON file will be downloaded containing the private key and other information related to the service account.
+
+![Step-15](../../../../images/spa-config/gcp-blob-storage-config-step-15.png)
+
+Inside the JSON file you'll be able to obtain the *"project_id"*, *"private_key_id"*, *"private_key"* and *"client_email"* fields to configure the Blob Storage service.
+
+> [!IMPORTANT]
+> The information inside this JSON file allows access to the GCP resources and must not be compromised! Make sure to store or dispose of it securely.
