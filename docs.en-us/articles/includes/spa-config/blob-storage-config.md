@@ -165,3 +165,53 @@ Example (JSON configuration):
 By default, path-style addressing is used when an S3-compatible storage is configured, instead of the default virtual-hosted–style addressing used when a standard
 AWS S3 bucket is configured. This can be changed with the **ForcePathStyle** setting (`true` or `false`). For more information on S3 addressing, see
 [Virtual hosting of buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html).
+
+## Google Cloud Storage
+
+Stores files in a Google Cloud Storage bucket. You'll need a service account with a Storage Object Admin role. Available settings:
+
+* **BucketName**: the name of the bucket where the files will be stored.
+* **ProjectId**: the Google Cloud Project ID.
+* **PrivateKeyId**: The ID of the service account private key.
+* **PrivateKey**: The service account private key.
+* **ClientEmail**: The service account email.
+
+Example (environment variables):
+
+```bash
+BlobStorage__Type=Gcp
+BlobStorage__BucketName=myappbucket
+BlobStorage__ProjecId=my-app-project-id
+BlobStorage__PrivateKeyId=MYPRIVATEKEYID
+BlobStorage__PrivateKey=MYPRIVATEKEY
+BlobStorage__ClientEmail=myserviceaccountemail@my-app-project-id.iam.gserviceaccount.com
+```
+
+Example (*.ini* or *.conf* file):
+
+```ini
+[BlobStorage]
+Type=Gcp
+BucketName=myappbucket
+ProjecId=my-app-project-id
+PrivateKeyId=MYPRIVATEKEYID
+PrivateKey=MYPRIVATEKEY
+ClientEmail=myserviceaccountemail@my-app-project-id.iam.gserviceaccount.com
+```
+
+Example (JSON configuration):
+
+```json
+{
+	...
+	"BlobStorage": {
+		"Type": "Gcp",
+		"BucketName": "myappbucket",
+		"ProjecId": "my-app-project-id",
+		"PrivateKeyId": "MYPRIVATEKEYID",
+		"PrivateKey": "MYPRIVATEKEY",
+		"ClientEmail": "myserviceaccountemail@my-app-project-id.iam.gserviceaccount.com"
+	},
+	...
+}
+```
