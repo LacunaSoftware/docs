@@ -1,6 +1,23 @@
 ﻿# Rest PKI Core changelog
 
 <!--<a name="vnext" />-->
+<a name="v4-0-2" />
+## 4.0.2 (2026-03-12)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-546 Dashboard - improved transaction details display for TypeDiscriminator
+
+RPNG-570 Update FortFace SDK to v2.4.1
+
+### Bug fixes
+
+RPNG-566 Bio session completion routes required subscription specifier
+
+
+<!--<a name="vnext" />-->
 <a name="v4-0-1" />
 ## 4.0.1 (2026-03-10)
 

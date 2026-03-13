@@ -1,12 +1,28 @@
 ﻿# Histórico de versões - Rest PKI Core
 
 <!--<a name="vnext" />-->
+<a name="v4-0-2" />
+## 4.0.2 (2026-03-12)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-546 Dashboard - Adicionar visualização de detalhes de transações registradas com TypeDiscriminator do TransactionService
+
+RPNG-570 Atualização do FortFace SDK para v2.4.1
+
+### Correções de bugs
+
+RPNG-566 Rotas de completar sessões exigindo subscription
+
+
 <a name="v4-0-1" />
 ## 4.0.1 (2026-03-10)
 
-Updates database model: no
+Atualiza modelo do banco de dados: não
 
-### Bug fixes
+### Correções de bugs
 
 RPNG-563 Problema com injeção de dependências do BusinessService
 
