@@ -1,5 +1,14 @@
 # Signer changelog
 
+<a name="v2-7-0" />
+### 2.7.0 (2026-03-16)
+
+* Improvements
+  * [SIG-1612] Option to request the CPF of one of the signers during validation in the public area
+  * [SIG-1041] Option to allow batch signing in the public area
+
+Updates database model: yes
+
 <a name="v2-6-2" />
 ### 2.6.2 (2026-02-27)
 

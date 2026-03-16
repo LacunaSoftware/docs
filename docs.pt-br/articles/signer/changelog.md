@@ -1,5 +1,14 @@
 # Histórico de versões do Signer
 
+<a name="v2-7-0" />
+### 2.7.0 (2026-03-16)
+
+* Melhorias
+  * [SIG-1612] Opção para solicitar CPF de um dos signatários na validação na área pública
+  * [SIG-1041] Opção para permitir assinatura em lote na área pública
+
+Atualiza modelo de banco de dados: sim
+
 <a name="v2-6-2" />
 ### 2.6.2 (2026-02-27)
 
