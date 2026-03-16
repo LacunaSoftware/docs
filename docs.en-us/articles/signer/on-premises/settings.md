@@ -1,4 +1,4 @@
-﻿# Signer Settings
+# Signer Settings
 
 ###  *General* Settings
 
@@ -214,6 +214,8 @@ initial page showing document details. If `true` reverts to the old behavior of 
 * **DisableNotifyParticipantsOnDocumentDeleted** (v2.6.0, default: `false`): prevents document deleted notifications from being generated in the instance.
 
 * **PublicUploadEnabled** (v2.6.0, default: `true`): requires users to be authenticated in order to make uploads in the platform.
+
+* **PublicBatchSignatureEnabled** (v2.7.0, default: `false`): if `true`, enables the option to perform batch signatures in the public area. This allows users to sign multiple documents at once without the need of logging in, by using a ticket that is sent in the signature reminder email.
 
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
@@ -847,3 +849,12 @@ Under section **GoogleTagManager**:
 * **Preview**
 * **ResourcePath**
 * **CspNonce**
+
+<a name="document-access-validation" />
+###  *Document Access Validation* Settings (v2.7.0)
+
+Under section **DocumentAccessValidation**:
+
+* **Enabled**: if `true`, document access validation is enabled. When enabled, users will be able to select a validation type when creating a document and users will need to perform the selected validation in order to access the document in the public validation area.
+* **RequireForEveryDocumentAccess**: if `true`, all documents will require validation, even if the creator of the document did not select any validation type when creating the document or if a document was created before this setting was enabled. If `false`, only documents that have a validation type selected when they were created will require validation.
+* **DefaultValidationType** (default: `UserIdentifier`): this is the validation type used for documents that do not have an explictly selected validation type when `RequireForEveryDocumentAccess` is `true`. Available options now are only `UserIdentifier`, which requires the user to input the CPF of a signer in order to access the document, but more validation types may be added in the future.
