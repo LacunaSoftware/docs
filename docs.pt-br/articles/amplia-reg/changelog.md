@@ -17,6 +17,27 @@ Atualiza modelo do banco de dados: nao //
 
 // -->
 
+<a name="5.19.2" />
+## 5.19.2 (2026-03-16)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+ARNG-849 Bloquear emissão por Videoconferência para cliente sem PSBio e sem CNH
+
+### Correções de bugs
+
+ARNG-339 APIs que deveriam retornar 422 com OrderNotFound retornam 403 (Forbidden)
+
+ARNG-853 Validação de OTP não salva evento corretamente
+
+ARNG-854 Erro ao salvar eventos com user agent maior que 200 caracteres
+
+ARNG-374 Correção de algumas rotas que não atualizavam a data de alteração do pedido
+
+
+
 <a name="5.19.0" />
 ## 5.19.0 (2026-03-11)
 
