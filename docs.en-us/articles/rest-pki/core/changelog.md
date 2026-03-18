@@ -1,6 +1,16 @@
 ﻿# Rest PKI Core changelog
 
 <!--<a name="vnext" />-->
+<a name="v4-0-4" />
+## 4.0.4 (2026-03-18)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-576 Update FortFace SDK to v2.4.2
+
+
 <a name="v4-0-3" />
 ## 4.0.3 (2026-03-16)
 
@@ -11,7 +21,6 @@ Updates database model: no
 RPNG-566 Problemas with FortFace SDK v2.4.1 update
 
 
-<!--<a name="vnext" />-->
 <a name="v4-0-2" />
 ## 4.0.2 (2026-03-12)
 
@@ -28,7 +37,6 @@ RPNG-570 Update FortFace SDK to v2.4.1
 RPNG-566 Bio session completion routes required subscription specifier
 
 
-<!--<a name="vnext" />-->
 <a name="v4-0-1" />
 ## 4.0.1 (2026-03-10)
 

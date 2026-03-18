@@ -1,6 +1,16 @@
 ﻿# Histórico de versões - Rest PKI Core
 
 <!--<a name="vnext" />-->
+<a name="v4-0-4" />
+## 4.0.4 (2026-03-18)
+
+Atualiza modelo do banco de dados: não
+
+### Improvements
+
+RPNG-576 Atualização do FortFace SDK para v2.4.2
+
+
 <a name="v4-0-3" />
 ## 4.0.3 (2026-03-16)
 
@@ -11,7 +21,6 @@ Atualiza modelo do banco de dados: não
 RPNG-566 Problemas com atualização do FortFace SDK para v2.4.1
 
 
-<!--<a name="vnext" />-->
 <a name="v4-0-2" />
 ## 4.0.2 (2026-03-12)
 
