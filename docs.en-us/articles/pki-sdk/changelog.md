@@ -51,6 +51,7 @@
 ### 2.20.0 (2025-07-31)
 
 - \[PKI-139\] Add ICP-Brasil new signature policies for validation and generation compliant. Fix PDF signature with unintended incremental revision changes detection.
+- \[PKI-139\] Add ICP-Brasil V12 Root Certificate to PkiBrazil trust arbitrator.
 - \[PKI-144\] Improve listing for PDFs with corrupted signature dictionaries.
 - \[PKI-139\] Improve PDF signature.
 - \[PKI-143\] Fix PDF visual positioning for pages with cropbox and off-center rotation.
