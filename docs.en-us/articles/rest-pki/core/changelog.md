@@ -1,6 +1,32 @@
 ﻿# Rest PKI Core changelog
-
 <!--<a name="vnext" />-->
+
+<a name="v4-0-5" />
+## 4.0.5 (2026-03-20)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-547, RPNG-582 Add support to new brazilian CNPJ format
+
+
+<a name="v3-7-1" />
+## 3.7.1 (2026-03-20)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-547, RPNG-582 Add support to new brazilian CNPJ format
+
+RPNG-540 Add app setting to force one specific system language
+
+### Bug fixes
+
+RPNG-533 TypeError on Web PKI certificate listing
+
+
 <a name="v4-0-4" />
 ## 4.0.4 (2026-03-18)
 

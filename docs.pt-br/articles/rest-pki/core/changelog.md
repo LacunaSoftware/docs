@@ -1,12 +1,38 @@
 ﻿# Histórico de versões - Rest PKI Core
-
 <!--<a name="vnext" />-->
+
+<a name="v4-0-5" />
+## 4.0.5 (2026-03-20)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-547, RPNG-582 Adicionar suporte ao sistema de CNPJs alfanuméricos
+
+
+<a name="v3-7-1" />
+## 3.7.1 (2026-03-20)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-547, RPNG-582 Adicionar suporte ao sistema de CNPJs alfanuméricos
+
+RPNG-540 Configuração de sistema para usar apenas a língua padrão
+
+### Correções de bugs
+
+RPNG-533 TypeError durante a listagem de certificados do Web PKI
+
+
 <a name="v4-0-4" />
 ## 4.0.4 (2026-03-18)
 
 Atualiza modelo do banco de dados: não
 
-### Improvements
+### Melhorias
 
 RPNG-576 Atualização do FortFace SDK para v2.4.2
 
