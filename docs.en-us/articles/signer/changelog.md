@@ -1,5 +1,17 @@
 # Signer changelog
 
+<a name="v2-8-0" />
+### 2.8.0 (2026-03-25)
+
+* Improvements
+  * [SIG-1586] Dashboard visual redesign
+  * [SIG-1627] Integration with the Civil Registry (IdRC) signing service
+
+* Bug fixes
+  * [SIG-1576] Update lacuna-facetec-client to version 2.4.0
+
+Updates database model: yes
+
 <a name="v2-7-0" />
 ### 2.7.0 (2026-03-16)
 

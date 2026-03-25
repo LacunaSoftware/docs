@@ -1,5 +1,17 @@
 # Histórico de versões do Signer
 
+<a name="v2-8-0" />
+### 2.8.0 (2026-03-25)
+
+* Melhorias
+  * [SIG-1586] Redesign visual do dashboard
+  * [SIG-1627] Integração com o serviço de assinatura do Registro Civil (IdRC)
+
+* Correções de bugs
+  * [SIG-1576] Atualizar lacuna-facetec-client para a versão 2.4.0
+
+Atualiza modelo de banco de dados: sim
+
 <a name="v2-7-0" />
 ### 2.7.0 (2026-03-16)
 
