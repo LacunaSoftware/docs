@@ -858,3 +858,14 @@ Under section **DocumentAccessValidation**:
 * **Enabled**: if `true`, document access validation is enabled. When enabled, users will be able to select a validation type when creating a document and users will need to perform the selected validation in order to access the document in the public validation area.
 * **RequireForEveryDocumentAccess**: if `true`, all documents will require validation, even if the creator of the document did not select any validation type when creating the document or if a document was created before this setting was enabled. If `false`, only documents that have a validation type selected when they were created will require validation.
 * **DefaultValidationType** (default: `UserIdentifier`): this is the validation type used for documents that do not have an explictly selected validation type when `RequireForEveryDocumentAccess` is `true`. Available options now are only `UserIdentifier`, which requires the user to input the CPF of a signer in order to access the document, but more validation types may be added in the future.
+
+###  *IdRC* Settings (v2.8.0)
+
+These settings are for integration with the Registro Civil signature service (IdRC). Under section **IdRC**:
+
+* **Enabled**: if `true`, enables the integration with the Registro Civil signature service (IdRC). This is required in order to allow users to use IdRC as an option in the security context trusted roots.
+* **Homologation**: if `true`, enables homologation (testing) mode for IdRC integration. This will include the homologation certificate roots as trusted roots when the user adds IdRC to the security context.
+* **IdrcServerBaseUrl**: the base URL of the IdRC server to use.
+* **IdrcServerApiKey**: the API key provided by IdRC.
+* **IdrcServerClientSecret**: the client secret agreed with IdRC.
+* **IdrcServerClientId**: the client ID agreed with IdRC.
