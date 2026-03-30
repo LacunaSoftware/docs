@@ -1,5 +1,13 @@
 # Histórico de versões do Signer
 
+<a name="v2-8-1" />
+### 2.8.1 (2026-03-30)
+
+* Correções de bugs
+  * [SIG-1507] Validação de campo de telefone no formulário de modelo falha em dispositivos móveis
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-8-0" />
 ### 2.8.0 (2026-03-25)
 

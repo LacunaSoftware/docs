@@ -1,5 +1,13 @@
 # Signer changelog
 
+<a name="v2-8-1" />
+### 2.8.1 (2026-03-30)
+
+* Bug fixes
+  * [SIG-1507] Phone field validation in the New Document form fails on mobile devices
+
+Updates database model: no
+
 <a name="v2-8-0" />
 ### 2.8.0 (2026-03-25)
 
