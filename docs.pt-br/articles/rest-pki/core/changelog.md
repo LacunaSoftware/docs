@@ -1,6 +1,42 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-1-0" />
+## 4.1.0 (2026-04-01)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-302 RPNG-599 RPNG-602 Sessão de identificação biométrica (ABIS)
+
+RPNG-440 RPNG-569 RPNG-580 RPNG-585 RPNG-588 PNG-589 RPNG-595 Importação de biometrias em lote
+
+RPNG-579 RPNG-584 RPNG-604 Autenticação facial com fallback para provedor de identidade externa
+
+RPNG-568 RPNG-575 Adicionar lista de padrões de SubjectIdentifiers aceitos para Subscription
+
+### Melhorias
+
+RPNG-544 Mapeamento de TransactionLimits para todas as operações que envolvem Carimbo de Tempo
+
+RPNG-555 SysAdmin - Tela de permissões da subscription
+
+RPNG-558 Informação de restrição na listagem e detalhes de planos de carimbo de tempo
+
+RPNG-559 Dashboard - Melhorias nas informações de FaceTec IdScan
+
+RPNG-587 Adicionar no detalhe do bio subject: data de exclusão
+
+RPNG-591 Adicionar "null expected" à chamada de get subject by identifier
+
+RPNG-592 Melhorar traduções da informação de sessão FortFace
+
+RPNG-603 Atualizações dos SDKs da FaceTec
+
+RPNG-567 Listagem paginada de Subjects da subscription via ClientLib
+
+
 <a name="v4-0-5" />
 ## 4.0.5 (2026-03-20)
 

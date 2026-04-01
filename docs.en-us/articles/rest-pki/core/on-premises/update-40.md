@@ -107,5 +107,5 @@ CREATE INDEX IF NOT EXISTS "IX_Documents_SubscriptionId_DateCreatedUtc" ON "Docu
 ## 3. Update Rest PKI Core
 
 Proceed with the standard update instructions:
-- [Docker](docker.md): Update to `lacunasoftware/restpkicore:4.0` image.
+- [Docker](docker.md): Update to `lacunasoftware/restpkicore:4.1` image.
 - [Linux](linux/update.md)

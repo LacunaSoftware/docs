@@ -1,6 +1,42 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-1-0" />
+## 4.1.0 (2026-04-01)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-302 RPNG-599 RPNG-602 Biometric identification session (ABIS)
+
+RPNG-440 RPNG-569 RPNG-580 RPNG-585 RPNG-588 PNG-589 RPNG-595 Biometric batch enrollments
+
+RPNG-579 RPNG-584 RPNG-604 Face authentication with external identity provider fallback
+
+RPNG-568 RPNG-575 Add subject identifier formats for Subscriptions
+
+### Improvements
+
+RPNG-544 Transaction limits mapping for timestamps
+
+RPNG-555 SysAdmin - Subscription permissions page
+
+RPNG-558 Show restricted info on timestamp tiers page
+
+RPNG-559 Dashboard - FaceTec IdScan details improvements
+
+RPNG-587 Add date deleted on bio subject details page
+
+RPNG-591 Add "null expected" on get subject by identifier route
+
+RPNG-592 Improve FortFace session details page translations
+
+RPNG-603 Update FaceTec SDKs
+
+RPNG-567 Paginated listing of bio subjects via ClientLib
+
+
 <a name="v4-0-5" />
 ## 4.0.5 (2026-03-20)
 
