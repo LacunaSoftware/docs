@@ -1,5 +1,17 @@
 # Histórico de versões do Signer
 
+<a name="v2-9-0" />
+### 2.9.0 (2026-04-02)
+
+* Melhorias
+  * [SIG-1669] Opção para incluir QR Code de assinatura no corpo do e-mail de lembrete
+
+* Correções de bugs
+  * [SIG-869] Registro de notificações em lote nas notificações do usuário
+  * Correção de erro ao realizar assinatura CAdES com certificado digital no WebPKI
+
+Atualiza modelo de banco de dados: sim (Migration: NotificationDocument)
+
 <a name="v2-8-1" />
 ### 2.8.1 (2026-03-30)
 
@@ -18,7 +30,7 @@ Atualiza modelo de banco de dados: não
 * Correções de bugs
   * [SIG-1576] Atualizar lacuna-facetec-client para a versão 2.4.0
 
-Atualiza modelo de banco de dados: sim
+Atualiza modelo de banco de dados: sim (Migration: IdRC)
 
 <a name="v2-7-0" />
 ### 2.7.0 (2026-03-16)

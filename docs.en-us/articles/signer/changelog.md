@@ -1,5 +1,17 @@
 # Signer changelog
 
+<a name="v2-9-0" />
+### 2.9.0 (2026-04-02)
+
+* Improvements
+  * [SIG-1669] Option to include a signature QR Code in the reminder email body
+
+* Bug fixes
+  * [SIG-869] Batch notification records in user notifications
+  * Fix error when performing CAdES signature with digital certificate using WebPKI
+
+Updates database model: yes (Migration: NotificationDocument)
+
 <a name="v2-8-1" />
 ### 2.8.1 (2026-03-30)
 
@@ -18,7 +30,7 @@ Updates database model: no
 * Bug fixes
   * [SIG-1576] Update lacuna-facetec-client to version 2.4.0
 
-Updates database model: yes
+Updates database model: yes (Migration: IdRC)
 
 <a name="v2-7-0" />
 ### 2.7.0 (2026-03-16)
