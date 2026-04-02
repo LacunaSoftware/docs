@@ -217,6 +217,8 @@ initial page showing document details. If `true` reverts to the old behavior of 
 
 * **PublicBatchSignatureEnabled** (v2.7.0, default: `false`): if `true`, enables the option to perform batch signatures in the public area. This allows users to sign multiple documents at once without the need of logging in, by using a ticket that is sent in the signature reminder email.
 
+* **IncludeQrCodeInEmailNotifications** (v2.9.0, default: `false`): if `true`, includes a QR code in email notifications that link to the document in the platform through the WebPKI app.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
