@@ -47,3 +47,38 @@ Entretanto, recomendamos fortemente que seja utilizado versão mais atual do pac
 O código-fonte do pacote Lacuna PKI NLog Connector é aberto, ficando hospedado no
 [BitBucket](https://bitbucket.org/Lacunas/pkinlogconnector). Caso queira customizá-lo, você pode fazer um fork do
 projeto e utilizar a sua versão customizada ao invés do pacote opcional.
+
+Dentro da [classe principal](https://bitbucket.org/Lacunas/pkinlogconnector/src/master/PkiNLogConnector/NLogLogger.cs), é possível personalizar operações para níveis de logs diferentes, além de fazer operações específicas quando a limpeza do log for realizada
+
+```csharp
+public void Log(LogLevels level, string message, string source) {
+
+		var logger = loggers.GetOrAdd(source, s => LogManager.GetLogger(s));
+
+		LogLevel logLevel;
+
+		switch (level) {
+			case LogLevels.Trace:
+				logLevel = LogLevel.Trace;
+				break;
+			case LogLevels.Info:
+				logLevel = LogLevel.Info;
+				break;
+			case LogLevels.Warning:
+				logLevel = LogLevel.Warn;
+				break;
+			case LogLevels.Error:
+				logLevel = LogLevel.Error;
+				break;
+			default:
+				logLevel = LogLevel.Info;
+				break;
+		}
+		
+		logger.Log(logLevel, message);
+	}		
+
+		public void Flush() {
+			NLog.LogManager.Flush();
+		}
+```
