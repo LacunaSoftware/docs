@@ -1,6 +1,15 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-1-1" />
+## 4.1.1 (2026-04-06)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-606 Update FortFace SDK to v2.4.3
+
 <a name="v4-1-0" />
 ## 4.1.0 (2026-04-01)
 
