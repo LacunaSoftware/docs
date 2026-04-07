@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-22-3" />
+### 2.22.3 (2026-04-06)
+
+- \[PKI-155\] Improve XML signature policy identifier element decoding in order to support non-compliant Algorithm aliases instead of algorithm URI.
+- \[PKI-156\] Update PkiItaly and PkiPeru TSL trust anchors. Prevent TSL validation loop.
+
+
 <a name="v2-22-2" />
 ### 2.22.2 (2026-03-05)
 
