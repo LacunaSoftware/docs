@@ -1,5 +1,21 @@
 ﻿# Rest PKI changelog
 
+<a name="v1-33-8" />
+### 1.33.8 (2026-04-07)
+
+Database model update: No
+
+- Update PKI SDK to [2.22.3](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-22-3) With TSL loop validation fix.
+
+
+<a name="v1-33-7" />
+### 1.33.7 (2026-03-05)
+
+Database model update: No
+
+- Update PKI SDK to [2.22.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-22-2) With T8 PDF tag insert fix.
+
+
 <a name="v1-33-6" />
 ### 1.33.6 (2025-11-28)
 
