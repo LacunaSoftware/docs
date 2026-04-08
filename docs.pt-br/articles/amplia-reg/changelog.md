@@ -1,7 +1,7 @@
 ﻿# Histórico de versões do Amplia Reg
 
-<!-- <a name="5.19.0" /> //
-## 5.19.0 (2026-03-11) //
+<!-- <a name="5.25.0" /> //
+## 5.25.0 (2026-04-07) //
 
 Atualiza modelo do banco de dados: nao //
 
@@ -16,6 +16,188 @@ Atualiza modelo do banco de dados: nao //
 ### Correções de bugs
 
 // -->
+
+<a name="5.24.0" />
+## 5.24.0 (2026-04-07)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-882 Enviar chave de emissão 2 prévia por SMS
+
+### Correções de bugs
+
+ARNG-790 Melhorar validação de e-mail para bloquear formatos inválidos
+
+ARNG-885 Pesquisas na tabela de pedidos sem index de busca
+
+ARNG-889 Flavour Brazil sempre adiciona validação de DataValid independentemente de estar ou não configurado
+
+
+
+<a name="5.23.3" />
+## 5.23.3 (2026-04-07)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-894 Pedidos com pendencia no PSBio e DataValid OK não conseguem ser emitidos
+
+
+
+<a name="5.23.2" />
+## 5.23.2 (2026-04-07)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-893 Resposta da Acertpix permite aprovar pedidos sem verificar validação de documentos
+
+
+
+<a name="5.23.1" />
+## 5.23.1 (2026-04-01)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-806 Melhorar relatório DataValid
+
+ARNG-819 Permitir Aprovação Automática com PSBio "OK" mesmo na ausência de validação do DataValid
+
+### Correções de bugs
+
+ARNG-878 Permitir remover alerta de pedidos emitidos
+
+ARNG-884 Corrigir detalhes de usuário root
+
+ARNG-886 Corrigir problema que agente de conferência não consegue aprovar pedidos caso titular não possua DataValid
+
+ARNG-887 Botão de remover alerta não aparece em algumas situações
+
+
+
+<a name="5.23.0" />
+## 5.23.0 (2026-03-30)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-821 Atualizar componente Web BRY para última versão disponível no momento
+
+ARNG-873 Criar perfil prevenção a fraude para agentes de conferência e permitir que aprovem pedidos sem respota do PSBio com resposta positiva do DataValid
+
+### Melhorias
+
+ARNG-809 Remover obrigatoriedade do filtro de "AR" da Listagem de AGRs
+
+ARNG-870 Não permitir agente de conferência aprovar pedido com validação do DataValid abaixo da configuração
+
+ARNG-871 Gerar alerta em pedidos caso chegue suspeita de fraude do PSBio com certificado emitido
+
+ARNG-872 Permitir pedidos avançarem pra conferência sem resposta do PSBio caso tenha resposta positiva do DataValid
+
+ARNG-875 Adicionar eventos de envio na integração da Acertpix
+
+ARNG-876 Mudar tratativa de validação de documentos Brasileiros com integração Acertpix + DataValid
+
+ARNG-880 Melhorar autorização biométrica do agente de registro pra evitar multiplos clicks
+
+### Correções de bugs
+
+ARNG-874 Impedir usuário de clicar mais de uma vez no botão pra emitir certificado
+
+
+
+<a name="5.22.10" />
+## 5.22.10 (2026-03-27)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+ARNG-805 Possibilidade de remoção da chave 1
+
+### Melhorias
+
+ARNG-850 Refatorar status de retorno do DataValid para melhor entendimento sobre existência do titular no mesmo
+
+ARNG-867 Possibilidade de envio antecipado da chave 2
+
+### Correções de bugs
+
+ARNG-868 Correção do envio antecipado da chave 2
+
+
+
+<a name="5.22.0" />
+## 5.22.0 (2026-03-24)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+ARNG-865 Não permitir alterar contatos (email e telefone) do titular caso certificado já tenha sido emitido (emissão com data futura)
+
+
+
+<a name="5.21.2" />
+## 5.19.2 (2026-03-16)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-859 Permitir anexar documentação complementar pra pedidos independentemente do status
+
+### Melhorias
+
+ARNG-860 Trazer informação de CNH no relatório de pedidos
+
+
+
+<a name="5.20.0" />
+## 5.20.0 (2026-03-18)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+ARNG-858 Permitir filtrar por motivo para conferência e motivo de aguardando recursos
+
+### Melhorias
+
+ARNG-802 Criar configuração para personalizar SMS's enviados
+
+ARNG-847 Adicionar filtro por "E-mail do Titular" na Consulta de Pedidos
+
+ARNG-856 Criar alerta de pedidos
+
+### Correções de bugs
+
+ARNG-857 Algumas validações de documentos não estão aparecendo nos detalhes do pedido
+
+
+
+<a name="5.19.5" />
+## 5.19.5 (2026-03-18)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+ARNG-843 Obrigar envio para ACI em pedidos com CEI, PIS ou CAEPF preenchidos
+
+### Correções de bugs
+
+ARNG-855 Pedidos cancelados automaticamente de forma indevida
+
+
 
 <a name="5.19.2" />
 ## 5.19.2 (2026-03-16)
