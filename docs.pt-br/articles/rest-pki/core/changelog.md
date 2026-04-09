@@ -15,6 +15,16 @@ RPNG-607 Política Adobe Reader para geração de assinatura
 RPNG-608 Atualização de bibliotecas de assinatura
 
 
+<a name="v3-7-2" />
+## 3.7.2 (2026-04-09)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-608 Atualização de bibliotecas de assinatura
+
+
 <a name="v3-4-3" />
 ## 3.4.3 (2026-04-07)
 

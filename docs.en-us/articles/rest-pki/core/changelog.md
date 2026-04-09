@@ -12,7 +12,17 @@ RPNG-607 Adobe Reader policy for signature generation
 
 ### Improvements
 
-RPNG-414 Update signing libraries
+RPNG-608 Update signing libraries
+
+
+<a name="v3-7-2" />
+## 3.7.2 (2026-04-09)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-608 Update signing libraries
 
 
 <a name="v3-4-3" />
@@ -22,7 +32,7 @@ Updates database model: no
 
 ### Improvements
 
-RPNG-414 Update signing libraries
+RPNG-608 Update signing libraries
 
 
 <a name="v4-1-1" />
