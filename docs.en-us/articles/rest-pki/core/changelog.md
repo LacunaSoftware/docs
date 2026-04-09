@@ -1,6 +1,30 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-1-2" />
+## 4.1.2 (2026-04-09)
+ 
+Updates database model: no
+
+### New features
+
+RPNG-607 Adobe Reader policy for signature generation
+
+### Improvements
+
+RPNG-414 Update signing libraries
+
+
+<a name="v3-4-3" />
+## 3.4.3 (2026-04-07)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-414 Update signing libraries
+
+
 <a name="v4-1-1" />
 ## 4.1.1 (2026-04-06)
 

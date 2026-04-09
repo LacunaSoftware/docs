@@ -1,6 +1,30 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-1-2" />
+## 4.1.2 (2026-04-09)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-607 Política Adobe Reader para geração de assinatura
+
+### Melhorias
+
+RPNG-608 Atualização de bibliotecas de assinatura
+
+
+<a name="v3-4-3" />
+## 3.4.3 (2026-04-07)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-608 Atualização de bibliotecas de assinatura
+
+
 <a name="v4-1-1" />
 ## 4.1.1 (2026-04-06)
 
