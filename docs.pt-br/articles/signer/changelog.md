@@ -1,5 +1,25 @@
 # Histórico de versões do Signer
 
+<a name="v2-9-2" />
+### 2.9.2 (2026-04-14)
+
+* Melhorias
+  * Criação do tema GCM
+  * Melhorias e correções nas regras de CSP
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-9-1" />
+### 2.9.1 (2026-04-09)
+
+* Melhorias
+  * [SIG-1690] Nova configuração para modo monotônico do dashboard
+
+* Correções de bugs
+  * [SIG-1691] Correção de erro no novo dashboard quando o módulo de faturas está desabilitado
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-9-0" />
 ### 2.9.0 (2026-04-02)
 
