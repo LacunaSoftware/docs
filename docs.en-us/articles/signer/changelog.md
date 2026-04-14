@@ -1,5 +1,25 @@
 # Signer changelog
 
+<a name="v2-9-2" />
+### 2.9.2 (2026-04-14)
+
+* Improvements
+  * Added GCM theme
+  * Improvements and fixes to CSP rules
+
+Updates database model: no
+
+<a name="v2-9-1" />
+### 2.9.1 (2026-04-09)
+
+* Improvements
+  * [SIG-1690] New configuration for monotone dashboard mode
+
+* Bug fixes
+  * [SIG-1691] Fixed error in the new dashboard when the billing module is disabled
+
+Updates database model: no
+
 <a name="v2-9-0" />
 ### 2.9.0 (2026-04-02)
 
