@@ -1,6 +1,16 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-1-6" />
+## 4.1.6 (2026-04-16)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-616 Subscription settings page throwing errors after being closed
+
+
 <a name="v4-1-5" />
 ## 4.1.5 (2026-04-16)
  
