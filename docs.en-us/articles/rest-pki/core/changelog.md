@@ -1,6 +1,16 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-1-5" />
+## 4.1.5 (2026-04-16)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-617 Improve IdNumber matcher for Video Identifications
+
+
 <a name="v4-1-4" />
 ## 4.1.4 (2026-04-16)
  

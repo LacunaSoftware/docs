@@ -1,14 +1,14 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
-<a name="v4-1-4" />
-## 4.1.4 (2026-04-16)
+<a name="v4-1-5" />
+## 4.1.5 (2026-04-16)
 
 Atualiza modelo do banco de dados: não
 
 ### Melhorias
 
-RPNG-612 Adicionar rota para obter detalhes de sessões FortFace
+RPNG-617 Melhorar matcher de número de identidade das vídeo identificações
 
 
 <a name="v4-1-3" />
