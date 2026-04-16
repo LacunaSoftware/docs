@@ -338,6 +338,7 @@
 ### [Configuração de envio de SMS](amplia/on-premises/configure-sms.md)
 ### [Configuração de OCSP](amplia/on-premises/configure-ocsp.md)
 ### [Propagação de LCR](amplia/on-premises/crl-propagation.md)
+### [Configuração de template de certificado de AC](amplia/on-premises/configure-ca-cert-templates.md)
 ### [Configuração de hospedagem de certificados em nuvem](amplia/on-premises/configure-cert-management.md)
 ### [Configuração de redirecionamento para HTTPS](amplia/on-premises/configure-https-redirect.md)
 ### [Verificando a versão instalada](amplia/on-premises/check-version.md)
@@ -349,6 +350,8 @@
 ### [Criação de AC raiz](amplia/operation/create-root-ca.md)
 ### [Criação de AC intermediária](amplia/operation/create-intermediate-ca.md)
 ### [Criação de AC de dispositivos](amplia/operation/create-device-ca.md)
+## [Sobre](amplia/about/index.md)
+### [Geração de números de série](amplia/about/serial-number-generation.md)
 ## [Histórico de versões](amplia/changelog.md)
 <!-- End of Amplia -->
 
