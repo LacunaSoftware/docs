@@ -27,7 +27,7 @@ to customize root or intermediate CAs. In each subsection, the following setting
   * `IpsecTunnel`
   * `IpsecUser`
   * `Any`
-* * **RandomSerialNumber**: whether to use a random serial number -- `True` or `False` (default)
+* **RandomSerialNumber**: whether to use a random serial number -- `True` or `False` (default)
 
 Example (*.ini* or *.conf* configuration file):
 
@@ -46,12 +46,13 @@ CACertificateTemplates__IntermediateCA__RandomSerialNumber=True
 
 ## Certificate Policies
 
-Under each subsection (`RootCA` or `IntermediateCA`), there can be N subsections named `Policies:0`, `Policies:1` and so on, with the following settings:
+Under each subsection (`RootCA` or `IntermediateCA`), there can be multiple subsections named `Policies:0`, `Policies:1` and so on, with the following
+settings:
 
 * **Oid**: policy OID
 * **StatementUrl**: policy statement URL
 
-Under each policy section there can be a subsection named `UserNotices` with values `0`, `1` and so on, each one with a user notice.
+Under each policy section there can be a subsection named `UserNotices` with multiple values `0`, `1` and so on, each one with a user notice.
 
 Example (*.ini* or *.conf* configuration file):
 
@@ -77,7 +78,7 @@ CACertificateTemplates__IntermediateCA__Policies__0__UserNotices__1=No end-user 
 ## Legacy configuration
 
 The **CACertificateTemplates** configuration section described above was introduced on Amplia version [4.22.0](../changelog.md#v4-22-0). The
-previous configuration section, **CACertificateTemplate** (singular) is still supported, which affects both root and intermediate CA certificates.
+old configuration section, **CACertificateTemplate** (singular) is still supported, which affects both root and intermediate CA certificates.
 
 The syntax is slightly different from the syntax described above, particularly for the **KeyUsages** and **ExtendedKeyUsages** settings. See examples below.
 
