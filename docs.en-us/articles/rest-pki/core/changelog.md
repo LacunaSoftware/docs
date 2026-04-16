@@ -8,7 +8,7 @@ Updates database model: no
 
 ### Improvements
 
-RPNG-615 Add route to gatter details about FortFace sessions
+RPNG-615 Add route to get details about FortFace sessions
 
 
 <a name="v4-1-3" />
