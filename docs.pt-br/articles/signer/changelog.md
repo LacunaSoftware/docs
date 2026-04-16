@@ -1,10 +1,19 @@
 # Histórico de versões do Signer
 
+<a name="v2-10-0" />
+### 2.10.0 (2026-04-16)
+
+* Melhorias
+  * Suporte ao CNPJ alfanumérico
+  * Aprimoramento da busca e listagem de pastas no novo dashboard
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-9-2" />
 ### 2.9.2 (2026-04-14)
 
 * Melhorias
-  * Criação do tema GCM
+  * Criação do tema gmc
   * Melhorias e correções nas regras de CSP
 
 Atualiza modelo de banco de dados: não
@@ -30,7 +39,7 @@ Atualiza modelo de banco de dados: não
   * [SIG-869] Registro de notificações em lote nas notificações do usuário
   * Correção de erro ao realizar assinatura CAdES com certificado digital no WebPKI
 
-Atualiza modelo de banco de dados: sim (Migration: NotificationDocument)
+Atualiza modelo de banco de dados: sim (migration: `NotificationDocument`)
 
 <a name="v2-8-1" />
 ### 2.8.1 (2026-03-30)
@@ -50,7 +59,7 @@ Atualiza modelo de banco de dados: não
 * Correções de bugs
   * [SIG-1576] Atualizar lacuna-facetec-client para a versão 2.4.0
 
-Atualiza modelo de banco de dados: sim (Migration: IdRC)
+Atualiza modelo de banco de dados: sim (migration: `IdRC`)
 
 <a name="v2-7-0" />
 ### 2.7.0 (2026-03-16)
