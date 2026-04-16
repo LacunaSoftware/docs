@@ -11,6 +11,16 @@ Atualiza modelo do banco de dados: não
 RPNG-617 Melhorar matcher de número de identidade das vídeo identificações
 
 
+<a name="v4-1-4" />
+## 4.1.4 (2026-04-16)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-615 Adicionar rota para obter detalhes de sessões FortFace
+
+
 <a name="v4-1-3" />
 ## 4.1.3 (2026-04-15)
 
