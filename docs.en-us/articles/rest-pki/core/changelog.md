@@ -1,6 +1,26 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-1-4" />
+## 4.1.4 (2026-04-16)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-615 Add route to gatter details about FortFace sessions
+
+
+<a name="v4-1-3" />
+## 4.1.3 (2026-04-15)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-612 Increase maximum configurable upload size limit
+
+
 <a name="v4-1-2" />
 ## 4.1.2 (2026-04-09)
  
