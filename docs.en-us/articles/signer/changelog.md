@@ -1,5 +1,34 @@
 # Signer changelog
 
+<a name="v2-10-0" />
+### 2.10.0 (2026-04-16)
+
+* Improvements
+  * Support for alphanumeric CNPJ
+  * Enhanced folder search and listing in the new dashboard
+
+Updates database model: no
+
+<a name="v2-9-2" />
+### 2.9.2 (2026-04-14)
+
+* Improvements
+  * Added gmc theme
+  * Improvements and fixes to CSP rules
+
+Updates database model: no
+
+<a name="v2-9-1" />
+### 2.9.1 (2026-04-09)
+
+* Improvements
+  * [SIG-1690] New configuration for monotone dashboard mode
+
+* Bug fixes
+  * [SIG-1691] Fixed error in the new dashboard when the billing module is disabled
+
+Updates database model: no
+
 <a name="v2-9-0" />
 ### 2.9.0 (2026-04-02)
 
@@ -10,7 +39,7 @@
   * [SIG-869] Batch notification records in user notifications
   * Fix error when performing CAdES signature with digital certificate using WebPKI
 
-Updates database model: yes (Migration: NotificationDocument)
+Updates database model: yes (migration: `NotificationDocument`)
 
 <a name="v2-8-1" />
 ### 2.8.1 (2026-03-30)
@@ -30,7 +59,7 @@ Updates database model: no
 * Bug fixes
   * [SIG-1576] Update lacuna-facetec-client to version 2.4.0
 
-Updates database model: yes (Migration: IdRC)
+Updates database model: yes (migration: `IdRC`)
 
 <a name="v2-7-0" />
 ### 2.7.0 (2026-03-16)

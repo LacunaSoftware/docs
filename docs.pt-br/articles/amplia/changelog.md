@@ -1,8 +1,21 @@
 ﻿# Histórico de versões do Amplia
 
 <a name="vnext" />
+<a name="v4-22-0" />
+## 4.22.0 (próxima versão)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+AMP-390 Configuração para emitir certificados de AC com número de série aleatório
+
+
+
 <a name="v4-21-0" />
-## 4.21.0 (próxima versão)
+## 4.21.0 (2026-04-16)
+
+Idêntica a: 4.21.0 RC 2 (2026-01-27)
 
 Atualiza modelo do banco de dados: não
 

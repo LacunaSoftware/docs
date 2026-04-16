@@ -333,6 +333,7 @@
 ### [Configure OIDC](amplia/on-premises/configure-oidc.md)
 ### [Configure email sending](amplia/on-premises/configure-email.md)
 ### [Configure SMS sending](amplia/on-premises/configure-sms.md)
+### [Configure CA certificate templates](amplia/on-premises/configure-ca-cert-templates.md)
 ### [Configure cloud certificate management](amplia/on-premises/configure-cert-management.md)
 ### [Configure OCSP](amplia/on-premises/configure-ocsp.md)
 ### [CRL propagation](amplia/on-premises/crl-propagation.md)
@@ -347,6 +348,8 @@
 ### [Create a root CA](amplia/operation/create-root-ca.md)
 ### [Create an intermediate CA](amplia/operation/create-intermediate-ca.md)
 ### [Create a device CA](amplia/operation/create-device-ca.md)
+## [About](amplia/about/index.md)
+### [Generation of serial numbers](amplia/about/serial-number-generation.md)
 ## [Changelog](amplia/changelog.md)
 <!-- End of Amplia -->
 

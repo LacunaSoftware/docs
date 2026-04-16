@@ -1,9 +1,21 @@
 ﻿# Amplia changelog
 
-
 <a name="vnext" />
+<a name="v4-22-0" />
+## 4.22.0 (next version)
+
+Updates database model: no
+
+### Improvements
+
+AMP-390 Configuration to issue CA certificates with random serial number
+
+
+
 <a name="v4-21-0" />
-## 4.21.0 (next version)
+## 4.21.0 (2025-04-16)
+
+Identical to: 4.21.0 RC 2 (2026-01-27)
 
 Updates database model: no
 
