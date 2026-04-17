@@ -871,6 +871,7 @@ These settings are for integration with the Registro Civil signature service (Id
 * **IdrcServerApiKey**: the API key provided by IdRC.
 * **IdrcServerClientSecret**: the client secret agreed with IdRC.
 * **IdrcServerClientId**: the client ID agreed with IdRC.
+
 ###  *IdentifierScope* Settings (v2.11.0)
 
 After version 2.11.0, it is now possible to configure an instance to use more than one identifier type. Still it is needed to have a main identifier type that will be used when no type is specified and to define the uniqueness behavior of each identifier type. These settings are defined in the **IdentifierScope** section.
