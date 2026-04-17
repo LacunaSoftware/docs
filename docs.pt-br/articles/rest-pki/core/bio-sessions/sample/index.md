@@ -2,7 +2,7 @@
 
 Antes de explorar os casos de uso, é necessário configurar a biblioteca do Rest PKI Core em sua aplicação. Os exemplos abaixo utilizam **.NET 10** (ou superior).
 
-#### 1. Configuração do ambiente
+## 1. Configuração do ambiente
 
 No seu arquivo `appsettings.json`, adicione as credenciais obtidas no painel do Rest PKI Core:
 
@@ -25,7 +25,7 @@ builder.Services.AddRestPki().Configure(builder.Configuration.GetSection("RestPk
 var app = builder.Build();
 ```
 
-#### 2. Injeção de Dependência
+## 2. Injeção de Dependência
 Para utilizar as funcionalidades de biometria em seus Controllers, injete a interface IRestBioService via construtor.
 
 > [!Note]
@@ -55,5 +55,5 @@ Casos de Uso Disponíveis
 Com a configuração concluída, siga para o guia de implementação da funcionalidade desejada:
 
 [Prova de vida](Liveness)
-[Cadastro Biométrico]()
+[Cadastro Biométrico](enrollment.md)
 [Autenticação Facial]()
