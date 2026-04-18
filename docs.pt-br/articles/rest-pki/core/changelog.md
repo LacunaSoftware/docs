@@ -1,6 +1,16 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-2-1" />
+## 4.2.1 (2026-04-18)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-621 Adicionar SubjectIdentifier para sessões de captura de documento de identidade
+
+
 <a name="v4-2-0" />
 ## 4.2.0 (2026-04-16)
 

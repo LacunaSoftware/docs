@@ -1,6 +1,16 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-2-1" />
+## 4.2.1 (2026-04-18)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-621 Add missing subject identifier on identification document capture sessions
+
+
 <a name="v4-2-0" />
 ## 4.2.0 (2026-04-16)
  
