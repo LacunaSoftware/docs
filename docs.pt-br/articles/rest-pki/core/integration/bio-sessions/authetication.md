@@ -23,8 +23,8 @@ Dentro do controller criado no exemplo passado, podemos criar um endpoint que im
 | **TrustedOrigin**                      | Condicional*     | String   | URL do seu site onde o Widget está incorporado (obrigatório para uso do Widget).                              |
 | **PlatformPreference**                 | Sim              | Enum     | Define o comportamento do dispositivo: NoPreference (0), Web (1), MobileRecommended (2) ou MobileRequired (3) |
 | **Subject**                            | sim              | Object   | Objeto de referência do usuário                                                                               |
-| **Subject.Identifier**                 | sim              | String   | Um nome ou ID para identificar o usuário da sessão.                                                           |
-| **Subject.Id**                         | Não              | Guid     | Id do cadastro                                                                                                |
+| **Subject.Identifier**                 | Condicional      | String   | Identificador externo do usuário.                                                                             |
+| **Subject.Id**                         | Condicional      | Guid     | Id do cadastro gerado pelo RestPkiCore                                                                        |
 | **FaceCaptureProvider**                | Não              | Enum     | Define o provedor de biometria: `FaceTec` (1) ou`FortFace` (2).                                               |
 
 

@@ -1,4 +1,4 @@
-# Exemplos de Sessão biométrica - Rest PKI Core
+# Sessões de biometria - Rest PKI Core - Client Lib .NET/C#
 
 Antes de explorar os casos de uso, é necessário configurar a biblioteca do Rest PKI Core em sua aplicação. Os exemplos abaixo utilizam **.NET 10** (ou superior).
 
