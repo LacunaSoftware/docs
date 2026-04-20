@@ -1,4 +1,4 @@
-# Cadastro biométrico
+# Cadastro biométrico  - Rest PKI Core
 
 Realiza o registro biométrico do usuário no sistema. A imagem da face é processada e armazenada de forma criptografada para ser utilizada futuramente em operações de autenticação ou identificação. Variações disponíveis:
 
@@ -15,15 +15,15 @@ Dentro do controller criado no exemplo passado, podemos criar um endpoint que im
 > Você deve informar ou o `ReturnUrl` (para redirecionamento) ou o `TrustedOrigin` (para widget)
 > [Veja a diferença entre ReturnUrl e TrustedOrigin](widget.md)
 
-| **Parâmetro**                          | **Obrigatório?** | **Tipo** | **Descrição**                                                                                                                                                   |
-| -------------------------------------- | ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ReturnUrl**                          | Condicional*     | String   | URL para redirecionar o usuário após a biometria (obrigatório se não usar Widget).                                                                              |
-| **TrustedOrigin**                      | Condicional*     | String   | URL do seu site onde o Widget está incorporado (obrigatório para uso do Widget).                                                                                |
-| **PlatformPreference**                 | Sim              | Enum     | Define o comportamento do dispositivo: NoPreference (0), Web (1), MobileRecommended (2) ou MobileRequired (3)                                                   |
-| **SubjectIdentifier**                  | Não              | String   | Um nome ou ID para identificar o usuário da sessão.                                                                                                             |
-| **DangerousOverrideIfAlreadyEnrolled** | Não              | Bool     | Define se o sistema permite o sobrescrita de um cadastro                                                                                                        |
-| **CaptureIdentificationDocument**      | Não              | Bool     | Define se, além da face, o usuário deve fotografar um documento de identidade.                                                                                  |
-| **FaceCaptureProvider**                | Não              | Enum     | Define o provedor de biometria: `FaceTec` (1) ou`FortFace` (2).                                                                                                 |
+| **Parâmetro**                          | **Obrigatório?** | **Tipo** | **Descrição**                                                                                                 |
+| -------------------------------------- | ---------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| **ReturnUrl**                          | Condicional*     | String   | URL para redirecionar o usuário após a biometria (obrigatório se não usar Widget).                            |
+| **TrustedOrigin**                      | Condicional*     | String   | URL do seu site onde o Widget está incorporado (obrigatório para uso do Widget).                              |
+| **PlatformPreference**                 | Sim              | Enum     | Define o comportamento do dispositivo: NoPreference (0), Web (1), MobileRecommended (2) ou MobileRequired (3) |
+| **SubjectIdentifier**                  | Não              | String   | Um nome ou ID para identificar o usuário da sessão.                                                           |
+| **DangerousOverrideIfAlreadyEnrolled** | Não              | Bool     | Define se o sistema permite o sobrescrita de um cadastro                                                      |
+| **CaptureIdentificationDocument**      | Não              | Bool     | Define se, além da face, o usuário deve fotografar um documento de identidade.                                |
+| **FaceCaptureProvider**                | Não              | Enum     | Define o provedor de biometria: `FaceTec` (1) ou`FortFace` (2).                                               |
 
 
 ### Exemplo de retorno da requisição:
@@ -108,7 +108,6 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 
 > [!TIP]
 > Utilize o Complete apenas ao final do processo, enviando o Ticket recebido para validar o resultado e encerrar a sessão.
-
 
 ```cs
     [HttpGet("enrollment/completion")]

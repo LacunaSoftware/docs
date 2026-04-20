@@ -54,6 +54,8 @@ Casos de Uso Disponíveis
 
 Com a configuração concluída, siga para o guia de implementação da funcionalidade desejada:
 
+<!-- TODO-598 ESCREVER SOBRE PERMISSÕES DE ROTA! (Diferença entre permissão e autorização) -->
+
 [Prova de vida](Liveness)
 [Cadastro Biométrico](enrollment.md)
 [Autenticação Facial]()

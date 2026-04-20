@@ -1,4 +1,4 @@
-## Prova de vida
+## Prova de vida - Rest PKI Core
 
 Verifica se há uma pessoa real presente do outro lado da tela, detectando tentativas de fraude com fotos, vídeos ou máscaras. Não realiza a identificação (quem é a pessoa), apenas atesta a presença de um ser humano vivo
 
@@ -17,14 +17,14 @@ public async Task<StartBioSessionResponse> StartLivenessSessionAsync([FromBody] 
 
 <!-- // TODO 598 - Nomear essa tabela com "possiveis entradas" -->
 
-| **Parâmetro**                     | **Obrigatório?** | **Tipo** | **Descrição**                                                                                                                                                        |
-| --------------------------------- | ---------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ReturnUrl**                     | Condicional*     | String   | URL para redirecionar o usuário após a biometria (obrigatório se não usar Widget).                                                                                   |
-| **TrustedOrigin**                 | Condicional*     | String   | URL do seu site onde o Widget está incorporado (obrigatório para uso do Widget).                                                                                     |
-| **PlatformPreference**            | Sim              | Enum     | Define o comportamento do dispositivo: NoPreference (0), Web (1), MobileRecommended (2) ou MobileRequired (3)                                                        |
-| **SubjectIdentifier**             | Não              | String   | Um nome ou ID para identificar o usuário da sessão.                                                                                                                  |
-| **CaptureIdentificationDocument** | Não              | Bool     | Define se, além da face, o usuário deve fotografar um documento de identidade.                                                                                       |
-| **FaceCaptureProvider**           | Não              | Enum     | Define o provedor de biometria: `FaceTec` (1) ou`FortFace` (2).                                                                                                      |
+| **Parâmetro**                     | **Obrigatório?** | **Tipo** | **Descrição**                                                                                                 |
+| --------------------------------- | ---------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| **ReturnUrl**                     | Condicional*     | String   | URL para redirecionar o usuário após a biometria (obrigatório se não usar Widget).                            |
+| **TrustedOrigin**                 | Condicional*     | String   | URL do seu site onde o Widget está incorporado (obrigatório para uso do Widget).                              |
+| **PlatformPreference**            | Sim              | Enum     | Define o comportamento do dispositivo: NoPreference (0), Web (1), MobileRecommended (2) ou MobileRequired (3) |
+| **SubjectIdentifier**             | Não              | String   | Um nome ou ID para identificar o usuário da sessão.                                                           |
+| **CaptureIdentificationDocument** | Não              | Bool     | Define se, além da face, o usuário deve fotografar um documento de identidade.                                |
+| **FaceCaptureProvider**           | Não              | Enum     | Define o provedor de biometria: `FaceTec` (1) ou`FortFace` (2).                                               |
 
 
 ### Exemplo de retorno da requisição:
