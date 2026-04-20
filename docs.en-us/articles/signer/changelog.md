@@ -1,5 +1,13 @@
 # Signer changelog
 
+<a name="v2-11-0" />
+### 2.11.0 (2026-04-16)
+
+* Improvements
+  * Support for multiple identifiers per user
+
+Updates database model: yes (migration: `MultipleIdentifiers`)
+
 <a name="v2-10-0" />
 ### 2.10.0 (2026-04-16)
 

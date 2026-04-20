@@ -73,7 +73,7 @@ document is concluded. Available values are: `Original`, `PrinterFriendlyVersion
 
 * **SetPasswordEmailExpiration**: The expiration of the set password link, in minutes. The default value is `1440` (24 hours).
 
-* **IdentifierType** (default: `Cpf`, v1.7.0): the type of user identifier of this instance. Available options are `Cpf` and `EcuadorBceId`.
+* **IdentifierType** (default: `Cpf`, v1.7.0, deprecated in v2.11.0): the type of user identifier of this instance. Available options are `Cpf` and `EcuadorBceId`. Please use the [Identifier Scope settings](#identifier-scope-settings) instead as this option is now deprecated.
 * **FilterCertificatesByIdentifier** (default: `true`, v1.7.0): if `true`, filters certificates by the user's identifier automatically.
 * **FilterCertificatesByKeyUsage** (v1.7.0): if `true`, filters certificates that have non repudiation and digital signature attributes.
 
@@ -100,8 +100,8 @@ This option has no effect if the username is email.
 submitted to a user but the phone number provided is different from what is registered for that user, the provided phone will be the one considered in the notifications 
 of the submitted document(s).
 
-* **CountryIdentifierMode** (default: `Unique`, v1.21.0): defines the behaviour of the country identifier. The available types are `Unique`, `NonUnique`, `Nullable` and
-`NullableUnique`. The country identifier claim must also be set accordingly in GrantID.
+* **CountryIdentifierMode** (default: `Unique`, v1.21.0, deprecated in v2.11.0): defines the behaviour of the country identifier. The available types are `Unique`, `NonUnique`, `Nullable` and
+`NullableUnique`. Please use the [Identifier Scope settings](#identifier-scope-settings) instead as this option is now deprecated.
 * **SearchByIdentifierOnlyForUniqueIdentifierMode** (v1.64.0): as of v1.64.0 when searching for a new user, checks the country identifier first if the identifier mode is `Unique` or 
 `NullableUnique`. In previous versions this was only done for mode `Unique` (set to `true` to revert to that behavior).
 * **FilterCertificatesByEmailIfNoIdentifier** (default: `true`, v1.21.0): if `true`, filters by email the digital certificates of a user who has no identifier.
@@ -863,7 +863,7 @@ Under section **DocumentAccessValidation**:
 
 ###  *IdRC* Settings (v2.8.0)
 
-These settings are for integration with the Registro Civil signature service (IdRC). Under section **IdRC**:
+These settings are for integration with the Registro Civil signature service (IdRC). Under section **Idrc**:
 
 * **Enabled**: if `true`, enables the integration with the Registro Civil signature service (IdRC). This is required in order to allow users to use IdRC as an option in the security context trusted roots.
 * **Homologation**: if `true`, enables homologation (testing) mode for IdRC integration. This will include the homologation certificate roots as trusted roots when the user adds IdRC to the security context.
@@ -871,3 +871,16 @@ These settings are for integration with the Registro Civil signature service (Id
 * **IdrcServerApiKey**: the API key provided by IdRC.
 * **IdrcServerClientSecret**: the client secret agreed with IdRC.
 * **IdrcServerClientId**: the client ID agreed with IdRC.
+
+###  *IdentifierScope* Settings (v2.11.0)
+
+After version 2.11.0, it is now possible to configure an instance to use more than one identifier type. Still it is needed to have a main identifier type that will be used when no type is specified and to define the uniqueness behavior of each identifier type. These settings are defined in the **IdentifierScope** section.
+
+When using multiple identifier types, all types must be Nullable or NullableUnique, for the system to be able to create users without requiring specific types of identifiers.
+
+Under section **IdentifierScope**:
+
+* **EnableMultipleIdentifiersPerUser**: if `true`, allows users to have more than one identifier (e.g. CPF and a Paraguayan identifier simultaneously).
+* **AllowedIdentifierTypes**: comma-separated list of allowed identifier types. Example: `Cpf,EcuadorBceId`. When set, only the listed types will be accepted. Types supported: `Cpf`, `EcuadorBceId`, `ParaguayCedulaIdentidad`, `ParaguayRuc` and `ParaguayPassport`.
+* **DefaultIdentifierType**: the default identifier type used when no type is explicitly specified. Replaces the deprecated `General.IdentifierType` setting. Must be a valid identifier type included in the `AllowedIdentifierTypes` setting. Example: `Cpf`.
+* **IdentifierModes**: comma-separated list of `IdentifierType=Mode` pairs defining the uniqueness behavior for each identifier type. Replaces the deprecated `General.CountryIdentifierMode` setting. Available modes are `Unique`, `NonUnique`, `Nullable` and `NullableUnique`. Example: `Cpf=Nullable,EcuadorBceId=NullableUnique`. **If `EnableMultipleIdentifiersPerUser` is `true`, this setting must be defined and all identifier types included in `AllowedIdentifierTypes` must have a defined Nullable or NullableUnique mode.**

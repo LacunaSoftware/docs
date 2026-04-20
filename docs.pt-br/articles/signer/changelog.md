@@ -1,5 +1,13 @@
 # Histórico de versões do Signer
 
+<a name="v2-11-0" />
+### 2.11.0 (2026-04-16)
+
+* Melhorias
+  * Suporte a múltiplos identificadores por usuário
+
+Atualiza modelo de banco de dados: sim (migration: `MultipleIdentifiers`)
+
 <a name="v2-10-0" />
 ### 2.10.0 (2026-04-16)
 
