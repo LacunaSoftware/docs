@@ -41,6 +41,16 @@ Atualiza modelo do banco de dados: não
 RPNG-438 RPNG-611 Adicionar suporte a conversão e validação de PDF/As
 
 
+<a name="v4-1-6" />
+## 4.1.6 (2026-04-16)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-616 Página de configurações da subscription lança erros depois de ter sido fechada
+
+
 <a name="v4-1-5" />
 ## 4.1.5 (2026-04-16)
 
