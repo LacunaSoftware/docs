@@ -1,4 +1,4 @@
-## Prova de vida (Liveness) - Rest PKI Core
+# Prova de vida (Liveness) - Rest PKI Core
 
 - Verifica se há uma pessoa real presente do outro lado da tela, detectando tentativas de fraude com fotos, vídeos ou máscaras.
 - Não realiza a identificação (quem é a pessoa), apenas atesta a presença de um ser humano vivo.
@@ -20,6 +20,7 @@ Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/live
 | **FaceCaptureProvider**           | Não              | Enum     | Define o provedor de biometria. [(veja mais detalhes)](index.md#parâmetros-das-sessões-com-captura-facial)
 | **CaptureIdentificationDocument** | Não              | Bool     | Se habilitado, o usuário deverá capturar um documento de identidade logo após a prova de vida.
 
+> [!tip]
 > *Você deve informar pelo menos um dos dois parâmetros: [Veja a diferença entre ReturnUrl e TrustedOrigin](index.md#fluxos-de-frontend)
 > - `ReturnUrl` (para redirecionamento) 
 > - `TrustedOrigin` (para widget)
@@ -30,9 +31,9 @@ Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/live
 
 ```json
 {
-    "sessionType": 1,
-    "sessionId": "c26d02ad-ad6a-4c4f-888d-019d97a2f5b3",
-    "sessionUrl": "https://localhost/en/bio/session?t=CfDJ8J6....V2NgLel0&m=dgy"
+  "sessionType": "Liveness",
+  "sessionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "sessionUrl": "string"
 }
 ```
 
@@ -41,42 +42,37 @@ Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/live
 ---
 ## Completando a sessão
 
+Para concluir uma sessão de liveness, pode-se utilizar o método `CompleteLivenessSessionAsync` das ClientLibs, passando como parâmetro `CompleteBioSessionRequest`.
+
 Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 
 > [!TIP]
 > Utilize o Complete apenas ao final do processo, enviando o Ticket recebido para validar o resultado e encerrar a sessão.
 
-```cs
-    [HttpGet("liveness/completion")]
-    public async Task<LivenessSessionStatusModel> CompleteLivenessSessionAsync(CompleteBioSessionRequest request) {
-        return await restBioService.CompleteLivenessSessionAsync(request.Ticket);
-    }
-```
-
 ### Exemplo de resposta da requisição:
 
 ```JSON
 {
-    "faceLivenessStatus": {
-        "provider": 2,
-        "success": false,
-        "attemptCount": 0
-    },
-    "idCaptureStatus": {
-        "success": false,
-        "matchedFace": false,
-        "matchedFaceLevel": null
-    },
-    "sessionId": "c26d02ad-ad6a-4c4f-888d-019d97a2f5b3",
-    "success": null,
-    "resultDataAvailable": false
+  "faceLivenessStatus": {
+    "provider": "FaceTecLiveness3d",
+    "success": true,
+    "attemptCount": 0
+  },
+  "idCaptureStatus": {
+    "success": true,
+    "matchedFace": true,
+    "matchedFaceLevel": 0
+  },
+  "sessionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "success": true,
+  "resultDataAvailable": true
 }
 ```
 
 #### Detalhes dos campos:
 
 * **faceLivenessStatus**:
-    * **provider**: Provedor do serviço de biometria. 1 (FaceTec3D), 2 (FortFace), 3 (FaceTec2D).
+    * **provider**: Provedor do serviço de biometria.
     * **success**: Informa se a prova de vida foi realizada com sucesso.
     * **attemptCount**: Número de tentativas realizadas pelo usuário.
 * **idCaptureStatus**:
@@ -87,19 +83,13 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 * **success**: Resultado geral da sessão.
 * **resultDataAvailable**: Se true, indica que os dados já foram processados.
 
+---
+
 ## Consultando o status da sessão
 
-Você pode consultar o estado atual de uma sessão a qualquer momento utilizando o seu sessionId. Isso é útil para monitorar se o usuário já iniciou ou expirou a sessão antes mesmo de ela ser concluída.
+Você pode consultar o estado atual de uma sessão a qualquer momento utilizando o seu `sessionId`. Isso é útil para monitorar se o usuário já iniciou ou expirou a sessão antes mesmo de ela ser concluída.
 
 > [!TIP]
 > Utilize o `GetLivenessSessionStatusAsync` para acompanhar o progresso de uma sessão ativa através do seu SessionId
 
-```C#
-[HttpGet("liveness/{sessionId}")]
-public async Task<LivenessSessionStatusModel> GetStatus(Guid sessionId) {
-    return await restBioService.GetLivenessSessionStatusAsync(sessionId);
-}
-```
-
-TODO: corrigir link abaixo
-O resultado da requisição para esse endpoint é exatamente igual ao [exemplo de retorno da requisição GetLivenessSessionStatusAsync](#exemplo-de-retorno-da-requisição-1)
+O resultado da requisição para esse endpoint é exatamente igual ao [exemplo de retorno da requisição GetLivenessSessionStatusAsync](#exemplo-de-resposta-da-requisição-1)
