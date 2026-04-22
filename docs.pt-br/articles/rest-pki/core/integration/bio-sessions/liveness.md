@@ -36,13 +36,22 @@ Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/live
   "sessionUrl": "string"
 }
 ```
+### Integração do Frontend
+Uma vez que o seu backend obteve a `sessionUrl` da API, você deve encaminhá-la para o seu frontend. A partir daí, o fluxo segue de acordo com a sua escolha de interface:
 
-> TODO: resumo do que o usuário deve fazer com o sessionUrl e colocar um link para o fluxo de integração.
+- **Fluxo Incorporado (Widget)**: Sua aplicação passa a URL para o componente Javascript inicializar a captura dentro da sua página.
+
+- **Fluxo de Redirecionamento**: Sua aplicação direciona o usuário para o link recebido, onde a captura ocorrerá.
+
+> [!TIP]
+> Em caso de dúvidas sobre a implementação de cada modelo, consulte nossa documentação de [Fluxos de FrontEnd](index.md#fluxos-de-frontend).
 
 ---
 ## Completando a sessão
 
 Para concluir uma sessão de liveness, pode-se utilizar o método `CompleteLivenessSessionAsync` das ClientLibs, passando como parâmetro `CompleteBioSessionRequest`.
+
+Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/liveness/completion` [(Swagger)](https://restpkicore.lacunasoftware.com/swagger/index.html#operations-BioSessions-post_api_bio_sessions_liveness).
 
 Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 
@@ -92,4 +101,4 @@ Você pode consultar o estado atual de uma sessão a qualquer momento utilizando
 > [!TIP]
 > Utilize o `GetLivenessSessionStatusAsync` para acompanhar o progresso de uma sessão ativa através do seu SessionId
 
-O resultado da requisição para esse endpoint é exatamente igual ao [exemplo de retorno da requisição GetLivenessSessionStatusAsync](#exemplo-de-resposta-da-requisição-1)
+O resultado da requisição para esse endpoint é exatamente igual ao [exemplo de retorno da requisição CompleteLivenessSessionAsync](#exemplo-de-resposta-da-requisição-1).

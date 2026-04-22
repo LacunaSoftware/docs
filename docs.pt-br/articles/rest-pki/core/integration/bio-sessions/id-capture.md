@@ -34,7 +34,15 @@ Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/id-c
 }
 ```
 
-> TODO: resumo do que o usuário deve fazer com o sessionUrl e colocar um link para o fluxo de integração.
+### Integração do Frontend
+Uma vez que o seu backend obteve a `sessionUrl` da API, você deve encaminhá-la para o seu frontend. A partir daí, o fluxo segue de acordo com a sua escolha de interface:
+
+- **Fluxo Incorporado (Widget)**: Sua aplicação passa a URL para o componente Javascript inicializar a captura dentro da sua página.
+
+- **Fluxo de Redirecionamento**: Sua aplicação direciona o usuário para o link recebido, onde a captura ocorrerá.
+
+> [!TIP]
+> Em caso de dúvidas sobre a implementação de cada modelo, consulte nossa documentação de [Fluxos de FrontEnd](index.md#fluxos-de-frontend).
 
 ---
 ## Completando a sessão
@@ -82,4 +90,4 @@ Você pode consultar o estado atual de uma sessão a qualquer momento utilizando
 > [!TIP]
 > Utilize o `GetIdentificationDocumentCaptureSessionStatusAsync` para acompanhar o progresso de uma sessão ativa através do seu SessionId
 
-O resultado da requisição para esse endpoint é exatamente igual ao [exemplo de retorno da requisição GetIdentificationDocumentCaptureSessionStatusAsync](#exemplo-de-resposta-da-requisição-1)
+O resultado da requisição para esse endpoint é exatamente igual ao [exemplo de retorno da requisição CompleteIdentificationDocumentCaptureSessionAsync](#exemplo-de-resposta-da-requisição-1).
