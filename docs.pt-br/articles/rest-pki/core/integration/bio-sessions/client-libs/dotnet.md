@@ -18,7 +18,7 @@ No seu arquivo `appsettings.json`, adicione as credenciais obtidas no painel do 
 
 No arquivo Program.cs, registre o serviço antes da chamada de builder.Build():
 
-``` C#
+``` CS
 // Registra o cliente do Rest PKI Core utilizando a seção do appsettings
 builder.Services.AddRestPki().Configure(builder.Configuration.GetSection("RestPki")); 
 
@@ -32,7 +32,7 @@ Para utilizar as funcionalidades de biometria em seus Controllers, injete a inte
 > A interface IRestBioService é a responsável especificamente por todas as operações de sessões biométricas (Liveness, Cadastro, Autenticação, etc).
 
 
-```C#
+```CS
 using Lacuna.RestPki.Client;
 using Microsoft.AspNetCore.Mvc;
 
@@ -50,12 +50,7 @@ public class MyController : ControllerBase {
 }
 ```
 
-Casos de Uso Disponíveis
+## Veja também
 
-Com a configuração concluída, siga para o guia de implementação da funcionalidade desejada:
-
-<!-- TODO-598 ESCREVER SOBRE PERMISSÕES DE ROTA! (Diferença entre permissão e autorização) -->
-
-[Prova de vida](Liveness)
-[Cadastro Biométrico](enrollment.md)
-[Autenticação Facial]()
+* [Exemplo de backend (.NET)](https://github.com/LacunaSoftware/RestBioSamples/tree/main/backend/dotnet)
+* [Repositório de exemplos(GitHub)](https://github.com/LacunaSoftware/RestBioSamples)
