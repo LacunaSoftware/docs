@@ -139,7 +139,7 @@ import { RestPkiWidget } from 'lacuna-restpki-widget';
 
 ## Configuração do Backend
 
-<!-- >> TODO: explicação resumida sobre chave de API, -->
+<!-- TODO: explicação resumida sobre chave de API, -->
 
 Utilização das bibliotecas (ClientLibs):
 * [C#/.NET](client-libs/dotnet.md)
