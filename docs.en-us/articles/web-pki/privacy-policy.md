@@ -107,4 +107,4 @@ We may update this Privacy Policy to reflect changes to our information practice
 
 ## Privacy Questions / Feedback 
 
-If you have questions or concerns about Lacuna's Privacy Policy please contact us at [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) or CLN 110 - A - Sala 203, Brasília-DF, Brazil. Phone: +55 61 3030-5700.
+If you have questions or concerns about Lacuna's Privacy Policy please contact us at [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) or EQN 102/103, Ed. Avenida 102, 2º Andar - Asa Norte, Brasília - DF, Brazil. Phone: +55 61 3030-5700.
