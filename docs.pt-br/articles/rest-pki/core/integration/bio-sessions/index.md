@@ -25,9 +25,9 @@ Tudo começa quando o seu usuário clica para iniciar a biometria no seu site.
 
 - `startLiveness()`: O seu Frontend avisa o seu Backend que uma sessão precisa ser iniciada.
 
-- `StartLivenessSessionAsync`: O Backend da sua aplicação faz uma requisição para a API da Lacuna (RestPkiCore). 
+- `StartLivenessSessionAsync`: O Backend da sua aplicação faz uma requisição para a API do RestPkiCore. 
 
-- `sessionUrl`: A Lacuna retorna uma URL única da sessão. Seu backend repassa essa URL para o seu frontend.
+- `sessionUrl`: O RestPkiCore retorna uma URL única da sessão. Seu backend repassa essa URL para o seu frontend.
 
 ##### 2. Ação do Usuário (Frontend + RedirectUrl)
 Agora é o momento em que a câmera é aberta e o usuário interage.
@@ -41,9 +41,9 @@ Agora o seu sistema precisa conferir se o usuário passou no teste.
 
 - `CompleteLiveness(completeTicket)`: O seu Frontend envia o Ticket para o seu próprio Backend.
 
-- `CompleteLivenessSession(completeTicket)`: O seu Backend envia esse ticket para a Lacuna.
+- `CompleteLivenessSession(completeTicket)`: O seu Backend envia esse ticket para o RestPkiCore.
 
-- `LivenessSessionStatus`: A Lacuna responde ao seu Backend com o veredito (Sucesso, Falha e os dados capturados).
+- `LivenessSessionStatus`: O RestPkiCore responde ao seu Backend com o veredito (Sucesso, Falha e os dados capturados).
 
 - `Success/Fail`: Finalmente, o seu Backend responde ao seu Frontend confirmando se a operação foi aprovada, permitindo que o usuário siga no seu fluxo (ex: liberar um pagamento ou login).
 
