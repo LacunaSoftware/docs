@@ -146,7 +146,7 @@ import { RestPkiWidget } from 'lacuna-restpki-widget';
 Utilização das bibliotecas (ClientLibs):
 * [C#/.NET](client-libs/dotnet.md)
 
-Se você precisar de um exemplo em uma linguagem que não foi listada, por favor entre em contato conosco em [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) ou CLN 110 - A - Sala 203, Brasília-DF, Brasil. Telefone: +55 61 3030-5700.
+Se você precisar de um exemplo em uma linguagem que não foi listada, por favor entre em contato conosco em [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) ou EQN 102/103, Ed. Avenida 102, 2º Andar - Asa Norte, Brasília-DF, Brasil. Telefone: +55 61 3030-5700.
 
 ## Parametros das sessões de biometria
 
