@@ -17,7 +17,6 @@ Para uitilizá-lo, você deve passar o parâmetro **`ReturnUrl`** na criação d
 
 
 #### Diagrama
-
 ![img](../../../../../../images\rest-pki\core\biometric-session-integration-return-url.png)
 
 ##### 1. Preparação (Backend) 
@@ -60,20 +59,19 @@ Para utilizá-lo, você deve passar o parâmetro **`TrustedOrigin`** na criaçã
 - **Vantagens:** O fluxo é integrado, não é necessário redirecionar o usuário nem processar parâmetros de retorno (_Query String_).
 - **O que acontece após o fim:** O usuário permanece na tela da sua aplicação, o resultado da sessão (`completeTicket`) vem na própria chamada do componente.
 
-#### Diagrama
-
+#### Diagrama 
 ![img](../../../../../../images/rest-pki/core/biometric-session-integration-widget.png)
 
 ##### 1. Preparação (Backend) 
 Tudo começa quando o seu usuário clica para iniciar a biometria no seu site.
 - `startLiveness()`: O seu Frontend avisa o seu Backend que uma sessão precisa ser iniciada.
-- `StartLivenessSessionAsync`: O Backend da sua aplicação faz uma requisição para a API da Lacuna (RestPkiCore). 
-- `sessionUrl`: A Lacuna retorna uma URL única da sessão. Seu backend repassa essa URL para o seu frontend.
+- `StartLivenessSessionAsync`: O Backend da sua aplicação faz uma requisição para a API do RestPkiCore. 
+- `sessionUrl`: O RestPkiCore retorna uma URL única da sessão. Seu backend repassa essa URL para o seu frontend.
 
 ##### 2. Ação do Usuário (Frontend + Widget)
 Agora é o momento em que a câmera é aberta e o usuário interage.
 
-- `performBioSession(sessionUrl)`: O seu Frontend "alimenta" o Widget da Lacuna com a URL recebida. O Widget assume o controle, abre a câmera, orienta o usuário e captura a face/documento.
+- `performBioSession(sessionUrl)`: O seu Frontend "alimenta" o Widget do RestPkiCore com a URL recebida. O Widget assume o controle, abre a câmera, orienta o usuário e captura a face/documento.
 
 - `completeTicket`: Assim que o usuário termina, o Widget fecha a câmera e devolve para o seu Frontend um "Ticket". 
 
@@ -82,9 +80,9 @@ Agora o seu sistema precisa conferir se o usuário passou no teste.
 
 - `CompleteLiveness(completeTicket)`: O seu Frontend envia o Ticket para o seu próprio Backend.
 
-- `CompleteLivenessSession(completeTicket)`: O seu Backend envia esse ticket para a Lacuna.
+- `CompleteLivenessSession(completeTicket)`: O seu Backend envia esse ticket para o RestPkiCore.
 
-- `LivenessSessionStatus`: A Lacuna responde ao seu Backend com o veredito (Sucesso, Falha e os dados capturados).
+- `LivenessSessionStatus`: O RestPkiCore responde ao seu Backend com o veredito (Sucesso, Falha e os dados capturados).
 
 - `Success/Fail`: Finalmente, o seu Backend responde ao seu Frontend confirmando se a operação foi aprovada, permitindo que o usuário siga no seu fluxo (ex: liberar um pagamento ou login).
 
@@ -95,7 +93,7 @@ Para integrar a captura biométrica ao seu frontend, você pode utilizar o Rest 
 
 ##### 1. Via CDN
 
-Esta é a forma mais rápida de começar. Basta adicionar a tag  `script` no `head` do seu arquivo HTML. Você pode encontrar todas as versões disponíveis no [repositório de libs da lacuna](https://cdn.lacunasoftware.com/libs/restpki/).
+Esta é a forma mais rápida de começar. Basta adicionar a tag  `script` no `head` do seu arquivo HTML.
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +139,7 @@ import { RestPkiWidget } from 'lacuna-restpki-widget';
 
 ## Configuração do Backend
 
-> TODO: explicação resumida sobre chave de API, 
+<!-- >> TODO: explicação resumida sobre chave de API, -->
 
 Utilização das bibliotecas (ClientLibs):
 * [C#/.NET](client-libs/dotnet.md)
@@ -157,16 +155,24 @@ Ao iniciar uma sessão, você deve configurar os parâmetros que definem como o 
 
 - **ReturnUrl:** Parâmetro obrigatório para o Fluxo de Redirecionamento. É a URL para onde o usuário será enviado após concluir a biometria. O resultado (ticket) será anexado a esta URL via Query String.
 - **PlatformPreference:** Define a preferência de plataforma e configuração do QRCode.
-    - **NoPreference**: O sistema permite realizar a sessão tanto pelo computador quanto por um dispositivo móvel ao utlizar um QR Code.
+    - **NoPreference**: O sistema permite realizar a sessão tanto pelo computador quanto por um dispositivo móvel, sem exibir nenhum QR Code.
     - **PreferMobile**: O sistema permite iniciar a sessão pelo computador, mas recomenda que seja realizado por meio de um dispositivo móvel exibindo um QR code para realizar a sessão.
-    - **RequireMobile**: Bloqueia o uso em desktops, exigindo um dispositivo móvel.
+    - **RequireMobile**: Bloqueia o uso em desktops, exigindo um dispositivo móvel exibindo um QR code para realizar a sessão.
 
 ### Identificador dos usuários (`SubjectIdentifier`)
-O SubjectIdentifier é um campo que vincula a sessão de biometria a um usuário específico no seu banco de dados.
+O `SubjectIdentifier` é um campo que vincula a sessão de biometria a uma pessoa específica que está utilizando o seu sistema.
+
+Para as sessões de cadastro biométrico e autenticação biométrica, o `SubjectIdentifier` é o identificador único relacionado à aquela pessoa que você deseja cadastrar ou autenticar no sistema de biometria.
+
+Para as sessões anônimas, como Liveness e captura de documentos, esse identificador é indexado e poderá ser utilizado para encontrar o histórico de sessões com aquele identificador.
 
 > [!tip]
-> Utilize identificadores únicos e constantes, como CPF (apenas números), CNPJ, E-mail ou o UUID do seu sistema.
-
+> Recomendamos a utilização de identificadores únicos e constantes, como CPF (apenas números), CNPJ, E-mail ou o UUID do seu sistema.
+<!--
+TODO
+> caso queira aceitar apenas alguns tipos de identificadores específicos, você pode configurar os Formatos de identificador permitidos para sua Subscription
+TODO: Adicionar link para artigo com documentação da tela de configuração dos SubjectIdentifierFormats da Subscription
+-->
 
 ### Parâmetros das sessões com captura facial
 - **FaceCaptureProvider:** Define qual tecnologia de captura será utilizada na sessão de biometria.

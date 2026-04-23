@@ -1,7 +1,9 @@
 # Captura de documento (IdentificationDocumentCapture)  - Rest PKI Core
 
-- Realiza a captura da imagem de um documento de identificação.
-- Pode ser capturado na mesma sessão de prova de vida, cadastro.
+- Realiza a captura da imagem de um documento de identificação, incluindo frente, verso e recorte da imagem do rosto.
+
+> [!tip]
+> Um documento também pode ser capturado na mesma sessão de [prova de vida](liveness.md) ou [cadastro biométrico](enrollment.md), utilizando o parâmetro `CaptureIdentificationDocument`. Nesses casos, também é feita uma comparação da foto da pessoa do documento com a biometria facial capturada.
 
 ## Criação da sessão
 
@@ -76,10 +78,10 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 * **idCaptureStatus**:
     * **success**: Informa se a captura do documento foi bem-sucedida.
     * **matchedFace**: Indica se houve correspondência entre o rosto da pessoa e a foto no documento.
-    * **matchedFaceLevel**: Nível de similaridade entre o rosto e o documento (score).
+    * **matchedFaceLevel**: Nível de similaridade entre o rosto e o documento (MatchLevel).
 * **sessionId**: Identificador único da sessão.
 * **success**: Resultado geral da sessão.
-* **resultDataAvailable**: Se true, indica que os dados já foram processados.
+* **resultDataAvailable**: Se true, indica que você pode buscar as fotos coletadas na sessão.
 
 ---
 

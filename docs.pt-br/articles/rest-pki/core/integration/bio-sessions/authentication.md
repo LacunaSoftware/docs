@@ -1,6 +1,7 @@
-# Autenticação facial (Authentication) - Rest PKI Core
+# Autenticação facial (1:1 Authentication) - Rest PKI Core
 
 - Compara o rosto capturado em tempo real com uma biometria previamente cadastrada, confirmando se o usuário é realmente quem afirma ser.
+- A foto é coletada por meio de uma prova de vida (Liveness).
 
 ## Criação da sessão
 Para criar uma sessão de authentication, pode-se utilizar o método `StartBioAuthenticationSessionRequest` das ClientLibs, passando como parâmetro `StartBioAuthenticationSessionRequest`.
@@ -17,17 +18,21 @@ Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/auth
 | **Subject**                            | Sim              | Object   | Objeto de referência do usuário
 
 
-### Parâmetros (`Subject`)
-| **Parâmetro**                          | **Obrigatório?** | **Tipo** | **Descrição**   |
-| -------------------------------------- | ---------------- | -------- | --------------- |
-| **Id**                         | Condicional      | Guid     | Id do cadastro gerado pelo RestPkiCore
-| **Identifier**                 | Sim      | String   | Identificador externo do usuário.
-
-
 > [!tip]
 > *Você deve informar pelo menos um dos dois parâmetros: [Veja a diferença entre ReturnUrl e TrustedOrigin](index.md#fluxos-de-frontend)
 > - `ReturnUrl` (para redirecionamento) 
 > - `TrustedOrigin` (para widget)
+
+### Parâmetros (`Subject`)
+| **Parâmetro**                          | **Obrigatório?** | **Tipo** | **Descrição**   |
+| -------------------------------------- | ---------------- | -------- | --------------- |
+| **Id**                         | Condicional*      | Guid     | Id do cadastro gerado pelo RestPkiCore
+| **Identifier**                 | Condicional*      | String   | Identificador externo do usuário.
+
+> [!tip]
+> *Você deve informar pelo menos um dos dois parâmetros:
+> - (recomendado) `Subject.Identifier`: Se for preencher, utilize o mesmo `SubjectIdentifier` utilizado na sessão de cadastro.
+> - (avançado) `Subject.Id`: Se você tiver guardado o Id do `Subject` retornado na sessão de cadastro, poderá utilizá-lo aqui, mas, atenção: caso o cadastro anterior seja deletado, um novo cadastro feito para o mesmo `SubjectIdentifier` irá gerar um Id diferente.
 
 ### Exemplo de resposta da requisição:
 
@@ -79,18 +84,17 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 * **failure**: Informa se houve alguma falha ao realizar a sessão, consulte a lista de falhas.
 * **sessionId**: ID da sessão do RestPKICore.
 * **sucess**: Informa se a sessão de cadastro foi bem-sucedida.
-* **resultDataAvailable**: Indica se é possivel consultar a imagem capturada na sessão.
+* **resultDataAvailable**: Se true, indica que você pode buscar as fotos coletadas na sessão.
 
 
-##### Failures
+##### Principais Failures
 
 | **Enum**                          | **Descrição**                                      |
 | --------------------------------- | -------------------------------------------------- |
 | CaptureFailed                     | A captura da imagem não pôde ser finalizada. Geralmente ocorre por interrupção do usuário. |
 | LivenessFailed                    | O usuário não passou no teste de Prova de Vida. O número de tentativas excedeu o excedeu o limite. |
-| NoMatch                           | Não corresponde à biometria de referência cadastrada para aquele usuário. |
+| NoMatch                           | Correspondência insuficiente entre a biometria coletada e a biometria previamente cadastrada. |
 | BadImage                          | A imagem capturada não possui qualidade suficiente para processamento. Pode ser causada por baixa iluminação, desfoque (blur), reflexos excessivos ou rosto parcialmente coberto. |
-| FaceIdentityVerificationFailed    |  Indica que a pessoa realizando a sessão não é a mesma presente na foto do documento de identidade capturado. |
 
 ## Consultando o status
 

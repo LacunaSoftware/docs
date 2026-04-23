@@ -5,6 +5,7 @@ To integrate your app to [Rest PKI Core](../index.md), first follow the steps on
 Then, check out the integration guide for a specific feature:
 
 * [Signature sessions](signature-sessions/index.md)
+* [Biometric sessions](bio-sessions/index.md)
 
 ## See also
 

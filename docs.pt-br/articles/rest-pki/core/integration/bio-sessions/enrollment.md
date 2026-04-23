@@ -1,6 +1,6 @@
 # Cadastro biométrico (Enrollment)  - Rest PKI Core
 
-- Realiza o registro biométrico do usuário no sistema. 
+- Realiza o registro biométrico do usuário no sistema por meio de uma captura facial com prova de vida (liveness). 
 - A imagem da face é processada e armazenada de forma criptografada para ser utilizada futuramente em operações de autenticação ou identificação.
 
 ## Criação da sessão
@@ -63,19 +63,18 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
   "subjectIdentifier": "string",
   "subjectId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "livenessStatus": {
-    "provider": "FaceTecLiveness3d",
     "success": true,
-    "attemptCount": 0
+    "attemptCount": 2
   },
   "idCaptureStatus": {
     "success": true,
     "matchedFace": true,
-    "matchedFaceLevel": 0
+    "matchedFaceLevel": 1
   },
   "failure": "FaceNotFoundWithSufficientQuality",
   "sessionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "success": true,
-  "resultDataAvailable": true
+  "resultDataAvailable": true,
 }
 ```
 
@@ -87,16 +86,15 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 * **subjectIdentifier**: Um nome ou ID para identificar o usuário da sessão.
 * **subjectId**: ID do cadastro.
 * **livenessStatus**: 
-    * **provider**: Provedor do serviço de biometria. 1 (FaceTec3D), 2 (FortFace), 3 (FaceTec2D).
     * **success**: Informa se a prova de vida foi realizada com sucesso.
     * **attemptCount**: Número de tentativas realizadas pelo usuário.
 * **idCaptureStatus**:
     * **success**: Informa se a captura do documento foi bem-sucedida.
     * **matchedFace**: Indica se houve correspondência entre o rosto da pessoa e a foto no documento.
-    * **matchedFaceLevel**: Nível de similaridade entre o rosto e o documento.
+    * **matchedFaceLevel**: Nível de similaridade entre o rosto e o documento (MatchLevel).
 * **failure**: Informa se houve alguma falha ao realizar a sessão, consulte a lista de falhas.
 * **sucess**: Informa se a sessão de cadastro foi bem-sucedida.
-* **resultDataAvailable**: Indica se é possivel consultar a imagem capturada na sessão.
+* **resultDataAvailable**: Se true, indica que você pode buscar as fotos coletadas na sessão.
 
 
 ##### Failures
@@ -107,9 +105,9 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 | FaceLiveness2dFailed              | A análise de prova de vida 2D detectou que a face apresentada não é real.
 | FaceCaptureFailed                 | Ocorreu um erro técnico ou interrupção durante o processo de captura da imagem, impedindo o processamento.
 | DocumentCaptureFailed             | Não foi possível capturar ou processar a imagem do documento de identidade.
-| FaceIdentityVerificationFailed    | A verificação falhou ao comparar a face capturada (o usuário não é quem diz ser).
+| FaceIdentityVerificationFailed    | A verificação externa de identidade falhou.
 | DuplicatesFound                   | Durante um cadastro, o sistema identificou que esta biometria já pertence a outro usuário registrado na base.
-| AttemptsLimitReached              | O usuário excedeu o número máximo de tentativas permitidas para realizar a biometria na mesma sessão.
+| AttemptsLimitReached              | O usuário excedeu o número máximo de tentativas permitidas para realizar a captura biométrica na sessão.
 | SessionAborted                    | A sessão foi encerrada de maneira prematura pelo usuário ou pelo sistema antes da conclusão do processo.
 
 

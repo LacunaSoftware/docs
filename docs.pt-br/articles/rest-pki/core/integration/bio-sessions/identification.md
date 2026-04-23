@@ -1,7 +1,12 @@
-# Identificação facial (Identification)  - Rest PKI Core
+# Identificação facial (1:N Identification)  - Rest PKI Core
 
  - Busca o rosto capturado em uma base de cadastros para descobrir a quem ele pertence.
  - Ao contrário da autenticação, não parte de um usuário conhecido
+
+> [!NOTE]
+> A identificação facial é um processo computacionalmente custoso, também conhecido como **busca 1:N**.
+> Dessa forma, pode acontecer que esse recurso não esteja habilitado na instância em que você esteja realizando a integração.
+> Caso tenha interesse em habilitar esse recurso, **entre em contato conosco** via [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) para solicitar uma **demonstração**.
  
 ## Criação da sessão
 
@@ -71,12 +76,12 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 
 #### Detalhes dos campos:
 
-* **identifiedSubjectId**: 
-* **identifiedSubjectIdentifier**: 
+* **identifiedSubjectId**: Em caso de sucesso, é preenchido com o Id do cadastro da pessoa identificada.
+* **identifiedSubjectIdentifier**: Em caso de sucesso, é preenchido com o `SubjectIdentifier` da pessoa identificada.
 * **failure**: Informa se houve alguma falha ao realizar a sessão, consulte a lista de falhas.
 * **sessionId**: ID da sessão do RestPKICore.
 * **success**: Informa se a sessão de cadastro foi bem-sucedida.
-* **resultDataAvailable**: Indica se é possivel consultar a imagem capturada na sessão.
+* **resultDataAvailable**: Se true, indica que você pode buscar as fotos coletadas na sessão.
 
 #### Failures
 
@@ -84,7 +89,7 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
 | --------------------------------- | -------------------------------------------------- |
 | CaptureFailed                     | A captura da imagem não pôde ser finalizada. Geralmente ocorre por interrupção do usuário.
 | LivenessFailed                    | O usuário não passou no teste de Prova de Vida. O número de tentativas excedeu o excedeu o limite.
-| NoMatch                           | Não corresponde à biometria de referência cadastrada para aquele usuário.
+| NoMatch                           | Não houve correspondência mínima entre a biometria coletada e as biometrias cadastradas na base.
 | BadImage                          | A imagem capturada não possui qualidade suficiente para processamento. Pode ser causada por baixa iluminação ou desfoque (blur).
 
 ## Consultando o status

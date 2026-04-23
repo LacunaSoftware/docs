@@ -84,13 +84,13 @@ Este método é o ponto final. O ticket pode ser usado apenas uma vez.
     * **provider**: Provedor do serviço de biometria.
     * **success**: Informa se a prova de vida foi realizada com sucesso.
     * **attemptCount**: Número de tentativas realizadas pelo usuário.
-* **idCaptureStatus**:
+* **idCaptureStatus***:
     * **success**: Informa se a captura do documento foi bem-sucedida.
     * **matchedFace**: Indica se houve correspondência entre o rosto da pessoa e a foto no documento.
-    * **matchedFaceLevel**: Nível de similaridade entre o rosto e o documento (score).
+    * **matchedFaceLevel**: Nível de similaridade entre o rosto e o documento (MatchLevel).
 * **sessionId**: Identificador único da sessão.
 * **success**: Resultado geral da sessão.
-* **resultDataAvailable**: Se true, indica que os dados já foram processados.
+* **resultDataAvailable**: Se true, indica que você pode buscar as fotos coletadas na sessão.
 
 ---
 
