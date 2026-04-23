@@ -1,0 +1,106 @@
+# Autenticação facial (1:1 Authentication) - Rest PKI Core
+
+- Compara o rosto capturado em tempo real com uma biometria previamente cadastrada, confirmando se o usuário é realmente quem afirma ser.
+- A foto é coletada por meio de uma prova de vida (Liveness).
+
+## Criação da sessão
+Para criar uma sessão de authentication, pode-se utilizar o método `StartBioAuthenticationSessionRequest` das ClientLibs, passando como parâmetro `StartBioAuthenticationSessionRequest`.
+
+Esse método realiza uma requisição `POST` para a rota `/api/bio/sessions/authentication` [(Swagger)](https://restpkicore.lacunasoftware.com/swagger/index.html).
+
+### Parâmetros (`StartBioAuthenticationSessionRequest`)
+| **Parâmetro**                          | **Obrigatório?** | **Tipo** | **Descrição**   |
+| -------------------------------------- | ---------------- | -------- | --------------- |
+| **ReturnUrl**                          | Condicional*     | String   | URL para redirecionar o usuário após a biometria. [(veja mais detalhes)](index.md#fluxo-de-redirecionamento-returnurl)
+| **TrustedOrigin**                      | Condicional*     | String   |  URL do seu site onde o Widget está incorporado. [(veja mais detalhes)](index.md#fluxo-incorporado-widgettrustedorigin)
+| **PlatformPreference**                 | Não              | Enum     | Define a preferência de plataforma e configuração do QRCode. [(veja mais detalhes)](index.md#parâmetros-gerais)
+| **FaceCaptureProvider**                | Não              | Enum     | Define o provedor de biometria. [(veja mais detalhes)](index.md#parâmetros-das-sessões-com-captura-facial)
+| **Subject**                            | Sim              | Object   | Objeto de referência do usuário
+
+
+> [!tip]
+> *Você deve informar pelo menos um dos dois parâmetros: [Veja a diferença entre ReturnUrl e TrustedOrigin](index.md#fluxos-de-frontend)
+> - `ReturnUrl` (para redirecionamento) 
+> - `TrustedOrigin` (para widget)
+
+### Parâmetros (`Subject`)
+| **Parâmetro**                          | **Obrigatório?** | **Tipo** | **Descrição**   |
+| -------------------------------------- | ---------------- | -------- | --------------- |
+| **Id**                         | Condicional*      | Guid     | Id do cadastro gerado pelo RestPkiCore
+| **Identifier**                 | Condicional*      | String   | Identificador externo do usuário.
+
+> [!tip]
+> *Você deve informar pelo menos um dos dois parâmetros:
+> - (recomendado) `Subject.Identifier`: Se for preencher, utilize o mesmo `SubjectIdentifier` utilizado na sessão de cadastro.
+> - (avançado) `Subject.Id`: Se você tiver guardado o Id do `Subject` retornado na sessão de cadastro, poderá utilizá-lo aqui, mas, atenção: caso o cadastro anterior seja deletado, um novo cadastro feito para o mesmo `SubjectIdentifier` irá gerar um Id diferente.
+
+### Exemplo de resposta da requisição:
+
+Ao fazer a requisição para `StartEnrollmentSessionAsync` obtemos a seguinte resposta
+
+```json
+{
+  "sessionType": "Authentication",
+  "sessionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "sessionUrl": "string"
+}
+```
+
+### Integração do Frontend
+Uma vez que o seu backend obteve a `sessionUrl` da API, você deve encaminhá-la para o seu frontend. A partir daí, o fluxo segue de acordo com a sua escolha de interface:
+
+- **Fluxo Incorporado (Widget)**: Sua aplicação passa a URL para o componente Javascript inicializar a captura dentro da sua página.
+
+- **Fluxo de Redirecionamento**: Sua aplicação direciona o usuário para o link recebido, onde a captura ocorrerá.
+
+> [!TIP]
+> Em caso de dúvidas sobre a implementação de cada modelo, consulte nossa documentação de [Fluxos de FrontEnd](index.md#fluxos-de-frontend).
+
+---
+
+## Completando a sessão
+
+Para concluir uma sessão de liveness, pode-se utilizar o método `CompleteAuthenticationSessionAsync` das ClientLibs, passando como parâmetro `CompleteBioSessionRequest`.
+
+Este método é o ponto final. O ticket pode ser usado apenas uma vez.
+
+> [!TIP]
+> Utilize o Complete apenas ao final do processo, enviando o Ticket recebido para validar o resultado e encerrar a sessão.
+
+### Exemplo de resposta da requisição:
+
+```Json
+{
+  "subjectIdentifier": "string",
+  "subjectId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "failure": "CaptureFailed",
+  "sessionId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "success": true,
+  "resultDataAvailable": true
+}
+```
+* **subjectIdentifier**: Identificador externo do usuário. [(veja mais detalhes)](index.md#identificador-dos-usuários-subjectidentifier)
+* **subjectId**: ID do cadastro.
+* **failure**: Informa se houve alguma falha ao realizar a sessão, consulte a lista de falhas.
+* **sessionId**: ID da sessão do RestPKICore.
+* **sucess**: Informa se a sessão de cadastro foi bem-sucedida.
+* **resultDataAvailable**: Se true, indica que você pode buscar as fotos coletadas na sessão.
+
+
+##### Principais Failures
+
+| **Enum**                          | **Descrição**                                      |
+| --------------------------------- | -------------------------------------------------- |
+| CaptureFailed                     | A captura da imagem não pôde ser finalizada. Geralmente ocorre por interrupção do usuário. |
+| LivenessFailed                    | O usuário não passou no teste de Prova de Vida. O número de tentativas excedeu o excedeu o limite. |
+| NoMatch                           | Correspondência insuficiente entre a biometria coletada e a biometria previamente cadastrada. |
+| BadImage                          | A imagem capturada não possui qualidade suficiente para processamento. Pode ser causada por baixa iluminação, desfoque (blur), reflexos excessivos ou rosto parcialmente coberto. |
+
+## Consultando o status
+
+Você pode consultar o estado atual de uma sessão a qualquer momento utilizando o seu `sessionId`. Isso é útil para monitorar se o usuário já iniciou ou expirou a sessão antes mesmo de ela ser concluída.
+
+> [!TIP]
+> Utilize o `GetAuthenticationSessionStatusAsync` para acompanhar o progresso de uma sessão ativa através do seu SessionId
+
+O resultado da requisição para esse endpoint é exatamente igual ao [exemplo de retorno da requisição CompleteAuthenticationSessionAsync](#exemplo-de-resposta-da-requisição-1).
