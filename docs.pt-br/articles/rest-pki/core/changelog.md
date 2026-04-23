@@ -1,6 +1,26 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-2-3" />
+## 4.2.3 (2026-04-21)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-624 Erro no processamento de Liveness quando há baixa qualidade da imagem na captura anterior
+
+
+<a name="v4-2-2" />
+## 4.2.2 (2026-04-18)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-622 Problemas de compatibilidade na configuração de limite de upload da API
+
+
 <a name="v4-2-1" />
 ## 4.2.1 (2026-04-18)
 
@@ -19,6 +39,16 @@ Atualiza modelo do banco de dados: não
 ### Novas funcionalidades
 
 RPNG-438 RPNG-611 Adicionar suporte a conversão e validação de PDF/As
+
+
+<a name="v4-1-6" />
+## 4.1.6 (2026-04-16)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-616 Página de configurações da subscription lança erros depois de ter sido fechada
 
 
 <a name="v4-1-5" />

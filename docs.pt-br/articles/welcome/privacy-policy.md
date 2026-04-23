@@ -14,4 +14,4 @@ De modo a facilitar referenciação, nossa Política de Privacidade está segmen
 
 ## Perguntas / Comentários sobre privacidade
 
-Se você tiver questões ou sugestões sobre a Política de Privacidade da Lacuna, por favor entre em contato conosco em [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) ou CLN 110 - A - Sala 203, Brasília-DF, Brasil. Telefone: +55 61 3030-5700.
+Se você tiver questões ou sugestões sobre a Política de Privacidade da Lacuna, por favor entre em contato conosco em [suporte@lacunasoftware.com](mailto:suporte@lacunasoftware.com) ou EQN 102/103, Ed. Avenida 102, 2º Andar - Asa Norte, Brasília-DF, Brasil. Telefone: +55 61 3030-5700.

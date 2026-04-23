@@ -1,6 +1,26 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-2-3" />
+## 4.2.3 (2026-04-21)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-624 Error on liveness processing when previous capture had low quality
+
+
+<a name="v4-2-2" />
+## 4.2.2 (2026-04-18)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-622 Compatibility issues on upload size limit API
+
+
 <a name="v4-2-1" />
 ## 4.2.1 (2026-04-18)
  
