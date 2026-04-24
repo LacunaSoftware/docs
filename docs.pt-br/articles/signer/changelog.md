@@ -1,10 +1,22 @@
 # Histórico de versões do Signer
 
+<a name="v2-11-1" />
+### 2.11.1 (2026-04-24)
+
+* Melhorias
+  * Flag para desabilitar a sincronização de identificadores no GrantID
+  * [SIG-1618] Notificar administradores e registrar evento ao atualizar o termo de uso
+
+* Correções de bugs
+  * Correções de bugs na criação e edição de usuário
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-11-0" />
 ### 2.11.0 (2026-04-16)
 
 * Melhorias
-  * Suporte a múltiplos identificadores por usuário
+  * [SIG-1570] Suporte a múltiplos identificadores por usuário
 
 Atualiza modelo de banco de dados: sim (migration: `MultipleIdentifiers`)
 
@@ -12,8 +24,8 @@ Atualiza modelo de banco de dados: sim (migration: `MultipleIdentifiers`)
 ### 2.10.0 (2026-04-16)
 
 * Melhorias
-  * Suporte ao CNPJ alfanumérico
-  * Aprimoramento da busca e listagem de pastas no novo dashboard
+  * [SIG-1601] Suporte ao CNPJ alfanumérico
+  * [SIG-1591] Aprimoramento da busca e listagem de pastas no novo dashboard
 
 Atualiza modelo de banco de dados: não
 

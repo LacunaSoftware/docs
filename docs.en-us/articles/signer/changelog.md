@@ -1,10 +1,22 @@
-# Signer changelog
+# Signer 
+
+<a name="v2-11-1" />
+### 2.11.1 (2026-04-24)
+
+* Improvements
+  * Flag to disable identifier synchronization in GrantID
+  * [SIG-1618] Notify administrators and register an event when updating the Terms of Use
+
+* Bug fixes
+  * Bug fixes in user creation and editing
+
+Updates database model: no
 
 <a name="v2-11-0" />
 ### 2.11.0 (2026-04-16)
 
 * Improvements
-  * Support for multiple identifiers per user
+  * [SIG-1570] Support for multiple identifiers per user
 
 Updates database model: yes (migration: `MultipleIdentifiers`)
 
@@ -12,8 +24,8 @@ Updates database model: yes (migration: `MultipleIdentifiers`)
 ### 2.10.0 (2026-04-16)
 
 * Improvements
-  * Support for alphanumeric CNPJ
-  * Enhanced folder search and listing in the new dashboard
+  * [SIG-1601] Support for alphanumeric CNPJ
+  * [SIG-1591] Enhanced folder search and listing in the new dashboard
 
 Updates database model: no
 
