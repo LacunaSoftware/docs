@@ -52,7 +52,7 @@ Agora o seu sistema precisa conferir se o usuário passou no teste.
 Neste modelo, o usuário permanece durante todo o tempo dentro da página da sua aplicação, pois a tela de captura é renderizada dentro do seu próprio site através da utilização do nosso Widget.
 Para utilizá-lo, você deve passar o parâmetro **`TrustedOrigin`** na criação da sessão.
 
-> [!info]
+> [!NOTE]
 > O `TrustedOrigin` deve ser a URL base do seu site (ex: `https://meusite.com`). Isso funciona como uma proteção do ambiente JavaScript, garantindo que o widget só funcione no seu domínio.
 
 - **Quando usar:** Se você quer manter o usuário dentro do seu ambiente para uma experiência mais fluida.
