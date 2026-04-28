@@ -1,6 +1,16 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-2-4" />
+## 4.2.4 (2026-04-28)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-636 Adicionar configuração para desabilitar upload na página pública de validação de documentos
+
+
 <a name="v4-2-3" />
 ## 4.2.3 (2026-04-21)
 

@@ -1,6 +1,16 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-2-4" />
+## 4.2.4 (2026-04-28)
+ 
+Updates database model: no
+
+### New features
+
+RPNG-636 Add configuration to disable upload on public document validation page
+
+
 <a name="v4-2-3" />
 ## 4.2.3 (2026-04-21)
  
