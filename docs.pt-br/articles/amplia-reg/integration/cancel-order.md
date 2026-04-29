@@ -12,7 +12,7 @@ Para cancelar um pedido existente, utilize a API de cancelamento informando o n�
 Em .NET:
 
 ```cs
-await ampliaRegService.CancelOrderAsync("1000-1234", new OrderCancelRequest() {
+await ampliaRegService.CancelOrderAsync("100-000-010", new OrderCancelRequest() {
 	Description = "Solicitação de cancelamento pelo cliente", // Motivo do cancelamento (obrigatório, máx. 500 caracteres)
 });
 ```
