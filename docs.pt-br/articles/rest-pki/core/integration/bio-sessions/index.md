@@ -159,7 +159,7 @@ Caso esteja utilizando uma [instância própria](../on-premises/index.md), o *en
 8. **Tome nota da chave de API exibida** pois não será possível recuperá-la mais tarde
 
 
-## Chamando a API
+### Chamando a API
 
 Embora o Rest PKI Core ofereça APIs REST que podem ser facilmente chamadas, elas normalmente não são utilizadas diretamente. Ao invés disso, oferecemos bibliotecas para consumir os serviços do Rest PKI Core (*client libs*) em diversas linguagens de programação e diversos projetos de exemplos que demonstram o uso dessas bibliotecas, de modo que os programadores não precisem se preocupar com os detalhes envolvidos no consumo de APIs e possam codificar diretamente em sua linguagem preferida.
 
