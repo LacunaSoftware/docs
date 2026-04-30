@@ -1,5 +1,17 @@
 # Histórico de versões do Signer
 
+<a name="v2-12-0" />
+### 2.12.0 (2026-04-30)
+
+* Melhorias
+  * [SIG-1646] Gerenciamento de base de contatos externos com pesquisa avançada
+  * [SIG-1585] Revisão de microinterações e estados (loading, vazio, erro) no layout do dashboard
+
+* Correções de bugs
+  * [SIG-1610] Corrigir responsividade ao exibir muitos provedores de certificado em nuvem
+
+Atualiza modelo de banco de dados: sim (migração: `SubscriptionContacts`)
+
 <a name="v2-11-1" />
 ### 2.11.1 (2026-04-24)
 
