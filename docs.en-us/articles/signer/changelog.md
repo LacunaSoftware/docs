@@ -1,5 +1,17 @@
 # Signer 
 
+<a name="v2-12-0" />
+### 2.12.0 (2026-04-30)
+
+* Improvements
+  * [SIG-1646] Add external contact list management with advanced search
+  * [SIG-1585] Revise micro-interactions and states (loading, empty, error) in the dashboard layout
+
+* Bug fixes
+  * [SIG-1610] Fix responsiveness when displaying many cloud certificate providers
+
+Updates database model: yes (migration: `SubscriptionContacts`)
+
 <a name="v2-11-1" />
 ### 2.11.1 (2026-04-24)
 

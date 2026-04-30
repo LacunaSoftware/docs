@@ -885,3 +885,19 @@ Under section **IdentifierScope**:
 * **DefaultIdentifierType**: the default identifier type used when no type is explicitly specified. Replaces the deprecated `General.IdentifierType` setting. Must be a valid identifier type included in the `AllowedIdentifierTypes` setting. Example: `Cpf`.
 * **IdentifierModes**: comma-separated list of `IdentifierType=Mode` pairs defining the uniqueness behavior for each identifier type. Replaces the deprecated `General.CountryIdentifierMode` setting. Available modes are `Unique`, `NonUnique`, `Nullable` and `NullableUnique`. Example: `Cpf=Nullable,EcuadorBceId=NullableUnique`. **If `EnableMultipleIdentifiersPerUser` is `true`, this setting must be defined and all identifier types included in `AllowedIdentifierTypes` must have a defined Nullable or NullableUnique mode.**
 * **DisableGrantIdIdentifierSync** (v2.11.1, default: `false`): if `true`, disables the synchronization of identifiers with GrantId. This is specially useful when using multiple identifier types, as GrantId only supports one identifier per user.
+
+### *Contacts* Settings (v2.12.0)
+
+Under section **Contacts**:
+
+* **Disabled** (default: `false`): if `true`, disables the external contact list feature entirely.
+
+### *AdvancedSearch* Settings (v2.12.0)
+
+Under section **AdvancedSearch**:
+
+* **Disabled** (default: `false`): if `true`, disables the advanced participant search feature.
+* **AllowIncludeContacts** (default: `true`): if `false`, removes the option that allows users to choose whether to include contacts in search results.
+* **DefaultIncludeContacts** (default: `true`): defines whether contacts are included in search results by default.
+* **AllowIncludeExternalUsers** (default: `false`): if `true`, shows the option that allows users to choose whether to include external users in search results.
+* **DefaultIncludeExternalUsers** (default: `false`): defines whether external users are included in search results by default.
