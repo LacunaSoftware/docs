@@ -139,7 +139,30 @@ import { RestPkiWidget } from 'lacuna-restpki-widget';
 
 ## Configuração do Backend
 
-<!-- TODO: explicação resumida sobre chave de API, -->
+Para começar, você precisará dos seguintes parâmetros:
+
+* **Endpoint**: endereço da instância do Rest PKI Core a ser utilizada
+* **Chave de API**: chave de autenticação com a API
+
+Se estiver utilizando o Rest PKI Core como um serviço (SaaS), solicite seus parâmetros ao nosso [suporte ao desenvolvedor](mailto:suporte@lacunasoftware.com).
+
+Caso esteja utilizando uma [instância própria](../on-premises/index.md), o *endpoint* é o próprio endereço do painel de controle do Rest PKI, por exemplo
+`https://assinatura.suaempresa.com.br/`. Crie você mesmo uma chave de API seguindo os passos abaixo:
+
+1. Autentique-se no painel de controle da sua instância
+2. No menu lateral, clique em **Aplicações**, em seguida em **Adicionar**
+3. Preencha um **nome** para a aplicação
+4. Marque o papel `Operador` (este papel é suficiente para realizar as operações de integração mais comuns, como criar sessões de assinatura)
+5. Clique em **Criar**
+6. Na página de detalhes da aplicação, clique em **Chaves**, em seguida em **Adicionar**
+7. Preencha uma descrição qualquer para a chave e escolha uma expiração (recomenda-se escolher **Nunca expira**) e clique em **Criar**
+8. **Tome nota da chave de API exibida** pois não será possível recuperá-la mais tarde
+
+
+### Chamando a API
+
+Embora o Rest PKI Core ofereça APIs REST que podem ser facilmente chamadas, elas normalmente não são utilizadas diretamente. Ao invés disso, oferecemos bibliotecas para consumir os serviços do Rest PKI Core (*client libs*) em diversas linguagens de programação e diversos projetos de exemplos que demonstram o uso dessas bibliotecas, de modo que os programadores não precisem se preocupar com os detalhes envolvidos no consumo de APIs e possam codificar diretamente em sua linguagem preferida.
+
 
 Utilização das bibliotecas (ClientLibs):
 * [C#/.NET](client-libs/dotnet.md)
@@ -168,11 +191,8 @@ Para as sessões anônimas, como Liveness e captura de documentos, esse identifi
 
 > [!tip]
 > Recomendamos a utilização de identificadores únicos e constantes, como CPF (apenas números), CNPJ, E-mail ou o UUID do seu sistema.
-<!--
-TODO
-> caso queira aceitar apenas alguns tipos de identificadores específicos, você pode configurar os Formatos de identificador permitidos para sua Subscription
-TODO: Adicionar link para artigo com documentação da tela de configuração dos SubjectIdentifierFormats da Subscription
--->
+
+Caso queira aceitar apenas alguns tipos de identificadores específicos, você pode [configurar os formatos de identificador permitidos para sua Subscription](configs/subject-identifier-formats.md).
 
 ### Parâmetros das sessões com captura facial
 - **FaceCaptureProvider:** Define qual tecnologia de captura será utilizada na sessão de biometria.
