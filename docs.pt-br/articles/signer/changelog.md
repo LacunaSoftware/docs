@@ -1,5 +1,14 @@
 # Histórico de versões do Signer
 
+<a name="v2-12-1" />
+### 2.12.1 (2026-05-05)
+
+* Correções de bugs
+  * Corrigida falha no tratamento de pontuação na pesquisa de contatos
+  * Corrigida falha na remoção de identificadores de usuários
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-12-0" />
 ### 2.12.0 (2026-04-30)
 

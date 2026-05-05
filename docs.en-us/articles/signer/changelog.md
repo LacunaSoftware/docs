@@ -1,5 +1,14 @@
 # Signer 
 
+<a name="v2-12-1" />
+### 2.12.1 (2026-05-05)
+
+* Bug fixes
+  * Fix bug in punctuation handling on contact search
+  * Fix bug in user identifier removal
+
+Updates database model: no
+
 <a name="v2-12-0" />
 ### 2.12.0 (2026-04-30)
 
