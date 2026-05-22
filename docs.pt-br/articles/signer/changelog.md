@@ -1,5 +1,22 @@
 # Histórico de versões do Signer
 
+<a name="v2-13-0" />
+### 2.13.0 (2026-05-22)
+
+* Melhorias
+  * [SIG-1695] Permite que administradores configurem a ordem de prioridade dos provedores de notificação por canal (SMS e e-mail), com fallback automático em caso de falha
+  * [SIG-1674] Atualização da integração de Liveness/IdScan para utilizar o RestPkiCore
+
+* Correções de bugs
+  * [SIG-1718] Corrigido envio de e-mails de notificação sem respeitar a linguagem de preferência do destinatário
+  * [SIG-1778] Corrigida edição de contatos permanecendo disponível para participantes já bloqueados em documentos em andamento
+  * [SIG-1496] Corrigido reinício de lembretes e envio de notificação ao editar o e-mail de um participante no fluxo
+  * [SIG-1646] Corrigida importação de contatos via CSV que rejeitava tipos de identificadores válidos
+  * Corrigida exibição de identificadores na lista de acesso a pastas
+  * Corrigidos filtros de certificados por uso em assinaturas em lote
+
+Atualiza modelo de banco de dados: sim (migrações: `ElectronicSignatureBioSessions`, `NotificationProviders`)
+
 <a name="v2-12-1" />
 ### 2.12.1 (2026-05-05)
 

@@ -268,7 +268,7 @@ Under section **ElectronicSignature**:
 * **EnablePixAuthentication** (v1.32.0): if `true`, enables the Pix authentication for electronic signatures. If enabled, the setting in the section
 `Gerencianet` must also be configured.
 * **EnableIdScanAuthentication** (v1.77.0): if `true`, enables the ID scan authentication for electronic signatures. If enabled, the setting in the section
-`FaceTec` must also be configured.
+`RestPki` must also be configured.
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
 * **IsRequired** (v1.46.0): if `true`, the signer **won't** have the option to sign with digital certificate.
@@ -284,6 +284,8 @@ Under section **ElectronicSignature**:
 * **HideEvidencesInPublicValidation** (v1.75.1): if `true`, hide electronic signer evidences in the public document validation page.
 * **HideSubjectNameInXadesSignatures** (v1.76.0): if `true`, does not add subject name in XAdES sigantures.
 * **DatabaseCommandTimeout** (v1.76.0): defines the database command timeout in seconds.
+* **MaxLivenessSessionsPerSignature** (default: `5`, v2.13.0): maximum number of liveness sessions that can be created per signature attempt. Use `-1` for unlimited.
+* **MaxIdScanSessionsPerSignature** (default: `5`, v2.13.0): maximum number of IdScan sessions that can be created per signature attempt. Use `-1` for unlimited.
 
 <a name="signature-certificate" />
 ###  *Signature Certificate* Settings (v1.52.0)
@@ -901,3 +903,12 @@ Under section **AdvancedSearch**:
 * **DefaultIncludeContacts** (default: `true`): defines whether contacts are included in search results by default.
 * **AllowIncludeExternalUsers** (default: `false`): if `true`, shows the option that allows users to choose whether to include external users in search results.
 * **DefaultIncludeExternalUsers** (default: `false`): defines whether external users are included in search results by default.
+
+### *RestPki* Settings (v2.13.0)
+
+Under section **RestPki** (previously **FaceTec** — the old section name is still accepted for backward compatibility):
+
+* **Endpoint**: the RestPki service endpoint URL.
+* **ApiKey**: the API key for the RestPki service.
+
+Required when `EnableLivenessAuthentication` or `EnableIdScanAuthentication` is set to `true` in the `ElectronicSignature` section.
