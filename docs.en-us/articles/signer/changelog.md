@@ -1,5 +1,22 @@
 # Signer 
 
+<a name="v2-13-0" />
+### 2.13.0 (2026-05-22)
+
+* Improvements
+  * [SIG-1695] Allow administrators to configure the priority order of SMS and email notification providers per channel, with automatic fallback on failure
+  * [SIG-1674] Updated Liveness/IdScan integration to use RestPkiCore
+
+* Bug fixes
+  * [SIG-1718] Fix notification emails not following the recipient's preferred language
+  * [SIG-1778] Fix contact editing remaining available for participants already locked in an active document flow
+  * [SIG-1496] Fix reminders not restarting and notifications not being sent when editing a participant's email in the flow
+  * [SIG-1646] Fix CSV import rejecting valid identifier types in contact lists
+  * Fix folder access list not displaying user identifiers
+  * Fix certificate filtering by usage in batch signatures
+
+Updates database model: yes (migrations: `ElectronicSignatureBioSessions`, `NotificationProviders`)
+
 <a name="v2-12-1" />
 ### 2.12.1 (2026-05-05)
 
