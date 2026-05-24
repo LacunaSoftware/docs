@@ -285,6 +285,17 @@
 ## [Changelog](signer/changelog.md)
 <!-- End of Signer -->
 
+<!-- Start of Bulk Signer -->
+# [Bulk Signer](bulk-signer/index.md)
+## [Configuration](bulk-signer/configuration.md)
+## [REST API](bulk-signer/rest-api.md)
+## [Dashboard](bulk-signer/dashboard.md)
+## [Setup on Docker](bulk-signer/docker.md)
+## [Setup as a Windows Service](bulk-signer/windows-service.md)
+## [Setup with Linux systemd](bulk-signer/linux-systemd.md)
+## [Troubleshooting](bulk-signer/troubleshooting.md)
+<!-- End of Bulk Signer -->
+
 <!-- Start of Amplia -->
 # [Amplia](amplia/index.md)
 ## [On-premises](amplia/on-premises/index.md)
