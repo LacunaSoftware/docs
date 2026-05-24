@@ -26,17 +26,6 @@ In addition to folder monitoring, the application exposes **REST APIs** that all
 
 Bulk Signer is ideal for organizations that need a reliable, secure, and auditable solution to automate high-volume digital signing processes.
 
-## Tech stack
-
-| Layer         | Choice |
-| ------------- | ------ |
-| Runtime       | .NET 10, ASP.NET Core Minimal APIs, Blazor Server, hosted workers |
-| UI            | MudBlazor |
-| Persistence   | EF Core 10 + SQLite (auto-migrate at startup) |
-| Signing       | Lacuna.Pki 2.22.3 + Lacuna.Pki.Pkcs11 |
-| Validation    | FluentValidation + `IValidateOptions` |
-| Observability | Serilog (file), Spectre.Console (stdout) |
-| Test          | xUnit, FluentAssertions, `WebApplicationFactory`, BCL `CertificateRequest` |
 
 ## Architecture
 
@@ -45,10 +34,6 @@ The diagram below summarises how a file flows through the system, from submissio
 ![Bulk Signer architecture](images/architecture.png)
 
 Processing is sequential and idempotent at each step. Any failure short-circuits the pipeline, moves the file to the **Error Directory**, and emits failure telemetry to the observability system — the original input is only deleted after a verified output has been written.
-
-### Code layout
-
-Bulk Signer follows a **Vertical Slice Architecture** — no MediatR, no Controllers, explicit `Program` class. Each feature slice lives under `src/Lacuna.BulkSigner/Features/<Area>/<Feature>/` and exposes itself via a `MapXxx(this IEndpointRouteBuilder)` extension method. Shared infrastructure lives under `Infrastructure/{Authentication,Certificates,Cleanup,Configuration,Encryption,FileSystem,Logging,Persistence,Processing,Signing,Timestamping,Web,Workers}`. Domain types live under `Domain/{Entities,Enums}`.
 
 ## Default endpoints
 
@@ -74,15 +59,6 @@ The app listens on `http://localhost:8080` by default:
 4  Required folder creation/access error
 5  Signing certificate initialization error
 ```
-
-## Known limitations (v1)
-
-* No automatic retry (manual only)
-* No single-instance lock — run one instance per configured folder set
-* PAdES visible signatures honour reason/location/signer-name but visual rectangle is not yet rendered
-* AES-256-CBC used for content encryption (spec lists AES-256-GCM; can be swapped without API changes)
-* PKCS#11 / HSM integration is wired in but requires hardware-side validation
-* No Kubernetes/Helm manifests in v1
 
 ## See also
 
