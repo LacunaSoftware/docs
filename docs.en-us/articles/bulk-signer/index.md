@@ -40,6 +40,14 @@ Bulk Signer is ideal for organizations that need a reliable, secure, and auditab
 
 ## Architecture
 
+The diagram below summarises how a file flows through the system, from submission (REST API or watched folder) through signing, optional hybrid encryption, and final storage in the encrypted output directory. The HSM (local, cloud, or security token) holds both the signing key and the recipient public key used for encryption.
+
+![Bulk Signer architecture](images/architecture.png)
+
+Processing is sequential and idempotent at each step. Any failure short-circuits the pipeline, moves the file to the **Error Directory**, and emits failure telemetry to the observability system — the original input is only deleted after a verified output has been written.
+
+### Code layout
+
 Bulk Signer follows a **Vertical Slice Architecture** — no MediatR, no Controllers, explicit `Program` class. Each feature slice lives under `src/Lacuna.BulkSigner/Features/<Area>/<Feature>/` and exposes itself via a `MapXxx(this IEndpointRouteBuilder)` extension method. Shared infrastructure lives under `Infrastructure/{Authentication,Certificates,Cleanup,Configuration,Encryption,FileSystem,Logging,Persistence,Processing,Signing,Timestamping,Web,Workers}`. Domain types live under `Domain/{Entities,Enums}`.
 
 ## Default endpoints
