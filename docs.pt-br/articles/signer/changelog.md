@@ -1,5 +1,25 @@
 # Histórico de versões do Signer
 
+<a name="v2-13-2" />
+### 2.13.2 (2026-05-25)
+
+* Melhorias
+  * Adicionada configuração para desabilitar o job de sincronização de identificadores em background
+
+* Correções de bugs
+  * Corrigida normalização do texto de busca ao consultar usuários por identificador
+  * Corrigido filtro de certificados para bloquear certificados sem as usages NonRepudiation ou DigitalSignature
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-13-1" />
+### 2.13.1 (2026-05-22)
+
+* Correções de bugs
+  * Corrigida normalização de identificadores de contatos
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-13-0" />
 ### 2.13.0 (2026-05-22)
 

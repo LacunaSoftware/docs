@@ -1,5 +1,25 @@
 # Signer 
 
+<a name="v2-13-2" />
+### 2.13.2 (2026-05-25)
+
+* Improvements
+  * Added setting to disable the identifier synchronization background job
+
+* Bug fixes
+  * Fix normalization of search text when querying users by identifier
+  * Fix certificate filtering to block certificates without NonRepudiation or DigitalSignature key usages
+
+Updates database model: no
+
+<a name="v2-13-1" />
+### 2.13.1 (2026-05-22)
+
+* Bug fixes
+  * Fix normalization of contact identifiers
+
+Updates database model: no
+
 <a name="v2-13-0" />
 ### 2.13.0 (2026-05-22)
 
