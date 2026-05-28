@@ -1,5 +1,14 @@
 ﻿# GrantID changelog
 
+<a name="v5-4-0" />
+### 5.4.0 (2026-05-28)
+
+* Improvements
+  * [LI-448] Update PKI SDK
+  * [LI-449] Update phone validation library
+
+Updates database model: no
+
 <a name="v5-3-0" />
 ### 5.3.0 (2026-01-30)
 

@@ -1,5 +1,14 @@
 ﻿# Histórico de versões do GrantID
 
+<a name="v5-4-0" />
+### 5.4.0 (2026-05-28)
+
+* Melhorias
+  * [LI-448] Atualizar PKI SDK
+  * [LI-449] Atualizar biblioteca de validação de telefones
+
+Atualiza modelo do banco de dados: não
+
 <a name="v5-3-0" />
 ### 5.3.0 (2026-01-30)
 
