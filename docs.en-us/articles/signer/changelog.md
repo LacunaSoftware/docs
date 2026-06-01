@@ -1,5 +1,19 @@
 # Signer 
 
+<a name="v2-13-3" />
+### 2.13.3 (2026-06-01)
+
+* Improvements
+  * [SIG-744] Report subscription storage usage in billing invoice webhook
+
+* Bug fixes
+  * Fix user autocomplete not loading identifiers for the current user
+  * Fix identifier label display for documents created before multi-identifier support
+  * Fix null identifier type causing errors on signed document marks
+  * Fix camera-based electronic signature issues in embedded mode
+
+Updates database model: no
+
 <a name="v2-13-2" />
 ### 2.13.2 (2026-05-25)
 
