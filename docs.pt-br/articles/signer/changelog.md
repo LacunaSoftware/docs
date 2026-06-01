@@ -1,5 +1,19 @@
 # Histórico de versões do Signer
 
+<a name="v2-13-3" />
+### 2.13.3 (2026-06-01)
+
+* Melhorias
+  * [SIG-744] Retorno do uso de armazenamento da organização no webhook de fechamento de fatura
+
+* Correções de bugs
+  * Corrigido autocomplete de usuários não carregando os identificadores do usuário atual
+  * Corrigida exibição do rótulo de identificadores em documentos criados antes do suporte a múltiplos identificadores
+  * Corrigido erro ao exibir marcas em documentos assinados quando o tipo de identificador é nulo
+  * Corrigidos problemas na assinatura eletrônica por câmera no modo embutido (iframe / widget)
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-13-2" />
 ### 2.13.2 (2026-05-25)
 
