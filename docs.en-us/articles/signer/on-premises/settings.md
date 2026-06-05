@@ -419,6 +419,7 @@ after the document creation (defined in seconds from the document's creation dat
 * **EnableSingleSignerSummary** (v2.3.0): if `true` and the document has only one signer, the summary will display more information regarding the signer.
 * **EnableSingleSignerSummaryForMultipleSigners** (v2.3.0): if `true`, ignores the number of signers and single signer summary is displayed even if there is more than one signer.
 * **SingleSignerDateFormat** (v2.3.0): defines the format used to display the signature in the single signer summary.
+* **EmailAttachmentSignersLimit** (default: `30`, v2.14.0): maximum number of signers in a flow above which the printer friendly version is no longer attached to notification emails.
 
 
 ###  *PaymentGateway* Settings (v1.27.0)
@@ -912,4 +913,12 @@ Under section **RestPki** (previously **FaceTec** — the old section name is st
 * **Endpoint**: the RestPki service endpoint URL.
 * **ApiKey**: the API key for the RestPki service.
 
-Required when `EnableLivenessAuthentication` or `EnableIdScanAuthentication` is set to `true` in the `ElectronicSignature` section.
+### *Pdf* Settings (v2.14.0)
+
+Under section **Pdf**:
+
+* **PdfAConversionEnabled** (default: `false`, v2.14.0): if `true`, enables conversion of documents to PDF/A.
+* **DefaultPdfAProfile** (default: `PdfA2b`, v2.14.0): the default PDF/A profile used when converting documents. Available options are: `PdfA1a`, `PdfA1b`, `PdfA2a`, `PdfA2b`, `PdfA3a` and `PdfA3b`.
+* **PdfService**: this is a subsection that defines the connection to the Lacuna PDF Service used to perform PDF/A conversion. Required when `PdfAConversionEnabled` is `true`:
+	* **Endpoint**: the PDF Service endpoint URL.
+	* **ApiKey**: the API key for the PDF Service.
