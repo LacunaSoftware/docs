@@ -1,5 +1,29 @@
 # Signer 
 
+<a name="v2-14-1" />
+### 2.14.1 (2026-06-05)
+
+* Bug fixes
+  * [SIG-1788] Fix certificate registration to correctly handle comparison against the user's identifiers
+  * [SIG-1789] Fix identifier being wiped when editing a user's profile in the organization on instances with multiple identifiers
+  * Fix CPF-to-GrantId sync on instances without required CPF
+
+Updates database model: no
+
+<a name="v2-14-0" />
+### 2.14.0 (2026-06-03)
+
+* Improvements
+  * [SIG-1709] PDF/A document conversion: convert uploads to PDF/A on document creation, document generation, single signing and templates (forms), with PDF/A profile selection and PdfService integration
+
+* Bug fixes
+  * [SIG-1805] Fix foreign key violation when removing notifications in NotifyJob
+  * [SIG-1405] Skip sending the printer-friendly version by email in flows with many signers
+  * Fix advanced signature with electronic signature for users without identifiers
+  * Fix handling of old approvers with null identifier type
+
+Updates database model: yes (migration: `PdfA`)
+
 <a name="v2-13-3" />
 ### 2.13.3 (2026-06-01)
 

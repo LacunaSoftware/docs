@@ -1,5 +1,29 @@
 # Histórico de versões do Signer
 
+<a name="v2-14-1" />
+### 2.14.1 (2026-06-05)
+
+* Correções de bugs
+  * [SIG-1788] Corrigido o registro de certificados para tratamento correto da comparação com os identificadores do usuário
+  * [SIG-1789] Corrigido identificador apagado ao editar o perfil do usuário na organização em instâncias com múltiplos identificadores
+  * Corrigida sincronização de CPF com o GrantId em instâncias sem CPF obrigatório
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-14-0" />
+### 2.14.0 (2026-06-03)
+
+* Melhorias
+  * [SIG-1709] Conversão de documentos para PDF/A: conversão de uploads para PDF/A na criação de documentos, geração de documentos, assinatura única e modelos (formulários), com seleção de perfil PDF/A e integração com o PdfService
+
+* Correções de bugs
+  * [SIG-1805] Corrigida violação de chave estrangeira ao remover notificações no NotifyJob
+  * [SIG-1405] Evitado o envio da versão para impressão por e-mail em fluxos com muitos participantes
+  * Corrigida assinatura avançada com assinatura eletrônica para usuários sem identificadores
+  * Corrigido tratamento de aprovadores antigos com tipo de identificador nulo
+
+Atualiza modelo de banco de dados: sim (migração: `PdfA`)
+
 <a name="v2-13-3" />
 ### 2.13.3 (2026-06-01)
 
