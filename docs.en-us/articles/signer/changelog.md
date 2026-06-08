@@ -1,5 +1,14 @@
 # Signer 
 
+<a name="v2-14-2" />
+### 2.14.2 (2026-06-08)
+
+* Bug fixes
+  * Fix identifier masking for identifiers displayed in the private area
+  * Fix TSP discovery to use identifiers from the identifiers table
+
+Updates database model: no
+
 <a name="v2-14-1" />
 ### 2.14.1 (2026-06-05)
 
