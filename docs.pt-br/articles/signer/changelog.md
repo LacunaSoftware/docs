@@ -1,5 +1,14 @@
 # Histórico de versões do Signer
 
+<a name="v2-14-2" />
+### 2.14.2 (2026-06-08)
+
+* Correções de bugs
+  * Corrigida aplicação de máscara para identificadores exibidos na área privada
+  * Corrigida busca em TSP para usar os identificadores da tabela de identificadores
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-14-1" />
 ### 2.14.1 (2026-06-05)
 
