@@ -1,5 +1,16 @@
 # Signer 
 
+<a name="v2-14-3" />
+### 2.14.3 (2026-06-09)
+
+* Bug fixes
+  * [SIG-1808] Fix credit card not being saved when registered as the default payment method on Iugu checkout
+  * [SIG-1809] Respect the user's configured notification language when adding participants through contact search
+  * [SIG-1811] Send a signature request notification when a participant is added to a pending step of an in-progress document
+  * [SIG-1812] Fix error in the signature URL endpoint for signers without identifiers
+
+Updates database model: no
+
 <a name="v2-14-2" />
 ### 2.14.2 (2026-06-08)
 

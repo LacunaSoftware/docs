@@ -1,5 +1,16 @@
 # Histórico de versões do Signer
 
+<a name="v2-14-3" />
+### 2.14.3 (2026-06-09)
+
+* Correções de bugs
+  * [SIG-1808] Corrige cartão de crédito não sendo salvo quando cadastrado como método de pagamento padrão no checkout Iugu
+  * [SIG-1809] Respeita o idioma de notificação configurado do usuário ao adicionar participantes via busca de contatos
+  * [SIG-1811] Envia notificação de solicitação de assinatura ao adicionar participante em etapa pendente de documento em andamento
+  * [SIG-1812] Corrige erro no endpoint de obtenção da URL de assinatura para signatários sem identificadores
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-14-2" />
 ### 2.14.2 (2026-06-08)
 
