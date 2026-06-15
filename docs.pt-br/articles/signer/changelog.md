@@ -1,5 +1,19 @@
 # Histórico de versões do Signer
 
+<a name="v2-14-4" />
+### 2.14.4 (2026-06-15)
+
+* Melhorias
+  * [SIG-1810] Corrige atribuição do mês da invoice para usar o fuso horário configurado na instância (BRT) em vez de UTC, evitando que documentos criados no fim do último dia do mês sejam cobrados no mês seguinte
+  * [SIG-1819] Atualiza dependências NuGet para resolver conflitos de build
+
+* Correções de bugs
+  * [SIG-1813] Corrige toggle de assinatura eletrônica que não atualizava corretamente ao alterar o contexto de segurança
+  * [SIG-1685] Corrige desalinhamento do filtro de status na listagem de documentos do admin
+  * [SIG-1506] Corrige truncamento de nomes longos de organização na listagem de documentos
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-14-3" />
 ### 2.14.3 (2026-06-09)
 

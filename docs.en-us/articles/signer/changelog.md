@@ -1,5 +1,19 @@
 # Signer 
 
+<a name="v2-14-4" />
+### 2.14.4 (2026-06-15)
+
+* Improvements
+  * [SIG-1810] Fix invoice month assignment to use the instance's configured timezone (BRT) instead of UTC, preventing documents created late on the last day of the month from being charged to the following month
+  * [SIG-1819] Update NuGet package dependencies to resolve build conflicts
+
+* Bug fixes
+  * [SIG-1813] Fix electronic signature toggle not updating correctly when the security context is changed
+  * [SIG-1685] Fix misaligned status select filter on the admin document list
+  * [SIG-1506] Fix truncation of long organization names in the document list
+
+Updates database model: no
+
 <a name="v2-14-3" />
 ### 2.14.3 (2026-06-09)
 
