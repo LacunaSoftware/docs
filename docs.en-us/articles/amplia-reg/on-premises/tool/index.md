@@ -35,6 +35,7 @@ Available commands:
 * [test-email](test-email.md)
 * [test-cert-renewal-alert](test-certificate-renewal-alert.md)
 * [migrate-data](migrate-data.md)
+* [fill-registration-agents-certificate-thumbprint](fill-registration-agents-certificate-thumbprint.md)
 
 ## See also
 
