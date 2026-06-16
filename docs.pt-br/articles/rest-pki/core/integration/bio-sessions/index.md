@@ -198,6 +198,19 @@ Caso queira aceitar apenas alguns tipos de identificadores específicos, você p
 - **FaceCaptureProvider:** Define qual tecnologia de captura será utilizada na sessão de biometria.
     - Atualmente o único provedor utilizado pelo sistema é o `FaceTecLiveness3d` 
 
+### Parâmetros de geolocalização
+
+O Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário durante a sessão de biometria. O recurso está **desabilitado por padrão** e pode ser habilitado por sessão ou globalmente na configuração da subscription.
+
+- **`GeolocationCaptureType`**: Define o comportamento da captura.
+    - **`Disabled`** (padrão): Geolocalização não é coletada.
+    - **`Optional`**: O sistema tenta capturar a geolocalização, mas a sessão prossegue normalmente caso o usuário negue permissão ou a captura falhe.
+    - **`Required`**: A geolocalização é obrigatória. A sessão é interrompida se a captura não for concluída com sucesso.
+
+- **`GeolocationCapturePolicy`**: Define em quais dispositivos a geolocalização é coletada (relevante para sessões com QR code).
+    - **`CollectOnCaptureDevice`** (padrão): A geolocalização é capturada apenas no dispositivo que realiza a biometria (ex: o celular, nos fluxos com QR code).
+    - **`CollectOnAllDevices`**: A geolocalização é capturada em todos os dispositivos envolvidos na sessão — tanto no desktop que iniciou quanto no celular que realizou a captura.
+
 ## Tipos de sessão
 
 * [Prova de vida (`Liveness`)](liveness.md)
