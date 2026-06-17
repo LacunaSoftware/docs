@@ -6,6 +6,8 @@ Em seguida, veja o guia de integração de uma funcionalidade específica:
 
 * [Criação de pedido](create-order.md)
 * [Criação de pedido pré-aprovado](preapproved-orders.md)
+* [Cancelamento de pedido](cancel-order.md)
+* [Validação de número de telefone](validate-phone.md)
 
 ## Veja também
 

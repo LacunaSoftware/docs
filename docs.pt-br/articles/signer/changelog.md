@@ -1,5 +1,246 @@
 # Histórico de versões do Signer
 
+<a name="v2-14-4" />
+### 2.14.4 (2026-06-15)
+
+* Melhorias
+  * [SIG-1810] Corrige atribuição do mês da invoice para usar o fuso horário configurado na instância (BRT) em vez de UTC, evitando que documentos criados no fim do último dia do mês sejam cobrados no mês seguinte
+  * [SIG-1819] Atualiza dependências NuGet para resolver conflitos de build
+
+* Correções de bugs
+  * [SIG-1813] Corrige toggle de assinatura eletrônica que não atualizava corretamente ao alterar o contexto de segurança
+  * [SIG-1685] Corrige desalinhamento do filtro de status na listagem de documentos do admin
+  * [SIG-1506] Corrige truncamento de nomes longos de organização na listagem de documentos
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-14-3" />
+### 2.14.3 (2026-06-09)
+
+* Correções de bugs
+  * [SIG-1808] Corrige cartão de crédito não sendo salvo quando cadastrado como método de pagamento padrão no checkout Iugu
+  * [SIG-1809] Respeita o idioma de notificação configurado do usuário ao adicionar participantes via busca de contatos
+  * [SIG-1811] Envia notificação de solicitação de assinatura ao adicionar participante em etapa pendente de documento em andamento
+  * [SIG-1812] Corrige erro no endpoint de obtenção da URL de assinatura para signatários sem identificadores
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-14-2" />
+### 2.14.2 (2026-06-08)
+
+* Correções de bugs
+  * Corrigida aplicação de máscara para identificadores exibidos na área privada
+  * Corrigida busca em TSP para usar os identificadores da tabela de identificadores
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-14-1" />
+### 2.14.1 (2026-06-05)
+
+* Correções de bugs
+  * [SIG-1788] Corrigido o registro de certificados para tratamento correto da comparação com os identificadores do usuário
+  * [SIG-1789] Corrigido identificador apagado ao editar o perfil do usuário na organização em instâncias com múltiplos identificadores
+  * Corrigida sincronização de CPF com o GrantId em instâncias sem CPF obrigatório
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-14-0" />
+### 2.14.0 (2026-06-03)
+
+* Melhorias
+  * [SIG-1709] Conversão de documentos para PDF/A: conversão de uploads para PDF/A na criação de documentos, geração de documentos, assinatura única e modelos (formulários), com seleção de perfil PDF/A e integração com o PdfService
+
+* Correções de bugs
+  * [SIG-1805] Corrigida violação de chave estrangeira ao remover notificações no NotifyJob
+  * [SIG-1405] Evitado o envio da versão para impressão por e-mail em fluxos com muitos participantes
+  * Corrigida assinatura avançada com assinatura eletrônica para usuários sem identificadores
+  * Corrigido tratamento de aprovadores antigos com tipo de identificador nulo
+
+Atualiza modelo de banco de dados: sim (migração: `PdfA`)
+
+<a name="v2-13-3" />
+### 2.13.3 (2026-06-01)
+
+* Melhorias
+  * [SIG-744] Retorno do uso de armazenamento da organização no webhook de fechamento de fatura
+
+* Correções de bugs
+  * Corrigido autocomplete de usuários não carregando os identificadores do usuário atual
+  * Corrigida exibição do rótulo de identificadores em documentos criados antes do suporte a múltiplos identificadores
+  * Corrigido erro ao exibir marcas em documentos assinados quando o tipo de identificador é nulo
+  * Corrigidos problemas na assinatura eletrônica por câmera no modo embutido (iframe / widget)
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-13-2" />
+### 2.13.2 (2026-05-25)
+
+* Melhorias
+  * Adicionada configuração para desabilitar o job de sincronização de identificadores em background
+
+* Correções de bugs
+  * Corrigida normalização do texto de busca ao consultar usuários por identificador
+  * Corrigido filtro de certificados para bloquear certificados sem as usages NonRepudiation ou DigitalSignature
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-13-1" />
+### 2.13.1 (2026-05-22)
+
+* Correções de bugs
+  * Corrigida normalização de identificadores de contatos
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-13-0" />
+### 2.13.0 (2026-05-22)
+
+* Melhorias
+  * [SIG-1695] Permite que administradores configurem a ordem de prioridade dos provedores de notificação por canal (SMS e e-mail), com fallback automático em caso de falha
+  * [SIG-1674] Atualização da integração de Liveness/IdScan para utilizar o RestPkiCore
+
+* Correções de bugs
+  * [SIG-1718] Corrigido envio de e-mails de notificação sem respeitar a linguagem de preferência do destinatário
+  * [SIG-1778] Corrigida edição de contatos permanecendo disponível para participantes já bloqueados em documentos em andamento
+  * [SIG-1496] Corrigido reinício de lembretes e envio de notificação ao editar o e-mail de um participante no fluxo
+  * [SIG-1646] Corrigida importação de contatos via CSV que rejeitava tipos de identificadores válidos
+  * Corrigida exibição de identificadores na lista de acesso a pastas
+  * Corrigidos filtros de certificados por uso em assinaturas em lote
+
+Atualiza modelo de banco de dados: sim (migrações: `ElectronicSignatureBioSessions`, `NotificationProviders`)
+
+<a name="v2-12-1" />
+### 2.12.1 (2026-05-05)
+
+* Correções de bugs
+  * Corrigida falha no tratamento de pontuação na pesquisa de contatos
+  * Corrigida falha na remoção de identificadores de usuários
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-12-0" />
+### 2.12.0 (2026-04-30)
+
+* Melhorias
+  * [SIG-1646] Gerenciamento de base de contatos externos com pesquisa avançada
+  * [SIG-1585] Revisão de microinterações e estados (loading, vazio, erro) no layout do dashboard
+
+* Correções de bugs
+  * [SIG-1610] Corrigir responsividade ao exibir muitos provedores de certificado em nuvem
+
+Atualiza modelo de banco de dados: sim (migração: `SubscriptionContacts`)
+
+<a name="v2-11-1" />
+### 2.11.1 (2026-04-24)
+
+* Melhorias
+  * Flag para desabilitar a sincronização de identificadores no GrantID
+  * [SIG-1618] Notificar administradores e registrar evento ao atualizar o termo de uso
+
+* Correções de bugs
+  * Correções de bugs na criação e edição de usuário
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-11-0" />
+### 2.11.0 (2026-04-16)
+
+* Melhorias
+  * [SIG-1570] Suporte a múltiplos identificadores por usuário
+
+Atualiza modelo de banco de dados: sim (migration: `MultipleIdentifiers`)
+
+<a name="v2-10-0" />
+### 2.10.0 (2026-04-16)
+
+* Melhorias
+  * [SIG-1601] Suporte ao CNPJ alfanumérico
+  * [SIG-1591] Aprimoramento da busca e listagem de pastas no novo dashboard
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-9-2" />
+### 2.9.2 (2026-04-14)
+
+* Melhorias
+  * Criação do tema gmc
+  * Melhorias e correções nas regras de CSP
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-9-1" />
+### 2.9.1 (2026-04-09)
+
+* Melhorias
+  * [SIG-1690] Nova configuração para modo monotônico do dashboard
+
+* Correções de bugs
+  * [SIG-1691] Correção de erro no novo dashboard quando o módulo de faturas está desabilitado
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-9-0" />
+### 2.9.0 (2026-04-02)
+
+* Melhorias
+  * [SIG-1669] Opção para incluir QR Code de assinatura no corpo do e-mail de lembrete
+
+* Correções de bugs
+  * [SIG-869] Registro de notificações em lote nas notificações do usuário
+  * Correção de erro ao realizar assinatura CAdES com certificado digital no WebPKI
+
+Atualiza modelo de banco de dados: sim (migration: `NotificationDocument`)
+
+<a name="v2-8-1" />
+### 2.8.1 (2026-03-30)
+
+* Correções de bugs
+  * [SIG-1507] Validação de campo de telefone no formulário de modelo falha em dispositivos móveis
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-8-0" />
+### 2.8.0 (2026-03-25)
+
+* Melhorias
+  * [SIG-1586] Redesign visual do dashboard
+  * [SIG-1627] Integração com o serviço de assinatura do Registro Civil (IdRC)
+
+* Correções de bugs
+  * [SIG-1576] Atualizar lacuna-facetec-client para a versão 2.4.0
+
+Atualiza modelo de banco de dados: sim (migration: `IdRC`)
+
+<a name="v2-7-0" />
+### 2.7.0 (2026-03-16)
+
+* Melhorias
+  * [SIG-1612] Opção para solicitar CPF de um dos signatários na validação na área pública
+  * [SIG-1041] Opção para permitir assinatura em lote na área pública
+
+Atualiza modelo de banco de dados: sim
+
+<a name="v2-6-2" />
+### 2.6.2 (2026-02-27)
+
+* Correções de bugs
+  * [SIG-1641] Perda de acesso a documentos dentro de pastas para usuários autorizados
+
+Atualiza modelo de banco de dados: não
+
+<a name="v2-6-1" />
+### 2.6.1 (2026-02-24)
+
+* Melhorias
+  * [SIG-1622] Modificar layout da navegação das pastas
+
+* Correções de bugs
+  * [SIG-1637] Pastas e organizações aparecendo em branco no dashboard
+  * [SIG-1638] Barra indesejada na janela de posicionamento de assinatura
+  * [SIG-1639] Documento do tipo escritura ativando fluxo externo sem configurações, impedindo a conclusão do documento
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-6-0" />
 ### 2.6.0 (2026-02-09)
 

@@ -6,6 +6,8 @@ Then, check out the integration guide for a specific feature:
 
 * [Create an order](create-order.md)
 * [Creating preapproved orders](preapproved-orders.md)
+* [Cancel an order](cancel-order.md)
+* [Phone number validation](validate-phone.md)
 
 ## See also
 

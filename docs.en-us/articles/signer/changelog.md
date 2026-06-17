@@ -1,4 +1,245 @@
-# Signer changelog
+# Signer 
+
+<a name="v2-14-4" />
+### 2.14.4 (2026-06-15)
+
+* Improvements
+  * [SIG-1810] Fix invoice month assignment to use the instance's configured timezone (BRT) instead of UTC, preventing documents created late on the last day of the month from being charged to the following month
+  * [SIG-1819] Update NuGet package dependencies to resolve build conflicts
+
+* Bug fixes
+  * [SIG-1813] Fix electronic signature toggle not updating correctly when the security context is changed
+  * [SIG-1685] Fix misaligned status select filter on the admin document list
+  * [SIG-1506] Fix truncation of long organization names in the document list
+
+Updates database model: no
+
+<a name="v2-14-3" />
+### 2.14.3 (2026-06-09)
+
+* Bug fixes
+  * [SIG-1808] Fix credit card not being saved when registered as the default payment method on Iugu checkout
+  * [SIG-1809] Respect the user's configured notification language when adding participants through contact search
+  * [SIG-1811] Send a signature request notification when a participant is added to a pending step of an in-progress document
+  * [SIG-1812] Fix error in the signature URL endpoint for signers without identifiers
+
+Updates database model: no
+
+<a name="v2-14-2" />
+### 2.14.2 (2026-06-08)
+
+* Bug fixes
+  * Fix identifier masking for identifiers displayed in the private area
+  * Fix TSP discovery to use identifiers from the identifiers table
+
+Updates database model: no
+
+<a name="v2-14-1" />
+### 2.14.1 (2026-06-05)
+
+* Bug fixes
+  * [SIG-1788] Fix certificate registration to correctly handle comparison against the user's identifiers
+  * [SIG-1789] Fix identifier being wiped when editing a user's profile in the organization on instances with multiple identifiers
+  * Fix CPF-to-GrantId sync on instances without required CPF
+
+Updates database model: no
+
+<a name="v2-14-0" />
+### 2.14.0 (2026-06-03)
+
+* Improvements
+  * [SIG-1709] PDF/A document conversion: convert uploads to PDF/A on document creation, document generation, single signing and templates (forms), with PDF/A profile selection and PdfService integration
+
+* Bug fixes
+  * [SIG-1805] Fix foreign key violation when removing notifications in NotifyJob
+  * [SIG-1405] Skip sending the printer-friendly version by email in flows with many signers
+  * Fix advanced signature with electronic signature for users without identifiers
+  * Fix handling of old approvers with null identifier type
+
+Updates database model: yes (migration: `PdfA`)
+
+<a name="v2-13-3" />
+### 2.13.3 (2026-06-01)
+
+* Improvements
+  * [SIG-744] Report subscription storage usage in billing invoice webhook
+
+* Bug fixes
+  * Fix user autocomplete not loading identifiers for the current user
+  * Fix identifier label display for documents created before multi-identifier support
+  * Fix null identifier type causing errors on signed document marks
+  * Fix camera-based electronic signature issues in embedded mode
+
+Updates database model: no
+
+<a name="v2-13-2" />
+### 2.13.2 (2026-05-25)
+
+* Improvements
+  * Added setting to disable the identifier synchronization background job
+
+* Bug fixes
+  * Fix normalization of search text when querying users by identifier
+  * Fix certificate filtering to block certificates without NonRepudiation or DigitalSignature key usages
+
+Updates database model: no
+
+<a name="v2-13-1" />
+### 2.13.1 (2026-05-22)
+
+* Bug fixes
+  * Fix normalization of contact identifiers
+
+Updates database model: no
+
+<a name="v2-13-0" />
+### 2.13.0 (2026-05-22)
+
+* Improvements
+  * [SIG-1695] Allow administrators to configure the priority order of SMS and email notification providers per channel, with automatic fallback on failure
+  * [SIG-1674] Updated Liveness/IdScan integration to use RestPkiCore
+
+* Bug fixes
+  * [SIG-1718] Fix notification emails not following the recipient's preferred language
+  * [SIG-1778] Fix contact editing remaining available for participants already locked in an active document flow
+  * [SIG-1496] Fix reminders not restarting and notifications not being sent when editing a participant's email in the flow
+  * [SIG-1646] Fix CSV import rejecting valid identifier types in contact lists
+  * Fix folder access list not displaying user identifiers
+  * Fix certificate filtering by usage in batch signatures
+
+Updates database model: yes (migrations: `ElectronicSignatureBioSessions`, `NotificationProviders`)
+
+<a name="v2-12-1" />
+### 2.12.1 (2026-05-05)
+
+* Bug fixes
+  * Fix bug in punctuation handling on contact search
+  * Fix bug in user identifier removal
+
+Updates database model: no
+
+<a name="v2-12-0" />
+### 2.12.0 (2026-04-30)
+
+* Improvements
+  * [SIG-1646] Add external contact list management with advanced search
+  * [SIG-1585] Revise micro-interactions and states (loading, empty, error) in the dashboard layout
+
+* Bug fixes
+  * [SIG-1610] Fix responsiveness when displaying many cloud certificate providers
+
+Updates database model: yes (migration: `SubscriptionContacts`)
+
+<a name="v2-11-1" />
+### 2.11.1 (2026-04-24)
+
+* Improvements
+  * Flag to disable identifier synchronization in GrantID
+  * [SIG-1618] Notify administrators and register an event when updating the Terms of Use
+
+* Bug fixes
+  * Bug fixes in user creation and editing
+
+Updates database model: no
+
+<a name="v2-11-0" />
+### 2.11.0 (2026-04-16)
+
+* Improvements
+  * [SIG-1570] Support for multiple identifiers per user
+
+Updates database model: yes (migration: `MultipleIdentifiers`)
+
+<a name="v2-10-0" />
+### 2.10.0 (2026-04-16)
+
+* Improvements
+  * [SIG-1601] Support for alphanumeric CNPJ
+  * [SIG-1591] Enhanced folder search and listing in the new dashboard
+
+Updates database model: no
+
+<a name="v2-9-2" />
+### 2.9.2 (2026-04-14)
+
+* Improvements
+  * Added gmc theme
+  * Improvements and fixes to CSP rules
+
+Updates database model: no
+
+<a name="v2-9-1" />
+### 2.9.1 (2026-04-09)
+
+* Improvements
+  * [SIG-1690] New configuration for monotone dashboard mode
+
+* Bug fixes
+  * [SIG-1691] Fixed error in the new dashboard when the billing module is disabled
+
+Updates database model: no
+
+<a name="v2-9-0" />
+### 2.9.0 (2026-04-02)
+
+* Improvements
+  * [SIG-1669] Option to include a signature QR Code in the reminder email body
+
+* Bug fixes
+  * [SIG-869] Batch notification records in user notifications
+  * Fix error when performing CAdES signature with digital certificate using WebPKI
+
+Updates database model: yes (migration: `NotificationDocument`)
+
+<a name="v2-8-1" />
+### 2.8.1 (2026-03-30)
+
+* Bug fixes
+  * [SIG-1507] Phone field validation in the New Document form fails on mobile devices
+
+Updates database model: no
+
+<a name="v2-8-0" />
+### 2.8.0 (2026-03-25)
+
+* Improvements
+  * [SIG-1586] Dashboard visual redesign
+  * [SIG-1627] Integration with the Civil Registry (IdRC) signing service
+
+* Bug fixes
+  * [SIG-1576] Update lacuna-facetec-client to version 2.4.0
+
+Updates database model: yes (migration: `IdRC`)
+
+<a name="v2-7-0" />
+### 2.7.0 (2026-03-16)
+
+* Improvements
+  * [SIG-1612] Option to request the CPF of one of the signers during validation in the public area
+  * [SIG-1041] Option to allow batch signing in the public area
+
+Updates database model: yes
+
+<a name="v2-6-2" />
+### 2.6.2 (2026-02-27)
+
+* Bug fixes
+  * [SIG-1641] Loss of access to documents inside of folders for authorized users
+
+Updates database model: no
+
+<a name="v2-6-1" />
+### 2.6.1 (2026-02-24)
+
+* Improvements
+  * [SIG-1622] Modify folder navigation layout
+
+* Bug fixes
+  * [SIG-1637] Fixes folders and organizations appearing blank on the dashboard
+  * [SIG-1638] Unwanted scrollbar in the signature positioning dialog
+  * [SIG-1639] Deed type document triggering external flow without configuration, causing it to never conclude
+
+Updates database model: no
 
 <a name="v2-6-0" />
 ### 2.6.0 (2026-02-09)

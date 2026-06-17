@@ -1,5 +1,17 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-22-3" />
+### 2.22.3 (2026-04-06)
+
+- \[PKI-155\] Improve XML signature policy identifier element decoding in order to support non-compliant Algorithm aliases instead of algorithm URI.
+- \[PKI-156\] Update PkiItaly and PkiPeru TSL trust anchors. Prevent TSL validation loop.
+
+
+<a name="v2-22-2" />
+### 2.22.2 (2026-03-05)
+
+- Update Lacuna.T8 package removing T8 version tag from pages dictionary.
+
 <a name="v2-22-1" />
 ### 2.22.1 (2026-01-27)
 
@@ -46,6 +58,7 @@
 ### 2.20.0 (2025-07-31)
 
 - \[PKI-139\] Add ICP-Brasil new signature policies for validation and generation compliant. Fix PDF signature with unintended incremental revision changes detection.
+- \[PKI-139\] Add ICP-Brasil V12 Root Certificate to PkiBrazil trust arbitrator.
 - \[PKI-144\] Improve listing for PDFs with corrupted signature dictionaries.
 - \[PKI-139\] Improve PDF signature.
 - \[PKI-143\] Fix PDF visual positioning for pages with cropbox and off-center rotation.

@@ -1,6 +1,370 @@
 ﻿# Rest PKI Core changelog
-
 <!--<a name="vnext" />-->
+
+<a name="v4-2-4" />
+## 4.2.4 (2026-04-28)
+ 
+Updates database model: no
+
+### New features
+
+RPNG-636 Add configuration to disable upload on public document validation page
+
+
+<a name="v4-2-3" />
+## 4.2.3 (2026-04-21)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-624 Error on liveness processing when previous capture had low quality
+
+
+<a name="v4-2-2" />
+## 4.2.2 (2026-04-18)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-622 Compatibility issues on upload size limit API
+
+
+<a name="v4-2-1" />
+## 4.2.1 (2026-04-18)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-621 Add missing subject identifier on identification document capture sessions
+
+
+<a name="v4-2-0" />
+## 4.2.0 (2026-04-16)
+ 
+Updates database model: no
+
+### New features
+
+RPNG-438 RPNG-611 Add PDF/A conversion and validation support
+
+
+<a name="v4-1-6" />
+## 4.1.6 (2026-04-16)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-616 Subscription settings page throwing errors after being closed
+
+
+<a name="v4-1-5" />
+## 4.1.5 (2026-04-16)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-617 Improve IdNumber matcher for Video Identifications
+
+
+<a name="v4-1-4" />
+## 4.1.4 (2026-04-16)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-615 Add route to get details about FortFace sessions
+
+
+<a name="v4-1-3" />
+## 4.1.3 (2026-04-15)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-612 Increase maximum configurable upload size limit
+
+
+<a name="v4-1-2" />
+## 4.1.2 (2026-04-09)
+ 
+Updates database model: no
+
+### New features
+
+RPNG-607 Adobe Reader policy for signature generation
+
+### Improvements
+
+RPNG-608 Update signing libraries
+
+
+<a name="v3-7-2" />
+## 3.7.2 (2026-04-09)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-608 Update signing libraries
+
+
+<a name="v3-4-3" />
+## 3.4.3 (2026-04-07)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-608 Update signing libraries
+
+
+<a name="v4-1-1" />
+## 4.1.1 (2026-04-06)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-606 Update FortFace SDK to v2.4.3
+
+<a name="v4-1-0" />
+## 4.1.0 (2026-04-01)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-302 RPNG-599 RPNG-602 Biometric identification session (ABIS)
+
+RPNG-440 RPNG-569 RPNG-580 RPNG-585 RPNG-588 PNG-589 RPNG-595 Biometric batch enrollments
+
+RPNG-579 RPNG-584 RPNG-604 Face authentication with external identity provider fallback
+
+RPNG-568 RPNG-575 Add subject identifier formats for Subscriptions
+
+### Improvements
+
+RPNG-544 Transaction limits mapping for timestamps
+
+RPNG-555 SysAdmin - Subscription permissions page
+
+RPNG-558 Show restricted info on timestamp tiers page
+
+RPNG-559 Dashboard - FaceTec IdScan details improvements
+
+RPNG-587 Add date deleted on bio subject details page
+
+RPNG-591 Add "null expected" on get subject by identifier route
+
+RPNG-592 Improve FortFace session details page translations
+
+RPNG-603 Update FaceTec SDKs
+
+RPNG-567 Paginated listing of bio subjects via ClientLib
+
+
+<a name="v4-0-5" />
+## 4.0.5 (2026-03-20)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-547, RPNG-582 Add support to new brazilian CNPJ format
+
+
+<a name="v3-7-1" />
+## 3.7.1 (2026-03-20)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-547, RPNG-582 Add support to new brazilian CNPJ format
+
+RPNG-540 Add app setting to force one specific system language
+
+### Bug fixes
+
+RPNG-533 TypeError on Web PKI certificate listing
+
+
+<a name="v4-0-4" />
+## 4.0.4 (2026-03-18)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-576 Update FortFace SDK to v2.4.2
+
+
+<a name="v4-0-3" />
+## 4.0.3 (2026-03-16)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-566 Problemas with FortFace SDK v2.4.1 update
+
+
+<a name="v4-0-2" />
+## 4.0.2 (2026-03-12)
+
+Updates database model: no
+
+### Improvements
+
+RPNG-546 Dashboard - improved transaction details display for TypeDiscriminator
+
+RPNG-570 Update FortFace SDK to v2.4.1
+
+### Bug fixes
+
+RPNG-566 Bio session completion routes required subscription specifier
+
+
+<a name="v4-0-1" />
+## 4.0.1 (2026-03-10)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-563 Dependency injection issue on BusinessService
+
+
+<a name="v4-0-0" />
+## 4.0.0 (2026-03-09)
+
+> [!WARNING]
+> See [Update Rest PKI Core from 3.x to 4.0](on-premises/update-40.md)
+
+Updates database model: **yes**
+
+### New features
+
+RPNG-273, RPNG-519 Create a billing flow for a subscription
+
+RPNG-347, RPNG-497 Improvements to FaceTec transactions
+
+RPNG-458 Dashboard - list biometric sessions of bio subject
+
+RPNG-461 Transaction limiting service
+
+RPNG-478 Add transactions for FortFace operations
+
+RPNG-484 Option to use biometric sessions with URL return, similar to signature sessions
+
+RPNG-488 Add timeout configuration for biometric sessions
+
+RPNG-505 List of accepted ReturnUrls for BioSession
+
+RPNG-511 Video Identification – Receive expected document values (type/number)
+
+RPNG-517 Subscription based permissioning for TimestampTiers
+
+### Improvements
+
+RPNG-270 Added signature session list page
+
+RPNG-405 Improvements to the biometric sessions home screen and customizations
+
+RPNG-430 Add timestamp marks in Spanish
+
+RPNG-435 Biometrics Dashboard – Add visualization of biometric session images
+
+RPNG-443, RPNG-447, RPNG-448, RPNG-450 Updated Angular to version 19
+
+RPNG-471 Dashboard - Add button to load all images of the bio session
+
+RPNG-472 Add AgentId that created the BioSession
+
+RPNG-474 Add Swagger fields for biometric sessions
+
+RPNG-477 Add link to FaceTec sessions on transaction details
+
+RPNG-481 Add button to copy generated API key
+
+RPNG-486 Display user-friendly error messages in biometric sessions
+
+RPNG-490 Customization of colors and logo of biometric sessions per subscription
+
+RPNG-507 Video identification information via API
+
+RPNG-508, RPNG-521, RPNG-531, RPNG-541, RPNG-548 Layout improvements on admin pages
+
+RPNG-509 Improvements to OCR templates for passports
+
+RPNG-513 Dashboard - Add video identification recording playback
+
+RPNG-468, RPNG-515, RPNG-560 FaceTec SDK updates
+
+RPNG-536 Translation improvements on signature sessions page
+
+RPNG-537 Improve error logging for FortFace SDK actions
+
+RPNG-540 Add app setting to force one specific system language
+
+### Bug fixes
+
+RPNG-258 Fields from PadesSignaturePostRequestBase being ignored
+
+RPNG-487 Biometric session starts as "Failed" on the dashboard
+
+RPNG-512 Video Identification – Fix success condition in video identification
+
+RPNG-518 Fix problems on Agent relationship with bio session transactions
+
+RPNG-523 Video Identification – Issues on FaceTec IdScan processing
+
+RPNG-525 Video Identification – Issue when recording/sending video
+
+RPNG-527 Sessions stuck in "loading" on iOS 26.2 devices
+
+RPNG-533 TypeError on Web PKI certificate listing
+
+RPNG-534 HTTP error 500 when receiving invalid requests methods (POST) on ClientApp routes
+
+RPNG-539 General subscription settings form invalid alerts
+
+RPNG-542 Some pages doesn't update when changing Subscription
+
+
+<a name="v3-7-0" />
+## 3.7.0 (2025-11-26)
+
+Updates database model: **yes**
+
+### Improvements
+
+RPNG-453 Improved FortFace liveness enrollment images
+
+
+<a name="v3-6-2" />
+## 3.6.2 (2025-11-24)
+
+Updates database model: no
+
+### New features
+
+RPNG-394 Biometrics dashboard - Bio subject details page
+
+### Improvements
+
+RPNG-428 Updated FortFace SDKs
+
+RPNG-454 Add InteractionMethod to BioSessionModel on BioDashBoard
+
+
 <a name="v3-6-1" />
 ## 3.6.1 (2025-11-20)
 

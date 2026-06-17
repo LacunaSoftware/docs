@@ -320,3 +320,11 @@ Under section **Geolocation**:
 * **EnableLowAccuracyRetry**: enable low accuray retry after failed attempt. Defaults to `true`.
 * **MaximumAgeSeconds**: maximum age in seconds. Defaults to `60`.
 * **TimeoutSeconds**: timeout in seconds. Defaults to `20`.
+
+### *PublicContact* Settings
+
+Under section **PublicContact**:
+
+* **Email**: configures the email address that will be used on public screens and in emails sent by the system. Defaults to `null`.
+* **WhatsappPhone**: configures the whatsapp phone that will be used on public screens and in emails sent by the system. Defaults to `null`.
+* **Phone**: configures the phone that will be used on public screens and in emails sent by the system. Defaults to `null`.

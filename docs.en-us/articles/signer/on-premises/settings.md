@@ -1,4 +1,4 @@
-﻿# Signer Settings
+# Signer Settings
 
 ###  *General* Settings
 
@@ -73,7 +73,7 @@ document is concluded. Available values are: `Original`, `PrinterFriendlyVersion
 
 * **SetPasswordEmailExpiration**: The expiration of the set password link, in minutes. The default value is `1440` (24 hours).
 
-* **IdentifierType** (default: `Cpf`, v1.7.0): the type of user identifier of this instance. Available options are `Cpf` and `EcuadorBceId`.
+* **IdentifierType** (default: `Cpf`, v1.7.0, deprecated in v2.11.0): the type of user identifier of this instance. Available options are `Cpf` and `EcuadorBceId`. Please use the [Identifier Scope settings](#identifier-scope-settings) instead as this option is now deprecated.
 * **FilterCertificatesByIdentifier** (default: `true`, v1.7.0): if `true`, filters certificates by the user's identifier automatically.
 * **FilterCertificatesByKeyUsage** (v1.7.0): if `true`, filters certificates that have non repudiation and digital signature attributes.
 
@@ -100,8 +100,8 @@ This option has no effect if the username is email.
 submitted to a user but the phone number provided is different from what is registered for that user, the provided phone will be the one considered in the notifications 
 of the submitted document(s).
 
-* **CountryIdentifierMode** (default: `Unique`, v1.21.0): defines the behaviour of the country identifier. The available types are `Unique`, `NonUnique`, `Nullable` and
-`NullableUnique`. The country identifier claim must also be set accordingly in GrantID.
+* **CountryIdentifierMode** (default: `Unique`, v1.21.0, deprecated in v2.11.0): defines the behaviour of the country identifier. The available types are `Unique`, `NonUnique`, `Nullable` and
+`NullableUnique`. Please use the [Identifier Scope settings](#identifier-scope-settings) instead as this option is now deprecated.
 * **SearchByIdentifierOnlyForUniqueIdentifierMode** (v1.64.0): as of v1.64.0 when searching for a new user, checks the country identifier first if the identifier mode is `Unique` or 
 `NullableUnique`. In previous versions this was only done for mode `Unique` (set to `true` to revert to that behavior).
 * **FilterCertificatesByEmailIfNoIdentifier** (default: `true`, v1.21.0): if `true`, filters by email the digital certificates of a user who has no identifier.
@@ -215,6 +215,10 @@ initial page showing document details. If `true` reverts to the old behavior of 
 
 * **PublicUploadEnabled** (v2.6.0, default: `true`): requires users to be authenticated in order to make uploads in the platform.
 
+* **PublicBatchSignatureEnabled** (v2.7.0, default: `false`): if `true`, enables the option to perform batch signatures in the public area. This allows users to sign multiple documents at once without the need of logging in, by using a ticket that is sent in the signature reminder email.
+
+* **IncludeQrCodeInEmailNotifications** (v2.9.0, default: `false`): if `true`, includes a QR code in email notifications that link to the document in the platform through the WebPKI app.
+
 <a name="billing-settings" />
 ###  *Billing* Settings (v1.40.0)
 
@@ -264,7 +268,7 @@ Under section **ElectronicSignature**:
 * **EnablePixAuthentication** (v1.32.0): if `true`, enables the Pix authentication for electronic signatures. If enabled, the setting in the section
 `Gerencianet` must also be configured.
 * **EnableIdScanAuthentication** (v1.77.0): if `true`, enables the ID scan authentication for electronic signatures. If enabled, the setting in the section
-`FaceTec` must also be configured.
+`RestPki` must also be configured.
 * **EnableElectronicSignatureOfTermsOfUse** (default: `true`): if `true`, enables the terms of use to be signed electronically.
 * **IsAllowedByDefault**: if `true`, the option to allow electronic signatures is selected by default.
 * **IsRequired** (v1.46.0): if `true`, the signer **won't** have the option to sign with digital certificate.
@@ -280,6 +284,8 @@ Under section **ElectronicSignature**:
 * **HideEvidencesInPublicValidation** (v1.75.1): if `true`, hide electronic signer evidences in the public document validation page.
 * **HideSubjectNameInXadesSignatures** (v1.76.0): if `true`, does not add subject name in XAdES sigantures.
 * **DatabaseCommandTimeout** (v1.76.0): defines the database command timeout in seconds.
+* **MaxLivenessSessionsPerSignature** (default: `5`, v2.13.0): maximum number of liveness sessions that can be created per signature attempt. Use `-1` for unlimited.
+* **MaxIdScanSessionsPerSignature** (default: `5`, v2.13.0): maximum number of IdScan sessions that can be created per signature attempt. Use `-1` for unlimited.
 
 <a name="signature-certificate" />
 ###  *Signature Certificate* Settings (v1.52.0)
@@ -413,6 +419,7 @@ after the document creation (defined in seconds from the document's creation dat
 * **EnableSingleSignerSummary** (v2.3.0): if `true` and the document has only one signer, the summary will display more information regarding the signer.
 * **EnableSingleSignerSummaryForMultipleSigners** (v2.3.0): if `true`, ignores the number of signers and single signer summary is displayed even if there is more than one signer.
 * **SingleSignerDateFormat** (v2.3.0): defines the format used to display the signature in the single signer summary.
+* **EmailAttachmentSignersLimit** (default: `30`, v2.14.0): maximum number of signers in a flow above which the printer friendly version is no longer attached to notification emails.
 
 
 ###  *PaymentGateway* Settings (v1.27.0)
@@ -847,3 +854,71 @@ Under section **GoogleTagManager**:
 * **Preview**
 * **ResourcePath**
 * **CspNonce**
+
+<a name="document-access-validation" />
+###  *Document Access Validation* Settings (v2.7.0)
+
+Under section **DocumentAccessValidation**:
+
+* **Enabled**: if `true`, document access validation is enabled. When enabled, users will be able to select a validation type when creating a document and users will need to perform the selected validation in order to access the document in the public validation area.
+* **RequireForEveryDocumentAccess**: if `true`, all documents will require validation, even if the creator of the document did not select any validation type when creating the document or if a document was created before this setting was enabled. If `false`, only documents that have a validation type selected when they were created will require validation.
+* **DefaultValidationType** (default: `UserIdentifier`): this is the validation type used for documents that do not have an explictly selected validation type when `RequireForEveryDocumentAccess` is `true`. Available options now are only `UserIdentifier`, which requires the user to input the CPF of a signer in order to access the document, but more validation types may be added in the future.
+
+###  *IdRC* Settings (v2.8.0)
+
+These settings are for integration with the Registro Civil signature service (IdRC). Under section **Idrc**:
+
+* **Enabled**: if `true`, enables the integration with the Registro Civil signature service (IdRC). This is required in order to allow users to use IdRC as an option in the security context trusted roots.
+* **Homologation**: if `true`, enables homologation (testing) mode for IdRC integration. This will include the homologation certificate roots as trusted roots when the user adds IdRC to the security context.
+* **IdrcServerBaseUrl**: the base URL of the IdRC server to use.
+* **IdrcServerApiKey**: the API key provided by IdRC.
+* **IdrcServerClientSecret**: the client secret agreed with IdRC.
+* **IdrcServerClientId**: the client ID agreed with IdRC.
+
+###  *IdentifierScope* Settings (v2.11.0)
+
+After version 2.11.0, it is now possible to configure an instance to use more than one identifier type. Still it is needed to have a main identifier type that will be used when no type is specified and to define the uniqueness behavior of each identifier type. These settings are defined in the **IdentifierScope** section.
+
+When using multiple identifier types, all types must be Nullable or NullableUnique, for the system to be able to create users without requiring specific types of identifiers.
+
+Under section **IdentifierScope**:
+
+* **EnableMultipleIdentifiersPerUser**: if `true`, allows users to have more than one identifier (e.g. CPF and a Paraguayan identifier simultaneously).
+* **AllowedIdentifierTypes**: comma-separated list of allowed identifier types. Example: `Cpf,EcuadorBceId`. When set, only the listed types will be accepted. Types supported: `Cpf`, `EcuadorBceId`, `ParaguayCedulaIdentidad`, `ParaguayRuc` and `ParaguayPassport`.
+* **DefaultIdentifierType**: the default identifier type used when no type is explicitly specified. Replaces the deprecated `General.IdentifierType` setting. Must be a valid identifier type included in the `AllowedIdentifierTypes` setting. Example: `Cpf`.
+* **IdentifierModes**: comma-separated list of `IdentifierType=Mode` pairs defining the uniqueness behavior for each identifier type. Replaces the deprecated `General.CountryIdentifierMode` setting. Available modes are `Unique`, `NonUnique`, `Nullable` and `NullableUnique`. Example: `Cpf=Nullable,EcuadorBceId=NullableUnique`. **If `EnableMultipleIdentifiersPerUser` is `true`, this setting must be defined and all identifier types included in `AllowedIdentifierTypes` must have a defined Nullable or NullableUnique mode.**
+* **DisableGrantIdIdentifierSync** (v2.11.1, default: `false`): if `true`, disables the synchronization of identifiers with GrantId. This is specially useful when using multiple identifier types, as GrantId only supports one identifier per user.
+* **DisableSyncIdentifiersJob** (v2.13.2, default: `false`): if `true`, disables the background job that periodically synchronizes user identifiers. Useful when the synchronization job causes conflicts or is not needed in the deployment.
+
+### *Contacts* Settings (v2.12.0)
+
+Under section **Contacts**:
+
+* **Disabled** (default: `false`): if `true`, disables the external contact list feature entirely.
+
+### *AdvancedSearch* Settings (v2.12.0)
+
+Under section **AdvancedSearch**:
+
+* **Disabled** (default: `false`): if `true`, disables the advanced participant search feature.
+* **AllowIncludeContacts** (default: `true`): if `false`, removes the option that allows users to choose whether to include contacts in search results.
+* **DefaultIncludeContacts** (default: `true`): defines whether contacts are included in search results by default.
+* **AllowIncludeExternalUsers** (default: `false`): if `true`, shows the option that allows users to choose whether to include external users in search results.
+* **DefaultIncludeExternalUsers** (default: `false`): defines whether external users are included in search results by default.
+
+### *RestPki* Settings (v2.13.0)
+
+Under section **RestPki** (previously **FaceTec** — the old section name is still accepted for backward compatibility):
+
+* **Endpoint**: the RestPki service endpoint URL.
+* **ApiKey**: the API key for the RestPki service.
+
+### *Pdf* Settings (v2.14.0)
+
+Under section **Pdf**:
+
+* **PdfAConversionEnabled** (default: `false`, v2.14.0): if `true`, enables conversion of documents to PDF/A.
+* **DefaultPdfAProfile** (default: `PdfA2b`, v2.14.0): the default PDF/A profile used when converting documents. Available options are: `PdfA1a`, `PdfA1b`, `PdfA2a`, `PdfA2b`, `PdfA3a` and `PdfA3b`.
+* **PdfService**: this is a subsection that defines the connection to the Lacuna PDF Service used to perform PDF/A conversion. Required when `PdfAConversionEnabled` is `true`:
+	* **Endpoint**: the PDF Service endpoint URL.
+	* **ApiKey**: the API key for the PDF Service.

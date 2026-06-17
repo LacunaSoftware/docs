@@ -1,6 +1,370 @@
 ﻿# Histórico de versões - Rest PKI Core
-
 <!--<a name="vnext" />-->
+
+<a name="v4-2-4" />
+## 4.2.4 (2026-04-28)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-636 Adicionar configuração para desabilitar upload na página pública de validação de documentos
+
+
+<a name="v4-2-3" />
+## 4.2.3 (2026-04-21)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-624 Erro no processamento de Liveness quando há baixa qualidade da imagem na captura anterior
+
+
+<a name="v4-2-2" />
+## 4.2.2 (2026-04-18)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-622 Problemas de compatibilidade na configuração de limite de upload da API
+
+
+<a name="v4-2-1" />
+## 4.2.1 (2026-04-18)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-621 Adicionar SubjectIdentifier para sessões de captura de documento de identidade
+
+
+<a name="v4-2-0" />
+## 4.2.0 (2026-04-16)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-438 RPNG-611 Adicionar suporte a conversão e validação de PDF/As
+
+
+<a name="v4-1-6" />
+## 4.1.6 (2026-04-16)
+ 
+Updates database model: no
+
+### Bug fixes
+
+RPNG-616 Página de configurações da subscription lança erros depois de ter sido fechada
+
+
+<a name="v4-1-5" />
+## 4.1.5 (2026-04-16)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-617 Melhorar matcher de número de identidade das vídeo identificações
+
+
+<a name="v4-1-4" />
+## 4.1.4 (2026-04-16)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-615 Adicionar rota para obter detalhes de sessões FortFace
+
+
+<a name="v4-1-3" />
+## 4.1.3 (2026-04-15)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-612 Aumentar limite máximo configurável para tamanho de uploads
+
+
+<a name="v4-1-2" />
+## 4.1.2 (2026-04-09)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-607 Política Adobe Reader para geração de assinatura
+
+### Melhorias
+
+RPNG-608 Atualização de bibliotecas de assinatura
+
+
+<a name="v3-7-2" />
+## 3.7.2 (2026-04-09)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-608 Atualização de bibliotecas de assinatura
+
+
+<a name="v3-4-3" />
+## 3.4.3 (2026-04-07)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-608 Atualização de bibliotecas de assinatura
+
+
+<a name="v4-1-1" />
+## 4.1.1 (2026-04-06)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-606 Atualização do SDK da Fortface para v2.4.3
+
+<a name="v4-1-0" />
+## 4.1.0 (2026-04-01)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-302 RPNG-599 RPNG-602 Sessão de identificação biométrica (ABIS)
+
+RPNG-440 RPNG-569 RPNG-580 RPNG-585 RPNG-588 PNG-589 RPNG-595 Importação de biometrias em lote
+
+RPNG-579 RPNG-584 RPNG-604 Autenticação facial com fallback para provedor de identidade externa
+
+RPNG-568 RPNG-575 Adicionar lista de padrões de SubjectIdentifiers aceitos para Subscription
+
+### Melhorias
+
+RPNG-544 Mapeamento de TransactionLimits para todas as operações que envolvem Carimbo de Tempo
+
+RPNG-555 SysAdmin - Tela de permissões da subscription
+
+RPNG-558 Informação de restrição na listagem e detalhes de planos de carimbo de tempo
+
+RPNG-559 Dashboard - Melhorias nas informações de FaceTec IdScan
+
+RPNG-587 Adicionar no detalhe do bio subject: data de exclusão
+
+RPNG-591 Adicionar "null expected" à chamada de get subject by identifier
+
+RPNG-592 Melhorar traduções da informação de sessão FortFace
+
+RPNG-603 Atualizações dos SDKs da FaceTec
+
+RPNG-567 Listagem paginada de Subjects da subscription via ClientLib
+
+
+<a name="v4-0-5" />
+## 4.0.5 (2026-03-20)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-547, RPNG-582 Adicionar suporte ao sistema de CNPJs alfanuméricos
+
+
+<a name="v3-7-1" />
+## 3.7.1 (2026-03-20)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-547, RPNG-582 Adicionar suporte ao sistema de CNPJs alfanuméricos
+
+RPNG-540 Configuração de sistema para usar apenas a língua padrão
+
+### Correções de bugs
+
+RPNG-533 TypeError durante a listagem de certificados do Web PKI
+
+
+<a name="v4-0-4" />
+## 4.0.4 (2026-03-18)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-576 Atualização do FortFace SDK para v2.4.2
+
+
+<a name="v4-0-3" />
+## 4.0.3 (2026-03-16)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-566 Problemas com atualização do FortFace SDK para v2.4.1
+
+
+<a name="v4-0-2" />
+## 4.0.2 (2026-03-12)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-546 Dashboard - Adicionar visualização de detalhes de transações registradas com TypeDiscriminator do TransactionService
+
+RPNG-570 Atualização do FortFace SDK para v2.4.1
+
+### Correções de bugs
+
+RPNG-566 Rotas de completar sessões exigindo subscription
+
+
+<a name="v4-0-1" />
+## 4.0.1 (2026-03-10)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-563 Problema com injeção de dependências do BusinessService
+
+
+<a name="v4-0-0" />
+## 4.0.0 (2026-03-09)
+
+> [!WARNING]
+> Veja [Atualizando o Rest PKI Core da versão 3.x para 4.0](on-premises/update-40.md)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Novas funcionalidades
+
+RPNG-273, RPNG-519 Fluxo de faturas para uma subscription
+
+RPNG-347, RPNG-497 Melhorias nas transações FaceTec
+
+RPNG-458 Dashboard de biometria - Listagem de sessões do cadastro biométrico
+
+RPNG-461 Serviço de limite de transações por tipo/mês
+
+RPNG-478 Adicionar transações para sessões FortFace
+
+RPNG-484 Opção de utilizar sessões de biometria com retorno de URL assim como nas de assinatura
+
+RPNG-488 Adicionar configuração de Timeout para sessão de biometria
+
+RPNG-505 Lista de ReturnUrl aceitas para BioSession
+
+RPNG-511 Vídeo Identificação - Receber valores esperados do documento \(tipo/número\)
+
+RPNG-517 Permissionamento por subscription para TimestampTiers
+
+### Melhorias
+
+RPNG-270 Interface com listagem das sessões de assinatura
+
+RPNG-405 Melhorias na tela inicial das sessões de biometria e customizações
+
+RPNG-430 Marcas de carimbo de tempo em espanhol
+
+RPNG-435 Dashboard de Biometria - Adicionar visualização de imagens das sessões biométricas
+
+RPNG-443, RPNG-447, RPNG-448, RPNG-450 Atualizações do Angular para versão 19
+
+RPNG-471 Botão para carregar todas as imagens nos detalhes da sessão de biometria
+
+RPNG-472 Salvar informação sobre Agent que criou a BioSession
+
+RPNG-474 Campos Swagger para sessões de biometria
+
+RPNG-477 Adicionar link da sessão FaceTec no detalhe da transação
+
+RPNG-481 Adicionar botão de copiar chave de API gerada
+
+RPNG-486 Apresentar mensagem de erro amigável nas sessões de biometria
+
+RPNG-490 Customização das cores e logo da sessão de biometria por subscription
+
+RPNG-507 Informações da vídeo identificação via API
+
+RPNG-508, RPNG-521, RPNG-531, RPNG-541, RPNG-548 Melhorias de layout das telas de administração
+
+RPNG-509 Melhorias nos templates OCR para passaportes
+
+RPNG-513 Dashboard - Assistir ao vídeo gravado na vídeo identificação
+
+RPNG-468, RPNG-515, RPNG-560 Atualizações dos SDKs da FaceTec
+
+RPNG-536 Melhorias de traduções dos botões de "Encerrar sessão"
+
+RPNG-537 Melhoria na coleta de logs de erro para o SDK da FortFace
+
+RPNG-540 Configuração de sistema para usar apenas a língua padrão
+
+### Correções de bugs
+
+RPNG-258 Campos do PadesSignaturePostRequestBase sendo ignorados
+
+RPNG-487 Sessão de biometria começa como "Falha" no dashboard
+
+RPNG-512 Vídeo Identificação - Correção da condição de sucesso na vídeo identificação
+
+RPNG-518 Corrigir coleta do Agent para as transações de BioSession
+
+RPNG-523 Vídeo Identificação - Problemas na finalização do FaceTec IdScan
+
+RPNG-525 Vídeo Identificação - Problema ao gravar/enviar vídeo
+
+RPNG-527 Sessões ficam presas em "loading" em dispositivos IOS 26.2
+
+RPNG-533 TypeError durante a listagem de certificados do Web PKI
+
+RPNG-534 Erro 500 em requisições utilizando métodos inválidos (POST) em rotas do ClientApp
+
+RPNG-539 Formulário de configuração da Subscription marcado com unsaved changes mesmo depois de reset
+
+RPNG-542 Telas não atualizam ao trocar de subscription
+
+
+<a name="v3-7-0" />
+## 3.7.0 (2025-11-26)
+
+Atualiza modelo do banco de dados: **sim**
+
+### Melhorias
+
+RPNG-453 Melhorar fotos de enrollment com liveness FortFace
+
+
+<a name="v3-6-2" />
+## 3.6.2 (2025-11-24)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-394 Dashboard de Biometria - Tela de detalhamento de BioSubjects
+
+### Melhorias
+
+RPNG-428 Atualizar SDKs da FortFace
+
+RPNG-454 Adicionar InteractionMethod no BioSessionModel para BioDashBoard
+
+
 <a name="v3-6-1" />
 ## 3.6.1 (2025-11-20)
 

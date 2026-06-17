@@ -1,5 +1,10 @@
 # PKI Express changelog
 
+<a name="v1-36-2" />
+### 1.36.2 (2026-03-09)
+
+- Update Lacuna.Pki SDK [2.22.2](https://docs.lacunasoftware.com/en-us/articles/pki-sdk/changelog#v2-22-2)
+
 <a name="v1-36-1" />
 ### 1.36.1 (2026-02-07)
 

@@ -1,6 +1,7 @@
 ﻿# [PKI Solutions](articles/pki-guide/index.md)
 # [Web PKI](articles/web-pki/index.md)
 # [Rest PKI](articles/rest-pki/index.md)
+# [Rest PKI Core](articles/rest-pki/core/index.md)
 # [PKI SDK](articles/pki-sdk/index.md)
 # [PKI Express](articles/pki-express/index.md)
 # [Signer](articles/signer/index.md)

@@ -79,6 +79,7 @@ var orderCreateResponse = ampliaRegService.CreateOrderAsync(new OrderCreateReque
 		BirthDate = "1995-10-15", // Data de nascimento do titular no formato aaaa-mm-dd
 		Cnpj = "08271696000100", // CNPJ (omita em caso de e-CPF)
 		OrganizationName = "Patorum Sistemas LTDA", // Razão social (omita em caso de e-CPF)
+		HolderHasCnh = true, // true se o titular possui CNH; false caso contrário (omita se desconhecido)
 	},
 	Validity = PeriodModel.FromYears(1), // Validade do certificado (o tipo de certificado deve permitir)
 	SaleNumber = "1000-1234", // Número do pedido no sistema de venda (máx. 50 caracteres, pode conter pontuações)
@@ -109,6 +110,7 @@ POST /api/brazil/orders
 		"birthDate": "1995-10-15", // Data de nascimento do titular no formato aaaa-mm-dd
 		"cnpj": "08271696000100", // CNPJ (omita em caso de e-CPF)
 		"organizationName": "Patorum Sistemas LTDA", // Razão social (omita em caso de e-CPF)
+		"holderHasCnh": true // true se o titular possui CNH; false caso contrário (omita se desconhecido)
 	},
 	"validity": {
 		"years": 1 // Validade do certificado (o tipo de certificado deve permitir essa validade)
@@ -174,8 +176,8 @@ Exemplo de resposta com reprovação:
 
 ### Consulta de cadastro biométrico
 
-Para criar um pedido com emissão por videoconferência, deve-se perguntar ao titular se ele possui CNH. Caso a resposta seja negativa, deve-se chamar a
-seguinte API para verificar se o titular possui cadastro biométrico. Caso negativo, o certificado não poderá ser emitido.
+Para criar um pedido com emissão por videoconferência, deve-se perguntar ao titular se ele possui CNH. Informe a resposta no campo `HolderHasCnh` ao criar o pedido. Caso
+o titular não possua CNH (`HolderHasCnh = false`), chame a seguinte API para verificar se ele possui cadastro biométrico. Caso negativo, o certificado não poderá ser emitido.
 
 Em .NET:
 
@@ -208,4 +210,6 @@ Resposta:
 ## Veja também
 
 * [Primeiros passos para integração](get-started.md)
+* [Validação de número de telefone](validate-phone.md)
+* [Cancelamento de pedido](cancel-order.md)
 * [Códigos de erro](error-codes.md)
