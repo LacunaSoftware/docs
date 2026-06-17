@@ -16,6 +16,23 @@ Atualiza modelo do banco de dados: nao //
 ### Correções de bugs
 
 // -->
+<a name="7.0.0" />
+## 7.0.0 (2026-06-19)
+
+Atualiza modelo do banco de dados: sim
+
+### Melhorias
+
+ARNG-720 Bloquear login se o certificado do AGR for diferente do certificado cadastrado
+
+> [!IMPORTANT]
+> Após atualizar para esta versão, é obrigatório executar o comando `fill-registration-agents-certificate-thumbprint`. Consulte as instruções de migração para garantir que a coluna `CertificateThumbprint` da tabela `RegistrationAgent` seja preenchida corretamente antes de os usuários realizarem login.
+
+
+### Correções de bugs
+
+...
+
 
 <a name="5.24.0" />
 ## 5.24.0 (2026-04-07)
