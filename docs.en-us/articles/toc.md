@@ -111,6 +111,9 @@
 #### [Authentication](rest-pki/core/integration/bio-sessions/authentication.md)
 #### [Identification](rest-pki/core/integration/bio-sessions/identification.md)
 #### [Identification Document Capture](rest-pki/core/integration/bio-sessions/id-capture.md)
+#### Settings
+##### [Identifier formats](rest-pki/core/integration/bio-sessions/configs/subject-identifier-formats.md)
+##### [Geolocation](rest-pki/core/integration/bio-sessions/configs/geolocation.md)
 ### [Referencing files](rest-pki/core/integration/file-referencing.md)
 ### [Webhooks](rest-pki/core/integration/webhooks.md)
 ### [Error codes](rest-pki/core/integration/error-codes.md)

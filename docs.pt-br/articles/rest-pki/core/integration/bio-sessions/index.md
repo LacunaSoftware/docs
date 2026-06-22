@@ -186,7 +186,7 @@ Ao iniciar uma sessão, você deve configurar os parâmetros que definem como o 
 O `SubjectIdentifier` é um campo que vincula a sessão de biometria a uma pessoa específica que está utilizando o seu sistema.
 
 Para as sessões de cadastro biométrico e autenticação biométrica, o `SubjectIdentifier` é o identificador único relacionado à aquela pessoa que você deseja cadastrar ou autenticar no sistema de biometria.
-
+        
 Para as sessões anônimas, como Liveness e captura de documentos, esse identificador é indexado e poderá ser utilizado para encontrar o histórico de sessões com aquele identificador.
 
 > [!tip]
@@ -198,9 +198,14 @@ Caso queira aceitar apenas alguns tipos de identificadores específicos, você p
 - **FaceCaptureProvider:** Define qual tecnologia de captura será utilizada na sessão de biometria.
     - Atualmente o único provedor utilizado pelo sistema é o `FaceTecLiveness3d` 
 
+<a name="geolocation" />
+
 ### Parâmetros de geolocalização
 
 O Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário durante a sessão de biometria. O recurso está **desabilitado por padrão** e pode ser habilitado por sessão ou globalmente na configuração da subscription.
+
+> [!TIP]
+> Prefere configurar o padrão pelo painel? Veja [Configuração de geolocalização](configs/geolocation.md).
 
 - **`GeolocationCaptureType`**: Define o comportamento da captura.
     - **`Disabled`** (padrão): Geolocalização não é coletada.
