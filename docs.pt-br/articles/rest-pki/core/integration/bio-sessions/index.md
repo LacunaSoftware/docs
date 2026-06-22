@@ -216,6 +216,9 @@ O Rest PKI Core pode capturar a localização geográfica do dispositivo do usu�
     - **`CollectOnCaptureDevice`** (padrão): A geolocalização é capturada apenas no dispositivo que realiza a biometria (ex: o celular, nos fluxos com QR code).
     - **`CollectOnAllDevices`**: A geolocalização é capturada em todos os dispositivos envolvidos na sessão — tanto no desktop que iniciou quanto no celular que realizou a captura.
 
+> [!NOTE]
+> A exibição (ou não) do prompt de permissão, e por quanto tempo o navegador lembra da permissão concedida, são definidos por cada navegador e fogem ao controle do Rest PKI Core. Em alguns navegadores, conceder a permissão de forma temporária (ex.: "Permitir desta vez" no Chrome) pode manter a localização disponível durante a sessão do navegador, mesmo quando a captura é opcional. Para detalhes sobre cada comportamento, consulte a documentação do respectivo navegador.
+
 ## Tipos de sessão
 
 * [Prova de vida (`Liveness`)](liveness.md)
