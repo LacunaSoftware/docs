@@ -1,6 +1,16 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-2-5" />
+## 4.2.5 (2026-06-24)
+ 
+Updates database model: no
+
+### Improvements
+
+RPNG-716 Update FaceTec SDKs
+
+
 <a name="v4-2-4" />
 ## 4.2.4 (2026-04-28)
  

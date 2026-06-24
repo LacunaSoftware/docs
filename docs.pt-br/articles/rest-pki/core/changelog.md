@@ -1,6 +1,16 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-2-5" />
+## 4.2.5 (2026-06-24)
+
+Atualiza modelo do banco de dados: não
+
+### Melhorias
+
+RPNG-716 Atualizações dos SDKs da FaceTec
+
+
 <a name="v4-2-4" />
 ## 4.2.4 (2026-04-28)
 
