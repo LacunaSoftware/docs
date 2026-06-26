@@ -1,5 +1,18 @@
 # Signer 
 
+<a name="v2-15-0" />
+### 2.15.0 (2026-06-26)
+
+* Improvements
+  * [SIG-1787] Add a Terms of Use report listing the users who accepted the terms, including name, date/time and accepted version, filterable by version and deliverable by email
+  * [SIG-1816] Improve the authentication and signing screen UX/UI, reorganizing it into clearer sections and showing the recipient's information on the code authentication step
+
+* Bug fixes
+  * [SIG-1693] Fix errors in the /templates API affecting approval and signature rules, including identifier handling and recipient validation
+  * [SIG-1845] Fix users being unable to access the platform after their identifier data was updated in GrantID
+
+Updates database model: no
+
 <a name="v2-14-4" />
 ### 2.14.4 (2026-06-15)
 

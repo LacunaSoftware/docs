@@ -1,5 +1,18 @@
 # Histórico de versões do Signer
 
+<a name="v2-15-0" />
+### 2.15.0 (2026-06-26)
+
+* Melhorias
+  * [SIG-1787] Adiciona relatório de Termos de Uso listando os usuários que aceitaram os termos, com nome, data/hora e versão aceita, com filtro por versão e envio por e-mail
+  * [SIG-1816] Melhora a UX/UI da tela de autenticação e assinatura, reorganizando-a em seções mais claras e exibindo as informações do destinatário na etapa de autenticação por código
+
+* Correções de bugs
+  * [SIG-1693] Corrige erros na API /templates que afetavam regras de aprovação e assinatura, incluindo o tratamento de identificadores e a validação de destinatários
+  * [SIG-1845] Corrige usuários impedidos de acessar a plataforma após a atualização de seus dados de identificador no GrantID
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-14-4" />
 ### 2.14.4 (2026-06-15)
 

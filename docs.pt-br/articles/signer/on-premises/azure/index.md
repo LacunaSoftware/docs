@@ -1,4 +1,4 @@
-﻿# Signer - Setup em Azure App Services
+# Signer - Setup em Azure App Services
 
 Para instalar uma instância [*on premises*](../index.md) do [Signer](../../index.md) em um [Azure App Service](https://docs.microsoft.com/azure/app-service/overview),
 siga os passos abaixo. Para outras plataformas, [clique aqui](../index.md).
@@ -13,7 +13,7 @@ Antes de começar, obtenha o pacote de binários:
 
 <br />
 <center>
-**[Pacote de binários do Signer](https://cdn.lacunasoftware.com/signer/signer-2.14.4.zip)**
+**[Pacote de binários do Signer](https://cdn.lacunasoftware.com/signer/signer-2.15.0.zip)**
 </center>
 <br />
 
