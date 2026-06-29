@@ -112,6 +112,9 @@
 #### [Autenticação facial (Authentication)](rest-pki/core/integration/bio-sessions/authentication.md)
 #### [Identificação facial (Identification)](rest-pki/core/integration/bio-sessions/identification.md)
 #### [Captura de documento (IdentificationDocumentCapture)](rest-pki/core/integration/bio-sessions/id-capture.md)
+#### Configurações
+##### [Formatos de identificador](rest-pki/core/integration/bio-sessions/configs/subject-identifier-formats.md)
+##### [Geolocalização](rest-pki/core/integration/bio-sessions/configs/geolocation.md)
 ### [Referenciando arquivos](rest-pki/core/integration/file-referencing.md)
 ### [Webhooks](rest-pki/core/integration/webhooks.md)
 ### [Códigos de erro](rest-pki/core/integration/error-codes.md)

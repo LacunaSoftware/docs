@@ -186,7 +186,7 @@ Ao iniciar uma sessão, você deve configurar os parâmetros que definem como o 
 O `SubjectIdentifier` é um campo que vincula a sessão de biometria a uma pessoa específica que está utilizando o seu sistema.
 
 Para as sessões de cadastro biométrico e autenticação biométrica, o `SubjectIdentifier` é o identificador único relacionado à aquela pessoa que você deseja cadastrar ou autenticar no sistema de biometria.
-
+        
 Para as sessões anônimas, como Liveness e captura de documentos, esse identificador é indexado e poderá ser utilizado para encontrar o histórico de sessões com aquele identificador.
 
 > [!tip]
@@ -197,6 +197,27 @@ Caso queira aceitar apenas alguns tipos de identificadores específicos, você p
 ### Parâmetros das sessões com captura facial
 - **FaceCaptureProvider:** Define qual tecnologia de captura será utilizada na sessão de biometria.
     - Atualmente o único provedor utilizado pelo sistema é o `FaceTecLiveness3d` 
+
+<a name="geolocation" />
+
+### Parâmetros de geolocalização
+
+O Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário durante a sessão de biometria. O recurso está **desabilitado por padrão** e pode ser habilitado por sessão ou globalmente na configuração da subscription.
+
+> [!TIP]
+> Prefere configurar o padrão pelo painel? Veja [Configuração de geolocalização](configs/geolocation.md).
+
+- **`GeolocationCaptureType`**: Define o comportamento da captura.
+    - **`Disabled`** (padrão): Geolocalização não é coletada.
+    - **`Optional`**: O sistema tenta capturar a geolocalização, mas a sessão prossegue normalmente caso o usuário negue permissão ou a captura falhe.
+    - **`Required`**: A geolocalização é obrigatória. A sessão é interrompida se a captura não for concluída com sucesso.
+
+- **`GeolocationCapturePolicy`**: Define em quais dispositivos a geolocalização é coletada (relevante para sessões com QR code).
+    - **`CollectOnCaptureDevice`** (padrão): A geolocalização é capturada apenas no dispositivo que realiza a biometria (ex: o celular, nos fluxos com QR code).
+    - **`CollectOnAllDevices`**: A geolocalização é capturada em todos os dispositivos envolvidos na sessão — tanto no desktop que iniciou quanto no celular que realizou a captura.
+
+> [!NOTE]
+> A exibição (ou não) do prompt de permissão, e por quanto tempo o navegador lembra da permissão concedida, são definidos por cada navegador e fogem ao controle do Rest PKI Core. Em alguns navegadores, conceder a permissão de forma temporária (ex.: "Permitir desta vez" no Chrome) pode manter a localização disponível durante a sessão do navegador, mesmo quando a captura é opcional. Para detalhes sobre cada comportamento, consulte a documentação do respectivo navegador.
 
 ## Tipos de sessão
 
