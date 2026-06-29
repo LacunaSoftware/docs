@@ -1,5 +1,17 @@
 # Signer 
 
+<a name="v2-15-1" />
+### 2.15.1 (2026-06-29)
+
+* Improvements
+  * [SIG-1298] Generate document list reports asynchronously as background jobs for large result sets, sending a download link by email to avoid timeouts and excessive memory usage
+
+* Bug fixes
+  * [SIG-1693] Continuation of the previous fix: correct template generation for participants with field-defined data (DefinedByFields)
+  * [SIG-1844] Restore user registration behaviors for instances with a single identifier
+
+Updates database model: no
+
 <a name="v2-15-0" />
 ### 2.15.0 (2026-06-26)
 

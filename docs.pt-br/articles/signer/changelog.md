@@ -1,5 +1,17 @@
 # Histórico de versões do Signer
 
+<a name="v2-15-1" />
+### 2.15.1 (2026-06-29)
+
+* Melhorias
+  * [SIG-1298] Gera os relatórios da listagem de documentos de forma assíncrona, em jobs de segundo plano para grandes volumes, enviando um link de download por e-mail para evitar timeouts e consumo excessivo de memória
+
+* Correções de bugs
+  * [SIG-1693] Continuação da correção anterior: corrige a geração de modelos com dados definidos por campos
+  * [SIG-1844] Restaura comportamentos do cadastro de usuários em instâncias com identificador único
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-15-0" />
 ### 2.15.0 (2026-06-26)
 
