@@ -12,6 +12,7 @@
 
 Updates database model: no
 
+
 <a name="v2-15-0" />
 ### 2.15.0 (2026-06-26)
 
