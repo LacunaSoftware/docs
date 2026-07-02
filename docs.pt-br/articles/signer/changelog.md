@@ -1,5 +1,18 @@
 # Histórico de versões do Signer
 
+<a name="v2-16-0" />
+### 2.16.0 (2026-07-02)
+
+* Melhorias
+  * [SIG-1796] Nova tela de gestão de notas fiscais (NFSe) no módulo de cobrança: listagem administrativa com status (sucesso, em processamento, erro, cancelado), visão detalhada, filtros de busca, coluna de ID da nota, filtro por conta pessoal, reemissão de notas com falha, envio por e-mail e download de PDF/XML
+
+* Correções de bugs
+  * [SIG-1538] Corrige documentos que não mudavam para o status "Expirado" após o job de processamento atingir o limite de 10 falhas, ficando presos em um estado inconsistente
+  * [SIG-1814] Corrige a configuração de PDF/A salva no modelo que não era carregada no formulário de edição nem aplicada na geração de documentos a partir do modelo
+  * [SIG-1854] Corrige o erro de "link inválido" ao iniciar uma assinatura com IdRC pela área pública através de um link recebido por e-mail, SMS ou WhatsApp
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-15-1" />
 ### 2.15.1 (2026-06-29)
 

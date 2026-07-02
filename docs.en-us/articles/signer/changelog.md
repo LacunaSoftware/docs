@@ -1,5 +1,18 @@
 # Signer 
 
+<a name="v2-16-0" />
+### 2.16.0 (2026-07-02)
+
+* Improvements
+  * [SIG-1796] New invoice (NFSe) management screen in the billing module: admin listing with status (success, processing, error, canceled), detail view, search filters, invoice ID column, personal-account filter, reissue of failed invoices, send-by-email dialog, and PDF/XML download
+
+* Bug fixes
+  * [SIG-1538] Fix documents not moving to the "Expired" status after the processing job reached its 10-failure limit, leaving them stuck in an inconsistent state
+  * [SIG-1814] Fix the PDF/A configuration saved in a template not being loaded in the edit form nor applied when generating documents from the template
+  * [SIG-1854] Fix an "invalid link" error when starting an IdRC signature from the public area through a link received by email, SMS or WhatsApp
+
+Updates database model: no
+
 <a name="v2-15-1" />
 ### 2.15.1 (2026-06-29)
 
