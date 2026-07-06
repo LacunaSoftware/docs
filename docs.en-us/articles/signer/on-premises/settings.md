@@ -922,3 +922,15 @@ Under section **Pdf**:
 * **PdfService**: this is a subsection that defines the connection to the Lacuna PDF Service used to perform PDF/A conversion. Required when `PdfAConversionEnabled` is `true`:
 	* **Endpoint**: the PDF Service endpoint URL.
 	* **ApiKey**: the API key for the PDF Service.
+
+### *DocumentDownload* Settings (v2.16.1)
+
+Under section **DocumentDownload**. These settings were previously under the **General** section, which is now obsolete for these keys — the old General keys are still honored as a fallback when the corresponding `DocumentDownload` key is not set:
+
+* **EnableSignatureMarksDownload** (default: `false`): if `true`, enables the user to download the signature marks version of a document.
+* **EnableSigningTagsDownload** (default: `true`): if `true`, enables the user to download the signing tags version of a document.
+* **EnablePrinterFriendlyDownload** (default: `true`): if `true`, enables the user to download the printer friendly version of a document.
+* **EnableRefusedDocumentDownload** (default: `false`, v2.16.1): if `false`, blocks downloading a document after it has been refused, preventing refused documents from circulating as if they were valid and signed. Set to `true` to allow downloads of refused documents.
+* **CanceledWatermarkText**: the text of the watermark added to canceled documents on download.
+* **ExpiredWatermarkText**: the text of the watermark added to expired documents on download.
+* **RefusedWatermarkText** (v2.16.1): the text of the watermark added to refused documents on download.

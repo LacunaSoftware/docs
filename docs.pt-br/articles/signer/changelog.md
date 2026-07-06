@@ -1,5 +1,18 @@
 # Histórico de versões do Signer
 
+<a name="v2-16-1" />
+### 2.16.1 (2026-07-06)
+
+* Melhorias
+  * [SIG-1478] Bloqueia o download de um documento após ele ter sido recusado, evitando que documentos recusados circulem como se fossem válidos e assinados; as configurações de download foram movidas para uma seção de configuração dedicada `DocumentDownload`
+
+* Correções de bugs
+  * Corrige a busca de contatos para que nome, e-mail, telefone e identificador sejam comparados com os termos completos
+  * Oculta o painel de recibos quando a integração NFE.io está desativada
+  * Corrige a contagem de páginas no método de mesclagem de PDF
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-16-0" />
 ### 2.16.0 (2026-07-02)
 

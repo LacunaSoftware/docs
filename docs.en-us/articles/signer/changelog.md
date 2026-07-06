@@ -1,5 +1,18 @@
 # Signer 
 
+<a name="v2-16-1" />
+### 2.16.1 (2026-07-06)
+
+* Improvements
+  * [SIG-1478] Block downloading a document after it has been refused, preventing refused documents from circulating as if they were valid and signed; download settings moved to a dedicated `DocumentDownload` configuration section
+
+* Bug fixes
+  * Fix contact search so name, email, phone and identifier are matched against full terms
+  * Hide the receipts dashboard when the NFE.io integration is disabled
+  * Fix page counting in the PDF merging method
+
+Updates database model: no
+
 <a name="v2-16-0" />
 ### 2.16.0 (2026-07-02)
 
