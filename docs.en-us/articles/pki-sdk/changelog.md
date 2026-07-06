@@ -1,5 +1,12 @@
 ﻿# PKI SDK changelog
 
+<a name="v2-22-4" />
+### 2.22.4 (2026-07-06)
+
+- Update Lacuna.T8 package v1.2.27.
+- Fix PDF signature detection for revisioned signature dictionary object numbers.
+- Fix null AcroForm PDF object loading.
+
 <a name="v2-22-3" />
 ### 2.22.3 (2026-04-06)
 
