@@ -11,7 +11,7 @@ O Rest PKI Core é compatível com os seguintes ambientes:
 * [Windows Server](windows-server.md)
 * [Linux](linux/index.md)
 * [Docker](docker.md)
-* Azure App Services
+* [Azure App Services](azure/index.md)
 
 Clique em um dos ambientes acima para obter instruções específicas de instalação e atualização.
 

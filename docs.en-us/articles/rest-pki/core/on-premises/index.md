@@ -10,7 +10,7 @@ Rest PKI Core is compatible with:
 * Windows Server
 * [Linux](linux/index.md)
 * [Docker](docker.md)
-* Azure App Services
+* [Azure App Services](azure/index.md)
 
 Click on one of the platforms above for specific setup instructions.
 
