@@ -12,7 +12,7 @@ RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corp
 
 ### Melhorias
 
-RPNG-765 Atualizar para o SPA 7.3
+RPNG-765 Atualizar para o SPA 7.3, adicionando telemetria de desempenho de runtime ao Microsoft Application Insights
 
 ### Correções de bugs
 

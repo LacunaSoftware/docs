@@ -12,7 +12,7 @@ RPNG-762 Add app setting to disable the minimum request body data rate
 
 ### Improvements
 
-RPNG-765 Update to SPA 7.3
+RPNG-765 Update to SPA 7.3, adding runtime performance telemetry to Microsoft Application Insights
 
 ### Bug fixes
 
