@@ -1,6 +1,15 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v3-4-4" />
+## 3.4.4 (2026-07-07)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corpo da requisição
+
 <a name="v4-3-0" />
 ## 4.3.0 (2026-06-25)
 

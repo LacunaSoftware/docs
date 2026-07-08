@@ -1,6 +1,15 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v3-4-4" />
+## 3.4.4 (2026-07-07)
+
+Updates database model: no
+
+### New features
+
+RPNG-762 Add app setting to disable the minimum request body data rate
+
 <a name="v4-3-0" />
 ## 4.3.0 (2026-06-25)
 
