@@ -1,6 +1,23 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-3-1" />
+## 4.3.1 (2026-07-08)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corpo da requisição
+
+### Melhorias
+
+RPNG-765 Atualizar para o SPA 7.3
+
+### Correções de bugs
+
+RPNG-766 Corrigir um erro raro que podia ocorrer ao usar as APIs de autenticação legadas
+
 <a name="v4-2-6" />
 ## 4.2.6 (2026-07-07)
 

@@ -1,6 +1,23 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-3-1" />
+## 4.3.1 (2026-07-08)
+
+Updates database model: no
+
+### New features
+
+RPNG-762 Add app setting to disable the minimum request body data rate
+
+### Improvements
+
+RPNG-765 Update to SPA 7.3
+
+### Bug fixes
+
+RPNG-766 Fix a rare error that could occur when using the legacy authentication APIs
+
 <a name="v4-2-6" />
 ## 4.2.6 (2026-07-07)
 
