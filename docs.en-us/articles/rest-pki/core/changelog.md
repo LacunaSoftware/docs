@@ -45,31 +45,49 @@ Updates database model: **yes**
 ### New features
 
 RPNG-323 RPNG-681 RPNG-682 RPNG-683 Add geolocation capture to biometric sessions
+
 RPNG-419 Add support to Lacuna FaceTecServer 3.0+
+
 RPNG-503 Biometric session page settings
+
 RPNG-574 Per-subscription transaction limits (SysAdmin)
+
 RPNG-594 Biometric identification configuration pages
+
 RPNG-610 Add "Remove logo" button
+
 RPNG-623 RPNG-711 Add "Reset to system defaults" to each settings section
 
 ### Improvements
 
 RPNG-389 RPNG-722 Improve data-table performance with cursor pagination
+
 RPNG-501 Show FaceTec ID scan OCR data in the dashboard
+
 RPNG-535 Apply transaction limits to all transaction types
+
 RPNG-605 RPNG-679 Improve dashboard APIs
+
 RPNG-613 Translate biometric enrollment failure messages
+
 RPNG-620 Show PDF/A information on public document validation
+
 RPNG-625 Add display names for new themes
+
 RPNG-641 Update FaceTec browser SDK to v9.7.115
+
 RPNG-649 Show the current subscription name in the toolbar
+
 RPNG-689 Translate the "All organizations" label
 
 ### Bug fixes
 
 RPNG-538 "User not found" error when opening User Details
+
 RPNG-644 Application filter on the transactions table had no effect
+
 RPNG-655 Duplicate transaction registered on legacy certificate authentication
+
 RPNG-702 Old face maps were not deleted after continuous-learning authentication
 
 
