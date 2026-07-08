@@ -8,7 +8,7 @@ follow the steps below. For other platforms, [click here](../index.md#platforms)
 
 > [!TIP]
 > To be able to use the free SSL certificates provided by *App Service Managed Certificates*, we suggest not choosing "naked domains",
-> that is, domains without a subdomain portion, for example ~~patorum.com~~. Prefer, for instance, `pki.patorum.com`.
+> that is, domains without a subdomain portion, for example ~~patorum.com~~. Prefer, for instance, `restpki.patorum.com`.
 
 ## Preparation
 
@@ -97,7 +97,7 @@ Close the terminal, returning to the Azure portal. On the App Service, go to **C
 * `General__AppDiscriminator`: see the [App discriminator](#app-discriminator) section below
 * `General__EncryptionKey`: the cryptographic key generated above
 * `General__RootPasswordHash`: the *root* password hash computed above
-* `General__SiteUrl`: the public URL of the site (e.g.: `https://pki.patorum.com/`)
+* `General__SiteUrl`: the public URL of the site (e.g.: `https://restpki.patorum.com/`)
 * `General__SiteName` (optional): the name of your Rest PKI Core instance (defaults to *Rest PKI Core*)
 * `Oidc__Enabled`: `False` (disables the [OpenID Connect integration](../configure-oidc.md), for now)
 
@@ -126,7 +126,7 @@ The `General__AppDiscriminator` setting identifies the instance and is used to d
 PKI Suite settings:
 
 * `PkiSuite__SdkLicense`: your license for the PKI SDK, in Base64 format (**required**)
-* `PkiSuite__WebLicense`: your license for the Web PKI component in binary (Base64) format. Only required if users will issue certificates on their computers (web issuing procedure)
+* `PkiSuite__WebLicense`: your license for the Web PKI component in binary (Base64) format. Only required if users will sign documents with certificates on their computers (in-browser signature via Web PKI)
 
 ### Blob Storage
 
