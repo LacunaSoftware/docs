@@ -1,6 +1,59 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-3-1" />
+## 4.3.1 (2026-07-08)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corpo da requisição
+
+### Melhorias
+
+RPNG-765 Atualizar para o SPA 7.3, adicionando telemetria de desempenho de runtime ao Microsoft Application Insights
+
+### Correções de bugs
+
+RPNG-766 Corrigir um erro raro que podia ocorrer ao usar as APIs de autenticação legadas
+
+<a name="v4-2-6" />
+## 4.2.6 (2026-07-07)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corpo da requisição
+
+<a name="v4-1-7" />
+## 4.1.7 (2026-07-07)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corpo da requisição
+
+<a name="v4-0-6" />
+## 4.0.6 (2026-07-07)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corpo da requisição
+
+<a name="v3-4-4" />
+## 3.4.4 (2026-07-07)
+
+Atualiza modelo do banco de dados: não
+
+### Novas funcionalidades
+
+RPNG-762 Adicionar configuração para desativar a taxa mínima de dados do corpo da requisição
+
 <a name="v4-3-0" />
 ## 4.3.0 (2026-06-25)
 
@@ -9,31 +62,49 @@ Atualiza modelo do banco de dados: **sim**
 ### Novas funcionalidades
 
 RPNG-323 RPNG-681 RPNG-682 RPNG-683 Adicionar captura de geolocalização nas sessões de biometria
+
 RPNG-419 Adicionar suporte ao Lacuna FaceTecServer 3.0+
+
 RPNG-503 Configurações da página de sessão biométrica
+
 RPNG-574 Configurações de limites de transação por subscription (SysAdmin)
+
 RPNG-594 Páginas de configuração de identificações biométricas
+
 RPNG-610 Adicionar botão para remover a imagem da logo
+
 RPNG-623 RPNG-711 Adicionar botão de resetar para os padrões do sistema em cada seção das configurações
 
 ### Melhorias
 
 RPNG-389 RPNG-722 Otimizar listagem de dados utilizando paginação por cursor
+
 RPNG-501 Exibir os dados de OCR do FaceTec ID Scan no dashboard
+
 RPNG-535 Aplicar limites de transação para todos os tipos de transação
+
 RPNG-605 RPNG-679 Melhorar APIs do dashboard
+
 RPNG-613 Adicionar traduções para falhas de cadastro biométrico e do cadastro em lote
+
 RPNG-620 Adicionar informações de PDF/A na validação pública de documentos
+
 RPNG-625 Adicionar nomes completos dos novos temas
+
 RPNG-641 Atualizar o FaceTec browser SDK para v9.7.115
+
 RPNG-649 Melhorar o botão que informa a subscription atual
+
 RPNG-689 Adicionar tradução para a frase "Todas as organizações"
 
 ### Correções de bugs
 
 RPNG-538 Erro "User not found" ao abrir a tela de detalhes do usuário
+
 RPNG-644 Filtro por aplicação na tabela de transações não funcionava
+
 RPNG-655 Transação duplicada na conclusão de autenticação com certificado (legado)
+
 RPNG-702 FaceMaps antigos não eram excluídos após autenticação biométrica
 
 
