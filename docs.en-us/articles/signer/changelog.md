@@ -1,5 +1,18 @@
 # Signer 
 
+<a name="v2-17-0" />
+### 2.17.0 (2026-07-13)
+
+* Improvements
+  * [SIG-1861] Added an optional `timestampEnabled` field to document creation via API, allowing a per-document override of the organization's timestamp setting
+  * [SIG-1831] Added an organization-level setting to enable or restrict the use of electronic signature, with the global instance setting taking precedence
+
+* Bug fixes
+  * [SIG-1640] Fixed a signing failure caused by PDFs with a null AcroForm structure (upgraded Lacuna.Pki to 2.22.4)
+  * Fixed a minor certificate loading issue on the signature screen
+
+Updates database model: yes (migration: `ElectronicSignatureConfigForSubscription`, `DocumentTimestampEnabled`)
+
 <a name="v2-16-1" />
 ### 2.16.1 (2026-07-06)
 

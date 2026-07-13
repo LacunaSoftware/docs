@@ -1,5 +1,18 @@
 # Histórico de versões do Signer
 
+<a name="v2-17-0" />
+### 2.17.0 (2026-07-13)
+
+* Melhorias
+  * [SIG-1861] Adicionado campo opcional `timestampEnabled` na criação de documentos via API, permitindo sobrescrever por documento a configuração de carimbo de tempo da organização
+  * [SIG-1831] Adicionada configuração por organização para habilitar ou restringir o uso da assinatura eletrônica, com precedência da configuração global da instância
+
+* Correções de bugs
+  * [SIG-1640] Corrigida falha de assinatura causada por PDFs com estrutura de AcroForm nula (atualização do Lacuna.Pki para 2.22.4)
+  * Corrigido um pequeno problema no carregamento de certificados na tela de assinatura
+
+Atualiza modelo de banco de dados: sim (migração: `ElectronicSignatureConfigForSubscription`, `DocumentTimestampEnabled`)
+
 <a name="v2-16-1" />
 ### 2.16.1 (2026-07-06)
 
