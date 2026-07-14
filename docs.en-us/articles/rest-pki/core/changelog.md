@@ -1,6 +1,15 @@
 ﻿# Rest PKI Core changelog
 <!--<a name="vnext" />-->
 
+<a name="v4-3-2" />
+## 4.3.2 (2026-07-13)
+
+Updates database model: no
+
+### Bug fixes
+
+RPNG-770 Replayed certificate-authentication requests were not reported with a distinct nonce-reuse error
+
 <a name="v4-3-1" />
 ## 4.3.1 (2026-07-08)
 
