@@ -1,6 +1,15 @@
 ﻿# Histórico de versões - Rest PKI Core
 <!--<a name="vnext" />-->
 
+<a name="v4-3-2" />
+## 4.3.2 (2026-07-13)
+
+Atualiza modelo do banco de dados: não
+
+### Correções de bugs
+
+RPNG-770 Requisições de autenticação por certificado repetidas não eram reportadas com um erro distinto de reuso de nonce
+
 <a name="v4-3-1" />
 ## 4.3.1 (2026-07-08)
 
