@@ -1,5 +1,20 @@
 # Histórico de versões do Signer
 
+<a name="v2-17-1" />
+### 2.17.1 (2026-07-15)
+
+* Melhorias
+  * [SIG-1866] Adicionada configuração (`AllowBasicAndOperatorUsersToManageContacts`) que permite aos perfis Básico e Operador criar, editar e excluir os contatos da organização
+
+* Correções de bugs
+  * [SIG-1868] Corrigido o erro "HashStream does not support seeking" ao criar documentos com merge de PDFs em storage S3/MinIO
+  * [SIG-1867] Corrigida a busca de contatos que retornava os contatos da organização errada (ou nenhum) ao criar um fluxo dentro de uma organização
+  * [SIG-1863] Corrigido o perfil Gerente não conseguir acessar as configurações da pasta (renomear, mover, configurar permissões)
+  * [SIG-1842] Corrigida a validação indevida do identificador do certificado ao assinar com múltiplos identificadores habilitados quando o usuário não possui identificador definido
+  * Corrigida a tecla Enter que não disparava a busca nas barras de ferramentas unificadas
+
+Atualiza modelo de banco de dados: não
+
 <a name="v2-17-0" />
 ### 2.17.0 (2026-07-13)
 

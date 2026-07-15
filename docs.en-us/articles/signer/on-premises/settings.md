@@ -182,6 +182,8 @@ updated by administrators of that subscription.
 
 * **RequireFolderSelectionWhenCreatingDocuments** (v.1.65.0): if `true`, users are required to select a folder when creating documents.
 
+* **AllowBasicAndOperatorUsersToManageContacts** (default: `false`, v2.17.1): if `true`, users with the Basic or Operator role in an organization are also allowed to create, update and delete the organization's contacts. By default only Admin and Manager can manage contacts.
+
 * **MaxWebhooksPerOrganization** (v1.65.0, default: `5`): maximum number of webhooks that can be added to an organization.
 
 * **DocumentConcludedWebhookDelayInSeconds** (v1.66.0, default: `60`): delay in seconds to wait until the document concluded webhook is triggered.

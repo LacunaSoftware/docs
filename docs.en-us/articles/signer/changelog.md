@@ -1,5 +1,20 @@
 # Signer 
 
+<a name="v2-17-1" />
+### 2.17.1 (2026-07-15)
+
+* Improvements
+  * [SIG-1866] Added a configuration (`AllowBasicAndOperatorUsersToManageContacts`) that lets the Basic and Operator organization roles create, update and delete the organization's contacts
+
+* Bug fixes
+  * [SIG-1868] Fixed a "HashStream does not support seeking" error when creating documents that merge PDFs on S3/MinIO blob storage
+  * [SIG-1867] Fixed the contact search returning the wrong organization's contacts (or none) when creating a flow inside an organization
+  * [SIG-1863] Fixed the Manager role being unable to access folder settings (rename, move, configure permissions)
+  * [SIG-1842] Fixed an incorrect certificate identifier validation when signing with multiple identifiers enabled and the user has no identifier defined
+  * Fixed the Enter key not triggering search in the unified toolbars
+
+Updates database model: no
+
 <a name="v2-17-0" />
 ### 2.17.0 (2026-07-13)
 
