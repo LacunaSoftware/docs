@@ -1,6 +1,6 @@
 # Configuração de geolocalização (Geolocation) - Rest PKI Core
 
-Durante uma sessão de biometria, o Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário (latitude e longitude). O recurso vem **desligado por padrão** e pode ser ligado pelo painel, passando a valer para todas as sessões da sua aplicação.
+Durante uma sessão de biometria, o Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário (latitude e longitude). O recurso vem **desligado por padrão**, essa é uma característica do software e pode ser ligado pelo painel, passando a valer para todas as sessões da sua aplicação. Em instâncias próprias (on-premises), o mesmo padrão também pode ser definido diretamente no `appsettings`, na seção `Bio`.
 
 Existem três configurações:
 

@@ -202,7 +202,7 @@ Caso queira aceitar apenas alguns tipos de identificadores específicos, você p
 
 ### Parâmetros de geolocalização
 
-O Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário durante a sessão de biometria. O recurso está **desabilitado por padrão** e pode ser habilitado por sessão ou globalmente na configuração da subscription.
+O Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário durante a sessão de biometria. O recurso está **desabilitado por padrão**, essa é uma característica do software e pode ser habilitado por sessão, globalmente na configuração da subscription ou, em instâncias próprias (on-premises), diretamente no `appsettings` (seção `Bio`).
 
 > [!TIP]
 > Prefere configurar o padrão pelo painel? Veja [Configuração de geolocalização](configs/geolocation.md).
