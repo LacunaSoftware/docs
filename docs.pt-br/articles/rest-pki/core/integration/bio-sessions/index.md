@@ -186,7 +186,7 @@ Ao iniciar uma sessão, você deve configurar os parâmetros que definem como o 
 O `SubjectIdentifier` é um campo que vincula a sessão de biometria a uma pessoa específica que está utilizando o seu sistema.
 
 Para as sessões de cadastro biométrico e autenticação biométrica, o `SubjectIdentifier` é o identificador único relacionado à aquela pessoa que você deseja cadastrar ou autenticar no sistema de biometria.
-
+        
 Para as sessões anônimas, como Liveness e captura de documentos, esse identificador é indexado e poderá ser utilizado para encontrar o histórico de sessões com aquele identificador.
 
 > [!tip]
@@ -197,6 +197,31 @@ Caso queira aceitar apenas alguns tipos de identificadores específicos, você p
 ### Parâmetros das sessões com captura facial
 - **FaceCaptureProvider:** Define qual tecnologia de captura será utilizada na sessão de biometria.
     - Atualmente o único provedor utilizado pelo sistema é o `FaceTecLiveness3d` 
+
+<a name="geolocation" />
+
+### Parâmetros de geolocalização
+
+O Rest PKI Core pode capturar a localização geográfica do dispositivo do usuário durante a sessão de biometria. O recurso está **desabilitado por padrão**, essa é uma característica do software e pode ser habilitado por sessão, globalmente na configuração da subscription ou, em instâncias próprias (on-premises), diretamente no `appsettings` (seção `Bio`).
+
+> [!TIP]
+> Prefere configurar o padrão pelo painel? Veja [Configuração de geolocalização](configs/geolocation.md).
+
+- **`GeolocationCaptureType`**: Define o comportamento da captura.
+    - **`Disabled`** (padrão): Geolocalização não é coletada.
+    - **`Optional`**: O sistema tenta capturar a geolocalização, mas a sessão prossegue normalmente caso o usuário negue permissão ou a captura falhe.
+    - **`Required`**: A geolocalização é obrigatória. A sessão é interrompida se a captura não for concluída com sucesso.
+    - **`BestEffort`**: O sistema tenta capturar a geolocalização sem nunca interromper a sessão. Falhas transitórias (ex.: timeout) são tentadas novamente automaticamente, por padrão até 3 vezes; falhas permanentes (ex.: permissão negada) não são reenviadas. Se todas as tentativas falharem, a sessão prossegue normalmente sem a localização.
+
+- **`GeolocationCapturePolicy`**: Define em quais dispositivos a geolocalização é coletada (relevante para sessões com QR code).
+    - **`CollectOnCaptureDevice`** (padrão): A geolocalização é capturada apenas no dispositivo que realiza a biometria (ex: o celular, nos fluxos com QR code).
+    - **`CollectOnAllDevices`**: A geolocalização é capturada em todos os dispositivos envolvidos na sessão — tanto no desktop que iniciou quanto no celular que realizou a captura.
+
+> [!NOTE]
+> Quando `GeolocationCaptureType` é `BestEffort`, por padrão o usuário vê uma etapa pedindo a permissão de localização, porém sem os botões de cancelar ou pular — já que essa captura nunca pode interromper a sessão. Esse comportamento pode ser desativado pelo painel, removendo essa etapa própria do Rest PKI Core — veja [Configuração de geolocalização](configs/geolocation.md). Mesmo assim, o navegador pode exibir seu próprio pedido de permissão caso o usuário ainda não tenha decidido sobre ela (ver nota abaixo).
+
+> [!NOTE]
+> A exibição (ou não) do pedido de permissão, e por quanto tempo o navegador lembra da permissão concedida, são definidos por cada navegador e fogem ao controle do Rest PKI Core. Em alguns navegadores, conceder a permissão de forma temporária (ex.: "Permitir desta vez" no Chrome) pode manter a localização disponível durante a sessão do navegador, mesmo quando a captura é opcional. Para detalhes sobre cada comportamento, consulte a documentação do respectivo navegador.
 
 ## Tipos de sessão
 
